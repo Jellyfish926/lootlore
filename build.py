@@ -74,7 +74,11 @@ def hubbar_html(active_slug: str = "") -> str:
         f"{cur_html}"
         f'<details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary>'
         f'<nav class="ga-hubpanel">{items}'
-        f'<a class="ga-hubhome" href="{SENT}/#games">Browse all guides &rarr;</a></nav></details>'
+        f'<a class="ga-hubhome" href="{SENT}/#games">Browse all guides &rarr;</a>'
+        f'<span class="ga-hubdiv"></span>'
+        f'<a class="ga-hubsec" href="{SENT}/guides">Guides by category</a>'
+        f'<a class="ga-hubsec" href="{SENT}/reviews">Reviews &amp; verdicts</a>'
+        f'<a class="ga-hubsec" href="{SENT}/updates">Patch tracker</a></nav></details>'
         f"</div></div>"
     )
 
@@ -95,7 +99,9 @@ HUBBAR_CSS = """<style>
 .ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
 .ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
 .ga-hubpanel a.on{color:#e8b64c;font-weight:600}
-.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;border-radius:0 0 6px 6px;color:#9aa3b2;font-size:.92em}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;color:#9aa3b2;font-size:.92em}
+.ga-hubdiv{border-top:1px solid #23262f;margin:4px 0 2px}
+.ga-hubpanel .ga-hubsec{color:#9aa3b2;font-size:.92em;padding:6px 12px}
 </style>
 """
 
@@ -199,6 +205,29 @@ def render_hub_pages():
         html = html.replace("{{GA_SNIPPET}}", hub_ga_snippet())
         nav_games = "".join(f'<a href="/{g["slug"]}{g["default_path"].rstrip("/") or "/"}">{g["short"]}</a>' for g in CFG["games"])
         html = html.replace("{{NAV_GAMES}}", nav_games)
+        hd = (
+            '<header class="hd">\n  <div class="wrap">\n'
+            f'    <a class="brand" href="/"><b>&#9670;</b> {CFG["brand"]}</a>\n'
+            '    <nav class="hd-nav">\n'
+            '      <details class="gmenu"><summary>Games<span class="caret">&#9662;</span></summary>\n'
+            f'        <div class="gmenu-panel">{nav_games}<a class="all" href="/#games">All games &rarr;</a></div>\n'
+            '      </details>\n'
+            '      <a href="/guides">Guides</a>\n'
+            '      <a href="/reviews">Reviews</a>\n'
+            '      <a href="/updates">Updates</a>\n'
+            '      <a href="/about">About</a>\n'
+            '    </nav>\n  </div>\n</header>'
+        )
+        ft = (
+            '<footer class="ft">\n  <div class="wrap">\n    <nav>\n'
+            '      <a href="/guides">Guides</a>\n      <a href="/reviews">Reviews</a>\n      <a href="/updates">Updates</a>\n'
+            '      <a href="/about">About</a>\n      <a href="/contact">Contact</a>\n      <a href="/privacy-policy">Privacy Policy</a>\n'
+            '      <a href="/editorial-policy">Editorial Policy</a>\n      <a href="/terms">Terms of Use</a>\n      <a href="/disclaimer">Disclaimer</a>\n'
+            '    </nav>\n'
+            f'    <p>&copy; 2026 {CFG["brand"]}. Unofficial fan resource. All game titles, artwork and trademarks belong to their respective owners; this site is not affiliated with or endorsed by any developer or publisher.</p>\n'
+            '  </div>\n</footer>'
+        )
+        html = html.replace("{{HD}}", hd).replace("{{FT}}", ft)
         name = page.stem
         if name == "index":
             (OUT / "index.html").write_text(html, encoding="utf-8")

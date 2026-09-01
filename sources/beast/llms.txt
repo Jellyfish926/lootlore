@@ -1,0 +1,29 @@
+# Beast of Reincarnation Guide
+
+> Unofficial fan guide for Beast of Reincarnation, Game Freak's souls-like action RPG (PS5 / Xbox Series X|S / PC, August 4 2026, day one on Game Pass). Pre-release content is based on officially confirmed information and is rewritten with tested data at launch. Available in six languages: English (/en), Japanese (/ja), French (/fr), Spanish (/es), Italian (/it), German (/de).
+
+## Core guides (English)
+
+- [All Nushi bosses & strategies](https://beastofreincarnation.online/en/bosses)
+- [Best builds: skill trees, gear & spirit stones](https://beastofreincarnation.online/en/builds)
+- [Koo companion commands & Blooming Arts](https://beastofreincarnation.online/en/koo-guide)
+- [Beginner guide](https://beastofreincarnation.online/en/beginner-guide)
+- [Story walkthrough](https://beastofreincarnation.online/en/walkthrough)
+- [Difficulty options & Story Mode](https://beastofreincarnation.online/en/difficulty)
+- [Release date, platforms & Game Pass](https://beastofreincarnation.online/en/release-date)
+- [FAQ](https://beastofreincarnation.online/en/faq)
+
+## Language editions
+
+- [English home](https://beastofreincarnation.online/en)
+- [Japanese home](https://beastofreincarnation.online/ja)
+- [French home](https://beastofreincarnation.online/fr)
+- [Spanish home](https://beastofreincarnation.online/es)
+- [Italian home](https://beastofreincarnation.online/it)
+- [German home](https://beastofreincarnation.online/de)
+
+## Facts
+
+- Developer: Game Freak (first AAA title). Publisher: Fictions (worldwide) / Happinet (Japan). Engine: Unreal Engine 5.
+- Protagonist: Emma, an 18-year-old Sealer, voiced in Japanese by Yui Ishikawa. Companion: Koo, a corrupted hound.
+- Structure: stage-based district levels across post-apocalyptic Japan (year 4026), not open world. Parry-centric combat; Story Mode available.

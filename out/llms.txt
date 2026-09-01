@@ -1,0 +1,6 @@
+# Guide Atlas
+
+> Hand-researched game guides, one hub.
+
+- [Beast of Reincarnation](https://guide-atlas.vercel.app/beast-of-reincarnation/en): Game Freak's first AAA action RPG: a one-person, one-dog souls-like set in Japan, Year 4026. Nushi boss strategies with per-chapter levels and weaknesses, Emma's builds and skill trees, Koo's command system, trophy data and patch tracking — rewritten from the live game after launch.
+- [Shift At Midnight](https://guide-atlas.vercel.app/shift-at-midnight/): The graveyard-shift horror sim where your customers might be doppelgangers. Every monster from Marionette to the Dentist with tells and counters, all 10 achievements with rarity data, every ending, night-by-night survival guides and a straight answer on crossplay.

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shift At Midnight Mods — Workshop, BepInEx &amp; ShiftMorePlayers</title>
+<meta name="description" content="No Steam Workshop and no official tools — but there is a working BepInEx scene: 12 mods on Thunderstore, a Nexus section, and ShiftMorePlayers, which pushes lobbies past six.">
+<link rel="canonical" href="https://guide-atlas.vercel.app/shift-at-midnight/mods/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shift At Midnight Wiki">
+<meta property="og:title" content="Shift At Midnight Mods — Workshop, BepInEx &amp; ShiftMorePlayers">
+<meta property="og:description" content="No Steam Workshop and no official tools — but there is a working BepInEx scene: 12 mods on Thunderstore, a Nexus section, and ShiftMorePlayers, which pushes lobbies past six.">
+<meta property="og:url" content="https://guide-atlas.vercel.app/shift-at-midnight/mods/">
+<meta property="og:image" content="https://guide-atlas.vercel.app/shift-at-midnight/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shift At Midnight Mods">
+<meta name="twitter:description" content="No Steam Workshop and no official tools — but there is a working BepInEx scene: 12 mods on Thunderstore, a Nexus section, and ShiftMorePlayers, which pushes lobbies past six.">
+<meta name="twitter:image" content="https://guide-atlas.vercel.app/shift-at-midnight/og-image.jpg">
+<link rel="icon" href="/shift-at-midnight/favicon.ico?v=0966810b" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/shift-at-midnight/favicon-32.png?v=0966810b" type="image/png" sizes="32x32">
+<link rel="icon" href="/shift-at-midnight/favicon-192.png?v=0966810b" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/shift-at-midnight/apple-touch-icon.png?v=0966810b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/shift-at-midnight/style.css?v=fff51108">
+<!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://guide-atlas.vercel.app/shift-at-midnight/" },
+    { "@type": "ListItem", "position": 2, "name": "Mods", "item": "https://guide-atlas.vercel.app/shift-at-midnight/mods/" }
+  ]
+}
+</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.ga-hublinks{display:flex;gap:12px;flex-wrap:wrap}
+.ga-hublinks a{color:#9aa3b2;text-decoration:none}
+.ga-hublinks a:hover{color:#e6e9ef}
+.ga-hublinks a.on{color:#e6e9ef;font-weight:600}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">◆ Guide Atlas</a><nav class="ga-hublinks"><a href="/beast-of-reincarnation/en">Beast of Reincarnation</a><a href="/shift-at-midnight/" class="on">Shift At Midnight</a><a href="/#games">All games</a></nav></div></div>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/shift-at-midnight/">Shift At Midnight Wiki</a>
+    <nav class="site">
+      <a href="/shift-at-midnight/monsters/">Monsters</a>
+      <a href="/shift-at-midnight/achievements/">Achievements</a>
+      <a href="/shift-at-midnight/endings/">Endings</a>
+      <a href="/shift-at-midnight/crossplay/">Crossplay</a>
+      <a href="/shift-at-midnight/guides/" aria-current="page">Guides</a>
+      <a href="/shift-at-midnight/tools/">Tools</a>
+      <a href="/shift-at-midnight/faq/">FAQ</a>
+      <details class="more">
+        <summary><span class="lbl-d">More</span><span class="lbl-m">Menu</span></summary>
+        <div class="more-menu">
+        <a class="m-only" href="/shift-at-midnight/monsters/">Monsters</a>
+        <a class="m-only" href="/shift-at-midnight/achievements/">Achievements</a>
+        <a class="m-only" href="/shift-at-midnight/endings/">Endings</a>
+        <a class="m-only" href="/shift-at-midnight/crossplay/">Crossplay</a>
+        <a class="m-only" href="/shift-at-midnight/guides/" aria-current="page">Guides</a>
+        <a class="m-only" href="/shift-at-midnight/tools/">Tools</a>
+        <a class="m-only" href="/shift-at-midnight/faq/">FAQ</a>
+        <span class="menu-sep" aria-hidden="true"></span>
+        <a href="/shift-at-midnight/release-date/">Release date</a>
+        <a href="/shift-at-midnight/platforms/">Platforms</a>
+        <a href="/shift-at-midnight/system-requirements/">System requirements</a>
+        <a href="/shift-at-midnight/multiplayer/">Multiplayer</a>
+        <a href="/shift-at-midnight/nights-and-levels/">Nights &amp; Endless</a>
+        <a href="/shift-at-midnight/updates/">Updates</a>
+        <a href="/shift-at-midnight/troubleshooting/">Troubleshooting</a>
+        <a href="/shift-at-midnight/review/">Is it worth it?</a>
+        <a href="/shift-at-midnight/demo/">Demo</a>
+        <a href="/shift-at-midnight/player-count/">Player count</a>
+        <a href="/shift-at-midnight/mods/">Mods</a>
+        <a href="/shift-at-midnight/similar-games/">Similar games</a>
+        </div>
+      </details>
+    </nav>
+    <a class="steam-cta" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/shift-at-midnight/">Home</a><span>/</span>Mods
+  </nav>
+
+  <h1>Shift At Midnight mods</h1>
+  <p class="lede"><strong>There is no Steam Workshop and there are no official modding tools.</strong> There is a working community scene built on BepInEx &mdash; small, but real &mdash; and one of its mods answers the question most people arrive here with: can more than six of us play at once?</p>
+
+  <p class="updated">Last verified 5 August 2026 &middot; game version: 29 July 2026 patch</p>
+
+
+  <h2>Official support: none, in either direction</h2>
+
+  <table class="facts">
+    <tr><th>Steam Workshop</th><td>Not among the categories on the <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a></td></tr>
+    <tr><th>Official mod tools or API</th><td>None announced</td></tr>
+    <tr><th>Developer statement on modding</th><td>None &mdash; neither endorsed nor discouraged</td></tr>
+    <tr><th>Xbox and Microsoft Store builds</th><td>Not applicable &mdash; everything below is a PC plugin</td></tr>
+  </table>
+
+  <p>The third row is the one that matters. Bun Muen has never publicly commented on modding in either direction. Nothing here has been blessed and nothing has been forbidden, which in practice means every mod on this page is unsupported: a broken save, a failed lobby or a plugin that stops loading after a patch is nobody&rsquo;s obligation to fix.</p>
+
+  <p>The announced roadmap is content rather than platform work &mdash; the full release of <a href="/shift-at-midnight/nights-and-levels/#endless-mode">Endless Mode</a> plus more customers, traps, weapons and monsters in a free update planned for Q4 2026. Modding tools are not on it.</p>
+
+  <h2>Where the scene actually lives</h2>
+
+  <p><a href="https://thunderstore.io/c/shift-at-midnight/" target="_blank" rel="noopener">Thunderstore</a> hosts &ldquo;The Shift At Midnight Mod Database&rdquo; and is the main platform, with <strong>12 mods listed as of 5 August 2026</strong>. <a href="https://www.nexusmods.com/games/shiftatmidnight/mods" target="_blank" rel="noopener">Nexus Mods</a> runs a separate section for the game, and it is where the most-wanted mod lives rather than on Thunderstore &mdash; so check both before concluding something does not exist.</p>
+
+  <p>Calibrate your expectations against the download counts. The busiest Thunderstore entries are <strong>ModSettingsMenu (486), ShiftAtMidnightLocalizationAPI (468) and ShiftAtMidnightHostMenu (432)</strong>. Those are three-figure numbers for a game that <a href="https://steamdb.info/app/3722330/charts/" target="_blank" rel="noopener">peaked at 12,556 concurrent players</a> on 23 July, so this is a scene of a few hundred people that is two weeks old. Notice what those three mods are, too: a settings menu, a localisation API, a host menu. That is plumbing, not content. Nobody is shipping new monsters or new maps yet because the libraries you would build them on are still being written.</p>
+
+  <h2>What you need before installing anything</h2>
+
+  <p>Shift At Midnight is a Unity game compiled with <strong>IL2CPP, 64-bit</strong>. That single fact decides your whole toolchain:</p>
+
+  <ul>
+    <li><strong>BepInExPack IL2CPP</strong> is the prerequisite &mdash; not the Mono build of BepInEx. Installing the wrong pack is the most common reason a mod appears to do nothing at all.</li>
+    <li>Some mods, including the lobby-size one below, need <strong>BepInEx 6 IL2CPP bleeding-edge</strong> rather than a stable release.</li>
+    <li>The listings assume a manager rather than hand-dropped DLLs. <strong>GaleModManager</strong> is the one the Thunderstore pages are written around.</li>
+    <li>Stay on the current game build. Two patches landed in the first fortnight and both touched surfaces mods hook into &mdash; see <a href="/shift-at-midnight/updates/">patch notes</a>.</li>
+  </ul>
+
+  <h2>ShiftMorePlayers, and the honest version of &ldquo;250 players&rdquo;</h2>
+
+  <p>The base game is <a href="/shift-at-midnight/multiplayer/">designed around three players</a> and has offered a selectable cap of six since the <a href="https://steamdb.info/patchnotes/24354120/" target="_blank" rel="noopener">23 July patch</a>. <a href="https://www.nexusmods.com/shiftatmidnight/mods/3" target="_blank" rel="noopener">ShiftMorePlayers</a> replaces the CREATE LOBBY dropdown with a range of <strong>2 to 250</strong>, defaulting to 8.</p>
+
+  <p>The number that matters is not 250. The mod&rsquo;s own author publishes the working figures: <strong>recommended 8, safe ceiling around 10</strong>, and past that, chaos &mdash; object interaction and monster targeting start breaking down. Read it as an eight-player version of the game with a slider that goes further than it should, and it will not disappoint you.</p>
+
+  <div class="term tip">
+    <div class="term-h">Only the host needs it</div>
+    <p>This is what makes the mod usable for an ordinary group: <strong>friends running the vanilla game can join a modded host</strong>. One person installs BepInEx 6 IL2CPP and the mod, keeps their Steam copy current, and hosts. Nobody else changes anything.</p>
+  </div>
+
+  <p>Even unmodded, the developer warned that six-player lobbies &ldquo;may become chaotic&rdquo; and advised against them for a first playthrough. Everything that argument says about six, it says louder about eight. Finish the <a href="/shift-at-midnight/nights-and-levels/">13-shift story</a> at three, then open it up.</p>
+
+  <h2>The risks, specifically</h2>
+
+  <ul>
+    <li><strong>Patches break plugins.</strong> Two shipped in fourteen days and the second added an enemy and rebalanced the game. A scene this size will not always have a fix out the same day.</li>
+    <li><strong>Achievements: unknown, and we will not pretend otherwise.</strong> No source states whether BepInEx plugins affect Steam achievement unlocks in this game &mdash; the developer has not commented and the mod pages do not address it. If you are going for <a href="/shift-at-midnight/endings/">True Ending</a> (16.0%) or <em>Empty Home</em> (10.1%), do that run on a clean install and keep modded lobbies as a separate hobby. See <a href="/shift-at-midnight/achievements/">all 10 achievements</a>.</li>
+    <li><strong>Client compatibility is per-mod.</strong> ShiftMorePlayers explicitly supports vanilla clients; do not assume the next mod does. The host&rsquo;s mod list defines the session, so read each page.</li>
+    <li><strong>Nothing is vetted.</strong> No Workshop means no platform-level review of what you are running. Use the game&rsquo;s own Thunderstore and Nexus pages rather than reuploads.</li>
+    <li><strong>PC only.</strong> There is no equivalent for the Xbox or Microsoft Store builds, so a modded lobby cannot include a console <a href="/shift-at-midnight/platforms/#game-pass">Game Pass</a> player &mdash; which is already true unmodded, because <a href="/shift-at-midnight/crossplay/">Steam and Game Pass do not share a player pool</a>.</li>
+  </ul>
+
+  <h2>What this page will not do</h2>
+
+  <p>No click-by-click install walkthrough &mdash; it would be documenting a bleeding-edge BepInEx build that changes underneath it, and every mod page carries its own current prerequisites. No rankings of mods we cannot test. What is above is what can be checked against primary sources: that official support does not exist, where the scene is, how large it is, and what its flagship mod does according to the person who wrote it.</p>
+
+  <div class="grid two">
+    <a class="card" href="/shift-at-midnight/multiplayer/"><b>Multiplayer</b><span>The unmodded lobby cap, and why the developer is not keen on six.</span></a>
+    <a class="card" href="/shift-at-midnight/updates/"><b>Patch notes</b><span>Every change since launch &mdash; the thing that breaks plugins.</span></a>
+  </div>
+
+
+  <aside class="store" aria-label="Where to get the game">
+    <h2>Get Shift At Midnight</h2>
+    <p class="store-note">Links go to the official store and developer pages. We take no cut &mdash;
+      this site earns from ads, not from sales.</p>
+    <div class="store-row">
+      <a class="store-btn primary" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
+      <a class="store-btn" href="https://store.steampowered.com/app/4050060/Shift_At_Midnight_Multiplayer_Demo/" target="_blank" rel="noopener">Free multiplayer demo</a>
+      <a class="store-btn" href="https://www.bunmuen.com/" target="_blank" rel="noopener">Official site</a>
+    </div>
+  </aside>
+
+  <aside class="ad-banner" hidden aria-label="Advertisement"></aside>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="bar">
+    <nav>
+      <a href="/shift-at-midnight/monsters/">Monsters</a>
+      <a href="/shift-at-midnight/achievements/">Achievements</a>
+      <a href="/shift-at-midnight/endings/">Endings</a>
+      <a href="/shift-at-midnight/crossplay/">Crossplay</a>
+      <a href="/shift-at-midnight/guides/">Guides</a>
+      <a href="/shift-at-midnight/tools/">Tools</a>
+      <a href="/shift-at-midnight/faq/">FAQ</a>
+      <a href="/shift-at-midnight/release-date/">Release date</a>
+      <a href="/shift-at-midnight/platforms/">Platforms</a>
+      <a href="/shift-at-midnight/system-requirements/">System requirements</a>
+      <a href="/shift-at-midnight/multiplayer/">Multiplayer</a>
+      <a href="/shift-at-midnight/nights-and-levels/">Nights &amp; Endless</a>
+      <a href="/shift-at-midnight/updates/">Updates</a>
+      <a href="/shift-at-midnight/troubleshooting/">Troubleshooting</a>
+      <a href="/shift-at-midnight/review/">Is it worth it?</a>
+      <a href="/shift-at-midnight/demo/">Demo</a>
+      <a href="/shift-at-midnight/player-count/">Player count</a>
+      <a href="/shift-at-midnight/mods/">Mods</a>
+      <a href="/shift-at-midnight/similar-games/">Similar games</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact us</a>
+      <a href="/privacy-policy">Privacy policy</a>
+    </nav>
+    <p class="fine">Official links:
+      <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> &middot;
+      <a href="https://www.bunmuen.com/" target="_blank" rel="noopener">bunmuen.com</a> &middot;
+      <a href="https://x.com/BunMuenGames" target="_blank" rel="noopener">@BunMuenGames</a>
+    </p>
+    <p class="fine">Shift At Midnight Wiki is an unofficial fan resource. Shift At Midnight is developed by Bun Muen and published by Kwalee; all trademarks and game assets belong to their respective owners. This site is not affiliated with or endorsed by Kwalee or Bun Muen.</p>
+  </div>
+</footer>
+
+<script>
+/* 导航「More」下拉:<details> 本身已可用(无脚本也能开合、键盘可达),
+   这几行只补两个体验细节 —— 点击外部关闭、Esc 关闭。 */
+(function () {
+  var d = document.querySelector('header.site details.more');
+  if (!d) return;
+  document.addEventListener('click', function (e) {
+    if (d.open && !d.contains(e.target)) d.open = false;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); }
+  });
+})();
+</script>
+<!-- 广告位:Adsterra Banner 300x250,只在 ads.js 开关打开时注入 -->
+</body>
+</html>

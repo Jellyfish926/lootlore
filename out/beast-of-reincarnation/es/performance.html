@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beast of Reincarnation: rendimiento — PS5, Xbox y Steam Deck</title>
+<meta name="description" content="Rendimiento de Beast of Reincarnation: tasa de fotogramas y modos en PS5 y Xbox Series X|S, perspectivas en Steam Deck y estado Handheld Optimized del souls-like UE5 de Game Freak. Verificado en el lanzamiento.">
+<link rel="canonical" href="https://guide-atlas.vercel.app/beast-of-reincarnation/es/performance">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beast of Reincarnation — Rendimiento en consola y Steam Deck">
+<meta property="og:description" content="Rendimiento de Beast of Reincarnation: tasa de fotogramas y modos en PS5 y Xbox Series X|S, perspectivas en Steam Deck y estado Handheld Optimized del souls-like UE5 de Game Freak. Verificado en el lanzamiento.">
+<meta property="og:url" content="https://guide-atlas.vercel.app/beast-of-reincarnation/es/performance">
+<meta property="og:image" content="https://guide-atlas.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://guide-atlas.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://guide-atlas.vercel.app/beast-of-reincarnation/en/performance">
+<link rel="alternate" hreflang="ja" href="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/performance">
+<link rel="alternate" hreflang="fr" href="https://guide-atlas.vercel.app/beast-of-reincarnation/fr/performance">
+<link rel="alternate" hreflang="es" href="https://guide-atlas.vercel.app/beast-of-reincarnation/es/performance">
+<link rel="alternate" hreflang="it" href="https://guide-atlas.vercel.app/beast-of-reincarnation/it/performance">
+<link rel="alternate" hreflang="de" href="https://guide-atlas.vercel.app/beast-of-reincarnation/de/performance">
+<link rel="alternate" hreflang="x-default" href="https://guide-atlas.vercel.app/beast-of-reincarnation/en/performance">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://guide-atlas.vercel.app/beast-of-reincarnation/es"}, {"@type": "ListItem", "position": 2, "name": "Rendimiento", "item": "https://guide-atlas.vercel.app/beast-of-reincarnation/es/performance"}]}</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.ga-hublinks{display:flex;gap:12px;flex-wrap:wrap}
+.ga-hublinks a{color:#9aa3b2;text-decoration:none}
+.ga-hublinks a:hover{color:#e6e9ef}
+.ga-hublinks a.on{color:#e6e9ef;font-weight:600}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">◆ Guide Atlas</a><nav class="ga-hublinks"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/#games">All games</a></nav></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/es">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">GUÍA</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/es/bosses">Jefes</a>
+      <a href="/beast-of-reincarnation/es/builds">Builds</a>
+      <a href="/beast-of-reincarnation/es/koo-guide">Koo</a>
+      <a href="/beast-of-reincarnation/es/beginner-guide">Principiantes</a>
+      <a href="/beast-of-reincarnation/es/review">Análisis</a>
+      <a href="/beast-of-reincarnation/es/release-date">Lanzamiento</a>
+      <a href="/beast-of-reincarnation/es/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/performance">English</a>
+      <a href="/beast-of-reincarnation/ja/performance">日本語</a>
+      <a href="/beast-of-reincarnation/fr/performance">Français</a>
+      <a href="/beast-of-reincarnation/es/performance" class="active">Español</a>
+      <a href="/beast-of-reincarnation/it/performance">Italiano</a>
+      <a href="/beast-of-reincarnation/de/performance">Deutsch</a>
+      </nav>
+    </details>
+  </div>
+</header>
+<main>
+<div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/es">Inicio</a> / Rendimiento</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">Rendimiento</p>
+      <h1>Rendimiento de Beast of Reincarnation: PS5, Xbox y Steam Deck</h1>
+      <p class="lede">Tasa de fotogramas, modos gráficos y cómo funciona en Steam Deck. Probamos cada plataforma el día del estreno. Esto es lo confirmado y lo que hay que vigilar en un exigente RPG de acción en UE5.</p>
+      <p class="updated">Pruebas de fotogramas publicadas en el lanzamiento, el 4 de agosto de 2026</p>
+    </section>
+    <article>
+      <nav class="toc" aria-label="En esta página"><p>En esta página</p><ul><li><a href="#soporte-de-plataformas-confirmado">Soporte de plataformas confirmado</a></li><li><a href="#por-que-la-tasa-de-fotogramas-importa-aq">Por qué la tasa de fotogramas importa aquí más que en la mayoría de juegos</a></li><li><a href="#que-suele-implicar-unreal-engine-5-para-">Qué suele implicar Unreal Engine 5 para el rendimiento</a></li><li><a href="#modos-graficos-que-esta-anunciado-y-que-">Modos gráficos: qué está anunciado y qué no</a></li><li><a href="#perspectivas-en-steam-deck-y-portatiles">Perspectivas en Steam Deck y portátiles</a></li><li><a href="#que-version-deberian-elegir-quienes-prio">¿Qué versión deberían elegir quienes priorizan el rendimiento?</a></li><li><a href="#que-probaremos-el-dia-del-estreno">Qué probaremos el día del estreno</a></li><li><a href="#faq-de-rendimiento">FAQ de rendimiento</a></li><li><a href="#relacionado">Relacionado</a></li><li><a href="#fuentes">Fuentes</a></li></ul></nav>
+      
+      <div class="callout"><p><strong>Estado:</strong> las cifras medidas de fotogramas aterrizan en esta página el día del estreno. Hasta entonces, aquí tienes todo lo confirmado oficialmente sobre cómo funciona Beast of Reincarnation —plataformas, motor, soporte para portátiles y en la nube— más contexto fundamentado sobre lo que un souls-like en Unreal Engine 5 suele exigirle a tu hardware.</p></div>
+
+      <p>Beast of Reincarnation es el primer RPG de acción original para consola de Game Freak, construido sobre Unreal Engine 5, publicado por Fictions, Inc. y con lanzamiento el 4 de agosto de 2026 en PlayStation 5, Xbox Series X|S y PC a través de Steam y la Microsoft Store. Esa combinación invita a preguntas legítimas. El estudio detrás de Pokémon lanza un juego de acción centrado en el desvío, al estilo de Sekiro —un género en el que un solo fotograma perdido puede significar una parada fallida—, sobre un motor con un historial bien documentado de problemas de tirones en PC. Esta página recoge lo confirmado hasta ahora, lo que la elección de motor implica de forma realista y exactamente qué mediremos en cuanto se desbloquee la versión comercial.</p>
+
+      <h2 id="soporte-de-plataformas-confirmado">Soporte de plataformas confirmado</h2>
+      <table>
+        <tr><th>Plataforma</th><th>Estado</th><th>Notas</th></tr>
+        <tr><td>PlayStation 5</td><td>Lanzamiento nativo, a precio completo ($59.99 / 59,99 € / ¥8,980)</td><td>Modos rendimiento/calidad sin anunciar. Sin Game Pass en PS5. La edición física japonesa (a través de Happinet) incluye de forma permanente un código de DLC equivalente al contenido de la Deluxe.</td></tr>
+        <tr><td>Xbox Series X|S</td><td>Lanzamiento nativo; en Game Pass Ultimate desde el primer día</td><td>Los objetivos de fotogramas y resolución de Series S están sin anunciar: la incógnita habitual en los títulos UE5 exigentes.</td></tr>
+        <tr><td>PC (Steam / Microsoft Store)</td><td>Confirmado en el lanzamiento</td><td>Xbox Play Anywhere: compras una vez en la Microsoft Store y juegas tanto en Xbox como en PC, con partidas guardadas y logros compartidos. Consulta los <a href="/beast-of-reincarnation/es/pc-requirements">requisitos de PC</a>.</td></tr>
+        <tr><td>Portátiles y nube</td><td>Listado por Xbox para juego en portátil y en la nube</td><td>El anuncio de Game Pass de Xbox de julio de 2026 incluye Beast of Reincarnation en nube, consola, portátil y PC. El estado Steam Deck Verified sigue pendiente por parte de Valve.</td></tr>
+      </table>
+
+      <h2 id="por-que-la-tasa-de-fotogramas-importa-aq">Por qué la tasa de fotogramas importa aquí más que en la mayoría de juegos</h2>
+      <p>Este no es un juego de mundo abierto contemplativo en el que una caída puntual resulte perdonable. El combate está construido en torno a leer la preparación del golpe enemigo y desviarlo en el instante justo, el mismo bucle central que hizo famoso a Sekiro. La previa con el juego en mano de GameSpot —titulada «Beast of Reincarnation Has Sekiro Vibes, But It Won't Beat You Down»— encontró el tiempo de parada más permisivo que el de FromSoftware, pero un sistema basado en la sincronía nunca será mejor que la entrega de fotogramas que lo sostiene.</p>
+      <p>De ahí se derivan dos cosas. Primera: un modo estable a 60 fps reduciría aproximadamente a la mitad la latencia de entrada en el peor de los casos frente a 30 fps, lo que ensancha directamente tu ventana efectiva de parada. Segunda: la consistencia de los tiempos de fotograma importa más que la cifra media; un juego que mantiene 30 clavados puede resultar más fiable para desviar que uno que oscila entre 45 y 60. Los combates contra los Nushi —las criaturas gigantes corrompidas que vertebran cada región— son exactamente el tipo de escenario denso y cargado de partículas en el que los juegos UE5 tienden a caer, así que ahí es donde se centrarán nuestras pruebas de lanzamiento.</p>
+
+      <h2 id="que-suele-implicar-unreal-engine-5-para-">Qué suele implicar Unreal Engine 5 para el rendimiento</h2>
+      <p>Unreal Engine 5 está confirmado por Game Freak, y el motor trae consigo un conjunto conocido de compromisos. En consola, los títulos UE5 suelen salir con objetivos fijos y bien probados, y el hardware cerrado evita los peores problemas. En PC, los puntos de fallo recurrentes son los tirones por compilación de shaders durante las primeras horas de juego y los tirones de desplazamiento cuando el juego carga zonas nuevas. Ninguno de los dos está garantizado aquí —muchos juegos UE5 salen impecables—, pero son lo primero que comprobamos en cualquier lanzamiento en UE5, y no se ha revelado si Beast of Reincarnation utiliza funciones más pesadas de UE5 como Lumen o Nanite.</p>
+      <p>Hay una señal genuinamente alentadora. El director del juego ha declarado públicamente que la prioridad de Game Freak es ofrecer una experiencia jugable de calidad antes que forzar la fidelidad gráfica. Los estudios que toman esa decisión pronto suelen elegir objetivos de renderizado conservadores, y los objetivos conservadores son los que producen tasas de fotogramas estables en Series S y ajustes jugables en portátil. La prensa que lo probó en los eventos previos salió con un optimismo prudente sobre las sensaciones del combate, y ningún medio importante informó de señales de alarma evidentes de rendimiento en la build de previa, aunque las builds de previa se ejecutan sobre hardware controlado y demuestran poco sobre la versión comercial.</p>
+
+      <h2 id="modos-graficos-que-esta-anunciado-y-que-">Modos gráficos: qué está anunciado y qué no</h2>
+      <p>Ni Game Freak ni Fictions han publicado objetivos de fotogramas, cifras de resolución o una lista de modos gráficos para ninguna plataforma. En lugar de especular, estas son las preguntas abiertas concretas que responderemos con mediciones en el lanzamiento:</p>
+      <table>
+        <tr><th>Pregunta</th><th>Por qué importa</th></tr>
+        <tr><td>¿Hay un modo rendimiento a 60 fps en PS5 y Series X?</td><td>Reduce a la mitad la latencia de entrada para el tiempo de parada; la opción por defecto para la mayoría de jugadores de souls-like.</td></tr>
+        <tr><td>¿Qué sacrifica Series S?</td><td>Resolución, ajustes o tasa de fotogramas: Series S es donde primero se estrechan los presupuestos de UE5.</td></tr>
+        <tr><td>¿La versión de PC precompila los shaders?</td><td>La diferencia entre un primer jefe fluido y uno con tirones.</td></tr>
+        <tr><td>¿Hay soporte de VRR y salida a 120 Hz?</td><td>El VRR suaviza las caídas en pantallas compatibles y puede rescatar un modo rendimiento irregular.</td></tr>
+        <tr><td>¿Cuáles son los ajustes viables en Steam Deck?</td><td>Determina si jugar en portátil es una opción real o un apaño.</td></tr>
+      </table>
+
+      <h2 id="perspectivas-en-steam-deck-y-portatiles">Perspectivas en Steam Deck y portátiles</h2>
+      <p>El panorama en portátiles es más sólido que el de la mayoría de lanzamientos en UE5. La publicación oficial de Xbox sobre la selección de Game Pass de finales de julio de 2026 incluye explícitamente Beast of Reincarnation como jugable en dispositivos portátiles, junto a nube, consola y PC. La revisión aparte de Valve para el sello Deck Verified no se había publicado en el momento de escribir esto, así que trata Steam Deck como prometedor pero no probado: la versión de Steam se instalará y funcionará, pero la autonomía de la batería, los ajustes estables y si se gana la calificación Verified o Playable siguen siendo una incógnita.</p>
+      <p>Si el rendimiento en portátil es tu principal preocupación, la forma más barata de averiguarlo es Game Pass Ultimate en lugar de una compra de $59.99: el juego está incluido desde el primer día, y el streaming en la nube esquiva por completo el hardware local. Quienes compren en Steam cuentan además con la política de reembolso estándar de Valve (menos de dos horas jugadas, dentro de los 14 días) como red de seguridad para probar el rendimiento en su propio hardware, ya que no existe ninguna demo a fecha de julio de 2026.</p>
+
+      <h2 id="que-version-deberian-elegir-quienes-prio">¿Qué versión deberían elegir quienes priorizan el rendimiento?</h2>
+      <p>Sobre hardware fijo, PS5 y Series X serán casi con total seguridad las experiencias más predecibles: salgan los modos que salgan, saldrán ajustados. PC ofrece más margen para superar los objetivos de consola si tu GPU cumple los <a href="/beast-of-reincarnation/es/pc-requirements">requisitos recomendados</a>, con el riesgo habitual de tirones en UE5 en las máquinas más modestas. El ecosistema de Xbox tiene una ventaja estructural para quien esté indeciso: Play Anywhere significa que una sola compra en la Microsoft Store (o una suscripción a Game Pass Ultimate) cubre tanto Xbox como PC, con las partidas guardadas y los logros sincronizados entre ambas, así que puedes jugar sin más en la máquina que mejor lo mueva. Los jugadores de PlayStation pagan el precio completo sin ruta de suscripción, pero disponen del sistema de VRR y salida a 120 Hz más asentado de la plataforma, suponiendo que el juego lo admita, algo que todavía no está confirmado.</p>
+
+      <h2 id="que-probaremos-el-dia-del-estreno">Qué probaremos el día del estreno</h2>
+      <ul>
+        <li><strong>Tasa de fotogramas y modos</strong> en PS5 y Xbox Series X|S: si existe un modo rendimiento a 60 fps y hasta qué punto se mantiene estable durante los combates multifase contra los Nushi.</li>
+        <li><strong>Series S</strong>: los compromisos de resolución y tasa de fotogramas en la consola menos potente.</li>
+        <li><strong>Steam Deck</strong>: ajustes viables, consumo de batería por hora y si el juego en portátil mantiene un objetivo de fotogramas constante.</li>
+        <li><strong>Compilación de shaders y tirones de desplazamiento en PC</strong>: los dos puntos de fallo clásicos de UE5, medidos con gráficas de tiempos de fotograma en lugar de a ojo.</li>
+        <li><strong>Tiempos de carga</strong>: arranque en frío, viaje rápido y el tiempo entre morir y reintentar, algo que importa enormemente en un género de reintentos contra jefes.</li>
+        <li><strong>Latencia de entrada</strong>: cómo se siente cada modo específicamente para el tiempo del desvío.</li>
+      </ul>
+      <p>Todo lo anterior se verificará mediante pruebas con el juego en mano tras el lanzamiento del 4 de agosto de 2026, y esta página se actualizará con los resultados medidos.</p>
+
+      <h2 id="faq-de-rendimiento">FAQ de rendimiento</h2>
+      <h3>¿Beast of Reincarnation funciona a 60 fps?</h3>
+      <p>No está confirmado. No se han anunciado objetivos de fotogramas para ninguna plataforma. La filosofía declarada por el director de anteponer la jugabilidad es un motivo para el optimismo, no una garantía.</p>
+      <h3>¿Funcionará en Steam Deck?</h3>
+      <p>La versión de Steam se instalará y funcionará, y Xbox incluye el juego para el juego en portátil dentro de su selección de Game Pass. La calificación Deck Verified de Valve y los ajustes realistas siguen pendientes.</p>
+      <h3>¿Hay una demo para probar el rendimiento en mi hardware?</h3>
+      <p>No. A fecha de julio de 2026 no se ha anunciado ninguna demo. Game Pass Ultimate (Xbox/PC) o la ventana de reembolso de dos horas de Steam son las alternativas prácticas.</p>
+      <h3>¿Puedo jugarlo en streaming en lugar de ejecutarlo en local?</h3>
+      <p>Sí: el anuncio de Xbox de julio de 2026 incluye el juego en la nube a través de Game Pass Ultimate, que traslada todo el renderizado al servidor a cambio de la latencia del streaming. Para un juego tan centrado en la parada, jugar en local sigue siendo preferible siempre que sea posible.</p>
+      <h3>¿Se transfieren las partidas guardadas entre Xbox y PC?</h3>
+      <p>Sí. Beast of Reincarnation es un título de Xbox Play Anywhere: las partidas guardadas y los logros se comparten entre Xbox Series X|S y la versión de PC de la Microsoft Store.</p>
+
+      <h2 id="relacionado">Relacionado</h2>
+      <ul>
+        <li><a href="/beast-of-reincarnation/es/pc-requirements">Requisitos de sistema en PC</a></li>
+        <li><a href="/beast-of-reincarnation/es/release-time">Precarga y hora de desbloqueo</a></li>
+        <li><a href="/beast-of-reincarnation/es/editions">Ediciones y bonus de reserva</a></li>
+        <li><a href="/beast-of-reincarnation/es/faq">FAQ</a></li>
+      </ul>
+
+      <h2 id="fuentes">Fuentes</h2>
+      <ul>
+        <li><a href="https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/" rel="nofollow noopener" target="_blank">Beast of Reincarnation en Steam</a> — página oficial de la tienda (plataformas, motor y fecha de lanzamiento)</li>
+        <li><a href="https://beast-of-reincarnation.happinet-games.com/" rel="nofollow noopener" target="_blank">Sitio oficial japonés (Happinet Games)</a> — ediciones y detalles del lanzamiento en Japón</li>
+        <li><a href="https://news.xbox.com/en-us/2026/07/21/xbox-game-pass-july-2026-wave-2/" rel="nofollow noopener" target="_blank">Xbox Wire: Coming to Xbox Game Pass (julio de 2026)</a> — Game Pass desde el primer día y listado en nube y portátil</li>
+        <li><a href="https://www.gamespot.com/articles/beast-of-reincarnation-has-sekiro-vibes-but-it-wont-beat-you-down/" rel="nofollow noopener" target="_blank">Previa con el juego en mano de GameSpot</a> — impresiones sobre el combate y el tiempo de parada</li>
+      </ul>
+      <p class="updated">Última actualización: 31 de agosto de 2026</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/es/bosses">Jefes</a><a href="/beast-of-reincarnation/es/builds">Builds</a><a href="/beast-of-reincarnation/es/koo-guide">Guía de Koo</a><a href="/beast-of-reincarnation/es/beginner-guide">Principiantes</a><a href="/beast-of-reincarnation/es/review">Análisis</a><a href="/beast-of-reincarnation/es/metacritic">Metascore</a><a href="/beast-of-reincarnation/es/how-long-to-beat">Duración</a><a href="/beast-of-reincarnation/es/all-weapons">Armas</a><a href="/beast-of-reincarnation/es/all-endings">Finales</a><a href="/beast-of-reincarnation/es/trophies">Trofeos</a><a href="/beast-of-reincarnation/es/walkthrough">Guía completa</a><a href="/beast-of-reincarnation/es/pc-requirements">Requisitos PC</a><a href="/beast-of-reincarnation/es/performance">Rendimiento</a><a href="/beast-of-reincarnation/es/editions">Ediciones</a><a href="/beast-of-reincarnation/es/release-date">Fecha de lanzamiento</a><a href="/beast-of-reincarnation/es/release-time">Hora de desbloqueo</a><a href="/beast-of-reincarnation/es/demo">Demo</a><a href="/beast-of-reincarnation/es/multiplayer">Multijugador</a><a href="/beast-of-reincarnation/es/open-world">Mundo abierto</a><a href="/beast-of-reincarnation/es/difficulty">Dificultad</a><a href="/beast-of-reincarnation/es/voice-actors">Voces</a><a href="/beast-of-reincarnation/es/faq">FAQ</a><a href="/about">Acerca de</a><a href="/contact">Contacto</a><a href="/privacy-policy">Privacidad</a><a href="/editorial-policy">Política editorial</a><a href="/terms">Términos de uso</a><a href="/disclaimer">Aviso legal</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ Apoyar</a></nav>
+    <p>Sitio de fans no oficial. Beast of Reincarnation es una marca de GAME FREAK inc. / Fictions, Inc. Este sitio no está afiliado a dichas compañías ni cuenta con su aprobación.</p>
+  </div>
+</footer>
+</body>
+</html>

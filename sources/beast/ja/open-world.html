@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beast of Reincarnation はオープンワールド？マップ・ステージ構造解説</title>
+<meta name="description" content="Beast of Reincarnation はオープンワールドではなく、区画型のステージ制であることをゲームフリークが公式に明言。荒廃した日本を東から西へ進む世界構造と穢れの森の仕組みを解説します。">
+<link rel="canonical" href="https://beastofreincarnation.online/ja/open-world">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beast of Reincarnation はオープンワールド？マップ・ステージ構造解説">
+<meta property="og:description" content="Beast of Reincarnation はオープンワールドではなく、区画型のステージ制であることをゲームフリークが公式に明言。荒廃した日本を東から西へ進む世界構造と穢れの森の仕組みを解説します。">
+<meta property="og:url" content="https://beastofreincarnation.online/ja/open-world">
+<meta property="og:image" content="https://beastofreincarnation.online/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://beastofreincarnation.online/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css?v=2">
+<style>body{font-family:'Noto Sans JP','Karla',sans-serif}h1,h2,h3{font-family:'Noto Serif JP','Marcellus',serif}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5N0PVZ4Z0Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5N0PVZ4Z0Q');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "xj1bkaj8e1");
+</script>
+<link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/open-world">
+<link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/open-world">
+<link rel="alternate" hreflang="fr" href="https://beastofreincarnation.online/fr/open-world">
+<link rel="alternate" hreflang="es" href="https://beastofreincarnation.online/es/open-world">
+<link rel="alternate" hreflang="it" href="https://beastofreincarnation.online/it/open-world">
+<link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/open-world">
+<link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/open-world">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://beastofreincarnation.online/ja"}, {"@type": "ListItem", "position": 2, "name": "オープンワールド？", "item": "https://beastofreincarnation.online/ja/open-world"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/ja">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">攻略</span></a>
+    <nav class="nav-links">
+      <a href="/ja/bosses">ボス</a>
+      <a href="/ja/builds">ビルド</a>
+      <a href="/ja/koo-guide">クゥ</a>
+      <a href="/ja/beginner-guide">初心者</a>
+      <a href="/ja/release-date">発売日</a>
+      <a href="/ja/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/en/open-world">English</a>
+      <a href="/ja/open-world" class="active">日本語</a>
+      <a href="/fr/open-world">Français</a>
+      <a href="/es/open-world">Español</a>
+      <a href="/it/open-world">Italiano</a>
+      <a href="/de/open-world">Deutsch</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/ja">ホーム</a> / オープンワールド？</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">世界 · 構造</p>
+      <h1>Beast of Reincarnation はオープンワールド？</h1>
+      <p class="lede">答えは「いいえ」——しかも意図的な設計です。Beast of Reincarnation は、荒廃した日本を東から西へたどる区画型のステージレベルを連ねた構造で、シームレスなオープンマップではありません。</p>
+      <p class="updated">プレリリース版・公式確認情報に基づく・発売日(2026年8月4日)以降に実機検証で更新予定</p>
+    </section>
+
+    <article>
+      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#sec-0">結論から:オープンワールドではなく「10以上の区域」を連ねたステージ制</a></li><li><a href="#4026">世界の骨格:西暦4026年、日本の東の地から遥か西へ</a></li><li><a href="#beast-of-reincarnation">ひと目でわかる『Beast of Reincarnation』の世界構造</a></li><li><a href="#sec-3">区域はどんな形をしているのか</a></li><li><a href="#sec-4">各区域の中心にある「穢れの森」とヌシ</a></li><li><a href="#sec-5">世界を埋める二系統の敵:腐蝕体とゴーレム</a></li><li><a href="#sec-6">なぜオープンワールドにしなかったのか</a></li><li><a href="#sec-7">区域内の探索は、そのまま育成に直結する</a></li><li><a href="#sec-8">ボリュームと難易度:約40時間、3段階、そして周回</a></li><li><a href="#sec-9">区域制ならではの、進行の心構え</a></li><li><a href="#sec-10">FAQ:世界とマップ構造</a></li><li><a href="#sec-11">関連ガイド</a></li><li><a href="#sec-12">出典</a></li></ul></nav>
+      
+      <h2 id="sec-0">結論から:オープンワールドではなく「10以上の区域」を連ねたステージ制</h2>
+      <p>まず答えから書きます。ゲームフリークの完全新作『Beast of Reincarnation』は、<strong>オープンワールドのゲームではありません</strong>。ディレクターの古島康太氏は国内メディアのインタビューで、本作の構造を「ロードムービーのようなイメージで、10以上の区域と呼ぶステージが連なって長い旅を構成しています」と明言しています。プレイヤーは一枚のシームレスなマップを気ままに走り回るのではなく、区域をひとつずつ踏破しながら西へ向かっていくことになります。</p>
+      <p>ただし、ここで「一本道のステージクリア型」を思い浮かべると実態とはややズレます。古島氏は同じインタビューで、ステージの形を「横幅の広い一本道」と表現したうえで、「簡易的なセミオープンワールドに近い広さのものもあれば、高低差があったり、狭いけれど入り組んでいるものもあり、バリエーションを持たせています」と続けています。つまり区域ごとに広さも地形の性格も別物。オープンワールドの開放感と、手作りステージの密度、その中間を狙った構造だと考えるのが正確です。</p>
+      <p>この一点を理解しておくと、発売前の情報の読み方が変わります。本作に期待すべきは「巨大な地図を埋めていく遊び」ではなく、「区域という単位で作り込まれた、濃い探索と戦闘の連続」です。以下、公式に確認できている情報だけを使って世界構造を分解していきます。</p>
+
+      <h2 id="4026">世界の骨格:西暦4026年、日本の東の地から遥か西へ</h2>
+      <p>舞台は<strong>西暦4026年</strong>、「穢れ」に呑み込まれた終末後の日本です。Xbox Wire 日本語版の Developer Direct 記事によれば、主人公のエマと犬の相棒クゥは<strong>日本の東の地を出発し、遥か西の地を目指す</strong>旅路をたどります。公式日本サイト(<a href="https://beast-of-reincarnation.happinet-games.com/" rel="nofollow noopener" target="_blank">ハピネット</a>)では、エマは生まれながらに穢れに侵された「穢れ人」であり、「都の王」の命を受けて穢れの根源である「輪廻の獣」を討つために旅立つ、と紹介されています。人々は限られた「コロニー」で細々と生き延びている——そんな世界を、一人と一匹が横断していく物語です。</p>
+      <p>開発陣が繰り返し使うキーワードが「ロードムービー」。電ファミニコゲーマーのインタビューで古島氏は「旅を通じて少女と犬がロードムービー的に関係を育むことを感じてもらうため、距離的な移動があるものになっています。基本は横幅のあるリニアな流れですが」と語っています。<strong>移動それ自体が物語</strong>であり、区域型のステージ制はこのコンセプトから逆算して選ばれた構造だということです。「どこへでも行ける自由」ではなく「先へ進む重み」を軸に据えた設計、と言い換えてもいいでしょう。</p>
+      <p>なお、各区域の正式名称や通過する地方名の一覧は現時点で<strong>未発表</strong>です。公式に確認できているのは「東の地から西へ」という方向性までで、それ以上の地名を断定している情報源はありません。</p>
+
+      <h2 id="beast-of-reincarnation">ひと目でわかる『Beast of Reincarnation』の世界構造</h2>
+      <table>
+        <thead>
+          <tr><th>項目</th><th>判明している内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>世界のタイプ</td><td>区域型のステージ制。オープンワールドではないと公式が明言</td></tr>
+          <tr><td>ステージ数</td><td>10以上の「区域」(古島康太ディレクター談)</td></tr>
+          <tr><td>ステージの形状</td><td>「横幅の広い一本道」。セミオープン級の広さから、高低差のある地形、狭く入り組んだ構造まで</td></tr>
+          <tr><td>ルート</td><td>日本の東の地 → 遥か西の地(東から西へ)</td></tr>
+          <tr><td>時代設定</td><td>西暦4026年、穢れに覆われた終末後の日本</td></tr>
+          <tr><td>各区域の中心</td><td>ヌシが生み出す「穢れの森」。最奥のヌシを封じて力を吸収し、次の区域へ</td></tr>
+          <tr><td>ヌシとは</td><td>「ひと際巨大な腐蝕体」。穢れの森を発生させる存在</td></tr>
+          <tr><td>敵の系統</td><td>腐蝕体(「生」の象徴)とゴーレム(「死」の象徴)の二系統</td></tr>
+          <tr><td>想定プレイ時間</td><td>おおよそ40時間(ディレクター談。プレイスタイルで変動)</td></tr>
+          <tr><td>難易度</td><td>3段階の難易度設定(Xbox Wire)</td></tr>
+          <tr><td>周回要素</td><td>ニューゲームプラスあり。ハードモードよりもさらに高難度の周回プレイ</td></tr>
+          <tr><td>前の区域への帰還</td><td>「あとで探索しよう」と前のステージへ戻る楽しみに言及あり。詳細仕様は未発表</td></tr>
+          <tr><td>ファストトラベル</td><td>未発表</td></tr>
+          <tr><td>地名・区域名の一覧</td><td>未発表</td></tr>
+          <tr><td>エンジン</td><td>Unreal Engine 5</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="sec-3">区域はどんな形をしているのか</h2>
+      <p>「10以上の区域」と聞いても手触りは想像しづらいはずなので、古島氏の説明に出てくる区域タイプを整理しておきます。右列は公式発言ではなく、判明している構造から本サイトが読み解いた見立てです。</p>
+      <table>
+        <thead>
+          <tr><th>区域タイプ</th><th>公式に語られている特徴</th><th>読み解き(本サイトの見立て)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>セミオープン型</td><td>「簡易的なセミオープンワールドに近い広さ」を持つ区域</td><td>寄り道と隠し要素が最も多そうな層。素材や装備の回収はここで稼ぐ想定</td></tr>
+          <tr><td>高低差型</td><td>高低差のある地形で構成される区域</td><td>上下の位置取りが戦闘に絡む場面。遠距離構築が映えやすい</td></tr>
+          <tr><td>狭所・迷路型</td><td>「狭いけれど入り組んでいる」区域</td><td>逃げ場が少ない分、パリィの精度が問われる。ステルス構築の見せ場</td></tr>
+          <tr><td>穢れの森</td><td>ヌシが生み出す汚染ゾーン。穢れの影響で世界が突如として姿を変える</td><td>各区域のクライマックス。ボス前の消耗をどう抑えるかが鍵</td></tr>
+        </tbody>
+      </table>
+      <p>重要なのは、これらが<strong>順番に並んでいるのではなく混在している</strong>という点です。広い区域の次に狭い区域が来る、その緩急こそが区域型ステージ制の狙いだと考えられます。一定の広さの地形をひたすら移動し続けるオープンワールドとは、疲労の溜まり方が根本的に違うはずです。</p>
+
+      <h2 id="sec-4">各区域の中心にある「穢れの森」とヌシ</h2>
+      <p>ゲームプレイの背骨はきわめてシンプルです。各地域の中心には<strong>穢れの森</strong>——腐蝕体がひしめく汚染されたダンジョンゾーン——があり、その最奥に巨大なボス<strong>ヌシ</strong>が待ち構えています。Xbox Wire 日本語版によれば、ヌシは「ひと際巨大な腐蝕体」であり、穢れの森そのものを生み出している存在。つまり森を攻略することとヌシを討つことは、設定上ひと続きの行為です。ヌシを封じ、その力を吸収して、また西へ。この繰り返しが旅の推進力になります(ボスの詳細は<a href="/ja/bosses">ヌシ・ボス攻略</a>で扱っています)。</p>
+      <p>穢れの森は静的なダンジョンではありません。Xbox Wire の説明では、穢れの影響によって世界が<strong>突如として姿を変える</strong>とされています。電ファミニコゲーマーのインタビューでも、古島氏は「穢れの森」について「この世界でもっとも生き生きとしているものを植物として定めて描いています」と語っており、荒廃した外の区域とは対照的な、異様なまでに濃い植生の空間として設計されていることがうかがえます。区域の前半(荒れた大地)と後半(生い茂る森)で、視覚的にも遊びの質的にもギアが変わる——そういう構成だと読めます。</p>
+
+      <h2 id="sec-5">世界を埋める二系統の敵:腐蝕体とゴーレム</h2>
+      <p>区域の中身を語るうえで外せないのが敵の設計です。4Gamer のインタビューによれば、本作の敵は大きく二系統に分かれます。ひとつは<strong>腐蝕体</strong>——動物と植物が混ざり合ったような存在で、「生」を象徴するもの。もうひとつが<strong>ゴーレム</strong>——人の魂を移植された機械仕掛けの存在で、「死」を象徴するものです。ヌシがこの腐蝕体の頂点に立つ存在であることを踏まえると、区域を進むほど「生」の側の圧が強まっていく構造だと考えられます。</p>
+      <p>世界の見た目についても、4Gamer では「かつて栄えた文明があったけれど、長い時間の中で廃墟すら自然に飲み込まれている」「科学文明の痕跡をわずかに残しつつ広大な自然に覆われた」と説明されています。廃ビルが並ぶ典型的なポストアポカリプスではなく、<strong>数千年が経過して自然が完全に主導権を取り戻した日本</strong>。これが区域デザインの基調トーンです。</p>
+
+      <h2 id="sec-6">なぜオープンワールドにしなかったのか</h2>
+      <p>パリィを軸に据えたソウルライクARPGにとって、この構造はおそらく最適解です。この種のアクションの完成度はエンカウンターデザイン——敵の配置、地形、プレイヤーの侵入方向の設計——で決まります。そしてそれは、プレイヤーがどこから来るか分からないオープンワールドよりも、手作業で組んだステージのほうが圧倒的に制御しやすい。ゲームフリークが「10以上の区域」という単位を選んだ理由は、ここに集約されるはずです。</p>
+      <ul>
+        <li><strong>密度の高いレベルデザイン。</strong>手作業で構築されたステージは、広さで水増ししたマップよりも濃密な戦闘を生みます。区域単位なら、待ち伏せもショートカットもボス前の道のりも、一つひとつ演出として設計できます。</li>
+        <li><strong>明快な難易度曲線。</strong>ヌシの攻略順と吸収した力はそのまま<a href="/ja/builds">ビルド</a>に直結します。東から西への固定ルートがそのまま成長曲線になるため、開発側は「この時点のプレイヤーに何ができるか」を把握したうえでバランスを取れます。</li>
+        <li><strong>チェックリスト的な水増しがない。</strong>マップを埋め尽くすアイコンやお使いクエストではなく、隠しルート・装備・霊秘石といった区域内の探索が中心になる見込みです。</li>
+        <li><strong>ペース配分の制御。</strong>各区域が穢れの森へ収束していく構造のため、緊張と緩和のリズムを開発側が握れます。良質なソウルライクに共通する「呼吸」を作りやすい形です。</li>
+        <li><strong>ロードムービーとしての一貫性。</strong>戻れる自由より進む必然を優先することで、「距離を移動している」という感覚が最後まで薄れません。物語のコンセプトと構造が噛み合っています。</li>
+      </ul>
+
+      <h2 id="sec-7">区域内の探索は、そのまま育成に直結する</h2>
+      <p>「オープンワールドではない」は「探索がない」という意味ではありません。むしろ逆で、古島氏は<strong>前のステージに戻って新たな発見を探す楽しみ</strong>——「あとで探索しよう」と思わせる作り——にはっきり言及しています。区域をクリアしたら使い捨て、という設計ではないわけです。ファストトラベルの有無など具体的な仕様は未発表ですが、「後戻りできる」方向の発言が公式から出ている点は、取り逃しを気にするタイプのプレイヤーにとって朗報でしょう。</p>
+      <p>そして探索は成長に直結します。本作の育成は<strong>スキルツリー+装備+霊秘石(れいひせき)</strong>の3本柱。霊秘石は英語版で Spirit Stones と呼ばれるもので、Xbox Wire 日本語版によればさまざまな戦闘効果をもたらし、刀やチャームと合わせてカスタマイズの軸になります。公式に示された<strong>遠距離・ステルス・強攻</strong>という3系統の構築は、いずれも道中で拾う装備と素材に支えられる設計です。脇道を隅々まで漁るステルス型と、ヌシへ一直線に向かう強攻型とでは、同じ区域でもまったく違う体験になるはずです(構成の考え方は<a href="/ja/builds">ビルドガイド</a>へ)。</p>
+      <p>相棒のクゥも探索の恩恵を受けます。エマの剣戟がリアルタイムで進む一方、クゥへの指示はメニューから出す仕組みで、その間は時間の流れが緩やかになります(電ファミニコゲーマーのインタビューでは「コマンドRPGのように時間を止めて技を選択して放つ」と表現されています)。区域内で手に入れたクゥ関連の強化は、以降のすべての戦闘の組み立てを変えることになります(詳しくは<a href="/ja/koo-guide">クゥ攻略</a>)。</p>
+
+      <h2 id="sec-8">ボリュームと難易度:約40時間、3段階、そして周回</h2>
+      <p>古島氏の発言によれば、想定プレイ時間は「おおよそ40時間ぐらい」。10以上の区域にこの時間が割り振られると考えると、単純計算で<strong>1区域あたり平均3〜4時間前後</strong>という密度になります。区域ごとに広さが大きく違うため実際にはばらつくはずですが、「1区域=短いステージ」ではないことは押さえておくべきでしょう。プレイ時間の詳しい見積もりは<a href="/ja/how-long-to-beat">クリア時間まとめ</a>で扱っています。</p>
+      <p>クリア後には<strong>ニューゲームプラス</strong>が用意されており、古島氏は「ハードモードよりもさらに難易度が高い周回プレイが楽しめるようになっています」と説明しています。裏を返せば、通常プレイの難易度上限がハードモードということ。Xbox Wire では<strong>3段階の難易度設定</strong>が明かされており、区域を隅々まで探索して戦力を整えられる構造と合わせて、ソウルライク初心者にも入口が開かれた作りになっています(<a href="/ja/difficulty">難易度解説</a>・<a href="/ja/beginner-guide">初心者ガイド</a>)。</p>
+      <p>なお<a href="/ja/demo">体験版は配信されておらず</a>(2026年7月時点)、発売前に区域の広さを自分の手で確かめる手段はありません。海外メディアの先行試遊——Game Informer のプレビューや GameSpot のハンズオン——の論調は「慎重ながらも好意的」といったところです。</p>
+
+      <h2 id="sec-9">区域制ならではの、進行の心構え</h2>
+      <p>構造が分かっていると、発売初日の動き方も変わります。現時点の公式情報から導ける、実践的な前提を挙げておきます。</p>
+      <ul>
+        <li><strong>ヌシを討つ前に、区域を一周する意識で。</strong>戻れる可能性は示唆されていますが、ファストトラベルの仕様は未発表です。手戻りのコストが読めない以上、穢れの森へ入る前に区域を洗っておくのが安全策になります。</li>
+        <li><strong>広い区域ほど「後回し」を作らない。</strong>セミオープン級の区域では自然と取りこぼしが出ます。マップ画面の仕様も未発表なので、印象に残った未踏ルートは自分でメモしておくと後が楽です。</li>
+        <li><strong>構築の方向性は早めに決める。</strong>遠距離・ステルス・強攻で、同じ区域でも歩くルートが変わります。スキルツリーと霊秘石の投資先が分散すると、区域の難易度上昇に追いつきにくくなります。</li>
+        <li><strong>難易度は最初に決め打ちしない。</strong>3段階用意されているので、序盤の区域で手応えを測ってから調整するのが現実的です。周回前提ならニューゲームプラスがハード以上の難度になる点も頭に入れておきましょう。</li>
+        <li><strong>約40時間を10区域超で割って考える。</strong>1区域に数時間かかる前提でセッションを組むと、穢れの森の途中で中断するような遊び方を避けやすくなります。</li>
+      </ul>
+
+      <div class="callout"><p><strong>未発表の項目:</strong>各区域の正式名称、通過する地方名の一覧、ファストトラベルの有無、マップ画面の仕様は現時点で未発表です。本ページでは確認済みの公式情報のみを掲載しており、これらは発売後に実機で検証したうえで更新します。</p></div>
+
+      <h2 id="sec-10">FAQ:世界とマップ構造</h2>
+      <h3>『Beast of Reincarnation』はオープンワールド?</h3>
+      <p>いいえ。ゲームフリークが公式に否定しています。「10以上の区域と呼ぶステージが連なって長い旅を構成している」というのがディレクターの説明で、日本の東の地から遥か西の地へ、区域を順に踏破していく構造です。各区域は自由に探索できますが、世界全体がひとつながりのシームレスなマップになっているわけではありません。</p>
+      <h3>ステージ(区域)はいくつある?</h3>
+      <p>古島康太ディレクターによれば「10以上」。正確な数、および各区域の正式名称や全リストは未発表です。</p>
+      <h3>前の区域に戻れる? ファストトラベルはある?</h3>
+      <p>「あとで探索しよう」と前のステージへ戻って新たな発見を探す楽しみがある、という趣旨の発言が公式インタビューで出ています。ただし帰還の手順やファストトラベルの有無といった具体的な仕様は未発表です。</p>
+      <h3>1周のプレイ時間は? クリア後の要素は?</h3>
+      <p>ディレクターの想定は「おおよそ40時間ぐらい」。クリア後にはニューゲームプラスが用意され、ハードモードよりもさらに高い難易度で周回できるとされています。</p>
+      <h3>『SEKIRO』型と『ダークソウル』型、どちらに近い?</h3>
+      <p>その中間です。「横幅の広い一本道」という区域は『SEKIRO』のルートより広く自由度が高い一方、東から西への固定ルートは『ダークソウル』の相互接続された世界よりも一方向的。メディアが比較対象に『SEKIRO』を挙げるのは主にパリィ中心の戦闘が理由で、マップ構造の話ではありません。</p>
+      <h3>機種によって世界構造は変わる?</h3>
+      <p>変わりません。PS5・Xbox Series X|S・PC(Steam/Microsoft Store)で同一の内容です。Xbox・PC版は Game Pass(Ultimate)で発売初日から遊べ、Xbox Play Anywhere 対応によりセーブデータと実績を共有できます。PS5版は Game Pass の対象外で、日本での希望小売価格は8,980円(税込)、CERO C、PS5 Pro Enhanced に対応します(<a href="/ja/editions">エディション比較</a>)。</p>
+      <h3>発売前に区域の広さを体験できる?</h3>
+      <p>できません。体験版の配信は<a href="/ja/demo">予定されていません</a>。実際の広さを確かめられるのは<a href="/ja/release-date">2026年8月4日</a>の発売後です。</p>
+
+      <h2 id="sec-11">関連ガイド</h2>
+      <ul>
+        <li><a href="/ja/bosses">ヌシ(ボス)一覧と穢れの森</a></li>
+        <li><a href="/ja/walkthrough">ストーリー攻略の構成</a></li>
+        <li><a href="/ja/how-long-to-beat">クリア時間はどれくらい?</a></li>
+        <li><a href="/ja/builds">ビルドガイド(遠距離・ステルス・強攻)</a></li>
+        <li><a href="/ja/beginner-guide">初心者ガイド</a></li>
+      </ul>
+
+      <h2 id="sec-12">出典</h2>
+      <ul>
+        <li><a href="https://www.gamespark.jp/article/2026/02/13/162707.html" rel="nofollow noopener" target="_blank">Game*Spark — 古島康太ディレクターインタビュー(10以上の区域・横幅の広い一本道・約40時間・ニューゲームプラス)</a></li>
+        <li><a href="https://news.denfaminicogamer.jp/interview/260123b" rel="nofollow noopener" target="_blank">電ファミニコゲーマー — 古島康太氏インタビュー(ロードムービー的構造・前ステージへの再探索・クゥへの指示)</a></li>
+        <li><a href="https://www.4gamer.net/games/918/G091816/20260212014/" rel="nofollow noopener" target="_blank">4Gamer.net — ゲームフリーク新作インタビュー(世界描写・腐蝕体とゴーレム)</a></li>
+        <li><a href="https://news.xbox.com/ja-jp/2026/01/23/developer-direct-2026-beast-of-reincarnation/" rel="nofollow noopener" target="_blank">Xbox Wire 日本語版 — Developer Direct(西暦4026年・ヌシと穢れの森・霊秘石・3段階の難易度)</a></li>
+      </ul>
+      <p class="updated">最終更新: 2026年7月23日</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/ja/bosses">ボス</a><a href="/ja/builds">ビルド</a><a href="/ja/koo-guide">クゥ攻略</a><a href="/ja/beginner-guide">初心者</a><a href="/ja/review">レビュー</a><a href="/ja/metacritic">メタスコア</a><a href="/ja/how-long-to-beat">クリア時間</a><a href="/ja/all-weapons">武器</a><a href="/ja/all-endings">結末</a><a href="/ja/trophies">トロフィー</a><a href="/ja/walkthrough">ストーリー攻略</a><a href="/ja/pc-requirements">PC環境</a><a href="/ja/performance">性能</a><a href="/ja/editions">エディション</a><a href="/ja/release-date">発売日</a><a href="/ja/release-time">解放時刻</a><a href="/ja/demo">体験版</a><a href="/ja/multiplayer">マルチプレイ</a><a href="/ja/open-world">オープンワールド</a><a href="/ja/difficulty">難易度</a><a href="/ja/voice-actors">声優</a><a href="/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
+  </div>
+</footer>
+<script src="/ads.js" defer></script>
+</body>
+</html>

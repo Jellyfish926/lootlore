@@ -1,0 +1,520 @@
+/* Shift At Midnight Wiki — 视觉体系对齐官方站 bunmuen.com
+   ─────────────────────────────────────────────────────────
+   取自官网的设计令牌:
+     字体  标题 Futura LT Book(几何无衬线,字距 -0.03em) → 免费等价 Jost
+           强调 Anton(压缩粗黑,logo 与卡片标题) → Google Fonts 原字体
+     配色  纯黑 #000000 / 暖近黑 #151412 / 招牌奶油 #FFFBEE
+           纯白 #FFFFFF / 暖灰 #A09C90
+     形状  胶囊按钮 border-radius:100px,奶油底深色字
+   官网靠美术做恐怖,UI 本身极克制——不用霓虹、不用扫描线。 */
+
+:root {
+  --bg:        #000000;
+  --bg-panel:  #151412;   /* 官网次级深色,偏暖 */
+  --bg-inset:  #1e1c19;
+  --line:      #2a2724;
+  --line-hot:  #3d3934;
+
+  --cream:     #fffbee;   /* 招牌色 */
+  --ink:       #ffffff;
+  --dim:       #a09c90;   /* 暖灰 */
+  --faint:     #8a8578;   /* 提亮至 AA:对黑 5.7:1、对面板 5.0:1 */
+  --danger:    #c8443f;   /* 仅用于语义上的"危险",取自游戏血色,已压暗 */
+
+  --display: "Jost", "Futura", "Century Gothic", -apple-system, sans-serif;
+  --impact:  "Anton", "Haettenschweiler", "Arial Narrow", sans-serif;
+
+  --wrap: 74ch;
+  --pill: 100px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 18px/1.7 var(--display);
+  letter-spacing: -0.01em;              /* 官网正文 -0.25px/25px */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- 骨架 ---------- */
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 22px; }
+.wide { max-width: 100ch; }
+
+header.site {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 20;
+}
+header.site .bar {
+  max-width: 112ch; margin: 0 auto; padding: 13px 22px;
+  display: flex; align-items: center; gap: 20px;
+  flex-wrap: nowrap;              /* 单行:二级项已收进 More 下拉 */
+}
+.brand {
+  font: 400 19px/1 var(--impact);
+  color: var(--cream); text-decoration: none;
+  letter-spacing: 0.02em; text-transform: uppercase;
+  white-space: nowrap;
+}
+nav.site {
+  display: flex; align-items: center; gap: 17px;
+  flex: 1 1 auto; min-width: 0;   /* min-width:0 是关键:否则 flex 子项不肯收缩,整条撑出视口 */
+  flex-wrap: nowrap; overflow: visible;
+}
+nav.site a {
+  font: 400 13px/1 var(--impact);
+  color: var(--dim); text-decoration: none;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 4px 0; border-bottom: 1px solid transparent;
+  transition: color .15s, border-color .15s;
+}
+nav.site a:hover, nav.site a[aria-current="page"] {
+  color: var(--cream); border-bottom-color: var(--cream);
+}
+
+main { padding: 40px 0 72px; }
+
+/* ---------- 面包屑 ---------- */
+.crumbs {
+  font: 400 12px/1.5 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--faint); margin: 0 0 26px;
+}
+.crumbs a { color: var(--dim); text-decoration: none; }
+.crumbs a:hover { color: var(--cream); }
+.crumbs span { margin: 0 8px; color: var(--line-hot); }
+
+/* ---------- 文字 ---------- */
+/* 大标题走 Futura 路线:细、大、字距收紧(官网 73px/-2.19px = -0.03em) */
+h1 {
+  font: 500 clamp(34px, 6vw, 60px)/1.06 var(--display);
+  letter-spacing: -0.032em;
+  margin: 0 0 18px; color: var(--ink);
+}
+h2 {
+  font: 500 clamp(26px, 3.4vw, 36px)/1.14 var(--display);
+  letter-spacing: -0.028em;
+  margin: 56px 0 16px; color: var(--ink);
+  padding-top: 26px; border-top: 1px solid var(--line);
+}
+/* 小标题走 Anton 路线(官网卡片标题 = Anton + 奶油色) */
+h3 {
+  font: 400 17px/1.3 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.03em;
+  margin: 34px 0 10px; color: var(--cream);
+}
+
+p { margin: 0 0 18px; }
+a { color: var(--cream); text-underline-offset: 4px; text-decoration-thickness: 1px; }
+a:hover { color: var(--ink); }
+strong { color: var(--ink); font-weight: 500; }
+em { color: var(--cream); font-style: italic; }
+ul, ol { margin: 0 0 18px; padding-left: 24px; }
+li { margin: 0 0 9px; }
+li::marker { color: var(--faint); }
+code {
+  font: 400 0.9em/1.5 ui-monospace, Menlo, monospace;
+  background: var(--bg-inset); color: var(--cream);
+  padding: 2px 7px; border-radius: 3px; border: 1px solid var(--line);
+}
+
+.lede {
+  font-size: 21px; font-weight: 300; color: var(--dim);
+  letter-spacing: -0.015em; line-height: 1.58; margin: 0 0 32px;
+}
+.updated {
+  font: 400 11px/1.5 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.11em;
+  color: var(--faint); margin: 0 0 30px;
+}
+
+/* ---------- 提示块 ---------- */
+.term {
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: 4px; padding: 20px 22px; margin: 0 0 26px;
+}
+.term-h {
+  font: 400 12px/1.3 var(--impact);
+  color: var(--cream); text-transform: uppercase; letter-spacing: 0.12em;
+  margin: 0 0 12px;
+}
+.term.warn { border-color: rgba(200, 68, 63, .42); }
+.term.warn .term-h { color: var(--danger); }
+.term.tip  { border-color: rgba(255, 251, 238, .26); }
+.term :last-child { margin-bottom: 0; }
+
+/* ---------- 表格 ---------- */
+.facts { width: 100%; border-collapse: collapse; margin: 0 0 26px; font-size: 16px; }
+.facts th, .facts td {
+  text-align: left; padding: 12px 14px 12px 0;
+  border-bottom: 1px solid var(--line); vertical-align: top;
+}
+.facts th {
+  font: 400 11px/1.5 var(--impact);
+  color: var(--faint); text-transform: uppercase; letter-spacing: 0.1em;
+  width: 34%; padding-right: 18px;
+}
+.facts tr:last-child th, .facts tr:last-child td { border-bottom: 0; }
+
+.data { width: 100%; border-collapse: collapse; margin: 0; font-size: 15.5px; font-weight: 400; }
+.data th {
+  font: 400 11px/1.5 var(--impact);
+  color: var(--faint); text-transform: uppercase; letter-spacing: 0.1em;
+  text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--line-hot);
+  white-space: nowrap;
+}
+.data td { padding: 12px 13px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.data tbody tr:hover { background: var(--bg-panel); }
+.data .num { color: var(--cream); white-space: nowrap; }
+
+/* 宽表在自己的盒子里横向滚动,页面 body 永不横向滚动 */
+.tablewrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  margin: 0 0 26px; border-radius: 4px;
+}
+.tablewrap .data { margin-bottom: 0; }
+.tablewrap::-webkit-scrollbar { height: 6px; }
+.tablewrap::-webkit-scrollbar-thumb { background: var(--line-hot); border-radius: 3px; }
+
+/* ---------- 卡片 ---------- */
+.grid { display: grid; gap: 14px; margin: 0 0 28px; }
+.grid.two   { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.grid.three { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: 4px; padding: 18px 20px;
+  transition: border-color .15s, background .15s;
+}
+.card:hover { border-color: rgba(255,251,238,.34); background: var(--bg-inset); }
+/* 卡片标题用 Anton + 奶油色,与官网视频卡一致 */
+.card b {
+  display: block; font: 400 16px/1.28 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.02em;
+  color: var(--cream); margin: 0 0 8px;
+}
+.card span { display: block; font-size: 15px; color: var(--dim); line-height: 1.58; font-weight: 400; }
+.card.danger { border-color: rgba(200,68,63,.3); }
+.card.danger b { color: var(--danger); }
+.card.danger:hover { border-color: rgba(200,68,63,.6); }
+
+/* ---------- 胶囊标签(官网 border-radius:100px) ---------- */
+.tags { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 24px; }
+.tag {
+  font: 400 11px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 8px 15px; border-radius: var(--pill);
+  border: 1px solid var(--line-hot); color: var(--dim); background: transparent;
+}
+/* 主行动标签:奶油实心 + 深色字,复刻官网 PLAY THE DEMO 按钮 */
+.tag.solid { background: var(--cream); color: #14120f; border-color: var(--cream); }
+.tag.red   { color: var(--danger); border-color: rgba(200,68,63,.5); }
+.tag.green,
+.tag.amber { color: var(--cream); border-color: rgba(255,251,238,.4); }
+
+/* ---------- FAQ ---------- */
+.faq { border-top: 1px solid var(--line); margin: 0 0 28px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  cursor: pointer; padding: 18px 0; color: var(--ink);
+  font-weight: 400; font-size: 17px; letter-spacing: -0.015em;
+  list-style: none; display: flex; gap: 13px; align-items: flex-start;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "+"; color: var(--cream); font: 400 20px/1.1 var(--display); flex: none; }
+.faq details[open] summary::before { content: "\2212"; }
+.faq details[open] summary { padding-bottom: 6px; }
+.faq .a { padding: 0 0 18px 30px; color: var(--dim); font-weight: 400; }
+.faq .a :last-child { margin-bottom: 0; }
+
+/* ---------- 评分/指标 ---------- */
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; margin: 10px 0 22px; }
+.metric { background: var(--bg-panel); border: 1px solid var(--line); border-radius: 4px; padding: 9px 11px; }
+.metric span { display: block; font: 400 10px/1.4 var(--impact); text-transform: uppercase; letter-spacing: .09em; color: var(--faint); }
+.metric b { font-size: 15px; color: var(--cream); font-weight: 400; }
+
+/* ---------- 广告位 ---------- */
+/* 与上方的商店区按钮至少隔 160px —— seo-ads 要求 ≥150px,防误触 */
+.ad-native, .ad-banner { display: block; margin: 160px 0 0; }
+.ad-native[hidden], .ad-banner[hidden] { display: none; }
+.ad-native::before, .ad-banner::before {
+  content: "Sponsored"; display: block; margin: 0 0 10px;
+  font: 400 10px/1 var(--impact); color: var(--faint);
+  text-transform: uppercase; letter-spacing: 0.16em;
+}
+.ad-banner { text-align: center; }
+
+/* ---------- 页脚 ---------- */
+footer.site {
+  border-top: 1px solid var(--line); margin-top: 68px;
+  padding: 34px 0 52px; font-size: 14.5px; color: var(--faint);
+  background: var(--bg-panel);
+}
+footer.site .bar { max-width: 100ch; margin: 0 auto; padding: 0 22px; }
+footer.site nav {
+  display: flex; gap: 18px; flex-wrap: wrap; margin: 0 0 20px;
+  font: 400 12px/1 var(--impact); text-transform: uppercase; letter-spacing: 0.07em;
+}
+footer.site nav a { color: var(--dim); text-decoration: none; }
+footer.site nav a:hover { color: var(--cream); }
+footer.site .fine { line-height: 1.7; max-width: 74ch; font-weight: 400; }
+footer.site .fine a { color: var(--dim); }
+
+/* ---------- 无障碍 / 响应式 ---------- */
+:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .wrap { padding: 0 18px; }
+  h2 { margin-top: 42px; }
+  .lede { font-size: 19px; }
+  .facts th { width: auto; font-size: 10.5px; }
+  .facts th, .facts td { padding: 10px 10px 10px 0; }
+  .data { font-size: 14.5px; }
+  .data th, .data td { padding: 9px 10px; }
+  .grid.three { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  header.site .bar { padding: 12px 18px; gap: 14px; }
+  nav.site { gap: 14px; }
+  footer.site nav { gap: 14px; }
+}
+
+/* ─── 二级导航 / 商店外链 / 工具页控件 ─────────────────────────
+   来源:对照飞书教程审计。教程阶段五「导航结构:清晰的层级」、
+   潜规则④外链(竞品的 "Play on Steam" 按钮)、阶段五「页面类型含工具页」。 */
+
+.steam-cta {
+  margin-left: auto;
+  font: 400 12px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--bg); background: var(--cream);
+  text-decoration: none; white-space: nowrap;
+  padding: 10px 17px; border-radius: var(--pill);
+  transition: background .15s, transform .15s;
+}
+.steam-cta:hover { background: #fff; transform: translateY(-1px); }
+
+.store {
+  margin: 56px 0 0; padding: 26px 24px;
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.store h2 { margin: 0 0 8px; font-size: 20px; }
+.store-note { margin: 0 0 18px; font-size: 14.5px; color: var(--faint); line-height: 1.6; }
+.store-row { display: flex; gap: 11px; flex-wrap: wrap; }
+.store-btn {
+  font: 400 12.5px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--cream); text-decoration: none;
+  padding: 13px 19px; border-radius: var(--pill);
+  border: 1px solid var(--line-hot); background: var(--bg-inset);
+  transition: border-color .15s, color .15s;
+}
+.store-btn:hover { border-color: rgba(255,251,238,.5); color: #fff; }
+.store-btn.primary { background: var(--cream); color: var(--bg); border-color: var(--cream); }
+.store-btn.primary:hover { background: #fff; color: var(--bg); }
+
+/* ── 工具页控件 ── */
+.tool {
+  margin: 28px 0; padding: 24px;
+  background: var(--bg-panel); border: 1px solid var(--line-hot); border-radius: 14px;
+}
+.tool .row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+/* 只作用于表单字段的小标题;绝不能命中 .tool-check(它本身也是 <label>) */
+.tool .field label {
+  display: block; font: 400 11.5px/1.4 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--faint); margin-bottom: 7px;
+}
+.tool select, .tool input[type="text"], .tool input[type="search"] {
+  font: 400 16px/1.2 var(--display);
+  color: var(--cream); background: var(--bg-inset);
+  border: 1px solid var(--line-hot); border-radius: 9px;
+  padding: 12px 13px; min-height: 46px; width: 100%;
+  appearance: none; -webkit-appearance: none;
+}
+.tool select:focus-visible, .tool input:focus-visible,
+.tool button:focus-visible, .tool-check:focus-within {
+  outline: 2px solid var(--cream); outline-offset: 2px;
+}
+.tool select { background-image: none; cursor: pointer; }
+.tool .field { flex: 1 1 190px; }
+.tool button {
+  font: 400 12.5px/1 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--bg); background: var(--cream);
+  border: 0; border-radius: var(--pill);
+  padding: 13px 20px; min-height: 46px; cursor: pointer;
+}
+.tool button.ghost { background: transparent; color: var(--dim); border: 1px solid var(--line-hot); }
+.tool button.ghost:hover { color: var(--cream); border-color: var(--cream); }
+
+.tool-out {
+  margin-top: 18px; padding: 18px 20px;
+  background: var(--bg-inset); border-left: 3px solid var(--line-hot); border-radius: 0 9px 9px 0;
+}
+.tool-out.ok   { border-left-color: #5f9e63; }
+.tool-out.warn { border-left-color: #c9a227; }
+.tool-out.bad  { border-left-color: var(--danger); }
+.tool-out b { display: block; font-size: 17px; color: var(--cream); margin-bottom: 6px; }
+.tool-out p { margin: 0; font-size: 15px; color: var(--dim); line-height: 1.6; }
+.tool-out p + p { margin-top: 9px; }
+
+.tool-check {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 13px 12px; min-height: 46px;
+  border-bottom: 1px solid var(--line); cursor: pointer;
+}
+.tool-check:last-of-type { border-bottom: 0; }
+.tool-check:hover { background: var(--bg-inset); }
+.tool-check input[type="checkbox"] {
+  width: 21px; height: 21px; margin: 2px 0 0; flex: none;
+  accent-color: var(--cream); cursor: pointer;
+}
+.tool-check .t { font: 400 16px/1.4 var(--display); text-transform: none; letter-spacing: 0; color: var(--cream); }
+.tool-check .d { display: block; font: 400 14px/1.55 var(--display); text-transform: none; letter-spacing: 0; color: var(--faint); margin-top: 3px; }
+.tool-check input:checked ~ .lbl .t { color: var(--faint); text-decoration: line-through; }
+
+.bar-track { height: 9px; background: var(--bg-inset); border-radius: var(--pill); overflow: hidden; margin: 12px 0 6px; }
+.bar-fill  { height: 100%; background: var(--cream); width: 0; transition: width .3s; }
+
+.noscript-note {
+  margin: 18px 0; padding: 14px 16px; font-size: 15px; line-height: 1.6;
+  color: var(--dim); background: var(--bg-inset); border-left: 3px solid var(--line-hot);
+}
+
+@media (max-width: 640px) {
+  .steam-cta { margin-left: 0; padding: 16px 18px; }
+  header.site .bar { gap: 12px; }
+  .store { padding: 22px 18px; }
+  .store-btn { flex: 1 1 100%; text-align: center; padding: 15px 19px; }
+  footer.site .fine a { padding: 6px 0; display: inline-block; }
+  .tool { padding: 18px 15px; }
+  /* 触控目标:审计发现 375px 下 28/56 个可点元素不足 44px。
+     13px 行高 1 + 上下 15.5px 内边距 + 1px 下边框 = 44px */
+  nav.site a { padding: 17px 0; }
+  footer.site nav a { padding: 16px 0; display: inline-block; }
+  .brand { padding: 12px 0; display: inline-block; }
+  details.more > summary { padding: 15px 0; }
+}
+
+/* Hero 大图 —— 教程阶段五「Hero区域」+ 竞品 hero 背景大图。
+   显式宽高比 + contain-intrinsic 防 CLS;圆角与站内面板一致。 */
+.hero-img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1176 / 560;
+  margin: 0 0 26px; border-radius: 14px;
+  border: 1px solid var(--line); background: var(--bg-panel);
+  object-fit: cover;
+}
+@media (max-width: 640px) { .hero-img { margin-bottom: 20px; border-radius: 10px; } }
+
+/* 威胁速查结果卡 */
+.threat {
+  padding: 18px 0; border-bottom: 1px solid var(--line);
+}
+.threat:last-child { border-bottom: 0; }
+.threat h3 { margin: 0 0 5px; font-size: 19px; }
+.threat h3 a { color: var(--cream); text-decoration: none; border-bottom: 1px solid rgba(255,251,238,.28); }
+.threat h3 a:hover { border-bottom-color: var(--cream); }
+.threat .meta { margin: 0 0 8px; font-size: 13px; color: var(--faint); }
+.threat p:last-child { margin: 0; font-size: 15.5px; color: var(--dim); line-height: 1.62; }
+
+/* ─── 导航「More」下拉 ────────────────────────────────────────
+   单行导航:一级 7 项常驻,其余 10 项收进 <details>。
+   用原生 <details> 而非 JS 菜单 —— 无脚本可用、键盘可达、移动端点击即开。 */
+
+header.site .bar > nav.site { scrollbar-width: none; }
+header.site .bar > nav.site::-webkit-scrollbar { display: none; }
+
+details.more { position: relative; flex: none; }
+details.more > summary {
+  list-style: none; cursor: pointer; user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font: 400 13px/1 var(--impact);
+  color: var(--dim); text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 4px 0; border-bottom: 1px solid transparent;
+  display: inline-flex; align-items: center; gap: 5px;
+  white-space: nowrap; transition: color .15s, border-color .15s;
+}
+details.more > summary::-webkit-details-marker { display: none; }
+.lbl-m { display: none; }            /* 桌面显示 More,窄屏显示 Menu */
+.more-menu .m-only { display: none; } /* 一级项只在窄屏抽屉里出现 */
+.menu-sep { display: none; }
+details.more > summary::after {
+  content: ""; width: 0; height: 0;
+  border-left: 4px solid transparent; border-right: 4px solid transparent;
+  border-top: 4.5px solid currentColor; transition: transform .18s;
+}
+details.more[open] > summary::after { transform: rotate(180deg); }
+details.more > summary:hover,
+details.more[open] > summary { color: var(--cream); border-bottom-color: var(--cream); }
+details.more > summary:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+
+.more-menu {
+  position: absolute; top: calc(100% + 12px); right: 0; z-index: 40;
+  min-width: 208px; padding: 8px;
+  background: var(--bg-panel); border: 1px solid var(--line-hot);
+  border-radius: 12px; box-shadow: 0 18px 44px rgba(0,0,0,.72);
+  display: grid; gap: 1px;
+}
+.more-menu a {
+  display: block; padding: 11px 13px; border-radius: 7px;
+  font: 400 12.5px/1.15 var(--impact);
+  color: var(--dim); text-decoration: none;
+  text-transform: uppercase; letter-spacing: 0.055em;
+  border-bottom: 0; white-space: nowrap;
+  transition: background .13s, color .13s;
+}
+.more-menu a:hover, .more-menu a:focus-visible {
+  background: var(--bg-inset); color: var(--cream); border-bottom: 0;
+}
+.more-menu a[aria-current="page"] { color: var(--cream); background: var(--bg-inset); }
+
+@media (max-width: 900px) {
+  header.site .bar { flex-wrap: wrap; gap: 12px 16px; }
+  .brand { flex: 1 1 auto; }
+  .steam-cta { order: 2; margin-left: 0; }
+  header.site .bar > nav.site { order: 3; flex: 1 1 100%; flex-wrap: wrap; row-gap: 2px; }
+  details.more { position: static; }        /* 面板贴齐整条导航,避免被 overflow 裁掉 */
+  .more-menu { left: 18px; right: 18px; min-width: 0; max-height: 74vh; overflow-y: auto; }
+}
+
+/* ≤720px:一级项收进抽屉,头部只剩 站名 + Play on Steam + Menu。
+   此前一级项平铺换行让头部高达 173px(占 812 高屏幕的 21%),
+   用户从 Google 落到内页,先看到的应该是内容而不是导航。 */
+@media (max-width: 720px) {
+  /* 不吸顶(让内容尽快进入首屏),但必须保持 positioned —— 
+     改成 static 会让 .more-menu 的 top:100% 相对整页高度计算,面板被推到屏幕外。 */
+  header.site { position: relative; }
+  header.site .bar { flex-wrap: nowrap; gap: 10px; padding: 10px 18px; }
+  .brand { flex: 1 1 auto; min-width: 0; font-size: 16px; padding: 14px 0;
+           overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .steam-cta { order: 0; flex: none; }
+  header.site .bar > nav.site { order: 0; flex: none; width: auto; }
+  header.site .bar > nav.site > a { display: none; }   /* 一级项转入抽屉 */
+  .more-menu .m-only { display: block; }
+  .lbl-d { display: none; }
+  .lbl-m { display: inline; }
+  .menu-sep {
+    display: block; height: 1px; margin: 6px 4px;
+    background: var(--line-hot);
+  }
+  details.more > summary {
+    padding: 14.5px 15px; border: 1px solid var(--line-hot); border-radius: var(--pill);
+    color: var(--cream); border-bottom-color: var(--line-hot);
+  }
+  details.more[open] > summary { background: var(--bg-inset); border-color: var(--cream); }
+  .more-menu { top: calc(100% + 8px); }
+}
+
+/* 广告位溢出约束 —— 2026-07-31 补。
+   原有 .ad-* 规则只设了 display/margin/标签,没有任何宽度约束;
+   广告 iframe 若宽于容器会撑破页面(手机端内容区仅 339px)。 */
+.ad-native, .ad-banner { max-width: 100%; overflow: hidden; }
+.ad-native iframe, .ad-banner iframe,
+.ad-native img, .ad-banner img { max-width: 100% !important; height: auto; }

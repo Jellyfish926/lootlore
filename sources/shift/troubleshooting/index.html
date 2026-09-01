@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shift At Midnight Not Working — Lobby, Crash &amp; Audio Problems</title>
+<meta name="description" content="Cannot join a lobby in Shift At Midnight, or hitting crashes, a black screen or no sound? The developer's official steps, what each patch fixed, and which problems have no verified fix.">
+<link rel="canonical" href="https://shiftatmidnightwiki.site/troubleshooting/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shift At Midnight Wiki">
+<meta property="og:title" content="Shift At Midnight Not Working — Lobby, Crash &amp; Audio Problems">
+<meta property="og:description" content="Cannot join a lobby in Shift At Midnight, or hitting crashes, a black screen or no sound? The developer's official steps, what each patch fixed, and which problems have no verified fix.">
+<meta property="og:url" content="https://shiftatmidnightwiki.site/troubleshooting/">
+<meta property="og:image" content="https://shiftatmidnightwiki.site/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Troubleshooting">
+<meta name="twitter:description" content="Cannot join a lobby in Shift At Midnight, or hitting crashes, a black screen or no sound? The developer's official steps, what each patch fixed, and which problems have no verified fix.">
+<meta name="twitter:image" content="https://shiftatmidnightwiki.site/og-image.jpg">
+<link rel="icon" href="/favicon.ico?v=0966810b" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/favicon-32.png?v=0966810b" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-192.png?v=0966810b" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=0966810b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://www.clarity.ms">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/style.css?v=fff51108">
+<!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shiftatmidnightwiki.site/" },
+    { "@type": "ListItem", "position": 2, "name": "Troubleshooting", "item": "https://shiftatmidnightwiki.site/troubleshooting/" }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHPX1SQ5N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RFHPX1SQ5N');
+</script>
+<!-- Microsoft Clarity xtsrs8l2x5 -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "xtsrs8l2x5");
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">Shift At Midnight Wiki</a>
+    <nav class="site">
+      <a href="/monsters/">Monsters</a>
+      <a href="/achievements/">Achievements</a>
+      <a href="/endings/">Endings</a>
+      <a href="/crossplay/">Crossplay</a>
+      <a href="/guides/" aria-current="page">Guides</a>
+      <a href="/tools/">Tools</a>
+      <a href="/faq/">FAQ</a>
+      <details class="more">
+        <summary><span class="lbl-d">More</span><span class="lbl-m">Menu</span></summary>
+        <div class="more-menu">
+        <a class="m-only" href="/monsters/">Monsters</a>
+        <a class="m-only" href="/achievements/">Achievements</a>
+        <a class="m-only" href="/endings/">Endings</a>
+        <a class="m-only" href="/crossplay/">Crossplay</a>
+        <a class="m-only" href="/guides/" aria-current="page">Guides</a>
+        <a class="m-only" href="/tools/">Tools</a>
+        <a class="m-only" href="/faq/">FAQ</a>
+        <span class="menu-sep" aria-hidden="true"></span>
+        <a href="/release-date/">Release date</a>
+        <a href="/platforms/">Platforms</a>
+        <a href="/system-requirements/">System requirements</a>
+        <a href="/multiplayer/">Multiplayer</a>
+        <a href="/nights-and-levels/">Nights &amp; Endless</a>
+        <a href="/updates/">Updates</a>
+        <a href="/troubleshooting/">Troubleshooting</a>
+        <a href="/review/">Is it worth it?</a>
+        <a href="/demo/">Demo</a>
+        <a href="/player-count/">Player count</a>
+        <a href="/mods/">Mods</a>
+        <a href="/similar-games/">Similar games</a>
+        </div>
+      </details>
+    </nav>
+    <a class="steam-cta" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>/</span>Troubleshooting
+  </nav>
+
+  <h1>Shift At Midnight troubleshooting</h1>
+  <p class="lede">Two of the problems people hit have <strong>official, published fixes</strong>. The rest do not, and this page is careful about which is which. Nothing below is a registry edit, a driver cleaner or a &ldquo;booster&rdquo; download.</p>
+
+  <p class="updated">Last verified 5 August 2026 &middot; game version: 29 July 2026 patch</p>
+
+
+  <div class="term tip">
+    <div class="term-h">Read this first</div>
+    <p>Almost every report falls into one of three shapes: a <strong>lobby you cannot create or join</strong>, a <strong>party split across two storefronts</strong>, or a <strong>party split across two Steam branches</strong>. The first has official steps, the second cannot be fixed at all, and the third is a two-minute check. Everything further down is honest about being unresolved.</p>
+  </div>
+
+  <h2>Cannot create or join a lobby</h2>
+
+  <p>On launch day, 22 July 2026, the developer published a post titled &ldquo;CAN&rsquo;T JOIN A LOBBY?&rdquo; offering an opt-in Steam branch as a temporary measure while the connection problems were being worked on. These are the steps as published:</p>
+
+  <ol>
+    <li>Open your Steam library and <strong>right-click Shift At Midnight</strong>.</li>
+    <li>Go to <strong>Properties</strong>.</li>
+    <li>Open <strong>Game Versions &amp; Betas</strong>.</li>
+    <li>Enter the code exactly as written: <code>networkissues</code></li>
+    <li>Opt into the branch that becomes available &mdash; <code>network-issues-patch</code>.</li>
+  </ol>
+
+  <p>The announcement adds one line that people skip, and it is the line that decides whether any of this works: <strong>&ldquo;Everyone you play with must also follow these instructions.&rdquo;</strong> One person on the branch and two on the default build is not a partial fix &mdash; it is a party that cannot see each other. GameGrin restated the same steps in a 23 July 2026 write-up, which is the only second source we found for them.</p>
+
+  <div class="term warn">
+    <div class="term-h">Status of that branch: unclear, and we will not pretend otherwise</div>
+    <p>It was published as a <strong>launch-week stopgap</strong>. The 23 July patch that followed did fix Russian-region players being unable to create joinable lobbies, but <strong>no announcement has ever been published retiring the branch</strong>, so we cannot give you a date on which it stopped being necessary. Two practical consequences: if you opted in during launch week and never switched back, check which branch you are on; and if you opt in now, everyone in the party has to do it together.</p>
+  </div>
+
+  <h2>You are all online and still cannot see each other</h2>
+
+  <p>This is the most common &ldquo;the multiplayer is broken&rdquo; report, and most of the time nothing is broken. Work down this list in order:</p>
+
+  <ul>
+    <li><strong>Are you on the same storefront?</strong> Steam players connect only to Steam players. Xbox console and PC Game Pass players share one pool through Play Anywhere. A Steam player and a Game Pass player <strong>cannot</strong> play together and no setting changes that &mdash; see <a href="/crossplay/">crossplay</a>, or run your group through the <a href="/tools/#crossplay-checker">crossplay checker</a>.</li>
+    <li><strong>Are you on the same branch?</strong> See the section above. Mismatched Steam branches produce exactly this symptom.</li>
+    <li><strong>Are you on the same build?</strong> If one of you still sees a patience meter on customers, or cannot set a lobby above three, that install has not updated. <a href="/updates/">Patch notes</a> lists the tells.</li>
+    <li><strong>Is lobby size the problem?</strong> The cap has been selectable up to six since 23 July 2026, but the developer has been explicit that the game is designed around three. See <a href="/multiplayer/">multiplayer</a>.</li>
+  </ul>
+
+  <p>There is no server browser to fall back on. One was announced before launch as a post-release addition and it is still not live, so joining is invite and party based &mdash; which is why a mismatch anywhere in that list looks like an outage.</p>
+
+  <h2>Crashes, and the cursor problem that follows them</h2>
+
+  <p>Two patches have touched this, and one known issue is on the record:</p>
+
+  <ul>
+    <li><strong>23 July 2026.</strong> The announcement closed by previewing that the next patch would address <strong>&ldquo;cursor interaction issues after crashes&rdquo;</strong> &mdash; the developer&rsquo;s own words for a state where the game has crashed and the mouse afterwards does not behave.</li>
+    <li><strong>29 July 2026.</strong> Those patch notes list &ldquo;various bug fixes and crash fixes&rdquo; without itemising them, and <strong>do not say whether the cursor issue was among them</strong>. We looked for a follow-up announcement clarifying it; there is not one.</li>
+  </ul>
+
+  <p>So the honest position on crashes is this: the developer acknowledged a specific cursor-after-crash problem, shipped an unspecified set of crash fixes six days later, and never closed the loop publicly. If you are hitting it, you are not imagining it, and it is not fixed on the record.</p>
+
+  <p>Two steps we can stand behind: <strong>let Steam verify the game files</strong> rather than reinstalling &mdash; the install is only 3 GB, so a verify is quick &mdash; and confirm you are actually on the newest build, because a stalled update is the cheapest explanation for a problem the patch notes claim was fixed.</p>
+
+  <h2>Black screens, missing audio and a PC that switches itself off</h2>
+
+  <p>These are real threads on the official Steam discussion board: a black screen report, a no-audio report, and one titled &ldquo;PC Shuts itself down?&rdquo; with several replies. We list them because knowing other people have the same symptom is worth something. What we are <strong>not</strong> doing is inventing steps.</p>
+
+  <div class="term warn">
+    <div class="term-h">No verified fix exists for any of these</div>
+    <p>None has an official acknowledgement, a patch note, or a developer reply that we could find. Anything you read that confidently &ldquo;fixes&rdquo; a black screen in this specific game &mdash; particularly a page that ends in a download &mdash; is written from a template rather than from evidence. Report the symptom on the Steam board or the game&rsquo;s Discord, where the developer takes bug reports, and include your build and your hardware.</p>
+  </div>
+
+  <h2>Steam Deck: pressing Play does nothing</h2>
+
+  <p>There is a Steam discussion thread titled &ldquo;Steam deck - i press play and nothing happens&rdquo;. We have no verified fix and no official comment on it. What we can give you is the context: the only Deck compatibility rating we could find is SteamDB&rsquo;s <strong>Playable</strong>, it comes from a single source, and the Steam store page itself did not show a compatibility panel when we read it on 12 August 2026. The detail, and why that matters before you buy, is on <a href="/system-requirements/">system requirements</a>.</p>
+
+  <h2>Things that look like bugs and are not</h2>
+
+  <ul>
+    <li><strong>Endless Mode is locked.</strong> It is not missing. Endless shipped as a beta on launch day but unlocks only once you have finished the 13-shift story &mdash; see <a href="/nights-and-levels/#endless-mode">Endless Mode</a>.</li>
+    <li><strong>Norbert scans as a fake ID.</strong> Working as designed. He is flagged and he is harmless; the scanner reports on documents, not on intent. See <a href="/monsters/norbert/">Norbert</a>.</li>
+    <li><strong>Customers no longer run out of patience.</strong> The patience mechanic was removed on 29 July 2026. If a guide told you to hurry, the guide is older than the patch.</li>
+    <li><strong>The music box got louder.</strong> Also deliberate &mdash; the 23 July patch raised Jack-in-the-Box volume, and locating it by ear is the entire counterplay to the <a href="/monsters/marionette/">Marionette</a>.</li>
+    <li><strong>Swearing is no longer filtered.</strong> The profanity filter was removed on 23 July 2026.</li>
+  </ul>
+
+  <h2>Reports we could not corroborate, and fixes we will not invent</h2>
+
+  <ul>
+    <li><strong>Microphone not detected.</strong> There is one discussion thread on this, posted 29 September 2025 &mdash; during the demo period, ten months before release &mdash; from a player whose main microphone was not picked up while a webcam mic worked. It has <strong>no replies and no developer response</strong>. One unanswered post about a different build is not enough to write a fix around, so we have not.</li>
+    <li><strong>Whether the launch beta branch is still needed.</strong> Never officially retired, as above.</li>
+    <li><strong>Anything that would require a save file or config path.</strong> We could not verify where this game stores either &mdash; the reference we would normally use returned HTTP 403 &mdash; so there is no &ldquo;delete this folder&rdquo; step anywhere on this page.</li>
+    <li><strong>Network tuning, VPNs and &ldquo;lag fix&rdquo; tools.</strong> Several sites rank for this game&rsquo;s connection problems by recommending a product. We have no evidence that any of them addresses a lobby problem whose official fix was a Steam branch, so we do not recommend them.</li>
+  </ul>
+
+  <p>When any of these gets an official answer, it lands here with the date and the source.</p>
+
+  <div class="grid two">
+    <a class="card" href="/updates/"><b>Patch notes</b><span>Every published change since launch, and what each one actually fixed.</span></a>
+    <a class="card danger" href="/crossplay/"><b>Crossplay</b><span>The one problem on this page that has no fix at all.</span></a>
+  </div>
+
+
+  <aside class="store" aria-label="Where to get the game">
+    <h2>Get Shift At Midnight</h2>
+    <p class="store-note">Links go to the official store and developer pages. We take no cut &mdash;
+      this site earns from ads, not from sales.</p>
+    <div class="store-row">
+      <a class="store-btn primary" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
+      <a class="store-btn" href="https://store.steampowered.com/app/4050060/Shift_At_Midnight_Multiplayer_Demo/" target="_blank" rel="noopener">Free multiplayer demo</a>
+      <a class="store-btn" href="https://www.bunmuen.com/" target="_blank" rel="noopener">Official site</a>
+    </div>
+  </aside>
+
+  <aside class="ad-banner" hidden aria-label="Advertisement"></aside>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="bar">
+    <nav>
+      <a href="/monsters/">Monsters</a>
+      <a href="/achievements/">Achievements</a>
+      <a href="/endings/">Endings</a>
+      <a href="/crossplay/">Crossplay</a>
+      <a href="/guides/">Guides</a>
+      <a href="/tools/">Tools</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/release-date/">Release date</a>
+      <a href="/platforms/">Platforms</a>
+      <a href="/system-requirements/">System requirements</a>
+      <a href="/multiplayer/">Multiplayer</a>
+      <a href="/nights-and-levels/">Nights &amp; Endless</a>
+      <a href="/updates/">Updates</a>
+      <a href="/troubleshooting/">Troubleshooting</a>
+      <a href="/review/">Is it worth it?</a>
+      <a href="/demo/">Demo</a>
+      <a href="/player-count/">Player count</a>
+      <a href="/mods/">Mods</a>
+      <a href="/similar-games/">Similar games</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact us</a>
+      <a href="/privacy/">Privacy policy</a>
+    </nav>
+    <p class="fine">Official links:
+      <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> &middot;
+      <a href="https://www.bunmuen.com/" target="_blank" rel="noopener">bunmuen.com</a> &middot;
+      <a href="https://x.com/BunMuenGames" target="_blank" rel="noopener">@BunMuenGames</a>
+    </p>
+    <p class="fine">Shift At Midnight Wiki is an unofficial fan resource. Shift At Midnight is developed by Bun Muen and published by Kwalee; all trademarks and game assets belong to their respective owners. This site is not affiliated with or endorsed by Kwalee or Bun Muen.</p>
+  </div>
+</footer>
+
+<script>
+/* 导航「More」下拉:<details> 本身已可用(无脚本也能开合、键盘可达),
+   这几行只补两个体验细节 —— 点击外部关闭、Esc 关闭。 */
+(function () {
+  var d = document.querySelector('header.site details.more');
+  if (!d) return;
+  document.addEventListener('click', function (e) {
+    if (d.open && !d.contains(e.target)) d.open = false;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); }
+  });
+})();
+</script>
+<!-- 广告位:Adsterra Banner 300x250,只在 ads.js 开关打开时注入 -->
+<script src="/ads.js" defer></script>
+</body>
+</html>

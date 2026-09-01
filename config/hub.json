@@ -1,0 +1,90 @@
+{
+  "base_url": "https://guide-atlas.vercel.app",
+  "brand": "Guide Atlas",
+  "tagline": "Hand-researched game guides, one hub",
+  "contact_email": "zsn2740784715@gmail.com",
+  "adsense_pub": "pub-6575082962774479",
+  "ga4_id": "",
+  "games": [
+    {
+      "slug": "beast-of-reincarnation",
+      "name": "Beast of Reincarnation",
+      "short": "Beast of Reincarnation",
+      "source": "sources/beast",
+      "origin": "https://beastofreincarnation.online",
+      "default_path": "/en",
+      "trust_map": {
+        "/about": "/about",
+        "/contact": "/contact",
+        "/privacy-policy": "/privacy-policy",
+        "/editorial-policy": "/editorial-policy",
+        "/terms": "/terms",
+        "/disclaimer": "/disclaimer"
+      },
+      "exclude_files": ["404.html", "ads.js", "ads.txt", "robots.txt", "sitemap.xml", "llms.txt", "928df6dbe9abdf9e7ab757c119ce475b.txt", "about.html", "contact.html", "privacy-policy.html", "editorial-policy.html", "terms.html", "disclaimer.html"],
+      "exclude_dirs": [],
+      "patches": [
+        {
+          "note": "which-edition-quiz 在原站即为孤儿页(仅自身页脚有入口);从 editions 的 Related 给它一个入链",
+          "file": "en/editions.html",
+          "find": "<li><a href=\"/en/release-date\">Release date &amp; platforms</a></li>",
+          "insert_after": "\n        <li><a href=\"/en/which-edition-quiz\">Which edition should you buy? Take the 60-second quiz</a></li>"
+        }
+      ],
+      "card": {
+        "genre": "Souls-like Action RPG",
+        "studio": "Game Freak / Fictions",
+        "released": "August 4, 2026",
+        "platforms": "PS5 · Xbox Series X|S · PC · Game Pass",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/f55c103953c70b47025b04f0c121b1723d6c1670/ss_f55c103953c70b47025b04f0c121b1723d6c1670.1920x1080.jpg",
+        "img_alt": "Emma and Koo face a colossal Nushi in a Blighted forest — Beast of Reincarnation",
+        "img_credit": "Official screenshot · GAME FREAK inc. / Fictions, Inc. (Steam store page)",
+        "blurb": "Game Freak's first AAA action RPG: a one-person, one-dog souls-like set in Japan, Year 4026. Nushi boss strategies with per-chapter levels and weaknesses, Emma's builds and skill trees, Koo's command system, trophy data and patch tracking — rewritten from the live game after launch.",
+        "highlights": [
+          ["Nushi Boss List", "/beast-of-reincarnation/en/bosses"],
+          ["Builds & Skill Trees", "/beast-of-reincarnation/en/builds"],
+          ["Koo Command Guide", "/beast-of-reincarnation/en/koo-guide"],
+          ["Full Walkthrough", "/beast-of-reincarnation/en/walkthrough"]
+        ],
+        "langs": "EN · 日本語 · FR · DE · IT · ES",
+        "pages": "149 pages"
+      }
+    },
+    {
+      "slug": "shift-at-midnight",
+      "name": "Shift At Midnight",
+      "short": "Shift At Midnight",
+      "source": "sources/shift",
+      "origin": "https://shiftatmidnightwiki.site",
+      "default_path": "/",
+      "trust_map": {
+        "/about/": "/about",
+        "/about": "/about",
+        "/contact/": "/contact",
+        "/contact": "/contact",
+        "/privacy/": "/privacy-policy",
+        "/privacy": "/privacy-policy"
+      },
+      "exclude_files": ["404.html", "ads.js", "ads.txt", "robots.txt", "sitemap.xml", "llms.txt"],
+      "exclude_dirs": ["about", "contact", "privacy"],
+      "card": {
+        "genre": "Co-op Survival Horror",
+        "studio": "Bun Muen / Kwalee",
+        "released": "July 22, 2026",
+        "platforms": "PC · Xbox Series X|S · Game Pass",
+        "img": "/shift-at-midnight/hero.jpg",
+        "img_alt": "The diner at night — Shift At Midnight",
+        "img_credit": "Official artwork · Bun Muen / Kwalee",
+        "blurb": "The graveyard-shift horror sim where your customers might be doppelgangers. Every monster from Marionette to the Dentist with tells and counters, all 10 achievements with rarity data, every ending, night-by-night survival guides and a straight answer on crossplay.",
+        "highlights": [
+          ["Monster Compendium", "/shift-at-midnight/monsters/"],
+          ["All Endings", "/shift-at-midnight/endings/"],
+          ["Achievements & Rarity", "/shift-at-midnight/achievements/"],
+          ["Interactive Tools", "/shift-at-midnight/tools/"]
+        ],
+        "langs": "EN",
+        "pages": "31 pages"
+      }
+    }
+  ]
+}

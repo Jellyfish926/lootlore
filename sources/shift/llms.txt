@@ -1,0 +1,31 @@
+# Shift At Midnight Wiki
+
+> Unofficial fan wiki for Shift At Midnight (Bun Muen / Kwalee, released 22 July 2026),
+> a 1-3 player co-op survival horror game about running a night-shift gas station and
+> identifying non-human customers.
+
+## Editorial policy
+Facts are sourced from the official Steam store listing and public Steam global achievement
+stats. Inference is labelled as inference. Where a requirement is unverified — notably the
+three hidden achievements — we say so rather than guessing. Verification dates appear on
+each page.
+
+## Key verified facts
+- Developer: Bun Muen (solo). Publisher: Kwalee. Released: 2026-07-22.
+- Platforms: Steam (Windows), Xbox Series X|S, Microsoft Store. Xbox Play Anywhere.
+- Xbox Game Pass: day one, console and PC.
+- Crossplay: PARTIAL — Xbox console and PC Game Pass share one pool; Steam is isolated.
+- Players: 1-3 online co-op with proximity chat. Price: $9.99 USD.
+- Achievements: 10 total; 3 hidden (Grave Decision 26.0%, True Ending 13.4%, Empty Home 7.0%).
+- Named threats: Marionette (boss, gated by a wind-up music box), The Dentist (cannot be
+  fought, invisible to the ID scanner), Jack-in-the-Box, Shrieking Doll, Demented,
+  Norbert (harmless, Night 2, fake ID), and doppelgangers as a category.
+- Roadmap: Endless Mode, free, Q4 2026. No mod support announced.
+
+## Pages
+- /crossplay/ : definitive crossplay compatibility table
+- /achievements/ : all 10 achievements with global unlock rates
+- /endings/ : what the hidden ending achievements do and do not support
+- /monsters/ : full bestiary with per-threat counterplay
+- /guides/ : index of all guides
+- /faq/ : direct answers to the most-searched questions

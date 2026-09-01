@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beast of Reincarnation クロスセーブ・Play Anywhere 対応まとめ</title>
+<meta name="description" content="Beast of Reincarnation のセーブデータはプラットフォーム間で共有できる?確定している Xbox/PC 間の Play Anywhere 対応、PS5・Steam 間の現状、クラウドセーブの扱いを整理しました。">
+<link rel="canonical" href="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/cross-save">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beast of Reincarnation クロスセーブ・Play Anywhere 対応まとめ">
+<meta property="og:description" content="セーブデータはプラットフォーム間で共有できる?Xbox/PC 間の Play Anywhere 対応と PS5・Steam 間の現状を整理。">
+<meta property="og:url" content="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/cross-save">
+<meta property="og:image" content="https://guide-atlas.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://guide-atlas.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="alternate" hreflang="en" href="https://guide-atlas.vercel.app/beast-of-reincarnation/en/cross-save">
+<link rel="alternate" hreflang="ja" href="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/cross-save">
+<link rel="alternate" hreflang="fr" href="https://guide-atlas.vercel.app/beast-of-reincarnation/fr/cross-save">
+<link rel="alternate" hreflang="x-default" href="https://guide-atlas.vercel.app/beast-of-reincarnation/en/cross-save">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<style>body{font-family:'Noto Sans JP','Karla',sans-serif}h1,h2,h3{font-family:'Noto Serif JP','Marcellus',serif}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://guide-atlas.vercel.app/beast-of-reincarnation/ja"}, {"@type": "ListItem", "position": 2, "name": "クロスセーブ", "item": "https://guide-atlas.vercel.app/beast-of-reincarnation/ja/cross-save"}]}</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.ga-hublinks{display:flex;gap:12px;flex-wrap:wrap}
+.ga-hublinks a{color:#9aa3b2;text-decoration:none}
+.ga-hublinks a:hover{color:#e6e9ef}
+.ga-hublinks a.on{color:#e6e9ef;font-weight:600}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">◆ Guide Atlas</a><nav class="ga-hublinks"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/#games">All games</a></nav></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/ja">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">攻略</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/ja/bosses">ボス</a>
+      <a href="/beast-of-reincarnation/ja/builds">ビルド</a>
+      <a href="/beast-of-reincarnation/ja/koo-guide">クゥ</a>
+      <a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a>
+      <a href="/beast-of-reincarnation/ja/release-date">発売日</a>
+      <a href="/beast-of-reincarnation/ja/faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/ja">ホーム</a> / クロスセーブ</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">購入前ガイド · クロスセーブ</p>
+      <h1>Beast of Reincarnation のセーブデータは機種間で共有できる?</h1>
+      <p class="lede">確定しているのは <strong>Xbox Series X|S ⇄ Windows PC 間の Play Anywhere 対応</strong>(セーブデータ・実績を共有)。それ以外の組み合わせは現時点で公式発表がありません。機種選びの前に知っておきたい現状を整理します。</p>
+      <p class="updated">公式発表・ストア掲載情報に基づく・発売後に実機検証で更新予定</p>
+    </section>
+
+    <article>
+      <h2>組み合わせ別の対応状況</h2>
+      <table>
+        <tr><th>組み合わせ</th><th>セーブ共有</th><th>備考</th></tr>
+        <tr><td><strong>Xbox ⇄ PC(Microsoft ストア / Game Pass)</strong></td><td><strong>対応</strong></td><td>Play Anywhere 対応タイトル。1 回の購入(または Game Pass 加入)で両方遊べて、セーブデータと実績が自動同期</td></tr>
+        <tr><td>PS5 ⇄ PC</td><td>発表なし</td><td>公式からのアナウンスは現時点でありません</td></tr>
+        <tr><td>Steam ⇄ Xbox / PS5</td><td>発表なし</td><td>ストア間のセーブ移行は未発表。前例的にも期待薄</td></tr>
+        <tr><td>同一機種内のクラウドセーブ</td><td>各社の標準機能に準拠</td><td>PS Plus のセーブお預かり、Xbox のクラウドセーブ、Steam Cloud の対応可否は発売時にストア表記を確認して追記します</td></tr>
+      </table>
+
+      <h2>機種選びへの実践的な影響</h2>
+      <ul>
+        <li><strong>据置とノート PC の両方で遊びたい</strong> → 現状の最適解は Xbox / Microsoft ストア版(または Game Pass)。Play Anywhere により追加費用なしで行き来できます。詳しくは <a href="/beast-of-reincarnation/ja/game-pass">Game Pass 対応まとめ</a>へ。</li>
+        <li><strong>Steam 版を選ぶ場合</strong> → 他機種への持ち出しは想定しない方が安全です。PC 環境の要件は<a href="/beast-of-reincarnation/ja/pc-requirements">必要スペックまとめ</a>を確認してください。</li>
+        <li><strong>PS5 版を選ぶ場合</strong> → セーブは PS5 内(+PS Plus クラウド)で完結する前提で考えるのが現状は無難です。</li>
+      </ul>
+
+      <h2>クロスプレイとの違い</h2>
+      <p>クロスセーブは「自分のセーブデータを別の機種に持っていけるか」、クロスプレイは「別の機種の他人と一緒に遊べるか」です。本作は一人と一匹の旅を描くシングルプレイ主体のアクション RPG で、オンライン協力・対戦の有無については<a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ対応まとめ</a>で別途整理しています。</p>
+
+      <div class="callout"><p><strong>発売後に検証・更新予定:</strong>各ストアのクラウドセーブ対応、Play Anywhere の同期挙動、PS5→PC 移行手段の有無を発売後に実機で確認し、このページに追記します。</p></div>
+
+      <h2>関連ガイド</h2>
+      <ul>
+        <li><a href="/beast-of-reincarnation/ja/game-pass">Game Pass 対応・初日から遊ぶ方法</a></li>
+        <li><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ・協力プレイ対応まとめ</a></li>
+        <li><a href="/beast-of-reincarnation/ja/pc-requirements">PC 動作環境(必要スペック)</a></li>
+        <li><a href="/beast-of-reincarnation/ja/release-date">発売日・対応機種まとめ</a></li>
+      </ul>
+      <p class="updated">最終更新: 2026年7月13日</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/preorder-bonuses">予約特典</a><a href="/beast-of-reincarnation/ja/game-pass">Game Pass</a><a href="/beast-of-reincarnation/ja/cross-save">クロスセーブ</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/release-time">解放時刻</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
+  </div>
+</footer>
+</body>
+</html>

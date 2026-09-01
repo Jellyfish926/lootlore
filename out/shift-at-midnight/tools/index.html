@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shift At Midnight Tools — Crossplay, Achievements, Threat Lookup</title>
+<meta name="description" content="Three free Shift At Midnight tools on one page: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.">
+<link rel="canonical" href="https://guide-atlas.vercel.app/shift-at-midnight/tools/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shift At Midnight Wiki">
+<meta property="og:title" content="Shift At Midnight Tools — Crossplay, Achievements, Threat Lookup">
+<meta property="og:description" content="Three free Shift At Midnight tools on one page: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.">
+<meta property="og:url" content="https://guide-atlas.vercel.app/shift-at-midnight/tools/">
+<meta property="og:image" content="https://guide-atlas.vercel.app/shift-at-midnight/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shift At Midnight Tools">
+<meta name="twitter:description" content="Three free Shift At Midnight tools on one page: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.">
+<meta name="twitter:image" content="https://guide-atlas.vercel.app/shift-at-midnight/og-image.jpg">
+<link rel="icon" href="/shift-at-midnight/favicon.ico?v=0966810b" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/shift-at-midnight/favicon-32.png?v=0966810b" type="image/png" sizes="32x32">
+<link rel="icon" href="/shift-at-midnight/favicon-192.png?v=0966810b" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/shift-at-midnight/apple-touch-icon.png?v=0966810b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/shift-at-midnight/style.css?v=fff51108">
+<!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://guide-atlas.vercel.app/shift-at-midnight/" },
+    { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://guide-atlas.vercel.app/shift-at-midnight/tools/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Shift At Midnight tools",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Crossplay compatibility checker", "url": "https://guide-atlas.vercel.app/shift-at-midnight/tools/crossplay-checker/" },
+    { "@type": "ListItem", "position": 2, "name": "Achievement tracker", "url": "https://guide-atlas.vercel.app/shift-at-midnight/tools/achievement-tracker/" },
+    { "@type": "ListItem", "position": 3, "name": "Threat lookup", "url": "https://guide-atlas.vercel.app/shift-at-midnight/tools/threat-lookup/" }
+  ]
+}
+</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.ga-hublinks{display:flex;gap:12px;flex-wrap:wrap}
+.ga-hublinks a{color:#9aa3b2;text-decoration:none}
+.ga-hublinks a:hover{color:#e6e9ef}
+.ga-hublinks a.on{color:#e6e9ef;font-weight:600}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">◆ Guide Atlas</a><nav class="ga-hublinks"><a href="/beast-of-reincarnation/en">Beast of Reincarnation</a><a href="/shift-at-midnight/" class="on">Shift At Midnight</a><a href="/#games">All games</a></nav></div></div>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/shift-at-midnight/">Shift At Midnight Wiki</a>
+    <nav class="site">
+      <a href="/shift-at-midnight/monsters/">Monsters</a>
+      <a href="/shift-at-midnight/achievements/">Achievements</a>
+      <a href="/shift-at-midnight/endings/">Endings</a>
+      <a href="/shift-at-midnight/crossplay/">Crossplay</a>
+      <a href="/shift-at-midnight/guides/">Guides</a>
+      <a href="/shift-at-midnight/tools/" aria-current="page">Tools</a>
+      <a href="/shift-at-midnight/faq/">FAQ</a>
+      <details class="more">
+        <summary><span class="lbl-d">More</span><span class="lbl-m">Menu</span></summary>
+        <div class="more-menu">
+        <a class="m-only" href="/shift-at-midnight/monsters/">Monsters</a>
+        <a class="m-only" href="/shift-at-midnight/achievements/">Achievements</a>
+        <a class="m-only" href="/shift-at-midnight/endings/">Endings</a>
+        <a class="m-only" href="/shift-at-midnight/crossplay/">Crossplay</a>
+        <a class="m-only" href="/shift-at-midnight/guides/">Guides</a>
+        <a class="m-only" href="/shift-at-midnight/tools/" aria-current="page">Tools</a>
+        <a class="m-only" href="/shift-at-midnight/faq/">FAQ</a>
+        <span class="menu-sep" aria-hidden="true"></span>
+        <a href="/shift-at-midnight/release-date/">Release date</a>
+        <a href="/shift-at-midnight/platforms/">Platforms</a>
+        <a href="/shift-at-midnight/system-requirements/">System requirements</a>
+        <a href="/shift-at-midnight/multiplayer/">Multiplayer</a>
+        <a href="/shift-at-midnight/nights-and-levels/">Nights &amp; Endless</a>
+        <a href="/shift-at-midnight/updates/">Updates</a>
+        <a href="/shift-at-midnight/troubleshooting/">Troubleshooting</a>
+        <a href="/shift-at-midnight/review/">Is it worth it?</a>
+        <a href="/shift-at-midnight/demo/">Demo</a>
+        <a href="/shift-at-midnight/player-count/">Player count</a>
+        <a href="/shift-at-midnight/mods/">Mods</a>
+        <a href="/shift-at-midnight/similar-games/">Similar games</a>
+        </div>
+      </details>
+    </nav>
+    <a class="steam-cta" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/shift-at-midnight/">Home</a><span>/</span>Tools
+  </nav>
+
+  <h1>Shift At Midnight tools</h1>
+  <p class="lede">Three things this wiki can answer faster than a text page can. <strong>All of them run in your browser</strong> &mdash; nothing is uploaded, nothing needs an account.</p>
+
+  <p class="updated">Last verified 5 August 2026 &middot; game version: 29 July 2026 patch</p>
+
+
+  <div class="term tip">
+    <div class="term-h">What these are built from</div>
+    <p>Every tool here is driven by the same verified data as the written pages &mdash; the compatibility
+      matrix from <a href="/shift-at-midnight/crossplay/">crossplay</a>, the global unlock rates from
+      <a href="/shift-at-midnight/achievements/">achievements</a>, and the counterplay table from
+      <a href="/shift-at-midnight/monsters/">monsters</a>. <strong>No tool here invents data.</strong> Where a requirement
+      is unverified &mdash; notably the three hidden achievements &mdash; the tool says so instead of guessing.</p>
+  </div>
+
+  <h2>The tools</h2>
+  <div class="grid two">
+    <a class="card" href="/shift-at-midnight/tools/#crossplay-checker"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get a yes/no and the cheapest fix if the answer is no.</span></a>
+    <a class="card" href="/shift-at-midnight/tools/#achievement-tracker"><b>Achievement tracker</b><span>Tick off all 10. Saves in your browser, and tells you which one is statistically your easiest next.</span></a>
+    <a class="card" href="/shift-at-midnight/tools/#threat-lookup"><b>Threat lookup</b><span>Search by what you actually saw &mdash; &ldquo;music box&rdquo;, &ldquo;screaming&rdquo;, &ldquo;fake ID&rdquo; &mdash; not by a name you do not know yet.</span></a>
+  </div>
+
+  <h2>Why not a tier list or a server status page</h2>
+  <p>Other wikis for this game run tier lists, live player counts and Steam Deck verdicts. We do not,
+    because none of those can be produced honestly right now: the game has one difficulty curve and no
+    competitive mode, so a &ldquo;tier list&rdquo; would be invented; and a live status widget would be
+    reporting a number we cannot verify. When there is something real to measure, we will build it.</p>
+
+  <section class="merged" id="crossplay-checker">
+  <h2>Crossplay checker</h2>
+
+  <div class="tool">
+    <div class="row">
+      <div class="field">
+        <label for="p1">Player 1 bought it on</label>
+        <select id="p1">
+        <option value="steam" data-pool="steam">Steam (Windows)</option>
+        <option value="xbox" data-pool="xbox">Xbox Series X|S</option>
+        <option value="gamepass" data-pool="xbox">PC Game Pass</option>
+        <option value="msstore" data-pool="xbox">Microsoft Store (bought)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="p2">Player 2 bought it on</label>
+        <select id="p2">
+        <option value="steam" data-pool="steam">Steam (Windows)</option>
+        <option value="xbox" data-pool="xbox">Xbox Series X|S</option>
+        <option value="gamepass" data-pool="xbox">PC Game Pass</option>
+        <option value="msstore" data-pool="xbox">Microsoft Store (bought)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="p3">Player 3 (optional)</label>
+        <select id="p3">
+          <option value="">&mdash; only two of us &mdash;</option>
+        <option value="steam" data-pool="steam">Steam (Windows)</option>
+        <option value="xbox" data-pool="xbox">Xbox Series X|S</option>
+        <option value="gamepass" data-pool="xbox">PC Game Pass</option>
+        <option value="msstore" data-pool="xbox">Microsoft Store (bought)</option>
+        </select>
+      </div>
+    </div>
+    <div class="tool-out" id="out" role="status" aria-live="polite">
+      <b>Pick a store for each player</b>
+      <p>The answer updates as you choose.</p>
+    </div>
+    <noscript>
+      <p class="noscript-note">This checker needs JavaScript. The same answer in one sentence:
+        <strong>Steam players can only play with other Steam players.</strong> Xbox console, PC Game Pass
+        and Microsoft Store copies all share one pool and can play with each other. Full table on the
+        <a href="/shift-at-midnight/crossplay/">crossplay page</a>.</p>
+    </noscript>
+  </div>
+
+  <h3>The rule behind the answer</h3>
+  <p>There are two matchmaking pools, not four. <strong>Steam is one pool by itself.</strong> Xbox Series X|S,
+    PC Game Pass and a bought Microsoft Store copy are the second pool &mdash; they interoperate because of
+    Xbox Play Anywhere. Nothing crosses between the two.</p>
+  <table class="data">
+    <thead><tr><th>Your platform</th><th>Can play with</th><th>Cannot play with</th></tr></thead>
+    <tbody>
+      <tr><td>Steam (Windows)</td><td>Steam only</td><td>Xbox console, PC Game Pass, Microsoft Store</td></tr>
+      <tr><td>Xbox Series X|S</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
+      <tr><td>PC Game Pass</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
+      <tr><td>Microsoft Store (bought)</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
+    </tbody>
+  </table>
+  <p>The developer has said full crossplay and a server browser are planned, but they are
+    <strong>not in the launch build</strong>. Until that ships, the table above is the whole story.
+    Background and sourcing on the <a href="/shift-at-midnight/crossplay/">crossplay page</a>.</p>
+
+  <h3>If the answer is no</h3>
+  <p>The cheapest fix is almost always <strong>PC Game Pass</strong> rather than buying a second copy:
+    it puts a Steam-side player into the Xbox pool for the price of a month's subscription instead of
+    another $9.99. See <a href="/shift-at-midnight/platforms/#game-pass">Game Pass</a> and <a href="/shift-at-midnight/review/#price">price</a>.</p>
+
+  </section>
+
+  <section class="merged" id="achievement-tracker">
+  <h2>Achievement tracker</h2>
+
+  <div class="tool">
+    <div class="bar-track" role="img" aria-label="Completion progress"><div class="bar-fill" id="fill"></div></div>
+    <p class="meta" id="count">0 of 10 &middot; 0%</p>
+
+    <label class="tool-check">
+      <input type="checkbox" data-ach="0" data-pct="96.9">
+      <span class="lbl"><span class="t">First Blood</span>
+        <span class="d">Kill your first customer &middot; 96.9% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="1" data-pct="93.8">
+      <span class="lbl"><span class="t">Still Breathing</span>
+        <span class="d">Survive your first hunt &middot; 93.8% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="2" data-pct="89.8">
+      <span class="lbl"><span class="t">Silenced</span>
+        <span class="d">Kill a Shrieking Doll &middot; 89.8% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="3" data-pct="79.8">
+      <span class="lbl"><span class="t">Freed</span>
+        <span class="d">Kill a Demented &middot; 79.8% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="4" data-pct="45.4">
+      <span class="lbl"><span class="t">Relentless</span>
+        <span class="d">Finish a hunt within 30 seconds &middot; 45.4% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="5" data-pct="41.6">
+      <span class="lbl"><span class="t">Last Performance</span>
+        <span class="d">Kill a Marionette &middot; 41.6% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="6" data-pct="33.1" data-hidden="1">
+      <span class="lbl"><span class="t">Grave Decision</span>
+        <span class="d">Hidden &mdash; no description shown &middot; 33.1% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="7" data-pct="23.5">
+      <span class="lbl"><span class="t">Locked And Loaded</span>
+        <span class="d">Purchase all melee weapons &amp; fill out the weapons arsenal &middot; 23.5% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="8" data-pct="16.0" data-hidden="1">
+      <span class="lbl"><span class="t">True Ending</span>
+        <span class="d">Hidden &mdash; no description shown &middot; 16.0% of players have this</span></span>
+    </label>
+    <label class="tool-check">
+      <input type="checkbox" data-ach="9" data-pct="10.1" data-hidden="1">
+      <span class="lbl"><span class="t">Empty Home</span>
+        <span class="d">Hidden &mdash; no description shown &middot; 10.1% of players have this</span></span>
+    </label>
+
+    <div class="tool-out" id="next" role="status" aria-live="polite">
+      <b>Your easiest next one</b>
+      <p>Tick what you already have and this will name the achievement the largest share of players
+        unlock next.</p>
+    </div>
+    <div class="row" style="margin-top:16px">
+      <button type="button" id="reset" class="ghost">Reset progress</button>
+    </div>
+    <noscript>
+      <p class="noscript-note">Ticking and saving need JavaScript, but the full list with requirements and
+        global unlock rates is on the <a href="/shift-at-midnight/achievements/">achievements page</a> and works without it.</p>
+    </noscript>
+  </div>
+
+  <h3>What the percentages mean</h3>
+  <p>These are Steam global unlock rates &mdash; the share of everyone who owns the game that has the
+    achievement. They are a difficulty proxy, not a guide: <strong>First Blood sits at 96.9%</strong>
+    because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
+  <p>The three hidden achievements &mdash; Grave Decision (33.1%), True Ending (16.0%) and
+    Empty Home (10.1%) &mdash; <strong>do not show their requirements in-game, and we have not verified
+    them.</strong> We list what the rates imply on the <a href="/shift-at-midnight/endings/">endings page</a> rather than
+    publishing a guess as fact.</p>
+
+  </section>
+
+  <section class="merged" id="threat-lookup">
+  <h2>Threat lookup</h2>
+
+  <div class="tool">
+    <div class="field">
+      <label for="q">What did you see or hear?</label>
+      <input type="search" id="q" placeholder="music box, screaming, fake ID, drill&hellip;"
+             autocomplete="off" spellcheck="false">
+    </div>
+    <p class="meta" id="hits" role="status" aria-live="polite">Showing all 7 threats</p>
+  </div>
+
+  <div id="results">
+    <article class="threat" data-keys="entities, entity, entities, spider, hunt, hunter, creature, basic, common" data-kind="killable">
+      <h4><a href="/shift-at-midnight/guide/survival/">Entities</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: Still Breathing (93.8%)</p>
+      <p>The baseline threat, and the one you summon yourself &mdash; letting a doppelganger check out brings it back that night in its real form. Barricades, traps and weapons all work.</p>
+    </article>
+    <article class="threat" data-keys="marionette, music box, melody, puppet, strings, boss, song, tune, dancing, shift 9" data-kind="boss">
+      <h4><a href="/shift-at-midnight/monsters/marionette/">Marionette</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: Last Performance (41.6%)</p>
+      <p>Killable, and tougher than an Entity. The music box decides it: hold E to rewind before the melody plays three times, or it summons the Marionette. The 23 July patch cut its health.</p>
+    </article>
+    <article class="threat" data-keys="the dentist, dentist, drill, teeth, mask, cannot kill, unkillable, chase, final, shift 13" data-kind="unkillable">
+      <h4><a href="/shift-at-midnight/monsters/the-dentist/">The Dentist</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: &mdash;</p>
+      <p>Run. Nothing else works &mdash; it is immune to weapons and traps alike. Head for Sheriff Clyde and do not stop. Shift 13 only.</p>
+    </article>
+    <article class="threat" data-keys="shrieking doll, doll, scream, shriek, screaming, porcelain, loud, noise, crawler, small" data-kind="killable">
+      <h4><a href="/shift-at-midnight/monsters/shrieking-doll/">Shrieking Doll</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: Silenced (89.8%)</p>
+      <p>Fragile &mdash; a few shots do it. The real cost is the noise, which is what pulls everything else onto you. Turns up during hunts, usually alongside Entities.</p>
+    </article>
+    <article class="threat" data-keys="demented, demented, stare, look, freeze, weeping angel, trap, deformed, twisted" data-kind="trap">
+      <h4><a href="/shift-at-midnight/monsters/demented/">Demented</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: Freed (79.8%)</p>
+      <p>It freezes while you look at it &mdash; and it cannot be damaged while you look at it either. The confirmed solution is to break line of sight in a direction that walks it into a trap.</p>
+    </article>
+    <article class="threat" data-keys="rakes, rake, rakes, forest, endless, red glow, customer, scream, new enemy, post story" data-kind="killable">
+      <h4><a href="/shift-at-midnight/monsters/">Rakes</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: &mdash;</p>
+      <p>Endless and post-story modes only, added on 29 July 2026. They come out of the forest and go for your customers rather than for you. Intercept before one reaches the store.</p>
+    </article>
+    <article class="threat" data-keys="jack-in-the-box, jack in the box, crank, wind, toy, clown, spring, music, box, rewind" data-kind="object">
+      <h4><a href="/shift-at-midnight/monsters/jack-in-the-box/">Jack-in-the-Box</a></h4>
+      <p class="meta">Hostile: No &middot; Achievement: &mdash;</p>
+      <p>Not an enemy &mdash; an object. It is the music box that decides the Marionette encounter. Hold E to rewind it before the melody plays three times. The 23 July patch made it louder.</p>
+    </article>
+    <article class="threat" data-keys="norbert, norbert, fake id, gnome, harmless, friendly, scanner, false positive, spare" data-kind="customer">
+      <h4><a href="/shift-at-midnight/monsters/norbert/">Norbert</a></h4>
+      <p class="meta">Hostile: No &middot; Achievement: &mdash;</p>
+      <p>A customer, not a monster &mdash; a gnome whose ID genuinely scans as fake. Let him finish and he leaves for the shift. Shoot him and he keeps coming back in disguises.</p>
+    </article>
+    <article class="threat" data-keys="doppelgangers, doppelganger, copy, imposter, twin, duplicate, same customer, id, scanner, lookalike" data-kind="identify">
+      <h4><a href="/shift-at-midnight/guide/doppelgangers/">Doppelgangers</a></h4>
+      <p class="meta">Hostile: Yes &middot; Achievement: First Blood (96.9%)</p>
+      <p>Identification, not combat. They copy a real customer's appearance, voice and story &mdash; the scanner tells you a document is fake, not that the person is hostile.</p>
+    </article>
+  </div>
+
+  <noscript>
+    <p class="noscript-note">Filtering needs JavaScript &mdash; but every threat is listed above in full,
+      and each links to its own page. The same table is on the <a href="/shift-at-midnight/monsters/">monsters page</a>.</p>
+  </noscript>
+
+  <h3>The two mistakes that kill people</h3>
+  <div class="term warn">
+    <div class="term-h">Attacking the Dentist</div>
+    <p>It is the only threat in the game that cannot be fought. If you try, you die. Running is not a
+      fallback here &mdash; it is the entire counterplay. See <a href="/shift-at-midnight/monsters/the-dentist/">the Dentist</a>.</p>
+  </div>
+  <div class="term warn">
+    <div class="term-h">Killing Norbert</div>
+    <p>Norbert scans as a fake ID on Night 2 and is <strong>completely harmless</strong>. The scanner tells
+      you a document is fake &mdash; not that the customer is hostile. See <a href="/shift-at-midnight/monsters/norbert/">Norbert</a>.</p>
+  </div>
+
+  </section>
+
+
+  <aside class="store" aria-label="Where to get the game">
+    <h2>Get Shift At Midnight</h2>
+    <p class="store-note">Links go to the official store and developer pages. We take no cut &mdash;
+      this site earns from ads, not from sales.</p>
+    <div class="store-row">
+      <a class="store-btn primary" href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Play on Steam</a>
+      <a class="store-btn" href="https://store.steampowered.com/app/4050060/Shift_At_Midnight_Multiplayer_Demo/" target="_blank" rel="noopener">Free multiplayer demo</a>
+      <a class="store-btn" href="https://www.bunmuen.com/" target="_blank" rel="noopener">Official site</a>
+    </div>
+  </aside>
+
+  <aside class="ad-banner" hidden aria-label="Advertisement"></aside>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="bar">
+    <nav>
+      <a href="/shift-at-midnight/monsters/">Monsters</a>
+      <a href="/shift-at-midnight/achievements/">Achievements</a>
+      <a href="/shift-at-midnight/endings/">Endings</a>
+      <a href="/shift-at-midnight/crossplay/">Crossplay</a>
+      <a href="/shift-at-midnight/guides/">Guides</a>
+      <a href="/shift-at-midnight/tools/">Tools</a>
+      <a href="/shift-at-midnight/faq/">FAQ</a>
+      <a href="/shift-at-midnight/release-date/">Release date</a>
+      <a href="/shift-at-midnight/platforms/">Platforms</a>
+      <a href="/shift-at-midnight/system-requirements/">System requirements</a>
+      <a href="/shift-at-midnight/multiplayer/">Multiplayer</a>
+      <a href="/shift-at-midnight/nights-and-levels/">Nights &amp; Endless</a>
+      <a href="/shift-at-midnight/updates/">Updates</a>
+      <a href="/shift-at-midnight/troubleshooting/">Troubleshooting</a>
+      <a href="/shift-at-midnight/review/">Is it worth it?</a>
+      <a href="/shift-at-midnight/demo/">Demo</a>
+      <a href="/shift-at-midnight/player-count/">Player count</a>
+      <a href="/shift-at-midnight/mods/">Mods</a>
+      <a href="/shift-at-midnight/similar-games/">Similar games</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact us</a>
+      <a href="/privacy-policy">Privacy policy</a>
+    </nav>
+    <p class="fine">Official links:
+      <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> &middot;
+      <a href="https://www.bunmuen.com/" target="_blank" rel="noopener">bunmuen.com</a> &middot;
+      <a href="https://x.com/BunMuenGames" target="_blank" rel="noopener">@BunMuenGames</a>
+    </p>
+    <p class="fine">Shift At Midnight Wiki is an unofficial fan resource. Shift At Midnight is developed by Bun Muen and published by Kwalee; all trademarks and game assets belong to their respective owners. This site is not affiliated with or endorsed by Kwalee or Bun Muen.</p>
+  </div>
+</footer>
+
+<script>
+/* 导航「More」下拉:<details> 本身已可用(无脚本也能开合、键盘可达),
+   这几行只补两个体验细节 —— 点击外部关闭、Esc 关闭。 */
+(function () {
+  var d = document.querySelector('header.site details.more');
+  if (!d) return;
+  document.addEventListener('click', function (e) {
+    if (d.open && !d.contains(e.target)) d.open = false;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); }
+  });
+})();
+</script>
+<!-- 广告位:Adsterra Banner 300x250,只在 ads.js 开关打开时注入 -->
+<script>
+(function () {
+  "use strict";
+  var sel = [document.getElementById("p1"), document.getElementById("p2"), document.getElementById("p3")];
+  var out = document.getElementById("out");
+  if (!out || !sel[0]) return;
+
+  function poolOf(s) {
+    if (!s || !s.value) return null;
+    return s.options[s.selectedIndex].getAttribute("data-pool");
+  }
+  function nameOf(s) { return s.options[s.selectedIndex].text; }
+
+  function render() {
+    var picked = sel.filter(function (s) { return s && s.value; });
+    if (picked.length < 2) {
+      out.className = "tool-out";
+      out.innerHTML = "<b>Pick a store for each player</b><p>The answer updates as you choose.</p>";
+      return;
+    }
+    var pools = picked.map(poolOf);
+    var same = pools.every(function (p) { return p === pools[0]; });
+    if (same) {
+      out.className = "tool-out ok";
+      out.innerHTML = "<b>Yes \u2014 you can play together</b><p>All " + picked.length +
+        " of you are in the same matchmaking pool, so you can join each other directly.</p>";
+      return;
+    }
+    var steamers = picked.filter(function (s) { return poolOf(s) === "steam"; });
+    var others = picked.filter(function (s) { return poolOf(s) === "xbox"; });
+    var few = steamers.length <= others.length ? steamers : others;
+    var fewIsSteam = few === steamers;
+    var who = few.map(function (s) { return nameOf(s); }).join(" and ");
+    var fix = fewIsSteam
+      ? "The cheapest fix is for the Steam side (" + who + ") to get <strong>PC Game Pass</strong> \u2014 " +
+        "a month's subscription rather than a second $9.99 copy. That moves them into the Xbox pool."
+      : "The cheapest fix is for the Game Pass / Xbox side (" + who + ") to also own it on " +
+        "<strong>Steam</strong>, since a Game Pass copy cannot reach the Steam pool at all.";
+    out.className = "tool-out bad";
+    out.innerHTML = "<b>No \u2014 not in the launch build</b>" +
+      "<p>Steam is its own matchmaking pool. Xbox console, PC Game Pass and Microsoft Store copies share " +
+      "a second pool. Nothing crosses between them.</p><p>" + fix + "</p>";
+  }
+
+  sel.forEach(function (s) { if (s) s.addEventListener("change", render); });
+  render();
+})();
+
+
+(function () {
+  "use strict";
+  var KEY = "sam-ach-v1";
+  var boxes = [].slice.call(document.querySelectorAll('input[data-ach]'));
+  var fill = document.getElementById("fill");
+  var count = document.getElementById("count");
+  var next = document.getElementById("next");
+  var reset = document.getElementById("reset");
+  if (!boxes.length || !fill) return;
+
+  function load() {
+    var raw = null;
+    try { raw = localStorage.getItem(KEY); } catch (e) { return; }
+    if (!raw) return;
+    var done = raw.split(",");
+    boxes.forEach(function (b) {
+      if (done.indexOf(b.getAttribute("data-ach")) > -1) b.checked = true;
+    });
+  }
+  function save() {
+    var done = boxes.filter(function (b) { return b.checked; })
+                    .map(function (b) { return b.getAttribute("data-ach"); });
+    try { localStorage.setItem(KEY, done.join(",")); } catch (e) {}
+  }
+  function render() {
+    var got = boxes.filter(function (b) { return b.checked; });
+    var pct = Math.round(got.length / boxes.length * 100);
+    fill.style.width = pct + "%";
+    count.textContent = got.length + " of " + boxes.length + " \u00b7 " + pct + "%";
+
+    var left = boxes.filter(function (b) { return !b.checked; });
+    if (!left.length) {
+      next.className = "tool-out ok";
+      next.innerHTML = "<b>All 10 \u2014 done</b><p>Including the three hidden ones. " +
+        "That puts you past the 10.1% of players who have Empty Home.</p>";
+      return;
+    }
+    left.sort(function (a, b) {
+      return parseFloat(b.getAttribute("data-pct")) - parseFloat(a.getAttribute("data-pct"));
+    });
+    var top = left[0];
+    var label = top.parentNode.querySelector(".t").textContent;
+    var pctOf = top.getAttribute("data-pct");
+    var hidden = top.getAttribute("data-hidden") === "1";
+    var note = hidden
+      ? "<p>This one is hidden \u2014 the game does not show its requirement, and we have not verified it. " +
+        "What the unlock rate implies is on the <a href='/endings/'>endings page</a>.</p>"
+      : "<p>" + pctOf + "% of all players have it, which makes it the most-unlocked achievement you are " +
+        "still missing.</p>";
+    next.className = "tool-out warn";
+    next.innerHTML = "<b>" + label + "</b>" + note;
+  }
+
+  boxes.forEach(function (b) {
+    b.addEventListener("change", function () { save(); render(); });
+  });
+  if (reset) reset.addEventListener("click", function () {
+    boxes.forEach(function (b) { b.checked = false; });
+    save(); render();
+  });
+  load(); render();
+})();
+
+
+(function () {
+  "use strict";
+  var q = document.getElementById("q");
+  var hits = document.getElementById("hits");
+  var cards = [].slice.call(document.querySelectorAll(".threat"));
+  if (!q || !cards.length) return;
+
+  function run() {
+    var term = q.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (c) {
+      var hay = c.getAttribute("data-keys") + " " + c.textContent.toLowerCase();
+      var ok = !term || hay.indexOf(term) > -1;
+      c.hidden = !ok;
+      if (ok) shown++;
+    });
+    if (!term) {
+      hits.textContent = "Showing all " + cards.length + " threats";
+    } else if (shown === 0) {
+      hits.textContent = "Nothing matches \u201c" + q.value.trim() +
+        "\u201d \u2014 try what you saw or heard, like \u201cmusic box\u201d or \u201cfake ID\u201d.";
+    } else {
+      hits.textContent = shown + (shown === 1 ? " match" : " matches");
+    }
+  }
+  q.addEventListener("input", run);
+  run();
+})();
+</script>
+</body>
+</html>

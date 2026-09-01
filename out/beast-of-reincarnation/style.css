@@ -1,0 +1,148 @@
+/* Beast of Reincarnation Guide — blighted sumi-e */
+:root{
+  --ink:#0d0f0c;
+  --ink-2:#151812;
+  --ink-3:#1d211a;
+  --bone:#e8e2d3;
+  --bone-dim:#b7b1a2;
+  --bone-faint:#8a857a;
+  --crimson:#e04a2f;
+  --crimson-deep:#a32c18;
+  --moss:#6f7d5c;
+  --line:rgba(232,226,211,.14);
+  --maxw:1060px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--bone);
+  font-family:'Karla',sans-serif;
+  font-size:17px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(60% 40% at 85% -5%, rgba(224,74,47,.07), transparent 60%),
+    radial-gradient(50% 35% at 10% 110%, rgba(111,125,92,.06), transparent 60%);
+}
+main,header,footer{position:relative;z-index:1}
+h1,h2,h3,.brand{font-family:'Marcellus',serif;font-weight:400;letter-spacing:.015em}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.12;color:var(--bone)}
+h2{font-size:clamp(1.45rem,3vw,2rem);margin:3.2rem 0 1rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+h3{font-size:1.2rem;margin:1.9rem 0 .55rem;color:var(--bone)}
+p{margin:0 0 1.05rem;color:var(--bone-dim)}
+strong{color:var(--bone)}
+a{color:var(--crimson);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+ul,ol{margin:0 0 1.2rem 1.25rem;color:var(--bone-dim)}
+li{margin-bottom:.45rem}
+li::marker{color:var(--crimson)}
+
+/* header */
+.site-header{border-bottom:1px solid var(--line);background:rgba(13,15,12,.85);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50}
+.nav{max-width:var(--maxw);margin:0 auto;padding:.85rem 1.25rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.brand{font-size:1.05rem;color:var(--bone);letter-spacing:.06em}
+.brand .tick{color:var(--crimson)}
+.nav-links{display:flex;gap:1.1rem;flex-wrap:wrap;margin-left:auto;font-size:.86rem;letter-spacing:.04em;text-transform:uppercase}
+.nav-links a{color:var(--bone-dim)}
+.nav-links a:hover,.nav-links a.active{color:var(--crimson);text-decoration:none}
+.lang-switch{position:relative;margin-left:1.1rem;font-size:.8rem;letter-spacing:.04em}
+.lang-switch summary{list-style:none;cursor:pointer;color:var(--bone-dim);padding:.25rem .65rem;border:1px solid var(--line);border-radius:2px;display:flex;align-items:center;gap:.4rem;user-select:none;white-space:nowrap}
+.lang-switch summary::-webkit-details-marker{display:none}
+.lang-switch summary::marker{content:""}
+.lang-switch summary:hover{color:var(--bone);border-color:var(--crimson-deep)}
+.lang-switch .lang-caret{font-size:.55rem;color:var(--bone-faint);transition:transform .15s ease}
+.lang-switch[open] .lang-caret{transform:rotate(180deg)}
+.lang-switch[open] summary{color:var(--crimson);border-color:var(--crimson-deep)}
+.lang-switch .lang-menu{position:absolute;right:0;top:calc(100% + 6px);min-width:9rem;background:var(--ink-2);border:1px solid var(--line);border-radius:2px;padding:.3rem 0;z-index:60;box-shadow:0 10px 28px rgba(0,0,0,.55)}
+.lang-switch .lang-menu a{display:block;padding:.45rem .95rem;color:var(--bone-dim)}
+.lang-switch .lang-menu a:hover{color:var(--bone);background:var(--ink-3);text-decoration:none}
+.lang-switch .lang-menu a.active{color:var(--crimson)}
+
+/* layout */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+.hero{padding:5rem 0 3rem;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero .kicker{color:var(--crimson);font-size:.82rem;letter-spacing:.28em;text-transform:uppercase;margin-bottom:1.1rem}
+.hero p.lede{font-size:1.12rem;max-width:46rem;margin-top:1.2rem}
+.hero .stamp{
+  position:absolute;right:-1rem;top:1.5rem;font-family:'Marcellus',serif;
+  font-size:clamp(6rem,16vw,11rem);line-height:1;color:transparent;
+  -webkit-text-stroke:1px rgba(224,74,47,.18);user-select:none;pointer-events:none
+}
+article{padding:1.4rem 0 4rem;max-width:46rem}
+.updated{font-size:.8rem;color:var(--bone-faint);letter-spacing:.06em;text-transform:uppercase;margin:1rem 0 0}
+
+/* components */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:2.2rem 0}
+.card{
+  border:1px solid var(--line);background:var(--ink-2);padding:1.4rem 1.3rem;
+  display:block;color:var(--bone);transition:border-color .25s,transform .25s
+}
+.card:hover{border-color:var(--crimson-deep);transform:translateY(-2px);text-decoration:none}
+.card h3{margin:0 0 .4rem;font-size:1.15rem}
+.card p{font-size:.92rem;margin:0;color:var(--bone-dim)}
+.card .tag{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);margin-bottom:.7rem}
+.callout{border-left:2px solid var(--crimson);background:var(--ink-2);padding:1rem 1.2rem;margin:1.4rem 0;font-size:.95rem}
+.callout p{margin:0;color:var(--bone-dim)}
+table{width:100%;border-collapse:collapse;margin:1.4rem 0;font-size:.93rem}
+th,td{border:1px solid var(--line);padding:.6rem .75rem;text-align:left;vertical-align:top}
+th{background:var(--ink-3);font-family:'Marcellus',serif;font-weight:400;letter-spacing:.05em;color:var(--bone)}
+td{color:var(--bone-dim)}
+.count{display:flex;gap:1.6rem;margin:1.8rem 0 .4rem;flex-wrap:wrap}
+.count div{text-align:center}
+.count b{display:block;font-family:'Marcellus',serif;font-size:2.4rem;color:var(--crimson);font-weight:400}
+.count span{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-faint)}
+.crumbs{font-size:.8rem;color:var(--bone-faint);padding-top:2rem}
+.crumbs a{color:var(--bone-faint)}
+
+/* footer */
+.site-footer{border-top:1px solid var(--line);margin-top:2rem;background:var(--ink-2)}
+.site-footer .wrap{padding:2.2rem 1.25rem;font-size:.83rem;color:var(--bone-faint)}
+.site-footer nav{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.site-footer a{color:var(--bone-dim)}
+@media(max-width:640px){
+  .hero{padding:3.2rem 0 2.2rem}
+  .nav-links{gap:.8rem;font-size:.78rem}
+}
+
+/* ── 广告位 ──────────────────────────────────────────────
+   与上方内容至少隔 160px:seo-ads 要求广告与可点按钮间距 ≥150px,防误触。
+   预留 min-height 防 CLS —— 广告加载前后页面不该跳动。 */
+.ad-banner { display: block; margin: 160px 0 0; text-align: center; min-height: 250px; }
+.ad-banner[hidden] { display: none; }
+.ad-banner::before {
+  content: "Advertisement"; display: block; margin-bottom: 8px;
+  font-size: 11px; letter-spacing: .8px; text-transform: uppercase; opacity: .55;
+}
+.ad-banner iframe, .ad-banner img { max-width: 100% !important; height: auto; }
+
+/* ── 广告位:Adsterra Native Banner ────────────────────────
+   与上方内容至少隔 160px:seo-ads 要求广告与可点按钮间距 ≥150px,防误触。
+   预留 min-height 防 CLS —— 广告加载前后页面不该跳动。
+   Native Banner 是自适应部件,高度不固定,这里给一个保守下限。 */
+.ad-native { display: block; margin: 160px 0 0; min-height: 180px; }
+.ad-native[hidden] { display: none; }
+.ad-native::before {
+  content: "Advertisement"; display: block; margin-bottom: 8px;
+  font-size: 11px; letter-spacing: .8px; text-transform: uppercase; opacity: .55;
+}
+.ad-native img { max-width: 100% !important; height: auto; }
+
+/* Official screenshots (added 2026-08-31) */
+figure.shot{margin:2.2rem 0;padding:0}
+figure.shot img{width:100%;height:auto;display:block;border:1px solid rgba(200,178,140,.25)}
+figure.shot figcaption{font-size:.78rem;color:var(--bone-faint);margin-top:.5rem;letter-spacing:.02em}
+
+
+/* On-this-page TOC + video embed (added 2026-08-31) */
+nav.toc{border:1px solid rgba(200,178,140,.25);padding:1.1rem 1.4rem;margin:1.8rem 0;font-size:.92rem}
+nav.toc p{margin:0 0 .5rem;letter-spacing:.08em;text-transform:uppercase;font-size:.75rem;color:var(--bone-faint)}
+nav.toc ul{margin:0;padding-left:1.1rem;columns:2;column-gap:2rem}
+nav.toc li{margin:.2rem 0;-webkit-column-break-inside:avoid}
+@media(max-width:640px){nav.toc ul{columns:1}}
+figure.video{margin:2.2rem 0}
+figure.video .video-embed{position:relative;width:100%;padding-top:56.25%}
+figure.video iframe{position:absolute;inset:0;width:100%;height:100%;border:1px solid rgba(200,178,140,.25)}
+figure.video figcaption{font-size:.78rem;color:var(--bone-faint);margin-top:.5rem}

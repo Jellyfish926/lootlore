@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beast of Reincarnation 性能・フレームレート（PS5/Xbox/Steam Deck）</title>
+<meta name="description" content="Beast of Reincarnation のPS5・Xbox Series X|S・Steam Deck の性能・フレームレート情報。Handheld Optimized 対応など確定情報と検証ポイントを整理。実測テストは発売後に掲載します。">
+<link rel="canonical" href="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/performance">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beast of Reincarnation 性能・フレームレート（PS5/Xbox/Steam Deck）">
+<meta property="og:description" content="Beast of Reincarnation のPS5・Xbox Series X|S・Steam Deck の性能・フレームレート情報。Handheld Optimized 対応など確定情報と検証ポイントを整理。実測テストは発売後に掲載します。">
+<meta property="og:url" content="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/performance">
+<meta property="og:image" content="https://guide-atlas.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://guide-atlas.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<style>body{font-family:'Noto Sans JP','Karla',sans-serif}h1,h2,h3{font-family:'Noto Serif JP','Marcellus',serif}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://guide-atlas.vercel.app/beast-of-reincarnation/en/performance">
+<link rel="alternate" hreflang="ja" href="https://guide-atlas.vercel.app/beast-of-reincarnation/ja/performance">
+<link rel="alternate" hreflang="fr" href="https://guide-atlas.vercel.app/beast-of-reincarnation/fr/performance">
+<link rel="alternate" hreflang="es" href="https://guide-atlas.vercel.app/beast-of-reincarnation/es/performance">
+<link rel="alternate" hreflang="it" href="https://guide-atlas.vercel.app/beast-of-reincarnation/it/performance">
+<link rel="alternate" hreflang="de" href="https://guide-atlas.vercel.app/beast-of-reincarnation/de/performance">
+<link rel="alternate" hreflang="x-default" href="https://guide-atlas.vercel.app/beast-of-reincarnation/en/performance">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://guide-atlas.vercel.app/beast-of-reincarnation/ja"}, {"@type": "ListItem", "position": 2, "name": "性能", "item": "https://guide-atlas.vercel.app/beast-of-reincarnation/ja/performance"}]}</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.ga-hublinks{display:flex;gap:12px;flex-wrap:wrap}
+.ga-hublinks a{color:#9aa3b2;text-decoration:none}
+.ga-hublinks a:hover{color:#e6e9ef}
+.ga-hublinks a.on{color:#e6e9ef;font-weight:600}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">◆ Guide Atlas</a><nav class="ga-hublinks"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/#games">All games</a></nav></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/ja">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">攻略</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/ja/bosses">ボス</a>
+      <a href="/beast-of-reincarnation/ja/builds">ビルド</a>
+      <a href="/beast-of-reincarnation/ja/koo-guide">クゥ</a>
+      <a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a>
+      <a href="/beast-of-reincarnation/ja/release-date">発売日</a>
+      <a href="/beast-of-reincarnation/ja/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/performance">English</a>
+      <a href="/beast-of-reincarnation/ja/performance" class="active">日本語</a>
+      <a href="/beast-of-reincarnation/fr/performance">Français</a>
+      <a href="/beast-of-reincarnation/es/performance">Español</a>
+      <a href="/beast-of-reincarnation/it/performance">Italiano</a>
+      <a href="/beast-of-reincarnation/de/performance">Deutsch</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/ja">ホーム</a> / 性能</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">パフォーマンス</p>
+      <h1>Beast of Reincarnation 性能・フレームレート（PS5/Xbox/Steam Deck）</h1>
+      <p class="lede">フレームレート、グラフィックモード、そして Steam Deck での動作感。発売初日に全プラットフォームを検証します。まずは、要求スペックの高いUE5製アクションRPGとして、現時点の確定情報とチェックすべきポイントを整理しました。</p>
+      <p class="updated">フレームレート検証は発売日(2026年8月4日)以降に実機検証で掲載予定</p>
+    </section>
+    <article>
+      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#sec-0">確定している対応プラットフォーム</a></li><li><a href="#sec-1">本作でフレームレートが特に重要な理由</a></li><li><a href="#unreal-engine-5">Unreal Engine 5 採用が意味すること</a></li><li><a href="#sec-3">グラフィックモード:発表済みと未発表の線引き</a></li><li><a href="#steam-deck">Steam Deck・携帯機での見通し</a></li><li><a href="#sec-5">性能重視ならどの機種を選ぶべきか</a></li><li><a href="#sec-6">発売日にチェックすべき項目</a></li><li><a href="#sec-7">パフォーマンスFAQ</a></li><li><a href="#sec-8">関連ページ</a></li><li><a href="#sec-9">出典</a></li></ul></nav>
+      
+      <div class="callout"><p><strong>先に結論:</strong> フレームレートの目標値とグラフィックモードは、全機種で未発表です。現時点で確定しているのは、対応プラットフォーム、Unreal Engine 5 採用、Game Pass 初日対応、そして携帯機向け最適化(Handheld Optimized)表記の4点。本ページでは公式発表と UE5 製タイトルの一般的な傾向を突き合わせ、発売前の判断材料になる情報を整理しています。</p></div>
+
+      <p>『Beast of Reincarnation』(ビースト オブ リインカネーション)は、ゲームフリークが Unreal Engine 5 で開発し、Fictions, Inc. がパブリッシングする完全新作アクションRPGです。発売日は2026年8月4日、対応機種は PlayStation 5 / Xbox Series X|S / PC(Steam・Microsoft Store)。パリィを軸にした剣戟アクションを掲げる本作にとって、性能は単なる快適さの問題ではありません。1フレームの取りこぼしがそのままパリィの失敗につながりかねないジャンルだからこそ、「どの機種で、どれだけ安定して動くのか」は購入前に最も気になるポイントのはずです。ここでは確定している事実と、押さえておくべき論点を機種別に整理します。</p>
+
+      <h2 id="sec-0">確定している対応プラットフォーム</h2>
+      <table>
+        <tr><th>プラットフォーム</th><th>確定している内容</th><th>補足</th></tr>
+        <tr><td>PlayStation 5</td><td>ネイティブ対応。価格は8,980円(税込)</td><td>パフォーマンス/クオリティモードの有無は未発表。PS5 では Game Pass は利用できません。ハピネットから発売されるパッケージ版には、デジタルデラックス版と同内容のDLCコードが永続特典として封入されます。</td></tr>
+        <tr><td>Xbox Series X|S</td><td>ネイティブ対応。Game Pass Ultimate で発売初日からプレイ可能</td><td>Series S の解像度・フレームレート目標は未発表。要求の重い UE5 タイトルでは毎回焦点になる部分です。</td></tr>
+        <tr><td>PC(Steam / Microsoft Store)</td><td>発売日から対応。Xbox Play Anywhere 対応</td><td>Microsoft Store 版は1回の購入で Xbox と PC の両方で遊べ、セーブデータと実績も共有されます。詳細は<a href="/beast-of-reincarnation/ja/pc-requirements">PC必要動作環境</a>へ。</td></tr>
+        <tr><td>携帯機・クラウド</td><td>Xbox の「Handheld Optimized」(携帯機最適化)表記が確定。クラウドプレイにも対応</td><td>携帯機や低消費電力環境を開発段階から意識している有力なシグナルです。一方、Steam Deck の Deck Verified 認定状況は未発表。</td></tr>
+      </table>
+
+      <h2 id="sec-1">本作でフレームレートが特に重要な理由</h2>
+      <p>『Beast of Reincarnation』は、多少の処理落ちなら目をつぶれるオープンワールド探索型のゲームではありません。ファミ通が報じた戦闘システム紹介映像のとおり、戦闘の核はパリィを軸とした剣戟の攻防で、敵の予備動作を読み切って正しい瞬間に弾く緊張感がすべての土台になっています。先行試遊を行った海外メディア GameSpot は「パリィの受付は『SEKIRO』ほど厳しくない」という趣旨の手応えを伝えていますが、タイミング勝負のシステムである以上、フレーム供給が乱れれば操作の正確さは確実に濁ります。</p>
+      <p>具体的なポイントは2つあります。第一に、もし 60fps のパフォーマンスモードが用意されれば、30fps と比べて最悪ケースの入力遅延はおよそ半分になり、体感上のパリィ猶予がそのぶん広がります。第二に、平均フレームレートよりもフレームタイムの安定性が重要です。45〜60fps を行き来するモードより、30fps に完全固定されたモードのほうがパリィの精度を出しやすい、という逆転は普通に起こり得ます。行く手を阻む巨大な腐蝕ボス「ヌシ」との戦いは、エフェクトとパーティクルが画面を埋め尽くす、UE5 タイトルが最も処理落ちしやすい状況の典型です。</p>
+
+      <h2 id="unreal-engine-5">Unreal Engine 5 採用が意味すること</h2>
+      <p>UE5 の採用はゲームフリークが公式に明らかにしており、これは長所と短所のはっきりしたエンジンです。家庭用機では固定ハードに合わせて調整済みのターゲットで出荷されるのが通例で、致命的な問題は起きにくい傾向があります。一方 PC では、プレイ開始直後のシェーダーコンパイルに起因するカクつきと、新エリア読み込み時のトラバーサルスタッターが定番の弱点です。もちろん UE5 でも快適に仕上げてくる作品は少なくなく、本作で必ず発生するとは限りません。なお、Lumen や Nanite といった負荷の大きい UE5 機能を使っているかどうかは未発表です。</p>
+      <p>好材料もあります。本作のディレクターは、映像の忠実度を追うよりゲームプレイ体験の質を優先するという方針を公言しています。この判断を早い段階で下したスタジオは描画ターゲットを保守的に設定する傾向があり、それは Series S での安定動作や携帯機での現実的な設定につながりやすい選択です。Game Informer や GameSpot など先行試遊に参加した海外メディアの論調は「慎重ながら好意的」で、試遊ビルドの段階で性能面の明確な赤信号を報告した主要メディアは見当たりませんでした。ただし試遊は管理された環境のデモ機で行われるものなので、製品版の保証にはならない点は割り引いて読む必要があります。</p>
+
+      <h2 id="sec-3">グラフィックモード:発表済みと未発表の線引き</h2>
+      <p>ゲームフリークも Fictions もフレームレート目標、解像度、グラフィックモードの一覧を、どの機種についても公表していません。憶測を並べる代わりに、発売時点で答え合わせをすべき具体的な論点をまとめておきます。</p>
+      <table>
+        <tr><th>論点</th><th>なぜ重要か</th></tr>
+        <tr><td>PS5 / Series X に 60fps のパフォーマンスモードはあるか</td><td>入力遅延が約半分になり、パリィの体感精度に直結。ソウルライク経験者の大半が選ぶ設定です。</td></tr>
+        <tr><td>Series S は何を削るのか</td><td>解像度か、描画設定か、フレームレートか。UE5 の性能予算が最初に苦しくなるのが Series S です。</td></tr>
+        <tr><td>PC 版はシェーダーを事前コンパイルするか</td><td>最初のボス戦が滑らかに動くか、カクつきに悩まされるかの分かれ目です。</td></tr>
+        <tr><td>VRR / 120Hz 出力に対応するか</td><td>対応ディスプレイなら瞬間的な落ち込みを吸収でき、不安定なパフォーマンスモードの救済策になります。対応の有無自体が未発表です。</td></tr>
+        <tr><td>Steam Deck の現実的な設定はどこか</td><td>携帯機プレイが実用的な選択肢になるか、妥協の産物で終わるかを決めます。</td></tr>
+      </table>
+
+      <h2 id="steam-deck">Steam Deck・携帯機での見通し</h2>
+      <p>携帯機まわりの材料は、UE5 タイトルの平均よりも明るめです。Xbox は『Beast of Reincarnation』を「Handheld Optimized」対応として扱い、クラウド・コンソール・携帯機・PC のすべてでのプレイを想定したラインアップに載せています。一方で、Valve による Deck Verified の認定状況は本稿執筆時点で未発表のため、Steam Deck は「有望だが未証明」という位置づけです。バッテリー持続時間や安定して遊べる設定も、現時点では判断材料がありません。</p>
+      <p>携帯機での動作が最大の関心事なら、8,980円を先に支払うより Game Pass Ultimate で確かめるのが最も安上がりです。発売初日から追加費用なしで遊べるうえ、クラウドストリーミングを使えばローカル機の性能問題をそのまま回避できます。Steam で買う場合も、プレイ2時間未満・購入後14日以内という Valve の標準返金ポリシーが、自分の環境での動作確認のセーフティネットになります。体験版は2026年7月時点で未発表です。</p>
+
+      <h2 id="sec-5">性能重視ならどの機種を選ぶべきか</h2>
+      <p>固定ハードの PS5 と Series X は、どのようなモード構成で出てくるにせよ、調整済みの状態で届く最も予測しやすい選択肢です。PC は<a href="/beast-of-reincarnation/ja/pc-requirements">推奨スペック</a>を上回る GPU があればコンソールの上限を超えられますが、UE5 特有のカクつきリスクを最も抱えやすいのも PC です。迷っている人には Xbox エコシステムに構造的な利点があります。Play Anywhere により、Microsoft Store での1回の購入(または Game Pass Ultimate への加入)で Xbox と PC の両方をカバーでき、セーブと実績が同期するため、実際によく動くほうの環境で遊べばよいからです。PS5 は定額サービスの選択肢こそないものの、国内ではハピネットのパッケージ版にデジタルデラックス版と同内容のDLCコードが封入されるという独自のメリットがあり、電撃オンラインの報道によればキャンバスボードやアクリルスタンドなどの店舗別購入特典も用意されています。VRR や 120Hz 対応は前述のとおり未発表です。</p>
+
+      <h2 id="sec-6">発売日にチェックすべき項目</h2>
+      <ul>
+        <li><strong>フレームレートとモード構成</strong> — PS5・Series X に 60fps モードはあるか。エフェクトが激しいヌシ戦でどこまで維持できるか。</li>
+        <li><strong>Series S の妥協点</strong> — 解像度とフレームレートのトレードオフがどう設定されているか。</li>
+        <li><strong>Steam Deck</strong> — 実用に足る設定、1時間あたりのバッテリー消費、「Handheld Optimized」の看板どおりの滑らかさか。</li>
+        <li><strong>シェーダーコンパイルとトラバーサルスタッター(PC)</strong> — UE5 の二大定番問題が出るかどうか。</li>
+        <li><strong>ロード時間</strong> — 起動、ファストトラベル、そして死亡からリトライまでの時間。ボスに何十回も挑むジャンルでは体験を大きく左右します。</li>
+        <li><strong>入力遅延</strong> — 各モードがパリィの操作感にどう影響するか。</li>
+      </ul>
+      <p>これらの実測データは、2026年8月4日の発売後に実機検証のうえ本ページへ追記します。</p>
+
+      <h2 id="sec-7">パフォーマンスFAQ</h2>
+      <h3>Beast of Reincarnationは60fpsで動きますか?</h3>
+      <p>未発表です。どの機種についてもフレームレート目標は公表されていません。ディレクターの「ゲームプレイ優先」という方針は期待材料ですが、保証ではありません。</p>
+      <h3>Steam Deckで遊べますか?</h3>
+      <p>Steam 版のインストールと起動は可能なはずで、Xbox 側では携帯機向けの最適化表記も確認されています。ただし、Valve の Deck Verified 認定と現実的な設定は未発表です。</p>
+      <h3>自分の環境で試せる体験版はありますか?</h3>
+      <p>ありません。2026年7月時点で体験版は未発表です。Game Pass Ultimate(Xbox/PC)か、Steam の返金制度(プレイ2時間未満・購入後14日以内)が現実的な代替手段になります。</p>
+      <h3>クラウドでプレイできますか?</h3>
+      <p>可能です。Game Pass Ultimate のクラウドゲーミング対応が告知されており、描画をすべてサーバー側に任せられます。ただしストリーミング特有の遅延が乗るため、パリィ主体の本作ではネイティブ動作のほうが望ましいのは確かです。</p>
+      <h3>XboxとPCでセーブデータは共有されますか?</h3>
+      <p>共有されます。本作は Xbox Play Anywhere 対応タイトルで、Xbox Series X|S と Microsoft Store 版 PC の間でセーブデータと実績が引き継がれます。</p>
+      <h3>PS5 Pro向けの強化対応はありますか?</h3>
+      <p>未発表です。PS5 Pro 専用の強化モードに関する公式情報は、現時点で出ていません。</p>
+
+      <h2 id="sec-8">関連ページ</h2>
+      <ul>
+        <li><a href="/beast-of-reincarnation/ja/pc-requirements">PC必要動作環境</a></li>
+        <li><a href="/beast-of-reincarnation/ja/release-time">事前ダウンロード・解放時刻</a></li>
+        <li><a href="/beast-of-reincarnation/ja/editions">エディション・予約特典</a></li>
+        <li><a href="/beast-of-reincarnation/ja/faq">FAQ</a></li>
+      </ul>
+
+      <h2 id="sec-9">出典</h2>
+      <ul>
+        <li><a href="https://beast-of-reincarnation.happinet-games.com/news/243/" rel="nofollow noopener" target="_blank">【公式】Beast of Reincarnation(ハピネット)— PS5パッケージ版 発売決定のお知らせ</a> — 発売日・価格・封入DLCの一次情報</li>
+        <li><a href="https://www.famitsu.com/article/202607/81454" rel="nofollow noopener" target="_blank">ファミ通.com — 戦闘システム紹介映像を公開</a> — パリィを軸とした剣戟アクションの詳細</li>
+        <li><a href="https://www.4gamer.net/games/918/G091815/20260123003/" rel="nofollow noopener" target="_blank">4Gamer — 最新映像を公開(メイキング&amp;ゲームプレイ)</a> — 世界観・戦闘・開発の全貌</li>
+        <li><a href="https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/" rel="nofollow noopener" target="_blank">Steam ストアページ</a> — 対応プラットフォーム・エンジン・発売日</li>
+      </ul>
+      <p class="updated">最終更新: 2026年7月23日</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/release-time">解放時刻</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
+  </div>
+</footer>
+</body>
+</html>

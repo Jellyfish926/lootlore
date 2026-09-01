@@ -1,5 +1,5 @@
 {
-  "base_url": "https://lootlore.vercel.app",
+  "base_url": "https://lootlore-ten.vercel.app",
   "brand": "Lootlore",
   "tagline": "Hand-researched game guides, one hub",
   "contact_email": "zsn2740784715@gmail.com",
@@ -21,7 +21,21 @@
         "/terms": "/terms",
         "/disclaimer": "/disclaimer"
       },
-      "exclude_files": ["404.html", "ads.js", "ads.txt", "robots.txt", "sitemap.xml", "llms.txt", "928df6dbe9abdf9e7ab757c119ce475b.txt", "about.html", "contact.html", "privacy-policy.html", "editorial-policy.html", "terms.html", "disclaimer.html"],
+      "exclude_files": [
+        "404.html",
+        "ads.js",
+        "ads.txt",
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt",
+        "928df6dbe9abdf9e7ab757c119ce475b.txt",
+        "about.html",
+        "contact.html",
+        "privacy-policy.html",
+        "editorial-policy.html",
+        "terms.html",
+        "disclaimer.html"
+      ],
       "exclude_dirs": [],
       "patches": [
         {
@@ -41,10 +55,22 @@
         "img_credit": "Official screenshot · GAME FREAK inc. / Fictions, Inc. (Steam store page)",
         "blurb": "Game Freak's first AAA action RPG: a one-person, one-dog souls-like set in Japan, Year 4026. Nushi boss strategies with per-chapter levels and weaknesses, Emma's builds and skill trees, Koo's command system, trophy data and patch tracking — rewritten from the live game after launch.",
         "highlights": [
-          ["Nushi Boss List", "/beast-of-reincarnation/en/bosses"],
-          ["Builds & Skill Trees", "/beast-of-reincarnation/en/builds"],
-          ["Koo Command Guide", "/beast-of-reincarnation/en/koo-guide"],
-          ["Full Walkthrough", "/beast-of-reincarnation/en/walkthrough"]
+          [
+            "Nushi Boss List",
+            "/beast-of-reincarnation/en/bosses"
+          ],
+          [
+            "Builds & Skill Trees",
+            "/beast-of-reincarnation/en/builds"
+          ],
+          [
+            "Koo Command Guide",
+            "/beast-of-reincarnation/en/koo-guide"
+          ],
+          [
+            "Full Walkthrough",
+            "/beast-of-reincarnation/en/walkthrough"
+          ]
         ],
         "langs": "EN · 日本語 · FR · DE · IT · ES",
         "pages": "149 pages"
@@ -65,8 +91,19 @@
         "/privacy/": "/privacy-policy",
         "/privacy": "/privacy-policy"
       },
-      "exclude_files": ["404.html", "ads.js", "ads.txt", "robots.txt", "sitemap.xml", "llms.txt"],
-      "exclude_dirs": ["about", "contact", "privacy"],
+      "exclude_files": [
+        "404.html",
+        "ads.js",
+        "ads.txt",
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt"
+      ],
+      "exclude_dirs": [
+        "about",
+        "contact",
+        "privacy"
+      ],
       "card": {
         "genre": "Co-op Survival Horror",
         "studio": "Bun Muen / Kwalee",
@@ -77,10 +114,22 @@
         "img_credit": "Official artwork · Bun Muen / Kwalee",
         "blurb": "The graveyard-shift horror sim where your customers might be doppelgangers. Every monster from Marionette to the Dentist with tells and counters, all 10 achievements with rarity data, every ending, night-by-night survival guides and a straight answer on crossplay.",
         "highlights": [
-          ["Monster Compendium", "/shift-at-midnight/monsters/"],
-          ["All Endings", "/shift-at-midnight/endings/"],
-          ["Achievements & Rarity", "/shift-at-midnight/achievements/"],
-          ["Interactive Tools", "/shift-at-midnight/tools/"]
+          [
+            "Monster Compendium",
+            "/shift-at-midnight/monsters/"
+          ],
+          [
+            "All Endings",
+            "/shift-at-midnight/endings/"
+          ],
+          [
+            "Achievements & Rarity",
+            "/shift-at-midnight/achievements/"
+          ],
+          [
+            "Interactive Tools",
+            "/shift-at-midnight/tools/"
+          ]
         ],
         "langs": "EN",
         "pages": "31 pages"

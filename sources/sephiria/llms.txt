@@ -1,0 +1,25 @@
+# Sephiria Wiki
+
+> Independent fan reference for Sephiria (TEAM HORAY, released 2026-07-31).
+> Every guide lists the sources it was verified against. Anything not confirmed is
+> marked "still to verify" rather than guessed.
+
+## Game facts
+- Name: Sephiria
+- Developer / Publisher: TEAM HORAY / TEAM HORAY
+- Release date: 2026-07-31
+- Platforms: Windows, macOS
+- Genres: Action, Adventure, Indie, RPG
+- Official store: https://store.steampowered.com/app/2436940/
+
+## Sections
+- https://sephiriawiki.site/guides/ — Beginner route, co-op, Hard Mode and PC setup.
+- https://sephiriawiki.site/weapons/ — All six weapon classes and how their upgrades branch.
+- https://sephiriawiki.site/artifacts/ — The inventory grid, Tablets, and why placement matters.
+- https://sephiriawiki.site/bosses/ — The six chapters and what waits at the end of each.
+
+## Editorial policy
+This site does not publish item values, boss mechanics, or names it has not verified.
+Pages with unverified areas say so explicitly in a "still to verify" section.
+
+Contact: hello@sephiriawiki.site

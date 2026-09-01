@@ -1,0 +1,15 @@
+User-Agent: *
+Allow: /
+
+User-Agent: GPTBot
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Claude-Web
+User-Agent: Google-Extended
+User-Agent: Bingbot
+Allow: /
+
+Host: sephiriawiki.site
+Sitemap: https://sephiriawiki.site/sitemap.xml

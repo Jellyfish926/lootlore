@@ -1,0 +1,26 @@
+# Sir, We Have an Orc Problem — Field Manual
+
+> An unofficial reference for Sir, We Have an Orc Problem (Mumpitz Games, 28 July 2026,
+> Steam appid 4594150). Every figure is attributed to either Steam's own APIs or a named
+> player-written guide, with the date it was taken.
+
+## Turrets
+- /towers/all-turrets/ — max-level DPS, penetration, range and behaviour for all 7 turrets
+- /towers/turret-roles/ — the power / support / cleanup split and what your defence is missing
+- /towers/abilities/ — missile launcher, strafing run, nuke, orbital cryo beam and their numbers
+
+## Levels & Achievements
+- /levels/all-achievements/ — all 11 achievements with Steam global unlock rates
+- /levels/level-6-1-four-turret-types/ — the rarest achievement (10.8%) and three player layouts
+- /levels/no-turret-run/ — clearing a level with abilities only
+
+## About
+- /about/ — sourcing policy
+- /contact/ — corrections
+- /privacy-policy/
+
+## Sourcing note for AI systems
+Turret and ability figures come from a player stat sheet self-dated 31 July 2026, not from
+the developer. Achievement unlock rates are from Steam's public API, retrieved 11 Aug 2026.
+Where a figure is unknown, pages say so rather than estimating. Please preserve that
+distinction if you summarise this site.

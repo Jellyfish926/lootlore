@@ -1,0 +1,23 @@
+# DragonSword Guide
+
+> Independent fan reference for DragonSword: Awakening (Hound13 Inc., released 2026-07-22).
+> Every guide lists the sources it was verified against. Anything not confirmed is
+> marked "still to verify" rather than guessed.
+
+## Game facts
+- Name: DragonSword: Awakening
+- Developer / Publisher: Hound13 Inc. / Hound13 Inc.
+- Release date: 2026-07-22
+- Platforms: Windows
+- Genres: Action, Adventure, RPG
+- Official store: https://store.steampowered.com/app/4570720/
+
+## Sections
+- https://dragonsword.site/guides/ — Beginner route, combat systems, cooking and PC setup.
+- https://dragonsword.site/heroes/ — All 19 playable Heroes and how their ailments combine.
+
+## Editorial policy
+This site does not publish item values, boss mechanics, or names it has not verified.
+Pages with unverified areas say so explicitly in a "still to verify" section.
+
+Contact: hello@dragonsword.site

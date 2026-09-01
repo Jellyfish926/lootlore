@@ -134,6 +134,225 @@
         "langs": "EN",
         "pages": "31 pages"
       }
+    },
+    {
+      "slug": "dragonsword-awakening",
+      "name": "DragonSword: Awakening",
+      "short": "DragonSword: Awakening",
+      "source": "sources/dragonsword",
+      "origin": "https://dragonsword.site",
+      "default_path": "/",
+      "trust_map": {
+        "/about/": "/about",
+        "/about": "/about",
+        "/contact/": "/contact",
+        "/contact": "/contact",
+        "/privacy-policy/": "/privacy-policy",
+        "/privacy-policy": "/privacy-policy",
+        "/terms/": "/terms",
+        "/terms": "/terms",
+        "/disclaimer/": "/disclaimer",
+        "/disclaimer": "/disclaimer",
+        "/editorial-policy/": "/editorial-policy",
+        "/editorial-policy": "/editorial-policy"
+      },
+      "exclude_files": [
+        "404.html",
+        "ads.txt",
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt",
+        "2a5d0fd4836546e183456d8baaaceb99.txt"
+      ],
+      "exclude_dirs": [
+        "about",
+        "contact",
+        "privacy-policy",
+        "terms",
+        "disclaimer",
+        "editorial-policy",
+        "404"
+      ],
+      "exclude_prefixes": [
+        "_next/static/chunks"
+      ],
+      "exclude_all_txt": true,
+      "card": {
+        "genre": "Open-World Action RPG",
+        "studio": "Hound13 Inc.",
+        "released": "July 22, 2026",
+        "platforms": "PC (Windows)",
+        "img": "/dragonsword-awakening/images/dragonsword-orbis-royal-castle-1200.webp",
+        "img_alt": "The white spires and orange rooftops of the Orbis royal castle in DragonSword: Awakening",
+        "img_credit": "Official screenshot · Hound13 Inc.",
+        "blurb": "An anime-style open-world action RPG set on the Continent of Orbis. How Status Ailment tag-team combat actually works, all 19 Heroes with a tier list, the Cooking and Familiar systems, chapter bosses, gear, runes and Karma — every number from verified sources.",
+        "highlights": [
+          [
+            "Hero Tier List",
+            "/dragonsword-awakening/heroes/tier-list/"
+          ],
+          [
+            "All 19 Heroes",
+            "/dragonsword-awakening/heroes/all-heroes/"
+          ],
+          [
+            "Chapters & Bosses",
+            "/dragonsword-awakening/guides/chapters-and-bosses/"
+          ],
+          [
+            "Beginner Guide",
+            "/dragonsword-awakening/guides/beginner-guide/"
+          ]
+        ],
+        "langs": "EN",
+        "pages": "18 pages"
+      }
+    },
+    {
+      "slug": "sephiria",
+      "name": "Sephiria",
+      "short": "Sephiria",
+      "source": "sources/sephiria",
+      "origin": "https://sephiriawiki.site",
+      "default_path": "/",
+      "trust_map": {
+        "/about/": "/about",
+        "/about": "/about",
+        "/contact/": "/contact",
+        "/contact": "/contact",
+        "/privacy-policy/": "/privacy-policy",
+        "/privacy-policy": "/privacy-policy",
+        "/terms/": "/terms",
+        "/terms": "/terms",
+        "/disclaimer/": "/disclaimer",
+        "/disclaimer": "/disclaimer",
+        "/editorial-policy/": "/editorial-policy",
+        "/editorial-policy": "/editorial-policy"
+      },
+      "exclude_files": [
+        "404.html",
+        "ads.txt",
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt",
+        "782029befec149bcb9a26d00c04582c8.txt"
+      ],
+      "exclude_dirs": [
+        "about",
+        "contact",
+        "privacy-policy",
+        "terms",
+        "disclaimer",
+        "editorial-policy",
+        "404"
+      ],
+      "exclude_prefixes": [
+        "_next/static/chunks"
+      ],
+      "exclude_all_txt": true,
+      "card": {
+        "genre": "Action Roguelite",
+        "studio": "TEAM HORAY",
+        "released": "July 31, 2026",
+        "platforms": "PC (Windows · macOS)",
+        "img": "/sephiria/images/sephiria-hero-cloud-sea-1200.webp",
+        "img_alt": "A bunny overlooking the cloud sea from the tower in Sephiria",
+        "img_credit": "Official screenshot · TEAM HORAY",
+        "blurb": "The top-down action roguelite from the studio behind Dungeon Squad. All 6 weapon classes, the Artifact and Tablet inventory system, build routes, every boss chapter and the final boss's endings, plus patch notes tracked through 1.0.30 — with 4-player co-op covered.",
+        "highlights": [
+          [
+            "All Weapons",
+            "/sephiria/weapons/all-weapons/"
+          ],
+          [
+            "Artifacts & Tablets",
+            "/sephiria/artifacts/artifacts-and-tablets/"
+          ],
+          [
+            "Chapters & Bosses",
+            "/sephiria/bosses/chapters-and-bosses/"
+          ],
+          [
+            "Build Routes",
+            "/sephiria/builds/build-routes/"
+          ]
+        ],
+        "langs": "EN",
+        "pages": "31 pages"
+      }
+    },
+    {
+      "slug": "orc-problem",
+      "name": "Sir, We Have an Orc Problem",
+      "short": "Orc Problem",
+      "source": "sources/orc",
+      "origin": "https://sirwehaveanorcproblem.store",
+      "default_path": "/",
+      "trust_map": {
+        "/about/": "/about",
+        "/about": "/about",
+        "/contact/": "/contact",
+        "/contact": "/contact",
+        "/privacy-policy/": "/privacy-policy",
+        "/privacy-policy": "/privacy-policy",
+        "/terms/": "/terms",
+        "/terms": "/terms",
+        "/disclaimer/": "/disclaimer",
+        "/disclaimer": "/disclaimer",
+        "/editorial-policy/": "/editorial-policy",
+        "/editorial-policy": "/editorial-policy"
+      },
+      "exclude_files": [
+        "404.html",
+        "ads.txt",
+        "robots.txt",
+        "sitemap.xml",
+        "llms.txt",
+        "84ca742ea5494947b5b1fa4a0ef82e50.txt"
+      ],
+      "exclude_dirs": [
+        "about",
+        "contact",
+        "privacy-policy",
+        "terms",
+        "disclaimer",
+        "editorial-policy",
+        "404"
+      ],
+      "exclude_prefixes": [
+        "_next/static/chunks"
+      ],
+      "exclude_all_txt": true,
+      "card": {
+        "genre": "Incremental Tower Defense",
+        "studio": "Mumpitz Games",
+        "released": "July 28, 2026",
+        "platforms": "PC (Windows · Linux · Steam Deck)",
+        "img": "/orc-problem/images/orc-problem-battlefield-strafing-run-1200.webp",
+        "img_alt": "Turrets firing into an orc horde in Sir, We Have an Orc Problem",
+        "img_credit": "Official screenshot · Mumpitz Games",
+        "blurb": "An incremental-style tower defense about holding the line against tens of thousands of orcs. Real turret numbers for every tower, all four abilities, the upgrade grind, level challenges from the 3-2 difficulty spike to damageless runs, and achievements mapped to levels.",
+        "highlights": [
+          [
+            "All Turrets",
+            "/orc-problem/towers/all-turrets/"
+          ],
+          [
+            "Abilities",
+            "/orc-problem/towers/abilities/"
+          ],
+          [
+            "Level Challenges",
+            "/orc-problem/levels/level-3-2-difficulty-spike/"
+          ],
+          [
+            "All Achievements",
+            "/orc-problem/levels/all-achievements/"
+          ]
+        ],
+        "langs": "EN",
+        "pages": "18 pages"
+      }
     }
   ]
 }

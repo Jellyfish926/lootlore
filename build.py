@@ -32,6 +32,11 @@ STRIP_PATTERNS = [
     re.compile(r'<script type="text/javascript">\s*\(function\(c,l,a,r,i,t,y\).*?</script>\s*', re.S),
     # Adsterra 装载器引用(hub 暂不接 Adsterra,接的时候由 hub 统一注入)
     re.compile(r'<script[^>]*src="/ads\.js"[^>]*>\s*</script>\s*'),
+    # Next.js 静态导出的运行时(三个 Next 站):不剥离则 React 水合会用 RSC payload 里的原站路径覆盖已改写的链接
+    re.compile(r'<script src="/_next/static/chunks/[^"]*"[^>]*></script>'),
+    re.compile(r'<script>\(self\.__next_f.*?</script>', re.S),
+    re.compile(r'<script>self\.__next_f\.push.*?</script>', re.S),
+    re.compile(r'<link rel="preload"[^>]*href="/_next/static/chunks/[^"]*"[^>]*/?>\s*'),
     # 对已剥离服务的预连接
     re.compile(r'<link rel="(?:preconnect|dns-prefetch)" href="https://(?:www\.googletagmanager\.com|www\.clarity\.ms)"[^>]*>\s*'),
 ]
@@ -135,8 +140,13 @@ def transform_page(html: str, game: dict) -> str:
 
     html = SRCSET_RE.sub(fix_srcset, html)
 
-    # 注入总站导航条 + 样式 + hub GA
+    # 注入总站导航条 + 样式 + hub GA + AdSense(与其余 hub 页面保持一致)
     inj_head = HUBBAR_CSS + hub_ga_snippet()
+    if "adsbygoogle.js" not in html:
+        inj_head += (
+            f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+            f'?client=ca-{CFG["adsense_pub"]}" crossorigin="anonymous"></script>\n'
+        )
     html = html.replace("</head>", inj_head + "</head>", 1)
     html = re.sub(r"<body([^>]*)>", lambda m: f"<body{m.group(1)}>\n" + hubbar_html(slug), html, count=1)
 
@@ -150,11 +160,16 @@ def migrate_game(game: dict):
     dst = OUT / game["slug"]
     ex_files = set(game["exclude_files"])
     ex_dirs = set(game["exclude_dirs"])
+    ex_prefixes = tuple(game.get("exclude_prefixes", []))
     for p in src.rglob("*"):
         rel = p.relative_to(src)
         if p.is_dir():
             continue
         if rel.parts[0] in ex_dirs or rel.name in ex_files and len(rel.parts) == 1:
+            continue
+        if ex_prefixes and str(rel).startswith(ex_prefixes):
+            continue
+        if game.get("exclude_all_txt") and p.suffix == ".txt":
             continue
         if rel.name in {".DS_Store"}:
             continue

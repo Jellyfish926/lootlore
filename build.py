@@ -56,28 +56,46 @@ def hub_ga_snippet() -> str:
 
 
 def hubbar_html(active_slug: str = "") -> str:
-    links = "".join(
+    cur = next((g for g in CFG["games"] if g["slug"] == active_slug), None)
+    items = "".join(
         f'<a href="{SENT}/{g["slug"]}{g["default_path"].rstrip("/") or "/"}"'
         + (' class="on"' if g["slug"] == active_slug else "")
         + f'>{g["short"]}</a>'
         for g in CFG["games"]
     )
+    cur_html = (
+        f'<span class="ga-hubsep">/</span>'
+        f'<a class="ga-hubcur" href="{SENT}/{cur["slug"]}{cur["default_path"].rstrip("/") or "/"}">{cur["short"]}</a>'
+        if cur else ""
+    )
     return (
         f'<div class="ga-hubbar"><div class="ga-hubbar-in">'
-        f'<a class="ga-hubbrand" href="{SENT}/">◆ {CFG["brand"]}</a>'
-        f'<nav class="ga-hublinks">{links}<a href="{SENT}/#games">All games</a></nav>'
+        f'<a class="ga-hubbrand" href="{SENT}/">&#9670; {CFG["brand"]}</a>'
+        f"{cur_html}"
+        f'<details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary>'
+        f'<nav class="ga-hubpanel">{items}'
+        f'<a class="ga-hubhome" href="{SENT}/#games">Browse all guides &rarr;</a></nav></details>'
         f"</div></div>"
     )
 
 
 HUBBAR_CSS = """<style>
 .ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
-.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em}
-.ga-hublinks{display:flex;gap:12px;flex-wrap:wrap}
-.ga-hublinks a{color:#9aa3b2;text-decoration:none}
-.ga-hublinks a:hover{color:#e6e9ef}
-.ga-hublinks a.on{color:#e6e9ef;font-weight:600}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:10px}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.ga-hubsep{color:#3a4152}
+.ga-hubcur{color:#e6e9ef;text-decoration:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45vw}
+.ga-hubmenu{position:relative;margin-left:auto}
+.ga-hubmenu summary{list-style:none;cursor:pointer;color:#9aa3b2;padding:3px 10px;border:1px solid #2a3040;border-radius:6px;white-space:nowrap;user-select:none}
+.ga-hubmenu summary::-webkit-details-marker{display:none}
+.ga-hubmenu summary:hover{color:#e6e9ef;border-color:#3a4152}
+.ga-hubmenu[open] summary{color:#e6e9ef;border-color:#e8b64c}
+.ga-caret{margin-left:6px;font-size:.8em;color:#6b7386}
+.ga-hubpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:9999;min-width:230px;max-height:70vh;overflow:auto;background:#11141c;border:1px solid #2a3040;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:6px;display:flex;flex-direction:column}
+.ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
+.ga-hubpanel a.on{color:#e8b64c;font-weight:600}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;border-radius:0 0 6px 6px;color:#9aa3b2;font-size:.92em}
 </style>
 """
 
@@ -179,6 +197,8 @@ def render_hub_pages():
         html = html.replace("{{PUB}}", CFG["adsense_pub"]).replace("{{TODAY}}", TODAY)
         html = html.replace("{{GAMES_GRID}}", grid_html)
         html = html.replace("{{GA_SNIPPET}}", hub_ga_snippet())
+        nav_games = "".join(f'<a href="/{g["slug"]}{g["default_path"].rstrip("/") or "/"}">{g["short"]}</a>' for g in CFG["games"])
+        html = html.replace("{{NAV_GAMES}}", nav_games)
         name = page.stem
         if name == "index":
             (OUT / "index.html").write_text(html, encoding="utf-8")
@@ -189,6 +209,8 @@ def render_hub_pages():
             d.mkdir(parents=True, exist_ok=True)
             (d / "index.html").write_text(html, encoding="utf-8")
     shutil.copy2(ROOT / "hub" / "favicon.svg", OUT / "favicon.svg")
+    if (ROOT / "serve_preview.py").exists():
+        shutil.copy2(ROOT / "serve_preview.py", OUT / "serve_preview.py")
 
 
 def gen_root_files():

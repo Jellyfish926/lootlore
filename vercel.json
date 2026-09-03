@@ -7,6 +7,311 @@
       "source": "/beast-of-reincarnation",
       "destination": "/beast-of-reincarnation/en",
       "permanent": false
+    },
+    {
+      "source": "/beast-of-reincarnation/bosses",
+      "destination": "/beast-of-reincarnation/en/bosses",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/builds",
+      "destination": "/beast-of-reincarnation/en/builds",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/koo-guide",
+      "destination": "/beast-of-reincarnation/en/koo-guide",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/beginner-guide",
+      "destination": "/beast-of-reincarnation/en/beginner-guide",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/release-date",
+      "destination": "/beast-of-reincarnation/en/release-date",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/faq",
+      "destination": "/beast-of-reincarnation/en/faq",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/review",
+      "destination": "/beast-of-reincarnation/en/review",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/metacritic",
+      "destination": "/beast-of-reincarnation/en/metacritic",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/how-long-to-beat",
+      "destination": "/beast-of-reincarnation/en/how-long-to-beat",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/walkthrough",
+      "destination": "/beast-of-reincarnation/en/walkthrough",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/all-weapons",
+      "destination": "/beast-of-reincarnation/en/all-weapons",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/all-endings",
+      "destination": "/beast-of-reincarnation/en/all-endings",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/trophies",
+      "destination": "/beast-of-reincarnation/en/trophies",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/pc-requirements",
+      "destination": "/beast-of-reincarnation/en/pc-requirements",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/performance",
+      "destination": "/beast-of-reincarnation/en/performance",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/editions",
+      "destination": "/beast-of-reincarnation/en/editions",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/release-time",
+      "destination": "/beast-of-reincarnation/en/release-time",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/release-time",
+      "destination": "/beast-of-reincarnation/en/release-date",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/:lang(en|de|es|fr|it|ja)/release-time",
+      "destination": "/beast-of-reincarnation/:lang/release-date",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/achievement-tracker",
+      "destination": "/shift-at-midnight/tools/#achievement-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/achievement-tracker/",
+      "destination": "/shift-at-midnight/tools/#achievement-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/achievement-tracker/index.html",
+      "destination": "/shift-at-midnight/tools/#achievement-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/crossplay-checker",
+      "destination": "/shift-at-midnight/tools/#crossplay-checker",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/crossplay-checker/",
+      "destination": "/shift-at-midnight/tools/#crossplay-checker",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/crossplay-checker/index.html",
+      "destination": "/shift-at-midnight/tools/#crossplay-checker",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/store-management",
+      "destination": "/shift-at-midnight/guide/beginners/#store-management",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/store-management/",
+      "destination": "/shift-at-midnight/guide/beginners/#store-management",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/store-management/index.html",
+      "destination": "/shift-at-midnight/guide/beginners/#store-management",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/joes-diner-newsletter",
+      "destination": "/shift-at-midnight/employee-package/#newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/joes-diner-newsletter/",
+      "destination": "/shift-at-midnight/employee-package/#newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/joes-diner-newsletter/index.html",
+      "destination": "/shift-at-midnight/employee-package/#newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/threat-lookup",
+      "destination": "/shift-at-midnight/tools/#threat-lookup",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/threat-lookup/",
+      "destination": "/shift-at-midnight/tools/#threat-lookup",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/tools/threat-lookup/index.html",
+      "destination": "/shift-at-midnight/tools/#threat-lookup",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/endless-mode",
+      "destination": "/shift-at-midnight/nights-and-levels/#endless-mode",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/endless-mode/",
+      "destination": "/shift-at-midnight/nights-and-levels/#endless-mode",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/endless-mode/index.html",
+      "destination": "/shift-at-midnight/nights-and-levels/#endless-mode",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/story-mode",
+      "destination": "/shift-at-midnight/nights-and-levels/#story-mode",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/story-mode/",
+      "destination": "/shift-at-midnight/nights-and-levels/#story-mode",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/story-mode/index.html",
+      "destination": "/shift-at-midnight/nights-and-levels/#story-mode",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/release",
+      "destination": "/shift-at-midnight/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/release/",
+      "destination": "/shift-at-midnight/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/release/index.html",
+      "destination": "/shift-at-midnight/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/weapons",
+      "destination": "/shift-at-midnight/guide/survival/#weapons",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/weapons/",
+      "destination": "/shift-at-midnight/guide/survival/#weapons",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/weapons/index.html",
+      "destination": "/shift-at-midnight/guide/survival/#weapons",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/co-op",
+      "destination": "/shift-at-midnight/multiplayer/#co-op",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/co-op/",
+      "destination": "/shift-at-midnight/multiplayer/#co-op",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/co-op/index.html",
+      "destination": "/shift-at-midnight/multiplayer/#co-op",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/game-pass",
+      "destination": "/shift-at-midnight/platforms/#game-pass",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/game-pass/",
+      "destination": "/shift-at-midnight/platforms/#game-pass",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/game-pass/index.html",
+      "destination": "/shift-at-midnight/platforms/#game-pass",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/discord",
+      "destination": "/shift-at-midnight/multiplayer/#find-players",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/discord/",
+      "destination": "/shift-at-midnight/multiplayer/#find-players",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/discord/index.html",
+      "destination": "/shift-at-midnight/multiplayer/#find-players",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide",
+      "destination": "/shift-at-midnight/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/",
+      "destination": "/shift-at-midnight/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/guide/index.html",
+      "destination": "/shift-at-midnight/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/price",
+      "destination": "/shift-at-midnight/review/#price",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/price/",
+      "destination": "/shift-at-midnight/review/#price",
+      "permanent": true
+    },
+    {
+      "source": "/shift-at-midnight/price/index.html",
+      "destination": "/shift-at-midnight/review/#price",
+      "permanent": true
     }
   ],
   "headers": [

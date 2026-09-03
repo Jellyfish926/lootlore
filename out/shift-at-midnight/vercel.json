@@ -1,0 +1,258 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/tools/achievement-tracker",
+      "destination": "/tools/#achievement-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/achievement-tracker/",
+      "destination": "/tools/#achievement-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/achievement-tracker/index.html",
+      "destination": "/tools/#achievement-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/crossplay-checker",
+      "destination": "/tools/#crossplay-checker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/crossplay-checker/",
+      "destination": "/tools/#crossplay-checker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/crossplay-checker/index.html",
+      "destination": "/tools/#crossplay-checker",
+      "permanent": true
+    },
+    {
+      "source": "/guide/store-management",
+      "destination": "/guide/beginners/#store-management",
+      "permanent": true
+    },
+    {
+      "source": "/guide/store-management/",
+      "destination": "/guide/beginners/#store-management",
+      "permanent": true
+    },
+    {
+      "source": "/guide/store-management/index.html",
+      "destination": "/guide/beginners/#store-management",
+      "permanent": true
+    },
+    {
+      "source": "/joes-diner-newsletter",
+      "destination": "/employee-package/#newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/joes-diner-newsletter/",
+      "destination": "/employee-package/#newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/joes-diner-newsletter/index.html",
+      "destination": "/employee-package/#newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/threat-lookup",
+      "destination": "/tools/#threat-lookup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/threat-lookup/",
+      "destination": "/tools/#threat-lookup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/threat-lookup/index.html",
+      "destination": "/tools/#threat-lookup",
+      "permanent": true
+    },
+    {
+      "source": "/guide/endless-mode",
+      "destination": "/nights-and-levels/#endless-mode",
+      "permanent": true
+    },
+    {
+      "source": "/guide/endless-mode/",
+      "destination": "/nights-and-levels/#endless-mode",
+      "permanent": true
+    },
+    {
+      "source": "/guide/endless-mode/index.html",
+      "destination": "/nights-and-levels/#endless-mode",
+      "permanent": true
+    },
+    {
+      "source": "/guide/story-mode",
+      "destination": "/nights-and-levels/#story-mode",
+      "permanent": true
+    },
+    {
+      "source": "/guide/story-mode/",
+      "destination": "/nights-and-levels/#story-mode",
+      "permanent": true
+    },
+    {
+      "source": "/guide/story-mode/index.html",
+      "destination": "/nights-and-levels/#story-mode",
+      "permanent": true
+    },
+    {
+      "source": "/guide/release",
+      "destination": "/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/release/",
+      "destination": "/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/release/index.html",
+      "destination": "/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/weapons",
+      "destination": "/guide/survival/#weapons",
+      "permanent": true
+    },
+    {
+      "source": "/guide/weapons/",
+      "destination": "/guide/survival/#weapons",
+      "permanent": true
+    },
+    {
+      "source": "/guide/weapons/index.html",
+      "destination": "/guide/survival/#weapons",
+      "permanent": true
+    },
+    {
+      "source": "/guide/co-op",
+      "destination": "/multiplayer/#co-op",
+      "permanent": true
+    },
+    {
+      "source": "/guide/co-op/",
+      "destination": "/multiplayer/#co-op",
+      "permanent": true
+    },
+    {
+      "source": "/guide/co-op/index.html",
+      "destination": "/multiplayer/#co-op",
+      "permanent": true
+    },
+    {
+      "source": "/game-pass",
+      "destination": "/platforms/#game-pass",
+      "permanent": true
+    },
+    {
+      "source": "/game-pass/",
+      "destination": "/platforms/#game-pass",
+      "permanent": true
+    },
+    {
+      "source": "/game-pass/index.html",
+      "destination": "/platforms/#game-pass",
+      "permanent": true
+    },
+    {
+      "source": "/discord",
+      "destination": "/multiplayer/#find-players",
+      "permanent": true
+    },
+    {
+      "source": "/discord/",
+      "destination": "/multiplayer/#find-players",
+      "permanent": true
+    },
+    {
+      "source": "/discord/index.html",
+      "destination": "/multiplayer/#find-players",
+      "permanent": true
+    },
+    {
+      "source": "/guide",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/guide/index.html",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/price",
+      "destination": "/review/#price",
+      "permanent": true
+    },
+    {
+      "source": "/price/",
+      "destination": "/review/#price",
+      "permanent": true
+    },
+    {
+      "source": "/price/index.html",
+      "destination": "/review/#price",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/style.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(og-image.jpg|hero.jpg|hero-800.jpg|favicon.ico|favicon-32.png|favicon-192.png|apple-touch-icon.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    }
+  ]
+}

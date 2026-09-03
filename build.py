@@ -297,8 +297,8 @@ def gen_vercel_json():
         if g["default_path"] not in ("/", ""):
             redirects.append({"source": f"/{slug}", "destination": f"/{slug}{g['default_path']}", "permanent": False})
         src_vj = {
-            "beast-of-reincarnation": ROOT.parent / "beast" / "vercel.json",
-            "shift-at-midnight": ROOT.parent / "shift" / "vercel.json",
+            "beast-of-reincarnation": ROOT / "sources" / "beast" / "vercel.json",
+            "shift-at-midnight": ROOT / "sources" / "shift" / "vercel.json",
         }.get(slug)
         if src_vj and src_vj.exists():
             vj = json.loads(src_vj.read_text())

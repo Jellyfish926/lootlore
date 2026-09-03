@@ -1,0 +1,130 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en",
+      "permanent": false
+    },
+    {
+      "source": "/bosses",
+      "destination": "/en/bosses",
+      "permanent": true
+    },
+    {
+      "source": "/builds",
+      "destination": "/en/builds",
+      "permanent": true
+    },
+    {
+      "source": "/koo-guide",
+      "destination": "/en/koo-guide",
+      "permanent": true
+    },
+    {
+      "source": "/beginner-guide",
+      "destination": "/en/beginner-guide",
+      "permanent": true
+    },
+    {
+      "source": "/release-date",
+      "destination": "/en/release-date",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/en/faq",
+      "permanent": true
+    },
+    {
+      "source": "/review",
+      "destination": "/en/review",
+      "permanent": true
+    },
+    {
+      "source": "/metacritic",
+      "destination": "/en/metacritic",
+      "permanent": true
+    },
+    {
+      "source": "/how-long-to-beat",
+      "destination": "/en/how-long-to-beat",
+      "permanent": true
+    },
+    {
+      "source": "/walkthrough",
+      "destination": "/en/walkthrough",
+      "permanent": true
+    },
+    {
+      "source": "/all-weapons",
+      "destination": "/en/all-weapons",
+      "permanent": true
+    },
+    {
+      "source": "/all-endings",
+      "destination": "/en/all-endings",
+      "permanent": true
+    },
+    {
+      "source": "/trophies",
+      "destination": "/en/trophies",
+      "permanent": true
+    },
+    {
+      "source": "/pc-requirements",
+      "destination": "/en/pc-requirements",
+      "permanent": true
+    },
+    {
+      "source": "/performance",
+      "destination": "/en/performance",
+      "permanent": true
+    },
+    {
+      "source": "/editions",
+      "destination": "/en/editions",
+      "permanent": true
+    },
+    {
+      "source": "/release-time",
+      "destination": "/en/release-time",
+      "permanent": true
+    },
+    {
+      "source": "/release-time",
+      "destination": "/en/release-date",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|de|es|fr|it|ja)/release-time",
+      "destination": "/:lang/release-date",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/style.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ]
+}

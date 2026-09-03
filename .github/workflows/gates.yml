@@ -1,0 +1,28 @@
+name: gates
+# 八道门禁(seo-jianzhan ⑥):红一条不许合。跑在构建产物上,不看源码。
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python3 build.py
+      - name: check_content(H1 / alt / 占位语 / 死链 / 内链≥3 / 语种前缀)
+        run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en
+      - name: check_i18n(小语种残页 / 占位)
+        run: python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja
+      - name: check_sitemap(loc↔文件 / 域名残留 / robots)
+        run: python3 .gates/check_sitemap.py --out out --host lootlore-ten.vercel.app
+      - name: link_check(全站死链)
+        run: python3 .gates/link_check.py --out out
+      - name: freshness(只报告不阻塞)
+        if: always()
+        run: python3 .gates/freshness_audit.py --out out || true

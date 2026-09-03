@@ -1,0 +1,35 @@
+name: freshness-audit
+# 每周一保鲜审计:过期页自动开 issue。只提醒,绝不改内容(seo-yunying 五·三)。
+on:
+  schedule:
+    - cron: "0 1 * * 1"   # 周一 09:00 北京时间
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: 审计线上 sitemap
+        run: python3 .gates/freshness_audit.py --live lootlore-ten.vercel.app > audit.md; cat audit.md
+      - name: 开 / 更新 issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('audit.md', 'utf8');
+            const title = '保鲜审计 ' + new Date().toISOString().slice(0, 10);
+            const has = /\| P0 \||\| P1 \|/.test(body);
+            const { data: open } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'freshness' });
+            for (const i of open) {
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: i.number, state: 'closed' });
+            }
+            if (has) {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body, labels: ['freshness'] });
+            } else {
+              core.info('全部在期内,不开 issue');
+            }

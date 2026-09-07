@@ -871,6 +871,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/trophies"/>
   </url>
   <url>
+    <loc>https://beastofreincarnation.online/en/achievement-tracker</loc>
+    <lastmod>2026-09-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/achievement-tracker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/achievement-tracker"/>
+  </url>
+  <url>
     <loc>https://beastofreincarnation.online/ja/trophies</loc>
     <lastmod>2026-08-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/trophies"/>

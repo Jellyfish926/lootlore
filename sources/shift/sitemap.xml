@@ -10,7 +10,16 @@
     <loc>https://shiftatmidnightwiki.site/achievements/</loc>
   </url>
   <url>
+    <loc>https://shiftatmidnightwiki.site/cheats/</loc>
+  </url>
+  <url>
     <loc>https://shiftatmidnightwiki.site/contact/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/controls/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/credits/</loc>
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/crossplay/</loc>
@@ -40,6 +49,9 @@
     <loc>https://shiftatmidnightwiki.site/guides/</loc>
   </url>
   <url>
+    <loc>https://shiftatmidnightwiki.site/languages/</loc>
+  </url>
+  <url>
     <loc>https://shiftatmidnightwiki.site/mods/</loc>
   </url>
   <url>
@@ -59,6 +71,9 @@
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/monsters/norbert/</loc>
+  </url>
+  <url>
+    <loc>https://shiftatmidnightwiki.site/monsters/rake/</loc>
   </url>
   <url>
     <loc>https://shiftatmidnightwiki.site/monsters/shrieking-doll/</loc>

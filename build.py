@@ -42,6 +42,9 @@ STRIP_PATTERNS = [
 ]
 
 ATTR_RE = re.compile(r'((?:href|src|content|action|poster|data-src)=")(/[^"]*)(")')
+# 单引号属性:子站内联脚本里拼出来的链接(如 tools 页 innerHTML 里的 href='/endings/')
+# 也要加子路径前缀,否则在总站是死链。
+ATTR_SQ_RE = re.compile(r"((?:href|src|content|action|poster|data-src)=')(/[^']*)(')")
 SRCSET_RE = re.compile(r'(srcset=")([^"]*)(")')
 
 
@@ -126,12 +129,14 @@ def transform_page(html: str, game: dict) -> str:
     # 信任页链接 → 总站信任页(打哨兵,防止后面被加子路径前缀)
     for src, dst in sorted(game["trust_map"].items(), key=lambda kv: -len(kv[0])):
         html = html.replace(f'href="{src}"', f'href="{SENT}{dst}"')
+        html = html.replace(f"href='{src}'", f"href='{SENT}{dst}'")
 
     # 其余根相对链接 → 加 /<slug> 前缀
     def prefix(m):
         return f"{m.group(1)}/{slug}{m.group(2)}{m.group(3)}"
 
     html = ATTR_RE.sub(lambda m: m.group(0) if m.group(2).startswith(f"{SENT}") else prefix(m), html)
+    html = ATTR_SQ_RE.sub(lambda m: m.group(0) if m.group(2).startswith(f"{SENT}") else prefix(m), html)
 
     def fix_srcset(m):
         parts = [p.strip() for p in m.group(2).split(",")]

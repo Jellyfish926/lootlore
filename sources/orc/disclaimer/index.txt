@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8b96f1298b3638f0.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-67b6c6c436bc2a63.js"],""]
 2:T8b8,<p>One page, four plain statements about what this site is and is not.</p>
 <h2>Fan-run, not official</h2>
 <p>The Orc Problem Field Manual has no relationship with Mumpitz Games. Nobody here works for them, none of the content is reviewed by them, and no money flows in either direction. <em>Sir, We Have an Orc Problem</em> and all associated names and imagery are their property, referenced here so the pages can talk about the game at all. The place to reach the actual developers is their Steam page and Discord, not our contact form.</p>

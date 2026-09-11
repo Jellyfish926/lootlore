@@ -3,10 +3,10 @@
     "beast": {
       "repo": "Jellyfish926/Beast-of-Reincarnation",
       "product": ".",
-      "sha": "77b0a627e6987594431e6f013cafdc5e476af917",
+      "sha": "f28af03592be38d7a6ec81428760da0e1f28f016",
       "files": 310,
       "html": 295,
-      "synced_at": "2026-09-11T22:49:29Z"
+      "synced_at": "2026-09-11T23:13:27Z"
     },
     "dragonsword": {
       "repo": "Jellyfish926/dragonsword-guide",
@@ -14,15 +14,15 @@
       "sha": "f3e05ad246436838b10df6ca41506911d274ed95",
       "files": 143,
       "html": 46,
-      "synced_at": "2026-09-11T22:49:31Z"
+      "synced_at": "2026-09-11T23:13:27Z"
     },
     "orc": {
       "repo": "Jellyfish926/orc-problem-guide",
       "product": "out",
-      "sha": "804bb04f3584503c5031a486024fa67ec49bf087",
-      "files": 125,
-      "html": 41,
-      "synced_at": "2026-09-11T22:49:31Z"
+      "sha": "13777c1926f6ef1e69c2e1893b2dd947e98b46ef",
+      "files": 133,
+      "html": 45,
+      "synced_at": "2026-09-11T23:13:27Z"
     },
     "sephiria": {
       "repo": "Jellyfish926/sephiria-wiki",
@@ -30,7 +30,7 @@
       "sha": "20200f9e6bebee19410fd6ef032ee356cedb8302",
       "files": 171,
       "html": 59,
-      "synced_at": "2026-09-11T22:49:30Z"
+      "synced_at": "2026-09-11T23:13:27Z"
     },
     "shift": {
       "repo": "Jellyfish926/shift-at-midnight-wiki",
@@ -38,7 +38,7 @@
       "sha": "26c0a28d4ec7471d3506ef468009d7374ec5ed2f",
       "files": 67,
       "html": 52,
-      "synced_at": "2026-09-11T22:49:29Z"
+      "synced_at": "2026-09-11T23:13:27Z"
     }
   }
 }

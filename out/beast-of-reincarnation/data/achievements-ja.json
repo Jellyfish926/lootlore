@@ -1,0 +1,284 @@
+{
+ "appid": "2001760",
+ "source": "https://steamcommunity.com/stats/2001760/achievements/?l=japanese",
+ "captured": "2026-09-11",
+ "total": 46,
+ "mapping": [
+  {
+   "en_name": "Purifier's Mantle",
+   "en_desc": "",
+   "ja_name": "浄化兵",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "First Fire",
+   "en_desc": "Discover your first campsite.",
+   "ja_name": "野営地",
+   "ja_desc": "初めて野営地を発見"
+  },
+  {
+   "en_name": "Blight-Touched",
+   "en_desc": "Enhance an attribute for the first time.",
+   "ja_name": "穢れの成長",
+   "ja_desc": "初めて能力を強化した"
+  },
+  {
+   "en_name": "Man's Best Friend",
+   "en_desc": "",
+   "ja_name": "クゥと一緒",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Knowing Me, Knowing You",
+   "en_desc": "",
+   "ja_name": "カグラと一緒",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Entangled",
+   "en_desc": "",
+   "ja_name": "共鳴",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Rangifer's End",
+   "en_desc": "",
+   "ja_name": "ヌシシカ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Place of Return",
+   "en_desc": "Discover your first shrine.",
+   "ja_name": "魂の廻る場所",
+   "ja_desc": "初めて祠を発見"
+  },
+  {
+   "en_name": "Snack Time",
+   "en_desc": "",
+   "ja_name": "「おいしい」",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Lacerta's End",
+   "en_desc": "",
+   "ja_name": "ヌシオオサンショウウオ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Repose for the Departed",
+   "en_desc": "",
+   "ja_name": "鎮魂のエマ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Closest Companion",
+   "en_desc": "",
+   "ja_name": "ずっと一緒",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Busy Paws",
+   "en_desc": "",
+   "ja_name": "とても器用な前足",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Taurus's End",
+   "en_desc": "",
+   "ja_name": "ヌシウシ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Bestie",
+   "en_desc": "",
+   "ja_name": "願い",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Corvus's End",
+   "en_desc": "",
+   "ja_name": "ヌシカラス",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Green Thumb",
+   "en_desc": "Obtain every type of seedling.",
+   "ja_name": "植物収集家",
+   "ja_desc": "全ての植物の苗を取得した"
+  },
+  {
+   "en_name": "Koo de Grâce",
+   "en_desc": "",
+   "ja_name": "ヌシクゥ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Ursa's End",
+   "en_desc": "",
+   "ja_name": "ヌシクマ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Shidou & Nue",
+   "en_desc": "",
+   "ja_name": "シドウと鵺",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Erymanth's End",
+   "en_desc": "",
+   "ja_name": "ヌシイノシシ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Kunai & Kirin",
+   "en_desc": "",
+   "ja_name": "クナイと麒麟",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Life After the End",
+   "en_desc": "",
+   "ja_name": "この世界で生きていく",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "The End of Reincarnation",
+   "en_desc": "",
+   "ja_name": "輪廻の獣",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "The Sealer",
+   "en_desc": "",
+   "ja_name": "封じ子エマ",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Horror in the Sky",
+   "en_desc": "",
+   "ja_name": "空に浮かぶ言い伝え",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Manual Maniac",
+   "en_desc": "Obtain the manuals for every arrow and bolt type.",
+   "ja_name": "調合書収集家",
+   "ja_desc": "全ての矢・ボルトの調合書を取得した"
+  },
+  {
+   "en_name": "Degeneration​",
+   "en_desc": "",
+   "ja_name": "穢れの退化",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Wandering Duelist",
+   "en_desc": "",
+   "ja_name": "剣豪",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Gourmand",
+   "en_desc": "",
+   "ja_name": "家族の食卓",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "The Ultimate Vessel",
+   "en_desc": "",
+   "ja_name": "究極の器",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "The Perfect Pal",
+   "en_desc": "",
+   "ja_name": "最高の相棒",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Blade Collector",
+   "en_desc": "Obtain every blade.",
+   "ja_name": "刀を集めし者",
+   "ja_desc": "全ての刀を取得した"
+  },
+  {
+   "en_name": "Soul Returned",
+   "en_desc": "",
+   "ja_name": "そして魂は廻る",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Know-It-All",
+   "en_desc": "",
+   "ja_name": "完璧な情報収集",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Munitions Master",
+   "en_desc": "",
+   "ja_name": "射止めぬ物はない",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Giant Tree Budburst",
+   "en_desc": "",
+   "ja_name": "芽吹いた大樹",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Behold, the Truth",
+   "en_desc": "",
+   "ja_name": "真実はここに",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Finders, Keepers",
+   "en_desc": "",
+   "ja_name": "伝承ゴーレム",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Happy Camper",
+   "en_desc": "Discover every campsite.",
+   "ja_name": "全ての休息の地",
+   "ja_desc": "全野営地を発見"
+  },
+  {
+   "en_name": "Giant Tree in Bloom",
+   "en_desc": "",
+   "ja_name": "花開く大樹",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Blade Enthusiast",
+   "en_desc": "",
+   "ja_name": "斬れぬ物はない",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Blademaster",
+   "en_desc": "",
+   "ja_name": "刀を極めし者",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Floral Profusion",
+   "en_desc": "",
+   "ja_name": "百花繚乱",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Reincarnated",
+   "en_desc": "",
+   "ja_name": "輪廻の果て",
+   "ja_desc": ""
+  },
+  {
+   "en_name": "Duty Fulfilled",
+   "en_desc": "Unlock every achievement.",
+   "ja_name": "全ての願いの果て",
+   "ja_desc": "全ての実績を獲得した"
+  }
+ ]
+}

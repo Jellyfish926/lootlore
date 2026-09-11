@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>戦闘ゲージ解説|FP・ダウンゲージ・Entanglementを1ページで</title>
+<meta name="description" content="FP、ダウンゲージ、Entanglement Gaugeを1ページに整理。何が満たし、何が消費し、どのスピリットストーンが補充するのかをまとめました。">
+<link rel="canonical" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/combat-gauges">
+<meta property="og:type" content="article">
+<meta property="og:title" content="戦闘ゲージ解説|FP・ダウンゲージ・Entanglementを1ページで">
+<meta property="og:description" content="3本のバー、1つの動作。パリィがFP・ダウンゲージ・Entanglement Overdriveを同時に満たす仕組み。">
+<meta property="og:url" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/combat-gauges">
+<meta property="og:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<style>body{font-family:'Noto Sans JP','Karla',sans-serif}h1,h2,h3{font-family:'Noto Serif JP','Marcellus',serif}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/combat-gauges">
+<link rel="alternate" hreflang="ja" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/combat-gauges">
+<link rel="alternate" hreflang="de" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/de/combat-gauges">
+<link rel="alternate" hreflang="x-default" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/combat-gauges">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja"}, {"@type": "ListItem", "position": 2, "name": "戦闘ゲージ", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/combat-gauges"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "戦闘ゲージ解説|FP・ダウンゲージ・Entanglementを1ページで", "description": "FP、ダウンゲージ、Entanglement Gaugeを1ページに整理。何が満たし、何が消費し、どのスピリットストーンが補充するのかをまとめました。", "inLanguage": "ja", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/combat-gauges"}, "url": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/combat-gauges", "datePublished": "2026-09-11", "dateModified": "2026-09-11", "author": {"@type": "Person", "name": "Jellyfish", "url": "https://lootlore-ten.vercel.app/beast-of-reincarnation/en/author"}, "publisher": {"@type": "Organization", "name": "Beast of Reincarnation Guide", "url": "https://lootlore-ten.vercel.app/beast-of-reincarnation", "logo": {"@type": "ImageObject", "url": "https://lootlore-ten.vercel.app/beast-of-reincarnation/icon-192.png"}}, "isPartOf": {"@type": "WebSite", "name": "Beast of Reincarnation Guide", "url": "https://lootlore-ten.vercel.app/beast-of-reincarnation"}, "image": "https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png"}</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:10px}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.ga-hubsep{color:#3a4152}
+.ga-hubcur{color:#e6e9ef;text-decoration:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45vw}
+.ga-hubmenu{position:relative;margin-left:auto}
+.ga-hubmenu summary{list-style:none;cursor:pointer;color:#9aa3b2;padding:3px 10px;border:1px solid #2a3040;border-radius:6px;white-space:nowrap;user-select:none}
+.ga-hubmenu summary::-webkit-details-marker{display:none}
+.ga-hubmenu summary:hover{color:#e6e9ef;border-color:#3a4152}
+.ga-hubmenu[open] summary{color:#e6e9ef;border-color:#e8b64c}
+.ga-caret{margin-left:6px;font-size:.8em;color:#6b7386}
+.ga-hubpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:9999;min-width:230px;max-height:70vh;overflow:auto;background:#11141c;border:1px solid #2a3040;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:6px;display:flex;flex-direction:column}
+.ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
+.ga-hubpanel a.on{color:#e8b64c;font-weight:600}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;color:#9aa3b2;font-size:.92em}
+.ga-hubdiv{border-top:1px solid #23262f;margin:4px 0 2px}
+.ga-hubpanel .ga-hubsec{color:#9aa3b2;font-size:.92em;padding:6px 12px}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">&#9670; Lootlore</a><span class="ga-hubsep">/</span><a class="ga-hubcur" href="/beast-of-reincarnation/en">Beast of Reincarnation</a><details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary><nav class="ga-hubpanel"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/dragonsword-awakening/">DragonSword: Awakening</a><a href="/sephiria/">Sephiria</a><a href="/orc-problem/">Orc Problem</a><a class="ga-hubhome" href="/#games">Browse all guides &rarr;</a><span class="ga-hubdiv"></span><a class="ga-hubsec" href="/guides">Guides by category</a><a class="ga-hubsec" href="/reviews">Reviews &amp; verdicts</a><a class="ga-hubsec" href="/updates">Patch tracker</a></nav></details></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/ja">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">攻略</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/ja/bosses">ボス</a>
+      <a href="/beast-of-reincarnation/ja/builds">ビルド</a>
+      <a href="/beast-of-reincarnation/ja/koo-guide">クゥ</a>
+      <a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a>
+      <a href="/beast-of-reincarnation/ja/release-date">発売日</a>
+      <a href="/beast-of-reincarnation/ja/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/combat-gauges">English</a>
+      <a href="/beast-of-reincarnation/ja/combat-gauges" class="active">日本語</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/ja">ホーム</a> / 戦闘ゲージ</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">戦闘 · システム</p>
+      <h1>FP、ダウンゲージ、Entanglement:3つの戦闘ゲージ</h1>
+      <p class="lede">Beast of Reincarnationは同時に3つのメーターを追わせるゲームで、当サイトの記述もそれぞれを別のページで説明しています。1か所にまとめてみると際立つのは、1回のクリーンなパリィが同時に3つの経済すべてに払い込まれるという点です——各バーが何のためにあるか、どのスピリットストーンがどれを養うか、なぜ2つの異なるシステムがどちらも時間を遅くするのか、そしてゲージが丸ごと1つ消える唯一の戦いまでまとめました。</p>
+      <p class="updated">当サイトの発売後ガイドをもとに作成 &middot; 2026年9月11日 更新</p>
+    </section>
+    <article>
+      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#three-bars-one-verb">3本のバー、1つの動作</a></li><li><a href="#florescence-points">FP:犬に属するバー</a></li><li><a href="#the-down-gauge">ダウンゲージ:敵に属するバー</a></li><li><a href="#the-entanglement-gauge">Entanglement Gauge:エマに属するバー</a></li><li><a href="#two-slow-time-systems">混同しやすい2つのスロータイムシステム</a></li><li><a href="#stones-that-feed-the-bars">バーを養うストーン</a></li><li><a href="#the-fight-with-one-bar-missing">バーが1本消える戦い</a></li><li><a href="#spending-order">全編を通して有効な消費の順番</a></li><li><a href="#what-this-page-does-not-claim">このページが断言しないこと</a></li><li><a href="#gauges-faq">ゲージFAQ</a></li><li><a href="#related-guides">関連ページ</a></li><li><a href="#sources-on-this-site">出典(サイト内)</a></li></ul></nav>
+
+      <h2 id="three-bars-one-verb">3本のバー、1つの動作</h2>
+      <p>Beast of Reincarnationは同時に3つのメーターを追わせるゲームで、当サイトの記述もそれぞれを別のページで説明しています:FPは<a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a>、ダウンゲージは<a href="/beast-of-reincarnation/ja/bosses">ボスページ</a>、Entanglement Gaugeは<a href="/beast-of-reincarnation/ja/builds">ビルドガイド</a>。1か所にまとめてみると際立つのは、3つすべてが同じ行動で満たされるという点です。</p>
+      <p>パリィ。クリーンな弾きはFPを満たし、ダウンゲージに貢献し、適切なスピリットストーンがあればEntanglement Gaugeにも払い込まれます。当サイトのビルドガイドはこのデザインについて「守りがそのまま攻めに変わる」と表現しており、3本のバーという視点が付け加えるのは、1回の成功した防御が同時に3つの別々の経済に払い込まれているという点です。だからこそ当サイトのすべてのページは、それぞれ違う角度から同じアドバイスに行き着き、当サイトのクゥ攻略が戦いが崩れたときに下す診断はほぼ常に「ダッシュ回避ではなくパリィをもっとしろ」になります。</p>
+      <table>
+        <thead><tr><th>ゲージ</th><th>誰のものか</th><th>何で満ちるか</th><th>何に使うか</th></tr></thead>
+        <tbody>
+          <tr><td>FP(Florescence Points)</td><td>クゥが引き出す共有プール</td><td>主にエマのパーフェクトブロックとパリィ。攻撃を当てることも貢献</td><td>コマンドメニューから選ぶクゥのBloom Arts</td></tr>
+          <tr><td>ダウンゲージ</td><td>敵のもの。敵1体につき1本</td><td>エマの命中したヒットとクリーンなパリィ、そしてクゥのBloom Arts</td><td>何にも使わない——割るもの。雑魚には処刑、ボスにはスタン</td></tr>
+          <tr><td>Entanglement Gauge</td><td>エマのもの</td><td>ヒットと弾き。一部のパリィ・ダッシュ回避・スピリットストーンのトリガー</td><td>Entanglement Overdrive、スローモーションのバースト</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="florescence-points">FP:犬に属するバー</h2>
+      <p>FPは<strong>Florescence Points</strong>の略で、当サイトの<a href="/beast-of-reincarnation/ja/glossary">用語集</a>はこれをエマのクリーンなパリィから貯まり、クゥがコマンドメニューを通してBloom Artsに使う資源と定義しています。覚えておくべき特性が3つあります。</p>
+      <p><strong>プールは1つだけで、2つではない。</strong>当サイトのクゥ攻略は、管理すべき別個の「犬のマナ」は存在しないと明言しています——あなたのパリィのうまさとクゥの出力は同じ経済です。これは2つの資源管理の悩みを1つに畳み込みます。</p>
+      <p><strong>やり取りをまたいで貯まる。</strong>当サイトのボスページは、そのリズムを「パリィで稼ぎ、貯め、隙で使う」と説明しています——FPはボスの攻勢フェーズをまたいで持ち越せるので、ボスが長い隙を見せた瞬間にまとめて注ぎ込めます。これは回復するスタミナバーではなく、貯金口座です。</p>
+      <p><strong>表記は2通りある。</strong>当サイトの<a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a>は、この略語が出典によってFocus PointsともFlorescence Pointsとも書かれると注記しており、当サイトのビルドガイドも同じ注意書きを引き継いでいます。当サイトはFlorescence Pointsに統一しています。他所で「Focus Points」に出会っても、同じバーのことです。</p>
+      <p>当サイトから分からないのは、何が何を消費するかです。当サイトのクゥ攻略はその理由を直接述べています:FPコストはパッチで変動するチューニング値なので、数字を固定するのではなくゲーム内メニューを見るよう案内しています。当サイトにコストが記載されているBloom Artは一つもありません。</p>
+
+      <h2 id="the-down-gauge">ダウンゲージ:敵に属するバー</h2>
+      <p>ダウンゲージは仲間外れです。あなたのものではないからです。当サイトの用語集はこれを、敵にヒットとクリーンなパリィを重ねると溜まるスタンメーターと定義しています。これを割るとボスは重い制裁に開かれ、下位のMalefactならその場で処刑できます。すべての敵が体力ゲージとあわせてこれを持っています。</p>
+      <p>当サイトのクゥ攻略はそこから導かれる戦術的な結論を出しており、それは当サイトの戦闘関連の記述の中で最も実用的な一文です:<strong>クゥはあなたのスタガー(よろめかせる)エンジン</strong>であり、FPを使う最も価値の高い瞬間は敵のダウンゲージがほぼ満タンになったときです。そのタイミングでBloom Artを撃てば、ゲージブレイクを処刑やボスのスタンに変換できます。クールダウンで撃てば普通のヒット数発に変わるだけです。同じFPでも、見返りはまったく違います。</p>
+      <p>ダウンゲージはまた、あるビルド方向全体を成り立たせるものでもあります。当サイトのビルドガイドはステルス処刑を、アグロを取られる前にダウンゲージに頼って下位の穢れた敵の群れを間引く戦術として説明しています——そしてその限界も正直に指摘しています。封印済みボス戦はそれでも正面からの対決として始まるため、ステルスはボス攻略ではなく探索・雑魚処理のレイヤーです。</p>
+
+      <h2 id="the-entanglement-gauge">Entanglement Gauge:エマに属するバー</h2>
+      <p>3つ目のメーターはエマ自身のもので、明確な数字がついている唯一のバーです。当サイトのビルドガイド・武器解説・ボスページを通して、記録されている事実は一貫しています。</p>
+      <ul>
+        <li><strong>7</strong>セグメント(段階)で構成される。</li>
+        <li>満タンにすると、エマは<strong>Entanglement Overdrive</strong>というスローモーションのバースト窓を発動できる。</li>
+        <li>Overdriveは<strong>5</strong>段階で強化される。</li>
+        <li>攻撃力と防御力を上げるのと同じ属性である<strong>Strength</strong>に投資することで解放される。</li>
+      </ul>
+      <p>最後の点が見落とされがちです。当サイトのビルドガイドはStrengthを攻撃力と防御力を上げる<em>と同時に</em>Overdriveを解放する属性として挙げており、これは二重の役割を果たす唯一の属性ということになります——生存力兼火力のステータスであり、なおかつ奥義への鍵でもあります。当サイトの<a href="/beast-of-reincarnation/ja/all-weapons">武器解説</a>も武器側から同じ結論を導いています。Overdriveを早く使えるようにしたいなら、Strengthは選択肢ではありません。</p>
+      <p>当サイトのボスページはOverdriveを、手強いボスを開くもっとも安全な手段の一つと呼んでおり、これは3つのゲージの中で唯一、クゥがいなくても機能し続けるものです。</p>
+
+      <h2 id="two-slow-time-systems">混同しやすい2つのスロータイムシステム</h2>
+      <p>クゥのコマンドメニューとエマのOverdriveはどちらも時間を遅くし、当サイトのクゥ攻略はこの2つを混同することを序盤のよくあるミスとして名指ししています。両者は無関係です。</p>
+      <table>
+        <thead><tr><th></th><th>クゥのコマンドメニュー</th><th>Entanglement Overdrive</th></tr></thead>
+        <tbody>
+          <tr><td>誰のもの</td><td>クゥのもの</td><td>エマのもの</td></tr>
+          <tr><td>開き方</td><td>PS5では△、いつでも任意に</td><td>Entanglement Gaugeを満タンにして消費</td></tr>
+          <tr><td>コスト</td><td>開くのは無料。選んだアーツにFPがかかる</td><td>ゲージ全部</td></tr>
+          <tr><td>用途</td><td>戦況を読みコマンドを出すための戦術的な窓</td><td>チャージされた攻勢のバースト</td></tr>
+        </tbody>
+      </table>
+      <p>2つのうち、メニューのスローダウンの方がより重要です。無料だからです。当サイトのクゥ攻略のアドバイスは、消費するときだけでなく<em>混乱した</em>ときに開くべきだというものです——第2フェーズへの移行、群れの湧き、見覚えのない振りかぶり、いずれも読めるようになります。繰り返し述べられる重要な注意点が一つあります——メニューは時間を遅くしますが、<strong>止めはしません</strong>。メニューを見ながらでも、エマは実時間で動き、間合いを取り、防御し続ける必要があります。</p>
+
+      <h2 id="stones-that-feed-the-bars">バーを養うストーン</h2>
+      <p>当サイトの<a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン解説</a>の7項目はこれらのバーを補充するために存在し、どのバーを養うかでグループ分けすると、効果リストを頭から読むより速く選べます。</p>
+      <table>
+        <thead><tr><th>ストーン</th><th>トリガー</th><th>回復するもの</th></tr></thead>
+        <tbody>
+          <tr><td>Entangled Parry</td><td>パリィ</td><td>Entanglement Gauge +0.2 とクゥのFP +1の確率発動。5段階で発動率10%〜50%</td></tr>
+          <tr><td>Entangled Dodge</td><td>ダッシュ回避</td><td>同じ数値、同じ10%〜50%のスケール</td></tr>
+          <tr><td>Entangled Assassination</td><td>不意打ちまたはアサシネーションでの撃破</td><td>Entanglement GaugeとクゥのFPの両方</td></tr>
+          <tr><td>Entanglement Increase</td><td>属性弱点を突く</td><td>両方のバー。5段階で3%〜7%スケール</td></tr>
+          <tr><td>Sharpshooter</td><td>遠距離武器で弱点を突く</td><td>クゥに1FP。3段階で回復率20%〜30%</td></tr>
+          <tr><td>Entanglement Stone</td><td>戦闘開始時</td><td>両方のバーが上がった状態で戦闘開始。Lv1〜3で+1/+1〜+3/+3</td></tr>
+          <tr><td>Florescent Recovery</td><td>Bloom Art使用</td><td>ゲージ用ストーンではない——エマとクゥのHPを5秒間毎秒回復</td></tr>
+        </tbody>
+      </table>
+      <p>このストーン一覧から分かることが2つあります。第一に、Entangled Dodgeが存在するということは、ストーンスロットを1つ割けばダッシュ回避が資源的に死んだ選択肢ではなくなるということです——パリィのリズムを維持できないビルドにとって有効な保険です。第二に、弱点トリガーの2つのストーンは弱点のないボス相手では無価値であり、当サイトの<a href="/beast-of-reincarnation/ja/elemental-weaknesses">属性弱点ガイド</a>によれば最終ボスがまさにそう記録されています。ストーンの価値はキャンペーンを通して一定ではありません。</p>
+
+      <h2 id="the-fight-with-one-bar-missing">バーが1本消える戦い</h2>
+      <p>第9章の<a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact</a>は、このページのすべてを試すキャンペーンのストレステストです。3本のバーのうち1本を丸ごと取り除くからです。エマは単独で戦います——クゥなし、Bloom Artsなし、したがってFPを貯める理由もまったくありません。残るのは、当サイト自身の言葉で言えば、刀の圧、ダッシュ回避のタイミング、パリィの規律、そしてエマがクゥとは独立に積み上げるEntanglement Overdriveゲージです。</p>
+      <p>実務的な読み方としては、Overdriveは決して切り離されることのない唯一のゲージなので、それを解放するStrengthへの投資は、このゲーム内でもっとも戦いを選ばずに効くポイントの使い方だということです。当サイトのクゥ攻略は繰り返す価値のある習慣についての警告も加えています——プレッシャー下でコマンドメニューを開く癖があるなら、第9章の最中ではなくその前に直しておいてください。そこには何もありません。</p>
+
+      <h2 id="spending-order">全編を通して有効な消費の順番</h2>
+      <p>3つのページのアドバイスを1つの手順にまとめると次のようになります。</p>
+      <ol>
+        <li><strong>攻撃が許す限りダッシュ回避よりパリィする。</strong>1つの動作が3つの経済すべてに払い込まれます。当サイトのクゥ攻略は、上手いプレイヤーは意図的にパリィを狙いに行くと記しています。</li>
+        <li><strong>攻勢フェーズを通してFPを貯める。</strong>防御的に使うのではなく貯めてください。当サイトのボスページは、パニックでFPを使い切ると本当の隙が来たときに何も残らないと警告しています。</li>
+        <li><strong>自分のバーではなく敵のダウンゲージを見る。</strong>それが、あなたのFPが最も価値を持つタイミングを決める時計です。</li>
+        <li><strong>ダウンゲージが満タンに近づいたらBloom Artを使う。</strong>スタガーを処刑やスタンに変換します。</li>
+        <li><strong>Overdriveは大きな壁のために温存する。</strong>これはチャージ式の選択肢であり、クゥがいなくても唯一存在し続けるものです。</li>
+      </ol>
+
+      <h2 id="what-this-page-does-not-claim">このページが断言しないこと</h2>
+      <p>当サイトにはどのバーのサイズを示す数値もありません。FPの上限も、パリィ1回あたりのFP獲得量も、ダウンゲージの数値も、5段階それぞれのOverdriveの持続時間も、1ヒットがスタガーにどれだけ貢献するかの数字もありません。上記のストーンの割合が当サイトのゲージ関連記述における唯一の確かな数字であり、当サイトのスピリットストーン解説自体もバランス調整パッチで変わりうるためゲーム内で確認するよう勧めています。8月31日の読み取りで56.9%、9月7日の読み取りで57.1%だった実績「Entangled」が実際に何を要求するのかも分かりません。Steamがこの実績の説明文を公開していないためです。</p>
+
+      <h2 id="gauges-faq">ゲージFAQ</h2>
+      <h3>FPとは何の略ですか?</h3>
+      <p>Florescence Pointsの略ですが、出典によってはFocus Pointsと書くものもあります。当サイトのストーリー攻略はこの表記のゆれを指摘し、ゲーム内テキストに従うとしています。このサイトではFlorescence Pointsに統一しています。</p>
+      <h3>FPを一番速く貯めるには?</h3>
+      <p>パーフェクトブロックとパリィです。普通の攻撃を当てることも貢献しますが、当サイトのクゥ攻略は正確な防御こそがエンジンだとしており、ダッシュ回避中心のスタイルはキットの後半部分を枯渇させると述べています。</p>
+      <h3>Entanglement Gaugeは何セグメントですか?</h3>
+      <p>当サイトのビルドガイドと武器解説によれば7セグメントで、Overdrive自体は5段階で強化されます。</p>
+      <h3>コマンドメニューはゲームを止めますか?</h3>
+      <p>止めません。止めずに時間を這うような速度まで遅くします——メニューを開いている間もエマは実時間で動き、防御し続けます。</p>
+      <h3>パリィせずにEntanglement Gaugeを満たせますか?</h3>
+      <p>部分的にはできます。当サイトの武器解説は、弾きだけでなくヒットを当てることもこれを満たすと記録しており、Entangled Dodgeのストーンはダッシュ回避にも貢献する確率を与えます。もっとも効率的なのはパリィです。</p>
+      <h3>初心者はどのゲージに注目すべきですか?</h3>
+      <p>敵のものです。当サイトのクゥ攻略の考え方は、クゥはボーナスダメージではなくテンポのツールだというもので、ダウンゲージを読むことこそがFPという数字を実際に回収できるダメージに変えます。<a href="/beast-of-reincarnation/ja/beginner-guide">初心者ガイド</a>がこの根底にあるパリィの基本をカバーしています。</p>
+
+      <h2 id="related-guides">関連ページ</h2>
+      <ul>
+        <li><a href="/beast-of-reincarnation/ja/koo-guide">クゥのコマンド——FP経済の全貌</a></li>
+        <li><a href="/beast-of-reincarnation/ja/builds">ビルド——StrengthとFlorescenceの位置づけ</a></li>
+        <li><a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン——ゲージを満たすトリガーすべて</a></li>
+        <li><a href="/beast-of-reincarnation/ja/bosses">全ボス一覧——これらのバーが調整されている戦い</a></li>
+        <li><a href="/beast-of-reincarnation/ja/beginner-guide">初心者ガイド——パリィの基本</a></li>
+      </ul>
+      <h2 id="sources-on-this-site">出典(サイト内)</h2>
+      <p>上記のメカニクスと数値はすべて、当サイトの以下のページから引いています。各ページはそれぞれ照合した外部の情報源を明記しています。</p>
+      <ul>
+        <li><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a></li>
+        <li><a href="/beast-of-reincarnation/ja/builds">ビルド</a></li>
+        <li><a href="/beast-of-reincarnation/ja/bosses">全ボス一覧</a></li>
+        <li><a href="/beast-of-reincarnation/ja/all-weapons">武器解説</a></li>
+        <li><a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン解説</a></li>
+        <li><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a></li>
+        <li><a href="/beast-of-reincarnation/ja/glossary">用語集</a></li>
+        <li><a href="/beast-of-reincarnation/ja/trophies">トロフィー・実績一覧</a></li>
+        <li><a href="/beast-of-reincarnation/ja/achievement-tracker">実績トラッカー</a></li>
+        <li><a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact 攻略</a></li>
+      </ul>
+      <p class="updated">最終レビュー:2026年9月11日 &middot; 確認済みゲームバージョン:1.0.11 &middot; 上記の数字はすべて上記ページを出典とし、出典同士が食い違う、または沈黙している箇所はどちらかを選ばず、その旨を明記しています。</p>
+
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact</a><a href="/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">Shidou &amp; Nue</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/blight-explained">穢れとは</a><a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン</a><a href="/beast-of-reincarnation/ja/amber-farming">琥珀稼ぎ</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/achievement-tracker">実績トラッカー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/patch-notes">アップデート</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/which-edition-quiz">版選び診断</a><a href="/beast-of-reincarnation/ja/preorder-bonuses">予約特典</a><a href="/beast-of-reincarnation/ja/game-pass">Game Pass</a><a href="/beast-of-reincarnation/ja/cross-save">クロスセーブ</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/beast-of-reincarnation/ja/author">執筆者</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
+  </div>
+</footer>
+</body>
+</html>

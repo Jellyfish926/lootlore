@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b6324087cbddda54.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b24fac4efd5a4d1a.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T1ce7,<p><strong>Sword &amp; Shield</strong> is the weapon every Sephiria run starts with, and the one the game quietly rebalanced on launch day without telling anyone until the next hotfix. It is also the only class whose best-known builds are about <em>dashing</em>, not swinging: one turns every dash into an ice hammer, the other holds the shield up and never stops moving. This page covers the base kit, the branches worth knowing, the 1.0 changes, and both dash builds — with a clear line between what is confirmed in 1.0 and what is an Early Access memory.</p>

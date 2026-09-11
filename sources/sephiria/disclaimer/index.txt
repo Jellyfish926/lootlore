@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","931","static/chunks/app/page-c495bb5d0140ffae.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-c40645656d7c569a.js"],""]
 2:T8ed,<p>What this site is, what it is not, and where its limits sit — stated once, plainly.</p>
 <h2>Independent means independent</h2>
 <p>No one at this wiki works with, for, or on behalf of TEAM HORAY. The studio has not reviewed, approved or sponsored anything here. All <em>Sephiria</em> names, imagery and game content referenced on these pages remain the property of TEAM HORAY; we reference them because writing about a game requires naming its parts. Official channels — the Steam page and the developers' Discord — are where the studio actually speaks.</p>

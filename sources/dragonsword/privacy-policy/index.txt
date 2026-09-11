@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-ccafe164cc846d7e.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8e5ec6062cc48a1c.js"],""]
 2:Tc31,<p>We are players keeping notes, not a company with a data team. Even so, the moment a page loads an advert or a measurement tag, other companies become involved — so here is exactly who they are and what you can do about them.</p>
 <h2>Turning things off, first</h2>
 <p>Most people arrive here looking for this, so it goes at the top:</p>

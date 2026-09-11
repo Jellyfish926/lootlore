@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b6324087cbddda54.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b24fac4efd5a4d1a.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T1bf8,<p>Crossbow is the only one of Sephiria's six weapons built around a magazine, and that single fact explains almost everything else about how it plays: a finite ammo count, a dedicated reload key, and a special attack that most of its upgrade tree exists to reshape. Players report ranged builds having a better win rate generally, which tracks in a game with 60-plus enemy types and a lot of contact damage — but the class only works once you understand what actually happens when the magazine runs dry.</p>

@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-17b66504c090f9d9.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-84a4b1de82a1555c.js"],""]
 5:I[4707,[],""]
 8:I[6423,[],""]
 3:T89f,<p><em>Last reviewed: 1 September 2026 · Newest game update reflected: 2026.08.18.12.05 (18 August 2026).</em> <strong>No. There is no Android version, no iOS version, and no announced plan for either.</strong> Steam's own platform field for this game returns Windows and Linux only, with macOS explicitly false. Nothing in the store data points at a phone or tablet build.</p>

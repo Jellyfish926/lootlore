@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-17b66504c090f9d9.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-84a4b1de82a1555c.js"],""]
 5:I[4707,[],""]
 8:I[6423,[],""]
 3:Tc58,<p><em>Last reviewed: 12 September 2026 · Newest game <a href="/platform/update-history/">update</a> reflected: 2026.08.18.12.05 (18 August 2026).</em> No single mechanic is cited more often across this site than the grenade launcher's slow. It appears in the write-up of every hard level documented here, in the explanation of why level 3.2 walls people, and in the reason one player had to write an entire alternative guide to 6.1. The turret's own damage number has almost nothing to do with any of that.</p>

@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","931","static/chunks/app/page-c495bb5d0140ffae.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-c40645656d7c569a.js"],""]
 2:T8c3,<p>One inbox, read by a person: <strong>hello@sephiriawiki.site</strong>.</p>
 <h2>Corrections come first</h2>
 <p>If a claim on this site is wrong, that is the message we want most. Include the page URL and what the correct information is; if you can say where you confirmed it — a patch note, the store page, a reproducible in-game test — we can act on it same-day rather than re-verifying from scratch.</p>

@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-ccafe164cc846d7e.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8e5ec6062cc48a1c.js"],""]
 2:T8c4,<p>Everything reaches the same place: <strong>hello@dragonsword.site</strong>.</p>
 <h2>If you are reporting an error</h2>
 <p>Say which page, and what it should say instead. If you can add a source — a patch note, a developer post, a repeatable in-game check — the fix goes up much faster, because the slow part is verification, not editing.</p>

@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b6324087cbddda54.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b24fac4efd5a4d1a.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T1f51,<p>Sephiria is a top-down 2D-perspective roguelite, and its requirements reflect that: the published minimum is a 2017 CPU and a 2014 GPU. This is not a game that will be gated by your hardware. The details below matter mostly for old laptops, Macs, and knowing what the storage footprint is.</p>

@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b6324087cbddda54.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b24fac4efd5a4d1a.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T1b5f,<p>The fastest way to place tablets in Sephiria is not to work it out by hand. <strong>SephiriaSolver</strong>, a free browser tool maintained by the player forestsquirrel, takes the tablets you hold and searches for the grid layout that maximises your buffs — and since its Rulesets update it can be told <em>what you actually want</em> ("at least three cells at +5, the rest as high as possible") rather than one blunt global goal. This page explains the tool's modes, marks and limits, using its author's own documentation, so you know which button to press for which situation.</p>

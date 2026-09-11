@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-5879d867a3ba8b9d.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-0844a2bb46a92660.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T24f9,<p>This site now runs to nineteen pages, and nobody arrives needing all of them at once. This page is the map: what to read first, what to skip until it is relevant, and why each step comes before the next one. Every step below links to the page itself — this is a sequence, not a summary.</p>

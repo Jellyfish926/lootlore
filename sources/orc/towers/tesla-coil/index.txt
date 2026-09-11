@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-17b66504c090f9d9.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-84a4b1de82a1555c.js"],""]
 5:I[4707,[],""]
 8:I[6423,[],""]
 3:T911,<p><em>Last reviewed: 10 September 2026 · Newest game <a href="/platform/update-history/">update</a> reflected: 2026.08.18.12.05 (18 August 2026).</em> The tesla coil is the one turret in Sir, We Have an Orc Problem that doesn't need a direction. It fires in a full 360°, chains across 12 targets per shock, and shows up as the go-to answer in nearly every hard-level thread on this game — not as the turret that wins the level, but as the one that catches what everything else missed.</p>

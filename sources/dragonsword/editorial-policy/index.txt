@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-ccafe164cc846d7e.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8e5ec6062cc48a1c.js"],""]
 2:Tae8,<p>This page is the contract behind every guide on DragonSword Guide: where information comes from, how it gets checked, what happens when we get something wrong, and how the site is funded.</p>
 <h2>The sourcing hierarchy</h2>
 <p>Every fact on this site is traceable to one of three tiers, and each guide's <strong>Sources checked</strong> box says which tier it came from:</p>

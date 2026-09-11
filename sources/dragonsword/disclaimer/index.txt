@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-ccafe164cc846d7e.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8e5ec6062cc48a1c.js"],""]
 2:T743,<h2>Not affiliated with Hound13 Inc.</h2>
 <p>DragonSword Guide is an independent, reader-written fan guide. It is <strong>not</strong> affiliated with, endorsed by, sponsored by, or in any way officially connected to Hound13 Inc. or any of its subsidiaries. DragonSword: Awakening and all related titles, imagery, character names and trademarks are the property of their respective owners, used here for identification and commentary only.</p>
 <h2>Accuracy</h2>

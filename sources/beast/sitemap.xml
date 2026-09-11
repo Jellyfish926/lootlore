@@ -728,6 +728,54 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/builds"/>
   </url>
   <url>
+    <loc>https://beastofreincarnation.online/en/cleanse-walker</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/cleanse-walker"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/ja/cleanse-walker</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/cleanse-walker"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/de/cleanse-walker</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/cleanse-walker"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/cleanse-walker"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/en/combat-gauges</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/combat-gauges"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/ja/combat-gauges</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/combat-gauges"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/de/combat-gauges</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/combat-gauges"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/combat-gauges"/>
+  </url>
+  <url>
     <loc>https://beastofreincarnation.online/en/corvus-boss-guide</loc>
     <lastmod>2026-09-11</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/corvus-boss-guide"/>
@@ -1122,6 +1170,30 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/editions"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://beastofreincarnation.online/it/editions"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/editions"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/en/elemental-weaknesses</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/elemental-weaknesses"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/ja/elemental-weaknesses</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/elemental-weaknesses"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/de/elemental-weaknesses</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/elemental-weaknesses"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/elemental-weaknesses"/>
   </url>
   <url>
     <loc>https://beastofreincarnation.online/en/erymanth-boss-guide</loc>
@@ -1782,6 +1854,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/multiplayer"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://beastofreincarnation.online/it/multiplayer"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/multiplayer"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/en/new-game-plus</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/new-game-plus"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/ja/new-game-plus</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/new-game-plus"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/de/new-game-plus</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/new-game-plus"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/new-game-plus"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/en/nushi-skills</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/nushi-skills"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/ja/nushi-skills</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/nushi-skills"/>
+  </url>
+  <url>
+    <loc>https://beastofreincarnation.online/de/nushi-skills</loc>
+    <lastmod>2026-09-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/nushi-skills"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/nushi-skills"/>
   </url>
   <url>
     <loc>https://beastofreincarnation.online/en/open-world</loc>

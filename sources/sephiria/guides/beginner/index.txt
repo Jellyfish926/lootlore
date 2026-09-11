@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b6324087cbddda54.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-b24fac4efd5a4d1a.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T22a6,<p>Your first run of Sephiria will end on floor 1 or 2, and that is fine — it is supposed to. The thing worth knowing before you start is that <strong>you are not playing to win the run, you are playing to bank Sapphires</strong>, because Sapphires buy the Destiny Inscription nodes that make later runs winnable. You earn them <em>on death</em>, scaled to how deep you got and how many <a href="/bosses/chapters-and-bosses/">bosses</a> you killed. Dying productively is a real strategy here.</p>

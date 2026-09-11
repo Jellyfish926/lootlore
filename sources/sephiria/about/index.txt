@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-c7a2ebe47a772576.js","931","static/chunks/app/page-c495bb5d0140ffae.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-c40645656d7c569a.js"],""]
 2:Tb91,<p>Sephiria Wiki is an independent reference for <strong>Sephiria</strong>, written by players who are still working through the tower themselves. This page covers the three things worth knowing before you trust anything here: who writes it, how it gets checked, and who pays for it.</p>
 <h2>The problem this site is trying to solve</h2>
 <p>Sephiria released on 31 July 2026. That is recent enough that most of what circulates about it — item effects, boss behaviour, which weapon class is strongest — is reconstruction rather than published fact, and a lot of it is repeated between sites without anyone checking it once.</p>

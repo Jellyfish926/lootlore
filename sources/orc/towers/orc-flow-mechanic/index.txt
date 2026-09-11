@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-17b66504c090f9d9.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-84a4b1de82a1555c.js"],""]
 5:I[4707,[],""]
 8:I[6423,[],""]
 3:T864,<p><em>Last reviewed: 10 September 2026 · Newest game <a href="/platform/update-history/">update</a> reflected: 2026.08.18.12.05 (18 August 2026).</em> Killing orcs before they reach a chokepoint feels like the obvious move, and it's the single most common early mistake in this game. The wave doesn't behave like a line waiting its turn — it behaves like a fluid looking for anywhere it can overflow — and once you see that, chokepoints stop being obstacles and start being the only place your turrets actually matter.</p>

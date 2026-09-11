@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-5879d867a3ba8b9d.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-0844a2bb46a92660.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T4a48,<p>DragonSword: Awakening shipped on 22 July 2026 and has taken ten patches since — the newest, 1.0.10, landed on 19 August 2026, with a <strong>1.0.11 preview already dated for 3 September</strong>. This page was last verified against the official feed on 31 August 2026. It is the update record, the announced roadmap, and — deliberately — a list of the things being repeated elsewhere that we cannot stand behind.</p>

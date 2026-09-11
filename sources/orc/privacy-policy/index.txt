@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-9aec6bc92a893b6d.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-67b6c6c436bc2a63.js"],""]
 2:Tb0f,<p>This page explains what happens to data when you visit <strong>sirwehaveanorcproblem.store</strong>. Last updated 11 August 2026.</p>
 <h2>What this site collects directly</h2>
 <p>Nothing that identifies you. There are no accounts, no logins, no comment system and no newsletter signup. We do not ask for your name, email address or any other personal detail in order to read a page.</p>

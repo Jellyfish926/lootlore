@@ -54,18 +54,27 @@ SITES = {
         "repo": "Jellyfish926/sephiria-wiki",
         "product": "out",
         "extra_exclude": [],
+        "normalize_build_id": True,
     },
     "dragonsword": {
         "repo": "Jellyfish926/dragonsword-guide",
         "product": "out",
         "extra_exclude": [],
+        "normalize_build_id": True,
     },
     "orc": {
         "repo": "Jellyfish926/orc-problem-guide",
         "product": "out",
         "extra_exclude": [],
+        "normalize_build_id": True,
     },
 }
+
+# Next 每次 build 都会生成一个随机 buildId,写进 _next/static/<buildId>/ 目录名和每个
+# 页面的 RSC payload。不归一化的话,内容一个字没改也会天天产生 300 个文件的假 diff
+# (还会连带跑一次 gates + 一次 Vercel 部署)。总站构建时 __next_f 脚本本来就会被
+# build.py 剥掉,buildId 在 out/ 里根本不出现,所以换成固定串是安全的。
+BUILD_ID_TOKEN = "static-export"
 
 # 总站自己塞进 sources/<游戏>/ 需要保留的文件(相对游戏目录)。目前为空:
 # 快照必须与子站产物逐字节一致,任何总站侧的改动都应该写成 hub.json 的 patch。
@@ -80,6 +89,33 @@ def git_sha(src: Path) -> str:
         ).stdout.strip()
     except Exception:
         return ""
+
+
+def normalize_build_id(game: str, dst: Path) -> None:
+    """把 Next 的随机 buildId 换成固定串,消掉每次构建都产生的假 diff。"""
+    static = dst / "_next" / "static"
+    if not static.is_dir():
+        return
+    ids = [d.name for d in static.iterdir()
+           if d.is_dir() and (d / "_buildManifest.js").is_file()]
+    if len(ids) != 1:
+        print(f"[{game}] 跳过 buildId 归一化:找到 {len(ids)} 个候选目录 {ids}")
+        return
+    bid = ids[0]
+    if bid == BUILD_ID_TOKEN:
+        return
+    (static / bid).rename(static / BUILD_ID_TOKEN)
+    n = 0
+    for p in dst.rglob("*"):
+        if p.is_file() and p.suffix in (".html", ".txt", ".js", ".json"):
+            try:
+                t = p.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                continue
+            if bid in t:
+                p.write_text(t.replace(bid, BUILD_ID_TOKEN), encoding="utf-8")
+                n += 1
+    print(f"[{game}] buildId {bid} -> {BUILD_ID_TOKEN}(改写 {n} 个文件)")
 
 
 def sync_one(game: str, src: Path) -> dict:
@@ -125,6 +161,9 @@ def sync_one(game: str, src: Path) -> dict:
     for rel, data in keep.items():
         (dst / rel).parent.mkdir(parents=True, exist_ok=True)
         (dst / rel).write_bytes(data)
+
+    if spec.get("normalize_build_id"):
+        normalize_build_id(game, dst)
 
     sha = git_sha(src)
     print(f"[{game}] {product} -> sources/{game}  files={n_files} html={n_html} sha={sha[:7] or '?'}")

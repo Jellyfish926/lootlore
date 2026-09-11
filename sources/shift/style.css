@@ -383,6 +383,26 @@ footer.site .fine a { color: var(--dim); }
 .bar-track { height: 9px; background: var(--bg-inset); border-radius: var(--pill); overflow: hidden; margin: 12px 0 6px; }
 .bar-fill  { height: 100%; background: var(--cream); width: 0; transition: width .3s; }
 
+/* ── 完成度追踪器 ── */
+.cat-h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.cat-h h2, .cat-h h3 { margin: 0; }
+.cat-h .meta { margin: 0; white-space: nowrap; }
+.cat-note { margin: 4px 0 14px; font-size: 14.5px; line-height: 1.6; color: var(--faint); }
+.tool-check .t a { color: inherit; }
+.tool-check input:checked ~ .lbl .t a { color: inherit; }
+.code-box { margin-top: 18px; padding: 16px; background: var(--bg-inset); border-radius: 9px; }
+.code-box label {
+  display: block; font: 400 11.5px/1.4 var(--impact);
+  text-transform: uppercase; letter-spacing: 0.07em; color: var(--faint); margin-bottom: 7px;
+}
+.code-box textarea {
+  font: 400 14px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: var(--cream); background: var(--bg-panel);
+  border: 1px solid var(--line-hot); border-radius: 9px;
+  padding: 12px 13px; width: 100%; resize: vertical; word-break: break-all;
+}
+.code-box textarea:focus-visible { outline: 2px solid var(--cream); outline-offset: 2px; }
+
 .noscript-note {
   margin: 18px 0; padding: 14px 16px; font-size: 15px; line-height: 1.6;
   color: var(--dim); background: var(--bg-inset); border-left: 3px solid var(--line-hot);

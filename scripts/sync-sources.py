@@ -46,6 +46,9 @@ SITES = {
         "repo": "Jellyfish926/shift-at-midnight-wiki",
         "product": "public",
         "extra_exclude": [],
+        # shift 的 vercel.json 在仓根(不在 public/ 里),但 build.py 要读它的 redirects
+        # 生成总站 vercel.json 的 /shift-at-midnight/* 跳转 —— 必须一起拷进快照。
+        "extra_from_root": ["vercel.json"],
     },
     "sephiria": {
         "repo": "Jellyfish926/sephiria-wiki",
@@ -110,6 +113,14 @@ def sync_one(game: str, src: Path) -> dict:
         n_files += 1
         if p.suffix == ".html":
             n_html += 1
+
+    for rel in spec.get("extra_from_root", []):
+        p = src / rel
+        if not p.is_file():
+            sys.exit(f"[{game}] 仓根缺少必需文件: {rel}")
+        (dst / rel).parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(p, dst / rel)
+        n_files += 1
 
     for rel, data in keep.items():
         (dst / rel).parent.mkdir(parents=True, exist_ok=True)

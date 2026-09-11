@@ -40,6 +40,37 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Shift At Midnight Controls: No Controller Support on PC",
+  "description": "Shift At Midnight has zero controller support on Steam — keyboard and mouse only, confirmed by Valve's own store data. What is and isn't verified.",
+  "inLanguage": "en",
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-09-10",
+  "author": {
+    "@type": "Person",
+    "name": "Jellyfish",
+    "jobTitle": "Editor",
+    "url": "https://shiftatmidnightwiki.site/author/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shift At Midnight Wiki",
+    "url": "https://shiftatmidnightwiki.site/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shiftatmidnightwiki.site/og-image.jpg"
+    }
+  },
+  "image": "https://shiftatmidnightwiki.site/og-image.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://shiftatmidnightwiki.site/controls/"
+  }
+}
+</script>
 <!-- Google tag (gtag.js) — GA4 G-RFHPX1SQ5N -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHPX1SQ5N"></script>
 <script>
@@ -115,7 +146,7 @@
   <h1>Shift At Midnight controls</h1>
   <p class="lede">On PC &mdash; Steam or the Microsoft Store &mdash; <strong>Shift At Midnight has no controller support at all.</strong> Not partial, not community-only: the developer's own Steam listing declares every controller category false. If you bought it on PC, you are playing with a keyboard and mouse whether or not you own a gamepad. The Xbox Series X|S version is the opposite case &mdash; that build is controller-only by definition.</p>
 
-  <p class="updated">Last verified 10 September 2026 &middot; game version: 1 September 2026 patch</p>
+  <p class="updated">Last verified 10 September 2026 &middot; game version: 29 July 2026 patch</p>
 
 
   <div class="tags">
@@ -143,6 +174,11 @@
     <p>We found no evidence of an in-game key-rebinding menu in any source we checked, official or otherwise. If remapping matters to you, the safer route on PC is a system-level or Steam-level remap (Steam's own controller/keyboard configurator, or Windows key-remapping software) rather than assuming the game exposes one itself. We have not tested this ourselves, so we're not calling it confirmed either way &mdash; just the more realistic option.</p>
   </div>
 
+  <div class="term warn">
+    <div class="term-h">A conflicting note elsewhere on this wiki</div>
+    <p>This wiki's own <a href="/system-requirements/">system requirements page</a> separately notes that SteamDB's app-info panel records a generic &ldquo;Gamepad supported&rdquo; flag for this game, distinct from the field-by-field controller-support breakdown described above, and says outright that no official note on which inputs are mapped could be found. We have not been able to reconcile that flag with the all-false declaration this page is built on, so treat the SteamDB tag as an open question rather than something this page resolves.</p>
+  </div>
+
   <h2>Steam Deck and controller-only handhelds</h2>
   <p>Because the PC build has no declared controller support, a Steam Deck run inherits that gap directly. The <a href="/system-requirements/">system requirements page</a> covers the Deck compatibility rating in detail, but the short version connects straight back to this page: Valve's own Deck compatibility notes for this game flag that the default controller configuration is not fully functional and that some interactions need the touchscreen or a community control layout &mdash; which lines up exactly with a game that was never built for a gamepad in the first place.</p>
 
@@ -150,7 +186,7 @@
   <p>People do get gamepads working on PC shooters with no native support through Steam's generic gamepad-to-keyboard/mouse translation (via a Steam Input desktop configuration) or third-party tools like a community controller layout. We have not verified a working configuration for Shift At Midnight specifically, and the game's own <code>bSteamInputAPISupport: false</code> flag means the developer has not built in any awareness of Steam Input &mdash; a workaround, if one exists, is entirely a community effort layered on top, not something the game recognises. If you find one that works reliably, the most useful place to report it is the game's own Steam discussions, not a third-party trainer site.</p>
 
   <h2>What the most recent patch changed</h2>
-  <p>The 1 September 2026 update &mdash; titled "30 New Customers + More" on the game's own Steam event calendar &mdash; added 30 new customers, a chainsaw, and security cameras. A chainsaw implies a new melee option in the <a href="/guide/survival/#weapons">weapons arsenal</a>, and security cameras suggest a new way to watch the store remotely, but we have not seen a detailed patch note breaking down new key bindings for either. <strong>Unconfirmed</strong> until Kwalee publishes specifics &mdash; we will not guess at a key here. If this is the first page of the wiki you've landed on, the <a href="/start-here/">reading order guide</a> sequences everything else from here.</p>
+  <p><strong>Unconfirmed:</strong> we have not been able to source patch content newer than the <a href="/updates/">29 July 2026 update</a> against this wiki's own patch-notes page, which was still listing that as the newest public announcement as of its last check. If a later update has shipped, we have not verified its contents well enough to describe new key bindings here, so we are not guessing at one. If this is the first page of the wiki you've landed on, the <a href="/start-here/">reading order guide</a> sequences everything else from here.</p>
 
   <h2>Quick answers</h2>
   <div class="faq">
@@ -220,8 +256,11 @@
       <a href="/credits/">Credits</a>
       <a href="/tools/completion-tracker/">Completion tracker</a>
       <a href="/about/">About</a>
+      <a href="/author/">Editor</a>
+      <a href="/editorial-policy/">Editorial policy</a>
       <a href="/contact/">Contact us</a>
       <a href="/privacy/">Privacy policy</a>
+      <a href="/disclaimer/">Disclaimer</a>
     </nav>
     <p class="fine">Official links:
       <a href="https://store.steampowered.com/app/3722330/Shift_At_Midnight/" target="_blank" rel="noopener">Steam store page</a> &middot;

@@ -94,8 +94,9 @@ def main():
             if not f.endswith(".html"): continue
             path = os.path.join(dp, f)
             route = route_of(path, root)
-            slug = route.strip("/").split("/")[-1] if route.strip("/") else "home"
-            first = route.strip("/").split("/")[0] if route.strip("/") else ""
+            parts = route.strip("/").split("/") if route.strip("/") else []
+            slug = parts[-1] if parts else "home"
+            first = parts[0] if parts else ""
             if slug in exclude or first in exclude: continue
             p = P()
             try: p.feed(open(path, encoding="utf-8", errors="replace").read())
@@ -114,18 +115,31 @@ def main():
             m = PLACEHOLDER.search(body) or PLACEHOLDER_CS.search(body)
             if m: E.append(("PLACEHOLDER", route, f"「{m.group(0)}」"))
             internal_main = 0
-            page_locale = first if first in locales else a.default
+            # 语种目录段:不假定语种一定在路径第 0 段——lootlore 总站产物是
+            # /<game-slug>/<locale>/<page>,子站自身产物才是 /<locale>/<page>。
+            # 在整条路径里找第一个匹配已知语种表的段,其之前的部分(game 前缀,可能为空)
+            # 原样保留,拼接同语种旁页时才不会漏掉/加错前缀。
+            loc_idx = next((i for i, x in enumerate(parts) if x in locales), None)
+            if loc_idx is not None:
+                page_locale = parts[loc_idx]
+                locale_prefix = parts[:loc_idx]
+            else:
+                page_locale = a.default
+                locale_prefix = parts[:-1] if parts else []
             for href, in_main in p.links:
                 ok, norm = resolve(href, root, trailing)
                 if norm is None: continue
                 if not ok: E.append(("DEAD_INTERNAL", route, href[:100])); continue
                 if in_main or not p.main_seen: internal_main += 1
                 if page_locale != a.default:
-                    seg = norm.strip("/").split("/")[0]
-                    if seg not in locales and seg not in exclude:
-                        loc_path = os.path.join(root, page_locale, norm.strip("/"))
+                    norm_parts = norm.strip("/").split("/")
+                    seg = norm_parts[len(locale_prefix)] if len(norm_parts) > len(locale_prefix) else ""
+                    if norm_parts[:len(locale_prefix)] == locale_prefix and seg and seg not in locales and seg not in exclude:
+                        loc_parts = locale_prefix + [page_locale] + norm_parts[len(locale_prefix):]
+                        loc_path = os.path.join(root, *loc_parts)
                         if os.path.isfile(os.path.join(loc_path, "index.html")) or os.path.isfile(loc_path + ".html"):
-                            W.append(("LOCALE_LINK", route, f"{href} 指向主语种页,但 /{page_locale}{norm} 存在"))
+                            loc_route = "/" + "/".join(loc_parts) + "/"
+                            W.append(("LOCALE_LINK", route, f"{href} 指向主语种页,但 {loc_route} 存在"))
             if internal_main < a.min_links: W.append(("FEW_LINKS", route, f"正文站内链接 {internal_main} < {a.min_links}"))
             if p.lang and page_locale and p.lang != page_locale.lower(): W.append(("LANG_ATTR", route, f"<html lang={p.lang}> 但目录语种 {page_locale}"))
     if a.json:

@@ -191,6 +191,107 @@ def migrate_game(game: dict):
             shutil.copy2(p, target)
 
 
+OG_IMAGE_URL = "{{BASE}}/dragonsword-awakening/images/dragonsword-orbis-royal-castle-1200.webp"
+OG_IMAGE_W = 1200
+OG_IMAGE_H = 675
+
+DESC_RE = re.compile(r'<meta name="description" content="([^"]*)"')
+
+
+def og_extra_snippets(name: str, html: str) -> tuple:
+    """返回 (og:description, og:image) 两个 <meta> 片段字符串；页面已有 og:description 时留空。"""
+    og_desc = ""
+    if "og:description" not in html:
+        m = DESC_RE.search(html)
+        if m:
+            og_desc = f'<meta property="og:description" content="{m.group(1)}">'
+    og_image = (
+        f'<meta property="og:image" content="{OG_IMAGE_URL}">\n'
+        f'<meta property="og:image:width" content="{OG_IMAGE_W}">\n'
+        f'<meta property="og:image:height" content="{OG_IMAGE_H}">'
+    )
+    return og_desc, og_image
+
+
+def breadcrumb_ld(base: str, brand: str, crumbs: list) -> dict:
+    """crumbs: [(name, path_or_None)] 最后一项通常是当前页(path=None 时不设 item,允许作最终节点省略)"""
+    items = []
+    for i, (label, path) in enumerate(crumbs, start=1):
+        entry = {"@type": "ListItem", "position": i, "name": label}
+        if path is not None:
+            entry["item"] = f"{base}{path}"
+        items.append(entry)
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items}
+
+
+def hub_jsonld(name: str, cfg: dict) -> str:
+    base = cfg["base_url"].rstrip("/")
+    brand = cfg["brand"]
+    email = cfg["contact_email"]
+    graphs = []
+
+    if name == "index":
+        graphs.append({
+            "@context": "https://schema.org", "@type": "WebSite",
+            "name": brand, "url": f"{base}/",
+            "description": cfg["tagline"],
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": f"{base}/?q={{search_term_string}}",
+                "query-input": "required name=search_term_string",
+            },
+        })
+        graphs.append({
+            "@context": "https://schema.org", "@type": "Organization",
+            "name": brand, "url": f"{base}/",
+            "logo": f"{base}/favicon.svg",
+            "email": email,
+        })
+        graphs.append(breadcrumb_ld(base, brand, [(brand, None)]))
+    elif name == "about":
+        graphs.append({
+            "@context": "https://schema.org", "@type": "AboutPage",
+            "name": "About Lootlore", "url": f"{base}/about",
+            "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
+        })
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), ("About", None)]))
+    elif name == "contact":
+        graphs.append({
+            "@context": "https://schema.org", "@type": "ContactPage",
+            "name": "Contact Lootlore", "url": f"{base}/contact",
+            "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
+        })
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), ("Contact", None)]))
+    elif name in ("guides", "reviews", "updates"):
+        label = {"guides": "Guides", "reviews": "Reviews", "updates": "Updates"}[name]
+        graphs.append({
+            "@context": "https://schema.org", "@type": "CollectionPage",
+            "name": label, "url": f"{base}/{name}",
+            "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
+        })
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), (label, None)]))
+    elif name == "404":
+        graphs.append({
+            "@context": "https://schema.org", "@type": "WebPage",
+            "name": "Page Not Found", "url": f"{base}/404",
+            "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
+        })
+    else:
+        labels = {
+            "terms": "Terms of Use", "privacy-policy": "Privacy Policy",
+            "disclaimer": "Disclaimer", "editorial-policy": "Editorial Policy",
+        }
+        label = labels.get(name, name.replace("-", " ").title())
+        graphs.append({
+            "@context": "https://schema.org", "@type": "WebPage",
+            "name": label, "url": f"{base}/{name}",
+            "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
+        })
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), (label, None)]))
+
+    return "\n".join(f'<script type="application/ld+json">{json.dumps(g, ensure_ascii=False)}</script>' for g in graphs)
+
+
 def render_hub_pages():
     style = load(ROOT / "hub" / "style.css")
     (OUT / "hub.css").write_text(style, encoding="utf-8")
@@ -202,7 +303,7 @@ def render_hub_pages():
         grid.append(f"""
 <article class="game-card" id="{g['slug']}">
   <a class="shot" href="/{g['slug']}{g['default_path'].rstrip('/') or '/'}" aria-label="{g['name']} guide hub">
-    <img src="{c['img']}" alt="{c['img_alt']}" loading="lazy">
+    <img src="{c['img']}" alt="{c['img_alt']}" width="{c['img_w']}" height="{c['img_h']}" loading="lazy">
   </a>
   <div class="body">
     <p class="genre">{c['genre']}</p>
@@ -218,6 +319,10 @@ def render_hub_pages():
 
     for page in (ROOT / "hub" / "pages").glob("*.html"):
         html = load(page)
+        name = page.stem
+        og_desc, og_image = og_extra_snippets(name, html)
+        html = html.replace("{{OG_DESC}}", og_desc).replace("{{OG_IMAGE}}", og_image)
+        html = html.replace("{{JSONLD}}", hub_jsonld(name, CFG))
         html = html.replace("{{BASE}}", BASE).replace("{{BRAND}}", CFG["brand"])
         html = html.replace("{{TAGLINE}}", CFG["tagline"]).replace("{{EMAIL}}", CFG["contact_email"])
         html = html.replace("{{PUB}}", CFG["adsense_pub"]).replace("{{TODAY}}", TODAY)
@@ -248,7 +353,6 @@ def render_hub_pages():
             '  </div>\n</footer>'
         )
         html = html.replace("{{HD}}", hd).replace("{{FT}}", ft)
-        name = page.stem
         if name == "index":
             (OUT / "index.html").write_text(html, encoding="utf-8")
         elif name == "404":

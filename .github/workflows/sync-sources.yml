@@ -1,10 +1,13 @@
 name: sync-sources
 # 自动同步五个子站快照 → sources/<游戏>/ → 重建 out/ → 跑门禁 → 有 diff 才提交。
-# 触发:手动(Actions 页 Run workflow)+ 每日 UTC 20:00(北京 04:00)。
+# 触发:手动(Actions 页 Run workflow)+ 每日 UTC 20:37(北京 04:37)。
+# 整点(0 20 * * *)是 GitHub Actions 排队最拥挤的分钟,容易被延迟甚至跳过;
+# 错开到 :37 降低排队延迟。workflow 本身创建于 2026-09-11,首个整点窗口
+# (2026-09-12 04:00 北京)实测确实触发了,但晚了约 2 小时 20 分钟才跑起来。
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "37 20 * * *"
 
 concurrency:
   group: sync-sources

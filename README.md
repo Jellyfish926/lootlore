@@ -37,6 +37,10 @@
 5. 跑与 `gates.yml` 同一批门禁脚本(check_content / check_i18n / check_sitemap / link_check),**红一条就不提交**;
 6. 有 diff 才提交(身份 `Jellyfish926 <zsn2740784715@gmail.com>`,信息列出五个子站来源 sha)并 push;无 diff 打印「无变化」。
 
+唯一一处对快照的加工:Next 三站的随机 `buildId` 会被换成固定串 `static-export`
+(`next build` 每次都换一个,不归一化的话内容一字未改也会有 ~300 个文件的假 diff;
+`build.py` 本来就会剥掉 `__next_f` 脚本,这个串在 `out/` 里不出现)。
+
 push 用的是 PAT 而不是 `GITHUB_TOKEN`,所以这次 push 会正常触发 `gates.yml`(`GITHUB_TOKEN` 推的 commit 不会触发其它 workflow)。工作流内部那一轮门禁是提交前闸门,`gates.yml` 是提交后复核,两道都要绿。
 
 **来源 sha 在哪看**

@@ -1,0 +1,117 @@
+name: sync-sources
+# 自动同步五个子站快照 → sources/<游戏>/ → 重建 out/ → 跑门禁 → 有 diff 才提交。
+# 触发:手动(Actions 页 Run workflow)+ 每日 UTC 20:00(北京 04:00)。
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 20 * * *"
+
+concurrency:
+  group: sync-sources
+  cancel-in-progress: false
+
+permissions:
+  contents: read # 推送用 SUBSITE_TOKEN(PAT),不用 GITHUB_TOKEN —— 这样 push 才能触发 gates.yml
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout lootlore(用 PAT,后面 push 才带得动 gates)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SUBSITE_TOKEN }}
+
+      # ---------- 五个子站 ----------
+      - uses: actions/checkout@v4
+        with:
+          repository: Jellyfish926/Beast-of-Reincarnation
+          token: ${{ secrets.SUBSITE_TOKEN }}
+          path: subsites/beast
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Jellyfish926/shift-at-midnight-wiki
+          token: ${{ secrets.SUBSITE_TOKEN }}
+          path: subsites/shift
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Jellyfish926/sephiria-wiki
+          token: ${{ secrets.SUBSITE_TOKEN }}
+          path: subsites/sephiria
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Jellyfish926/dragonsword-guide
+          token: ${{ secrets.SUBSITE_TOKEN }}
+          path: subsites/dragonsword
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Jellyfish926/orc-problem-guide
+          token: ${{ secrets.SUBSITE_TOKEN }}
+          path: subsites/orc
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            subsites/sephiria/package-lock.json
+            subsites/dragonsword/package-lock.json
+            subsites/orc/package-lock.json
+
+      # ---------- Next.js 三站:npm ci + next build(output:'export' → out/) ----------
+      - name: build sephiria
+        working-directory: subsites/sephiria
+        run: npm ci --no-audit --no-fund && npm run build
+      - name: build dragonsword
+        working-directory: subsites/dragonsword
+        run: npm ci --no-audit --no-fund && npm run build
+      - name: build orc
+        working-directory: subsites/orc
+        run: npm ci --no-audit --no-fund && npm run build
+      # shift 的产物就是 public/,beast 的产物就是仓根 —— 都不需要构建
+
+      - name: sync sources/
+        run: python3 scripts/sync-sources.py --src-root subsites
+
+      - name: rebuild out/
+        run: python3 build.py
+
+      # ---------- 门禁等价检查(与 gates.yml 同一批脚本);红一条就不提交 ----------
+      - name: check_content(H1 / alt / 占位语 / 死链 / 内链≥3 / 语种前缀)
+        run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en
+      - name: check_i18n(小语种残页 / 占位)
+        run: python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja --games beast-of-reincarnation,dragonsword-awakening,orc-problem,sephiria,shift-at-midnight
+      - name: check_sitemap(loc↔文件 / 域名残留 / robots)
+        run: python3 .gates/check_sitemap.py --out out --host lootlore-ten.vercel.app
+      - name: link_check(全站死链)
+        run: python3 .gates/link_check.py --out out
+
+      - name: commit & push(无 diff 就跳过)
+        run: |
+          set -euo pipefail
+          rm -rf subsites
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变化:五个子站快照与总站产物均与上次同步一致,不提交。"
+            exit 0
+          fi
+          python3 - <<'PY' > /tmp/commit-msg.txt
+          import json, datetime
+          s = json.load(open("config/sources.json"))["sources"]
+          d = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
+          print(f"content: 自动同步五子站快照({d} UTC)并重建总站\n")
+          for g, v in s.items():
+              print(f"- {g}: {v['repo']} @ {v['sha'][:7]} ({v['html']} html)")
+          print("\n来源账本见 config/sources.json(由 .github/workflows/sync-sources.yml 自动生成)")
+          PY
+          git -c user.name=Jellyfish926 -c user.email=zsn2740784715@gmail.com \
+              commit -q -F /tmp/commit-msg.txt
+          git push
+          echo "已提交并推送:$(git rev-parse HEAD)"

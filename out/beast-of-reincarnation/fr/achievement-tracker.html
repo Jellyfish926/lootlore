@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suivi des succ&egrave;s Beast of Reincarnation &mdash; les 46, en local</title>
+<meta name="description" content="Un suivi gratuit des succ&egrave;s et troph&eacute;es de Beast of Reincarnation : cochez les 46 succ&egrave;s Steam, suivez votre pourcentage et voyez quel d&eacute;blocage est le plus accessible.">
+<link rel="canonical" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/fr/achievement-tracker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Suivi des succ&egrave;s de Beast of Reincarnation">
+<meta property="og:description" content="Cochez les 46 succ&egrave;s Steam, suivez votre pourcentage et voyez quel d&eacute;blocage est statistiquement le plus accessible.">
+<meta property="og:url" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/fr/achievement-tracker">
+<meta property="og:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/achievement-tracker">
+<link rel="alternate" hreflang="ja" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/achievement-tracker">
+<link rel="alternate" hreflang="fr" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/fr/achievement-tracker">
+<link rel="alternate" hreflang="es" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/es/achievement-tracker">
+<link rel="alternate" hreflang="de" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/de/achievement-tracker">
+<link rel="alternate" hreflang="it" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/it/achievement-tracker">
+<link rel="alternate" hreflang="x-default" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/achievement-tracker">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/fr"}, {"@type": "ListItem", "position": 2, "name": "Suivi des succ&egrave;s", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/fr/achievement-tracker"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Suivi des succ\u00e8s de Beast of Reincarnation","applicationCategory":"GameApplication","operatingSystem":"Web","url":"https://lootlore-ten.vercel.app/beast-of-reincarnation/fr/achievement-tracker","description":"Un suivi gratuit des succ\u00e8s et troph\u00e9es de Beast of Reincarnation : cochez les 46 succ\u00e8s Steam, suivez votre pourcentage et voyez quel d\u00e9blocage est statistiquement le plus accessible.","isAccessibleForFree":true,"about":{"@type":"VideoGame","name":"Beast of Reincarnation"}}</script>
+<style>
+.tracker{margin:1.6rem 0 1rem;border:1px solid var(--line);border-radius:6px;background:var(--ink-2)}
+.tracker-head{padding:1rem 1.2rem;border-bottom:1px solid var(--line)}
+.tracker-progress{height:8px;background:var(--ink-3);border-radius:999px;overflow:hidden}
+.tracker-bar{height:100%;background:var(--crimson);transition:width .25s}
+.tracker-summary{margin:.8rem 0 .6rem;font-size:.95rem;color:var(--bone-dim)}
+.tracker-summary b{color:var(--bone)}
+.tracker-controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;font-size:.9rem;color:var(--bone-dim)}
+.tracker-controls select{margin-left:.4rem;background:var(--ink);color:var(--bone);border:1px solid var(--line);border-radius:4px;padding:.25rem .4rem;font:inherit}
+.tracker-controls button{background:transparent;color:var(--bone);border:1px solid var(--line);border-radius:4px;padding:.3rem .8rem;font:inherit;cursor:pointer}
+.tracker-controls button:disabled{opacity:.4;cursor:default}
+.tracker-list{list-style:none;margin:0;padding:0}
+.tracker-list li{border-bottom:1px solid var(--line)}
+.tracker-list li:last-child{border-bottom:0}
+.tracker-list label{display:grid;grid-template-columns:18px 40px 1fr auto;gap:.8rem;align-items:center;padding:.65rem 1.2rem;cursor:pointer}
+.tracker-list li.on{opacity:.55}
+.tracker-list li.on b{text-decoration:line-through}
+.tracker-list img{border-radius:4px;display:block;width:40px;height:40px}
+.tracker-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tracker-txt b{font-size:.95rem;color:var(--bone)}
+.tracker-txt small{font-size:.82rem;color:var(--bone-dim);line-height:1.45}
+.tracker-pct{font-size:.8rem;color:var(--crimson);white-space:nowrap}
+.tracker-foot{padding:.7rem 1.2rem 1rem;margin:0;font-size:.8rem;color:var(--bone-faint)}
+@media (max-width:560px){.tracker-list label{grid-template-columns:18px 32px 1fr auto;gap:.5rem;padding:.6rem .8rem}.tracker-list img{width:32px;height:32px}}
+</style>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:10px}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.ga-hubsep{color:#3a4152}
+.ga-hubcur{color:#e6e9ef;text-decoration:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45vw}
+.ga-hubmenu{position:relative;margin-left:auto}
+.ga-hubmenu summary{list-style:none;cursor:pointer;color:#9aa3b2;padding:3px 10px;border:1px solid #2a3040;border-radius:6px;white-space:nowrap;user-select:none}
+.ga-hubmenu summary::-webkit-details-marker{display:none}
+.ga-hubmenu summary:hover{color:#e6e9ef;border-color:#3a4152}
+.ga-hubmenu[open] summary{color:#e6e9ef;border-color:#e8b64c}
+.ga-caret{margin-left:6px;font-size:.8em;color:#6b7386}
+.ga-hubpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:9999;min-width:230px;max-height:70vh;overflow:auto;background:#11141c;border:1px solid #2a3040;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:6px;display:flex;flex-direction:column}
+.ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
+.ga-hubpanel a.on{color:#e8b64c;font-weight:600}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;color:#9aa3b2;font-size:.92em}
+.ga-hubdiv{border-top:1px solid #23262f;margin:4px 0 2px}
+.ga-hubpanel .ga-hubsec{color:#9aa3b2;font-size:.92em;padding:6px 12px}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">&#9670; Lootlore</a><span class="ga-hubsep">/</span><a class="ga-hubcur" href="/beast-of-reincarnation/en">Beast of Reincarnation</a><details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary><nav class="ga-hubpanel"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/dragonsword-awakening/">DragonSword: Awakening</a><a href="/sephiria/">Sephiria</a><a href="/orc-problem/">Orc Problem</a><a class="ga-hubhome" href="/#games">Browse all guides &rarr;</a><span class="ga-hubdiv"></span><a class="ga-hubsec" href="/guides">Guides by category</a><a class="ga-hubsec" href="/reviews">Reviews &amp; verdicts</a><a class="ga-hubsec" href="/updates">Patch tracker</a></nav></details></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/fr">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">GUIDE</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/fr/bosses">Boss</a>
+      <a href="/beast-of-reincarnation/fr/builds">Builds</a>
+      <a href="/beast-of-reincarnation/fr/koo-guide">Koo</a>
+      <a href="/beast-of-reincarnation/fr/beginner-guide">D&eacute;butant</a>
+      <a href="/beast-of-reincarnation/fr/release-date">Sortie</a>
+      <a href="/beast-of-reincarnation/fr/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">&#9660;</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/achievement-tracker">English</a>
+      <a href="/beast-of-reincarnation/ja/achievement-tracker">日本語</a>
+      <a href="/beast-of-reincarnation/fr/achievement-tracker" class="active">Fran&ccedil;ais</a>
+      <a href="/beast-of-reincarnation/es/achievement-tracker">Espa&ntilde;ol</a>
+      <a href="/beast-of-reincarnation/it/achievement-tracker">Italiano</a>
+      <a href="/beast-of-reincarnation/de/achievement-tracker">Deutsch</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/fr">Accueil</a> / Suivi des succ&egrave;s</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">Compl&eacute;tion &middot; Outil</p>
+      <h1>Suivi des succ&egrave;s de Beast of Reincarnation</h1>
+      <p class="lede">Cochez les <strong>46 succ&egrave;s</strong> (les listes de troph&eacute;es PS5 et Xbox correspondent une pour une), regardez votre pourcentage monter, et laissez l'outil d&eacute;signer le d&eacute;blocage statistiquement le plus accessible pour vous &mdash; ainsi que le plus rare qu'il vous manque encore. La progression n'est enregistr&eacute;e que dans ce navigateur.</p>
+      <p class="updated">Pourcentages mondiaux de d&eacute;blocage relev&eacute;s sur Steam le 7 septembre 2026 &middot; actualis&eacute;s chaque semaine</p>
+    </section>
+    <article>
+      <section class="tracker" id="tracker" aria-label="Suivi des succ&egrave;s de Beast of Reincarnation">
+        <div class="tracker-head">
+          <div class="tracker-progress" role="progressbar" aria-valuemin="0" aria-valuemax="46" aria-valuenow="0"><div class="tracker-bar" id="tr-bar" style="width:0%"></div></div>
+          <p class="tracker-summary" id="tr-summary"><b>0 / 46</b> d&eacute;bloqu&eacute;s (0&nbsp;%)</p>
+          <div class="tracker-controls">
+            <label>Trier <select id="tr-sort"><option value="common">les plus courants d'abord</option><option value="rare">les plus rares d'abord</option><option value="name">A &rarr; Z</option></select></label>
+            <label><input type="checkbox" id="tr-hide"> masquer les d&eacute;bloqu&eacute;s</label>
+            <button type="button" id="tr-reset" disabled>R&eacute;initialiser</button>
+          </div>
+        </div>
+        <ul class="tracker-list" id="tr-list">
+<li data-name="Purifier&#x27;s Mantle"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/bb4ebe84dbe22bef021fe952b9d5b32727269b43.jpg" alt="Purifier&#x27;s Mantle &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Purifier&#x27;s Mantle</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">94.6%</span></label></li>
+<li data-name="First Fire"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/6cb3d12e6354bc3ed1758523f7f597739b4d0fb9.jpg" alt="First Fire &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>First Fire</b><small>D&eacute;couvrez votre premier campement.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">92.5%</span></label></li>
+<li data-name="Blight-Touched"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/beb9eece4bf54043d1ba5872fe9ad9f05dcf1365.jpg" alt="Blight-Touched &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blight-Touched</b><small>Am&eacute;liorez un attribut pour la premi&egrave;re fois.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">83.1%</span></label></li>
+<li data-name="Man&#x27;s Best Friend"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/3e40533e0495d9d2b7f519a2c0f9efc4722295bb.jpg" alt="Man&#x27;s Best Friend &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Man&#x27;s Best Friend</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">63.9%</span></label></li>
+<li data-name="Knowing Me, Knowing You"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/f709a5faede11a0ac8972f0280ddb84a4610ae64.jpg" alt="Knowing Me, Knowing You &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Knowing Me, Knowing You</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">58.7%</span></label></li>
+<li data-name="Entangled"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/93c5d02e9c49b39764fce3ef51473e65ad0a48b9.jpg" alt="Entangled &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Entangled</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">57.1%</span></label></li>
+<li data-name="Rangifer&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c31c740349ab65f376fb2d0e09f7ce8b8e07da12.jpg" alt="Rangifer&#x27;s End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Rangifer&#x27;s End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">53.7%</span></label></li>
+<li data-name="Place of Return"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/f4b07d60ddf1e92157891d2432685d424ada0de7.jpg" alt="Place of Return &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Place of Return</b><small>D&eacute;couvrez votre premier sanctuaire.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">51.8%</span></label></li>
+<li data-name="Snack Time"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d97d31a46310f5ab53d0e7f973d8f2c2fa4280ca.jpg" alt="Snack Time &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Snack Time</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">47.2%</span></label></li>
+<li data-name="Lacerta&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/688b0b902c23a830408429e2077b1bcf01799ec2.jpg" alt="Lacerta&#x27;s End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Lacerta&#x27;s End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">44.3%</span></label></li>
+<li data-name="Repose for the Departed"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d97dd3f1b647f76a45dda0c0865fb808252a2d4c.jpg" alt="Repose for the Departed &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Repose for the Departed</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">40.9%</span></label></li>
+<li data-name="Closest Companion"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/a491a20631e6f4fca6bf755ee3cdc5f97df2a043.jpg" alt="Closest Companion &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Closest Companion</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">38.8%</span></label></li>
+<li data-name="Busy Paws"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c42233744adff81e5003aa115e3fef123bb321e3.jpg" alt="Busy Paws &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Busy Paws</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">36.4%</span></label></li>
+<li data-name="Taurus&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/bea4e0aa3b9cf868db67e6bd7bb1304f9d1f2c9e.jpg" alt="Taurus&#x27;s End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Taurus&#x27;s End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">35.4%</span></label></li>
+<li data-name="Bestie"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/77cadeae79347ece37e5f25673c83cdebb880ba2.jpg" alt="Bestie &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Bestie</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">34.9%</span></label></li>
+<li data-name="Corvus&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/80b55da64938933fdf4491bd1254a1ff19ded21b.jpg" alt="Corvus&#x27;s End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Corvus&#x27;s End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">29.2%</span></label></li>
+<li data-name="Green Thumb"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/88459cacb1f4a5651bdb6dce48d493fca8672217.jpg" alt="Green Thumb &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Green Thumb</b><small>Obtenez chaque type de pousse.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">27.4%</span></label></li>
+<li data-name="Koo de Grâce"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/5d8c65fb3eba86c8e0cf6cb1aa24b3228706d586.jpg" alt="Koo de Grâce &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Koo de Grâce</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">26.6%</span></label></li>
+<li data-name="Ursa&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/e87d458adc424b457d77c889aa8ce8b769e41d66.jpg" alt="Ursa&#x27;s End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Ursa&#x27;s End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">26.0%</span></label></li>
+<li data-name="Shidou &amp; Nue"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/1727df8980df6aa70da831cdd014c53ec3a6cafc.jpg" alt="Shidou &amp; Nue &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Shidou &amp; Nue</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">25.9%</span></label></li>
+<li data-name="Erymanth&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/8433aa46fb2f068ff9ae1d22be1281d41437a906.jpg" alt="Erymanth&#x27;s End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Erymanth&#x27;s End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">25.7%</span></label></li>
+<li data-name="Kunai &amp; Kirin"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c364f837c865442360b618e35fd2e349a9e1f304.jpg" alt="Kunai &amp; Kirin &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Kunai &amp; Kirin</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">25.6%</span></label></li>
+<li data-name="Life After the End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/02e7ae77d9aeed3ee761a668bf08d97237a6b2db.jpg" alt="Life After the End &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Life After the End</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">25.3%</span></label></li>
+<li data-name="The End of Reincarnation"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d4586377b374c61d2d16b053c9da8a16ce55c7be.jpg" alt="The End of Reincarnation &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The End of Reincarnation</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">25.3%</span></label></li>
+<li data-name="The Sealer"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/ab6d25f16b7d080f86292eea20ee0ab3211dfde4.jpg" alt="The Sealer &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Sealer</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">22.1%</span></label></li>
+<li data-name="Horror in the Sky"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/266c0768441a2a35b0982ff82e76b97ce7302280.jpg" alt="Horror in the Sky &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Horror in the Sky</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">18.5%</span></label></li>
+<li data-name="Manual Maniac"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/fea51be1415dd630411884d897be63ce1a4c5c34.jpg" alt="Manual Maniac &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Manual Maniac</b><small>Obtenez les manuels de tous les types de fl&egrave;ches et de carreaux.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">12.9%</span></label></li>
+<li data-name="Degeneration​"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/e94b96504331f57c031c0a7e815100666b2d68de.jpg" alt="Degeneration​ &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Degeneration​</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">11.7%</span></label></li>
+<li data-name="Wandering Duelist"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/62d45770f91e4668cf46989a0177921ce7ac229b.jpg" alt="Wandering Duelist &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Wandering Duelist</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">10.3%</span></label></li>
+<li data-name="Gourmand"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/17ad28e7a713c4eb9aec5e3febc1f3095e68a378.jpg" alt="Gourmand &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Gourmand</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">7.2%</span></label></li>
+<li data-name="The Ultimate Vessel"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/b9150f7a93856a7368599a20400b092ee94e5d9b.jpg" alt="The Ultimate Vessel &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Ultimate Vessel</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">6.9%</span></label></li>
+<li data-name="The Perfect Pal"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/813fc92d9fef9df6b96e331aa30e52b7427a4ba8.jpg" alt="The Perfect Pal &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Perfect Pal</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">6.9%</span></label></li>
+<li data-name="Blade Collector"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/11cff4989a1ed55eac279b6ec8d6309539486084.jpg" alt="Blade Collector &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blade Collector</b><small>Obtenez toutes les lames.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">6.3%</span></label></li>
+<li data-name="Soul Returned"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/cbca101014ff10bec677fce60ac4feff551934be.jpg" alt="Soul Returned &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Soul Returned</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">6.2%</span></label></li>
+<li data-name="Know-It-All"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/7ecbf26fec0c63bce3f1a43a9358e93f19b1a963.jpg" alt="Know-It-All &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Know-It-All</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">6.1%</span></label></li>
+<li data-name="Munitions Master"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/dab5c9f2312d429963c18bbc6787c34f98d39754.jpg" alt="Munitions Master &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Munitions Master</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">5.9%</span></label></li>
+<li data-name="Giant Tree Budburst"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/15d5787d7e5c0bdef6b2bfbaf70139259d44ab39.jpg" alt="Giant Tree Budburst &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Giant Tree Budburst</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">5.5%</span></label></li>
+<li data-name="Behold, the Truth"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/491d383d8a66fde7cbdfa90fef7351c317d6813b.jpg" alt="Behold, the Truth &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Behold, the Truth</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">5.2%</span></label></li>
+<li data-name="Finders, Keepers"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/355bd401f85b9b97f414b8e2b3b72bb63bf775e0.jpg" alt="Finders, Keepers &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Finders, Keepers</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">5.2%</span></label></li>
+<li data-name="Happy Camper"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/107d74ae452f31d01b9e01d2756422bbcc409d31.jpg" alt="Happy Camper &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Happy Camper</b><small>D&eacute;couvrez tous les campements.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">5.0%</span></label></li>
+<li data-name="Giant Tree in Bloom"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/15218d8eacbf6d71854e6a6bacbd109fde0310f2.jpg" alt="Giant Tree in Bloom &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Giant Tree in Bloom</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">4.8%</span></label></li>
+<li data-name="Blade Enthusiast"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/9e48e4c9f96a878a4af97b34073ec2ddaa2240b5.jpg" alt="Blade Enthusiast &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blade Enthusiast</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">4.3%</span></label></li>
+<li data-name="Blademaster"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d7e03c16044fd25d912d65905cb02554bccd1ca6.jpg" alt="Blademaster &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blademaster</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">4.0%</span></label></li>
+<li data-name="Floral Profusion"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/ecc917506dea8555b3f695f31c4b679b9589ca63.jpg" alt="Floral Profusion &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Floral Profusion</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">3.8%</span></label></li>
+<li data-name="Reincarnated"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/5e7c92f9fac1c731b197b1fed0955d0b9595bebb.jpg" alt="Reincarnated &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Reincarnated</b><small>Succ&egrave;s cach&eacute; &mdash; Steam ne publie aucune description.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">3.3%</span></label></li>
+<li data-name="Duty Fulfilled"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/69f17a29f62d63151a57e350c2cd18417c0806bb.jpg" alt="Duty Fulfilled &mdash; ic&ocirc;ne du succ&egrave;s" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Duty Fulfilled</b><small>D&eacute;bloquez tous les succ&egrave;s.</small></span><span class="tracker-pct" title="Part des joueurs Steam ayant d&eacute;bloqu&eacute; ce succ&egrave;s">3.0%</span></label></li>
+        </ul>
+        <p class="tracker-foot">Les taux de d&eacute;blocage sont les chiffres mondiaux de Steam relev&eacute;s le 07/09/2026, actualis&eacute;s chaque semaine. Vos coches ne sont enregistr&eacute;es que dans ce navigateur.</p>
+      </section>
+
+      <h2 id="lire-les-chiffres">Lire les chiffres</h2>
+      <p>Chaque pourcentage est le taux de d&eacute;blocage mondial de Steam pour Beast of Reincarnation : la part de tous les possesseurs Steam ayant obtenu ce succ&egrave;s depuis la sortie du jeu. C'est un chiffre mouvant &mdash; les succ&egrave;s d'histoire baissent &agrave; chaque promotion qui am&egrave;ne de nouveaux joueurs, puis remontent &agrave; mesure qu'ils avancent &mdash; c'est pourquoi cette page relit Steam chaque semaine et affiche la date du relev&eacute; sous la liste. Au relev&eacute; du 7 septembre, le plus courant est <strong>Purifier's Mantle</strong> &agrave; 94,6&nbsp;% et le plus rare est <strong>Duty Fulfilled</strong> (D&eacute;bloquez tous les succ&egrave;s.) &agrave; 3,0&nbsp;%. Notre <a href="/beast-of-reincarnation/fr/trophies">page des troph&eacute;es</a> reprend la m&ecirc;me liste avec des commentaires sur les points o&ugrave; les runs de compl&eacute;tion calent, ainsi que les correspondances PS5 et Xbox.</p>
+
+      <h2 id="succes-caches">38 des 46 sont cach&eacute;s</h2>
+      <p>Steam ne publie aucune description pour 38 des 46 succ&egrave;s, ce qui est inhabituellement &eacute;lev&eacute; : Game Freak a choisi de laisser inexprim&eacute;es la plupart des conditions li&eacute;es aux boss, aux fins et aux collections. Le suivi les affiche comme <em>succ&egrave;s cach&eacute;</em> plut&ocirc;t que d'inventer une condition. L&agrave; o&ugrave; ce site a &eacute;tabli ce qu'un succ&egrave;s cach&eacute; demande &agrave; partir du jeu ou des patch notes (les succ&egrave;s des <a href="/beast-of-reincarnation/fr/bosses">boss Nushi</a> suivent l'ordre de scellement ; la cha&icirc;ne de Rapport est document&eacute;e dans le <a href="/beast-of-reincarnation/fr/koo-guide">guide de Koo</a>), la page des troph&eacute;es le dit ; l&agrave; o&ugrave; ce n'est pas le cas, elle le dit aussi.</p>
+
+      <h2 id="un-ordre-sense">Un ordre sens&eacute;</h2>
+      <p>Le &laquo;&nbsp;plus accessible&nbsp;&raquo; de l'outil est purement statistique, mais il suit de pr&egrave;s la campagne. Le haut de la liste correspond aux premi&egrave;res heures &mdash; premier campement, premi&egrave;re am&eacute;lioration d'attribut, premier sanctuaire &mdash; puis au premier Nushi. La tranche m&eacute;diane rassemble les scellements de boss chapitre par chapitre et les paliers de Rapport avec Koo, qui arrivent naturellement si vous suivez la <a href="/beast-of-reincarnation/fr/walkthrough">soluce</a> et caressez le chien. La tranche basse, c'est le travail de compl&eacute;tion : des succ&egrave;s cach&eacute;s dont les noms pointent vers la collection d'armes et de Bloom Arts (Blade Enthusiast, Blademaster, Floral Profusion) et vers la fin du jeu (Reincarnated) &mdash; leurs conditions n'&eacute;tant pas publi&eacute;es, traitez ces noms comme des indices &mdash; et enfin <strong>Duty Fulfilled</strong>, le seul que Steam d&eacute;crit : d&eacute;bloquez tous les succ&egrave;s. Notre <a href="/beast-of-reincarnation/fr/all-endings">page des fins</a> explique quels d&eacute;blocages li&eacute;s au d&eacute;nouement sont ratables.</p>
+      <p>La version 1.0.9 (24 ao&ucirc;t) &eacute;tait la plus r&eacute;cente au moment de la r&eacute;daction ; la liste des succ&egrave;s compte toujours 46 entr&eacute;es, et notre <a href="/beast-of-reincarnation/fr/patch-notes">page des patch notes</a> le signalera si un patch ult&eacute;rieur y touche.</p>
+
+      <h2 id="ce-que-cet-outil-n-est-pas">Ce que cet outil n'est pas</h2>
+      <p>Il ne lit pas votre profil Steam, PlayStation ou Xbox &mdash; vous cochez les cases &agrave; la main, ce qui explique qu'il fonctionne sans connexion et qu'il ne puisse pas se tromper sur ce que vous poss&eacute;dez. La page de troph&eacute;es de votre plateforme, elle, coche &agrave; votre place ; ce qu'elle ne fait pas, c'est vous dire lequel des &eacute;l&eacute;ments restants est statistiquement le moins co&ucirc;teux, et c'est pr&eacute;cis&eacute;ment ce que cette page ajoute.</p>
+
+      <h2 id="sources">Sources</h2>
+      <ul>
+        <li><a href="https://steamcommunity.com/stats/2001760/achievements" rel="nofollow noopener" target="_blank">Steam &mdash; statistiques mondiales officielles des succ&egrave;s de l'application 2001760 (noms, descriptions, ic&ocirc;nes et tous les pourcentages de cette page ; relev&eacute; le 07/09/2026, actualis&eacute; chaque semaine)</a></li>
+        <li><a href="/beast-of-reincarnation/fr/trophies">La page des troph&eacute;es de ce site</a> &mdash; correspondance entre plateformes et analyse de compl&eacute;tion</li>
+      </ul>
+
+      <p class="updated">Derni&egrave;re v&eacute;rification : 7 septembre 2026 &middot; Version du jeu v&eacute;rifi&eacute;e : 1.0.9 &middot; Les chiffres mouvants indiquent la date de leur relev&eacute;</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+<script>
+(function(){
+  var KEY="ach-tracker:2001760", list=document.getElementById("tr-list"), items=Array.prototype.slice.call(list.children);
+  var done=new Set(); try{ done=new Set(JSON.parse(localStorage.getItem(KEY)||"[]")); }catch(e){}
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(Array.from(done))); }catch(e){} }
+  function pct(li){ return parseFloat(li.querySelector(".tracker-pct").textContent); }
+  function render(){
+    var n=items.length, d=0, easiest=null, rarest=null;
+    items.forEach(function(li){ var on=done.has(li.dataset.name); li.classList.toggle("on",on); li.querySelector("input").checked=on; li.hidden=on&&document.getElementById("tr-hide").checked; if(on){d++;} else { if(!easiest||pct(li)>pct(easiest)) easiest=li; if(!rarest||pct(li)<pct(rarest)) rarest=li; } });
+    var p=Math.round(d/n*100); document.getElementById("tr-bar").style.width=p+"%"; document.querySelector(".tracker-progress").setAttribute("aria-valuenow",d);
+    var s="<b>"+d+" / "+n+"</b> d\u00e9bloqu\u00e9s ("+p+"\u00a0%)";
+    if(easiest) s+=" \u00b7 le plus accessible : <b>"+easiest.dataset.name+"</b> ("+pct(easiest)+"\u00a0% des joueurs)";
+    if(rarest&&rarest!==easiest) s+=" \u00b7 le plus rare restant : <b>"+rarest.dataset.name+"</b> ("+pct(rarest)+"\u00a0%)";
+    if(d===n) s+=" \u00b7 <b>100\u00a0% \u2014 Duty Fulfilled.</b>";
+    document.getElementById("tr-summary").innerHTML=s; document.getElementById("tr-reset").disabled=d===0;
+  }
+  list.addEventListener("change",function(e){ var li=e.target.closest("li"); if(!li) return; done.has(li.dataset.name)?done.delete(li.dataset.name):done.add(li.dataset.name); save(); render(); });
+  document.getElementById("tr-hide").addEventListener("change",render);
+  document.getElementById("tr-reset").addEventListener("click",function(){ done=new Set(); save(); render(); });
+  document.getElementById("tr-sort").addEventListener("change",function(e){
+    var v=e.target.value, arr=items.slice();
+    if(v==="common") arr.sort(function(a,b){return pct(b)-pct(a);}); if(v==="rare") arr.sort(function(a,b){return pct(a)-pct(b);}); if(v==="name") arr.sort(function(a,b){return a.dataset.name.localeCompare(b.dataset.name);});
+    arr.forEach(function(li){ list.appendChild(li); });
+  });
+  render();
+})();
+</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/fr/bosses">Boss</a><a href="/beast-of-reincarnation/fr/builds">Builds</a><a href="/beast-of-reincarnation/fr/koo-guide">Guide Koo</a><a href="/beast-of-reincarnation/fr/beginner-guide">D&eacute;butant</a><a href="/beast-of-reincarnation/fr/review">Test</a><a href="/beast-of-reincarnation/fr/metacritic">Metascore</a><a href="/beast-of-reincarnation/fr/how-long-to-beat">Dur&eacute;e de vie</a><a href="/beast-of-reincarnation/fr/all-weapons">Armes</a><a href="/beast-of-reincarnation/fr/all-endings">Fins</a><a href="/beast-of-reincarnation/fr/trophies">Troph&eacute;es</a><a href="/beast-of-reincarnation/fr/achievement-tracker">Tracker</a><a href="/beast-of-reincarnation/fr/walkthrough">Soluce</a><a href="/beast-of-reincarnation/fr/pc-requirements">Config PC</a><a href="/beast-of-reincarnation/fr/performance">Performances</a><a href="/beast-of-reincarnation/fr/patch-notes">Patch Notes</a><a href="/beast-of-reincarnation/fr/editions">&Eacute;ditions</a><a href="/beast-of-reincarnation/fr/preorder-bonuses">Bonus de pr&eacute;commande</a><a href="/beast-of-reincarnation/fr/game-pass">Game Pass</a><a href="/beast-of-reincarnation/fr/cross-save">Cross-save</a><a href="/beast-of-reincarnation/fr/release-date">Date de sortie</a><a href="/beast-of-reincarnation/fr/demo">D&eacute;mo</a><a href="/beast-of-reincarnation/fr/multiplayer">Multijoueur</a><a href="/beast-of-reincarnation/fr/open-world">Monde ouvert</a><a href="/beast-of-reincarnation/fr/difficulty">Difficult&eacute;</a><a href="/beast-of-reincarnation/fr/voice-actors">Doublage</a><a href="/beast-of-reincarnation/fr/faq">FAQ</a><a href="/about">&Agrave; propos</a><a href="/contact">Contact</a><a href="/privacy-policy">Confidentialit&eacute;</a><a href="/editorial-policy">Politique &eacute;ditoriale</a><a href="/terms">Conditions d'utilisation</a><a href="/disclaimer">Avertissement</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">&#9749; Soutenir</a></nav>
+    <p>Site de fans non officiel. Beast of Reincarnation est une marque de GAME FREAK inc. / Fictions, Inc. Ce site n'est ni affili&eacute; &agrave; ces soci&eacute;t&eacute;s ni approuv&eacute; par elles.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shidou &amp; Nue 攻略|Siphon(吸収)の仕組みと毒装備・全3戦</title>
+<meta name="description" content="ダブルボス Shidou &amp; Nue の攻略。Shidou が HP 約30%で Nue の HP を吸い上げる Siphon の仕組みと「通していい理由」、共通弱点の毒を軸にした準備、行動表とパリィ間隔、第3・6・11章での違いを整理しました。">
+<link rel="canonical" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Shidou &amp; Nue 攻略|Siphon(吸収)の仕組みと毒装備・全3戦">
+<meta property="og:description" content="ダブルボス Shidou &amp; Nue の攻略。Shidou が HP 約30%で Nue の HP を吸い上げる Siphon の仕組みと「通していい理由」、共通弱点の毒を軸にした準備、行動表とパリィ間隔、第3・6・11章での違いを整理しました。">
+<meta property="og:url" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">
+<meta property="og:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<style>body{font-family:'Noto Sans JP','Karla',sans-serif}h1,h2,h3{font-family:'Noto Serif JP','Marcellus',serif}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/shidou-and-nue-boss-guide">
+<link rel="alternate" hreflang="ja" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">
+<link rel="alternate" hreflang="x-default" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/shidou-and-nue-boss-guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja"}, {"@type": "ListItem", "position": 2, "name": "Shidou &amp; Nue 攻略", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/shidou-and-nue-boss-guide"}]}</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:10px}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.ga-hubsep{color:#3a4152}
+.ga-hubcur{color:#e6e9ef;text-decoration:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45vw}
+.ga-hubmenu{position:relative;margin-left:auto}
+.ga-hubmenu summary{list-style:none;cursor:pointer;color:#9aa3b2;padding:3px 10px;border:1px solid #2a3040;border-radius:6px;white-space:nowrap;user-select:none}
+.ga-hubmenu summary::-webkit-details-marker{display:none}
+.ga-hubmenu summary:hover{color:#e6e9ef;border-color:#3a4152}
+.ga-hubmenu[open] summary{color:#e6e9ef;border-color:#e8b64c}
+.ga-caret{margin-left:6px;font-size:.8em;color:#6b7386}
+.ga-hubpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:9999;min-width:230px;max-height:70vh;overflow:auto;background:#11141c;border:1px solid #2a3040;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:6px;display:flex;flex-direction:column}
+.ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
+.ga-hubpanel a.on{color:#e8b64c;font-weight:600}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;color:#9aa3b2;font-size:.92em}
+.ga-hubdiv{border-top:1px solid #23262f;margin:4px 0 2px}
+.ga-hubpanel .ga-hubsec{color:#9aa3b2;font-size:.92em;padding:6px 12px}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">&#9670; Lootlore</a><span class="ga-hubsep">/</span><a class="ga-hubcur" href="/beast-of-reincarnation/en">Beast of Reincarnation</a><details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary><nav class="ga-hubpanel"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/dragonsword-awakening/">DragonSword: Awakening</a><a href="/sephiria/">Sephiria</a><a href="/orc-problem/">Orc Problem</a><a class="ga-hubhome" href="/#games">Browse all guides &rarr;</a><span class="ga-hubdiv"></span><a class="ga-hubsec" href="/guides">Guides by category</a><a class="ga-hubsec" href="/reviews">Reviews &amp; verdicts</a><a class="ga-hubsec" href="/updates">Patch tracker</a></nav></details></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/ja">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">攻略</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/ja/bosses">ボス</a>
+      <a href="/beast-of-reincarnation/ja/builds">ビルド</a>
+      <a href="/beast-of-reincarnation/ja/koo-guide">クゥ</a>
+      <a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a>
+      <a href="/beast-of-reincarnation/ja/release-date">発売日</a>
+      <a href="/beast-of-reincarnation/ja/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/shidou-and-nue-boss-guide">English</a>
+      <a href="/beast-of-reincarnation/ja/shidou-and-nue-boss-guide" class="active">日本語</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/ja">ホーム</a> / Shidou &amp; Nue 攻略</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">ボス攻略 · 第3 / 6 / 11章</p>
+      <h1>Shidou &amp; Nue 攻略——Siphon(吸収)の正しい付き合い方</h1>
+      <p class="lede">要点は<strong>「Siphon は序盤なら通してよい」</strong>。Shidou は HP 約30%で Nue に穢れの枝を伸ばし、その HP を自分のバーへ吸い上げます。どうせ倒す相手の HP が移っているだけなので、毎回止めるより速い。2体の弱点は共通で<strong>毒</strong>、そして本当の腕試しは枝が繋がった瞬間に Nushi Skill で突っ込むこと——2体まとめて怯みます。</p>
+      <p class="updated">発売後の検証ガイドをもとに作成 &middot; 2026年9月10日 更新</p>
+    </section>
+    <article>
+      <figure class="shot"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/f9988d54094c2a099e5dafcdd12f045e4ca35f3b/ss_f9988d54094c2a099e5dafcdd12f045e4ca35f3b.1920x1080.jpg" alt="2体の Malefact を同時に相手取るダブルボス戦" loading="lazy" width="1920" height="1080"><figcaption>ダブルボス戦の場面。公式スクリーンショットを本ガイドの見出し画像として使用 &middot; GAME FREAK inc. / Fictions, Inc.(Steam ストアページ)</figcaption></figure>
+      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#sec-1">Siphon とは・いつ発動するか</a></li><li><a href="#sec-2">要点まとめ</a></li><li><a href="#sec-3">Siphon は通していいのか</a></li><li><a href="#sec-4">毒を軸にした準備</a></li><li><a href="#sec-5">攻撃パターンとパリィのタイミング</a></li><li><a href="#sec-6">3回の戦いで何が変わるか</a></li><li><a href="#sec-7">やりがちな失敗</a></li><li><a href="#sec-8">名前について(日本語表記の注記)</a></li><li><a href="#sec-9">よくある質問</a></li><li><a href="#sec-10">関連ページ</a></li><li><a href="#sec-11">出典</a></li></ul></nav>
+
+      <div class="callout"><p><strong>結論:</strong> Shidou が Nue Malefact に穢れの枝を伸ばし、その HP を自分のバーへ吸い上げ始めても<strong>慌てないでください</strong>。HP 約30%で Shidou は攻撃をやめて Nue の HP を吸い始めますが、<strong>どうせ倒さなければならない相手の HP</strong>が移動しているだけなので、序盤の1〜2回は通したほうが結果的に速く終わります。2体の弱点は共通で<strong>毒</strong>。本当の腕試しは、この Siphon を読んで<strong>枝が繋がった瞬間に Nushi Skill で Shidou へ突っ込む</strong>——これで2体同時に怯みます。</p></div>
+
+      <h2 id="sec-1">Siphon とは・いつ発動するか</h2>
+      <p>Shidou &amp; Nue は、他のダブルボス戦の型を破ってきます。他のペアは属性合わせときれいなパリィで決着しますが、この2体には第3の層が乗ります。<strong>Shidou 自身の HP が約30%まで落ちる</strong>と、彼は攻撃をやめ、<strong>Nue Malefact</strong> に穢れの枝を伸ばし、Nue の HP を自分のバーへ直接注ぎ込み始めます。止めるまで続きます。</p>
+      <p>独立した2つの検証ガイドがこの「約30%」で一致しています。重要なのは、これが<strong>新しい回復リソースではない</strong>という点。HP が Nue のバーから Shidou のバーへ移っているだけで、この事実がそのまま対処法を決めます。</p>
+
+      <h2 id="sec-2">要点まとめ</h2>
+      <table>
+        <tr><th>項目</th><th>内容</th></tr>
+        <tr><td>弱点</td><td><strong>毒</strong>——2体とも共通</td></tr>
+        <tr><td>登場する章</td><td>第3章(Lv.20)、第6章(Lv.35)、第11章(Lv.48)</td></tr>
+        <tr><td>キーとなる仕掛け</td><td>Siphon——Shidou が HP 約30%で Nue の HP を自分へ吸い上げる</td></tr>
+        <tr><td>最善の妨害</td><td>穢れの枝が繋がった瞬間に Nushi Skill で Shidou へ突撃。2体同時に怯む</td></tr>
+        <tr><td>推奨の準備</td><td>毒の矢/ボルト、毒属性の刀、継戦寄りの防具</td></tr>
+        <tr><td>3戦目の報酬</td><td>Bloom Art: Erica Strangle Lv.1、Blade Art: Nue Lv.1、そして刀「Black Blossom」(1つの検証ソースのみ。当サイトの<a href="/beast-of-reincarnation/ja/bosses">ボス一覧</a>は第3章戦での Nushi Skill を Chimeric Flow としており、<strong>報酬の内訳は未確認</strong>として扱います)</td></tr>
+      </table>
+
+      <h2 id="sec-3">Siphon は通していいのか</h2>
+      <p><strong>少なくとも1〜2回は通してください。</strong>最終的には2体とも HP をゼロにしなければならない以上、Siphon が1周完了することは<strong>自分で殴らずに済んだダメージ</strong>と同じ意味を持ちます。すでに削っているバーから、これから削るバーへ HP が移っただけだからです。</p>
+      <p>検証で共通している実践的な線引きはこうです——<strong>Shidou が約30%まで落ちたら攻めの手を緩め、2〜3回の吸い上げを通す。妨害を始めるのは Nue も同じく30%付近に近づいてから。</strong>その先は、Siphon 1回ごとに自分の進捗を返してしまうことになるので、枝が繋がった瞬間に Nushi Skill で Shidou へ突撃してください。この怯みは<strong>2体同時にヒットし、吸い上げそのものをキャンセル</strong>します。</p>
+      <p>初見の前にもう1つ知っておくべき点があります。検証済みの行動表は Siphon(「Health Absorb」と表記される場合あり)を<strong>第6章の戦い</strong>の項目にだけ載せており、第3章には存在しない可能性を示唆しています。一方、別の攻略記事は<strong>初戦から Shidou は Siphon を持っており、後の戦いで威力が上がるだけ</strong>だとしています。<strong>いつから使ってくるかについて出典は一致していません(未確認)</strong>——一致しているのは仕組みのほうだけです。Lv.20 の初戦から穢れの枝の予兆に注意しつつ、第6章の再戦まで見なくても慌てないでください。</p>
+
+      <h2 id="sec-4">毒を軸にした準備</h2>
+      <p>2体の弱点は共通で<strong>毒</strong>。これは検証済みのすべてのガイドで一致しています。装備は簡単になりますが、それでも<strong>属性より戦いの段取りのほうが重要</strong>です。</p>
+      <ul>
+        <li>入る前に<strong>毒の矢/ボルト</strong>を補充。Nue が空中にいる場面では近接が届かないことがあり、遠距離の毒は継続的に効き続けます。</li>
+        <li>クゥが同行する第6章・第11章の戦いでは、解放済みなら<strong>毒系の Bloom Art</strong> を軸に。FP のやりくりは<a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a>で解説しています。</li>
+        <li>Shidou を30%へ押し込む前に、<strong>FP を最低1本は満タンにしておく</strong>こと。FP はきれいなパリィでしか溜まらず、Bloom Arts は連発できません。Siphon が始まった瞬間にゲージが空だと、止める手段がないまま見ているしかなくなります。</li>
+        <li>継戦寄りの<a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン</a>もここで効きます。4方向のビルドごとの取捨は<a href="/beast-of-reincarnation/ja/builds">ビルド解説</a>にまとめています。</li>
+      </ul>
+
+      <h2 id="sec-5">攻撃パターンとパリィのタイミング</h2>
+      <p>2体は完全に同時ではなく<strong>交互に</strong>攻撃してきます。ゲームのオートロックも、次に振ってくるほうを自動的に追います。<strong>コンボの途中で手動でターゲットを切り替えないでください</strong>——何の得もないまま回避の窓を1つ失います。</p>
+      <table>
+        <tr><th>攻撃</th><th>相手</th><th>対処</th></tr>
+        <tr><td><strong>Two Slashes</strong></td><td>Shidou</td><td>2回とも<strong>パリィ</strong></td></tr>
+        <tr><td><strong>Blight Combo(長い2連撃)</strong></td><td>Shidou</td><td><strong>パリィ</strong>。間隔はおよそ1.5秒</td></tr>
+        <tr><td><strong>Blight Lunge</strong></td><td>Shidou</td><td><strong>回避のみ</strong>——パリィ不可</td></tr>
+        <tr><td><strong>Tree Slam</strong></td><td>Shidou</td><td>着弾直前にジャスト回避。<strong>パリィ不可</strong></td></tr>
+        <tr><td><strong>Giant Leap / Pounce</strong></td><td>Nue</td><td>着地の直前に回避</td></tr>
+        <tr><td><strong>Claw Combo(5〜6撃+叩きつけ)</strong></td><td>Nue</td><td>全段<strong>パリィ</strong></td></tr>
+        <tr><td><strong>Tail Spin</strong></td><td>Nue</td><td><strong>パリィ</strong>。間隔はおよそ2秒</td></tr>
+        <tr><td><strong>Lightning Strikes</strong></td><td>Nue</td><td><strong>パリィ不可</strong>——連続で回避</td></tr>
+        <tr><td><strong>Siphon(穢れの枝)</strong></td><td>Shidou</td><td>Nushi Skill で突っ込んで殴る。<strong>2体同時に怯む</strong></td></tr>
+      </table>
+      <p>この戦いで最大の位置取りのミスは<strong>2体のあいだに立つこと</strong>です。背後にいるほうの攻撃範囲に入ってしまい、2体の技と1つの吸い上げを同時に追いながら、見えていない一撃をもらう——いちばんありがちな負け筋です。</p>
+
+      <h2 id="sec-6">3回の戦いで何が変わるか</h2>
+      <ul>
+        <li><strong>第3章(Lv.20)——初戦。</strong>パリィのタイミングを覚える練習台と考えてください。Siphon がこの時点で有効かどうかは出典が割れているので、穢れの枝の予兆が出なくても慌てる必要はありません。</li>
+        <li><strong>第6章(Lv.35)——再戦。</strong>Siphon の存在が一貫して確認されるのはこの戦いです。Nue の Charged Combo は2撃目に雷の円が加わります。全体的にダメージが上がるので、<strong>戦闘に入る前に FP を満タンに</strong>。</li>
+        <li><strong>第11章(Lv.48)——最終戦。</strong>Nue に Seed Bomb が加わります。1つの検証ソースによれば装備報酬が出るのはこの戦いですが(上の表を参照)、<strong>報酬の内訳は当サイトのボス一覧と食い違うため未確認</strong>として扱います。物語の進行構造上、3戦のいずれにも大幅な低レベルで到達することは稀です。数レベル足りないと感じたら、力押しよりも前の章のサイドコンテンツを消化するほうが効率的です。</li>
+      </ul>
+
+      <h2 id="sec-7">やりがちな失敗</h2>
+      <ul>
+        <li><strong>Siphon を毎回止めに行く。</strong>どうせ削る相手からの吸い上げは、序盤なら無料の進捗です。妨害は Nue も30%に近づいてから。</li>
+        <li><strong>FP が空のまま戦う。</strong>枝が繋がった瞬間に FP を使えなければ、吸い上げが終わるのを見ているだけになります。</li>
+        <li><strong>コンボ中に手動でロック先を切り替える。</strong>オートロックはすでに「次に攻撃してくるほう」を追っています。逆らうと回避の窓を落とします。</li>
+        <li><strong>2体のあいだに立つ。</strong>画面外にいるほうの一撃を必ずもらいます。</li>
+      </ul>
+
+      <h2 id="sec-8">名前について(日本語表記の注記)</h2>
+      <p>「Nue」は日本の伝承に登場する妖怪「鵺」を思わせる名前で、日本を舞台にした本作の設定とも噛み合います。ただし<strong>日本語版でこの2体がどう表記されるか、公式には確認できていません(未確認)</strong>。当サイトでは英語名のまま記載し、表記が確認でき次第、日本語名を併記に切り替えます。技名・報酬名についても同様です。世界観としての穢れの位置づけは<a href="/beast-of-reincarnation/ja/blight-explained">穢れ(Blight)とは</a>で解説しています。</p>
+
+      <h2 id="sec-9">よくある質問</h2>
+      <h3>Siphon は完全に阻止すべき?</h3>
+      <p>いいえ。Nue の HP に対して1〜2回は通したほうが、毎回止めるより速く終わります。そのダメージはどのみち削らなければならないからです。止め始めるのは Nue も30%付近に来てからにしてください。</p>
+      <h3>2戦目・3戦目で装備を変える必要は?</h3>
+      <p>根本的には不要です。毒はどの戦いでも正解のままで、変わるのは被ダメージの数値だけ。ただし後半の戦いほど FP 管理の重みが増します。コンボが痛くなるぶん、Siphon を潰すためのゲージを常に用意しておく必要があるからです。</p>
+      <h3>第3章の戦いは周回する価値がある?</h3>
+      <p>入手できるデータを見るかぎり、Lv.20 と Lv.35 の戦いには意味のある報酬はなく、装備の払い出しがあるとすれば3戦目です。最初の2回は練習台と割り切ってください。</p>
+      <h3>戦闘中に勝手にターゲットが切り替わるのはなぜ?</h3>
+      <p>仕様です。2体が交互に攻撃し、オートロックが次に振ってくるほうを追う設計になっています。手動で切り替えて逆らうと、得より損のほうが大きくなります。</p>
+      <h3>クゥは3戦とも同行する?</h3>
+      <p>第6章と第11章では同行します。クゥなしで挑む例外は<a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact</a> のほうです。全体の攻略順は<a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略チャート</a>にまとめています。</p>
+
+      <h2 id="sec-10">関連ページ</h2>
+      <ul>
+        <li><a href="/beast-of-reincarnation/ja/bosses">ボス攻略——Malefact とヌシの攻略順</a></li>
+        <li><a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact 攻略(クゥなしの戦い)</a></li>
+        <li><a href="/beast-of-reincarnation/ja/koo-guide">クゥのコマンドとスキル</a></li>
+        <li><a href="/beast-of-reincarnation/ja/builds">ビルドとスキルツリー</a></li>
+      </ul>
+
+      <h2 id="sec-11">出典</h2>
+      <ul>
+        <li><a href="https://www.switchbladegaming.com/beast-of-reincarnation/shidou-and-nue-guide/" rel="nofollow noopener" target="_blank">Switchblade Gaming —— Shidou and Nue Boss Guide</a> —— Siphon の仕組み、行動表、章ごとの差分</li>
+        <li><a href="https://www.sportskeeda.com/esports/beast-of-reincarnation-shidou-nue-boss-guide-attacks-weaknesses-tips-defeat-easily" rel="nofollow noopener" target="_blank">Sportskeeda —— Shidou and Nue boss guide</a> —— 弱点属性の確認</li>
+      </ul>
+      <p class="updated">最終レビュー:2026年9月10日 &middot; 確認済みゲームバージョン:1.0.9 &middot; 第11章の報酬内訳は1つの出典のみで、当サイトのボス一覧と食い違うため未確認として記載しています。</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact</a><a href="/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">Shidou &amp; Nue</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/blight-explained">穢れとは</a><a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン</a><a href="/beast-of-reincarnation/ja/amber-farming">琥珀稼ぎ</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/achievement-tracker">実績トラッカー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/patch-notes">アップデート</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/which-edition-quiz">版選び診断</a><a href="/beast-of-reincarnation/ja/preorder-bonuses">予約特典</a><a href="/beast-of-reincarnation/ja/game-pass">Game Pass</a><a href="/beast-of-reincarnation/ja/cross-save">クロスセーブ</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
+  </div>
+</footer>
+</body>
+</html>

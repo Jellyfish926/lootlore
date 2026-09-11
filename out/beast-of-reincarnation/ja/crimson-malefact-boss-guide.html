@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crimson Malefact 攻略|クゥなしの単独戦・全行動と対処(第9章)</title>
+<meta name="description" content="第9章 Starfall Tower の必須ボス Crimson Malefact(Lv.45)の攻略。クゥが同行せず Bloom Arts が使えない唯一の戦いの立ち回り、全11種の行動とパリィ/回避の判断、第2フェーズの変化、推奨武器までまとめました。">
+<link rel="canonical" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/crimson-malefact-boss-guide">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Crimson Malefact 攻略|クゥなしの単独戦・全行動と対処(第9章)">
+<meta property="og:description" content="第9章 Starfall Tower の必須ボス Crimson Malefact(Lv.45)の攻略。クゥが同行せず Bloom Arts が使えない唯一の戦いの立ち回り、全11種の行動とパリィ/回避の判断、第2フェーズの変化、推奨武器までまとめました。">
+<meta property="og:url" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/crimson-malefact-boss-guide">
+<meta property="og:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<style>body{font-family:'Noto Sans JP','Karla',sans-serif}h1,h2,h3{font-family:'Noto Serif JP','Marcellus',serif}</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/crimson-malefact-boss-guide">
+<link rel="alternate" hreflang="ja" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/crimson-malefact-boss-guide">
+<link rel="alternate" hreflang="x-default" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/crimson-malefact-boss-guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja"}, {"@type": "ListItem", "position": 2, "name": "Crimson Malefact 攻略", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/crimson-malefact-boss-guide"}]}</script>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:10px}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.ga-hubsep{color:#3a4152}
+.ga-hubcur{color:#e6e9ef;text-decoration:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45vw}
+.ga-hubmenu{position:relative;margin-left:auto}
+.ga-hubmenu summary{list-style:none;cursor:pointer;color:#9aa3b2;padding:3px 10px;border:1px solid #2a3040;border-radius:6px;white-space:nowrap;user-select:none}
+.ga-hubmenu summary::-webkit-details-marker{display:none}
+.ga-hubmenu summary:hover{color:#e6e9ef;border-color:#3a4152}
+.ga-hubmenu[open] summary{color:#e6e9ef;border-color:#e8b64c}
+.ga-caret{margin-left:6px;font-size:.8em;color:#6b7386}
+.ga-hubpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:9999;min-width:230px;max-height:70vh;overflow:auto;background:#11141c;border:1px solid #2a3040;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:6px;display:flex;flex-direction:column}
+.ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
+.ga-hubpanel a.on{color:#e8b64c;font-weight:600}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;color:#9aa3b2;font-size:.92em}
+.ga-hubdiv{border-top:1px solid #23262f;margin:4px 0 2px}
+.ga-hubpanel .ga-hubsec{color:#9aa3b2;font-size:.92em;padding:6px 12px}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">&#9670; Lootlore</a><span class="ga-hubsep">/</span><a class="ga-hubcur" href="/beast-of-reincarnation/en">Beast of Reincarnation</a><details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary><nav class="ga-hubpanel"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/dragonsword-awakening/">DragonSword: Awakening</a><a href="/sephiria/">Sephiria</a><a href="/orc-problem/">Orc Problem</a><a class="ga-hubhome" href="/#games">Browse all guides &rarr;</a><span class="ga-hubdiv"></span><a class="ga-hubsec" href="/guides">Guides by category</a><a class="ga-hubsec" href="/reviews">Reviews &amp; verdicts</a><a class="ga-hubsec" href="/updates">Patch tracker</a></nav></details></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/ja">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">攻略</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/ja/bosses">ボス</a>
+      <a href="/beast-of-reincarnation/ja/builds">ビルド</a>
+      <a href="/beast-of-reincarnation/ja/koo-guide">クゥ</a>
+      <a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a>
+      <a href="/beast-of-reincarnation/ja/release-date">発売日</a>
+      <a href="/beast-of-reincarnation/ja/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/crimson-malefact-boss-guide">English</a>
+      <a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide" class="active">日本語</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/ja">ホーム</a> / Crimson Malefact 攻略</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">ボス攻略 · 第9章</p>
+      <h1>Crimson Malefact 攻略——クゥなしで挑む唯一のボス戦</h1>
+      <p class="lede">要点は<strong>「エマ単独戦の前提で装備を組むこと」</strong>。クゥの Florescence Points も Bloom Arts も完全に封じられます。荒野エリア Starfall Tower の最上部、第9章(おおむね18時間地点)で待ち構え、そこまでのどのボスより正確なパリィを要求します。全行動の対処、実際にパリィできる技、生き残るための装備と立ち位置を整理しました。</p>
+      <p class="updated">発売後の検証ガイドをもとに作成 &middot; 2026年9月10日 更新</p>
+    </section>
+    <article>
+      <figure class="shot"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/7252f8336988a2830e56428d99cf8792bc172161/ss_7252f8336988a2830e56428d99cf8792bc172161.1920x1080.jpg" alt="Malefact に単独で挑む Beast of Reincarnation のエマ" loading="lazy" width="1920" height="1080"><figcaption>公式スクリーンショットを本ガイドの見出し画像として使用 &middot; GAME FREAK inc. / Fictions, Inc.(Steam ストアページ)</figcaption></figure>
+      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#sec-1">いつ・どこで戦うか</a></li><li><a href="#sec-2">この戦いだけが違う理由:クゥがいない</a></li><li><a href="#sec-3">全行動と対処法</a></li><li><a href="#sec-4">第2フェーズで増えること</a></li><li><a href="#sec-5">装備と持ち物</a></li><li><a href="#sec-6">弱点属性の食い違いについて</a></li><li><a href="#sec-7">やりがちな失敗</a></li><li><a href="#sec-8">どうしても勝てないとき</a></li><li><a href="#sec-9">よくある質問</a></li><li><a href="#sec-10">関連ページ</a></li><li><a href="#sec-11">出典</a></li></ul></nav>
+
+      <div class="callout"><p><strong>結論:</strong> この戦いは<strong>エマ単独</strong>です。クゥの FP も Bloom Arts も完全に封じられるため、その前提で装備を組んでください。Crimson Malefact は荒野エリアの <strong>Starfall Tower</strong> 最上部、<strong>第9章</strong>(おおむね18時間地点)に待ち構えており、そこまでのどのボスよりも正確なパリィを要求します。多くの連携は<strong>1回のガード失敗で HP の大部分</strong>を持っていきます。</p></div>
+
+      <h2 id="sec-1">いつ・どこで戦うか</h2>
+      <p>Crimson Malefact は<strong>第9章</strong>の必須ストーリーボスで、荒野エリア——キャンペーン9番目の主要ゾーン——にある <strong>Starfall Tower</strong> の最上部で戦います。表示レベルは <strong>45</strong>。本作の他のボスと同じく回避は不可能で、メインクエストのマーカーを追えばそのまま闘技場に入ります。多くのプレイ報告では<strong>約18時間地点</strong>、物語上クゥが一時的に離脱した直後に配置されています。当サイトの<a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a>とボスの時系列もこの数字で一致しているので、プレイ時間が15時間を超えていてクゥが姿を消したなら、この戦いはもう目前です。</p>
+
+      <h2 id="sec-2">この戦いだけが違う理由:クゥがいない</h2>
+      <p>他のヌシ戦はすべて、<a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a>で解説している「パリィ→FP→Bloom Arts」の循環で回ります。ジャストガードで Florescence Points が溜まり、△のコマンドメニューから FP を使い、クゥの Bloom Arts がダウンゲージをこじ開ける——その一連が<strong>ここでは一切存在しません</strong>。Crimson Malefact は<strong>エマ単独</strong>で戦うため、ガードブレイク・群れの処理・回復・距離詰めといった戦術面の半分がまるごと使えなくなります。</p>
+      <p>残るのは刀の圧力、回避のタイミング、パリィの精度、そしてエマがクゥと無関係に溜める Entanglement Overdrive だけ。読み間違えたときにクゥが尻拭いしてくれる前提で身体が動いてしまう人ほど、この戦いは厳しく罰してきます。</p>
+
+      <h2 id="sec-3">全行動と対処法</h2>
+      <p>Crimson Malefact の攻撃は<strong>決まったローテーションではなく、順不同</strong>で飛んできます。つまりこの戦いは順番を覚える試験ではなく、1つ1つの予兆を読む試験です。検証データによる行動表は次のとおりです。</p>
+      <table>
+        <tr><th>攻撃</th><th>対処</th></tr>
+        <tr><td><strong>Bite</strong></td><td>単発の突進噛みつき。<strong>パリィ推奨</strong>。わずかに怯むので短い反撃の窓ができます。</td></tr>
+        <tr><td><strong>Bite Combo</strong></td><td>3連続の噛みつき。<strong>3発すべてパリィ</strong>。1発目や2発目で反撃に出ると残りをもらいます。</td></tr>
+        <tr><td><strong>Somersault</strong></td><td>赤い閃光が前兆。<strong>ガード不可</strong>——閃光を見たら回避。着地直後にわずかな隙。</td></tr>
+        <tr><td><strong>4 Attacks Into Somersault</strong></td><td>噛みつき2回+爪2回+宙返りの5連撃。噛みつきと爪をパリィし、締めの宙返りは回避。<strong>この連携の内側に反撃の窓はありません</strong>——耐えるだけにしてください。</td></tr>
+        <tr><td><strong>Ground Swipe / Stone Swipe</strong></td><td>地面から岩を抉って投げつけてきます。<strong>パリィ不可</strong>——回避して位置を取り直す。</td></tr>
+        <tr><td><strong>Bite Into Jump Back</strong></td><td>噛みついてから後退するフェイント気味の動き。反応してからでは遅いので<strong>早めにパリィ</strong>。後退するため、弓を持っているなら遠距離で追撃を。</td></tr>
+        <tr><td><strong>Spinning Dive</strong></td><td>高く跳び上がって回転しながら落下。<strong>パリィ不可</strong>——左右どちらかへ回避して、着地の衝撃と地面の棘の両方を避けます。</td></tr>
+        <tr><td><strong>Tail Slam Bloom</strong></td><td>尾を叩きつけて自分の位置をマーキングし、遅れてそこに巨大な曼珠沙華が咲きます。マーカーが消えるまで動き続け、その後に反撃を。咲いたあとは動きません。</td></tr>
+        <tr><td><strong>Rapid Seed Barrage</strong></td><td>高速の遠距離連射。安定してパリィできる速度ではないので、<strong>回避を継続</strong>。</td></tr>
+        <tr><td><strong>Sakura: Javelin</strong></td><td>高速の雷槍投擲。直感に反しますが、反応して回避するより<strong>パリィのほうが容易</strong>です。</td></tr>
+        <tr><td><strong>Tail Roots from the Ground</strong></td><td>赤い地面マーカーの下から遅れて蔓が生えます。予兆を見て、噴き出すまで動き続けてください。</td></tr>
+      </table>
+      <p><strong>技名は Steam(英語)表記です。日本語版での正式表記は公式に確認できていないため、英語名のまま記載しています(未確認)。</strong></p>
+
+      <h2 id="sec-4">第2フェーズで増えること</h2>
+      <p>第2フェーズでは <strong>Tail Vines</strong> が追加されます。尾を地面に突き刺し、こちらの足元から蔓を噴出させる技で、捕まるとボスのほうへ引き寄せられ、そのまま追撃が確定します。蔓が生え始めた瞬間に動く・全力で走って離れる、が最優先です。</p>
+      <p>第2フェーズは全体として、第1フェーズの技セットの上に<strong>範囲攻撃による陣地取り</strong>が重なる構成です。Bloom、Fire Seeds、根系の攻撃はいずれも「その場に留まる」プレイヤーを罰してくるため、立ち止まって撃ち合うのではなく、赤い警告マーカーを見ながら円を描いて動き続けてください。</p>
+
+      <h2 id="sec-5">装備と持ち物</h2>
+      <p>クゥの Bloom Arts が使えない以上、失われた火力と補助を<a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン</a>と武器で自前に補う必要があります。検証されている構成は大きく2方向です。</p>
+      <ul>
+        <li><strong>Spring Storm</strong>——すでに強化してあるなら、この戦いでの推奨武器です。</li>
+        <li>Spring Storm に投資していない場合は <strong>Purity</strong> が代替候補。1回のパリィ失敗で HP が大きく削られる相手なので、継戦力が効きます。</li>
+      </ul>
+      <p>手数も火力も高い相手なので、<a href="/beast-of-reincarnation/ja/builds">ビルド解説</a>のうち<strong>純火力型より継戦型のスピリットストーン</strong>(Fortification、Well of Fortitude、Iron Wall)を先に検討してください。武器そのものの性能比較は<a href="/beast-of-reincarnation/ja/all-weapons">武器一覧</a>にまとめています。</p>
+      <p>反撃は、大技の硬直に限って通してください。Somersault と5連撃はどちらも終わり際にわずかな無防備があります。ただし<strong>欲張らないこと</strong>——順不同のローテーションなので、次の攻撃がすぐ飛んでくることがあります。</p>
+
+      <h2 id="sec-6">弱点属性の食い違いについて</h2>
+      <p>ここは誤魔化さずに書きます。コミュニティのデータには実際に食い違いがあります。当サイトの<a href="/beast-of-reincarnation/ja/bosses">ボス一覧</a>は Crimson Malefact の弱点を<strong>水</strong>としていますが、Game8 の検証済み行動表は弱点を<strong>なし</strong>とし、この戦いに属性報酬も紐づけていません。</p>
+      <p>両者が一致しているのは、<strong>このボスは Nushi Skill を落とさず、純粋なストーリーの壁である</strong>という点です。したがって属性弱点は<strong>未確認</strong>として扱ってください。予備の属性武器があるなら持ち込んでよいものの、この戦いのために水属性中心の装備を組む必要はありません。<strong>パリィの精度・ガード不可技への回避・継戦装備という基本のほうが、属性合わせよりはるかに効きます。</strong></p>
+
+      <h2 id="sec-7">やりがちな失敗</h2>
+      <ul>
+        <li><strong>ガード不可技をガードしようとする。</strong>Somersault、Ground Swipe / Stone Swipe、Spinning Dive はいずれもガードを貫通します。予兆を覚えて回避に切り替えてください。</li>
+        <li><strong>癖でクゥのコマンドメニューを開く。</strong>そこには何もありません。プレッシャーがかかると△に指が伸びる人は、この戦いの<strong>前に</strong>癖を抜いておきましょう。</li>
+        <li><strong>5連撃の途中で欲を出す。</strong>この連携には反撃の窓がない、と検証データは明言しています。まず耐えて、終わってから殴る。</li>
+        <li><strong>第2フェーズの範囲攻撃中に立ち止まる。</strong>赤い地面マーカーは「動け」の合図であって、「自分のコンボを完走しろ」の合図ではありません。</li>
+      </ul>
+
+      <h2 id="sec-8">どうしても勝てないとき</h2>
+      <p>本作には<strong>ストーリーモードを含む難易度設定</strong>が用意されており、開発側も「途中で投げ出さなくても、上級者でなくても倒せるように作った」と明言しています。このボス1体のために難易度を下げるのは、意図的に用意された手段であって敗北ではありません。設定の詳細は<a href="/beast-of-reincarnation/ja/difficulty">難易度解説</a>を参照してください。</p>
+
+      <h2 id="sec-9">よくある質問</h2>
+      <h3>なぜクゥが使えないの?</h3>
+      <p>物語上の演出です。第9章の一区間でクゥがエマと離れ、その空白を埋めるボスが Crimson Malefact です。FP と Bloom Arts の循環が使えないのは、この1戦だけです。</p>
+      <h3>推奨レベルは?</h3>
+      <p>ボスの表示レベルは 45 です。本作は物語による進行制限があるため大幅に低レベルで到達することは稀ですが、数レベル足りないと感じるなら<a href="/beast-of-reincarnation/ja/beginner-guide">初心者ガイド</a>のレベリングの考え方が役に立ちます。</p>
+      <h3>撃破で Nushi Skill は手に入る?</h3>
+      <p>手に入りません。Game8 の報酬表も当サイトのボス一覧も一致しています。ビルドの進行に関わらない、純粋な腕試しとストーリーの節目です。</p>
+      <h3>パリィのタイミングを事前に練習できる場所は?</h3>
+      <p>直接的にはありません。Crimson Malefact の技(とくに Bite Combo と5連撃)は他の場所で予習できないためです。それ以前のボスで培ったパリィの基本は通用しますが、この戦い固有の難易度の跳ね上がりは覚悟してください。全体の攻略順は<a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略チャート</a>にあります。</p>
+      <h3>日本語版で技名の表示が違うのですが?</h3>
+      <p>本ページの技名は英語表記です。<strong>日本語版での正式表記は当サイトでは未確認</strong>のため、対処法のほうを手掛かりにしてください。確認でき次第、日本語名を併記します。</p>
+
+      <h2 id="sec-10">関連ページ</h2>
+      <ul>
+        <li><a href="/beast-of-reincarnation/ja/bosses">ボス攻略——Malefact とヌシの攻略順</a></li>
+        <li><a href="/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">Shidou &amp; Nue 攻略</a></li>
+        <li><a href="/beast-of-reincarnation/ja/builds">ビルドとスキルツリー</a></li>
+        <li><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略チャート</a></li>
+      </ul>
+
+      <h2 id="sec-11">出典</h2>
+      <ul>
+        <li><a href="https://game8.co/games/Beast-of-Reincarnation/archives/614484" rel="nofollow noopener" target="_blank">Game8 —— How to Beat Crimson Malefact</a> —— 行動表、装備の指針</li>
+        <li><a href="https://www.dualshockers.com/beast-of-reincarnation-how-to-defeat-crimson-malefact/" rel="nofollow noopener" target="_blank">DualShockers —— How to Defeat Crimson Malefact</a> —— 出現場所と時間帯</li>
+      </ul>
+      <p class="updated">最終レビュー:2026年9月10日 &middot; 確認済みゲームバージョン:1.0.9 &middot; 弱点属性は出典間で食い違いがあるため未確認として記載しています。ドロップの実数はパッチで変わりうるためゲーム内でご確認ください。</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact</a><a href="/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">Shidou &amp; Nue</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/blight-explained">穢れとは</a><a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン</a><a href="/beast-of-reincarnation/ja/amber-farming">琥珀稼ぎ</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/achievement-tracker">実績トラッカー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/patch-notes">アップデート</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/which-edition-quiz">版選び診断</a><a href="/beast-of-reincarnation/ja/preorder-bonuses">予約特典</a><a href="/beast-of-reincarnation/ja/game-pass">Game Pass</a><a href="/beast-of-reincarnation/ja/cross-save">クロスセーブ</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
+  </div>
+</footer>
+</body>
+</html>

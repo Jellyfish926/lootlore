@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rastreador de logros de Beast of Reincarnation — los 46</title>
+<meta name="description" content="Rastreador gratuito de logros y trofeos de Beast of Reincarnation: marca los 46 logros de Steam, mira tu porcentaje y descubre cuál es estadísticamente el siguiente más fácil.">
+<link rel="canonical" href="https://beastofreincarnation.online/es/achievement-tracker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rastreador de logros de Beast of Reincarnation">
+<meta property="og:description" content="Rastreador gratuito de logros y trofeos de Beast of Reincarnation: marca los 46 logros de Steam, mira tu porcentaje y descubre cuál es estadísticamente el siguiente más fácil.">
+<meta property="og:url" content="https://beastofreincarnation.online/es/achievement-tracker">
+<meta property="og:image" content="https://beastofreincarnation.online/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://beastofreincarnation.online/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css?v=2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5N0PVZ4Z0Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5N0PVZ4Z0Q');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "xj1bkaj8e1");
+</script>
+<link rel="alternate" hreflang="en" href="https://beastofreincarnation.online/en/achievement-tracker">
+<link rel="alternate" hreflang="ja" href="https://beastofreincarnation.online/ja/achievement-tracker">
+<link rel="alternate" hreflang="es" href="https://beastofreincarnation.online/es/achievement-tracker">
+<link rel="alternate" hreflang="de" href="https://beastofreincarnation.online/de/achievement-tracker">
+<link rel="alternate" hreflang="x-default" href="https://beastofreincarnation.online/en/achievement-tracker">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://beastofreincarnation.online/es"}, {"@type": "ListItem", "position": 2, "name": "Rastreador de logros", "item": "https://beastofreincarnation.online/es/achievement-tracker"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Rastreador de logros de Beast of Reincarnation","applicationCategory":"GameApplication","operatingSystem":"Web","url":"https://beastofreincarnation.online/es/achievement-tracker","description":"Rastreador gratuito de logros y trofeos de Beast of Reincarnation: marca los 46 logros de Steam, mira tu porcentaje y descubre cuál es estadísticamente el siguiente más fácil.","isAccessibleForFree":true,"about":{"@type":"VideoGame","name":"Beast of Reincarnation"}}</script>
+<style>
+.tracker{margin:1.6rem 0 1rem;border:1px solid var(--line);border-radius:6px;background:var(--ink-2)}
+.tracker-head{padding:1rem 1.2rem;border-bottom:1px solid var(--line)}
+.tracker-progress{height:8px;background:var(--ink-3);border-radius:999px;overflow:hidden}
+.tracker-bar{height:100%;background:var(--crimson);transition:width .25s}
+.tracker-summary{margin:.8rem 0 .6rem;font-size:.95rem;color:var(--bone-dim)}
+.tracker-summary b{color:var(--bone)}
+.tracker-controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;font-size:.9rem;color:var(--bone-dim)}
+.tracker-controls select{margin-left:.4rem;background:var(--ink);color:var(--bone);border:1px solid var(--line);border-radius:4px;padding:.25rem .4rem;font:inherit}
+.tracker-controls button{background:transparent;color:var(--bone);border:1px solid var(--line);border-radius:4px;padding:.3rem .8rem;font:inherit;cursor:pointer}
+.tracker-controls button:disabled{opacity:.4;cursor:default}
+.tracker-list{list-style:none;margin:0;padding:0}
+.tracker-list li{border-bottom:1px solid var(--line)}
+.tracker-list li:last-child{border-bottom:0}
+.tracker-list label{display:grid;grid-template-columns:18px 40px 1fr auto;gap:.8rem;align-items:center;padding:.65rem 1.2rem;cursor:pointer}
+.tracker-list li.on{opacity:.55}
+.tracker-list li.on b{text-decoration:line-through}
+.tracker-list img{border-radius:4px;display:block;width:40px;height:40px}
+.tracker-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tracker-txt b{font-size:.95rem;color:var(--bone)}
+.tracker-txt small{font-size:.82rem;color:var(--bone-dim);line-height:1.45}
+.tracker-pct{font-size:.8rem;color:var(--crimson);white-space:nowrap}
+.tracker-foot{padding:.7rem 1.2rem 1rem;margin:0;font-size:.8rem;color:var(--bone-faint)}
+@media (max-width:560px){.tracker-list label{grid-template-columns:18px 32px 1fr auto;gap:.5rem;padding:.6rem .8rem}.tracker-list img{width:32px;height:32px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/es">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">GUÍA</span></a>
+    <nav class="nav-links">
+      <a href="/es/bosses">Jefes</a>
+      <a href="/es/builds">Builds</a>
+      <a href="/es/koo-guide">Koo</a>
+      <a href="/es/beginner-guide">Principiantes</a>
+      <a href="/es/release-date">Lanzamiento</a>
+      <a href="/es/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/en/achievement-tracker">English</a>
+      <a href="/ja/achievement-tracker">日本語</a>
+      <a href="/es/achievement-tracker" class="active">Español</a>
+      <a href="/de/achievement-tracker">Deutsch</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/es">Inicio</a> / Rastreador de logros</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">Completado · Herramienta</p>
+      <h1>Rastreador de logros de Beast of Reincarnation</h1>
+      <p class="lede">Marca los <strong>46 logros</strong> (las listas de trofeos de PS5 y de Xbox se corresponden una a una), mira cómo sube tu porcentaje y deja que el rastreador te diga cuál es estadísticamente tu siguiente desbloqueo más fácil y cuál es el más raro que aún te falta. El progreso se guarda solo en este navegador.</p>
+      <p class="updated">Porcentajes globales de desbloqueo leídos de Steam el 7 de septiembre de 2026 · se actualizan cada semana</p>
+    </section>
+    <article>
+      <section class="tracker" id="tracker" aria-label="Rastreador de logros de Beast of Reincarnation">
+        <div class="tracker-head">
+          <div class="tracker-progress" role="progressbar" aria-valuemin="0" aria-valuemax="46" aria-valuenow="0"><div class="tracker-bar" id="tr-bar" style="width:0%"></div></div>
+          <p class="tracker-summary" id="tr-summary"><b>0 / 46</b> desbloqueados (0%)</p>
+          <div class="tracker-controls">
+            <label>Ordenar <select id="tr-sort"><option value="common">más comunes primero</option><option value="rare">más raros primero</option><option value="name">A → Z</option></select></label>
+            <label><input type="checkbox" id="tr-hide"> ocultar los desbloqueados</label>
+            <button type="button" id="tr-reset" disabled>Reiniciar</button>
+          </div>
+        </div>
+        <ul class="tracker-list" id="tr-list">
+
+<li data-name="Purifier&#x27;s Mantle"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/bb4ebe84dbe22bef021fe952b9d5b32727269b43.jpg" alt="Purifier&#x27;s Mantle icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Purifier&#x27;s Mantle</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">94.6%</span></label></li>
+<li data-name="First Fire"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/6cb3d12e6354bc3ed1758523f7f597739b4d0fb9.jpg" alt="First Fire icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>First Fire</b><small>Discover your first campsite.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">92.5%</span></label></li>
+<li data-name="Blight-Touched"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/beb9eece4bf54043d1ba5872fe9ad9f05dcf1365.jpg" alt="Blight-Touched icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blight-Touched</b><small>Enhance an attribute for the first time.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">83.1%</span></label></li>
+<li data-name="Man&#x27;s Best Friend"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/3e40533e0495d9d2b7f519a2c0f9efc4722295bb.jpg" alt="Man&#x27;s Best Friend icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Man&#x27;s Best Friend</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">63.9%</span></label></li>
+<li data-name="Knowing Me, Knowing You"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/f709a5faede11a0ac8972f0280ddb84a4610ae64.jpg" alt="Knowing Me, Knowing You icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Knowing Me, Knowing You</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">58.7%</span></label></li>
+<li data-name="Entangled"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/93c5d02e9c49b39764fce3ef51473e65ad0a48b9.jpg" alt="Entangled icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Entangled</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">57.1%</span></label></li>
+<li data-name="Rangifer&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c31c740349ab65f376fb2d0e09f7ce8b8e07da12.jpg" alt="Rangifer&#x27;s End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Rangifer&#x27;s End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">53.7%</span></label></li>
+<li data-name="Place of Return"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/f4b07d60ddf1e92157891d2432685d424ada0de7.jpg" alt="Place of Return icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Place of Return</b><small>Discover your first shrine.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">51.8%</span></label></li>
+<li data-name="Snack Time"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d97d31a46310f5ab53d0e7f973d8f2c2fa4280ca.jpg" alt="Snack Time icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Snack Time</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">47.2%</span></label></li>
+<li data-name="Lacerta&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/688b0b902c23a830408429e2077b1bcf01799ec2.jpg" alt="Lacerta&#x27;s End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Lacerta&#x27;s End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">44.3%</span></label></li>
+<li data-name="Repose for the Departed"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d97dd3f1b647f76a45dda0c0865fb808252a2d4c.jpg" alt="Repose for the Departed icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Repose for the Departed</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">40.9%</span></label></li>
+<li data-name="Closest Companion"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/a491a20631e6f4fca6bf755ee3cdc5f97df2a043.jpg" alt="Closest Companion icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Closest Companion</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">38.8%</span></label></li>
+<li data-name="Busy Paws"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c42233744adff81e5003aa115e3fef123bb321e3.jpg" alt="Busy Paws icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Busy Paws</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">36.4%</span></label></li>
+<li data-name="Taurus&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/bea4e0aa3b9cf868db67e6bd7bb1304f9d1f2c9e.jpg" alt="Taurus&#x27;s End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Taurus&#x27;s End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">35.4%</span></label></li>
+<li data-name="Bestie"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/77cadeae79347ece37e5f25673c83cdebb880ba2.jpg" alt="Bestie icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Bestie</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">34.9%</span></label></li>
+<li data-name="Corvus&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/80b55da64938933fdf4491bd1254a1ff19ded21b.jpg" alt="Corvus&#x27;s End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Corvus&#x27;s End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">29.2%</span></label></li>
+<li data-name="Green Thumb"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/88459cacb1f4a5651bdb6dce48d493fca8672217.jpg" alt="Green Thumb icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Green Thumb</b><small>Obtain every type of seedling.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">27.4%</span></label></li>
+<li data-name="Koo de Grâce"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/5d8c65fb3eba86c8e0cf6cb1aa24b3228706d586.jpg" alt="Koo de Grâce icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Koo de Grâce</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">26.6%</span></label></li>
+<li data-name="Ursa&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/e87d458adc424b457d77c889aa8ce8b769e41d66.jpg" alt="Ursa&#x27;s End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Ursa&#x27;s End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">26.0%</span></label></li>
+<li data-name="Shidou &amp; Nue"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/1727df8980df6aa70da831cdd014c53ec3a6cafc.jpg" alt="Shidou &amp; Nue icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Shidou &amp; Nue</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">25.9%</span></label></li>
+<li data-name="Erymanth&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/8433aa46fb2f068ff9ae1d22be1281d41437a906.jpg" alt="Erymanth&#x27;s End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Erymanth&#x27;s End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">25.7%</span></label></li>
+<li data-name="Kunai &amp; Kirin"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c364f837c865442360b618e35fd2e349a9e1f304.jpg" alt="Kunai &amp; Kirin icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Kunai &amp; Kirin</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">25.6%</span></label></li>
+<li data-name="Life After the End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/02e7ae77d9aeed3ee761a668bf08d97237a6b2db.jpg" alt="Life After the End icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Life After the End</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">25.3%</span></label></li>
+<li data-name="The End of Reincarnation"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d4586377b374c61d2d16b053c9da8a16ce55c7be.jpg" alt="The End of Reincarnation icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The End of Reincarnation</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">25.3%</span></label></li>
+<li data-name="The Sealer"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/ab6d25f16b7d080f86292eea20ee0ab3211dfde4.jpg" alt="The Sealer icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Sealer</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">22.1%</span></label></li>
+<li data-name="Horror in the Sky"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/266c0768441a2a35b0982ff82e76b97ce7302280.jpg" alt="Horror in the Sky icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Horror in the Sky</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">18.5%</span></label></li>
+<li data-name="Manual Maniac"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/fea51be1415dd630411884d897be63ce1a4c5c34.jpg" alt="Manual Maniac icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Manual Maniac</b><small>Obtain the manuals for every arrow and bolt type.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">12.9%</span></label></li>
+<li data-name="Degeneration​"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/e94b96504331f57c031c0a7e815100666b2d68de.jpg" alt="Degeneration​ icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Degeneration​</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">11.7%</span></label></li>
+<li data-name="Wandering Duelist"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/62d45770f91e4668cf46989a0177921ce7ac229b.jpg" alt="Wandering Duelist icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Wandering Duelist</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">10.3%</span></label></li>
+<li data-name="Gourmand"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/17ad28e7a713c4eb9aec5e3febc1f3095e68a378.jpg" alt="Gourmand icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Gourmand</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">7.2%</span></label></li>
+<li data-name="The Ultimate Vessel"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/b9150f7a93856a7368599a20400b092ee94e5d9b.jpg" alt="The Ultimate Vessel icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Ultimate Vessel</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">6.9%</span></label></li>
+<li data-name="The Perfect Pal"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/813fc92d9fef9df6b96e331aa30e52b7427a4ba8.jpg" alt="The Perfect Pal icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Perfect Pal</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">6.9%</span></label></li>
+<li data-name="Blade Collector"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/11cff4989a1ed55eac279b6ec8d6309539486084.jpg" alt="Blade Collector icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blade Collector</b><small>Obtain every blade.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">6.3%</span></label></li>
+<li data-name="Soul Returned"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/cbca101014ff10bec677fce60ac4feff551934be.jpg" alt="Soul Returned icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Soul Returned</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">6.2%</span></label></li>
+<li data-name="Know-It-All"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/7ecbf26fec0c63bce3f1a43a9358e93f19b1a963.jpg" alt="Know-It-All icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Know-It-All</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">6.1%</span></label></li>
+<li data-name="Munitions Master"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/dab5c9f2312d429963c18bbc6787c34f98d39754.jpg" alt="Munitions Master icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Munitions Master</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">5.9%</span></label></li>
+<li data-name="Giant Tree Budburst"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/15d5787d7e5c0bdef6b2bfbaf70139259d44ab39.jpg" alt="Giant Tree Budburst icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Giant Tree Budburst</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">5.5%</span></label></li>
+<li data-name="Behold, the Truth"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/491d383d8a66fde7cbdfa90fef7351c317d6813b.jpg" alt="Behold, the Truth icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Behold, the Truth</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">5.2%</span></label></li>
+<li data-name="Finders, Keepers"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/355bd401f85b9b97f414b8e2b3b72bb63bf775e0.jpg" alt="Finders, Keepers icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Finders, Keepers</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">5.2%</span></label></li>
+<li data-name="Happy Camper"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/107d74ae452f31d01b9e01d2756422bbcc409d31.jpg" alt="Happy Camper icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Happy Camper</b><small>Discover every campsite.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">5.0%</span></label></li>
+<li data-name="Giant Tree in Bloom"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/15218d8eacbf6d71854e6a6bacbd109fde0310f2.jpg" alt="Giant Tree in Bloom icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Giant Tree in Bloom</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">4.8%</span></label></li>
+<li data-name="Blade Enthusiast"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/9e48e4c9f96a878a4af97b34073ec2ddaa2240b5.jpg" alt="Blade Enthusiast icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blade Enthusiast</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">4.3%</span></label></li>
+<li data-name="Blademaster"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d7e03c16044fd25d912d65905cb02554bccd1ca6.jpg" alt="Blademaster icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blademaster</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">4.0%</span></label></li>
+<li data-name="Floral Profusion"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/ecc917506dea8555b3f695f31c4b679b9589ca63.jpg" alt="Floral Profusion icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Floral Profusion</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">3.8%</span></label></li>
+<li data-name="Reincarnated"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/5e7c92f9fac1c731b197b1fed0955d0b9595bebb.jpg" alt="Reincarnated icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Reincarnated</b><small>Hidden achievement — Steam publishes no description.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">3.3%</span></label></li>
+<li data-name="Duty Fulfilled"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/69f17a29f62d63151a57e350c2cd18417c0806bb.jpg" alt="Duty Fulfilled icono de logro" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Duty Fulfilled</b><small>Unlock every achievement.</small></span><span class="tracker-pct" title="Share of all Steam players who have unlocked this">3.0%</span></label></li>
+        </ul>
+        <p class="tracker-foot">Las tasas de desbloqueo son las cifras globales de Steam capturadas el 2026-09-07 y se actualizan cada semana. Tus marcas se guardan solo en este navegador.</p>
+      </section>
+
+      <h2 id="leer-las-cifras">Cómo leer las cifras</h2>
+      <p>Cada porcentaje es la tasa global de desbloqueo de Steam para Beast of Reincarnation: la proporción de todos los propietarios en Steam que han conseguido ese logro a lo largo de la vida del juego. Es una cifra en movimiento &mdash; los logros de historia bajan cada vez que unas rebajas traen jugadores nuevos y vuelven a subir cuando estos terminan la campaña &mdash;, así que esta página vuelve a leer Steam cada semana e imprime la fecha de captura bajo la lista. En la lectura del 7 de septiembre, el más común es <strong>Purifier&#x27;s Mantle</strong> con un 94,6&nbsp;% y el más raro es <strong>Duty Fulfilled</strong> (desbloquear todos los logros) con un 3,0&nbsp;%. Nuestra <a href="/es/trophies">página de trofeos</a> tiene la misma lista con comentarios sobre dónde se atascan las partidas de completado y las correspondencias con PS5 y Xbox.</p>
+
+      <h2 id="logros-ocultos">38 de los 46 son ocultos</h2>
+      <p>Steam no publica descripción para 38 de los 46 logros, una cifra inusualmente alta: Game Freak ha decidido no explicitar la mayoría de las condiciones de jefes, finales y colecciones. El rastreador los muestra como <em>logro oculto</em> en lugar de inventarse una condición. Allí donde este sitio ha establecido qué necesita un logro oculto, a partir de la partida o de las notas del parche (los logros de <a href="/es/bosses">jefes Nushi</a> siguen el orden de sellado; la cadena de Rapport está documentada en la <a href="/es/koo-guide">guía de Koo</a>), la página de trofeos lo dice; y donde no lo ha establecido, dice eso mismo.</p>
+
+      <h2 id="un-orden-sensato">Un orden sensato</h2>
+      <p>El «siguiente más fácil» del rastreador es puramente estadístico, pero sigue de cerca la campaña. La parte alta de la lista son las primeras horas &mdash; el primer campamento, la primera mejora de atributos, el primer santuario &mdash; y el primer Nushi. La franja intermedia son los sellados de jefe capítulo a capítulo y los hitos de Rapport con Koo, que llegan solos si sigues la <a href="/es/walkthrough">guía completa</a> y acaricias al perro. La franja baja es el trabajo de completado: logros ocultos cuyos nombres apuntan a la colección de armas y Bloom Arts (Blade Enthusiast, Blademaster, Floral Profusion) y al final del juego (Reincarnated) &mdash; sus condiciones no están publicadas, así que toma los nombres como pistas &mdash;, y por último <strong>Duty Fulfilled</strong>, el único que Steam describe: desbloquear todos los logros. Nuestra <a href="/es/all-endings">página de finales</a> explica qué desbloqueos ligados al final se pueden perder.</p>
+      <p>La versión 1.0.9 (24 de agosto) era el parche más reciente al escribir esto; la lista de logros sigue sumando 46 entradas, y nuestra <a href="/es/patch-notes">página de notas del parche</a> avisará si un parche posterior cambia eso.</p>
+
+      <h2 id="lo-que-no-es-esta-herramienta">Lo que esta herramienta no es</h2>
+      <p>No lee tu perfil de Steam, de PlayStation ni de Xbox: marcas las casillas a mano, que es justo por lo que funciona sin iniciar sesión y no puede equivocarse sobre lo que tienes. La página de trofeos de tu propia plataforma marcará por ti; lo que no hará es decirte cuál de los elementos que te quedan sale estadísticamente más barato, y eso es lo que añade esta página.</p>
+
+      <h2 id="fuentes">Fuentes</h2>
+      <ul>
+        <li><a href="https://steamcommunity.com/stats/2001760/achievements" rel="nofollow noopener" target="_blank">Steam &mdash; estadísticas globales oficiales de logros de la app 2001760 (nombres, descripciones, iconos y todos los porcentajes de esta página; leídos el 2026-09-07, se actualizan cada semana)</a></li>
+        <li><a href="/es/trophies">La página de trofeos de este sitio</a> &mdash; correspondencia entre plataformas y análisis de completado</li>
+      </ul>
+
+      <p class="updated">Última revisión: 7 de septiembre de 2026 &middot; Versión del juego comprobada: 1.0.9 &middot; Las cifras cambiantes indican la fecha en que se leyeron</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<script>
+(function(){
+  var KEY="ach-tracker:2001760", list=document.getElementById("tr-list"), items=Array.prototype.slice.call(list.children);
+  var done=new Set(); try{ done=new Set(JSON.parse(localStorage.getItem(KEY)||"[]")); }catch(e){}
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(Array.from(done))); }catch(e){} }
+  function pct(li){ return parseFloat(li.querySelector(".tracker-pct").textContent); }
+  function render(){
+    var n=items.length, d=0, easiest=null, rarest=null;
+    items.forEach(function(li){ var on=done.has(li.dataset.name); li.classList.toggle("on",on); li.querySelector("input").checked=on; li.hidden=on&&document.getElementById("tr-hide").checked; if(on){d++;} else { if(!easiest||pct(li)>pct(easiest)) easiest=li; if(!rarest||pct(li)<pct(rarest)) rarest=li; } });
+    var p=Math.round(d/n*100); document.getElementById("tr-bar").style.width=p+"%"; document.querySelector(".tracker-progress").setAttribute("aria-valuenow",d);
+    var s="<b>"+d+" / "+n+"</b> desbloqueados ("+p+"%)";
+    if(easiest) s+=" · siguiente más fácil: <b>"+easiest.dataset.name+"</b> ("+pct(easiest)+"&nbsp;% de los jugadores)";
+    if(rarest&&rarest!==easiest) s+=" · el más raro que queda: <b>"+rarest.dataset.name+"</b> ("+pct(rarest)+"%)";
+    if(d===n) s+=" · <b>100&nbsp;% — Duty Fulfilled.</b>";
+    document.getElementById("tr-summary").innerHTML=s; document.getElementById("tr-reset").disabled=d===0;
+  }
+  list.addEventListener("change",function(e){ var li=e.target.closest("li"); if(!li) return; done.has(li.dataset.name)?done.delete(li.dataset.name):done.add(li.dataset.name); save(); render(); });
+  document.getElementById("tr-hide").addEventListener("change",render);
+  document.getElementById("tr-reset").addEventListener("click",function(){ done=new Set(); save(); render(); });
+  document.getElementById("tr-sort").addEventListener("change",function(e){
+    var v=e.target.value, arr=items.slice();
+    if(v==="common") arr.sort(function(a,b){return pct(b)-pct(a);}); if(v==="rare") arr.sort(function(a,b){return pct(a)-pct(b);}); if(v==="name") arr.sort(function(a,b){return a.dataset.name.localeCompare(b.dataset.name);});
+    arr.forEach(function(li){ list.appendChild(li); });
+  });
+  render();
+})();
+</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/es/bosses">Jefes</a><a href="/es/builds">Builds</a><a href="/es/koo-guide">Guía de Koo</a><a href="/es/beginner-guide">Principiantes</a><a href="/es/review">Análisis</a><a href="/es/metacritic">Metascore</a><a href="/es/how-long-to-beat">Duración</a><a href="/es/all-weapons">Armas</a><a href="/es/all-endings">Finales</a><a href="/es/trophies">Trofeos</a><a href="/es/achievement-tracker">Rastreador</a><a href="/es/walkthrough">Guía completa</a><a href="/es/pc-requirements">Requisitos PC</a><a href="/es/performance">Rendimiento</a><a href="/es/patch-notes">Notas del parche</a><a href="/es/editions">Ediciones</a><a href="/es/preorder-bonuses">Bonos de reserva</a><a href="/es/game-pass">Game Pass</a><a href="/es/cross-save">Guardado cruzado</a><a href="/es/release-date">Fecha de lanzamiento</a><a href="/es/demo">Demo</a><a href="/es/multiplayer">Multijugador</a><a href="/es/open-world">Mundo abierto</a><a href="/es/difficulty">Dificultad</a><a href="/es/voice-actors">Voces</a><a href="/es/faq">FAQ</a><a href="/about">Acerca de</a><a href="/contact">Contacto</a><a href="/privacy-policy">Privacidad</a><a href="/editorial-policy">Política editorial</a><a href="/terms">Términos de uso</a><a href="/disclaimer">Aviso legal</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ Apoyar</a></nav>
+    <p>Sitio de fans no oficial. Beast of Reincarnation es una marca de GAME FREAK inc. / Fictions, Inc. Este sitio no está afiliado a dichas compañías ni cuenta con su aprobación.</p>
+  </div>
+</footer>
+<script src="/ads.js" defer></script>
+</body>
+</html>

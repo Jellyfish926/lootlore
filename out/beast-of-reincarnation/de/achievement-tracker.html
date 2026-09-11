@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beast of Reincarnation Erfolgs-Tracker — alle 46, lokal gespeichert</title>
+<meta name="description" content="Ein kostenloser Erfolgs- und Trophäen-Tracker für Beast of Reincarnation: hake alle 46 Steam-Erfolge ab, sieh deinen Prozentsatz und erfahre, welche Freischaltung statistisch die nächstleichteste ist.">
+<link rel="canonical" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/de/achievement-tracker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beast of Reincarnation Erfolgs-Tracker — alle 46, lokal gespeichert">
+<meta property="og:description" content="Alle 46 Erfolge zum Abhaken, mit globalen Steam-Quoten, nächstleichtester Freischaltung und lokaler Speicherung.">
+<meta property="og:url" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/de/achievement-tracker">
+<meta property="og:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/beast-of-reincarnation/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/beast-of-reincarnation/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/beast-of-reincarnation/icon-192.png">
+<link rel="apple-touch-icon" href="/beast-of-reincarnation/apple-touch-icon.png">
+<link rel="stylesheet" href="/beast-of-reincarnation/style.css?v=2">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479"
+     crossorigin="anonymous"></script>
+<link rel="alternate" hreflang="en" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/achievement-tracker">
+<link rel="alternate" hreflang="ja" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/achievement-tracker">
+<link rel="alternate" hreflang="de" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/de/achievement-tracker">
+<link rel="alternate" hreflang="x-default" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/en/achievement-tracker">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/de"}, {"@type": "ListItem", "position": 2, "name": "Erfolgs-Tracker", "item": "https://lootlore-ten.vercel.app/beast-of-reincarnation/de/achievement-tracker"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Beast of Reincarnation Erfolgs-Tracker","applicationCategory":"GameApplication","operatingSystem":"Web","url":"https://lootlore-ten.vercel.app/beast-of-reincarnation/de/achievement-tracker","description":"Ein kostenloser Erfolgs- und Troph\u00e4en-Tracker f\u00fcr Beast of Reincarnation: hake alle 46 Steam-Erfolge ab, sieh deinen Prozentsatz und erfahre, welche Freischaltung statistisch die n\u00e4chstleichteste ist.","isAccessibleForFree":true,"about":{"@type":"VideoGame","name":"Beast of Reincarnation"}}</script>
+<style>
+.tracker{margin:1.6rem 0 1rem;border:1px solid var(--line);border-radius:6px;background:var(--ink-2)}
+.tracker-head{padding:1rem 1.2rem;border-bottom:1px solid var(--line)}
+.tracker-progress{height:8px;background:var(--ink-3);border-radius:999px;overflow:hidden}
+.tracker-bar{height:100%;background:var(--crimson);transition:width .25s}
+.tracker-summary{margin:.8rem 0 .6rem;font-size:.95rem;color:var(--bone-dim)}
+.tracker-summary b{color:var(--bone)}
+.tracker-controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;font-size:.9rem;color:var(--bone-dim)}
+.tracker-controls select{margin-left:.4rem;background:var(--ink);color:var(--bone);border:1px solid var(--line);border-radius:4px;padding:.25rem .4rem;font:inherit}
+.tracker-controls button{background:transparent;color:var(--bone);border:1px solid var(--line);border-radius:4px;padding:.3rem .8rem;font:inherit;cursor:pointer}
+.tracker-controls button:disabled{opacity:.4;cursor:default}
+.tracker-list{list-style:none;margin:0;padding:0}
+.tracker-list li{border-bottom:1px solid var(--line)}
+.tracker-list li:last-child{border-bottom:0}
+.tracker-list label{display:grid;grid-template-columns:18px 40px 1fr auto;gap:.8rem;align-items:center;padding:.65rem 1.2rem;cursor:pointer}
+.tracker-list li.on{opacity:.55}
+.tracker-list li.on b{text-decoration:line-through}
+.tracker-list img{border-radius:4px;display:block;width:40px;height:40px}
+.tracker-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tracker-txt b{font-size:.95rem;color:var(--bone)}
+.tracker-txt small{font-size:.82rem;color:var(--bone-dim);line-height:1.45}
+.tracker-pct{font-size:.8rem;color:var(--crimson);white-space:nowrap}
+.tracker-foot{padding:.7rem 1.2rem 1rem;margin:0;font-size:.8rem;color:var(--bone-faint)}
+@media (max-width:560px){.tracker-list label{grid-template-columns:18px 32px 1fr auto;gap:.5rem;padding:.6rem .8rem}.tracker-list img{width:32px;height:32px}}
+</style>
+<style>
+.ga-hubbar{background:#0b0d12;border-bottom:1px solid #23262f;font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif}
+.ga-hubbar-in{max-width:1100px;margin:0 auto;padding:7px 16px;display:flex;align-items:center;gap:10px}
+.ga-hubbrand{color:#e8b64c;text-decoration:none;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.ga-hubsep{color:#3a4152}
+.ga-hubcur{color:#e6e9ef;text-decoration:none;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45vw}
+.ga-hubmenu{position:relative;margin-left:auto}
+.ga-hubmenu summary{list-style:none;cursor:pointer;color:#9aa3b2;padding:3px 10px;border:1px solid #2a3040;border-radius:6px;white-space:nowrap;user-select:none}
+.ga-hubmenu summary::-webkit-details-marker{display:none}
+.ga-hubmenu summary:hover{color:#e6e9ef;border-color:#3a4152}
+.ga-hubmenu[open] summary{color:#e6e9ef;border-color:#e8b64c}
+.ga-caret{margin-left:6px;font-size:.8em;color:#6b7386}
+.ga-hubpanel{position:absolute;right:0;top:calc(100% + 6px);z-index:9999;min-width:230px;max-height:70vh;overflow:auto;background:#11141c;border:1px solid #2a3040;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.55);padding:6px;display:flex;flex-direction:column}
+.ga-hubpanel a{color:#c9d0dc;text-decoration:none;padding:8px 12px;border-radius:6px;white-space:nowrap}
+.ga-hubpanel a:hover{background:#1a1f2b;color:#fff}
+.ga-hubpanel a.on{color:#e8b64c;font-weight:600}
+.ga-hubpanel .ga-hubhome{margin-top:4px;border-top:1px solid #23262f;color:#9aa3b2;font-size:.92em}
+.ga-hubdiv{border-top:1px solid #23262f;margin:4px 0 2px}
+.ga-hubpanel .ga-hubsec{color:#9aa3b2;font-size:.92em;padding:6px 12px}
+</style>
+</head>
+<body>
+<div class="ga-hubbar"><div class="ga-hubbar-in"><a class="ga-hubbrand" href="/">&#9670; Lootlore</a><span class="ga-hubsep">/</span><a class="ga-hubcur" href="/beast-of-reincarnation/en">Beast of Reincarnation</a><details class="ga-hubmenu"><summary>All games<span class="ga-caret">&#9662;</span></summary><nav class="ga-hubpanel"><a href="/beast-of-reincarnation/en" class="on">Beast of Reincarnation</a><a href="/shift-at-midnight/">Shift At Midnight</a><a href="/dragonsword-awakening/">DragonSword: Awakening</a><a href="/sephiria/">Sephiria</a><a href="/orc-problem/">Orc Problem</a><a class="ga-hubhome" href="/#games">Browse all guides &rarr;</a><span class="ga-hubdiv"></span><a class="ga-hubsec" href="/guides">Guides by category</a><a class="ga-hubsec" href="/reviews">Reviews &amp; verdicts</a><a class="ga-hubsec" href="/updates">Patch tracker</a></nav></details></div></div>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/beast-of-reincarnation/de">BEAST<span class="tick">/</span>REINCARNATION <span style="color:var(--bone-faint);font-size:.8em">GUIDE</span></a>
+    <nav class="nav-links">
+      <a href="/beast-of-reincarnation/de/bosses">Bosse</a>
+      <a href="/beast-of-reincarnation/de/builds">Builds</a>
+      <a href="/beast-of-reincarnation/de/koo-guide">Koo</a>
+      <a href="/beast-of-reincarnation/de/beginner-guide">Einsteiger</a>
+      <a href="/beast-of-reincarnation/de/release-date">Release</a>
+      <a href="/beast-of-reincarnation/de/faq">FAQ</a>
+    </nav>
+    <details class="lang-switch">
+      <summary>Language<span class="lang-caret">▼</span></summary>
+      <nav class="lang-menu">
+      <a href="/beast-of-reincarnation/en/achievement-tracker">English</a>
+      <a href="/beast-of-reincarnation/ja/achievement-tracker">日本語</a>
+      <a href="/beast-of-reincarnation/de/achievement-tracker" class="active">Deutsch</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="/beast-of-reincarnation/de">Startseite</a> / Erfolgs-Tracker</p>
+    <section class="hero" style="padding-top:2rem">
+      <p class="kicker">Komplettierung · Werkzeug</p>
+      <h1>Beast of Reincarnation Erfolgs-Tracker</h1>
+      <p class="lede">Hake alle <strong>46 Erfolge</strong> ab (die Trophäenliste der PS5 und die Xbox-Liste decken sich eins zu eins), beobachte deinen Prozentsatz und lass dir vom Tracker sagen, welche Freischaltung statistisch deine nächstleichteste ist — und welche dir fehlende die seltenste. Dein Fortschritt wird ausschließlich in diesem Browser gespeichert.</p>
+      <p class="updated">Globale Freischaltquoten am 7. September 2026 von Steam gelesen · wöchentlich aktualisiert</p>
+    </section>
+    <article>
+      <section class="tracker" id="tracker" aria-label="Erfolgs-Tracker für Beast of Reincarnation">
+        <div class="tracker-head">
+          <div class="tracker-progress" role="progressbar" aria-valuemin="0" aria-valuemax="46" aria-valuenow="0"><div class="tracker-bar" id="tr-bar" style="width:0%"></div></div>
+          <p class="tracker-summary" id="tr-summary"><b>0 / 46</b> freigeschaltet (0 %)</p>
+          <div class="tracker-controls">
+            <label>Sortierung <select id="tr-sort"><option value="common">häufigste zuerst</option><option value="rare">seltenste zuerst</option><option value="name">A → Z</option></select></label>
+            <label><input type="checkbox" id="tr-hide"> Freigeschaltete ausblenden</label>
+            <button type="button" id="tr-reset" disabled>Zurücksetzen</button>
+          </div>
+        </div>
+        <ul class="tracker-list" id="tr-list">
+<li data-name="Purifier&#x27;s Mantle"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/bb4ebe84dbe22bef021fe952b9d5b32727269b43.jpg" alt="Erfolgssymbol Purifier&#x27;s Mantle" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Purifier&#x27;s Mantle</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">94.6%</span></label></li>
+<li data-name="First Fire"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/6cb3d12e6354bc3ed1758523f7f597739b4d0fb9.jpg" alt="Erfolgssymbol First Fire" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>First Fire</b><small>Entdecke dein erstes Lager.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">92.5%</span></label></li>
+<li data-name="Blight-Touched"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/beb9eece4bf54043d1ba5872fe9ad9f05dcf1365.jpg" alt="Erfolgssymbol Blight-Touched" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blight-Touched</b><small>Verst&auml;rke zum ersten Mal ein Attribut.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">83.1%</span></label></li>
+<li data-name="Man&#x27;s Best Friend"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/3e40533e0495d9d2b7f519a2c0f9efc4722295bb.jpg" alt="Erfolgssymbol Man&#x27;s Best Friend" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Man&#x27;s Best Friend</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">63.9%</span></label></li>
+<li data-name="Knowing Me, Knowing You"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/f709a5faede11a0ac8972f0280ddb84a4610ae64.jpg" alt="Erfolgssymbol Knowing Me, Knowing You" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Knowing Me, Knowing You</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">58.7%</span></label></li>
+<li data-name="Entangled"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/93c5d02e9c49b39764fce3ef51473e65ad0a48b9.jpg" alt="Erfolgssymbol Entangled" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Entangled</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">57.1%</span></label></li>
+<li data-name="Rangifer&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c31c740349ab65f376fb2d0e09f7ce8b8e07da12.jpg" alt="Erfolgssymbol Rangifer&#x27;s End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Rangifer&#x27;s End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">53.7%</span></label></li>
+<li data-name="Place of Return"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/f4b07d60ddf1e92157891d2432685d424ada0de7.jpg" alt="Erfolgssymbol Place of Return" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Place of Return</b><small>Entdecke deinen ersten Schrein.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">51.8%</span></label></li>
+<li data-name="Snack Time"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d97d31a46310f5ab53d0e7f973d8f2c2fa4280ca.jpg" alt="Erfolgssymbol Snack Time" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Snack Time</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">47.2%</span></label></li>
+<li data-name="Lacerta&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/688b0b902c23a830408429e2077b1bcf01799ec2.jpg" alt="Erfolgssymbol Lacerta&#x27;s End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Lacerta&#x27;s End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">44.3%</span></label></li>
+<li data-name="Repose for the Departed"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d97dd3f1b647f76a45dda0c0865fb808252a2d4c.jpg" alt="Erfolgssymbol Repose for the Departed" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Repose for the Departed</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">40.9%</span></label></li>
+<li data-name="Closest Companion"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/a491a20631e6f4fca6bf755ee3cdc5f97df2a043.jpg" alt="Erfolgssymbol Closest Companion" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Closest Companion</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">38.8%</span></label></li>
+<li data-name="Busy Paws"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c42233744adff81e5003aa115e3fef123bb321e3.jpg" alt="Erfolgssymbol Busy Paws" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Busy Paws</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">36.4%</span></label></li>
+<li data-name="Taurus&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/bea4e0aa3b9cf868db67e6bd7bb1304f9d1f2c9e.jpg" alt="Erfolgssymbol Taurus&#x27;s End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Taurus&#x27;s End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">35.4%</span></label></li>
+<li data-name="Bestie"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/77cadeae79347ece37e5f25673c83cdebb880ba2.jpg" alt="Erfolgssymbol Bestie" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Bestie</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">34.9%</span></label></li>
+<li data-name="Corvus&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/80b55da64938933fdf4491bd1254a1ff19ded21b.jpg" alt="Erfolgssymbol Corvus&#x27;s End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Corvus&#x27;s End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">29.2%</span></label></li>
+<li data-name="Green Thumb"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/88459cacb1f4a5651bdb6dce48d493fca8672217.jpg" alt="Erfolgssymbol Green Thumb" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Green Thumb</b><small>Erhalte jede Art von Setzling.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">27.4%</span></label></li>
+<li data-name="Koo de Grâce"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/5d8c65fb3eba86c8e0cf6cb1aa24b3228706d586.jpg" alt="Erfolgssymbol Koo de Grâce" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Koo de Grâce</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">26.6%</span></label></li>
+<li data-name="Ursa&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/e87d458adc424b457d77c889aa8ce8b769e41d66.jpg" alt="Erfolgssymbol Ursa&#x27;s End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Ursa&#x27;s End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">26.0%</span></label></li>
+<li data-name="Shidou &amp; Nue"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/1727df8980df6aa70da831cdd014c53ec3a6cafc.jpg" alt="Erfolgssymbol Shidou &amp; Nue" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Shidou &amp; Nue</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">25.9%</span></label></li>
+<li data-name="Erymanth&#x27;s End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/8433aa46fb2f068ff9ae1d22be1281d41437a906.jpg" alt="Erfolgssymbol Erymanth&#x27;s End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Erymanth&#x27;s End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">25.7%</span></label></li>
+<li data-name="Kunai &amp; Kirin"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/c364f837c865442360b618e35fd2e349a9e1f304.jpg" alt="Erfolgssymbol Kunai &amp; Kirin" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Kunai &amp; Kirin</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">25.6%</span></label></li>
+<li data-name="Life After the End"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/02e7ae77d9aeed3ee761a668bf08d97237a6b2db.jpg" alt="Erfolgssymbol Life After the End" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Life After the End</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">25.3%</span></label></li>
+<li data-name="The End of Reincarnation"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d4586377b374c61d2d16b053c9da8a16ce55c7be.jpg" alt="Erfolgssymbol The End of Reincarnation" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The End of Reincarnation</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">25.3%</span></label></li>
+<li data-name="The Sealer"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/ab6d25f16b7d080f86292eea20ee0ab3211dfde4.jpg" alt="Erfolgssymbol The Sealer" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Sealer</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">22.1%</span></label></li>
+<li data-name="Horror in the Sky"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/266c0768441a2a35b0982ff82e76b97ce7302280.jpg" alt="Erfolgssymbol Horror in the Sky" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Horror in the Sky</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">18.5%</span></label></li>
+<li data-name="Manual Maniac"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/fea51be1415dd630411884d897be63ce1a4c5c34.jpg" alt="Erfolgssymbol Manual Maniac" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Manual Maniac</b><small>Erhalte die Handb&uuml;cher f&uuml;r jeden Pfeil- und Bolzentyp.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">12.9%</span></label></li>
+<li data-name="Degeneration​"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/e94b96504331f57c031c0a7e815100666b2d68de.jpg" alt="Erfolgssymbol Degeneration​" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Degeneration​</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">11.7%</span></label></li>
+<li data-name="Wandering Duelist"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/62d45770f91e4668cf46989a0177921ce7ac229b.jpg" alt="Erfolgssymbol Wandering Duelist" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Wandering Duelist</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">10.3%</span></label></li>
+<li data-name="Gourmand"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/17ad28e7a713c4eb9aec5e3febc1f3095e68a378.jpg" alt="Erfolgssymbol Gourmand" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Gourmand</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">7.2%</span></label></li>
+<li data-name="The Ultimate Vessel"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/b9150f7a93856a7368599a20400b092ee94e5d9b.jpg" alt="Erfolgssymbol The Ultimate Vessel" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Ultimate Vessel</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">6.9%</span></label></li>
+<li data-name="The Perfect Pal"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/813fc92d9fef9df6b96e331aa30e52b7427a4ba8.jpg" alt="Erfolgssymbol The Perfect Pal" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>The Perfect Pal</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">6.9%</span></label></li>
+<li data-name="Blade Collector"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/11cff4989a1ed55eac279b6ec8d6309539486084.jpg" alt="Erfolgssymbol Blade Collector" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blade Collector</b><small>Erhalte jede Klinge.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">6.3%</span></label></li>
+<li data-name="Soul Returned"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/cbca101014ff10bec677fce60ac4feff551934be.jpg" alt="Erfolgssymbol Soul Returned" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Soul Returned</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">6.2%</span></label></li>
+<li data-name="Know-It-All"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/7ecbf26fec0c63bce3f1a43a9358e93f19b1a963.jpg" alt="Erfolgssymbol Know-It-All" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Know-It-All</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">6.1%</span></label></li>
+<li data-name="Munitions Master"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/dab5c9f2312d429963c18bbc6787c34f98d39754.jpg" alt="Erfolgssymbol Munitions Master" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Munitions Master</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">5.9%</span></label></li>
+<li data-name="Giant Tree Budburst"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/15d5787d7e5c0bdef6b2bfbaf70139259d44ab39.jpg" alt="Erfolgssymbol Giant Tree Budburst" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Giant Tree Budburst</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">5.5%</span></label></li>
+<li data-name="Behold, the Truth"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/491d383d8a66fde7cbdfa90fef7351c317d6813b.jpg" alt="Erfolgssymbol Behold, the Truth" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Behold, the Truth</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">5.2%</span></label></li>
+<li data-name="Finders, Keepers"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/355bd401f85b9b97f414b8e2b3b72bb63bf775e0.jpg" alt="Erfolgssymbol Finders, Keepers" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Finders, Keepers</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">5.2%</span></label></li>
+<li data-name="Happy Camper"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/107d74ae452f31d01b9e01d2756422bbcc409d31.jpg" alt="Erfolgssymbol Happy Camper" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Happy Camper</b><small>Entdecke jedes Lager.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">5.0%</span></label></li>
+<li data-name="Giant Tree in Bloom"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/15218d8eacbf6d71854e6a6bacbd109fde0310f2.jpg" alt="Erfolgssymbol Giant Tree in Bloom" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Giant Tree in Bloom</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">4.8%</span></label></li>
+<li data-name="Blade Enthusiast"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/9e48e4c9f96a878a4af97b34073ec2ddaa2240b5.jpg" alt="Erfolgssymbol Blade Enthusiast" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blade Enthusiast</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">4.3%</span></label></li>
+<li data-name="Blademaster"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/d7e03c16044fd25d912d65905cb02554bccd1ca6.jpg" alt="Erfolgssymbol Blademaster" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Blademaster</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">4.0%</span></label></li>
+<li data-name="Floral Profusion"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/ecc917506dea8555b3f695f31c4b679b9589ca63.jpg" alt="Erfolgssymbol Floral Profusion" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Floral Profusion</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">3.8%</span></label></li>
+<li data-name="Reincarnated"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/5e7c92f9fac1c731b197b1fed0955d0b9595bebb.jpg" alt="Erfolgssymbol Reincarnated" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Reincarnated</b><small>Verborgener Erfolg — Steam veröffentlicht keine Beschreibung.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">3.3%</span></label></li>
+<li data-name="Duty Fulfilled"><label><input type="checkbox"><img src="https://shared.fastly.steamstatic.com/community_assets/images/apps/2001760/69f17a29f62d63151a57e350c2cd18417c0806bb.jpg" alt="Erfolgssymbol Duty Fulfilled" width="40" height="40" loading="lazy" decoding="async"><span class="tracker-txt"><b>Duty Fulfilled</b><small>Schalte jeden Erfolg frei.</small></span><span class="tracker-pct" title="Anteil aller Steam-Spieler, die diesen Erfolg freigeschaltet haben">3.0%</span></label></li>
+        </ul>
+        <p class="tracker-foot">Die Freischaltquoten sind Steams globale Werte, erfasst am 2026-09-07 und wöchentlich aktualisiert. Deine Häkchen werden nur in diesem Browser gespeichert.</p>
+      </section>
+
+      <h2 id="die-zahlen-lesen">Die Zahlen lesen</h2>
+      <p>Jeder Prozentwert ist Steams globale Freischaltquote für Beast of Reincarnation: der Anteil aller Steam-Besitzer, die diesen Erfolg über die Laufzeit des Spiels hinweg erworben haben. Das ist eine bewegliche Zahl — Story-Erfolge sacken bei jedem Sale ab, wenn neue Spieler dazukommen, und klettern wieder, sobald diese durchspielen. Deshalb liest diese Seite Steam wöchentlich neu aus und druckt das Erfassungsdatum unter die Liste. Beim Abruf am 7. September ist <strong>Purifier's Mantle</strong> mit 94,6 % der häufigste und <strong>Duty Fulfilled</strong> („Schalte jeden Erfolg frei.“) mit 3,0 % der seltenste Eintrag. Die <a href="/beast-of-reincarnation/de/trophies">Trophäen-Seite</a> führt dieselbe Liste mit Kommentaren dazu, wo Komplettierungsdurchgänge hängenbleiben, samt der Zuordnung für PS5 und Xbox.</p>
+
+      <h2 id="verborgene-erfolge">38 von 46 sind verborgen</h2>
+      <p>Steam veröffentlicht für 38 der 46 Erfolge keine Beschreibung, was ungewöhnlich viel ist — Game Freak hat sich entschieden, die meisten Boss-, Ende- und Sammelbedingungen unausgesprochen zu lassen. Der Tracker zeigt sie deshalb als <em>verborgenen Erfolg</em> an, statt eine Bedingung zu erfinden. Wo diese Seite aus dem Spiel oder aus Patch Notes belegen konnte, was ein verborgener Erfolg verlangt (die Erfolge zu den <a href="/beast-of-reincarnation/de/bosses">Nushi-Bossen</a> folgen der Versiegelungsreihenfolge; die Rapport-Kette ist im <a href="/beast-of-reincarnation/de/koo-guide">Koo-Guide</a> dokumentiert), sagt es die Trophäen-Seite; wo nicht, sagt sie auch das.</p>
+
+      <h2 id="eine-sinnvolle-reihenfolge">Eine sinnvolle Reihenfolge</h2>
+      <p>Die Angabe „nächstleichteste“ im Tracker ist rein statistisch, folgt aber der Kampagne recht genau. Das obere Ende der Liste sind die ersten Stunden — erstes Lager, erste Attributverstärkung, erster Schrein — und der erste Nushi. Das Mittelfeld sind die Bossversiegelungen Kapitel für Kapitel und die Rapport-Meilensteine mit Koo, die sich von selbst ergeben, wenn du der <a href="/beast-of-reincarnation/de/walkthrough">Komplettlösung</a> folgst und den Hund streichelst. Das untere Ende ist die Komplettierungsarbeit: verborgene Erfolge, deren Namen auf das Sammeln von Waffen und Bloom Arts deuten (Blade Enthusiast, Blademaster, Floral Profusion) sowie auf das Ende (Reincarnated) — ihre Bedingungen sind unveröffentlicht, behandle die Namen also als Hinweise und nicht als Beleg —, und schließlich <strong>Duty Fulfilled</strong>, der einzige, den Steam beschreibt: schalte jeden Erfolg frei. Die <a href="/beast-of-reincarnation/de/all-endings">Enden-Seite</a> erklärt, welche mit dem Ende verbundenen Freischaltungen verpassbar sind.</p>
+      <p>Zum Zeitpunkt dieser Prüfung zählt die Erfolgsliste weiterhin 46 Einträge. Ob ein späterer Patch daran etwas ändert, hält die Seite mit den <a href="/beast-of-reincarnation/de/patch-notes">Patch Notes</a> fest.</p>
+
+      <h2 id="was-dieses-werkzeug-nicht-ist">Was dieses Werkzeug nicht ist</h2>
+      <p>Es liest weder dein Steam-, PlayStation- noch dein Xbox-Profil aus — du setzt die Häkchen von Hand, weshalb es ohne Anmeldung funktioniert und sich nicht darüber irren kann, was du besitzt. Die Trophäenseite deiner Plattform hakt zwar für dich ab; was sie nicht tut, ist dir zu sagen, welcher der verbleibenden Einträge statistisch der günstigste ist — und genau das ergänzt diese Seite.</p>
+      <p>Ein praktischer Hinweis zum Einsatz: Weil die Häkchen nur lokal liegen, sind sie an diesen Browser und dieses Gerät gebunden. Wer zwischen Rechner und Handy wechselt, führt zwei getrennte Listen. Wie Spielstände selbst zwischen Geräten wandern (und wo nicht), klärt unsere <a href="/beast-of-reincarnation/de/cross-save">Cross-Save-Seite</a>.</p>
+
+      <h2 id="quellen">Quellen</h2>
+      <ul>
+        <li><a href="https://steamcommunity.com/stats/2001760/achievements" rel="nofollow noopener" target="_blank">Steam &mdash; offizielle globale Erfolgsstatistik für App 2001760 (Namen, Beschreibungen, Symbole und sämtliche Prozentwerte dieser Seite; gelesen am 2026-09-07, wöchentlich aktualisiert)</a></li>
+        <li><a href="/beast-of-reincarnation/de/trophies">Die Trophäen-Seite dieser Website</a> &mdash; Plattformzuordnung und Komplettierungsanalyse</li>
+      </ul>
+
+      <p class="updated">Zuletzt geprüft: 7. September 2026 &middot; Kontrollierte Spielversion: 1.0.9 &middot; Bewegliche Zahlen nennen das Datum, an dem sie gelesen wurden</p>
+    </article>
+  </div>
+  <aside class="ad-native" hidden aria-label="Advertisement"></aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="/beast-of-reincarnation/de/bosses">Bosse</a><a href="/beast-of-reincarnation/de/builds">Builds</a><a href="/beast-of-reincarnation/de/koo-guide">Koo-Guide</a><a href="/beast-of-reincarnation/de/beginner-guide">Einsteiger</a><a href="/beast-of-reincarnation/de/review">Test</a><a href="/beast-of-reincarnation/de/metacritic">Metascore</a><a href="/beast-of-reincarnation/de/how-long-to-beat">Spielzeit</a><a href="/beast-of-reincarnation/de/all-weapons">Waffen</a><a href="/beast-of-reincarnation/de/all-endings">Enden</a><a href="/beast-of-reincarnation/de/trophies">Trophäen</a><a href="/beast-of-reincarnation/de/achievement-tracker">Tracker</a><a href="/beast-of-reincarnation/de/walkthrough">Komplettlösung</a><a href="/beast-of-reincarnation/de/pc-requirements">PC-Anforderungen</a><a href="/beast-of-reincarnation/de/performance">Performance</a><a href="/beast-of-reincarnation/de/patch-notes">Patch Notes</a><a href="/beast-of-reincarnation/de/editions">Editionen</a><a href="/beast-of-reincarnation/de/preorder-bonuses">Vorbesteller-Boni</a><a href="/beast-of-reincarnation/de/game-pass">Game Pass</a><a href="/beast-of-reincarnation/de/cross-save">Cross-Save</a><a href="/beast-of-reincarnation/de/release-date">Release-Datum</a><a href="/beast-of-reincarnation/de/demo">Demo</a><a href="/beast-of-reincarnation/de/multiplayer">Multiplayer</a><a href="/beast-of-reincarnation/de/open-world">Open World</a><a href="/beast-of-reincarnation/de/difficulty">Schwierigkeitsgrad</a><a href="/beast-of-reincarnation/de/voice-actors">Sprecher</a><a href="/beast-of-reincarnation/de/faq">FAQ</a><a href="/about">Über uns</a><a href="/contact">Kontakt</a><a href="/privacy-policy">Datenschutz</a><a href="/editorial-policy">Redaktionelle Richtlinien</a><a href="/terms">Nutzungsbedingungen</a><a href="/disclaimer">Haftungsausschluss</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ Unterstützen</a></nav>
+    <p>Inoffizielle Fanseite. Beast of Reincarnation ist eine Marke von GAME FREAK inc. / Fictions, Inc. Diese Seite steht in keiner Verbindung zu diesen Unternehmen und wird nicht von ihnen unterstützt.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var KEY="ach-tracker:2001760", list=document.getElementById("tr-list"), items=Array.prototype.slice.call(list.children);
+  var done=new Set(); try{ done=new Set(JSON.parse(localStorage.getItem(KEY)||"[]")); }catch(e){}
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(Array.from(done))); }catch(e){} }
+  function pct(li){ return parseFloat(li.querySelector(".tracker-pct").textContent); }
+  function render(){
+    var n=items.length, d=0, easiest=null, rarest=null;
+    items.forEach(function(li){ var on=done.has(li.dataset.name); li.classList.toggle("on",on); li.querySelector("input").checked=on; li.hidden=on&&document.getElementById("tr-hide").checked; if(on){d++;} else { if(!easiest||pct(li)>pct(easiest)) easiest=li; if(!rarest||pct(li)<pct(rarest)) rarest=li; } });
+    var p=Math.round(d/n*100); document.getElementById("tr-bar").style.width=p+"%"; document.querySelector(".tracker-progress").setAttribute("aria-valuenow",d);
+    var s="<b>"+d+" / "+n+"</b> freigeschaltet ("+p+" %)";
+    if(easiest) s+=" \u00b7 n\u00e4chstleichteste: <b>"+easiest.dataset.name+"</b> ("+pct(easiest)+" % der Spieler)";
+    if(rarest&&rarest!==easiest) s+=" \u00b7 seltenste offene: <b>"+rarest.dataset.name+"</b> ("+pct(rarest)+" %)";
+    if(d===n) s+=" \u00b7 <b>100 % \u2014 Duty Fulfilled.</b>";
+    document.getElementById("tr-summary").innerHTML=s; document.getElementById("tr-reset").disabled=d===0;
+  }
+  list.addEventListener("change",function(e){ var li=e.target.closest("li"); if(!li) return; done.has(li.dataset.name)?done.delete(li.dataset.name):done.add(li.dataset.name); save(); render(); });
+  document.getElementById("tr-hide").addEventListener("change",render);
+  document.getElementById("tr-reset").addEventListener("click",function(){ done=new Set(); save(); render(); });
+  document.getElementById("tr-sort").addEventListener("change",function(e){
+    var v=e.target.value, arr=items.slice();
+    if(v==="common") arr.sort(function(a,b){return pct(b)-pct(a);}); if(v==="rare") arr.sort(function(a,b){return pct(a)-pct(b);}); if(v==="name") arr.sort(function(a,b){return a.dataset.name.localeCompare(b.dataset.name);});
+    arr.forEach(function(li){ list.appendChild(li); });
+  });
+  render();
+})();
+</script>
+</body>
+</html>

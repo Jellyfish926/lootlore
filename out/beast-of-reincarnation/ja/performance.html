@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beast of Reincarnation 性能・フレームレート（PS5/Xbox/Steam Deck）</title>
-<meta name="description" content="Beast of Reincarnation のPS5・Xbox Series X|S・Steam Deck の性能・フレームレート情報。Handheld Optimized 対応など確定情報と検証ポイントを整理。実測テストは発売後に掲載します。">
+<title>Beast of Reincarnation 性能・フレームレート|patch 1.0.9 まで反映</title>
+<meta name="description" content="発売時に最も批判されたのが性能面でした。3週間で配信された 1.0.7〜1.0.9 の3パッチが何を直したのか、PS5・Xbox・PC・Steam Deck それぞれの現状とあわせて整理します。">
 <link rel="canonical" href="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/performance">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Beast of Reincarnation 性能・フレームレート（PS5/Xbox/Steam Deck）">
-<meta property="og:description" content="Beast of Reincarnation のPS5・Xbox Series X|S・Steam Deck の性能・フレームレート情報。Handheld Optimized 対応など確定情報と検証ポイントを整理。実測テストは発売後に掲載します。">
+<meta property="og:title" content="Beast of Reincarnation 性能・フレームレート|patch 1.0.9 まで反映">
+<meta property="og:description" content="発売時に最も批判されたのが性能面でした。3週間で配信された 1.0.7〜1.0.9 の3パッチが何を直したのか、PS5・Xbox・PC・Steam Deck それぞれの現状とあわせて整理します。">
 <meta property="og:url" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/ja/performance">
 <meta property="og:image" content="https://lootlore-ten.vercel.app/beast-of-reincarnation/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -89,23 +89,23 @@
     <section class="hero" style="padding-top:2rem">
       <p class="kicker">パフォーマンス</p>
       <h1>Beast of Reincarnation 性能・フレームレート（PS5/Xbox/Steam Deck）</h1>
-      <p class="lede">フレームレート、グラフィックモード、そして Steam Deck での動作感。発売初日に全プラットフォームを検証します。まずは、要求スペックの高いUE5製アクションRPGとして、現時点の確定情報とチェックすべきポイントを整理しました。</p>
-      <p class="updated">フレームレート検証は発売日(2026年8月4日)以降に実機検証で掲載予定</p>
+      <p class="lede">フレームレート、グラフィックモード、Steam Deck、そして<strong>発売後3本のパッチが何を直したのか</strong>。性能は本作が発売時にもっとも批判された部分であり、1.0.7 → 1.0.9 のパッチ群はまさにそこへ向けられています。</p>
+      <p class="updated">2026年8月31日 更新 &middot; パッチ 1.0.9(8月24日)まで反映</p>
     </section>
     <article>
-      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#sec-0">確定している対応プラットフォーム</a></li><li><a href="#sec-1">本作でフレームレートが特に重要な理由</a></li><li><a href="#unreal-engine-5">Unreal Engine 5 採用が意味すること</a></li><li><a href="#sec-3">グラフィックモード:発表済みと未発表の線引き</a></li><li><a href="#steam-deck">Steam Deck・携帯機での見通し</a></li><li><a href="#sec-5">性能重視ならどの機種を選ぶべきか</a></li><li><a href="#sec-6">発売日にチェックすべき項目</a></li><li><a href="#sec-7">パフォーマンスFAQ</a></li><li><a href="#sec-8">関連ページ</a></li><li><a href="#sec-9">出典</a></li></ul></nav>
+      <nav class="toc" aria-label="目次"><p>目次</p><ul><li><a href="#sec-0">確定している対応プラットフォーム</a></li><li><a href="#sec-1">本作でフレームレートが特に重要な理由</a></li><li><a href="#unreal-engine-5">Unreal Engine 5 採用が意味すること</a></li><li><a href="#sec-3">グラフィックモード:発表済みと未発表の線引き</a></li><li><a href="#steam-deck">Steam Deck・携帯機での見通し</a></li><li><a href="#sec-5">性能重視ならどの機種を選ぶべきか</a></li><li><a href="#sec-6">発売日にチェックすべき項目</a></li><li><a href="#sec-6b">発売後に実際に改善した点</a></li><li><a href="#sec-7">パフォーマンスFAQ</a></li><li><a href="#sec-8">関連ページ</a></li><li><a href="#sec-9">出典</a></li></ul></nav>
       
-      <div class="callout"><p><strong>先に結論:</strong> フレームレートの目標値とグラフィックモードは、全機種で未発表です。現時点で確定しているのは、対応プラットフォーム、Unreal Engine 5 採用、Game Pass 初日対応、そして携帯機向け最適化(Handheld Optimized)表記の4点。本ページでは公式発表と UE5 製タイトルの一般的な傾向を突き合わせ、発売前の判断材料になる情報を整理しています。</p></div>
+      <div class="callout"><p><strong>先に結論:</strong> 発売時点では、PS5 のパフォーマンスモードが 60fps を目標としながらボス戦でフレーム落ちし、PC ではスタッタリングの報告が相次ぎ、Steam Deck は Verified 未取得のまま出荷されました。その後ゲームフリークは<strong>3週間で3回パッチを配信</strong>——<strong>1.0.7</strong>(8月9日)がカメラとボスのバランス調整、<strong>1.0.8</strong>(8月15日)が DLSS 4/4.5 と FSR 4、カメラ距離設定を追加、<strong>1.0.9</strong>(8月24日)がウルトラワイド対応とフレーム生成に対応しています。</p></div>
 
       <p>『Beast of Reincarnation』(ビースト オブ リインカネーション)は、ゲームフリークが Unreal Engine 5 で開発し、Fictions, Inc. がパブリッシングする完全新作アクションRPGです。発売日は2026年8月4日、対応機種は PlayStation 5 / Xbox Series X|S / PC(Steam・Microsoft Store)。パリィを軸にした剣戟アクションを掲げる本作にとって、性能は単なる快適さの問題ではありません。1フレームの取りこぼしがそのままパリィの失敗につながりかねないジャンルだからこそ、「どの機種で、どれだけ安定して動くのか」は購入前に最も気になるポイントのはずです。ここでは確定している事実と、押さえておくべき論点を機種別に整理します。</p>
 
       <h2 id="sec-0">確定している対応プラットフォーム</h2>
       <table>
         <tr><th>プラットフォーム</th><th>確定している内容</th><th>補足</th></tr>
-        <tr><td>PlayStation 5</td><td>ネイティブ対応。価格は8,980円(税込)</td><td>パフォーマンス/クオリティモードの有無は未発表。PS5 では Game Pass は利用できません。ハピネットから発売されるパッケージ版には、デジタルデラックス版と同内容のDLCコードが永続特典として封入されます。</td></tr>
+        <tr><td>PlayStation 5</td><td>ネイティブ対応。価格は8,980円(税込)</td><td>パフォーマンスモードは 60fps を目標とし、密度の高いボス戦を除けばおおむね維持します(発売時はこのボス戦での落ち込みが広く報告されました)。PS5 では Game Pass は利用できません。ハピネットから発売されるパッケージ版には、デジタルデラックスエディションと同内容のDLCコードが永続特典として封入されます。</td></tr>
         <tr><td>Xbox Series X|S</td><td>ネイティブ対応。Game Pass Ultimate で発売初日からプレイ可能</td><td>Series S の解像度・フレームレート目標は未発表。要求の重い UE5 タイトルでは毎回焦点になる部分です。</td></tr>
         <tr><td>PC(Steam / Microsoft Store)</td><td>発売日から対応。Xbox Play Anywhere 対応</td><td>Microsoft Store 版は1回の購入で Xbox と PC の両方で遊べ、セーブデータと実績も共有されます。詳細は<a href="/beast-of-reincarnation/ja/pc-requirements">PC必要動作環境</a>へ。</td></tr>
-        <tr><td>携帯機・クラウド</td><td>Xbox の「Handheld Optimized」(携帯機最適化)表記が確定。クラウドプレイにも対応</td><td>携帯機や低消費電力環境を開発段階から意識している有力なシグナルです。一方、Steam Deck の Deck Verified 認定状況は未発表。</td></tr>
+        <tr><td>携帯機・クラウド</td><td>Xbox の「Handheld Optimized」(携帯機最適化)表記が確定。クラウドプレイにも対応</td><td>Steam Deck は <strong>Deck Verified 未取得のまま発売</strong>されました。16GB のメモリ要件が Deck の総容量と同じであり、実用的な設定は低設定 + FSR で 40fps 上限というのが現状です。</td></tr>
       </table>
 
       <h2 id="sec-1">本作でフレームレートが特に重要な理由</h2>
@@ -129,10 +129,10 @@
 
       <h2 id="steam-deck">Steam Deck・携帯機での見通し</h2>
       <p>携帯機まわりの材料は、UE5 タイトルの平均よりも明るめです。Xbox は『Beast of Reincarnation』を「Handheld Optimized」対応として扱い、クラウド・コンソール・携帯機・PC のすべてでのプレイを想定したラインアップに載せています。一方で、Valve による Deck Verified の認定状況は本稿執筆時点で未発表のため、Steam Deck は「有望だが未証明」という位置づけです。バッテリー持続時間や安定して遊べる設定も、現時点では判断材料がありません。</p>
-      <p>携帯機での動作が最大の関心事なら、8,980円を先に支払うより Game Pass Ultimate で確かめるのが最も安上がりです。発売初日から追加費用なしで遊べるうえ、クラウドストリーミングを使えばローカル機の性能問題をそのまま回避できます。Steam で買う場合も、プレイ2時間未満・購入後14日以内という Valve の標準返金ポリシーが、自分の環境での動作確認のセーフティネットになります。体験版は2026年7月時点で未発表です。</p>
+      <p>携帯機での動作が最大の関心事なら、8,980円を先に支払うより Game Pass Ultimate で確かめるのが最も安上がりです。発売初日から追加費用なしで遊べるうえ、クラウドストリーミングを使えばローカル機の性能問題をそのまま回避できます。Steam で買う場合も、プレイ2時間未満・購入後14日以内という Valve の標準返金ポリシーが、自分の環境での動作確認のセーフティネットになります。体験版は発売から4週間が経った現在も配信されていません。</p>
 
       <h2 id="sec-5">性能重視ならどの機種を選ぶべきか</h2>
-      <p>固定ハードの PS5 と Series X は、どのようなモード構成で出てくるにせよ、調整済みの状態で届く最も予測しやすい選択肢です。PC は<a href="/beast-of-reincarnation/ja/pc-requirements">推奨スペック</a>を上回る GPU があればコンソールの上限を超えられますが、UE5 特有のカクつきリスクを最も抱えやすいのも PC です。迷っている人には Xbox エコシステムに構造的な利点があります。Play Anywhere により、Microsoft Store での1回の購入(または Game Pass Ultimate への加入)で Xbox と PC の両方をカバーでき、セーブと実績が同期するため、実際によく動くほうの環境で遊べばよいからです。PS5 は定額サービスの選択肢こそないものの、国内ではハピネットのパッケージ版にデジタルデラックス版と同内容のDLCコードが封入されるという独自のメリットがあり、電撃オンラインの報道によればキャンバスボードやアクリルスタンドなどの店舗別購入特典も用意されています。VRR や 120Hz 対応は前述のとおり未発表です。</p>
+      <p>固定ハードの PS5 と Series X は、どのようなモード構成で出てくるにせよ、調整済みの状態で届く最も予測しやすい選択肢です。PC は<a href="/beast-of-reincarnation/ja/pc-requirements">推奨スペック</a>を上回る GPU があればコンソールの上限を超えられますが、UE5 特有のカクつきリスクを最も抱えやすいのも PC です。迷っている人には Xbox エコシステムに構造的な利点があります。Play Anywhere により、Microsoft Store での1回の購入(または Game Pass Ultimate への加入)で Xbox と PC の両方をカバーでき、セーブと実績が同期するため、実際によく動くほうの環境で遊べばよいからです。PS5 は定額サービスの選択肢こそないものの、国内ではハピネットのパッケージ版にデジタルデラックスエディションと同内容のDLCコードが封入されるという独自のメリットがあり、電撃オンラインの報道によればキャンバスボードやアクリルスタンドなどの店舗別購入特典も用意されています。VRR や 120Hz 対応は前述のとおり未発表です。</p>
 
       <h2 id="sec-6">発売日にチェックすべき項目</h2>
       <ul>
@@ -143,15 +143,25 @@
         <li><strong>ロード時間</strong> — 起動、ファストトラベル、そして死亡からリトライまでの時間。ボスに何十回も挑むジャンルでは体験を大きく左右します。</li>
         <li><strong>入力遅延</strong> — 各モードがパリィの操作感にどう影響するか。</li>
       </ul>
-      <p>これらの実測データは、2026年8月4日の発売後に実機検証のうえ本ページへ追記します。</p>
+      <p>このうち発売後に判明した分は上下の各節に反映済みです。Series S の解像度・フレームレート目標と PS5 Pro 専用強化の有無については、依然として公式の説明がなく<strong>未確認</strong>のままです。</p>
+
+      <h2 id="sec-6b">発売後に実際に改善した点</h2>
+      <p>発売時のビルドが性能面で批判を受けたのは事実で、レビューもそう書きました。ただし、スコア集計サイトに反映されないのがその後のパッチ頻度です。最初の3週間で3回、いずれも指摘された箇所を狙った更新が入りました。</p>
+      <table>
+        <tr><th>パッチ</th><th>配信日</th><th>性能に関わる主な変更</th></tr>
+        <tr><td>1.0.7</td><td>8月9日</td><td>カメラ調整(ボス戦のカメラは発売時の代表的な不満点でした)、テキストサイズ、物語のテンポ調整、ボスのバランス調整</td></tr>
+        <tr><td>1.0.8</td><td>8月15日</td><td>DLSS 4/4.5 および FSR 4 対応、カメラ距離の設定項目、字幕サイズ、水面判定の修正</td></tr>
+        <tr><td>1.0.9</td><td>8月24日</td><td>ウルトラワイドモニター対応、フレーム生成(DLSS / FSR)、カットシーンのスキップ、回復まわりの改善</td></tr>
+      </table>
+      <p>機種別に見ると、<strong>もっとも恩恵が大きいのは PC</strong> です。最新のアップスケーラーとフレーム生成の追加で、RTX 40/50 番台や最近の Radeon を積んだ環境には発売時になかった余裕が生まれ、ウルトラワイド環境もようやく正式対応になりました。PS5 と Xbox はカメラとバランスの調整で恩恵を受けていますが、<strong>ボス戦のフレーム落ちはエンジン負荷に起因するもので、パッチで削られてはいても解消はしていません</strong>。発売週のレビューを読んで様子見していた方には、現在のビルドは当時より明確に整っている、とはお伝えできます。</p>
 
       <h2 id="sec-7">パフォーマンスFAQ</h2>
       <h3>Beast of Reincarnationは60fpsで動きますか?</h3>
-      <p>未発表です。どの機種についてもフレームレート目標は公表されていません。ディレクターの「ゲームプレイ優先」という方針は期待材料ですが、保証ではありません。</p>
+      <p>PS5 ではパフォーマンスモードが 60fps を目標とし、もっとも密度の高いボス戦を除けばおおむね維持します(このボス戦での落ち込みは発売時に広く報告されました)。PC では設定とアップスケーラー次第で、公式の推奨環境は <strong>中設定 1080p / 60fps・DLSS または FSR をパフォーマンス設定で使用</strong>を想定しています。1.0.9 のフレーム生成対応で、対応カードの上限はさらに上がりました。</p>
       <h3>Steam Deckで遊べますか?</h3>
-      <p>Steam 版のインストールと起動は可能なはずで、Xbox 側では携帯機向けの最適化表記も確認されています。ただし、Valve の Deck Verified 認定と現実的な設定は未発表です。</p>
+      <p>動作はしますが、<strong>Deck Verified 認定を取得しないまま発売</strong>されました。16GB というメモリ要件は Deck の総メモリと同じで、現実的な設定は<strong>低設定 + FSR で 40fps 上限</strong>というのが現状の目安です。なお Xbox は Game Pass のラインナップ上、本作を携帯機向けとして掲載しています。</p>
       <h3>自分の環境で試せる体験版はありますか?</h3>
-      <p>ありません。2026年7月時点で体験版は未発表です。Game Pass Ultimate(Xbox/PC)か、Steam の返金制度(プレイ2時間未満・購入後14日以内)が現実的な代替手段になります。</p>
+      <p>ありません。発売から4週間が経った現在も体験版は配信されていません。Game Pass Ultimate(Xbox/PC)か、Steam の返金制度(プレイ2時間未満・購入後14日以内)が現実的な代替手段になります。</p>
       <h3>クラウドでプレイできますか?</h3>
       <p>可能です。Game Pass Ultimate のクラウドゲーミング対応が告知されており、描画をすべてサーバー側に任せられます。ただしストリーミング特有の遅延が乗るため、パリィ主体の本作ではネイティブ動作のほうが望ましいのは確かです。</p>
       <h3>XboxとPCでセーブデータは共有されますか?</h3>
@@ -173,7 +183,7 @@
         <li><a href="https://www.4gamer.net/games/918/G091815/20260123003/" rel="nofollow noopener" target="_blank">4Gamer — 最新映像を公開(メイキング&amp;ゲームプレイ)</a> — 世界観・戦闘・開発の全貌</li>
         <li><a href="https://store.steampowered.com/app/2001760/Beast_of_Reincarnation/" rel="nofollow noopener" target="_blank">Steam ストアページ</a> — 対応プラットフォーム・エンジン・発売日</li>
       </ul>
-      <p class="updated">最終更新: 2026年7月23日</p>
+      <p class="updated">最終レビュー:2026年8月31日 &middot; 確認済みゲームバージョン:1.0.9</p>
     </article>
   </div>
   <aside class="ad-native" hidden aria-label="Advertisement"></aside>
@@ -181,7 +191,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
+    <nav><a href="/beast-of-reincarnation/ja/bosses">ボス</a><a href="/beast-of-reincarnation/ja/crimson-malefact-boss-guide">Crimson Malefact</a><a href="/beast-of-reincarnation/ja/shidou-and-nue-boss-guide">Shidou &amp; Nue</a><a href="/beast-of-reincarnation/ja/builds">ビルド</a><a href="/beast-of-reincarnation/ja/koo-guide">クゥ攻略</a><a href="/beast-of-reincarnation/ja/beginner-guide">初心者</a><a href="/beast-of-reincarnation/ja/blight-explained">穢れとは</a><a href="/beast-of-reincarnation/ja/spirit-stones">スピリットストーン</a><a href="/beast-of-reincarnation/ja/amber-farming">琥珀稼ぎ</a><a href="/beast-of-reincarnation/ja/review">レビュー</a><a href="/beast-of-reincarnation/ja/metacritic">メタスコア</a><a href="/beast-of-reincarnation/ja/how-long-to-beat">クリア時間</a><a href="/beast-of-reincarnation/ja/all-weapons">武器</a><a href="/beast-of-reincarnation/ja/all-endings">結末</a><a href="/beast-of-reincarnation/ja/trophies">トロフィー</a><a href="/beast-of-reincarnation/ja/achievement-tracker">実績トラッカー</a><a href="/beast-of-reincarnation/ja/walkthrough">ストーリー攻略</a><a href="/beast-of-reincarnation/ja/pc-requirements">PC環境</a><a href="/beast-of-reincarnation/ja/performance">性能</a><a href="/beast-of-reincarnation/ja/patch-notes">アップデート</a><a href="/beast-of-reincarnation/ja/editions">エディション</a><a href="/beast-of-reincarnation/ja/which-edition-quiz">版選び診断</a><a href="/beast-of-reincarnation/ja/preorder-bonuses">予約特典</a><a href="/beast-of-reincarnation/ja/game-pass">Game Pass</a><a href="/beast-of-reincarnation/ja/cross-save">クロスセーブ</a><a href="/beast-of-reincarnation/ja/release-date">発売日</a><a href="/beast-of-reincarnation/ja/demo">体験版</a><a href="/beast-of-reincarnation/ja/multiplayer">マルチプレイ</a><a href="/beast-of-reincarnation/ja/open-world">オープンワールド</a><a href="/beast-of-reincarnation/ja/difficulty">難易度</a><a href="/beast-of-reincarnation/ja/voice-actors">声優</a><a href="/beast-of-reincarnation/ja/faq">FAQ</a><a href="/about">運営情報</a><a href="/contact">お問い合わせ</a><a href="/privacy-policy">プライバシーポリシー</a><a href="/editorial-policy">編集方針</a><a href="/terms">利用規約</a><a href="/disclaimer">免責事項</a><a href="https://ko-fi.com/beastofreincarnation" rel="noopener" target="_blank">☕ 支援する</a></nav>
     <p>非公式のファン攻略サイトです。Beast of Reincarnation は GAME FREAK inc. / Fictions, Inc. の商標です。本サイトは両社と提携・監修関係にはありません。</p>
   </div>
 </footer>

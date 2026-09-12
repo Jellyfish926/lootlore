@@ -6,23 +6,23 @@
       "sha": "5472f16744bc8a6ff21ee59c757c89bcd8100c05",
       "files": 311,
       "html": 295,
-      "synced_at": "2026-09-11T23:37:42Z"
+      "synced_at": "2026-09-12T22:32:51Z"
     },
     "dragonsword": {
       "repo": "Jellyfish926/dragonsword-guide",
       "product": "out",
-      "sha": "f3e05ad246436838b10df6ca41506911d274ed95",
-      "files": 143,
-      "html": 46,
-      "synced_at": "2026-09-11T23:37:42Z"
+      "sha": "c112b272e0ed5f18c1738ea6894588c55d93007a",
+      "files": 157,
+      "html": 53,
+      "synced_at": "2026-09-12T22:32:52Z"
     },
     "orc": {
       "repo": "Jellyfish926/orc-problem-guide",
       "product": "out",
-      "sha": "13777c1926f6ef1e69c2e1893b2dd947e98b46ef",
+      "sha": "0a221da5caab924340cd3347013f3555b8d1f6c7",
       "files": 133,
       "html": 45,
-      "synced_at": "2026-09-11T23:37:42Z"
+      "synced_at": "2026-09-12T22:32:52Z"
     },
     "sephiria": {
       "repo": "Jellyfish926/sephiria-wiki",
@@ -30,7 +30,7 @@
       "sha": "20200f9e6bebee19410fd6ef032ee356cedb8302",
       "files": 171,
       "html": 59,
-      "synced_at": "2026-09-11T23:37:42Z"
+      "synced_at": "2026-09-12T22:32:51Z"
     },
     "shift": {
       "repo": "Jellyfish926/shift-at-midnight-wiki",
@@ -38,7 +38,7 @@
       "sha": "26c0a28d4ec7471d3506ef468009d7374ec5ed2f",
       "files": 67,
       "html": 52,
-      "synced_at": "2026-09-11T23:37:42Z"
+      "synced_at": "2026-09-12T22:32:51Z"
     }
   }
 }

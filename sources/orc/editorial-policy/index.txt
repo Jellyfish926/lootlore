@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8b96f1298b3638f0.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-67b6c6c436bc2a63.js"],""]
 2:Tace,<p>The <a href="/about/">about page</a> says where this site's numbers come from. This page is the operating manual behind that promise: the rules a page must pass before it goes up, and what happens when one turns out to be wrong.</p>
 <h2>Rule one: no orphan numbers</h2>
 <p>A figure may enter a page only from one of three doors — Steam's public APIs, a Steam guide with a named author and posting date, or Mumpitz Games' own published text. Each page's frontmatter lists exactly which doors it used. A statistic that arrives without a source attached — from a forum comment, a video thumbnail, another wiki — waits outside until someone traces it. Most never get in, and the pages say so in their "what is missing" sections.</p>

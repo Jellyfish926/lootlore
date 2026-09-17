@@ -14,6 +14,9 @@
 用法:
   python3 check_content.py <html_dir> [--locales de,es,fr,it,ja] [--default en] [--min-links 3]
                            [--trailing-slash auto|yes|no] [--json] [--exclude 404,privacy-policy,terms]
+                           [--dir-lang <game>=<lang>,...]
+  --dir-lang  总站里「整个游戏目录就是一个非主语种、且没有语种子目录」的情况(如某个全中文的游戏目录):
+              按 <游戏目录>=<语种> 声明,LANG_ATTR 对这些目录按声明的语种判,不再误报成主语种。
 退出码:有 E 则 1,否则 0。
 """
 import argparse, json, os, re, sys, html
@@ -75,10 +78,12 @@ def main():
     ap.add_argument("root"); ap.add_argument("--locales", default=""); ap.add_argument("--default", default="en")
     ap.add_argument("--min-links", type=int, default=3); ap.add_argument("--trailing-slash", default="auto")
     ap.add_argument("--json", action="store_true"); ap.add_argument("--exclude", default="")
+    ap.add_argument("--dir-lang", default="", help="逗号分隔的 <顶层目录>=<语种>,如 <game>=zh")
     a = ap.parse_args()
     root = os.path.abspath(a.root)
     locales = [x for x in a.locales.split(",") if x]
     exclude = set(TRUST) | {x for x in a.exclude.split(",") if x}
+    dir_lang = dict(x.split("=", 1) for x in a.dir_lang.split(",") if "=" in x)
     trailing = a.trailing_slash
     if trailing == "auto":
         # 有 x/index.html 结构 → trailing;全是 x.html → clean
@@ -123,6 +128,9 @@ def main():
             if loc_idx is not None:
                 page_locale = parts[loc_idx]
                 locale_prefix = parts[:loc_idx]
+            elif parts and parts[0] in dir_lang:
+                page_locale = dir_lang[parts[0]]
+                locale_prefix = None  # 单语种游戏目录:没有「同语种旁页」可比,跳过 LOCALE_LINK
             else:
                 page_locale = a.default
                 locale_prefix = parts[:-1] if parts else []
@@ -131,7 +139,7 @@ def main():
                 if norm is None: continue
                 if not ok: E.append(("DEAD_INTERNAL", route, href[:100])); continue
                 if in_main or not p.main_seen: internal_main += 1
-                if page_locale != a.default:
+                if page_locale != a.default and locale_prefix is not None:
                     norm_parts = norm.strip("/").split("/")
                     seg = norm_parts[len(locale_prefix)] if len(norm_parts) > len(locale_prefix) else ""
                     if norm_parts[:len(locale_prefix)] == locale_prefix and seg and seg not in locales and seg not in exclude:

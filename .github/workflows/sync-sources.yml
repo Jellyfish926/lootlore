@@ -88,9 +88,9 @@ jobs:
 
       # ---------- 门禁等价检查(与 gates.yml 同一批脚本);红一条就不提交 ----------
       - name: check_content(H1 / alt / 占位语 / 死链 / 内链≥3 / 语种前缀)
-        run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en
+        run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en --dir-lang valheim=zh
       - name: check_i18n(小语种残页 / 占位)
-        run: python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja --games beast-of-reincarnation,dragonsword-awakening,orc-problem,sephiria,shift-at-midnight
+        run: python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja --games beast-of-reincarnation,dragonsword-awakening,orc-problem,sephiria,shift-at-midnight,valheim
       - name: check_sitemap(loc↔文件 / 域名残留 / robots)
         run: python3 .gates/check_sitemap.py --out out --host lootlore-ten.vercel.app
       - name: link_check(全站死链)

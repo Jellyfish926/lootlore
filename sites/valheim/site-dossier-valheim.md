@@ -158,12 +158,91 @@ draft 门控实测:把 `kall.md` 临时改 `draft: true` → `out/valheim/kall/`
 | # | 事项 | 谁 |
 |---|---|---|
 | 1 | ~~事实核验合并~~:已完成(2026-09-17,见「七、事实核验」)。39 篇全部通过,`draft` 保持 `false` | 已完成 |
-| 2 | **合并 main = 上线**:main 一 push 就自动部署,valheim 分支尚未合并 main | 站主 |
+| 2 | ~~合并 main = 上线~~:已完成(2026-09-17,见「九、上线记录」) | 已完成 |
 | 3 | 域名:当前 `base_url` 为 `lootlore-ten.vercel.app`;换域名按总站 README 执行 `python3 build.py --base https://新域名`,并同步 gates.yml / sync-sources.yml / freshness.yml 的 host | 站主 |
-| 4 | GSC:上线后提交 sitemap,对 `/valheim/` 与 6 个栏目页请求编入索引 | 站主 |
-| 5 | GA4:`config/hub.json` 的 `ga4_id` 仍为空(总站级) | 站主 |
-| 6 | title 长度:30 篇 `seoTitle` 显示宽度 62–73(>60),6 个栏目页 20–24(<30);description 6 个栏目页 <70 宽。属内容层,建议随核验稿一起调 | 内容方 |
-| 7 | 正文深度:32 篇折算 518–665 词,低于 800 词下限;中文页字数口径待定(见 `lessons-inbox.md` 第 6 条) | 站主 |
+| 4 | GSC:重提 sitemap,并对 `/valheim/` 与 6 个栏目页请求编入索引(IndexNow 未生效,见「九、上线记录」) | 站主 |
+| 5 | GA4 / Clarity:`config/hub.json` 的 `ga4_id` 仍为空(总站级),Clarity ID 同样未配置 | 站主 |
+| 6 | title 长度:30 篇 `seoTitle` 显示宽度 62–73(>60,按 CJK 折算超 60 属 P1),6 个栏目页 20–24(<30);description 6 个栏目页 <70 宽。属内容层,建议随核验稿一起收短 | 内容方 |
+| 7 | 正文深度:32 篇(article 页共 32 篇)中文正文 685–963 汉字(`chineseCharacters` 字段实测),按 800 汉字线有 22 篇偏薄,清单见「九、上线记录」 | 站主 |
 | 8 | 4 个栏目页(新手入门/生存建设/区域推进/联机维护)正文入链仅 1 条(来自 hub 卡片),栏目导航与面包屑不计入;可在相关攻略正文里补语境链接 | 内容方 |
 | 9 | `valheim.tools` / `mobalytics.gg` / `games.gg` 6 条来源未能验活(403) | 核验方 |
 | 10 | 作者页只写了可确认的编写方式;真实作者简介、社交链接待站主提供 | 站主 |
+
+## 九、上线记录(2026-09-17)
+
+**分支状态**:`git fetch origin` 时 `origin/main` 与 valheim 分支点(`2a91a89`)完全重合,merge-base = origin/main HEAD,无需 rebase。`python3 build.py` 重建 `out/`:525 个 HTML(与 rebase/合并前一致,含五个既有游戏最新快照 + valheim 40 页),working tree 无差异。
+
+**本地门禁**(对重建后的 `out/` 复现 `gates.yml` 全部步骤):
+
+| 命令 | 结果 |
+|---|---|
+| `check_content.py` | 516 页 · 0 阻塞 · 0 警告 |
+| `check_i18n.py`(6 个游戏目录) | 多语种 1 · 单语种/跳过 5(含 valheim)· 阻塞 0 · 警告 0 |
+| `check_sitemap.py` | 524 条 loc · 0 阻塞 · 0 警告 |
+| `link_check.py --out out` | 525 HTML,543 条站内链接,✓ 无死链 |
+| `freshness_audit.py` | 全部在期内,无需动作 |
+| `tech_audit.py`(只报告) | 与站点档案「五、门禁结果」一致 |
+
+全绿,进入合并。
+
+**合并与推送**:`git checkout main && git merge --ff-only valheim` 成功(fast-forward,无新合并提交),main 落在 `ba11d0204bf5d0ebafab91e413ca20fd68a2582a`(`docs: verification ledger 2026-09-17`)。`git push origin main`:`2a91a89..ba11d02 main -> main`。`git fetch` 后 `git status -sb` = `## main...origin/main`(ahead 0 / behind 0)。
+
+**Vercel 部署**:GitHub Deployments API(`/repos/Jellyfish926/lootlore/deployments?per_page=3`,未按 environment 过滤)显示同一 sha 先建了一个 Preview 部署(id 6498624408),随后追加 Production 部署:
+
+- deployment id `6498693668`,environment `Production`,sha `ba11d0204b…`,created_at `2026-09-17T08:28:34Z`
+- 状态(`/deployments/6498693668/statuses`):`state=success`,`description=Deployment has completed`,`target_url=https://lootlore-hb50nxkop-1-6f9a.vercel.app`
+
+**线上验证**(域名 `https://lootlore-ten.vercel.app`,2026-09-17 08:3x UTC):
+
+| 检查项 | 结果 |
+|---|---|
+| `/` `/valheim/` `/valheim/kall/` HTTP 状态 | 均 200,`last-modified` 均为 `2026-09-17 08:28:4x GMT` |
+| `/valheim/kall/` 内「无敌冰块」出现次数 | 4(≥1,含 description) |
+| 首页「valheim」出现次数 | 5(≥1) |
+| `/sitemap.xml` | 200,`/valheim/` 条目数 = 40 |
+| `/robots.txt` | 200,`Sitemap: https://lootlore-ten.vercel.app/sitemap.xml`(无尾斜杠) |
+| `/ads.txt` | 200 |
+| 抽样 5 个 valheim URL(`/valheim/` `/valheim/bosses/` `/valheim/kall/` `/valheim/first-day/` `/valheim/save-1-0/`) | 全部 200 |
+| `link_check.py --live lootlore-ten.vercel.app` | sitemap 524 页,543 条站内链接,✓ 无死链 |
+| `/valheim/kall/` `<html lang>` | `<html lang="zh-CN"` |
+| `/valheim/kall/` canonical | `<link rel="canonical" href="https://lootlore-ten.vercel.app/valheim/kall/">` |
+| `/valheim/kall/` JSON-LD author | `"author":{"@type":"Person","name":"Jellyfi","url":"https://lootlore-ten.vercel.app/valheim/author/"}` |
+
+**IndexNow**:仓内找到 32 位 hex 格式的 key 文件 `out/shift-at-midnight/c8ee8bae9e38c268a2e5c84fddfe8aca.txt`(源自 `sources/shift/`),线上可访问(`200`,内容即文件名)。但该 key 归属 shift-at-midnight 子站路径,不是站点根级或 valheim 专属配置;尝试以 `keyLocation=https://lootlore-ten.vercel.app/shift-at-midnight/c8ee8bae9e38c268a2e5c84fddfe8aca.txt` 提交 40 条 `/valheim/` URL 到 `https://api.indexnow.org/indexnow`,返回 **HTTP 422**:`{"errorCode":"InvalidRequestParameters","message":"One or more URLs are not related to your site verified through the keylocation parameter."}`。未生成新 key、未改仓库。结论:**未配置可用于 valheim 的 IndexNow**,GSC 手动提交 sitemap + 请求索引仍需站主执行。
+
+**全量对抗验证补记**:BCD 其余 86 条核验结论中 82 条 CONFIRMED / 0 条 REFUTED / 4 条 UNVERIFIED——其中 3 条是站内结构类命题(不在事实取证范围内),1 条(P68「跨平台存档不同步」)已由主模型用 Valheim 官方 1.0 FAQ 原文核实成立:"Beyond this, there will be no cross platform sync for your save files"。
+
+**待用户(汇总)**:
+
+1. 在 GSC 重新提交 sitemap,并对 `/valheim/` 及 6 个栏目页手动请求编入索引(IndexNow 当前不可用)。
+2. GA4 `ga4_id`(`config/hub.json`)与 Clarity ID 仍缺,需补齐。
+3. 正式域名尚未换(当前为 `lootlore-ten.vercel.app` 临时域名)。
+4. 30 篇 `seoTitle` 按 CJK 折算显示宽度 >60,属 P1,建议收短。
+5. 中文正文 685–963 汉字,32 篇 article 中按 800 汉字线有 **22 篇**偏薄(数字取自各 `.md` frontmatter 的 `chineseCharacters` 字段):
+
+   | slug | chineseCharacters |
+   |---|---|
+   | ashlands | 763 |
+   | bonemass | 750 |
+   | combat | 747 |
+   | death-recovery | 782 |
+   | deep-north | 742 |
+   | eikthyr | 728 |
+   | elder | 733 |
+   | fader | 758 |
+   | farming | 748 |
+   | first-base | 741 |
+   | food | 785 |
+   | intricate-key | 685 |
+   | mead | 725 |
+   | mistlands | 773 |
+   | moder | 752 |
+   | mountains | 766 |
+   | plains | 767 |
+   | queen | 793 |
+   | rested | 702 |
+   | ships | 752 |
+   | swamp | 767 |
+   | traders | 725 |
+
+   （其余 10 篇 ≥800:yagluth 809、bronze 859、crafting 959、first-day 858、progression 832、kall 836、portals 918、co-op 963、mods 875、save-1-0 851)

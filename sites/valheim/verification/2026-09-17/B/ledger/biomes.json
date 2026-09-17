@@ -1,0 +1,52 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "沼泽开荒需要沼泽钥匙，沼泽的沉没墓穴是第一批铁的主要来源",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Sunken_Crypts&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Swamp Key...unlocking the iron gate'；墓穴内 Muddy scrap pile 出产 Scrap iron",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "雪山开荒的关键资源包括银矿与龙蛋，龙蛋用于召唤冰霜龙母",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Dragon_Egg&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'A total of three Dragon eggs are required in order to summon the fourth boss Moder.'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "平原开荒的关键资源包括大麦、亚麻，威胁包括死亡蚊、丑地精营地",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Barley&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Barley/Flax 均限定 Plains 种植；Creatures 词条平原分区列出 Deathsquito、Fuling",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "迷雾之地开荒需要驱雾工具，关键资源包括黑核、树液与精炼魔力设施",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Infested_Mine&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "黑核/Sealbreaker fragment 产自 Infested Mine；树液提取见 Sap Extractor 词条；精炼魔力见 Eitr Refinery 词条",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动（本页为纯导航页，未见需要修正的硬事实断言）"
+  ],
+  "notes": "biomes.md 为栏目导航页，正文多为编辑建议性质的引导语，可核对的硬事实（前置钥匙、召唤材料、关键资源）均与对应独立文章及 fandom 词条一致，无冲突。",
+  "slug": "biomes",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

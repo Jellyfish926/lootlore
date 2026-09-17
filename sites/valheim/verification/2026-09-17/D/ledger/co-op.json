@@ -1,0 +1,60 @@
+{
+  "slug": "co-op",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "跨平台加入可以通过游戏提供的加入码（Join code）完成",
+      "sourceUrl": "https://www.valheimgame.com/support/crossplay-faq/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"When you start a server ... you'll be able to see a 'Join code' by entering the pause menu. Copy the code ... send it to your friend! Your friend will then ... press 'Add server' and paste the code.\"",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "跨平台联机不等于跨平台存档会自动同步，两者是不同功能",
+      "sourceUrl": "https://www.valheimgame.com/support/crossplay-faq/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "官方 Crossplay FAQ 全文仅说明跨平台联机（加入码、跨平台开服）机制，未提及任何存档跨平台自动同步功能，二者确为独立命题，与业界共识一致（Valheim 无官方跨平台云存档同步）。",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "Steam 玩家可在库的工具分类找到对应服务器程序",
+      "sourceUrl": "https://www.valheimgame.com/support/a-guide-to-dedicated-servers/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"In the Steam Library, click the top left dropdown menu and make sure the 'Tools'-checkbox is filled. Scroll down to 'Valheim Dedicated Server' and click 'Install'.\"",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "跨平台后端不能使用本地或回环 IP 加入",
+      "sourceUrl": "https://www.valheimgame.com/support/a-guide-to-dedicated-servers/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"You can connect to a Crossplay server using the public IP address and port number, a join code or via the server list, however it's not possible to connect using a local IP address or a loopback IP address.\"",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "Steam 后端和跨平台后端的连接规则不同",
+      "sourceUrl": "https://www.valheimgame.com/support/a-guide-to-dedicated-servers/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "官方指南分别对 \"Steam backend\"（需端口转发 2456-2457）与 \"Crossplay backend\"（走中继服务器、无需端口转发、但不可用本地/回环 IP）给出不同配置说明。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "官方 Crossplay FAQ 与专用服务器指南均获取成功（HTTP 200），命题一致支持，无冲突。"
+}

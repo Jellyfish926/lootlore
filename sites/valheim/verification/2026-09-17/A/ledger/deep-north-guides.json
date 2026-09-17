@@ -1,0 +1,11 @@
+{
+  "slug": "deep-north-guides",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "栏目描述与三篇子文章摘要（深北流程、Intricate Key、Kall）一致", "sourceUrl": "本组 deep-north.json / intricate-key.json / kall.json", "accessed": "2026-09-17", "http": "N/A", "verdict": "支持", "evidence": "三篇摘要文字与已核验正文一致，无独立新增事实命题", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "栏目页本身不含独立可核事实命题，仅摘录/链接三篇已核验文章；三篇均判定“通过”，故本页判定“通过”。"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Fader（灰烬 Boss）召唤需要钟（Bell）与钟碎片（Bell fragment）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Fader&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Fader can be summoned by placing three Bells around the coliseum. It takes three Bell fragments to craft one bell.'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "Fader 的攻击包含地刺（Fissure）、火焰（Flamebreath/Wall of Fire）和陨石（Meteors）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Fader&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "abilities 列表含 Fissure、Flamebreath、Wall of fire、Meteors",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "最终 Boss 名为 Kall Fimbulbringer，出现于 1.0/Deep North 更新",
+      "sourceUrl": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262688942",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "官方 Steam 1.0 发行公告 Creatures 列表：'Boss: Kall Fimbulbringer'",
+      "correction": "无（Boss 名称本身准确，fandom 尚无 Kall Fimbulbringer 独立词条，Deep North 词条仍标注 Unfinished 且未列出 Boss 字段）"
+    },
+    {
+      "id": 4,
+      "claim": "Kall Fimbulbringer 分为三个阶段：第一阶段本体直接攻击，第二阶段本体躲入无敌冰块并轮流召唤此前七位首领的化身，第三阶段本体回归、招式更强并带元素伤害",
+      "sourceUrl": "https://valheim.wiki/w/Kall_Fimbulbringer",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "2026-09-17 A 组独立对抗验证追加一手来源 valheim.wiki（社区 wiki，已更新到 1.0），原文：\"The encounter has three phases. Phase 1: Kall Fimbulbringer attacks the player directly. Phase 2: hides inside an invincible block of ice... spirits of the previous Bosses are summoned... Phase 3: attacks the player directly, with more powerful attacks than phase 1.\" 三阶段机制成立，但稿件原用的「锁链」命名无一手依据，已改用不提锁链的招式描述",
+      "correction": "首轮核验时（fandom Deep North 词条未完成、无独立 Kall 词条）判定阶段划分证据不足，已保守改写为不做断言的概括描述；2026-09-17 追加 valheim.wiki 一手来源后确认三阶段机制成立，正文改回具体的三阶段描述（不提锁链命名）"
+    },
+    {
+      "id": 5,
+      "claim": "赤血灵鹿召唤需要两枚鹿战利品，古树长老需要三颗上古种子，邪骨恶灵需要十根枯骨，冰霜龙母需要三枚龙蛋，亚格鲁斯需要五个丑地精图腾，迷雾女王需要 Sealbreaker（破封者）",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Creatures",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "各自 fandom Boss 词条 infobox 的 summon 字段逐一核对，与本页链接的各篇文章描述一致",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "首轮核验软化 Kall Fimbulbringer 的战斗阶段描述：不再断言具体为“锁链阶段、召唤化身阶段与最终强化阶段”三个阶段，因为该细节当时找不到官方或 fandom 的可靠来源支持（fandom Deep North 词条仍标注未完成，无独立 Kall 词条）；仅保留“最终 Boss 战”“进场准备、耐力管理与失败后的复盘方法”等有依据的内容",
+    "2026-09-17 独立对抗验证追加 valheim.wiki 一手来源，确认三阶段机制成立（第一阶段本体直接攻击/第二阶段无敌冰块+化身召唤/第三阶段本体回归+更强招式），把「暂无可靠来源支持，本文不做断言」的保守表述改回具体的三阶段描述，并与 /valheim/kall/ 正文的表述对齐；仍不提「锁链」命名，因为该命名本身无一手依据"
+  ],
+  "notes": "Kall Fimbulbringer 作为最终 Boss 的名字本身经 Steam 官方 1.0 发行公告确认拼写无误；首轮核验时其具体战斗阶段机制缺乏可靠信源（fandom 尚未收录/未完成），标记为不足，正文按红线要求删除该项具体断言。2026-09-17 追加 valheim.wiki 一手来源后确认三阶段机制成立，已把描述改回三阶段版本（详见 changes），但不采用稿件原有的「锁链」命名，因为该命名未见于一手来源。其余 Boss 的召唤材料描述与各自独立文章核对一致，无冲突。",
+  "slug": "bosses",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

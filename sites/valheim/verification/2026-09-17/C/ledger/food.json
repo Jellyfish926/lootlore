@@ -1,0 +1,14 @@
+{
+  "slug": "food",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "玩家可同时维持三种不同食物的效果（三个食物槽）", "sourceUrl": "https://valheim.fandom.com/wiki/Food", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "A player can consume up to three different types of food at any given time for a combined increase in buff strength.", "correction": "无"},
+    {"id": 2, "claim": "各食物提供的生命、体力及魔力收益不同", "sourceUrl": "https://valheim.fandom.com/wiki/Food", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "食物列表表格逐项列出 Health / Stamina / Eitr 数值", "correction": "无"},
+    {"id": 3, "claim": "盾牌近战与最大生命值（最大架势值）相关，翻滚流偏体力，法术流偏魔力", "sourceUrl": "https://valheim.fandom.com/wiki/Food", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Maximum health is essential for effective shield use due to its link to maximum Stagger capacity. ... Dodge ... Stamina ... magic ... eitr.", "correction": "无"},
+    {"id": 4, "claim": "同一种食物在未部分消化前不能重复叠加食用（吃同类食物会刷新持续时间与强度）", "sourceUrl": "https://valheim.fandom.com/wiki/Food", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Players cannot eat more than one of the same type of food until the previously consumed food item is at least partially digested... Consuming the same type of food refreshes the strength and duration of the buff.", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "本页未给出具体菜谱数值，仅讨论三食物槽机制与选择逻辑，均与 fandom 一致。"
+}

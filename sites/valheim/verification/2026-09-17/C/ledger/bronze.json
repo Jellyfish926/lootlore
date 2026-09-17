@@ -1,0 +1,18 @@
+{
+  "slug": "bronze",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "黑暗林山可采集铜与锡矿", "sourceUrl": "https://valheim.fandom.com/wiki/Progression_guide", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Progression guide 页面将铜锡矿列为黑暗林山（Black Forest）阶段基础采集目标", "correction": "无"},
+    {"id": 2, "claim": "焰灵之核可在墓室（Burial Chambers）等处取得", "sourceUrl": "https://valheim.fandom.com/wiki/Surtling_Core", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Availability: In Burial Chambers; Dropped by Surtlings; ...", "correction": "无"},
+    {"id": 3, "claim": "焰灵之核同时被生产设施（熔炉/木炭窑）和传送门等交通建设消耗", "sourceUrl": "https://valheim.fandom.com/wiki/Surtling_Core", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Usage / Building 列出 Charcoal kiln、Smelter、Portal 均需要 Surtling core", "correction": "无"},
+    {"id": 4, "claim": "木炭窑建设需要 20 石头、5 焰灵之核", "sourceUrl": "https://valheim.fandom.com/wiki/Charcoal_Kiln", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "materials: Stone x20, Surtling core x5", "correction": "无"},
+    {"id": 5, "claim": "熔炉建设需要 20 石头、5 焰灵之核", "sourceUrl": "https://valheim.fandom.com/wiki/Smelter", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "materials: Stone x20, Surtling core x5", "correction": "无"},
+    {"id": 6, "claim": "锻造台建设需要 4 石头、4 煤、10 木头、6 铜", "sourceUrl": "https://valheim.fandom.com/wiki/Forge", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "materials: Stone x4, Coal x4, Wood x10, Copper x6", "correction": "无"},
+    {"id": 7, "claim": "1 青铜 = 2 铜 + 1 锡，在锻造台制作（不是直接把两种矿石放进普通熔炉）", "sourceUrl": "https://valheim.fandom.com/wiki/Bronze", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "'Bronze is a crafting material crafted by processing two Copper and one Tin at the Forge.' materials: Copper x2, Tin x1; source: Forge / Smelter（熔炉仅能通过熔炼稀有的 Scrap bronze 间接获得青铜，并非直接把铜锡矿放入熔炼）", "correction": "无"},
+    {"id": 8, "claim": "青铜斧需要精细木才能砍伐部分树种（桦树/橡树），涉及精细木相关材料关系", "sourceUrl": "https://valheim.fandom.com/wiki/Finewood", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Birch and Oak trees require at least a Bronze axe to chop.", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "全部配方数值命题均在 fandom 找到明确支持，与正文表格完全一致，无需修改。"
+}

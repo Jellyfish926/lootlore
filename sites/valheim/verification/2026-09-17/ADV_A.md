@@ -1,0 +1,66 @@
+# ADV_A 对抗验证表（Valheim 1.0 / Deep North / Kall / Intricate Key / 存档 / 模组）
+
+取证日期统一为 2026-09-17。URL 缩写：
+- 【SN】Steam 公告 JSON：https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=892970&count=60&maxlength=0&format=json（其中“Valheim 1.0 Has Arrived!”，2026-09-09；“Hotfix 1.0.10 & 1.0.12”，2026-09-11；“Valheim Has A Release Date!”，2026-06-07；“Word From the Devs: See You Soon!”，2026-06-24）
+- 【FAQ】官方 1.0 FAQ：https://www.valheimgame.com/support/valheim-1-0-faq/（2026-07-01）
+- 【MOD】官方“Regarding Mods”：https://www.valheimgame.com/news/regarding-mods/（2023-05-29）
+- 【VW:页面】valheim.wiki（302 跳到 valheim.weirdgloop.org）的 api.php?action=parse&page=<页面>&prop=wikitext。注：valheim.fandom.com 的 api.php 对所有 Deep North 条目都返回 missingtitle（fandom 没更新到 1.0）。
+- 【SG】Steam 社区指南“VALHEIM 1.0 — THE COMPLETE COMPANION”：https://steamcommunity.com/sharedfiles/filedetails/?id=3802405654（2026-09-15 发布，24 位访客）
+
+| 命题 | 验证路径(URL) | 结果 | 证据（原文一句，含数字） | 取证日期 |
+|---|---|---|---|---|
+| P1 官方建议先击败女王，其掉落参与灰烬阶段的解锁 | VW:The_Queen、VW:Majestic_Carapace、VW:Ceramic_Plate、VW:Ashlands | CONFIRMED（只确认机制；“官方建议”没有找到 Iron Gate 原文，出处是社区 wiki） | Queen 掉 “Five” Majestic carapace，“required to build the Artisan press”；Ceramic plate “can only be crafted after building the Artisan press upgrade after defeating The Queen”，用于 Drakkar；“Only the Drakkar, obtainable after defeating The Queen, can survive the perilous voyage” | 2026-09-17 |
+| P2 已持有旧掉落的玩家应查看当前制作界面是否识别对应材料 | 无 | UNVERIFIED | 这是操作建议，没有可证伪的事实内容；官方和 wiki 都没有对应原文 | 2026-09-17 |
+| P3 航行需要适合灰烬海域的准备，常规推进使用 Drakkar | VW:Drakkar | CONFIRMED | Drakkar 是 “the only boats capable of traversing the boiling waters of the Ashlands without being damaged”（配方：100 Iron nails、30 Ceramic plate） | 2026-09-17 |
+| P4 护盾发生器用骨类燃料，挡落灰和范围外投射物，但不是无敌罩 | VW:Shield_generator | CONFIRMED | “can hold up to 10 Bone fragments or Charred bone as fuel and consumes one fuel per 500 damage”；伤害只在 “a projectile with an origin outside the radius of effect” 击中护盾边缘时发生；从内部发射的投射物 “will not be absorbed” | 2026-09-17 |
+| P5 灰烬之地为倒数第二个区域，其后是深北之境 | VW:Biomes、VW:Fader、VW:Kall_Fimbulbringer | CONFIRMED | Fader “is the seventh boss”（Ashlands）；Kall “is the eight and final boss”（Deep North）；Biomes 表中 Late Game 的顺序为 Mistlands → Ashlands → Deep North | 2026-09-17 |
+| P6 栏目描述与三篇子文章摘要一致 | 无（没有给出站点页面） | UNVERIFIED | 这是产出站自身内容的命题，不在允许的取证路径内，也没有页面可读 | 2026-09-17 |
+| P7 击败 Fader 后先制作 Eternal Pyre，用它收集 Embers | VW:Eternal_Pyre、VW:Fader_Relic | CONFIRMED | Eternal Pyre 材料为 “Stone x10、Fader Relic x1”，“used for collecting Embers”；Fader Relic “Five … are dropped by Fader upon defeat” | 2026-09-17 |
+| P8 Embers 参与 Ember Charges 的制作 | VW:Ember_Charge、VW:Embers | CONFIRMED | 配方 “Seal Pelt x2、Embers x1、Crafts 10” | 2026-09-17 |
+| P9 Winding Tunnels 是重要探索目标，涉及 Frost Cores 与模具 | VW:Winding_Tunnels、VW:Frostcore | CONFIRMED | “Moulds can be obtained by destroying dilapidated furniture”；“Frostcores can be found at the end of most tunnels” | 2026-09-17 |
+| P10 Frigid Kiln 和 Frost Foundry 各需十枚 Frost Cores | VW:Frigid_Kiln、VW:Frost_Foundry、VW:Frostcore | UNVERIFIED | Frigid Kiln 一半已证实：“Stone x20、Frostcore x10、Ice x5”。Frost Foundry 的 wiki 页面没有材料表，Frostcore 页也只列用途、不给数量；“10 Frostcore” 只出现在二手站 theclick.gg，按规范不能定论 | 2026-09-17 |
+| P11 隧道也可能被部分资料称作 Hidden Tunnels | VW 站内搜索 “Hidden Tunnels”；VW:Hidden_Tunnels | UNVERIFIED | valheim.wiki 上没有该页面（missingtitle），站内搜索也没有这个别名；官方补丁说明只写 “Dungeon: Winding Tunnels”；没有一手来源 | 2026-09-17 |
+| P12 Gammeltroll 死后石化，需 Ember Charges 处理，Petrified Tissue 进高炉制成 Bloodgold | VW:Gammeltroll、VW:Petrified_Tissue | CONFIRMED | “they turn into statues as Petrified Gammeltrolls”，需 “blown up using Ember Charges”，每个节点平均出 “43.3 Petrified Tissue”；Petrified Tissue “can be turned into Bloodgold at a Blast Furnace” | 2026-09-17 |
+| P13 设备链用模具与铸件，在 Frost Foundry 中配合 Liquid Frost 完成物品 | VW:Moulds、VW:Frost_Foundry | CONFIRMED | “The Cast can then be placed in a Frost Foundry fueled by Liquid Frost”；“The process consumes 5 Liquid Frosts and takes 50 seconds” | 2026-09-17 |
+| P14 制作钥匙→进 Mörkhalla→破 Malicious Ice→赴入侵点→收集 Malicious Blood | VW:Mörkhalla、VW:Malicious_Ice、VW:Jotun_Invasion | CONFIRMED | “Destroying the Malicious Ice on the bottom floor immediately starts a Jotun Invasion”；入侵中心的 Malicious Ice “will end the invasion and drop Malicious Blood x1” | 2026-09-17 |
+| P15 正常最终入口需三份血（Aesir Passage） | VW:Malicious_Blood、VW:Aesir_Passage（跳到 The Prison） | CONFIRMED | “A total of three Malicious Blood are required to open the Aesir Passage” | 2026-09-17 |
+| P16 深北之境是 1.0 新增内容，已正式发布 | SN（Valheim 1.0 Has Arrived!，2026-09-09） | CONFIRMED | “The time has come to finally venture into the Deep North and Valheim 1.0”；“New Content: New Biome – Deep North” | 2026-09-17 |
+| P17 召唤需三口钟，每口由三块碎片制成，共九块 | VW:Bell、VW:Fader | CONFIRMED | “Three bells are used to summon Fader, requiring a total of 9 bell fragments” | 2026-09-17 |
+| P18 定位线索与碎片关联灰烬要塞 | VW:Fader、VW:Bell_Fragment | CONFIRMED | “The Vegvisir can be found in the central tower of Charred Fortresses”；“Bell fragments can be found in charred fortresses” | 2026-09-17 |
+| P19 应准备火焰防护，火焰不是合适的主输出 | VW:Fader | CONFIRMED | Fader 的抗性为 “immune = Fire, Spirit”；多个招式造成 Fire 伤害（如 Fissure “120 Fire, 80 Spirit”） | 2026-09-17 |
+| P20 招式涉及地刺、持续火焰、陨石、近身攻击 | VW:Fader | CONFIRMED | Fissure 的 “large spikes shoot up … followed by a highly damaging flame pool”；Meteors “calling forth 10 meteors”；近身攻击为 Bite、Claw、Spin | 2026-09-17 |
+| P21 击败 Fader 后保管掉落，Eternal Pyre 解锁与深北早期资源链有关 | VW:Fader_Relic、VW:Ember_Charge | CONFIRMED | Fader Relic “had no use until the Deep North update”；Embers “are acquired from an Eternal Pyre, which can only be built after Fader is defeated”，再用于炸 Petrified Gammeltroll | 2026-09-17 |
+| P22 覆盖开局到八场主要 Boss 战，含 1.0 深北之境 | 无（没有给出站点页面） | UNVERIFIED | 站点自身内容，无法取证。背景事实已证实：Kall 是 “the eight and final boss” | 2026-09-17 |
+| P23 深北之境栏目链接顺序：完整推进→Intricate Key→Kall | 无 | UNVERIFIED | 站点自身内容，无法取证 | 2026-09-17 |
+| P24 “1.0 存档选择”与“模组排查”栏目引导 | 无 | UNVERIFIED | 站点自身内容，无法取证 | 2026-09-17 |
+| P25 完整顺序：找模具、备 Bloodgold、Black Forge 制铸件、Frost Foundry 完成 | VW:Intricate_Key、VW:Moulds | CONFIRMED | 铸件 “Crafted at a Black Forge using: Bloodgold, Mould: Intricate Key”；钥匙 “Obtained by using a Cast: Intricate Key in a Frost Foundry, requires 5 Liquid Frost” | 2026-09-17 |
+| P26 隧道内物品名为 Mould: Intricate Key | VW:Intricate_Key、VW:Moulds | CONFIRMED | 信息框标题为 “Mould: Intricate Key”（id MoldKeys）；来源之一是 “By destroying trash piles in Winding Tunnels” | 2026-09-17 |
+| P27 每份铸件用一份模具和五份 Bloodgold，并要求四级 Black Forge | VW:Moulds、VW:Black_Forge、SG | UNVERIFIED | 配方一半已证实：“Bloodgold 5、Mould Intricate Key 1”（SG 同样写 “1 Intricate Key mould - 5 Bloodgold”）。“四级 Black Forge” 在 wiki 和 SG 里都没有，只出现在二手站 theclick.gg | 2026-09-17 |
+| P28 铸件放入 Frost Foundry，燃料是 Frigid Kiln 由冰制成的 Liquid Frost | VW:Liquid_Frost、VW:Frigid_Kiln | CONFIRMED | “Ice x5 can be converted to 1 Liquid Frost at a Frigid Kiln every 30 seconds”；“5 Liquid Frost can be used to fuel the Frost Foundry and harden a Cast” | 2026-09-17 |
+| P29 Intricate Key 开门时消耗 | VW:Intricate_Key | CONFIRMED | “Consumed to open the Gates of Mörkhalla … This contrasts the Swamp Key, which can be used repeatedly” | 2026-09-17 |
+| P30 需多次 Mörkhalla 探索，至少三份模具和十五份 Bloodgold | SG、VW:Intricate_Key、VW:Moulds | CONFIRMED | SG 原文：“Three Intricate Keys are required for three separate runs. Each Intricate Key: - 1 Intricate Key mould - 5 Bloodgold”，3×5=15；wiki 写钥匙开门即消耗，且需 3 份血 | 2026-09-17 |
+| P31 Kall Fimbulbringer 是深北之境最终挑战（拼写） | SN（1.0 补丁说明）、VW:Kall_Fimbulbringer | CONFIRMED | 补丁说明原文 “Boss: Kall Fimbulbringer”；wiki：“the eight and final boss”，location 为 Deep North | 2026-09-17 |
+| P32 完成 Malicious Blood 与 Aesir Passage 前置后才能挑战 | VW:Kall_Fimbulbringer | CONFIRMED | “Three Malicious Blood are required to open the Aesir Passage to enter The Prison where Kall Fimbulbringer is imprisoned” | 2026-09-17 |
+| P33 战斗分三个阶段 | VW:Kall_Fimbulbringer、SG | CONFIRMED | wiki：“The encounter has three phases”，血量 “10000 + 7000 + 30000”，id 为 FrozenKing_0/_p2/_p3；SG：“3 phases” | 2026-09-17 |
+| P34 第一阶段主要面对锁链攻击 | SG、VW:Kall_Fimbulbringer（wikitext 与渲染页） | CONFIRMED（证据弱：只有一份 Steam 指南提到锁链） | SG 原文：“PHASE 1 Fight normally and learn the chain attacks.” wiki 只写 “Kall Fimbulbringer attacks the player directly”，列出 Flurry/Rush/Slam/Sweep/Whirl，没有 chain 字样，也没有与之矛盾的表述；The Prison 页：Kall “is chained to two pillars … but breaks free as he is approached” | 2026-09-17 |
+| P35 第二阶段本体免疫，需处理代表此前首领的七个化身 | VW:Kall_Fimbulbringer、SG | CONFIRMED | “hides inside an invincible block of ice”；化身依次为 Eikthyr → The Elder + Bonemass → Moder、Yagluth、The Queen、Fader，共 7 个，“always two spirits active at the same time”，“The phase ends when all boss spirits have been defeated”；SG：“Kall becomes immune and summons aspects of previous Forsaken” | 2026-09-17 |
+| P36 第三阶段回到强化本体，出现更多元素与场地压力 | VW:Kall_Fimbulbringer、SG | CONFIRMED | wiki：“more powerful attacks than phase 1 … Tendrils may be summoned … shoot lightning bolts”；Phase 3 招式带 “50 Fire, 50 Frost”，Spike Rain 为 “100 Frost (x22)”；SG：“gain additional elemental damage” | 2026-09-17 |
+| P37 本文不列精确血量与伤害数字 | 无 | UNVERIFIED | 站点自身内容，无法取证。另注：精确数值确实存在，wiki 写 “10000 + 7000 + 30000” | 2026-09-17 |
+| P38 官方没有承诺第三方模组始终兼容 | FAQ、MOD | CONFIRMED | FAQ：“Since we don’t have any official mod support, we cannot guarantee that any mods will be functional when 1.0 releases” | 2026-09-17 |
+| P39 更新准备说明提醒要考虑加载器 | FAQ、SN（60 条公告全文检索 bepinex/loader） | UNVERIFIED | 1.0 FAQ、1.0 发布公告和 0.221.13 PTB 说明里都没有 loader 或 BepInEx 字样。BepInEx 只出现在 2024-10 的 Mac 修复中：“Bepinex will work on Steam versions of Mac again”。没有找到支持这条命题的一手原文 | 2026-09-17 |
+| P40 更新后先卸载模组测原版，再逐步恢复 | FAQ、MOD、SN | UNVERIFIED | 官方只说 “modding the game is always done at your own risk”（0.221.13 PTB），没有给出这个排查步骤；没有一手来源 | 2026-09-17 |
+| P41 模组作者不允许把模组整体锁在付费墙后 | MOD | CONFIRMED（措辞偏强：官方是“不认可/敦促”，不是强制禁止） | “Iron Gate does not condone locking modded content behind a paywall … we urge all mod authors to make their mods freely available … This should include the whole mod” | 2026-09-17 |
+| P42 推进顺序：草原→黑森林→沼泽→雪山→平原→迷雾→灰烬→深北 | VW:Biomes、VW:Kall_Fimbulbringer、SG | CONFIRMED | 化身顺序与首领顺序一致：Eikthyr、Elder、Bonemass、Moder、Yagluth、Queen、Fader，第 8 个是 Kall；SG：“The intended order is: 1. Eikthyr … 8. Kall Fimbulbringer” | 2026-09-17 |
+| P43 击败 Eikthyr 后进入采矿阶段 | VW:Eikthyr | CONFIRMED | “Defeating Eikthyr allows the player to craft the first pickaxe to begin mining ore”（掉落 “Hard antler x3”） | 2026-09-17 |
+| P44 灰烬先解决航行与立足点；深北涉及模具、加工、钥匙、入侵事件 | VW:Ashlands、VW:Moulds、VW:Jotun_Invasion | CONFIRMED | Ashlands：“Only the Drakkar … can survive”，“A Shield generator has to be constructed to protect player bases”；Jotun Invasion “is a special Event linked to Deep North progression” | 2026-09-17 |
+| P45 官方确认旧存档可继续使用 | FAQ | CONFIRMED | “What happens to my saves at the 1.0 launch? Nothing. … you can continue to play with them if you like.” | 2026-09-17 |
+| P46 新区域生成要在未探索地带才能正常完成 | FAQ | CONFIRMED | “biome generation will only work properly on areas that have not yet been explored” | 2026-09-17 |
+| P47 官方仍建议从头开始 | FAQ、SN（Almost there…，2026-08-20） | CONFIRMED | “we always recommend that you start the game over from scratch to get the best possible experience” | 2026-09-17 |
+| P48 1.0 成就从新版开始记录，之前击败的首领可能需重新满足 | FAQ | CONFIRMED | “begin to track statistics from the moment you download the 1.0 version … will require you to kill Eikthyr again, even if you’ve already killed him 500 times previously” | 2026-09-17 |
+| P49 多数作弊命令会为当前角色与世界留下永久成就限制标记 | FAQ；SN（Hotfix 1.0.12，2026-09-11） | CONFIRMED（时效注意：1.0.12 已提供解除途径） | FAQ：“using most commands (such as “spawn”) will place a flag on your current character and world save … permanently locked from getting any achievements”。但 1.0.12（仅 Steam）新增：“Achievements can be now be opted into even if you have used devcommands or mods by the new devcommand” | 2026-09-17 |
+| P50 拾取被标记的生成物品有不同的临时限制规则 | FAQ | CONFIRMED | “If a non-cheated player character picks up a cheated item, they will enter a temporary cheat state … can become eligible for achievements again if they throw out all cheated items” | 2026-09-17 |
+| P51 官方不保证模组兼容 | FAQ | CONFIRMED（注：官方原话是“没有官方模组支持”，并不存在“官方模组”） | “we cannot guarantee that any mods will be functional when 1.0 releases … there will be no Steam Workshop featured” | 2026-09-17 |
+| P52 Valheim 1.0（含 Deep North）已正式发布，日期 2026-09-09 | SN（Valheim 1.0 Has Arrived!，时间戳 2026-09-09；See You Soon!，2026-06-24） | CONFIRMED | 发布公告日期为 2026-09-09：“venture into the Deep North and Valheim 1.0”；另有 “Valheim 1.0, with Deep North and all, releases on the 9th of September this year”；valheim.wiki 的 Smith's Aprons 页：“introduced in Deep North on September 9th, 2026” | 2026-09-17 |
+| P53 Kall 三阶段：P1 锁链攻击；P2 本体免疫、七个前首领化身；P3 强化本体 | 官方 1.0 补丁说明全文（SN）、VW:Kall_Fimbulbringer、SG；另查了 Steam 指南 3798610892、3799211007、3800393293、2796780679 | CONFIRMED（证据弱：P1“锁链”只有一份 Steam 指南支持） | 官方补丁说明只列 “Boss: Kall Fimbulbringer”，没有阶段描述。wiki：“The encounter has three phases”，P2 “invincible block of ice” 加 7 个化身（Eikthyr、Elder、Bonemass、Moder、Yagluth、Queen、Fader），P3 “more powerful attacks than phase 1”；SG：“PHASE 1 … learn the chain attacks. PHASE 2 … Kall becomes immune … PHASE 3 Kall becomes vulnerable again”。wiki 的 P1 只写 “attacks the player directly”，未提锁链；法文指南 3800393293 自述 Kall “aucune source solide n'existe encore” | 2026-09-17 |
+
+53 条，CONFIRMED 42 / REFUTED 0 / UNVERIFIED 11

@@ -1,0 +1,13 @@
+{
+  "slug": "index",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "覆盖开局、区域推进到八场主要 Boss 战，含 1.0 深北之境", "sourceUrl": "本组 BASELINE.md", "accessed": "2026-09-17", "http": "N/A", "verdict": "支持", "evidence": "官方 1.0 已发布深北之境并新增 Kall Fimbulbringer 为最终 Boss；结合此前七个区域 Boss（Eikthyr/Elder/Bonemass/Moder/Yagluth/The Queen/Fader）共八场，与首页导航一致", "correction": "无"},
+    {"id": 2, "claim": "深北之境栏目链接顺序：完整推进 → Intricate Key → Kall", "sourceUrl": "本组 deep-north.json / intricate-key.json / kall.json", "accessed": "2026-09-17", "http": "N/A", "verdict": "支持", "evidence": "与三篇已核验文章的流程顺序一致（先流程总览，再钥匙制作，再最终 Boss）", "correction": "无"},
+    {"id": 3, "claim": "\"1.0 存档选择\"与\"模组排查\"栏目引导（对应 save-1-0、mods 两篇）", "sourceUrl": "本组 save-1-0.json / mods.json", "accessed": "2026-09-17", "http": "N/A", "verdict": "支持", "evidence": "两篇已核验通过，首页引导文字与其内容一致", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "首页为导航/摘要页，未包含需要单独核实的数值或专有名词命题；其余 Boss 中文译名（赤血灵鹿、古树长老、邪骨恶灵、冰霜龙母、亚格鲁斯、女王等）对应文章不在本组核验范围（分给其他组），此处不做改动。"
+}

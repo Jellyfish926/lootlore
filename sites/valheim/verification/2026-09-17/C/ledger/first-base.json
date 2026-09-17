@@ -1,0 +1,14 @@
+{
+  "slug": "first-base",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "室内火源需要通风/排烟，排烟口处理不当会影响火源与角色状态", "sourceUrl": "https://valheim.fandom.com/wiki/Environment", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Environment 页面描述烟雾、遮蔽（Shelter）与火源之间的交互机制（一般性描述）", "correction": "无"},
+    {"id": 2, "claim": "屋顶遮雨与角色获得的“遮蔽”判定不完全相同", "sourceUrl": "https://valheim.fandom.com/wiki/Environment", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Environment 页面区分 Shelter 效果的判定条件与单纯屋顶遮雨的表现", "correction": "无"},
+    {"id": 3, "claim": "建筑稳定性由构件材质、位置朝向及连接的构件决定，而非单纯数量堆砌", "sourceUrl": "https://valheim.fandom.com/wiki/Building_stability", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Stability is primarily dictated by a piece's material, its position and orientation, and the pieces to which it is attached.", "correction": "无"},
+    {"id": 4, "claim": "不同建筑材质（木、硬木、石等）有不同的最大/最小支撑值与衰减率", "sourceUrl": "https://valheim.fandom.com/wiki/Building_stability", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Building Materials 表列出 Wood/Hardwood/Stone/Iron 等材质的 MaxSupport/MinSupport/VerticalLoss/HorizontalLoss", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "本页命题多为一般性机制描述（未给出具体数字），均与 fandom 页面一致，无需修改正文。"
+}

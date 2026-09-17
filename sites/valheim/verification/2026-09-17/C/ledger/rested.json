@@ -1,0 +1,15 @@
+{
+  "slug": "rested",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "“正在休息”（Resting）是获得增益的过程，“休息好了”（Rested）是离开营地后带走的效果，两者是不同状态", "sourceUrl": "https://valheim.fandom.com/wiki/Resting", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Resting 页面：'After 20 uninterrupted seconds with the resting effect, the player will receive the Rested effect.'；Rested 页面：'Rested is a status effect applied after having the Resting effect for 20 seconds.'", "correction": "无"},
+    {"id": 2, "claim": "获得 Resting 需要附近无敌对生物，且靠近火源坐下，或同时处于 Fire 与 Shelter 效果下；身处湿身/中毒/燃烧/冰冻等状态会打断", "sourceUrl": "https://valheim.fandom.com/wiki/Resting", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Resting is a status effect applied when there are no hostile creatures nearby and the player is sitting near a fire, or while under the Fire effect and Shelter effect simultaneously. The resting effect cannot be applied if the player is Wet ... or while under the effect of any harming status effect, such as Burning, Freezing or Poison.", "correction": "无"},
+    {"id": 3, "claim": "舒适度（Comfort）决定 Rested 效果能持续多久，Rested 本身改善生命/体力等恢复表现", "sourceUrl": "https://valheim.fandom.com/wiki/Rested", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "The duration of the effect depends on the Comfort level from the player's surroundings. ... RestedDuration = BaseDuration + ComfortLevel（Health regen +50%, Stamina regen +100% 等增益）", "correction": "无"},
+    {"id": 4, "claim": "增加家具不会无限叠加提升舒适度，只有满足条件的家具才计入", "sourceUrl": "https://valheim.fandom.com/wiki/Comfort", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Only the highest level item of a category will be used. Items in the same category will not stack with other items in the same category. No item stacks with itself.", "correction": "无"},
+    {"id": 5, "claim": "Rested 效果会在角色下线后消失，不会持续到新的游戏会话", "sourceUrl": "https://valheim.fandom.com/wiki/Rested", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "The effect is removed when the player character logs out and does not persist into new game sessions.", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "正文未给出具体分钟数，仅做机制性描述，均与 fandom Resting/Rested/Comfort 页面一致。补充核实：Comfort 页面注明其内容'not fully updated to match the Valheim 1.0 Deep North release'，但涉及的机制方向（等级越高持续越长）与 Rested 页面公式一致，未发现冲突，故不影响本页正文。"
+}

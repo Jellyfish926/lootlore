@@ -1,0 +1,62 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "邪骨恶灵（Bonemass）召唤需要十根枯骨（Withered bone x10）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Bonemass&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: summon = [[Withered bone]] x10；'He is summoned by placing 10 Withered bones'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "邪骨恶灵对钝击（Blunt）较弱，对劈砍（Slash）抗性、对火与穿刺（Fire/Pierce）高度抗性",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Bonemass&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: weak=Blunt, Frost; resistant=Slash; veryresistant=Fire, Pierce",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "邪骨恶灵攻击包含近身挥击、毒云范围攻击、投掷后召唤小怪（骷髅/软泥怪）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Bonemass&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "abilities: Punch(近战)；Area of Effect(9米范围毒云，130 Poison)；Throw(投掷后按几率生成 Skeleton/Blob)",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "击败邪骨恶灵后获得愿望骨（Wishbone），用于寻找雪山地下银矿",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Bonemass&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Defeating Bonemass provides the player with a Wishbone, which allows the player to easily locate Silver veins beneath the surface of Mountain biomes'",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "邪骨恶灵的祭坛位于沼泽（Swamp），沉没墓穴内的符石可指引位置",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Bonemass&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Bonemass' Forsaken Altar is located in Swamps. His location can be found when visiting Sunken Crypts...'",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "bonemass",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

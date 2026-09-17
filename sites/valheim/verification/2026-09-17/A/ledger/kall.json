@@ -1,0 +1,21 @@
+{
+  "slug": "kall",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（Steam 端最新热更 1.0.12，2026-09-11）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "Kall Fimbulbringer 是深北之境的最终挑战（Boss 名称拼写）", "sourceUrl": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=892970...", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方详细 patch notes：\"Boss: Kall Fimbulbringer\"，拼写与文章一致", "correction": "无"},
+    {"id": 2, "claim": "完成 Malicious Blood 与 Aesir Passage 的前置后才能挑战", "sourceUrl": "https://beebom.com/valheim-jotun-invasion-guide/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "需集齐三份 Malicious Blood 献祭于 Aesir Passage 旁开门", "correction": "无"},
+    {"id": 3, "claim": "战斗分三个阶段", "sourceUrl": "https://www.valheim.tools/creatures/kall-fimbulbringer", "accessed": "2026-09-17", "http": "WebFetch", "verdict": "支持", "evidence": "valheim.tools 与 beebom 两个独立来源均描述为三阶段（10,000/12,800/30,000 HP）", "correction": "无"},
+    {"id": 4, "claim": "第一阶段本体直接攻击（含冲刺、拍击、横扫等招式）", "sourceUrl": "https://valheim.wiki/w/Kall_Fimbulbringer", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "一手来源原文：\"Phase 1: Kall Fimbulbringer attacks the player directly.\"「锁链」命名未见于一手来源，已在正文与 description 中改写为不提锁链的招式描述", "correction": "改写：description 与正文相关段落改为「本体直接攻击」，删除「锁链」命名，改用招式列举（冲刺/拍击/横扫）"},
+    {"id": 5, "claim": "第二阶段本体躲入无敌冰块，依次放出代表此前七位首领的化身，同一时间最多两个在场", "sourceUrl": "https://valheim.wiki/w/Kall_Fimbulbringer", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "一手来源原文：\"Phase 2: hides inside an invincible block of ice... spirits of the previous Bosses are summoned... at most two at a time.\" 与 valheim.tools 的七个 Aspect 描述互相印证", "correction": "改写：正文明确「无敌冰块」「同一时间最多两个化身」，此前稿件未写清这两点"},
+    {"id": 6, "claim": "第三阶段本体回归，直接攻击，招式比第一阶段更强并带元素伤害", "sourceUrl": "https://valheim.wiki/w/Kall_Fimbulbringer", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "一手来源原文：\"Phase 3: attacks the player directly, with more powerful attacks than phase 1\"；beebom 补充元素与地面技能细节", "correction": "无（表述已与一手来源对齐）"},
+    {"id": 7, "claim": "本文不列容易因补丁变化产生争议的精确血量与伤害数字", "sourceUrl": "内部编辑口径", "accessed": "2026-09-17", "http": "N/A", "verdict": "支持", "evidence": "编辑策略而非事实命题，符合红线（不确定数字不写死）", "correction": "无"}
+  ],
+  "changes": [
+    {"field": "description", "before": "针对锁链阶段、召唤化身阶段与最终强化阶段建立应对框架…", "after": "针对三阶段战斗建立应对框架：第一阶段本体直接攻击，第二阶段本体躲入无敌冰块并轮流召唤此前七位首领的化身，第三阶段本体回归、招式更强并带元素伤害…", "reason": "「锁链」命名无一手依据；独立对抗验证（valheim.wiki 一手来源）确认三阶段的准确描述"},
+    {"field": "body", "before": "第一阶段主要面对锁链攻击；第二阶段本体免疫…；第三阶段回到强化后的本体战斗…", "after": "第一阶段本体直接攻击；第二阶段本体躲进一块无敌冰块，依次放出代表此前七位首领的化身，同一时间场上最多两个化身；第三阶段本体回归战斗，招式比第一阶段更强，并带上火、冰、雷等元素伤害", "reason": "同上，并补充「同一时间最多两个化身」这一此前遗漏的一手信息"},
+    {"field": "sourceUrls", "before": "2 条（valheim.tools、mobalytics.gg）", "after": "3 条，新增 https://valheim.wiki/w/Kall_Fimbulbringer", "reason": "补入独立对抗验证使用的一手来源（社区 wiki，已更新到 1.0）"}
+  ],
+  "notes": "初验时检索到一个来源（allthings.how 概述句）称本战为\"两阶段\"，与另外两个更详细来源（valheim.tools、beebom）矛盾，当时采信三阶段说法但沿用了稿件的「锁链」命名，未核实该命名本身的出处。2026-09-17 独立对抗验证追加 valheim.wiki 一手来源，确认三阶段机制成立，但「锁链」命名无一手依据，已改写为不提锁链的招式描述，并补充「无敌冰块」「同一时间最多两个化身」两处此前遗漏的细节。"
+}

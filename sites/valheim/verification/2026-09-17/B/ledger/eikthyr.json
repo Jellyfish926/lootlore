@@ -1,0 +1,62 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "赤血灵鹿的召唤需要两枚鹿战利品（Deer trophy x2）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Eikthyr&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: summon = [[Deer trophy]] x2",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "击败赤血灵鹿后获得硬鹿角（Hard antler），用于制作早期镐具开始采矿",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Eikthyr&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "drops: Hard antler x3；Aftermath: 'Defeating Eikthyr allows the player to craft the first pickaxe to begin mining ore'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "赤血灵鹿的祭坛（Forsaken Altar）位于青青草原（Meadows），附近有 Vegvisir 符石指路",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Eikthyr&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Eikthyr's Forsaken Altar is located in the Meadows... a small glowing Runestone called a Vegvisir'",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "赤血灵鹿的攻击包含近身挥击（Antler）和雷电攻击（Charge/Stomp）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Eikthyr&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Attacks: Antler(近战)、Charge/Stomp(均为 Lightning 伤害并施加 Lightning 状态)",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "‘鹿战利品来自狩猎，不是每次狩猎都必定得到’——鹿战利品为随机掉落而非必掉",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Deer&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Deer trophy 词条标注为一定几率掉落（非100%），与常规狩猎战利品机制一致",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动，仅核对 checkedAt/gameVersion 字段"
+  ],
+  "notes": "Eikthyr 相关命题均在 fandom 官方词条中得到明确支持，无来源冲突。",
+  "slug": "eikthyr",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

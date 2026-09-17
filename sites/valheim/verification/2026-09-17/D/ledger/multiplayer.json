@@ -1,0 +1,20 @@
+{
+  "slug": "multiplayer",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "栏目导航页引用了 co-op（房主开服/跨平台）、save-1-0（旧存档升级）、mods（模组失效处理）三篇文章的主题概述",
+      "sourceUrl": "内部一致性核对（against articles/co-op.md, save-1-0.md, mods.md）",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "本组核实的 co-op.md 与该导航页对应描述一致（专用服务器/跨平台/长期分工）；save-1-0.md、mods.md 不在本组核实范围（由其他组核实），此处仅确认无内部矛盾。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "本页为栏目导航页，无独立数值/事实命题；其引用的 co-op 一文经本组核实无误。save-1-0 与 mods 两篇不在 D 组核实范围内，若其他组对其内容做出修正，需回头检查本导航页摘要是否需要同步（本次未发现冲突迹象）。"
+}

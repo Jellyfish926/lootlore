@@ -1,0 +1,52 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "沼泽钥匙解决沉没墓穴（Sunken Crypts）入口问题",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Sunken_Crypts&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'They can only be accessed by unlocking the iron gate to the entrance by using the Swamp key dropped by The Elder. The Swamp Key is NOT consumed upon use.'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "沉没墓穴中的泥泞废料堆（Muddy scrap pile）可采集出铁屑（Scrap iron）等材料",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Sunken_Crypts&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'composed of multiple rooms separated by Muddy scrap piles, which can be mined with any pickaxe for Scrap iron, Leather scraps and Withered bones.'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "沼泽中的怪物几乎全部敌对，且常年下雨（角色持续处于 Wet 状态）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Swamp&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'every last creature here is hostile to the player'；'It is always raining in the mire regardless of the weather elsewhere; this means the player will always be Wet'",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "沼泽的 Boss 是邪骨恶灵（Bonemass）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Swamp&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: boss = [[Bonemass]]",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "swamp",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "ashlands",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含灰烬之地作为深北之境之前的倒数第二区域）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "流程上先击败女王（The Queen），其掉落参与灰烬阶段的解锁", "sourceUrl": "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Before you travel to the Ashlands, you should first make sure that you have defeated The Queen... the item from The Queen will be useful in the Ashlands!\"；该页为攻略性质的准备说明而非规则强制，「官方建议」措辞略重，改为流程口吻", "correction": "改写：正文「官方建议先击败女王」改为「流程上先击败女王（The Queen）」"},
+    {"id": 2, "claim": "已经持有旧掉落的玩家，应查看当前制作界面是否识别对应材料", "sourceUrl": "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"If you have the item already, you might need to toss it out of your inventory and pick it up again, for new recipes to trigger properly.\"", "correction": "无"},
+    {"id": 3, "claim": "航行需要适合灰烬海域的准备，常规推进使用 Drakkar", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-drakkar-boat/", "accessed": "2026-09-17", "http": "WebSearch标题确认", "verdict": "支持", "evidence": "PC Gamer 专文标题即为 \"Valheim Drakkar: How to get to the Ashlands\"，Drakkar 为前往灰烬之地的标准船只", "correction": "无"},
+    {"id": 4, "claim": "护盾发生器使用骨类燃料，能应对落灰等环境危害及来自范围外的投射物，但不是无敌罩", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Shield_Generator&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"consumes... Bone fragments or Charred bone as fuel\"；\"Protects from Cinder rain in Ashlands\"；\"Protects against incoming projectiles\"——未提及阻挡近战生物进入，与“非无敌罩”表述一致", "correction": "无"},
+    {"id": 5, "claim": "灰烬之地为倒数第二个区域（其后是深北之境）", "sourceUrl": "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方原文当时称 \"the Ashlands is the penultimate biome of the game\"，与 1.0 后深北之境作为最终区域的结构一致", "correction": "无"}
+  ],
+  "changes": [
+    {"field": "body", "before": "官方建议先击败女王，其掉落参与灰烬阶段的解锁", "after": "流程上先击败女王（The Queen），其掉落参与灰烬阶段的解锁", "reason": "「官方建议」措辞比来源实际口吻重，改为流程性表述"}
+  ],
+  "notes": "无发现冲突或需要补造的数值；护盾发生器细节引用 fandom 通用条目（非深北专属，故仍可作为可靠来源）。2026-09-17 独立对抗验证对措辞做了轻微收紧。"
+}

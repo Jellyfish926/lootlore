@@ -1,0 +1,62 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "进入迷雾女王要塞（Infested Citadel）需要 Sealbreaker（破封者），由矿洞中收集的 Sealbreaker fragment 制作",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Queen&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'she must be fought in a dungeon, the Infested Citadel...entry requires a Sealbreaker, which can be constructed from Sealbreaker fragments also found in the mines.'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "Sealbreaker fragment 主要产自被侵染的矿洞（Infested Mine）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Infested_Mine&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Sealbreaker fragments are found all around the mine, trapped in transparent crystals'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "迷雾女王的攻击有很强的击退效果",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Boss_strategies&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'The Queen deals extremely high damage and knockback with all her attacks, the knockback is enough to throw the player quite a distance across the arena, even when the attack is successfully parried.'",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "要塞内地形分高低层，需注意跌落风险",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Boss_strategies&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Feather cape 建议：'allows players to easily survive being knocked off a staircase or one of the higher floors. Without it, players attempting to fight her on the higher elevations of the arena are at extreme risk of dying due to fall damage.'",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "迷雾女王首次挑战无需祭品即可进入战斗（进入要塞本身不消耗召唤物）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Queen&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'her first fight requires no sacrifice.'",
+      "correction": "无（文中未提及此点，无冲突，仅作为背景核实）"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "queen",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

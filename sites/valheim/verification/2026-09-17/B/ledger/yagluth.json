@@ -1,0 +1,42 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "亚格鲁斯（Yagluth）需要五个丑地精图腾（Fuling totem x5），在平原（Plains）祭坛召唤",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Yagluth&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: summon = [[Fuling totem]] x5, location = [[Plains]]；'He is summoned by placing five Fuling totems in his Forsaken Altar in the Plains'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "亚格鲁斯攻击可分为近身范围爆发（Nova）、陨石（Meteors）、远程吐息（Beam）三类",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Yagluth&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "abilities: Beam(远程直线火焰束)、Meteors(天降陨石)、Nova(近身10米范围爆炸+持续燃烧)",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "击败亚格鲁斯掉落 Torn spirit，关联迷雾之地驱雾装置幽光泉（Wisp fountain）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Torn_Spirit&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Three Torn spirits are dropped by Yagluth upon defeat.' Usage/Building: Wisp fountain",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "Torn spirit 拼写与掉落用途经核对无误；文中未给出具体掉落数量（实际为3个），未涉及需修正的错误数字。",
+  "slug": "yagluth",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

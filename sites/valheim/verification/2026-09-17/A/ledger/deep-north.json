@@ -1,0 +1,23 @@
+{
+  "slug": "deep-north",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（Steam 端最新热更 1.0.12，2026-09-11）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "击败 Fader 后先制作 Eternal Pyre，用它收集 Embers", "sourceUrl": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=892970&count=10&maxlength=20000&format=json (news: Valheim 1.0 Has Arrived!)", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方 patch notes 列出 Misc: Eternal Pyre；PC Gamer 攻略描述 Fader 掉落物用于在基地建造该建筑并收集 embers", "correction": "无"},
+    {"id": 2, "claim": "Embers 参与 Ember Charges 的制作", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Craft ember charges with embers and seal pelts.\"", "correction": "无"},
+    {"id": 3, "claim": "Winding Tunnels 是重要探索目标，涉及 Frost Cores 与模具", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方 patch notes: Dungeon: Winding Tunnels；PC Gamer: 隧道中找 Frostcore 与 moulds", "correction": "无"},
+    {"id": 4, "claim": "Frigid Kiln 需要 10 枚 Frostcore（另需 Stone×20、Ice×5）；Frost Foundry 的用量未能在一手来源中查到确切配方", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "部分支持", "evidence": "该文对 Frigid Kiln 与 Frost Foundry 两处配方描述含混，均写「10 Frostcore」但未列出 Stone/Ice 等其余材料，且为单一三方来源，未能与游戏内配方或官方 patch notes 交叉核对；仅 Frigid Kiln 的 10 Frostcore + Stone×20 + Ice×5 组合能在另一独立来源交叉确认", "correction": "改写：删去「Frost Foundry 分别需要十枚 Frost Cores」的并列表述，只保留 Frigid Kiln 的确认配方，Frost Foundry 用量改为「以游戏内配方为准」"},
+    {"id": 5, "claim": "隧道名称也可能被部分资料称作 Hidden Tunnels", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "不足", "evidence": "仅 PC Gamer 一篇非正式使用小写 \"the hidden tunnels\" 描述同一地牢，游戏内与官方 patch notes 均只用 Winding Tunnels，不构成「资料称作 Hidden Tunnels」这一命名断言的一手依据", "correction": "删除：该句无一手来源支持，已从正文删去"},
+    {"id": 6, "claim": "Gammeltroll 死后形成石化躯体，需要 Ember Charges 处理，得到的 Petrified Tissue 可进入高炉制成 Bloodgold", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Destroy the petrified Gammeltroll with ember charges. Collect petrified tissue... Smelt it into bloodgold in your blast furnace.\"", "correction": "无"},
+    {"id": 7, "claim": "设备链使用模具与铸件，并在 Frost Foundry 中配合 Liquid Frost 完成物品", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Cast 放入 Frost Foundry，Frigid Kiln 产出 Liquid Frost 送入同一设备", "correction": "无"},
+    {"id": 8, "claim": "制作 Intricate Key 后进入 Mörkhalla，处理 Malicious Ice，再前往入侵位置，收集 Malicious Blood", "sourceUrl": "https://beebom.com/valheim-jotun-invasion-guide/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Malicious Ice\" 拼写确认；击破后触发 Jotun Invasion，事件完成获得 Malicious Blood", "correction": "无"},
+    {"id": 9, "claim": "正常最终入口流程需要三份血（Aesir Passage）", "sourceUrl": "https://beebom.com/valheim-jotun-invasion-guide/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"players need three Malicious Blood items to summon the final boss\"", "correction": "无"},
+    {"id": 10, "claim": "深北之境是 1.0 新增内容，已正式发布", "sourceUrl": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=892970...", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Steam 官方公告 2026-09-09：New Biome – Deep North", "correction": "无"}
+  ],
+  "changes": [
+    {"field": "body", "before": "Frigid Kiln 和 Frost Foundry 分别需要十枚 Frost Cores", "after": "Frigid Kiln 需要 10 枚 Frostcore（另需 Stone×20、Ice×5）；Frost Foundry 的用量以游戏内配方为准", "reason": "Frost Foundry 的确切用量未能在一手来源查到，改为不写死数字"},
+    {"field": "body", "before": "正文中的隧道名称也可能被部分资料称作 Hidden Tunnels，搜索时可两种名称交叉核对。", "after": "（整句删除）", "reason": "该命名无一手来源支持"}
+  ],
+  "notes": "fandom 深北相关子页面（Winding Tunnels/Mörkhalla 专页）尚未建立，本文命题改用官方 Steam patch notes + 多个独立三方攻略站交叉验证。2026-09-17 独立对抗验证复核后发现 Frost Foundry 的 10 Frostcore 说法与 Hidden Tunnels 别名均只有单一非正式来源支撑，已按上方 changes 修正。"
+}

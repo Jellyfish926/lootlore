@@ -1,0 +1,13 @@
+{
+  "slug": "progression",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（2026-09-09 正式发布，含深北之境为最终区域）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "推进顺序：青青草原、黑暗林山、沼泽、雪山、平原、迷雾之地、灰烬之地，最后进入深北之境", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Progression_guide&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "该页章节顺序为 Meadows / Black Forest / Swamp / Mountains / Plains / Mistlands / Ashlands / Deep North，与文章一致", "correction": "无"},
+    {"id": 2, "claim": "击败赤血灵鹿（Eikthyr）后进入采矿阶段", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Progression_guide&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方 1.0 FAQ 同样以 Eikthyr 为第一个 Boss 举例说明成就机制，符合常识流程", "correction": "无"},
+    {"id": 3, "claim": "灰烬之地先解决航行和登陆后的立足点，深北之境涉及模具、加工、钥匙和入侵事件", "sourceUrl": "本组 BASELINE.md（deep-north/kall/intricate-key 核验结论）", "accessed": "2026-09-17", "http": "N/A", "verdict": "支持", "evidence": "与本组已核验的 deep-north.md / intricate-key.md 内容一致", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "本文以流程性建议为主，具体事实命题少且均与 fandom Progression guide 及本组已核验的深北系列文章一致。注意 fandom 页顶部提示 \"Valheim's wiki has moved to valheim.wiki\"，但该页内容仍与官方区域顺序一致，可作交叉验证使用。"
+}

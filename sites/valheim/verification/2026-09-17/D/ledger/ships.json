@@ -1,0 +1,60 @@
+{
+  "slug": "ships",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Karve 的配方为 30 精细木、10 鹿皮、20 树脂和 80 青铜钉",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Karve",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Infobox materials: \"Finewood x30; Deer hide x10; Resin x20; Bronze nails x80\"，与本文数值完全一致。",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "“青铜钉”与“青铜”是不同材料，不能把配方数字理解为金属锭数量",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Karve",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Karve 配方明确写的是 \"Bronze nails\"（青铜钉，锻造台加工品）而非 \"Bronze\"（青铜锭），二者为不同物品条目。",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "航行受风向影响，帆船不是始终朝目标直线开最快",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Boats",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Karve 页给出满帆/半帆/划桨在不同风力下的速度区间（如满帆 100% 顺风 7.0 m/s、5% 逆风时仅 3.9 m/s），佐证风向显著影响航速。",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "船坏了之后部分造船材料会沉入深水，不能保证全部找回",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Karve",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Boats cannot be deconstructed with a hammer, but their resources drop when they are destroyed and can be recovered if a player is standing or swimming in range to pick them up before they sink.\" —— 明确说明来不及捞取会沉没丢失。",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "灰烬之地有特殊航行要求，不能沿用普通远航准备",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Boats",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "灰烬之地（Ashlands）海域含熔岩、专属敌对生物与更高强度天气，官方与社区资料均描述其为需要专门准备的高危险区域；本文未列具体数值，仅作提醒，不构成需核实的断言。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "Karve 配方与航速数据均与 fandom 官方数据页一致，未发现冲突。"
+}

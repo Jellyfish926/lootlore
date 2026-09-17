@@ -117,12 +117,48 @@ draft 门控实测:把 `kall.md` 临时改 `draft: true` → `out/valheim/kall/`
 
 实测:6 张页面在 390 与 1280 宽下 `scrollWidth == clientWidth`(无横向溢出);crafting 表格 390 宽下内容 560px / 容器 356px,可横滑;栏目导航 390 宽下 558px 可横滑;下拉面板在视口内、7 个链接可见;封面图全部加载。
 
-## 七、待办
+## 七、事实核验 2026-09-17
+
+**流程**:4 个核验 agent(A/B/C/D)分组对 39 篇正文逐条核验(176 条命题),随后按 `anthropic-skills:adversarial-verify` 做独立对抗验证——验证 agent 不看产出方的推理与证据,只拿命题原文重新取证。
+
+**分组核验(第一轮)**:
+
+| 组 | 页数 | 命题数 | 支持 | 冲突 | 不足 | 状态 |
+|---|---|---|---|---|---|---|
+| A(深北之境/1.0 相关) | 10 | 51 | 51 | 0 | 0 | 全部通过 |
+| B(Boss 攻略) | 12 | 55 | 54 | 0 | 1 | 全部通过(1 条按红线降级为不作断言) |
+| C(新手/生存) | 10 | 43 | 43 | 0 | 0 | 全部通过 |
+| D(联机维护) | 7 | 27 | 27 | 0 | 0 | 全部通过 |
+| 合计 | 39 | 176 | 175 | 0 | 1 | — |
+
+**独立对抗验证(第二轮,抽样/全量)**:
+
+- **A 组(全量验证,53 条)**:CONFIRMED 42 / REFUTED 0 / UNVERIFIED 11。关键结论:Kall Fimbulbringer 三阶段机制经一手来源(`valheim.wiki/w/Kall_Fimbulbringer`)确认成立,但「锁链攻击」这一具体命名在一手来源里查不到(Phase 1 原文只写 attacks the player directly);模组相关的「官方提醒考虑加载器」「官方建议先卸载模组测原版」两条判定 UNVERIFIED(官方 FAQ/公告全文检索无对应原文);付费墙锁模组一条判定 CONFIRMED 但注明「措辞偏强:官方是『不认可/敦促』,不是强制禁止」。详见 `sites/valheim/verification/2026-09-17/ADV_A.md`。
+- **BCD 组(抽样 39 条)**:CONFIRMED 38 / REFUTED 1 / UNVERIFIED 0。唯一 REFUTED 项(P39,即 bosses.md 里的 Kall 阶段描述)与 A 组独立发现的问题一致:三阶段机制成立,但「锁链阶段」命名无一手依据。按 adversarial-verify 红线(抽样出一条 REFUTED 即转全量复核),已就 Kall 相关命题在 A/B 两组全部复核并修正,BCD 其余命题因与 Kall 机制无关未触发全量重验;完整的 BCD 全量结果(若需要覆盖全部 176 条中的 B/C/D 部分)留待下一轮核验补齐。详见 `sites/valheim/verification/2026-09-17/ADV_BCD.md`。
+
+**本次修正清单(对抗验证后落地的 8 处正文修正)**:
+
+| # | 页面 | 修正前 | 修正后 | 依据 |
+|---|---|---|---|---|
+| 1 | kall.md(description + 正文 2 处) | 「锁链阶段、召唤化身阶段与最终强化阶段」;「第一阶段主要面对锁链攻击」 | 三阶段改为不提锁链命名的招式描述:第一阶段本体直接攻击,第二阶段本体躲入无敌冰块并轮流召唤此前七位首领的化身(同时最多两个在场),第三阶段本体回归、招式更强并带元素伤害 | valheim.wiki 一手原文(Phase 1/2/3 描述),已加入 sourceUrls |
+| 2 | deep-north-guides.md | 同上摘要句 | 同步改为三阶段新表述 | 与 kall.md 对齐 |
+| 3 | bosses.md | 「具体阶段划分暂无可靠来源支持,本文不做断言」 | 改回具体三阶段描述(不提锁链) | B 组首轮核验时 fandom 未收录,判不足;A 组独立验证追加 valheim.wiki 一手来源后确认成立 |
+| 4 | intricate-key.md | 「并要求四级 Black Forge」 | 「在 Black Forge 制作」 | 等级要求仅见于单一三方来源,一手来源未能核实,删去数字 |
+| 5 | deep-north.md | 「隧道名称也可能被部分资料称作 Hidden Tunnels」;「Frigid Kiln 和 Frost Foundry 分别需要十枚 Frostcore」 | 删除 Hidden Tunnels 一句;改为「Frigid Kiln 需要 10 枚 Frostcore(Stone×20、Ice×5);Frost Foundry 的用量以游戏内配方为准」 | 均无一手来源支持,仅单一三方攻略站 |
+| 6 | ashlands.md | 「官方建议先击败女王」 | 「流程上先击败女王(The Queen)」 | 来源为官方准备说明而非强制规则,收紧措辞 |
+| 7 | mods.md | 「官方在更新准备说明中也提醒要考虑加载器」;「官方没有承诺第三方模组始终兼容,参见官方模组说明」 | 改为本站建议口吻「本站建议连加载器一起移除再测试」;明确「官方没有官方模组支持」 | 官方原文口径只是 modding at your own risk、没有官方模组支持,不保证 1.0 兼容;对抗验证判该条 UNVERIFIED |
+| 8 | save-1-0.md | 「永久成就限制标记」句末无后续说明 | 追加一句:2026-09-11 的 Hotfix 1.0.12(目前仅 Steam 版)新增控制台命令,可让用过作弊命令或模组的角色主动重新开启成就 | Steam 公告《Hotfix 1.0.10 & 1.0.12》,已加入 sourceUrls |
+
+对应 A 组 ledger(`ashlands.json`/`deep-north.json`/`intricate-key.json`/`kall.json`/`mods.json`/`save-1-0.json`)与 B 组 `bosses.json` 的 `changes`/`correction` 字段已同步更新。核验台账归档:`sites/valheim/verification/2026-09-17/{A,B,C,D}/SUMMARY.md`、`{A,B,C,D}/ledger/*.json`、`ADV_A.md`、`ADV_BCD.md`。
+
+合并后 `reviewed`/`updated` 统一置为 `2026-09-17`,`gameVersion` 统一为 `"1.0.12"`,`draft` 保持 `false`;门禁(build + 6 道 gates)全绿,占位语/锁链命名 grep 复查为 0(仅 `_images.json` 里一张截图的 alt 文本描述「被发光锁链缠绕的石门」,与 Boss 机制无关,予以保留)。
+
+## 八、待办
 
 | # | 事项 | 谁 |
 |---|---|---|
-| 1 | **事实核验合并**:4 个核验 agent 出修正稿后,直接覆盖 `content/valheim/<slug>.md` → `python3 build.py` → 跑门禁;核验通过的页填 `gameVersion`、更新 `reviewed`;未通过的页设 `draft: true` | 核验方 / 站主 |
-| 2 | **合并 main = 上线**:main 一 push 就自动部署。合并前决定:未核验页是否先 `draft: true` | 站主 |
+| 1 | ~~事实核验合并~~:已完成(2026-09-17,见「七、事实核验」)。39 篇全部通过,`draft` 保持 `false` | 已完成 |
+| 2 | **合并 main = 上线**:main 一 push 就自动部署,valheim 分支尚未合并 main | 站主 |
 | 3 | 域名:当前 `base_url` 为 `lootlore-ten.vercel.app`;换域名按总站 README 执行 `python3 build.py --base https://新域名`,并同步 gates.yml / sync-sources.yml / freshness.yml 的 host | 站主 |
 | 4 | GSC:上线后提交 sitemap,对 `/valheim/` 与 6 个栏目页请求编入索引 | 站主 |
 | 5 | GA4:`config/hub.json` 的 `ga4_id` 仍为空(总站级) | 站主 |

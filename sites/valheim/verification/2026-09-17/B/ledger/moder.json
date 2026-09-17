@@ -1,0 +1,52 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "冰霜龙母（Moder）需要三枚龙蛋（Dragon egg x3）召唤",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Moder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: summon = [[Dragon egg]] x3；'She is summoned by placing three Dragon eggs'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "龙母飞行阶段以远程攻击为主（Ice Barrage 冰锥），落地阶段有近身（Bite/Claw）和吐息（Cold Breath）攻击",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Moder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'When airborne...Ice Barrage'；落地：Bite/Claw/Cold Breath 均标注 'While grounded'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "击败龙母后掉落龙泪（Dragon tear），是平原阶段工匠台（Artisan table）的建造材料",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Dragon_Tear&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'10 are dropped by Moder upon her defeat.' Usage/Building: Artisan table",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "龙母的祭坛位于雪山（Mountain），龙蛋每枚重量较大",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Moder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Moder's Forsaken Altar is located in the Mountains'；'Considering the extensive weight of dragon eggs (200)...'",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "moder",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

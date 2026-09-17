@@ -1,0 +1,15 @@
+{
+  "slug": "mead",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "现行酿造链使用 Mead ketill 制作蜜酒基底，再交给 Fermenter 发酵成可饮用成品", "sourceUrl": "https://valheim.fandom.com/wiki/Mead_Ketill", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "The Mead Ketill is a crafting station used to prepare mead bases. ... Mead bases must be fermented using a Fermenter to produce consumable meads.", "correction": "无"},
+    {"id": 2, "claim": "Mead ketill 需要下方有有效火源才能运作", "sourceUrl": "https://valheim.fandom.com/wiki/Mead_Ketill", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "It requires a fire source underneath to operate, such as a campfire or hearth.", "correction": "无"},
+    {"id": 3, "claim": "Mead ketill 制作材料为 4 锡、6 铜、2 碎皮（Leather scraps）", "sourceUrl": "https://valheim.fandom.com/wiki/Mead_Ketill", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "materials: Tin x4, Copper x6, Leather scraps x2", "correction": "无"},
+    {"id": 4, "claim": "旧攻略把蜜酒基底写在普通烹饪锅（Cauldron）里，属于版本差异", "sourceUrl": "https://valheim.fandom.com/wiki/Mead_Ketill", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Trivia: The Mead Ketill was added in The Bog Witch update. Previously, Mead Bases were crafted at the Cauldron.", "correction": "无"},
+    {"id": 5, "claim": "发酵桶（Fermenter）需要遮蔽（屋顶+覆盖）才能运作，且处理需要世界内时间，不是投入材料立即完成", "sourceUrl": "https://valheim.fandom.com/wiki/Fermenter", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "They require a roof and 70% cover to function. ... A fermenter cycle takes two in-game days.", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "所有配方与机制命题均在 fandom Mead Ketill / Fermenter 页面找到精确对应数值（4 锡/6 铜/2 碎皮），与正文完全一致，无需修改。sources.json 中的第二个来源（gamers.wiki）作为交叉验证参考，未作为唯一依据。"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "fader",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（Fader 为灰烬之地第七位 Boss）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "召唤需要三口钟，每口钟由三块钟碎片制作，共九块碎片", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Fader&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Fader can be summoned by placing three Bells around the coliseum. It takes three Bell fragments to craft one bell.\"（3×3=9）", "correction": "无"},
+    {"id": 2, "claim": "定位线索与碎片关联灰烬要塞", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Fader&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Bell fragments can be found in charred fortresses around the Ashlands.\"", "correction": "无"},
+    {"id": 3, "claim": "对这场战斗应准备火焰相关防护，火焰不是合适的主输出方向", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Fader&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "infobox: \"immune = Fire, Spirit\"；抗性 Pierce", "correction": "无"},
+    {"id": 4, "claim": "招式涉及地刺、持续火焰、陨石和近身攻击", "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Fader&prop=wikitext&format=json", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "技能列表：Fissure（地刺）、Flamebreath/Wall of fire（持续火焰）、Meteors（陨石）、Bite/Claw/Spin（近身）", "correction": "无"},
+    {"id": 5, "claim": "击败 Fader 后，保管新掉落并查看 Eternal Pyre 的解锁，与深北之境早期资源链有关", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方 patch notes 列 \"Misc: Eternal Pyre\"；PC Gamer 描述该建筑需用 Fader 掉落物建造，用于收集 embers 进入深北链条", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "fandom 已有独立 Fader 页面（非深北专属新内容），信息完整可靠，未发现冲突。"
+}

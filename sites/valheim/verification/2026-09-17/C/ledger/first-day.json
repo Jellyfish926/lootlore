@@ -1,0 +1,16 @@
+{
+  "slug": "first-day",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "锤子基础材料为 3 木头、2 石头", "sourceUrl": "https://valheim.fandom.com/wiki/Hammer", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "infobox: materials 1 = Wood x3, Stone x2", "correction": "无"},
+    {"id": 2, "claim": "工作台基础材料为 10 木头", "sourceUrl": "https://valheim.fandom.com/wiki/Workbench", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "infobox: materials = Wood x10", "correction": "无"},
+    {"id": 3, "claim": "工作台需要遮蔽（屋顶/覆盖）才能制作", "sourceUrl": "https://valheim.fandom.com/wiki/Workbench", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "They must have a roof and 70% cover to enable crafting and repairing.", "correction": "无"},
+    {"id": 4, "claim": "食物主要影响生命、体力等上限与恢复速率，不是不吃就饿死的计时器", "sourceUrl": "https://valheim.fandom.com/wiki/Food", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Although starvation is not possible, food provides valuable buffs to both the maximum and regeneration rates for health and stamina.", "correction": "无"},
+    {"id": 5, "claim": "锤子从游戏开始即解锁，无需制作站即可制作", "sourceUrl": "https://valheim.fandom.com/wiki/Hammer", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "The recipe is unlocked from the start of the game, and no crafting station is required to craft it.", "correction": "无"},
+    {"id": 6, "claim": "工具/建造选项会随接触新材料逐步解锁（一般性建造/制作机制）", "sourceUrl": "https://valheim.fandom.com/wiki/Crafting", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Crafting 页面描述材料发现驱动配方解锁的机制（一般性描述，非逐字引用）", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "本页全部命题均在 fandom 找到直接支持，无需修改正文。"
+}

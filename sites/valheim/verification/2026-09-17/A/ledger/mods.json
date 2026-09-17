@@ -1,0 +1,17 @@
+{
+  "slug": "mods",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（2026-09-09 正式发布）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "官方没有承诺第三方模组始终兼容", "sourceUrl": "https://www.valheimgame.com/news/regarding-mods/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Iron Gate not having any official mod support essentially means... we can't guarantee that mods will be compatible with newer versions of the game\"", "correction": "无"},
+    {"id": 2, "claim": "更新准备说明中提醒要考虑加载器（不只是移走单个模组文件）", "sourceUrl": "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"To disable mods you will also need to remove BepInEx or any other mod loader, as they might try to load regardless.\"官方确实这样写，但官方原文整体口径是 modding at your own risk、不提供官方模组支持，把单条操作建议包装成「官方提醒」容易让读者误以为有官方模组支持体系", "correction": "改写：正文「官方在更新准备说明中也提醒要考虑加载器」改为本站建议口吻「本站建议连加载器一起移除再测试」"},
+    {"id": 3, "claim": "更新后建议先卸载模组测试原版再逐步恢复", "sourceUrl": "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"it's therefore recommended that you disable them before you download the... update, otherwise the game will most likely not launch properly\"；正文本就以「最安全的处理顺序是」等站方口吻表述，未误归为官方说法", "correction": "无（正文已是本站建议口吻，无需改写）"},
+    {"id": 4, "claim": "官方明确不认可（does not condone）把模组整体锁在付费墙后，并敦促作者免费提供完整模组", "sourceUrl": "https://www.valheimgame.com/news/regarding-mods/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "官方声明原文明确使用 \"does not condone\" 这一措辞反对付费墙锁模组，并敦促作者提供免费完整版本；此前稿件把这一表述简化为「官方不允许」，力度描述不准确", "correction": "无需改写正文（本文未直接引用该细节），仅在核验口径中更正为「不认可」而非「不允许」，供后续引用时使用准确措辞"}
+  ],
+  "changes": [
+    {"field": "body", "before": "官方在更新准备说明中也提醒要考虑加载器，见[更新与模组提示]", "after": "本站建议连加载器一起移除再测试，参见[更新与模组提示]", "reason": "把单条操作建议改回本站口吻，避免读者理解为存在官方模组支持体系"},
+    {"field": "body", "before": "官方没有承诺第三方模组始终兼容，参见[官方模组说明]", "after": "官方没有官方模组支持，也没有承诺第三方模组始终兼容，参见[官方声明]", "reason": "明确「没有官方模组支持」这一事实，避免链接标签「官方模组说明」被误读为存在官方模组体系"}
+  ],
+  "notes": "这篇是操作流程建议为主，事实命题少，均对齐官方两篇说明（Regarding Mods、Getting Ready for the Ashlands）。2026-09-17 独立对抗验证复核发现：官方原文口径始终是 modding at your own risk、没有官方模组支持、不保证 1.0 兼容，稿件里把个别操作建议写成「官方提醒」的地方已改回本站建议口吻；官方对付费墙模组的措辞是「不认可（does not condone）」而非「不允许」，已在核验口径中更正（本文正文未直接引用此细节，无需改写正文）。"
+}

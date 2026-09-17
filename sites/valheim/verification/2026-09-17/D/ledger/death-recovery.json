@@ -1,0 +1,40 @@
+{
+  "slug": "death-recovery",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "默认规则下，物品保留在墓碑中等待回收",
+      "sourceUrl": "https://valheim.fandom.com/wiki/How_to_play",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"When you die, your possessions will stay in your grave. You can return to your grave and retrieve your lost items.\"",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "世界死亡惩罚设置可能改变细节（暗示存在可调死亡惩罚的世界修改器）",
+      "sourceUrl": "https://valheim.fandom.com/wiki/How_to_play",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Valheim 世界修改器（World Modifiers）中含 Death Penalty 选项（Casual/Easy 起技能不掉；Hard/Hardcore 掉落全部装备等），属常见世界设置项，官方 wiki 与游戏内建服菜单均可见；本文未列具体档位数值，仅作提醒，不构成需核实的数字断言。",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "完整回收墓碑会涉及短时捡尸增益（不是免疫一切伤害的保证）",
+      "sourceUrl": "https://valheim.fandom.com/wiki/How_to_play",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Once the storage is completely empty, you will receive the Corpse Run buff, which makes you very difficult to kill for a short period, allowing you to re-equip yourself.\" —— 官方描述为“很难被杀死”而非“免疫”，与本文措辞一致。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "本文未引用死亡技能掉落比例或 No Skill Drain 时长等具体数值（那部分内容不在本文范围内，命题均获支持）。"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "combat",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "格挡效果与装备、受到的攻击和角色状态有关；盾反还需要合适时机",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Blocking",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Raw damage is reduced ... using only the blocking item's ... armor and resistances\"; \"Blocking skill increases Block armor\"; Parrying requires a block within 0.25s before the hit lands.",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "塔盾与可盾反盾牌不能按一种方式使用（并非所有盾都支持盾反）",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Blocking",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Parrying is not available as an action to some items, like Tower Shields.\"",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "生命上限与失衡（格挡崩溃）承受能力有关",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Stagger",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Stagger bar 上限 = \"40% of player max health\"（Blocking 页同样引用该公式）。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "本文以开荒建议为主，未包含具体数值命题；三条可核命题均获官方 wiki（fandom，含公式与举例）支持，无需改动。"
+}

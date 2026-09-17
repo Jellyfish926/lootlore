@@ -1,0 +1,60 @@
+{
+  "slug": "traders",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Haldor 位于黑暗林山",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Haldor",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Haldor is a character found in Black Forest.\"",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "Hildir 位于青青草原，涉及服饰和对应支线",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Hildir",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Hildir is a character found in Meadows.\" 她的营地介绍描述其贩售服饰类外观道具，且有关联的 Hildir's Request 支线任务线。",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "沼泽女巫位于沼泽，提供与宴席和酿造等系统有关的材料",
+      "sourceUrl": "https://valheim.fandom.com/wiki/The_Bog_Witch",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"The Bog Witch is a Greydwarf trader found in the Swamp biome. She sells unique ingredients and items... Her spices and serving tray are required to prepare and eat a Feast.\"",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "1.0 的 Haldor 提供两次背包扩容，每次增加一行，共可增加 16 格",
+      "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-increase-inventory-size/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"Haldor ... now sells two inventory upgrades ... each upgrade giving you an extra row in your inventory, meaning you can add a total of 16 extra slots.\" 分别为 Wider pockets(+8) 与 Deeper pockets(+8)，需先击败对应 Boss 解锁。",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "背包格数扩容与负重上限提升是两件不同的事",
+      "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-increase-inventory-size/",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "文章仅描述格数（slots）扩容，未涉及负重上限调整；负重提升在 Valheim 中另由 Megingjord 腰带等装备/技能提供，二者是独立系统，与本文表述一致。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "三位商人位置、Haldor 背包扩容数值均获一手来源支持；未发现来源冲突。"
+}

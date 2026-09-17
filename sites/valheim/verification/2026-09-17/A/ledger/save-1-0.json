@@ -1,0 +1,21 @@
+{
+  "slug": "save-1-0",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（2026-09-09 正式发布）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "官方确认旧存档可以继续使用", "sourceUrl": "https://www.valheimgame.com/support/valheim-1-0-faq/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"What happens to my saves at the 1.0 launch? Nothing. Your old saves will still be where you last left them\"", "correction": "无"},
+    {"id": 2, "claim": "新区域生成要在未探索地带才能正常完成", "sourceUrl": "https://www.valheimgame.com/support/valheim-1-0-faq/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"biome generation will only work properly on areas that have not yet been explored\"", "correction": "无"},
+    {"id": 3, "claim": "官方仍建议从头开始以获得更完整体验", "sourceUrl": "https://www.valheimgame.com/support/valheim-1-0-faq/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"we always recommend that you start the game over from scratch to get the best possible experience\"", "correction": "无"},
+    {"id": 4, "claim": "1.0 成就从新版开始记录，之前击败过的首领可能需要重新满足条件", "sourceUrl": "https://www.valheimgame.com/support/valheim-1-0-faq/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"an achievement connected to killing Eikthyr... will require you to kill Eikthyr again, even if you've already killed him 500 times previously\"", "correction": "无"},
+    {"id": 5, "claim": "多数作弊命令会为当前角色与世界留下永久成就限制标记", "sourceUrl": "https://www.valheimgame.com/support/valheim-1-0-faq/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"using most commands (such as 'spawn') will place a flag on your current character and world save, informing you that it is permanently locked\"", "correction": "无"},
+    {"id": 6, "claim": "拾取被标记的生成物品则有不同的临时限制规则", "sourceUrl": "https://www.valheimgame.com/support/valheim-1-0-faq/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"If a non-cheated player character picks up a cheated item, they will enter a temporary cheat state... can become eligible again if they throw out all cheated items\"", "correction": "无"},
+    {"id": 8, "claim": "2026-09-11 的 Hotfix 1.0.12（目前仅 Steam 版）新增一个控制台命令，可让用过作弊命令或模组的角色主动重新开启成就", "sourceUrl": "https://store.steampowered.com/news/app/892970", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Steam 公告《Hotfix 1.0.10 & 1.0.12》列出该热更内容，包含面向已标记存档的成就重新开启命令，公告注明该热更目前仅推送到 Steam 版本", "correction": "补充：正文「永久成就限制标记」后新增一句说明该命令，来源加入 sourceUrls"},
+    {"id": 7, "claim": "官方模组不保证兼容（间接支撑“先测原版再上模组”的升级顺序）", "sourceUrl": "https://www.valheimgame.com/news/regarding-mods/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"we can't guarantee that mods will be compatible with newer versions of the game\"", "correction": "无"}
+  ],
+  "changes": [
+    {"field": "body", "before": "（「永久成就限制标记」句末无后续说明）", "after": "新增一句：「2026-09-11 的 Hotfix 1.0.12（目前仅 Steam 版）新增了一个控制台命令，用过作弊命令或模组的角色可以主动重新开启成就；具体命令名以公告为准。」", "reason": "Steam Hotfix 1.0.12 公告新增该功能，补充进正文避免信息过时"},
+    {"field": "sourceUrls", "before": "2 条", "after": "3 条，新增 https://store.steampowered.com/news/app/892970", "reason": "对应新增正文内容的来源"}
+  ],
+  "notes": "官方 1.0 FAQ 发布于 2026-07-01（1.0 发布前），核验时确认其内容在 1.0 正式上线（9 月 9 日）后仍然适用。2026-09-17 独立对抗验证追加 Steam Hotfix 1.0.10 & 1.0.12 公告，确认新增了成就重新开启命令，已补入正文。"
+}

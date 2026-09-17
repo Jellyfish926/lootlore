@@ -1,0 +1,18 @@
+{
+  "slug": "intricate-key",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（Steam 端最新热更 1.0.12，2026-09-11）",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "完整顺序：找到钥匙模具、准备 Bloodgold、在 Black Forge 制作钥匙铸件，再用 Frost Foundry 完成成品", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "PC Gamer 完整列出该顺序：black forge 造 Cast → Frost Foundry + Liquid Frost → 产出 Intricate Key", "correction": "无"},
+    {"id": 2, "claim": "隧道内物品名称是 Mould: Intricate Key", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Collect any moulds you find... especially moulds for the Intricate Key\"；\"1 'Mould: Intricate Key'\"", "correction": "无"},
+    {"id": 3, "claim": "每份 Cast: Intricate Key 使用一份钥匙模具和五份 Bloodgold，在 Black Forge 制作", "sourceUrl": "https://beebom.com/how-to-craft-an-intricate-key-in-valheim/amp/", "accessed": "2026-09-17", "http": "WebFetch", "verdict": "部分支持", "evidence": "用料（5 Bloodgold + 1 Mould，在 Black Forge 制作）有独立来源交叉确认；「四级」这一站等级要求仅见于该单一三方来源，未能在游戏内配方或官方说明中核实", "correction": "删除：正文中「并要求四级 Black Forge」的等级数字已删去，改为「在 Black Forge 制作」"},
+    {"id": 4, "claim": "铸件要放入 Frost Foundry，并提供由 Frigid Kiln 处理冰得到的 Liquid Frost", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"Add the Cast... to your Frost Foundry. Add ice to your Frigid Kiln to create liquid frost. Add liquid frost to the Frost Foundry.\"", "correction": "无"},
+    {"id": 5, "claim": "Intricate Key 会在开门时消耗", "sourceUrl": "https://allthings.how/morkhalla-walkthrough-clearing-valheim-s-deep-north-dungeon/", "accessed": "2026-09-17", "http": "WebSearch摘要", "verdict": "支持", "evidence": "Mörkhalla 攻略普遍描述每次进入消耗一把钥匙，需多次制作", "correction": "无"},
+    {"id": 6, "claim": "正常后续流程需要多次 Mörkhalla 探索，至少三份目标模具和十五份 Bloodgold", "sourceUrl": "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "\"you'll eventually need three Intricate Keys, and each mould can only be used once\"（3×5=15 Bloodgold，稿件推算成立）", "correction": "无"}
+  ],
+  "changes": [
+    {"field": "body", "before": "每份 Cast: Intricate Key 使用一份钥匙模具和五份 Bloodgold，并要求四级 Black Forge；之后还需在 Frost Foundry 处理。", "after": "每份 Cast: Intricate Key 使用一份钥匙模具和五份 Bloodgold，在 Black Forge 制作；之后还需在 Frost Foundry 处理。", "reason": "「四级」等级要求未在一手来源查到，删去数字，保留可确认的用料与工作站"}
+  ],
+  "notes": "配方细节（5 Bloodgold）依据 Beebom 与 PC Gamer 两个三方攻略站交叉验证，fandom 尚无对应页面，未发现与官方 Steam patch notes 冲突之处。「四级 Black Forge」这一等级要求仅见于 Beebom 单一来源，2026-09-17 独立对抗验证判定不足以写死，已从正文删去。"
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "survival",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "栏目页链接到 first-base、food、rested、farming、mead、portals、ships、traders 八篇文章，URL 与标题需与对应文章一致", "sourceUrl": "内部一致性核对（对照对应 articles/*.md）", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "八个链接的 url 与 title 均与对应文章 frontmatter 一致", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "本页为纯导航/摘要页，不含独立可核数值命题。其中 first-base、food、rested、farming、mead 五篇已在本组详细核验，其余（portals、ships、traders）不在本组核验范围，此处只核对摘要文字与链接是否与对应文章标题/描述一致，未发现不一致。"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "farming",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "部分蔬菜可以再次种植来获得种子（例如芜菁的留种机制）", "sourceUrl": "https://valheim.fandom.com/wiki/Turnip", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "3 Turnip seeds can be obtained by planting and growing a 'Seed-turnip' using the Cultivator.", "correction": "无"},
+    {"id": 2, "claim": "大麦（Barley）只能在平原（Plains）区域种植", "sourceUrl": "https://valheim.fandom.com/wiki/Barley", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Barley can only be planted and harvested in the Plains biome, using a Cultivator.", "correction": "无"},
+    {"id": 3, "claim": "作物不长可能是区域错误、空间不足或缺乏阳光（一般性种植机制）", "sourceUrl": "https://valheim.fandom.com/wiki/Cultivator", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Crops will not grow if any of the three conditions are met: Wrong biome / Not enough space / Not enough sunlight.", "correction": "无"},
+    {"id": 4, "claim": "不同植物对空间和区域的要求不完全相同", "sourceUrl": "https://valheim.fandom.com/wiki/Cultivator", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "Some crops can only be planted in certain biome requirements... Most crops require a 1x1 area of free space around them.", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "区域限制（大麦=平原）与留种机制（芜菁）均逐字对应 fandom，正文准确，无需修改。"
+}

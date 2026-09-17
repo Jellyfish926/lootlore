@@ -1,0 +1,11 @@
+{
+  "slug": "beginner",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {"id": 1, "claim": "栏目页链接到 progression、first-day、crafting、combat、death-recovery 五篇文章，URL 与标题需与对应文章一致", "sourceUrl": "内部一致性核对（对照 articles/progression.md、first-day.md、crafting.md、combat.md、death-recovery.md）", "accessed": "2026-09-17", "http": 200, "verdict": "支持", "evidence": "五个链接的 url 与 title 均与对应文章 frontmatter 一致", "correction": "无"}
+  ],
+  "changes": [],
+  "notes": "本页为纯导航/摘要页，不含独立可核数值命题；已核对内部链接与摘要文字与被引用文章一致，无需修改。"
+}

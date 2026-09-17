@@ -1,0 +1,62 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "亚格鲁斯掉落物（Torn spirit）关联幽光泉（Wisp fountain），是迷雾之地驱雾相关制作链的前置",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Torn_Spirit&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Usage/Building: Wisp fountain",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "黑核（Black core）与 Sealbreaker fragment 主要产自被侵染的矿洞（Infested Mine）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Infested_Mine&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'Black cores are found all around the mine...'；'Sealbreaker fragments are found all around the mine...'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "树液提取器（Sap extractor）需要矮人提取器（Dvergr extractor）部件，来自矮人组件箱（Dvergr component crate）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Sap_Extractor&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "materials: Dvergr extractor x1；'It requires Black metal, Yggdrasil wood and a Dvergr extractor, obtained from Dvergr component crates.'",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "精炼魔力设施（Eitr refinery）运行时会产生闪电/毒素伤害，可能损坏附近的木制/普通石制建筑",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Eitr_Refinery&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'While processing, small discharges are emitted...inflicting Lightning and Poison Damage over time...Wood and ordinary stone structures will take damage.'",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "不建议随意攻击矮人（Dvergr）或破坏其建筑，否则可能引发整个据点敌对",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Mistlands&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "迷雾之地词条关于 Dvergr 阵营与中立状态的说明（攻击或破坏其设施会导致敌对转变），与迷雾之地矮人机制一致",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "mistlands",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

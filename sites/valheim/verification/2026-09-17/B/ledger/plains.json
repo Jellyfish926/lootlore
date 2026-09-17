@@ -1,0 +1,52 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "大麦（Barley）与亚麻（Flax）只能在平原（Plains）生物群落种植",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Barley&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Barley: 'can only be planted and harvested in the Plains biome, using a Cultivator.'；Flax: 'it can only be grown in the Plains biome.'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "工匠台（Artisan table）需要在获得龙泪（Dragon tear）后建造",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Artisan_Table&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "materials: Dragon tear x2, Wood x10；'They require Dragon tears, so they can only be built after killing Moder.'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "平原的常见威胁包括死亡蚊（Deathsquito）和丑地精（Fuling）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Creatures&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Creatures 词条平原分区列出 Deathsquito、Fuling、Fuling Berserker 等生物",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "召唤亚格鲁斯需要收集丑地精图腾（Fuling totem）",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Yagluth&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: summon = [[Fuling totem]] x5",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "plains",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

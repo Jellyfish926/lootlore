@@ -1,0 +1,60 @@
+{
+  "slug": "portals",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0.12",
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "普通传送门每座需要 20 精细木、10 灰矮人之眼和 2 焰灵之核",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Portal",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Infobox materials: \"Greydwarf eye x10; Finewood x20; Surtling core x2\"，数量与本文完全一致。",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "给两座门设置相同标签，等待连接确认（配对机制）",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Portal",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"portals will automatically attempt to connect with any other portal with the same case-sensitive tag.\"",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "标准设置下，部分矿石、金属及特殊物品会阻止普通传送",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Portal",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"All ores and their smelted counterparts cannot be teleported\"；列表含 Copper/Copper ore/Iron/Iron ore/Silver/Silver ore/Tin/Tin ore/Black metal/Bronze/Flametal 等，以及 Dragon egg、Hildir's chests、Mechanical spring、Charred cogwheel 等特殊物品。",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "普通木传送门与后期石传送门的能力也不同（暗示存在可解除限制的高级传送门）",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Portal",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "\"a Portal stone does allow the teleportation of all items that are not possible with a standard Portal, including Ores, Metals, Dragon eggs, Hildir's chests and Mechanical springs.\"",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "如果世界修改过规则，传送限制表现可能不同",
+      "sourceUrl": "https://valheim.fandom.com/wiki/Portal",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "游戏内“世界修改器/World Modifiers”支持调整 Portals 相关规则（如 Casual 下允许全部物品传送），属于房主可调项，与本文提醒一致。",
+      "correction": "无"
+    }
+  ],
+  "changes": ["无正文改动，仅 frontmatter 增补 checkedAt/gameVersion"],
+  "notes": "无来源冲突；受限物品清单未在正文逐条列出（原文仅概括提示“看物品提示”），保持原有概括写法，未发现需补造的数字。"
+}

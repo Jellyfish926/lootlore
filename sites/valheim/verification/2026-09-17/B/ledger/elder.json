@@ -1,0 +1,72 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "古树长老（The Elder）需要三颗上古种子（Ancient seed x3）召唤",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Elder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: summon = [[Ancient seed]] x3；'He is summoned by placing three Ancient seeds'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "上古种子可由灰矮人暴徒（Greydwarf brute）和灰矮人巢穴（Greydwarf nest）获得",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Ancient_Seed&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "source: [[Greydwarf brute]] / [[Greydwarf nest]]",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "古树长老对火焰较为脆弱",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Elder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: veryweak = Fire",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "古树长老攻击包括远程藤蔓、召唤树根和近身踩踏",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Elder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "abilities: Shoot(远程 25 根藤蔓)、Root Spawn(召唤最多15根Root)、Stomp(近身AOE)",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "击败古树长老后掉落沼泽钥匙（Swamp key），用于打开沼泽的沉没墓穴",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Elder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "drops: Swamp key x1 per player；'allows the player to unlock and enter swamp crypts'",
+      "correction": "无"
+    },
+    {
+      "id": 6,
+      "claim": "古树长老的祭坛位于黑暗林山（Black Forest），墓室/遗迹的符石可指引位置",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=The_Elder&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'The Elder's Forsaken Altar is located in Black Forests. His location can be revealed when visiting Burial Chambers...'",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突；上古种子来源、召唤数量、弱点、掉落均与官方 wiki 一致。",
+  "slug": "elder",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

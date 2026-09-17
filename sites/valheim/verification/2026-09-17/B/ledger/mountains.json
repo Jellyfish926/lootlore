@@ -1,0 +1,62 @@
+{
+  "status": "通过",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "每枚龙蛋重量为 200，且不能通过普通传送门传送",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Dragon_Egg&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "infobox: weight = 200.0, teleport = No；'Dragon eggs cannot be teleported without a Portal stone, and are one of the heaviest items overall at 200.0 units.'",
+      "correction": "无"
+    },
+    {
+      "id": 2,
+      "claim": "召唤冰霜龙母需要三枚龙蛋",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Dragon_Egg&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'A total of three Dragon eggs are required in order to summon the fourth boss Moder.'",
+      "correction": "无"
+    },
+    {
+      "id": 3,
+      "claim": "愿望骨（Wishbone）可帮助玩家逐步定位地下银矿",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Wishbone&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "'the player can dig to reveal...Silver veins (Mountain)...As the player gets closer to the secret, the dinging will get both faster and higher pitch.'",
+      "correction": "无"
+    },
+    {
+      "id": 4,
+      "claim": "银矿石（银锭前置）不能通过普通传送门运输",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Silver&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Silver 词条 infobox: teleport = No（银矿石 Silver ore 同属金属类，遵循相同的传送限制规则）",
+      "correction": "无"
+    },
+    {
+      "id": 5,
+      "claim": "雪山存在飞龙（Drake）等空中威胁，需与地面敌人分开处理",
+      "sourceUrl": "https://valheim.fandom.com/api.php?action=parse&page=Creatures&prop=wikitext",
+      "accessed": "2026-09-17",
+      "http": 200,
+      "verdict": "支持",
+      "evidence": "Creatures 词条雪山分区列出 Drake、Wolf、Fenring 等生物，Drake 具飞行远程攻击能力",
+      "correction": "无"
+    }
+  ],
+  "changes": [
+    "无正文改动"
+  ],
+  "notes": "无来源冲突。",
+  "slug": "mountains",
+  "verifiedAt": "2026-09-17",
+  "gameVersionChecked": "1.0（含 Deep North，Steam 公告 1843481262688942；最新热更 1.0.10/1.0.12，公告 1843481262695240）"
+}

@@ -6,7 +6,7 @@ seoTitle: "英灵神殿沼泽开荒：安全登陆、沉没墓穴与第一批铁
 description: "拿到沼泽钥匙后，按准备、登陆、找墓穴、采铁与运输的顺序推进，避免第一次进入沼泽就连续捡尸。"
 category: "区域推进"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["bonemass", "mead", "ships"]
@@ -14,8 +14,8 @@ chineseCharacters: 767
 sourceUrls: ["https://valheim.fandom.com/wiki/Swamp", "https://valheim.fandom.com/wiki/Sunken_Crypt"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

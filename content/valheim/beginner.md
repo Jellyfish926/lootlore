@@ -6,7 +6,7 @@ seoTitle: "英灵神殿新手入门攻略导航"
 description: "从第一天到第一次独立远征，先建立能活着回来、能继续出门的基本能力。"
 category: "新手入门"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
 related: []
@@ -14,8 +14,8 @@ chineseCharacters: 459
 sourceUrls: []
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

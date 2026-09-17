@@ -6,7 +6,7 @@ seoTitle: "英灵神殿新手第一天：从空手出生到安全过夜的行动
 description: "用一条清晰的开局路线完成工具、庇护所、食物和床的准备，并说明第一天哪些事情不值得急着做。"
 category: "新手入门"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["first-base", "food", "eikthyr"]
@@ -14,8 +14,8 @@ chineseCharacters: 858
 sourceUrls: ["https://valheim.fandom.com/wiki/Crafting", "https://www.valheimgame.com/faq/", "https://valheim.fandom.com/wiki/Building"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

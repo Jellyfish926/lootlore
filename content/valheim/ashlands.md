@@ -6,7 +6,7 @@ seoTitle: "英灵神殿灰烬之地开荒：从出海准备到建立不会轻易
 description: "先完成女王后的航行前置，再分阶段处理登陆、护盾、要塞探索和资源回运，避免把整次远征押在一片海滩上。"
 category: "区域推进"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["fader", "ships", "portals"]
@@ -14,8 +14,8 @@ chineseCharacters: 763
 sourceUrls: ["https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "https://valheim.fandom.com/wiki/Progression_guide", "https://valheim.fandom.com/wiki/Shield_generator"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
@@ -26,7 +26,7 @@ author: "Jellyfi"
 
 ## 女王之后先检查新制作条件
 
-官方建议先击败女王，其掉落参与灰烬阶段的解锁，见[灰烬之地准备说明](https://www.valheimgame.com/support/getting-ready-for-the-ashlands/)。已经持有旧掉落的玩家，应查看当前制作界面是否识别对应材料，而不是把它继续当成没有用途的占位物品。
+流程上先击败女王（The Queen），其掉落参与灰烬阶段的解锁，见[灰烬之地准备说明](https://www.valheimgame.com/support/getting-ready-for-the-ashlands/)。已经持有旧掉落的玩家，应查看当前制作界面是否识别对应材料，而不是把它继续当成没有用途的占位物品。
 
 航行需要适合灰烬海域的准备，常规推进使用 Drakkar，而不是把普通长船当作通用答案，见[区域推进资料](https://valheim.fandom.com/wiki/Progression_guide)。建议出发前用短距离航行熟悉船体的转向和停靠，别把第一次驾驶练习放在危险水域。
 

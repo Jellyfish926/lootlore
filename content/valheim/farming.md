@@ -6,7 +6,7 @@ seoTitle: "英灵神殿种田指南：留种、区域限制与不会断粮的农
 description: "建立从第一批种子到稳定补餐的农业循环，解释作物不长、留种不足以及平原和迷雾作物的区域要求。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["food", "plains", "mistlands"]
@@ -14,8 +14,8 @@ chineseCharacters: 748
 sourceUrls: ["https://valheim.fandom.com/wiki/Cultivator", "https://valheim.fandom.com/wiki/Turnip", "https://valheim.fandom.com/wiki/Barley"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

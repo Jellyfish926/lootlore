@@ -6,7 +6,7 @@ seoTitle: "英灵神殿雪山开荒：抗寒、找银、龙蛋和下山运输｜
 description: "从第一次安全上山到银矿和龙蛋准备，拆解雪山探索的路线、补给、远程应对与撤离安排。"
 category: "区域推进"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["moder", "ships", "mead"]
@@ -14,8 +14,8 @@ chineseCharacters: 766
 sourceUrls: ["https://valheim.fandom.com/wiki/Status_effects", "https://valheim.fandom.com/wiki/Creatures", "https://valheim.fandom.com/wiki/Wishbone", "https://valheim.fandom.com/wiki/Dragon_egg"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

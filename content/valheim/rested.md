@@ -6,7 +6,7 @@ seoTitle: "英灵神殿休息好了怎么获得：舒适度、火源和远征续
 description: "区分正在休息和休息好了，排查增益没有出现的原因，并建立适合长途探索的补给节奏。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["first-base", "food", "ships"]
@@ -14,8 +14,8 @@ chineseCharacters: 702
 sourceUrls: ["https://valheim.fandom.com/wiki/Resting", "https://valheim.fandom.com/wiki/Rested"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

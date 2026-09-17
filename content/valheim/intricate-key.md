@@ -6,7 +6,7 @@ seoTitle: "Intricate Key 怎么做：模具、血金、铸件与 Mörkhalla 开�
 description: "逐步制作深北之境的一次性钥匙，解释模具与铸件的区别、工作站条件及为什么需要为后续地牢准备多把。"
 category: "深北之境"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["deep-north", "kall", "crafting"]
@@ -14,8 +14,8 @@ chineseCharacters: 685
 sourceUrls: ["https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/", "https://www.valheim.tools/items/cast-intricate-key", "https://www.valheim.tools/guides/deep-north-progression"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
@@ -32,7 +32,7 @@ Intricate Key 不是拿到模具后就能直接使用的钥匙。完整顺序是
 
 ## 准备一把钥匙需要什么
 
-每份 Cast: Intricate Key 使用一份钥匙模具和五份 Bloodgold，并要求四级 Black Forge；之后还需在 Frost Foundry 处理。配方可交叉核对[铸件数据](https://www.valheim.tools/items/cast-intricate-key)与[制作步骤](https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/)。
+每份 Cast: Intricate Key 使用一份钥匙模具和五份 Bloodgold，在 Black Forge 制作；之后还需在 Frost Foundry 处理。配方可交叉核对[铸件数据](https://www.valheim.tools/items/cast-intricate-key)与[制作步骤](https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/)。
 
 建议把材料凑齐后再站到正确工作站前核对配方。若没有出现，依次检查模具名称、金属是否已经加工、工作站实际等级与所用制作分页，不要直接重复制作另一台设备。
 

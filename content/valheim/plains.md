@@ -6,7 +6,7 @@ seoTitle: "英灵神殿平原开荒：死亡蚊、丑地精营地与大麦亚麻
 description: "按边缘侦察、小队交战、营地资源和专用农田的顺序进入平原，建立粮食与装备升级所需的生产体系。"
 category: "区域推进"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["yagluth", "farming", "food"]
@@ -14,8 +14,8 @@ chineseCharacters: 767
 sourceUrls: ["https://valheim.fandom.com/wiki/Creatures", "https://valheim.fandom.com/wiki/Barley", "https://valheim.fandom.com/wiki/Flax", "https://valheim.fandom.com/wiki/Artisan_table"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

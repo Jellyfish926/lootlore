@@ -6,7 +6,7 @@ seoTitle: "英灵神殿迷雾之地开荒：驱雾、黑核、树液与精炼魔
 description: "拆解迷雾之地的探索与生产前置，解释为什么要保护退路、谨慎接触矮人，并优先寻找被侵染的矿洞。"
 category: "区域推进"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["queen", "food", "portals"]
@@ -14,8 +14,8 @@ chineseCharacters: 773
 sourceUrls: ["https://valheim.fandom.com/wiki/Mistlands", "https://valheim.fandom.com/wiki/Point_of_interest", "https://valheim.fandom.com/wiki/Sap_extractor", "https://valheim.fandom.com/wiki/Eitr_refinery"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

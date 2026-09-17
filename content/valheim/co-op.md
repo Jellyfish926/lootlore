@@ -6,7 +6,7 @@ seoTitle: "英灵神殿联机指南：房主开服、跨平台加入与长期世
 description: "在临时好友房和专用服务器之间作选择，完成加入测试，排查常见连接问题，并建立能长期维护的合作规则。"
 category: "联机维护"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["save-1-0", "mods", "death-recovery"]
@@ -14,8 +14,8 @@ chineseCharacters: 963
 sourceUrls: ["https://www.valheimgame.com/support/crossplay-faq/", "https://www.valheimgame.com/support/a-guide-to-dedicated-servers/"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

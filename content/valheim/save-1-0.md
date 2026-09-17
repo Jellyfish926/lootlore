@@ -6,16 +6,16 @@ seoTitle: "英灵神殿 1.0 要不要重开世界：旧存档、新区域与成�
 description: "区分旧存档可继续使用与新内容生成条件，给建筑玩家、回归玩家和成就玩家不同的升级选择。"
 category: "联机维护"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["deep-north", "mods", "co-op"]
 chineseCharacters: 851
-sourceUrls: ["https://www.valheimgame.com/support/valheim-1-0-faq/", "https://www.valheimgame.com/faq/"]
+sourceUrls: ["https://www.valheimgame.com/support/valheim-1-0-faq/", "https://www.valheimgame.com/faq/", "https://store.steampowered.com/news/app/892970"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
@@ -38,7 +38,7 @@ author: "Jellyfi"
 
 ## 旧战绩不会自动补齐所有成就
 
-1.0 成就从新版开始记录，之前击败过的首领可能需要重新满足条件。多数作弊命令会为当前角色与世界留下永久成就限制标记；拾取被标记的生成物品则有不同的临时限制规则。详见[官方成就说明](https://www.valheimgame.com/support/valheim-1-0-faq/)。
+1.0 成就从新版开始记录，之前击败过的首领可能需要重新满足条件。多数作弊命令会为当前角色与世界留下永久成就限制标记；拾取被标记的生成物品则有不同的临时限制规则。2026-09-11 的 Hotfix 1.0.12（目前仅 Steam 版）新增了一个控制台命令，用过作弊命令或模组的角色可以主动重新开启成就；具体命令名以公告为准。详见[官方成就说明](https://www.valheimgame.com/support/valheim-1-0-faq/)与[Hotfix 1.0.10 & 1.0.12 公告](https://store.steampowered.com/news/app/892970)。
 
 如果这次准备认真收集成就，先确认角色和世界状态，不要为了测试新物品就在正式存档里随手生成。关闭控制台不等于一定撤销既有标记，也不要承诺删除一个配置文件就能恢复资格。
 

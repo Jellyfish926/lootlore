@@ -6,7 +6,7 @@ seoTitle: "赤血灵鹿怎么打：召唤材料、开荒准备与第一场 Boss 
 description: "准备两枚鹿战利品，学会处理近身与雷电攻击，并在战后把掉落转化为进入黑暗林山的采矿能力。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["combat", "bronze", "first-base"]
@@ -14,8 +14,8 @@ chineseCharacters: 728
 sourceUrls: ["https://valheim.fandom.com/wiki/Eikthyr"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

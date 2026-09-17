@@ -6,7 +6,7 @@ seoTitle: "英灵神殿蜜酒怎么做：抗毒、抗寒与恢复药的制作和
 description: "按现行酿造流程准备蜜酒基底与发酵，区分环境抗性和战斗恢复，并排查为什么做出了基底却不能喝。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["swamp", "mountains", "food"]
@@ -14,8 +14,8 @@ chineseCharacters: 725
 sourceUrls: ["https://valheim.fandom.com/wiki/Mead_ketill", "https://gamers.wiki/en/games/valheim/guides/valheim-mead-guide-mead-ketill-fermenter-buffs"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

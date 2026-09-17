@@ -6,7 +6,7 @@ seoTitle: "英灵神殿传送门使用指南：配对、矿物限制与前哨命
 description: "说明普通传送门如何配对、携带限制如何检查，以及单人和多人怎样建立不会把自己困在野外的传送网络。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["ships", "death-recovery", "ashlands"]
@@ -14,8 +14,8 @@ chineseCharacters: 918
 sourceUrls: ["https://valheim.fandom.com/wiki/Portal"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

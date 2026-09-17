@@ -6,7 +6,7 @@ seoTitle: "英灵神殿生存建设攻略导航"
 description: "让基地、厨房、农田和交通真正服务探索，而不是成为新的负担。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
 related: []
@@ -14,8 +14,8 @@ chineseCharacters: 630
 sourceUrls: []
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

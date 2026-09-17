@@ -6,7 +6,7 @@ seoTitle: "迷雾女王怎么打：破封者、场地管理与近战法术两种
 description: "说明进入女王要塞的前置，拆解高击退、小怪和高低层地形带来的压力，并给出不同流派的准备重点。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["ashlands", "combat", "death-recovery"]
@@ -14,8 +14,8 @@ chineseCharacters: 793
 sourceUrls: ["https://valheim.fandom.com/wiki/The_Queen", "https://valheim.fandom.com/wiki/Boss_strategies"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

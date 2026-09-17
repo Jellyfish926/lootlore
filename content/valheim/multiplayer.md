@@ -6,7 +6,7 @@ seoTitle: "英灵神殿联机维护攻略导航"
 description: "从朋友房到长期世界，保护进度、统一规则，再处理连接与模组。"
 category: "联机维护"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
 related: []
@@ -14,8 +14,8 @@ chineseCharacters: 332
 sourceUrls: []
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

@@ -6,7 +6,7 @@ seoTitle: "冰霜龙母怎么打：三枚龙蛋、空地转换与安全输出窗
 description: "解释龙母召唤与战场准备，在飞行和落地阶段选择不同应对，并说明龙泪为何是下一阶段的关键掉落。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["mountains", "plains", "combat"]
@@ -14,8 +14,8 @@ chineseCharacters: 752
 sourceUrls: ["https://valheim.fandom.com/wiki/Moder", "https://valheim.fandom.com/wiki/Dragon_tear"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

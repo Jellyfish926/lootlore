@@ -6,7 +6,7 @@ seoTitle: "英灵神殿区域推进攻略导航"
 description: "按阶段解决资源、工作站和前哨，明确每片区域的进入准备与完成目标。"
 category: "区域推进"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
 related: []
@@ -14,8 +14,8 @@ chineseCharacters: 502
 sourceUrls: []
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

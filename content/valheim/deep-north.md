@@ -6,7 +6,7 @@ seoTitle: "英灵神殿深北之境流程：从 Eternal Pyre 到最终区域入�
 description: "理清 1.0 深北之境的资源与事件顺序，将余烬、石化组织、血金、模具、钥匙和入侵串成可执行路线。"
 category: "深北之境"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["intricate-key", "kall", "traders"]
@@ -14,8 +14,8 @@ chineseCharacters: 742
 sourceUrls: ["https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide", "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "https://www.valheim.tools/guides/deep-north-progression"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
@@ -32,9 +32,9 @@ author: "Jellyfi"
 
 ## 第二步：找到隧道，分别保存核心与模具
 
-Winding Tunnels 是重要探索目标，涉及 Frost Cores 与模具。Frigid Kiln 和 Frost Foundry 分别需要十枚 Frost Cores；这些建造前置可参照[钥匙与加工设备说明](https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/)。
+Winding Tunnels 是重要探索目标，涉及 Frost Cores 与模具。Frigid Kiln 需要 10 枚 Frostcore（另需 Stone×20、Ice×5）；Frost Foundry 的用量以游戏内配方为准，这些建造前置可参照[钥匙与加工设备说明](https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/)。
 
-不要假设一座地牢就能满足全部需求。地图标记区分未探索和已搜完，回家后把关键模具放进独立箱子。正文中的隧道名称也可能被部分资料称作 Hidden Tunnels，搜索时可两种名称交叉核对。
+不要假设一座地牢就能满足全部需求。地图标记区分未探索和已搜完，回家后把关键模具放进独立箱子。
 
 ## 第三步：打通血金与冷加工
 

@@ -6,7 +6,7 @@ seoTitle: "亚格鲁斯怎么打：五个图腾、抗火准备与陨石阶段的
 description: "在平原召唤亚格鲁斯，学习区分近身爆发、远程吐息与陨石压力，并把战后掉落用于迷雾探索。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["mistlands", "mead", "combat"]
@@ -14,8 +14,8 @@ chineseCharacters: 809
 sourceUrls: ["https://valheim.fandom.com/wiki/Creatures", "https://valheim.fandom.com/wiki/Boss_strategies", "https://valheim.fandom.com/wiki/Yagluth"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

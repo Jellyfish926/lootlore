@@ -6,7 +6,7 @@ seoTitle: "英灵神殿主线顺序：从青青草原到深北之境，每个阶
 description: "按区域梳理英灵神殿的推进路线、阶段目标和转区条件，帮助新手判断当前该升级什么、下一步去哪里。"
 category: "新手入门"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["first-day", "bronze", "deep-north"]
@@ -14,8 +14,8 @@ chineseCharacters: 832
 sourceUrls: ["https://valheim.fandom.com/wiki/Progression_guide", "https://www.valheim.tools/guides/deep-north-progression"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

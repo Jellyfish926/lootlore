@@ -6,7 +6,7 @@ seoTitle: "英灵神殿Boss攻略导航"
 description: "从赤血灵鹿到最终挑战，先确认前置，再理解动作和战场。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
 related: []
@@ -14,8 +14,8 @@ chineseCharacters: 629
 sourceUrls: []
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
@@ -56,7 +56,7 @@ author: "Jellyfi"
 
 ### [Kall Fimbulbringer 攻略：最终 Boss 的三个阶段怎样分配注意力](/valheim/kall/)
 
-针对锁链阶段、召唤化身阶段与最终强化阶段建立应对框架，解释进场准备、耐力管理与失败后的复盘方法。
+针对三阶段战斗建立应对框架：第一阶段本体直接攻击，第二阶段本体躲入无敌冰块并轮流召唤此前七位首领的化身，第三阶段本体回归、招式更强并带元素伤害；解释进场准备、耐力管理与失败后的复盘方法。
 
 ## 阅读范围
 

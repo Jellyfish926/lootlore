@@ -6,7 +6,7 @@ seoTitle: "英灵神殿航海与运矿指南：出发、逆风、登陆和沉船
 description: "从第一艘实用船开始，说明如何规划航线和登陆点、处理风向、组织运矿，以及降低沉船的损失。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["portals", "swamp", "ashlands"]
@@ -14,8 +14,8 @@ chineseCharacters: 752
 sourceUrls: ["https://valheim.fandom.com/wiki/Karve", "https://valheim.fandom.com/wiki/Boats"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

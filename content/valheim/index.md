@@ -6,7 +6,7 @@ seoTitle: "英灵神殿攻略站｜新手、Boss、建造与深北之境"
 description: "英灵神殿中文攻略，从开局、区域推进到八场主要 Boss 战，覆盖食物、建筑、种植、航海、联机与 1.0 深北之境。"
 category: "首页"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "全站入口"
 type: "home"
 related: []
@@ -14,8 +14,8 @@ chineseCharacters: 497
 sourceUrls: []
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

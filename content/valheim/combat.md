@@ -6,7 +6,7 @@ seoTitle: "英灵神殿战斗入门：盾反、翻滚、体力和武器选择怎
 description: "用可练习的顺序掌握防御和进攻节奏，解释为何举盾仍会受伤、为何不要耗光体力，以及怎样选择主武器。"
 category: "新手入门"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["food", "eikthyr", "bonemass"]
@@ -14,8 +14,8 @@ chineseCharacters: 747
 sourceUrls: ["https://valheim.fandom.com/wiki/Blocking", "https://valheim.fandom.com/wiki/Stagger"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

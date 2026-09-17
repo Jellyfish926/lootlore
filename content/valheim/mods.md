@@ -6,7 +6,7 @@ seoTitle: "英灵神殿更新后模组失效怎么办：先保住存档，再定
 description: "用备份、原版测试和逐步恢复的方式处理更新后的启动失败、缺物品和联机不一致，不提供未经验证的兼容承诺。"
 category: "联机维护"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["save-1-0", "co-op", "crafting"]
@@ -14,15 +14,15 @@ chineseCharacters: 875
 sourceUrls: ["https://www.valheimgame.com/news/regarding-mods/", "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
 
 # 英灵神殿更新后模组失效怎么办：先保住存档，再定位冲突
 
-大版本更新后，先不要用主存档反复尝试一整套旧模组。游戏本体可以正常启动，不等于加载器、依赖和所有模组已经适配。官方没有承诺第三方模组始终兼容，参见[官方模组说明](https://www.valheimgame.com/news/regarding-mods/)。最安全的处理顺序是保护数据、建立可用基线，再定位问题。
+大版本更新后，先不要用主存档反复尝试一整套旧模组。游戏本体可以正常启动，不等于加载器、依赖和所有模组已经适配。官方没有官方模组支持，也没有承诺第三方模组始终兼容，参见[官方声明](https://www.valheimgame.com/news/regarding-mods/)。最安全的处理顺序是保护数据、建立可用基线，再定位问题。
 
 ## 第一步：把世界和角色与排查过程隔开
 
@@ -32,7 +32,7 @@ author: "Jellyfi"
 
 ## 第二步：判断游戏本体是否正常
 
-按照所用模组管理方式暂时隔离加载器与模组，确认原版测试环境能够启动和保存。只把一个模组文件移走，未必等于加载器已经停用；官方在更新准备说明中也提醒要考虑加载器，见[更新与模组提示](https://www.valheimgame.com/support/getting-ready-for-the-ashlands/)。
+按照所用模组管理方式暂时隔离加载器与模组，确认原版测试环境能够启动和保存。只把一个模组文件移走，未必等于加载器已经停用；本站建议连加载器一起移除再测试，参见[更新与模组提示](https://www.valheimgame.com/support/getting-ready-for-the-ashlands/)。
 
 若原版测试同样失败，先记录报错并走官方支持流程，不要继续把所有问题都归因于某个模组。若原版正常，再进入下一步。
 

@@ -6,7 +6,7 @@ seoTitle: "Fader 怎么打：钟与钟碎片、地面预警和灰烬 Boss 的撤
 description: "整理 Fader 的召唤准备，重点解释地刺、火焰和陨石造成的场地压力，以及胜利后通往深北之境的下一步。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["deep-north", "combat", "mead"]
@@ -14,8 +14,8 @@ chineseCharacters: 758
 sourceUrls: ["https://valheim.fandom.com/wiki/Fader"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

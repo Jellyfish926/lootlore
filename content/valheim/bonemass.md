@@ -6,7 +6,7 @@ seoTitle: "邪骨恶灵怎么打：钝击、抗毒与召唤物处理是关键｜
 description: "用十根枯骨召唤邪骨恶灵，选择合适伤害类型，处理毒云与小怪，并在战后利用愿望骨开始雪山探索。"
 category: "Boss攻略"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["mountains", "combat", "death-recovery"]
@@ -14,8 +14,8 @@ chineseCharacters: 750
 sourceUrls: ["https://valheim.fandom.com/wiki/Withered_bone", "https://valheim.fandom.com/wiki/Bonemass"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

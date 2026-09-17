@@ -6,7 +6,7 @@ seoTitle: "英灵神殿食物怎么搭配：按探索、近战和法术选择三
 description: "不背一张容易过期的最佳食物榜，学会根据生命、体力、魔力需求和供应能力组合每次出门的食物。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-16"
+checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
 related: ["farming", "mead", "combat"]
@@ -14,8 +14,8 @@ chineseCharacters: 785
 sourceUrls: ["https://valheim.fandom.com/wiki/Food"]
 date: "2026-09-17"
 updated: "2026-09-17"
-reviewed: "2026-09-16"
-gameVersion: ""
+reviewed: "2026-09-17"
+gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---

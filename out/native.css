@@ -1,0 +1,100 @@
+/* Lootlore — 原生内容页样式(hub/native.py 渲染的页面;叠加在 hub.css 之上)
+   颜色只走变量:--accent / --accent2 由 config/hub.json 的 native.theme 注入,缺省回落到总站金色。 */
+.native-body{
+  --a:var(--accent,var(--gold));--a2:var(--accent2,var(--gold2));
+  font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
+  line-height:1.8;overflow-x:hidden}
+.native-body a{color:var(--a)}
+.native-body a:hover{color:var(--a2)}
+
+/* header:第二行栏目导航,手机上横向滑动 */
+.native-body .hd .wrap{padding:12px 16px}
+.native-body .brand{color:var(--ink)}
+.native-body .hd-nav .gcur{color:var(--ink);font-weight:600}
+.native-body .gmenu-panel a.on{color:var(--a)}
+.hd .secnav{display:block;border-top:1px solid var(--line)}
+.hd .secnav .wrap{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 16px}
+.hd .secnav .wrap::-webkit-scrollbar{display:none}
+.secnav a{flex:0 0 auto;color:var(--mut);padding:9px 12px;font-size:.93rem;white-space:nowrap;border-bottom:2px solid transparent}
+.secnav a:hover{color:var(--ink);border-bottom-color:var(--a)}
+
+.wrap.narrow{max-width:860px;padding:0 16px}
+
+/* 面包屑 */
+.crumbs{margin:18px 0 8px;font-size:.86rem;color:var(--dim)}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:2px 0}
+.crumbs li{min-width:0}
+.crumbs li+li::before{content:"›";margin:0 8px;color:var(--dim)}
+.crumbs a{color:var(--mut)}
+.crumbs li[aria-current]{color:var(--ink);overflow-wrap:anywhere}
+
+/* 标题区 */
+.doc-hd{margin:10px 0 18px}
+.doc-hd h1{font-size:clamp(1.5rem,4.6vw,2.15rem);line-height:1.35;margin:0 0 10px;color:var(--ink);overflow-wrap:anywhere}
+.byline{margin:0;color:var(--dim);font-size:.88rem}
+.byline a{color:var(--mut);text-decoration:underline;text-underline-offset:3px}
+.scope{margin:4px 0 0;color:var(--dim);font-size:.84rem}
+
+/* 封面 */
+.cover{margin:0 0 22px}
+.cover img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:var(--panel);aspect-ratio:16/9;object-fit:cover}
+.cover figcaption{color:var(--dim);font-size:.78rem;margin-top:6px}
+
+/* 目录 */
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 26px}
+.toc-t{margin:0 0 6px;font-weight:600;color:var(--ink);font-size:.95rem}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:28px}
+.toc li{color:var(--dim);font-size:.92rem;break-inside:avoid;margin:2px 0}
+.toc a{color:var(--mut)}
+.toc a:hover{color:var(--a2)}
+@media(max-width:640px){.toc ol{columns:1}}
+
+/* 正文 */
+.native .prose{max-width:none;padding:0}
+.native .prose h2{font-size:1.32rem;margin:34px 0 10px;color:var(--ink);scroll-margin-top:16px;line-height:1.45}
+.native .prose h3{font-size:1.08rem;margin:24px 0 8px;color:var(--ink);scroll-margin-top:16px;line-height:1.5}
+.native .prose p,.native .prose li{color:var(--mut);overflow-wrap:anywhere}
+.native .prose p{margin:0 0 14px}
+.native .prose ul,.native .prose ol{padding-left:1.4em;margin:0 0 16px}
+.native .prose a{text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--a) 45%,transparent);text-underline-offset:3px}
+.native .prose blockquote{margin:0 0 16px;padding:8px 16px;border-left:3px solid var(--a);background:var(--panel);border-radius:0 8px 8px 0}
+.native .prose code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+.native .prose pre{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}
+
+/* 表格:外层容器横向滚动,表格本身不压缩 */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 18px;border:1px solid var(--line);border-radius:10px;max-width:100%;
+  /* 可横滑提示:内容右侧还有列时,右缘出现渐隐阴影(background-attachment:local 技法) */
+  background:linear-gradient(to right,var(--bg) 30%,transparent) left center/40px 100% no-repeat local,
+    linear-gradient(to left,var(--bg) 30%,transparent) right center/40px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.55),transparent) left center/14px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.55),transparent) right center/14px 100% no-repeat scroll;
+  background-color:var(--bg)}
+.table-scroll:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.table-scroll table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+.table-scroll th,.table-scroll td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.table-scroll th{background:color-mix(in srgb,var(--panel) 85%,transparent);color:var(--ink);white-space:nowrap}
+.table-scroll td{color:var(--mut)}
+.table-scroll tr:last-child td{border-bottom:0}
+
+/* 卡片列表 */
+.cards{list-style:none;padding:0 !important;margin:0 0 20px;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.cards .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0}
+.cards .card:hover{border-color:var(--a)}
+.native .prose .cards .card-t{font-size:1rem;margin:0 0 6px;line-height:1.5}
+.native .prose .cards .card-t a{color:var(--ink);text-decoration:none}
+.native .prose .cards .card-t a:hover{color:var(--a2)}
+.native .prose .cards p{margin:0;font-size:.9rem}
+.native .prose .cards .count{margin-top:8px;color:var(--a);font-size:.82rem}
+.linklist{columns:2;column-gap:28px}
+.linklist li{break-inside:avoid}
+@media(max-width:640px){.linklist{columns:1}}
+
+/* 来源 */
+.sources ol{list-style:none;padding-left:0 !important}
+.sources li{font-size:.9rem;margin:0 0 8px;padding-left:0}
+.sources .sid{display:inline-block;min-width:3.4em;color:var(--a);font-variant-numeric:tabular-nums;font-weight:600}
+.sources .shost,.sources .sdate{color:var(--dim);font-size:.82rem;margin-left:4px}
+.related{margin-top:10px}
+
+/* 页脚 */
+.native-body .ft .wrap{padding:24px 16px}

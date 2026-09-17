@@ -2,9 +2,10 @@
 """Guide Atlas hub assembler.
 
 三层分离:
-  框架层 = 本脚本 + hub/ 壳(总站页面模板与样式)
-  配置层 = config/hub.json(品牌、base_url、游戏清单、剥离/映射规则)
+  框架层 = 本脚本 + hub/ 壳(总站页面模板与样式)+ hub/native.py、hub/mdlite.py(原生内容渲染)
+  配置层 = config/hub.json(品牌、base_url、游戏清单、剥离/映射规则)+ config/i18n/<lang>.json(界面文字)
   内容层 = sources/<game>/(各子站静态快照,原样不改,变换只发生在 out/)
+           content/<game>/*.md(kind=native 的游戏:Markdown 即真相源,构建时渲染)
 
 用法:  python3 build.py            # 组装到 out/
        python3 build.py --base https://xxx.vercel.app   # 覆盖 base_url
@@ -13,6 +14,8 @@ import json, re, shutil, sys, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+from hub.native import NativeGame  # noqa: E402
 CFG = json.loads((ROOT / "config" / "hub.json").read_text())
 if "--base" in sys.argv:
     CFG["base_url"] = sys.argv[sys.argv.index("--base") + 1].rstrip("/")
@@ -20,6 +23,16 @@ BASE = CFG["base_url"].rstrip("/")
 OUT = ROOT / "out"
 TODAY = datetime.date.today().isoformat()
 SENT = "@@HUB@@"  # 信任页映射后的哨兵前缀,防止被通用子路径改写二次加前缀
+LASTMOD = {}  # route -> lastmod(原生内容页按 reviewed ?? updated ?? date;其余页用构建日)
+NATIVE_PAGES = {}  # game slug -> 生成页数(卡片 pages="auto" 时用)
+
+
+def is_native(g: dict) -> bool:
+    return g.get("kind") == "native"
+
+
+def game_home(g: dict) -> str:
+    return f'/{g["slug"]}{g.get("default_path", "/").rstrip("/") or "/"}'
 
 # ---------------- 剥离规则(按站点快照实测的三方脚本形态写的正则) ----------------
 STRIP_PATTERNS = [
@@ -292,6 +305,30 @@ def hub_jsonld(name: str, cfg: dict) -> str:
     return "\n".join(f'<script type="application/ld+json">{json.dumps(g, ensure_ascii=False)}</script>' for g in graphs)
 
 
+NUM_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+
+
+def render_native_games():
+    head_extra = (
+        f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+        f'?client=ca-{CFG["adsense_pub"]}" crossorigin="anonymous"></script>\n' + hub_ga_snippet()
+    )
+    site = {
+        "base": BASE,
+        "today": TODAY,
+        "year": TODAY[:4],
+        "head_extra": head_extra,
+        "nav_games": [(g["slug"], g["short"], game_home(g)) for g in CFG["games"]],
+    }
+    for g in CFG["games"]:
+        if not is_native(g):
+            continue
+        routes = NativeGame(ROOT, g, CFG, site).build(OUT)
+        LASTMOD.update(routes)
+        NATIVE_PAGES[g["slug"]] = len(routes)
+    shutil.copy2(ROOT / "hub" / "native.css", OUT / "native.css")
+
+
 def render_hub_pages():
     style = load(ROOT / "hub" / "style.css")
     (OUT / "hub.css").write_text(style, encoding="utf-8")
@@ -299,7 +336,14 @@ def render_hub_pages():
     grid = []
     for g in CFG["games"]:
         c = g["card"]
-        hi = "".join(f'<a class="hl" href="{u}">{t}</a>' for t, u in c["highlights"])
+        hls = c["highlights"]
+        if is_native(g):  # 草稿页不挂卡片入口
+            hls = [(t, u) for t, u in hls if (OUT / u.strip("/") / "index.html").is_file()]
+        hi = "".join(f'<a class="hl" href="{u}">{t}</a>' for t, u in hls)
+        pages_txt = c["pages"]
+        if pages_txt == "auto":
+            pages_txt = f'{NATIVE_PAGES.get(g["slug"], 0)} pages'
+        lang_attr = f' lang="{g["lang"]}"' if g.get("lang") and not g["lang"].startswith("en") else ""
         grid.append(f"""
 <article class="game-card" id="{g['slug']}">
   <a class="shot" href="/{g['slug']}{g['default_path'].rstrip('/') or '/'}" aria-label="{g['name']} guide hub">
@@ -311,7 +355,7 @@ def render_hub_pages():
     <p class="meta">{c['studio']} · Released {c['released']}<br>{c['platforms']}</p>
     <p class="blurb">{c['blurb']}</p>
     <div class="hls">{hi}</div>
-    <p class="stats">{c['pages']} · {c['langs']}</p>
+    <p class="stats">{pages_txt} · <span{lang_attr}>{c['langs']}</span></p>
     <p class="credit">{c['img_credit']}</p>
   </div>
 </article>""")
@@ -327,6 +371,10 @@ def render_hub_pages():
         html = html.replace("{{TAGLINE}}", CFG["tagline"]).replace("{{EMAIL}}", CFG["contact_email"])
         html = html.replace("{{PUB}}", CFG["adsense_pub"]).replace("{{TODAY}}", TODAY)
         html = html.replace("{{GAMES_GRID}}", grid_html)
+        names = [g["name"] for g in CFG["games"]]
+        html = html.replace("{{GAME_COUNT}}", NUM_WORDS.get(len(names), str(len(names))))
+        html = html.replace("{{GAME_COUNT_CAP}}", NUM_WORDS.get(len(names), str(len(names))).capitalize())
+        html = html.replace("{{GAME_NAMES}}", ", ".join(names[:-1]) + " and " + names[-1] if len(names) > 1 else "".join(names))
         html = html.replace("{{GA_SNIPPET}}", hub_ga_snippet())
         nav_games = "".join(f'<a href="/{g["slug"]}{g["default_path"].rstrip("/") or "/"}">{g["short"]}</a>' for g in CFG["games"])
         html = html.replace("{{NAV_GAMES}}", nav_games)
@@ -385,7 +433,7 @@ def gen_root_files():
                 loc = "/"
         else:
             loc = "/" + str(rel)[:-5]  # cleanUrls: 去掉 .html
-        urls.append(f"  <url><loc>{BASE}{loc}</loc><lastmod>{TODAY}</lastmod></url>")
+        urls.append(f"  <url><loc>{BASE}{loc}</loc><lastmod>{LASTMOD.get(loc, TODAY)}</lastmod></url>")
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -440,7 +488,9 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     for g in CFG["games"]:
-        migrate_game(g)
+        if not is_native(g):
+            migrate_game(g)
+    render_native_games()
     render_hub_pages()
     gen_root_files()
     gen_vercel_json()

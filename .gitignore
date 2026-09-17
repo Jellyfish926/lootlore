@@ -1,0 +1,3 @@
+# build.py 会 import hub/ 下的模块;sync-sources.yml 用 git add -A 提交,字节码不能进库
+__pycache__/
+*.pyc

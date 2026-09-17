@@ -363,6 +363,76 @@
         "langs": "EN",
         "pages": "18 pages"
       }
+    },
+    {
+      "slug": "valheim",
+      "kind": "native",
+      "lang": "zh-CN",
+      "content": "content/valheim",
+      "name": "Valheim",
+      "short": "Valheim 英灵神殿",
+      "default_path": "/",
+      "native": {
+        "title": "英灵神殿",
+        "nav": [
+          "beginner",
+          "survival",
+          "biomes",
+          "bosses",
+          "deep-north-guides",
+          "multiplayer"
+        ],
+        "related_heading": "接下来可以看",
+        "official_domains": [
+          "valheimgame.com",
+          "store.steampowered.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-09-17",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "theme": {
+          "accent": "#8cc4d6",
+          "accent2": "#c3e2ec"
+        }
+      },
+      "card": {
+        "genre": "Co-op Survival · Exploration",
+        "studio": "Iron Gate Studio",
+        "released": "September 9, 2026 (1.0, per Steam)",
+        "platforms": "PC (Windows · macOS · Linux)",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/ss_a600a7d4ca954543e22f571a9629521a13f82143.1920x1080.jpg?t=1789470462",
+        "img_w": 1920,
+        "img_h": 1080,
+        "img_alt": "A Viking longship with a striped sail crossing open water — Valheim",
+        "img_credit": "Official screenshot · Iron Gate Studio (Steam store page)",
+        "blurb": "Our Chinese-language hub for the Viking survival game from Iron Gate: a first-day checklist, progression order through every biome, eight boss guides from Eikthyr to Kall Fimbulbringer, the Deep North and Intricate Key chain, plus food, portals, sailing and co-op server care — every guide lists its numbered sources.",
+        "highlights": [
+          [
+            "Progression Order",
+            "/valheim/progression/"
+          ],
+          [
+            "Boss Guides",
+            "/valheim/bosses/"
+          ],
+          [
+            "Deep North & Kall",
+            "/valheim/deep-north-guides/"
+          ],
+          [
+            "First Day Checklist",
+            "/valheim/first-day/"
+          ]
+        ],
+        "langs": "中文",
+        "pages": "auto"
+      }
     }
   ]
 }

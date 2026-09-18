@@ -373,8 +373,51 @@ URL 规则:
 
 | # | 事项 | 谁 |
 |---|---|---|
-| 1 | 内容增强:39×2 页补 `tldr`(3–4 行)与正文配图(每篇 3–5 张),样板见 `content/valheim/{en,zh}/kall.md` | 内容 agent |
-| 2 | 中文实体名:`entities.json` 里 43 个实体绝大多数 `name_zh == name_en`(`unverified_fields` 已标注),中文页信息框/表格因此显示英文名;要不要统一译名、按什么依据译,待拍板 | 站主 / 内容方 |
-| 3 | 英文 title 长度:31 篇 `seoTitle` 显示宽度 >60,8 个 <30,属 P1 | 内容方 |
-| 4 | 未绑实体的页面(新手/联机/生存类 19 页)没有信息框;是否需要为「机制类」实体(rested / food / death)设计另一种信息框样式,待定 | 站主 |
+| 1 | ~~内容增强:39×2 页补 `tldr` 与正文配图~~ —— 已完成,见 §11 | 内容 agent |
+| 2 | ~~中文实体名:统一译名~~ —— 部分完成(43 个实体中 24 个已填中文名,19 个仍为英文,多为专有名词/无通行译名),见 §11 | 站主 / 内容方 |
+| 3 | ~~英文 title 长度~~ —— 已修,`tech_audit` 复测 title >60 = 0、<30 = 2 | 内容方 |
+| 4 | 未绑实体的页面(新手/联机/生存类 19 页)没有信息框;是否需要为「机制类」实体(rested / food / death)设计另一种信息框样式,待定 —— **本轮已给 mechanic 类型加通用 key/value 信息框**(`hub/native.py` `_kv_rows`),rested/food/death 等页已用上;若还要覆盖新手/联机/生存类需先在 `entities.json` 补对应 `type: mechanic` 条目 | 站主 |
 | 5 | 合并 main 与上线:本分支**未合并、未上线**;合并后需在 GSC 重提 sitemap,并留意旧 `/valheim/<slug>/` 由中文改英文带来的收录波动 | 站主 |
+
+## 十一、内容增强 2026-09-18
+
+本轮在 v2 结构基础上做内容填充与数据修正,不改门禁脚本逻辑(仅 §10.4 记录过的 `check_content.py --dir-lang`、`check_i18n.py --root-default` 两处沿用)。
+
+### 11.1 做了什么
+
+- **tldr + 正文配图**:39×2 篇(kall 样板之外的全部文章页)补齐 `tldr`(3–4 行要点)与正文配图(`_images.json` 20 张范围内选取,中英同步同图不同 alt/图注);category/author/home 类页面不强制。
+- **`entity`/`entities` 绑定扩面**:新增绑定页面,信息框从「8 boss + 7 biome/区域页 + 6 个专项页」扩到覆盖更多文章;`hub/native.py` 新增 `type == "mechanic"` 的通用 key/value 信息框(`_kv_rows`,字段清单读数据、标签读 i18n,代码不认识具体字段含义),用于 rested/food/death 等机制类页面。
+- **entities.json 4 处 biome 漏项补全**(见 §11.2)。
+- **英文 `seoTitle` 长度修正**:37 处 `seoTitle` 改动(en+zh 两语种合计),消除显示宽度 >60 的问题页。
+- **`config/i18n/{en,zh-CN}.json`** 新增若干 `f_*` 字段标签(配合 mechanic 信息框与新增 frontmatter 字段)。
+
+### 11.2 entities.json 补项(独立对抗验证发现,fandom API 复核)
+
+验证方法论与结论见 `sites/valheim/verification/2026-09-18/ADV_ENTITIES.md`(完整报告,含 A/B 级抽样与全量核验记录)。触发原因:B 级抽样中命中 1 条 REFUTED(`black-forest.enemies` 缺 Rancid Remains),按协议升级为全量核验,又发现 3 处同类问题,合计 4 个 biome 5 处列表字段不完整。本次用 `https://valheim.fandom.com/api.php?action=parse&page=<Title>&prop=wikitext&format=json` 逐一复核 infobox 原文后补入(只加列表项与来源 URL,不改其他数值):
+
+| biome | 字段 | 补入项 |
+|---|---|---|
+| black-forest | enemies | Rancid Remains |
+| mountains | enemies | Draugr (Mountain towers)、Skeleton (Mountain towers / Cabins)、Bat (Frost Caves) |
+| ashlands | enemies | Fallen Valkyrie、Lava Blob、Volture、Skugg |
+| mistlands | enemies | Seeker Brood |
+| mistlands | key_resources | Dvergr extractor、Sealbreaker fragment、Blue jute |
+
+4 个 biome 的 `source_urls` 各追加对应 fandom 页面链接。
+
+### 11.3 门禁与统计复测(build.py 重跑后)
+
+门禁全绿,命令与 §10.4 一致,结果同为 0 阻塞 0 警告 / 无死链 / 全部在期内;`tech_audit`(只报告)较 §10.4 记录明显改善:title >60 从 31→0,<30 从 8→2;词数 <800 从 69→40(不阻塞,只报告)。占位语与 `待核验` grep 均为 0(`out/editorial-policy` 里 "coming soon" 是编辑方针原文里描述"我们不发布……"的否定句,非真实占位语)。
+
+`python3 scripts/valheim_stats.py` 复测:
+
+| 语言 | 页数 | 有信息框 | 有 tldr | 表格合计 | 图片合计 | 词数 min / 中位 / max |
+|---|---|---|---|---|---|---|
+| en | 40 | 26 | 40 | 60 | 112 | 266 / 891 / 1458 |
+| zh-CN | 40 | 26 | 40 | 60 | 112 | 431 / 1250 / 2572 |
+
+对比 §10.5(增强前):有 tldr 从 1→40,表格从 41→60,图片从 41→112;文章类页面(type=article)逐页复查,全部 ≥1 表、≥2 图,无 0 表或 <2 图的漏项。
+
+### 11.4 截图复查
+
+`scratchpad/v2/shots/enrich/{crafting,food,progression}-{390,1280}.png` 六张,390/1280 两档均无横向溢出、要点框（Key points）随内容正常撑高不溢出容器、表格在窄屏下仍套 `.table-scroll` 可横滑。各页第二张正文图在截图中呈空白色块——核实为 `loading="lazy"` 图片在全页截图工具未滚动到位时的常见捕获伪影(该图片实际 URL 直接 `curl` 返回 200,非死链),不是真实排版缺陷,未做改动。

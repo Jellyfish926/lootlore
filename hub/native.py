@@ -412,6 +412,39 @@ class NativeLang:
     def _ent_names(self, rows, key="item"):
         return ", ".join(str(self.loc(r, key)) for r in rows)
 
+    # 通用 key/value 信息框不显示的字段:实体数据管线的元信息,不是给读者看的事实。
+    KV_SKIP = ("type", "order", "page_slug", "source_urls", "accessed",
+               "unverified_fields", "name", "summary")
+
+    def _base_key(self, key):
+        """去掉字段名上的语种后缀:hazards_en / name_zh → hazards / name。"""
+        for lk in self.site_game.lang_keys:
+            if lk and key.endswith(f"_{lk}"):
+                return key[: -len(lk) - 1]
+        return key
+
+    def _kv_rows(self, ent):
+        """实体里非 null 的标量/短列表字段 → [(标签, 文本)]。
+        标签取 config/i18n 的 f_<字段名>;没有登记标签的字段不渲染(代码层不认识字段含义)。"""
+        rows, seen = [], set()
+        for key in ent:
+            base = self._base_key(key)
+            if base in self.KV_SKIP or base in seen:
+                continue
+            seen.add(base)
+            label = self.t.get(f"f_{base}")
+            v = self.loc(ent, base)
+            if not label or v in (None, "", [], {}):
+                continue
+            if isinstance(v, (dict,)):
+                continue
+            if isinstance(v, list):
+                v = ", ".join(str(x) for x in self._list(v))
+                if not v:
+                    continue
+            rows.append((label, str(v)))
+        return rows
+
     def quick_facts(self, ent):
         t = self.t
         rows = []
@@ -424,7 +457,12 @@ class NativeLang:
             rows.append((label, str(value)))
 
         typ = ent.get("type")
-        if typ == "boss":
+        lead = ""
+        if typ == "mechanic":
+            # 通用 key/value:字段清单来自数据,标签来自 i18n,本文件不认识任何字段的含义。
+            rows = self._kv_rows(ent)
+            lead = str(self.loc(ent, "summary") or "")
+        elif typ == "boss":
             add(t["f_biome"], self.loc(ent, "biome"))
             add(t["f_summon"], ", ".join(
                 f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("summon") or [])))
@@ -456,17 +494,23 @@ class NativeLang:
             add(t["f_station"], self.loc(ent, "crafted_at") or self.loc(ent, "source"))
             add(t["f_requires"], self.loc(ent, "requires"))
             add(t["f_unlocked_by"], self.loc(ent, "unlocked_by"))
+            add(t["f_usage"], self.loc(ent, "usage"))
             add(t["f_cargo"], ent.get("cargo_slots"))
             add(t["f_durability"], ent.get("durability"))
+            add(t["f_crafts_quantity"], ent.get("crafts_quantity"))
+            add(t["f_weight"], ent.get("weight"))
+            add(t["f_stack"], ent.get("stack"))
             add(t["c_material"], ", ".join(
                 f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("recipe") or [])))
-        if not rows:
+        if not rows and not lead:
             return ""
         body = "".join(f'<div class="qf-r"><dt>{esc(k)}</dt><dd>{v if k == t["f_boss"] else esc(v)}</dd></div>'
                        for k, v in rows)
         name = self.loc(ent, "name")
         return (f'<section class="qf"><h2 class="qf-h">{esc(name)}</h2>'
-                f'<p class="qf-sub">{esc(self.t["quick_facts"])}</p><dl>{body}</dl></section>')
+                f'<p class="qf-sub">{esc(self.t["quick_facts"])}</p>'
+                + (f'<p class="qf-lead">{esc(lead)}</p>' if lead else "")
+                + f'<dl>{body}</dl></section>')
 
     def _table(self, head, rows, label=None, sortable=False):
         sortattr = ' data-sortable="1"' if sortable else ""
@@ -1114,6 +1158,8 @@ class NativeGame:
             "label_key": "home", "default": True,
             "related_headings": [self.nc["related_heading"]] if self.nc.get("related_heading") else [],
         }]
+        # 实体字段上出现的语种后缀(name_en / hazards_zh …),用来还原字段基名
+        self.lang_keys = {s.get("dir") for s in specs if s.get("dir")} | {"en"}
         self.langs = [NativeLang(self, s) for s in specs]
         self.default_lang = next((l for l in self.langs if l.default), self.langs[0])
         self.default_code = self.default_lang.code

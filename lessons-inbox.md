@@ -34,3 +34,8 @@
    条件:32 篇攻略正文 685–963 个汉字,渲染后按 `tech_audit` 口径(`<main>` 内正文,含来源与关联阅读区)折算为 518–665 词、中位 568,按现行 ④⑤「内页 800–1500 词」全部算薄页。
    结论:折算公式本身没问题(防的是按空格分词的严重低估),问题在中文页的下限尚无单独规定;是否要求中文长文 ≥1600 汉字,待拍板。
    → 拍板后并入 SKILL.md ④⑤ 硬规格表「内页正文」行。
+
+7. **[2026-09-18 hotfix,待并入] 静态站改 CSS 后 URL 不变,Vercel `Cache-Control: max-age=86400` 会让老访客继续用浏览器缓存的旧 CSS 套在新 HTML 上——必须给 CSS(和 JS)URL 做内容哈希版本化,光靠改响应头不够。**
+   条件:`/native.css``/hub.css` 内容 v1→v2,URL 不变,响应头 `public, max-age=86400`;站主前一天访问过 v1,浏览器命中缓存直接用旧 CSS 渲染新 HTML,左侧菜单裸列表、checkbox 露出。改响应头为 `max-age=0, must-revalidate` 只能防未来的老缓存问题,不能让已经缓存了 v1(且未过期)的浏览器立刻拿到 v2——真正生效的是让 URL 随内容变化(`/hub.css?v=<sha1 前 8 位>`),这样新 HTML 天然指向新 URL,与响应头无关。
+   修法:`build.py` 新增 `version_css()`,构建期对 `hub.css`/`native.css` 源文件内容取 sha1 前 8 位,全局改写 `out/**/*.html` 里的 `href="/hub.css"`→`href="/hub.css?v=<hash>"`(同 native.css);子站快照(`sources/`)引用各自文件名的 css,不受影响,不用改。同时把 vercel.json 里 `*.css`/`*.js` 的 headers 从 `max-age=86400` 改成 `max-age=0, must-revalidate`(双保险,即使以后漏打版本号也不会被长缓存钉住)。
+   → 拍板后并入 `seo-jianzhan` §上线清单/发布前检查:「静态 HTML+CSS 分离站改 CSS 内容前,先确认引用 URL 是版本化的(哈希/查询参数),否则线上访客会花一整个 max-age 周期才看到修好的样式」。

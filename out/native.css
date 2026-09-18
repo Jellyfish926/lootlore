@@ -118,7 +118,7 @@
 .cover img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:var(--panel);aspect-ratio:16/9;object-fit:cover}
 .cover figcaption,.body-fig figcaption{color:var(--dim);font-size:.78rem;margin-top:6px;line-height:1.5}
 .body-fig{margin:0 0 20px}
-.body-fig img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:var(--panel)}
+.body-fig img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:var(--panel);aspect-ratio:16/9;object-fit:cover}
 .fig-src{color:var(--dim)}
 
 /* hub 页首屏一句话 */

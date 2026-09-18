@@ -10,7 +10,7 @@
 用法:  python3 build.py            # 组装到 out/
        python3 build.py --base https://xxx.vercel.app   # 覆盖 base_url
 """
-import json, re, shutil, sys, datetime
+import hashlib, json, re, shutil, sys, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -447,6 +447,22 @@ def gen_root_files():
     (OUT / "llms.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def version_css(out_dir: Path):
+    """总站自有 CSS(hub.css / native.css)按内容 sha1 前 8 位打 ?v=,
+    使浏览器缓存的旧 CSS 不会套在新 HTML 上(子站快照 sources/ 里的页面引用各自的 css 文件名,不受影响)。"""
+    hub_h = hashlib.sha1((out_dir / "hub.css").read_bytes()).hexdigest()[:8]
+    nat_h = hashlib.sha1((out_dir / "native.css").read_bytes()).hexdigest()[:8]
+    n = 0
+    for p in out_dir.rglob("*.html"):
+        html = p.read_text(encoding="utf-8")
+        new = html.replace('href="/hub.css"', f'href="/hub.css?v={hub_h}"')
+        new = new.replace('href="/native.css"', f'href="/native.css?v={nat_h}"')
+        if new != html:
+            p.write_text(new, encoding="utf-8")
+            n += 1
+    print(f"  css 版本化: hub.css?v={hub_h} native.css?v={nat_h}(改写 {n} 个 html)")
+
+
 def gen_vercel_json():
     redirects = []
     for g in CFG["games"]:
@@ -475,8 +491,11 @@ def gen_vercel_json():
                 {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
                 {"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"},
             ]},
-            {"source": "/(.*)\\.(css|jpg|png|svg|ico)", "headers": [
+            {"source": "/(.*)\\.(jpg|png|svg|ico)", "headers": [
                 {"key": "Cache-Control", "value": "public, max-age=86400"},
+            ]},
+            {"source": "/(.*)\\.(css|js)", "headers": [
+                {"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"},
             ]},
         ],
     }
@@ -492,6 +511,7 @@ def main():
             migrate_game(g)
     render_native_games()
     render_hub_pages()
+    version_css(OUT)
     gen_root_files()
     gen_vercel_json()
     n = len(list(OUT.rglob("*.html")))

@@ -459,3 +459,26 @@ Playwright 复测(`scratchpad/v2/shot_final.py`,crafting/kall × 390/1280 共 4 
 **旧中文 URL 说明**:v1 的 `/valheim/<slug>/` 原为中文页,v2 起是英文页,中文移到 `/valheim/zh/<slug>/`;未做 301(同一 URL 只是换了语言,canonical 自指即可),中文页通过 hreflang 与页内切换器可达,详见 §10.1。
 
 **待站主**:GSC 重提 sitemap 并留意旧 `/valheim/<slug>/` 因语言判定变化带来的收录波动(同 §10.7 #5);§10.7 其余未完成项(机制类实体信息框覆盖范围、19 个未译中文实体名)仍待站主拍板。
+
+## 十三、线上问题 hotfix(2026-09-18)
+
+**问题**:站主浏览器里 `/valheim/` 完全没样式(左侧菜单裸列表、`.navtoggle` checkbox 露出)。根因:`/native.css`/`/hub.css` URL 不变但内容 v1→v2 换了,Vercel 响应 `cache-control: public, max-age=86400`,站主昨天访问过 v1,浏览器缓存的旧 CSS 套在新 HTML 上。另有次要问题:hero 封面图 `loading="lazy"` + 1920×1080 原图,首屏留一块空黑框。
+
+**改动**:
+1. `build.py` 新增 `version_css()`:构建期对 `hub/style.css`/`hub/native.css` 源内容取 sha1 前 8 位,构建结束后全局改写 `out/**/*.html` 里 `href="/hub.css"`→`?v=<hash>`、`href="/native.css"`→`?v=<hash>`(子站快照 `sources/` 引用各自文件名的 css,不受影响)。`gen_vercel_json()` 里 `*.css`/`*.js` 的 headers 从 `max-age=86400` 改成 `max-age=0, must-revalidate`(双保险)。
+2. `hub/native.py`:`cover()` 改用 `_images.json` 里已有的 `src_small`(600×338)做 hero 的实际 `src`,`loading="eager" fetchpriority="high"`(原图 1920×1080 仍留在 `srcset` 里给大屏用);`img_cb_factory`/`figure_cb_factory` 的正文图也改用 600×338 做 `src`,保持 `loading="lazy"`。栏目页(`type=category`)去掉 hero 大图,排序表(`agg_table`)从文末 `extra` 移到要点框(`kp`)之后渲染。`hub/native.css` 给 `.body-fig img` 补 `aspect-ratio:16/9` 与占位背景(`.cover img` 已有)。
+3. `.navtoggle` checkbox 隐藏样式(`position:absolute;opacity:0`)本已存在,未改;根因是 CSS 没命中,不是选择器缺失。
+
+**门禁**(本地对重建后的 `out/` 复现 §10.4/§11.3 全部命令):`build.py` → `built 567 html pages`,`css 版本化: hub.css?v=2c0919a4 native.css?v=ad4ae3d6(改写 93 个 html)`;`check_content` 558 页 0 阻塞 0 警告;`check_i18n`(5 个既有游戏)0 阻塞 0 警告;`check_i18n`(valheim)41/41 页 0 阻塞;`check_sitemap` 566 条 loc 0 阻塞;`link_check --out out` 585 条链接 ✓ 无死链;`freshness_audit` 全部在期内;`tech_audit`(只报告)`missing_width_or_height` 0、og:image 缺 2(与改动前一致,非本次引入)。`grep -rl 'href="/hub\.css"' out/` 与 `href="/native.css"` 均为 0 处裸引用。
+
+**截图**(Playwright Chromium,`out/` 本地静态服务器,视口截图非全页):`/valheim/` 与 `/valheim/bosses/` 1280/1920 宽首屏均落在 `scratchpad/v2/shots/hotfix/`。观察:CSS 命中,左侧导航正常分组样式,`.navtoggle` checkbox 不可见;`/valheim/` 首屏可见完整加载的 hero 图(非空黑框);`/valheim/bosses/`(栏目页)无 hero,要点框下直接是可排序表格。
+
+**提交与合并**:`git fetch` 确认本地 main 与 `origin/main` 同点(`42fc881`),直接在 main 上提交,无需 rebase/合并。commit 见下方,`git push origin main`。
+
+**线上验证**(部署成功后):
+| 项 | 结果 |
+|---|---|
+| `curl -s .../valheim/ \| grep -o 'href="/[^"]*\.css[^"]*"'` | 待填 |
+| `curl -sI .../native.css` cache-control | 待填 |
+| hero `<img>` 含 `600x338` 与 `eager` | 待填 |
+| deployment 状态 | 待填 |

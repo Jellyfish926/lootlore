@@ -310,15 +310,21 @@ class NativeLang:
     def img_cb_factory(self, page):
         def cb(src, alt, title):
             im = self._resolve_img(src, alt)
-            wh = f' width="{im["w"]}" height="{im["h"]}"' if im.get("w") else ""
-            return (f'<img src="{esc(im["src"])}"{wh} alt="{esc(im["alt"])}"'
+            body_src = im.get("src_small") or im["src"]
+            w = im.get("small_w") or im.get("w")
+            h = int(round(w * im["h"] / im["w"])) if im.get("w") else None
+            wh = f' width="{w}" height="{h}"' if w else ""
+            return (f'<img src="{esc(body_src)}"{wh} alt="{esc(im["alt"])}"'
                     f' loading="lazy" decoding="async">')
         return cb
 
     def figure_cb_factory(self, page):
         def cb(src, alt, title):
             im = self._resolve_img(src, alt)
-            wh = f' width="{im["w"]}" height="{im["h"]}"' if im.get("w") else ""
+            body_src = im.get("src_small") or im["src"]
+            w = im.get("small_w") or im.get("w")
+            h = int(round(w * im["h"] / im["w"])) if im.get("w") else None
+            wh = f' width="{w}" height="{h}"' if w else ""
             srcset = ""
             if im.get("src_small"):
                 srcset = (f' srcset="{esc(im["src_small"])} {im["small_w"]}w, {esc(im["src"])} {im["w"]}w"'
@@ -326,7 +332,7 @@ class NativeLang:
             cap = title or im["alt"]
             cr = self.credit()
             capline = esc(cap) + (f'<span class="fig-src">{esc(self.t["sep"])}{esc(cr)}</span>' if cr else "")
-            return (f'<figure class="body-fig"><img src="{esc(im["src"])}"{srcset}{wh}'
+            return (f'<figure class="body-fig"><img src="{esc(body_src)}"{srcset}{wh}'
                     f' alt="{esc(im["alt"])}" loading="lazy" decoding="async">'
                     f'<figcaption>{capline}</figcaption></figure>')
         return cb
@@ -677,17 +683,22 @@ class NativeLang:
         return nav, ld
 
     def cover(self, p):
+        """首屏封面(hero):用 600x338 尺寸变体做实际加载图,eager + fetchpriority=high,
+        避免 1920x1080 原图在首屏留出一块空黑框。og:image 等仍用原图(im 保留完整字段)。"""
         im = self.image_for(p)
         if not im:
             return "", None
+        hero_src = im.get("src_small") or im["src"]
+        hero_w = im.get("small_w") or im["w"]
+        hero_h = int(round(hero_w * im["h"] / im["w"])) if im.get("w") else im["h"]
         srcset = ""
         if im.get("src_small"):
             srcset = (f' srcset="{esc(im["src_small"])} {im["small_w"]}w, {esc(im["src"])} {im["w"]}w"'
                       f' sizes="(max-width: 860px) 100vw, 760px"')
         credit = self.credit()
         alt = self.alt_of(im)
-        fig = (f'<figure class="cover"><img src="{esc(im["src"])}"{srcset} width="{im["w"]}" height="{im["h"]}"'
-               f' alt="{esc(alt)}" loading="lazy" decoding="async">'
+        fig = (f'<figure class="cover"><img src="{esc(hero_src)}"{srcset} width="{hero_w}" height="{hero_h}"'
+               f' alt="{esc(alt)}" loading="eager" fetchpriority="high" decoding="async">'
                + (f"<figcaption>{esc(credit)}</figcaption>" if credit else "") + "</figure>")
         return fig, dict(im, alt=alt)
 
@@ -906,6 +917,7 @@ class NativeLang:
                        + "".join(f"<li>{mdlite.inline(x, self.link_cb_factory(p, ext_labels))}</li>"
                                  for x in tldr) + "</ul></section>")
 
+        cat_agg_html = ""
         if p.type == "home":
             # hero:封面下的一句话 = 首页稿第一段;其余稿件收进「关于本攻略」折叠段
             toc = []   # hub 页目录只列生成出来的区块,正文小标题在折叠段里,不进目录
@@ -937,8 +949,8 @@ class NativeLang:
             tbl, label, intro = self.agg_table((self.nc.get("category_tables") or {}).get(p.slug))
             if tbl:
                 hid = mdlite.slugify(label, used)
-                extra.append(f'<section class="agg"><h2 id="{hid}">{esc(label)}</h2>'
-                             f'<p>{esc(intro)}</p>{tbl}</section>')
+                cat_agg_html = (f'<section class="agg"><h2 id="{hid}">{esc(label)}</h2>'
+                                f'<p>{esc(intro)}</p>{tbl}</section>')
                 toc.append((hid, label))
                 scripts += SORT_JS
         elif p.type == "author":
@@ -1000,13 +1012,15 @@ class NativeLang:
 
         crumbs_html, crumbs_ld = self.crumbs(p)
         fig, im = self.cover(p)
+        if p.type == "category":
+            fig = ""  # 栏目页去掉 hero 大图,排序表/卡片网格直接接在要点框之后
         h1_html = mdlite.inline(mdlite.plain(h1_text))
 
-        # 版面顺序:要点框 → 封面 → 目录 → (数据区块) → 正文 → 表/来源/关联
+        # 版面顺序:要点框 → (栏目页:排序表) → 封面 → 目录 → (数据区块) → 正文 → 表/来源/关联
         kp_html = pre.pop(0) if tldr else ""
         lede_html = (f'<p class="lede">{mdlite.inline(lede, self.link_cb_factory(p, ext_labels))}</p>'
                      if lede else "")
-        body = (kp_html + fig + lede_html + toc_html + '<div class="prose">'
+        body = (kp_html + cat_agg_html + fig + lede_html + toc_html + '<div class="prose">'
                 + "\n".join(pre) + "\n" + body_html + "\n" + "".join(extra) + "</div>")
 
         # JSON-LD

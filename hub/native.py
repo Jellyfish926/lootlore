@@ -445,7 +445,7 @@ class NativeLang:
             rows.append((label, str(v)))
         return rows
 
-    def quick_facts(self, ent):
+    def quick_facts(self, ent, first=True):
         t = self.t
         rows = []
 
@@ -507,10 +507,11 @@ class NativeLang:
         body = "".join(f'<div class="qf-r"><dt>{esc(k)}</dt><dd>{v if k == t["f_boss"] else esc(v)}</dd></div>'
                        for k, v in rows)
         name = self.loc(ent, "name")
-        return (f'<section class="qf"><h2 class="qf-h">{esc(name)}</h2>'
+        open_attr = " open" if first else ""
+        return (f'<details class="qf"{open_attr}><summary class="qf-h">{esc(name)}</summary>'
                 f'<p class="qf-sub">{esc(self.t["quick_facts"])}</p>'
                 + (f'<p class="qf-lead">{esc(lead)}</p>' if lead else "")
-                + f'<dl>{body}</dl></section>')
+                + f'<dl>{body}</dl></details>')
 
     def _table(self, head, rows, label=None, sortable=False):
         sortattr = ' data-sortable="1"' if sortable else ""
@@ -895,7 +896,7 @@ class NativeLang:
                                   self.img_cb_factory(p), self.figure_cb_factory(p))
 
         ents = self.entities_of(p)
-        aside = "".join(self.quick_facts(e) for e in ents)
+        aside = "".join(self.quick_facts(e, first=(i == 0)) for i, e in enumerate(ents))
 
         pre, extra, scripts = [], [], ""
         # 要点框

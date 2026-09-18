@@ -82,8 +82,12 @@
 /* ---------- 右侧速查信息框 ---------- */
 .rail{position:sticky;top:12px;margin:18px 0 0}
 .qf{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0 0 18px}
-.qf-h{margin:0;padding:10px 14px 2px;font-size:1rem;color:var(--ink);
-  background:color-mix(in srgb,var(--a) 25%,transparent);line-height:1.35}
+.qf-h{margin:0;padding:10px 14px;font-size:1rem;color:var(--ink);
+  background:color-mix(in srgb,var(--a) 25%,transparent);line-height:1.35;cursor:pointer;
+  list-style:none;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.qf-h::-webkit-details-marker{display:none}
+.qf-h::after{content:"\25BE";color:var(--mut);flex:0 0 auto}
+.qf[open] .qf-h::after{content:"\25B4"}
 .qf-sub{margin:0;padding:0 14px 9px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
   color:var(--mut);background:color-mix(in srgb,var(--a) 25%,transparent)}
 .qf-lead{margin:0;padding:10px 12px;border-top:1px solid var(--line);
@@ -93,6 +97,14 @@
 .qf-r dt{padding:7px 12px;color:var(--ink);font-size:.82rem;font-weight:600;
   background:color-mix(in srgb,var(--line) 35%,transparent)}
 .qf-r dd{margin:0;padding:7px 12px;color:var(--mut);font-size:.86rem;overflow-wrap:anywhere;line-height:1.55}
+/* 桌面(≥1025px):强制展开全部信息框,summary 只作语义标题不可见/不可折叠 */
+@media(min-width:1025px){
+  @supports selector(::details-content){
+    .qf>summary{display:none!important}
+    .qf::details-content{display:block!important;content-visibility:visible!important;
+      height:auto!important;overflow:visible!important}
+  }
+}
 
 /* ---------- 要点框 ---------- */
 .kp{background:color-mix(in srgb,var(--a) 12%,var(--panel));border:1px solid var(--a);

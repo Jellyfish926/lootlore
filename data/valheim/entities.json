@@ -570,13 +570,18 @@
     {
      "en": "Ghost",
      "zh": ""
+    },
+    {
+     "en": "Rancid Remains",
+     "zh": ""
     }
    ],
    "unlocks": [],
    "hazards_en": "Only biome where Copper and Tin ore are mined (requires Antler pickaxe from Eikthyr).",
    "hazards_zh": "",
    "source_urls": [
-    "https://valheim.wiki/w/Black_Forest"
+    "https://valheim.wiki/w/Black_Forest",
+    "https://valheim.fandom.com/wiki/Black_Forest"
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [
@@ -704,13 +709,26 @@
     {
      "en": "Ulv (Frost Cave)",
      "zh": ""
+    },
+    {
+     "en": "Draugr (Mountain towers)",
+     "zh": ""
+    },
+    {
+     "en": "Skeleton (Mountain towers / Cabins)",
+     "zh": ""
+    },
+    {
+     "en": "Bat (Frost Caves)",
+     "zh": ""
     }
    ],
    "unlocks": [],
    "hazards_en": "Snow storms deal continuous Freezing damage without frost resistance.",
    "hazards_zh": "",
    "source_urls": [
-    "https://valheim.wiki/w/Mountain"
+    "https://valheim.wiki/w/Mountain",
+    "https://valheim.fandom.com/wiki/Mountain"
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
@@ -806,6 +824,18 @@
     {
      "en": "Soft tissue",
      "zh": ""
+    },
+    {
+     "en": "Dvergr extractor",
+     "zh": ""
+    },
+    {
+     "en": "Sealbreaker fragment",
+     "zh": ""
+    },
+    {
+     "en": "Blue jute",
+     "zh": ""
     }
    ],
    "enemies": [
@@ -824,13 +854,18 @@
     {
      "en": "Gjall",
      "zh": ""
+    },
+    {
+     "en": "Seeker Brood",
+     "zh": ""
     }
    ],
    "unlocks": [],
    "hazards_en": "Perpetual mist obscures vision; Wisplight/Wisp torch (require Yagluth defeated) needed to clear it.",
    "hazards_zh": "",
    "source_urls": [
-    "https://valheim.wiki/w/Mistlands"
+    "https://valheim.wiki/w/Mistlands",
+    "https://valheim.fandom.com/wiki/Mistlands"
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
@@ -896,13 +931,30 @@
     {
      "en": "Bonemaw Serpent",
      "zh": ""
+    },
+    {
+     "en": "Fallen Valkyrie",
+     "zh": ""
+    },
+    {
+     "en": "Lava Blob",
+     "zh": ""
+    },
+    {
+     "en": "Volture",
+     "zh": ""
+    },
+    {
+     "en": "Skugg",
+     "zh": ""
     }
    ],
    "unlocks": [],
    "hazards_en": "Surrounding water is boiling and destroys all wooden ships (Drakkar required to sail there).",
    "hazards_zh": "",
    "source_urls": [
-    "https://valheim.wiki/w/Ashlands"
+    "https://valheim.wiki/w/Ashlands",
+    "https://valheim.fandom.com/wiki/Ashlands"
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
@@ -1180,7 +1232,7 @@
   "cultivator": {
    "type": "station",
    "name_en": "Cultivator",
-   "name_zh": "Cultivator",
+   "name_zh": "耕地耙",
    "recipe": [
     {
      "item_en": "Corewood",
@@ -1199,10 +1251,9 @@
     "https://valheim.wiki/w/Cultivator"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": [
-    "name_zh (content pack keeps English name / uses generic 耕种工具)"
-   ],
-   "page_slug": "farming"
+   "unverified_fields": [],
+   "page_slug": "farming",
+   "name_zh_source": "https://valheim.fandom.com/zh/wiki/%E8%80%95%E5%9C%B0%E8%80%99"
   },
   "black-forge": {
    "type": "station",
@@ -1600,7 +1651,8 @@
    "accessed": "2026-09-18",
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
-   ]
+   ],
+   "page_slug": "deep-north"
   },
   "bloodgold": {
    "type": "item",
@@ -1615,7 +1667,8 @@
     "https://valheim.wiki/w/Bloodgold"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "page_slug": "deep-north"
   },
   "frostcore": {
    "type": "item",
@@ -1632,7 +1685,8 @@
    "accessed": "2026-09-18",
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
-   ]
+   ],
+   "page_slug": "deep-north"
   },
   "malicious-blood": {
    "type": "item",
@@ -1649,7 +1703,8 @@
    "accessed": "2026-09-18",
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
-   ]
+   ],
+   "page_slug": "deep-north"
   },
   "rested": {
    "type": "mechanic",
@@ -1666,7 +1721,8 @@
     "https://valheim.wiki/w/Comfort"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "page_slug": "rested"
   },
   "food": {
    "type": "mechanic",
@@ -1678,7 +1734,8 @@
     "https://valheim.wiki/w/Food"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "page_slug": "food"
   },
   "death": {
    "type": "mechanic",
@@ -1692,7 +1749,8 @@
     "https://valheim.wiki/w/Death"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "page_slug": "death-recovery"
   }
  },
  "_page_slug_note": "page_slug 由管线 agent 按内容页实际存在与否补齐(2026-09-18);只影响页面绑定与表格内链,不改任何数值字段。"

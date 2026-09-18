@@ -421,3 +421,41 @@ URL 规则:
 ### 11.4 截图复查
 
 `scratchpad/v2/shots/enrich/{crafting,food,progression}-{390,1280}.png` 六张,390/1280 两档均无横向溢出、要点框（Key points）随内容正常撑高不溢出容器、表格在窄屏下仍套 `.table-scroll` 可横滑。各页第二张正文图在截图中呈空白色块——核实为 `loading="lazy"` 图片在全页截图工具未滚动到位时的常见捕获伪影(该图片实际 URL 直接 `curl` 返回 200,非死链),不是真实排版缺陷,未做改动。
+
+## 十二、v2 上线记录(2026-09-18)
+
+**移动端修正**:crafting 这类绑 4 个实体的页面,390 宽下 4 个 Quick Facts 信息框此前全部展开堆在正文前,把正文推到很下面(见 §10.6 截图观察)。改法:`hub/native.py` 的 `quick_facts()` 把每个信息框从 `<section class="qf">` 改成 `<details class="qf">`,首个实体 `open`、其余默认折叠,`summary` 显示实体名(原来的 `<h2 class="qf-h">` 移到 `<summary>` 里)。`hub/native.css` 加 `@media(min-width:1025px)` 规则,用 `::details-content` 伪元素强制覆盖浏览器对未展开 `<details>` 的原生折叠渲染(纯 `display:block!important` 不够,Chromium 对未 `open` 的 details 内容有独立于 `display` 的折叠机制,必须覆盖 `::details-content` 才能显示;外层再包一层 `@supports selector(::details-content)`,不支持该伪元素的浏览器退化为「可点击展开」而非强制展开,不影响可用性)。
+
+Playwright 复测(`scratchpad/v2/shot_final.py`,crafting/kall × 390/1280 共 4 张,存于 `scratchpad/v2/shots/final/`,会话临时目录未入库):
+
+- 390 宽:crafting 4 个信息框中仅第一个(Workbench)展开,Forge/Smelter/Charcoal Kiln 折叠为纯标题行,正文(Key points/目录/正文)紧随其后,不再被推到底部;`docTop` 从改动前的更深位置提到 y=887。kall(单实体)展开态与改动前一致,无回归。
+- 1280 宽:crafting 4 个信息框全部强制展开、`summary` 隐藏,视觉与改动前(全展开)一致;kall 单实体信息框无变化。
+- 两页两档 `scrollWidth == clientWidth`,均无横向溢出。
+
+**门禁**(对重建后的 `out/` 复现 §10.4 全部命令):`check_content` 558 页 0 阻塞 0 警告;`check_i18n`(5 个既有游戏)0 阻塞 0 警告;`check_i18n`(valheim)41/41 页 0 阻塞;`check_sitemap` 566 条 loc 0 阻塞;`link_check --out out` 585 条链接 ✓ 无死链;`freshness_audit` 全部在期内;`tech_audit`(只报告)与 §11.3 一致(title >60=0、<30=2;词数 <800=40,不阻塞);占位语 grep 0(`out/editorial-policy` 的 "coming soon" 假阳性同 §11.3);代码层游戏专属文字 grep 0。
+
+**提交与合并**:commit `5149b20`(`fix(valheim): 移动端 Quick Facts 信息框改为可折叠 details`)push 到 `valheim-v2`。`git fetch origin main` 显示 main 未新增提交(main 与 valheim-v2 分叉点相同,`main..valheim-v2` 14 commits,`valheim-v2..main` 0 commits),**无需 rebase**。`git checkout main && git merge --ff-only valheim-v2` 成功(fast-forward,无新合并提交),main 落在 `5149b20`。`git push origin main`:`f1a9355..5149b20`。`git fetch` 后 `git status -sb` = `## main...origin/main`(ahead 0 / behind 0)。
+
+**Vercel 部署**:`/repos/Jellyfish926/lootlore/deployments?per_page=5`(未按 environment 过滤)显示同一 sha `5149b20` 先建 Preview 部署(id `6518734480`,来自 valheim-v2 分支推送),随后 main 推送追加 Production 部署:
+
+- deployment id `6518737567`,environment `Production`,sha `5149b20`,created_at `2026-09-18T06:16:26Z`
+- 状态(`/deployments/6518737567/statuses`):`state=success`,`description=Deployment has completed`
+
+**线上验证**(`https://lootlore-ten.vercel.app`,2026-09-18 06:1x UTC):
+
+| 检查项 | 结果 |
+|---|---|
+| `/` `/valheim/` `/valheim/kall/` `/valheim/bosses/` `/valheim/zh/` `/valheim/zh/kall/` `/valheim/all/` `/valheim/search-index.json` | 均 200,`last-modified` 均为 `2026-09-18 06:17:1x GMT` |
+| `/valheim/kall/` | `lang="en"` 有、`Quick facts` 有、`hreflang="zh-CN"` 有 |
+| `/valheim/zh/kall/` | `lang="zh-CN"` 有、`无敌` 有 |
+| `/valheim/bosses/` `/valheim/` | 均含 `<table`;`/valheim/` 另含 `class="tile` 网格 |
+| `/valheim/crafting/`(线上,验证本次修复) | `<details class="qf">` 出现 4 次 |
+| `/sitemap.xml` | 200,`/valheim/` 条目数 82(含 `/valheim/zh/` 41) |
+| `/robots.txt` | 200,`Sitemap: https://lootlore-ten.vercel.app/sitemap.xml`(无尾斜杠) |
+| `/ads.txt` | 200 |
+| `link_check.py --live lootlore-ten.vercel.app` | sitemap 566 页,585 条站内链接,✓ 无死链 |
+| GitHub Actions 最近一次 `gates` run(main,sha `5149b20`) | `conclusion: success`(run id `35314163925`) |
+
+**旧中文 URL 说明**:v1 的 `/valheim/<slug>/` 原为中文页,v2 起是英文页,中文移到 `/valheim/zh/<slug>/`;未做 301(同一 URL 只是换了语言,canonical 自指即可),中文页通过 hreflang 与页内切换器可达,详见 §10.1。
+
+**待站主**:GSC 重提 sitemap 并留意旧 `/valheim/<slug>/` 因语言判定变化带来的收录波动(同 §10.7 #5);§10.7 其余未完成项(机制类实体信息框覆盖范围、19 个未译中文实体名)仍待站主拍板。

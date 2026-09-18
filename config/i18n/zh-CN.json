@@ -27,12 +27,89 @@
   "table_label": "表格（可左右滑动查看）",
   "crumb_sep": "›",
   "trust": [
-    ["关于我们", "/about"],
-    ["联系我们", "/contact"],
-    ["编辑方针", "/editorial-policy"],
-    ["隐私政策", "/privacy-policy"],
-    ["使用条款", "/terms"],
-    ["免责声明", "/disclaimer"]
+    [
+      "关于我们",
+      "/about"
+    ],
+    [
+      "联系我们",
+      "/contact"
+    ],
+    [
+      "编辑方针",
+      "/editorial-policy"
+    ],
+    [
+      "隐私政策",
+      "/privacy-policy"
+    ],
+    [
+      "使用条款",
+      "/terms"
+    ],
+    [
+      "免责声明",
+      "/disclaimer"
+    ]
   ],
-  "footer_note": "非官方玩家攻略，与游戏开发商及发行商无关联。游戏名称、截图与商标归各自权利方所有。"
+  "footer_note": "非官方玩家攻略，与游戏开发商及发行商无关联。游戏名称、截图与商标归各自权利方所有。",
+  "site_nav": "攻略导航",
+  "open_menu": "攻略菜单",
+  "tools_group": "工具",
+  "about_group": "关于",
+  "search": "搜索",
+  "search_placeholder": "搜索本站攻略",
+  "search_no_results": "没有匹配的攻略。",
+  "search_hint": "输入关键词过滤攻略标题。",
+  "key_points": "要点",
+  "quick_facts": "速查信息",
+  "summon_items": "召唤材料",
+  "drops": "掉落",
+  "recipe": "配方",
+  "resistances": "抗性",
+  "f_biome": "生物群系",
+  "f_summon": "召唤物",
+  "f_health": "生命值",
+  "f_damage": "伤害类型",
+  "f_weak": "弱点",
+  "f_resistant": "抗性",
+  "f_very_resistant": "高抗性",
+  "f_immune": "免疫",
+  "f_drops": "掉落",
+  "f_forsaken": "被遗弃者之力",
+  "f_unlocks": "解锁",
+  "f_boss": "首领",
+  "f_key_resources": "关键资源",
+  "f_enemies": "敌人",
+  "f_hazards": "环境风险",
+  "f_station": "制作台",
+  "f_cargo": "货舱格数",
+  "f_durability": "耐久",
+  "f_requires": "前置",
+  "f_unlocked_by": "解锁条件",
+  "c_item": "物品",
+  "c_quantity": "数量",
+  "c_material": "材料",
+  "c_order": "顺序",
+  "c_name": "名称",
+  "c_entry_table": "总览表",
+  "boss_table": "首领速查表",
+  "boss_table_intro": "召唤材料、生命值与伤害构成汇总在一张可排序的表里。点击表头即可按该列排序。",
+  "biome_table": "区域顺序",
+  "biome_table_intro": "按推进顺序列出各区域，以及对应首领、主要资源与会遇到的敌人。",
+  "sort_by": "按{col}排序",
+  "hero_tiles": "攻略栏目",
+  "start_here": "从这里开始",
+  "about_this_guide": "关于本攻略",
+  "prev_guide": "上一篇",
+  "next_guide": "下一篇",
+  "language": "语言",
+  "lang_en": "English",
+  "lang_zh": "中文",
+  "checked_badge": "v{v}",
+  "all_page_title": "全部攻略",
+  "all_page_seo": "{game}全部攻略列表",
+  "all_page_desc": "按栏目列出本站已发布的全部{game}攻略的纯链接清单。",
+  "all_page_intro": "按栏目列出全部已发布攻略。搜索不可用时可以用这一页。",
+  "skip_to_content": "跳到正文"
 }

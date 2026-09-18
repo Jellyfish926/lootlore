@@ -1,0 +1,54 @@
+{
+ "fetched": "2026-09-18",
+ "game_version": "1.0.12",
+ "sources_note": "FIXTURE (2 entities) — 管线自测用,数值逐条摘自 valheim.wiki api.php wikitext;真数据由数据 agent 产出后整体替换。",
+ "fixture": true,
+ "entities": {
+  "kall": {
+   "type": "boss",
+   "name_en": "Kall Fimbulbringer",
+   "name_zh": "Kall Fimbulbringer",
+   "page_slug": "kall",
+   "order": 8,
+   "biome": "Deep North",
+   "biome_zh": "深北之境",
+   "summon": [{"item_en": "Malicious Blood", "item_zh": "Malicious Blood", "qty": 3}],
+   "hp": "10000 + 7000 + 30000",
+   "hp_source": "https://valheim.wiki/w/Kall_Fimbulbringer",
+   "damage_types": ["Blunt", "Chop", "Pickaxe", "Frost", "Fire", "Pierce"],
+   "weak": [],
+   "resistant": ["Pierce", "Fire", "Frost", "Lightning"],
+   "very_resistant": [],
+   "immune": ["Spirit"],
+   "drops": [
+    {"item_en": "Sacrificial Blood", "item_zh": "Sacrificial Blood", "qty": "1"},
+    {"item_en": "Crown Jewel", "item_zh": "Crown Jewel", "qty": "1"}
+   ],
+   "forsaken_power": null,
+   "unlocks_en": "Seasoning of the Gourd from The Bog Witch for 220 Coins",
+   "unlocks_zh": "解锁 The Bog Witch 处售价 220 Coins 的 Seasoning of the Gourd",
+   "source_urls": ["https://valheim.wiki/w/Kall_Fimbulbringer"],
+   "accessed": "2026-09-18",
+   "unverified_fields": ["forsaken_power"]
+  },
+  "karve": {
+   "type": "boat",
+   "name_en": "Karve",
+   "name_zh": "Karve",
+   "page_slug": "ships",
+   "recipe": [
+    {"item_en": "Finewood", "item_zh": "Finewood", "qty": 30},
+    {"item_en": "Deer hide", "item_zh": "Deer hide", "qty": 10},
+    {"item_en": "Resin", "item_zh": "Resin", "qty": 20},
+    {"item_en": "Bronze nails", "item_zh": "Bronze nails", "qty": 80}
+   ],
+   "cargo_slots": 4,
+   "crafted_at_en": "Workbench",
+   "crafted_at_zh": "工作台",
+   "durability": 500,
+   "source_urls": ["https://valheim.wiki/w/Karve"],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  }
+ }
+}

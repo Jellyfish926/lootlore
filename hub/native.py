@@ -391,6 +391,24 @@ class NativeLang:
         return f'<nav class="prevnext" aria-label="{esc(self.t["related"])}">{"".join(bits)}</nav>' if bits else ""
 
     # ------------------------------------------------------------ entity components
+    def _hp(self, ent):
+        """hp 为 null 但给了分阶段血量时,按阶段串起来显示。"""
+        if ent.get("hp") not in (None, ""):
+            return ent["hp"]
+        ph = ent.get("hp_phases")
+        return " + ".join(str(x) for x in ph) if ph else ""
+
+    def _list(self, rows):
+        """[{en, zh}] 或 [str] → 按语种取值的纯文本列表;传进来不是列表就当空。"""
+        if isinstance(rows, str):
+            return [rows] if rows else []
+        out = []
+        for x in rows or []:
+            v = (x.get(self.nk) or x.get("en") or "") if isinstance(x, dict) else str(x)
+            if v:
+                out.append(v)
+        return out
+
     def _ent_names(self, rows, key="item"):
         return ", ".join(str(self.loc(r, key)) for r in rows)
 
@@ -410,7 +428,7 @@ class NativeLang:
             add(t["f_biome"], self.loc(ent, "biome"))
             add(t["f_summon"], ", ".join(
                 f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("summon") or [])))
-            add(t["f_health"], ent.get("hp"))
+            add(t["f_health"], self._hp(ent))
             add(t["f_damage"], ent.get("damage_types"))
             add(t["f_weak"], ent.get("weak"))
             add(t["f_resistant"], ent.get("resistant"))
@@ -429,14 +447,13 @@ class NativeLang:
                 bs = self.ents[b].get("page_slug")
                 add(t["f_boss"], f'<a href="{self.route_slug(bs)}">{esc(bn)}</a>'
                     if bs and self.is_live(bs) else esc(bn))
-            add(t["f_key_resources"], [self.loc(x, "") or x.get(self.nk) or x.get("en")
-                                       for x in (ent.get("key_resources") or [])])
-            add(t["f_enemies"], [x.get(self.nk) or x.get("en") for x in (ent.get("enemies") or [])])
-            add(t["f_unlocks"], [x.get(self.nk) or x.get("en") if isinstance(x, dict) else x
-                                 for x in (ent.get("unlocks") or [])])
+            add(t["f_key_resources"], self._list(ent.get("key_resources")))
+            add(t["f_enemies"], self._list(ent.get("enemies")))
+            add(t["f_unlocks"], self._list(ent.get("unlocks")))
             add(t["f_hazards"], self.loc(ent, "hazards"))
         else:
-            add(t["f_station"], self.loc(ent, "crafted_at"))
+            add(t["c_entry_table"], self.loc(ent, "summary"))
+            add(t["f_station"], self.loc(ent, "crafted_at") or self.loc(ent, "source"))
             add(t["f_requires"], self.loc(ent, "requires"))
             add(t["f_unlocked_by"], self.loc(ent, "unlocked_by"))
             add(t["f_cargo"], ent.get("cargo_slots"))
@@ -522,8 +539,10 @@ class NativeLang:
             return self._qty(e.get(col))
         if col == "drops":
             return esc(self._ent_names(e.get("drops") or []))
-        if col in ("key_resources", "enemies"):
-            return self._names(e.get(col))
+        if col in ("key_resources", "enemies", "unlocks"):
+            return esc(", ".join(self._list(e.get(col))))
+        if col == "hp":
+            return esc(str(self._hp(e)))
         if col in ("weak", "resistant", "very_resistant", "immune", "damage"):
             v = e.get("damage_types") if col == "damage" else e.get(col)
             return esc(", ".join(v or []))

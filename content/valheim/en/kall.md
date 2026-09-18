@@ -21,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Kall Fimbulbringer: Three-Phase Plan
 
 Kall Fimbulbringer is the final challenge of the Deep North. Do not read it as one long health bar: the target changes during the fight, and hitting the same body may stop working. Learn what each of the three phases asks, then pick gear and supplies. This guide lists no exact health or damage numbers; patches make those disputed.
@@ -49,6 +48,8 @@ In co-op, do not all chase the same turn at once. Leave each other room to watch
 ## Phase two: repick your target instead of attacking out of habit
 
 Once the boss is immune, move your attention from the old health bar to the real targets on the field. Reduce whatever is limiting your movement first, and finish one target at a time rather than leaving several enemies alive on a sliver of health.
+
+![Two cloaked Vikings standing beside a longship wreck half buried in ice on a frozen sea](ss01 "Once the boss is immune, move your attention to the real targets on the field")
 
 Simple team calls help: "switch target", "clear this side", "keep the lane open" — you should not be explaining full tactics under pressure. Solo, it matters even more to hold the space you have cleared instead of chasing and walking into a circle of enemies.
 

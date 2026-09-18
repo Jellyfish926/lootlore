@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+tldr: ["Each ordinary portal costs 20 Fine wood, 10 Greydwarf eyes and 2 Surtling cores, and you build one at each end.", "Give both ends the same tag, wait for the connection, then do one empty round trip as a test.", "On standard settings certain ores, metals and special items block an ordinary teleport — read the tooltips before you plan the long route.", "Name tags “biome — purpose — number”, and keep one mobile portal at home separate from the permanent lines."]
 entities: ["portal", "portal-stone"]
 related: ["ships", "death-recovery", "ashlands"]
 chineseCharacters: 918
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Portals: Pairing and Ore Limits
 
 Portals are best at moving people, supplies and whatever the game lets you teleport. Do not assume they solve all your logistics. Before an expedition, check the world's teleport settings, then decide how ore and special items are getting home. Ordinary wood portals and the later stone portals do not do the same things either, so do not apply late-game rules to a save that just reached the Black Forest.
@@ -28,6 +28,8 @@ Portals are best at moving people, supplies and whatever the game lets you telep
 ## Preparing your first pair
 
 Each ordinary portal costs 20 Fine wood, 10 Greydwarf eyes and 2 Surtling cores, and you build one at each end. Give both the same tag, wait for the connection to confirm, then do one empty round trip as a test. The recipe and the pairing mechanic are on the [Portal](https://valheim.fandom.com/wiki/Portal) page.
+
+![The build menu open in front of a village of wooden Viking huts, listing roof, wall and stair pieces](ss08 "Build one end at home first, then set out with materials for the other")
 
 Build one end at home first, then set out with materials for the other. On arrival, clear the spot, place the portal and verify the route home before you push deeper. That way a failure costs you scouting progress at most, instead of the ship and every supply you brought.
 
@@ -46,6 +48,8 @@ On a shared server, talk before you rename anything, especially to confirm nobod
 ## Keep one mobile portal at home
 
 Separate your permanent lines from your temporary exploration line. The permanent lines serve traders, fields and important outposts; the mobile portal handles whatever you are exploring today. Note the mobile portal's current tag before each trip rather than trusting memory.
+
+![A Viking longship under a black and white striped sail on open water, a warrior standing at the bow](ss02 "For restricted cargo and new territory, ships and roads still matter")
 
 Protecting a portal is more than putting a wall around it. You also need room to stand and to retreat on arrival, no fight starting the instant you step out, and no material chests blocking the exit. A portal for a boss fight belongs outside the arena, not tucked against the altar to save a few steps.
 

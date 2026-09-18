@@ -1,7 +1,7 @@
 ---
 slug: "deep-north-guides"
 url: "/valheim/deep-north-guides/"
-title: "Valheim Deep North Guides"
+title: "Valheim Deep North Guides: 1.0 Endgame"
 seoTitle: "Valheim Deep North Guides | Valheim Guide"
 description: "Valheim Deep North guides: the 1.0 resource and event route, how to craft the Intricate Key, and how to handle the Kall Fimbulbringer fight."
 category: "Deep North"
@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Category index"
 type: "category"
+tldr: ["Three guides for the 1.0 Deep North: the progression route, the Intricate Key, and Kall Fimbulbringer.", "Read the route first, the key page when you hit that wall, then prepare for the final fight.", "The order exists so you stop bouncing between moulds and finished castings."]
 related: []
 chineseCharacters: 296
 sourceUrls: []
@@ -19,13 +20,14 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
-# Valheim Deep North Guides
+# Valheim Deep North Guides: 1.0 Endgame
 
 Read the overall route first, then the Intricate Key page when you hit that wall, then prepare for Kall. The three guides cover progression order, the key item and the final fight, so you stop bouncing between moulds and finished castings.
 
 ## Pick a guide by problem
 
+
+![Hostile creatures with red headgear moving among stone pillars and timber on a dim snowy night, glowing eyes behind them](ss09 "A dim snowy night: the Deep North guides cover resources, the key and the final fight")
 ### [Deep North progression guide](/valheim/deep-north/)
 
 Sorts out the resource and event order of the 1.0 Deep North, linking Ember Charge, Petrified Tissue, Bloodgold, moulds, keys and the invasion into one route you can follow.

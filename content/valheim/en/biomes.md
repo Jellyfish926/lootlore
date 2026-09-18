@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Category index"
 type: "category"
+tldr: ["Six biome guides: Black Forest, Swamp, Mountains, Plains, Mistlands and Ashlands.", "Each page covers getting a foothold, which resources to take first, and when to start preparing the boss.", "If the logistics are already done and you only want the fight, use the boss section instead."]
 related: []
 chineseCharacters: 502
 sourceUrls: []
@@ -19,13 +20,14 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Biome Progression Guides
 
 Each biome page covers how to get a foothold after your first entry, which resources to look for first, and when to start preparing for the boss. If the logistics are already done and you only want the boss fight, go to the boss section instead.
 
 ## Pick a guide by problem
 
+
+![A Viking warrior raising a sword against a sword-wielding skeleton among the dead trees of a swamp](ss17 "Dead trees and standing water: each biome page starts from getting a foothold")
 ### [Valheim Bronze Age: Copper, Tin, Gear](/valheim/bronze/)
 
 From entering the Black Forest to running a working bronze production line, with a sensible order for mining, Surtling cores, fuel, tools and gear.

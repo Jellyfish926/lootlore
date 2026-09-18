@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Ten withered bones summon Bonemass, and it takes blunt damage much better than the types you used on The Elder.", "Drink poison resistance before the fight and bring enough for its real length — resistance is not immunity.", "Only three things to watch: the melee swing, the poison cloud, and the adds that turn a duel into an encirclement.", "The Wishbone helps you find buried silver later, but it does nothing about cold and does not replace a pickaxe."]
 entity: "bonemass"
 related: ["mountains", "combat", "death-recovery"]
 chineseCharacters: 750
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Bonemass: Blunt Hits, Poison Resist
 
 Do not reuse your Elder tactics on Bonemass. It resists several common damage types and takes blunt damage much better, so build a normal run around a blunt weapon and poison resistance. Summoning takes ten withered bones — see [Withered bone](https://valheim.fandom.com/wiki/Withered_bone). Do not reach the altar short of bones, or with a backpack of arrows expecting the last fight again.
@@ -28,6 +28,8 @@ Do not reuse your Elder tactics on Bonemass. It resists several common damage ty
 ## Fix the ground under your feet first
 
 Check the altar area for deep water, obstacles and ordinary enemies, and carve out a route you can move along continuously if you need to. Put your respawn point outside the fight area so that the walk back after a death does not pass under the boss.
+
+![Two characters inside a wooden workshop, between a workbench and a drying rack hung with hides](ss13 "Poison resistance is prepared at home, not looked for at the altar")
 
 Drink your poison resistance before the fight starts, and bring enough to cover the time the fight will really take. It reduces poison risk; it does not let you park inside a danger zone and trade damage. High-health food and enough stamina matter just as much.
 
@@ -40,6 +42,8 @@ Keep every attack inside a short window: read the animation, deal with it or avo
 ## When adds appear, stop staring at the boss health bar
 
 The adds change your movement and your recovery windows. Anything directly threatening your escape route comes first; clear the space, then go back to the boss. In co-op you can name one player to watch the perimeter, but that does not free everyone else from watching their own feet and back.
+
+![A character sitting in the grass fishing on a misty lakeshore](ss14 "Deep water and obstacles decide whether you can keep moving")
 
 If you collapse after the same wave every time, change how you clear rather than pouring in more ore. When the problem is the chaos the adds cause, heavier armour usually just delays the loss.
 

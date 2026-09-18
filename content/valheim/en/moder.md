@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Three dragon eggs summon Moder — move them to the altar on a separate trip from the fight itself.", "Confirm frost resistance, food and Rested before you summon, and check your melee weapon's durability too.", "In the flying phase move first and shoot second; once she lands, position beats greed.", "Dragon tears are used for the artisan table and are an important prerequisite for the Plains crafting chain."]
 entity: "moder"
 related: ["mountains", "plains", "combat"]
 chineseCharacters: 752
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Moder: Dragon Eggs and Safe Windows
 
 Before you challenge Moder, move three dragon eggs to the altar area, then schedule the fight itself. Hauling eggs and killing the boss do not belong in the same trip: one is about routes and carry weight, the other needs full supplies, gear durability and clean ground. The summoning method and attack types are listed under [Moder](https://valheim.fandom.com/wiki/Moder).
@@ -28,6 +28,8 @@ Before you challenge Moder, move three dragon eggs to the altar area, then sched
 ## Make the mountain readable first
 
 Look at the slopes, rocks and exits around the altar, and deal with threats you have already spotted nearby. Start the fight when visibility is good, and place your respawn point somewhere the fight will not easily reach. A fall down the mountain or getting stuck on an obstacle can hurt you more than a direct hit.
+
+![Hostile creatures with red headgear moving among stone pillars and timber on a dim snowy night, glowing eyes behind them](ss09 "Start the fight when visibility is good, and place your respawn point out of reach")
 
 Confirm frost resistance, food and rested status before you summon. Bring enough arrows for this attempt, and check the durability of your melee weapon too — do not assume the whole fight happens at range.
 
@@ -46,6 +48,8 @@ Do not treat terrain that briefly inconveniences the boss as permanent safety. O
 ## In co-op, avoid creating problems for each other
 
 Spread out, and tell your team when you are pulling back or moving in. Ranged players need to watch the attacks instead of putting all their attention in the aiming reticle; melee players should not drag danger toward someone who is recovering. For a teammate in bad shape, the most useful support is sometimes just leaving them an exit.
+
+![Two cloaked Vikings standing beside a longship wreck half buried in ice on a frozen sea](ss01 "Spread out, and tell your team when you are pulling back or moving in")
 
 ## Do not leave the dragon tear behind
 

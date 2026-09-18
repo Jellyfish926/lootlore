@@ -1,14 +1,15 @@
 ---
 slug: "bosses"
 url: "/valheim/zh/bosses/"
-title: "Boss攻略导航"
-seoTitle: "英灵神殿Boss攻略导航"
+title: "英灵神殿 Boss 攻略导航：八场首领战"
+seoTitle: "英灵神殿 Boss 攻略导航：八场首领战"
 description: "从赤血灵鹿到最终挑战，先确认前置，再理解动作和战场。"
 category: "Boss攻略"
 language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
+tldr: ["八篇 Boss 攻略按主线阶段排列，从赤血灵鹿到最终战。", "每页先讲召唤或进入条件，再讲装备、食物和退路。", "正文是开荒思路，不依赖卡地形，也不把一次演示当成通用保证。"]
 related: []
 chineseCharacters: 629
 sourceUrls: []
@@ -19,13 +20,14 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
-# Boss攻略导航
+# 英灵神殿 Boss 攻略导航：八场首领战
 
 这里按主线阶段排列。先核对召唤或进入条件，再准备装备、食物与退路。正文提供开荒思路，不依赖卡地形漏洞，也不把一次演示当作任何配置都能复现的保证。
 
 ## 按问题选择攻略
 
+
+![黑暗针叶林里，一个蓝色皮肤的巨人从树林间走出，维京战士持武器迎上前](ss04 "巨大的敌人从黑暗针叶林里走出：先读懂场地，再决定开打")
 ### [赤血灵鹿怎么打：召唤材料、开荒准备与第一场 Boss 的节奏](/valheim/zh/eikthyr/)
 
 准备两枚鹿战利品，学会处理近身与雷电攻击，并在战后把掉落转化为进入黑暗林山的采矿能力。

@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["The first problems are not seeing and not moving well — sort mist clearing before you think about replacing gear.", "Portable mist-clearing tools serve movement; fixed installations help on routes you use often. Neither makes the biome transparent.", "Infested mines are an important source of black cores and seal-related fragments, and black cores are tied to new workstations.", "Do not attack Dvergr or break their buildings casually, and keep refining equipment away from your living area."]
 entities: ["mistlands", "black-forge"]
 related: ["queen", "food", "portals"]
 chineseCharacters: 773
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Mistlands: Mist Gear, Cores and Eitr
 
 The first problems in the Mistlands are not seeing and not moving well, not replacing all your gear. Get your mist-clearing tools sorted, then explore in short steps along a route you can retrace. The cliffs and ravines here wreck your sense of distance: a short gap on the map can mean a long detour on foot.
@@ -28,6 +28,8 @@ The first problems in the Mistlands are not seeing and not moving well, not repl
 ## Sort out mist clearing first
 
 Yagluth's drop is connected to wisp fountains and the mist-clearing items that follow. Portable mist-clearing tools and fixed installations do different jobs — the biome is described on the [Mistlands page](https://valheim.fandom.com/wiki/Mistlands). The first serves movement, the second helps you establish routes you use often, but neither should be read as making the whole biome transparent.
+
+![Three Viking warriors with shields and weapons stepping into a burning circular portal in a forest at night](ss12 "Set up a return point on the coast first, then explore in short steps")
 
 Set up a return point on the coast first, then mark entrances, cliff edges and places you can rest one at a time. On a first scouting trip, carry a small, deliberate load rather than trying to haul ore at the same time.
 
@@ -46,6 +48,8 @@ Do not casually attack Dvergr or break their buildings and containers; it can tu
 ## Do not put production equipment next to your bedroom
 
 Refining equipment can endanger nearby structures while running, so give it its own space — see [Eitr refinery](https://valheim.fandom.com/wiki/Eitr_refinery). Test it in a separated processing area, confirm the routes for feeding and maintaining it, and only then expand.
+
+![The interior of a Viking longhouse: long tables and wooden chairs, chandeliers lighting a throne under a red banner](ss16 "Give refining equipment its own space, away from the living area")
 
 The magic route also needs food that provides eitr. After you unlock a staff, practise casting, recovery and movement somewhere familiar; do not swap weapons without swapping your supplies and then walk into a high-pressure dungeon.
 

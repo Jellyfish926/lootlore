@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Site entry point"
 type: "home"
+tldr: ["Work out which stage you are in, then solve the one problem in front of you — you do not have to read the whole site first.", "New save? Start with the first day, the biome progression order, combat basics and death recovery.", "Stuck rather than under-geared? Check food, the Rested buff and mead before you craft another armour piece.", "The main route runs Meadows → Black Forest → Swamp → Mountains → Plains → Mistlands → Ashlands → Deep North."]
 related: []
 chineseCharacters: 497
 sourceUrls: []
@@ -19,7 +20,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Walkthrough: Start to Deep North
 
 From your first small hut to the final challenge in the Deep North.
@@ -32,6 +32,8 @@ This site breaks Valheim's main progression route into guides you can use straig
 - [Valheim Progression Order by Biome](/valheim/progression/): work out what to do now and what the next biome needs.
 - [Valheim Combat Basics: Block and Dodge](/valheim/combat/): learn to defend, hit in short bursts and keep stamina to escape.
 - [Valheim Death Recovery: Get Your Gear](/valheim/death-recovery/): turn a corpse run into a prepared rescue.
+
+![Sunlit grassland with a tall oak and several brown-maned beasts moving through the grass](ss15 "Open Meadows: the biome a first playthrough starts in")
 
 ## Continue your main route
 

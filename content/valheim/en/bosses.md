@@ -1,7 +1,7 @@
 ---
 slug: "bosses"
 url: "/valheim/bosses/"
-title: "Valheim Boss Guides"
+title: "Valheim Boss Guides: All Eight Fights"
 seoTitle: "Valheim Boss Guides | Valheim Guide"
 description: "Valheim boss guides from Eikthyr to the final fight: summoning items, gear and food prep, attack patterns and how to read each arena before you commit."
 category: "Boss Guides"
@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Category index"
 type: "category"
+tldr: ["Eight boss guides ordered by main progression stage, from Eikthyr to the final fight.", "Each page starts from the summon or entry condition, then gear, food and an exit.", "The plans are first-playthrough thinking; they do not rely on terrain exploits or one recorded kill."]
 related: []
 chineseCharacters: 629
 sourceUrls: []
@@ -19,13 +20,14 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
-# Valheim Boss Guides
+# Valheim Boss Guides: All Eight Fights
 
 These are ordered by main progression stage. Confirm the summon or entry conditions first, then sort out gear, food and an exit. The guides give first-playthrough thinking, do not rely on terrain exploits, and do not treat one recorded kill as something any setup can repeat.
 
 ## Pick a guide by problem
 
+
+![A blue-skinned giant stepping out of a dark conifer forest as a Viking warrior advances with a weapon](ss04 "A large enemy stepping out of a dark conifer forest: read the arena before you commit")
 ### [Eikthyr boss guide](/valheim/eikthyr/)
 
 Bring two deer trophies, learn to handle the melee and lightning attacks, and turn the drops into the mining power you need for the Black Forest.

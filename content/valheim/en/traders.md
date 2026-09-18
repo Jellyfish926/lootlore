@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Haldor is in the Black Forest, Hildir in the Meadows and the Bog Witch in the Swamp, and they serve different needs.", "Nobody can promise a direction from spawn — fold the search into exploration you were doing anyway, then plan a landing when the icon shows.", "Inventory slots and carry weight are different problems; in 1.0 Haldor offers two expansions adding 16 slots in total.", "After you find one, a reliable route back is worth more than hauling the whole stock home in one go."]
 related: ["ships", "farming", "deep-north"]
 chineseCharacters: 725
 sourceUrls: ["https://www.valheim.tools/traders", "https://www.pcgamer.com/games/survival-crafting/valheim-increase-inventory-size/"]
@@ -19,7 +20,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Traders: Haldor, Hildir, Bog Witch
 
 Finding a trader early does not mean you have to spend everything. Work out whether your current problem is carry weight, inventory space, cooking materials or side content, then decide what to buy. Once you have found a trader, the most valuable next step is usually a reliable route back, not hauling the entire stock home in one go.
@@ -27,6 +27,8 @@ Finding a trader early does not mean you have to spend everything. Work out whet
 ## What each trader is for
 
 Haldor lives in the Black Forest and sells practical adventuring goods; Hildir is found in the Meadows and deals in clothing and the related side content; the Bog Witch lives in the Swamp and provides materials tied to feasts, brewing and similar systems. Stock and progression unlocks are listed on the [traders page](https://www.valheim.tools/traders).
+
+![A Viking seated on a high-backed throne in a stone hall with coins heaped at his feet](ss19 "Three traders, three different needs — work out yours before you spend")
 
 Do not mix all three traders' goods into one shopping list and then dig through a single vendor's stock looking for them. Some items also have progression conditions, so someone else being able to buy something does not mean your world qualifies yet. On a return visit, check the current stock before you decide to keep saving.
 
@@ -40,6 +42,8 @@ If you decide to use an external seed map, accept that it may spoil the terrain 
 
 More slots does not mean a matching increase in the weight limit, and more carry weight does not mean you can hold more distinct item types. In 1.0, Haldor offers two inventory expansions, each adding a row, for 16 extra slots in total — as reported in this [inventory size article](https://www.pcgamer.com/games/survival-crafting/valheim-increase-inventory-size/). What you can actually buy depends on your own unlock state.
 
+![Three Viking warriors with shields and weapons stepping into a burning circular portal in a forest at night](ss12 "A trader outpost needs an easy portal and one clearly labelled transfer chest")
+
 If you often have empty slots but cannot move, fix weight and transport first; if weight is fine but the variety of materials fills your bag, the expansion is the more direct answer. Buying against your real bottleneck beats buying off a recommendation list.
 
 ## When you build a trader outpost, remember what it is for
@@ -47,6 +51,16 @@ If you often have empty slots but cannot move, fix weight and transport first; i
 Put the portal somewhere easy to reach and keep one clearly labelled transfer chest nearby. Store the valuables you plan to sell, the coins you are saving and your adventuring gear separately, so nobody grabs the wrong thing in a shared world. Visiting after a key boss kill is sensible; making the trip on every routine gathering run is not.
 
 Judge side challenges by your current gear too. Seeing a quest marker does not mean you have to do it now; note the objective and organise the trip once your main-line supply is steady, and it will be much easier. A trader's value is in filling gaps in your systems, not in derailing your progression.
+
+## Three traders at a glance
+
+| Trader | Where they live | What they are for |
+| --- | --- | --- |
+| Haldor | Black Forest | Practical adventuring goods; in 1.0 also two inventory expansions adding 16 slots in total |
+| Hildir | Meadows | Clothing and the related side content |
+| The Bog Witch | Swamp | Materials tied to feasts, brewing and similar systems |
+
+Some items also have progression conditions, so someone else being able to buy something does not mean your world qualifies yet.
 
 ## What to read next
 

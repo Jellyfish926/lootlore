@@ -9,6 +9,8 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+tldr: ["A first base is judged by whether you can unload, repair, eat, rest and leave again — not by floor area.", "Build the main living area in the Meadows and treat anything in a dangerous biome as an outpost.", "Leave ventilation around an indoor fire, and trace stability upward from whatever touches the ground when things collapse.", "Keep one rescue corner nobody raids: spare food, resistance supplies, old gear and building material, separate from everyday storage."]
+entities: ["workbench"]
 related: ["rested", "farming", "portals"]
 chineseCharacters: 741
 sourceUrls: ["https://valheim.fandom.com/wiki/Environment", "https://valheim.fandom.com/wiki/Building_stability"]
@@ -19,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Base Building: Your First Base
 
 What matters in a first base is not floor area but whether you can get through the jobs waiting for you when you walk in: unload, repair, eat, rest, leave again. Build your main living area in the Meadows and treat anything in a dangerous biome as an outpost. Do not move every seed, every spare set of gear and your bed into a war zone just to be closer to one ore deposit.
@@ -28,6 +29,8 @@ What matters in a first base is not floor area but whether you can get through t
 
 Flat coastline is usually good for moving cargo later, but the house itself should not sit on the waterline. Walk the area first to see the real shore, the drops and the nearby biome borders, then decide which way the entrance faces. Being close to the Black Forest helps with early gathering, and it also means enemies wandering in over the border. Do not pick a site on the view alone; leave room to expand a dock, fields and a production area.
 
+![The interior of a Viking longhouse: long tables and wooden chairs, chandeliers lighting a throne under a red banner](ss16 "A base is judged by whether you can unload, repair, eat, rest and leave again")
+
 ## Fires need to burn, and smoke needs somewhere to go
 
 Leave ventilation space around an indoor fire, and think about rain cover above the smoke outlet. New players often seal a chimney beautifully and leave no actual exit. Once it is built, stand inside and watch: is the fire steady, is your character taking smoke, does it still work in the rain? A roof keeping rain out and your character counting as sheltered are not quite the same check — see [Environment](https://valheim.fandom.com/wiki/Environment).
@@ -35,6 +38,8 @@ Leave ventilation space around an indoor fire, and think about rain cover above 
 ## Buildings that keep collapsing: follow the support path
 
 Take out the Hammer, look at the colours on each piece, and trace upward from whatever touches the ground. Structural stability depends on material and connection; stacking a few more things that look like pillars does not automatically help. See [Building stability](https://valheim.fandom.com/wiki/Building_stability).
+
+![The build menu open in front of a village of wooden Viking huts, listing roof, wall and stair pieces](ss08 "Take out the Hammer and trace the support path upward from whatever touches the ground")
 
 Build a small-span core first, then add overhangs and floors a section at a time. When something fails, change one connection, confirm the result, then carry on. Do not pile pieces onto a red edge; getting the support genuinely connected to a solid base does more than adding decoration.
 

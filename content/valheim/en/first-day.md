@@ -9,6 +9,8 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+tldr: ["Day one has one goal: somewhere to return to after dark, and repaired tools to head out with the next morning.", "Pick up wood and stone, craft the basic tools, then build a small hut that fits a Workbench and a bed.", "A bed is not done when you place it — meet the conditions, interact with it, then confirm on the map that the spawn point moved.", "Copper, furniture and a full gear set are not day-one jobs; food, a known route home and a spare ration are."]
+entities: ["workbench"]
 related: ["first-base", "food", "eikthyr"]
 chineseCharacters: 858
 sourceUrls: ["https://valheim.fandom.com/wiki/Crafting", "https://www.valheimgame.com/faq/", "https://valheim.fandom.com/wiki/Building"]
@@ -19,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim First Day: Survive Night One
 
 Give your new character one goal for day one: somewhere to go back to when it gets dark, and repaired tools to carry out again the next morning. Do not swim across an ocean, and do not climb the first mountain you see on the horizon. Bad starts are rarely lost fights. They are walking too far, eating too little, and having no reliable respawn point.
@@ -28,11 +29,15 @@ Give your new character one goal for day one: somewhere to go back to when it ge
 
 Pick up wood and stone off the ground nearby, craft the basic tools, then start felling trees with a plan. Tools and building options unlock as you come into contact with materials, so pick up anything new and read the prompt. The Hammer's base materials are wood and stone, and building a Workbench takes wood; the full crafting rules are on the [Crafting](https://valheim.fandom.com/wiki/Crafting) page.
 
+![Sunlit grassland with a tall oak and several brown-maned beasts moving through the grass](ss15 "Keep the first gathering loop inside the area you can walk back from")
+
 Watch which way trees fall, and never stand downhill from a trunk that is about to roll. Boars are good practice for attacking and backing off. Note where you saw deer, but do not chase one into unfamiliar ground. Keep your first gathering loop inside the area you can walk back from.
 
 ## Make shelter work before you make it big
 
 Find somewhere in the Meadows that is reasonably flat, near water but not in reach of the waves. Build a small hut that fits a Workbench and a bed, and leave room for a fire and its smoke. Repairing an existing ruin is fine, but check the gaps: walls standing does not mean the building is finished.
+
+![The build menu open in front of a village of wooden Viking huts, listing roof, wall and stair pieces](ss08 "Build a small hut that fits a Workbench and a bed, and leave room for the fire")
 
 When the Workbench asks for shelter, add roof and surrounding structure rather than rebuilding the Workbench over and over. A bed is not done the moment you place it either: meet the conditions the game shows you, then actually interact with it to set your spawn. Once you leave, open the map and confirm the point moved, so you do not die and wake up back at the altar.
 

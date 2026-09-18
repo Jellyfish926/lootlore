@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Three ancient seeds summon The Elder; they come from Greydwarf brutes and Greydwarf nests.", "The fight is about controlling ground — roots and ordinary mobs can make a safe spot unstandable mid-fight.", "The Elder is relatively weak to fire, and his attacks include ranged vines, summoned roots and a melee stomp.", "The Swamp Key only opens doors: sort out poison resistance and transport before you walk in."]
 entity: "elder"
 related: ["swamp", "mead", "portals"]
 chineseCharacters: 733
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim The Elder: Seeds and Swamp Key
 
 The Elder fight is about controlling the ground, not about one big hit. Once roots and ordinary mobs appear around the altar, a spot that was safe a moment ago may stop being standable. Clear the area, plan the way home, then bring three ancient seeds. Ancient seeds come from Greydwarf brutes and Greydwarf nests — see [Ancient seed](https://valheim.fandom.com/wiki/Ancient_seed).
@@ -28,6 +28,8 @@ The Elder fight is about controlling the ground, not about one big hit. Once roo
 ## Sort out logistics before you hunt the altar
 
 The guidance you find in Black Forest burial chambers and in some ruins helps you locate The Elder. If the altar is far from base, you do not need to carry every valuable material there on the first trip. Scout, set up a way back, go home and top up, then make the real attempt — failure costs much less that way.
+
+![A huge moss-covered creature with yellow eyes beside the campfire and tents of a forest camp](ss10 "Scout, set up a way back, go home and top up, then make the real attempt")
 
 Fight in daylight if you can, and clear the threats you have already spotted along the route. Keep spare food and backup gear at home so your entire supply is not sitting on the battlefield during a first attempt.
 
@@ -46,6 +48,8 @@ If roots keep pinning you, get your movement back before you return to the boss 
 ## Common failure: the boss lives and the mobs keep coming
 
 Clearing the area beforehand lowers the risk; it does not seal the region off. When extra enemies show up, deal with the direct threat first instead of keeping your eyes locked on the boss health bar. In co-op, give one player the job of watching the perimeter rather than having everyone stand still and attack.
+
+![Three Viking warriors with shields and weapons stepping into a burning circular portal in a forest at night](ss12 "Clearing the area beforehand lowers the risk; it does not seal the region off")
 
 ## Do not walk into the Swamp straight from the win
 

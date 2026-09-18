@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Entering the stronghold needs a Sealbreaker, crafted from fragments collected in the infested mines.", "The Queen combines fast closing speed, add pressure and a multi-level arena, so damage, movement and clearing all matter at once.", "Her attacks have very strong knockback and the fall risk in the arena is real — count mobility and fall tolerance when you pick gear.", "Melee cuts down exposure time; magic plans eitr and survival together. Either way, deal with whatever blocks your retreat first."]
 entity: "queen"
 related: ["ashlands", "combat", "death-recovery"]
 chineseCharacters: 793
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim The Queen: Sealbreaker and Arena
 
 The Queen is not just a normal enemy with more health. She combines fast closing speed, add pressure and a multi-level arena, so damage, movement and clearing adds all matter at once. Entering the stronghold for the first time requires a Sealbreaker, crafted from fragments collected in the mines — the entry requirements are described in the [Queen entry](https://valheim.fandom.com/wiki/The_Queen).
@@ -28,6 +28,8 @@ The Queen is not just a normal enemy with more health. She combines fast closing
 ## Finish the key and the way back before you argue about weapons
 
 Sort out the fragments you already have and confirm you can craft. If you cannot enter yet, more mine exploration is the correct task. Once you find the stronghold, set up a return point somewhere safe outside it, check your backup gear and supplies, then start the real attempt.
+
+![A torch-bearing character in a stone underground building, facing a huge stone door wrapped in glowing chains](ss03 "Set up a return point outside the stronghold before the real attempt")
 
 Make the goal of your first fight "learn the arena and the animations", not "win on the first try". Bring enough consumables, but do not stuff every production reserve you own into one backpack.
 
@@ -46,6 +48,8 @@ If you get knocked away the moment you close in, the problem is probably your ti
 ## Magic: plan eitr and survival together
 
 A magic build needs matching food and a recovery rhythm. Before you enter, confirm your protection and your mobility so that casting does not swallow your attention. When you run low on eitr, move somewhere you can see enemies coming from instead of waiting in place.
+
+![Hostile creatures with red headgear moving among stone pillars and timber on a dim snowy night, glowing eyes behind them](ss09 "When adds push in, deal with whatever is directly blocking your retreat")
 
 When adds push in, deal with whatever is directly blocking your retreat first. No build gets to ignore the perimeter entirely; once you have lost your room to move, attacking the boss usually just makes things worse.
 

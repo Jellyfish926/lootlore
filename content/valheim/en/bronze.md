@@ -9,7 +9,8 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
-entity: "black-forest"
+tldr: ["Copper and tin both come from the Black Forest; mark deposits first and open the one your route home can actually serve.", "Surtling cores from burial chambers are consumed by production buildings and portals at the same time — budget fuel as a production cost too.", "Spend the first bronze on whatever is actually blocking you, not on lighting up more entries in the crafting list.", "You can leave the Bronze Age once gear copes with the Black Forest, food and repairs are steady, and you can carry the summon items to the altar."]
+entities: ["black-forest", "smelter", "charcoal-kiln", "forge"]
 related: ["crafting", "elder", "farming"]
 chineseCharacters: 859
 sourceUrls: ["https://valheim.fandom.com/wiki/Progression_guide", "https://valheim.fandom.com/wiki/Surtling_core", "https://valheim.fandom.com/wiki/Finewood", "https://valheim.fandom.com/wiki/Charcoal_kiln", "https://valheim.fandom.com/wiki/Smelter", "https://valheim.fandom.com/wiki/Forge", "https://valheim.fandom.com/wiki/Bronze"]
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Bronze Age: Copper, Tin, Gear
 
 The classic Bronze Age problem is mining a lot and feeling like nothing got finished. It is usually not a shortage of ore. It is tools, a ship, weapons and a full armour set all competing for the same metal. Get a production line running that you can repeat, then spend the first batch of metal on whatever is actually blocking you.
@@ -28,6 +28,8 @@ The classic Bronze Age problem is mining a lot and feeling like nothing got fini
 ## Find the deposits before you empty one
 
 Copper and tin in the Black Forest are the basic targets. When you find a deposit, mark it, look at the terrain on the way home, and then decide which one to open first. A smaller deposit close to base can beat a large one far away for your first run. Biome resources and how they gate progression are covered in the [progression guide](https://valheim.fandom.com/wiki/Progression_guide).
+
+![Two characters inside a wooden workshop, between a workbench and a drying rack hung with hides](ss13 "Ore turns into usable metal at home, so build the production line before you empty a deposit")
 
 A staging chest nearby helps you haul in batches, but a chest is not a safety guarantee. Clear the surrounding threats and leave yourself room to move before you settle in to mine. Stop swinging and look when you hear something odd; do not keep going just because one more hit finishes the vein.
 
@@ -40,6 +42,8 @@ Fuel is a production cost too. Give wood, coal and ore their own chest slots, an
 ## How to spend your first bronze
 
 If you are short on Fine wood, look at the tool that handles the right tree type first. If food supply is thin, consider farming tools. If the Black Forest is beating you up, top up the weapon and defence you are actually using. The link between the bronze axe and Fine wood is covered on the [Finewood](https://valheim.fandom.com/wiki/Finewood) page.
+
+![The build menu open in front of a village of wooden Viking huts, listing roof, wall and stair pieces](ss08 "Every purchase should solve a problem you have already had")
 
 This is not a fixed shopping list. If you already dodge reliably you can put off a full heavy set; if you get hit constantly, do not stay in old gear chasing some theoretical efficiency. Every purchase should solve a problem you have already had, not light up more entries in the crafting list.
 

@@ -9,7 +9,8 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
-entities: ["deep-north", "frigid-kiln", "frost-foundry"]
+tldr: ["Work the Deep North as four threads — resources, processing, dungeons and events — not as one new ore and one new armour set.", "After Fader, craft the Eternal Pyre and collect Embers; those go into Ember Charges, which open the material chain.", "The Winding Tunnels hold Frostcore and moulds; the Frigid Kiln needs 10 Frostcore plus 20 Stone and 5 Ice.", "Petrified Tissue smelts into Bloodgold; the normal route to the final entrance needs three lots of Malicious Blood, so expect to repeat the loop."]
+entities: ["eternal-pyre", "ember-charge", "frostcore", "bloodgold", "malicious-blood", "deep-north"]
 related: ["intricate-key", "kall", "traders"]
 chineseCharacters: 742
 sourceUrls: ["https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide", "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "https://www.valheim.tools/guides/deep-north-progression"]
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Deep North: Eternal Pyre to Endgame
 
 The Deep North is not the usual "find a new ore, craft a full set" loop. Work it as four threads — resources, processing, dungeons and events — and build steady production before you chase the final target. Item names stay in English so they match any client language; translated names differ, but the relationships do not.
@@ -35,6 +35,8 @@ Keep your old base as your logistics hub and leave the Black Forge, blast furnac
 
 The Winding Tunnels are the exploration target here, and they hold Frost Cores and moulds. The Frigid Kiln needs 10 Frostcore (plus Stone×20 and Ice×5); the amounts for the Frost Foundry should be taken from the in-game recipe. These building requirements are covered in this [guide to the key and the processing stations](https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/).
 
+![Hostile creatures with red headgear moving among stone pillars and timber on a dim snowy night, glowing eyes behind them](ss09 "Use map markers to separate “unexplored” from “fully searched”")
+
 Do not assume one dungeon will cover everything you need. Use map markers to separate "unexplored" from "fully searched", and put the important moulds in their own chest when you get home.
 
 ## Step three: open up Bloodgold and cold processing
@@ -46,6 +48,8 @@ Sort your production area into raw materials, intermediates and finished goods. 
 ## Step four: treat the key dungeon and the invasion as one task
 
 Craft the Intricate Key, enter Mörkhalla, deal with the Malicious Ice inside, then travel to the invasion location on the world map and collect Malicious Blood. The normal route to the final entrance needs three lots of blood, so you will repeat this loop — see the [Deep North progression guide](https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide).
+
+![A torch-bearing character in a stone underground building, facing a huge stone door wrapped in glowing chains](ss03 "Confirm the team and the supplies are ready before you trigger an event")
 
 Advance one round at a time. Confirm the team and the supplies are ready before you trigger an event, and afterwards record how many rounds you have done and where the materials are stored before you prepare the next key. Do not judge by "I have been in three times" — check the actual materials.
 

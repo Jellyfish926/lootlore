@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Treat the landing as its own task: reach the shore, clear it, set up protection and a way back, then go home and resupply.", "You beat The Queen first, and her drop feeds the Ashlands unlocks; normal progression sails here on a Drakkar, not a regular Longship.", "The shield generator runs on bone-based fuel and helps against ash fall and outside projectiles — it is not a dome that keeps every enemy out.", "Scout a fortress and judge the route before you bring assault supplies; seeing the entrance is not a reason to push in."]
 entities: ["ashlands", "eternal-pyre", "shield-generator"]
 related: ["fader", "ships", "portals"]
 chineseCharacters: 763
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Ashlands: Landing and Outposts
 
 Your first Ashlands fight usually happens before you have a base. Treat the landing as its own task: reach the shore, clear it, set up protection and a way back, and then go home and resupply. You do not need to find a fortress on the first trip, and you certainly should not load everything you own onto the ship.
@@ -28,6 +28,8 @@ Your first Ashlands fight usually happens before you have a base. Treat the land
 ## After the Queen, check your new crafting options
 
 In progression terms you beat The Queen first, and her drop feeds the Ashlands unlocks — see the [official Ashlands preparation notes](https://www.valheimgame.com/support/getting-ready-for-the-ashlands/). If you already have an older drop sitting in a chest, check whether the current crafting screen recognises it instead of treating it as a placeholder with no use.
+
+![A Viking longship under a black and white striped sail on open water, a warrior standing at the bow](ss02 "Take a short trip first to get used to how the hull turns and docks")
 
 Sailing here needs a vessel suited to Ashlands waters; normal progression uses the Drakkar rather than treating a regular Longship as the universal answer — see the [progression guide](https://valheim.fandom.com/wiki/Progression_guide). Take a short trip first to get used to how the hull turns and docks; a dangerous coastline is the wrong place for your first practice run.
 
@@ -40,6 +42,8 @@ A good landing order is: handle the direct threats, protect the key structures, 
 ## What a shield generator actually protects
 
 The shield generator runs on bone-based fuel and helps against environmental hazards such as ash fall and projectiles from outside, but it is not a dome that stops every enemy from entering — see [Shield generator](https://valheim.fandom.com/wiki/Shield_generator).
+
+![The build menu open in front of a village of wooden Viking huts, listing roof, wall and stair pieces](ss08 "Keep key chests, supplies and the portal within a range you can maintain")
 
 Once it is up, check its coverage and its fuel; do not see the dome and start expanding structures outward. Keep key chests, supplies and the portal within a range you can maintain, and leave yourself room to deal with threats that get close.
 

@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+tldr: ["A recipe that will not appear is not always a material shortage — crafting involves material discovery, station type and station level.", "Ore to gear takes more than one machine: raw material, fuel, smelting, forging, then upgrades.", "After building an upgrade attachment, check the station level actually changed; distance, space and the wrong attachment all look identical.", "Fixed order: station → recipe tab → where the materials actually are → level and placement."]
 entities: ["workbench", "forge", "smelter", "charcoal-kiln"]
 related: ["bronze", "mods", "first-base"]
 chineseCharacters: 959
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Crafting & Repair Guide
 
 A recipe that will not appear is not always a material shortage. Crafting in Valheim involves material discovery, station type and station level. Break "what I want to make" into three questions: which station makes it, has my character touched the materials it needs, and does that station meet its conditions? Answer those before you go out for more resources.
@@ -35,11 +35,15 @@ In a group, a material a teammate picked up is not a material you have checked a
 
 The basic chain is raw material, fuel, smelting, forging, then later upgrades. A Smelter needs stone and Surtling cores to build, and a Forge needs copper among other materials — see [Smelter](https://valheim.fandom.com/wiki/Smelter) and [Forge](https://valheim.fandom.com/wiki/Forge). Fill in whichever step you are missing; you do not need to stockpile an entire age of ore first.
 
+![The build menu open in front of a village of wooden Viking huts, listing roof, wall and stair pieces](ss08 "Raw material, fuel, smelting, forging, then upgrades — fill in whichever step is missing")
+
 Keep inputs and outputs in separate storage in the production area. Raw ore and finished bars in the same junk chest is what creates the "I clearly have the material and still cannot make it" feeling. Check fuel and actual output once more before you leave the area.
 
 ## When the station level is too low
 
 Upgrades usually depend on the matching attachment being placed where it counts. After you build one, check whether the station level actually changed; if it did not, look at distance, space and whether it is the right type of attachment. Not everything that looks like furniture is an upgrade piece.
+
+![Two characters inside a wooden workshop, between a workbench and a drying rack hung with hides](ss13 "After building an upgrade attachment, check the station level actually changed")
 
 Also keep crafting a new item and upgrading an existing one apart. The wrong tab or the wrong target item makes the interface behave as if you are short on materials. Confirming by name and quality one item at a time beats hauling every raw material onto your character.
 

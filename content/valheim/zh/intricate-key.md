@@ -2,14 +2,15 @@
 slug: "intricate-key"
 url: "/valheim/zh/intricate-key/"
 title: "Intricate Key 怎么做：模具、血金、铸件与 Mörkhalla 开门流程"
-seoTitle: "Intricate Key 怎么做：模具、血金、铸件与 Mörkhalla 开门流程｜英灵神殿攻略"
+seoTitle: "Intricate Key 怎么做：模具到成品｜英灵神殿攻略"
 description: "逐步制作深北之境的一次性钥匙，解释模具与铸件的区别、工作站条件及为什么需要为后续地牢准备多把。"
 category: "深北之境"
 language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
-entity: "intricate-key"
+tldr: ["完整顺序是：找到 Mould: Intricate Key，准备 Bloodgold，在 Black Forge 做出铸件，再用 Frost Foundry 完成成品。", "每个 Cast: Intricate Key 消耗一个钥匙模具和五份 Bloodgold；铸件不是可用的钥匙。", "Frost Foundry 需要 Liquid Frost，它由 Frigid Kiln 加工冰获得。", "开门时钥匙会被消耗，所以按三把来准备：至少三个模具和十五份 Bloodgold。"]
+entities: ["intricate-key", "black-forge", "frigid-kiln", "frost-foundry"]
 related: ["deep-north", "kall", "crafting"]
 chineseCharacters: 685
 sourceUrls: ["https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/", "https://www.valheim.tools/items/cast-intricate-key", "https://www.valheim.tools/guides/deep-north-progression"]
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Intricate Key 怎么做：模具、血金、铸件与 Mörkhalla 开门流程
 
 Intricate Key 不是拿到模具后就能直接使用的钥匙。完整顺序是找到钥匙模具、准备 Bloodgold、在 Black Forge 制作钥匙铸件，再用 Frost Foundry 完成成品。背包里若仍写着 Mould 或 Cast，就还没有走完流程。
@@ -29,11 +29,15 @@ Intricate Key 不是拿到模具后就能直接使用的钥匙。完整顺序是
 
 探索深北隧道时，确认物品名称是 Mould: Intricate Key，而不是另一种装备模具。不要靠图标颜色判断，拿到后立即单独保存。钥匙的寻找和加工概况见[钥匙指南](https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/)。
 
+![冰封海面上，两名披斗篷的维京人站在一艘半埋在冰雪里的长船残骸旁](ss01 "隧道是搜索目标：离开前先记录自己搜到哪里")
+
 如果一座地牢没有找到，就记录搜查状态，继续探索其他入口，不要因没出目标物品就默认存档异常。先确认是否遗漏分支与拾取物，再决定离开。
 
 ## 准备一把钥匙需要什么
 
 每份 Cast: Intricate Key 使用一份钥匙模具和五份 Bloodgold，在 Black Forge 制作；之后还需在 Frost Foundry 处理。配方可交叉核对[铸件数据](https://www.valheim.tools/items/cast-intricate-key)与[制作步骤](https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/)。
+
+![木制工坊内，两名角色站在工作台与挂着兽皮的晾架之间](ss13 "先备齐材料，再站到正确的工作站前核对配方")
 
 建议把材料凑齐后再站到正确工作站前核对配方。若没有出现，依次检查模具名称、金属是否已经加工、工作站实际等级与所用制作分页，不要直接重复制作另一台设备。
 

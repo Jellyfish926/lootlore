@@ -9,6 +9,8 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+tldr: ["A corpse run is a new operation: answer where the gear dropped, whether the original danger is still there, and what you need to reach it.", "Rebuild a minimum kit after respawning — spare food, Rested, and the resistance or transport the site actually requires.", "Scout before you close in, empty your pack so recovery takes fewer interactions, then retreat somewhere safe to equip and sort.", "In a group, split pulling, recovering and holding the way back; if two attempts fail, change the plan instead of repeating the dash."]
+entities: ["death"]
 related: ["mead", "portals", "co-op"]
 chineseCharacters: 782
 sourceUrls: ["https://valheim.fandom.com/wiki/How_to_play"]
@@ -19,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Death Recovery: Get Your Gear
 
 Do not sprint back to your tombstone on an empty stomach. Stop and answer three questions first: where did the gear drop, is the original danger still there, and what resistance or transport do you need to reach it? A corpse run is a new operation, not a continuation of the fight you just lost. Under default rules your items stay in the tombstone waiting for you, as described in [How to play](https://valheim.fandom.com/wiki/How_to_play). A world's death penalty settings can change the details.
@@ -27,6 +28,8 @@ Do not sprint back to your tombstone on an empty stomach. Stop and answer three 
 ## Rebuild a minimum survival kit after respawning
 
 Eat your spare food, get the Rested buff, and take the gear you actually need to reach the tombstone. Died somewhere cold? Sort out warmth first. Somewhere poisonous? Bring resistance. At sea? Arrange a boat before anything else. Do not skimp on one supply and create a second, harder-to-reach tombstone.
+
+![A Viking silhouetted on an antlered mount at night under the aurora, beside village huts and gravestones](ss00 "Backup gear only has to support one job: moving, and absorbing a small mistake")
 
 Backup gear does not have to match your main set. It only has to support this one job: moving, and absorbing a small mistake. It is not there so you can clear the whole dungeon again in it.
 
@@ -40,6 +43,8 @@ If the tombstone landed on a slope, in deep water or next to something large, wo
 
 Carry only what you need on the way out, leaving room for the gear you are recovering. When you arrive, grab everything first, then retreat somewhere safe to equip, sort and repair. A full tombstone recovery comes with a short buff, but do not treat that as immunity to everything.
 
+![Three Viking warriors with shields and weapons stepping into a burning circular portal in a forest at night](ss12 "Use the portal route you already have, and stop somewhere relatively safe")
+
 If you cannot carry it all in one go, secure the gear and key items the job needs and do the rest in batches. Do not stand there agonising over a stack of cheap material with an enemy already on top of you.
 
 ## Splitting roles for a group rescue
@@ -51,6 +56,17 @@ If two attempts fail in a row, change the plan: improve the approach route, add 
 ## Restock the rescue kit when you get back
 
 Repair your gear, replace food and spare materials, and note what actually killed you. Was it the route, the weather, stamina, or an attack you did not recognise? Fixing the losses without changing the cause tends to replay the same death on the next trip. The rescue corner at home gets refilled after every use, not the next time someone dies.
+
+## Match the kit to where you died
+
+| Where the gear dropped | Sort this out first | Why |
+| --- | --- | --- |
+| Somewhere cold | Warmth | The environment is the thing that stops you reaching the tombstone |
+| Somewhere poisonous | Resistance | Same reason — the original danger is usually still there |
+| At sea | A boat | Arrange transport before anything else |
+| On a slope, in deep water or next to something large | How you will move after you pick it up | Getting your things back and then being unable to leave still gets you killed |
+
+Backup gear does not have to match your main set; it only has to support moving and absorbing a small mistake.
 
 ## Read next
 

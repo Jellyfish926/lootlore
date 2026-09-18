@@ -2,14 +2,15 @@
 slug: "deep-north"
 url: "/valheim/zh/deep-north/"
 title: "英灵神殿深北之境流程：从 Eternal Pyre 到最终区域入口"
-seoTitle: "英灵神殿深北之境流程：从 Eternal Pyre 到最终区域入口｜英灵神殿攻略"
+seoTitle: "英灵神殿深北之境流程：资源、钥匙与入口｜英灵神殿攻略"
 description: "理清 1.0 深北之境的资源与事件顺序，将余烬、石化组织、血金、模具、钥匙和入侵串成可执行路线。"
 category: "深北之境"
 language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
-entities: ["deep-north", "frigid-kiln", "frost-foundry"]
+tldr: ["深北之境按资源、加工、地牢和事件四条线推进，不要当成「一种新矿加一套新装备」。", "击败 Fader 后制作 Eternal Pyre 并收集 Embers，它们做成 Ember Charge，打开后续材料链。", "Winding Tunnels 里有 Frostcore 与模具；Frigid Kiln 需要 10 个 Frostcore，外加 20 石头和 5 冰。", "Petrified Tissue 冶炼成 Bloodgold；常规路线抵达最终入口需要三份 Malicious Blood，因此这个循环要重复。"]
+entities: ["eternal-pyre", "ember-charge", "frostcore", "bloodgold", "malicious-blood", "deep-north"]
 related: ["intricate-key", "kall", "traders"]
 chineseCharacters: 742
 sourceUrls: ["https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide", "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "https://www.valheim.tools/guides/deep-north-progression"]
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # 英灵神殿深北之境流程：从 Eternal Pyre 到最终区域入口
 
 深北之境不是“找到新矿就能做全套装备”的常规循环。建议按资源、加工、地牢和事件四条线推进，先做出能够持续生产的系统，再挑战最终目标。以下保留重要物品英文名称，方便不同语言客户端对照；中文译名差异不会改变物品之间的关系。
@@ -35,6 +35,8 @@ author: "Jellyfi"
 
 Winding Tunnels 是重要探索目标，涉及 Frost Cores 与模具。Frigid Kiln 需要 10 枚 Frostcore（另需 Stone×20、Ice×5）；Frost Foundry 的用量以游戏内配方为准，这些建造前置可参照[钥匙与加工设备说明](https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/)。
 
+![昏暗的雪夜里，头戴红色饰物的敌对生物在石柱和木料旁出没，身后有发亮的眼睛](ss09 "用地图标记区分「未探索」和「已搜完」")
+
 不要假设一座地牢就能满足全部需求。地图标记区分未探索和已搜完，回家后把关键模具放进独立箱子。
 
 ## 第三步：打通血金与冷加工
@@ -46,6 +48,8 @@ Gammeltroll 死后形成石化躯体，需要 Ember Charges 处理，得到的 P
 ## 第四步：把钥匙地牢与入侵看成一组任务
 
 制作 Intricate Key 后进入 Mörkhalla，处理其中的 Malicious Ice，再前往世界地图上的入侵位置，最终收集 Malicious Blood。正常最终入口流程需要三份血，因此需要重复相关循环，见[深北推进资料](https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide)。
+
+![石砌地下建筑中，一名举着火把的角色站在被发光锁链缠绕的巨大石门前](ss03 "触发事件前，先确认队伍和补给都已经就绪")
 
 这里建议一次只推进一轮。触发事件前先确认队伍和补给就绪，结束后记录已完成次数与材料存放处，再准备下一把钥匙。不要仅凭“进去过三次”判断结束，要实际核对关键材料。
 

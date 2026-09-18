@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Five Fuling totems summon Yagluth at the matching Plains altar.", "Sort the pressure by animation: melee burst means leave the danger zone, meteors mean movement first, the ranged breath means sideways dodges and terrain.", "Fire resistance reduces matching damage; it does not let you tank everything, and stone pillars can be destroyed mid-fight.", "Yagluth drops Torn spirit, which connects to your later mist-clearing preparation — go home and rebuild before the Mistlands."]
 entity: "yagluth"
 related: ["mistlands", "mead", "combat"]
 chineseCharacters: 809
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Yagluth: Totems and Fire Resistance
 
 The Yagluth fight tests fire preparation and movement first; he is not a boss you stand beside and grind down. Collect five Fuling totems and summon him at the matching Plains altar; the boss and creature index is on the [Creatures page](https://valheim.fandom.com/wiki/Creatures). Having the totems is no reason to start at once: sort out the battlefield and logistics first.
@@ -28,6 +28,8 @@ The Yagluth fight tests fire preparation and movement first; he is not a boss yo
 ## Fire resistance helps, but it will not position for you
 
 Bring fire resistance and healing supplies suited to this fight, and confirm the buff is actually active after you use it. Resistance reduces the matching damage; it does not mean every attack can be tanked. Start from a stable health-and-stamina food combination and save the aggressive setups for after you know the animations.
+
+![Two Viking warriors crossing grassland towards an ancient stone ruin and tower glowing blue](ss11 "Clear ordinary enemies near the arena beforehand, and keep the portal out of reach")
 
 Clear ordinary enemies near the arena beforehand, and do not put your portal home where an area attack can reach it. Keep spare supplies somewhere safe so that a failed attempt does not also cost you the ability to come back.
 
@@ -40,6 +42,8 @@ You do not need to memorise everything on the first attempt. Start by noticing w
 ## Stone pillars are not an indestructible safe house
 
 Terrain can help you deal with an attack for a moment, but cover can be destroyed mid-fight. When you use cover, already know where you are going next instead of pressing your back to it and looking at nothing. Once your exit is covered by fire or other pressure, moving to a new area beats grinding it out where you stand.
+
+![Sunlit grassland with a tall oak and several brown-maned beasts moving through the grass](ss15 "Cover can be destroyed mid-fight, so know where you are going next")
 
 Constant movement does not mean holding sprint either. Watch your stamina and recover in safe windows, so you are not out of dodge and sprint when the next attack begins.
 

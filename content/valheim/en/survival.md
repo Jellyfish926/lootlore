@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Category index"
 type: "category"
+tldr: ["Eight guides for the base side of the game: building, food, farming, mead, Rested, portals, sailing and traders.", "Pick by bottleneck — always out of food starts with food and farming, always short on resistance starts with mead.", "Base layout and the Rested buff are worth reading together; portals and sailing are worth reading together."]
 related: []
 chineseCharacters: 630
 sourceUrls: []
@@ -19,13 +20,14 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Survival & Building Guides
 
 Pick the guide that matches your current bottleneck. Always running out of food? Start with food and farming. Always short on resistance supplies? Read the mead guide. Losing too much time on the road? Read portals and sailing. Base layout and the Rested buff are worth checking together.
 
 ## Pick a guide by problem
 
+
+![A player holding a hammer places a wooden wall on a hut platform in the plains, the build menu showing “Wood wall 45°”](ss07 "Building with the hammer: the survival guides start from a base that supports expeditions")
 ### [Valheim Base Building: Your First Base](/valheim/first-base/)
 
 Starts from one practical base and explains site choice, roofing, smoke, structural stability, production layout and emergency supplies.

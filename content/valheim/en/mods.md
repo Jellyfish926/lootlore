@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["There is no official mod support and no compatibility guarantee — protect your data, build a baseline, then find the problem.", "Save restorable copies of character and world and label them with the date and game version, not “latest backup”.", "Test vanilla with a fresh character and world, and remove the loader as well as the mods when you isolate.", "Restore in dependency order, one related group at a time; an update date on a mod page is not proof of compatibility."]
 related: ["save-1-0", "co-op", "crafting"]
 chineseCharacters: 875
 sourceUrls: ["https://www.valheimgame.com/news/regarding-mods/", "https://www.valheimgame.com/support/getting-ready-for-the-ashlands/"]
@@ -19,7 +20,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Mods Broken After Update: What to Do
 
 After a major update, do not retry a whole old mod list on your main save. The game launching fine does not mean the loader, dependencies and mods have kept up. There is no official mod support and no guarantee third-party mods work — see the [official statement](https://www.valheimgame.com/news/regarding-mods/). Safest order: protect your data, build a baseline, then find the problem.
@@ -27,6 +27,8 @@ After a major update, do not retry a whole old mod list on your main save. The g
 ## Step one: separate your world and character from the testing
 
 Quit the game or stop the server cleanly, save restorable copies of the character and the world, and write down mod names, versions, dependencies and configs. Label that copy with the date and the game version — do not just call it "latest backup".
+
+![The interior of a Viking longhouse: long tables and wooden chairs, chandeliers lighting a throne under a red banner](ss16 "Label the backup with the date and the game version, not “latest backup”")
 
 If you use mods that add items, buildings or map content, be especially careful not to open your main world in a mod-free environment and save it. Missing content can cause irreversible changes. Do vanilla testing with a fresh test character and world, not with a save you have had for years.
 
@@ -39,6 +41,8 @@ If the vanilla test also fails, record the errors and go through official suppor
 ## Step three: restore in dependency order
 
 Check first whether the loader and the core dependencies support your current game version, then restore a small number of mods and test. Change one related group at a time and record what happens at launch and when entering the world. When you update dozens of components at once and something breaks, the real cause is very hard to isolate.
+
+![Two characters inside a wooden workshop, between a workbench and a drying rack hung with hides](ss13 "Restore a small number of mods at a time and record what happens")
 
 An update date on a mod page is not proof of compatibility. Look at the supported version, the dependencies and the known issues; "it works for someone else" may mean a different client, config or server setup. When there is no clear compatibility information, waiting beats gambling with your real save.
 
@@ -53,6 +57,17 @@ Have one player join a test world, interact and leave before you widen the test.
 Do not overwrite configs without a backup; do not delete a whole character or world to clear an error; and do not go looking for "one-click fix packs" on unknown download sites. When you need to roll back, preserve the broken state and your existing backups, then restore to a specific point in time.
 
 Once the whole environment is stable, let your real world continue. A group that only wants to play the new content can also spin up a temporary vanilla world and leave the modded world waiting for updates. Separating "what I want to play today" from "everything old must work right now" avoids a lot of unnecessary loss.
+
+## Four steps, in order
+
+| Step | What you do | Why this order |
+| --- | --- | --- |
+| 1. Protect the data | Quit cleanly, save restorable copies of character and world, record mods, versions, dependencies and configs | Opening a modded world in a mod-free environment and saving it can cause irreversible changes |
+| 2. Build a baseline | Isolate the loader and the mods, then confirm a fresh test character and world can launch and save | If vanilla also fails, the problem is not one mod |
+| 3. Restore in dependency order | Check the loader and core dependencies first, then restore a small group at a time | Updating dozens of components at once makes the real cause very hard to isolate |
+| 4. Line up the multiplayer side | Record client and server requirements separately, then check each player's versions and config | Not every mod has to be on both sides, and not every client-side mod is irrelevant to the server |
+
+Three moves that are not troubleshooting: overwriting configs without a backup, deleting a character or world to clear an error, and downloading “one-click fix packs” from unknown sites.
 
 ## What to read next
 

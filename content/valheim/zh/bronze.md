@@ -2,14 +2,15 @@
 slug: "bronze"
 url: "/valheim/zh/bronze/"
 title: "英灵神殿青铜时代怎么发展：铜锡、熔炉和第一批装备的优先级"
-seoTitle: "英灵神殿青铜时代怎么发展：铜锡、熔炉和第一批装备的优先级｜英灵神殿攻略"
+seoTitle: "英灵神殿青铜时代：铜锡与第一批装备｜英灵神殿攻略"
 description: "从进入黑暗林山到建立青铜生产线，说明采矿、焰灵之核、燃料、工具与装备的合理投入顺序。"
 category: "区域推进"
 language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
-entity: "black-forest"
+tldr: ["铜和锡都产自黑暗林山；先标记矿点，再挑一个回程路线撑得住的开挖。", "墓穴里的焰灵之核会同时被生产建筑和传送门消耗，燃料也要当成生产成本来算。", "第一批青铜花在当前真正卡住你的地方，而不是为了点亮更多制作列表条目。", "装备能应付黑暗林山、食物与修理稳定、能把召唤材料带到祭坛，就可以离开青铜阶段。"]
+entities: ["black-forest", "smelter", "charcoal-kiln", "forge"]
 related: ["crafting", "elder", "farming"]
 chineseCharacters: 859
 sourceUrls: ["https://valheim.fandom.com/wiki/Progression_guide", "https://valheim.fandom.com/wiki/Surtling_core", "https://valheim.fandom.com/wiki/Finewood", "https://valheim.fandom.com/wiki/Charcoal_kiln", "https://valheim.fandom.com/wiki/Smelter", "https://valheim.fandom.com/wiki/Forge", "https://valheim.fandom.com/wiki/Bronze"]
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # 英灵神殿青铜时代怎么发展：铜锡、熔炉和第一批装备的优先级
 
 青铜时代最容易遇到的问题，是挖了很多矿，却觉得什么都没做成。原因通常不是矿太少，而是工具、船、武器和整套防具同时抢材料。建议先搭起可重复运作的生产线，再按当前瓶颈分配第一批金属。
@@ -28,6 +28,8 @@ author: "Jellyfi"
 ## 先找资源，不急着清空整座矿
 
 黑暗林山的铜与锡是基础目标。发现资源后先标记位置，观察回程地形，再决定从哪一处开始。贴着基地的较小矿点，可能比很远的大矿点更适合第一次采集。区域资源和推进关系见[流程指南](https://valheim.fandom.com/wiki/Progression_guide)。
+
+![木制工坊内，两名角色站在工作台与挂着兽皮的晾架之间](ss13 "矿石要在家里才能变成可用金属，先把生产线搭起来，再考虑清空矿点")
 
 在附近放一个中转箱有助于分批回运，但别把箱子当成安全承诺。先清理周边威胁，留下能移动的空间，再开始持续采矿。听到异常动静就停镐观察，不要因为还差一点耐久就继续挖。
 
@@ -40,6 +42,8 @@ author: "Jellyfi"
 ## 第一批青铜怎么花
 
 如果当前缺精细木，优先关注能处理对应树种的工具；如果食物供应不足，考虑耕种工具；如果黑暗林山战斗压力很大，先补正在使用的武器与防御手段。青铜斧与精细木的关系见[精细木](https://valheim.fandom.com/wiki/Finewood)。
+
+![维京木屋村落前打开的建造菜单，列出屋顶、墙体、楼梯等木结构部件](ss08 "每一次投入都用来解决已经出现过的问题")
 
 这不是固定的唯一购物单。已经能稳定躲避的玩家，可以延后整套重甲；频繁受伤的玩家也不必为了所谓极限效率硬穿旧装。关键是每次投入都解决一个已经发生的问题，而不是为了把制作列表全部点亮。
 

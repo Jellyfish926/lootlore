@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+tldr: ["Two deer trophies summon Eikthyr, and the hard antlers he drops are the key early mining material.", "Find the altar and read the terrain first; do not sacrifice the trophies the moment you arrive hungry with worn tools.", "Melee or bow both work, but drawing, moving and emergency dodges drain stamina just as fast as swinging.", "After the kill, turn the antlers into a mining tool and restock before you head into the Black Forest."]
 entity: "eikthyr"
 related: ["combat", "bronze", "first-base"]
 chineseCharacters: 728
@@ -20,7 +21,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Eikthyr: Summon Items and Fight Plan
 
 Eikthyr is the first main-progression boss fight. Treat it as practice with an escape route: you do not need a stockpile of advanced materials, but you do need good food, repaired gear, and the judgement to stop attacking. Two deer trophies summon him, and the hard antlers he drops are the key early mining material — see the [Eikthyr entry](https://valheim.fandom.com/wiki/Eikthyr).
@@ -28,6 +28,8 @@ Eikthyr is the first main-progression boss fight. Treat it as practice with an e
 ## Find the altar before you gather the offering
 
 The guidance at the starting altar helps you confirm where the target is. Once the location is on your map, go look at the terrain first and decide when to fight later. Clear out the enemies and obstacles that would block your movement, and fix the direction home in your head. Do not sacrifice the trophies the moment you find the altar while hungry and carrying worn tools.
+
+![A Viking silhouetted on an antlered mount at night under the aurora, beside village huts and gravestones](ss00 "Look at the terrain around the altar first and decide when to fight later")
 
 Deer trophies come from hunting, and not every hunt produces one. Stock food and leather on the same trips instead of chasing only the summon items — it is far more efficient. When you are ready, leave spare resources at home and take only what the fight actually needs.
 
@@ -46,6 +48,8 @@ At low health, surviving beats trading. What the first boss really teaches is th
 ## In co-op, do not bunch up
 
 Stay close enough to support each other without standing in the same spot. When Eikthyr turns on one player, the others watch for safe damage windows; anyone pulling out should say which way they are going so the group does not back into one corner together. More players does not mean you can skip food and repairs.
+
+![A huge moss-covered creature with yellow eyes beside the campfire and tents of a forest camp](ss10 "In co-op, stay close enough to support each other without standing in the same spot")
 
 ## What to do after the kill
 

@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+tldr: ["The dangerous state is not low health, it is empty stamina while the enemy winds up — learn to end your own attacks first.", "A raised shield is not a guaranteed block: gear, the incoming attack and your state all matter, and a parry needs its own timing.", "Maximum health affects how much stagger you absorb, so food is part of your defence, not just your damage.", "Pick one main weapon whose range and animations you know, and keep a backup for what it handles badly."]
 related: ["food", "eikthyr", "bonemass"]
 chineseCharacters: 747
 sourceUrls: ["https://valheim.fandom.com/wiki/Blocking", "https://valheim.fandom.com/wiki/Stagger"]
@@ -19,7 +20,6 @@ gameVersion: "1.0.12"
 draft: false
 author: "Jellyfi"
 ---
-
 # Valheim Combat Basics: Block and Dodge
 
 The dangerous state in a fight is usually not being a little low on health. It is being out of stamina as the enemy winds up. Learn to end your own attacks before you learn to raise your damage. Reliably running "defend, short combo, back off" beats mashing attack on a first playthrough.
@@ -27,6 +27,8 @@ The dangerous state in a fight is usually not being a little low on health. It i
 ## A raised shield is not a guaranteed block
 
 How well you block depends on your gear, the attack coming in and your character's state, and a parry needs the right timing on top of that — not every shield supports the same move. A tower shield and a parry shield are not used the same way; see [Blocking](https://valheim.fandom.com/wiki/Blocking).
+
+![A Viking warrior raising a sword against a sword-wielding skeleton among the dead trees of a swamp](ss17 "Practise on ordinary enemies you know, and watch the wind-up")
 
 Practise on ordinary enemies you know. Watch the wind-up, and only try more dangerous targets once you can read the rhythm consistently. If one mistake kills you outright, you picked the wrong practice ground, not the wrong number of attempts.
 
@@ -46,11 +48,24 @@ Against several enemies, try to keep them in roughly the same direction, and do 
 
 Choose a main weapon whose range and animations you understand. A backup exists for what the main one handles badly: airborne enemies, threats at distance, or fights that need a different damage type. Do not swap in a weapon you have never practised right before a trip just because the stat sheet is higher.
 
+![A blue-skinned giant stepping out of a dark conifer forest as a Viking warrior advances with a weapon](ss04 "A backup weapon exists for what your main one handles badly")
+
 If your damage looks clearly wrong, check the enemy's resistances and whether you are landing hits at all. Against an enemy that resists a damage type, carrying more weapons of that same type does not fix anything. The damage advice on a boss page fits a specific fight better than a generic "best weapons" ranking.
 
 ## A simple practice routine
 
 Find one ordinary enemy. Watch one full attack. On the second attempt, defend and hit back exactly once. When that is steady, add one more hit. Once you can do it comfortably, add terrain and multiple enemies. The goal is not zero mistakes; it is knowing, after a mistake, whether to back off and recover or head home.
+
+## Four actions and what each one is for
+
+| Action | What it is for | What to watch |
+| --- | --- | --- |
+| Block | Absorbing an attack you cannot avoid | Gear, the incoming attack and your state all change the result — a raised shield is not a guaranteed block |
+| Parry | Punishing an attack you can time | Needs the right timing, and not every shield supports the same move |
+| Short combo | Damage you can stop on purpose | Confirm you can still move or dodge before you continue |
+| Back off | Recovering stamina and looking for other threats | A knocked-back enemy has stepped out of range — you do not have to chase |
+
+This page does not list stamina costs; treat the table as a practice order, not a cost table.
 
 ## Read next
 

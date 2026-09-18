@@ -52,28 +52,35 @@ def split_frontmatter(text: str):
 
 # ---------------------------------------------------------------- inline
 _LINK = r"\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\(((?:[^()\s]|\([^()\s]*\))+)(?:\s+\"([^\"]*)\")?\)"
+_IMG = r"!\[([^\]]*)\]\(((?:[^()\s]|\([^()\s]*\))+)(?:\s+\"([^\"]*)\")?\)"
+IMG_RE = re.compile(_IMG)
+IMG_ONLY_RE = re.compile(r"^\s*" + _IMG + r"\s*$")
 _INLINE = re.compile(
     r"`([^`]+)`"                       # 1 code
-    + r"|" + _LINK                     # 2 text 3 href 4 title
-    + r"|\*\*(.+?)\*\*"                # 5 strong
-    + r"|(?<![\w*])\*(?!\s)([^*]+?)(?<!\s)\*(?![\w*])"  # 6 em
+    + r"|" + _IMG                      # 2 alt 3 src 4 title
+    + r"|" + _LINK                     # 5 text 6 href 7 title
+    + r"|\*\*(.+?)\*\*"                # 8 strong
+    + r"|(?<![\w*])\*(?!\s)([^*]+?)(?<!\s)\*(?![\w*])"  # 9 em
 )
 
 
-def inline(s: str, link_cb=None) -> str:
+def inline(s: str, link_cb=None, img_cb=None) -> str:
+    """link_cb(href, inner_html) -> html;img_cb(src, alt, title) -> html(缺省退化成纯文本 alt)。"""
     out, pos = [], 0
     for m in _INLINE.finditer(s):
         out.append(esc(s[pos:m.start()]))
         if m.group(1) is not None:
             out.append(f"<code>{esc(m.group(1))}</code>")
         elif m.group(2) is not None:
-            inner = inline(m.group(2), None)
-            href = m.group(3)
-            out.append(link_cb(href, inner) if link_cb else f'<a href="{esc(href)}">{inner}</a>')
+            out.append(img_cb(m.group(3), m.group(2), m.group(4)) if img_cb else esc(m.group(2)))
         elif m.group(5) is not None:
-            out.append(f"<strong>{inline(m.group(5), link_cb)}</strong>")
+            inner = inline(m.group(5), None, img_cb)
+            href = m.group(6)
+            out.append(link_cb(href, inner) if link_cb else f'<a href="{esc(href)}">{inner}</a>')
+        elif m.group(8) is not None:
+            out.append(f"<strong>{inline(m.group(8), link_cb, img_cb)}</strong>")
         else:
-            out.append(f"<em>{inline(m.group(6), link_cb)}</em>")
+            out.append(f"<em>{inline(m.group(9), link_cb, img_cb)}</em>")
         pos = m.end()
     out.append(esc(s[pos:]))
     return "".join(out)
@@ -81,6 +88,7 @@ def inline(s: str, link_cb=None) -> str:
 
 def plain(s: str) -> str:
     """行内 Markdown → 纯文本(标题锚点、目录、摘要用)。"""
+    s = re.sub(_IMG, lambda m: m.group(1), s)
     s = re.sub(_LINK, lambda m: m.group(1), s)
     s = re.sub(r"`([^`]+)`", r"\1", s)
     s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
@@ -89,8 +97,8 @@ def plain(s: str) -> str:
 
 
 def links_in(s: str):
-    """[(text, href)] —— 行内文本里的全部链接。"""
-    return [(m.group(1), m.group(2)) for m in re.finditer(_LINK, s)]
+    """[(text, href)] —— 行内文本里的全部链接(不含图片)。"""
+    return [(m.group(1), m.group(2)) for m in re.finditer(_LINK, s) if not s[:m.start()].endswith("!")]
 
 
 def sole_link(s: str):
@@ -129,7 +137,7 @@ def _join(a: str, b: str) -> str:
 def _starts_block(line: str, nxt: str) -> bool:
     return bool(
         _H.match(line) or _UL.match(line) or _OL.match(line) or _HR.match(line)
-        or _FENCE.match(line) or line.lstrip().startswith(">")
+        or _FENCE.match(line) or line.lstrip().startswith(">") or IMG_ONLY_RE.match(line)
         or (line.lstrip().startswith("|") and _TSEP.match(nxt or ""))
     )
 
@@ -160,6 +168,11 @@ def parse(md: str):
             continue
         if _HR.match(line):
             blocks.append({"t": "hr"})
+            i += 1
+            continue
+        im = IMG_ONLY_RE.match(line)
+        if im:  # 独占一行的图片 → 块级 figure(由 render 的 figure_cb 出 HTML)
+            blocks.append({"t": "img", "src": im.group(2), "alt": im.group(1), "title": im.group(3)})
             i += 1
             continue
         if line.lstrip().startswith("|") and _TSEP.match(nxt):
@@ -222,22 +235,27 @@ def slugify(text: str, used: set) -> str:
     return s
 
 
-def render(blocks, link_cb=None, table_label="table") -> str:
+def render(blocks, link_cb=None, table_label="table", img_cb=None, figure_cb=None) -> str:
     out = []
     for b in blocks:
         t = b["t"]
         if t == "h":
             idattr = f' id="{esc(b["id"])}"' if b.get("id") else ""
-            out.append(f'<h{b["level"]}{idattr}>{inline(b["text"], link_cb)}</h{b["level"]}>')
+            out.append(f'<h{b["level"]}{idattr}>{inline(b["text"], link_cb, img_cb)}</h{b["level"]}>')
         elif t == "p":
-            out.append(f"<p>{inline(b['text'], link_cb)}</p>")
+            out.append(f"<p>{inline(b['text'], link_cb, img_cb)}</p>")
+        elif t == "img":
+            if figure_cb:
+                out.append(figure_cb(b["src"], b["alt"], b.get("title")))
+            elif img_cb:
+                out.append(f"<p>{img_cb(b['src'], b['alt'], b.get('title'))}</p>")
         elif t in ("ul", "ol"):
-            li = "".join(f"<li>{inline(x, link_cb)}</li>" for x in b["items"])
+            li = "".join(f"<li>{inline(x, link_cb, img_cb)}</li>" for x in b["items"])
             out.append(f"<{t}>{li}</{t}>")
         elif t == "table":
             def cell(tag, txt, al):
                 st = f' style="text-align:{al}"' if al else ""
-                return f"<{tag}{st}>{inline(txt, link_cb)}</{tag}>"
+                return f"<{tag}{st}>{inline(txt, link_cb, img_cb)}</{tag}>"
             al = b["align"] + [""] * len(b["head"])
             thead = "".join(cell("th", h, al[k]) for k, h in enumerate(b["head"]))
             tbody = "".join(
@@ -248,7 +266,7 @@ def render(blocks, link_cb=None, table_label="table") -> str:
                 f"<table><thead><tr>{thead}</tr></thead><tbody>{tbody}</tbody></table></div>"
             )
         elif t == "quote":
-            out.append(f"<blockquote>{render(b['blocks'], link_cb, table_label)}</blockquote>")
+            out.append(f"<blockquote>{render(b['blocks'], link_cb, table_label, img_cb, figure_cb)}</blockquote>")
         elif t == "code":
             cls = f' class="language-{esc(b["lang"])}"' if b["lang"] else ""
             out.append(f"<pre><code{cls}>{esc(b['text'])}</code></pre>")

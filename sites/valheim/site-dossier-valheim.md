@@ -246,3 +246,135 @@ draft 门控实测:把 `kall.md` 临时改 `draft: true` → `out/valheim/kall/`
    | traders | 725 |
 
    （其余 10 篇 ≥800:yagluth 809、bronze 859、crafting 959、first-day 858、progression 832、kall 836、portals 918、co-op 963、mods 875、save-1-0 851)
+
+---
+
+## 十、v2 结构(2026-09-18,分支 `valheim-v2`,未合并 main)
+
+照 **valheim.wiki** 的结构重做,英文为默认语种、中文为第二语种。对标依据见
+`scratchpad/research/report.md` 表 2/3/4/5 与 `research/2/shots/valheimwiki-{hub,guide}-1280.png`
+(抄的是结构:左侧常驻游戏内导航 + 条目页右侧信息框 + 正文数据表 + 分类聚合排序表;不抄文案与视觉皮肤)。
+
+### 10.1 目录与 URL
+
+| 层 | 路径 | 说明 |
+|---|---|---|
+| 内容层 | `content/valheim/en/*.md` | 40 份(39 篇正文 + 作者页),`language: en`,**默认语种** |
+| 内容层 | `content/valheim/zh/*.md` | 40 份,由 v1 的 `content/valheim/*.md` 整体迁入,`language: zh-CN` |
+| 内容层 | `content/valheim/_images.json` | 两语种共用;`alt` 与 `credit` 改成 `{en, zh}` 两份 |
+| 内容层 | `data/valheim/entities.json` | 43 个结构化实体(8 boss / 9 biome / 14 station / 4 boat / 5 item / 3 mechanic),数据 agent 产出,管线只补了 `page_slug` |
+| 配置层 | `config/hub.json` → `games[valheim].native.langs` | 两语种声明:`code / i18n / dir / prefix / title / hreflang / label_key / default / related_headings` |
+| 配置层 | `config/i18n/en.json`(新)、`config/i18n/zh-CN.json` | 全部界面文字;**代码层零游戏专属文案**(grep 验证:`hub/*.py`、`hub/native.css`、`build.py` 无 Valheim/Boss 名/区域名等可见文本,只有 `boss`/`biome` 这类实体 `type` 标识符) |
+| 框架层 | `hub/native.py` | `NativeGame`(站点级,N 语种)+ `NativeLang`(单语种) |
+| 框架层 | `hub/mdlite.py` | 新增图片支持:块级 `![alt](key "图注")` → `<figure>`,行内 `![]()` → `<img>` |
+| 框架层 | `hub/native.css` / `hub/native_page.html` | 三栏骨架、抽屉、信息框、要点框、卡片、排序表样式;模板加 `{{SCRIPTS}}` 槽 |
+| 脚本 | `scripts/valheim_stats.py` | 内容密度统计(只统计,不改内容) |
+
+URL 规则:
+
+- 英文(默认):`/valheim/` 与 `/valheim/<slug>/`
+- 中文:`/valheim/zh/` 与 `/valheim/zh/<slug>/`
+- 每语种另有构建期生成的 `/valheim/all/` 与 `/valheim/zh/all/`(无 JS 时的搜索退化页)
+- 搜索索引:`/valheim/search-index.json`(两语种一份,每条带 `lang`)
+- `<html lang>`:英文 `en`、中文 `zh-CN`;hreflang `en` / `zh-CN` / `x-default`(指英文)互指;canonical 自指
+- 语言切换器只在该 slug 两语都已发布时出现(`/valheim/all/` 两语都有,所以也有)
+
+**旧中文 URL 变成英文页**:v1 的 `/valheim/<slug>/` 原本是中文,v2 起是英文页,中文移到 `/valheim/zh/<slug>/`。
+**不做 301**——同一 URL 只是换了语言,canonical 自指即可;中文页通过 hreflang 与页内切换器可达。
+上线后 GSC 里这批 URL 的语言判定会变,收录可能有波动,属预期。
+
+### 10.2 组件清单(全部 frontmatter 驱动,字段缺就不渲染)
+
+| 区域 | 组件 | 触发条件 |
+|---|---|---|
+| 壳 | 顶部总站导航(品牌 / Games 下拉 / 当前游戏 / 站内搜索框) | 全站 |
+| 壳 | 左侧常驻游戏内导航:6 个栏目各自展开条目 + Tools(全部攻略)+ About(作者 / 关于 / 联系 / 编辑方针);当前页高亮 | 全站;≤1024px 收成汉堡抽屉(纯 CSS checkbox,无 JS) |
+| 壳 | 右侧 Quick Facts 信息框 | 页面绑定了 `entity` / `entities`;≤1100px 移到标题下方 |
+| 标题区 | byline(作者 / 发布 / 最后核对 / 核对版本)+ scope + 语言切换器 | 有对应字段 |
+| 正文 | 「Key points」要点框 | `tldr:` 有值 |
+| 正文 | 封面 figure + 图注 | `_images.json` 有映射 |
+| 正文 | 「On this page」目录 | H2 ≥ 5(hub 页按生成区块数 ≥5) |
+| 正文 | 正文 figure(图注 + 来源,img 带 width/height/lazy/alt) | 正文里写 `![alt](ssNN "图注")` |
+| 正文 | 实体自动表:boss → Summon items + Drops;station/boat/item → Recipe | 实体有对应字段;表一律套 `.table-scroll` 横滑容器 |
+| 正文 | 抗性行(Weak / Resistant / Very resistant / Immune)在信息框里 | 实体有对应字段 |
+| 正文 | 「Sources」编号 S001… + 访问日期(合并页面 sourceUrls 与所绑实体的 source_urls) | 任一非空 |
+| 正文 | 「Related guides」缩略图卡片 + 核对版本徽标 + 上一篇/下一篇 | `related` 或同栏目有前后篇 |
+| 栏目页 | 文章卡片网格(缩略图 + 标题 + 摘要 + 版本徽标) | 栏目有已发布文章 |
+| 栏目页 | 多列排序聚合表(`<th>` 可点击排序,904B 内联 JS) | `native.category_tables` 里登记了该栏目 |
+| hub 页 | hero(封面 + 一句话)→ 栏目 tile 网格 → 「About this guide」折叠段(首页稿正文)→ Boss quick table → Start here 3 卡 → 全部攻略分栏目列表 | — |
+| 结构化数据 | Article + BreadcrumbList(author Person=Jellyfi);栏目/hub 为 CollectionPage,作者页为 ProfilePage | 按页型 |
+
+内联 JS 两段:排序 **904 B**(上限 3KB)、搜索 **1,221 B**(上限 4KB),都走 DOM API 拼结果、不拼 HTML 字符串。
+颜色全部走 CSS 变量;主题色沿用 v1 的 `native.theme`(`--accent #8cc4d6` / `--accent2 #c3e2ec`)。
+
+### 10.3 frontmatter 新字段
+
+| 字段 | 类型 | 作用 |
+|---|---|---|
+| `tldr` | `["…","…","…"]` | 标题下的「Key points」要点框,建议 3–4 行;缺省不渲染 |
+| `entity` | `"kall"` | 绑定 `data/valheim/entities.json` 的一个实体 → 右侧信息框 + 自动表 |
+| `entities` | `["raft","karve","longship","drakkar"]` | 绑定多个实体(依次渲染多张信息框与 Recipe 表) |
+| `images` | `["ss03","ss09"]` | 该页可引用的图片 key;**第一个覆盖 `_images.json` 的封面映射**。正文里 `![alt](ssNN "图注")` 直接按 key 取图 |
+
+原有字段口径不变(`slug/url/title/seoTitle/description/category/language/type/related/sourceUrls/checkedAt/scope/date/updated/reviewed/gameVersion/draft/author`)。
+`url` 必须与路由规则一致(中文页是 `/valheim/zh/<slug>/`),不一致构建直接报错。
+
+实体绑定现状:每语种 21 页有信息框(8 boss + 7 biome/区域页 + crafting/mead/farming/portals/ships/intricate-key)。
+
+### 10.4 门禁命令与结果(2026-09-18 本地对 `out/` 复现)
+
+| 命令 | 最后一行 |
+|---|---|
+| `python3 build.py` | `built 567 html pages`(valheim 82 页 = 两语种各 41) |
+| `python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en --dir-lang valheim/zh=zh` | `check_content: 558 页 · 0 阻塞 · 0 警告 (trailingSlash=yes)` |
+| `python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja --games beast-of-reincarnation,dragonsword-awakening,orc-problem,sephiria,shift-at-midnight` | `5 个游戏目录 · 多语种 1 · 单语种/跳过 4 · 阻塞 0 · 警告 0` |
+| `python3 .gates/check_i18n.py out --default en --locales zh --root-default --games valheim` | `1 个游戏目录 · 多语种 1(valheim) · 单语种/跳过 0 · 阻塞 0 · 警告 0` |
+| `python3 .gates/check_sitemap.py --out out --host lootlore-ten.vercel.app` | `→ 0 阻塞 · 0 警告`(566 条 loc,其中 `/valheim/zh/` 41 条) |
+| `python3 .gates/link_check.py --out out` | `✓ 无死链`(585 条站内链接) |
+| `python3 .gates/freshness_audit.py --out out` | `全部在期内,无需动作。` |
+| `python3 .gates/tech_audit.py --out out --base … --prefix /valheim/ --summary`(只报告) | canonical / JSON-LD / OG / alt / 宽高 / H1 全 0 问题;title 显示宽度 >60 共 31 页、<30 共 8 页;description <70 共 7 页;词数 <800 共 69 页 |
+| 占位语 grep(`coming soon / 待补充 / TBD / TODO / lorem ipsum / 即将上线`) | content 与 out 均 0 命中 |
+| 代码层游戏专属文字 grep | `hub/native.py`、`hub/mdlite.py`、`hub/native.css`、`build.py` 0 命中 |
+
+门禁脚本本次改动(待同步回 `seo-jianzhan/scripts` 真相源):
+
+- `check_content.py`:`--dir-lang` 支持多段前缀(`valheim/zh=zh`),取最长匹配。
+- `check_i18n.py`:新增 `--root-default` —— 主语种页直接落在栏目根(`/valheim/…`)、其余语种在 `/valheim/<locale>/` 下的布局;`LANG_ATTR` 比较时按主语种码截断(`zh-CN` ↔ `zh`)。
+- `gates.yml`:check_i18n 拆成两步(五个既有子站一步、valheim 一步)。
+
+### 10.5 内容密度统计(`python3 scripts/valheim_stats.py`)
+
+每页输出:语言 / 词数(英文按拉丁词数、中文按汉字数)/ 表格数 / 图片数(封面 + 正文 figure,不含卡片缩略图)/ 有无信息框 / 有无 tldr。
+
+| 语言 | 页数 | 有信息框 | 有 tldr | 表格合计 | 图片合计 | 词数 min / 中位 / max |
+|---|---|---|---|---|---|---|
+| en | 40 | 21 | 1 | 41 | 41 | 193 / 715 / 1362 |
+| zh-CN | 40 | 21 | 1 | 41 | 41 | 339 / 1031 / 2425 |
+
+**本轮只统计,不做内容增强**:`tldr` 目前只有 kall 两语各一份(样板),正文配图也只有 kall 两语各一张(样板),其余由后续内容 agent 按这两个样板补。
+
+### 10.6 截图(Playwright Chromium,本地产物,file 路由拦截)
+
+位置:`/tmp/claude-0/-home-claude/656bc16e-3a77-5cd3-aef6-9c8bac0c32b8/scratchpad/v2/shots/`(会话临时目录,未入库),
+脚本 `scratchpad/v2/shot.py`,量测数据 `shots/metrics.json`。
+
+`hub-{390,1280}.png`、`bosses-{390,1280}.png`、`kall-{390,1280}.png`、`zh-kall-{390,1280}.png`、
+`kall-drawer-390.png`(抽屉打开态)、`bosses-table-scrolled-390.png`(表格横滑后)。
+
+实测:
+
+- 8 张整页在 390 与 1280 下 `scrollWidth == clientWidth`(**无横向溢出**)。
+- 抽屉:390 下汉堡按钮 `display:flex`,未开时侧栏 `translateX(-326px)` 在视口外;点击后 `x=0`、宽 320px、44 条链接可见;1280 下按钮 `display:none`、侧栏常驻(x=16,宽 230)。
+- 信息框:1280 下在右栏(x=964,宽 300,与标题同一行起);390 下 y=523 落在标题区底(495)之下、正文顶(1042)之上 —— **窄屏在标题下方**。
+- 表格横滑:390 下 Boss 聚合表容器 356px / 内容 967px,`scrollLeft` 可推到 611;文章内实体表 356 / 560 同样可滑。
+- 修掉一处样式冲突:`hub/style.css` 的 `section{padding:44px 0 0}` 会在信息框顶部留一条空带,已在 `native.css` 里对 `.doc section` / `.rail section` 置 `padding:0`。
+
+### 10.7 v2 待办
+
+| # | 事项 | 谁 |
+|---|---|---|
+| 1 | 内容增强:39×2 页补 `tldr`(3–4 行)与正文配图(每篇 3–5 张),样板见 `content/valheim/{en,zh}/kall.md` | 内容 agent |
+| 2 | 中文实体名:`entities.json` 里 43 个实体绝大多数 `name_zh == name_en`(`unverified_fields` 已标注),中文页信息框/表格因此显示英文名;要不要统一译名、按什么依据译,待拍板 | 站主 / 内容方 |
+| 3 | 英文 title 长度:31 篇 `seoTitle` 显示宽度 >60,8 个 <30,属 P1 | 内容方 |
+| 4 | 未绑实体的页面(新手/联机/生存类 19 页)没有信息框;是否需要为「机制类」实体(rested / food / death)设计另一种信息框样式,待定 | 站主 |
+| 5 | 合并 main 与上线:本分支**未合并、未上线**;合并后需在 GSC 重提 sitemap,并留意旧 `/valheim/<slug>/` 由中文改英文带来的收录波动 | 站主 |

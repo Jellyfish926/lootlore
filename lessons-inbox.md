@@ -25,7 +25,7 @@
    修法:`check_content.py --dir-lang valheim=zh`(按目录声明语种,并对这些目录跳过 LOCALE_LINK)。`check_i18n --games` 对该目录会明确打印「单语种跳过」。
    → 并入 `seo-jianzhan/scripts/check_content.py` 真相源,SKILL.md ⑥ 2026-09-11 那段后补一句。
 
-5. **云容器里 Playwright 访问本地预览服务器会被 agent proxy 拦成 405。**
+5. **[已并入 2026-09-18] 云容器里 Playwright 访问本地预览服务器会被 agent proxy 拦成 405。**
    条件:`HTTPS_PROXY` 指向 127.0.0.1 上的 agent proxy;Chromium 带 proxy 启动后,`bypass: 127.0.0.1` 无效,请求 `http://127.0.0.1:8765/` 返回代理的 405 页面。
    修法:不起 HTTP 服务,用 `context.route("https://preview.<任意>.test/**", …)` 直接从 `out/` 读文件 fulfill;外部图片仍走代理正常加载。
    → 并入 `gongzuo-jichu` 执行环境一节(或 seo-jianzhan Gate 1.5「肉眼看页面」的云端做法)。

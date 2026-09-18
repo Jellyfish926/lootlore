@@ -59,6 +59,24 @@ def pages(root, loc):
     return out
 
 
+def pages_at_root(root, locales):
+    """主语种直接落在站根(如 /<game>/ 是默认语种,/<game>/<locale>/ 是其余语种)时的页面表。"""
+    out = {}
+    skip = {l for l in locales}
+    if not os.path.isdir(root):
+        return out
+    for dp, dirs, fs in os.walk(root):
+        rel_dir = os.path.relpath(dp, root).replace(os.sep, "/")
+        if rel_dir == ".":
+            dirs[:] = [d for d in dirs if d not in skip]
+        for f in fs:
+            if f.endswith(".html"):
+                rel = os.path.relpath(os.path.join(dp, f), root).replace(os.sep, "/")
+                rel = rel[:-len("index.html")] if rel.endswith("index.html") else rel[:-5]
+                out[rel.strip("/") or "index"] = os.path.join(dp, f)
+    return out
+
+
 def flat_html_count(root):
     """root 下(不分语种目录)一共有多少 html —— 只用来在跳过单语种站时给个真实数字,而不是空手跳过。"""
     n = 0
@@ -68,8 +86,10 @@ def flat_html_count(root):
 
 
 def check_one(root, a, label=""):
-    """对单个站(root 下直接是 <locale>/<page>)跑一遍多语言检查,返回 (base_count, E, W, stats)。"""
-    base = pages(root, a.default)
+    """对单个站跑一遍多语言检查,返回 (base_count, E, W, stats)。
+    默认布局:root/<locale>/<page>;--root-default 时主语种直接在 root 下,其余语种仍是 root/<locale>/。"""
+    locs = [x for x in a.locales.split(",") if x and x != a.default]
+    base = pages_at_root(root, locs) if a.root_default else pages(root, a.default)
     if not base:
         n = flat_html_count(root)
         tag = f"[{label.strip('/')}] " if label else ""
@@ -80,7 +100,7 @@ def check_one(root, a, label=""):
     for k, path in base.items():
         p = P(); p.feed(open(path, encoding="utf-8", errors="replace").read()); base_words[k] = words(" ".join(p.text), a.default)
     E, W, stats = [], [], {}
-    for loc in [x for x in a.locales.split(",") if x and x != a.default]:
+    for loc in locs:
         pg = pages(root, loc)
         missing = sorted(set(base) - set(pg)); extra = sorted(set(pg) - set(base))
         stubs = 0
@@ -93,7 +113,7 @@ def check_one(root, a, label=""):
                 E.append(("STUB_PAGE", f"{label}/{loc}/{k}", f"{n} 词 vs 主语种 {base_words[k]}(<{int(a.min_ratio*100)}%)")); stubs += 1
             m = PLACEHOLDER.search(txt) or PLACEHOLDER_CS.search(txt)
             if m: E.append(("PLACEHOLDER", f"{label}/{loc}/{k}", f"「{m.group(0)}」"))
-            if p.lang and p.lang != loc: E.append(("LANG_ATTR", f"{label}/{loc}/{k}", f"lang={p.lang}"))
+            if p.lang and p.lang != loc.split("-")[0].lower(): E.append(("LANG_ATTR", f"{label}/{loc}/{k}", f"lang={p.lang}"))
             if p.hreflang == 0: W.append(("NO_HREFLANG", f"{label}/{loc}/{k}", "无 hreflang alternate"))
         stats[loc] = {"pages": len(pg), "missing": len(missing), "extra": len(extra), "stubs": stubs, "coverage": round(len(pg) / max(len(base), 1), 2)}
     if a.strict:
@@ -111,6 +131,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("root"); ap.add_argument("--default", default="en"); ap.add_argument("--locales", required=True)
     ap.add_argument("--min-ratio", type=float, default=0.4); ap.add_argument("--strict", action="store_true"); ap.add_argument("--json", action="store_true")
+    ap.add_argument("--root-default", action="store_true",
+                     help="主语种页直接落在站根(/<game>/…),其余语种在 /<game>/<locale>/ 下")
     ap.add_argument("--games", default="",
                      help="逗号分隔的游戏目录名(总站产物 /<slug>/<locale>/<page> 用);每个 slug 独立跑一遍本门禁")
     a = ap.parse_args()

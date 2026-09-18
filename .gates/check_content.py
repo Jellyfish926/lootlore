@@ -54,6 +54,16 @@ class P(HTMLParser):
         if not self._skip and not self.in_head: self.text.append(d)
 
 
+def dir_prefix_lang(parts, dir_lang):
+    """--dir-lang 支持多段前缀(如 valheim/zh=zh);取最长匹配的那条。"""
+    best = None
+    for pref, lang in dir_lang.items():
+        seg = [x for x in pref.strip("/").split("/") if x]
+        if parts[:len(seg)] == seg and (best is None or len(seg) > best[0]):
+            best = (len(seg), lang)
+    return best[1] if best else None
+
+
 def route_of(path, root):
     rel = os.path.relpath(path, root).replace(os.sep, "/")
     if rel.endswith("/index.html"): rel = rel[:-len("index.html")]
@@ -128,9 +138,9 @@ def main():
             if loc_idx is not None:
                 page_locale = parts[loc_idx]
                 locale_prefix = parts[:loc_idx]
-            elif parts and parts[0] in dir_lang:
-                page_locale = dir_lang[parts[0]]
-                locale_prefix = None  # 单语种游戏目录:没有「同语种旁页」可比,跳过 LOCALE_LINK
+            elif parts and dir_prefix_lang(parts, dir_lang):
+                page_locale = dir_prefix_lang(parts, dir_lang)
+                locale_prefix = None  # 声明语种的目录:没有「同语种旁页」可比,跳过 LOCALE_LINK
             else:
                 page_locale = a.default
                 locale_prefix = parts[:-1] if parts else []

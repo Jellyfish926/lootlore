@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "eikthyr"
 related: ["combat", "bronze", "first-base"]
 chineseCharacters: 728
 sourceUrls: ["https://valheim.fandom.com/wiki/Eikthyr"]

@@ -9,6 +9,7 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
+entity: "cultivator"
 related: ["food", "plains", "mistlands"]
 chineseCharacters: 748
 sourceUrls: ["https://valheim.fandom.com/wiki/Cultivator", "https://valheim.fandom.com/wiki/Turnip", "https://valheim.fandom.com/wiki/Barley"]

@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "plains"
 related: ["yagluth", "farming", "food"]
 chineseCharacters: 767
 sourceUrls: ["https://valheim.fandom.com/wiki/Creatures", "https://valheim.fandom.com/wiki/Barley", "https://valheim.fandom.com/wiki/Flax", "https://valheim.fandom.com/wiki/Artisan_table"]

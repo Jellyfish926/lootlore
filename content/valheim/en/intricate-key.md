@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "intricate-key"
 related: ["deep-north", "kall", "crafting"]
 chineseCharacters: 685
 sourceUrls: ["https://games.gg/valheim/guides/valheim-how-to-get-the-intricate-key/", "https://www.valheim.tools/items/cast-intricate-key", "https://www.valheim.tools/guides/deep-north-progression"]

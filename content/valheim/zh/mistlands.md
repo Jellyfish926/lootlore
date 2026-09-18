@@ -9,6 +9,7 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
+entities: ["mistlands", "black-forge"]
 related: ["queen", "food", "portals"]
 chineseCharacters: 773
 sourceUrls: ["https://valheim.fandom.com/wiki/Mistlands", "https://valheim.fandom.com/wiki/Point_of_interest", "https://valheim.fandom.com/wiki/Sap_extractor", "https://valheim.fandom.com/wiki/Eitr_refinery"]

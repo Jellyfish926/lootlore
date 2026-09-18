@@ -9,6 +9,7 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
+entities: ["deep-north", "frigid-kiln", "frost-foundry"]
 related: ["intricate-key", "kall", "traders"]
 chineseCharacters: 742
 sourceUrls: ["https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide", "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "https://www.valheim.tools/guides/deep-north-progression"]

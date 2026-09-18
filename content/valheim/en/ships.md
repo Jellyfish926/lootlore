@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
-entities: ["karve"]
+entities: ["ocean", "raft", "karve", "longship", "drakkar"]
 related: ["portals", "swamp", "ashlands"]
 chineseCharacters: 752
 sourceUrls: ["https://valheim.fandom.com/wiki/Karve", "https://valheim.fandom.com/wiki/Boats"]

@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "moder"
 related: ["mountains", "plains", "combat"]
 chineseCharacters: 752
 sourceUrls: ["https://valheim.fandom.com/wiki/Moder", "https://valheim.fandom.com/wiki/Dragon_tear"]

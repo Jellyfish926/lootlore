@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+entity: "black-forest"
 related: ["crafting", "elder", "farming"]
 chineseCharacters: 859
 sourceUrls: ["https://valheim.fandom.com/wiki/Progression_guide", "https://valheim.fandom.com/wiki/Surtling_core", "https://valheim.fandom.com/wiki/Finewood", "https://valheim.fandom.com/wiki/Charcoal_kiln", "https://valheim.fandom.com/wiki/Smelter", "https://valheim.fandom.com/wiki/Forge", "https://valheim.fandom.com/wiki/Bronze"]

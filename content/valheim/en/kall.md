@@ -9,8 +9,8 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
-entity: "kall"
 tldr: ["Three Malicious Blood open the Aesir Passage \u2014 go in repaired, fed and rested.", "In phase two the boss is invulnerable inside ice: kill the summoned avatars instead.", "Phase three adds fire, frost and lightning damage, so bring resistance and a stamina buffer."]
+entity: "kall"
 related: ["deep-north", "intricate-key", "death-recovery"]
 chineseCharacters: 836
 sourceUrls: ["https://www.valheim.tools/guides/deep-north-progression", "https://mobalytics.gg/gamebase/guides/valheim-kall-fimbulbringer-boss-guide", "https://valheim.wiki/w/Kall_Fimbulbringer"]

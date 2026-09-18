@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entities: ["mistlands", "black-forge"]
 related: ["queen", "food", "portals"]
 chineseCharacters: 773
 sourceUrls: ["https://valheim.fandom.com/wiki/Mistlands", "https://valheim.fandom.com/wiki/Point_of_interest", "https://valheim.fandom.com/wiki/Sap_extractor", "https://valheim.fandom.com/wiki/Eitr_refinery"]

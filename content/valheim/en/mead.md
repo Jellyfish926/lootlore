@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+entities: ["mead-ketill", "fermenter"]
 related: ["swamp", "mountains", "food"]
 chineseCharacters: 725
 sourceUrls: ["https://valheim.fandom.com/wiki/Mead_ketill", "https://gamers.wiki/en/games/valheim/guides/valheim-mead-guide-mead-ketill-fermenter-buffs"]

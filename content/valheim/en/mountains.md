@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "mountains"
 related: ["moder", "ships", "mead"]
 chineseCharacters: 766
 sourceUrls: ["https://valheim.fandom.com/wiki/Status_effects", "https://valheim.fandom.com/wiki/Creatures", "https://valheim.fandom.com/wiki/Wishbone", "https://valheim.fandom.com/wiki/Dragon_egg"]

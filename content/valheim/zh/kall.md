@@ -9,8 +9,8 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
-entity: "kall"
 tldr: ["\u4e09\u4efd Malicious Blood \u624d\u80fd\u6253\u5f00 Aesir Passage\uff0c\u8fdb\u573a\u524d\u5148\u4fee\u7406\u3001\u8fdb\u98df\u3001\u5237\u65b0\u72b6\u6001\u3002", "\u7b2c\u4e8c\u9636\u6bb5\u672c\u4f53\u5728\u51b0\u5757\u91cc\u65e0\u654c\uff0c\u6253\u53ec\u5524\u51fa\u7684\u5316\u8eab\uff0c\u4e0d\u8981\u780d\u51b0\u5757\u3002", "\u7b2c\u4e09\u9636\u6bb5\u62db\u5f0f\u5e26\u706b\u3001\u971c\u4e0e\u96f7\u7535\u4f24\u5bb3\uff0c\u5e26\u597d\u6297\u6027\u88c5\u5907\u5e76\u7559\u4f53\u529b\u3002"]
+entity: "kall"
 related: ["deep-north", "intricate-key", "death-recovery"]
 chineseCharacters: 836
 sourceUrls: ["https://www.valheim.tools/guides/deep-north-progression", "https://mobalytics.gg/gamebase/guides/valheim-kall-fimbulbringer-boss-guide", "https://valheim.wiki/w/Kall_Fimbulbringer"]

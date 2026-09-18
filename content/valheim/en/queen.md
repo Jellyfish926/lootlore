@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "queen"
 related: ["ashlands", "combat", "death-recovery"]
 chineseCharacters: 793
 sourceUrls: ["https://valheim.fandom.com/wiki/The_Queen", "https://valheim.fandom.com/wiki/Boss_strategies"]

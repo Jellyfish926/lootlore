@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "elder"
 related: ["swamp", "mead", "portals"]
 chineseCharacters: 733
 sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder"]

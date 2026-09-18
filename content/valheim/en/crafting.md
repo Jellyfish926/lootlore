@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+entities: ["workbench", "forge", "smelter", "charcoal-kiln"]
 related: ["bronze", "mods", "first-base"]
 chineseCharacters: 959
 sourceUrls: ["https://valheim.fandom.com/wiki/Crafting", "https://valheim.fandom.com/wiki/Smelter", "https://valheim.fandom.com/wiki/Forge"]

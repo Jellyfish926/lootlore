@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entities: ["ashlands", "eternal-pyre", "shield-generator"]
 related: ["fader", "ships", "portals"]
 chineseCharacters: 763
 sourceUrls: ["https://www.valheimgame.com/support/getting-ready-for-the-ashlands/", "https://valheim.fandom.com/wiki/Progression_guide", "https://valheim.fandom.com/wiki/Shield_generator"]

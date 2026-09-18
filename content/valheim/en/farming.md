@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+entity: "cultivator"
 related: ["food", "plains", "mistlands"]
 chineseCharacters: 748
 sourceUrls: ["https://valheim.fandom.com/wiki/Cultivator", "https://valheim.fandom.com/wiki/Turnip", "https://valheim.fandom.com/wiki/Barley"]

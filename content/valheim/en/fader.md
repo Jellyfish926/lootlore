@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "fader"
 related: ["deep-north", "combat", "mead"]
 chineseCharacters: 758
 sourceUrls: ["https://valheim.fandom.com/wiki/Fader"]

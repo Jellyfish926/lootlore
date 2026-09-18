@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "bonemass"
 related: ["mountains", "combat", "death-recovery"]
 chineseCharacters: 750
 sourceUrls: ["https://valheim.fandom.com/wiki/Withered_bone", "https://valheim.fandom.com/wiki/Bonemass"]

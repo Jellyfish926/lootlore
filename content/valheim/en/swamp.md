@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
+entity: "swamp"
 related: ["bonemass", "mead", "ships"]
 chineseCharacters: 767
 sourceUrls: ["https://valheim.fandom.com/wiki/Swamp", "https://valheim.fandom.com/wiki/Sunken_Crypt"]

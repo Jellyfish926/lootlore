@@ -9,6 +9,7 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches can change the rules"
 type: "article"
+entities: ["portal", "portal-stone"]
 related: ["ships", "death-recovery", "ashlands"]
 chineseCharacters: 918
 sourceUrls: ["https://valheim.fandom.com/wiki/Portal"]

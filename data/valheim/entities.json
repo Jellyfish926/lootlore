@@ -1,9 +1,400 @@
 {
  "fetched": "2026-09-18",
  "game_version": "1.0.12",
- "sources_note": "FIXTURE (2 entities) — 管线自测用,数值逐条摘自 valheim.wiki api.php wikitext;真数据由数据 agent 产出后整体替换。",
- "fixture": true,
+ "sources_note": "valheim.wiki (valheim.weirdgloop.org mirror, fetched via api.php?action=parse&prop=wikitext) as primary source; no fandom cross-check performed in this pass (all entities covered by valheim.wiki, no conflicts recorded). Chinese names taken from content/valheim/*.md where an established translation exists; otherwise name_zh == name_en and the field is listed in unverified_fields.",
  "entities": {
+  "eikthyr": {
+   "type": "boss",
+   "name_en": "Eikthyr",
+   "name_zh": "Eikthyr",
+   "page_slug": "eikthyr",
+   "order": 1,
+   "biome": "Meadows",
+   "summon": [
+    {
+     "item_en": "Deer trophy",
+     "item_zh": "Deer trophy",
+     "qty": 2
+    }
+   ],
+   "hp": 500,
+   "hp_source": "https://valheim.wiki/w/Eikthyr",
+   "damage_types": [
+    "Pierce",
+    "Lightning"
+   ],
+   "weak": [],
+   "resistant": [],
+   "very_resistant": [],
+   "immune": [
+    "Stagger"
+   ],
+   "drops": [
+    {
+     "item_en": "Eikthyr trophy",
+     "item_zh": "Eikthyr trophy",
+     "qty": "1"
+    },
+    {
+     "item_en": "Hard antler",
+     "item_zh": "Hard antler",
+     "qty": "3"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "Eikthyr Power",
+    "effect_en": "Run/Jump/Swim stamina usage -60% for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": "First pickaxe (Antler pickaxe), allowing ore mining",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Eikthyr"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (no established zh translation in content pack)"
+   ]
+  },
+  "elder": {
+   "type": "boss",
+   "name_en": "The Elder",
+   "name_zh": "古树长老",
+   "page_slug": "elder",
+   "order": 2,
+   "biome": "Black Forest",
+   "summon": [
+    {
+     "item_en": "Ancient seed",
+     "item_zh": "Ancient seed",
+     "qty": 3
+    }
+   ],
+   "hp": 2500,
+   "hp_source": "https://valheim.wiki/w/The_Elder",
+   "damage_types": [
+    "Pierce",
+    "Blunt"
+   ],
+   "weak": [
+    "Fire"
+   ],
+   "resistant": [],
+   "very_resistant": [],
+   "immune": [
+    "Poison",
+    "Spirit",
+    "Stagger"
+   ],
+   "drops": [
+    {
+     "item_en": "The Elder trophy",
+     "item_zh": "The Elder trophy",
+     "qty": "1"
+    },
+    {
+     "item_en": "Swamp key",
+     "item_zh": "Swamp key",
+     "qty": "1 per player"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "The Elder Power",
+    "effect_en": "Health regen +30%, Chop damage +60%, Pickaxe damage +60% for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": "Swamp key to open Burial Chambers (primary source of Scrap iron)",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/The_Elder"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "bonemass": {
+   "type": "boss",
+   "name_en": "Bonemass",
+   "name_zh": "邪骨恶灵",
+   "page_slug": "bonemass",
+   "order": 3,
+   "biome": "Swamp",
+   "summon": [
+    {
+     "item_en": "Withered bone",
+     "item_zh": "Withered bone",
+     "qty": 10
+    }
+   ],
+   "hp": 5000,
+   "hp_source": "https://valheim.wiki/w/Bonemass",
+   "damage_types": [
+    "Poison",
+    "Blunt"
+   ],
+   "weak": [
+    "Blunt",
+    "Frost"
+   ],
+   "resistant": [
+    "Slash"
+   ],
+   "very_resistant": [
+    "Fire",
+    "Pierce"
+   ],
+   "immune": [
+    "Poison",
+    "Stagger"
+   ],
+   "drops": [
+    {
+     "item_en": "Bonemass trophy",
+     "item_zh": "Bonemass trophy",
+     "qty": "1"
+    },
+    {
+     "item_en": "Wishbone",
+     "item_zh": "Wishbone",
+     "qty": "1 per player"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "Bonemass Power",
+    "effect_en": "Slightly resistant vs Blunt/Slash/Pierce, Block stamina usage -100%, Block stamina return +5, for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": "Wishbone: locates Silver veins (Mountain) and buried Muddy scrap piles (Swamp)",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Bonemass"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "moder": {
+   "type": "boss",
+   "name_en": "Moder",
+   "name_zh": "冰霜龙母",
+   "page_slug": "moder",
+   "order": 4,
+   "biome": "Mountain",
+   "summon": [
+    {
+     "item_en": "Dragon egg",
+     "item_zh": "Dragon egg",
+     "qty": 3
+    }
+   ],
+   "hp": 7500,
+   "hp_source": "https://valheim.wiki/w/Moder",
+   "damage_types": [
+    "Pierce",
+    "Slash",
+    "Frost"
+   ],
+   "weak": [
+    "Fire"
+   ],
+   "resistant": [],
+   "very_resistant": [],
+   "immune": [
+    "Frost",
+    "Spirit",
+    "Stagger"
+   ],
+   "drops": [
+    {
+     "item_en": "Dragon tear",
+     "item_zh": "Dragon tear",
+     "qty": "10"
+    },
+    {
+     "item_en": "Moder trophy",
+     "item_zh": "Moder trophy",
+     "qty": "1"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "Moder Power",
+    "effect_en": "Max carry weight +300, Resistant vs Frost, Movement speed +10% for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": "Scythe handle, Toadstool, Fragrant bundle and Mountain peak pepper powder from The Bog Witch trader",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Moder"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "yagluth": {
+   "type": "boss",
+   "name_en": "Yagluth",
+   "name_zh": "亚格鲁斯",
+   "page_slug": "yagluth",
+   "order": 5,
+   "biome": "Plains",
+   "summon": [
+    {
+     "item_en": "Fuling totem",
+     "item_zh": "Fuling totem",
+     "qty": 5
+    }
+   ],
+   "hp": 10000,
+   "hp_source": "https://valheim.wiki/w/Yagluth",
+   "damage_types": [
+    "Fire",
+    "Lightning",
+    "Blunt"
+   ],
+   "weak": [],
+   "resistant": [
+    "Fire"
+   ],
+   "very_resistant": [
+    "Pierce"
+   ],
+   "immune": [
+    "Poison",
+    "Stagger"
+   ],
+   "drops": [
+    {
+     "item_en": "Torn spirit",
+     "item_zh": "Torn spirit",
+     "qty": "3"
+    },
+    {
+     "item_en": "Yagluth trophy",
+     "item_zh": "Yagluth trophy",
+     "qty": "1"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "Yagluth Power",
+    "effect_en": "Resistant vs Lightning, Farming +25, +10% damage dealt (all types) for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": "Enables use of Wisplight/Wisp torch to clear Mistlands mist (both require Yagluth defeated)",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Yagluth",
+    "https://valheim.wiki/w/Mistlands"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "queen": {
+   "type": "boss",
+   "name_en": "The Queen",
+   "name_zh": "迷雾女王",
+   "page_slug": "queen",
+   "order": 6,
+   "biome": "Mistlands",
+   "summon": [],
+   "hp": 12500,
+   "hp_source": "https://valheim.wiki/w/The_Queen",
+   "damage_types": [
+    "Slash",
+    "Pierce",
+    "Poison",
+    "Blunt"
+   ],
+   "weak": [],
+   "resistant": [
+    "Pierce"
+   ],
+   "very_resistant": [],
+   "immune": [
+    "Spirit"
+   ],
+   "drops": [
+    {
+     "item_en": "Majestic carapace",
+     "item_zh": "Majestic carapace",
+     "qty": "5"
+    },
+    {
+     "item_en": "The Queen trophy",
+     "item_zh": "The Queen trophy",
+     "qty": "1"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "The Queen's Power",
+    "effect_en": "Eitr regen +100%, Resistant vs Poison, Sneak stamina usage -100% for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": null,
+   "unlocks_zh": null,
+   "source_urls": [
+    "https://valheim.wiki/w/The_Queen"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "summon (first fight requires no sacrifice per wiki text; no summon-item list found)",
+    "unlocks_en"
+   ]
+  },
+  "fader": {
+   "type": "boss",
+   "name_en": "Fader",
+   "name_zh": "Fader",
+   "page_slug": "fader",
+   "order": 7,
+   "biome": "Ashlands",
+   "summon": [
+    {
+     "item_en": "Bell",
+     "item_zh": "Bell",
+     "qty": 3
+    }
+   ],
+   "hp": 25000,
+   "hp_source": "https://valheim.wiki/w/Fader",
+   "damage_types": [
+    "Fire",
+    "Spirit",
+    "Pierce"
+   ],
+   "weak": [],
+   "resistant": [
+    "Pierce"
+   ],
+   "very_resistant": [],
+   "immune": [
+    "Fire",
+    "Spirit"
+   ],
+   "drops": [
+    {
+     "item_en": "Fader relic",
+     "item_zh": "Fader relic",
+     "qty": "5"
+    },
+    {
+     "item_en": "Fader trophy",
+     "item_zh": "Fader trophy",
+     "qty": "100%"
+    }
+   ],
+   "forsaken_power": {
+    "name_en": "Fader Power",
+    "effect_en": "Resistant vs Fire, Adrenaline gain +100%, 50% reduced Stagger meter modifier, for 300s",
+    "effect_zh": ""
+   },
+   "unlocks_en": "Fiery spice powder from The Bog Witch trader (200 Coins); defeating Fader is required to progress into the Deep North",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Fader",
+    "https://valheim.wiki/w/Deep_North"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (no established zh translation in content pack)"
+   ]
+  },
   "kall": {
    "type": "boss",
    "name_en": "Kall Fimbulbringer",
@@ -11,44 +402,1298 @@
    "page_slug": "kall",
    "order": 8,
    "biome": "Deep North",
-   "biome_zh": "深北之境",
-   "summon": [{"item_en": "Malicious Blood", "item_zh": "Malicious Blood", "qty": 3}],
-   "hp": "10000 + 7000 + 30000",
+   "summon": [
+    {
+     "item_en": "Malicious Blood",
+     "item_zh": "Malicious Blood",
+     "qty": 3
+    }
+   ],
+   "hp": null,
+   "hp_phases": [
+    10000,
+    7000,
+    30000
+   ],
    "hp_source": "https://valheim.wiki/w/Kall_Fimbulbringer",
-   "damage_types": ["Blunt", "Chop", "Pickaxe", "Frost", "Fire", "Pierce"],
+   "damage_types": [
+    "Blunt",
+    "Chop",
+    "Pickaxe",
+    "Pierce",
+    "Fire",
+    "Frost"
+   ],
    "weak": [],
-   "resistant": ["Pierce", "Fire", "Frost", "Lightning"],
+   "resistant": [
+    "Pierce",
+    "Fire",
+    "Frost",
+    "Lightning"
+   ],
    "very_resistant": [],
-   "immune": ["Spirit"],
+   "immune": [
+    "Spirit"
+   ],
    "drops": [
-    {"item_en": "Sacrificial Blood", "item_zh": "Sacrificial Blood", "qty": "1"},
-    {"item_en": "Crown Jewel", "item_zh": "Crown Jewel", "qty": "1"}
+    {
+     "item_en": "Sacrificial Blood",
+     "item_zh": "Sacrificial Blood",
+     "qty": "1"
+    },
+    {
+     "item_en": "Crown Jewel",
+     "item_zh": "Crown Jewel",
+     "qty": "1"
+    }
    ],
    "forsaken_power": null,
-   "unlocks_en": "Seasoning of the Gourd from The Bog Witch for 220 Coins",
-   "unlocks_zh": "解锁 The Bog Witch 处售价 220 Coins 的 Seasoning of the Gourd",
-   "source_urls": ["https://valheim.wiki/w/Kall_Fimbulbringer"],
+   "unlocks_en": "Seasoning of the Gourd from The Bog Witch trader for 220 Coins",
+   "unlocks_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Kall_Fimbulbringer"
+   ],
    "accessed": "2026-09-18",
-   "unverified_fields": ["forsaken_power"]
+   "unverified_fields": [
+    "name_zh (no established zh translation in content pack)",
+    "forsaken_power (page marked Work in progress, no altar/power section present)"
+   ]
+  },
+  "meadows": {
+   "type": "biome",
+   "name_en": "Meadows",
+   "name_zh": "青青草原",
+   "order": 1,
+   "boss": "eikthyr",
+   "key_resources": [
+    {
+     "en": "Wood",
+     "zh": ""
+    },
+    {
+     "en": "Flint",
+     "zh": ""
+    },
+    {
+     "en": "Stone",
+     "zh": ""
+    },
+    {
+     "en": "Dandelion",
+     "zh": ""
+    },
+    {
+     "en": "Mushroom",
+     "zh": ""
+    },
+    {
+     "en": "Raspberry",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Boar",
+     "zh": ""
+    },
+    {
+     "en": "Neck",
+     "zh": ""
+    },
+    {
+     "en": "Greyling",
+     "zh": ""
+    },
+    {
+     "en": "Draugr (in Draugr Village)",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Least hazardous biome; Draugr Villages are notably dangerous early on.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Meadows"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "black-forest": {
+   "type": "biome",
+   "name_en": "Black Forest",
+   "name_zh": "Black Forest",
+   "order": 2,
+   "boss": "elder",
+   "key_resources": [
+    {
+     "en": "Copper ore (Copper deposit)",
+     "zh": ""
+    },
+    {
+     "en": "Tin ore (Tin deposit)",
+     "zh": ""
+    },
+    {
+     "en": "Thistle",
+     "zh": ""
+    },
+    {
+     "en": "Carrot Seed",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Greydwarf",
+     "zh": ""
+    },
+    {
+     "en": "Greydwarf brute",
+     "zh": ""
+    },
+    {
+     "en": "Greydwarf shaman",
+     "zh": ""
+    },
+    {
+     "en": "Troll",
+     "zh": ""
+    },
+    {
+     "en": "Skeleton",
+     "zh": ""
+    },
+    {
+     "en": "Bear",
+     "zh": ""
+    },
+    {
+     "en": "Ghost",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Only biome where Copper and Tin ore are mined (requires Antler pickaxe from Eikthyr).",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Black_Forest"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (no established zh translation in content pack)"
+   ],
+   "page_slug": "bronze"
+  },
+  "swamp": {
+   "type": "biome",
+   "name_en": "Swamp",
+   "name_zh": "沼泽",
+   "order": 3,
+   "boss": "bonemass",
+   "key_resources": [
+    {
+     "en": "Ancient bark",
+     "zh": ""
+    },
+    {
+     "en": "Scrap iron",
+     "zh": ""
+    },
+    {
+     "en": "Guck",
+     "zh": ""
+    },
+    {
+     "en": "Turnip seeds",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Draugr",
+     "zh": ""
+    },
+    {
+     "en": "Draugr elite",
+     "zh": ""
+    },
+    {
+     "en": "Blob",
+     "zh": ""
+    },
+    {
+     "en": "Oozer",
+     "zh": ""
+    },
+    {
+     "en": "Leech",
+     "zh": ""
+    },
+    {
+     "en": "Skeleton",
+     "zh": ""
+    },
+    {
+     "en": "Surtling",
+     "zh": ""
+    },
+    {
+     "en": "Wraith",
+     "zh": ""
+    },
+    {
+     "en": "Abomination",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Always raining (player is always Wet); every creature here is hostile.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Swamp"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "swamp"
+  },
+  "mountains": {
+   "type": "biome",
+   "name_en": "Mountain",
+   "name_zh": "雪山",
+   "order": 4,
+   "boss": "moder",
+   "key_resources": [
+    {
+     "en": "Obsidian",
+     "zh": ""
+    },
+    {
+     "en": "Dragon egg",
+     "zh": ""
+    },
+    {
+     "en": "Silver ore (Silver vein)",
+     "zh": ""
+    },
+    {
+     "en": "Onion seeds",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Wolf",
+     "zh": ""
+    },
+    {
+     "en": "Drake",
+     "zh": ""
+    },
+    {
+     "en": "Stone Golem",
+     "zh": ""
+    },
+    {
+     "en": "Fenring (at night)",
+     "zh": ""
+    },
+    {
+     "en": "Cultist (Frost Cave)",
+     "zh": ""
+    },
+    {
+     "en": "Ulv (Frost Cave)",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Snow storms deal continuous Freezing damage without frost resistance.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Mountain"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "mountains"
+  },
+  "plains": {
+   "type": "biome",
+   "name_en": "Plains",
+   "name_zh": "平原",
+   "order": 5,
+   "boss": "yagluth",
+   "key_resources": [
+    {
+     "en": "Flax",
+     "zh": ""
+    },
+    {
+     "en": "Barley",
+     "zh": ""
+    },
+    {
+     "en": "Tar",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Deathsquito",
+     "zh": ""
+    },
+    {
+     "en": "Fuling",
+     "zh": ""
+    },
+    {
+     "en": "Fuling berserker",
+     "zh": ""
+    },
+    {
+     "en": "Fuling shaman",
+     "zh": ""
+    },
+    {
+     "en": "Growth",
+     "zh": ""
+    },
+    {
+     "en": "Lox",
+     "zh": ""
+    },
+    {
+     "en": "Vile",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Deathsquitoes can aggro far into the water near beaches.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Plains"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "plains"
+  },
+  "mistlands": {
+   "type": "biome",
+   "name_en": "Mistlands",
+   "name_zh": "迷雾之地",
+   "order": 6,
+   "boss": "queen",
+   "key_resources": [
+    {
+     "en": "Yggdrasil wood",
+     "zh": ""
+    },
+    {
+     "en": "Black marble",
+     "zh": ""
+    },
+    {
+     "en": "Black core",
+     "zh": ""
+    },
+    {
+     "en": "Sap",
+     "zh": ""
+    },
+    {
+     "en": "Royal jelly",
+     "zh": ""
+    },
+    {
+     "en": "Soft tissue",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Tick",
+     "zh": ""
+    },
+    {
+     "en": "Seeker",
+     "zh": ""
+    },
+    {
+     "en": "Seeker Soldier",
+     "zh": ""
+    },
+    {
+     "en": "Gjall",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Perpetual mist obscures vision; Wisplight/Wisp torch (require Yagluth defeated) needed to clear it.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Mistlands"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "mistlands"
+  },
+  "ashlands": {
+   "type": "biome",
+   "name_en": "Ashlands",
+   "name_zh": "灰烬之地",
+   "order": 7,
+   "boss": "fader",
+   "key_resources": [
+    {
+     "en": "Flametal ore",
+     "zh": ""
+    },
+    {
+     "en": "Sulfur",
+     "zh": ""
+    },
+    {
+     "en": "Grausten",
+     "zh": ""
+    },
+    {
+     "en": "Molten core",
+     "zh": ""
+    },
+    {
+     "en": "Ashwood",
+     "zh": ""
+    },
+    {
+     "en": "Bell fragment",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Asksvin",
+     "zh": ""
+    },
+    {
+     "en": "Charred Marksman",
+     "zh": ""
+    },
+    {
+     "en": "Charred Twitcher",
+     "zh": ""
+    },
+    {
+     "en": "Charred Warlock",
+     "zh": ""
+    },
+    {
+     "en": "Charred Warrior",
+     "zh": ""
+    },
+    {
+     "en": "Morgen",
+     "zh": ""
+    },
+    {
+     "en": "Bonemaw Serpent",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Surrounding water is boiling and destroys all wooden ships (Drakkar required to sail there).",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Ashlands"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "ashlands"
+  },
+  "deep-north": {
+   "type": "biome",
+   "name_en": "Deep North",
+   "name_zh": "深北之境",
+   "order": 8,
+   "boss": "kall",
+   "key_resources": [
+    {
+     "en": "Ice",
+     "zh": ""
+    },
+    {
+     "en": "Timberwood",
+     "zh": ""
+    },
+    {
+     "en": "Petrified Tissue",
+     "zh": ""
+    },
+    {
+     "en": "Frostcore",
+     "zh": ""
+    },
+    {
+     "en": "Luminous Larva",
+     "zh": ""
+    }
+   ],
+   "enemies": [
+    {
+     "en": "Greydwarf (Deep North)",
+     "zh": ""
+    },
+    {
+     "en": "Moose",
+     "zh": ""
+    },
+    {
+     "en": "Barka",
+     "zh": ""
+    },
+    {
+     "en": "Elaking",
+     "zh": ""
+    },
+    {
+     "en": "Eyeless One",
+     "zh": ""
+    },
+    {
+     "en": "Hexen",
+     "zh": ""
+    },
+    {
+     "en": "Krigen",
+     "zh": ""
+    },
+    {
+     "en": "Gammeltroll",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Snowstorms cause continuous Freezing damage; defeating Fader is required to progress through the biome.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Deep_North"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "deep-north"
+  },
+  "ocean": {
+   "type": "biome",
+   "name_en": "Ocean",
+   "name_zh": "Ocean",
+   "order": null,
+   "boss": null,
+   "key_resources": [],
+   "enemies": [
+    {
+     "en": "Serpent",
+     "zh": ""
+    },
+    {
+     "en": "Leviathan",
+     "zh": ""
+    }
+   ],
+   "unlocks": [],
+   "hazards_en": "Only realistically accessible by boat; swimming quickly depletes stamina and can lead to drowning.",
+   "hazards_zh": "",
+   "source_urls": [
+    "https://valheim.wiki/w/Ocean"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (no established zh translation in content pack)",
+    "order (Ocean is not part of the linear boss-progression sequence)"
+   ],
+   "page_slug": "ships"
+  },
+  "workbench": {
+   "type": "station",
+   "name_en": "Workbench",
+   "name_zh": "工作台",
+   "recipe": [
+    {
+     "item_en": "Wood",
+     "item_zh": "木头",
+     "qty": 10
+    }
+   ],
+   "requires_en": "No other structure required",
+   "unlocked_by_en": "Available from game start",
+   "source_urls": [
+    "https://valheim.wiki/w/Workbench"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "crafting"
+  },
+  "forge": {
+   "type": "station",
+   "name_en": "Forge",
+   "name_zh": "锻造台",
+   "recipe": [
+    {
+     "item_en": "Stone",
+     "item_zh": "石头",
+     "qty": 4
+    },
+    {
+     "item_en": "Coal",
+     "item_zh": "煤",
+     "qty": 4
+    },
+    {
+     "item_en": "Wood",
+     "item_zh": "木头",
+     "qty": 10
+    },
+    {
+     "item_en": "Copper",
+     "item_zh": "铜",
+     "qty": 6
+    }
+   ],
+   "requires_en": "Must be built near a Workbench",
+   "unlocked_by_en": "Workbench",
+   "source_urls": [
+    "https://valheim.wiki/w/Forge"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "crafting"
+  },
+  "smelter": {
+   "type": "station",
+   "name_en": "Smelter",
+   "name_zh": "熔炉",
+   "recipe": [
+    {
+     "item_en": "Stone",
+     "item_zh": "石头",
+     "qty": 20
+    },
+    {
+     "item_en": "Surtling Core",
+     "item_zh": "焰灵之核",
+     "qty": 5
+    }
+   ],
+   "requires_en": "Must be constructed near a Workbench",
+   "unlocked_by_en": "Acquiring a Surtling Core",
+   "source_urls": [
+    "https://valheim.wiki/w/Smelter"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "crafting"
+  },
+  "charcoal-kiln": {
+   "type": "station",
+   "name_en": "Charcoal Kiln",
+   "name_zh": "木炭窑",
+   "recipe": [
+    {
+     "item_en": "Stone",
+     "item_zh": "石头",
+     "qty": 20
+    },
+    {
+     "item_en": "Surtling core",
+     "item_zh": "焰灵之核",
+     "qty": 5
+    }
+   ],
+   "requires_en": "A nearby Workbench is required to construct it",
+   "unlocked_by_en": "Acquiring a Surtling core",
+   "source_urls": [
+    "https://valheim.wiki/w/Charcoal_Kiln"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "crafting"
+  },
+  "mead-ketill": {
+   "type": "station",
+   "name_en": "Mead Ketill",
+   "name_zh": "Mead Ketill",
+   "recipe": [
+    {
+     "item_en": "Tin",
+     "item_zh": "锡",
+     "qty": 4
+    },
+    {
+     "item_en": "Copper",
+     "item_zh": "铜",
+     "qty": 6
+    },
+    {
+     "item_en": "Leather scraps",
+     "item_zh": "碎皮",
+     "qty": 2
+    }
+   ],
+   "requires_en": "Requires a fire source underneath to operate; source structure Forge",
+   "unlocked_by_en": "Forge",
+   "source_urls": [
+    "https://valheim.wiki/w/Mead_Ketill"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "mead"
+  },
+  "fermenter": {
+   "type": "station",
+   "name_en": "Fermenter",
+   "name_zh": "发酵桶",
+   "recipe": [
+    {
+     "item_en": "Finewood",
+     "item_zh": "精细木",
+     "qty": 30
+    },
+    {
+     "item_en": "Bronze",
+     "item_zh": "青铜",
+     "qty": 5
+    },
+    {
+     "item_en": "Resin",
+     "item_zh": "树脂",
+     "qty": 10
+    }
+   ],
+   "requires_en": "Requires a roof and 70% cover to function; source structure Forge",
+   "unlocked_by_en": "Forge",
+   "source_urls": [
+    "https://valheim.wiki/w/Fermenter"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "mead"
+  },
+  "cultivator": {
+   "type": "station",
+   "name_en": "Cultivator",
+   "name_zh": "Cultivator",
+   "recipe": [
+    {
+     "item_en": "Corewood",
+     "item_zh": "Corewood",
+     "qty": 5
+    },
+    {
+     "item_en": "Bronze",
+     "item_zh": "青铜",
+     "qty": 5
+    }
+   ],
+   "requires_en": "Crafted at a Forge",
+   "unlocked_by_en": "Obtaining Bronze and Corewood",
+   "source_urls": [
+    "https://valheim.wiki/w/Cultivator"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name / uses generic 耕种工具)"
+   ],
+   "page_slug": "farming"
+  },
+  "black-forge": {
+   "type": "station",
+   "name_en": "Black Forge",
+   "name_zh": "Black Forge",
+   "recipe": [
+    {
+     "item_en": "Black marble",
+     "item_zh": "Black marble",
+     "qty": 10
+    },
+    {
+     "item_en": "Yggdrasil wood",
+     "item_zh": "Yggdrasil wood",
+     "qty": 10
+    },
+    {
+     "item_en": "Black core",
+     "item_zh": "Black core",
+     "qty": 5
+    }
+   ],
+   "requires_en": "Requires a roof and 70% cover to be usable; source structure Workbench",
+   "unlocked_by_en": "Workbench",
+   "source_urls": [
+    "https://valheim.wiki/w/Black_Forge"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "mistlands"
+  },
+  "frigid-kiln": {
+   "type": "station",
+   "name_en": "Frigid Kiln",
+   "name_zh": "Frigid Kiln",
+   "recipe": [
+    {
+     "item_en": "Stone",
+     "item_zh": "石头",
+     "qty": 20
+    },
+    {
+     "item_en": "Frostcore",
+     "item_zh": "Frostcore",
+     "qty": 10
+    },
+    {
+     "item_en": "Ice",
+     "item_zh": "Ice",
+     "qty": 5
+    }
+   ],
+   "requires_en": "Source structure Workbench; transforms Ice into Liquid Frost (1 per 30s, consuming 5 Ice, holds up to 25 Ice)",
+   "unlocked_by_en": "Workbench",
+   "source_urls": [
+    "https://valheim.wiki/w/Frigid_Kiln"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "deep-north"
+  },
+  "frost-foundry": {
+   "type": "station",
+   "name_en": "Frost Foundry",
+   "name_zh": "Frost Foundry",
+   "recipe": null,
+   "requires_en": "Fueled with Liquid Frost; a Cast is placed at the center to create the final item, consuming 5 Liquid Frost over 50 seconds",
+   "unlocked_by_en": null,
+   "source_urls": [
+    "https://valheim.wiki/w/Frost_Foundry"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "recipe (page marked Work in progress; no materials list present)",
+    "unlocked_by_en"
+   ],
+   "page_slug": "deep-north"
+  },
+  "eternal-pyre": {
+   "type": "station",
+   "name_en": "Eternal Pyre",
+   "name_zh": "Eternal Pyre",
+   "recipe": [
+    {
+     "item_en": "Stone",
+     "item_zh": "石头",
+     "qty": 10
+    },
+    {
+     "item_en": "Fader Relic",
+     "item_zh": "Fader Relic",
+     "qty": 1
+    }
+   ],
+   "requires_en": "Requires a Stonecutter to be built",
+   "unlocked_by_en": "Stonecutter",
+   "source_urls": [
+    "https://valheim.wiki/w/Eternal_Pyre"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "ashlands"
+  },
+  "portal": {
+   "type": "station",
+   "name_en": "Portal",
+   "name_zh": "传送门",
+   "recipe": [
+    {
+     "item_en": "Greydwarf eye",
+     "item_zh": "Greydwarf eye",
+     "qty": 10
+    },
+    {
+     "item_en": "Finewood",
+     "item_zh": "精细木",
+     "qty": 20
+    },
+    {
+     "item_en": "Surtling core",
+     "item_zh": "焰灵之核",
+     "qty": 2
+    }
+   ],
+   "requires_en": "Source structure Workbench",
+   "unlocked_by_en": "Workbench",
+   "source_urls": [
+    "https://valheim.wiki/w/Portal"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "portals"
+  },
+  "portal-stone": {
+   "type": "station",
+   "name_en": "Portal – Stone",
+   "name_zh": "Portal - Stone",
+   "recipe": [
+    {
+     "item_en": "Greydwarf eye",
+     "item_zh": "Greydwarf eye",
+     "qty": 10
+    },
+    {
+     "item_en": "Grausten",
+     "item_zh": "Grausten",
+     "qty": 30
+    },
+    {
+     "item_en": "Molten core",
+     "item_zh": "Molten core",
+     "qty": 2
+    }
+   ],
+   "requires_en": "A Stonecutter is required to construct it; allows teleporting with items Wood portals disallow (e.g. ores, metals)",
+   "unlocked_by_en": "Stonecutter",
+   "source_urls": [
+    "https://valheim.wiki/w/Portal_Stone"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "portals"
+  },
+  "shield-generator": {
+   "type": "station",
+   "name_en": "Shield Generator",
+   "name_zh": "护盾发生器",
+   "recipe": [
+    {
+     "item_en": "Iron",
+     "item_zh": "铁",
+     "qty": 5
+    },
+    {
+     "item_en": "Copper",
+     "item_zh": "铜",
+     "qty": 5
+    },
+    {
+     "item_en": "Shield core",
+     "item_zh": "Shield core",
+     "qty": 1
+    }
+   ],
+   "requires_en": "Source structure Workbench; fuelled by bones of any kind",
+   "unlocked_by_en": "Workbench",
+   "source_urls": [
+    "https://valheim.wiki/w/Shield_Generator"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "ashlands"
+  },
+  "raft": {
+   "type": "boat",
+   "name_en": "Raft",
+   "name_zh": "木筏",
+   "recipe": [
+    {
+     "item_en": "Wood",
+     "item_zh": "木头",
+     "qty": 20
+    },
+    {
+     "item_en": "Leather scraps",
+     "item_zh": "碎皮",
+     "qty": 6
+    },
+    {
+     "item_en": "Resin",
+     "item_zh": "树脂",
+     "qty": 6
+    }
+   ],
+   "cargo_slots": 0,
+   "crafted_at_en": "Workbench",
+   "hp": 300,
+   "source_urls": [
+    "https://valheim.wiki/w/Raft"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "ships"
   },
   "karve": {
    "type": "boat",
    "name_en": "Karve",
    "name_zh": "Karve",
-   "page_slug": "ships",
    "recipe": [
-    {"item_en": "Finewood", "item_zh": "Finewood", "qty": 30},
-    {"item_en": "Deer hide", "item_zh": "Deer hide", "qty": 10},
-    {"item_en": "Resin", "item_zh": "Resin", "qty": 20},
-    {"item_en": "Bronze nails", "item_zh": "Bronze nails", "qty": 80}
+    {
+     "item_en": "Finewood",
+     "item_zh": "精细木",
+     "qty": 30
+    },
+    {
+     "item_en": "Deer hide",
+     "item_zh": "Deer hide",
+     "qty": 10
+    },
+    {
+     "item_en": "Resin",
+     "item_zh": "树脂",
+     "qty": 20
+    },
+    {
+     "item_en": "Bronze nails",
+     "item_zh": "青铜钉",
+     "qty": 80
+    }
    ],
    "cargo_slots": 4,
    "crafted_at_en": "Workbench",
-   "crafted_at_zh": "工作台",
-   "durability": 500,
-   "source_urls": ["https://valheim.wiki/w/Karve"],
+   "hp": 500,
+   "source_urls": [
+    "https://valheim.wiki/w/Karve"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "ships"
+  },
+  "longship": {
+   "type": "boat",
+   "name_en": "Longship",
+   "name_zh": "长船",
+   "recipe": [
+    {
+     "item_en": "Iron nails",
+     "item_zh": "Iron nails",
+     "qty": 100
+    },
+    {
+     "item_en": "Deer hide",
+     "item_zh": "Deer hide",
+     "qty": 10
+    },
+    {
+     "item_en": "Finewood",
+     "item_zh": "精细木",
+     "qty": 40
+    },
+    {
+     "item_en": "Ancient bark",
+     "item_zh": "Ancient bark",
+     "qty": 40
+    }
+   ],
+   "cargo_slots": 18,
+   "crafted_at_en": "Workbench",
+   "hp": 1000,
+   "source_urls": [
+    "https://valheim.wiki/w/Longship"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [],
+   "page_slug": "ships"
+  },
+  "drakkar": {
+   "type": "boat",
+   "name_en": "Drakkar",
+   "name_zh": "Drakkar",
+   "recipe": [
+    {
+     "item_en": "Iron nails",
+     "item_zh": "Iron nails",
+     "qty": 100
+    },
+    {
+     "item_en": "Ceramic plate",
+     "item_zh": "Ceramic plate",
+     "qty": 30
+    },
+    {
+     "item_en": "Finewood",
+     "item_zh": "精细木",
+     "qty": 50
+    },
+    {
+     "item_en": "Yggdrasil wood",
+     "item_zh": "Yggdrasil wood",
+     "qty": 25
+    }
+   ],
+   "cargo_slots": 32,
+   "crafted_at_en": "Workbench",
+   "hp": 3000,
+   "source_urls": [
+    "https://valheim.wiki/w/Drakkar"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ],
+   "page_slug": "ships"
+  },
+  "intricate-key": {
+   "type": "item",
+   "name_en": "Intricate Key",
+   "name_zh": "Intricate Key",
+   "recipe": [
+    {
+     "item_en": "Cast: Intricate Key",
+     "item_zh": "Cast: Intricate Key",
+     "qty": null
+    },
+    {
+     "item_en": "Liquid Frost",
+     "item_zh": "Liquid Frost",
+     "qty": 5
+    }
+   ],
+   "crafted_at_en": "Frost Foundry (Cast made at Black Forge using Bloodgold + Mould: Intricate Key)",
+   "usage_en": "Unlocks Gates of Mörkhalla in the Deep North; consumed on use",
+   "source_urls": [
+    "https://valheim.wiki/w/Intricate_Key"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)",
+    "recipe[0].qty (article does not state an explicit count for the Cast component)"
+   ],
+   "page_slug": "intricate-key"
+  },
+  "ember-charge": {
+   "type": "item",
+   "name_en": "Ember Charge",
+   "name_zh": "Ember Charge",
+   "recipe": [
+    {
+     "item_en": "Seal Pelt",
+     "item_zh": "Seal Pelt",
+     "qty": 2
+    },
+    {
+     "item_en": "Embers",
+     "item_zh": "余烬",
+     "qty": 1
+    }
+   ],
+   "crafted_at_en": "Workbench",
+   "crafts_quantity": 10,
+   "usage_en": "Used to blow up Petrified Gammeltrolls to obtain Petrified Tissue (smelted into Bloodgold)",
+   "source_urls": [
+    "https://valheim.wiki/w/Ember_Charge"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ]
+  },
+  "bloodgold": {
+   "type": "item",
+   "name_en": "Bloodgold",
+   "name_zh": "血金",
+   "recipe": null,
+   "crafted_at_en": "Obtained by smelting Petrified Tissue in a Blast Furnace",
+   "usage_en": "Metal used in crafting numerous Deep North weapons, armor and Casts",
+   "weight": 14,
+   "stack": 30,
+   "source_urls": [
+    "https://valheim.wiki/w/Bloodgold"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "frostcore": {
+   "type": "item",
+   "name_en": "Frostcore",
+   "name_zh": "Frostcore",
+   "recipe": null,
+   "crafted_at_en": "Obtained inside the Winding Tunnels found in the Deep North",
+   "usage_en": "Used to build Frigid Kiln and Frost Foundry",
+   "weight": 1,
+   "stack": 20,
+   "source_urls": [
+    "https://valheim.wiki/w/Frostcore"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ]
+  },
+  "malicious-blood": {
+   "type": "item",
+   "name_en": "Malicious Blood",
+   "name_zh": "Malicious Blood",
+   "recipe": null,
+   "crafted_at_en": "Dropped by destroying Malicious Ice found at the center of Jotun Invasions",
+   "usage_en": "3 required to open the Aesir Passage to fight Kall Fimbulbringer",
+   "weight": 1,
+   "stack": 50,
+   "source_urls": [
+    "https://valheim.wiki/w/Malicious_Blood"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": [
+    "name_zh (content pack keeps English name)"
+   ]
+  },
+  "rested": {
+   "type": "mechanic",
+   "name_en": "Rested (Comfort)",
+   "name_zh": "Rested (Comfort)",
+   "summary_en": "Comfort level determines the duration of the Resting effect. Minimum duration is 8 minutes at 1 comfort, with each additional comfort level adding 1 minute, up to 29 minutes with usual items (31 minutes with both rare seasonal items). Max normally achievable comfort is 22 (23 near a Maypole/Yule tree, 24 with both). Only the highest-level item per category counts; items in the same category do not stack.",
+   "duration_formula": "duration_minutes = 7 + comfort_level (min comfort 1 -> 8 min)",
+   "base_minutes": 7,
+   "min_comfort_duration_minutes": 8,
+   "max_comfort_normal": 22,
+   "max_duration_minutes_normal": 29,
+   "max_duration_minutes_with_seasonal": 31,
+   "source_urls": [
+    "https://valheim.wiki/w/Comfort"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "food": {
+   "type": "mechanic",
+   "name_en": "Food",
+   "name_zh": "Food",
+   "summary_en": "Food items provide temporary Health, Stamina and Eitr boosts. A player can consume up to three different types of food at any given time for a combined increase in buff strength. Buff strength decreases uniformly until the food is fully digested. A player cannot eat a second of the same food type until the previous one is at least partially digested (indicated by a flashing icon); eating the same type again refreshes strength and duration.",
+   "max_food_slots": 3,
+   "source_urls": [
+    "https://valheim.wiki/w/Food"
+   ],
+   "accessed": "2026-09-18",
+   "unverified_fields": []
+  },
+  "death": {
+   "type": "mechanic",
+   "name_en": "Death",
+   "name_zh": "Death",
+   "summary_en": "Death occurs at 0 health. The player leaves a tombstone (gravestone) containing their equipment at the death location (map marked with skull-and-bones); no tombstone appears if the inventory was empty. Dying in deep water spawns a floating tombstone. Players respawn at the last bed slept in, or at the Sacrificial Stones if none. On death, the player loses 5% of total level in each skill (default World Modifier); the No skill drain effect (10 minutes) then prevents further loss from additional deaths. After collecting the gravestone, the player gains the Corpse run effect for 50 seconds.",
+   "skill_loss_pct_default": 5,
+   "no_skill_drain_minutes": 10,
+   "corpse_run_seconds": 50,
+   "source_urls": [
+    "https://valheim.wiki/w/Death"
+   ],
    "accessed": "2026-09-18",
    "unverified_fields": []
   }
- }
+ },
+ "_page_slug_note": "page_slug 由管线 agent 按内容页实际存在与否补齐(2026-09-18);只影响页面绑定与表格内链,不改任何数值字段。"
 }

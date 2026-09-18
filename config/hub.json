@@ -396,8 +396,21 @@
           "draft": false
         },
         "theme": {
-          "accent": "#8cc4d6",
-          "accent2": "#c3e2ec"
+          "bg": "#0d1316",
+          "bg2": "#131c20",
+          "panel": "#161f23",
+          "line": "#2a383e",
+          "ink": "#eef3f4",
+          "mut": "#b6c4c9",
+          "dim": "#8b9ba1",
+          "accent": "#7fc7dc",
+          "accent2": "#bfe6f1",
+          "accent-warm": "#d9925e",
+          "visited": "#c79a72",
+          "font-head": "'Cinzel',Georgia,'Times New Roman',serif",
+          "font-body": "'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif",
+          "font-head-zh": "'Noto Serif SC','Songti SC','Source Han Serif SC','Noto Serif CJK SC',Georgia,serif",
+          "font-body-zh": "system-ui,-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
         },
         "langs": [
           {
@@ -475,7 +488,8 @@
             "summon",
             "weak"
           ]
-        }
+        },
+        "font_css": "https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&display=swap"
       },
       "card": {
         "genre": "Co-op Survival · Exploration",

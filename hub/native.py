@@ -513,7 +513,9 @@ class NativeLang:
         body = "".join(f'<div class="qf-r"><dt>{esc(k)}</dt><dd>{v if k == t["f_boss"] else esc(v)}</dd></div>'
                        for k, v in rows)
         name = self.loc(ent, "name")
-        open_attr = " open" if first else ""
+        # 移动端一律折叠(桌面由 native.css 的 ::details-content 强制展开),
+        # 否则首个信息框会把正文首屏整块推下去。first 只保留给未来排序用。
+        open_attr = ""
         return (f'<details class="qf"{open_attr}><summary class="qf-h">{esc(name)}</summary>'
                 f'<p class="qf-sub">{esc(self.t["quick_facts"])}</p>'
                 + (f'<p class="qf-lead">{esc(lead)}</p>' if lead else "")
@@ -521,11 +523,21 @@ class NativeLang:
 
     def _table(self, head, rows, label=None, sortable=False):
         sortattr = ' data-sortable="1"' if sortable else ""
+        # 整列都是数字的列右对齐(见 native.css 的 .num)
+        num = [
+            any(mdlite.plain(str(r[k])).strip() for r in rows if k < len(r))
+            and all(mdlite.is_numeric_cell(mdlite.plain(str(r[k]))) for r in rows
+                    if k < len(r) and mdlite.plain(str(r[k])).strip())
+            for k in range(len(head))
+        ]
+        cl = [' class="num"' if n else "" for n in num]
         thead = "".join(
-            "<th"
+            "<th" + cl[k]
             + (f' title="{esc(self.t["sort_by"].format(col=mdlite.plain(h)))}"' if sortable else "")
-            + f">{h}</th>" for h in head)
-        tbody = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
+            + f">{h}</th>" for k, h in enumerate(head))
+        tbody = "".join(
+            "<tr>" + "".join(f"<td{cl[k] if k < len(cl) else ''}>{c}</td>" for k, c in enumerate(r))
+            + "</tr>" for r in rows)
         return (f'<div class="table-scroll" role="region" tabindex="0"'
                 f' aria-label="{esc(label or self.t["table_label"])}">'
                 f"<table{sortattr}><thead><tr>{thead}</tr></thead><tbody>{tbody}</tbody></table></div>")
@@ -783,12 +795,20 @@ class NativeLang:
             f'{esc(t["open_menu"])}</label>')
         aside_html = f'<aside class="rail">{aside}</aside>' if aside else ""
         cls = "layout" + ("" if aside else " no-rail")
+        # 面包屑单独占一行网格(grid-area:crumb),右栏信息框顶边才能和 h1 顶边对齐
         main = (
-            f'<main class="{cls}" id="main">\n{toggle}\n{self.sidebar(cur_slug)}\n'
-            f'<div class="doc-hd">{crumbs_html}<h1>{h1}</h1>{byline}{langsw}</div>\n'
+            f'<main class="{cls}" id="main">\n{toggle}\n{self.sidebar(cur_slug)}\n{crumbs_html}\n'
+            f'<div class="doc-hd"><h1>{h1}</h1>{byline}{langsw}</div>\n'
             f'{aside_html}\n<div class="doc">{body}</div>\n</main>')
         theme = self.nc.get("theme", {})
         theme_css = "<style>:root{" + ";".join(f"--{k}:{v}" for k, v in theme.items()) + "}</style>" if theme else ""
+        # 标题/正文字体走配置层;display=swap + preconnect,避免首屏闪白
+        font_css = self.nc.get("font_css")
+        if font_css:
+            theme_css = (
+                '<link rel="preconnect" href="https://fonts.googleapis.com">'
+                '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+                f'<link rel="stylesheet" href="{esc(font_css)}">' + theme_css)
         tpl = (self.root / "hub" / "native_page.html").read_text(encoding="utf-8")
         return (tpl.replace("{{LANG}}", esc(lang_code))
                 .replace("{{HEAD}}", "\n".join(head))

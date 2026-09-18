@@ -482,3 +482,104 @@ Playwright 复测(`scratchpad/v2/shot_final.py`,crafting/kall × 390/1280 共 4 
 | `curl -sI .../native.css` cache-control | 待填 |
 | hero `<img>` 含 `600x338` 与 `eager` | 待填 |
 | deployment 状态 | 待填 |
+
+---
+
+## 十四、视觉精修 2026-09-18
+
+站主反馈「字体和排版细节还需要调整」。只动 Valheim 栏目:`hub/native.css`(重写)、
+`config/hub.json` → `games[valheim].native.theme` / `native.font_css`、`hub/native.py` 与
+`hub/mdlite.py` 的少量结构微调。Valheim 是唯一 `kind:native` 的游戏,`native.css` 只被
+`/valheim/*` 加载,`git status` 复核:`out/` 里改动的 html 全部在 `out/valheim/` 下。
+
+### 1. 取证(2026-09-18 实测)
+
+| 来源 | 取到的东西 |
+|---|---|
+| `curl -sL https://www.valheimgame.com/` | `@font-face`:`norsebold` / `norseregular`(`/fonts/norse-*-webfont.woff2`),另引 Google Fonts `Roboto Slab`。页面里可数的 hex:`#ad2817`(锈红)、`#dd6119`(余烬橙)、`#195d8c`(深蓝)、`#0e161d`(近黑)、`#9ca3af`(灰)。CSS 自定义变量:**未获取**(站点是 Tailwind 编译产物,除 `--tw-gradient-from:#000` 外无主题变量) |
+| Steam `appdetails?appids=892970` → `header_alt_assets_6.jpg`,PIL MEDIANCUT 取 5 色 | `#202c2e` 22.9% · `#031118` 22.7% · `#445855` 19.8% · `#0e1618` 18.6% · `#221b17` 16.0% —— 整体是**冷调深青灰** |
+
+结论:官网气质 = 近黑底 + 锈红/余烬橙点缀 + 碑刻感标题字;Steam 头图 = 冷调深青灰。
+**不取资产**:没有用官方 logo、没有嵌 `norse-*.woff2`(官网自托管字体,授权不明)、没有抄官方文案。
+
+### 2. 字体(落在 `native.theme` / `native.font_css`)
+
+- 标题 **Cinzel**(Google Fonts,SIL OFL,可商用;罗马碑刻大写体,对上「北欧/维京、粗犷、雕刻感」,
+  比 Uncial Antiqua / Almendra 可读性高一档)—— 只用于 `h1`、`h2`、站名 `.brand`。
+- 正文 **Inter**(400/600)。
+- 只加载 2 个字重/家族:`family=Cinzel:wght@600;700&family=Inter:wght@400;600&display=swap`,
+  并加 `preconnect` 到 `fonts.googleapis.com` / `fonts.gstatic.com`。
+- 中文页(`html[lang^="zh"]`)不下载 CJK 字体:标题回退
+  `'Noto Serif SC','Songti SC','Source Han Serif SC','Noto Serif CJK SC',Georgia,serif`,
+  正文回退 `system-ui,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC'`。
+- 中英混排:`text-autospace:normal` + `text-spacing-trim:trim-start`(支持的浏览器自动加四分空);
+  中文小标签(`.sn-t/.kp-t/.toc-t/.qf-sub`)把 `letter-spacing` 降到 `.02em`,避免两个汉字被拉开。
+
+### 3. 色板与对比度(全部落 `config/hub.json`,CSS 里 grep 不到 hex)
+
+暗色单主题。总站 `hub.css` 是暗色,所以**不做** `prefers-color-scheme:light`——
+只给一个栏目做浅色会和其他游戏页一暗一亮地割裂;`:root{color-scheme:dark}`。
+
+| token | 值 | 出处 | 对 `--bg` 对比度 |
+|---|---|---|---|
+| `bg` | `#0d1316` | Steam 头图 `#0e1618`/`#031118` | — |
+| `bg2` | `#131c20` | 同上,顶栏/页脚 | — |
+| `panel` | `#161f23` | Steam 头图 `#202c2e` | — |
+| `line` | `#2a383e` | 推导 | — |
+| `ink`(正文标题) | `#eef3f4` | 推导 | **16.72:1** |
+| `mut`(正文) | `#b6c4c9` | 推导 | **10.45:1**(要求 ≥7:1 ✓) |
+| `dim`(面包屑/图注/页脚) | `#8b9ba1` | 推导 | **6.51:1**(要求 ≥4.5:1 ✓) |
+| `accent` | `#7fc7dc` | Deep North 冰蓝,站群内与其他游戏不重色 | **9.90:1** |
+| `accent2`(hover) | `#bfe6f1` | 推导 | **14.09:1** |
+| `visited`(已访问链接) | `#c79a72` | 官网余烬橙 `#dd6119` 降饱和 | 7.3:1 |
+
+派生底色(`color-mix`)上的对比:表头/信息框标题带 `--band` ≈ `#2d444c` 上 `ink` **9.18:1**;
+要点框 `--band-soft` ≈ `#203036` 上 `mut` **7.63:1**;表格斑马纹行上 `mut` ≈ 8.4:1。
+计算脚本:相对亮度按 WCAG 2.x sRGB 公式,`scratchpad/v2/visual/`。
+
+### 4. 字号阶梯(1280 桌面 / 390 移动,Playwright `getComputedStyle` 实测)
+
+| 元素 | 桌面 | 移动 | 行高 |
+|---|---|---|---|
+| h1 | 36px(Cinzel) | 28.5px | 1.22 |
+| h2 | 24px(Cinzel,带底部细线) | 21px | 1.3,上 44px / 下 12px |
+| h3 | 19px | 17px | 1.4 |
+| 正文 | 17px(Inter) | 16px | 1.65,栏宽 720px(≈70ch) |
+| 表格 | 15px | 14px | 1.4,单元格 9px×12px |
+| 信息框 | 标签 13px / 值 14px | 同 | 1.4 |
+| 面包屑 / byline | 13px `--dim` | 同 | 1.5 |
+| 图注 / 适用范围 | 12px `--dim` | 同 | 1.5 |
+
+### 5. 细节清单
+
+- [x] hero 图注与来源 12px、`--dim`
+- [x] 信息框在桌面右栏顶部与 H1 顶对齐 —— 面包屑提出 `.doc-hd` 单独占一行网格
+      (`"nav crumb crumb" / "nav head rail" / "nav doc rail"`),实测 `h1.top == qf.top == 104px`
+- [x] 卡片图 16:9 裁切一致(`aspect-ratio:16/9;object-fit:cover`)
+- [x] 表格横滑右侧渐隐提示(`local` 渐变 + `scroll` 阴影),表头深底 + 字重 600 + 顶部 2px 强调线,
+      斑马纹,hover 行高亮;整列纯数字自动右对齐 + `tabular-nums`(`mdlite.is_numeric_cell`,
+      `native.py::_table` 与 `mdlite` 表格两处都判)
+- [x] `<details>` summary 有指示箭头(`▸`,展开旋转 90°);信息框折叠态 `▾/▴`
+- [x] 搜索框与总站顶栏风格一致(同一套 `--rad-sm` / `--box-bd` / 14px 字号)
+- [x] 页脚不与正文抢眼(13px、`--dim`、链接也走 `--dim`)
+- [x] 中文页标点全角(内容层本来就是);中英混排空格用 `text-autospace` 兜,不改内容
+- [x] 移动端 h1 28px / 正文 16px / 表格 14px / 信息框默认折叠
+      (`native.py` 去掉首个 `<details open>`,桌面由 `::details-content` 强制展开)
+- [x] 一页最多 6 个信息框,桌面改为**显示实体名做标题栏**(原先 `summary{display:none}`,
+      6 个框全叫 "QUICK FACTS" 分不清);`pointer-events:none` 使其不可点,仅在支持
+      `::details-content` 时生效,老浏览器仍可点开
+- [x] 左侧导航当前页 2px 强调色高亮条 + 淡底;分组标题 11px 大写 `.14em` 字距 + 下细线(去掉原来的强调色色块)
+- [x] 链接色 `--accent` / 已访问 `--visited` 可区分,hover 加下划线
+- [x] 要点框/目录/来源区/卡片/信息框统一 `--rad` `--box-bd` `--box-pad` 一套 token
+- [x] 正文限宽 720px,但**标题分隔线、要点框、目录、表格、卡片占满栏宽**,右边缘对齐
+
+### 6. 门禁与截图
+
+`python3 build.py` → 568 页。门禁全绿(与 `gates.yml` 同一批):
+`check_content 559 页 · 0 阻塞 · 0 警告` / `check_i18n` 两轮 `阻塞 0 · 警告 0` /
+`check_sitemap 0 阻塞 · 0 警告` / `link_check ✓ 无死链` /
+`tech_audit missing_alt 0 · h1 missing 0 · multiple 0`。
+
+截图(Playwright Chromium,`color_scheme=dark`,全页):
+`scratchpad/v2/shots/design/{hub,bosses,kall,zh-kall}-{1280,390}.png`,
+度量落 `metrics.json`;对照改前 `scratchpad/v2/shots/hotfix/` 与 `final/`。

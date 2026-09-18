@@ -18,6 +18,15 @@ _CJK_START = re.compile(f"^[{_CJK}]")
 
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", re.S)
 
+# 纯数字单元格(含 1,200 / 10000 + 7000 / 12.5 / 3× / 40% / 1-3),排版上右对齐 + 等宽数字
+_NUM_CELL = re.compile(r"^[0-9][0-9,.\s]*(?:[+×x*/–—-]\s*[0-9][0-9,.\s]*)*[%×x]?$")
+
+
+def is_numeric_cell(s: str) -> bool:
+    """单元格文本是否纯数字(用于表格数字列右对齐)。传入的是已剥标记的纯文本。"""
+    s = (s or "").strip()
+    return bool(s) and len(s) <= 40 and bool(_NUM_CELL.match(s))
+
 
 def esc(s: str) -> str:
     return _html.escape(s, quote=True)
@@ -253,13 +262,22 @@ def render(blocks, link_cb=None, table_label="table", img_cb=None, figure_cb=Non
             li = "".join(f"<li>{inline(x, link_cb, img_cb)}</li>" for x in b["items"])
             out.append(f"<{t}>{li}</{t}>")
         elif t == "table":
-            def cell(tag, txt, al):
-                st = f' style="text-align:{al}"' if al else ""
-                return f"<{tag}{st}>{inline(txt, link_cb, img_cb)}</{tag}>"
             al = b["align"] + [""] * len(b["head"])
-            thead = "".join(cell("th", h, al[k]) for k, h in enumerate(b["head"]))
+            # 没写显式对齐的列,若正文单元格全是数字则整列右对齐(class="num")
+            num = [
+                (not al[k]) and any(str(r[k]).strip() for r in b["rows"] if k < len(r))
+                and all(is_numeric_cell(plain(str(r[k]))) for r in b["rows"]
+                        if k < len(r) and str(r[k]).strip())
+                for k in range(len(b["head"]))
+            ]
+
+            def cell(tag, txt, k):
+                st = f' style="text-align:{al[k]}"' if al[k] else ""
+                cl = ' class="num"' if num[k] else ""
+                return f"<{tag}{cl}{st}>{inline(txt, link_cb, img_cb)}</{tag}>"
+            thead = "".join(cell("th", h, k) for k, h in enumerate(b["head"]))
             tbody = "".join(
-                "<tr>" + "".join(cell("td", c, al[k]) for k, c in enumerate(r)) + "</tr>" for r in b["rows"]
+                "<tr>" + "".join(cell("td", c, k) for k, c in enumerate(r)) + "</tr>" for r in b["rows"]
             )
             out.append(
                 f'<div class="table-scroll" role="region" tabindex="0" aria-label="{esc(table_label)}">'

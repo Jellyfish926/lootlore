@@ -583,3 +583,15 @@ Playwright 复测(`scratchpad/v2/shot_final.py`,crafting/kall × 390/1280 共 4 
 截图(Playwright Chromium,`color_scheme=dark`,全页):
 `scratchpad/v2/shots/design/{hub,bosses,kall,zh-kall}-{1280,390}.png`,
 度量落 `metrics.json`;对照改前 `scratchpad/v2/shots/hotfix/` 与 `final/`。
+
+### 7. 线上验证(2026-09-18,commit `1dbcb18`)
+
+| 项 | 结果 |
+|---|---|
+| `curl .../valheim/` CSS 版本 | `hub.css?v=2c0919a4` · `native.css?v=d87cfa5d`(改前 `eed98701` 之前,版本号已变) |
+| Google Fonts `<link>` | 存在:`css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&display=swap` |
+| 线上 `native.css` 与本地 `out/native.css` | md5 一致 `0c4959e411d6fb16bd5b9fc4e2142a9c` |
+| Playwright 打真实线上 `/valheim/kall/` | `document.fonts.check('700 36px Cinzel') === true`;h1 36px;`h1.top === qf.top === 104`;`td.num` 3 个;无横向溢出 |
+| `/valheim/bosses/` 线上 `class="num"` | 18 个 |
+| `/valheim/zh/kall/` 线上 `--font-head-zh` | 注入正常 |
+| GitHub Actions `gates` @ `1dbcb18` | completed · **success** |

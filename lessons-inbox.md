@@ -47,3 +47,19 @@
 `seo-jianzhan/references/image-assets.md` + SKILL.md ⑤.5 第 3b 条;排版系统(色板 token 与对比度门槛、字号阶梯、
 组件规格、`::details-content`、中文站排版)→ `references/typography-and-layout.md`;12 站架构对标 →
 `references/single-game-architecture.md` + SKILL.md ③「单游戏站的四件套」与 ④⑤ 内链下限。
+
+## 2026-09-21 换域名实测：vercel.json 的 host 级 redirect 不生效，平台级 domain redirect 才生效
+- 实验条件：纯静态站（`output` 目录 `out/`，无框架），根 `vercel.json` 的 `redirects` 数组第一条写
+  `{"source":"/:path*","has":[{"type":"host","value":"lootlore-ten.vercel.app"}],"destination":"https://lootwiki.com/:path*","permanent":true}`，
+  已随构建提交并确认部署已上线（同一次构建的 `robots.txt` 里 Sitemap 行已是新域名）。
+- 结果：`curl -sI https://lootlore-ten.vercel.app/` 仍返回 **200**，未跳转；`/valheim/`、`/sephiria/`、`/updates/` 同样 200。
+- 改法（实测有效）：Vercel 项目 → Settings → Domains → 编辑 `<项目>.vercel.app` 那一行 →
+  「Redirect to Another Domain」+ 308 Permanent Redirect + 目标选正式域名 → Save。
+  改完实测四个路径全部 `HTTP/2 308` 且 `location` 保留原路径。
+- 结论：**换域清单第 3 步「vercel.app 全站 301」优先用平台级 domain redirect，不要指望 vercel.json 的 has-host 规则**；
+  vercel.json 那条留着无害（平台层先命中），但不能当作已生效。
+- 另外两个当天实测到的 Vercel 默认值坑（两个都会把 apex 弄坏，都要手动取消）：
+  ① Add Domains 弹窗在填入 apex 后会出现默认勾选的「Redirect apex domains to www (recommended)」；
+  ② 给 www 选「Redirect to Another Domain」时会出现默认勾选的「Include apex and www variants (recommended)」，
+     勾着会把已配好的 apex 也改成跳转。
+- 待并入：seo-jianzhan ⑦⑧「换域清单」第 3 步 + 「Vercel 的四个默认值会坑你」表。

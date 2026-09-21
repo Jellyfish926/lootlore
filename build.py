@@ -26,6 +26,11 @@ CFG = json.loads((ROOT / "config" / "hub.json").read_text())
 if "--base" in sys.argv:
     CFG["base_url"] = sys.argv[sys.argv.index("--base") + 1].rstrip("/")
 BASE = CFG["base_url"].rstrip("/")
+# 旧 Vercel 预览域名:换正式域名后仍要把它 301/308 到新域名,防止旧外链/书签/历史索引失效。
+# 写死而不派生自 CFG——base_url 换了之后这个值还得继续指向"曾经用过的" vercel.app 子域,
+# 不能跟着 base_url 一起变(否则规则形同虚设)。base_url 万一又指回它本身,下面的 gen_vercel_json
+# 会跳过这条规则,不然会把新域名自己也 301 掉,造成跳转环。
+LEGACY_VERCEL_HOST = "lootlore-ten.vercel.app"
 OUT = ROOT / "out"
 TODAY = datetime.date.today().isoformat()
 SENT = "@@HUB@@"  # 信任页映射后的哨兵前缀,防止被通用子路径改写二次加前缀
@@ -564,6 +569,16 @@ def version_assets(out_dir: Path):
 
 def gen_vercel_json():
     redirects = []
+    # 全站旧域名跳转:按 host 匹配旧 vercel.app 预览域,308 跳到当前 base_url,保留路径(:path*)。
+    # 放在 redirects 数组最前面优先匹配;只认 LEGACY_VERCEL_HOST 这一个 host,不会连累 base_url
+    # 自己(比如 lootwiki.com / www.lootwiki.com),不会造成重定向环。
+    if LEGACY_VERCEL_HOST and LEGACY_VERCEL_HOST != BASE.split("//", 1)[-1].rstrip("/"):
+        redirects.append({
+            "source": "/:path*",
+            "has": [{"type": "host", "value": LEGACY_VERCEL_HOST}],
+            "destination": f"{BASE}/:path*",
+            "permanent": True,
+        })
     for g in CFG["games"]:
         slug = g["slug"]
         if g["default_path"] not in ("/", ""):

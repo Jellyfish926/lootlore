@@ -159,7 +159,7 @@ draft 门控实测:把 `kall.md` 临时改 `draft: true` → `out/valheim/kall/`
 |---|---|---|
 | 1 | ~~事实核验合并~~:已完成(2026-09-17,见「七、事实核验」)。39 篇全部通过,`draft` 保持 `false` | 已完成 |
 | 2 | ~~合并 main = 上线~~:已完成(2026-09-17,见「九、上线记录」) | 已完成 |
-| 3 | 域名:当前 `base_url` 为 `lootlore-ten.vercel.app`;换域名按总站 README 执行 `python3 build.py --base https://新域名`,并同步 gates.yml / sync-sources.yml / freshness.yml 的 host | 站主 |
+| 3 | ~~域名~~:仓库侧已备好(2026-09-21)——`config/hub.json` 的 `base_url` 改为 `https://lootwiki.com`;`vercel.json` 新增 vercel.app→正式域名的 host 匹配 308 跳转;复查 gates.yml / sync-sources.yml / freshness.yml 的 host 均已是从 `config/hub.json` 的 `base_url` 动态取值(`SITE_HOST=$(python3 -c "...base_url...")`),无需手改。DNS 尚未生效,未 push/未部署,线上仍是 `lootlore-ten.vercel.app` | 站主(推送 + 核验 DNS) |
 | 4 | GSC:重提 sitemap,并对 `/valheim/` 与 6 个栏目页请求编入索引(IndexNow 未生效,见「九、上线记录」) | 站主 |
 | 5 | GA4 / Clarity:`config/hub.json` 的 `ga4_id` 仍为空(总站级),Clarity ID 同样未配置 | 站主 |
 | 6 | title 长度:30 篇 `seoTitle` 显示宽度 62–73(>60,按 CJK 折算超 60 属 P1),6 个栏目页 20–24(<30);description 6 个栏目页 <70 宽。属内容层,建议随核验稿一起收短 | 内容方 |

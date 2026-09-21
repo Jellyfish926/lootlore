@@ -4,6 +4,17 @@
   "outputDirectory": "out",
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "lootlore-ten.vercel.app"
+        }
+      ],
+      "destination": "https://lootwiki.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/beast-of-reincarnation",
       "destination": "/beast-of-reincarnation/en",
       "permanent": false

@@ -1,13 +1,48 @@
-# Lootlore — 游戏攻略总站
+# LootWiki — 游戏攻略总站
 
-聚合站群内容的总站。三层分离:
+聚合站群内容的总站(品牌 **LootWiki**,仓名仍是 lootlore)。三层分离:
 
-- **框架层** `build.py` + `hub/`(总站壳:首页/信任页模板与样式)
-- **配置层** `config/hub.json`(base_url、品牌、游戏清单、剥离/映射/补丁规则)
+- **框架层** `build.py` + `hub/`
+  - `hub/shell.py` —— 全站统一外壳组件:一级导航(实体×意图两栏)、面包屑、byline、
+    **左侧常驻游戏内导航**(`game_nav`,hub 页与内容页共用,快照套壳也用这一个)、
+    右栏小组件、FAQ 手风琴、页脚、全站搜索表单与内联脚本
+  - `hub/pageindex.py` —— 全站索引:从 `sources/<game>/**.html`(栏目取页面自带的
+    BreadcrumbList,扁平站退回 hub 页卡片网格分组)与原生内容自动发现页清单、栏目、更新日。
+    **不手工维护任何链接清单**
+  - `hub/snapshot.py` —— **快照游戏套壳渲染器**:把 `sources/<game>/**.html` 当内容源重新渲染,
+    `<main>` 内的正文逐字节沿用子站产出,外壳换成 `hub/shell.py` 的同一套组件。
+    只做三次"搬位置"(H1 → 标题区、子站面包屑 → 外壳面包屑、子站署名行 → byline 位)+
+    给没有 id 的 h2/h3 补锚点;head 元数据(title/description/canonical/hreflang/JSON-LD/og)
+    原值保留,只补子站没有的。界面文字跟每页 `<html lang>` 走 `config/i18n/<lang>.json`,缺 key 回退英文
+  - `hub/style.css` → `out/hub.css`(全站外壳样式)· `hub/native.css`(内容页专属件)·
+    `hub/snapshot.css`(快照正文里子站自己的类名 `.wrap/.hero/.tablewrap/.tracker-*` 的统一皮肤,
+    全部收在 `.sn-body` 作用域里,顺带中和 hub.css 的同名全站选择器)
+  - `hub/hub_page.html` / `hub/native_page.html` / `hub/snapshot_page.html`(三个页型模板)
+  - `hub/pages/*.html`(总站自有页面的**片段**:头部 `<!-- title/description/path/h1 -->`
+    + 正文;外壳由 build.py 统一套)
+  - 三个渲染器同一套外壳:总站自有页(`build.py`)、原生内容页(`hub/native.py`)、
+    快照套壳页(`hub/snapshot.py`)—— 左侧常驻导航 / 面包屑 / byline / 右栏 / FAQ / 页脚全部走 `hub/shell.py`
+- **配置层** `config/hub.json`(base_url、品牌、**站级视觉 token `theme`**、字体、
+  一级导航意图栏 `intent_nav`、`/tools` 收录关键词 `tools_match`、首页 hero 取哪个游戏
+  `hero_game`、游戏清单、剥离/映射/补丁规则、**实体数据绑定 `entities` + `entity_match`**)
+  + `config/i18n/<lang>.json`(**全部界面文字**;现有 en / zh-CN / ja / de / es / fr / it)
 - **内容层** `sources/<game>/`(各子站静态快照,原样保存,变换只发生在构建时)
   + `content/<game>/*.md`(`kind: "native"` 的游戏:没有独立子站,Markdown 就是真相源,构建时渲染)
 
+改名 / 换域名 / 换配色都是**改一处配置**:品牌 `brand`、域名 `base_url`、色板 `theme`。
+框架层不写任何 hex、任何界面文字、任何游戏专属文字;门禁工作流的域名也从 `base_url` 读。
+
 构建:`python3 build.py [--base https://域名]` → 产物在 `out/`(Vercel 直接服务,outputDirectory=out,无构建命令)。
+
+构建期自动产出(数字全部来自实际统计,页面上不写死):
+- 首页游戏卡片的页数与最近更新日、`/updates/` 变更日志(跨游戏按复核日倒序)、
+  `/guides/` 与首页的全量攻略索引、`/tools/` 工具页(按 `tools_match` 匹配真实存在的工具页)
+- `out/search-index.json` —— **跨全部 6 个游戏**的全站搜索索引,每条带 `game` 与 `lang`;
+  前端过滤脚本内联(≤3KB,DOM API 拼结果),无 JS 时退化到 `/guides`(总站)或
+  `/<game>/all/`(游戏内)
+- CSS / JS / 搜索索引按内容 sha1 打 `?v=xxxxxxxx`(配合 `vercel.json` 里
+  `max-age=0, must-revalidate`)—— 改了样式但 URL 不变会让浏览器把缓存的旧 CSS 套在新 HTML 上,
+  页面直接崩,这道必须留着
 
 域名到位后:`python3 build.py --base https://新域名` 重建并提交。
 新增游戏:快照放 `sources/`,在 `config/hub.json` 的 `games` 加一项,重建。
@@ -66,12 +101,14 @@ python3 build.py
 | 层 | 文件 |
 | --- | --- |
 | 框架 | `hub/native.py`(页型、面包屑、目录、来源、关联阅读、JSON-LD、draft 过滤)· `hub/mdlite.py`(纯标准库 Markdown 渲染)· `hub/native_page.html` · `hub/native.css` |
-| 配置 | `config/hub.json` 里该游戏一项:`kind/lang/content/native{title,nav,related_heading,official_domains,author,defaults,theme}/card{…}` · `config/i18n/<lang>.json`(界面文字) |
+| 配置 | `config/hub.json` 里该游戏一项:`kind/lang/content/native{title,nav,related_heading,official_domains,author,defaults,search,start_here,entities,hub_table,category_tables}/card{…}`(想给单个游戏换配色再加 `native.theme`,只写与站级 `theme` 不同的键) · `config/i18n/<lang>.json`(界面文字) |
 | 内容 | `content/<game>/<slug>.md`(frontmatter + 正文,正文自带 H1)· `content/<game>/_images.json`(封面截图与 alt、图注) |
 
 **路由**:`type: home` → `/<game>/`,其余 → `/<game>/<slug>/`;frontmatter 的 `url` 必须与之相同,否则构建报错。
 
-**frontmatter 字段**(只加不改名):`slug title seoTitle description category type(home|category|article|author) related sourceUrls checkedAt scope date updated reviewed gameVersion draft author`。
+**frontmatter 字段**(只加不改名):`slug title seoTitle description category type(home|category|article|author) tldr faq related sourceUrls checkedAt scope date updated reviewed gameVersion draft author`。
+`faq`(只在 `type: home` 上有效)= `[[问, 答], …]` 的单行 JSON;答里可以写 markdown 链接,走与正文同一条链接校验,指向不存在的页直接构建报错。渲染成 hub 页底部的 `<details>` 手风琴 + `FAQPage` JSON-LD;**没有这个字段就不出 FAQ 区块**(不许为了有区块而编问答)。
+正文里可以写 `{{BRAND}}`,构建期替换成 `config/hub.json` 的 `brand`。
 缺省值取 `native.defaults`;`updated` 缺省 = `date`,`reviewed` 缺省 = `checkedAt`;`gameVersion` 为空时 byline 不显示该项。
 
 **更新内容**:直接替换 `content/<game>/*.md` → `python3 build.py` → 跑门禁。正文末尾与 `native.related_heading` 同名的小节会被剥掉,改由 `related` 渲染「关联阅读」;
@@ -82,5 +119,5 @@ python3 build.py
 
 **sitemap**:原生页 `lastmod = reviewed ?? updated ?? date`,其余页仍用构建日。
 
-**门禁**(与 gates.yml 一致):`check_content.py … --dir-lang <game>=zh`(单语种非英文游戏目录的 lang 判定)、`check_i18n.py --games …,<game>`(单语种会明确打印跳过)、
+**门禁**(与 gates.yml 一致):`check_content.py … --dir-lang <game>/<locale>=<lang>`(单语种非英文游戏目录的 lang 判定)、`check_i18n.py --games …,<game>`(单语种会明确打印跳过)、
 `check_sitemap.py`、`link_check.py`;另有只报告的 `tech_audit.py --out out --base <域名> --prefix /<game>/ --summary`(title/description 按显示宽度,CJK 记 2)。

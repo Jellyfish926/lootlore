@@ -1,0 +1,2349 @@
+{
+ "fetched": "2026-09-21",
+ "steam_appid": "2001760",
+ "game_version": "1.0.11",
+ "game_version_source": "https://beastofreincarnation.online/en/patch-notes (current as of the September 8, 2026 patch; page itself last reviewed September 10, 2026)",
+ "sources_note": "Compiled entirely from the local snapshot mirror at sources/beast/ (six-locale mirror of beastofreincarnation.online) during this pass; no live web fetch was performed. Boss/weapon/mechanic facts are taken from the site's own launch guides, which in turn name their own primary sources (mainly Game8's tested boss tables at https://game8.co/games/Beast-of-Reincarnation/archives/613316, plus Game8/DualShockers for Crimson Malefact, Switchblade Gaming/Sportskeeda for Shidou & Nue, and two further Game8 articles cited by spirit-stones.html for its effect table and sell/keep guidance) -- those primary URLs are used as source_url where the citing page names one; fields backed only by this site's own cross-page synthesis (elemental-weaknesses/nushi-skills/combat-gauges/new-game-plus, plus the 3 weapon-type/Big Dipper facts) are marked source_tier:'onsite'. Achievement name/description/global-unlock-% is taken verbatim from sources/beast/achievements.json (Steam data captured 2026-09-14) and sources/beast/data/achievements-ja.json (official Japanese name/description, captured 2026-09-11); this Sep-14 reading matches achievement-tracker.html's live embedded list exactly and supersedes two OLDER on-site readings of the same 46 percentages that this pass deliberately did not carry into the achievement entities: trophies.html (read August 31, 2026) and inline 'September 7' figures quoted inside the individual boss-guide pages. All three readings are consistent with each other (percentages drift upward over time as more players progress) and the site itself explicitly frames this as drift, not disagreement -- so only the latest (Sep 14) reading is carried as each achievement's unlock_rate_pct; the boss-guide pages' own Aug31/Sep7 citations are left in place in those HTML pages and not reproduced field-by-field here. This entities.json has no zh locale field (unlike data/valheim/entities.json's name_zh): the Beast of Reincarnation subsite ships only en/de/es/fr/it/ja locales, no content/beast/*.md translation pack exists yet, and the ja/ locale mirror keeps boss/weapon proper nouns in Roman script rather than substituting an official localized name -- so there is no sourced translation to place in a name_zh field for boss/weapon/mechanic entities, and adding one as name_en==name_zh across every entity was judged to be pure noise rather than useful schema parity. name_ja IS included for achievements specifically, per this task's explicit instruction, because Steam's own Japanese achievement list is a genuine, directly-sourced official name distinct from the site's own page translations.",
+ "entities": {
+  "rangifer": {
+   "type": "boss",
+   "name_en": "Rangifer",
+   "page_slug": "rangifer-boss-guide",
+   "order": 1,
+   "chapter_title": "Chapter 1 (\"Seedling\")",
+   "encounters": [
+    {
+     "chapter": 1,
+     "level": 9,
+     "note": "first encounter"
+    },
+    {
+     "chapter": 1,
+     "level": 12,
+     "note": "second encounter, same chapter"
+    },
+    {
+     "chapter": 5,
+     "level": 32,
+     "note": "rematch (\"Branching Paths\")"
+    }
+   ],
+   "weak": [
+    "Flame"
+   ],
+   "weak_note": "Written as \"Flame\" on the boss list and \"Fire\" on the equipment side; treated site-wide as the same weakness under two labels. Fire is 1 of only 3 confirmed enchantable elements (Fire/Lightning/Wet), so this is a fully equippable counter.",
+   "weak_equippable": true,
+   "rewards": [
+    {
+     "label": "Nushi Skill",
+     "name": "Sakura Storm"
+    },
+    {
+     "label": "Named art",
+     "name": "Sakura: Javelin (upgrades to Javelin II on the Ch.5 rematch)"
+    },
+    {
+     "label": "Blade Art",
+     "name": "Sakura line"
+    },
+    {
+     "label": "Finisher",
+     "name": "Sakura line"
+    }
+   ],
+   "achievement_ref": {
+    "id": "ach-rangifers-end",
+    "name_en": "Rangifer's End"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/rangifer-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset (page states explicitly: \"We have no tested attack-by-attack table for Rangifer on this site\")",
+    "bloom_art_name (beginner guide notes a fire Bloom Art exists here but says its exact name varies by account and is unresolved on this site)",
+    "ch5_rematch_changes (recorded as an appearance only; no documented differences from the Ch.1 fight)"
+   ]
+  },
+  "lacerta": {
+   "type": "boss",
+   "name_en": "Lacerta",
+   "page_slug": "lacerta-boss-guide",
+   "order": 2,
+   "chapter_title": "Chapter 2 (\"Creeping Tendrils\")",
+   "encounters": [
+    {
+     "chapter": 2,
+     "level": 13,
+     "note": "first encounter"
+    },
+    {
+     "chapter": 2,
+     "level": 16,
+     "note": "second encounter, same chapter; does not return later"
+    }
+   ],
+   "weak": [
+    "Lightning"
+   ],
+   "weak_note": "Lightning is 1 of only 3 confirmed enchantable elements; applies the \"Shock\" status. Fully equippable counter.",
+   "weak_equippable": true,
+   "second_phase": "Turns poisonous; both the walkthrough and the boss list recommend bringing antidotes.",
+   "rewards": [
+    {
+     "label": "Nushi Skill",
+     "name": "Dokuzeri Shower"
+    },
+    {
+     "label": "Named art",
+     "name": "Dokuzeri: Fang"
+    },
+    {
+     "label": "Blade Art",
+     "name": "Dokuzeri"
+    }
+   ],
+   "achievement_ref": {
+    "id": "ach-lacertas-end",
+    "name_en": "Lacerta's End"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/lacerta-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset (no page on this site documents Lacerta's individual attacks or phase-transition trigger)",
+    "hp_at_lv13_vs_lv16 (not stated)"
+   ]
+  },
+  "taurus": {
+   "type": "boss",
+   "name_en": "Taurus",
+   "page_slug": "taurus-boss-guide",
+   "order": 4,
+   "chapter_title": "Chapter 4 (\"Stems\")",
+   "encounters": [
+    {
+     "chapter": 4,
+     "level": 26,
+     "note": "first encounter"
+    },
+    {
+     "chapter": 4,
+     "level": 29,
+     "note": "second encounter, same chapter"
+    },
+    {
+     "chapter": 8,
+     "level": 44,
+     "note": "rematch (\"Worm Food\"); completes the Botan art line"
+    }
+   ],
+   "weak": [
+    "Acid"
+   ],
+   "weak_note": "Acid is NOT among the 3 confirmed enchantable elements (Fire/Lightning/Wet). The boss list names \"acid arrows/bolts\" as the fast route, but no page on this site confirms how an acid property is actually applied to a weapon (element slot, ammo type, or Bloom Art only).",
+   "weak_equippable": false,
+   "rewards": [
+    {
+     "label": "Nushi Skill",
+     "name": "Charging Botan"
+    },
+    {
+     "label": "Named art",
+     "name": "Botan: Chaser (upgrades to Chaser II on the Ch.8 rematch)"
+    },
+    {
+     "label": "Blade Art",
+     "name": "Botan line"
+    },
+    {
+     "label": "Finisher",
+     "name": "Botan line"
+    }
+   ],
+   "achievement_ref": {
+    "id": "ach-tauruss-end",
+    "name_en": "Taurus's End"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/taurus-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset (only the charge attack is named anywhere on this site)",
+    "acid_delivery_method (not confirmed as an equippable element; see elemental-weaknesses mechanic entity)",
+    "ch8_rematch_changes (recorded as completing the Botan line; no other documented differences from the Ch.4 fight)"
+   ]
+  },
+  "corvus": {
+   "type": "boss",
+   "name_en": "Corvus",
+   "page_slug": "corvus-boss-guide",
+   "order": 5,
+   "chapter_title": "Chapter 7 (\"Root Rot\")",
+   "encounters": [
+    {
+     "chapter": 7,
+     "level": 38,
+     "note": "single encounter; no later rematch anywhere on the roster"
+    }
+   ],
+   "weak": [
+    "Lightning"
+   ],
+   "weak_note": "Lightning is 1 of only 3 confirmed enchantable elements; applies \"Shock\", which both exploits the weakness and feeds the Down Gauge. Fully equippable counter.",
+   "weak_equippable": true,
+   "rewards": [
+    {
+     "label": "Nushi Skill",
+     "name": "Acid Burst Nobudou"
+    },
+    {
+     "label": "Named art",
+     "name": "Nobudou: Burst"
+    },
+    {
+     "label": "Blade Art",
+     "name": "Nobudou"
+    }
+   ],
+   "reward_note": "Boss list calls this \"the most build-defining pickup in the back half of the game\" because Taurus's Ch.8 rematch and Ursa (Ch.10) are both recorded as weak to Acid.",
+   "achievement_ref": {
+    "id": "ach-corvuss-end",
+    "name_en": "Corvus's End"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/corvus-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset",
+    "arena",
+    "creature_description (\"the name appears only in the roster tables\" per this site's own page)"
+   ]
+  },
+  "kunai-and-kirin": {
+   "type": "boss",
+   "name_en": "Kunai & Kirin",
+   "page_slug": "kunai-and-kirin-boss-guide",
+   "order": 6,
+   "dual_boss": true,
+   "chapter_title": "Chapter 8 (\"Worm Food\") / Chapter 12 (\"The Firmament\")",
+   "encounters": [
+    {
+     "chapter": 8,
+     "level": 45,
+     "note": "first meeting"
+    },
+    {
+     "chapter": 12,
+     "level": 49,
+     "note": "resolution; highest level of any numbered encounter on the roster"
+    }
+   ],
+   "weak": [
+    "Poison"
+   ],
+   "weak_note": "Poison is NOT among the 3 confirmed enchantable elements. The documented poison toolkit is the Dokuzeri art line earned from Lacerta (Ch.2), not an equippable ammo/element.",
+   "weak_equippable": false,
+   "rewards": [
+    {
+     "label": "Blade Art",
+     "name": "Thunder",
+     "note": "tied to the Ch.12 resolution"
+    },
+    {
+     "label": "Named art",
+     "name": "Numasugi: Skewer",
+     "note": "tied to the Ch.12 resolution"
+    }
+   ],
+   "reward_note": "No Nushi Skill recorded for either encounter. The Ch.8 first meeting has no recorded reward at all.",
+   "achievement_ref": {
+    "id": "ach-kunai-and-kirin",
+    "name_en": "Kunai & Kirin"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/kunai-and-kirin-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset",
+    "which_twin_is_kunai_vs_kirin (not documented anywhere on this site)",
+    "shared_health_bar (not documented whether the pair shares one health pool)",
+    "poison_delivery_method"
+   ]
+  },
+  "crimson-malefact": {
+   "type": "boss",
+   "name_en": "Crimson Malefact",
+   "page_slug": "crimson-malefact-boss-guide",
+   "order": 7,
+   "chapter_title": "Chapter 9",
+   "location": "Top of Starfall Tower, the Wasteland region",
+   "encounters": [
+    {
+     "chapter": 9,
+     "level": 45,
+     "note": "single mandatory encounter, roughly the 18-hour mark of a tested run"
+    }
+   ],
+   "solo_no_koo": true,
+   "solo_no_koo_note": "The only boss fight in the game without Koo: FP and Bloom Arts are entirely unavailable. Only Emma's katana pressure, dodges, parries and her independent Entanglement Overdrive gauge function.",
+   "weak_disputed": {
+    "value_a": {
+     "label": "Water",
+     "source_url": "https://beastofreincarnation.online/en/bosses",
+     "note": "this site's own boss list"
+    },
+    "value_b": {
+     "label": "None",
+     "source_url": "https://game8.co/games/Beast-of-Reincarnation/archives/614484",
+     "note": "Game8's tested attack breakdown; shows no elemental reward tied to the fight either"
+    }
+   },
+   "weak_equippable": false,
+   "phases": 2,
+   "phase2_change": "Adds Tail Vines (a root-pull attack) on top of the Phase 1 kit; more AoE zoning overall (Bloom, Fire Seeds, root attacks all punish standing still).",
+   "moveset": [
+    {
+     "attack": "Bite",
+     "response": "Parry — staggers the boss slightly, short punish window"
+    },
+    {
+     "attack": "Bite Combo",
+     "response": "Parry all three hits; countering after only 1-2 gets you caught by the rest"
+    },
+    {
+     "attack": "Somersault",
+     "response": "Unblockable — dodge on the red-flash telegraph; boss briefly vulnerable after landing"
+    },
+    {
+     "attack": "4 Attacks Into Somersault",
+     "response": "Parry the bites/claws, dodge the closing somersault; no punish window inside the sequence"
+    },
+    {
+     "attack": "Ground Swipe / Stone Swipe",
+     "response": "Cannot be parried — dodge and reposition"
+    },
+    {
+     "attack": "Bite Into Jump Back",
+     "response": "Parry early rather than reacting late; follow up with ranged attacks since it retreats"
+    },
+    {
+     "attack": "Spinning Dive",
+     "response": "Unparryable — dodge to either side to avoid the dive and its ground spikes"
+    },
+    {
+     "attack": "Tail Slam Bloom",
+     "response": "Marks your position; a spider lily erupts after a delay — keep moving until it clears, then punish"
+    },
+    {
+     "attack": "Rapid Seed Barrage",
+     "response": "Too fast to parry consistently — dodge continuously"
+    },
+    {
+     "attack": "Sakura: Javelin",
+     "response": "A fast lightning-spear throw; counter-intuitively easier to parry than to dodge on reaction"
+    },
+    {
+     "attack": "Tail Roots from the Ground",
+     "response": "Vines bloom beneath red ground markers after a delay; watch the indicators and keep moving"
+    }
+   ],
+   "recommended_weapons": [
+    {
+     "name": "Spring Storm",
+     "note": "recommended weapon, if already upgraded"
+    },
+    {
+     "name": "Purity",
+     "note": "fallback pick; sustain matters since a single missed parry can strip a large chunk of HP"
+    }
+   ],
+   "rewards": [],
+   "reward_note": "Grants nothing mechanically. Both Game8's tested reward table and this site's own boss list agree: pure story wall, no Nushi Skill, no elemental reward.",
+   "achievement_ref": null,
+   "achievement_ref_note": "No dedicated Steam achievement identified for this boss; it does not appear in the site's boss-seal achievement milestone list.",
+   "source_urls": [
+    "https://beastofreincarnation.online/en/crimson-malefact-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://beastofreincarnation.online/en/elemental-weaknesses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/614484",
+    "https://www.dualshockers.com/beast-of-reincarnation-how-to-defeat-crimson-malefact/"
+   ],
+   "accessed": "2026-09-10",
+   "unverified_fields": [
+    "weak (disputed between this site's own boss list [Water] and the tested attack breakdown cited on this boss's own guide page [None]; both values recorded, not resolved)",
+    "hp",
+    "resistant",
+    "immune",
+    "phase_transition_hp_threshold",
+    "safe_practice_method (page states explicitly this moveset isn't previewed/practiceable elsewhere)"
+   ]
+  },
+  "ursa": {
+   "type": "boss",
+   "name_en": "Ursa",
+   "page_slug": "ursa-boss-guide",
+   "order": 8,
+   "chapter_title": "Chapter 10 (\"Malefact\")",
+   "encounters": [
+    {
+     "chapter": 10,
+     "level": 46,
+     "note": "single encounter; no rematch and no earlier appearance"
+    }
+   ],
+   "weak": [
+    "Acid"
+   ],
+   "weak_note": "Acid is NOT among the 3 confirmed enchantable elements. Documented acid delivery is the ability line taken from Corvus (Acid Burst Nobudou / Nobudou: Burst / Blade Art: Nobudou); whether acid ammunition exists separately is not confirmed.",
+   "weak_equippable": false,
+   "rewards": [
+    {
+     "label": "Named art",
+     "name": "Asagao: Boa II"
+    },
+    {
+     "label": "Finisher",
+     "name": "Asagao"
+    }
+   ],
+   "reward_note": "No Nushi Skill. The roman numeral (\"II\") implies a first rank exists, but no boss on this site is recorded as granting Asagao: Boa I — its origin is not documented.",
+   "koo_available": true,
+   "koo_available_note": "First fight after the Koo-less Crimson Malefact; the FP/Bloom Art loop is available again here.",
+   "achievement_ref": {
+    "id": "ach-ursas-end",
+    "name_en": "Ursa's End"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/ursa-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset",
+    "arena",
+    "creature_description",
+    "asagao_boa_i_origin (base rank's source is not documented anywhere on this site)",
+    "acid_delivery_method"
+   ]
+  },
+  "erymanth": {
+   "type": "boss",
+   "name_en": "Erymanth",
+   "page_slug": "erymanth-boss-guide",
+   "order": 9,
+   "chapter_title": "Chapter 12 (\"The Firmament\")",
+   "encounters": [
+    {
+     "chapter": 12,
+     "level": 47,
+     "note": "single encounter; the last genuinely new boss the campaign introduces"
+    }
+   ],
+   "weak": [
+    "Explosive"
+   ],
+   "weak_note": "The only boss on the entire 11-boss roster recorded as weak to Explosive. Not among the 3 confirmed enchantable elements. The weapons page says Fire \"can trigger explosions\", but no page states Fire and Explosive are the same thing or how an explosive property is actually applied — treated as unconfirmed.",
+   "weak_equippable": false,
+   "rewards": [
+    {
+     "label": "Named art",
+     "name": "Kiku: Bloom Strike II"
+    },
+    {
+     "label": "Finisher",
+     "name": "Kiku"
+    }
+   ],
+   "reward_note": "No Nushi Skill. As with Ursa's Asagao II, no page records where Kiku: Bloom Strike I (rank 1) comes from.",
+   "achievement_ref": {
+    "id": "ach-erymanths-end",
+    "name_en": "Erymanth's End"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/erymanth-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/613316"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset",
+    "arena",
+    "creature_description",
+    "kiku_bloom_strike_i_origin (base rank's source is not documented anywhere on this site)",
+    "explosive_delivery_method (not confirmed as an element, ammo type, or consumable)"
+   ]
+  },
+  "shidou-and-nue": {
+   "type": "boss",
+   "name_en": "Shidou & Nue",
+   "page_slug": "shidou-and-nue-boss-guide",
+   "order": 3,
+   "dual_boss": true,
+   "chapter_title": "Chapters 3 / 6 / 11",
+   "encounters": [
+    {
+     "chapter": 3,
+     "level": 20,
+     "note": "first pull; grants Chimeric Flow per the site's own boss list"
+    },
+    {
+     "chapter": 6,
+     "level": 35,
+     "note": "rematch; Nue's Charged Combo adds a lightning circle; Siphon is consistently confirmed active here"
+    },
+    {
+     "chapter": 11,
+     "level": 48,
+     "note": "final fight; Nue adds a Seed Bomb"
+    }
+   ],
+   "weak": [
+    "Poison"
+   ],
+   "weak_note": "Both bosses share this weakness, confirmed consistently across every tested guide cited on this page. Not among the 3 confirmed enchantable elements — documented answer is the Dokuzeri poison ability line from Lacerta.",
+   "weak_equippable": false,
+   "key_mechanic": {
+    "name": "Siphon",
+    "trigger": "When Shidou's own HP drops to roughly 30%, he stops attacking, extends a Blight branch onto Nue, and channels Nue's HP into his own bar until interrupted.",
+    "advice": "Let it fire once or twice (free progress on a bar you must drain anyway); start interrupting only once Nue is also near 30%. Best interrupt is rushing Shidou with Nushi skills the instant the Blight branch attaches, which staggers both bosses.",
+    "timing_disputed": {
+     "value_a": {
+      "label": "Siphon explicitly listed only under the Chapter 6 encounter; implies it may not be present at Chapter 3",
+      "source_url": "https://www.switchbladegaming.com/beast-of-reincarnation/shidou-and-nue-guide/"
+     },
+     "value_b": {
+      "label": "Shidou has the Siphon from the very first fight; only the damage scales up later",
+      "source_url": "https://www.sportskeeda.com/esports/beast-of-reincarnation-shidou-nue-boss-guide-attacks-weaknesses-tips-defeat-easily"
+     }
+    }
+   },
+   "moveset": [
+    {
+     "attack": "Two Slashes",
+     "boss": "Shidou",
+     "response": "Parry each swing"
+    },
+    {
+     "attack": "Blight Combo (2 long swings)",
+     "boss": "Shidou",
+     "response": "Parry, roughly 1.5s apart"
+    },
+    {
+     "attack": "Blight Lunge",
+     "boss": "Shidou",
+     "response": "Dodge only — not parryable"
+    },
+    {
+     "attack": "Tree Slam",
+     "boss": "Shidou",
+     "response": "Perfect-dodge before impact — unparryable"
+    },
+    {
+     "attack": "Giant Leap / Pounce",
+     "boss": "Nue",
+     "response": "Dodge just before it lands"
+    },
+    {
+     "attack": "Claw Combo (5-6 hits + slam)",
+     "boss": "Nue",
+     "response": "Parry every strike"
+    },
+    {
+     "attack": "Tail Spin",
+     "boss": "Nue",
+     "response": "Parry, roughly 2s apart"
+    },
+    {
+     "attack": "Lightning Strikes",
+     "boss": "Nue",
+     "response": "Unparryable — dodge repeatedly"
+    },
+    {
+     "attack": "Siphon (Blight branch)",
+     "boss": "Shidou",
+     "response": "Rush and hit with Nushi skills to stagger both"
+    }
+   ],
+   "rewards": [
+    {
+     "label": "Nushi Skill",
+     "name": "Chimeric Flow",
+     "note": "per this site's own boss list, credited to the Ch.3 fight"
+    },
+    {
+     "label": "Named art",
+     "name": "Erica: Strangle"
+    },
+    {
+     "label": "Blade Art",
+     "name": "Nue"
+    }
+   ],
+   "ch11_reward_disputed": {
+    "value_a": {
+     "items": [
+      "Bloom Art: Erica Strangle Lv.1",
+      "Blade Art: Nue Lv.1",
+      "Black Blossom sword"
+     ],
+     "source_url": "https://beastofreincarnation.online/en/shidou-and-nue-boss-guide",
+     "note": "\"per one tested source — treat as not confirmed against our own boss table\" (page's own caveat)"
+    },
+    "value_b": {
+     "items": [
+      "Nushi Skill: Chimeric Flow",
+      "Erica: Strangle",
+      "Blade Art: Nue"
+     ],
+     "source_url": "https://beastofreincarnation.online/en/all-weapons",
+     "note": "all-weapons.html states outright: \"An earlier draft of this page also listed a 'Black Blossom' katana as a Shidou & Nue reward — that name does not appear in the verified boss-reward data, so we have removed it.\""
+    }
+   },
+   "chimeric_flow_double_credit_note": "bosses.html's own reward table credits \"Chimeric Flow\" to BOTH the Nue Malefact Ch.1/Ch.3 row and the Shidou & Nue Ch.3 row; nushi-skills.html flags this explicitly as \"the one reward our own pages credit twice\" and does not resolve it.",
+   "achievement_ref": {
+    "id": "ach-shidou-and-nue",
+    "name_en": "Shidou & Nue"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/shidou-and-nue-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://beastofreincarnation.online/en/nushi-skills",
+    "https://beastofreincarnation.online/en/all-weapons",
+    "https://www.switchbladegaming.com/beast-of-reincarnation/shidou-and-nue-guide/",
+    "https://www.sportskeeda.com/esports/beast-of-reincarnation-shidou-nue-boss-guide-attacks-weaknesses-tips-defeat-easily"
+   ],
+   "accessed": "2026-09-10",
+   "unverified_fields": [
+    "ch11_reward_disputed (Black Blossom sword claim on this boss's own page conflicts with all-weapons.html's explicit retraction of the same claim; both values recorded)",
+    "key_mechanic.timing_disputed (two tested external sources disagree on whether Siphon is active at the Ch.3 encounter)",
+    "chimeric_flow_double_credit (site's own boss table credits this Nushi Skill to two different rows; not resolved)",
+    "hp",
+    "resistant",
+    "immune",
+    "shared_health_bar"
+   ]
+  },
+  "beast-of-reincarnation": {
+   "type": "boss",
+   "name_en": "Beast of Reincarnation (final boss)",
+   "page_slug": "beast-of-reincarnation-boss-guide",
+   "order": 10,
+   "chapter_title": "Chapter 13 (\"To Bloom Then Fall\")",
+   "encounters": [
+    {
+     "chapter": 13,
+     "level": null,
+     "note": "the only roster entry with no level recorded; nearest recorded fights are Lv.48 (Ch.11) and Lv.49 (Ch.12); player level cap is 100"
+    }
+   ],
+   "weak": [],
+   "weak_note": "The only boss on the roster where \"no weakness\" is explicitly asserted (\"None\") rather than simply undocumented — confirmed on both the boss list and the site's review. weak_equippable is null/not-applicable rather than unverified: with zero recorded weaknesses there is nothing for an equipped element to exploit.",
+   "weak_equippable": null,
+   "rewards": [
+    {
+     "label": "Unknown/unspecified",
+     "name": "Blossoms of Reincarnation"
+    }
+   ],
+   "reward_note": "Whole of what is recorded; the site does not know whether it is an art, an item, a cosmetic or a story object. No Nushi Skill attached.",
+   "ending_chain": [
+    {
+     "order": 1,
+     "achievement_ref": "ach-the-end-of-reincarnation",
+     "name_en": "The End of Reincarnation",
+     "condition_en": "Defeat the final boss at the end of Chapter 13"
+    },
+    {
+     "order": 2,
+     "achievement_ref": "ach-life-after-the-end",
+     "name_en": "Life After the End",
+     "condition_en": "Watch the ending sequence through to completion"
+    },
+    {
+     "order": 3,
+     "achievement_ref": "ach-reincarnated",
+     "name_en": "Reincarnated",
+     "condition_en": "Begin New Game Plus after the credits"
+    }
+   ],
+   "achievement_ref": {
+    "id": "ach-the-end-of-reincarnation",
+    "name_en": "The End of Reincarnation"
+   },
+   "source_urls": [
+    "https://beastofreincarnation.online/en/beast-of-reincarnation-boss-guide",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://beastofreincarnation.online/en/all-endings",
+    "https://beastofreincarnation.online/en/new-game-plus"
+   ],
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "level (no level recorded for this encounter anywhere on this site)",
+    "hp",
+    "resistant",
+    "immune",
+    "damage_types",
+    "moveset",
+    "arena",
+    "blossoms_of_reincarnation_type (not specified as art/item/cosmetic/story object)"
+   ]
+  },
+  "katana": {
+   "type": "weapon",
+   "name_en": "Katana",
+   "page_slug": "all-weapons",
+   "weapon_type": "Melee",
+   "role": "Emma's primary, swappable weapon; each individual katana carries its own specialized bonus",
+   "element_support": "Yes — can carry one elemental property",
+   "element_slots": 1,
+   "source_urls": [
+    "https://beastofreincarnation.online/en/all-weapons"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-08-31",
+   "unverified_fields": [
+    "total_katana_count (Game Freak has not published a numbered armory list; katanas surface as found rather than via a menu)",
+    "individual_damage_values",
+    "durability_or_repair_mechanic (nothing on this site points to one; explicitly not confirmed either way)"
+   ]
+  },
+  "bow": {
+   "type": "weapon",
+   "name_en": "Bow",
+   "page_slug": "all-weapons",
+   "weapon_type": "Ranged",
+   "role": "Safer damage during big boss windows",
+   "element_support": "Yes",
+   "element_slots": 3,
+   "ammo_type": "Arrows",
+   "ammo_collection_system_note": "Arrow/bolt manuals are a separate collectible track gated behind the Manual Maniac and Munitions Master achievements; manuals are purchasable from Brad and wandering merchants per the Amber farming guide.",
+   "source_urls": [
+    "https://beastofreincarnation.online/en/all-weapons",
+    "https://beastofreincarnation.online/en/elemental-weaknesses"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-08-31",
+   "unverified_fields": [
+    "individual_damage_values",
+    "total_arrow_type_count"
+   ]
+  },
+  "crossbow": {
+   "type": "weapon",
+   "name_en": "Crossbow",
+   "page_slug": "all-weapons",
+   "weapon_type": "Ranged",
+   "role": "Second ranged option",
+   "element_support": "Yes",
+   "element_slots": 3,
+   "ammo_type": "Bolts",
+   "source_urls": [
+    "https://beastofreincarnation.online/en/all-weapons",
+    "https://beastofreincarnation.online/en/elemental-weaknesses"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-08-31",
+   "unverified_fields": [
+    "individual_damage_values",
+    "total_bolt_type_count"
+   ]
+  },
+  "big-dipper": {
+   "type": "weapon",
+   "name_en": "Big Dipper",
+   "name_ja": "北斗星",
+   "name_ja_note": "Page states directly: \"the official English name for 北斗星\" — this is a translation stated on the page itself, not sourced from the ja/ locale mirror.",
+   "page_slug": "all-weapons",
+   "weapon_type": "Katana",
+   "availability": "Digital Deluxe Edition exclusive bundle item ($69.99 edition, vs $59.99 standard)",
+   "bundle_contents": [
+    "Big Dipper sword",
+    "Emma's Oni's Hat",
+    "Black and brown Koo skins",
+    "100,000 Amber",
+    "A set of crop seedlings"
+   ],
+   "source_urls": [
+    "https://beastofreincarnation.online/en/all-weapons",
+    "https://beastofreincarnation.online/en/editions",
+    "https://beastofreincarnation.online/en/glossary"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-08-31",
+   "unverified_fields": [
+    "earnable_in_game (whether Big Dipper can also be obtained outside the Deluxe Edition is explicitly \"hasn't been confirmed\")",
+    "stats_and_specialized_bonus"
+   ]
+  },
+  "elemental-weaknesses": {
+   "type": "mechanic",
+   "name_en": "Elemental Weaknesses",
+   "page_slug": "elemental-weaknesses",
+   "summary_en": "The boss roster records 6 weakness labels (Flame, Poison, Lightning, Acid, Water, Explosive) across 11 story bosses, plus one boss (the finale) with no weakness. Only 3 elements are confirmed enchantable in the shipped build (Fire, Lightning, Wet). The two lists overlap in exactly 2 places (Fire~Flame on Rangifer; Lightning on Lacerta and Corvus) — everywhere else, the \"counter\" is a boss-reward ability line rather than something you can equip.",
+   "enchantable_elements": [
+    {
+     "element": "Fire",
+     "effect_en": "Ignites the target and can trigger explosions",
+     "weak_boss": "Rangifer (recorded as \"Flame\")"
+    },
+    {
+     "element": "Lightning",
+     "effect_en": "Applies Shock; fast, punchy status pressure",
+     "weak_boss": "Lacerta and Corvus"
+    },
+    {
+     "element": "Wet",
+     "effect_en": "Soaks the target with a Wet status; a setup layer for the other elements' follow-ups",
+     "weak_boss": "No boss on the roster is recorded as weak to Wet"
+    }
+   ],
+   "enchant_slots": {
+    "katana": 1,
+    "bow": 3,
+    "crossbow": 3
+   },
+   "weakness_coverage": [
+    {
+     "boss": "Rangifer",
+     "weakness": "Flame",
+     "equippable": true,
+     "counter": "Fire enchant — the site's worked example"
+    },
+    {
+     "boss": "Nue Malefact",
+     "weakness": "Poison",
+     "equippable": false,
+     "counter": "Dokuzeri line from Lacerta"
+    },
+    {
+     "boss": "Lacerta",
+     "weakness": "Lightning",
+     "equippable": true,
+     "counter": "Lightning enchant"
+    },
+    {
+     "boss": "Shidou & Nue",
+     "weakness": "Poison",
+     "equippable": false,
+     "counter": "Dokuzeri line from Lacerta"
+    },
+    {
+     "boss": "Taurus",
+     "weakness": "Acid",
+     "equippable": false,
+     "counter": "Acid arrows/bolts named on boss list but not on weapons page"
+    },
+    {
+     "boss": "Corvus",
+     "weakness": "Lightning",
+     "equippable": true,
+     "counter": "Lightning enchant"
+    },
+    {
+     "boss": "Kunai & Kirin",
+     "weakness": "Poison",
+     "equippable": false,
+     "counter": "Dokuzeri line"
+    },
+    {
+     "boss": "Crimson Malefact",
+     "weakness": "Water — disputed (see boss entity)",
+     "equippable": false,
+     "counter": "Fundamentals over elements"
+    },
+    {
+     "boss": "Ursa",
+     "weakness": "Acid",
+     "equippable": false,
+     "counter": "Acid Burst Nobudou, taken from Corvus"
+    },
+    {
+     "boss": "Erymanth",
+     "weakness": "Explosive",
+     "equippable": "Not as an element",
+     "counter": "Explosive ammunition (delivery method unconfirmed)"
+    },
+    {
+     "boss": "Beast of Reincarnation",
+     "weakness": "None",
+     "equippable": null,
+     "counter": "Fundamentals, not elements"
+    }
+   ],
+   "optional_extra_labels": "A Chapter 1 Door Golem (mini-boss, not built as its own entity) is recorded weak to Bind and Acid — a 7th/8th label outside the 11-boss roster.",
+   "fully_equippable_bosses": [
+    "Rangifer (Fire)",
+    "Lacerta (Lightning)",
+    "Corvus (Lightning)"
+   ],
+   "naming_note": "Rangifer's weakness is written \"Flame\" (boss list) vs \"Fire\" (weapons page) — the only roster entry where a weakness label and an element label differ in spelling for the same thing; Lightning is spelled identically on both sides.",
+   "source_urls": [
+    "https://beastofreincarnation.online/en/elemental-weaknesses"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "elemental_damage_numbers (no multiplier, resistance value, or duration figure for any element is published anywhere on this site)",
+    "non_boss_enemy_weaknesses (only the Door Golem is documented outside the 11 story bosses)",
+    "can_a_katana_carry_poison_acid_or_explosive (not confirmed)"
+   ]
+  },
+  "nushi-skills": {
+   "type": "mechanic",
+   "name_en": "Nushi Skills, Blade Arts & Finishers",
+   "page_slug": "nushi-skills",
+   "summary_en": "Boss rewards fall into 4 categories: Nushi Skill (5 total), named arts, Blade Arts (6 fights grant one), and Finishers (4 fights grant one, rarest label). All 5 Nushi Skills are unlocked by the end of Chapter 7 — nothing after that introduces a new Nushi Skill, only upgrades (rank II) and Finishers.",
+   "reward_category_counts": {
+    "nushi_skills": 5,
+    "blade_arts": 6,
+    "finishers": 4,
+    "fights_paying_nothing_new": 2
+   },
+   "named_nushi_skills_unlock_order": [
+    {
+     "order": 1,
+     "name_en": "Sakura Storm",
+     "boss": "Rangifer",
+     "chapter": 1
+    },
+    {
+     "order": 2,
+     "name_en": "Dokuzeri Shower",
+     "boss": "Lacerta",
+     "chapter": 2
+    },
+    {
+     "order": 3,
+     "name_en": "Chimeric Flow",
+     "boss": "Shidou & Nue",
+     "chapter": 3
+    },
+    {
+     "order": 4,
+     "name_en": "Charging Botan",
+     "boss": "Taurus",
+     "chapter": 4
+    },
+    {
+     "order": 5,
+     "name_en": "Acid Burst Nobudou",
+     "boss": "Corvus",
+     "chapter": 7
+    }
+   ],
+   "upgrade_only_rewards": [
+    "Sakura: Javelin II (Rangifer Ch.5)",
+    "Botan: Chaser II (Taurus Ch.8)",
+    "Asagao: Boa II (Ursa, origin of rank I not documented)",
+    "Kiku: Bloom Strike II (Erymanth, origin of rank I not documented)"
+   ],
+   "fights_with_no_new_reward": [
+    "Crimson Malefact (Ch.9) — pure story wall, no Nushi Skill, no ability",
+    "Beast of Reincarnation (Ch.13) — \"Blossoms of Reincarnation\", type unspecified"
+   ],
+   "routing_notes": [
+    "Lacerta -> the Poison bosses: Dokuzeri line answers Shidou & Nue (Ch.3/6/11) and Kunai & Kirin (Ch.8/12) — 5 encounters answered by one Ch.2 reward.",
+    "Corvus -> the Acid bosses: Acid Burst Nobudou (Ch.7) answers the Taurus rematch (Ch.8) and Ursa (Ch.10).",
+    "Rangifer's Sakura Storm answers no later boss weakness — it is a general-purpose opener, not a routed counter."
+   ],
+   "disputed_double_credit": {
+    "skill": "Chimeric Flow",
+    "note": "bosses.html's own reward table credits this Nushi Skill to BOTH the Nue Malefact (Ch.1/Ch.3) row and the Shidou & Nue (Ch.3) row; the weapons page lists it only under Shidou & Nue. The walkthrough calls the Nue Malefact's Ch.3 encounter as \"feeding into\" Chimeric Flow. No page states outright whether these are one event or two rewards.",
+    "source_url": "https://beastofreincarnation.online/en/nushi-skills"
+   },
+   "no_documented_ability_numbers": "No damage, FP cost, cooldown or range is documented for any Nushi Skill, art, Blade Art or Finisher anywhere on this site; the Koo guide states FP costs are tuning values that shift with patches.",
+   "source_urls": [
+    "https://beastofreincarnation.online/en/nushi-skills",
+    "https://beastofreincarnation.online/en/bosses",
+    "https://beastofreincarnation.online/en/all-weapons"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "chimeric_flow_double_credit (see disputed_double_credit)",
+    "mechanical_difference_between_nushi_skill_and_blade_art (categories are named but not mechanically distinguished on this site)",
+    "ng_plus_reward_carryover (not confirmed what, if anything, transfers)"
+   ]
+  },
+  "combat-gauges": {
+   "type": "mechanic",
+   "name_en": "Combat Gauges (FP, Down Gauge, Entanglement Gauge)",
+   "page_slug": "combat-gauges",
+   "summary_en": "Three meters, one verb: a clean parry pays into all three simultaneously. FP is Koo's shared resource pool; the Down Gauge belongs to the enemy and is a stagger/execution meter; the Entanglement Gauge is Emma's own and charges her Entanglement Overdrive burst.",
+   "gauges": [
+    {
+     "name_en": "FP (Florescence Points)",
+     "also_written_as": "Focus Points (site standardises on Florescence Points)",
+     "whose": "Shared pool Koo draws from",
+     "filled_by": "Mainly Emma's perfect blocks/parries; landing attacks contributes",
+     "spent_on": "Koo's Bloom Arts, chosen from the command menu",
+     "banks_between_exchanges": true,
+     "cost_numbers_documented": false
+    },
+    {
+     "name_en": "Down Gauge",
+     "whose": "The enemy's, one per enemy",
+     "filled_by": "Landed hits and clean parries from Emma, plus Koo's Bloom Arts",
+     "spent_on": "Nothing — you break it; executions on mobs, stuns on bosses",
+     "still_works_without_koo": true
+    },
+    {
+     "name_en": "Entanglement Gauge",
+     "whose": "Emma's own",
+     "filled_by": "Hits and deflections; certain parries, dodges and Spirit Stone triggers",
+     "spent_on": "Entanglement Overdrive, a slow-time burst",
+     "segments": 7,
+     "overdrive_levels": 5,
+     "unlocked_by_attribute": "Strength",
+     "still_works_without_koo": true,
+     "note": "The only one of the three gauges that keeps working when Koo is not with you (e.g. the Crimson Malefact fight)."
+    }
+   ],
+   "two_slow_time_systems": [
+    {
+     "system": "Koo's command menu",
+     "opened_by": "△ on PS5, on demand, any time",
+     "costs": "Nothing to open; the chosen art costs FP",
+     "pauses_game": false
+    },
+    {
+     "system": "Entanglement Overdrive",
+     "opened_by": "Spending a full Entanglement Gauge",
+     "costs": "The whole gauge",
+     "pauses_game": false
+    }
+   ],
+   "gauge_feeding_spirit_stones": [
+    {
+     "stone": "Entangled Parry",
+     "trigger": "Parrying",
+     "restores": "Chance of Entanglement Gauge +0.2 and Koo's FP +1; 10%-50% across 5 levels"
+    },
+    {
+     "stone": "Entangled Dodge",
+     "trigger": "Dodging",
+     "restores": "Same values, same 10%-50% scaling"
+    },
+    {
+     "stone": "Entangled Assassination",
+     "trigger": "Death from Above / Assassination kill",
+     "restores": "Both Entanglement Gauge and Koo's FP"
+    },
+    {
+     "stone": "Entanglement Increase",
+     "trigger": "Exploiting an elemental weakness",
+     "restores": "Both bars; 3%-7% across 5 levels"
+    },
+    {
+     "stone": "Sharpshooter",
+     "trigger": "Exploiting a weakness with a ranged weapon",
+     "restores": "1 FP to Koo; 20%-30% across 3 levels"
+    },
+    {
+     "stone": "Entanglement Stone",
+     "trigger": "Start of combat",
+     "restores": "Both bars pre-raised; Lv1-3 gives +1/+1 to +3/+3"
+    },
+    {
+     "stone": "Florescent Recovery",
+     "trigger": "Using a Bloom Art",
+     "restores": "Not a gauge stone — restores Emma and Koo's HP each second for 5s"
+    }
+   ],
+   "spending_order": [
+    "Parry rather than dodge whenever possible",
+    "Bank FP through the aggressive phase instead of spending defensively",
+    "Watch the enemy's Down Gauge, not your own bars",
+    "Spend the Bloom Art as the Down Gauge approaches full",
+    "Hold Overdrive for the wall — it still works when Koo does not"
+   ],
+   "source_urls": [
+    "https://beastofreincarnation.online/en/combat-gauges",
+    "https://beastofreincarnation.online/en/koo-guide",
+    "https://beastofreincarnation.online/en/builds"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "fp_cap",
+    "fp_gain_per_parry",
+    "down_gauge_values",
+    "overdrive_duration_per_level",
+    "entangled_achievement_condition (the 'Entangled' Steam achievement's exact requirement is explicitly stated as unknown: 'Steam publishes no description for it')"
+   ]
+  },
+  "spirit-stones": {
+   "type": "mechanic",
+   "name_en": "Spirit Stones",
+   "page_slug": "spirit-stones",
+   "summary_en": "Equippable collectibles that grant Emma additional stats and passive triggered effects (FP restoration on a parry, attack boosts at full HP, higher crit rate on executions, etc.). Found in overworld strongboxes and drops; some also purchasable from merchants and Brad at the Cleanse Walker.",
+   "equip_slots_early": 4,
+   "equip_slots_late": 6,
+   "slots_note": "4 equippable in the early chapters, rising to 6 by the end of the game as more equipment slots unlock. Stated twice on the page (body text and FAQ), consistently.",
+   "acquisition": [
+    "Overworld strongboxes",
+    "Overworld drops",
+    "Purchasable from merchants and from Brad at the Cleanse Walker"
+   ],
+   "stones": [
+    {
+     "name": "Fortification",
+     "effect": "Beginning a battle boosts Fortitude (which boosts defense for a time). Lv1-3: Fortitude +1 to +3."
+    },
+    {
+     "name": "Onslaught",
+     "effect": "Beginning a battle boosts Vigor. Lv1-3: Vigor +1 to +3."
+    },
+    {
+     "name": "Sharpshooter",
+     "effect": "Exploiting an enemy's elemental weakness with a ranged weapon has a chance to restore 1 FP to Koo. Recovery rate scales from +20% to +30% across 3 levels."
+    },
+    {
+     "name": "Momentum",
+     "effect": "Boosts Emma and Koo's attack while Emma's HP is full. Scales from +5% to +10% across 5 levels."
+    },
+    {
+     "name": "Homing Shots",
+     "effect": "Ranged projectiles gain tracking. Scales from Low to Full Tracking across 5 levels."
+    },
+    {
+     "name": "Entangled Dodge",
+     "effect": "Dodging has a chance to restore Emma's Entanglement Gauge by 0.2 and Koo's FP by 1. Rate scales 10% to 50% across 5 levels."
+    },
+    {
+     "name": "Well of Fortitude",
+     "effect": "Boosts Fortitude when Emma's HP drops below half. Lv1-3: Fortitude +1 to +3."
+    },
+    {
+     "name": "Entangled Parry",
+     "effect": "Parrying has a chance to restore the Entanglement Gauge by 0.2 and Koo's FP by 1. Same 10%-50% scaling as Entangled Dodge."
+    },
+    {
+     "name": "Entangled Assassination",
+     "effect": "Defeating an enemy with Death from Above or an Assassination restores both the Entanglement Gauge and Koo's FP."
+    },
+    {
+     "name": "Entanglement Increase",
+     "effect": "Exploiting an elemental weakness has a chance to restore the Entanglement Gauge and Koo's FP. Rate scales from 3% to 7% across 5 levels."
+    },
+    {
+     "name": "Florescent Recovery",
+     "effect": "Bloom Arts restore Emma and Koo's HP every second for 5 seconds. Lv1-3: HP Recovery 0.3% to 0.8%."
+    },
+    {
+     "name": "Iron Wall",
+     "effect": "Reduces damage Emma takes, but cuts health recovery in half. Lv1-3: 15% to 25% damage reduction."
+    },
+    {
+     "name": "Dark Approach",
+     "effect": "Boosts damage while Emma is unseen by enemies — a stealth-build stone. Scales 5% to 10% across 5 levels."
+    },
+    {
+     "name": "Entanglement Stone",
+     "effect": "Combat begins with Emma's Entanglement Gauge and Koo's FP already increased. Lv1-3: +1/+1 to +3/+3."
+    },
+    {
+     "name": "Critical Damage Increase",
+     "effect": "Boosts Emma and Koo's critical damage. Scales 5% to 25% across 5 levels."
+    },
+    {
+     "name": "Final Breath",
+     "effect": "Performing an execution recovers Emma's HP. Recovery scales from 10% to 25% across 5 levels."
+    }
+   ],
+   "stone_count": 16,
+   "stone_count_note": "16 stones have confirmed effect text on this page; the page does not claim this is an exhaustive list of every Spirit Stone in the game.",
+   "level_cap_note": "Most stones cap at Level 3, some go to Level 5, per the effect table. Each stone also carries flat HP/Skill Power/Defense/Critical Rate bonuses at Level 2 that the page says stack on top of the listed effect, without itemizing the numbers.",
+   "blighted_variant_note": "Several stones exist in a stronger Blighted variant that roughly doubles the flat stat bonus (example given: Onslaught's Blighted version doubles its Attack bonus from +6 to +12 at the equivalent level). Blighted stones are rarer overworld finds than their normal counterparts.",
+   "duplication": "Available at the Cleanse Walker's workbench for stones already owned; costs noticeably more Amber than finding or buying the stone again; cannot unlock new stones, only duplicate ones already in inventory.",
+   "sell_guidance": "Sell only when Amber is needed urgently, to Brad at the Cleanse Walker or overworld merchants. Firm rule stated: keep higher-rarity stones (hard to refind); sell common, easily-rebought stones first.",
+   "build_pairings": [
+    {
+     "build": "Melee suppression",
+     "stones": [
+      "Entangled Parry",
+      "Momentum"
+     ]
+    },
+    {
+     "build": "Ranged elemental",
+     "stones": [
+      "Sharpshooter",
+      "Homing Shots"
+     ]
+    },
+    {
+     "build": "Stealth execution",
+     "stones": [
+      "Dark Approach",
+      "Final Breath"
+     ]
+    },
+    {
+     "build": "Koo parry-flow",
+     "stones": [
+      "Entangled Parry",
+      "Entanglement Stone",
+      "Florescent Recovery"
+     ]
+    }
+   ],
+   "source_urls": [
+    "https://beastofreincarnation.online/en/spirit-stones",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/614048",
+    "https://game8.co/games/Beast-of-Reincarnation/archives/614296",
+    "https://beastofreincarnation.online/en/combat-gauges",
+    "https://beastofreincarnation.online/en/builds"
+   ],
+   "accessed": "2026-09-10",
+   "unverified_fields": [
+    "per_stone_flat_hp_skill_power_defense_crit_bonuses (page states these exist at Level 2 for every stone but does not itemize the numbers, and points to \"the source guide\" instead)",
+    "skill_amber_acquisition_method (page states explicitly: \"Not confirmed: the exact acquisition method for Skill Ambers specifically wasn't in the source material for this page.\")",
+    "total_spirit_stone_roster_size (16 stones have confirmed effect text; not stated to be the full roster)"
+   ]
+  },
+  "new-game-plus": {
+   "type": "mechanic",
+   "name_en": "New Game Plus (NG+)",
+   "page_slug": "new-game-plus",
+   "summary_en": "A single canonical main-story ending (no branching) is followed by New Game Plus — a harder replay of the same story, confirmed not to change the ending. Full completion (100%) requires it. Only about 1 in 8 players who see the credits ever start it.",
+   "unlock_chain": [
+    {
+     "step": 1,
+     "action": "Beat the final boss",
+     "achievement_ref": "ach-the-end-of-reincarnation",
+     "name_en": "The End of Reincarnation"
+    },
+    {
+     "step": 2,
+     "action": "Watch the ending through",
+     "achievement_ref": "ach-life-after-the-end",
+     "name_en": "Life After the End"
+    },
+    {
+     "step": 3,
+     "action": "Begin New Game Plus",
+     "achievement_ref": "ach-reincarnated",
+     "name_en": "Reincarnated"
+    }
+   ],
+   "capstone_achievement": {
+    "achievement_ref": "ach-duty-fulfilled",
+    "name_en": "Duty Fulfilled",
+    "note": "sits BELOW Reincarnated in unlock rate on every read — the rarest of the 46 achievements"
+   },
+   "level_cap": 100,
+   "respec_supported": true,
+   "changes_ending": false,
+   "run_length_measured": {
+    "focused_hours": 20,
+    "typical_hours": "25-28",
+    "completionist_single_run_hours": "30-35",
+    "ng_plus_hours": "not measured / not stated"
+   },
+   "run_length_disputed": {
+    "value_a": {
+     "label": "~80 hours for a 100% clear including NG+",
+     "source_url": "https://beastofreincarnation.online/en/walkthrough",
+     "note": "explicitly labelled an approximate single estimate; builds.html quotes the same figure"
+    },
+    "value_b": {
+     "label": "30-35 hours per completionist single run; no hour figure attached to the two-run 100% total at all",
+     "source_url": "https://beastofreincarnation.online/en/how-long-to-beat",
+     "note": "rebuilt around measured post-launch figures, taken later than the 80h estimate"
+    }
+   },
+   "what_carries_over": "Not confirmed. Explicitly unknown on this site whether Spirit Stones/levels, Amber, collected katanas, arrow/bolt manuals, Koo Rapport, Giant Tree progress, or seedlings transfer into NG+.",
+   "source_urls": [
+    "https://beastofreincarnation.online/en/new-game-plus",
+    "https://beastofreincarnation.online/en/all-endings",
+    "https://beastofreincarnation.online/en/trophies",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "what_carries_over (see field; Game Freak has not published a breakdown)",
+    "run_length_disputed (80h estimate vs 30-35h/run measured figure; both recorded, not resolved)",
+    "enemy_level_scaling_in_ng_plus",
+    "new_gear_in_ng_plus",
+    "whether_lv100_is_reachable_in_one_run"
+   ]
+  },
+  "ach-purifier-s-mantle": {
+   "type": "achievement",
+   "name_en": "Purifier's Mantle",
+   "name_ja": "浄化兵",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 94.6,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-first-fire": {
+   "type": "achievement",
+   "name_en": "First Fire",
+   "name_ja": "野営地",
+   "description_en": "Discover your first campsite.",
+   "description_ja": "初めて野営地を発見",
+   "hidden": false,
+   "unlock_rate_pct": 92.6,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-blight-touched": {
+   "type": "achievement",
+   "name_en": "Blight-Touched",
+   "name_ja": "穣れの成長",
+   "description_en": "Enhance an attribute for the first time.",
+   "description_ja": "初めて能力を強化した",
+   "hidden": false,
+   "unlock_rate_pct": 83.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-man-s-best-friend": {
+   "type": "achievement",
+   "name_en": "Man's Best Friend",
+   "name_ja": "クゥと一緒",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 64.0,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Early tier of Koo's Rapport chain (Man's Best Friend -> Closest Companion -> Bestie -> The Perfect Pal); exact threshold not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-knowing-me-knowing-you": {
+   "type": "achievement",
+   "name_en": "Knowing Me, Knowing You",
+   "name_ja": "カグラと一緒",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 58.9,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-entangled": {
+   "type": "achievement",
+   "name_en": "Entangled",
+   "name_ja": "共鳴",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 57.3,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; this site explicitly states it cannot determine the requirement — see https://beastofreincarnation.online/en/combat-gauges)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-rangifer-s-end": {
+   "type": "achievement",
+   "name_en": "Rangifer's End",
+   "name_ja": "ヌシシカ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 54.0,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "rangifer",
+   "condition_inferred_en": "Seal/defeat Rangifer (Ch.1 boss).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-place-of-return": {
+   "type": "achievement",
+   "name_en": "Place of Return",
+   "name_ja": "魂の循る場所",
+   "description_en": "Discover your first shrine.",
+   "description_ja": "初めて祠を発見",
+   "hidden": false,
+   "unlock_rate_pct": 52.0,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-snack-time": {
+   "type": "achievement",
+   "name_en": "Snack Time",
+   "name_ja": "「おいしい」",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 47.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-lacerta-s-end": {
+   "type": "achievement",
+   "name_en": "Lacerta's End",
+   "name_ja": "ヌシオオサンショウウオ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 44.6,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "lacerta",
+   "condition_inferred_en": "Seal/defeat Lacerta (Ch.2 boss).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-repose-for-the-departed": {
+   "type": "achievement",
+   "name_en": "Repose for the Departed",
+   "name_ja": "震魂のエマ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 41.2,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-closest-companion": {
+   "type": "achievement",
+   "name_en": "Closest Companion",
+   "name_ja": "ずっと一緒",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 39.2,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Mid tier of Koo's Rapport chain; exact threshold not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-busy-paws": {
+   "type": "achievement",
+   "name_en": "Busy Paws",
+   "name_ja": "とても器用な前足",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 36.7,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-taurus-s-end": {
+   "type": "achievement",
+   "name_en": "Taurus's End",
+   "name_ja": "ヌシウシ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 35.9,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "taurus",
+   "condition_inferred_en": "Seal/defeat Taurus (final Ch.8 rematch).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-bestie": {
+   "type": "achievement",
+   "name_en": "Bestie",
+   "name_ja": "願い",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 35.3,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Mid-late tier of Koo's Rapport chain; exact threshold not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-corvus-s-end": {
+   "type": "achievement",
+   "name_en": "Corvus's End",
+   "name_ja": "ヌシカラス",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 29.7,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "corvus",
+   "condition_inferred_en": "Seal/defeat Corvus (Ch.7 boss).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-green-thumb": {
+   "type": "achievement",
+   "name_en": "Green Thumb",
+   "name_ja": "植物収集家",
+   "description_en": "Obtain every type of seedling.",
+   "description_ja": "全ての植物の苗を取得した",
+   "hidden": false,
+   "unlock_rate_pct": 27.8,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-koo-de-grace": {
+   "type": "achievement",
+   "name_en": "Koo de Grâce",
+   "name_ja": "ヌシクゥ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 27.3,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-ursa-s-end": {
+   "type": "achievement",
+   "name_en": "Ursa's End",
+   "name_ja": "ヌシクマ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 26.7,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "ursa",
+   "condition_inferred_en": "Seal/defeat Ursa (Ch.10 boss).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-shidou-and-nue": {
+   "type": "achievement",
+   "name_en": "Shidou & Nue",
+   "name_ja": "シドウと鶴",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 26.6,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "shidou-and-nue",
+   "condition_inferred_en": "Resolve the Shidou & Nue dual fight (final Ch.11 encounter).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-erymanth-s-end": {
+   "type": "achievement",
+   "name_en": "Erymanth's End",
+   "name_ja": "ヌシイノシシ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 26.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "erymanth",
+   "condition_inferred_en": "Seal/defeat Erymanth (Ch.12 boss).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-kunai-and-kirin": {
+   "type": "achievement",
+   "name_en": "Kunai & Kirin",
+   "name_ja": "クナイと麒鮻",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 26.3,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "kunai-and-kirin",
+   "condition_inferred_en": "Resolve the Kunai & Kirin dual fight (final Ch.12 encounter).",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/bosses"
+  },
+  "ach-life-after-the-end": {
+   "type": "achievement",
+   "name_en": "Life After the End",
+   "name_ja": "この世界で生きていく",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 26.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Watch the ending sequence through to completion.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/beast-of-reincarnation-boss-guide"
+  },
+  "ach-the-end-of-reincarnation": {
+   "type": "achievement",
+   "name_en": "The End of Reincarnation",
+   "name_ja": "輪回の獃",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 26.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "related_boss": "beast-of-reincarnation",
+   "condition_inferred_en": "Defeat the final boss at the end of Chapter 13.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/beast-of-reincarnation-boss-guide"
+  },
+  "ach-the-sealer": {
+   "type": "achievement",
+   "name_en": "The Sealer",
+   "name_ja": "封じ子エマ",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 22.5,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-horror-in-the-sky": {
+   "type": "achievement",
+   "name_en": "Horror in the Sky",
+   "name_ja": "空に浮かぶ言い伝え",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 18.7,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-manual-maniac": {
+   "type": "achievement",
+   "name_en": "Manual Maniac",
+   "name_ja": "調合書収集家",
+   "description_en": "Obtain the manuals for every arrow and bolt type.",
+   "description_ja": "全ての矢・ボルトの調合書を取得した",
+   "hidden": false,
+   "unlock_rate_pct": 13.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-degeneration": {
+   "type": "achievement",
+   "name_en": "Degeneration",
+   "name_ja": "穣れの退化",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 11.8,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-wandering-duelist": {
+   "type": "achievement",
+   "name_en": "Wandering Duelist",
+   "name_ja": "剣豪",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 10.6,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-gourmand": {
+   "type": "achievement",
+   "name_en": "Gourmand",
+   "name_ja": "家族の食卓",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 7.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-the-ultimate-vessel": {
+   "type": "achievement",
+   "name_en": "The Ultimate Vessel",
+   "name_ja": "究極の器",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 7.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-the-perfect-pal": {
+   "type": "achievement",
+   "name_en": "The Perfect Pal",
+   "name_ja": "最高の相棒",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 7.0,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Top tier of Koo's Rapport chain (maxed bond); exact threshold not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-blade-collector": {
+   "type": "achievement",
+   "name_en": "Blade Collector",
+   "name_ja": "刀を集めし者",
+   "description_en": "Obtain every blade.",
+   "description_ja": "全ての刀を取得した",
+   "hidden": false,
+   "unlock_rate_pct": 6.5,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-soul-returned": {
+   "type": "achievement",
+   "name_en": "Soul Returned",
+   "name_ja": "そして魂は循る",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 6.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-know-it-all": {
+   "type": "achievement",
+   "name_en": "Know-It-All",
+   "name_ja": "完璧な情報収集",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 6.3,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-munitions-master": {
+   "type": "achievement",
+   "name_en": "Munitions Master",
+   "name_ja": "射止めぬ物はない",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 6.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Ammunition-collection achievement in the same family as Manual Maniac (arrow/bolt manuals); exact condition not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/elemental-weaknesses"
+  },
+  "ach-giant-tree-budburst": {
+   "type": "achievement",
+   "name_en": "Giant Tree Budburst",
+   "name_ja": "芽吹いた大樹",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 5.7,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "An early Giant Tree growth-stage milestone (a multi-stage collection/upgrade system); exact condition not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-behold-the-truth": {
+   "type": "achievement",
+   "name_en": "Behold, the Truth",
+   "name_ja": "真実はここに",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 5.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-finders-keepers": {
+   "type": "achievement",
+   "name_en": "Finders, Keepers",
+   "name_ja": "伝承ゴーレム",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 5.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (hidden achievement; Steam publishes no description and no page on this site documents an inferred requirement)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ]
+  },
+  "ach-happy-camper": {
+   "type": "achievement",
+   "name_en": "Happy Camper",
+   "name_ja": "全ての休息の地",
+   "description_en": "Discover every campsite.",
+   "description_ja": "全野営地を発見",
+   "hidden": false,
+   "unlock_rate_pct": 5.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  },
+  "ach-giant-tree-in-bloom": {
+   "type": "achievement",
+   "name_en": "Giant Tree in Bloom",
+   "name_ja": "花開く大樹",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 5.0,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "A later Giant Tree growth-stage milestone; exact condition not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-blade-enthusiast": {
+   "type": "achievement",
+   "name_en": "Blade Enthusiast",
+   "name_ja": "斬れぬ物はない",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 4.5,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Mid-tier katana collection milestone, per the 3-tier chain Blade Collector -> Blade Enthusiast -> Blademaster; exact count not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/all-weapons"
+  },
+  "ach-blademaster": {
+   "type": "achievement",
+   "name_en": "Blademaster",
+   "name_ja": "刀を極めし者",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 4.2,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Top-tier katana collection milestone (full roster); exact count not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/all-weapons"
+  },
+  "ach-floral-profusion": {
+   "type": "achievement",
+   "name_en": "Floral Profusion",
+   "name_ja": "百花繜亂",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 3.9,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Completionist-tier collection achievement grouped with the Giant Tree stages; exact condition not stated.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/trophies"
+  },
+  "ach-reincarnated": {
+   "type": "achievement",
+   "name_en": "Reincarnated",
+   "name_ja": "輪回の果て",
+   "description_en": null,
+   "description_ja": null,
+   "hidden": true,
+   "unlock_rate_pct": 3.4,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": [
+    "condition (Steam publishes no description; condition_inferred_en is this site's own documented inference, not an official Steam text)",
+    "description_en (Steam publishes no English description for this achievement until it is unlocked)",
+    "description_ja (Steam's Japanese achievement page also publishes no description for this hidden achievement)"
+   ],
+   "condition_inferred_en": "Begin New Game Plus after the credits.",
+   "condition_inferred_source_url": "https://beastofreincarnation.online/en/beast-of-reincarnation-boss-guide"
+  },
+  "ach-duty-fulfilled": {
+   "type": "achievement",
+   "name_en": "Duty Fulfilled",
+   "name_ja": "全ての願いの果て",
+   "description_en": "Unlock every achievement.",
+   "description_ja": "全ての実績を獲得した",
+   "hidden": false,
+   "unlock_rate_pct": 3.1,
+   "unlock_rate_source_url": "https://steamcommunity.com/stats/2001760/achievements/",
+   "unlock_rate_accessed": "2026-09-14",
+   "page_slug": "achievement-tracker",
+   "source_urls": [
+    "https://steamcommunity.com/stats/2001760/achievements/",
+    "https://beastofreincarnation.online/en/achievement-tracker"
+   ],
+   "accessed": "2026-09-14",
+   "unverified_fields": []
+  }
+ }
+}

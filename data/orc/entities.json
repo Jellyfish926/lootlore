@@ -1,0 +1,1122 @@
+{
+  "fetched": "2026-09-21",
+  "game": "Sir, We Have an Orc Problem",
+  "steam_appid": 4594150,
+  "game_version": "2026.08.18.12.05",
+  "game_version_note": "The game has no traditional version numbers; updates are named by build timestamp (site's own update-history page). This is the latest such timestamp as of the site's last review.",
+  "hub_base_url": "https://lootlore-ten.vercel.app/orc-problem",
+  "subsite_base_url": "https://sirwehaveanorcproblem.store",
+  "sources_note": "Source priority followed per brief: (1) on-site published pages under sources/orc/ (45-page snapshot of the orc-problem-guide subsite, fact-checked + independently reviewed already) as the primary source for every fact; (2) each page's own cited primary source (its 'Sources checked for this page' box, extracted from the rendered HTML — most turret pages state they are 'compiled from on-site pages, no new research', so those use source_tier:'onsite'; pages with real external citations, e.g. tesla-coil, turret-roles, orc-flow-mechanic, beginner-mistakes, all level pages, all achievement pages, and all platform pages, have those citations reproduced in-line); (3) live Steam public endpoints (store appdetails for 4594150 and 4981840, ISteamUserStats/GetGlobalAchievementPercentagesForApp, and the public steamcommunity.com/stats/4594150/achievements/ page) fetched 2026-09-21 as a clearly-labelled supplement, never overriding an on-site value. NO NEW FACTS were introduced beyond what these three tiers state; every field traces to one of them. Values the site does not state are omitted (not null, not estimated) and logged in the relevant entity's unverified_fields. TURRET STATS POLICY (read this before adding fields): turret entities intentionally carry NO cost, damage, range, penetration, fire-rate or cooldown numbers, even though six of the seven turret pages print such a table. That table's own source (a self-dated, unofficial player stat sheet by Steam user 'Mrlazy') is explicitly caveated site-wide as unofficial and possibly stale (Mumpitz Games has never published turret numbers, and at least one turret's behaviour has already changed post-launch without a stats republish). Per-node upgrade costs and tier-by-tier scaling are separately and explicitly undocumented site-wide (all-turrets + upgrade-grind pages both state no verifiable source publishes them) — this is the fact behind the parent task's note that a turret cost/stat comparator was judged infeasible. Per the task's red line, these numbers were not reconstructed from any other guide site either. Only qualitative facts (role, placement, non-numeric special-mechanic description, which achievements name the turret) are included for turret entities. CONTRADICTIONS: where on-site pages disagree (documented extensively for achievement global unlock percentages, the 18-vs-19-August patch date, and the $9.99-vs-$8.99 base price), both values are recorded with their own source + access date rather than one being chosen; each such field is also listed in the relevant entity's unverified_fields. SINGLE-SOURCE FACTS: the meta-progression tree's full-cost figures (2,894,436 / 6 / 12) and the level-1 turret-placement cap (15) trace to exactly one community save-editing guide (Erèbes) and are not corroborated elsewhere on the site; flagged accordingly, not treated as confirmed. SCOPE NOTE vs brief: the brief named six turret pages and four level pages as priority pages to review closely. The site actually publishes a 7th turret page (Tesla Coil — the all-turrets page itself states 'there are seven turret types') and 9 dedicated level pages (1.1, 3.1, 3.2, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2), all of comparable depth and sourcing quality to the ones the brief named. All 7 turrets and all 9 levels were built rather than omitting the unnamed ones, since material support (not the brief's illustrative list) was the stated bar for what to build; flagged here for the orchestrator to confirm or trim.",
+  "entities": {
+    "cannon": {
+      "type": "turret",
+      "name_en": "Cannon",
+      "page_slug": "towers/cannon",
+      "role_en": "power",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "summary_en": "The site's stat table's single highest number is this turret's penetration figure, not its damage. It is the only turret whose in-game tooltip text the site has on record (from the upgrade-tree screenshot): “low fire rate but high damage, projectiles penetrate through multiple orcs.” That in-game description is treated on-site as more reliable than any other turret's numbers, because it comes from the game build itself rather than a player measurement.",
+      "placement_en": "Aim along the line orcs naturally walk, not across it — firing perpendicular to the flow wastes most of the penetration on empty ground. Documented player placements put it one step behind the point where the map narrows/throttles the wave, not at the choke itself.",
+      "special_mechanic_en": "Periodically fires a larger shot with even more penetration than its normal shots (described on-site as ‘every fifth shot’, without a quantified damage/penetration delta).",
+      "level_notes_en": "The 3.2 difficulty-spike page documents a maxed-out cannon line failing that level: a cannon-heavy build scales linearly (more cannons = more damage) while 3.2 requires the multiplicative scaling a laser corridor + grenade-launcher slow provides instead.",
+      "achievements_ref": [],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/cannon/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "laser": {
+      "type": "turret",
+      "name_en": "Laser",
+      "page_slug": "towers/laser",
+      "role_en": "power",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "summary_en": "The only turret on the site whose value is described as depending on map geometry rather than on the orcs in front of it, because its beam can bounce repeatedly inside a corridor. It is also the only turret with a documented post-launch balance change (see patch-history): an upgrade letting it fire in a straight line without sway, added in the 4 August patch.",
+      "placement_en": "Fired into a corridor so the bounce stays inside it rather than escaping into open ground; the site repeats a Steam strategy-guide caveat that many slanted surfaces have flat sections, so a carelessly angled beam bounces somewhere useless. Site frames angle as a real decision for this turret specifically, not a rounding error.",
+      "special_mechanic_en": "Beam ricochets/bounces multiple times, letting one shot hit the same column of orcs repeatedly when fired down a corridor.",
+      "level_notes_en": "Named on 3.2 (paired with the grenade launcher) as one of two upgrade branches the site calls ‘effectively mandatory’ before that level. Used in documented layouts on 4.2, 5.2 and 6.1, and in itsuno's single-turret 1.1 clear (One Is Enough achievement).",
+      "achievements_ref": [
+        "one-is-enough"
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/laser/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "Whether the 4 August no-sway patch changed any of the turret's other measured behaviour is not confirmed; site flags the laser as 'most likely to have drifted' from the unofficial stat sheet."
+      ]
+    },
+    "gunner": {
+      "type": "turret",
+      "name_en": "Gunner",
+      "page_slug": "towers/gunner",
+      "role_en": "unresolved (cleanup vs power)",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/gunner/",
+      "role_note_en": "The site explicitly does not settle this. The all-turrets and glossary pages group gunner with the tesla coil as a cleanup turret; the turret-roles page says it 'sits awkwardly' in the power category and reports a Steam guide's claim that its volume makes it function as power once upgraded; the turret-roles page states outright that no measurement exists of the upgrade tier at which a gunner would overtake a cannon.",
+      "summary_en": "Fastest fire rate of any turret on the site's stat sheet, paired with the shallowest reach, so its rate is easily wasted against a deep column of orcs (a shot stops after a small number of orcs regardless of how many rounds arrive per second).",
+      "placement_en": "Best where the column is already shallow — i.e. behind whatever turret is doing the thinning — rather than pointed into the thickest part of a wave.",
+      "special_mechanic_en": "Because its per-shot reach is shallow, it benefits disproportionately from the flamethrower's pierce-retention effect when placed behind a burning zone.",
+      "level_notes_en": "Central to an unverified player screenshot (Exebri) claiming a gunners-only clear of level 4.2; the same discussion thread also has another player reporting spare, unused gunners on some chokepoints of that level.",
+      "achievements_ref": [],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/gunner/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "role_en: genuinely unresolved on-site between 'cleanup' and 'power' — recorded as-is, not picked."
+      ]
+    },
+    "flamethrower": {
+      "type": "turret",
+      "name_en": "Flamethrower",
+      "page_slug": "towers/flamethrower",
+      "role_en": "support",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "element_en": "fire / burn",
+      "summary_en": "Carries the smallest per-tick damage figure on the site's whole stat table, yet is the turret two of the game's constraint achievements are cleared with as the main weapon. The site attributes this to two unquantified effects rather than to its listed damage.",
+      "placement_en": "Documented at the entrance of a narrow passage, at the front of a squad rather than behind it; two flamethrowers facing each other across a passage are documented covering the whole width, doubling the burn bonus in that zone.",
+      "special_mechanic_en": "Applies a damage amplification to burning orcs and a chance for a shot that hits a burning orc not to consume the shooter's pierce/penetration — functioning as a multiplier for other turrets firing through the same zone rather than as a damage source itself.",
+      "achievements_ref": [
+        "elemental-carnage",
+        "specialist"
+      ],
+      "achievements_note_en": "itsuno's guide records Specialist (3.1) being cleared with flamethrowers as the sole turret type, and also names a flamethrower as a conditional alternate turret for One Is Enough (1.1) 'if the upgrade levels are high enough'.",
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/flamethrower/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "Neither the damage amp nor the pierce-retention chance is quantified anywhere the site could verify; site states it cannot distinguish whether the burn scales hard with upgrade tiers or the damage amp does most of the work."
+      ]
+    },
+    "grenade-launcher": {
+      "type": "turret",
+      "name_en": "Grenade Launcher",
+      "page_slug": "towers/grenade-launcher",
+      "role_en": "support",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "summary_en": "Described on-site as the single most-cited mechanic across the whole guide: its own detonation damage is secondary to an area slow effect that also increases the damage affected orcs take from every other turret firing into the cluster.",
+      "placement_en": "In front of the damage line, at the point the map already narrows; every documented hard-level setup that uses it (3.2, 5.2, 6.1, 6.2) places it this way.",
+      "special_mechanic_en": "Applies an area slow effect to hit orcs; slowed orcs also take increased damage from other sources, making it function as a multiplier on the rest of the defence rather than a damage source on its own.",
+      "branch_note_en": "The site repeatedly frames this turret's upgrade branch (whether it is unlocked at all), not its placement, as the deciding factor in whether published hard-level layouts work for a given player — named specifically on the 3.2, 6.1 and 6.2 pages.",
+      "achievements_ref": [],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/grenade-launcher/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "Whether the slow/bonus-damage effect scales with upgrade tiers, and whether multiple grenade launchers' slows stack, refresh, or overwrite — not documented anywhere the site could verify."
+      ]
+    },
+    "mortar": {
+      "type": "turret",
+      "name_en": "Mortar",
+      "page_slug": "towers/mortar",
+      "role_en": "support",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "summary_en": "Described on-site as the least-documented of the seven turrets, because what it does well (push a wave backwards) doesn't register as a kill, so few players write about it.",
+      "placement_en": "Two documented placements disagree with each other and the site does not resolve which is better: one source places mortars at spawn points to soften the herd before it clusters; another places them at an already-slowed chokepoint for volume. ",
+      "special_mechanic_en": "Fires shrapnel on detonation and applies knockback to hit orcs; enough mortars covering a narrow choke are documented as able to physically hold that choke shut, forcing the wave through the main damage line instead of letting it split around the obstruction.",
+      "achievements_ref": [],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/mortar/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "No magnitude for the knockback (distance/duration/tier-scaling) is documented anywhere the site could verify.",
+        "An on-site quote about mortars 'forcing orcs down the center' is flagged by the site itself as ambiguous between two opposite readings and left unresolved."
+      ]
+    },
+    "tesla-coil": {
+      "type": "turret",
+      "name_en": "Tesla Coil",
+      "page_slug": "towers/tesla-coil",
+      "role_en": "cleanup",
+      "role_source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "element_en": "electric / shock",
+      "summary_en": "The only turret with a full 360-degree aim arc (no facing, cannot be flanked) and a shock effect that chains to multiple targets per activation. Documented as the standard cleanup answer for whatever leaks past the front line in nearly every hard-level setup the site records.",
+      "placement_en": "Set back behind the main damage line. The site names front-lining the tesla coil as the single most frequently repeated turret-specific mistake it tracks: its chain-target count is fixed regardless of position, so placing it forward wastes those chains on orcs a power turret would have killed anyway, instead of on the survivors it is meant to catch.",
+      "special_mechanic_en": "Chains a shock effect between multiple targets per shot and applies a brief confusion/crowd-control effect on hit; has no penetration figure of its own since its reach comes from the chain rather than a projectile passing through a column.",
+      "level_notes_en": "Documented in winning setups on 4.2 (behind each of 8 chokepoints), 5.2 (on raised platforms behind both 'lips'), and named on the 6.1 page as the standard backstop.",
+      "achievements_ref": [
+        "elemental-carnage"
+      ],
+      "primary_sources": [
+        {
+          "text": "Steam community guide 'Weapon' by Mrlazy, stat sheet self-dated 31 July 2026",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3775009648"
+        },
+        {
+          "text": "Steam discussion 'Any suggestions for 4.2?' — tesla coil placement per choke by Broseidon",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/589560061703018359/"
+        },
+        {
+          "text": "Steam discussion 'Need some help on 5.2' — tesla coil placement on lip platforms by Sulphuric_Glue",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/580552228184594605/"
+        },
+        {
+          "text": "Steam discussion 'Stuck at 6.1?' — tesla coil as backstop behind thinned chokepoints",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/580552523733060353/"
+        }
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/tesla-coil/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "How the chain count or shock damage scales across upgrade tiers is not documented anywhere the site could verify.",
+        "Whether the confusion effect does anything beyond a cosmetic stagger is not confirmed by any source the site checked."
+      ]
+    },
+    "level-1-1": {
+      "type": "level",
+      "level_number": "1.1",
+      "name_en": "Level 1.1",
+      "page_slug": "levels/level-1-1-one-is-enough",
+      "objective_en": "First level in the game; the only one almost everybody clears (progression achievement 'Gotta Start Somewhere'). Also carries the 'One Is Enough' single-turret, no-ability constraint achievement.",
+      "achievements_ref": [
+        "gotta-start-somewhere",
+        "one-is-enough"
+      ],
+      "key_findings_en": [
+        "Site calls this the cleanest available measurement of the no-ability constraint by itself, since the map is identical for both achievements and only what you're allowed to bring differs.",
+        "itsuno's guide records a laser with a good bounce setup as the turret used for One Is Enough; a machine gunner or flamethrower are named as conditional alternates 'if the upgrade levels are high enough'."
+      ],
+      "what_not_confirmed_en": [
+        "Whether One Is Enough is enforced on 1.1 specifically, or simply that itsuno did it there.",
+        "Whether placing and then selling a second turret voids the run.",
+        "Wave composition, enemy counts or map geometry for 1.1."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-1-1-one-is-enough/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-3-1": {
+      "type": "level",
+      "level_number": "3.1",
+      "name_en": "Level 3.1",
+      "page_slug": "levels/level-3-1-specialist",
+      "objective_en": "Last level most players clear without difficulty, immediately before the 3.2 difficulty spike (progression achievement 'The Real War Begins Now'). Also carries the 'Specialist' one-turret-type, no-ability constraint achievement.",
+      "achievements_ref": [
+        "real-war-begins-now",
+        "specialist"
+      ],
+      "key_findings_en": [
+        "itsuno's guide records Specialist being cleared here using high-level flamethrowers as the sole turret type — called 'genuinely surprising' on-site given the flamethrower's low listed damage.",
+        "Site lines up the three progression achievements (survive 1.1 / 3.1 / 6.2) and notes the player drop-off happens mostly after 3.1, not before it."
+      ],
+      "what_not_confirmed_en": [
+        "How high 'high-level' flamethrowers need to be — no source publishes upgrade-tier scaling.",
+        "Whether any turret type other than the flamethrower can clear Specialist — alternatives discussed on-site are read off the role framework, not reported by a player.",
+        "Wave composition, enemy counts or map layout for 3.1."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-1-specialist/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-3-2": {
+      "type": "level",
+      "level_number": "3.2",
+      "name_en": "Level 3.2",
+      "page_slug": "levels/level-3-2-difficulty-spike",
+      "objective_en": "No Steam achievement is tied to this level directly. Site frames it as the point where a linear (more-turrets) build stops scaling and investment in the laser + grenade-launcher upgrade branches becomes necessary rather than optional.",
+      "achievements_ref": [],
+      "key_findings_en": [
+        "A reviewer quoted on-site attributes failure here to not having the laser and grenade-launcher branches upgraded before this point, not to turret placement.",
+        "Milestone table on this page: survive level 1 = 97.3%, survive level 3 = 87.7%, survive level 6 = 26.9% (Steam API, retrieved 11 Aug 2026) — see achievement entities for the full cross-page unlock-rate variance.",
+        "The 19 August patch increased background brightness and added an unlockable music track for this level, without changing its balance (enemy counts/resources/turret numbers untouched per the patch announcement)."
+      ],
+      "what_not_confirmed_en": [
+        "Wave composition, enemy counts or map layout for 3.2.",
+        "The exact upgrade tier at which a laser-and-grenade build clears the stage."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-2-difficulty-spike/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-4-1": {
+      "type": "level",
+      "level_number": "4.1",
+      "name_en": "Level 4.1",
+      "page_slug": "levels/level-4-1-elemental-carnage",
+      "objective_en": "No separate progression achievement. Carries 'Elemental Carnage', the only constraint achievement that names an exact loadout (flamethrower + tesla coil + orbital cryo beam) rather than counting turret types.",
+      "achievements_ref": [
+        "elemental-carnage"
+      ],
+      "key_findings_en": [
+        "The named loadout supplies support (flamethrower) and cleanup (tesla coil) roles but no 'power' turret at all; the cryo beam ability is read on-site as standing in for the missing power role by buying time rather than dealing damage.",
+        "The site's only first-hand report of 4.1 itself comes from a player (on the 4.2 page) who could clear 4.1 with zero leaks but lasted about 3 seconds on 4.2 — evidence the level is clearable cleanly, and a reminder the two levels are not a smooth difficulty ramp."
+      ],
+      "what_not_confirmed_en": [
+        "How the flamethrower's damage amp or pierce retention scale with upgrade tiers.",
+        "Whether the achievement counts a turret placed and then sold, or is enforced on 4.1 specifically.",
+        "Wave composition, enemy counts or map layout for 4.1; no player-published placement layout exists among the sources this site uses."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-4-1-elemental-carnage/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-4-2": {
+      "type": "level",
+      "level_number": "4.2",
+      "name_en": "Level 4.2",
+      "page_slug": "levels/level-4-2-chokepoints",
+      "objective_en": "No Steam achievement is tied to this level per the site's own check (the game's tracked milestones sit at levels 1, 3 and 6). Used on-site as the primary worked example for 'kill at the chokepoint, not before it'.",
+      "achievements_ref": [],
+      "key_findings_en": [
+        "Level has eight chokepoints. Documented per-choke squad (Broseidon): flamethrower at the entrance, a bouncing laser, a gunner, and a tesla coil set back at the exit.",
+        "An unverified player screenshot (Exebri, posted 5 Aug 2026) claims the level can be cleared using only gunners; the site has not reproduced or verified it.",
+        "A player (Kharnath) reported the general 'kill at the chokepoint' strategy not working for them on this level; site attributes the mismatch to an unupgraded laser-bounce/grenade-slow branch rather than a placement error, by analogy with the 3.2 page's pattern."
+      ],
+      "what_not_confirmed_en": [
+        "Exebri's gunners-only clear beyond the linked screenshot.",
+        "Whether 4.2 corresponds to any measurable Steam achievement."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-4-2-chokepoints/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-5-1": {
+      "type": "level",
+      "level_number": "5.1",
+      "name_en": "Level 5.1",
+      "page_slug": "levels/level-5-1-triple-threat",
+      "objective_en": "No separate progression achievement. Carries 'Triple Threat', the three-turret-type, no-ability constraint achievement — the second-rarest in the game.",
+      "achievements_ref": [
+        "triple-threat"
+      ],
+      "key_findings_en": [
+        "One player-published account describes attempting Triple Threat on 5.1 as 'pretty easy', which the site reconciles with the low unlock rate by arguing the rate reflects how few players attempt a self-imposed constraint at all, not the level's real difficulty.",
+        "That account's own composition (cannons and machine gunners) reportedly over-built the level's rear approach — the two bottom turrets saw little use — which the site reads as evidence 5.1 has more than one approach route that must be covered."
+      ],
+      "what_not_confirmed_en": [
+        "Which approach route the 'rear' defences in the one published account were covering, or how many routes the level has.",
+        "Whether the achievement is enforced on 5.1 specifically, or simply attempted there.",
+        "Wave composition, enemy counts or map layout for 5.1."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-5-1-triple-threat/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-5-2": {
+      "type": "level",
+      "level_number": "5.2",
+      "name_en": "Level 5.2",
+      "page_slug": "levels/level-5-2-the-lips",
+      "objective_en": "No Steam achievement is tied to this level per the site's own check. Community name 'the lips' for its two narrow entry points, where the level is reported won or lost.",
+      "achievements_ref": [],
+      "key_findings_en": [
+        "Three independent players posted setups for this level; the one element all three agree on is slow-effect grenade launchers positioned at both lips.",
+        "The level's center lane is reported (by player jeffk114) as a failure path that opens up only if the two lips are not held — the site treats this as the same throttling mechanic described generally on the orc-flow-mechanic page, made explicit by this level's design.",
+        "One player (Sulphuric_Glue) cleared the level without lasers unlocked at all, using flamethrowers, mortars, gunners and cannons instead — cited on-site as a counterweight to treating the laser as the only viable answer here."
+      ],
+      "what_not_confirmed_en": [
+        "The upgrade tier needed for any of the three published builds to work — none of the three replies name specific tiers.",
+        "Steam achievement data specific to level 5, since the game's tracked milestones sit at levels 1, 3 and 6."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-5-2-the-lips/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "level-6-1": {
+      "type": "level",
+      "level_number": "6.1",
+      "name_en": "Level 6.1",
+      "page_slug": "levels/level-6-1-four-turret-types",
+      "objective_en": "Carries 'Four-tified', the four-turret-type, no-ability constraint achievement — the rarest achievement in the game per every on-site reading.",
+      "achievements_ref": [
+        "four-tified"
+      ],
+      "key_findings_en": [
+        "Three published layouts for this level disagree with each other, most visibly over whether the slow-down grenade branch is assumed unlocked; one player (Григорий) wrote an entire alternative guide because every other walkthrough he found required grenades he did not have.",
+        "The 4 August patch widened a path in 6.1 so orcs no longer get stuck — layouts published before that patch were built against a narrower map geometry.",
+        "aerouge's layout (read by ~2,170 people) names the upper-left and upper-right approach routes as where most clear attempts break down."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-1-four-turret-types/",
+      "source_tier": "onsite",
+      "what_not_confirmed_en": [
+        "Which four turret types the achievement counts if a fifth is placed and then sold; no source addresses it."
+      ],
+      "unverified_fields": [
+        "Page's own text says clearing 6.1 normally 'gets you the Survive 6 achievement at 26.9%', but the official Steam achievement condition for Against All Odds (see achievement entity) is 'Survive level 6.2', not 6.1. Recorded as a page-level imprecision, not corrected here."
+      ]
+    },
+    "level-6-2": {
+      "type": "level",
+      "level_number": "6.2",
+      "name_en": "Level 6.2",
+      "page_slug": "levels/level-6-2-damageless",
+      "objective_en": "Carries 'Against All Odds', the game's highest-progression achievement (official Steam condition: 'Survive level 6.2'). The 'damageless' clear discussed on this page is a community-invented challenge with no in-game achievement of its own — Steam's achievement list has no reward for a no-damage finish.",
+      "achievements_ref": [
+        "against-all-odds"
+      ],
+      "key_findings_en": [
+        "The single most-read community guide for the entire game is a layout image for a damageless 6.2 clear (TheMiroy, 5,065 unique visitors) — more read than the general all-achievements guide.",
+        "Commenters on that guide confirm the layout still leaks a small number of orcs (one reported 'less than 5', another exactly 7), cleaned up with a reserved missile-launcher shot rather than the layout being fully airtight.",
+        "Site states it cannot confirm 6.2 is the final level from any official source; Mumpitz Games has not published a level list, and 6.2 is simply the highest level number that appears in community guides."
+      ],
+      "what_not_confirmed_en": [
+        "Whether TheMiroy's layout still holds after the 4 August patch, which shipped a week after the guide was posted.",
+        "Whether 6.2 is actually the last level in the game."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-2-damageless/",
+      "source_tier": "onsite",
+      "unverified_fields": []
+    },
+    "gotta-start-somewhere": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_1",
+      "name_en": "Gotta Start Somewhere",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 1.1",
+      "level_tied": "1.1",
+      "is_progression": true,
+      "subcategory_en": "progression",
+      "global_unlock_pct": 97.2,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 97.3,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-2-difficulty-spike/",
+          "source_tier": "onsite",
+          "note": "page's own milestone table, cites Steam API retrieved 11 Aug 2026"
+        },
+        {
+          "value": 97.4,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-1-1-one-is-enough/",
+          "source_tier": "onsite",
+          "note": "page cites config/achievements.json captured 7 Sep 2026 (same cluster as achievement-tracker)"
+        },
+        {
+          "value": 97.4,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/achievement-tracker/",
+          "source_tier": "onsite",
+          "note": "page's own stated capture date, 7 Sep 2026"
+        },
+        {
+          "value": 97.0,
+          "accessed": "2026-08-12",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-2-damageless/",
+          "source_tier": "onsite",
+          "note": "page cites Steam API retrieved 12 Aug 2026"
+        }
+      ],
+      "steam_api_live_pct": 97.5,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "real-war-begins-now": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_3",
+      "name_en": "The Real War Begins Now",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 3.1",
+      "level_tied": "3.1",
+      "is_progression": true,
+      "subcategory_en": "progression",
+      "global_unlock_pct": 88.4,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 87.7,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-2-difficulty-spike/",
+          "source_tier": "onsite",
+          "note": "page's own milestone table, cites Steam API retrieved 11 Aug 2026"
+        },
+        {
+          "value": 88.7,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-1-specialist/",
+          "source_tier": "onsite",
+          "note": "page cites config/achievements.json captured 7 Sep 2026"
+        },
+        {
+          "value": 87.6,
+          "accessed": "2026-08-12",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-2-damageless/",
+          "source_tier": "onsite",
+          "note": "page cites Steam API retrieved 12 Aug 2026"
+        }
+      ],
+      "steam_api_live_pct": 88.8,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "overkill": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_NUKE",
+      "name_en": "Overkill",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Deal 666k damage with a single nuke",
+      "level_tied": "none (not tied to a specific level)",
+      "is_progression": false,
+      "subcategory_en": "other (damage check, not no-ability)",
+      "global_unlock_pct": 39.8,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 36.5,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/no-turret-run/",
+          "source_tier": "onsite",
+          "note": "page states 'unlocked by 36.5% of players', reviewed 1 Sep 2026 but figure traces to the 11 Aug 2026 Steam API cluster per the page's own srcbox"
+        },
+        {
+          "value": 36.5,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/abilities/",
+          "source_tier": "onsite",
+          "note": "page's own srcbox cites Steam Global Achievement Percentages API retrieved 11 Aug 2026"
+        }
+      ],
+      "steam_api_live_pct": 40.4,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "against-all-odds": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_6",
+      "name_en": "Against All Odds",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 6.2",
+      "level_tied": "6.2",
+      "is_progression": true,
+      "subcategory_en": "progression",
+      "global_unlock_pct": 29.8,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 26.9,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-2-difficulty-spike/",
+          "source_tier": "onsite",
+          "note": "Steam API GetGlobalAchievementPercentagesForApp, retrieved 11 Aug 2026, per page's own srcbox"
+        },
+        {
+          "value": 26.9,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-1-four-turret-types/",
+          "source_tier": "onsite",
+          "note": "page's own prose repeats the 11 Aug reading"
+        },
+        {
+          "value": 27.3,
+          "accessed": "2026-08-12",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-2-damageless/",
+          "source_tier": "onsite",
+          "note": "page's own srcbox: Steam API retrieved 12 Aug 2026, full 11-achievement list"
+        },
+        {
+          "value": 30.2,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/achievement-tracker/",
+          "source_tier": "onsite",
+          "note": "page's own stated capture date, 7 Sep 2026"
+        },
+        {
+          "value": 30.2,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-3-1-specialist/",
+          "source_tier": "onsite",
+          "note": "cross-ref list, config/achievements.json 7 Sep 2026"
+        },
+        {
+          "value": 30.2,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/achievement-tracker/",
+          "source_tier": "onsite",
+          "note": "corrected 2026-09-21: level-5-1-triple-threat/ page text has no '30.2' or 'Against All Odds' mention (its only table is Specialist 22.5% / Triple Threat 17.2% / Four-tified 12.2%); achievement-tracker/ states 'Against All Odds, surviving 6.2, sits at 30.2%' directly"
+        }
+      ],
+      "steam_api_live_pct": 30.5,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "one-is-enough": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_ONE_TOWER",
+      "name_en": "One Is Enough",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 1.1 with only a single tower and no abilities",
+      "level_tied": "1.1",
+      "is_progression": false,
+      "subcategory_en": "no-ability constraint",
+      "global_unlock_pct": 25.5,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 25.6,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-1-1-one-is-enough/",
+          "source_tier": "onsite",
+          "note": "page cites config/achievements.json captured 7 Sep 2026"
+        },
+        {
+          "value": 23.8,
+          "accessed": "2026-09-01",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/no-turret-run/",
+          "source_tier": "onsite",
+          "note": "stated in prose as 'the single-turret challenge (23.8%)', page last reviewed 1 Sep 2026"
+        }
+      ],
+      "steam_api_live_pct": 25.3,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "specialist": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_ONE_TOWER_TYPE",
+      "name_en": "Specialist",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 3.1 with only one type of tower and no abilities",
+      "level_tied": "3.1",
+      "is_progression": false,
+      "subcategory_en": "no-ability constraint",
+      "global_unlock_pct": 22.5,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [],
+      "steam_api_live_pct": 22.4,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": []
+    },
+    "fine-ill-do-it-myself": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_NO_TOWERS",
+      "name_en": "Fine, I'll Do It Myself",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 2.1 without any towers",
+      "level_tied": "2.1",
+      "is_progression": false,
+      "subcategory_en": "no-ability constraint",
+      "global_unlock_pct": 21.8,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 20.1,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/no-turret-run/",
+          "source_tier": "onsite",
+          "note": "page's own srcbox: Steam API retrieved 11 Aug 2026, '20.1% unlock rate'"
+        },
+        {
+          "value": 20.1,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/abilities/",
+          "source_tier": "onsite",
+          "note": "page states the same figure, sourced to the 11 Aug 2026 API cluster"
+        }
+      ],
+      "steam_api_live_pct": 21.7,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "fully-loaded": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_BUY_ALL",
+      "name_en": "Fully Loaded",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Buy all upgrades",
+      "level_tied": "none (not tied to a specific level)",
+      "is_progression": false,
+      "subcategory_en": "other (playtime grind, not skill)",
+      "global_unlock_pct": 19.5,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 19.8,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-4-1-elemental-carnage/",
+          "source_tier": "onsite",
+          "note": "stated in prose as 'the buy-everything grind at 19.8%'; page cites config/achievements.json captured 7 Sep 2026"
+        },
+        {
+          "value": 17.3,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/upgrade-grind/",
+          "source_tier": "onsite",
+          "note": "page's own srcbox: Steam API retrieved 11 Aug 2026, 'buy-all-upgrades at 17.3%'"
+        }
+      ],
+      "steam_api_live_pct": 19.9,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "elemental-carnage": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_ELEMENTAL",
+      "name_en": "Elemental Carnage",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 4.1 with only Flamethrower, Tesla Coil and Cryo Beam",
+      "level_tied": "4.1",
+      "is_progression": false,
+      "subcategory_en": "constraint (names an exact loadout, uniquely allows one ability)",
+      "global_unlock_pct": 18.5,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [],
+      "steam_api_live_pct": 18.4,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": []
+    },
+    "triple-threat": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_THREE_TOWER_TYPE",
+      "name_en": "Triple Threat",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 5.1 with only three types of towers and no abilities",
+      "level_tied": "5.1",
+      "is_progression": false,
+      "subcategory_en": "no-ability constraint",
+      "global_unlock_pct": 17.1,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 17.2,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-5-1-triple-threat/",
+          "source_tier": "onsite",
+          "note": "page's own stated capture date, 7 Sep 2026"
+        },
+        {
+          "value": 15.6,
+          "accessed": "2026-08-01",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-5-1-triple-threat/",
+          "source_tier": "onsite",
+          "note": "same page explicitly notes an earlier, August-dated capture read 15.6% — the drift is stated by the site itself, not inferred"
+        },
+        {
+          "value": 15.6,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-1-four-turret-types/",
+          "source_tier": "onsite",
+          "note": "page's own prose: 'Clearing with three turret types sits at 15.6%'"
+        }
+      ],
+      "steam_api_live_pct": 17.1,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "four-tified": {
+      "type": "achievement",
+      "steam_internal_id": "ACH_SURVIVE_FOUR_TOWER_TYPE",
+      "name_en": "Four-tified",
+      "name_source_url": "https://steamcommunity.com/stats/4594150/achievements/",
+      "condition_en": "Survive level 6.1 with only four types of towers and no abilities",
+      "level_tied": "6.1",
+      "is_progression": false,
+      "subcategory_en": "no-ability constraint (rarest in the game)",
+      "global_unlock_pct": 12.1,
+      "global_unlock_pct_accessed": "2026-09-01",
+      "global_unlock_pct_source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/all-achievements/",
+      "global_unlock_pct_source_tier": "onsite",
+      "global_unlock_pct_variants": [
+        {
+          "value": 12.2,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/achievement-tracker/",
+          "source_tier": "onsite",
+          "note": "page's own stated capture date, 7 Sep 2026"
+        },
+        {
+          "value": 12.2,
+          "accessed": "2026-09-07",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-5-1-triple-threat/",
+          "source_tier": "onsite",
+          "note": "cross-ref, config/achievements.json 7 Sep 2026"
+        },
+        {
+          "value": 10.8,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/abilities/",
+          "source_tier": "onsite",
+          "note": "page's own prose: 'four turret types sits at just 10.8%'"
+        },
+        {
+          "value": 10.8,
+          "accessed": "2026-08-11",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/level-6-1-four-turret-types/",
+          "source_tier": "onsite",
+          "note": "page's own srcbox: Steam API retrieved 11 Aug 2026, '10.8% unlock rate'"
+        }
+      ],
+      "steam_api_live_pct": 12.2,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?gameid=4594150&format=json",
+      "unverified_fields": [
+        "global_unlock_pct_variants: site shows multiple values for this achievement across pages due to Steam API being re-read on different dates (site's own glossary page acknowledges this pattern); recorded as-is, primary value not cherry-picked."
+      ]
+    },
+    "meta-progression-tree": {
+      "type": "mechanic",
+      "name_en": "Meta-Progression Tree",
+      "page_slug": "towers/upgrade-grind",
+      "summary_en": "A branching node-graph upgrade tree (not a flat list) that unlocks and levels up turrets and abilities. Resources are earned from every run, won or lost, per Mumpitz Games' own store-page description — confirmed independently on multiple pages (upgrade-grind, 3.2, beginner-mistakes) — so the site frames 'stuck' as an upgrade problem, never a permanent block.",
+      "currencies_en": [
+        {
+          "save_key": "UPGRADE_MARKS",
+          "in_game_form": "blue crystals",
+          "role_en": "bulk currency, earned every run"
+        },
+        {
+          "save_key": "LEVEL_FINISHED",
+          "in_game_form": "red spheres",
+          "role_en": "one per stage finished; capped by how many stages exist"
+        },
+        {
+          "save_key": "ALL_KILLED_CHALLENGE",
+          "in_game_form": "pink cubes",
+          "role_en": "one per stage cleared with a full kill; capped the same way"
+        }
+      ],
+      "full_tree_cost": {
+        "blue_crystals": 2894436,
+        "red_spheres": 6,
+        "pink_cubes": 12
+      },
+      "full_tree_cost_note_en": "Stated by a single community save-editing guide (Erèbes) as 'one player's reading of their own save at one patch, not a developer statement'; the site itself says to treat the crystal figure as an order of magnitude, not a target.",
+      "full_tree_cost_source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774341549",
+      "per_level_turret_placement_cap": {
+        "level": 1,
+        "cap": 15
+      },
+      "per_level_turret_placement_cap_note_en": "Turret placement itself has no currency cost on-site ('placing a turret costs nothing'); the only limiter documented is a per-level count cap, from the same single save-editing guide as the tree-cost figures above.",
+      "per_level_turret_placement_cap_source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774341549",
+      "median_playtime_hours": 8.0,
+      "playtime_percentiles_hours": {
+        "p25": 6.5,
+        "p50": 8.0,
+        "p75": 9.9,
+        "p90": 13.3
+      },
+      "playtime_distribution_pct": {
+        "under_2h": 3,
+        "2_to_5h": 7,
+        "5_to_10h": 65,
+        "10_to_20h": 22,
+        "over_20h": 2
+      },
+      "playtime_sample_note_en": "Computed from the 600 most recent English Steam reviews carrying playtime data, retrieved 11 Aug 2026.",
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/upgrade-grind/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "full_tree_cost and per_level_turret_placement_cap: single source (one community save-editing guide), not corroborated anywhere else on the site.",
+        "Per-node upgrade costs and tier-by-tier scaling are explicitly undocumented site-wide (all-turrets and upgrade-grind pages both state no verifiable source publishes them) and are not included here."
+      ]
+    },
+    "turret-roles-framework": {
+      "type": "mechanic",
+      "name_en": "Turret Roles: Power / Support / Cleanup",
+      "page_slug": "towers/turret-roles",
+      "summary_en": "A three-way classification the site uses across every turret and level page: a defence that fails after full upgrades is diagnosed as having too much of one role and none of another, rather than as under-leveled.",
+      "roles_en": {
+        "power": {
+          "definition_en": "High damage/penetration; deletes the body of a wave.",
+          "turrets": [
+            "cannon",
+            "laser"
+          ]
+        },
+        "support": {
+          "definition_en": "Does not kill directly; changes how the wave moves (slow, knockback, burn-amp).",
+          "turrets": [
+            "grenade-launcher",
+            "mortar",
+            "flamethrower"
+          ]
+        },
+        "cleanup": {
+          "definition_en": "Catches whatever leaked past the damage line.",
+          "turrets": [
+            "tesla-coil"
+          ]
+        }
+      },
+      "unresolved_en": "The gunner is not placed definitively: all-turrets/glossary group it under cleanup; turret-roles calls it 'awkward' in the power category once upgraded. The site states outright that no measurement of the crossover point exists.",
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/turret-roles/",
+      "source_tier": "onsite",
+      "primary_source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774189167",
+      "primary_source_note_en": "Steam community guide 'general strategy and achievement guide (1.0 release)', the framework's origin per the page's own srcbox.",
+      "unverified_fields": []
+    },
+    "orc-flow-mechanic": {
+      "type": "mechanic",
+      "name_en": "Orc Flow / Orc Overflow",
+      "page_slug": "towers/orc-flow-mechanic",
+      "summary_en": "Community term for how enemies move: like a fluid seeking any gap to overflow through, not a queue waiting its turn. Killing orcs in open ground before a chokepoint does not reduce how many arrive at the chokepoint per second, because more simply flow in to replace them — the map produces orcs faster than a narrow gap can pass them. The only way to reduce what reaches the base is to reduce what passes through the chokepoint itself.",
+      "derived_placement_rules_en": [
+        "Damage turrets belong at or just past a chokepoint, not in the open ground before it.",
+        "Slow effects matter more at a chokepoint than anywhere else, since a slowed orc spends longer inside the one place damage is concentrated.",
+        "Cleanup turrets go behind the chokepoint, not on it."
+      ],
+      "originators_en": [
+        {
+          "name": "deothor",
+          "date": "2026-05-14",
+          "role_en": "first recorded use of the 'fluid/overflow' framing, in a general feedback thread",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/834998803317659960/"
+        },
+        {
+          "name": "Xandor",
+          "date": "not dated on-site (reply within the 5 Aug 2026 '4.2' thread; exact reply date not given)",
+          "role_en": "independently made the same throughput argument for levels 4.2 and 6.1",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/589560061703018359/"
+        },
+        {
+          "name": "John",
+          "date": "2026-06-04",
+          "role_en": "wrote a short mechanics primer using the same 'flow like a tide' framing",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/561406856400125378/"
+        }
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/orc-flow-mechanic/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "This is entirely player-observed, not a stated developer mechanic; the site has found no developer confirmation that enemy pathing works this way as opposed to just looking that way from repeated play."
+      ]
+    },
+    "no-turret-run": {
+      "type": "mechanic",
+      "name_en": "No-Turret Run",
+      "page_slug": "levels/no-turret-run",
+      "summary_en": "Clearing a level using zero turrets, abilities only. itsuno's guide records this being done on level 2.1, and the official Steam achievement condition for Fine, I'll Do It Myself confirms 'Survive level 2.1 without any towers'.",
+      "level_tied": "2.1",
+      "achievement_ref": "fine-ill-do-it-myself",
+      "abilities_available_en": [
+        "Missile launcher (unlimited use; fires automatically after one click — the only ability you can set and forget)",
+        "Strafing run (3 uses per map)",
+        "Nuke (3 uses per map)",
+        "Orbital cryo beam (a held effect rather than a single click; buys time rather than dealing meaningful damage)"
+      ],
+      "note_en": "The site frames this achievement's low unlock rate as evidence of how few players think to try a self-imposed constraint at all (itsuno himself says the level 'requires no guide'), not as a measure of the challenge's real difficulty — it is described as an upgrade-branch check more than a skill test.",
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/levels/no-turret-run/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "Whether the achievement is locked to level 2.1 or simply easiest there is not stated by the game."
+      ]
+    },
+    "patch-history": {
+      "type": "mechanic",
+      "name_en": "Post-Launch Patch History",
+      "page_slug": "platform/update-history",
+      "summary_en": "Two post-launch updates as of the site's last review (1 Sep 2026). The game has no traditional version numbers; updates are named by build timestamp.",
+      "patches_en": [
+        {
+          "version": "2026.08.02.13.35",
+          "published": "2026-08-04",
+          "key_changes_en": [
+            "Widened a path in level 6.1 so orcs no longer get stuck (balance change)",
+            "Added an upgrade letting the Laser fire in a straight line without sway (balance change)",
+            "Fixed failed Steam initialization from quitting the game",
+            "Added a separate volume slider for missile sounds and a bloom-strength slider for the Tech Tree view",
+            "Made Strafing Run audio non-positional and slightly louder",
+            "Fixed a German localization spelling error",
+            "Fixed number formatting and a 'Play Again' multi-press issue"
+          ]
+        },
+        {
+          "version": "2026.08.18.12.05",
+          "published_per_update_history_page": "2026-08-19",
+          "published_per_most_other_pages_header": "2026-08-18",
+          "key_changes_en": [
+            "Added an upgrade granting more Strafing Run uses (balance change)",
+            "Added a music track that unlocks after playing level 3.2",
+            "Added window size options with custom sizes saved/restored automatically",
+            "Added an option to disable hit flashes",
+            "Added a credits panel",
+            "Increased background brightness on level 3.2",
+            "Added a battle shortcut ('H') to hide the UI",
+            "Sturdier savegame writing, to prevent file corruption",
+            "Aim preview now accounts for bullet spread and bullet size",
+            "Number formatting fixes"
+          ],
+          "roadmap_tease_en": "Announcement closes stating an in-game level editor is in development, with no date given."
+        }
+      ],
+      "milestones_en": [
+        {
+          "date": "2026-08-01",
+          "event_en": "Mumpitz Games announced 100,000 copies sold"
+        },
+        {
+          "date": "2026-08-04",
+          "event_en": "Supporter Pack DLC launched (same day as the first patch)"
+        },
+        {
+          "date": "2026-08-05",
+          "event_en": "GamingOnLinux published coverage, the site's most substantial press mention to date"
+        }
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/update-history/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "Publish-date contradiction for patch 2026.08.18.12.05: the update-history page's own body text states it was 'Published on 19 August 2026', and its header metadata agrees ('published 19 August 2026'), as do 4 of the 9 level-guide pages (1.1, 3.1, 4.1, 5.1). But roughly 22 other pages across the site — including this same version number's OTHER mention inside the all-turrets page's own body text ('2026.08.18.12.05 (19 August 2026)') versus that same all-turrets page's OWN header metadata ('18 August 2026') — print the header date as '18 August 2026' instead. Recorded as a site-wide templating inconsistency; both dates are printed as-is, not resolved."
+      ]
+    },
+    "game-pricing-platforms": {
+      "type": "mechanic",
+      "name_en": "Pricing, Platforms & Editions",
+      "page_slug": "platform/pc-and-steam-deck",
+      "release_date": "2026-07-28",
+      "release_date_source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/mobile-and-android/",
+      "base_price_conflict_en": {
+        "value_a": {
+          "amount_usd": 9.99,
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/mobile-and-android/",
+          "accessed": "2026-09-01",
+          "quote_en": "The game is a paid PC title at $9.99"
+        },
+        "value_b": {
+          "amount_usd": 8.99,
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/supporter-pack/",
+          "accessed": "2026-09-01",
+          "quote_en": "whose game sold 100,000 copies in its first four days at $8.99"
+        },
+        "value_b2": {
+          "amount_usd": 8.99,
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/upgrade-grind/",
+          "accessed": "2026-09-12",
+          "quote_en": "At $8.99 that is a reasonable disagreement to have"
+        },
+        "steam_api_live": {
+          "initial_usd": 9.99,
+          "final_usd": 8.99,
+          "discount_percent": 10,
+          "accessed": "2026-09-21",
+          "note_en": "Steam's live price_overview shows BOTH figures simultaneously today: $9.99 is the undiscounted list price ('initial'), $8.99 is the current price under an active 10% discount ('final'). This is offered as context for why the site's two figures might each have been accurate on the date they were captured — it does not confirm what the discount state was on either of the site's specific capture dates, so the on-site conflict is not resolved by this."
+        }
+      },
+      "platforms_en": {
+        "windows": true,
+        "mac": false,
+        "linux": true,
+        "mobile_ios_android": false,
+        "note_en": "No official Android/iOS build exists or has been announced; site checked all 12 official Steam announcements (May-Aug 2026) for the words mobile/Android/iOS/phone/tablet and found zero occurrences. Confirmed independently by live Steam appdetails (platforms field: windows=true, mac=false, linux=true)."
+      },
+      "linux_min_os": "SteamOS 3.8 or similar",
+      "steam_deck_rating_en": "Playable (middle tier, below Verified)",
+      "steam_deck_tests_en": {
+        "default_config_performant": "pass",
+        "default_controller_config_functional": "pass",
+        "controller_glyphs_match_deck": "fail",
+        "interface_text_legible": "fail"
+      },
+      "min_spec_note_en": "Vulkan 1.3 support is the only real compatibility gate on-site; CPU/RAM/storage requirements are described as trivially low (any 64-bit CPU, 4 GB RAM, 200 MB storage) and identical between minimum and recommended tiers except for the GPU.",
+      "supported_languages": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish (Spain)",
+        "Dutch",
+        "Japanese",
+        "Korean",
+        "Polish",
+        "Portuguese (Brazil)",
+        "Russian",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "dlc_en": {
+        "name": "Supporter Pack",
+        "steam_appid": 4981840,
+        "price_usd": 2.99,
+        "release_date": "2026-08-04",
+        "items": [
+          "Blue Flames (flamethrower fire reskin)",
+          "Space Orcs (enemy reskin)",
+          "Space Background (battlefield reskin)"
+        ],
+        "gameplay_effect": "none (cosmetic only)",
+        "steam_api_live_price_usd": 2.69,
+        "steam_api_live_discount_percent": 10,
+        "steam_api_live_accessed": "2026-09-21",
+        "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/supporter-pack/"
+      },
+      "review_snapshots_en": [
+        {
+          "total_reviews": 2908,
+          "summary": "Very Positive",
+          "accessed": "2026-08-12",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/pc-and-steam-deck/"
+        },
+        {
+          "positive_pct": 86.9,
+          "total_reviews": 3723,
+          "accessed": "2026-09-01",
+          "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/supporter-pack/"
+        }
+      ],
+      "steam_api_live_recommendations_total": 4227,
+      "steam_api_live_accessed": "2026-09-21",
+      "steam_api_live_source_url": "https://store.steampowered.com/api/appdetails?appids=4594150",
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/platform/pc-and-steam-deck/",
+      "source_tier": "onsite",
+      "unverified_fields": [
+        "base_price_conflict_en: on-site values genuinely differ ($9.99 vs $8.99); recorded as two values with sources per the no-cherry-picking rule, not resolved to one number."
+      ]
+    },
+    "beginner-mistakes": {
+      "type": "mechanic",
+      "name_en": "5 Beginner Mistakes",
+      "page_slug": "towers/beginner-mistakes",
+      "summary_en": "Five specific habits the site identifies as stalling new players, framed as resource-allocation and attention mistakes rather than execution/reflex mistakes.",
+      "mistakes_en": [
+        "Buying more of an already-unlocked turret instead of unlocking a new type — stalls a defence in one role (power/support/cleanup) regardless of upgrade level.",
+        "Front-lining the tesla coil — wastes its capped chain-target count on the front of a wave instead of on survivors.",
+        "Spending limited abilities (strafing run / nuke, 3 uses per map each) as soon as a wave looks dangerous, rather than budgeting for the wave that actually threatens the base.",
+        "Fighting the open wave instead of aiming at a chokepoint (see the orc-flow-mechanic entity).",
+        "A reported, not-confirmed-fixed turret-placement double-click issue that can skip setting a newly placed turret's targeting mode."
+      ],
+      "source_url": "https://lootlore-ten.vercel.app/orc-problem/towers/beginner-mistakes/",
+      "source_tier": "onsite",
+      "primary_sources": [
+        {
+          "text": "Steam discussion 'Quick and Easy Guide to Orc Problem' by John, posted 4 June 2026",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/561406856400125378/"
+        },
+        {
+          "text": "Steam discussion 'Feedback + Suggestions + 2 possible bugfinds' by deothor, posted 14 May 2026",
+          "url": "https://steamcommunity.com/app/4594150/discussions/0/834998803317659960/"
+        }
+      ],
+      "unverified_fields": [
+        "Item 5 (double-click issue): site checked both post-launch patch notes and found no line addressing turret-placement input handling, so whether it was fixed is unconfirmed."
+      ]
+    }
+  }
+}

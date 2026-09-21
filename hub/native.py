@@ -18,8 +18,9 @@ import re
 from pathlib import Path
 from urllib.parse import urlparse
 
-from hub import mdlite
+from hub import mdlite, shell
 from hub.mdlite import esc
+from hub.pageindex import GameIndex, PageRef, Section
 
 
 class NativeError(Exception):
@@ -57,27 +58,8 @@ SORT_JS = (
     "});});</script>"
 )
 
-# 站内搜索(前端过滤)。内联,压到 1.6KB 以内,门禁上限 4KB。用 DOM API 拼结果,不拼 HTML 字符串。
-SEARCH_JS = (
-    "<script>(function(){var f=document.getElementById('gs');if(!f)return;"
-    "var i=f.querySelector('input'),r=document.getElementById('gs-r'),"
-    "L=f.getAttribute('data-lang'),U=f.getAttribute('data-index'),N=f.getAttribute('data-none'),D=null,P=null;"
-    "function load(){if(D)return Promise.resolve(D);if(P)return P;"
-    "P=fetch(U).then(function(x){return x.json();}).then(function(j){"
-    "D=j.filter(function(e){return e.lang===L;});return D;});return P;}"
-    "function run(){var q=i.value.trim().toLowerCase();"
-    "if(!q){r.hidden=true;r.textContent='';return;}"
-    "load().then(function(d){var m=d.filter(function(e){"
-    "return (e.title+' '+e.description+' '+e.category).toLowerCase().indexOf(q)>=0;}).slice(0,8);"
-    "r.textContent='';"
-    "if(!m.length){var li=document.createElement('li');li.className='none';li.textContent=N;r.appendChild(li);}"
-    "else m.forEach(function(e){var li=document.createElement('li'),a=document.createElement('a'),s=document.createElement('span');"
-    "a.href=e.url;a.textContent=e.title;s.textContent=e.category;li.appendChild(a);li.appendChild(s);r.appendChild(li);});"
-    "r.hidden=false;});}"
-    "i.addEventListener('input',run);i.addEventListener('focus',load);"
-    "document.addEventListener('click',function(e){if(!f.contains(e.target))r.hidden=true;});"
-    "})();</script>"
-)
+# 站内搜索的前端过滤脚本由 hub/shell.py 统一提供(全站一份索引,跨全部游戏)。
+SEARCH_JS = shell.SEARCH_JS
 
 
 class Page:
@@ -93,9 +75,160 @@ class Page:
 
 
 # ===========================================================================
+#  实体信息框渲染器(原生内容页与快照套壳页共用)
+# ===========================================================================
+class EntityBox:
+    """把一条实体数据渲染成右栏「速查」信息框。
+
+    宿主只需提供:t(界面文字 dict)、nk(语种数据 key)、lang_keys(实体字段的语种后缀集合)、
+    ents(实体表)、route_slug(slug → 路由)、is_live(slug 是否有页)。
+    字段标签一律来自 config/i18n 的 f_<字段名>;没登记标签的字段不渲染 —— 框架层不认识字段含义。
+    数据缺失 / 一行都凑不出来时返回空串,由调用方决定不渲染,绝不出空框或占位值。
+    """
+
+    # 通用 key/value 信息框不显示的字段:实体数据管线的元信息,不是给读者看的事实。
+    KV_SKIP = ("type", "order", "page_slug", "source_urls", "accessed",
+               "unverified_fields", "name", "summary")
+
+    def loc(self, obj, key, default=""):
+        """实体字段的语种回退:<key>_<nk> → <key>_en → <key>。"""
+        for k in (f"{key}_{self.nk}", f"{key}_en", key):
+            v = obj.get(k)
+            if v not in (None, "", []):
+                return v
+        return default
+
+    def _hp(self, ent):
+        """hp 为 null 但给了分阶段血量时,按阶段串起来显示。"""
+        if ent.get("hp") not in (None, ""):
+            return ent["hp"]
+        ph = ent.get("hp_phases")
+        return " + ".join(str(x) for x in ph) if ph else ""
+
+    def _list(self, rows):
+        """[{en, zh}] 或 [str] → 按语种取值的纯文本列表;传进来不是列表就当空。"""
+        if isinstance(rows, str):
+            return [rows] if rows else []
+        out = []
+        for x in rows or []:
+            v = (x.get(self.nk) or x.get("en") or "") if isinstance(x, dict) else str(x)
+            if v:
+                out.append(v)
+        return out
+
+    def _ent_names(self, rows, key="item"):
+        return ", ".join(str(self.loc(r, key)) for r in rows)
+
+    def _base_key(self, key):
+        """去掉字段名上的语种后缀:hazards_en / name_zh → hazards / name。"""
+        for lk in self.lang_keys:
+            if lk and key.endswith(f"_{lk}"):
+                return key[: -len(lk) - 1]
+        return key
+
+    def _kv_rows(self, ent):
+        """实体里非 null 的标量/短列表字段 → [(标签, 文本)]。
+        标签取 config/i18n 的 f_<字段名>;没有登记标签的字段不渲染(代码层不认识字段含义)。"""
+        rows, seen = [], set()
+        for key in ent:
+            base = self._base_key(key)
+            if base in self.KV_SKIP or base in seen:
+                continue
+            seen.add(base)
+            label = self.t.get(f"f_{base}")
+            v = self.loc(ent, base)
+            if not label or v in (None, "", [], {}):
+                continue
+            if isinstance(v, (dict,)):
+                continue
+            if isinstance(v, list):
+                v = ", ".join(str(x) for x in self._list(v))
+                if not v:
+                    continue
+            rows.append((label, str(v)))
+        return rows
+
+    def quick_facts(self, ent, first=True, generic=False):
+        """generic=True:不按 type 走预设字段表,一律"summary 当引言 + 其余已登记字段列成行"。
+        快照游戏的实体 schema 是各子站自己的形状(achievement / threat / turret / hero …),
+        没有 boss/biome/item 那套固定字段,所以走通用路径 —— 字段含义仍由 config/i18n 的
+        f_<字段名> 决定,没登记标签的字段不渲染。"""
+        t = self.t
+        rows = []
+
+        def add(label, value):
+            if value in (None, "", []):
+                return
+            if isinstance(value, list):
+                value = ", ".join(str(x) for x in value)
+            rows.append((label, str(value)))
+
+        typ = ent.get("type")
+        lead = ""
+        if generic or typ == "mechanic":
+            # 通用 key/value:字段清单来自数据,标签来自 i18n,本文件不认识任何字段的含义。
+            rows = self._kv_rows(ent)
+            lead = str(self.loc(ent, "summary") or "")
+        elif typ == "boss":
+            add(t["f_biome"], self.loc(ent, "biome"))
+            add(t["f_summon"], ", ".join(
+                f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("summon") or [])))
+            add(t["f_health"], self._hp(ent))
+            add(t["f_damage"], ent.get("damage_types"))
+            add(t["f_weak"], ent.get("weak"))
+            add(t["f_resistant"], ent.get("resistant"))
+            add(t["f_very_resistant"], ent.get("very_resistant"))
+            add(t["f_immune"], ent.get("immune"))
+            add(t["f_drops"], self._ent_names(ent.get("drops") or []))
+            fp = ent.get("forsaken_power")
+            if fp:
+                add(t["f_forsaken"], f'{self.loc(fp, "name")}{t["colon"]}{self.loc(fp, "effect")}'
+                    if self.loc(fp, "effect") else self.loc(fp, "name"))
+            add(t["f_unlocks"], self.loc(ent, "unlocks"))
+        elif typ == "biome":
+            b = ent.get("boss")
+            if b and b in self.ents:
+                bn = self.loc(self.ents[b], "name")
+                bs = self.ents[b].get("page_slug")
+                add(t["f_boss"], f'<a href="{self.route_slug(bs)}">{esc(bn)}</a>'
+                    if bs and self.is_live(bs) else esc(bn))
+            add(t["f_key_resources"], self._list(ent.get("key_resources")))
+            add(t["f_enemies"], self._list(ent.get("enemies")))
+            add(t["f_unlocks"], self._list(ent.get("unlocks")))
+            add(t["f_hazards"], self.loc(ent, "hazards"))
+        else:
+            add(t["c_entry_table"], self.loc(ent, "summary"))
+            add(t["f_station"], self.loc(ent, "crafted_at") or self.loc(ent, "source"))
+            add(t["f_requires"], self.loc(ent, "requires"))
+            add(t["f_unlocked_by"], self.loc(ent, "unlocked_by"))
+            add(t["f_usage"], self.loc(ent, "usage"))
+            add(t["f_cargo"], ent.get("cargo_slots"))
+            add(t["f_durability"], ent.get("durability"))
+            add(t["f_crafts_quantity"], ent.get("crafts_quantity"))
+            add(t["f_weight"], ent.get("weight"))
+            add(t["f_stack"], ent.get("stack"))
+            add(t["c_material"], ", ".join(
+                f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("recipe") or [])))
+        if not rows and not lead:
+            return ""
+        body = "".join(f'<div class="qf-r"><dt>{esc(k)}</dt><dd>{v if k == t["f_boss"] else esc(v)}</dd></div>'
+                       for k, v in rows)
+        name = self.loc(ent, "name")
+        if not str(name).strip():
+            return ""
+        # 移动端一律折叠(桌面由 native.css 的 ::details-content 强制展开),
+        # 否则首个信息框会把正文首屏整块推下去。first 只保留给未来排序用。
+        open_attr = ""
+        return (f'<details class="qf"{open_attr}><summary class="qf-h">{esc(name)}</summary>'
+                f'<p class="qf-sub">{esc(self.t["quick_facts"])}</p>'
+                + (f'<p class="qf-lead">{esc(lead)}</p>' if lead else "")
+                + f'<dl>{body}</dl></details>')
+
+
+# ===========================================================================
 #  单语种渲染器
 # ===========================================================================
-class NativeLang:
+class NativeLang(EntityBox):
     def __init__(self, game_site, spec: dict):
         self.site_game = game_site
         self.root, self.g, self.cfg, self.site = (
@@ -113,6 +246,7 @@ class NativeLang:
             (self.root / "config" / "i18n" / f'{spec["i18n"]}.json').read_text(encoding="utf-8"))
         self.images = game_site.images
         self.ents = game_site.ents
+        self.lang_keys = game_site.lang_keys
         self.official = game_site.official
         self.content = self.root / self.g["content"] / spec["dir"]
         self.alternates = {}   # slug -> [(hreflang, route, label)]
@@ -125,7 +259,9 @@ class NativeLang:
         for p in sorted(self.content.glob("*.md")):
             if p.name.startswith("_"):
                 continue
-            fm, body = mdlite.split_frontmatter(p.read_text(encoding="utf-8"))
+            # 内容层写 {{BRAND}},品牌名的唯一真相源仍是 config/hub.json —— 改名不用动内容。
+            raw = p.read_text(encoding="utf-8").replace("{{BRAND}}", self.cfg["brand"])
+            fm, body = mdlite.split_frontmatter(raw)
             for k, v in defaults.items():
                 if fm.get(k) in (None, ""):
                     fm[k] = v
@@ -234,14 +370,6 @@ class NativeLang:
 
     def url(self, p) -> str:
         return self.base + self.route(p)
-
-    def loc(self, obj, key, default=""):
-        """实体字段的语种回退:<key>_<nk> → <key>_en → <key>。"""
-        for k in (f"{key}_{self.nk}", f"{key}_en", key):
-            v = obj.get(k)
-            if v not in (None, "", []):
-                return v
-        return default
 
     def alt_of(self, im):
         a = im.get("alt")
@@ -397,130 +525,6 @@ class NativeLang:
         return f'<nav class="prevnext" aria-label="{esc(self.t["related"])}">{"".join(bits)}</nav>' if bits else ""
 
     # ------------------------------------------------------------ entity components
-    def _hp(self, ent):
-        """hp 为 null 但给了分阶段血量时,按阶段串起来显示。"""
-        if ent.get("hp") not in (None, ""):
-            return ent["hp"]
-        ph = ent.get("hp_phases")
-        return " + ".join(str(x) for x in ph) if ph else ""
-
-    def _list(self, rows):
-        """[{en, zh}] 或 [str] → 按语种取值的纯文本列表;传进来不是列表就当空。"""
-        if isinstance(rows, str):
-            return [rows] if rows else []
-        out = []
-        for x in rows or []:
-            v = (x.get(self.nk) or x.get("en") or "") if isinstance(x, dict) else str(x)
-            if v:
-                out.append(v)
-        return out
-
-    def _ent_names(self, rows, key="item"):
-        return ", ".join(str(self.loc(r, key)) for r in rows)
-
-    # 通用 key/value 信息框不显示的字段:实体数据管线的元信息,不是给读者看的事实。
-    KV_SKIP = ("type", "order", "page_slug", "source_urls", "accessed",
-               "unverified_fields", "name", "summary")
-
-    def _base_key(self, key):
-        """去掉字段名上的语种后缀:hazards_en / name_zh → hazards / name。"""
-        for lk in self.site_game.lang_keys:
-            if lk and key.endswith(f"_{lk}"):
-                return key[: -len(lk) - 1]
-        return key
-
-    def _kv_rows(self, ent):
-        """实体里非 null 的标量/短列表字段 → [(标签, 文本)]。
-        标签取 config/i18n 的 f_<字段名>;没有登记标签的字段不渲染(代码层不认识字段含义)。"""
-        rows, seen = [], set()
-        for key in ent:
-            base = self._base_key(key)
-            if base in self.KV_SKIP or base in seen:
-                continue
-            seen.add(base)
-            label = self.t.get(f"f_{base}")
-            v = self.loc(ent, base)
-            if not label or v in (None, "", [], {}):
-                continue
-            if isinstance(v, (dict,)):
-                continue
-            if isinstance(v, list):
-                v = ", ".join(str(x) for x in self._list(v))
-                if not v:
-                    continue
-            rows.append((label, str(v)))
-        return rows
-
-    def quick_facts(self, ent, first=True):
-        t = self.t
-        rows = []
-
-        def add(label, value):
-            if value in (None, "", []):
-                return
-            if isinstance(value, list):
-                value = ", ".join(str(x) for x in value)
-            rows.append((label, str(value)))
-
-        typ = ent.get("type")
-        lead = ""
-        if typ == "mechanic":
-            # 通用 key/value:字段清单来自数据,标签来自 i18n,本文件不认识任何字段的含义。
-            rows = self._kv_rows(ent)
-            lead = str(self.loc(ent, "summary") or "")
-        elif typ == "boss":
-            add(t["f_biome"], self.loc(ent, "biome"))
-            add(t["f_summon"], ", ".join(
-                f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("summon") or [])))
-            add(t["f_health"], self._hp(ent))
-            add(t["f_damage"], ent.get("damage_types"))
-            add(t["f_weak"], ent.get("weak"))
-            add(t["f_resistant"], ent.get("resistant"))
-            add(t["f_very_resistant"], ent.get("very_resistant"))
-            add(t["f_immune"], ent.get("immune"))
-            add(t["f_drops"], self._ent_names(ent.get("drops") or []))
-            fp = ent.get("forsaken_power")
-            if fp:
-                add(t["f_forsaken"], f'{self.loc(fp, "name")}{t["colon"]}{self.loc(fp, "effect")}'
-                    if self.loc(fp, "effect") else self.loc(fp, "name"))
-            add(t["f_unlocks"], self.loc(ent, "unlocks"))
-        elif typ == "biome":
-            b = ent.get("boss")
-            if b and b in self.ents:
-                bn = self.loc(self.ents[b], "name")
-                bs = self.ents[b].get("page_slug")
-                add(t["f_boss"], f'<a href="{self.route_slug(bs)}">{esc(bn)}</a>'
-                    if bs and self.is_live(bs) else esc(bn))
-            add(t["f_key_resources"], self._list(ent.get("key_resources")))
-            add(t["f_enemies"], self._list(ent.get("enemies")))
-            add(t["f_unlocks"], self._list(ent.get("unlocks")))
-            add(t["f_hazards"], self.loc(ent, "hazards"))
-        else:
-            add(t["c_entry_table"], self.loc(ent, "summary"))
-            add(t["f_station"], self.loc(ent, "crafted_at") or self.loc(ent, "source"))
-            add(t["f_requires"], self.loc(ent, "requires"))
-            add(t["f_unlocked_by"], self.loc(ent, "unlocked_by"))
-            add(t["f_usage"], self.loc(ent, "usage"))
-            add(t["f_cargo"], ent.get("cargo_slots"))
-            add(t["f_durability"], ent.get("durability"))
-            add(t["f_crafts_quantity"], ent.get("crafts_quantity"))
-            add(t["f_weight"], ent.get("weight"))
-            add(t["f_stack"], ent.get("stack"))
-            add(t["c_material"], ", ".join(
-                f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("recipe") or [])))
-        if not rows and not lead:
-            return ""
-        body = "".join(f'<div class="qf-r"><dt>{esc(k)}</dt><dd>{v if k == t["f_boss"] else esc(v)}</dd></div>'
-                       for k, v in rows)
-        name = self.loc(ent, "name")
-        # 移动端一律折叠(桌面由 native.css 的 ::details-content 强制展开),
-        # 否则首个信息框会把正文首屏整块推下去。first 只保留给未来排序用。
-        open_attr = ""
-        return (f'<details class="qf"{open_attr}><summary class="qf-h">{esc(name)}</summary>'
-                f'<p class="qf-sub">{esc(self.t["quick_facts"])}</p>'
-                + (f'<p class="qf-lead">{esc(lead)}</p>' if lead else "")
-                + f'<dl>{body}</dl></details>')
-
     def _table(self, head, rows, label=None, sortable=False):
         sortattr = ' data-sortable="1"' if sortable else ""
         # 整列都是数字的列右对齐(见 native.css 的 .num)
@@ -634,18 +638,13 @@ class NativeLang:
 
     # ------------------------------------------------------------ chrome
     def byline(self, p):
-        t, bits = self.t, []
-        name = self.author_name(p)
-        if name:
-            nm = (f'<a href="{self.route(self.author_page)}" rel="author">{esc(name)}</a>'
-                  if self.author_page else esc(name))
-            bits.append(f'{esc(t["author"])} {nm}')
-        for key, label in (("date", "published"), ("reviewed", "reviewed"), ("gameVersion", "game_version")):
-            v = p.get(key)
-            if v:
-                inner = f'<time datetime="{esc(v)}">{esc(v)}</time>' if key != "gameVersion" else esc(v)
-                bits.append(f'{esc(t[label])} {inner}')
-        line = f'<p class="byline">{esc(t["sep"]).join(bits)}</p>' if bits else ""
+        """H1 下方署名行,与总站页面同一个组件:By <作者> · Last reviewed <日期>。"""
+        t = self.t
+        line = shell.byline(
+            author=self.author_name(p),
+            author_href=self.route(self.author_page) if self.author_page else "",
+            reviewed=p.get("reviewed") or p.get("updated") or p.get("date"),
+            version=p.get("gameVersion"), t=t)
         if p.type == "article" and p.get("scope"):
             line += f'<p class="scope">{esc(t["scope"])}{esc(t.get("colon", ": "))}{esc(p.get("scope"))}</p>'
         return line
@@ -660,8 +659,9 @@ class NativeLang:
                 f'<span class="cur">{esc(self.t[self.spec["label_key"]])}</span>{links}</p>')
 
     def crumbs(self, p, extra_title=None):
+        """三级面包屑:<品牌> › <游戏> › <页>(文章页中间还有栏目一级)。"""
         t = self.t
-        items = [(t["home"], "/"), (self.spec.get("title") or self.g["name"], self.route(self.home))]
+        items = [(self.cfg["brand"], "/"), (self.spec.get("title") or self.g["name"], self.route(self.home))]
         if extra_title is not None:
             items.append((extra_title, None))
         elif p.type == "article":
@@ -715,103 +715,95 @@ class NativeLang:
         return fig, dict(im, alt=alt)
 
     def search_form(self):
+        """全站搜索(跨全部游戏),当前游戏的结果排前面;无 JS 时退化到本游戏的全量清单页。"""
         if not self.nc.get("search"):
             return ""
-        t = self.t
-        return (f'<form id="gs" class="gs" role="search" action="{self.route_slug("all")}" method="get"'
-                f' data-lang="{esc(self.code)}" data-index="/{self.gslug}/search-index.json"'
-                f' data-none="{esc(t["search_no_results"])}">'
-                f'<label class="sr" for="gs-i">{esc(t["search"])}</label>'
-                f'<input id="gs-i" type="search" name="q" placeholder="{esc(t["search_placeholder"])}"'
-                f' autocomplete="off">'
-                f'<button type="submit">{esc(t["search"])}</button>'
-                f'<ul id="gs-r" class="gs-r" hidden></ul></form>')
+        return shell.search_form(action=self.route_slug("all"), index_url="/search-index.json",
+                                 lang=self.code, t=self.t, scope=self.short_label(),
+                                 placeholder=self.t["search_all_placeholder"])
+
+    def short_label(self):
+        return self.spec.get("title") or self.g.get("short") or self.g["name"]
 
     def header(self):
-        t = self.t
-        on = ' class="on"'
-        games = "".join(
-            f'<a href="{esc(h)}"{on if s == self.gslug else ""}>{esc(lbl)}</a>'
-            for s, lbl, h in self.site["nav_games"])
-        return (
-            '<header class="hd">\n  <div class="wrap hd-in">\n'
-            f'    <a class="brand" href="/"><b>&#9670;</b> {esc(self.cfg["brand"])}</a>\n'
-            '    <nav class="hd-nav">\n'
-            f'      <details class="gmenu"><summary>{esc(t["games"])}<span class="caret">&#9662;</span></summary>\n'
-            f'        <div class="gmenu-panel">{games}<a class="all" href="/#games">{esc(t["all_games"])} &rarr;</a></div>\n'
-            '      </details>\n'
-            f'      <a class="gcur" href="{self.route(self.home)}">{esc(self.spec.get("title") or self.g["name"])}</a>\n'
-            '    </nav>\n'
-            f'    {self.search_form()}\n'
-            '  </div>\n</header>'
-        )
+        return shell.site_nav(brand=self.cfg["brand"], games=self.site["nav_games"],
+                              intents=self.site["nav_intents"], active_game=self.gslug,
+                              search=self.search_form(), t=self.t)
+
+    def nav_sections(self):
+        """左侧导航 / 索引用的栏目数据:栏目 = 已发布栏目页,成员 = 该栏目已发布文章。"""
+        out = []
+        for c in self.nav:
+            pages = [{"title": self.pub[s].get("title"), "route": self.route(s), "key": s}
+                     for s in self.members[c.slug]]
+            out.append({"label": c.get("category"), "route": self.route(c),
+                        "pages": pages, "count": len(pages), "key": c.slug})
+        return out
 
     def sidebar(self, cur_slug):
-        """左侧常驻游戏内导航:6 个栏目各自展开条目 + Tools / About 组。"""
+        """左侧常驻游戏内导航 —— 与快照页共用 hub/shell.py:game_nav,本文件不另写一套。"""
         t = self.t
-        groups = []
-        for c in self.nav:
-            items = [c.slug] + self.members[c.slug]
-            li = "".join(
-                f'<li><a href="{self.route(s)}"'
-                + (' aria-current="page" class="on"' if s == cur_slug else "")
-                + f'>{esc(self.pub[s].get("category") if self.pub[s].type == "category" else self.pub[s].get("title"))}</a></li>'
-                for s in items)
-            groups.append(f'<div class="sn-g"><p class="sn-t">{esc(c.get("category"))}</p><ul>{li}</ul></div>')
+        cur_route = self.route_slug(cur_slug) if cur_slug != self.home.slug else self.route(self.home)
         tools = [(t["all_articles"], self.route_slug("all"), "all")]
-        groups.append('<div class="sn-g"><p class="sn-t">' + esc(t["tools_group"]) + '</p><ul>'
-                      + "".join(f'<li><a href="{h}"' + (' aria-current="page" class="on"' if k == cur_slug else "")
-                                + f'>{esc(n)}</a></li>' for n, h, k in tools) + "</ul></div>")
-        ab = []
+        about = []
         if self.author_page:
-            ab.append((self.author_page.get("title"), self.route(self.author_page), self.author_page.slug))
-        ab += [(n, h, None) for n, h in t["trust"][:3]]
-        groups.append('<div class="sn-g"><p class="sn-t">' + esc(t["about_group"]) + '</p><ul>'
-                      + "".join(f'<li><a href="{h}"' + (' aria-current="page" class="on"' if k and k == cur_slug else "")
-                                + f'>{esc(n)}</a></li>' for n, h, k in ab) + "</ul></div>")
-        return (f'<nav class="sidenav" id="sidenav" aria-label="{esc(t["site_nav"])}">'
-                + "".join(groups) + "</nav>")
+            about.append((self.author_page.get("title"), self.route(self.author_page), self.author_page.slug))
+        about += [(n, h, None) for n, h in t["trust"][:3]]
+        im = self.site_game.cover_image()
+        return shell.game_nav(
+            game_name=self.short_label(), game_href=self.route(self.home),
+            subtitle=self.g.get("card", {}).get("genre", ""),
+            cover={"src": im.get("src_small") or im.get("src", ""), "alt": self.alt_of(im)} if im else None,
+            sections=self.nav_sections(), tools=tools, about=about,
+            current=cur_slug if cur_slug in ("all",) else cur_route, t=t)
+
+    def recent_rows(self, *, exclude="", n=6):
+        """本游戏最近更新的文章 → [(标题, 链接, 日期)]。日期真的来自 frontmatter,没有就不进。"""
+        rows = []
+        for s, p in self.pub.items():
+            if s == exclude or p.type != "article":
+                continue
+            d = p.get("reviewed") or p.get("updated") or p.get("date")
+            if d:
+                rows.append((d, p.get("title"), self.route(p)))
+        rows.sort(reverse=True)
+        return [(title, route, d) for d, title, route in rows[:n]]
 
     def footer(self):
         t = self.t
-        links = "".join(f'<a href="{esc(h)}">{esc(n)}</a>' for n, h in t["trust"])
+        links = list(t["trust"])
         if self.author_page:
-            links += f'<a href="{self.route(self.author_page)}">{esc(t["author"])}</a>'
-        links += f'<a href="{self.route_slug("all")}">{esc(t["all_articles"])}</a>'
-        return (
-            '<footer class="ft">\n  <div class="wrap">\n'
-            f'    <nav>{links}</nav>\n'
-            f'    <p>&copy; {self.site["year"]} {esc(self.cfg["brand"])}. {esc(t["footer_note"])}</p>\n'
-            '  </div>\n</footer>'
-        )
+            links.append((t["author"], self.route(self.author_page)))
+        links.append((t["all_articles"], self.route_slug("all")))
+        return shell.footer(brand=self.cfg["brand"], year=self.site["year"],
+                            links=links, note=t["footer_note"])
 
     # ------------------------------------------------------------ shell
     def shell(self, *, lang_code, head, crumbs_html, h1, byline, langsw, aside, body,
-              cur_slug, scripts=""):
+              cur_slug, scripts="", rail_last=False):
         t = self.t
         toggle = (
             '<input type="checkbox" id="navtoggle" class="navtoggle">'
             f'<label class="navtoggle-l" for="navtoggle"><span aria-hidden="true">&#9776;</span> '
             f'{esc(t["open_menu"])}</label>')
         aside_html = f'<aside class="rail">{aside}</aside>' if aside else ""
-        cls = "layout" + ("" if aside else " no-rail")
+        # rail_last:右栏只是「最近更新」这类小组件时,窄屏把它排到正文之后
+        #(速查信息框那种才值得挤在 h1 下面)
+        cls = "layout" + ("" if aside else " no-rail") + (" rail-last" if rail_last and aside else "")
         # 面包屑单独占一行网格(grid-area:crumb),右栏信息框顶边才能和 h1 顶边对齐
         main = (
             f'<main class="{cls}" id="main">\n{toggle}\n{self.sidebar(cur_slug)}\n{crumbs_html}\n'
             f'<div class="doc-hd"><h1>{h1}</h1>{byline}{langsw}</div>\n'
             f'{aside_html}\n<div class="doc">{body}</div>\n</main>')
-        theme = self.nc.get("theme", {})
-        theme_css = "<style>:root{" + ";".join(f"--{k}:{v}" for k, v in theme.items()) + "}</style>" if theme else ""
-        # 标题/正文字体走配置层;display=swap + preconnect,避免首屏闪白
-        font_css = self.nc.get("font_css")
-        if font_css:
-            theme_css = (
-                '<link rel="preconnect" href="https://fonts.googleapis.com">'
-                '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-                f'<link rel="stylesheet" href="{esc(font_css)}">' + theme_css)
+        # 站级 token 已经写进 out/hub.css 的 :root;这里只在该游戏声明了自己的 theme 时
+        # 注入差异项(换游戏想换配色只动配置层,框架层一行 hex 都没有)。
+        site_theme = self.cfg.get("theme", {})
+        over = {k: v for k, v in (self.nc.get("theme") or {}).items() if site_theme.get(k) != v}
+        theme_css = "<style>:root{" + ";".join(f"--{k}:{v}" for k, v in over.items()) + "}</style>" if over else ""
         tpl = (self.root / "hub" / "native_page.html").read_text(encoding="utf-8")
         return (tpl.replace("{{LANG}}", esc(lang_code))
                 .replace("{{HEAD}}", "\n".join(head))
+                .replace("{{FONTS}}", self.site.get("font_links", ""))
                 .replace("{{THEME}}", theme_css)
                 .replace("{{HEAD_EXTRA}}", self.site["head_extra"])
                 .replace("{{HEADER}}", self.header())
@@ -928,6 +920,9 @@ class NativeLang:
 
         ents = self.entities_of(p)
         aside = "".join(self.quick_facts(e, first=(i == 0)) for i, e in enumerate(ents))
+        # 右栏「最近更新」小组件:日期取 frontmatter 的 reviewed/updated/date,没有日期的页不列。
+        if p.type in ("home", "category"):
+            aside += shell.rail_list(t["recent_in_game"], self.recent_rows(exclude=p.slug))
 
         pre, extra, scripts = [], [], ""
         # 要点框
@@ -965,6 +960,16 @@ class NativeLang:
             (ahid, lbl), sec = self.all_articles_section(used)
             extra.append(sec)
             toc.append((ahid, lbl))
+            # hub 页底部 FAQ:问答全部来自内容层 frontmatter 的 faq(答案里的站内链接
+            # 走同一条链接校验路径,指向不存在的页会直接构建报错)。没有 faq 就不出这个区块。
+            rows = [(q, mdlite.inline(a, self.link_cb_factory(p, ext_labels)))
+                    for q, a in (p.fm.get("faq") or [])]
+            if rows:
+                fhid = mdlite.slugify(t["faq_heading"], used)
+                fq_html, fq_ld = shell.faq(rows, t["faq_heading"], fhid)
+                extra.append(fq_html)
+                toc.append((fhid, t["faq_heading"]))
+                self._faq_ld = fq_ld
         elif p.type == "category":
             tbl, label, intro = self.agg_table((self.nc.get("category_tables") or {}).get(p.slug))
             if tbl:
@@ -1081,6 +1086,9 @@ class NativeLang:
                 cp["dateModified"] = self.modified(p)
             graphs.append(cp)
         graphs.append(crumbs_ld)
+        if getattr(self, "_faq_ld", None):
+            graphs.append(self._faq_ld)
+            self._faq_ld = None
 
         head = self.head_common(
             title=p.get("seoTitle") or mdlite.plain(h1_text), desc=p.get("description"),
@@ -1090,7 +1098,7 @@ class NativeLang:
             scripts += SEARCH_JS
         return self.shell(lang_code=self.code, head=head, crumbs_html=crumbs_html, h1=h1_html,
                           byline=self.byline(p), langsw=self.lang_switch(p.slug), aside=aside,
-                          body=body, cur_slug=p.slug, scripts=scripts)
+                          body=body, cur_slug=p.slug, scripts=scripts, rail_last=not ents)
 
     def all_articles_section(self, used_ids, level=3):
         hid = mdlite.slugify(self.t["all_articles"], used_ids)
@@ -1217,16 +1225,49 @@ class NativeGame:
                 l.alternates[slug] = alts if len(alts) > 1 else []
             # 单语种页仍需 canonical 自指(已有),不输出 hreflang
 
+    def cover_image(self):
+        """游戏封面(左侧导航头 / 首页卡片用):取内容层 _images.json 的默认截图。"""
+        key = self.images.get("default")
+        return (self.images.get("shots", {}) or {}).get(key) if key else None
+
+    def index(self) -> GameIndex:
+        """回填给全站索引:栏目/页/日期取默认语种,搜索索引包含全部语种。"""
+        l = self.default_lang
+        sections = []
+        for c in l.nav:
+            pages = [PageRef(l.route(s), l.pub[s].get("title"), l.pub[s].get("description"),
+                             c.get("category"), l.pub[s].get("date"), l.lastmod(l.pub[s]),
+                             self.gslug, l.code)
+                     for s in l.members[c.slug]]
+            sections.append(Section(c.slug, c.get("category"), l.route(c), pages))
+        # 一篇文章可以跨栏目列出(见 members 的规则),索引里按 route 去重,页数才是真页数
+        pages, seen = [], set()
+        for s in sections:
+            for p in s.pages:
+                if p.route not in seen:
+                    seen.add(p.route)
+                    pages.append(p)
+        for lg in self.langs:
+            for p in lg.live_pages():
+                if lg.route(p) in seen or p.type == "home":
+                    continue
+                seen.add(lg.route(p))
+                cat = lg.cat_of(p)
+                pages.append(PageRef(lg.route(p), p.get("title"), p.get("description"),
+                                     p.get("category") if p.type == "category"
+                                     else (cat.get("category") if cat is not None else ""),
+                                     p.get("date"), lg.lastmod(p), self.gslug, lg.code))
+        c = self.g.get("card", {})
+        cover = {"src": c.get("img", ""), "w": c.get("img_w"), "h": c.get("img_h"),
+                 "alt": c.get("img_alt", "")}
+        return GameIndex(self.g, home_route=l.route(l.home), sections=sections,
+                         pages=pages, cover=cover, default_lang=l.code)
+
     def build(self, out_root: Path):
         dst = out_root / self.gslug
         routes = {}
-        rows = []
         for l in self.langs:
             routes.update(l.build(dst))
-            rows += l.search_rows()
-        if self.nc.get("search"):
-            (dst / "search-index.json").write_text(
-                json.dumps(rows, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         for w in dict.fromkeys(self.warnings):
             print(f"  [{self.gslug}] 警告: {w}")
         drafts = sorted(f'{l.nk}/{s}' for l in self.langs for s, p in l.pages.items() if p.draft)

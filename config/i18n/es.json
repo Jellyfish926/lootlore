@@ -1,0 +1,90 @@
+{
+  "html_lang": "es",
+  "og_locale": "es_ES",
+  "home": "Inicio",
+  "games": "Juegos",
+  "all_games": "Todos los juegos",
+  "breadcrumb": "Ruta de navegación",
+  "toc": "En esta página",
+  "menu": "Menú",
+  "main_nav": "Navegación principal",
+  "by_game": "Por juego",
+  "by_need": "Por necesidad",
+  "by": "Por",
+  "search": "Buscar",
+  "search_placeholder": "Buscar en estas guías",
+  "search_all_placeholder": "Buscar en todas las guías del sitio",
+  "search_no_results": "Ninguna guía coincide.",
+  "site_nav": "Navegación de guías",
+  "open_menu": "Menú de guías",
+  "quick_access": "Acceso rápido",
+  "guide_index": "Índice de guías",
+  "section_overview": "Resumen de la sección",
+  "tools_group": "Herramientas",
+  "about_group": "Información",
+  "more_guides": "Todas las demás guías",
+  "recent_in_game": "Actualizado recientemente",
+  "nav_guides": "Guías",
+  "nav_tools": "Herramientas",
+  "nav_reviews": "Análisis",
+  "nav_updates": "Novedades",
+  "nav_about": "Acerca de",
+  "author": "Autor",
+  "reviewed": "Última revisión",
+  "published": "Publicado",
+  "game_version": "Versión comprobada",
+  "faq_heading": "Preguntas frecuentes",
+  "pages_count": "{n} guías",
+  "updated_on": "Actualizado el {d}",
+  "skip_to_content": "Ir al contenido",
+  "trust": [
+    [
+      "Acerca de",
+      "/about"
+    ],
+    [
+      "Contacto",
+      "/contact"
+    ],
+    [
+      "Política editorial",
+      "/editorial-policy"
+    ],
+    [
+      "Privacidad",
+      "/privacy-policy"
+    ],
+    [
+      "Términos de uso",
+      "/terms"
+    ],
+    [
+      "Aviso legal",
+      "/disclaimer"
+    ]
+  ],
+  "footer_note": "Guía de fans no oficial, sin afiliación con los desarrolladores ni las editoras de los juegos. Los nombres de juegos, las capturas y las marcas pertenecen a sus respectivos propietarios.",
+  "sep": " · ",
+  "colon": ": ",
+  "language": "Idioma",
+  "quick_facts": "Datos rápidos",
+  "f_chapter_title": "Capítulo",
+  "f_appears_in_chapter": "Capítulo",
+  "f_weak": "Débil a",
+  "f_role": "Rol",
+  "f_weapon_type": "Tipo de arma",
+  "f_description": "Descripción",
+  "f_unlock_rate_pct": "Tasa global de desbloqueo (%)",
+  "f_global_unlock_pct": "Tasa global de desbloqueo (%)",
+  "f_steam_unlock_pct": "Tasa de desbloqueo en Steam (%)",
+  "f_condition": "Condición",
+  "f_condition_inferred": "Condición (inferida)",
+  "f_unlock_condition": "Cómo se desbloquea",
+  "f_achievement_name": "Logro",
+  "f_appears": "Aparece",
+  "f_counter": "Contra",
+  "f_level_number": "Nivel",
+  "f_objective": "Objetivo",
+  "f_related_boss": "Jefe relacionado",
+  "f_key_notes": "Notas"
+}

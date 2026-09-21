@@ -14,15 +14,17 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
+      - name: 取站点域名(唯一真相源 config/hub.json → base_url)
+        run: echo "SITE_HOST=$(python3 -c "import json;print(json.load(open('config/hub.json'))['base_url'].split('//')[1].rstrip('/'))")" >> $GITHUB_ENV
       - run: python3 build.py
-      - name: check_content(H1 / alt / 占位语 / 死链 / 内链≥3 / 语种前缀)
-        run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en --dir-lang valheim/zh=zh
+      - name: check_content(H1 / alt / 占位语 / 死链 / 内链≥3 / 语种自动判定)
+        run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en
       - name: check_i18n(小语种残页 / 占位)
         run: python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja --games beast-of-reincarnation,dragonsword-awakening,orc-problem,sephiria,shift-at-midnight
       - name: check_i18n(valheim:主语种在栏目根,中文在 /zh/)
         run: python3 .gates/check_i18n.py out --default en --locales zh --root-default --games valheim
       - name: check_sitemap(loc↔文件 / 域名残留 / robots)
-        run: python3 .gates/check_sitemap.py --out out --host lootlore-ten.vercel.app
+        run: python3 .gates/check_sitemap.py --out out --host "$SITE_HOST"
       - name: link_check(全站死链)
         run: python3 .gates/link_check.py --out out
       - name: freshness(只报告不阻塞)
@@ -30,4 +32,4 @@ jobs:
         run: python3 .gates/freshness_audit.py --out out || true
       - name: tech_audit(技术 SEO 摘要,CJK 按显示宽度;只报告不阻塞)
         if: always()
-        run: python3 .gates/tech_audit.py --out out --base https://lootlore-ten.vercel.app --summary || true
+        run: python3 .gates/tech_audit.py --out out --base "https://$SITE_HOST" --summary || true

@@ -1,0 +1,275 @@
+/* LootWiki —— 快照套壳页的正文样式(out/snapshot.css),叠在 hub.css + native.css 之上。
+
+   为什么需要这一层:快照页的正文是各子站产出的 HTML,带着子站自己的类名
+   (.wrap / .hero / .term / .tablewrap / .tracker-* …)。总站不改这些类名(正文零改动),
+   所以这里把它们全部收在 .sn-body 作用域里重新定义一遍:
+     1) 先中和 hub.css 里同名的全站选择器(.wrap / .hero / .toc / .faq …),
+     2) 再按 hub 的 token 给子站的内容件与交互件一套统一皮肤。
+
+   本文件里不写任何 hex、不写任何游戏专属文字:颜色一律走 out/hub.css 的 :root 变量
+   (真相源是 config/hub.json → theme),排版阶梯沿用 hub.css。 */
+
+.sn-body{min-width:0}
+
+/* ---------- 1. 中和 hub.css 的全站同名选择器 ---------- */
+/* 子站正文里到处是 <div class="wrap">,hub.css 的 .wrap 是页面主容器(1280px + 16px 内边距) */
+.sn-body .wrap{max-width:none;margin:0;padding:0}
+/* 子站的 .hero 是正文首屏区块,不是总站首页那条通栏 */
+.sn-body .hero{background:none;border-bottom:0;padding:0}
+.sn-body .hero-in{max-width:none;margin:0;padding:0}
+.sn-body .hero h1,.sn-body .hero-c{font-size:inherit;margin:0;padding:0;max-width:none}
+.sn-body .faq{margin:0 0 22px}
+/* 子站 <article class="doc"> 的内联 padding/max-width 保留(那是子站的排版意图),
+   只把它从 hub.css 的网格区域里解开 */
+.sn-body .doc{grid-area:auto}
+
+/* ---------- 2. 首屏区块 / 一句话 / 元信息 ---------- */
+.sn-body .kicker,.sn-body .eyebrow,.sn-body .cat-h,.sn-body .sec-sub,.sn-body .progress{
+  color:var(--accent);font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;
+  margin:0 0 8px;font-weight:600;line-height:1.4}
+.sn-body .sec-sub,.sn-body .cat-note{color:var(--dim);letter-spacing:0;text-transform:none;
+  font-size:var(--fs-meta);font-weight:400}
+.sn-body .lede{margin:0 0 20px;color:var(--ink);font-size:clamp(1.0625rem,2.2vw,1.1875rem);
+  line-height:1.6;max-width:var(--measure)}
+.sn-body .updated,.sn-body .meta,.sn-body .byline,.sn-body .src,.sn-body .store-note,
+.sn-body .noscript-note{color:var(--dim);font-size:var(--fs-cap);line-height:1.55;
+  margin:0 0 16px;max-width:var(--measure)}
+.sn-body .stamp{display:none}
+
+/* ---------- 3. 图片 / 图注 / 视频 ---------- */
+.sn-body figure{margin:0 0 20px}
+.sn-body .shot img,.sn-body .fig img,.sn-body .hero-img img{width:100%;height:auto;
+  border-radius:var(--rad);border:var(--box-bd);background:var(--panel);
+  aspect-ratio:16/9;object-fit:cover}
+.sn-body figcaption{color:var(--dim);font-size:var(--fs-cap);margin-top:7px;line-height:1.5}
+.sn-body .video,.sn-body .video-embed{position:relative;margin:0 0 20px;max-width:100%}
+.sn-body .video-embed{aspect-ratio:16/9;background:var(--panel);border:var(--box-bd);
+  border-radius:var(--rad);overflow:hidden}
+.sn-body iframe{max-width:100%;border:0}
+.sn-body .video-embed iframe{position:absolute;inset:0;width:100%;height:100%}
+
+/* ---------- 4. 提示框 / 要点框 ---------- */
+.sn-body .callout,.sn-body .term,.sn-body .tip,.sn-body .facts,.sn-body .threat,
+.sn-body .code-box,.sn-body .srcbox{background:var(--band-soft);border:var(--box-bd);
+  border-left:3px solid var(--accent);
+  border-radius:var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+  padding:var(--box-pad);margin:0 0 22px}
+/* 子站用 warn/danger/green 区分提示强度:统一映射到站级的暖色/主色 token */
+.sn-body .term.warn,.sn-body .warn,.sn-body .amber,
+.sn-body .term.danger,.sn-body .danger,.sn-body .red{border-left-color:var(--accent-warm)}
+.sn-body .term.green,.sn-body .green{border-left-color:var(--accent)}
+.sn-body .term-h,.sn-body .srcbox>b,.sn-body .code-box>b{display:block;margin:0 0 6px;
+  font-weight:700;color:var(--ink);font-size:.8125rem;letter-spacing:.1em;text-transform:uppercase}
+.sn-body .callout>p:last-child,.sn-body .term>p:last-child,.sn-body .tip>p:last-child,
+.sn-body .srcbox>ul:last-child,.sn-body .srcbox>p:last-child{margin-bottom:0}
+.sn-body .srcbox,.sn-body .srcbox li{font-size:.875rem;line-height:1.55}
+
+/* ---------- 5. 目录 ---------- */
+.sn-body .toc{background:var(--panel);border:var(--box-bd);border-radius:var(--rad);
+  padding:var(--box-pad);margin:0 0 28px}
+.sn-body .toc>p:first-child{margin:0 0 8px;font-weight:600;color:var(--ink);font-size:.8125rem;
+  letter-spacing:.1em;text-transform:uppercase}
+.sn-body .toc ul,.sn-body .toc ol{margin:0;padding-left:1.35em;columns:2;column-gap:28px;
+  font-size:.9375rem;list-style:disc}
+.sn-body .toc li{color:var(--dim);break-inside:avoid;margin:3px 0;line-height:1.45}
+.sn-body .toc a{color:var(--mut);text-decoration:none}
+.sn-body .toc a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:640px){.sn-body .toc ul,.sn-body .toc ol{columns:1}}
+
+/* ---------- 6. 数据表:横滑容器 + 斑马纹 + 数字列右对齐 ---------- */
+.sn-body .tablewrap,.sn-body .tw,.sn-body .table-scroll{overflow-x:auto;
+  -webkit-overflow-scrolling:touch;margin:0 0 22px;border:var(--box-bd);
+  border-top:2px solid var(--accent);border-radius:var(--rad-sm);max-width:100%;
+  background-color:var(--bg)}
+.sn-body table{border-collapse:collapse;width:100%;font-size:var(--fs-tbl);
+  line-height:var(--lh-tight);margin:0 0 22px}
+.sn-body .tablewrap table,.sn-body .tw table,.sn-body .table-scroll table{min-width:520px;margin:0}
+.sn-body th,.sn-body td{padding:9px 12px;border-bottom:1px solid var(--line);
+  text-align:left;vertical-align:top}
+.sn-body th{background:var(--band);color:var(--ink);font-weight:600;font-size:.875rem;
+  letter-spacing:.015em}
+.sn-body td{color:var(--mut)}
+.sn-body tbody tr:nth-child(even) td{background:var(--zebra)}
+.sn-body tbody tr:hover td{background:var(--band-soft)}
+.sn-body tr:last-child td{border-bottom:0}
+.sn-body td.num,.sn-body th.num{text-align:right;font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+.sn-body td.merged{font-weight:600;color:var(--ink)}
+
+/* ---------- 7. 定义列表(子站的 key/value 事实块)---------- */
+.sn-body dl{margin:0 0 22px}
+.sn-body .kv{display:grid;grid-template-columns:minmax(0,1fr);gap:0;background:var(--panel);
+  border:var(--box-bd);border-radius:var(--rad);overflow:hidden}
+.sn-body .kv>div{display:grid;grid-template-columns:minmax(120px,32%) minmax(0,1fr);
+  border-top:var(--box-bd)}
+.sn-body .kv>div:first-child{border-top:0}
+.sn-body .kv dt{padding:8px 12px;color:var(--ink);font-size:var(--fs-lbl);font-weight:600;
+  background:color-mix(in srgb,var(--line) 32%,transparent);overflow-wrap:anywhere}
+.sn-body .kv dd{margin:0;padding:8px 12px;color:var(--mut);font-size:.875rem;
+  overflow-wrap:break-word;line-height:var(--lh-tight)}
+.sn-body dl:not(.kv) dt{color:var(--ink);font-weight:600;margin:14px 0 2px}
+.sn-body dl:not(.kv) dd{margin:0 0 6px;color:var(--mut)}
+@media(max-width:520px){.sn-body .kv>div{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- 8. 卡片网格 / 磁贴 / 按钮 ---------- */
+.sn-body .grid{display:grid;gap:14px;margin:0 0 22px;
+  grid-template-columns:repeat(auto-fill,minmax(232px,1fr))}
+.sn-body .grid.two{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.sn-body .grid.three{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.sn-body .grid.wide{grid-template-columns:minmax(0,1fr)}
+.sn-body .card{display:flex;flex-direction:column;gap:5px;background:var(--panel);
+  border:var(--box-bd);border-radius:var(--rad);padding:12px 15px 14px;
+  color:var(--ink);text-decoration:none;min-width:0}
+/* 整张卡片是一个 <a> 时,hub.css 的正文链接下划线会把卡片里所有文字都划上 */
+.sn-body a.card,.sn-body a.card *,.sn-body a.btn,.sn-body a.store-btn,
+.sn-body .opt,.sn-body .tracker-list a{text-decoration:none}
+.sn-body a.card:hover{border-color:var(--accent);text-decoration:none}
+.sn-body .card>b,.sn-body .card-title,.sn-body .card h3{font-size:.9375rem;font-weight:600;
+  margin:0;color:var(--ink);line-height:1.4;border:0;padding:0}
+.sn-body a.card:hover>b,.sn-body a.card:hover .card-title{color:var(--accent)}
+.sn-body .card>span,.sn-body .card p{margin:0;font-size:.875rem;line-height:1.5;color:var(--mut)}
+.sn-body .card p:last-child{margin:0}
+.sn-body .stats{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:8px;
+  grid-template-columns:repeat(auto-fill,minmax(122px,1fr))}
+.sn-body .stats li,.sn-body .count>div{display:flex;flex-direction:column;gap:2px;
+  background:var(--panel);border:var(--box-bd);border-radius:var(--rad-sm);padding:8px 11px;
+  color:var(--dim);font-size:var(--fs-lbl);line-height:1.35}
+.sn-body .stats li b,.sn-body .count b{color:var(--ink);font-size:1.0625rem;font-weight:700;
+  font-variant-numeric:tabular-nums}
+.sn-body .count{display:grid;gap:8px;margin:0 0 18px;
+  grid-template-columns:repeat(auto-fill,minmax(122px,1fr))}
+.sn-body .count span{color:var(--dim);font-size:var(--fs-lbl)}
+.sn-body .cta,.sn-body .store-row,.sn-body .nf-links{display:flex;gap:10px;flex-wrap:wrap;
+  margin:0 0 22px}
+.sn-body .btn,.sn-body .store-btn{display:inline-flex;align-items:center;gap:7px;
+  border:var(--box-bd);border-radius:var(--rad-sm);padding:8px 16px;background:var(--panel);
+  color:var(--ink);font:inherit;font-size:.9375rem;font-weight:600;cursor:pointer;
+  text-decoration:none;line-height:1.3}
+.sn-body .btn:hover,.sn-body .store-btn:hover{border-color:var(--accent);color:var(--accent);
+  text-decoration:none}
+.sn-body .btn.solid,.sn-body .store-btn.primary{background:var(--accent);border-color:var(--accent);
+  color:var(--bg)}
+.sn-body .btn.solid:hover,.sn-body .store-btn.primary:hover{background:var(--accent2);
+  border-color:var(--accent2);color:var(--bg)}
+.sn-body .btn[disabled]{opacity:.45;cursor:not-allowed}
+.sn-body .btn[disabled]:hover{border-color:var(--line);color:var(--ink)}
+.sn-body .tag,.sn-body .tags span{display:inline-block;border:var(--box-bd);
+  border-radius:var(--rad-pill);padding:1px 10px;margin:0 5px 5px 0;color:var(--mut);
+  font-size:var(--fs-lbl);line-height:1.6}
+.sn-body .tags{margin:0 0 14px}
+
+/* ---------- 9. 子站自带的「去哪买」区块 ---------- */
+.sn-body .store{background:var(--panel);border:var(--box-bd);border-radius:var(--rad);
+  padding:var(--box-pad);margin:26px 0 22px}
+.sn-body .store h2{margin:0 0 6px;border:0;padding:0;font-size:var(--fs-h3)}
+
+/* ---------- 10. 表单件(子站的互动工具)---------- */
+.sn-body .row{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 14px}
+.sn-body .field{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1 1 200px}
+.sn-body label{color:var(--mut);font-size:.9375rem;line-height:1.4}
+.sn-body .lbl{color:var(--dim);font-size:var(--fs-lbl);letter-spacing:.06em;text-transform:uppercase}
+.sn-body select,.sn-body input[type=text],.sn-body input[type=number],.sn-body textarea{
+  background:var(--bg2);color:var(--ink);border:var(--box-bd);border-radius:var(--rad-sm);
+  padding:7px 10px;font:inherit;font-size:.9375rem;max-width:100%}
+.sn-body select:focus-visible,.sn-body input:focus-visible,.sn-body textarea:focus-visible,
+.sn-body button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sn-body input[type=checkbox]{accent-color:var(--accent);width:17px;height:17px;flex:0 0 auto}
+.sn-body input[type=range]{accent-color:var(--accent);max-width:100%}
+.sn-body .tool{background:var(--panel);border:var(--box-bd);border-radius:var(--rad);
+  padding:var(--box-pad);margin:0 0 22px}
+.sn-body .tool-out,.sn-body .planner-out,.sn-body .result{background:var(--band-soft);
+  border:var(--box-bd);border-left:3px solid var(--accent);border-radius:var(--rad-sm);
+  padding:var(--box-pad);margin:14px 0 0}
+.sn-body .tool-check{color:var(--accent);font-weight:600}
+.sn-body .bar-track{background:var(--bg2);border:var(--box-bd);border-radius:var(--rad-pill);
+  height:10px;overflow:hidden;margin:6px 0}
+.sn-body .bar-fill{background:var(--accent);height:100%}
+
+/* ---------- 11. 进度追踪器 / 天赋规划器(四个子站共用同一套类名)---------- */
+.sn-body .tracker,.sn-body .planner{background:var(--panel);border:var(--box-bd);
+  border-radius:var(--rad);padding:var(--box-pad);margin:0 0 24px}
+.sn-body .tracker-head{margin:0 0 12px}
+.sn-body .tracker-progress{background:var(--bg2);border:var(--box-bd);
+  border-radius:var(--rad-pill);height:12px;overflow:hidden}
+.sn-body .tracker-bar{background:var(--accent);height:100%;transition:width .2s ease}
+.sn-body .tracker-summary{margin:8px 0 10px;color:var(--mut);font-size:.9375rem}
+.sn-body .tracker-summary b{color:var(--ink);font-variant-numeric:tabular-nums}
+.sn-body .tracker-controls{display:flex;gap:10px 16px;flex-wrap:wrap;align-items:center}
+.sn-body .tracker-controls label{display:inline-flex;align-items:center;gap:7px;
+  font-size:.9375rem;color:var(--mut)}
+.sn-body .tracker-list{list-style:none;margin:0;padding:0;border-top:var(--box-bd)}
+.sn-body .tracker-list li{margin:0;border-bottom:1px solid var(--line)}
+.sn-body .tracker-list li>label{display:flex;align-items:center;gap:11px;padding:9px 2px;
+  cursor:pointer;min-width:0}
+.sn-body .tracker-list li>label:hover{background:var(--band-soft)}
+.sn-body .tracker-list img{width:40px;height:40px;flex:0 0 auto;border-radius:var(--rad-sm);
+  border:var(--box-bd)}
+.sn-body .tracker-txt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 auto}
+.sn-body .tracker-txt b{color:var(--ink);font-size:.9375rem;font-weight:600;line-height:1.35}
+.sn-body .tracker-txt small{color:var(--dim);font-size:var(--fs-lbl);line-height:1.45}
+.sn-body .tracker-pct{flex:0 0 auto;color:var(--accent);font-size:var(--fs-lbl);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.sn-body .tracker-foot{margin:12px 0 0;color:var(--dim);font-size:var(--fs-cap)}
+.sn-body .planner-row{display:flex;align-items:center;gap:11px;padding:9px 2px;flex-wrap:wrap}
+.sn-body .planner-name{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 180px}
+.sn-body .planner-name b{color:var(--ink);font-size:.9375rem}
+.sn-body .planner-name small{color:var(--dim);font-size:var(--fs-lbl)}
+.sn-body .planner-input{display:flex;align-items:center;gap:8px;flex:0 1 auto;min-width:0}
+.sn-body .planner-step{padding:2px 11px;font-size:1rem;line-height:1.3}
+.sn-body .planner-count{min-width:2.4em;text-align:right;color:var(--ink);font-weight:600}
+.sn-body .planner-group-head,.sn-body .planner-presets-label{color:var(--dim);
+  font-size:var(--fs-lbl);letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px;
+  display:block}
+.sn-body .planner-group{margin:0 0 16px}
+.sn-body .planner-ms,.sn-body .planner-detail,.sn-body .planner-note,.sn-body .planner-empty{
+  color:var(--mut);font-size:.875rem;line-height:1.55;margin:4px 0 0}
+.sn-body .planner-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  background:var(--bg2);border:var(--box-bd);border-radius:4px;padding:1px 6px}
+
+/* ---------- 12. 分步问答(子站的选购测试)---------- */
+/* 没有这条规则时四个步骤会一起铺开 —— 交互靠 .on 切换,样式必须跟着走 */
+.sn-body .quiz{background:var(--panel);border:var(--box-bd);border-radius:var(--rad);
+  padding:var(--box-pad);margin:0 0 24px}
+.sn-body .quiz .step,.sn-body .quiz .result{display:none}
+.sn-body .quiz .step.on,.sn-body .quiz .result.on{display:block}
+.sn-body .quiz .step h2{margin:0 0 12px;border:0;padding:0;font-size:var(--fs-h3)}
+.sn-body .opts{display:grid;gap:9px;margin:0 0 6px}
+.sn-body .opt{display:block;width:100%;text-align:left;border:var(--box-bd);
+  border-radius:var(--rad-sm);background:var(--bg2);color:var(--ink);padding:11px 15px;
+  font:inherit;font-size:.9375rem;cursor:pointer;line-height:1.4}
+.sn-body .opt:hover{border-color:var(--accent);color:var(--accent);background:var(--band-soft)}
+.sn-body .verdict{color:var(--ink);font-size:1.0625rem;font-weight:600;margin:0 0 8px}
+.sn-body .restart{margin-top:12px}
+
+/* ---------- 13. 术语格式化件 ---------- */
+.sn-body .nf-wrap{background:var(--panel);border:var(--box-bd);border-radius:var(--rad);
+  padding:var(--box-pad);margin:0 0 22px}
+.sn-body .nf-kanji{font-size:1.5rem;color:var(--ink);line-height:1.4}
+.sn-body .nf-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent)}
+
+/* ---------- 14. 窄屏兜底:390px 不许横向溢出 ---------- */
+.sn-body pre{overflow-x:auto}
+.sn-body img,.sn-body svg,.sn-body video{max-width:100%;height:auto}
+/* 子站的来源清单里有写成纯文本的裸 URL,窄屏必须允许断行(否则整页横向溢出) */
+.sn-body p,.sn-body li,.sn-body dd,.sn-body dt,.sn-body td,.sn-body th,
+.sn-body b,.sn-body small,.sn-body span{overflow-wrap:break-word}
+.sn-body a,.sn-body code,.sn-body .planner-code{overflow-wrap:anywhere}
+/* 没套横滑容器的裸 <table>:窄屏改成可横滑的块(桌面保持正常表格布局) */
+@media(max-width:860px){
+  .sn-body table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    max-width:100%;border:var(--box-bd);border-top:2px solid var(--accent);
+    border-radius:var(--rad-sm)}
+  .sn-body .tablewrap table,.sn-body .tw table,.sn-body .table-scroll table{
+    display:table;overflow:visible;border:0;border-radius:0}
+}
+@media(max-width:640px){
+  .sn-body .grid,.sn-body .grid.two,.sn-body .grid.three{grid-template-columns:minmax(0,1fr)}
+  .sn-body .stats,.sn-body .count{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+  .sn-body .row{flex-direction:column;gap:10px}
+  .sn-body table{font-size:.8125rem}
+  .sn-body th,.sn-body td{padding:7px 9px}
+  .sn-body .tracker,.sn-body .planner,.sn-body .quiz,.sn-body .tool,.sn-body .store{
+    padding:12px 13px}
+  .sn-body .tracker-list li>label{gap:9px}
+  .sn-body .planner-row{gap:8px}
+}

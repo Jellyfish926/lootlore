@@ -1,80 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lootlore — Hand-Researched Game Guides in One Hub</title>
-<meta name="description" content="Hand-researched guide hubs for {{GAME_COUNT}} games: {{GAME_NAMES}}.">
-<link rel="canonical" href="{{BASE}}/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="{{BRAND}}">
-<meta property="og:title" content="Lootlore — Hand-Researched Game Guides in One Hub">
-<meta property="og:description" content="Boss strategies, builds, monster compendiums, achievements and patch tracking — every guide checked against the live game and official sources.">
-<meta property="og:url" content="{{BASE}}/">
-{{OG_IMAGE}}
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-{{JSONLD}}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Jost:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="/hub.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-{{PUB}}" crossorigin="anonymous"></script>
-{{GA_SNIPPET}}
-</head>
-<body>
+<!--
+title: {{BRAND}} — Hand-Researched Game Guides in One Hub
+description: Hand-researched guide hubs for {{GAME_COUNT}} games: {{GAME_NAMES}}.
+path: /
+h1: Every guide we write, under one roof
+kicker: {{TAGLINE}}
+lede: {{BRAND}} is the home of our game guide collection. Each game gets a full, self-contained guide hub — boss strategies, builds, monster data, achievements, endings and patch tracking — researched from the live game and official sources, then kept current after every update.
+-->
+{{HERO}}
 
-{{HD}}
+<section class="sect" id="games">
+  <h2>{{T:hub_games_heading}}</h2>
+  <p class="sub">Every hub below is a complete standalone guide site with its own navigation, its own category pages and its own patch tracking. Page counts and revision dates are counted from the published pages themselves.</p>
+  {{GAMES_GRID}}
+</section>
 
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <p class="kicker">{{TAGLINE}}</p>
-      <h1>Every guide we write,<br>under one roof.</h1>
-      <p class="lede">Lootlore is the home of our game guide collection. Each game gets a full, self-contained guide hub — boss strategies, builds, monster data, achievements, endings and patch tracking — researched from the live game and official sources, then kept current after every update.</p>
-      <a class="cta" href="#games">Browse the guides</a>
+<section class="sect" id="recent">
+  <h2>{{T:hub_recent_heading}}</h2>
+  <p class="sub">The most recently revised guide pages across every hub, newest first. The full log is on the <a href="/updates">updates page</a>.</p>
+  {{RECENT}}
+</section>
+
+<section class="sect" id="all-guides">
+  <h2>{{T:hub_index_heading}}</h2>
+  <p class="sub">The complete list, grouped by game and then by section — the fallback entry point when you would rather scan than search.</p>
+  {{ALL_GUIDES}}
+</section>
+
+<section class="sect" id="method">
+  <h2>{{T:hub_about_heading}}</h2>
+  <p class="sub">The same standard applies to every game here, and it is what separates a guide you can trust from a page that merely ranks.</p>
+  <details class="fq">
+    <summary>Facts come first</summary>
+    <div class="fq-b">
+      <p>Nothing on this site is written from memory or guesswork. Boss names, item stats, achievement rates and patch numbers are pulled from official store pages, developer announcements and platform data, then cross-checked in the running game.</p>
+      <p>When two official sources disagree, we show the discrepancy instead of quietly picking one. When a number cannot be verified, the page says so.</p>
     </div>
-  </section>
-
-  <section id="games">
-    <div class="wrap">
-      <h2>Guide hubs</h2>
-      <p class="sub">{{GAME_COUNT_CAP}} games are live today; more are in research. Every hub below is a complete standalone guide site — pick your game and dive in.</p>
-      <div class="grid">
-{{GAMES_GRID}}
-      </div>
+  </details>
+  <details class="fq">
+    <summary>Kept alive after launch</summary>
+    <div class="fq-b">
+      <p>A guide written at release and never touched again is worse than no guide at all. Each hub tracks patches and revisits its pages as the game changes — difficulty rebalances, new content, fixed exploits. See what shipped recently across every game on the <a href="/updates">patch tracker</a>.</p>
+      <p>Pages carry the date they were last reviewed and the game version they were checked against, so you always know how fresh the advice is.</p>
     </div>
-  </section>
-
-  <section id="method">
-    <div class="wrap">
-      <h2>How these guides are made</h2>
-      <p class="sub">The same standard applies to every game on Lootlore, and it is what separates a guide you can trust from a page that merely ranks.</p>
-      <div class="cols">
-        <div class="col">
-          <h3>Facts come first</h3>
-          <p>Nothing on this site is written from memory or guesswork. Boss names, item stats, achievement rates and patch numbers are pulled from official store pages, developer announcements and platform data, then cross-checked in the running game.</p>
-          <p>When two official sources disagree, we show the discrepancy instead of quietly picking one. When a number cannot be verified, the page says so.</p>
-        </div>
-        <div class="col">
-          <h3>Kept alive after launch</h3>
-          <p>A guide written at release and never touched again is worse than no guide at all. Each hub tracks patches and revisits its pages as the game changes — difficulty rebalances, new content, fixed exploits. See what shipped recently across every game on the <a href="/updates">patch tracker</a>.</p>
-          <p>Pages carry the date they were last reviewed and the game version they were checked against, so you always know how fresh the advice is.</p>
-        </div>
-        <div class="col">
-          <h3>Depth over volume</h3>
-          <p>We would rather cover fewer games completely than many games thinly. A hub only joins Lootlore once it can answer the questions players actually search for — from &ldquo;is it worth buying&rdquo; to the last hidden achievement. Browse everything by topic on the <a href="/guides">guides index</a>.</p>
-        </div>
-        <div class="col">
-          <h3>Independent and unofficial</h3>
-          <p>Lootlore is a fan-made resource with no affiliation to any developer or publisher. Screenshots and artwork remain the property of their studios and are credited on every page where they appear. Read more in our <a href="/editorial-policy">editorial policy</a>.</p>
-        </div>
-      </div>
+  </details>
+  <details class="fq">
+    <summary>Depth over volume</summary>
+    <div class="fq-b">
+      <p>We would rather cover fewer games completely than many games thinly. A hub only joins this site once it can answer the questions players actually search for — from &ldquo;is it worth buying&rdquo; to the last hidden achievement. Browse everything by topic on the <a href="/guides">guides index</a>, or by tool on the <a href="/tools">tools page</a>.</p>
     </div>
-  </section>
-</main>
-
-{{FT}}
-
-</body>
-</html>
+  </details>
+  <details class="fq">
+    <summary>Independent and unofficial</summary>
+    <div class="fq-b">
+      <p>{{BRAND}} is a fan-made resource with no affiliation to any developer or publisher. Screenshots and artwork remain the property of their studios and are credited on every page where they appear. Read more in our <a href="/editorial-policy">editorial policy</a>.</p>
+    </div>
+  </details>
+</section>

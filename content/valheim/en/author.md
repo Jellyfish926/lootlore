@@ -3,7 +3,7 @@ slug: "author"
 url: "/valheim/author/"
 title: "Author: Jellyfi, Valheim Guide Editor"
 seoTitle: "Jellyfi: Valheim Guide Author and Sources"
-description: "Jellyfi is the credited author of the Lootlore Valheim guides. This page explains how the guides are researched, how the dates and sources are labelled, how to report an error, and lists every published guide."
+description: "Jellyfi is the credited author of the {{BRAND}} Valheim guides. This page explains how the guides are researched, how the dates and sources are labelled, how to report an error, and lists every published guide."
 category: "Author"
 language: "en"
 type: "author"
@@ -17,7 +17,7 @@ author: "Jellyfi"
 ---
 # Author: Jellyfi, Valheim Guide Editor
 
-Jellyfi is the editorial byline on Lootlore, responsible for researching, publishing and maintaining the [Valheim guides](/valheim/) on this site. Every guide published under that byline is listed below.
+Jellyfi is the editorial byline on {{BRAND}}, responsible for researching, publishing and maintaining the [Valheim guides](/valheim/) on this site. Every guide published under that byline is listed below.
 
 ## How these guides are researched
 

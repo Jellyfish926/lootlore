@@ -1,0 +1,1111 @@
+{
+  "fetched": "2026-09-21",
+  "game_version": "29 July 2026 patch",
+  "sources_note": "Primary source: sources/shift/ (on-site static HTML snapshot of shiftatmidnightwiki.site, 52 pages, synced from Jellyfish926/shift-at-midnight-wiki, sha 732bb7a). Every fact below was read directly off a page in that snapshot; nothing here was inferred, estimated, or pulled from outside sources not already cited BY the site itself. Where a page cites a first-party or outlet source with a URL (Steam, KeenGamer, DualShockers, Destructoid, TheGamer, AllThings.How, GameRant, SteamDB, the developer's own X account), that URL is used as source_url. Where a fact is the wiki's own editorial synthesis with no external citation (e.g. the 'seven threats' grouping, the glossary term count), source_tier: 'onsite' is set and only the wiki's own page(s) are cited. Steam AppID (3722330) and demo AppID (4050060) were both read directly from on-site content (index.html, demo/), never guessed. No Steam API calls were made in this pass; all Steam stats used here are the wiki's own citations of Steam's public pages, already present on-site. Where the site's own pages disagree (two different numbers, two different claims), BOTH values are kept with their own sources rather than one being chosen as correct; see each entity's unverified_fields. No 'code' (redemption code) entities exist in this file: the site explicitly states there is no redemption-code system at all. Only the 5 of 47 reported named doppelgangers that the site itself documents are included; no weapon list and no night-by-night shift schedule exist on this wiki, so none are built here either.",
+  "entities": {
+    "end-grave-decision": {
+      "type": "ending",
+      "name_en": "Grave Decision",
+      "name_zh": "Grave Decision",
+      "page_slug": "endings/grave-decision",
+      "order": 1,
+      "trigger_en": "Call Sheriff Clyde after Shift 12 (savings balance is irrelevant on this branch)",
+      "prior_choice_en": "Called Clyde",
+      "money_threshold_usd": 250,
+      "money_condition_en": "irrelevant",
+      "shift_checked": 13,
+      "outcome_en": "Your pet gets the surgery and survives. Clyde dies.",
+      "steam_hidden": true,
+      "steam_unlock_pct": 33.1,
+      "steam_unlock_pct_as_of": "2026-08-13",
+      "steam_unlock_pct_newer": 34.8,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_gamerscore": 100,
+      "linked_achievement_id": "ach-grave-decision",
+      "conditions_source": "https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/",
+      "rates_source": "https://steamcommunity.com/stats/3722330/achievements/",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/endings/",
+        "https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/endings/grave-decision/"
+      ],
+      "accessed": "2026-08-13",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (site carries two unreconciled readings of this stat: the 13 Aug 2026 reading used by /endings/ and /achievements/ vs. the 7 Sep 2026 / 2026-09-14 reading used by the per-ending subpage's 'two readings' box and the /tools/ achievement-tracker widget; not reconciled on-site, both kept here)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "historical_pre_correction_note_en": "endings/ states unlock rates were ‘Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%)’, and llms.txt independently carries the same three stale figures. Neither source explicitly re-labels which of the three uncorrected numbers belongs to which named ending, so no specific historical percentage is assigned to this entity here rather than guessed from table position."
+    },
+    "end-true-ending": {
+      "type": "ending",
+      "name_en": "True Ending",
+      "name_zh": "True Ending",
+      "page_slug": "endings/true-ending",
+      "order": 2,
+      "trigger_en": "Do NOT call Sheriff Clyde after Shift 12, AND finish Shift 13 with savings of $250 or more",
+      "prior_choice_en": "Did not call Clyde",
+      "money_threshold_usd": 250,
+      "money_condition_en": "at_or_above_250",
+      "shift_checked": 13,
+      "outcome_en": "Pet and Clyde both survive. The Dentist appears and Clyde helps destroy him.",
+      "steam_hidden": true,
+      "steam_unlock_pct": 16.0,
+      "steam_unlock_pct_as_of": "2026-08-13",
+      "steam_unlock_pct_newer": 16.1,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_gamerscore": 200,
+      "linked_achievement_id": "ach-true-ending",
+      "conditions_source": "https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/",
+      "rates_source": "https://steamcommunity.com/stats/3722330/achievements/",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/endings/",
+        "https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/endings/true-ending/"
+      ],
+      "accessed": "2026-08-13",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (site carries two unreconciled readings of this stat: the 13 Aug 2026 reading used by /endings/ and /achievements/ vs. the 7 Sep 2026 / 2026-09-14 reading used by the per-ending subpage's 'two readings' box and the /tools/ achievement-tracker widget; not reconciled on-site, both kept here)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "historical_pre_correction_note_en": "endings/ states unlock rates were ‘Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%)’, and llms.txt independently carries the same three stale figures. Neither source explicitly re-labels which of the three uncorrected numbers belongs to which named ending, so no specific historical percentage is assigned to this entity here rather than guessed from table position."
+    },
+    "end-empty-home": {
+      "type": "ending",
+      "name_en": "Empty Home",
+      "name_zh": "Empty Home",
+      "page_slug": "endings/empty-home",
+      "order": 3,
+      "trigger_en": "Do NOT call Sheriff Clyde after Shift 12, AND finish Shift 13 with savings under $250",
+      "prior_choice_en": "Did not call Clyde",
+      "money_threshold_usd": 250,
+      "money_condition_en": "under_250",
+      "shift_checked": 13,
+      "outcome_en": "Clyde survives, but you cannot pay for the surgery. Your pet dies.",
+      "steam_hidden": true,
+      "steam_unlock_pct": 10.1,
+      "steam_unlock_pct_as_of": "2026-08-13",
+      "steam_unlock_pct_newer": 10.8,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_gamerscore": 100,
+      "linked_achievement_id": "ach-empty-home",
+      "conditions_source": "https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/",
+      "rates_source": "https://steamcommunity.com/stats/3722330/achievements/",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/endings/",
+        "https://www.keengamer.com/articles/guides/shift-at-midnight-how-to-get-all-endings/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/endings/empty-home/"
+      ],
+      "accessed": "2026-08-13",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (site carries two unreconciled readings of this stat: the 13 Aug 2026 reading used by /endings/ and /achievements/ vs. the 7 Sep 2026 / 2026-09-14 reading used by the per-ending subpage's 'two readings' box and the /tools/ achievement-tracker widget; not reconciled on-site, both kept here)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "historical_pre_correction_note_en": "endings/ states unlock rates were ‘Corrected 5 August 2026 (previously 26.0% / 13.4% / 7.0%)’, and llms.txt independently carries the same three stale figures. Neither source explicitly re-labels which of the three uncorrected numbers belongs to which named ending, so no specific historical percentage is assigned to this entity here rather than guessed from table position."
+    },
+    "mon-marionette": {
+      "type": "threat",
+      "name_en": "Marionette",
+      "name_zh": "Marionette",
+      "page_slug": "monsters/marionette",
+      "order": 1,
+      "hostile": true,
+      "appears_en": "From Shift 9, Story Mode",
+      "killable": true,
+      "counter_en": "Hold E on the music box (Jack-in-the-Box) to rewind it before the melody finishes three times, or it summons the Marionette. The 23 July 2026 patch cut its health.",
+      "achievement_id": "ach-last-performance",
+      "achievement_name_en": "Last Performance",
+      "achievement_unlock_pct": 41.6,
+      "achievement_unlock_pct_note": "monsters/compare/'s own reading (11 Sep 2026); see the linked achievement entity for the full dual-reading history.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/marionette/",
+        "https://shiftatmidnightwiki.site/tools/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mon-entity": {
+      "type": "threat",
+      "name_en": "Entity",
+      "name_zh": "Entity",
+      "page_slug": "monsters/entity",
+      "order": 2,
+      "hostile": true,
+      "appears_en": "End of any shift where a doppelganger's purchase completed, or any Blood Moon shift (forced regardless of counter performance)",
+      "killable": true,
+      "counter_en": "Weapons, traps and barricades all contribute; it is blind and tracks sound, including proximity voice chat.",
+      "achievement_id": "ach-still-breathing",
+      "achievement_name_en": "Still Breathing (survive)",
+      "achievement_unlock_pct": 93.8,
+      "achievement_unlock_pct_note": "monsters/compare/'s own reading (11 Sep 2026); see the linked achievement entity for the full dual-reading history.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/entity/",
+        "https://shiftatmidnightwiki.site/tools/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mon-demented": {
+      "type": "threat",
+      "name_en": "Demented",
+      "name_zh": "Demented",
+      "page_slug": "monsters/demented",
+      "order": 3,
+      "hostile": true,
+      "appears_en": "Appears during regular shifts",
+      "killable": false,
+      "counter_en": "Freezes only while you look directly at it, and cannot be damaged while you look at it either; confirmed counter is breaking your gaze and leading it into a trap.",
+      "achievement_id": "ach-freed",
+      "achievement_name_en": "Freed",
+      "achievement_unlock_pct": 79.8,
+      "achievement_unlock_pct_note": "monsters/compare/'s own reading (11 Sep 2026); see the linked achievement entity for the full dual-reading history.",
+      "killable_note_en": "Not killable by gunfire while in the frozen/watched state; the game's own counter is behavioural, not a weapon.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/demented/",
+        "https://shiftatmidnightwiki.site/tools/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mon-shrieking-doll": {
+      "type": "threat",
+      "name_en": "Shrieking Doll",
+      "name_zh": "Shrieking Doll",
+      "page_slug": "monsters/shrieking-doll",
+      "order": 4,
+      "hostile": true,
+      "appears_en": "Appears during regular shifts, usually alongside Entities during hunts",
+      "killable": true,
+      "counter_en": "The most fragile threat in the game — a few shots. The real cost is the noise it makes, which pulls other threats onto you.",
+      "achievement_id": "ach-silenced",
+      "achievement_name_en": "Silenced",
+      "achievement_unlock_pct": 89.8,
+      "achievement_unlock_pct_note": "monsters/compare/'s own reading (11 Sep 2026); see the linked achievement entity for the full dual-reading history.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/shrieking-doll/",
+        "https://shiftatmidnightwiki.site/tools/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mon-dentist": {
+      "type": "threat",
+      "name_en": "The Dentist",
+      "name_zh": "The Dentist",
+      "page_slug": "monsters/dentist",
+      "order": 5,
+      "hostile": true,
+      "appears_en": "Shift 13 only, the final story shift",
+      "killable": false,
+      "counter_en": "Firearms and melee are confirmed ineffective. Only Sheriff Clyde ends the encounter, in a cutscene — running toward him is the entire counterplay.",
+      "achievement_id": null,
+      "achievement_name_en": null,
+      "achievement_unlock_pct": null,
+      "achievement_unlock_pct_note": null,
+      "achievement_status_en": "Confirmed absence, not a gap: monsters/compare/ states this threat has no dedicated achievement (Dentist: ‘No achievement of its own’; Norbert: ‘No dedicated achievement’; Rake: none of the 10 achievements mention it, all ten predate its 29 July 2026 addition).",
+      "killable_note_en": "Cannot be killed by any means available to the player.",
+      "story_relevance_en": "The Dentist's outcome on Shift 13 is tied to the ending decision (calling/not calling Sheriff Clyde); see end-grave-decision / end-true-ending / end-empty-home.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/the-dentist/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://shiftatmidnightwiki.site/endings/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mon-norbert": {
+      "type": "threat",
+      "name_en": "Norbert",
+      "name_zh": "Norbert",
+      "page_slug": "monsters/norbert",
+      "order": 6,
+      "hostile": false,
+      "appears_en": null,
+      "killable": null,
+      "counter_en": "Sparing him ends it cleanly; killing him triggers repeated non-lethal pranks for the rest of the shift (poisoned lemonade stand, motorcycle stunt, dressed as a girl). The kill-consequence detail is single-sourced to AllThings.How, not independently confirmed elsewhere on this wiki.",
+      "achievement_id": null,
+      "achievement_name_en": null,
+      "achievement_unlock_pct": null,
+      "achievement_unlock_pct_note": null,
+      "achievement_status_en": "Confirmed absence, not a gap: monsters/compare/ states this threat has no dedicated achievement (Dentist: ‘No achievement of its own’; Norbert: ‘No dedicated achievement’; Rake: none of the 10 achievements mention it, all ten predate its 29 July 2026 addition).",
+      "classification_en": "A doppelganger-category customer, not a hostile monster — his ID genuinely scans as fake (a correct-but-misleading flag), per DualShockers' classification.",
+      "doppelganger_reported_type_en": "Magical, annoying gnome (DualShockers)",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/norbert/",
+        "https://shiftatmidnightwiki.site/nights-and-levels/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/",
+        "https://allthings.how/shift-at-midnight-what-sparing-norbert-does-to-your-shift/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "appears_en (appearance night is contradicted on-site: nights-and-levels/ states 'consistently reported on Night 2' twice, and tools/index.html repeats 'Night 2' in a warning box, but monsters/norbert/ explicitly retracts this same claim as unsourced — 'we have removed the claim that used to sit on this page ... no source we can verify supports it'; not reconciled, so no night is asserted here)",
+        "killable (site frames Norbert as neither a normal kill-target nor unkillable like the Dentist — sparing vs. killing is a choice with different consequences, not a lethality question; left null rather than forced into true/false)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mon-rake": {
+      "type": "threat",
+      "name_en": "Rake",
+      "name_zh": "Rake",
+      "page_slug": "monsters/rake",
+      "order": 7,
+      "hostile": true,
+      "appears_en": "Post-Story Endless Mode only, added by the 29 July 2026 patch",
+      "killable": true,
+      "counter_en": "Developer's own instruction (posted by @ShiftAtMidnight on X, 3 Aug 2026): shoot it before it reaches the playable area.",
+      "achievement_id": null,
+      "achievement_name_en": null,
+      "achievement_unlock_pct": null,
+      "achievement_unlock_pct_note": null,
+      "achievement_status_en": "Confirmed absence, not a gap: monsters/compare/ states this threat has no dedicated achievement (Dentist: ‘No achievement of its own’; Norbert: ‘No dedicated achievement’; Rake: none of the 10 achievements mention it, all ten predate its 29 July 2026 addition).",
+      "added_patch_en": "29 July 2026 patch",
+      "spawn_point_en": "Emerges from the forest surrounding the gas station (developer-confirmed)",
+      "no_achievement_reason_en": "None of the 10 Steam achievements mention the Rake; all ten predate its 29 July 2026 addition.",
+      "developer_source": "https://x.com/ShiftAtMidnight",
+      "secondary_reporting_en": "Health, damage, speed, and whether it can be trapped instead of shot are NOT developer-confirmed; the wiki's own Rake page and nights-and-levels/ both explicitly refuse to publish invented figures for these. Behavioural detail beyond the one developer sentence traces to a single secondary source (AllThings.How) and is flagged there as unconfirmed by Kwalee directly.",
+      "secondary_source": "https://allthings.how/shift-at-midnight-how-to-deal-with-rakes-in-endless-mode/",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/monsters/rake/",
+        "https://shiftatmidnightwiki.site/nights-and-levels/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://x.com/ShiftAtMidnight",
+        "https://allthings.how/shift-at-midnight-how-to-deal-with-rakes-in-endless-mode/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "hp / damage / speed (explicitly stated as unconfirmed and not invented by monsters/rake/ and nights-and-levels/ alike; omitted here rather than estimated)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "dop-nathan-calloway": {
+      "type": "doppelganger",
+      "name_en": "Nathan Calloway",
+      "name_zh": "Nathan Calloway",
+      "page_slug": "doppelgangers/nathan-calloway",
+      "tell_en": "The database says the real Nathan is dead.",
+      "documented_on_wiki": 5,
+      "reported_total_named": 47,
+      "reported_total_source": "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/",
+      "why_only_five_en": "Wiki's own editorial choice: 'listing all of them in advance replaces the game with a lookup table — and because we have not verified the rest.'",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "dop-natasha-lin": {
+      "type": "doppelganger",
+      "name_en": "Natasha Lin",
+      "name_zh": "Natasha Lin",
+      "page_slug": "doppelgangers/natasha-lin",
+      "tell_en": "Describes working a morning shift at a place that only opens at night.",
+      "documented_on_wiki": 5,
+      "reported_total_named": 47,
+      "reported_total_source": "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/",
+      "why_only_five_en": "Wiki's own editorial choice: 'listing all of them in advance replaces the game with a lookup table — and because we have not verified the rest.'",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "dop-agnes-wells": {
+      "type": "doppelganger",
+      "name_en": "Agnes Wells",
+      "name_zh": "Agnes Wells",
+      "page_slug": "doppelgangers/agnes-wells",
+      "tell_en": "The real Agnes Wells is three years old.",
+      "documented_on_wiki": 5,
+      "reported_total_named": 47,
+      "reported_total_source": "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/",
+      "why_only_five_en": "Wiki's own editorial choice: 'listing all of them in advance replaces the game with a lookup table — and because we have not verified the rest.'",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "dop-ray-rowland": {
+      "type": "doppelganger",
+      "name_en": "Ray Rowland",
+      "name_zh": "Ray Rowland",
+      "page_slug": "doppelgangers/ray-rowland",
+      "tell_en": "His neck is far too long.",
+      "documented_on_wiki": 5,
+      "reported_total_named": 47,
+      "reported_total_source": "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/",
+      "why_only_five_en": "Wiki's own editorial choice: 'listing all of them in advance replaces the game with a lookup table — and because we have not verified the rest.'",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "dop-net-pongsak": {
+      "type": "doppelganger",
+      "name_en": "Net Pongsak",
+      "name_zh": "Net Pongsak",
+      "page_slug": "doppelgangers/net-pongsak",
+      "tell_en": "He is floating.",
+      "documented_on_wiki": 5,
+      "reported_total_named": 47,
+      "reported_total_source": "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/",
+      "why_only_five_en": "Wiki's own editorial choice: 'listing all of them in advance replaces the game with a lookup table — and because we have not verified the rest.'",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://www.dualshockers.com/shift-at-midnight-all-doppelgangers/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-first-blood": {
+      "type": "achievement",
+      "name_en": "First Blood",
+      "name_zh": "First Blood",
+      "page_slug": "achievements/first-blood",
+      "order": 1,
+      "hidden_in_game": false,
+      "requirement_en": "Kill your first customer",
+      "steam_unlock_pct": 96.9,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 96.6,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/monster-kills/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 96.9% as of 12 Aug 2026 on /achievements/, vs 96.6% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 96.9% figure; not reconciled anywhere on-site)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-still-breathing": {
+      "type": "achievement",
+      "name_en": "Still Breathing",
+      "name_zh": "Still Breathing",
+      "page_slug": "achievements/still-breathing",
+      "order": 2,
+      "hidden_in_game": false,
+      "requirement_en": "Survive your first hunt",
+      "steam_unlock_pct": 93.8,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 93.5,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/hunt-and-arsenal/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 93.8% as of 12 Aug 2026 on /achievements/, vs 93.5% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 93.8% figure; not reconciled anywhere on-site)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-silenced": {
+      "type": "achievement",
+      "name_en": "Silenced",
+      "name_zh": "Silenced",
+      "page_slug": "achievements/silenced",
+      "order": 3,
+      "hidden_in_game": false,
+      "requirement_en": "Kill a Shrieking Doll",
+      "steam_unlock_pct": 89.8,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 89.5,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "note_en": "Linked threat: mon-shrieking-doll.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/monster-kills/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 89.8% as of 12 Aug 2026 on /achievements/, vs 89.5% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 89.8% figure; not reconciled anywhere on-site)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-freed": {
+      "type": "achievement",
+      "name_en": "Freed",
+      "name_zh": "Freed",
+      "page_slug": "achievements/freed",
+      "order": 4,
+      "hidden_in_game": false,
+      "requirement_en": "Kill a Demented",
+      "steam_unlock_pct": 79.8,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 79.8,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "note_en": "Linked threat: mon-demented. Only achievement whose two on-site readings are identical.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/monster-kills/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-relentless": {
+      "type": "achievement",
+      "name_en": "Relentless",
+      "name_zh": "Relentless",
+      "page_slug": "achievements/relentless",
+      "order": 5,
+      "hidden_in_game": false,
+      "requirement_en": "Finish a hunt within 30 seconds",
+      "steam_unlock_pct": 45.4,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 45.3,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/hunt-and-arsenal/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 45.4% as of 12 Aug 2026 on /achievements/, vs 45.3% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 45.4% figure; not reconciled anywhere on-site)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-last-performance": {
+      "type": "achievement",
+      "name_en": "Last Performance",
+      "name_zh": "Last Performance",
+      "page_slug": "achievements/last-performance",
+      "order": 6,
+      "hidden_in_game": false,
+      "requirement_en": "Kill a Marionette",
+      "steam_unlock_pct": 41.6,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 43.7,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "note_en": "Linked threat: mon-marionette. The only non-hidden achievement whose newer reading is HIGHER than the older one (all other non-hidden ones fell slightly or held flat); /achievements/monster-kills/ flags this explicitly and states the site has not established why.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/monster-kills/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 41.6% as of 12 Aug 2026 on /achievements/, vs 43.7% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 41.6% figure; not reconciled anywhere on-site)",
+        "direction_of_change (site itself has not established why this figure rose while comparable non-hidden achievements fell or held flat — reported as an open question, not resolved here)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-grave-decision": {
+      "type": "achievement",
+      "name_en": "Grave Decision",
+      "name_zh": "Grave Decision",
+      "page_slug": "achievements/grave-decision",
+      "order": 7,
+      "hidden_in_game": true,
+      "requirement_en": null,
+      "steam_unlock_pct": 33.1,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 34.8,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "linked_ending_id": "end-grave-decision",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 33.1% as of 12 Aug 2026 on /achievements/, vs 34.8% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 33.1% figure; not reconciled anywhere on-site)",
+        "requirement_en (Steam hides this achievement's description in-game; /achievements/ explicitly states 'We are not going to invent requirements for them' and gives only rarity-based inference, not a confirmed trigger. A trigger condition FOR THE SAME OUTCOME is published, sourced to KeenGamer, on the linked ending entity — the achievements page and the endings page are not reconciled with each other on this point.)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-locked-and-loaded": {
+      "type": "achievement",
+      "name_en": "Locked And Loaded",
+      "name_zh": "Locked And Loaded",
+      "page_slug": "achievements/locked-and-loaded",
+      "order": 8,
+      "hidden_in_game": false,
+      "requirement_en": "Purchase all melee weapons & fill out the weapons arsenal",
+      "steam_unlock_pct": 23.5,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 22.2,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "note_en": "A budgeting achievement, not a skill one; no per-weapon list or prices are published on this wiki (see 'not built' notes — no weapon/item entity type exists in this dataset).",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/",
+        "https://shiftatmidnightwiki.site/achievements/hunt-and-arsenal/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 23.5% as of 12 Aug 2026 on /achievements/, vs 22.2% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 23.5% figure; not reconciled anywhere on-site)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-true-ending": {
+      "type": "achievement",
+      "name_en": "True Ending",
+      "name_zh": "True Ending",
+      "page_slug": "achievements/true-ending",
+      "order": 9,
+      "hidden_in_game": true,
+      "requirement_en": null,
+      "steam_unlock_pct": 16.0,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 16.1,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "linked_ending_id": "end-true-ending",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 16.0% as of 12 Aug 2026 on /achievements/, vs 16.1% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 16.0% figure; not reconciled anywhere on-site)",
+        "requirement_en (Steam hides this achievement's description in-game; /achievements/ explicitly states 'We are not going to invent requirements for them' and gives only rarity-based inference, not a confirmed trigger. A trigger condition FOR THE SAME OUTCOME is published, sourced to KeenGamer, on the linked ending entity — the achievements page and the endings page are not reconciled with each other on this point.)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "ach-empty-home": {
+      "type": "achievement",
+      "name_en": "Empty Home",
+      "name_zh": "Empty Home",
+      "page_slug": "achievements/empty-home",
+      "order": 10,
+      "hidden_in_game": true,
+      "requirement_en": null,
+      "steam_unlock_pct": 10.1,
+      "steam_unlock_pct_as_of": "2026-08-12",
+      "steam_unlock_pct_newer": 10.8,
+      "steam_unlock_pct_newer_as_of": "2026-09-14",
+      "xbox_note_en": "Tracked separately as an Xbox achievement with the same requirement; this wiki quotes Steam global unlock rates because they are the ones publicly readable.",
+      "linked_ending_id": "end-empty-home",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/achievements/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://steamcommunity.com/stats/3722330/achievements/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "steam_unlock_pct_newer (two unreconciled Steam-stat readings exist on-site for this achievement: 10.1% as of 12 Aug 2026 on /achievements/, vs 10.8% as of 2026-09-14 on /tools/'s achievement-tracker widget — and that SAME /tools/ page's own prose, two paragraphs below the widget, still cites the old 10.1% figure; not reconciled anywhere on-site)",
+        "requirement_en (Steam hides this achievement's description in-game; /achievements/ explicitly states 'We are not going to invent requirements for them' and gives only rarity-based inference, not a confirmed trigger. A trigger condition FOR THE SAME OUTCOME is published, sourced to KeenGamer, on the linked ending entity — the achievements page and the endings page are not reconciled with each other on this point.)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mech-quick-facts": {
+      "type": "mechanic",
+      "name_en": "Shift At Midnight — quick facts",
+      "name_zh": "Shift At Midnight — quick facts",
+      "page_slug": "mechanics/quick-facts",
+      "summary_en": "Core release facts for Shift At Midnight: a 3-player (design) co-op horror game about verifying customers at a counter, built by a solo developer and published by Kwalee.",
+      "developer_en": "Bun Muen (solo developer)",
+      "publisher_en": "Kwalee",
+      "release_date": "2026-07-22",
+      "steam_appid": 3722330,
+      "demo_appid": 4050060,
+      "demo_name_en": "Shift At Midnight Multiplayer Demo",
+      "demo_released": "2025-09-29",
+      "price_usd": 9.99,
+      "launch_discount_en": "10% introductory offer, ended 29 July 2026",
+      "platforms_available_en": [
+        "Steam (PC)",
+        "Microsoft Store (PC)",
+        "Xbox Series X|S",
+        "PC Game Pass",
+        "Xbox Game Pass"
+      ],
+      "platforms_not_available_en": [
+        "PlayStation 5",
+        "PlayStation 4",
+        "Nintendo Switch",
+        "iOS / App Store",
+        "Android / Play Store",
+        "VR"
+      ],
+      "xbox_play_anywhere": true,
+      "max_players_by_design": 3,
+      "max_players_selectable": 6,
+      "max_players_selectable_since_en": "23 July 2026 patch",
+      "voice_chat_en": "Proximity chat (distance-based)",
+      "languages_count": 9,
+      "achievements_count": 10,
+      "endings_count": 3,
+      "steam_cloud_supported": false,
+      "pc_controller_support": false,
+      "game_version_label_en": "29 July 2026 patch (latest verified on-site; no numbered version scheme found)",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/",
+        "https://store.steampowered.com/app/3722330/Shift_At_Midnight/",
+        "https://shiftatmidnightwiki.site/platforms/",
+        "https://shiftatmidnightwiki.site/multiplayer/",
+        "https://shiftatmidnightwiki.site/review/",
+        "https://shiftatmidnightwiki.site/demo/",
+        "https://shiftatmidnightwiki.site/cheats/",
+        "https://shiftatmidnightwiki.site/system-requirements/",
+        "https://shiftatmidnightwiki.site/controls/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mech-crossplay": {
+      "type": "mechanic",
+      "name_en": "Crossplay",
+      "name_zh": "Crossplay",
+      "page_slug": "mechanics/crossplay",
+      "summary_en": "Partial crossplay: Xbox Series X|S and PC Game Pass/Microsoft Store players share one matchmaking pool via Xbox Play Anywhere. Steam is a separate, isolated pool. Steam cannot play with either of the other two.",
+      "status_en": "Partial — two pools, not four: Steam (alone) vs. Xbox+PC Game Pass+Microsoft Store (shared)",
+      "future_crossplay_en": "crossplay/ states the developer has confirmed full crossplay and a public server browser as a planned post-release update, with no date attached ('described as temporary, not permanent').",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/crossplay/",
+        "https://shiftatmidnightwiki.site/multiplayer/",
+        "https://shiftatmidnightwiki.site/tools/",
+        "https://shiftatmidnightwiki.site/platforms/"
+      ],
+      "accessed": "2026-07-28",
+      "unverified_fields": [
+        "future_crossplay_en (nights-and-levels/ separately states 'Steam crossplay is not on any roadmap we can verify', in apparent tension with crossplay/'s 'developer has stated full crossplay ... will arrive in a post-release update'; not reconciled on-site — recorded here as an additional finding beyond the task's listed contradictions)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mech-night-shift-system": {
+      "type": "mechanic",
+      "name_en": "Story Mode: shifts",
+      "name_zh": "Story Mode: shifts",
+      "page_slug": "mechanics/story-mode",
+      "summary_en": "Story Mode runs 13 procedurally generated shifts to a conclusion. No fixed per-night monster schedule is published or verifiable on this wiki; only three beats are fixed across every run.",
+      "story_mode_shift_count": 13,
+      "generation_en": "Procedurally generated, not level-based — two players on the same numbered shift report different events. No night-by-night table exists on this wiki by policy.",
+      "fixed_beats_en": [
+        "Shift 9: the music box (Jack-in-the-Box) beat turns on; a N.E.T. email warns the player.",
+        "After Shift 12: the Sheriff Clyde decision, which (with the Shift-13 savings check) determines which of the 3 endings the run gets.",
+        "Shift 13: the final shift; The Dentist appears, and this is where the money threshold is checked."
+      ],
+      "blood_moon_en": "A guaranteed-Hunt shift: blood rain falls and the Entity comes regardless of how well the player did at the counter.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/nights-and-levels/",
+        "https://shiftatmidnightwiki.site/endings/",
+        "https://shiftatmidnightwiki.site/glossary/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mech-endless-mode": {
+      "type": "mechanic",
+      "name_en": "Post-Story Endless Mode",
+      "name_zh": "Post-Story Endless Mode",
+      "page_slug": "mechanics/endless-mode",
+      "summary_en": "An open beta mode, in the game since launch day, that unlocks once a player finishes all 13 Story Mode shifts. The finished version is a separate free Q4 2026 update. The Rake threat is exclusive to this mode.",
+      "beta_status_en": "In the game since launch day, 22 July 2026",
+      "unlock_condition_en": "Finish all 13 Story Mode shifts",
+      "full_version_en": "Free update planned for Q4 2026 (the beta already exists; Q4 2026 is the finished version, not the mode's first appearance)",
+      "developer_quote_en": "“infinite nights, only unlockable after completing story mode” / “an unfinished gamemode, hence the beta” (attributed by nights-and-levels/ to the developer's own site)",
+      "exclusive_content_en": "The Rake (mon-rake) is exclusive to Post-Story Endless Mode and never appears in Story Mode.",
+      "has_own_ending": false,
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/nights-and-levels/",
+        "https://shiftatmidnightwiki.site/monsters/rake/",
+        "https://shiftatmidnightwiki.site/crossplay/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "developer_quote_en (nights-and-levels/ attributes this quote to ‘the developer’s site’ without a direct hyperlink to the quoted page in the text this dataset was built from; recorded as onsite-sourced rather than linked to the original)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-finish-story": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Finish all 13 story shifts",
+      "name_zh": "Finish all 13 story shifts",
+      "page_slug": "mechanics/run-finish-story",
+      "summary_en": "Story Mode is 13 procedurally generated shifts; there is no night-by-night route to follow.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-shift-9": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Shift 9 music-box beat",
+      "name_zh": "Shift 9 music-box beat",
+      "page_slug": "mechanics/run-shift-9",
+      "summary_en": "From Shift 9 a N.E.T. email warns the player. Find the box (mech-jack-in-the-box) and hold E to rewind it before the melody plays three times, or it summons the Marionette (mon-marionette).",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-shift-12": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Post-Shift-12 Sheriff Clyde decision",
+      "name_zh": "Post-Shift-12 Sheriff Clyde decision",
+      "page_slug": "mechanics/run-shift-12",
+      "summary_en": "The fork that decides which of the three endings (end-grave-decision / end-true-ending / end-empty-home) the run gets.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-endless": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Unlock the Endless Mode beta",
+      "name_zh": "Unlock the Endless Mode beta",
+      "page_slug": "mechanics/run-endless",
+      "summary_en": "Endless Mode (mech-endless-mode) has been in the game since launch day and unlocks once Story Mode is finished.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-six-player": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Play a shift in a six-player lobby",
+      "name_zh": "Play a shift in a six-player lobby",
+      "page_slug": "mechanics/run-six-player",
+      "summary_en": "Lobby size became selectable up to six in the 23 July 2026 patch. The developer calls six a party mode, not the intended experience (game is 'designed and has always been marketed around a maximum of 3 players').",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-proximity": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Play a full shift in co-op with proximity chat",
+      "name_zh": "Play a full shift in co-op with proximity chat",
+      "page_slug": "mechanics/run-proximity",
+      "summary_en": "The mechanic the co-op is built around: voices fade with distance, and the Entity (mon-entity) tracks sound including proximity chat.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "run-demo": {
+      "type": "mechanic",
+      "subtype": "run_milestone",
+      "name_en": "Play the three pre-scripted shifts of the free demo",
+      "name_zh": "Play the three pre-scripted shifts of the free demo",
+      "page_slug": "mechanics/run-demo",
+      "summary_en": "A separate free Steam app (Shift At Midnight Multiplayer Demo, appid 4050060). Scripted, not generated, so it previews the loop rather than the full-game experience.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mech-jack-in-the-box": {
+      "type": "mechanic",
+      "name_en": "Jack-in-the-Box",
+      "name_zh": "Jack-in-the-Box",
+      "page_slug": "mechanics/jack-in-the-box",
+      "summary_en": "An item, not a monster — a random spawn / wind-up music box that decides the Marionette (mon-marionette) encounter from Shift 9 onward. Explicitly excluded from monsters/compare/'s 'seven threats' table because it is an object, not a threat with its own kill method or achievement.",
+      "classification_en": "Object / item",
+      "function_en": "Hold E to rewind it before the melody plays three times, or it summons the Marionette.",
+      "patch_note_en": "The 23 July 2026 patch made it louder.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/monsters/jack-in-the-box/",
+        "https://shiftatmidnightwiki.site/monsters/compare/",
+        "https://shiftatmidnightwiki.site/glossary/",
+        "https://shiftatmidnightwiki.site/tools/"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mech-doppelganger-tells": {
+      "type": "mechanic",
+      "name_en": "The seven categories of doppelganger tell",
+      "name_zh": "The seven categories of doppelganger tell",
+      "page_slug": "mechanics/doppelganger-tells",
+      "summary_en": "The seven categories of contradiction that can expose a doppelganger, per TheGamer, as compiled by this wiki's doppelganger identification guide.",
+      "categories_en": [
+        "Name or personal details do not match the ID (strongest form: the database reports the real person is dead)",
+        "Stated occupation contradicts the record",
+        "Habits or purchases do not line up with the file",
+        "Appearance or clothing contradicts the file (e.g. scar placement)",
+        "Behaviour is abnormal",
+        "The emotion readout does not match the words",
+        "The plate does not match the vehicle's registered owner"
+      ],
+      "categories_source": "https://www.thegamer.com/shift-at-midnight-spot-doppelganger-guide/",
+      "document_first_checks_en": [
+        "Does the ID have a barcode at all?",
+        "Put passports and driving licences through the computer instead of eyeballing them",
+        "Interrogate against the document (date of birth, occupation, photo vs. person)"
+      ],
+      "document_first_checks_source": "https://www.destructoid.com/all-shift-at-midnight-doppelgangers-and-how-to-identify-them/",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://www.thegamer.com/shift-at-midnight-spot-doppelganger-guide/",
+        "https://www.destructoid.com/all-shift-at-midnight-doppelgangers-and-how-to-identify-them/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mech-counter-toolkit": {
+      "type": "mechanic",
+      "name_en": "Counter toolkit",
+      "name_zh": "Counter toolkit",
+      "page_slug": "mechanics/counter-toolkit",
+      "summary_en": "The five checks the player's job gives them at the counter to identify doppelgangers. Not tracked by the game itself.",
+      "tools_en": [
+        "ID scan (answers exactly one question: is this document what it claims to be?)",
+        "N.E.T. database search by hand (no document required)",
+        "Description box on each file (registered appearance, occupation, personal details, shopping habits)",
+        "Anomaly Lens",
+        "Vehicle and plate records (a later unlock; the only check outside the building)"
+      ],
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/guide/doppelgangers/",
+        "https://shiftatmidnightwiki.site/tools/completion-tracker/",
+        "https://shiftatmidnightwiki.site/glossary/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ],
+      "source_tier": "onsite"
+    },
+    "mech-languages": {
+      "type": "mechanic",
+      "name_en": "Language support",
+      "name_zh": "Language support",
+      "page_slug": "mechanics/languages",
+      "summary_en": "9 languages, confirmed identically on both the Steam store listing and the Xbox listing. Whether all nine also have full voice audio, or are interface-and-subtitles only, is unresolved on this wiki.",
+      "language_count": 9,
+      "languages_en": [
+        "English",
+        "French",
+        "German",
+        "Spanish (Spain)",
+        "Japanese",
+        "Russian",
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "Portuguese (Brazil)"
+      ],
+      "confirmed_support_level_en": "Interface and subtitles, all nine",
+      "audio_support_status_en": "Unconfirmed / disputed",
+      "content_rating_xbox_en": "Mature 17+ (“Violence, Blood and Gore”, “Language”)",
+      "content_rating_steam_en": "Developer-described “plenty of gore and blood” (no separate age rating quoted; consistent with the Xbox descriptor)",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/languages/",
+        "https://store.steampowered.com/app/3722330/Shift_At_Midnight/",
+        "https://www.xbox.com/en-US/games/store/shift-at-midnight/9n0wdpmxnhwn",
+        "https://shiftatmidnightwiki.site/release-date/"
+      ],
+      "accessed": "2026-09-10",
+      "unverified_fields": [
+        "audio_support_status_en (this wiki's own /release-date/ page lists the nine languages as ‘interface and subtitles’ with no audio claim at all, while /languages/ says a separate reading of the Steam API elsewhere on the site suggested full voice audio for all nine; /languages/ states explicitly: ‘The two have not been reconciled, and this page is not going to pick one over the other.’ Recorded as disputed rather than resolved.)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mech-review-score": {
+      "type": "mechanic",
+      "name_en": "Steam review score",
+      "name_zh": "Steam review score",
+      "page_slug": "mechanics/review-score",
+      "summary_en": "Steam review data as read from the store page on 12 August 2026: overall Very Positive from 7,114 reviews.",
+      "steam_review_summary_en": "Very Positive",
+      "steam_review_count": 7114,
+      "steam_review_read_date": "2026-08-12",
+      "by_language_en": "English: 94% positive of 3,363 reviews; Simplified Chinese: Mostly Positive from 2,014; Russian: Very Positive from 672",
+      "diverging_tracker_note_en": "A third-party aggregator reported 8.2K reviews at 88% positive on 11 August 2026 (a day earlier than, and numerically different from, the store-page reading this wiki treats as primary). Not reconciled; the wiki explicitly states it quotes the store page because it is the primary source.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/review/",
+        "https://shiftatmidnightwiki.site/player-count/",
+        "https://store.steampowered.com/app/3722330/Shift_At_Midnight/"
+      ],
+      "accessed": "2026-08-12",
+      "unverified_fields": [
+        "diverging_tracker_note_en (third-party tracker figure is explicitly flagged by the site itself as unreconciled with the primary Steam store reading; both are recorded rather than picking one)",
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mech-itchio-prototype": {
+      "type": "mechanic",
+      "name_en": "itch.io prototype",
+      "name_zh": "itch.io prototype",
+      "page_slug": "mechanics/itchio-prototype",
+      "summary_en": "The free, single-player itch.io build the game started as, before the Steam multiplayer demo or the full release existed.",
+      "url": "https://bunmuen.itch.io/shiftatmidnight",
+      "rating_out_of_5": 4.7,
+      "rating_count": 360,
+      "rating_count_task_brief_note_en": "This dataset's brief flagged a possible 365-vs-360 split for this figure. After reading credits/ and demo/ in full, and grepping the entire on-site snapshot for '365', this wiki's snapshot states 360 in two independent places (credits/ and demo/) and never states 365 anywhere. Recorded as 360; the 365 variant was not reproducible in this snapshot.",
+      "playtime_minutes_approx": 40,
+      "mode_en": "Single-player",
+      "price_en": "Free",
+      "labels_en": [
+        "No generative AI used"
+      ],
+      "tags_en": [
+        "3D",
+        "Atmospheric",
+        "Creepy",
+        "Psychological Horror",
+        "First-Person"
+      ],
+      "categories_en": [
+        "Simulation",
+        "Horror"
+      ],
+      "relation_to_full_game_en": "Predecessor prototype; co-op was added later, on the way to the Steam multiplayer demo, and was not present in this original single-player build.",
+      "source_urls": [
+        "https://bunmuen.itch.io/shiftatmidnight",
+        "https://shiftatmidnightwiki.site/credits/",
+        "https://shiftatmidnightwiki.site/demo/"
+      ],
+      "accessed": "2026-08-05",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    },
+    "mech-patch-history": {
+      "type": "mechanic",
+      "name_en": "Patch history",
+      "name_zh": "Patch history",
+      "page_slug": "mechanics/patch-history",
+      "summary_en": "Confirmed patches on record for Shift At Midnight, and an explicit note on a patch date that appears in this dataset's task brief but not anywhere in the on-site snapshot.",
+      "patches_en": [
+        {
+          "date": "2026-07-22",
+          "label_en": "Launch build"
+        },
+        {
+          "date": "2026-07-23",
+          "label_en": "Lobby cap selectable up to 6; Marionette health cut; Jack-in-the-Box made louder",
+          "source": "https://steamdb.info/patchnotes/24354120/"
+        },
+        {
+          "date": "2026-07-29",
+          "label_en": "Patience meter removed entirely; Rake added (Post-Story Endless Mode only); second purchasable firearm added",
+          "source": "https://store.steampowered.com/news/app/3722330/view/695394018676179340"
+        }
+      ],
+      "latest_verified_patch_en": "29 July 2026 — /updates/ states ‘Nothing since 29 July’ as of 5 August 2026, and /controls/ separately states no patch content newer than 29 July 2026 has been verified as of its own last-check date.",
+      "claimed_but_unsourced_patch_note_en": "This dataset's task brief references a ‘September 1 patch’ said to be mentioned on /controls/. After a full read of /controls/, /updates/, and targeted greps for ‘September 1’, ‘Sept 1’ and ‘1 September’ across the entire on-site snapshot, no page mentions a September patch of any kind (matches found were false positives inside unrelated longer dates such as ‘11 September’). Not included as a patch here.",
+      "source_urls": [
+        "https://shiftatmidnightwiki.site/updates/",
+        "https://shiftatmidnightwiki.site/controls/",
+        "https://steamdb.info/patchnotes/24354120/",
+        "https://store.steampowered.com/news/app/3722330/view/695394018676179340"
+      ],
+      "accessed": "2026-09-11",
+      "unverified_fields": [
+        "name_zh (no Chinese-language source exists anywhere in sources/shift/; English name used as-is, matching data/valheim/entities.json's precedent for untranslated names)"
+      ]
+    }
+  },
+  "_page_slug_note": "page_slug values here are this agent's best-guess kebab-case slugs mirroring the source wiki's own URL structure (e.g. monsters/<name>, achievements/<name>); no hub/ pages for the shift site exist yet in this repo as of this pass, so these are provisional and should be reconciled by whichever pipeline agent wires this file into hub/, exactly as valheim's own entities.json describes for its equivalent field."
+}

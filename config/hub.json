@@ -1,7 +1,56 @@
 {
   "base_url": "https://lootlore-ten.vercel.app",
-  "brand": "Lootlore",
+  "brand": "LootWiki",
   "tagline": "Hand-researched game guides, one hub",
+  "theme": {
+    "bg": "#0d1316",
+    "bg2": "#131c20",
+    "panel": "#161f23",
+    "line": "#2a383e",
+    "ink": "#eef3f4",
+    "mut": "#b6c4c9",
+    "dim": "#a2b2b8",
+    "accent": "#7fc7dc",
+    "accent2": "#bfe6f1",
+    "accent-warm": "#e2a878",
+    "visited": "#d9b18f",
+    "font-head": "'Cinzel',Georgia,'Times New Roman',serif",
+    "font-body": "'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif",
+    "font-head-zh": "'Noto Serif SC','Songti SC','Source Han Serif SC','Noto Serif CJK SC',Georgia,serif",
+    "font-body-zh": "system-ui,-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
+  },
+  "font_css": "https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&display=swap",
+  "intent_nav": [
+    [
+      "nav_guides",
+      "/guides"
+    ],
+    [
+      "nav_tools",
+      "/tools"
+    ],
+    [
+      "nav_reviews",
+      "/reviews"
+    ],
+    [
+      "nav_updates",
+      "/updates"
+    ],
+    [
+      "nav_about",
+      "/about"
+    ]
+  ],
+  "tools_match": [
+    "tracker",
+    "completion tracker",
+    "calculator",
+    "quiz",
+    "compared",
+    "should you buy"
+  ],
+  "hero_game": "valheim",
   "contact_email": "zsn2740784715@gmail.com",
   "adsense_pub": "pub-6575082962774479",
   "ga4_id": "",
@@ -74,9 +123,14 @@
             "/beast-of-reincarnation/en/walkthrough"
           ]
         ],
-        "langs": "EN · 日本語 · FR · DE · IT · ES",
-        "pages": "149 pages"
-      }
+        "langs": "EN · 日本語 · FR · DE · IT · ES"
+      },
+      "entities": "data/beast/entities.json",
+      "entity_match": [
+        "page_slug",
+        "h1"
+      ],
+      "entity_max": 3
     },
     {
       "slug": "shift-at-midnight",
@@ -91,7 +145,11 @@
         "/contact/": "/contact",
         "/contact": "/contact",
         "/privacy/": "/privacy-policy",
-        "/privacy": "/privacy-policy"
+        "/privacy": "/privacy-policy",
+        "/disclaimer/": "/disclaimer",
+        "/disclaimer": "/disclaimer",
+        "/editorial-policy/": "/editorial-policy",
+        "/editorial-policy": "/editorial-policy"
       },
       "exclude_files": [
         "404.html",
@@ -104,7 +162,9 @@
       "exclude_dirs": [
         "about",
         "contact",
-        "privacy"
+        "privacy",
+        "disclaimer",
+        "editorial-policy"
       ],
       "card": {
         "genre": "Co-op Survival Horror",
@@ -135,9 +195,14 @@
             "/shift-at-midnight/tools/"
           ]
         ],
-        "langs": "EN",
-        "pages": "36 pages"
-      }
+        "langs": "EN"
+      },
+      "entities": "data/shift/entities.json",
+      "entity_match": [
+        "page_slug",
+        "h1"
+      ],
+      "entity_max": 3
     },
     {
       "slug": "dragonsword-awakening",
@@ -210,9 +275,14 @@
             "/dragonsword-awakening/guides/beginner-guide/"
           ]
         ],
-        "langs": "EN",
-        "pages": "18 pages"
-      }
+        "langs": "EN"
+      },
+      "entities": "data/dragonsword/entities.json",
+      "entity_match": [
+        "page_slug",
+        "h1"
+      ],
+      "entity_max": 3
     },
     {
       "slug": "sephiria",
@@ -285,9 +355,14 @@
             "/sephiria/builds/build-routes/"
           ]
         ],
-        "langs": "EN",
-        "pages": "31 pages"
-      }
+        "langs": "EN"
+      },
+      "entities": "data/sephiria/entities.json",
+      "entity_match": [
+        "page_slug",
+        "h1"
+      ],
+      "entity_max": 3
     },
     {
       "slug": "orc-problem",
@@ -360,9 +435,14 @@
             "/orc-problem/levels/all-achievements/"
           ]
         ],
-        "langs": "EN",
-        "pages": "18 pages"
-      }
+        "langs": "EN"
+      },
+      "entities": "data/orc/entities.json",
+      "entity_match": [
+        "page_slug",
+        "h1"
+      ],
+      "entity_max": 3
     },
     {
       "slug": "valheim",
@@ -394,23 +474,6 @@
           "date": "2026-09-17",
           "author": "Jellyfi",
           "draft": false
-        },
-        "theme": {
-          "bg": "#0d1316",
-          "bg2": "#131c20",
-          "panel": "#161f23",
-          "line": "#2a383e",
-          "ink": "#eef3f4",
-          "mut": "#b6c4c9",
-          "dim": "#8b9ba1",
-          "accent": "#7fc7dc",
-          "accent2": "#bfe6f1",
-          "accent-warm": "#d9925e",
-          "visited": "#c79a72",
-          "font-head": "'Cinzel',Georgia,'Times New Roman',serif",
-          "font-body": "'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif",
-          "font-head-zh": "'Noto Serif SC','Songti SC','Source Han Serif SC','Noto Serif CJK SC',Georgia,serif",
-          "font-body-zh": "system-ui,-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif"
         },
         "langs": [
           {
@@ -488,8 +551,7 @@
             "summon",
             "weak"
           ]
-        },
-        "font_css": "https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600&display=swap"
+        }
       },
       "card": {
         "genre": "Co-op Survival · Exploration",
@@ -520,8 +582,7 @@
             "/valheim/first-day/"
           ]
         ],
-        "langs": "EN · 中文",
-        "pages": "auto"
+        "langs": "EN · 中文"
       }
     }
   ]

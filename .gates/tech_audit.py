@@ -29,8 +29,18 @@ import sys
 from collections import Counter, defaultdict
 from urllib.parse import urlparse, urljoin
 from html.parser import HTMLParser
+from pathlib import Path
 
 ROOT = "/home/claude/work"
+
+def _hub_base():
+    for c in (Path.cwd() / "config" / "hub.json", Path(__file__).resolve().parent.parent / "config" / "hub.json"):
+        try:
+            return json.loads(c.read_text(encoding="utf-8"))["base_url"].rstrip("/")
+        except Exception:
+            continue
+    return None
+
 
 SITES = {
     "sephiria-wiki": {
@@ -66,7 +76,8 @@ SITES = {
     },
     "lootlore": {
         "html_root": f"{ROOT}/lootlore/out",
-        "base_url": "https://lootlore-ten.vercel.app",
+        # 域名不写死:优先读仓内 config/hub.json(唯一真相源),命令行 --base 仍可覆盖
+        "base_url": _hub_base(),
         "multilang": True,  # 仅 beast-of-reincarnation 子目录
         "public_root": f"{ROOT}/lootlore/out",
     },

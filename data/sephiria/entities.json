@@ -1,0 +1,1925 @@
+{
+ "fetched": "2026-09-21",
+ "game_version": "1.0.30",
+ "sources_note": "Primary source: on-site snapshot pages under sources/sephiria/ (a mirror of sephiriawiki.site, an independent fan wiki for the game Sephiria; ~67 pages), read in full from their index.txt React-Server-Component payloads. Steam appid 2436940 is confirmed site-wide (e.g. steamcommunity.com/games/2436940/... and store.steampowered.com/app/2436940) and was never guessed. Where a sephiriawiki.site page itself quotes a first-party Steam announcement with a live URL, that URL is used as source_url; in every other case the on-site page URL is used with source_tier:'onsite', because the wiki's own prose is the only available transcription of the underlying patch note (most Steam announcement text is paraphrased/quoted by the wiki without a stored raw URL for that specific announcement). A live pull of Steam's GetGlobalAchievementPercentagesForApp endpoint (gameid=2436940, captured 2026-09-21) was made but is NOT used to populate named achievement entities: the Steam-internal achievement key for 22 of the 27 achievements is not mapped to a display name by any on-site source, and reconstructing that mapping by rank-order would introduce an inference the task's zero-new-facts rule forbids. Only the 5 internal keys the site itself explicitly states in prose (FOUND_HIDDEN_ROOM, POCKET_DIMENSION, CHAPTER_5_COMP, CHAPTER_5_COMPLETE, ENDING) are recorded, each with its own citation. No Chinese translation exists anywhere in the Sephiria source corpus (sephiriawiki.site is English-only); name_zh is therefore set equal to name_en for every entity and flagged in unverified_fields, mirroring how data/valheim/entities.json treats names with no established translation. page_slug points to the SOURCE sephiriawiki.site page path (e.g. 'guides/talent-wrath'), not a lootlore content-page slug -- this repo's content/sephiria/ pages are being built by other agents in parallel and were out of scope to read. Several entities legitimately share one page_slug where the source site documents them on a single shared page rather than a per-entity page (all 27 achievements on guides/achievements; the full boss/mini-boss roster on bosses/chapters-and-bosses) -- this differs from valheim's per-entity page_slug only because Sephiria's own source site is structured that way.",
+ "entities": {
+  "talent-wrath": {
+   "type": "talent_tree",
+   "name_en": "Wrath",
+   "name_zh": "Wrath",
+   "page_slug": "guides/talent-wrath",
+   "per_point": "+1% Critical Hit Chance per point (+20% at 20 points)",
+   "breakpoints": {
+    "lv5": "+20% Critical Damage",
+    "lv10": "+10% damage vs bosses and mini-bosses",
+    "lv20": "+20% Ignore DEF (enemy defence)"
+   },
+   "unlock_requirement": "Talent assignment gated behind the Home Repairs quest (site-wide talent requirement); no tree-specific extra requirement stated for Wrath",
+   "published_date": "2026-09-14",
+   "reviewed_date": "2026-09-14",
+   "game_version_checked": "1.0.30",
+   "key_notes": [
+    "No published formula exists for how crit chance from talents, artifacts and Miracles combines, and no source states a base crit chance; the page calls '20 points of Wrath = +20% damage' explicitly unconfirmed.",
+    "Lv20's Ignore DEF is framed as a late-run pick because enemy DEF scales with stage progress (see mechanic-hard-mode's Protective Armor modifier), unlike flat crit chance which is worth the same on floor 1 as floor 30.",
+    "The Burning Fang fire dagger build (see weapon-dagger) publishes two alternative 50-point spreads for the same weapon: one takes Wrath 20 as its headline pick, the other removes Wrath entirely for 20 points of MP regeneration instead."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-wrath/",
+    "https://sephiriawiki.site/guides/talents/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "crit-chance combination formula (page explicitly states this is not published anywhere)"
+   ]
+  },
+  "talent-swiftness": {
+   "type": "talent_tree",
+   "name_en": "Swiftness",
+   "name_zh": "Swiftness",
+   "page_slug": "guides/talent-swiftness",
+   "per_point": "+1% Attack Speed per point (+20% at 20 points)",
+   "breakpoints": {
+    "lv5": "+8 Evasion, +1 Dash",
+    "lv10": "+20% Dash Recovery, +8% Weapon Damage",
+    "lv20": "+0.1s Dash invincibility-frame extension, +15% Weapon Damage"
+   },
+   "unlock_requirement": null,
+   "published_date": "2026-09-15",
+   "reviewed_date": "2026-09-15",
+   "game_version_checked": "1.0.30",
+   "key_notes": [
+    "Whether the Lv10 (+8%) and Lv20 (+15%) weapon-damage bonuses stack or one supersedes the other is not stated anywhere in the source corpus; page marks the relationship unconfirmed.",
+    "The White Wolf costume (unlocked by beating Rataka the Pillager Leader 5+ times) grants unlimited dashes but removes dash invincibility frames entirely -- directly cancelling the value of Swiftness's level-20 capstone for players wearing it.",
+    "Base dash count before '+1 Dash' applies, and base i-frame duration before '+0.1s' applies, are both unstated in any source."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-swiftness/",
+    "https://sephiriawiki.site/guides/talents/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "lv10/lv20 weapon-damage stacking rule (page explicitly states this is not documented)",
+    "base dash count and base i-frame duration (not stated in any source)"
+   ]
+  },
+  "talent-endure": {
+   "type": "talent_tree",
+   "name_en": "Endure",
+   "name_zh": "Endure",
+   "page_slug": "guides/talent-endure",
+   "per_point": "+1 DEF per point (+20 DEF at 20 points)",
+   "breakpoints": {
+    "lv5": "Every run begins with a Foundation tablet in hand",
+    "lv10": "Below 25% HP, regain 1 HP per second",
+    "lv20": "On death, revive once at 60% HP"
+   },
+   "unlock_requirement": null,
+   "published_date": "2026-09-16",
+   "reviewed_date": "2026-09-16",
+   "game_version_checked": "1.0.30",
+   "key_notes": [
+    "The talent that grants Tablet Imprinting (Survival's own capstone, not this tree) has appeared as 'Survive', 'Endurance' and 'Survival' across different patch-note translation passes -- a naming-drift caveat that also applies here since older guides calling 'Endurance' a defence tree are describing this tree (Endure), not Survival.",
+    "Whether Hard Mode's Decline modifier (Healing Received reduced) also reduces Endure 10's flat regeneration is not stated anywhere in the source corpus.",
+    "No formula for how flat DEF converts into damage reduction is published; the page explicitly declines to state '20 DEF is worth X%'.",
+    "Endure 5 is funded entirely by the first 5 of 25 Destiny Inscription talent points, before Hard Mode is even unlocked -- cited as the reason it is commonly the first purchase."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-endure/",
+    "https://sephiriawiki.site/guides/talents/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "DEF-to-damage-reduction conversion formula (page explicitly states this is not published)",
+    "whether Decline reduces Endure 10's regen (not stated in any source)"
+   ]
+  },
+  "talent-survival": {
+   "type": "talent_tree",
+   "name_en": "Survival",
+   "name_zh": "Survival",
+   "page_slug": "guides/talent-survival",
+   "per_point": "+2 Max HP per point (+40 Max HP at 20 points)",
+   "breakpoints": {
+    "lv5": "Drinking any potion also grants one random stat",
+    "lv10": "+3 Inventory Slots",
+    "lv20": "-12 Inventory Slots; unlocks Tablet Imprinting"
+   },
+   "unlock_requirement": null,
+   "published_date": "2026-09-17",
+   "reviewed_date": "2026-09-17",
+   "game_version_checked": "1.0.30",
+   "key_notes": [
+    "The only talent-tree capstone in the game that is a net loss on the resource (inventory slots) the earlier points in the same tree provide.",
+    "12 slots off a 24-30 cell grid is two full rows; page frames Lv1-10 and Lv20 as effectively two different talents.",
+    "Which specific random stat the Lv5 potion bonus grants, and whether the roll can repeat, is not stated in any source.",
+    "1.0.30 fixed Tablet Imprinting consuming the tablet without applying its effect when activation conditions were not met, making the Lv20 capstone materially safer than at launch."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-survival/",
+    "https://sephiriawiki.site/guides/talents/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "which stat Lv5's potion bonus grants, and repeat-roll behaviour (not stated in any source)"
+   ]
+  },
+  "talent-wisdom": {
+   "type": "talent_tree",
+   "name_en": "Wisdom",
+   "name_zh": "Wisdom",
+   "page_slug": "guides/talent-wisdom",
+   "per_point": "MP Regeneration per point (+1 to +20 MP Regen)",
+   "breakpoints": {
+    "lv5": "+5 MP Steal, +10 Max MP",
+    "lv10": "[Unique] Stacking (duplicate artifacts add a star instead of duplicating); +1 die on boss kill",
+    "lv20": "+1 free reroll on every reward, +20% EXP"
+   },
+   "unlock_requirement": null,
+   "published_date": "2026-09-18",
+   "reviewed_date": "2026-09-18",
+   "game_version_checked": "1.0.30",
+   "key_notes": [
+    "Lv10 is described as 'the single most-misquoted mechanic in Sephiria': the community shorthand '+2 combo' is incorrect for 1.0. See mechanic-combo-system for the full 0.10.14/0.10.16 patch history behind the correction.",
+    "In co-op, duplicate items failing to merge/upgrade for a teammate is frequently reported as a bug; it is by design -- only players who took Lv10 get [Unique] Stacking.",
+    "The +5 MP Steal figure at Lv5 has no stated unit (per-hit flat amount vs percentage vs something else) in any source.",
+    "No source states whether the Lv20 free reroll interacts with dice-purchased rerolls, or applies equally to weapon/item/Miracle offers."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-wisdom/",
+    "https://sephiriawiki.site/guides/talents/",
+    "https://sephiriawiki.site/guides/combo-effects/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "MP Steal unit at Lv5 (not stated in any source)",
+    "Lv20 reroll interaction with dice-purchased rerolls (not stated in any source)"
+   ]
+  },
+  "talent-willpower": {
+   "type": "talent_tree",
+   "name_en": "Willpower",
+   "name_zh": "Willpower",
+   "page_slug": "guides/talent-willpower",
+   "per_point": "+1 Luck per point (+20 Luck at 20 points)",
+   "breakpoints": {
+    "lv5": "+2 starting Dice; Wish Fountain capacity +1",
+    "lv10": "+15 Max HP, +25 Max MP",
+    "lv20": "Further Wish Fountain capacity increase -- disputed figure, see wish_fountain_capacity_dispute"
+   },
+   "unlock_requirement": "Requires the Terrain Recovery Destiny Inscription node (a puzzle at the Ark), in addition to the site-wide Home Repairs requirement for talent assignment generally.",
+   "published_date": "2026-09-19",
+   "reviewed_date": "2026-09-19",
+   "game_version_checked": "1.0.30",
+   "wish_fountain_capacity_dispute": {
+    "summary": "Three non-reconciling figures for the Willpower-extended Wish Fountain maximum coexist in the on-site record; the site prints all three rather than choosing one.",
+    "value_a_stated_maximum": {
+     "claim": "0.10.0 patch note's own headline states the maximum obtainable through Willpower was 'reduced from 6 to 5' (base capacity simultaneously raised from 3 to 4).",
+     "quote": "\"Wish Fountain: Base capacity increased from 3 to 4, and the maximum capacity obtainable through the talent 'Willpower' has been reduced from 6 to 5.\"",
+     "source_url": "https://steamcommunity.com/games/2436940/announcements/detail/1819386365106847"
+    },
+    "value_b_per_level_sum": {
+     "claim": "The SAME 0.10.0 announcement's own per-level breakdown lists Lv5 = capacity +1 and Lv20 = 'increase reduced from 6 to 4', which sums to a base of 4 plus 5 from the talent (1+4) -- not a maximum of 5 as the headline states.",
+     "quote": "Lv5: 'Wish Fountain capacity increased by 1'; Lv20: 'Wish Fountain capacity increase reduced from 6 to 4'",
+     "source_url": "https://steamcommunity.com/games/2436940/announcements/detail/1819386365106847"
+    },
+    "value_c_destiny_inscription_page": {
+     "claim": "The Destiny Inscription page independently describes the Wishing Fountain node as base capacity 4, extendable to 8 via the Willpower talent -- consistent with neither value A nor value B.",
+     "quote": "\"Wishing Fountain -- carry chosen items into a run; base capacity 4, extendable to 8 via the Willpower talent.\"",
+     "source_url": "https://sephiriawiki.site/guides/destiny-inscription/"
+    },
+    "site_position": "TEAM HORAY has not re-confirmed any of these figures in the 1.0 patch series. The site states its position explicitly: 'the maximum is unconfirmed... nothing here picks a winner.'"
+   },
+   "key_notes": [
+    "No source states what Luck (the per-point stat) actually converts into -- drop rates, rarity weights, event outcomes, or a formula.",
+    "Three of five documented builds that carry items via the Wish Fountain put 20 points in Willpower specifically for the extra carry-in capacity (see mechanic-wish-fountain)."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-willpower/",
+    "https://sephiriawiki.site/guides/talents/",
+    "https://sephiriawiki.site/artifacts/artifacts-and-tablets/",
+    "https://sephiriawiki.site/artifacts/wish-fountain-carry-in-artifacts/",
+    "https://sephiriawiki.site/guides/destiny-inscription/",
+    "https://steamcommunity.com/games/2436940/announcements/detail/1819386365106847"
+   ],
+   "accessed": "2026-09-21",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "Wish Fountain maximum capacity via Willpower 20 (three contradicting on-site values, see wish_fountain_capacity_dispute; explicitly marked unconfirmed by the site itself)",
+    "what Luck actually converts into (not stated in any source)"
+   ]
+  },
+  "talent-ingenuity": {
+   "type": "talent_tree",
+   "name_en": "Ingenuity",
+   "name_zh": "Ingenuity",
+   "page_slug": "guides/talent-ingenuity",
+   "per_point": "+1 Max HP / +0.5 Evasion per point (+20 Max HP / +10 Evasion at 20 points)",
+   "breakpoints": {
+    "lv5": "+2 Inventory Slots",
+    "lv10": "+1 extra Weapon/Item/Miracle option offered on every choice",
+    "lv20": "+7% All Damage per active combo type (raised from 4% in patch 0.10.0)"
+   },
+   "unlock_requirement": "Has its own dedicated Destiny Inscription quest (separate from the general Home Repairs requirement); tree itself dated to Steam announcements 0.9.1 and 0.9.3.",
+   "published_date": "2026-09-20",
+   "reviewed_date": "2026-09-20",
+   "game_version_checked": "1.0.30",
+   "key_notes": [
+    "This tree's Lv20 scaling change (4%->7%) and Wisdom's Lv10 rework are described on the talents overview page as the only two talent values confirmed directly in patch notes; every other per-point/breakpoint value in the talent system comes from a community data compendium, not a developer document.",
+    "The capstone is per active combo TYPE, not per artifact: six combos at minimum threshold is +42% universal damage from roughly twelve tagged artifacts (an ordinary mid-run bag), versus one combo to level 10 needing 10+ items of a single tag.",
+    "How 'active combo type' is counted for the capstone (whether higher combo tiers count for more) is not stated in any source.",
+    "How the universal damage boost combines with weapon-specific or elemental bonuses is not stated in any source."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/talent-ingenuity/",
+    "https://sephiriawiki.site/guides/talents/",
+    "https://sephiriawiki.site/guides/combo-effects/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "how 'active combo type' is counted for the capstone (not stated in any source)",
+    "interaction with weapon-specific/elemental damage bonuses (not stated in any source)"
+   ]
+  },
+  "weapon-sword-and-shield": {
+   "type": "weapon",
+   "name_en": "Sword & Shield",
+   "name_zh": "Sword & Shield",
+   "page_slug": "weapons/sword-and-shield-guide",
+   "starting_weapon": true,
+   "unlock_node": null,
+   "special_attack": "Cleave -- 15 MP (reduced from 20 MP; guard frames now active from the very start of the animation rather than partway through -- both changes shipped silently at 1.0 launch and were disclosed retroactively in the 1.0.21 hotfix notes)",
+   "resource_system": "MP, shared between Block (a held guard with a Perfect Guard timing window), specials and spellbooks",
+   "notable_branches": [
+    {"name": "Carrot Sword -> Carrotcalibur", "effect": "normal attack becomes a five-hit sequence"},
+    {"name": "Frost Shard -> Glacial Blade / Blizzard's Eve", "effect": "cold-damage line; home of the (Early-Access-era, 1.0-unconfirmed) Blizzard Hammer build"},
+    {"name": "Magic Wand line", "effect": "converts attack to Magic Missile, then specialises into lightning, ice or fire"}
+   ],
+   "documented_builds": [
+    {"name": "Blizzard Hammer dash build", "era": "Early Access (0.7.14-15, Korean guide)", "confirmed_for_1_0": false, "summary": "Ice hammer artifact fires automatically on dash; needs only 2 rare-grade items; Willpower 20 to carry both between runs."},
+    {"name": "Infinite-dash shield build", "era": "Early Access (Simplified Chinese guide)", "confirmed_for_1_0": false, "summary": "Hold Block + dash continuously with an auto-attack-on-dash branch and the White Wolf costume; author states it requires a mouse macro."}
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/weapons/sword-and-shield-guide/",
+    "https://sephiriawiki.site/weapons/all-weapons/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "Blizzard Hammer build's numeric coefficients (350% Cold-damage scaling, level-9 artifact requirement) -- Early Access era, not reconfirmed in any 1.0 patch"
+   ]
+  },
+  "weapon-great-sword": {
+   "type": "weapon",
+   "name_en": "Great Sword",
+   "name_zh": "Great Sword",
+   "page_slug": "weapons/great-sword-guide",
+   "starting_weapon": false,
+   "unlock_node": "Heavy Weapon Training (Destiny Inscription) + Moro's training quest",
+   "special_attack": "Whirlwind -- a charged spin",
+   "resource_system": "MP",
+   "notable_branches": [
+    {"name": "Loving Gaze / Hypersensitivity / Negligence", "effect": "three upgrades that purely reshape Whirlwind's cost, cast speed and damage"},
+    {"name": "Bone Gearblade -> Reassemble", "effect": "30 MP; replaces Whirlwind, lengthens the blade for 8s and adds +15 damage per normal attack"},
+    {"name": "Crimson Thorn -> The Inquisitor", "effect": "applies Wound, then doubles Wound damage and swaps in a Wound Explosion special"},
+    {"name": "Lazarion (Early Access, 0.8.12)", "effect": "replaces the weapon with a crystal-companion summoner; 1.0-unconfirmed"}
+   ],
+   "documented_builds": [
+    {"name": "Storm Cloud (Lightning Greatsword E2G/E3G/S3G)", "era": "current, community default recommendation", "confirmed_for_1_0": true, "summary": "Rush anvils for Storm Cloud stacks; special attack does the work."},
+    {"name": "Swift Regret", "era": "current", "confirmed_for_1_0": true, "summary": "Only Great Sword route with a documented Hard Mode tier 50 clear; wins via tanking (Sturdy tag), not DPS."},
+    {"name": "Lazarion crystal summoner", "era": "Early Access (0.8.12, Japanese guide)", "confirmed_for_1_0": false, "summary": "25 MP special summons up to 3 crystal companions (60 HP, 5 HP per attack); none of the specific numbers are reconfirmed for 1.0."}
+   ],
+   "key_notes": [
+    "1.0.19 added exactly one new Great Sword upgrade, versus four each for Dagger, Crossbow and Staff that same patch."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/weapons/great-sword-guide/",
+    "https://sephiriawiki.site/weapons/all-weapons/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "Lazarion's 25 MP cost, 60/5 HP figures and 150% elemental-average scaling -- Early Access era, not reconfirmed in any 1.0 patch"
+   ]
+  },
+  "weapon-dagger": {
+   "type": "weapon",
+   "name_en": "Dagger",
+   "name_zh": "Dagger",
+   "page_slug": "weapons/dagger-guide",
+   "starting_weapon": false,
+   "unlock_node": "Nimble Weapon Training (Destiny Inscription) + Moro's training quest",
+   "special_attack": "Parry -- 6 MP (reduced from 10 MP, +30% damage, in patch 0.11.5)",
+   "resource_system": "Three meters unique to this weapon: Fury, Trance and Focus (defined in mechanic/glossary terms, not numerically)",
+   "notable_branches": [
+    {"name": "Fire Dagger -> Burning Fang", "effect": "changes the special into a five-dagger throw; the Burning Fang branch adds Burn application and Fire Damage scaling to weapon attacks -- this is the fully documented build route named in the site's dedicated Burning Fang fire dagger build page"},
+    {"name": "Alpine Edelweiss", "effect": "converts the normal attack into Shuriken Throw"},
+    {"name": "Difficult Trial", "effect": "removes Parry entirely for a 20% chance to gain Trance on any attack"}
+   ],
+   "community_reputation": "Widely called the hardest of the six weapon classes by community consensus (not a TEAM HORAY design statement): a dedicated Steam feedback thread argues its melee range is 'abysmal' next to Great Sword/Staff/Crossbow and that Parry/Trance i-frames are not generous enough at Hard Mode tiers 30-50.",
+   "key_notes": [
+    "1.0.26 let the Dagger's Dash Attack chain directly into Special Attack: Parry and Special Attack: Fury -- described on-site as the first weapon-RULE buff of the entire 1.0 era, as opposed to a bug fix.",
+    "1.0.19 added 4 new Dagger upgrades, tied with Crossbow and Staff for the most of any class that patch (4x what Great Sword received).",
+    "Lightning Dagger's extra damage rose from 20% to 25% of Lightning Damage in patch 1.0.19."
+   ],
+   "task_brief_note": "The original task brief listed 'burning-fang' as if it were a fifth distinct weapon alongside dagger/crossbow/blade/staff. On-site material confirms Burning Fang is a Dagger upgrade branch and build-guide name (Fire Dagger -> Burning Fang), not a separate weapon class. The site documents 6 real weapon classes; see the other 5 weapon-* entities.",
+   "source_urls": [
+    "https://sephiriawiki.site/weapons/dagger-guide/",
+    "https://sephiriawiki.site/weapons/all-weapons/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "exact i-frame duration on Parry/Trance (page explicitly states no patch note or source gives a frame count)"
+   ]
+  },
+  "weapon-crossbow": {
+   "type": "weapon",
+   "name_en": "Crossbow",
+   "name_zh": "Crossbow",
+   "page_slug": "weapons/crossbow-guide",
+   "starting_weapon": false,
+   "unlock_node": "Ranged Weapon Training (Destiny Inscription) + Moro's training quest",
+   "special_attack": "Reload-based / MP-funded bolt; behaviour (reload vs pierce) depends on chosen upgrade branch",
+   "resource_system": "A magazine with a dedicated reload key -- the only one of the 6 weapons built this way",
+   "launch_patch": "0.7.35, shipping with '16 enhancement tree variants (6 Tier 2, 10 Tier 3)' -- TEAM HORAY's clearest published per-class upgrade-count statement for any weapon",
+   "notable_branches": [
+    {"name": "Reload Device", "effect": "special attack becomes a high-speed reload instead of a damage tool"},
+    {"name": "Frost Veil -> Rapid Freeze Crystal", "effect": "removes magazine consumption entirely while its timed cold-firing state is active"},
+    {"name": "Scattershot Shooter", "effect": "converts the normal shot into a close-range explosion (shotgun-like)"}
+   ],
+   "key_notes": [
+    "All upgrades carry the 'Colossal Crossbow:' prefix.",
+    "1.0.30 gave the Frozen Bow the ability for its arrows to pass through walls, removing its previous clearest weakness in wall-heavy rooms.",
+    "Players report ranged builds generally having a better win rate, attributed to a game with 60+ enemy types and heavy contact damage -- explicitly flagged on-site as unverified sentiment, not survey data."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/weapons/crossbow-guide/",
+    "https://sephiriawiki.site/weapons/all-weapons/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "per-branch DPS/damage coefficients (page explicitly states no numeric figures are published beyond magazine size and upgrade-count statements)"
+   ]
+  },
+  "weapon-blade": {
+   "type": "weapon",
+   "name_en": "Blade",
+   "name_zh": "Blade",
+   "page_slug": "weapons/blade-guide",
+   "starting_weapon": false,
+   "unlock_node": "Sharp Weapon Training (Destiny Inscription) + Moro's training quest",
+   "special_attack": "Issen and Heavy Slash, both keyed to the weapon's sheathed/unsheathed stance",
+   "resource_system": "Sheath state (an invincibility window on breaking sheath); Iaido Slash is the drawn normal attack",
+   "launch_patch": "Announced as 'Katana'; shipped as Blade in patch 0.8.11",
+   "notable_branches": [
+    {"name": "Heidi", "effect": "ties Overheat stacks to Dash Count; 1.0.19 raised Overheat gain on Sheath from 2 to 3 and the stack cap from 6 to 9 (a 50% increase to both)"},
+    {"name": "Solis family (Solis Iubar, Missio, Cineris, Fracto, Dekri, Braca)", "effect": "the 'fire Blade' (Chinese-language community term: 火太刀) route; the katana CONSUMES Solar Blade charges rather than generating them, so the route needs a dedicated charge-generation piece (Furnace) to function -- see combo-tag-solar-blade"}
+   ],
+   "documented_builds": [
+    {"name": "Solis fire route", "confirmed_for_1_0": true, "summary": "Full pickup order documented on the site's dedicated Fire Blade build page; depends on the Furnace artifact and the Pure White Cloak's 30-second buff window."},
+    {"name": "Magic-crit Blade", "confirmed_for_1_0": true, "summary": "Used as the higher-ceiling weapon option (vs Staff) inside the documented Lightning Boomerang spellbook build, recommended for players 'chasing numbers'."}
+   ],
+   "key_notes": [
+    "1.0.26 gave Lightning Flash's Special Attack: Issen invincibility while sheathing, the class's most recent safety buff.",
+    "Naming trap: Solis Sineris is a distinct Great Sword upgrade (not part of this Blade line) despite the similar name to Blade's own Solis Cineris."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/weapons/blade-guide/",
+    "https://sephiriawiki.site/weapons/all-weapons/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "numeric i-frame duration of the Sheath state (page explicitly states TEAM HORAY has never published one)"
+   ]
+  },
+  "weapon-staff": {
+   "type": "weapon",
+   "name_en": "Staff",
+   "name_zh": "Staff",
+   "page_slug": "weapons/staff-guide",
+   "starting_weapon": false,
+   "unlock_node": "Graceful Weapon Training (Destiny Inscription) + Moro's training quest",
+   "special_attack": "Riposte -- a block-counter",
+   "resource_system": "MP (spellbook-adjacent; see Ilonica's Spirit Staff branch)",
+   "launch_patch": "Added with Chapter 5, March 2026 (patch 0.11.0) -- the newest of the six weapon classes",
+   "notable_branches": [
+    {"name": "Staff of Great Might", "effect": "converts 5% of defense into a slow-charging shield"},
+    {"name": "Oracle's Staff", "effect": "fires a frost relic every third hit per one player review ('100% overpowered' -- an attributed opinion, not a verified balance statement)"},
+    {"name": "Ilonica's Spirit Staff", "effect": "sacrifices basic attacks entirely to spray bolt-spell charges; contains the Bolt Barrage trap -- does nothing if the player has no bolt spells equipped, described as a genuinely bricked build in that state"}
+   ],
+   "key_notes": [
+    "1.0.19 added 4 new Staff upgrades, tied with Dagger and Crossbow for the most of any class that patch.",
+    "1.0.30 removed Flourish Staff's input gap: holding attack through a Special Attack now resumes attacking the moment it ends."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/weapons/staff-guide/",
+    "https://sephiriawiki.site/weapons/all-weapons/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "numeric frame data for Riposte's counter window (page explicitly states this is not published)",
+    "Oracle's Staff frost-relic proc rate beyond 'every third hit' (single player review, not a patch note)"
+   ]
+  },
+  "combo-tag-sturdy": {
+   "type": "combo_tag",
+   "name_en": "Sturdy",
+   "name_zh": "Sturdy",
+   "page_slug": "artifacts/combo-tags-and-key-artifacts",
+   "category": "Physical damage",
+   "threshold_items": null,
+   "key_artifacts": [
+    "Golden Crown of Arrogance (final-hit crit chance)",
+    "Eternal Winter (Sturdy-Glacier bond artifact, \"very high damage\")",
+    "Agma Projection Sword No. 190 / 191",
+    "Amulet of Courage (lifesteal)",
+    "Thorn Charm",
+    "Mystical Pendulum"
+   ],
+   "vouched_by": ["Tier 50 evasion tank build", "fire Blade build guide"],
+   "key_notes": [
+    "The fire Blade guide takes only the Pendulum from this tag ('huge normal-attack damage; the rest of the tag is not worth the cost') -- a one-pick-only framing rather than a full-tag investment.",
+    "Grouped on-site with Precision under a shared 'Physical damage' heading, though Precision itself was not one of the 5 combo tags this build covers."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/artifacts/combo-tags-and-key-artifacts/",
+    "https://sephiriawiki.site/guides/combo-effects/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "activation item-count threshold (Sturdy is not among the 7 tags with an observed threshold in any source; the combo-effects page's 'thresholds observed in a real build' table lists Guardian, Shadow, Magitech, Ember, Glacier, Elemental and Lake only)"
+   ]
+  },
+  "combo-tag-shadow": {
+   "type": "combo_tag",
+   "name_en": "Shadow",
+   "name_zh": "Shadow",
+   "page_slug": "artifacts/combo-tags-and-key-artifacts",
+   "category": "Survival",
+   "threshold_items": 2,
+   "threshold_source": "https://sephiriawiki.site/guides/combo-effects/",
+   "key_artifacts": [
+    "Broken Sapphire (\"hybrid tank + guaranteed evasion, extremely powerful\")",
+    "Shimmering Eye (guaranteed evasion on crit)",
+    "Cloak of Verdant Spirit",
+    "Elastic Band",
+    "Pinwheel",
+    "Battle Bracelet of Lerid",
+    "Six Leaf Clover",
+    "Green Gi",
+    "Model Beak"
+   ],
+   "vouched_by": ["Tier 50 evasion tank build", "lightning spellbook build", "fire Blade build guide"],
+   "key_notes": [
+    "Battle Bracelet + Elastic Band combination: a single dash becomes near-permanent evasion if dodges keep landing (cited by two separate build guides).",
+    "Broken Sapphire received a cosmetic fix in 1.0.30 (its effect was drawn over speech bubbles)."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/artifacts/combo-tags-and-key-artifacts/",
+    "https://sephiriawiki.site/guides/combo-effects/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)"
+   ]
+  },
+  "combo-tag-glacier": {
+   "type": "combo_tag",
+   "name_en": "Glacier",
+   "name_zh": "Glacier",
+   "page_slug": "artifacts/combo-tags-and-key-artifacts",
+   "category": "Survival",
+   "threshold_items": 2,
+   "threshold_source": "https://sephiriawiki.site/guides/combo-effects/",
+   "key_artifacts": [
+    "Echo of the Glacier (defence + Frostbite)",
+    "Feet of the Ice Gull (Cold stat)",
+    "Snow Mountain Long-eared Bat",
+    "Eternal Winter (the Sturdy-Glacier bond artifact)"
+   ],
+   "vouched_by": ["Tier 50 evasion tank build"],
+   "source_urls": [
+    "https://sephiriawiki.site/artifacts/combo-tags-and-key-artifacts/",
+    "https://sephiriawiki.site/guides/combo-effects/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)"
+   ]
+  },
+  "combo-tag-solar-blade": {
+   "type": "combo_tag",
+   "name_en": "Solar Blade",
+   "name_zh": "Solar Blade",
+   "page_slug": "artifacts/combo-tags-and-key-artifacts",
+   "category": "Fire",
+   "threshold_items": null,
+   "key_artifacts": [
+    "Furnace (generates the charges the Blade's Solis-line katana consumes -- described as mandatory)",
+    "Shoulder Guard (recovers spent charges)",
+    "\"the three heart-less series pieces\" (named as a set, individual names not given)",
+    "Pure White Cloak (extends the Solar Blade buff window from 10 to 30 seconds)"
+   ],
+   "vouched_by": ["fire Blade build guide"],
+   "key_notes": [
+    "The Blade weapon's Solis upgrade family CONSUMES Solar Blade charges rather than generating them -- Furnace is the enabler that makes the whole tag functional. See weapon-blade."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/artifacts/combo-tags-and-key-artifacts/",
+    "https://sephiriawiki.site/guides/combo-effects/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "activation item-count threshold (Solar Blade is not among the 7 tags with an observed threshold in any source)",
+    "individual names of the 'three heart-less series pieces' (not given on-site)"
+   ]
+  },
+  "combo-tag-mystic": {
+   "type": "combo_tag",
+   "name_en": "Mystic",
+   "name_zh": "Mystic",
+   "page_slug": "artifacts/combo-tags-and-key-artifacts",
+   "category": null,
+   "threshold_items": null,
+   "mechanic_dispute": {
+    "summary": "Two non-reconciling descriptions of what the Mystic combo actually does coexist on-site.",
+    "value_a_team_horay": {
+     "claim": "TEAM HORAY's own October 2025 combo-system revamp text describes Mystic as a support combo that doubles the level of a RANDOM artifact.",
+     "quote": "\"a support combo that doubles the level of a random artifact\"",
+     "source_url": "https://sephiriawiki.site/guides/combo-effects/"
+    },
+    "value_b_community_tooling": {
+     "claim": "By 1.0, community tooling (the SephiriaSolver tablet-planning tool) instead models Mystic as doubling the NET value of up to three CHOSEN grid cells, negatives included.",
+     "quote": "\"the community tooling models it as doubling the net value of up to three chosen cells, negatives included\"",
+     "source_url": "https://sephiriawiki.site/guides/glossary/"
+    },
+    "site_position": "\"Those two descriptions -- random versus chosen -- have never been publicly reconciled, so treat the count of three as the confident part and the selection method as open.\""
+   },
+   "key_artifacts": [
+    "White Egg Shell (clears floors and Qliphoth's tentacles)",
+    "Cintamani Stone",
+    "Crystal of Harmony (with Impact Amplifier, fourteen levels of true damage)",
+    "Blue Ring (universal damage)"
+   ],
+   "trader_only_items": ["Toxic Spore Pouch", "Lunch Box"],
+   "vouched_by": ["Tier 50 evasion tank build (listed as 'honourable mentions')"],
+   "grid_tool_marking": "SephiriaSolver's '×2 Slot' marking flags cells doubled by the Mystic combo, up to three since tool v2.0",
+   "source_urls": [
+    "https://sephiriawiki.site/artifacts/combo-tags-and-key-artifacts/",
+    "https://sephiriawiki.site/guides/combo-effects/",
+    "https://sephiriawiki.site/guides/glossary/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "activation item-count threshold (Mystic is not among the 7 tags with an observed threshold in any source)",
+    "which of the two mechanic descriptions (random artifact vs 3 chosen cells) is current (see mechanic_dispute; explicitly marked unreconciled by the site itself)"
+   ]
+  },
+  "boss-mogdi": {
+   "type": "boss",
+   "name_en": "Mogdi, the Black Hand (Mole Chief)",
+   "name_zh": "Mogdi, the Black Hand (Mole Chief)",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 1,
+   "floor_base_enemy_def": 0,
+   "appears_in_chapter": "Ch 1+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Stronghold Exploration",
+    "condition_en": "Defeat the Mole Chief",
+    "unlock_rate": 90.0,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 90.1, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.1pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-rataka": {
+   "type": "boss",
+   "name_en": "Rataka, the Pillager Leader",
+   "name_zh": "Rataka, the Pillager Leader",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 2,
+   "floor_base_enemy_def": 18,
+   "appears_in_chapter": "Ch 1+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Sky of the Roofless Tower",
+    "condition_en": "Defeat the Pillager Leader",
+    "unlock_rate": 85.3,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 85.4, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "name_correction": "Circulating name 'Lataka' is incorrect per patch notes; correct spelling is Rataka.",
+   "key_notes": [
+    "Beating Rataka 5+ times unlocks the White Wolf costume (see talent-swiftness for its i-frame interaction)."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/",
+    "https://sephiriawiki.site/guides/talent-swiftness/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.1pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-erma": {
+   "type": "boss",
+   "name_en": "Erma, the Mad Scientist",
+   "name_zh": "Erma, the Mad Scientist",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 3,
+   "floor_base_enemy_def": 46,
+   "appears_in_chapter": "Ch 1+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "This Is Not Stalking",
+    "condition_en": "Defeat the Mad Scientist",
+    "unlock_rate": 77.3,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 77.7, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.4pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-askard-ch1": {
+   "type": "boss",
+   "name_en": "Askard, the Cult Leader",
+   "name_zh": "Askard, the Cult Leader",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 4,
+   "floor_base_enemy_def": 66,
+   "appears_in_chapter": "Ch 1 only",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Enlightened Scholar",
+    "condition_en": "Defeat Askard",
+    "unlock_rate": 73.5,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 74.0, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "key_notes": [
+    "Timing trap: Enlightened Scholar requires killing Askard specifically while still in Chapter 1. From Chapter 2 he is replaced by Mutated Askard, and from Chapter 3 by Askard's Phantom.",
+    "1.0 update fixed Askard's floor-tentacle bullets to be guardable from every direction and fixed slam-pattern/laser warning indicators."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.5pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-odner": {
+   "type": "boss",
+   "name_en": "Odner, the Blasting Expert",
+   "name_zh": "Odner, the Blasting Expert",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 1,
+   "floor_base_enemy_def": 0,
+   "appears_in_chapter": "Ch 2+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Endless Bombs",
+    "condition_en": "Defeat the Demolition Expert",
+    "unlock_rate": 68.0,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 68.6, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "name_correction": "Circulating name 'Ordner' is incorrect per patch notes and achievement text; correct spelling is Odner.",
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.6pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-lerid": {
+   "type": "boss",
+   "name_en": "Lerid, the Shadow Blade",
+   "name_zh": "Lerid, the Shadow Blade",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 2,
+   "floor_base_enemy_def": 18,
+   "appears_in_chapter": "Ch 2+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Hunting Duel",
+    "condition_en": "Defeat the Shadow Blade",
+    "unlock_rate": 66.5,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 67.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "key_notes": [
+    "Lerid started as the Woodlands (floor 2) mini-boss before being promoted to a full chapter-2 floor boss; older guides may list him in both roles."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.7pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-pentaxis": {
+   "type": "boss",
+   "name_en": "Pentaxis, Guardian of the Library",
+   "name_zh": "Pentaxis, Guardian of the Library",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 3,
+   "floor_base_enemy_def": 46,
+   "appears_in_chapter": "Ch 2+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Broken System",
+    "condition_en": "Defeat the Guardian of the Library",
+    "unlock_rate": 52.2,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 53.1, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "name_correction": "Circulating name 'Pantaxis' is incorrect per patch notes; correct spelling is Pentaxis.",
+   "key_notes": [
+    "1.0.30 gave Pentaxis a dedicated BGM (cosmetic)."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.9pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-mutated-askard": {
+   "type": "boss",
+   "name_en": "Mutated Askard",
+   "name_zh": "Mutated Askard",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 4,
+   "floor_base_enemy_def": 66,
+   "appears_in_chapter": "Ch 2 only",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Qliphoth Contractor",
+    "condition_en": "Defeat the Mutated Askard",
+    "unlock_rate": 64.5,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 65.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "key_notes": [
+    "The achievement 'Qliphoth Contractor' ships with no description text on Steam; the condition above is sourced from the site's own community data compendium (bosses page), not from TEAM HORAY or Steam -- treat as community attribution, not first-party fact."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.7pt, see alt_unlock_rate_boss_page)",
+    "tied_achievement condition (community-attributed via the site's data compendium, not a first-party Steam/TEAM HORAY statement)"
+   ]
+  },
+  "boss-askards-phantom": {
+   "type": "boss",
+   "name_en": "Askard's Phantom",
+   "name_zh": "Askard's Phantom",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 4,
+   "floor_base_enemy_def": 66,
+   "appears_in_chapter": "Ch 3+",
+   "mini_boss": false,
+   "tied_achievement": null,
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "tied achievement (no achievement is documented as tied to this specific chapter-3+ Askard form)"
+   ]
+  },
+  "boss-kovess": {
+   "type": "boss",
+   "name_en": "Kovess, Guardian Demon of Qliphoth",
+   "name_zh": "Kovess, Guardian Demon of Qliphoth",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 5,
+   "floor_base_enemy_def": 79,
+   "appears_in_chapter": "Ch 3+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "At the End of the Cave",
+    "condition_en": "Defeat the Guardian Demon of Qliphoth",
+    "unlock_rate": 51.8,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 52.7, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "name_correction": "Circulating name 'Cobes' is incorrect per patch notes; correct spelling is Kovess.",
+   "key_notes": [
+    "From Chapter 6 onward, only Kovess OR Kraz appears as the floor-5 boss, chosen at random -- players no longer fight both Guardians of Qliphoth in the same run.",
+    "No on-site source states which achievement key (DEFEAT_BOSS_BIRD vs DEFEAT_BOSS_LIZARD, observed via a live Steam API pull) corresponds to Kovess specifically as opposed to Kraz; that mapping is deliberately NOT asserted here."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.9pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-haz": {
+   "type": "boss",
+   "name_en": "Haz, the Mind-Eater Root",
+   "name_zh": "Haz, the Mind-Eater Root",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 1,
+   "floor_base_enemy_def": 0,
+   "appears_in_chapter": "Ch 4+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Three but One",
+    "condition_en": "Defeat the Mind-Eater Root",
+    "unlock_rate": 35.7,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 36.6, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "name_correction": "Circulating name 'Haj' is incorrect per patch notes; correct spelling is Haz.",
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.9pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-kraz": {
+   "type": "boss",
+   "name_en": "Kraz, Guardian Demon of Qliphoth",
+   "name_zh": "Kraz, Guardian Demon of Qliphoth",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": "5.5",
+   "floor_base_enemy_def": 110,
+   "appears_in_chapter": "Ch 4+",
+   "mini_boss": false,
+   "tied_achievement": {
+    "name_en": "Gatekeeper of the Mind",
+    "condition_en": "Defeat the second Guardian Demon of Qliphoth",
+    "unlock_rate": 33.5,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 34.4, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "key_notes": [
+    "The achievement text 'the second Guardian Demon' is cited on-site as the strongest available evidence that Kovess and Kraz are two distinct bosses rather than two translations of one name.",
+    "From Chapter 6 onward, only Kovess OR Kraz appears as the floor-5 boss, chosen at random (see boss-kovess)."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.9pt, see alt_unlock_rate_boss_page)"
+   ]
+  },
+  "boss-qliphoth-illusion": {
+   "type": "boss",
+   "name_en": "Qliphoth (Illusion World)",
+   "name_zh": "Qliphoth (Illusion World)",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 6,
+   "floor_base_enemy_def": 110,
+   "appears_in_chapter": "Ch 5+",
+   "mini_boss": false,
+   "tied_achievement": null,
+   "key_notes": [
+    "The source roster table lists 'Qliphoth (Illusion World)' and a plain 'Qliphoth' entry as two separate rows, both at floor 6 / Ch 5+, with no text distinguishing what separates the two encounters. This row duplication is preserved as printed rather than resolved -- see boss-qliphoth-ch5."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "what mechanically distinguishes this row from the separate 'Qliphoth' floor-6/Ch5+ row (not explained by any source)"
+   ]
+  },
+  "boss-qliphoth-ch5": {
+   "type": "boss",
+   "name_en": "Qliphoth",
+   "name_zh": "Qliphoth",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 6,
+   "floor_base_enemy_def": 110,
+   "appears_in_chapter": "Ch 5+",
+   "mini_boss": false,
+   "tied_achievement": null,
+   "key_notes": [
+    "Listed on-site as a separate roster row from 'Qliphoth (Illusion World)' despite identical floor/chapter columns; see boss-qliphoth-illusion.",
+    "1.0 update eased Qliphoth's hitboxes and reduced its projectile count; 1.0.23 fixed projectiles occasionally entering the safe zone."
+   ],
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "what mechanically distinguishes this row from the separate 'Qliphoth (Illusion World)' floor-6/Ch5+ row (not explained by any source)"
+   ]
+  },
+  "boss-qliphoth-final": {
+   "type": "boss",
+   "name_en": "Qliphoth (Revival -> True Form -> Final Form)",
+   "name_zh": "Qliphoth (Revival -> True Form -> Final Form)",
+   "page_slug": "bosses/final-boss-and-endings",
+   "floor": 7,
+   "floor_base_enemy_def": 120,
+   "appears_in_chapter": "Ch 6",
+   "mini_boss": false,
+   "phases": ["Revival", "True Form", "Final Form"],
+   "tied_achievement": {
+    "name_en": "Journey's End",
+    "condition_en": "Complete the game",
+    "condition_attribution": "community-attributed via the site's data compendium (bosses page), not a first-party Steam/TEAM HORAY statement",
+    "unlock_rate": 16.3,
+    "capture_date": "2026-08-12"
+   },
+   "alt_unlock_rate_boss_page": {"value": 17.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "structural_notes": [
+    "Phase transitions are not checkpoints; HP/MP carried across a transition is the starting position for the next form.",
+    "The arena tightens in the closing stretch while persistent hazard zones stay live.",
+    "Preparation formula quoted from the one dedicated fight guide in circulation (a Medium article, cross-referenced against TEAM HORAY patch notes): enough defense to survive two hits, enough recovery that one mistake is repairable, everything else into damage -- sustained damage favoured over burst.",
+    "The fight was measurably harder before patch 1.0.21, which cut phase 1's radial bullet spread and removed a third of phase 2's Pillar Summoner minion HP."
+   ],
+   "only_16_3_pct_reached_ending": true,
+   "source_urls": [
+    "https://sephiriawiki.site/bosses/final-boss-and-endings/",
+    "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+    "https://sephiriawiki.site/guides/achievements/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (two on-site captures one day apart disagree by 0.9pt, see alt_unlock_rate_boss_page)",
+    "tied_achievement condition (community-attributed via the site's data compendium, not a first-party Steam/TEAM HORAY statement)"
+   ]
+  },
+  "miniboss-goat-skeleton": {
+   "type": "boss",
+   "name_en": "Goat Skeleton",
+   "name_zh": "Goat Skeleton",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 1,
+   "appears_in_chapter": "Ch 1+",
+   "mini_boss": true,
+   "always_drops_artifact": true,
+   "key_notes": ["Mini-bosses appear when a node carries the grey-skull modifier."],
+   "source_urls": ["https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "miniboss-black-panther-assassin": {
+   "type": "boss",
+   "name_en": "Black Panther Assassin",
+   "name_zh": "Black Panther Assassin",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 2,
+   "appears_in_chapter": "Ch 1+",
+   "mini_boss": true,
+   "always_drops_artifact": true,
+   "source_urls": ["https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "miniboss-demon-grimoire": {
+   "type": "boss",
+   "name_en": "Demon Grimoire",
+   "name_zh": "Demon Grimoire",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 3,
+   "appears_in_chapter": "Ch 1+",
+   "mini_boss": true,
+   "always_drops_artifact": true,
+   "source_urls": ["https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "miniboss-spinning-staff-demon": {
+   "type": "boss",
+   "name_en": "Spinning Staff Demon",
+   "name_zh": "Spinning Staff Demon",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 4,
+   "appears_in_chapter": "Ch 5+",
+   "mini_boss": true,
+   "always_drops_artifact": true,
+   "key_notes": [
+    "1.0 update eased this mini-boss's base patterns and moved the older, harder patterns into Hard Mode instead (no moveset detail published for either version)."
+   ],
+   "source_urls": ["https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "miniboss-afterimages-ch6": {
+   "type": "boss",
+   "name_en": "Fox's / Lion's / Mouse's Afterimage",
+   "name_zh": "Fox's / Lion's / Mouse's Afterimage",
+   "page_slug": "bosses/chapters-and-bosses",
+   "floor": 5,
+   "appears_in_chapter": "Ch 6",
+   "mini_boss": true,
+   "always_drops_artifact": true,
+   "key_notes": [
+    "TEAM HORAY's 1.0 notes state Chapter 6 added ONE new mini-boss; community data lists three (Fox/Lion/Mouse Afterimages). The site explicitly declines to state a resolved count -- both figures are preserved rather than reconciled."
+   ],
+   "source_urls": ["https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "count (1 per TEAM HORAY's 1.0 notes vs 3 per community data; site explicitly does not reconcile this)"
+   ]
+  },
+  "achievement-diy": {
+   "type": "achievement",
+   "name_en": "DIY",
+   "name_zh": "DIY",
+   "page_slug": "guides/achievements",
+   "description_en": "Repair your own house.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 91.7,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 92.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "rate_dispute": {
+    "summary": "A THIRD, lower figure (91.5%) appears on the Destiny Inscription page for what is presented as the same statistic, inconsistent with both dated captures above.",
+    "destiny_inscription_page_value": 91.5,
+    "destiny_inscription_page_quote": "\"It also grants the DIY achievement, which 91.5% of players have, making it the most-unlocked achievement in the game.\"",
+    "destiny_inscription_page_source": "https://sephiriawiki.site/guides/destiny-inscription/",
+    "talents_page_value": 91.7,
+    "talents_page_quote": "\"the associated DIY achievement sits at 91.7% unlocked\"",
+    "talents_page_source": "https://sephiriawiki.site/guides/talents/"
+   },
+   "key_notes": ["Gates the entire talent-assignment system; unlocked via the Home Repairs Destiny Inscription errand."],
+   "source_urls": [
+    "https://sephiriawiki.site/guides/achievements/",
+    "https://sephiriawiki.site/guides/unlock-rate-drift/",
+    "https://sephiriawiki.site/guides/destiny-inscription/",
+    "https://sephiriawiki.site/guides/talents/"
+   ],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (three distinct on-site values -- 91.5%, 91.7%, 92.1% -- see rate_dispute; none picked as authoritative)"
+   ]
+  },
+  "achievement-stronghold-exploration": {
+   "type": "achievement",
+   "name_en": "Stronghold Exploration",
+   "name_zh": "Stronghold Exploration",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Mole Chief.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 90.0,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 90.7,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 90.1, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-sky-of-the-roofless-tower": {
+   "type": "achievement",
+   "name_en": "Sky of the Roofless Tower",
+   "name_zh": "Sky of the Roofless Tower",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Pillager Leader.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 85.3,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 86.6,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 85.4, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-traveler": {
+   "type": "achievement",
+   "name_en": "Traveler",
+   "name_zh": "Traveler",
+   "page_slug": "guides/achievements",
+   "description_en": "Find a hidden room.",
+   "description_confirmed_blank": false,
+   "internal_key": "FOUND_HIDDEN_ROOM",
+   "internal_key_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_aug12": 83.2,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 84.8,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-this-is-not-stalking": {
+   "type": "achievement",
+   "name_en": "This Is Not Stalking",
+   "name_zh": "This Is Not Stalking",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Mad Scientist.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 77.3,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 80.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 77.7, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-where-the-blue-being-lives": {
+   "type": "achievement",
+   "name_en": "Where the Blue Being Lives",
+   "name_zh": "Where the Blue Being Lives",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "internal_key": "POCKET_DIMENSION",
+   "internal_key_source": "https://sephiriawiki.site/guides/achievements/",
+   "internal_key_note": "Site reads this key as 'the closest thing to a condition anyone has published' for this achievement -- an attributed reading, not a confirmed condition.",
+   "unlock_rate_aug12": 77.2,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 79.7,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/guides/run-events/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-enlightened-scholar": {
+   "type": "achievement",
+   "name_en": "Enlightened Scholar",
+   "name_zh": "Enlightened Scholar",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat Askard.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 73.5,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 77.0,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 74.0, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-chapter-1": {
+   "type": "achievement",
+   "name_en": "Chapter I",
+   "name_zh": "Chapter I",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "unlock_rate_aug12": 72.7,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 76.3,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "key_notes": ["One of 5 chapter-marker achievements (Chapter I-V) forming what the site calls 'the cleanest progress ladder in the list'."],
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (Steam ships no description text; no on-site source states one beyond the implied chapter-progression reading of the name itself)"
+   ]
+  },
+  "achievement-endless-bombs": {
+   "type": "achievement",
+   "name_en": "Endless Bombs",
+   "name_zh": "Endless Bombs",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Demolition Expert.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 68.0,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 72.4,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 68.6, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-hunting-duel": {
+   "type": "achievement",
+   "name_en": "Hunting Duel",
+   "name_zh": "Hunting Duel",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Shadow Blade.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 66.5,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 71.2,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 67.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-qliphoth-contractor": {
+   "type": "achievement",
+   "name_en": "Qliphoth Contractor",
+   "name_zh": "Qliphoth Contractor",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "community_attributed_condition": "Defeat the Mutated Askard",
+   "community_attributed_condition_source": "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+   "community_attributed_condition_note": "Sourced from a community data compendium via the bosses page, not from TEAM HORAY or Steam.",
+   "unlock_rate_aug12": 64.5,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 69.6,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 65.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (community-attributed, not first-party)"
+   ]
+  },
+  "achievement-chapter-2": {
+   "type": "achievement",
+   "name_en": "Chapter II",
+   "name_zh": "Chapter II",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "unlock_rate_aug12": 63.9,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 69.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "key_notes": ["The single largest population drop-off in the whole 27-entry list is between this achievement (63.9%, 12 Aug) and Broken System (52.2%) -- 11.7 points, at the Guardian of the Library."],
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (Steam ships no description text; no on-site source states one beyond the implied chapter-progression reading of the name itself)"
+   ]
+  },
+  "achievement-broken-system": {
+   "type": "achievement",
+   "name_en": "Broken System",
+   "name_zh": "Broken System",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Guardian of the Library.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 52.2,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 59.7,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 53.1, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-at-the-end-of-the-cave": {
+   "type": "achievement",
+   "name_en": "At the End of the Cave",
+   "name_zh": "At the End of the Cave",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Guardian Demon of Qliphoth.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 51.8,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 59.4,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 52.7, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-roots-retreat-1": {
+   "type": "achievement",
+   "name_en": "Root's Retreat",
+   "name_zh": "Root's Retreat",
+   "page_slug": "guides/achievements",
+   "description_en": "Clear Hard Mode Stage 1.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 45.2,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 52.0,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "rate_dispute": {
+    "summary": "Hard Mode's own dedicated page states a materially different figure for this same tier, undated but reviewed on the same date (2026-09-04) as the achievements page.",
+    "hard_mode_page_value": 44.0,
+    "hard_mode_page_quote": "\"Steam's global stats show 44.0% of players have cleared tier 1\"",
+    "hard_mode_page_source": "https://sephiriawiki.site/guides/hard-mode/"
+   },
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/guides/hard-mode/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (hard-mode page states 44.0% vs achievements page's dated 45.2%; see rate_dispute)"
+   ]
+  },
+  "achievement-chapter-3": {
+   "type": "achievement",
+   "name_en": "Chapter III",
+   "name_zh": "Chapter III",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "unlock_rate_aug12": 42.3,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 50.9,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (Steam ships no description text; no on-site source states one beyond the implied chapter-progression reading of the name itself)"
+   ]
+  },
+  "achievement-three-but-one": {
+   "type": "achievement",
+   "name_en": "Three but One",
+   "name_zh": "Three but One",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the Mind-Eater Root.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 35.7,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 45.2,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 36.6, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-gatekeeper-of-the-mind": {
+   "type": "achievement",
+   "name_en": "Gatekeeper of the Mind",
+   "name_zh": "Gatekeeper of the Mind",
+   "page_slug": "guides/achievements",
+   "description_en": "Defeat the second Guardian Demon of Qliphoth.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 33.5,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 43.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 34.4, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "key_notes": ["Tracked in lockstep with Chapter IV: both 33.5% on 12 Aug, both 43.1% on 7 Sep, identical to the tenth of a point across 26 days -- flagged on-site as coincidental co-occurrence, not evidence of a shared trigger."],
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-chapter-4": {
+   "type": "achievement",
+   "name_en": "Chapter IV",
+   "name_zh": "Chapter IV",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "unlock_rate_aug12": 33.5,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 43.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (Steam ships no description text; no on-site source states one beyond the implied chapter-progression reading of the name itself)"
+   ]
+  },
+  "achievement-soul-plan": {
+   "type": "achievement",
+   "name_en": "Soul Plan",
+   "name_zh": "Soul Plan",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "unlock_rate_aug12": 30.8,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 34.4,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "key_notes": [
+    "Anomalous drift: gained only +3.6pts over the same 26-day window in which its blank-description neighbours (Hero's Guise, Temple of Evil, Seal) each gained 10-12pts. The site states explicitly it has no explanation and is not inventing one.",
+    "Grouped by a third-party community source (AllThings.How, community attribution) as part of a 'true ending route' alongside Hero's Guise, Temple of Evil and Seal."
+   ],
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (Steam ships no description text; no source states one)"
+   ]
+  },
+  "achievement-roots-retreat-15": {
+   "type": "achievement",
+   "name_en": "Root's Retreat 15",
+   "name_zh": "Root's Retreat 15",
+   "page_slug": "guides/achievements",
+   "description_en": "Clear Hard Mode Stage 15.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 30.8,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 37.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "rate_dispute": {
+    "summary": "Hard Mode's own dedicated page states a materially different figure for this same tier.",
+    "hard_mode_page_value": 30.1,
+    "hard_mode_page_quote": "\"30.1% tier 15\"",
+    "hard_mode_page_source": "https://sephiriawiki.site/guides/hard-mode/"
+   },
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/guides/hard-mode/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (hard-mode page states 30.1% vs achievements page's dated 30.8%; see rate_dispute)"
+   ]
+  },
+  "achievement-heros-guise": {
+   "type": "achievement",
+   "name_en": "Hero's Guise",
+   "name_zh": "Hero's Guise",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "internal_key": "CHAPTER_5_COMP",
+   "internal_key_source": "https://sephiriawiki.site/guides/achievements/",
+   "internal_key_note": "Explicitly distinguished on-site from the separate 'Chapter V' achievement, whose key is CHAPTER_5_COMPLETE -- a four-character difference the site calls out as a naming trap.",
+   "community_attributed_condition": "Defeat Qliphoth",
+   "community_attributed_condition_source": "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+   "community_attributed_condition_note": "Sourced from a community data compendium via the bosses page, not from TEAM HORAY or Steam.",
+   "unlock_rate_aug12": 27.6,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 38.0,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 28.6, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (community-attributed, not first-party)"
+   ]
+  },
+  "achievement-chapter-5": {
+   "type": "achievement",
+   "name_en": "Chapter V",
+   "name_zh": "Chapter V",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "internal_key": "CHAPTER_5_COMPLETE",
+   "internal_key_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_aug12": 23.6,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 33.9,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": ["name_zh (Sephiria source corpus is English-only; no on-site translation exists)"]
+  },
+  "achievement-roots-retreat-30": {
+   "type": "achievement",
+   "name_en": "Root's Retreat 30",
+   "name_zh": "Root's Retreat 30",
+   "page_slug": "guides/achievements",
+   "description_en": "Clear Hard Mode Stage 30.",
+   "description_confirmed_blank": false,
+   "unlock_rate_aug12": 19.6,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 24.2,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "rate_dispute": {
+    "summary": "Hard Mode's own dedicated page states a materially different figure for this same tier.",
+    "hard_mode_page_value": 19.4,
+    "hard_mode_page_quote": "\"19.4% tier 30\"",
+    "hard_mode_page_source": "https://sephiriawiki.site/guides/hard-mode/"
+   },
+   "key_notes": ["Became the single rarest achievement in the game on the 7 September capture (24.2%), overtaking Journey's End and Seal, which had been rarer on 12 August."],
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/guides/hard-mode/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock rate (hard-mode page states 19.4% vs achievements page's dated 19.6%; see rate_dispute)"
+   ]
+  },
+  "achievement-temple-of-evil": {
+   "type": "achievement",
+   "name_en": "Temple of Evil",
+   "name_zh": "Temple of Evil",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "unlock_rate_aug12": 17.1,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 28.9,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (Steam ships no description text; no source states one)"
+   ]
+  },
+  "achievement-seal": {
+   "type": "achievement",
+   "name_en": "Seal",
+   "name_zh": "Seal",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "community_attributed_condition": "Seal Qliphoth",
+   "community_attributed_condition_source": "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+   "community_attributed_condition_note": "Sourced from a community data compendium via the bosses page, not from TEAM HORAY or Steam.",
+   "unlock_rate_aug12": 16.4,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 28.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 17.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (community-attributed, not first-party)"
+   ]
+  },
+  "achievement-journeys-end": {
+   "type": "achievement",
+   "name_en": "Journey's End",
+   "name_zh": "Journey's End",
+   "page_slug": "guides/achievements",
+   "description_en": null,
+   "description_confirmed_blank": true,
+   "internal_key": "ENDING",
+   "internal_key_source": "https://sephiriawiki.site/guides/achievements/",
+   "community_attributed_condition": "Complete the game",
+   "community_attributed_condition_source": "https://sephiriawiki.site/bosses/chapters-and-bosses/",
+   "community_attributed_condition_note": "Sourced from a community data compendium via the bosses page, not from TEAM HORAY or Steam. Site explicitly declines to equate this with 'the Chapter 6 marker' despite the temptation.",
+   "unlock_rate_aug12": 16.3,
+   "unlock_rate_aug12_source": "https://sephiriawiki.site/guides/achievements/",
+   "unlock_rate_sep7": 28.1,
+   "unlock_rate_sep7_source": "https://sephiriawiki.site/guides/unlock-rate-drift/",
+   "unlock_rate_alt_boss_page": {"value": 17.2, "capture_date": "2026-08-13", "source_url": "https://sephiriawiki.site/bosses/chapters-and-bosses/"},
+   "key_notes": ["Lowest unlock rate of all 27 achievements on the 12 August capture."],
+   "source_urls": ["https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/bosses/chapters-and-bosses/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "unlock condition (community-attributed, not first-party)"
+   ]
+  },
+  "mechanic-destiny-inscription": {
+   "type": "mechanic",
+   "name_en": "Destiny Inscription",
+   "name_zh": "Destiny Inscription",
+   "page_slug": "guides/destiny-inscription",
+   "summary_en": "Sephiria's meta-progression tree, funded by Sapphires earned on death. Full completion costs 383 Sapphires across 12 tiers.",
+   "tier_sapphire_costs": [0, 3, 2, 7, 34, 55, 57, 35, 54, 77, 31, 28],
+   "total_sapphires": 383,
+   "buy_order_nodes": ["Tablet (free, first -- gates all tablet content)", "Home Repairs (unlocks talent assignment + grants the DIY achievement)", "Talent Points x5 (+1/+2/+3/+4/+5, 25 points total)", "Expanding Pouch (1) and (2) (+6 inventory slots total, one full row)", "the five weapon-unlock nodes", "Seed Money (200 then 400 starting Leaf)", "Dice (1)(2)(3) (up to 6 starting dice)"],
+   "weapon_unlock_nodes": {
+    "Heavy Weapon Training": "Great Sword",
+    "Nimble Weapon Training": "Dagger",
+    "Ranged Weapon Training": "Crossbow",
+    "Sharp Weapon Training": "Blade",
+    "Graceful Weapon Training": "Staff"
+   },
+   "weapon_unlock_note": "Buying the node alone is not enough -- each weapon additionally requires completing a training quest with Moro in the village.",
+   "hard_mode_unlock": "Hard Mode's own node is free and lives in the roots of this tree, but requires clearing Chapter 2 first; moved to a dialogue-keyword unlock in patch 0.7.55 (previously a straight purchase).",
+   "completion_cap": "Multiple players report the completion counter capping at 99% even with every purchasable node maxed; roughly 11 hexagons at the top of the tree are blank and unimplemented. Practical 'done' is defined as 383 Sapphires spent, not 100%.",
+   "combined_talent_points": "383-Sapphire completion yields 25 Talent Points; combined with 20 more from Hard Mode's tier-reward schedule, the full talent-point pool is 45.",
+   "source_urls": ["https://sephiriawiki.site/guides/destiny-inscription/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "individual Sapphire cost per node (only tier TOTALS are published, per-node cost is not)",
+    "whether the three Side Bag node ranks (+1/+1/+2) are cumulative (not clarified in any source)"
+   ]
+  },
+  "mechanic-hard-mode": {
+   "type": "mechanic",
+   "name_en": "Hard Mode (Root's Retreat)",
+   "name_zh": "Hard Mode (Root's Retreat)",
+   "page_slug": "guides/hard-mode",
+   "summary_en": "A points-budget difficulty system, internally named Root's Retreat. Tiers run 1 to 60 (cap was 30 before patch 1.0). Only the next reward tier is claimable per clear -- overshooting gives nothing extra.",
+   "modifier_count_documented": 17,
+   "modifier_count_team_horay_stated": 18,
+   "modifier_count_note": "17 documented modifiers sum to exactly the 60-tier cap, which the site treats as a completeness check; the 18th TEAM HORAY claims in its 1.0 announcement is unaccounted for and not padded into the list.",
+   "removed_modifier": "Lingering Regret (No Duplicate Artifact Combos) was deleted in patch 0.900.6 as incompatible with the reworked combo system.",
+   "reward_schedule": {
+    "tier_1": "Root's Retreat achievement + Default background plate",
+    "tiers_3_to_30_every_3": "+1 Talent Point each (10 awards total)",
+    "tier_15": "Root's Retreat 15 achievement + Bronze plate",
+    "tier_30": "Root's Retreat 30 achievement + Pale plate",
+    "tier_35": "+2 Talent Points",
+    "tier_40": "+3 Talent Points",
+    "tier_50": "+5 Talent Points + Ivory plate",
+    "tier_60": "cosmetic character border only"
+   },
+   "total_talent_points_from_hard_mode": 20,
+   "unlock_rates_own_page": {
+    "tier_1": 44.0,
+    "tier_15": 30.1,
+    "tier_30": 19.4,
+    "capture_date": "not stated explicitly on this page; page last reviewed 2026-09-04",
+    "quote": "\"Steam's global stats show 44.0% of players have cleared tier 1, 30.1% tier 15, and 19.4% tier 30.\""
+   },
+   "unlock_rate_dispute_note": "These figures conflict with the achievements page's dated 12 August 2026 capture for the same three tiers (45.2% / 30.8% / 19.6%) -- see achievement-roots-retreat-1, achievement-roots-retreat-15, achievement-roots-retreat-30.",
+   "multiplayer_scaling": "Festival of Blood healing scaled down by party size in patch 1.0.21: 66% effectiveness at 2 players, 50% at 3, 33% at 4.",
+   "source_urls": ["https://sephiriawiki.site/guides/hard-mode/", "https://sephiriawiki.site/guides/achievements/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "the 18th Hard Mode element TEAM HORAY's announcement claims but no source catalogues",
+    "tier-1/15/30 unlock rate (hard-mode page's own figures disagree with the achievements page's dated capture; see unlock_rate_dispute_note)"
+   ]
+  },
+  "mechanic-wish-fountain": {
+   "type": "mechanic",
+   "name_en": "Wish Fountain",
+   "name_zh": "Wish Fountain",
+   "page_slug": "artifacts/wish-fountain-carry-in-artifacts",
+   "summary_en": "Bunnyville device letting a player start a run with artifacts already owned. Base capacity 4 (raised from 3 in patch 0.10.0); extra capacity comes from the Willpower talent, whose exact maximum is disputed (see talent-willpower).",
+   "capacity_note": "Capacity is measured in artifact COUNT, not rarity -- a legendary costs the same slot as a common.",
+   "documented_carry_in_builds": [
+    {"build": "Swift Regret tier 50", "carries_in": ["Crown of Humility", "Frostium Ring"], "reason": "Crown is a build-necessary legendary the author 'would rather not wait till the end of the run' for; the Ring supplies Cold damage to switch on Glacier items."},
+    {"build": "Fire Blade", "carries_in": ["Furnace"], "reason": "The Solar Blade katana consumes charges and Furnace makes them; 'without it the build simply will not start.'"},
+    {"build": "Lightning spellbook", "carries_in": ["a lifesteal stone (Bloodstone Earrings) -- optional, framed as a trade-off"], "reason": "Costumes with no lifesteal keep MP comfortable but risk high tiers; author says 'weigh it yourself.'"},
+    {"build": "Blizzard Hammer (Early Access)", "carries_in": ["Blizzard Hammer", "Ice Star"], "reason": "The whole build is these two rare-grade artifacts; Willpower 20 exists to bring both."},
+    {"build": "Lazarion companions (Early Access)", "carries_in": ["Simple Contract", "Multipurpose Belt"], "reason": "Contract stops summoned crystals dying instantly (+150% companion HP maxed); Belt raises every element, which crystal damage scales on."}
+   ],
+   "side_bag_interaction": "Since patch 1.0.19, items placed in the Side Bag are inactive and do not count toward combos -- used deliberately by some builds to hold an item without activating it yet.",
+   "source_urls": ["https://sephiriawiki.site/artifacts/wish-fountain-carry-in-artifacts/", "https://sephiriawiki.site/guides/talent-willpower/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "maximum capacity via Willpower (see talent-willpower's wish_fountain_capacity_dispute)"
+   ]
+  },
+  "mechanic-combo-system": {
+   "type": "mechanic",
+   "name_en": "Combo (Artifact Tag) System",
+   "name_zh": "Combo (Artifact Tag) System",
+   "page_slug": "guides/combo-effects",
+   "summary_en": "Combos are artifact tags, counted anywhere in the bag -- placement is irrelevant. This is mechanically distinct from grid combination (tablet buffs summed per cell), which is documented separately on the inventory grid page.",
+   "confirmed_combo_names": ["Planet", "Storm Cloud", "Mystic (Mystery)", "Magitech", "Lake", "Academy", "Solar Blade", "Shadow", "Ember", "Glacier", "Elemental", "Curse", "Negotiation", "Companion", "Sturdy", "Precision", "Windsong", "Protection", "Alchemy"],
+   "player_guide_addition": "Guardian",
+   "observed_thresholds": {
+    "Guardian": 2, "Shadow": 2, "Magitech": 2, "Ember": 2, "Glacier": 2, "Elemental": 2, "Lake": 3
+   },
+   "thresholds_note": "These 7 thresholds come from a single player's build guide (observed in one real build), not a developer document; combo-level scaling beyond the activation threshold is unpublished for every tag.",
+   "ingenuity_interaction": "The Ingenuity talent's level-20 capstone grants +7% Universal Damage per active combo TYPE (raised from 4% in patch 0.10.0) -- per type, not per artifact, which is why breadth (many tags at threshold) outperforms depth (one tag maxed) once this capstone is taken.",
+   "bond_artifacts": "Unique items connecting two combo tags at once; drop rule loosened so they enter the drop table when just ONE of the two linked combos is active (originally required both). Roughly a dozen existed at introduction, five more added later; the Destiny Inscription's Bond Artifact node unlocks 23 of them into the pool.",
+   "wisdom_10_correction": {
+    "myth": "\"Wisdom level 10 gives +2 combo\" -- a shorthand that circulates on auto-generated wikis and is described on-site as 'close enough to be seductive and wrong enough to mislead.'",
+    "pre_0_10_14": "Artifacts forced to have a unique effect; duplicates combine and raise the artifact's level by 1; +1 die on boss kill.",
+    "0_10_14_addition": "Text added: \"The combined Artifact increases the combo by 2 times.\"",
+    "0_10_16_qualification": "TEAM HORAY stated the doubling was 'originally planned to be applied to combo-change artifacts as well, but it has been put on hold due to technical issues' -- so Chalcedony Key and White Paper do NOT get it, and the UI had been wrongly displaying that they did.",
+    "current_framing": "[Unique] Stacking: duplicates are offered, and taking one adds a star to the copy already held -- not a flat +2 to a combo counter."
+   },
+   "source_urls": ["https://sephiriawiki.site/guides/combo-effects/", "https://sephiriawiki.site/artifacts/artifacts-and-tablets/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "activation thresholds for the 13+ combo tags not in the 7-entry observed table",
+    "combo-level scaling beyond activation threshold for every tag (unpublished)",
+    "full artifact-to-combo-tag mapping (no primary source exists)"
+   ]
+  },
+  "mechanic-tablet-system": {
+   "type": "mechanic",
+   "name_en": "Tablet System",
+   "name_zh": "Tablet System",
+   "page_slug": "tablets/all-tablets",
+   "summary_en": "Tablets project buff values onto grid cells; an artifact's effective level equals the sum of every tablet pattern reaching its cell. Tablets fall into four mechanically distinct families.",
+   "count_dispute": {
+    "team_horay_count": "about 70",
+    "community_catalogued_count": 62,
+    "note": "Community maintainer believes at least one more tablet is still missing from the 62-entry catalogue; neither figure is asserted as correct."
+   },
+   "families": {
+    "discrete_offsets": {
+     "description": "Largest group; buffs specific cells at fixed relative positions. Maximum reach 3 cells (Manhattan distance). Largest single-cell buff is +5 (Conviction). 12 of the 62 carry negative cells.",
+     "footprint_sizes": {"1_cell": 12, "2_cell": 15, "3_cell": 8, "4_cell": 10, "5_cell": 4, "6_cell": 2, "8_cell_thorns": 1}
+    },
+    "line_buffs": {
+     "description": "12 tablets buff an entire row, column or diagonal. Requital is the strongest (+3 to its whole row, +18 distributed value on a 6-wide grid). Foundation and Simultaneity are the +1 workhorses; Foundation is granted free at run start by Endure talent level 5.",
+     "names": ["Miracle", "Transference", "Cohesion", "Justice", "Shade", "Vigilance", "Foundation", "Brilliance", "Simultaneity", "Rebellion", "Courage", "Requital"]
+    },
+    "board_parity": {
+     "description": "Exactly one tablet: Curse (from the Skeleton costume). Chessboard pattern across the whole board, odd cells +1 / even cells -1. Its own position does not limit reach; moving it inverts which colour gets the buff. Rotation does nothing to it.",
+     "count": 1
+    },
+    "edge_anchored": {
+     "description": "4 tablets are inactive unless placed on a specific grid edge, while still consuming a cell.",
+     "table": {"Good Will": "bottom", "Shade": "top", "Flag": "left", "Justice": "left or right"}
+    }
+   },
+   "rotation": "Tablets rotate in 90-degree steps (R key, or middle-mouse-click since patch 1.0.19). 18 of the 62 cannot be rotated at all; a further 14 are rotatable but symmetric (only 1-2 rotations are actually distinct).",
+   "tablet_combiner": "Added patch 0.10.14; appears in every Safe Zone after Wasteland, costs 200 Leaf, works once per combiner. Merges two tablets' discrete and line effects; result is non-rotatable if either parent was; disjoint/partially-overlapping edge requirements are blocked.",
+   "gating": "Tablets are gated content: the free 'Tablet' Destiny Inscription node must be purchased before tablet nodes or objects appear in runs at all.",
+   "source_urls": ["https://sephiriawiki.site/tablets/all-tablets/", "https://sephiriawiki.site/artifacts/artifacts-and-tablets/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "exact tablet count (TEAM HORAY 'about 70' vs community-catalogued 62, unreconciled; see count_dispute)"
+   ]
+  },
+  "mechanic-run-events": {
+   "type": "mechanic",
+   "name_en": "Run Nodes and Random Events",
+   "name_zh": "Run Nodes and Random Events",
+   "page_slug": "guides/run-events",
+   "summary_en": "What appears on a floor's node menu and as random events between them. The site is explicit that almost none of this has ever been documented by TEAM HORAY as a formal system -- what exists is one uncorroborated Early Access community list (May 2025) plus roughly two dozen individual patch notes re-tuning specific events.",
+   "community_node_list": ["Level Up", "Artifact", "Enchantment", "Tablet", "Money", "Green Heart", "Anvil", "Dice", "Shop", "Tree Roots"],
+   "community_random_event_list": ["Arena", "Secret Room", "Lucky Clover", "Wandering Merchant", "Pocket Dimension", "Obelisk", "Fountain", "Colin", "Blood Donation"],
+   "list_provenance_caveat": "From 'Basic Guide to Sephiria' by FireBrother, built on patches 0.7.31/0.7.35, last updated 19 May 2025 -- a single uncorroborated snapshot, not confirmed 1.0 content. The 1.0 patch notes add at least one unnamed purchasable object not on this list, and 'Battle Wave' (discussed repeatedly in patch notes) appears on neither list under that name.",
+   "fruit_skewer_figures": {
+    "bonus_per_skewer_pct": 25,
+    "adaptive_carrot_cap_pct": 75,
+    "negative_skewer_reduction_pct": 50,
+    "last_set_patch": "0.10.6, 8 January 2026",
+    "staleness_note": "TEAM HORAY has not restated these figures for 1.0; the announcement that introduced the numbers also called itself a public beta whose parts 'may be modified or removed depending on future development progress.'"
+   },
+   "enchant_minimum_chance": {"value": "increased from 1 to 2", "patch": "0.7.28, 24 April 2025", "staleness_note": "Last publicly adjusted 0.7.28; no restatement for 1.0."},
+   "battle_wave": "Rewards have a CHANCE (not a guarantee, per TEAM HORAY's own wording in patch 0.7.32) of an additional bonus appearing on clearing combat-wave event rooms.",
+   "colin_collin_dispute": {
+    "quote_a": "0.7.35, 19 May 2025: \"This improvement aims to prevent unintended conversations with Colin when interacting with shops, stairs, etc.\"",
+    "quote_b": "1.0.24, 7 August 2026: \"NPC Collin: Dialogue is now disabled after becoming a companion.\"",
+    "site_position": "Two first-party notes, two spellings; the site prints both rather than picking one."
+   },
+   "blood_donation_costume_claim_demoted": "The site's own beginner guide claims Blood Donation performed 5 times unlocks the Wingless Bat costume; no first-party source for that specific condition was found despite searching. The costume itself is real (named in patch 0.7.47) but the 5-donation trigger is explicitly demoted to 'a community claim' rather than a confirmed fact.",
+   "source_urls": ["https://sephiriawiki.site/guides/run-events/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "current (1.0) node/event list (only a May-2025 uncorroborated snapshot exists)",
+    "Fruit Skewer figures for 1.0 (last confirmed value is from 0.10.6, January 2026, not restated since)",
+    "Blood Donation's 5-times-unlocks-Wingless-Bat condition (site itself could not find a first-party source and demotes this to a community claim)"
+   ]
+  },
+  "mechanic-achievement-rate-drift": {
+   "type": "mechanic",
+   "name_en": "Achievement Unlock-Rate Drift",
+   "name_zh": "Achievement Unlock-Rate Drift",
+   "page_slug": "guides/unlock-rate-drift",
+   "summary_en": "Documents that Steam's global achievement percentages are a rolling lifetime statistic across ALL owners (not a sample of active players), and quantifies how much they move over time using the site's own two dated full captures of all 27 achievements: 12 August 2026 and 7 September 2026 (26 days apart).",
+   "aggregate_findings": {
+    "entries_that_rose": "27 of 27, no exceptions",
+    "total_movement_points": 165.5,
+    "average_change_points": 6.1,
+    "median_change_points": 5.2,
+    "top_10_by_aug12_rate_avg_change": 2.6,
+    "bottom_10_by_aug12_rate_avg_change": 9.0
+   },
+   "rank_change": "Journey's End was the single rarest achievement on 12 Aug (16.3%); by 7 Sep both Journey's End and Seal sit at 28.1%, and the new rarest achievement in the game is Root's Retreat 30 at 24.2% (which had been three places higher on 12 Aug).",
+   "anomaly": "Soul Plan gained only +3.6 points across the 26 days while its blank-description neighbours (Hero's Guise, Temple of Evil, Seal) each gained 10-12 points; the site states it has no explanation and declines to invent one.",
+   "editorial_conclusion_quote": "\"An unlock rate is a poor proxy for difficulty... a rate measures how many people have reached a thing, and reaching depends on how long the game has been out and who bought it recently -- not on how hard the thing is.\"",
+   "source_urls": ["https://sephiriawiki.site/guides/unlock-rate-drift/", "https://sephiriawiki.site/guides/achievements/", "https://sephiriawiki.site/guides/achievement-tracker/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "cause of the Soul Plan anomaly (site explicitly states it has no explanation)"
+   ]
+  },
+  "mechanic-weapon-upgrade-totals": {
+   "type": "mechanic",
+   "name_en": "Weapon Upgrade Totals",
+   "name_zh": "Weapon Upgrade Totals",
+   "page_slug": "weapons/all-weapons",
+   "summary_en": "The total count of weapon upgrades across all 6 weapon classes is stated two different ways by TEAM HORAY itself; the site prints both under its own heading 'The number nobody can reconcile' rather than picking one.",
+   "count_dispute": {
+    "steam_store_statement": {
+     "quote": "\"6 distinct weapons, each with over 50 unique upgrades\"",
+     "implied_total": "roughly 300 in total (per the site's own arithmetic)",
+     "source_url": "https://sephiriawiki.site/weapons/all-weapons/"
+    },
+    "launch_announcement_statement": {
+     "quote": "\"six weapon branches with over 200 upgrades\"",
+     "implied_total": "over 200",
+     "source_url": "https://sephiriawiki.site/weapons/all-weapons/"
+    },
+    "site_position": "\"We are not going to pick one and present it as fact; the honest summary is that the game ships somewhere in the 200-300 range and only the Crossbow has a per-class count on record.\""
+   },
+   "per_class_count_on_record": "Crossbow only: 0.7.35 launch patch shipped '16 enhancement tree variants (6 Tier 2, 10 Tier 3)' -- see weapon-crossbow.",
+   "source_urls": ["https://sephiriawiki.site/weapons/all-weapons/"],
+   "accessed": "2026-09-21",
+   "source_tier": "onsite",
+   "unverified_fields": [
+    "name_zh (Sephiria source corpus is English-only; no on-site translation exists)",
+    "exact total upgrade count (site states both official figures disagree by roughly 100 and declines to reconcile them)"
+   ]
+  }
+ },
+ "_page_slug_note": "page_slug points to the SOURCE sephiriawiki.site page path that documents each entity (not a lootlore content/sephiria/ slug, which other agents are building in parallel and which this agent had no visibility into). Multiple entities share one page_slug where the source site itself documents them on a single shared page rather than per-entity pages -- most notably all 27 achievement-* entities (guides/achievements) and all boss-*/miniboss-* entities (bosses/chapters-and-bosses, or bosses/final-boss-and-endings for the Chapter-6 final boss). This is a deliberate, reasoned departure from data/valheim/entities.json's page_slug convention, driven entirely by how the underlying Sephiria source material is actually structured, not by any relaxation of citation standards."
+}

@@ -3,7 +3,7 @@ slug: "author"
 url: "/valheim/zh/author/"
 title: "作者 Jellyfi：英灵神殿攻略的编辑"
 seoTitle: "Jellyfi｜英灵神殿中文攻略作者与编写方式"
-description: "Jellyfi 是 Lootlore 英灵神殿中文攻略的署名作者。本页说明这些攻略怎样取材、怎样标注日期与来源，以及发现错误时如何反馈，并列出已发布的全部攻略。"
+description: "Jellyfi 是 {{BRAND}} 英灵神殿中文攻略的署名作者。本页说明这些攻略怎样取材、怎样标注日期与来源，以及发现错误时如何反馈，并列出已发布的全部攻略。"
 category: "作者"
 language: "zh-CN"
 type: "author"
@@ -17,7 +17,7 @@ author: "Jellyfi"
 ---
 # 作者 Jellyfi：英灵神殿攻略的编辑
 
-Jellyfi 是 Lootlore 的编辑署名，负责本站[英灵神殿中文攻略](/valheim/zh/)的整理、发布与后续维护。下方列出以这个署名发布的全部攻略。
+Jellyfi 是 {{BRAND}} 的编辑署名，负责本站[英灵神殿中文攻略](/valheim/zh/)的整理、发布与后续维护。下方列出以这个署名发布的全部攻略。
 
 ## 攻略怎样取材
 

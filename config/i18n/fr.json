@@ -1,0 +1,90 @@
+{
+  "html_lang": "fr",
+  "og_locale": "fr_FR",
+  "home": "Accueil",
+  "games": "Jeux",
+  "all_games": "Tous les jeux",
+  "breadcrumb": "Fil d'Ariane",
+  "toc": "Sommaire",
+  "menu": "Menu",
+  "main_nav": "Navigation principale",
+  "by_game": "Par jeu",
+  "by_need": "Par besoin",
+  "by": "Par",
+  "search": "Rechercher",
+  "search_placeholder": "Rechercher dans ces guides",
+  "search_all_placeholder": "Rechercher dans tous les guides du site",
+  "search_no_results": "Aucun guide ne correspond.",
+  "site_nav": "Navigation des guides",
+  "open_menu": "Menu des guides",
+  "quick_access": "Accès rapide",
+  "guide_index": "Index des guides",
+  "section_overview": "Aperçu de la section",
+  "tools_group": "Outils",
+  "about_group": "À propos",
+  "more_guides": "Tous les autres guides",
+  "recent_in_game": "Mis à jour récemment",
+  "nav_guides": "Guides",
+  "nav_tools": "Outils",
+  "nav_reviews": "Tests",
+  "nav_updates": "Mises à jour",
+  "nav_about": "À propos",
+  "author": "Auteur",
+  "reviewed": "Dernière vérification",
+  "published": "Publié",
+  "game_version": "Version vérifiée",
+  "faq_heading": "Questions fréquentes",
+  "pages_count": "{n} guides",
+  "updated_on": "Mis à jour le {d}",
+  "skip_to_content": "Aller au contenu",
+  "trust": [
+    [
+      "À propos",
+      "/about"
+    ],
+    [
+      "Contact",
+      "/contact"
+    ],
+    [
+      "Politique éditoriale",
+      "/editorial-policy"
+    ],
+    [
+      "Confidentialité",
+      "/privacy-policy"
+    ],
+    [
+      "Conditions d'utilisation",
+      "/terms"
+    ],
+    [
+      "Avertissement",
+      "/disclaimer"
+    ]
+  ],
+  "footer_note": "Guide de fans non officiel, sans affiliation avec les développeurs ou éditeurs des jeux. Les noms de jeux, captures d'écran et marques appartiennent à leurs propriétaires respectifs.",
+  "sep": " · ",
+  "colon": ": ",
+  "language": "Langue",
+  "quick_facts": "Données clés",
+  "f_chapter_title": "Chapitre",
+  "f_appears_in_chapter": "Chapitre",
+  "f_weak": "Faible contre",
+  "f_role": "Rôle",
+  "f_weapon_type": "Type d'arme",
+  "f_description": "Description",
+  "f_unlock_rate_pct": "Taux de déblocage mondial (%)",
+  "f_global_unlock_pct": "Taux de déblocage mondial (%)",
+  "f_steam_unlock_pct": "Taux de déblocage Steam (%)",
+  "f_condition": "Condition",
+  "f_condition_inferred": "Condition (déduite)",
+  "f_unlock_condition": "Comment le débloquer",
+  "f_achievement_name": "Succès",
+  "f_appears": "Apparaît",
+  "f_counter": "Contre",
+  "f_level_number": "Niveau",
+  "f_objective": "Objectif",
+  "f_related_boss": "Boss associé",
+  "f_key_notes": "Notes"
+}

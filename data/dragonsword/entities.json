@@ -1,0 +1,2911 @@
+{
+ "fetched": "2026-09-21",
+ "game_version": null,
+ "game_version_note": "Contested on-site — see entity 'game-version-status' (mechanic) for the homepage/patch-notes/hero-page disagreement; left null here rather than picking one.",
+ "sources_note": "Primary source: sources/dragonsword/ static snapshot of https://dragonsword.site (53 HTML pages, fact-checked + independently reviewed per the task brief) — all hero/achievement/mechanic entities are a structural reorganization of that content; no field states a fact absent from the snapshot. Table-driven data (the 60-achievement list, the 17 named-boss list, the 19-hero tier-list grades, the 19-hero roster kit/ailment table, the 6-archetype comparison, the 19-hero unlock-planner classification) was extracted directly from each page's raw HTML <table>/<li> markup and spot-checked against a second, independent manual read of the same page. Steam's public endpoints (store.steampowered.com/api/appdetails?appids=4570720, steamcommunity.com/stats/4570720/achievements/) were queried live on 2026-09-21 purely to sanity-check methodology (see delivery notes) — the live numbers were NOT written into any entity field, since the site's own guides/achievements page already carries a dated, methodologically-explained snapshot (2026-09-01) for every achievement, which is what this file uses throughout. This game (DragonSword: Awakening, Hound13 Inc., Steam appid 4570720) has no Chinese-language content anywhere on the site (config/hub.json marks it 'langs: EN'), so no name_zh-style fields were added (unlike data/valheim/entities.json, which mirrors a bilingual site) — every hero/achievement name here is the single English name the site itself uses; no translation was invented or needed. Universal caveat carried once here rather than in each of the 60 achievement entities: the achievements page states 'we do not know what denominator Valve uses' for its global-unlock-rate percentages, so every unlock_rate_pct field in this file is a fact about Steam's stats page on the stated date, not a directly comparable measure of 'how far a typical player gets' — that inference belongs to the reader, not this data.",
+ "entities": {
+  "achv-anything-in-here": {
+   "type": "achievement",
+   "name": "Anything in Here?",
+   "hidden": false,
+   "description": "Opened a Treasure Chest.",
+   "unlock_condition": "Opened a Treasure Chest.",
+   "unlock_rate_pct": 37.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-this-worlds-janitor": {
+   "type": "achievement",
+   "name": "This World's Janitor",
+   "hidden": false,
+   "description": "Defeated 1,000 monsters in the world.",
+   "unlock_condition": "Defeated 1,000 monsters in the world.",
+   "unlock_rate_pct": 30.6,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-subjugation-squad-open-for-business": {
+   "type": "achievement",
+   "name": "Subjugation Squad, Open for Business",
+   "hidden": false,
+   "description": "Defeated Hunt Monsters 10 times.",
+   "unlock_condition": "Defeated Hunt Monsters 10 times.",
+   "unlock_rate_pct": 29.5,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-may-i-have-your-name": {
+   "type": "achievement",
+   "name": "May I Have Your Name?",
+   "hidden": false,
+   "description": "Completed Sudden Missions 10 times.",
+   "unlock_condition": "Completed Sudden Missions 10 times.",
+   "unlock_rate_pct": 24.2,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-a-mercenary-open-the-door": {
+   "type": "achievement",
+   "name": "A Mercenary! Open the Door!",
+   "hidden": false,
+   "description": "Activated Dungeon Gates.",
+   "unlock_condition": "Activated Dungeon Gates.",
+   "unlock_rate_pct": 23.6,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-the-wind-path-that-unveils-the-unknown": {
+   "type": "achievement",
+   "name": "The Wind Path That Unveils the Unknown",
+   "hidden": false,
+   "description": "Activated all of Eona's Legacy.",
+   "unlock_condition": "Activated all of Eona's Legacy.",
+   "unlock_rate_pct": 18.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-a-mercenary-as-of-today": {
+   "type": "achievement",
+   "name": "A Mercenary as of Today",
+   "hidden": false,
+   "description": "Received Anne's help.",
+   "unlock_condition": "Received Anne's help.",
+   "unlock_rate_pct": 16.3,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-savior-of-the-de-monworld": {
+   "type": "achievement",
+   "name": "Savior of the De-monworld",
+   "hidden": false,
+   "description": "Completed Marmot King Hog's quest.",
+   "unlock_condition": "Completed Marmot King Hog's quest.",
+   "unlock_rate_pct": 15.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-warmth-for-frozen-wisdom": {
+   "type": "achievement",
+   "name": "Warmth for Frozen Wisdom",
+   "hidden": false,
+   "description": "Completed Cerese's Hero Quest.",
+   "unlock_condition": "Completed Cerese's Hero Quest.",
+   "unlock_rate_pct": 15.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_hero": "cerese",
+   "achievement_category": "hero_quest"
+  },
+  "achv-dreams-do-come-true": {
+   "type": "achievement",
+   "name": "Dreams ★ Do Come True",
+   "hidden": false,
+   "description": "Completed Bart's quest.",
+   "unlock_condition": "Completed Bart's quest.",
+   "unlock_rate_pct": 12.1,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-oh-our-goddess": {
+   "type": "achievement",
+   "name": "Oh! Our Goddess",
+   "hidden": false,
+   "description": "Restored all Goddess Statues of Organa.",
+   "unlock_condition": "Restored all Goddess Statues of Organa.",
+   "unlock_rate_pct": 11.2,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-subduer-of-horg": {
+   "type": "achievement",
+   "name": "Subduer of Horg",
+   "hidden": false,
+   "description": "Defeated Horg the Roamer 3 times.",
+   "unlock_condition": "Defeated Horg the Roamer 3 times.",
+   "unlock_rate_pct": 11.1,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Horg the Roamer",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-conqueror-of-gauron": {
+   "type": "achievement",
+   "name": "Conqueror of Gauron",
+   "hidden": false,
+   "description": "Defeated Gauron on 【Very Hard difficulty】.",
+   "unlock_condition": "Defeated Gauron on 【Very Hard difficulty】.",
+   "unlock_rate_pct": 10.5,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Gauron",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Very Hard"
+  },
+  "achv-an-unforgettable-encounter": {
+   "type": "achievement",
+   "name": "An Unforgettable Encounter",
+   "hidden": false,
+   "description": "Completed Ninian's quest.",
+   "unlock_condition": "Completed Ninian's quest.",
+   "unlock_rate_pct": 10.3,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-fast-travel-expert": {
+   "type": "achievement",
+   "name": "Fast Travel Expert",
+   "hidden": false,
+   "description": "Activated all Waypoints.",
+   "unlock_condition": "Activated all Waypoints.",
+   "unlock_rate_pct": 9.7,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-a-tale-carried-on-the-embers": {
+   "type": "achievement",
+   "name": "A Tale Carried on the Embers",
+   "hidden": false,
+   "description": "Completed Kalien's Hero Quest.",
+   "unlock_condition": "Completed Kalien's Hero Quest.",
+   "unlock_rate_pct": 9.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_hero": "kalien",
+   "achievement_category": "hero_quest"
+  },
+  "achv-a-towering-threat-brought-down": {
+   "type": "achievement",
+   "name": "A Towering Threat Brought Down",
+   "hidden": false,
+   "description": "Successfully completed Raids 10 times.",
+   "unlock_condition": "Successfully completed Raids 10 times.",
+   "unlock_rate_pct": 9.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-subduer-of-andras": {
+   "type": "achievement",
+   "name": "Subduer of Andras",
+   "hidden": false,
+   "description": "Defeated Andras the Predator 3 times.",
+   "unlock_condition": "Defeated Andras the Predator 3 times.",
+   "unlock_rate_pct": 9.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Andras the Predator",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-subduer-of-pakirus": {
+   "type": "achievement",
+   "name": "Subduer of Pakirus",
+   "hidden": false,
+   "description": "Defeated Pakirus the Specter of Thirst 3 times.",
+   "unlock_condition": "Defeated Pakirus the Specter of Thirst 3 times.",
+   "unlock_rate_pct": 8.9,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Pakirus the Specter of Thirst",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-no-one-will-know-right": {
+   "type": "achievement",
+   "name": "No One Will Know, Right?",
+   "hidden": false,
+   "description": "Completed Ornette's Hero Quest.",
+   "unlock_condition": "Completed Ornette's Hero Quest.",
+   "unlock_rate_pct": 8.7,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_hero": "ornette",
+   "achievement_category": "hero_quest"
+  },
+  "achv-subduer-of-brack": {
+   "type": "achievement",
+   "name": "Subduer of Brack",
+   "hidden": false,
+   "description": "Defeated Scraping Brack 3 times.",
+   "unlock_condition": "Defeated Scraping Brack 3 times.",
+   "unlock_rate_pct": 7.9,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Scraping Brack",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-conqueror-of-furcas": {
+   "type": "achievement",
+   "name": "Conqueror of Furcas",
+   "hidden": false,
+   "description": "Defeated the Starving Ghost of Corrosion, Furcas, on 【Nightmare difficulty】.",
+   "unlock_condition": "Defeated the Starving Ghost of Corrosion, Furcas, on 【Nightmare difficulty】.",
+   "unlock_rate_pct": 7.6,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Furcas, the Starving Ghost of Corrosion",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Nightmare"
+  },
+  "achv-subduer-of-karon": {
+   "type": "achievement",
+   "name": "Subduer of Karon",
+   "hidden": false,
+   "description": "Defeated Karon the Tyrant 3 times.",
+   "unlock_condition": "Defeated Karon the Tyrant 3 times.",
+   "unlock_rate_pct": 7.6,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Karon the Tyrant",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-conqueror-of-ursula": {
+   "type": "achievement",
+   "name": "Conqueror of Ursula",
+   "hidden": false,
+   "description": "Defeated Ursula on 【Very Hard difficulty】.",
+   "unlock_condition": "Defeated Ursula on 【Very Hard difficulty】.",
+   "unlock_rate_pct": 7.6,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Ursula",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Very Hard"
+  },
+  "achv-one-strawberry-flavor-as-ordered": {
+   "type": "achievement",
+   "name": "One Strawberry Flavor, as Ordered",
+   "hidden": false,
+   "description": "Completed Dana's Hero Quest.",
+   "unlock_condition": "Completed Dana's Hero Quest.",
+   "unlock_rate_pct": 7.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_hero": "dana",
+   "achievement_category": "hero_quest"
+  },
+  "achv-struck-up-a-chat-got-a-job": {
+   "type": "achievement",
+   "name": "Struck Up a Chat, Got a Job",
+   "hidden": false,
+   "description": "Completed an Area Quest.",
+   "unlock_condition": "Completed an Area Quest.",
+   "unlock_rate_pct": 6.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-subduer-of-hagen": {
+   "type": "achievement",
+   "name": "Subduer of Hagen",
+   "hidden": false,
+   "description": "Defeated Hagen the Dark Necromancer 3 times.",
+   "unlock_condition": "Defeated Hagen the Dark Necromancer 3 times.",
+   "unlock_rate_pct": 6.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Hagen the Dark Necromancer",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-subduer-of-octavia": {
+   "type": "achievement",
+   "name": "Subduer of Octavia",
+   "hidden": false,
+   "description": "Defeated Hungry Eye Octavia 3 times.",
+   "unlock_condition": "Defeated Hungry Eye Octavia 3 times.",
+   "unlock_rate_pct": 6.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Hungry Eye Octavia",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-ah-cant-resist-a-chest": {
+   "type": "achievement",
+   "name": "Ah, Can't Resist a Chest",
+   "hidden": false,
+   "description": "Opened more Treasure Chests.",
+   "unlock_condition": "Opened more Treasure Chests.",
+   "unlock_rate_pct": 6.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-subduer-of-lavanis": {
+   "type": "achievement",
+   "name": "Subduer of Lavanis",
+   "hidden": false,
+   "description": "Defeated Lavanis, Feather of Burning Ashes, 3 times.",
+   "unlock_condition": "Defeated Lavanis, Feather of Burning Ashes, 3 times.",
+   "unlock_rate_pct": 5.9,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Lavanis, Feather of Burning Ashes",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-subduer-of-barpedin": {
+   "type": "achievement",
+   "name": "Subduer of Barpedin",
+   "hidden": false,
+   "description": "Defeated Barpedin, the Crushing Darkness, 3 times.",
+   "unlock_condition": "Defeated Barpedin, the Crushing Darkness, 3 times.",
+   "unlock_rate_pct": 5.9,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Barpedin, the Crushing Darkness",
+   "boss_kind": "subduer",
+   "repeat_count_required": 3
+  },
+  "achv-the-end-of-the-white-mistflower": {
+   "type": "achievement",
+   "name": "The End of the White Mistflower",
+   "hidden": false,
+   "description": "Completed Theresia's Hero Quest.",
+   "unlock_condition": "Completed Theresia's Hero Quest.",
+   "unlock_rate_pct": 5.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_hero": "theresia",
+   "achievement_category": "hero_quest"
+  },
+  "achv-conqueror-of-vanak": {
+   "type": "achievement",
+   "name": "Conqueror of Vanak",
+   "hidden": false,
+   "description": "Defeated Vanak the Bloody Hook on 【Nightmare difficulty】.",
+   "unlock_condition": "Defeated Vanak the Bloody Hook on 【Nightmare difficulty】.",
+   "unlock_rate_pct": 5.3,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Vanak the Bloody Hook",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Nightmare"
+  },
+  "achv-conqueror-of-gallore-the-collapse": {
+   "type": "achievement",
+   "name": "Conqueror of Gallore the Collapse",
+   "hidden": false,
+   "description": "Defeated Gallore the Collapse on 【Nightmare difficulty】.",
+   "unlock_condition": "Defeated Gallore the Collapse on 【Nightmare difficulty】.",
+   "unlock_rate_pct": 5.2,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Gallore the Collapse",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Nightmare"
+  },
+  "achv-conqueror-of-ghoul-greed": {
+   "type": "achievement",
+   "name": "Conqueror of Ghoul Greed",
+   "hidden": false,
+   "description": "Defeated Ghoul Greed on 【Nightmare difficulty】.",
+   "unlock_condition": "Defeated Ghoul Greed on 【Nightmare difficulty】.",
+   "unlock_rate_pct": 4.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Ghoul Greed",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Nightmare"
+  },
+  "achv-conqueror-of-the-earthlander": {
+   "type": "achievement",
+   "name": "Conqueror of the Earthlander",
+   "hidden": false,
+   "description": "Defeated the Earthlander of the Ravenous Earth on 【Nightmare difficulty】.",
+   "unlock_condition": "Defeated the Earthlander of the Ravenous Earth on 【Nightmare difficulty】.",
+   "unlock_rate_pct": 4.3,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "The Earthlander of the Ravenous Earth",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Nightmare"
+  },
+  "achv-conqueror-of-barduk": {
+   "type": "achievement",
+   "name": "Conqueror of Barduk",
+   "hidden": false,
+   "description": "Defeated Barduk the Corrupted on 【Nightmare difficulty】.",
+   "unlock_condition": "Defeated Barduk the Corrupted on 【Nightmare difficulty】.",
+   "unlock_rate_pct": 2.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [],
+   "related_boss": "Barduk the Corrupted",
+   "boss_kind": "conqueror",
+   "required_difficulty": "Nightmare"
+  },
+  "achv-gotta-open-that-suspicious-chest": {
+   "type": "achievement",
+   "name": "Gotta Open That Suspicious Chest",
+   "hidden": false,
+   "description": "Opened all Treasure Chests in the Dungeon.",
+   "unlock_condition": "Opened all Treasure Chests in the Dungeon.",
+   "unlock_rate_pct": 2.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-puzzle-solved-by-pushing": {
+   "type": "achievement",
+   "name": "Puzzle Solved by Pushing",
+   "hidden": false,
+   "description": "Solved the Slide Puzzle.",
+   "unlock_condition": "Solved the Slide Puzzle.",
+   "unlock_rate_pct": 2.1,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-in-search-of-hidden-treasure": {
+   "type": "achievement",
+   "name": "In Search of Hidden Treasure",
+   "hidden": false,
+   "description": "Used a Treasure Map.",
+   "unlock_condition": "Used a Treasure Map.",
+   "unlock_rate_pct": 2.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-theres-a-marmot-in-that-burrow": {
+   "type": "achievement",
+   "name": "There's a Marmot in That Burrow!",
+   "hidden": false,
+   "description": "Won the bet against the Marmot.",
+   "unlock_condition": "Won the bet against the Marmot.",
+   "unlock_rate_pct": 1.9,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-hold-on-stand-right-there": {
+   "type": "achievement",
+   "name": "Hold On, Stand Right There",
+   "hidden": false,
+   "description": "Solved the Platform Puzzle mini-game.",
+   "unlock_condition": "Solved the Platform Puzzle mini-game.",
+   "unlock_rate_pct": 1.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-we-solve-anything": {
+   "type": "achievement",
+   "name": "We Solve Anything",
+   "hidden": false,
+   "description": "Completed all Area Quests.",
+   "unlock_condition": "Completed all Area Quests.",
+   "unlock_rate_pct": 1.2,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": []
+  },
+  "achv-lucky": {
+   "type": "achievement",
+   "name": "Lucky!",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 45.9,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-awakened-heart": {
+   "type": "achievement",
+   "name": "Awakened Heart",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 40.7,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-what-was-kept-and-what-was-lost": {
+   "type": "achievement",
+   "name": "What Was Kept and What Was Lost",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 28.3,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-round-and-round": {
+   "type": "achievement",
+   "name": "Round and Round",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 24.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-10-000-000": {
+   "type": "achievement",
+   "name": "10,000,000!",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 23.4,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-a-heros-beginning": {
+   "type": "achievement",
+   "name": "A Hero's Beginning",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 17.6,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-there-was-an-arm-and-then-there-wasnt": {
+   "type": "achievement",
+   "name": "There Was an Arm, and Then There Wasn't",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 15.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-status-ailment-master": {
+   "type": "achievement",
+   "name": "Status Ailment Master",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 10.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-who-cast-the-frenzy": {
+   "type": "achievement",
+   "name": "Who Cast the Frenzy?",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 8.7,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-this-is-eye-level-between-you-and-me": {
+   "type": "achievement",
+   "name": "This Is Eye Level Between You and Me",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 7.5,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-ill-stand-in-the-sky": {
+   "type": "achievement",
+   "name": "I'll Stand in the Sky",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": "Thirty seconds of airborne attacking, as Reina.",
+   "unlock_rate_pct": 5.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/",
+    "https://dragonsword.site/heroes/johnny-guide/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description: Steam's own achievement listing still publishes no official description (site classifies this as 'hidden'); condition given via community Fandom wiki, quoted on this site's Johnny guide page while listing the four hero-locked achievements; Steam's own listing publishes no description for this achievement"
+   ],
+   "related_hero": "reina",
+   "achievement_category": "hero_locked"
+  },
+  "achv-heh-perfect-landing": {
+   "type": "achievement",
+   "name": "Heh, Perfect Landing!",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": "Jump from a high place as Johnny, take damage equal to 90% or more of maximum HP, and survive.",
+   "unlock_rate_pct": 3.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/",
+    "https://dragonsword.site/heroes/johnny-guide/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description: Steam's own achievement listing still publishes no official description (site classifies this as 'hidden'); condition given via community Fandom wiki, quoted verbatim on this site's Johnny guide page; Steam's own listing publishes no description for this achievement"
+   ],
+   "related_hero": "johnny",
+   "achievement_category": "hero_locked"
+  },
+  "achv-is-stomping-your-hobby": {
+   "type": "achievement",
+   "name": "Is Stomping Your Hobby?",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": "Successfully perform [Air Stomp] ten times in a row, as Roxy.",
+   "unlock_rate_pct": 3.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/",
+    "https://dragonsword.site/heroes/roxy-guide/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description: Steam's own achievement listing still publishes no official description (site classifies this as 'hidden'); condition given via community Fandom wiki, quoted on this site's Roxy guide page; Steam's own listing publishes no description for this achievement"
+   ],
+   "related_hero": "roxy",
+   "achievement_category": "hero_locked"
+  },
+  "achv-the-one-who-roots-out-the-source-of-harm": {
+   "type": "achievement",
+   "name": "The One Who Roots Out the Source of Harm",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": "Defeat five enemies simultaneously with Lute's [Swordgrab].",
+   "unlock_rate_pct": 2.8,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/",
+    "https://dragonsword.site/heroes/lute-guide/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description: Steam's own achievement listing still publishes no official description (site classifies this as 'hidden'); condition given via the DragonSword: Awakening Fandom wiki's Achievements/Special table, quoted on this site's Lute guide page; Steam's own listing publishes no description for this achievement"
+   ],
+   "related_hero": "lute",
+   "achievement_category": "hero_locked"
+  },
+  "achv-assassin-grid": {
+   "type": "achievement",
+   "name": "Assassin Grid",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 2.3,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-dragon-sword": {
+   "type": "achievement",
+   "name": "Dragon Sword?",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 2.1,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "achv-gas-gas-gas": {
+   "type": "achievement",
+   "name": "Gas! Gas! Gas!",
+   "hidden": true,
+   "description": null,
+   "unlock_condition": null,
+   "unlock_rate_pct": 2.0,
+   "unlock_rate_accessed": "2026-09-01",
+   "source_urls": [
+    "https://steamcommunity.com/stats/4570720/achievements/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "primary",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "description/unlock_condition: hidden achievement — Steam withholds the condition and Hound13 has never described it"
+   ]
+  },
+  "cerese": {
+   "type": "hero",
+   "name": "Cerese",
+   "page_slug": "heroes/cerese-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Arcane device user; slow, setup-heavy; commands the Magic Knight Order",
+   "ailments_applied": [
+    "magic"
+   ],
+   "faction": "Orbis Kingdom",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "S",
+   "tier_games_gg": "B",
+   "known_skills": [
+    "[Ice Pillar] (placed object, per 1.0.10 patch note)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.6",
+     "date": "2026-07-31",
+     "summary": "Summer costume + weapon skin (alongside Astria and Reina); no system changes"
+    },
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Included in an unenumerated Charlotte/Cerese/Roxy/Kalien bug-fix bundle"
+    }
+   ],
+   "hero_quest": {
+    "achievement_name": "Warmth for Frozen Wisdom",
+    "achievement_id": "achv-warmth-for-frozen-wisdom",
+    "unlock_rate_pct": 15.4,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "hero_locked_achievement": null,
+   "also_known_as": [
+    "Seris"
+   ],
+   "storyline_note": "Her quest is the unlock gate for the Tower of Trials endgame mode (per this site's Gear, Runes and Karma guide), opening in Chapter 3.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/cerese-guide/",
+    "https://dragonsword.site/heroes/astria-guide/",
+    "https://dragonsword.site/guides/gear-runes-and-karma/",
+    "https://dragonsword.site/guides/best-team-comps/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "ailment: roster table records 'magic', which is not one of the 9 individually-attested Status Ailments; the ailment-coverage page therefore counts her among the 9 heroes with no recorded ailment — her own page calls this 'the ailment question this site has not settled'",
+    "full kit, Exclusive Karma, gear set, stat priorities and Awakening effects are not documented anywhere on this site"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied",
+     "variants": [
+      {
+       "value": "\"magic\" (literal roster-table label)",
+       "source": "https://dragonsword.site/heroes/all-heroes/"
+      },
+      {
+       "value": "no recorded ailment among the 9 attested Status Ailments (magic is not one of the 9)",
+       "source": "https://dragonsword.site/heroes/ailment-coverage/"
+      }
+     ],
+     "note": "Cerese's own guide page states neither reading has a first-party source and declines to pick one."
+    }
+   ]
+  },
+  "othello": {
+   "type": "hero",
+   "name": "Othello",
+   "page_slug": "heroes/othello-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Ice specialist with an ice grab",
+   "ailments_applied": [
+    "Ice"
+   ],
+   "faction": null,
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "not rated",
+   "known_skills": [
+    "[Ice Spear] (placed object, per 1.0.10 patch note)"
+   ],
+   "notable_patches": [],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "No patch through 1.0.12 names an Othello fix or balance change at all — one of the few heroes with a completely clean patch record. Per the FAQ page, Hound13's Stream #4 roadmap (19 June 2026) names Othello's Hero Quest as the first of the announced new Hero Quests; not shipped in any patch through 1.0.12.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/othello-guide/",
+    "https://dragonsword.site/guides/faq/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "whether his 'ice' ailment (roster label) and Dana's 'Freeze' arm the same Signal Skill is unconfirmed — the ailment-coverage page collapses them onto one row only as a conservative reading, not a verified equivalence",
+    "full kit, gear, Karma, stat priorities, skill names beyond [Ice Spear], and Awakening effects are undocumented",
+    "no faction is documented for Othello anywhere on this site — one of only two heroes (with Charlotte) this applies to"
+   ]
+  },
+  "dana": {
+   "type": "hero",
+   "name": "Dana",
+   "page_slug": "heroes/dana-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Self-built magitech gun; summons Chako, an ice golem",
+   "ailments_applied": [
+    "Freeze"
+   ],
+   "faction": "Red Fox Mercenaries",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "S",
+   "tier_games_gg": "A",
+   "known_skills": [
+    "[Snow Step] (named only in the camera-sensitivity-removal list on this site's Johnny guide page)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.4",
+     "date": "2026-07-30",
+     "summary": "Combat and control adjustments for Dana, Roxy and Eileen among others"
+    },
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Fixed Dana's and Theresia's Hero Quests"
+    }
+   ],
+   "hero_quest": {
+    "achievement_name": "One Strawberry Flavor, as Ordered",
+    "achievement_id": "achv-one-strawberry-flavor-as-ordered",
+    "unlock_rate_pct": 7.0,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "hero_locked_achievement": null,
+   "notes": "The roster page's 'earlier fixes' list also credits her with a Summon Chako rage-consumption fix, grouped next to two 1.0.4 items but without its own patch number — not confirmed which patch actually shipped it.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/dana-guide/",
+    "https://dragonsword.site/heroes/roxy-guide/",
+    "https://dragonsword.site/heroes/johnny-guide/",
+    "https://dragonsword.site/guides/team-archetypes-compared/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "Summon Chako rage-consumption fix has no confirmed patch number",
+    "no Summon-archetype team lineup is documented anywhere despite Chako being the most-cited Summon-like kit on the roster",
+    "gear, Karma, stat priorities, skill names, and what Chako mechanically does beyond consuming rage are undocumented"
+   ]
+  },
+  "theresia": {
+   "type": "hero",
+   "name": "Theresia",
+   "page_slug": "heroes/theresia-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Dual sacred maces; [Inquisition] state; Heretic Inquisitor",
+   "ailments_applied": [
+    "Bleed",
+    "Stun"
+   ],
+   "faction": "Organa Order",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "S",
+   "known_skills": [
+    "[Inquisition] (state)",
+    "The Mace of Branding (named Awakening level-1 effect — the only per-hero Awakening effect published anywhere on this site)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.8",
+     "date": "2026-08-07",
+     "summary": "Fixed [Inquisition] state ending mid-combat when dashing via held dodge key (grouped with Sion's Relic and Kalsion's [Royal Flame])"
+    },
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Fixed her Hero Quest (alongside Dana's)"
+    }
+   ],
+   "hero_quest": {
+    "achievement_name": "The End of the White Mistflower",
+    "achievement_id": "achv-the-end-of-the-white-mistflower",
+    "unlock_rate_pct": 5.8,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "hero_locked_achievement": null,
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/theresia-guide/",
+    "https://dragonsword.site/heroes/sion-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "which heroes respond to (detonate) her Bleed is completely undocumented — 'no page on this site names one', and she is Bleed's sole confirmed applier",
+    "gear set, Exclusive Karma, stat priorities and her skill list beyond the one named Awakening effect are undocumented",
+    "what [Inquisition] actually does while active is not documented"
+   ]
+  },
+  "kalien": {
+   "type": "hero",
+   "name": "Kalien",
+   "page_slug": "heroes/kalien-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Commands Sur, a fire fox spirit; strong against undead",
+   "ailments_applied": [
+    "Burn",
+    "Stun"
+   ],
+   "faction": "Red Fox Mercenaries",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "A",
+   "known_skills": [],
+   "notable_patches": [
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Unlocked (with Lute and Johnny) up to 6th Awakening; also included in an unenumerated Charlotte/Cerese/Roxy/Kalien bug-fix bundle"
+    }
+   ],
+   "hero_quest": {
+    "achievement_name": "A Tale Carried on the Embers",
+    "achievement_id": "achv-a-tale-carried-on-the-embers",
+    "unlock_rate_pct": 9.4,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "hero_locked_achievement": null,
+   "notes": "Named repeatedly (unlock planner, team-archetypes comparison, combat guide) as the community's standard answer to undead / element-gated enemies (e.g. Soulwarden Zemoor, weak to shock and burn).",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/kalien-guide/",
+    "https://dragonsword.site/heroes/roxy-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "whether Kalien's Burn and Aria's Fire arm the same Signal Skill is unconfirmed — Hound13 has never published a mapping",
+    "Sur's actual mechanical function, gear, Karma, stat priorities, skill names and Awakening effects are undocumented"
+   ]
+  },
+  "ornette": {
+   "type": "hero",
+   "name": "Ornette",
+   "page_slug": "heroes/ornette-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Massive scythe; sacred magic; Saintess of the Dawn",
+   "ailments_applied": [
+    "Electrocution",
+    "Knockdown"
+   ],
+   "faction": "Organa Order",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "S",
+   "tier_games_gg": "S",
+   "known_skills": [
+    "[Holy Cross] (named only in the camera-sensitivity-removal list on this site's Johnny guide page)",
+    "Holy Circle (named critical-damage buff; no percentage or duration published)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.5",
+     "date": "2026-07-30",
+     "summary": "Fixed Adventure Quests 15-18 stuck at a 'talk to Ornette' step; in doing so printed the four quest titles: Ornette's Request, Preparing for the Funeral, Experience as a Special Diplomatic Envoy, Despair and Hope"
+    }
+   ],
+   "hero_quest": {
+    "achievement_name": "No One Will Know, Right?",
+    "achievement_id": "achv-no-one-will-know-right",
+    "unlock_rate_pct": 8.7,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "hero_locked_achievement": null,
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/ornette-guide/",
+    "https://dragonsword.site/heroes/sion-guide/",
+    "https://dragonsword.site/heroes/johnny-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "whether Ornette's Electrocution and Tarte's Shock arm the same Signal Skill is unconfirmed — both now apply what Hound13 calls Shock under different in-game wording, no mapping published",
+    "Holy Circle's buff is named but not quantified",
+    "gear, Karma, stat priorities, skill names beyond [Holy Cross], and Awakening effects are undocumented"
+   ]
+  },
+  "reina": {
+   "type": "hero",
+   "name": "Reina",
+   "page_slug": "heroes/reina-guide",
+   "has_dedicated_page": true,
+   "role_kit": "High mobility and aerial flow; captain of the 8th Knight Order",
+   "ailments_applied": [],
+   "faction": "Orbis Kingdom",
+   "unlock_type": "story",
+   "unlock_cost": "free",
+   "tier_pro_game_guides": "B",
+   "tier_games_gg": "S",
+   "known_skills": [],
+   "notable_patches": [
+    {
+     "version": "1.0.6",
+     "date": "2026-07-31",
+     "summary": "Summer costume + weapon skin (alongside Astria and Cerese); no system changes"
+    },
+    {
+     "version": "1.0.7",
+     "date": "2026-08-06",
+     "summary": "Fixed her weapon clipping through her arm during the [Boil]/[Slice] cooking actions"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": {
+    "achievement_name": "I'll Stand in the Sky",
+    "achievement_id": "achv-ill-stand-in-the-sky",
+    "condition": "Thirty seconds of airborne attacking, as Reina.",
+    "unlock_rate_pct": 5.0,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "notes": "The two tracked English tier lists disagree most sharply on her (B vs S) — the site's tier-list page uses this as its lead example of the two rankings measuring reviewer playstyle rather than the hero.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/reina-guide/",
+    "https://dragonsword.site/heroes/astria-guide/",
+    "https://dragonsword.site/heroes/kalsion-build/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "ailment: roster table and ailment-coverage page record no ailment for Reina, but the Kalsion build guide describes her as having 'an Airborne/Gale kit' when pairing her with Kalsion — unresolved (one of the ailment-coverage page's own 'three places our pages disagree')",
+    "gear, Karma, stat priorities, skill names and Awakening effects are undocumented"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied",
+     "variants": [
+      {
+       "value": "no recorded ailment",
+       "source": "https://dragonsword.site/heroes/all-heroes/ + https://dragonsword.site/heroes/ailment-coverage/"
+      },
+      {
+       "value": "Airborne/Gale kit (stated only when paired with Kalsion)",
+       "source": "https://dragonsword.site/heroes/kalsion-build/"
+      }
+     ],
+     "note": "ailment-coverage page names this as one of three unresolved internal disagreements."
+    }
+   ]
+  },
+  "castella": {
+   "type": "hero",
+   "name": "Castella",
+   "page_slug": "heroes/castella-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Elf; front-line assault vanguard",
+   "ailments_applied": [
+    "Break",
+    "Stun"
+   ],
+   "faction": "Johnny Mercenaries",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "A",
+   "known_skills": [
+    "[Howling] (named only in the camera-sensitivity-removal list on this site's Johnny guide page)"
+   ],
+   "notable_patches": [],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "Sole confirmed applier of Break, which the combat guide and glossary describe as a super-armor break and itself a Signal trigger — the only documented boss counter on the site (Hagen the Dark Necromancer) runs through her ailment.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/castella-guide/",
+    "https://dragonsword.site/heroes/aria-guide/",
+    "https://dragonsword.site/heroes/johnny-guide/",
+    "https://dragonsword.site/guides/bosses/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "Knockdown-control label: the tier-list page reproduces a games.gg worked example naming 'Castella for knockdown control', but her recorded ailments are Break/Stun and the ailment-coverage page attributes Knockdown only to Lute and Ornette — unresolved",
+    "no patch entry names her at all through 1.0.12 (a clean record, but also means nothing is confirmed about balance changes to her)",
+    "gear, Karma, stat priorities, skill names beyond [Howling], Awakening effects, and Break's build-up threshold/duration are undocumented"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied (Knockdown claim)",
+     "variants": [
+      {
+       "value": "Break, Stun (no Knockdown)",
+       "source": "https://dragonsword.site/heroes/all-heroes/ + https://dragonsword.site/heroes/ailment-coverage/"
+      },
+      {
+       "value": "\"Castella for knockdown control\" (games.gg worked team example, reproduced on the tier-list page)",
+       "source": "https://dragonsword.site/heroes/tier-list/"
+      }
+     ],
+     "note": "Site does not resolve whether this is loose language for what Break/Stun does to enemy posture, or an undocumented Knockdown application."
+    }
+   ]
+  },
+  "charlotte": {
+   "type": "hero",
+   "name": "Charlotte",
+   "page_slug": "heroes/charlotte-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Widely described by players as easy to pilot and near-broken",
+   "ailments_applied": [],
+   "faction": null,
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "S",
+   "tier_games_gg": "A",
+   "known_skills": [
+    "[Clone] (placed object, per 1.0.10 patch note)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Included in an unenumerated Charlotte/Cerese/Roxy/Kalien bug-fix bundle"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "Roster page records her as 'widely described by players as easy to pilot and near-broken' (labelled player sentiment, not a measurement).",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/charlotte-guide/",
+    "https://dragonsword.site/guides/best-team-comps/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "Poison ailment: the Best Team Comps guide recommends a Poison-oriented 3-piece gear direction for her and the tier-list's games.gg worked example lists her 'layering burn, shock and poison', but the ailment-coverage page records zero Poison appliers across the full 19-hero roster and lists Charlotte among the 9 heroes with no recorded ailment — unresolved",
+    "her Karma, exact set names, skill list and Awakening effects are undocumented",
+    "no faction is documented for Charlotte anywhere on this site — one of only two heroes (with Othello) this applies to"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied (Poison claim)",
+     "variants": [
+      {
+       "value": "no recorded ailment; 0 Poison appliers on the entire 19-hero roster",
+       "source": "https://dragonsword.site/heroes/ailment-coverage/"
+      },
+      {
+       "value": "Poison-oriented 3-piece gear direction recommended for her; games.gg worked example lists her layering poison",
+       "source": "https://dragonsword.site/guides/best-team-comps/ + https://dragonsword.site/heroes/tier-list/"
+      }
+     ],
+     "note": "Charlotte's own guide page states three explanations are possible (undocumented Poison application, a mislabelled set name, or simply wrong build advice) and does not pick one."
+    }
+   ]
+  },
+  "lute": {
+   "type": "hero",
+   "name": "Lute",
+   "page_slug": "heroes/lute-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Greatsword; protagonist; the only hero with an on-demand heal",
+   "ailments_applied": [
+    "Stun",
+    "Knockdown"
+   ],
+   "faction": "Johnny Mercenaries",
+   "unlock_type": "story",
+   "unlock_cost": "free",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "S",
+   "known_skills": [
+    "[A Young Boy's Choice] (Master Skill)",
+    "[Dropkick]",
+    "[Swordgrab]",
+    "Signal Pummel"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Unlocked (with Johnny and Kalien) up to 6th Awakening"
+    },
+    {
+     "version": "1.0.11",
+     "date": "2026-09-03",
+     "summary": "Balance: learning [A Young Boy's Choice] Master Skill now applies Stun value to all [Dropkick] attacks (the whole string, not one hit)"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": {
+    "achievement_name": "The One Who Roots Out the Source of Harm",
+    "achievement_id": "achv-the-one-who-roots-out-the-source-of-harm",
+    "condition": "Defeat five enemies simultaneously with Lute's [Swordgrab].",
+    "unlock_rate_pct": 2.8,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "damage_measurement": {
+    "source": "player-authored Steam Community guide 'Damage 101' (id 3773447520), not a Hound13 figure",
+    "measured_at": "Skill Lv.1 (basic attack at Lv.2, by the author's own admission a misclick), against a recorded world-boss fight",
+    "skill_percent_by_string": {
+     "Basic": [
+      40.6,
+      61.0,
+      81.4,
+      81.4,
+      142
+     ],
+     "Dropkick": [
+      75.4,
+      113.0,
+      353.6
+     ],
+     "Dodge Combo": [
+      102.9,
+      308.6
+     ],
+     "Skill 1": [
+      54.4,
+      136.0,
+      353.6
+     ],
+     "Skill 2": [
+      115.5,
+      115.5
+     ],
+     "Signal 1": [
+      565.6,
+      475.1
+     ],
+     "Signal Pummel": [
+      1414.2
+     ]
+    },
+    "conclusion": "author's stated finding: 'the displayed Skill% are unreliable' (basic attacks the main exception); also reports no level scaling on damage"
+   },
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/lute-guide/",
+    "https://dragonsword.site/heroes/aria-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "Skill%: in-game tooltip states 666% for the Signal Pummel skill; the Damage 101 guide's player measurement returns 1414.2% on a grappled boss — Hound13 has not commented, and it is not confirmed whether this is a description bug, a hidden grapple multiplier, or a measurement error",
+    "Karma trait, gear set, per-Awakening-level effects, and the name/effect of his second Signal Skill are not documented"
+   ],
+   "conflicting_values": [
+    {
+     "field": "Signal Pummel skill percentage",
+     "variants": [
+      {
+       "value": "666% (in-game skill description, per the Damage 101 guide author's report)",
+       "source": "in-game tooltip, quoted via Steam Community guide 'Damage 101' (id 3773447520)"
+      },
+      {
+       "value": "1414.2% (player-measured, from a recorded world-boss fight while grappling)",
+       "source": "Steam Community guide 'Damage 101' (id 3773447520)"
+      }
+     ],
+     "note": "One player's measurement, not a Hound13 figure; the guide's own conclusion is that displayed Skill% are unreliable in general."
+    }
+   ]
+  },
+  "sion": {
+   "type": "hero",
+   "name": "Sion",
+   "page_slug": "heroes/sion-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Places a Relic on the field",
+   "ailments_applied": [],
+   "faction": "Organa Order",
+   "unlock_type": "story",
+   "unlock_cost": "free",
+   "tier_pro_game_guides": "S",
+   "tier_games_gg": "not rated",
+   "known_skills": [
+    "[Relic]"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.8",
+     "date": "2026-08-07",
+     "summary": "Fixed his placed Relic being retrieved (not destroyed) when dashing via held dodge key"
+    },
+    {
+     "version": "1.0.10",
+     "date": "2026-08-20",
+     "summary": "Fixed projectile aim misdirection near placed objects incl. [Relic]"
+    },
+    {
+     "version": "1.0.11",
+     "date": "2026-09-03",
+     "summary": "Sion can now perform parkour while in combat state (not explained why Sion-specific); same patch added the global 'Just Dodge' mechanic (1s invincibility, 3s guaranteed crits, 10% Active Skill Rage refund, half Dodge Stamina refund on a perfectly-timed dodge)"
+    },
+    {
+     "version": "1.0.12",
+     "date": "2026-09-10",
+     "summary": "Not named at all"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "also_known_as": [
+    "Zion"
+   ],
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/sion-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "what the Relic actually does once placed, his weapon, his ailment, Karma trait, Awakening effects, skill names beyond [Relic], and whether the Relic can be destroyed by enemies are all undocumented — 'everything above is inference from four maintenance lines', per his own guide page",
+    "whether other heroes could already parkour in combat pre-1.0.11 and Sion was uniquely excluded, or this is a wholly new capability, is not confirmed"
+   ]
+  },
+  "johnny": {
+   "type": "hero",
+   "name": "Johnny",
+   "page_slug": "heroes/johnny-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Leader of the mercenary crew; story unlock, never in the Exchange",
+   "ailments_applied": [],
+   "faction": "Johnny Mercenaries",
+   "unlock_type": "story",
+   "unlock_cost": "free",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "not rated in full",
+   "known_skills": [
+    "[Fatal Sting]"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.4",
+     "date": "2026-07-30",
+     "summary": "Fixed Adventure Quest 59 icon showing Johnny's icon as Lute's during cooking"
+    },
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Unlocked (with Lute and Kalien) up to 6th Awakening"
+    },
+    {
+     "version": "1.0.10",
+     "date": "2026-08-20",
+     "summary": "Removed camera rotation sensitivity change on [Fatal Sting]"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": {
+    "achievement_name": "Heh, Perfect Landing!",
+    "achievement_id": "achv-heh-perfect-landing",
+    "condition": "Jump from a high place as Johnny, take damage equal to 90% or more of maximum HP, and survive.",
+    "unlock_rate_pct": 3.0,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/johnny-guide/",
+    "https://dragonsword.site/heroes/aria-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "his weapon has never been documented by any source this site considers reliable",
+    "status ailment, Karma trait, Awakening effects, Signal Skill names, second Active Skill, and whether he has a Hero Quest are all undocumented — he has never been named in a balance pass through 1.0.12",
+    "faction name is spelled three different ways across sources (see conflicting_values)"
+   ],
+   "conflicting_values": [
+    {
+     "field": "faction name spelling",
+     "variants": [
+      {
+       "value": "the Johnny Mercenaries",
+       "source": "Hound13 AMA Summary, 27 May 2026 (quoted on this hero's page)"
+      },
+      {
+       "value": "Johnny's Mercenaries",
+       "source": "DragonSword: Awakening Fandom wiki page title"
+      },
+      {
+       "value": "Johnny Mercenary",
+       "source": "Hound13 Gameplay Preview - [Lute], 30 April 2026"
+      }
+     ],
+     "note": "Same faction, three spellings. This site defaults to the AMA wording ('the Johnny Mercenaries') when a single choice is needed."
+    }
+   ]
+  },
+  "tarte": {
+   "type": "hero",
+   "name": "Tarte",
+   "page_slug": "heroes/tarte-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Kit not documented in any primary source (roster-page description; patch 1.0.11 later revealed her Shock kit — see this hero's own notes)",
+   "ailments_applied": [],
+   "faction": "Organa Order",
+   "unlock_type": "undocumented",
+   "unlock_cost": "unknown",
+   "tier_pro_game_guides": "B",
+   "tier_games_gg": "B",
+   "known_skills": [
+    "[Lightning Shock] (multi-stage charged hold; damage and Shock application scale with hold duration; survives a mid-hold hero switch as of 1.0.11)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.10",
+     "date": "2026-08-20",
+     "summary": "[Lightning Shock] named in the camera-rotation-sensitivity-removal list — first evidence the skill exists"
+    },
+    {
+     "version": "1.0.11",
+     "date": "2026-09-03",
+     "summary": "Balance (joint-largest entry of the pass, with Aria): final attack now fires on releasing the [Lightning Shock] hold; adjusted damage/Shock values per hold stage; the hold now plays to completion if you switch heroes mid-cast instead of cancelling"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "Roster page's description ('Kit not documented in any primary source') predates patch 1.0.11; her own guide page exists specifically to update that.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/tarte-guide/",
+    "https://dragonsword.site/heroes/sion-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "ailment: her own page documents Shock via patch 1.0.11's reveal, but the roster page and ailment-coverage page (both dated at/before 2026-09-11) still record no ailment for her — the coverage table has not been updated to add her",
+    "whether Tarte was specifically flagged by Hound13 as an 'underused character' targeted by the balance pass is this site's own inference, not a confirmed Hound13 statement",
+    "whether Ornette's Electrocution and Tarte's Shock arm the same Signal Skill is unconfirmed",
+    "her weapon, Karma trait, Awakening effects, second Active Skill, exact number of [Lightning Shock] hold stages, and the adjusted values themselves (direction only, not numbers) are not published",
+    "unlock method (story vs Exchange) is undocumented anywhere — the only launched hero this applies to"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied / Shock applier count",
+     "variants": [
+      {
+       "value": "no recorded ailment (absent from ailment-coverage's Shock row, which lists only Ornette, count 1)",
+       "source": "https://dragonsword.site/heroes/all-heroes/ + https://dragonsword.site/heroes/ailment-coverage/ (2026-09-11)"
+      },
+      {
+       "value": "Shock, via [Lightning Shock] (revealed in patch 1.0.11, 3 Sep 2026)",
+       "source": "https://dragonsword.site/heroes/tarte-guide/ (2026-09-12)"
+      }
+     ],
+     "note": "tarte-guide states the coverage page 'previously had a single applier: Ornette. Tarte is the second' — the coverage table itself has not been updated."
+    }
+   ]
+  },
+  "roxy": {
+   "type": "hero",
+   "name": "Roxy",
+   "page_slug": "heroes/roxy-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Acrobat; 3rd Awakening grants repeatable Air Stomps and an aerial re-jump",
+   "ailments_applied": [],
+   "faction": "Red Fox Mercenaries",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "B",
+   "tier_games_gg": "A",
+   "known_skills": [
+    "[Crimson Spiral]",
+    "[Kick Storm]",
+    "[Air Stomp]",
+    "Aerial Re-jump (3rd Awakening)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.4",
+     "date": "2026-07-30",
+     "summary": "Fixed consecutive in-place Air Stomps for 3rd Awakening not being possible; Aerial Re-jump cooldown 3s to 1.5s"
+    },
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Fixed getting stuck inside a monster's body during aerial stomp; fixed an intermittent client freeze during her stomp action on Gauron"
+    },
+    {
+     "version": "1.0.11",
+     "date": "2026-09-03",
+     "summary": "Balance: increased Bleed application value of [Crimson Spiral] at Base and 1st Awakening; increased [Kick Storm] damage at 6th Awakening when dedicated Karma is equipped"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": {
+    "achievement_name": "Is Stomping Your Hobby?",
+    "achievement_id": "achv-is-stomping-your-hobby",
+    "condition": "Successfully perform [Air Stomp] ten times in a row, as Roxy.",
+    "unlock_rate_pct": 3.0,
+    "unlock_rate_accessed": "2026-09-01"
+   },
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/roxy-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "ailment: her own page documents Bleed via the 1.0.11 [Crimson Spiral] note, but the roster page and ailment-coverage page (dated at/before 2026-09-11) still record no ailment for her",
+    "no Bleed-archetype team lineup is documented despite her now being a second Bleed applier alongside Theresia",
+    "Karma trait, Signal Skill names, what Awakenings 2/4/5 change, and skill percentages are undocumented"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied / Bleed applier count",
+     "variants": [
+      {
+       "value": "no recorded ailment (absent from ailment-coverage's Bleed row, which lists only Theresia, count 1)",
+       "source": "https://dragonsword.site/heroes/all-heroes/ + https://dragonsword.site/heroes/ailment-coverage/ (2026-09-11)"
+      },
+      {
+       "value": "Bleed, via [Crimson Spiral] (buffed in patch 1.0.11, 3 Sep 2026)",
+       "source": "https://dragonsword.site/heroes/roxy-guide/ (2026-09-12)"
+      }
+     ],
+     "note": "roxy-guide states the older pages recorded no ailment for her 'because until 3 September no primary source named one' — the coverage table has not been updated."
+    }
+   ]
+  },
+  "aria": {
+   "type": "hero",
+   "name": "Aria",
+   "page_slug": "heroes/aria-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Bombs and area firepower",
+   "ailments_applied": [
+    "Fire",
+    "Airborne"
+   ],
+   "faction": "Johnny Mercenaries",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "A",
+   "known_skills": [
+    "[Air Bomb] (Active Skill)",
+    "[Bomb Arrows] (basic-attack skill name)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.10",
+     "date": "2026-08-20",
+     "summary": "Removed camera rotation sensitivity change on [Air Bomb]"
+    },
+    {
+     "version": "1.0.11",
+     "date": "2026-09-03",
+     "summary": "Balance: basic attack changed 5-hit to 3-hit; final basic attack ends more quickly; switching heroes mid-[Air Bomb] now throws the bomb immediately instead of losing it"
+    },
+    {
+     "version": "1.0.12",
+     "date": "2026-09-10",
+     "summary": "Localization: fixed the [Bomb Arrows] hit-count description not matching the post-1.0.11 3-hit basic attack"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/aria-guide/",
+    "https://dragonsword.site/heroes/kalsion-build/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "ailments_applied: roster/ailment-coverage record 'Fire' for her, but the Kalsion build guide's team-pairing text labels her contribution 'Burn' instead — not confirmed whether the same label",
+    "whether Aria's Fire and Kalien's Burn arm the same Signal Skill is unconfirmed",
+    "her Karma trait, Awakening effects, Signal Skill names and post-1.0.11 hit numbers are undocumented — no player has published measured skill percentages for her"
+   ]
+  },
+  "astria": {
+   "type": "hero",
+   "name": "Astria",
+   "page_slug": "heroes/astria-guide",
+   "has_dedicated_page": true,
+   "role_kit": "Crossbow — \"enemies usually end up soaring into the sky\"",
+   "ailments_applied": [
+    "Airborne"
+   ],
+   "faction": "Orbis Kingdom",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "A",
+   "tier_games_gg": "not rated",
+   "known_skills": [
+    "[Ballista Shot] (charge action within [Precision Shooting] mode, gated behind dedicated Karma)",
+    "[Precision Shooting] (stance/mode)",
+    "Slide (Dodge Attack)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.9",
+     "date": "2026-08-13",
+     "summary": "Named as the example in a game-wide projectile aim-misdirection bug"
+    },
+    {
+     "version": "1.0.10",
+     "date": "2026-08-20",
+     "summary": "[Ballista Shot]/[Precision Shooting] mechanic first documented via the camera-sensitivity-removal list; projectile aim-near-placed-objects fix"
+    },
+    {
+     "version": "1.0.11",
+     "date": "2026-09-03",
+     "summary": "Balance: fixed awkward Slide (Dodge Attack) motion when Master Skills are learned; Slide can now change direction while used"
+    },
+    {
+     "version": "1.0.12",
+     "date": "2026-09-10",
+     "summary": "Action: fixed a cooldown wrongly applied to Slide when a Master Skill is learned; fixed inability to rotate while using Slide"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "Touched by three consecutive patches (1.0.10, 1.0.11, 1.0.12) — more sustained per-patch attention than any other hero on the roster, all of it on her Ballista Shot targeting and her Slide dodge.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/astria-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "her Karma trait by name, Awakening effects, Signal Skill names, skill percentages, and whether [Precision Shooting] roots her in place are undocumented"
+   ],
+   "conflicting_values": [
+    {
+     "field": "which patch actually fixed Slide direction-change/rotation",
+     "variants": [
+      {
+       "value": "1.0.11 (3 Sep 2026): 'Slide (Dodge Attack) can now change direction while used'",
+       "source": "https://dragonsword.site/heroes/astria-guide/"
+      },
+      {
+       "value": "1.0.12 (10 Sep 2026): 'Fixed an issue where the hero could not rotate while using the Slide skill' (+ a cooldown fix)",
+       "source": "https://dragonsword.site/heroes/astria-guide/"
+      }
+     ],
+     "note": "Astria's own page states outright that the two notes overlap and Hound13 does not reconcile them — 'not confirmed: which' (the 1.0.11 change shipped incomplete, or regressed and needed a second fix in 1.0.12)."
+    }
+   ]
+  },
+  "kalsion": {
+   "type": "hero",
+   "name": "Kalsion",
+   "page_slug": "heroes/kalsion-build",
+   "has_dedicated_page": true,
+   "role_kit": "\"Sun of the Kingdom,\" Roderic royalty; has a [Royal Flame] state",
+   "ailments_applied": [],
+   "faction": "Orbis Kingdom",
+   "unlock_type": "story",
+   "unlock_cost": "free",
+   "tier_pro_game_guides": "S",
+   "tier_games_gg": "S",
+   "known_skills": [
+    "[Royal Flame] (state)",
+    "The Sun Rises Again (Exclusive Karma)"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.8",
+     "date": "2026-08-07",
+     "summary": "Fixed [Royal Flame] state ending mid-combat when dashing via held dodge key (grouped with Sion's Relic and Theresia's [Inquisition])"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "also_known_as": [
+    "Calcion"
+   ],
+   "build": {
+    "karma": "The Sun Rises Again (his Exclusive Karma)",
+    "gear": "3-piece Blazing Flame + 2-piece Ruinsbreaker",
+    "main_stats": [
+     "ATK Power Up",
+     "Critical Hit Chance",
+     "Critical DMG"
+    ],
+    "runes": [
+     "Resolve"
+    ],
+    "team_pairings": [
+     "Kalsion + Aria — Aria applies Burn/Airborne from range as an enabler; Kalsion converts the setup into damage",
+     "Kalsion + Kalien — two Burn-focused heroes stacked for faster Burn application, at the cost of redundancy if the third slot adds no other ailment",
+     "Reina + Kalsion — pairs Kalsion's Burn damage with Reina's stated Airborne/Gale kit for a mixed-element team"
+    ],
+    "source": "AllThings.How (Sehaj Padda, updated 28 July 2026); cross-referenced by OSLink (Rainee Walker, 9 August 2026)"
+   },
+   "notes": "One of only two heroes both tracked English tier lists agree on with no split (S/S) — Ornette is the other.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/kalsion-build/",
+    "https://dragonsword.site/heroes/astria-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-10",
+   "unverified_fields": [
+    "ailments_applied: roster/ailment-coverage record no ailment for Kalsion, but the Kalsion build guide (this hero's own page) itself classifies him as a Burn applicator and finisher — unresolved, one of the ailment-coverage page's own 'three places our pages disagree'",
+    "exact substat percentages, skill priority order, and the Awakening-tier breakpoint for The Sun Rises Again's full effect are not published by either build source",
+    "whether Kalsion's Burn application speed changed in patch 1.0.10 could not be confirmed from official material"
+   ],
+   "conflicting_values": [
+    {
+     "field": "ailments_applied",
+     "variants": [
+      {
+       "value": "no recorded ailment",
+       "source": "https://dragonsword.site/heroes/all-heroes/ + https://dragonsword.site/heroes/ailment-coverage/"
+      },
+      {
+       "value": "Burn applicator and finisher",
+       "source": "https://dragonsword.site/heroes/kalsion-build/"
+      }
+     ],
+     "note": "Kalsion's own build-guide page is itself the source of the conflicting 'Burn' label."
+    }
+   ]
+  },
+  "alex": {
+   "type": "hero",
+   "name": "Alex",
+   "page_slug": null,
+   "has_dedicated_page": false,
+   "role_kit": "Built entirely around parry — can parry raid bosses",
+   "ailments_applied": [],
+   "faction": "Red Fox Mercenaries",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "B",
+   "tier_games_gg": "B",
+   "known_skills": [
+    "[Defensive Stance]",
+    "[Dodge Combo]"
+   ],
+   "notable_patches": [],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "Both tracked English tier lists grade him B with the same reasoning: a defensive kit ('built entirely around parry — can parry raid bosses') the game does not currently reward.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/roxy-guide/",
+    "https://dragonsword.site/heroes/johnny-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "No dedicated hero guide page exists on this site for Alex (unlike 17 of the other 18 launched heroes); every field here is compiled from cross-page mentions only — the roster table, the unlock planner, the tier list, the ailment-coverage page, Roxy's faction note, and Johnny's consolidated skill-name list."
+   ]
+  },
+  "eileen": {
+   "type": "hero",
+   "name": "Eileen",
+   "page_slug": null,
+   "has_dedicated_page": false,
+   "role_kit": "Spear; \"Barraging Spear\" launches enemies",
+   "ailments_applied": [
+    "Airborne"
+   ],
+   "faction": "Orbis Kingdom",
+   "unlock_type": "exchange",
+   "unlock_cost": "1 Fate's Invitation",
+   "tier_pro_game_guides": "C",
+   "tier_games_gg": "not rated",
+   "known_skills": [
+    "Barraging Spear"
+   ],
+   "notable_patches": [
+    {
+     "version": "1.0.4",
+     "date": "2026-07-30",
+     "summary": "Fixed Barraging Spear not applying Airborne"
+    }
+   ],
+   "hero_quest": null,
+   "hero_locked_achievement": null,
+   "notes": "One of the 'most self-sufficient chain' trio (Airborne, with Aria and Astria).",
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/tier-list/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/heroes/astria-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "No dedicated hero guide page exists on this site for Eileen (unlike 17 of the other 18 launched heroes); every field here is compiled from cross-page mentions only — the roster table, the unlock planner, the tier list, the ailment-coverage page, and Astria's faction note.",
+    "the tier-list page argues Eileen 'has no case for early tickets' partly due to Airborne overlap with Astria and Reina — but Reina's own Airborne status is itself disputed (see the Reina hero entity), so that reasoning rests on an unconfirmed premise"
+   ]
+  },
+  "hero-unlock-economy": {
+   "type": "mechanic",
+   "name": "Hero Unlock Economy (Story vs. Exchange)",
+   "summary": "All 19 launch heroes are earned by playing — no gacha, no paid characters, no drop chance. Story heroes join as the campaign progresses; the rest are bought in the Exchange for a flat single Fate's Invitation each, regardless of hero. Money buys only cosmetics (costumes/Familiars), never heroes.",
+   "story_unlock_heroes": [
+    "Lute",
+    "Johnny",
+    "Kalsion",
+    "Reina",
+    "Sion"
+   ],
+   "exchange_unlock_heroes": [
+    "Castella",
+    "Aria",
+    "Cerese",
+    "Ornette",
+    "Othello",
+    "Charlotte",
+    "Roxy",
+    "Theresia",
+    "Dana",
+    "Alex",
+    "Eileen",
+    "Kalien",
+    "Astria"
+   ],
+   "exchange_cost_per_hero": "1 Fate's Invitation (flat — every Exchange hero costs the same, no per-hero pricing, no shards)",
+   "undocumented_unlock_heroes": [
+    "Tarte"
+   ],
+   "total_playable_at_launch": 19,
+   "roadmap_heroes_unreleased_free": [
+    {
+     "name": "Ryza",
+     "description": "shock specialist; throws her spear, then teleports to its location to continue the assault",
+     "release_order": 1
+    },
+    {
+     "name": "Jerome",
+     "description": "small-statured character wielding a massive greatsword, with a three-stage Grab",
+     "release_order": 2
+    },
+    {
+     "name": "Veronica",
+     "description": "Stun is her primary attribute — fires a gun at range and engages in martial arts up close",
+     "release_order": 3
+    },
+    {
+     "name": "Logan",
+     "description": "tank-type character who attacks with a massive shield and protects allies",
+     "release_order": 4
+    }
+   ],
+   "roadmap_heroes_note": "Confirmed by the producer as included in the full version, not paid DLC, and to be developed regardless of sales. No individual release dates published as of the newest patch this site has read (1.0.12). Not built as hero entities here since they are unreleased and not part of the current 19-hero roster.",
+   "roadmap_source": "Simulation Daily report (Andrew McMahon, 19 June 2026) citing 'Hound13 Inc. livestream (Stream #4)' — a secondary report of an official broadcast, not an official document itself",
+   "background": "DragonSword launched in Korea in December 2025 as a free-to-play gacha (as 'Project D', publisher Webzen); Hound13 terminated that publishing agreement and relaunched the Steam version as buy-to-play with the gacha economy stripped out.",
+   "conflicting_values": [
+    {
+     "field": "story vs. Exchange hero count (aggregate)",
+     "variants": [
+      {
+       "value": "8 story / 11 Exchange (headline count)",
+       "source": "https://dragonsword.site/heroes/all-heroes/"
+      },
+      {
+       "value": "5 story / 13 Exchange / 1 undocumented (per-hero classification actually used by the unlock planner, ailment-coverage, codes and Kalsion-build pages)",
+       "source": "https://dragonsword.site/heroes/unlock-planner/ (also stated on https://dragonsword.site/heroes/ailment-coverage/, https://dragonsword.site/guides/codes/, https://dragonsword.site/heroes/kalsion-build/)"
+      }
+     ],
+     "note": "Explicitly acknowledged by the site itself on multiple pages (e.g. the Kalsion build guide: 'this site's roster heading counts 8 story heroes, while the per-hero records behind the unlock planner count 5; the two disagree on the total, not on Kalsion, who is a story hero under both readings'). This entity's story_unlock_heroes/exchange_unlock_heroes lists follow the per-hero classification (5/13/1), per the unlock planner's own stated policy of following the granular data over the headline."
+    }
+   ],
+   "source_urls": [
+    "https://dragonsword.site/heroes/all-heroes/",
+    "https://dragonsword.site/heroes/unlock-planner/",
+    "https://dragonsword.site/heroes/ailment-coverage/",
+    "https://dragonsword.site/guides/codes/",
+    "https://dragonsword.site/heroes/kalsion-build/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "exact chapter/quest that grants each Fate's Invitation is unconfirmed (one player-thread estimate: roughly one per chapter through Chapter 5, with the final five from Hero Quests — pacing only, not official)",
+    "Tarte's unlock method (story vs Exchange) is undocumented anywhere on this site"
+   ]
+  },
+  "factions": {
+   "type": "mechanic",
+   "name": "Hero Factions",
+   "summary": "Hound13's May 2026 AMA names five factions at official launch. Membership rosters are only partially documented — sourced to a community Fandom wiki and quoted piecemeal across individual hero guide pages, never as one consolidated list on this site.",
+   "factions": [
+    {
+     "name": "Johnny Mercenaries",
+     "also_known_as": [
+      "Johnny's Mercenaries",
+      "Johnny Mercenary"
+     ],
+     "members": [
+      "Lute",
+      "Johnny",
+      "Castella",
+      "Aria"
+     ],
+     "note": "Also the exact cast of Hound13's own Tag Combo Preview demonstration (1 May 2026)."
+    },
+    {
+     "name": "Red Fox Mercenaries",
+     "members": [
+      "Dana",
+      "Kalien",
+      "Roxy",
+      "Alex"
+     ]
+    },
+    {
+     "name": "Organa Order",
+     "members": [
+      "Theresia",
+      "Ornette",
+      "Sion",
+      "Tarte"
+     ],
+     "note": "Per Tarte's guide page, a 9 July 2026 Hero Quest teaser places the Order in the main story rather than as a side faction."
+    },
+    {
+     "name": "Orbis Kingdom",
+     "members": [
+      "Kalsion",
+      "Cerese",
+      "Reina",
+      "Astria",
+      "Eileen"
+     ]
+    },
+    {
+     "name": "Lentus Rebellion Army",
+     "members": [],
+     "note": "Named only in the AMA's 5-faction list; no member has been documented anywhere on this site."
+    }
+   ],
+   "unassigned_heroes": [
+    "Othello",
+    "Charlotte"
+   ],
+   "unassigned_heroes_note": "No faction is stated for these two anywhere on this site.",
+   "source_urls": [
+    "https://dragonsword.site/heroes/johnny-guide/",
+    "https://dragonsword.site/heroes/aria-guide/",
+    "https://dragonsword.site/heroes/roxy-guide/",
+    "https://dragonsword.site/heroes/sion-guide/",
+    "https://dragonsword.site/heroes/tarte-guide/",
+    "https://dragonsword.site/heroes/astria-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "18 of 19 launched heroes' faction membership is sourced to a community Fandom wiki (not a Hound13 primary source); only the existence and names of the 5 factions themselves come from Hound13's own AMA",
+    "Lentus Rebellion Army has zero documented members"
+   ],
+   "conflicting_values": [
+    {
+     "field": "Johnny Mercenaries — faction name spelling",
+     "variants": [
+      {
+       "value": "the Johnny Mercenaries",
+       "source": "Hound13 AMA Summary, 27 May 2026"
+      },
+      {
+       "value": "Johnny's Mercenaries",
+       "source": "DragonSword: Awakening Fandom wiki page title"
+      },
+      {
+       "value": "Johnny Mercenary",
+       "source": "Hound13 Gameplay Preview - [Lute], 30 April 2026"
+      }
+     ],
+     "note": "Same faction, three spellings across three source types; this site defaults to the AMA wording when a single choice is needed."
+    }
+   ]
+  },
+  "status-ailments-and-signals": {
+   "type": "mechanic",
+   "name": "Status Ailments & Signal Skills (combat loop)",
+   "summary": "Core combat loop: Active Skills apply a Status Ailment -> a Signal Skill arms on whichever hero responds to that ailment -> switching to that hero fires the Signal as they tag in -> repeat. Signal Skills have no cooldown; arming is the only gate. Teams need overlapping ailment coverage, not complementary damage.",
+   "ailments_confirmed": [
+    "Stun",
+    "Knockdown",
+    "Bleed",
+    "Burn (Fire)",
+    "Shock (Electrocution)",
+    "Freeze (Ice)",
+    "Poison",
+    "Airborne",
+    "Break"
+   ],
+   "ailments_confirmed_note": "Nine are individually attested across store text, patch notes and hero descriptions; Hound13 has never published a canonical/complete list. Poison rests on a single passing player comment.",
+   "applier_counts_per_ailment_coverage_page": [
+    {
+     "ailment": "Stun",
+     "heroes": [
+      "Lute",
+      "Castella",
+      "Theresia",
+      "Kalien"
+     ],
+     "count": 4
+    },
+    {
+     "ailment": "Airborne",
+     "heroes": [
+      "Aria",
+      "Eileen",
+      "Astria"
+     ],
+     "count": 3
+    },
+    {
+     "ailment": "Knockdown",
+     "heroes": [
+      "Lute",
+      "Ornette"
+     ],
+     "count": 2
+    },
+    {
+     "ailment": "Burn / Fire",
+     "heroes": [
+      "Kalien (Burn)",
+      "Aria (Fire)"
+     ],
+     "count": 2
+    },
+    {
+     "ailment": "Freeze / Ice",
+     "heroes": [
+      "Dana (Freeze)",
+      "Othello (Ice)"
+     ],
+     "count": 2
+    },
+    {
+     "ailment": "Break",
+     "heroes": [
+      "Castella"
+     ],
+     "count": 1
+    },
+    {
+     "ailment": "Bleed",
+     "heroes": [
+      "Theresia"
+     ],
+     "count": 1
+    },
+    {
+     "ailment": "Shock (Electrocution)",
+     "heroes": [
+      "Ornette"
+     ],
+     "count": 1
+    },
+    {
+     "ailment": "Poison",
+     "heroes": [],
+     "count": 0
+    }
+   ],
+   "applier_counts_table_date": "2026-09-11",
+   "heroes_with_no_recorded_ailment_per_coverage_table": [
+    "Johnny",
+    "Cerese",
+    "Kalsion",
+    "Charlotte",
+    "Roxy",
+    "Alex",
+    "Reina",
+    "Sion",
+    "Tarte"
+   ],
+   "team_archetypes_named": [
+    "Bleed",
+    "Burn",
+    "Shock",
+    "Aerial (Airborne)",
+    "Summon",
+    "Defensive Control"
+   ],
+   "difficulty_note": "Content offers selectable difficulty tiers up to Very Hard, Nightmare and Extreme; rises automatically with Mercenary Corps rank and can be manually lowered.",
+   "element_gate_note": "Some enemies (e.g. Soulwarden Zemoor) take no damage at all until struck with the correct element; the game signposts this in the environment. Shock and Burn are the only two elements this site confirms actually bypass such an immunity.",
+   "not_documented": "No cleanse, resist stat or immunity system is described by any source this site considers reliable. No per-ailment build-up thresholds, durations or stack counts are published. Which Signal Skill responds to which ailment is never published — players are told to read each hero's own skill text in-game.",
+   "source_urls": [
+    "https://dragonsword.site/guides/status-ailments-and-signals/",
+    "https://dragonsword.site/heroes/ailment-coverage/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "three internal disagreements the ailment-coverage page names itself: (1) Kalsion carries no ailment in the roster data, but the Kalsion build guide classifies him as a Burn applicator/finisher; (2) Reina likewise carries none, but the build guide describes her as having an Airborne kit; (3) Aria is recorded as applying Fire, but the build guide says Burn for her",
+    "whether same-element-different-label pairs (Aria's Fire vs Kalien's Burn; Othello's Ice vs Dana's Freeze; Ornette's Electrocution vs Tarte's Shock) actually arm the same Signal is unconfirmed in all three cases"
+   ],
+   "conflicting_values": [
+    {
+     "field": "Bleed applier count",
+     "variants": [
+      {
+       "value": "1 (Theresia only)",
+       "source": "https://dragonsword.site/heroes/ailment-coverage/ (2026-09-11)"
+      },
+      {
+       "value": "2 (Theresia + Roxy, per Roxy's [Crimson Spiral] Bleed application, buffed in patch 1.0.11)",
+       "source": "https://dragonsword.site/heroes/roxy-guide/ (2026-09-12)"
+      }
+     ],
+     "note": "The ailment-coverage page's table predates Roxy's individual guide page by one day and has not been updated to reflect patch 1.0.11's Roxy Bleed buff."
+    },
+    {
+     "field": "Shock (Electrocution) applier count",
+     "variants": [
+      {
+       "value": "1 (Ornette only)",
+       "source": "https://dragonsword.site/heroes/ailment-coverage/ (2026-09-11)"
+      },
+      {
+       "value": "2 (Ornette + Tarte, per Tarte's [Lightning Shock] Shock application, confirmed in patch 1.0.11)",
+       "source": "https://dragonsword.site/heroes/tarte-guide/ (2026-09-12)"
+      }
+     ],
+     "note": "Same staleness pattern as Bleed above — Tarte's own guide page explicitly says the coverage page 'previously had a single applier: Ornette. Tarte is the second.'"
+    }
+   ]
+  },
+  "awakening-system": {
+   "type": "mechanic",
+   "name": "Awakening System",
+   "summary": "Every hero has six Awakening levels. Each level is unlocked with a Stigma Awakened Stone, and each Stone costs 200 Fragments of Sacred Light (farmed mainly from Sudden Missions). Awakening changes a hero's playstyle/kit rather than only scaling stat numbers.",
+   "levels_per_hero": 6,
+   "unlock_item": "Stigma Awakened Stone",
+   "unlock_item_cost": "200 Fragments of Sacred Light",
+   "fragment_source": "Sudden Mission completions (surprise mini-boss fights / timed challenges encountered while exploring)",
+   "only_named_per_hero_effect": {
+    "hero": "Theresia",
+    "awakening_level": 1,
+    "effect_name": "The Mace of Branding",
+    "note": "The only per-hero Awakening effect published anywhere on this site, for any of the 19 heroes."
+   },
+   "recommended_spending_order": "Reach level cap and first Breakthrough before investing in Awakening; spread Stones across the active team rather than maxing one favourite hero.",
+   "cap_note": "Patch 1.0.9 (13 Aug 2026) explicitly unlocked Lute, Johnny and Kalien up to their 6th Awakening — they were capped below the system's ceiling for the first three weeks after launch.",
+   "expansion_note": "Hound13 stated on the 14 August All Day Live Q&A that the six-tier system 'is designed as-is' and further expansion 'isn't planned near-term'.",
+   "history_note": "An earlier page on this site (Gear, Runes and Karma, 2026-08-12) hedged Awakening as 'at least three tiers, reportedly six' from two disagreeing player guides; the dedicated Awakening System page (2026-09-10) resolves this to a definitive six via a bylined Destructoid source. Not treated as a live conflict since the newer page explicitly narrates the resolution.",
+   "source_urls": [
+    "https://dragonsword.site/guides/awakening-system/",
+    "https://dragonsword.site/guides/gear-runes-and-karma/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-10",
+   "unverified_fields": [
+    "what each of the six Awakening levels changes, for each of the 19 heroes, is published for exactly one hero (Theresia, level 1) — the other 18 heroes and the remaining 5 levels are undocumented",
+    "whether the Stigma Awakened Stone exchange rate or the 200-fragment cost changed in any patch after 24 July 2026 could not be confirmed"
+   ]
+  },
+  "difficulty-and-boss-clear-verbs": {
+   "type": "mechanic",
+   "name": "Difficulty Tiers & Boss Clear Verbs (Subduer / Conqueror)",
+   "summary": "Difficulty rises automatically with Mercenary Corps rank and can be manually lowered; content offers selectable tiers up to Very Hard, Nightmare and Extreme. The only two difficulty names that appear anywhere in Steam's achievement text are Very Hard and Nightmare, split across two boss-achievement verbs: 'Subduer of X' (defeat 3 times, repeatable) and 'Conqueror of X' (defeat once, on a named difficulty).",
+   "difficulty_tiers_named": [
+    "Normal",
+    "Very Hard",
+    "Nightmare",
+    "Extreme"
+   ],
+   "difficulty_tiers_note": "'Very Hard', 'Nightmare' and 'Extreme' are named as selectable content tiers on the combat guide; only 'Very Hard' and 'Nightmare' actually appear in achievement text (no boss is gated on 'Extreme' in any achievement).",
+   "subduer_bosses": [
+    {
+     "boss": "Horg the Roamer",
+     "achievement": "Subduer of Horg",
+     "unlock_rate_pct": 11.1,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Andras the Predator",
+     "achievement": "Subduer of Andras",
+     "unlock_rate_pct": 9.0,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Pakirus the Specter of Thirst",
+     "achievement": "Subduer of Pakirus",
+     "unlock_rate_pct": 8.9,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Scraping Brack",
+     "achievement": "Subduer of Brack",
+     "unlock_rate_pct": 7.9,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Karon the Tyrant",
+     "achievement": "Subduer of Karon",
+     "unlock_rate_pct": 7.6,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Hungry Eye Octavia",
+     "achievement": "Subduer of Octavia",
+     "unlock_rate_pct": 6.4,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Hagen the Dark Necromancer",
+     "achievement": "Subduer of Hagen",
+     "unlock_rate_pct": 6.4,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Barpedin, the Crushing Darkness",
+     "achievement": "Subduer of Barpedin",
+     "unlock_rate_pct": 5.9,
+     "repeat_count_required": 3
+    },
+    {
+     "boss": "Lavanis, Feather of Burning Ashes",
+     "achievement": "Subduer of Lavanis",
+     "unlock_rate_pct": 5.9,
+     "repeat_count_required": 3
+    }
+   ],
+   "conqueror_bosses": [
+    {
+     "boss": "Gauron",
+     "required_difficulty": "Very Hard",
+     "unlock_rate_pct": 10.5
+    },
+    {
+     "boss": "Ursula",
+     "required_difficulty": "Very Hard",
+     "unlock_rate_pct": 7.6
+    },
+    {
+     "boss": "Furcas, the Starving Ghost of Corrosion",
+     "required_difficulty": "Nightmare",
+     "unlock_rate_pct": 7.6
+    },
+    {
+     "boss": "Vanak the Bloody Hook",
+     "required_difficulty": "Nightmare",
+     "unlock_rate_pct": 5.3
+    },
+    {
+     "boss": "Gallore the Collapse",
+     "required_difficulty": "Nightmare",
+     "unlock_rate_pct": 5.2
+    },
+    {
+     "boss": "Ghoul Greed",
+     "required_difficulty": "Nightmare",
+     "unlock_rate_pct": 4.8
+    },
+    {
+     "boss": "The Earthlander of the Ravenous Earth",
+     "required_difficulty": "Nightmare",
+     "unlock_rate_pct": 4.3
+    },
+    {
+     "boss": "Barduk the Corrupted",
+     "required_difficulty": "Nightmare",
+     "unlock_rate_pct": 2.8
+    }
+   ],
+   "boss_rates_accessed": "2026-09-01",
+   "note_on_verb_meaning": "'Subduer of X' = 'Defeated X 3 times' (repeatable world/field content). 'Conqueror of X' = one clear on the named difficulty. Unlock rate should not be read as a difficulty score — it measures how many people attempted a fight as well as how many won.",
+   "hagen_counter": "Hagen the Dark Necromancer is the only one of the 17 bosses with a published, citable counter: break the glowing decoy dummy he leaves behind before his expelled ghost returns, so he swaps into the knocked-down dummy instead of healing. Source: player Steam guide by 'Cat' (1,556 unique visitors), not Hound13.",
+   "source_urls": [
+    "https://dragonsword.site/guides/bosses/",
+    "https://dragonsword.site/guides/status-ailments-and-signals/",
+    "https://dragonsword.site/guides/achievements/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-01",
+   "unverified_fields": [
+    "no HP, damage, resistance or phase-timer values are published for any of the 17 bosses by Hound13 or any source this site considers reliable",
+    "which named bosses are 'World Bosses' versus 'Hunt Monsters' is not published — the game distinguishes the categories but no source sorts the 17 into them",
+    "whether the Very Hard 'Ursula' boss achievement and the separately-confirmed 'Ursula Raid' are the same encounter at different scale, or two fights sharing a name, is not stated by any source"
+   ]
+  },
+  "team-archetypes": {
+   "type": "mechanic",
+   "name": "Team Archetypes Compared",
+   "summary": "Six team archetypes recur in community discussion. This site can staff four of the six with named heroes from sourced material; Summon and Defensive Control remain unverified as lineups.",
+   "archetypes": [
+    {
+     "name": "Aerial",
+     "core_mechanic": "Airborne-launching heroes chain into each other; the most self-sufficient of the six",
+     "heroes_confirmed": "Astria, Eileen, Aria (all apply Airborne per Heroes: All 19); Roxy's 3rd-Awakening repeatable Air Stomps also fit the archetype",
+     "sourcing_strength": "Confirmed roster, multiple pages agree"
+    },
+    {
+     "name": "Burn",
+     "core_mechanic": "Fire application into a Burn finisher",
+     "heroes_confirmed": "Kalsion, Aria, Kalien (per Kalsion build guide and Heroes: All 19); Reina named as a mixed-element partner",
+     "sourcing_strength": "Best-documented of the six — Kalsion is S-tier on both tracked tier lists"
+    },
+    {
+     "name": "Bleed",
+     "core_mechanic": "Bleed application and payoff",
+     "heroes_confirmed": "Theresia confirmed as the primary applier (Best Team Comps, Heroes: All 19); which heroes respond to her Bleed is explicitly unconfirmed",
+     "sourcing_strength": "Partial — one applier named, no full lineup"
+    },
+    {
+     "name": "Shock",
+     "core_mechanic": "Electrocution application, useful against element-gated enemies",
+     "heroes_confirmed": "Ornette (Electrocution, per Heroes: All 19); the incoming roadmap hero Ryza is described as shock-specialized on the patch notes and roadmap page but has not shipped",
+     "sourcing_strength": "Partial — applier named, payoff hero not identified in any source we have"
+    },
+    {
+     "name": "Summon",
+     "core_mechanic": "Built around a hero's summoned unit rather than a shared ailment",
+     "heroes_confirmed": "Not itemized anywhere on this site. Dana summons Chako (an ice golem) and Sion places a field Relic, per Heroes: All 19, but no source describes either as anchoring a \"Summon team\" specifically",
+     "sourcing_strength": "Unverified as a lineup — named by our combat guide as a recurring archetype, with no hero list behind it"
+    },
+    {
+     "name": "Defensive Control",
+     "core_mechanic": "Built around crowd control and survival rather than damage",
+     "heroes_confirmed": "Not itemized anywhere on this site",
+     "sourcing_strength": "Unverified as a lineup — same caveat as Summon"
+    }
+   ],
+   "unstaffed_archetypes": [
+    "Summon",
+    "Defensive Control"
+   ],
+   "unstaffed_note": "Dana (summons Chako) and Sion (places a Relic) are the two heroes whose kits most resemble a 'Summon' identity, but no source frames either as anchoring a dedicated Summon team the way Kalsion is framed for Burn. No source names any Defensive Control lineup at all.",
+   "source_urls": [
+    "https://dragonsword.site/guides/team-archetypes-compared/",
+    "https://dragonsword.site/guides/status-ailments-and-signals/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-11",
+   "unverified_fields": [
+    "no ranked comparison of the six archetypes against each other, and no numbers showing one archetype outperforms another in a specific fight, exist on this site"
+   ]
+  },
+  "game-version-status": {
+   "type": "mechanic",
+   "name": "Game / Patch Version Status",
+   "summary": "What this site considers the 'current' shipped patch differs by page, because pages were last verified on different dates and the homepage stat box was not republished after the hero pages picked up newer patches.",
+   "claims": [
+    {
+     "claimed_latest_patch": "1.0.10",
+     "page": "homepage stats box ('Latest Patch')",
+     "source": "https://dragonsword.site/",
+     "as_of": "undated stat box; page's own hero-count text elsewhere is unrevised"
+    },
+    {
+     "claimed_latest_shipped_patch": "1.0.10",
+     "claimed_next": "1.0.11 (previewed, dated for 3 Sep 2026, not yet shipped)",
+     "page": "guides/patch-notes-and-roadmap",
+     "source": "https://dragonsword.site/guides/patch-notes-and-roadmap/",
+     "as_of": "2026-09-01 (page's own last-verified date)"
+    },
+    {
+     "claimed_shipped_patches": [
+      "1.0.11 (3 Sep 2026)",
+      "1.0.12 (10 Sep 2026)"
+     ],
+     "page": "multiple hero guide pages (e.g. Lute, Sion, Tarte, Roxy, Aria, Astria, Johnny)",
+     "source": "https://dragonsword.site/heroes/astria-guide/ (example: 'Astria has been touched by three consecutive patches — 1.0.10, 1.0.11 and 1.0.12')",
+     "as_of": "2026-09-12 (those pages' last-verified date)"
+    }
+   ],
+   "source_urls": [
+    "https://dragonsword.site/",
+    "https://dragonsword.site/guides/patch-notes-and-roadmap/",
+    "https://dragonsword.site/heroes/astria-guide/",
+    "https://dragonsword.site/heroes/sion-guide/"
+   ],
+   "source_tier": "onsite",
+   "accessed": "2026-09-12",
+   "unverified_fields": [
+    "no single page on this site states an unambiguous 'current version as of today' that is consistent with every other page"
+   ],
+   "conflicting_values": [
+    {
+     "field": "latest shipped game patch version",
+     "variants": [
+      {
+       "value": "1.0.10 (homepage stat box)",
+       "source": "https://dragonsword.site/"
+      },
+      {
+       "value": "1.0.10 shipped / 1.0.11 only previewed (patch-notes-and-roadmap page, last verified 2026-09-01)",
+       "source": "https://dragonsword.site/guides/patch-notes-and-roadmap/"
+      },
+      {
+       "value": "1.0.12 shipped (seven hero guide pages, last verified 2026-09-12, each citing specific 1.0.11- and 1.0.12-dated patch notes verbatim)",
+       "source": "e.g. https://dragonsword.site/heroes/astria-guide/, https://dragonsword.site/heroes/sion-guide/, https://dragonsword.site/heroes/tarte-guide/"
+      }
+     ],
+     "note": "Not a factual disagreement so much as three pages frozen at three different verification dates that were never reconciled against each other; the hero pages (2026-09-12) are the most recently verified and cite the most specific patch text, but the homepage and the dedicated patch-notes page have not been republished to match."
+    }
+   ]
+  }
+ },
+ "_page_slug_note": "page_slug is the real, verified relative path under https://dragonsword.site/ for every entity that has its own dedicated page (16 '<hero>-guide' pages + 1 'kalsion-build' page + the achievements/bosses/etc. guide pages referenced in source_urls). Alex and Eileen have page_slug: null because no dedicated single-hero page exists for them on this site (has_dedicated_page: false) — their fields are compiled only from cross-page mentions, as documented in their own unverified_fields.",
+ "known_conflicts": [
+  {
+   "topic": "Total playable-hero unlock split",
+   "entity": "hero-unlock-economy",
+   "field": "story vs. Exchange hero count"
+  },
+  {
+   "topic": "Astria's Slide direction-change/rotation fix",
+   "entity": "astria",
+   "field": "which patch actually fixed Slide direction-change/rotation"
+  },
+  {
+   "topic": "Lute's Signal Pummel skill percentage",
+   "entity": "lute",
+   "field": "Signal Pummel skill percentage"
+  },
+  {
+   "topic": "Johnny's faction name spelling",
+   "entity": "johnny",
+   "field": "faction name spelling"
+  },
+  {
+   "topic": "Latest shipped game patch version",
+   "entity": "game-version-status",
+   "field": "latest shipped game patch version"
+  },
+  {
+   "topic": "Kalsion's ailment",
+   "entity": "kalsion",
+   "field": "ailments_applied"
+  },
+  {
+   "topic": "Reina's ailment",
+   "entity": "reina",
+   "field": "ailments_applied"
+  },
+  {
+   "topic": "Aria's ailment label (Fire vs Burn)",
+   "entity": "aria",
+   "field": "ailments_applied (see status-ailments-and-signals mechanic + aria unverified_fields)"
+  },
+  {
+   "topic": "Cerese's ailment ('magic')",
+   "entity": "cerese",
+   "field": "ailments_applied"
+  },
+  {
+   "topic": "Charlotte and Poison",
+   "entity": "charlotte",
+   "field": "ailments_applied (Poison claim)"
+  },
+  {
+   "topic": "Castella and Knockdown",
+   "entity": "castella",
+   "field": "ailments_applied (Knockdown claim)"
+  },
+  {
+   "topic": "Bleed applier count (Theresia vs. + Roxy)",
+   "entity": "status-ailments-and-signals",
+   "field": "Bleed applier count"
+  },
+  {
+   "topic": "Shock applier count (Ornette vs. + Tarte)",
+   "entity": "status-ailments-and-signals",
+   "field": "Shock (Electrocution) applier count"
+  },
+  {
+   "topic": "Achievement unlock-rate snapshots disagree across two site pages",
+   "entity": null,
+   "field": null,
+   "note": "guides/achievements (dated 2026-09-01, used as this file's canonical achievement source) and guides/achievement-tracker (a separate tool page that 'refreshes weekly'; its own body text cites both '7 September 2026' and '2026-09-14' as capture dates in different paragraphs, and its numbers differ from the achievements page, e.g. 'Lucky!' 45.9% vs 46.4%-46.5%) never agree, and the tracker page's own internal capture-date references are inconsistent with each other. Expected drift over time, per the site's own methodology note ('these numbers move, including ours') — not treated as a value conflict on any single achievement entity, but flagged here since the tracker page's internal dates alone do not agree.",
+   "sources": [
+    "https://dragonsword.site/guides/achievements/",
+    "https://dragonsword.site/guides/achievement-tracker/"
+   ]
+  }
+ ]
+}

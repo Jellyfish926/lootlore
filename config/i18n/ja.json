@@ -1,0 +1,90 @@
+{
+  "html_lang": "ja",
+  "og_locale": "ja_JP",
+  "home": "ホーム",
+  "games": "ゲーム",
+  "all_games": "すべてのゲーム",
+  "breadcrumb": "パンくずリスト",
+  "toc": "目次",
+  "menu": "メニュー",
+  "main_nav": "メインナビゲーション",
+  "by_game": "ゲーム別",
+  "by_need": "目的別",
+  "by": "執筆",
+  "search": "検索",
+  "search_placeholder": "このガイドを検索",
+  "search_all_placeholder": "サイト内のガイドを検索",
+  "search_no_results": "該当するガイドがありません。",
+  "site_nav": "ガイドナビゲーション",
+  "open_menu": "ガイドメニュー",
+  "quick_access": "クイックアクセス",
+  "guide_index": "ガイド一覧",
+  "section_overview": "セクション概要",
+  "tools_group": "ツール",
+  "about_group": "サイト情報",
+  "more_guides": "その他のガイド",
+  "recent_in_game": "最近の更新",
+  "nav_guides": "攻略",
+  "nav_tools": "ツール",
+  "nav_reviews": "レビュー",
+  "nav_updates": "アップデート",
+  "nav_about": "運営情報",
+  "author": "執筆者",
+  "reviewed": "最終確認",
+  "published": "公開",
+  "game_version": "確認バージョン",
+  "faq_heading": "よくある質問",
+  "pages_count": "{n} 件のガイド",
+  "updated_on": "{d} 更新",
+  "skip_to_content": "本文へ移動",
+  "trust": [
+    [
+      "運営情報",
+      "/about"
+    ],
+    [
+      "お問い合わせ",
+      "/contact"
+    ],
+    [
+      "編集方針",
+      "/editorial-policy"
+    ],
+    [
+      "プライバシーポリシー",
+      "/privacy-policy"
+    ],
+    [
+      "利用規約",
+      "/terms"
+    ],
+    [
+      "免責事項",
+      "/disclaimer"
+    ]
+  ],
+  "footer_note": "非公式のファン攻略サイトです。ゲームの開発元・販売元とは提携していません。ゲーム名、スクリーンショット、商標は各権利者に帰属します。",
+  "sep": " · ",
+  "colon": ": ",
+  "language": "言語",
+  "quick_facts": "クイックデータ",
+  "f_chapter_title": "チャプター",
+  "f_appears_in_chapter": "チャプター",
+  "f_weak": "弱点属性",
+  "f_role": "役割",
+  "f_weapon_type": "武器種",
+  "f_description": "説明",
+  "f_unlock_rate_pct": "世界解除率(%)",
+  "f_global_unlock_pct": "世界解除率(%)",
+  "f_steam_unlock_pct": "Steam 解除率(%)",
+  "f_condition": "条件",
+  "f_condition_inferred": "条件(推定)",
+  "f_unlock_condition": "解除条件",
+  "f_achievement_name": "実績",
+  "f_appears": "出現",
+  "f_counter": "対処",
+  "f_level_number": "レベル",
+  "f_objective": "目標",
+  "f_related_boss": "関連ボス",
+  "f_key_notes": "備考"
+}

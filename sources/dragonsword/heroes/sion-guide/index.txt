@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-1ff1fdfc0df7c247.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-f780db0d215e8ec9.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T1a94,<p><em>Game version checked: 1.0.12 (10 September 2026 patch). Built from Hound13's Steam patch notes and livestream Q&amp;A plus the community wiki, named inline.</em></p>

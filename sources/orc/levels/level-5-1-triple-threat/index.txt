@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-9cadf521f1f14944.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-5374172c272be336.js"],""]
 5:I[4707,[],""]
 8:I[6423,[],""]
 3:Ta1d,<p><em>Last reviewed: 11 September 2026 · Newest game <a href="/platform/update-history/">update</a> reflected: 2026.08.18.12.05 (published 19 August 2026).</em> <em>Triple Threat</em> asks you to survive level 5.1 with only three types of towers and no abilities. 17.2% of players have it, which makes it the second-rarest achievement in the game — and yet the one guide this site holds that describes the attempt calls the level "pretty easy." Both of those things are true, and the reason they are compatible is the most useful thing about this level.</p>

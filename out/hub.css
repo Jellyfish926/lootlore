@@ -1,5 +1,5 @@
 /* tokens: config/hub.json -> theme (build-time) */
-:root{--bg:#0d1316;--bg2:#131c20;--panel:#161f23;--line:#2a383e;--ink:#eef3f4;--mut:#b6c4c9;--dim:#a2b2b8;--accent:#7fc7dc;--accent2:#bfe6f1;--accent-warm:#e2a878;--visited:#d9b18f;--font-head:'Cinzel',Georgia,'Times New Roman',serif;--font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;--font-head-zh:'Noto Serif SC','Songti SC','Source Han Serif SC','Noto Serif CJK SC',Georgia,serif;--font-body-zh:system-ui,-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif}
+:root{--bg:#0d1316;--bg2:#131c20;--panel:#161f23;--line:#2a383e;--line2:#55727e;--ink:#eef3f4;--mut:#b6c4c9;--dim:#a2b2b8;--accent:#7fc7dc;--accent2:#bfe6f1;--accent-warm:#e2a878;--visited:#d9b18f;--font-head:'Cinzel',Georgia,'Times New Roman',serif;--font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;--font-head-zh:'Noto Serif SC','Songti SC','Source Han Serif SC','Noto Serif CJK SC',Georgia,serif;--font-body-zh:system-ui,-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif}
 
 /* LootWiki — 全站统一外壳样式(out/hub.css)。总站自有页面与原生内容页都引用本文件;
    原生内容页在它之上再叠 native.css(只放内容页专属件)。
@@ -7,8 +7,23 @@
    ── 色值 ───────────────────────────────────────────────────────────────────
    本文件里不写任何 hex。全部 token 由构建期从 config/hub.json → theme 写进
    out/hub.css 顶部的 :root{},改主题只改配置层。暗色单主题,不做浅色覆盖。
-   对比度(WCAG,深色背景 #0d1316 / 面板 #161f23,构建期之外人工核过):
-     ink 16.7:1 / mut 10.5:1 / dim 8.6:1 / accent 9.9:1 —— 全部 ≥7:1(AAA)。
+   对比度(WCAG,构建期之外人工核过)。同一个 token 压在不同底色上数字不同,
+   顶栏用的是 bg2 / panel / band-soft 三种底,所以按底色分别记:
+                    bg #0d1316   bg2 #131c20   panel #161f23   band-soft
+     ink            16.72         15.45         14.96           12.52
+     mut            10.45          9.66          9.35            7.83
+     dim             8.55          7.90          7.65            6.40 ←唯一不达标
+     accent          9.90          9.14          8.85            7.41
+   所以规矩是:--dim 只许压在 bg / bg2 / panel 上(最低 7.65:1),绝不许压在
+   band-soft 上。.mm-card.on 那张卡底色就是 band-soft,它的副标题因此单独提到
+   --mut(7.81:1 实测)。全站文字最低 7.65:1,仍 ≥7:1(AAA)。
+
+   非文字元素(WCAG 1.4.11,门槛 3:1,不是上面那条 7:1 文字线):--line 只有 1.43:1
+   (压在 bg2 上),不够拿来表达任何"必须看见"的分组关系。凡是承担这种语义的分隔线,
+   一律换成 --line2(#55727e,与 --line 同色相、只是更亮一档,不是新配色):
+     line2 vs bg 3.65:1 · vs bg2 3.37:1 · vs panel 3.26:1 —— 全部 ≥3:1。
+   --line 本身不变,继续给纯装饰性的卡片/表格描边用(那些不承担"必须看见"的语义,
+   门禁没有对它们提 3:1 要求,不在这轮改动范围)。
 
    ── 字号阶梯(1280 桌面)────────────────────────────────────────────────────
      h1 clamp(30→40px) · h2 24px · h3 19px · 正文 17px/1.65 · 表格 15px
@@ -48,7 +63,7 @@ img{max-width:100%;display:block}
 h1,h2,h3,.brand,.sn-name{font-family:var(--font-head);letter-spacing:.005em}
 html[lang^="zh"] body{font-family:var(--font-body-zh)}
 html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3{font-family:var(--font-head-zh);letter-spacing:.01em}
-html[lang^="zh"] .sn-t,html[lang^="zh"] .rw-t,html[lang^="zh"] .nav-ax-t{letter-spacing:.02em}
+html[lang^="zh"] .sn-t,html[lang^="zh"] .rw-t{letter-spacing:.02em}
 
 a{color:var(--accent);text-decoration:none}
 a:hover{color:var(--accent2)}
@@ -57,59 +72,117 @@ a:hover{color:var(--accent2)}
   clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* ======================================================================
-   一级导航:实体型(游戏巨菜单)× 意图型(玩家要做的事)两栏并列
+   一级导航。信息架构仍是「实体型(游戏巨菜单)× 意图型(玩家要做的事)两栏并列」,
+   但那是分组语义,不是可见文案:两组各自带 role="group" + aria-label(读屏读到
+   By game / By need),视觉上只用下面这条 1px 竖线表达并列关系,页面上不印标签。
+
+   ── 为什么是单行 nowrap ─────────────────────────────────────────────────
+   上一版把 By game / By need 当 <p class="nav-ax-t"> 印出来,.mainnav 被撑成
+   48px 高、header 69px;又因为 .hd-in 是 flex-wrap:wrap,搜索框在 902–940px
+   之间会掉到第二行(header 103px),正好落进 .mm-p(absolute / 279px / z-index 95)
+   的覆盖范围 —— 机检实测 902px 打开 Games 后真点搜索框会超时,
+   elementFromPoint 命中 a.mm-card。所以:
+     * .hd-in 一律 flex-wrap:nowrap,靠 min-width + flex-shrink 收缩,不靠换行;
+     * 可收缩的那个子项(搜索输入框)必须 min-width:0,否则 nowrap 会溢出;
+     * 关掉的 .mm-p 用 display:none 彻底移出布局 —— 只靠 <details> 自己关,
+       面板在 Chromium 里仍会留下 560x279 的幽灵盒(pointer-events:auto),
+       跨版本可能变成真的挡点击。
+
+   ── 三档形态 ───────────────────────────────────────────────────────────
+   ≥1201px  完整:品牌 · Games▾ · 竖线 · 5 个意图链接 ·················· 搜索框+按钮
+   1024–1200 中间档:同上,搜索按钮收掉(回车仍可提交)、间距收紧 —— 不跳抽屉
+   ≤1023px  抽屉:☰ Menu,两个分组都进抽屉;搜索框独占一行
+   抽屉断点从 900px 提到 1023px,是为了让上面那条 902–940px 的坏带永远不出现。
+
+   ── 点击区 ─────────────────────────────────────────────────────────────
+   顶栏每个可点元素都用 min-height:40px 撑(不是靠 line-height),包括品牌、
+   Games 按钮、意图链接、搜索输入框与按钮、汉堡。
+
+   ── 两组之间那条竖线(唯一的分组视觉表达,见上)──────────────────────────────
+   --line 压在 bg2 上只有 1.43:1(WCAG 1.4.11 非文字元素门槛是 3:1),这条线在
+   实际背景下基本看不见,而它是"两栏并列"这个信息架构在页面上仅剩的可见线索
+   (By game / By need 两个标签只留在 aria-label 里)。改用 --line2(3.37:1)。
+   颜色达标之后仍要视觉克制,不做成一条抢眼的亮线:用 ::before 伪元素把线的
+   可见高度收到 26px(不顶到 40px 的整个点击区高度),宽度维持 1px。
+   ≤1023px 抽屉里这条线转 90°变成 border-top(两栏改成上下堆叠),伪元素在
+   该断点关掉,直接给 border-top 换成 --line2,不做高度收窄(它是撑满宽度的
+   普通分节线,和纵向竖线是两种视觉,其余 --box-bd 分节线同款)。
    ====================================================================== */
 .hd{border-bottom:var(--box-bd);background:var(--bg2);position:relative;z-index:90}
-.hd-in{max-width:var(--page);margin:0 auto;padding:10px 16px;
-  display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.brand{font-weight:700;font-size:1.15rem;letter-spacing:.05em;color:var(--ink);white-space:nowrap}
+.hd-in{max-width:var(--page);margin:0 auto;padding:0 16px;min-height:64px;
+  display:flex;align-items:center;gap:16px;flex-wrap:nowrap}
+.brand{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto;min-height:40px;padding:0 2px;
+  font-weight:700;font-size:1.15rem;letter-spacing:.05em;color:var(--ink);white-space:nowrap}
 .brand b{color:var(--accent)}
 .brand:hover{color:var(--ink)}
+.brand:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--rad-sm)}
 
 .topnav{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 .topnav-l{display:none}
 
-.mainnav{display:flex;align-items:stretch;gap:16px;flex:0 1 auto;min-width:0}
-.nav-ax{display:flex;flex-direction:column;justify-content:center;gap:2px;min-width:0}
-.nav-ax+.nav-ax{padding-left:16px;border-left:var(--box-bd)}
-.nav-ax-t{margin:0;font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--dim);font-weight:600;line-height:1.2}
-.nav-intent{display:flex;gap:4px 14px;flex-wrap:wrap;align-items:center}
-.nav-intent a{color:var(--mut);font-size:.9375rem;padding:2px 0;border-bottom:2px solid transparent}
-.nav-intent a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.mainnav{display:flex;align-items:center;flex-wrap:nowrap;flex:0 1 auto;min-width:0}
+.nav-ax{display:flex;align-items:center;flex-wrap:nowrap;min-width:0}
+/* 「两栏并列」的全部视觉表达就是这一条竖线 + 左右各 14px 间距。
+   线用 ::before 而不是 border-left:高度锁定 26px、纵向居中,不随点击区撑到 40px
+   (颜色已经从 1.43:1 提到 --line2 的 3.37:1,高度收着点才不会变成一条抢眼的亮线)。 */
+.nav-ax+.nav-ax{position:relative;margin-left:14px;padding-left:14px}
+.nav-ax+.nav-ax::before{content:"";position:absolute;left:0;top:50%;width:1px;height:26px;
+  transform:translateY(-50%);background:var(--line2)}
+.nav-need{gap:2px}
+.nav-need a{position:relative;display:inline-flex;align-items:center;min-height:40px;padding:0 10px;
+  border-radius:var(--rad-sm);color:var(--mut);font-size:.9375rem;white-space:nowrap}
+.nav-need a::after{content:"";position:absolute;left:10px;right:10px;bottom:7px;height:2px;
+  background:var(--accent);opacity:0}
+.nav-need a:hover{color:var(--ink);background:var(--band-soft)}
+.nav-need a:hover::after{opacity:1}
+.nav-need a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;color:var(--ink)}
 
-.mm{position:relative}
-.mm summary{list-style:none;cursor:pointer;color:var(--mut);font-size:.9375rem;
-  padding:3px 11px;border:var(--box-bd);border-radius:var(--rad-sm);user-select:none;white-space:nowrap}
-.mm summary::-webkit-details-marker{display:none}
-.mm summary:hover{color:var(--ink);border-color:var(--accent)}
-.mm[open] summary{color:var(--ink);border-color:var(--accent);background:var(--band-soft)}
-.caret{margin-left:7px;font-size:.8em;color:var(--dim)}
-.mm-p{position:absolute;left:0;top:calc(100% + 8px);z-index:95;
+/* Games = 有边框的按钮态,和纯文字链接区分开(--ink 14.96:1 vs --mut 9.66:1) */
+.mm{position:relative;display:flex}
+.mm>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;min-height:40px;
+  padding:0 13px;border:var(--box-bd);border-radius:var(--rad-sm);background:var(--panel);
+  color:var(--ink);font-size:.9375rem;font-weight:600;user-select:none;white-space:nowrap}
+.mm>summary::-webkit-details-marker{display:none}
+.mm>summary:hover{border-color:var(--accent);background:var(--band-soft)}
+.mm>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mm[open]>summary{border-color:var(--accent);background:var(--band-soft)}
+.caret{margin-left:8px;font-size:.8em;color:var(--accent)}
+/* 关掉的面板彻底移出布局与命中测试 —— 幽灵盒挡点击的根因在这里断掉 */
+.mm:not([open]) .mm-p{display:none}
+.mm-p{position:absolute;left:0;top:calc(100% + 12px);z-index:95;
   width:min(92vw,560px);max-height:72vh;overflow:auto;background:var(--panel);
   border:var(--box-bd);border-radius:var(--rad);box-shadow:0 16px 40px rgba(0,0,0,.6);
   padding:8px;display:grid;gap:6px;grid-template-columns:repeat(2,minmax(0,1fr))}
-.mm-card{display:flex;gap:10px;align-items:center;padding:6px;border-radius:var(--rad-sm);
-  border:1px solid transparent;min-width:0}
+.mm-card{display:flex;gap:10px;align-items:center;min-height:40px;padding:7px 6px;
+  border-radius:var(--rad-sm);border:1px solid transparent;min-width:0}
 .mm-card img{width:96px;height:54px;object-fit:cover;border-radius:4px;flex:0 0 auto;background:var(--bg2)}
 .mm-card-b{display:flex;flex-direction:column;min-width:0}
 .mm-card b{color:var(--ink);font-size:.875rem;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
 .mm-card i{color:var(--dim);font-size:.75rem;font-style:normal;line-height:1.35;margin-top:2px}
 .mm-card:hover{background:var(--bg);border-color:var(--accent)}
+.mm-card:focus-visible{outline:2px solid var(--accent);outline-offset:-1px}
 .mm-card.on{background:var(--band-soft);border-color:var(--accent)}
 .mm-card.on b{color:var(--accent)}
-.mm-all{grid-column:1/-1;color:var(--mut);font-size:.875rem;padding:8px 10px 4px;
-  border-top:var(--box-bd);margin-top:2px}
+/* 当前游戏那张卡底色是 band-soft,--dim 压在它上面只有 6.39:1(实测,低于 7:1 硬门槛),
+   所以这张卡的副标题单独提到 --mut → 7.83:1。其余卡在 panel 上,--dim 是 7.65:1。 */
+.mm-card.on i{color:var(--mut)}
+.mm-all{grid-column:1/-1;display:flex;align-items:center;min-height:40px;padding:0 10px;
+  color:var(--mut);font-size:.875rem;border-top:var(--box-bd);margin-top:2px}
+.mm-all:hover{color:var(--ink)}
+.mm-all:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
-/* 站内搜索 */
-.gs{position:relative;margin-left:auto;display:flex;gap:6px;flex:0 1 300px;min-width:190px}
-.gs input{flex:1 1 auto;min-width:0;background:var(--panel);border:var(--box-bd);
-  border-radius:var(--rad-sm);color:var(--ink);padding:6px 10px;font:inherit;font-size:.875rem;line-height:1.5}
+/* 站内搜索。可收缩但有 min-width;收缩的是 input,所以 input 必须 min-width:0 */
+.gs{position:relative;margin-left:auto;display:flex;align-items:center;gap:6px;
+  flex:0 1 300px;min-width:200px}
+.gs input{flex:1 1 auto;min-width:0;min-height:40px;background:var(--panel);border:var(--box-bd);
+  border-radius:var(--rad-sm);color:var(--ink);padding:0 11px;font:inherit;font-size:.875rem}
 .gs input::placeholder{color:var(--dim)}
 .gs input:focus{outline:2px solid var(--accent);outline-offset:1px}
-.gs button{flex:0 0 auto;background:transparent;border:var(--box-bd);border-radius:var(--rad-sm);
-  color:var(--mut);padding:6px 12px;font:inherit;font-size:.875rem;line-height:1.5;cursor:pointer}
+.gs button{flex:0 0 auto;min-height:40px;background:transparent;border:var(--box-bd);
+  border-radius:var(--rad-sm);color:var(--mut);padding:0 13px;font:inherit;font-size:.875rem;
+  cursor:pointer;white-space:nowrap}
 .gs button:hover{color:var(--ink);border-color:var(--accent)}
+.gs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .gs-r{position:absolute;z-index:96;top:calc(100% + 6px);left:0;right:0;list-style:none;margin:0;
   padding:6px;background:var(--panel);border:var(--box-bd);border-radius:var(--rad);
   box-shadow:0 12px 32px rgba(0,0,0,.5);max-height:60vh;overflow:auto;min-width:260px}
@@ -119,27 +192,37 @@ a:hover{color:var(--accent2)}
 .gs-r span{color:var(--dim);font-size:var(--fs-cap)}
 .gs-r .none{color:var(--dim);font-size:.9rem}
 
-@media(max-width:1180px){.nav-ax-t{display:none}.nav-ax+.nav-ax{padding-left:14px}}
-@media(max-width:900px){
-  .hd-in{gap:10px}
-  .topnav-l{display:inline-flex;align-items:center;gap:8px;margin-left:auto;padding:7px 13px;
-    border:var(--box-bd);border-radius:var(--rad-sm);background:var(--panel);color:var(--ink);
-    font-size:.9rem;cursor:pointer;white-space:nowrap}
+/* ── 中间档 1024–1200:搜索按钮收掉(回车仍提交)、间距收紧,仍是完整单行 ── */
+@media(max-width:1200px){
+  .hd-in{gap:12px}
+  .gs{flex:0 1 240px}
+  .gs button{display:none}
+  .nav-need a{padding:0 8px}
+  .nav-need a::after{left:8px;right:8px}
+  .nav-ax+.nav-ax{margin-left:12px;padding-left:12px}
+}
+/* ── 抽屉 ≤1023:两个分组一起收进抽屉,顶栏不留裸链接 ── */
+@media(max-width:1023px){
+  .hd-in{flex-wrap:wrap;gap:10px;row-gap:8px;padding:7px 16px;min-height:0}
+  .topnav-l{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:40px;
+    padding:0 14px;border:var(--box-bd);border-radius:var(--rad-sm);background:var(--panel);
+    color:var(--ink);font-size:.9rem;cursor:pointer;white-space:nowrap}
   .topnav-l:hover{border-color:var(--accent)}
   .topnav:focus-visible+.topnav-l{outline:2px solid var(--accent);outline-offset:2px}
-  /* 移动端:两栏一起收进抽屉,顶栏不留裸链接 */
-  .mainnav{display:none;flex:1 1 100%;flex-direction:column;gap:14px;
-    padding:12px 0 4px;border-top:var(--box-bd);margin-top:4px}
+  .mainnav{display:none;flex:1 1 100%;flex-direction:column;align-items:stretch;gap:12px;
+    padding:10px 0 4px;border-top:var(--box-bd);margin-top:2px}
   .topnav:checked~.mainnav{display:flex}
-  .nav-ax{gap:8px}
-  .nav-ax+.nav-ax{padding-left:0;border-left:0;border-top:var(--box-bd);padding-top:12px}
-  .nav-ax-t{display:block}
-  .nav-intent{flex-direction:column;align-items:flex-start;gap:0}
-  .nav-intent a{display:block;width:100%;padding:8px 2px;border-bottom:1px solid var(--line)}
-  .mm{position:static}
-  .mm summary{display:inline-block}
-  .mm-p{position:static;width:auto;max-height:none;box-shadow:none;margin-top:6px}
-  .gs{order:9;flex:1 1 100%;margin-left:0}
+  .nav-ax{flex-direction:column;align-items:stretch;gap:2px}
+  /* 竖线转 90°变成横向分节线(两栏堆叠),伪元素只用于桌面的纵向居中短线,这里关掉 */
+  .nav-ax+.nav-ax{margin-left:0;padding-left:0;border-top:1px solid var(--line2);padding-top:10px}
+  .nav-ax+.nav-ax::before{content:none}
+  .nav-need a{padding:0 8px;border-radius:0;border-bottom:1px solid var(--line)}
+  .nav-need a::after{content:none}
+  .mm{position:static;display:block}
+  .mm>summary{display:inline-flex}
+  .mm-p{position:static;width:auto;max-height:none;box-shadow:none;margin-top:8px}
+  .gs{order:9;flex:1 1 100%;margin-left:0;min-width:0}
+  .gs button{display:inline-flex;align-items:center;justify-content:center}
 }
 @media(max-width:520px){.mm-p{grid-template-columns:minmax(0,1fr)}}
 

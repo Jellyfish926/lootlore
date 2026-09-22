@@ -22,7 +22,27 @@ def site_nav(*, brand, games, intents, active_game="", search="", t):
 
     games:   [{slug, label, href, thumb, thumb_alt, genre}]
     intents: [(label, href)]
-    ≤900px 两栏一起收进抽屉(复用 <details> 方案,与游戏内导航同一套交互)。
+
+    ── 两栏并列是「分组语义」,不是可见文案 ─────────────────────────────────
+    by_game / by_need 只作为两个 role="group" 的 aria-label 存在(读屏能读到),
+    页面上不印这两个标签。视觉上的分组表达 = 两组之间一条竖线(CSS 侧是
+    .nav-ax+.nav-ax 的 ::before,颜色 --line2,≥1024px 下高度收在 26px、
+    ≤1023px 抽屉里转成 border-top;--line2 本身对底色 ≥3:1,见 style.css 顶部
+    的对比度记录 —— 之前是 --line,1.43:1,这条线在实际背景下等于看不见)。
+    2026-09-21 那版把它们当 <p class="nav-ax-t"> 印出来,结果 header 被撑成
+    两行(69px)、.hd-in 的 flex-wrap:wrap 让搜索框在 902–940px 掉到第二行,
+    再被 .mm-p 面板(absolute / 279px 高 / z-index 95)整块盖住 —— 机检实测
+    902px 下真点搜索框会超时(elementFromPoint 命中 a.mm-card)。别再印了。
+
+    intents 的文案必须是调用方按当前页语种从 config/i18n/<lang>.json 取好的
+    [(label, href)],不能传站级的全局默认表——hub/native.py 曾经直接复用
+    build.py 算好的英文 site["nav_intents"],结果中文页顶栏也是英文,
+    hub/snapshot.py 的 SnapshotLang.render() 一直是按页面语种现取,那条路对。
+
+    三档形态(断点见 style.css,与这里的结构一一对应):
+      ≥1201px 完整:品牌 · Games▾ · 竖线 · 5 个意图链接 · 搜索框(输入框+文字按钮)
+      1024–1200 中间档:同上,搜索按钮收成图标、输入框收窄(不跳抽屉)
+      ≤1023px 抽屉:☰ Menu,两个分组都进抽屉;搜索框独占一行
     """
     cards = "".join(
         f'<a class="mm-card{" on" if g["slug"] == active_game else ""}" href="{esc(g["href"])}">'
@@ -39,12 +59,13 @@ def site_nav(*, brand, games, intents, active_game="", search="", t):
         '<input type="checkbox" id="topnav" class="topnav">'
         f'<label class="topnav-l" for="topnav"><span aria-hidden="true">&#9776;</span> {esc(t["menu"])}</label>\n'
         f'<nav class="mainnav" aria-label="{esc(t["main_nav"])}">\n'
-        f'<div class="nav-ax nav-ax-games"><p class="nav-ax-t">{esc(t["by_game"])}</p>'
-        f'<details class="mm"><summary>{esc(t["games"])}<span class="caret">{CARET}</span></summary>'
+        f'<div class="nav-ax nav-ax-games" role="group" aria-label="{esc(t["by_game"])}">'
+        f'<details class="mm"><summary>{esc(t["games"])}<span class="caret" aria-hidden="true">{CARET}</span>'
+        '</summary>'
         f'<div class="mm-p">{cards}'
         f'<a class="mm-all" href="/#games">{esc(t["all_games"])} &rarr;</a></div></details></div>\n'
-        f'<div class="nav-ax nav-ax-intent"><p class="nav-ax-t">{esc(t["by_need"])}</p>'
-        f'<div class="nav-intent">{intent_links}</div></div>\n'
+        f'<div class="nav-ax nav-need" role="group" aria-label="{esc(t["by_need"])}">'
+        f'{intent_links}</div>\n'
         "</nav>\n"
         f"{search}\n"
         "</div>\n</header>"
@@ -196,9 +217,24 @@ def search_form(*, action, index_url, lang, t, scope="", placeholder=""):
             '<ul id="gs-r" class="gs-r" hidden></ul></form>')
 
 
+# 顶栏 Games 巨菜单的「点外面关掉 / Esc 关掉」。没它的时候菜单一旦打开就一直挂着,
+# .mm-p 是 absolute + z-index 95,会整块盖住 header 下方的正文链接 —— 这就是站主说的
+# 「链接点不动」的第二个来源。无 JS 时退化成「再点一次 summary 关掉」,仍可用。
+# 抽屉里(≤1023px)不关,免得点开游戏组就被自己收回去。
+NAV_JS = (
+    "<script>(function(){var d=document.querySelector('details.mm');if(!d)return;"
+    "function sh(){return window.matchMedia('(min-width:1024px)').matches;}"
+    "document.addEventListener('click',function(e){"
+    "if(d.open&&sh()&&!d.contains(e.target))d.open=false;});"
+    "document.addEventListener('keydown',function(e){"
+    "if(e.key==='Escape'&&d.open){d.open=false;"
+    "var s=d.querySelector('summary');if(s)s.focus();}});"
+    "})();</script>"
+)
+
 # 全站搜索前端过滤。内联,门禁上限 3KB。结果用 DOM API 拼,不拼 HTML 字符串。
 # data-scope 有值时先把结果收窄到该游戏,再补全站结果(当前游戏优先,不丢全站可达性)。
-SEARCH_JS = (
+SEARCH_JS = NAV_JS + (
     "<script>(function(){var f=document.getElementById('gs');if(!f)return;"
     "var i=f.querySelector('input'),r=document.getElementById('gs-r'),"
     "L=f.getAttribute('data-lang'),U=f.getAttribute('data-index'),"

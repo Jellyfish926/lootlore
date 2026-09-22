@@ -60,6 +60,8 @@ SORT_JS = (
 
 # 站内搜索的前端过滤脚本由 hub/shell.py 统一提供(全站一份索引,跨全部游戏)。
 SEARCH_JS = shell.SEARCH_JS
+# 顶栏巨菜单的关闭行为(点外面 / Esc)。搜索关掉的页也必须有,否则菜单挂着挡正文链接。
+NAV_JS = shell.NAV_JS
 
 
 class Page:
@@ -726,8 +728,13 @@ class NativeLang(EntityBox):
         return self.spec.get("title") or self.g.get("short") or self.g["name"]
 
     def header(self):
+        # 意图导航文案按本页语种取(self.t),不用 self.site["nav_intents"]——那份是
+        # build.py 在总站英文页(/guides /tools ...)里用的全局英文表,只应付总站自己
+        # 的页面;游戏内容页有自己的语种,链接不变(配置层),文案必须跟 self.t 走,
+        # 与 hub/snapshot.py 的 SnapshotLang.render() 同一条规则(那边一直是对的)。
+        intents = [(self.t[k], h) for k, h in self.cfg.get("intent_nav", [])]
         return shell.site_nav(brand=self.cfg["brand"], games=self.site["nav_games"],
-                              intents=self.site["nav_intents"], active_game=self.gslug,
+                              intents=intents, active_game=self.gslug,
                               search=self.search_form(), t=self.t)
 
     def nav_sections(self):
@@ -1094,8 +1101,7 @@ class NativeLang(EntityBox):
             title=p.get("seoTitle") or mdlite.plain(h1_text), desc=p.get("description"),
             page_url=page_url, og_type="article" if p.type == "article" else "website",
             im=im, slug=p.slug, graphs=graphs, extra=head_extra)
-        if self.nc.get("search"):
-            scripts += SEARCH_JS
+        scripts += SEARCH_JS if self.nc.get("search") else NAV_JS
         return self.shell(lang_code=self.code, head=head, crumbs_html=crumbs_html, h1=h1_html,
                           byline=self.byline(p), langsw=self.lang_switch(p.slug), aside=aside,
                           body=body, cur_slug=p.slug, scripts=scripts, rail_last=not ents)
@@ -1136,7 +1142,7 @@ class NativeLang(EntityBox):
         return self.shell(lang_code=self.code, head=head, crumbs_html=crumbs_html,
                           h1=esc(t["all_page_title"]), byline="", langsw=self.lang_switch("all"),
                           aside="", body=body, cur_slug="all",
-                          scripts=SEARCH_JS if self.nc.get("search") else "")
+                          scripts=SEARCH_JS if self.nc.get("search") else NAV_JS)
 
     def modified(self, p):
         return max(x for x in (p.get("date"), p.get("updated"), p.get("reviewed")) if x) if (

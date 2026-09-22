@@ -13,12 +13,14 @@
 draft: true 的页不生成、不进 sitemap、不进栏目列表与 hub 清单、不进关联阅读;
 正文里指向草稿的站内链接降级为纯文本(否则就是死链)。
 """
+import hashlib
 import json
 import re
 from pathlib import Path
 from urllib.parse import urlparse
 
 from hub import mdlite, shell
+from hub.hubbody import HubBodyMixin
 from hub.mdlite import esc
 from hub.pageindex import GameIndex, PageRef, Section
 
@@ -143,7 +145,10 @@ class EntityBox:
                 continue
             if isinstance(v, (dict,)):
                 continue
-            if isinstance(v, list):
+            if isinstance(v, bool):
+                # 布尔字段按界面语言写"是/否",不许把 Python 的 True/False 漏到页面上
+                v = self.t["yes"] if v else self.t["no"]
+            elif isinstance(v, list):
                 v = ", ".join(str(x) for x in self._list(v))
                 if not v:
                     continue
@@ -230,7 +235,7 @@ class EntityBox:
 # ===========================================================================
 #  单语种渲染器
 # ===========================================================================
-class NativeLang(EntityBox):
+class NativeLang(EntityBox, HubBodyMixin):
     def __init__(self, game_site, spec: dict):
         self.site_game = game_site
         self.root, self.g, self.cfg, self.site = (
@@ -779,6 +784,126 @@ class NativeLang(EntityBox):
             sections=self.nav_sections(), tools=tools, about=about,
             current=cur_slug if cur_slug in ("all",) else cur_route, t=t)
 
+    # ------------------------------------------------------------ hub 页正文模块的数据源
+    def hb_spec(self):
+        return self.g.get("hub_body") or {}
+
+    def _hb_pool(self):
+        return [im for im in (self.g.get("shots") or []) if im.get("src") and im.get("alt")]
+
+    def _hb_pick_img(self, route, used, page=None):
+        im = self.card_image(page) if page is not None else None
+        if im and im.get("src") not in used:
+            used.add(im["src"])
+            return im
+        pool = [x for x in self._hb_pool() if x.get("src") not in used]
+        if not pool:
+            if im:
+                used.add(im.get("src"))
+            return im
+        i = int(hashlib.sha1(route.encode("utf-8")).hexdigest()[:8], 16) % len(pool)
+        p = pool[i]
+        used.add(p["src"])
+        return {"src": p.get("src_small") or p["src"], "w": p.get("small_w") or p.get("w"),
+                "h": p.get("h"), "alt": self.alt_of(p)}
+
+    def hb_sections(self):
+        used, out = set(), []
+        for c in self.nav:
+            r = self.route(c)
+            out.append((c.get("category"), r, len(self.members[c.slug]),
+                        self._hb_pick_img(r, used, c)))
+        return out
+
+    def _hb_tool_pages(self):
+        keys = [k.lower() for k in self.cfg.get("tools_match", [])]
+        return sorted((p for p in self.live_pages()
+                       if p.type == "article" and any(k in p.get("title").lower() for k in keys)),
+                      key=lambda p: p.get("title"))
+
+    def hb_tools(self):
+        used = {im.get("src") for _l, _r, _c, im in self.hb_sections() if im}
+        return [(p.get("title"), self.route(p), p.get("description"),
+                 self._hb_pick_img(self.route(p), used, p)) for p in self._hb_tool_pages()]
+
+    def hb_featured(self, n=6):
+        lands = {self.route(c).rstrip("/") for c in self.nav}
+        queues = []
+        for c in self.nav:
+            ps = [self.pub[s] for s in self.members[c.slug]
+                  if self.route(self.pub[s]).rstrip("/") not in lands]
+            ps.sort(key=lambda p: (p.get("reviewed") or p.get("updated") or p.get("date"),
+                                   p.get("title")), reverse=True)
+            if ps:
+                queues.append((c.get("category"), ps))
+        out, seen, i, guard = [], set(), 0, 0
+        used = {im.get("src") for _l, _r, _c, im in self.hb_sections() if im}
+        while queues and len(out) < n and guard < 300:
+            guard += 1
+            label, q = queues[i % len(queues)]
+            i += 1
+            while q:
+                p = q.pop(0)
+                r = self.route(p)
+                if r in seen:
+                    continue
+                seen.add(r)
+                out.append((label, p.get("title"), r,
+                            p.get("reviewed") or p.get("updated") or p.get("date"),
+                            self._hb_pick_img(r, used, p)))
+                break
+            if not any(q for _l, q in queues):
+                break
+        return out
+
+    def hb_recent(self, n=5):
+        return self.recent_rows(n=n)
+
+    def hb_counts(self):
+        ds = [p.get("reviewed") or p.get("updated") or p.get("date")
+              for p in self.live_pages() if p.type == "article"]
+        return {"pages": sum(1 for p in self.live_pages() if p.type != "author"),
+                "sections": len(self.nav), "tools": len(self._hb_tool_pages()),
+                "langs": len(self.site_game.langs), "entities": len(self.ents),
+                "updated": max([d for d in ds if d], default="")}
+
+    def hb_quote(self):
+        """范围提示框:逐字取本游戏内容层某一页的第 N 个 H2 与它后面第一段的若干句。
+        内容层是 Markdown,所以直接在块上找 —— 一个字都不是框架层写的,语种跟着内容走。"""
+        spec = self.hb_spec().get("scope") or {}
+        p = self.pages.get(spec.get("slug") or "")
+        if p is None or p.draft:
+            return None
+        blocks = mdlite.parse(p.body)
+        idx, want, title, para = 0, int(spec.get("h2") or 0), "", ""
+        for k, b in enumerate(blocks):
+            if b["t"] == "h" and b["level"] == 2:
+                idx += 1
+                if idx == want:
+                    title = mdlite.plain(b["text"])
+                    para = next((mdlite.plain(x["text"]) for x in blocks[k + 1:] if x["t"] == "p"), "")
+                    break
+        if not (title and para):
+            return None
+        sents = re.findall(r"[^.\u3002]*[.\u3002]", para) or [para]
+        last = int(spec.get("last") or 0)
+        if last:
+            quote = "".join(sents[-last:]).strip()
+        else:
+            skip, take = int(spec.get("skip") or 0), int(spec.get("take") or 1)
+            quote = "".join(sents[skip:skip + take]).strip()
+        if not quote:
+            return None
+        route = self.route(p)
+        cur = self.route(self.home) if getattr(self, "home", None) is not None else ""
+        return title, quote, ("" if route == cur else route), p.get("title")
+
+    def hb_self_hosts(self):
+        return {_host(self.base)} - {""}
+
+    def hb_gslug(self):
+        return self.gslug
+
     def recent_rows(self, *, exclude="", n=6):
         """本游戏最近更新的文章 → [(标题, 链接, 日期)]。日期真的来自 frontmatter,没有就不进。"""
         rows = []
@@ -974,11 +1099,21 @@ class NativeLang(EntityBox):
                 pre.append(f'<h2 id="{bhid}">{esc(blabel)}</h2><p>{esc(bintro)}</p>{bt}')
                 toc.append((bhid, blabel))
                 scripts += SORT_JS
+            # 实体数据驱动的速查表(config/hub.json → hub_body.tables;见 hub/hubbody.py)
+            th, ttoc = self.hb_tables(used)
+            if th:
+                pre.append(th)
+                toc += ttoc
             sh = [s for s in (self.nc.get("start_here") or []) if self.is_live(s)]
             if sh:
                 shid = mdlite.slugify(t["start_here"], used)
                 pre.append(f'<h2 id="{shid}">{esc(t["start_here"])}</h2>' + self.article_cards(sh[:3]))
                 toc.append((shid, t["start_here"]))
+            oh, otoc = self.hb_tool_tiles(used)
+            if oh:
+                pre.append(oh)
+                toc += otoc
+            pre.append(self.hb_timeline(used))
             (ahid, lbl), sec = self.all_articles_section(used)
             extra.append(sec)
             toc.append((ahid, lbl))
@@ -1065,9 +1200,11 @@ class NativeLang(EntityBox):
 
         # 版面顺序:要点框 → (栏目页:排序表) → 封面 → 目录 → (数据区块) → 正文 → 表/来源/关联
         kp_html = pre.pop(0) if tldr else ""
+        # hub 页:范围提示框 + 统计胶囊(都在 .prose 之外,与快照套壳页同一位置与同一套 CSS)
+        hb_head = (self.hb_note() + self.hb_pills()) if p.type == "home" else ""
         lede_html = (f'<p class="lede">{mdlite.inline(lede, self.link_cb_factory(p, ext_labels))}</p>'
                      if lede else "")
-        body = (kp_html + cat_agg_html + fig + lede_html + toc_html + '<div class="prose">'
+        body = (kp_html + hb_head + cat_agg_html + fig + lede_html + toc_html + '<div class="prose">'
                 + "\n".join(pre) + "\n" + body_html + "\n" + "".join(extra) + "</div>")
 
         # JSON-LD

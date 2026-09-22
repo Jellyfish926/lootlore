@@ -96,6 +96,8 @@ jobs:
         run: python3 .gates/check_i18n.py out --default en --locales de,es,fr,it,ja --games beast-of-reincarnation,dragonsword-awakening,orc-problem,sephiria,shift-at-midnight,valheim
       - name: check_sitemap(loc↔文件 / 域名残留 / robots)
         run: python3 .gates/check_sitemap.py --out out --host "$SITE_HOST"
+      - name: check_snapshot(快照页正文逐字节零改动)
+        run: python3 .gates/check_snapshot.py --out out
       - name: link_check(全站死链)
         run: python3 .gates/link_check.py --out out
 

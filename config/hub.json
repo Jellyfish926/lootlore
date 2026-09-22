@@ -185,7 +185,90 @@
           "h": 338,
           "alt": "The swordfighter sliding under a rearing bear-like beast matted with straw-coloured growth, in a flooded ruined village"
         }
-      ]
+      ],
+      "hub_body": {
+        "scope": {
+          "slug": "rangifer-boss-guide",
+          "h2": 7,
+          "take": 1
+        },
+        "tables": [
+          {
+            "type": "boss",
+            "cols": [
+              "order",
+              "@name",
+              "chapter_title",
+              "weak",
+              "weak_equippable",
+              "achievement_ref.name_en"
+            ],
+            "sort": "order",
+            "max": 11,
+            "all": "bosses"
+          },
+          {
+            "type": "weapon",
+            "cols": [
+              "@name",
+              "weapon_type",
+              "element_support",
+              "element_slots"
+            ],
+            "sort": "name_en",
+            "max": 4,
+            "all": "all-weapons"
+          },
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "description_en",
+              "hidden",
+              "unlock_rate_pct"
+            ],
+            "sort": "unlock_rate_pct",
+            "max": 8,
+            "all": "achievement-tracker"
+          }
+        ],
+        "slots": [
+          {
+            "h2": 0,
+            "mods": [
+              "note",
+              "pills"
+            ]
+          },
+          {
+            "h2": 2,
+            "mods": [
+              "tiles",
+              "cards"
+            ]
+          },
+          {
+            "h2": 3,
+            "mods": [
+              "keypoints"
+            ]
+          },
+          {
+            "h2": 9,
+            "mods": [
+              "tables"
+            ]
+          },
+          {
+            "h2": -1,
+            "mods": [
+              "tools",
+              "timeline"
+            ]
+          }
+        ],
+        "picks": 9
+      }
     },
     {
       "slug": "shift-at-midnight",
@@ -296,7 +379,82 @@
           "h": 337,
           "alt": "A night alley behind the store lit by one street lamp, a distant figure in orange at the end of the path seen over a rubbish bag"
         }
-      ]
+      ],
+      "hub_body": {
+        "scope": {
+          "slug": "guide/doppelgangers",
+          "h2": 9,
+          "take": 1
+        },
+        "tables": [
+          {
+            "type": "ending",
+            "cols": [
+              "@name",
+              "prior_choice_en",
+              "shift_checked",
+              "steam_unlock_pct",
+              "xbox_gamerscore"
+            ],
+            "sort": "order",
+            "max": 3,
+            "all": "endings"
+          },
+          {
+            "type": "threat",
+            "cols": [
+              "@name",
+              "hostile",
+              "killable",
+              "achievement_name_en",
+              "achievement_unlock_pct"
+            ],
+            "sort": "order",
+            "max": 7,
+            "all": "monsters"
+          },
+          {
+            "type": "doppelganger",
+            "cols": [
+              "@name",
+              "tell_en"
+            ],
+            "sort": "name_en",
+            "max": 5,
+            "all": "guide/doppelgangers"
+          }
+        ],
+        "slots": [
+          {
+            "h2": 0,
+            "mods": [
+              "note",
+              "pills"
+            ]
+          },
+          {
+            "h2": 2,
+            "mods": [
+              "tiles",
+              "cards",
+              "keypoints"
+            ]
+          },
+          {
+            "h2": 5,
+            "mods": [
+              "tables"
+            ]
+          },
+          {
+            "h2": -1,
+            "mods": [
+              "timeline"
+            ]
+          }
+        ],
+        "picks": 6
+      }
     },
     {
       "slug": "dragonsword-awakening",
@@ -376,7 +534,73 @@
         "page_slug",
         "h1"
       ],
-      "entity_max": 3
+      "entity_max": 3,
+      "hub_body": {
+        "scope": {
+          "slug": "guides/cooking",
+          "h2": 9,
+          "take": 1
+        },
+        "tables": [
+          {
+            "type": "hero",
+            "cols": [
+              "@name",
+              "faction",
+              "unlock_type",
+              "unlock_cost",
+              "tier_pro_game_guides",
+              "tier_games_gg"
+            ],
+            "sort": "name",
+            "max": 12,
+            "all": "heroes"
+          },
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "unlock_condition",
+              "hidden",
+              "unlock_rate_pct"
+            ],
+            "sort": "unlock_rate_pct",
+            "max": 8,
+            "all": "guides/achievements"
+          }
+        ],
+        "slots": [
+          {
+            "h2": 0,
+            "mods": [
+              "note",
+              "pills"
+            ]
+          },
+          {
+            "h2": 1,
+            "mods": [
+              "tiles"
+            ]
+          },
+          {
+            "h2": 3,
+            "mods": [
+              "cards",
+              "tables",
+              "keypoints"
+            ]
+          },
+          {
+            "h2": -1,
+            "mods": [
+              "tools",
+              "timeline"
+            ]
+          }
+        ],
+        "picks": 6
+      }
     },
     {
       "slug": "sephiria",
@@ -456,7 +680,86 @@
         "page_slug",
         "h1"
       ],
-      "entity_max": 3
+      "entity_max": 3,
+      "hub_body": {
+        "scope": {
+          "slug": "bosses",
+          "h2": 8,
+          "take": 1
+        },
+        "tables": [
+          {
+            "type": "boss",
+            "cols": [
+              "@name",
+              "appears_in_chapter",
+              "floor",
+              "mini_boss",
+              "floor_base_enemy_def",
+              "tied_achievement.name_en",
+              "tied_achievement.unlock_rate"
+            ],
+            "sort": "floor",
+            "max": 14,
+            "all": "bosses"
+          },
+          {
+            "type": "weapon",
+            "cols": [
+              "@name",
+              "starting_weapon",
+              "unlock_node"
+            ],
+            "sort": "name_en",
+            "max": 6,
+            "all": "weapons"
+          },
+          {
+            "type": "talent_tree",
+            "cols": [
+              "@name",
+              "per_point",
+              "breakpoints.lv5",
+              "breakpoints.lv10",
+              "breakpoints.lv20"
+            ],
+            "sort": "name_en",
+            "max": 7,
+            "all": "guides/talents"
+          }
+        ],
+        "slots": [
+          {
+            "h2": 0,
+            "mods": [
+              "note",
+              "pills"
+            ]
+          },
+          {
+            "h2": 1,
+            "mods": [
+              "tiles"
+            ]
+          },
+          {
+            "h2": 3,
+            "mods": [
+              "cards",
+              "tables",
+              "keypoints"
+            ]
+          },
+          {
+            "h2": -1,
+            "mods": [
+              "tools",
+              "timeline"
+            ]
+          }
+        ],
+        "picks": 6
+      }
     },
     {
       "slug": "orc-problem",
@@ -536,7 +839,72 @@
         "page_slug",
         "h1"
       ],
-      "entity_max": 3
+      "entity_max": 3,
+      "hub_body": {
+        "scope": {
+          "slug": "towers/all-turrets",
+          "h2": 8,
+          "take": 1
+        },
+        "tables": [
+          {
+            "type": "turret",
+            "cols": [
+              "@name",
+              "role_en",
+              "element_en",
+              "@ref:achievements_ref"
+            ],
+            "sort": "name_en",
+            "max": 7,
+            "all": "towers/all-turrets"
+          },
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "condition_en",
+              "level_tied",
+              "global_unlock_pct",
+              "steam_api_live_pct"
+            ],
+            "sort": "level_tied",
+            "max": 11,
+            "all": "levels/all-achievements"
+          }
+        ],
+        "slots": [
+          {
+            "h2": 0,
+            "mods": [
+              "note",
+              "pills"
+            ]
+          },
+          {
+            "h2": 1,
+            "mods": [
+              "tiles"
+            ]
+          },
+          {
+            "h2": 3,
+            "mods": [
+              "cards",
+              "tables",
+              "keypoints"
+            ]
+          },
+          {
+            "h2": -1,
+            "mods": [
+              "tools",
+              "timeline"
+            ]
+          }
+        ],
+        "picks": 6
+      }
     },
     {
       "slug": "valheim",
@@ -677,6 +1045,40 @@
           ]
         ],
         "langs": "EN · 中文"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 5,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "biome",
+            "cols": [
+              "order",
+              "@name",
+              "@ref:boss",
+              "key_resources",
+              "hazards_en"
+            ],
+            "sort": "order",
+            "max": 9,
+            "all": "biomes"
+          },
+          {
+            "type": "station",
+            "cols": [
+              "@name",
+              "@qty:recipe",
+              "requires_en",
+              "unlocked_by_en"
+            ],
+            "sort": "name_en",
+            "max": 14,
+            "all": "crafting"
+          }
+        ]
       }
     }
   ]

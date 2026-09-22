@@ -622,6 +622,119 @@ a:hover{color:var(--accent2)}
 .cards p,.tiles p{margin:0;font-size:.875rem;line-height:1.5;color:var(--mut)}
 .tiles .count{margin-top:auto;padding-top:8px;color:var(--accent);font-size:.8125rem}
 
+/* ---------- 游戏 hub 页正文模块(hub/hubbody.py 的 .hb-*)----------
+   对标 research/D-gamehub-body.md 表 A 里"纯 CSS / 我们素材够"的那几项:
+   提示框 / 统计胶囊 / 带缩略图磁贴(右上角页数徽章)/ 数据表 / 磁贴行 / 单行时间线 /
+   分区底色带交替。全部只用既有 token,本段不写任何 hex,也不出现任何游戏专属文字。
+
+   两种挂载位置同一套样式:快照套壳页里 .hb 是 .doc 的直接子元素(在 .prose 之外),
+   原生内容页里 .hb 在 .prose 之内 —— 所以下面的 .doc .hb … 与 .doc .prose … 同权重
+   且写在后面,两种位置都命中;.prose 的列表缩进/列表符号在 .hb 内单独中和。 */
+.doc .hb{margin:0 0 26px}
+.doc .hb h2{font-family:var(--font-head);font-size:var(--fs-h2);font-weight:700;line-height:1.3;
+  margin:34px 0 10px;color:var(--ink);scroll-margin-top:14px}
+.doc .hb h3{font-family:var(--font-head);font-size:var(--fs-h3);font-weight:600;line-height:1.35;
+  margin:24px 0 8px;color:var(--ink);scroll-margin-top:14px}
+.doc .hb>h2:first-child,.doc .hb>h3:first-child{margin-top:0}
+.hb-sub{margin:0 0 16px;color:var(--mut);font-size:var(--fs-meta);line-height:1.6;max-width:var(--measure)}
+/* 分区底色带:megabonk 的 section/section-alt,极轻微叠加(--bg2 压在 --bg 上) */
+.doc .hb-band{background:var(--bg2);border:var(--box-bd);border-radius:var(--rad);
+  padding:18px 18px 6px;margin:0 0 26px}
+.doc .hb-band>h2{margin-top:0}
+
+/* 提示框:本站自己某一页的原话(标题与正文都逐字取自那一页) */
+/* 底色用 --panel 而不是 --band-soft:框里的强调色链接压在 panel 上是 8.85:1,压在
+   band-soft 上只有 7.41:1 —— 全站文字对比度下限不许因为新模块被拉低。 */
+.doc .hb-note{background:var(--panel);border:var(--box-bd);border-left:3px solid var(--accent);
+  border-radius:var(--rad);padding:12px 16px;margin:0 0 18px;max-width:var(--measure)}
+.hb-note-t{margin:0 0 6px;color:var(--ink);font-size:.8125rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;line-height:1.45}
+.doc .hb-note p{margin:0 0 6px;color:var(--mut);font-size:.9375rem;line-height:1.6}
+.doc .hb-note p:last-child{margin:0}
+.hb-note-s a{display:inline-flex;align-items:center;min-height:40px;color:var(--accent);
+  font-size:var(--fs-meta);text-decoration:underline;text-underline-offset:3px}
+.hb-note-s a:hover{color:var(--accent2)}
+.hb-note-s a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* 统计胶囊:大号数字 + 通名标签,数字全部来自实际统计 */
+.doc .hb-pills{list-style:none;margin:0 0 22px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.doc .hb-pills li{margin:0;display:inline-flex;align-items:baseline;gap:5px;
+  border:var(--box-bd);border-radius:var(--rad-pill);background:var(--panel);
+  padding:7px 14px;color:var(--mut);font-size:var(--fs-lbl);line-height:1.3}
+.doc .hb-pills b{color:var(--accent);font-weight:700;font-size:1.0625rem;
+  font-variant-numeric:tabular-nums}
+
+/* 磁贴 / 卡片网格:正文栏只有 ~660px 宽,总站首页那套 232-260px 的最小列宽在这里只排得下
+   1-2 列(卡片会被拉成 520px 高的巨块),所以 hub 正文里的三个网格各自压小最小列宽,
+   1440 下排 3 列、手机下排 2 列。 */
+.doc .hb-tiles{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.doc .hb-cards,.doc .hb-tools{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+@media(max-width:520px){
+  .doc .hb-tiles,.doc .hb-cards,.doc .hb-tools{
+    grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:11px}
+}
+
+/* 栏目磁贴:缩略图 + 右上角页数徽章 */
+.doc .hb-tiles{margin:0 0 4px}
+.doc .hb-tiles .tile{position:relative}
+.hb-badge{position:absolute;top:8px;right:8px;z-index:2;min-width:26px;
+  border-radius:var(--rad-pill);background:var(--accent);color:var(--bg);
+  padding:2px 9px;font-size:.8125rem;font-weight:700;text-align:center;
+  font-variant-numeric:tabular-nums;line-height:1.5}
+.doc .hb-tiles .card-t a{display:flex;align-items:center;min-height:40px}
+
+/* 精选卡片行 / 工具磁贴行:复用总站卡片皮肤,只加点击高度与列表中和 */
+.doc .hb-cards,.doc .hb-tools{margin:0 0 4px}
+.doc .hb-cards h3 a,.doc .hb-tools h3 a{display:flex;align-items:center;min-height:40px}
+
+/* 数据表:列数(--c,由数据给)决定最小宽度 —— 列多就横滑,不靠把单元格挤窄换行拉高页面 */
+.doc .hb-fig{margin:0 0 6px}
+.doc .hb-fig .table-scroll{margin:0 0 7px}
+.doc .hb-fig table{min-width:max(560px,calc(var(--c,4) * 8.5rem))}
+/* 数据表脚注:行数 + 来源;"全部 N 条 →" 单独一行,点击高度 40 */
+.hb-src{margin:0 0 14px;color:var(--mut);font-size:var(--fs-lbl);line-height:1.55}
+.doc .hb-cards .rc-d{margin:auto 0 0;padding-top:9px;border-top:var(--box-bd);color:var(--mut);
+  font-size:var(--fs-lbl);font-variant-numeric:tabular-nums}
+.doc .hb-tools .tc-d{margin:auto 0 0;color:var(--mut);font-size:var(--fs-lbl);line-height:1.5}
+.hb-shown{font-variant-numeric:tabular-nums}
+.doc .hb-more{margin:0 0 20px}
+.hb-more a{display:inline-flex;align-items:center;min-height:40px;padding:0 15px;
+  border:var(--box-bd);border-radius:var(--rad-sm);background:var(--panel);
+  color:var(--accent);font-size:var(--fs-meta);font-weight:600;text-decoration:none}
+.hb-more a:hover{border-color:var(--accent);background:var(--band-soft);color:var(--accent2)}
+.hb-more a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 未核实:沿用各子站页面本来就在用的那句措辞,只给它一个统一的角标皮肤 */
+.hb-nc{color:var(--mut);font-size:.8125rem;font-style:italic;white-space:nowrap}
+
+/* 单行时间线:日期 + 页名,一行一条 */
+.doc .hb h3.hb-tl-t{font-family:var(--font-body);margin:0 0 8px;color:var(--ink);
+  font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1.45}
+.doc .hb-tl{list-style:none;margin:0;padding:0;border-top:1px solid var(--line2)}
+.doc .hb-tl li{margin:0;display:grid;grid-template-columns:104px minmax(0,1fr);
+  gap:0 16px;align-items:center;border-bottom:var(--box-bd)}
+.doc .hb-tl li:nth-child(even){background:var(--zebra)}
+.doc .hb-tl time{color:var(--mut);font-size:var(--fs-meta);font-variant-numeric:tabular-nums;
+  padding-left:2px}
+.doc .hb-tl a{display:flex;align-items:center;min-height:40px;color:var(--ink);
+  font-size:.9375rem;line-height:1.4;text-decoration:none;padding:6px 2px}
+.doc .hb-tl a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.doc .hb-tl a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+
+/* .prose 之内挂载时:中和 .prose 给列表加的缩进与列表符号(.kp 的要点列表不动) */
+.doc .prose .hb-pills,.doc .prose .hb-tiles,.doc .prose .hb-cards,
+.doc .prose .hb-tools,.doc .prose .hb-tl{padding-left:0;max-width:none;list-style:none}
+.doc .prose .hb-pills li,.doc .prose .hb-tiles li,.doc .prose .hb-cards li,
+.doc .prose .hb-tools li,.doc .prose .hb-tl li{margin:0}
+.doc .prose .hb-pills li::marker,.doc .prose .hb-tiles li::marker,
+.doc .prose .hb-cards li::marker,.doc .prose .hb-tools li::marker,
+.doc .prose .hb-tl li::marker{content:""}
+.doc .prose .hb-note p,.doc .prose .hb-src,.doc .prose .hb-sub{max-width:var(--measure)}
+@media(max-width:640px){
+  .doc .hb-band{padding:14px 14px 4px}
+  .doc .hb-tl li{grid-template-columns:minmax(0,1fr);padding:4px 0}
+  .doc .hb-tl a{min-height:40px}
+}
+
 /* ---------- 页脚 ---------- */
 .ft{border-top:var(--box-bd);background:var(--bg2);margin-top:56px}
 .ft .wrap{padding:24px 16px;font-size:var(--fs-meta);color:var(--dim);line-height:1.6}

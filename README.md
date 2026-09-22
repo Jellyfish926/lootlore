@@ -14,6 +14,15 @@
     只做三次"搬位置"(H1 → 标题区、子站面包屑 → 外壳面包屑、子站署名行 → byline 位)+
     给没有 id 的 h2/h3 补锚点;head 元数据(title/description/canonical/hreflang/JSON-LD/og)
     原值保留,只补子站没有的。界面文字跟每页 `<html lang>` 走 `config/i18n/<lang>.json`,缺 key 回退英文
+  - `hub/hubbody.py` —— **游戏 hub 页正文的视觉模块组**:实体数据驱动的速查表、
+    带缩略图+页数徽章的栏目磁贴、各栏目精选卡片、工具磁贴、统计胶囊、单行时间线、
+    要点框、范围提示框(提示框的标题与正文逐字取自该游戏自己某一页的第 N 个 h2 与其后
+    第一段,所以自动跟着页面语言走)。出哪张表/取哪几列/排序/行数上限全在
+    `config/hub.json` 的 `games[].hub_body` 里声明;表头走 `config/i18n` 的
+    `f_<字段>` / `tbl_<type>`,没登记标签的字段直接构建报错。
+    两条失败关闭:整列全空不出列;某列含"指向同一条实体另一个字段名"的内部交叉引用不出列。
+    快照 hub 页的插入方式见 `hub/snapshot.split_at_h2` —— 正文按 `<h2>` 序号分装进多个
+    `.sn-body`,**逐字节零改动**,`.gates/check_snapshot.py` 每次构建后实测这一条
   - `hub/style.css` → `out/hub.css`(全站外壳样式)· `hub/native.css`(内容页专属件)·
     `hub/snapshot.css`(快照正文里子站自己的类名 `.wrap/.hero/.tablewrap/.tracker-*` 的统一皮肤,
     全部收在 `.sn-body` 作用域里,顺带中和 hub.css 的同名全站选择器)
@@ -25,6 +34,8 @@
 - **配置层** `config/hub.json`(base_url、品牌、**站级视觉 token `theme`**、字体、
   一级导航意图栏 `intent_nav`、`/tools` 收录关键词 `tools_match`、首页 hero 取哪个游戏
   `hero_game`、游戏清单、剥离/映射/补丁规则、**实体数据绑定 `entities` + `entity_match`**)
+  + 每个游戏的 **hub 页正文模块声明 `hub_body`**(`scope` 取哪一页哪一个 h2 当提示框、
+  `tables` 出哪几张速查表、`slots` 插在正文第几个 `<h2>` 之前、`picks` 精选卡片条数)
   + `config/i18n/<lang>.json`(**全部界面文字**;现有 en / zh-CN / ja / de / es / fr / it)
 - **内容层** `sources/<game>/`(各子站静态快照,原样保存,变换只发生在构建时)
   + `content/<game>/*.md`(`kind: "native"` 的游戏:没有独立子站,Markdown 就是真相源,构建时渲染)

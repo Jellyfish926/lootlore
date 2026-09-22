@@ -13,3 +13,11 @@ lootlore 本地增补(2026-09-18,valheim v2,待同步回 seo-jianzhan/scripts):
 - `check_content.py --dir-lang valheim/zh=zh`:`--dir-lang` 支持多段路径前缀,取最长匹配(原来只认顶层目录)。
 - `check_i18n.py --root-default`:主语种页直接落在栏目根(`/<game>/…`)、其余语种在 `/<game>/<locale>/` 下的布局;
   LANG_ATTR 比较时按主语种码截断(`zh-CN` ↔ `zh`)。gates.yml 因此把 check_i18n 拆成两步跑。
+
+lootlore 本站专有门禁(2026-09-22,不同步回 seo-jianzhan/scripts —— 只有套壳站群才有这条约束):
+- `check_snapshot.py` —— 快照页正文「逐字节零改动」的门禁。对 `sources/<game>/**.html`
+  跑与 build.py 同一条链路(`transform_urls` → `hub.snapshot.parse_page`),再把产物里
+  `.sn-body` 的内容拼起来逐字节比;hub 页允许被分装进多个 `.sn-body`(在小节之间插外壳层
+  新模块),外壳补出来的配平标签夹在 `<!--hbf-->…<!--/hbf-->` 之间、比对前整段剔掉。
+  三条 E:BODY_DIFF(字节不一致)· SPLIT_ON_PAGE(内容页出现多个 `.sn-body`)·
+  TEXT_DIFF(可见文字缺词)。用法:`python3 .gates/check_snapshot.py --out out`。

@@ -16,12 +16,14 @@
 本文件不含任何游戏专属文字,也不含任何色号:栏目名来自子站页面自己的面包屑/卡片网格,
 界面文字来自 config/i18n,颜色一律走 out/hub.css 的 :root 变量。
 """
+import hashlib
 import html as _html
 import json
 import re
 from pathlib import Path
 
-from hub import shell
+from hub import mdlite, shell
+from hub.hubbody import HubBodyMixin
 from hub.mdlite import esc
 from hub.native import EntityBox
 from hub.pageindex import snapshot_index
@@ -62,6 +64,11 @@ AD_CLASSES = ("ad-native", "ad-banner", "ad-slot", "ad")
 
 def _text(s: str) -> str:
     return _html.unescape(TAG_RE.sub("", s or "")).strip()
+
+
+def _url_host(url: str) -> str:
+    u = (url or "").split("//", 1)[-1]
+    return u.split("/", 1)[0].lower().removeprefix("www.")
 
 
 def _norm(s: str) -> str:
@@ -121,6 +128,57 @@ def _cut(html: str, span):
     """删掉一个元素,返回 (新 html, 内层 html)。"""
     a, b, c, d = span
     return html[:a] + html[d:], html[b:c]
+
+
+# ---------------------------------------------------------------- 正文分段(零改动)
+TAG_ANY_RE = re.compile(r'<(/?)([a-zA-Z][\w-]*)\b((?:"[^"]*"|\'[^\']*\'|[^>"\'])*)(/?)>')
+VOID_TAGS = {"img", "br", "hr", "meta", "link", "input", "source", "area", "base",
+             "col", "embed", "param", "track", "wbr"}
+
+
+def split_at_h2(body: str, indices):
+    """把正文按 <h2> 序号(1 起)切成若干段 —— 只为了在段之间插入外壳层的新模块。
+
+    🔴 正文一个字节都不改:切点只落在标签与标签之间,返回的 parts 逐字节拼起来 == 传入的 body
+    (.gates/check_snapshot.py 每次构建后都实测这一条)。frames[i] 是第 i 个切点处仍然打开的
+    元素栈 [(tag, attrs)],调用方在前一段末尾补 </tag>、在后一段开头补 <tag attrs> 把 DOM 配平
+    —— 补出来的标签是外壳层的,不算正文字节。
+
+    切点还会向外"贴边":如果 <h2> 正好是某个容器(如 <section class="wrap">)的第一个子元素,
+    切点挪到那个容器的开标签之前,这样新模块不会被塞进子站自己的小节里。
+    """
+    if not indices:
+        return [body], [], []
+    want = sorted({i for i in indices if i and i > 0})
+    stack = []            # [(tag, attrs, open_start, content_start)]
+    cuts, seen_h2 = [], 0
+    for m in TAG_ANY_RE.finditer(body):
+        close, tag, attrs, self_c = m.group(1), m.group(2).lower(), m.group(3), m.group(4)
+        if not close and tag == "h2":
+            seen_h2 += 1
+            if seen_h2 in want:
+                cut, st = m.start(), list(stack)
+                while st and not body[st[-1][3]:cut].strip():
+                    cut = st[-1][2]
+                    st.pop()
+                cuts.append((cut, [(t, a) for t, a, _o, _c in st], seen_h2))
+        if tag in VOID_TAGS or self_c:
+            continue
+        if close:
+            if stack:
+                stack.pop()
+        else:
+            stack.append((tag, attrs, m.start(), m.end()))
+    parts, frames, applied, last = [], [], [], 0
+    for cut, st, n in cuts:
+        if cut <= last:
+            continue
+        parts.append(body[last:cut])
+        frames.append(st)
+        applied.append(n)
+        last = cut
+    parts.append(body[last:])
+    return parts, frames, applied
 
 
 # ---------------------------------------------------------------- 单页解析
@@ -230,7 +288,7 @@ def parse_page(raw: str, route: str, path: Path) -> SnapPage:
 
 
 # ---------------------------------------------------------------- 单语种渲染
-class SnapshotLang(EntityBox):
+class SnapshotLang(EntityBox, HubBodyMixin):
     """一个快照游戏的一个语种。栏目分组由 hub/pageindex.py 从真实文件发现,本类只管套壳。"""
 
     def __init__(self, game_site, root_path: str, lang: str):
@@ -245,7 +303,15 @@ class SnapshotLang(EntityBox):
         self.index = snapshot_index(game_site.root, g, self.t["more_guides"])
         self.home_route = self.index.home_route
         self.by_route = {p.route: p for p in self.index.pages}
+        # slug → 路由。既认末段("weapons"),也认该语种根之下的完整相对路径
+        # ("towers/cannon" —— entities.json 的 page_slug 就是这么写的)。末段优先,
+        # 完整路径只在末段没占位时补进来,不覆盖既有映射。
         self.by_slug = {p.route.rstrip("/").rsplit("/", 1)[-1]: p.route for p in self.index.pages}
+        pre = self.home_route
+        for p in self.index.pages:
+            rel = p.route[len(pre):].strip("/") if p.route.startswith(pre) else p.route.strip("/")
+            if rel:
+                self.by_slug.setdefault(rel, p.route)
         self.sec_of = {}                    # route -> Section
         for s in self.index.sections:
             for p in s.pages:
@@ -282,6 +348,124 @@ class SnapshotLang(EntityBox):
             hid = by_label.get(s.label.lower())
             if hid:
                 s.route = f"{self.home_route}#{hid}"
+
+    # -------------------------------------------------- hub 页正文模块的数据源
+    def hb_spec(self):
+        return self.gs.g.get("hub_body") or {}
+
+    def _hb_pool(self):
+        return [im for im in self.index.shot_pool if im and im.get("src") and im.get("alt")]
+
+    def _hb_pick_img(self, route, used):
+        """一个栏目/工具用哪张缩略图:先要那一页自己的配图,撞车了按 route 的 sha1 从该游戏的
+        官方截图池里换一张没用过的 —— 固定映射,构建间稳定(与首页 #by-game 同一机制)。"""
+        ref = self.by_route.get(route)
+        im = self.index.image_for(ref) if ref is not None else None
+        if im and im.get("src") not in used:
+            used.add(im["src"])
+            return im
+        pool = [x for x in self._hb_pool() if x.get("src") not in used]
+        if not pool:
+            if im:
+                used.add(im.get("src"))
+            return im
+        i = int(hashlib.sha1(route.encode("utf-8")).hexdigest()[:8], 16) % len(pool)
+        used.add(pool[i]["src"])
+        return pool[i]
+
+    def hb_sections(self):
+        used, out = set(), []
+        for s in self.index.sections:
+            if not s.route:
+                continue
+            out.append((s.label, s.route, s.count, self._hb_pick_img(s.route, used)))
+        return out
+
+    def _hb_tool_pages(self):
+        keys = [k.lower() for k in self.gs.cfg.get("tools_match", [])]
+        return sorted((p for p in self.index.pages
+                       if any(k in p.title.lower() for k in keys)), key=lambda p: p.title)
+
+    def hb_tools(self):
+        used = {im.get("src") for _l, _r, _c, im in self.hb_sections() if im}
+        return [(p.title, p.route, p.description, self._hb_pick_img(p.route, used))
+                for p in self._hb_tool_pages()]
+
+    def hb_featured(self, n=6):
+        """各栏目轮转取,栏目内按页面自记复核日倒序 —— 与首页 #by-game 精选同一条规则。
+        兜底桶(_more)与栏目自己的落地页不进来;没有日期的页排在最后但仍可入选。"""
+        lands = {s.route.rstrip("/") for s in self.index.sections if s.route}
+        queues = []
+        for sec in self.index.sections:
+            if sec.key == "_more":
+                continue
+            ps = [p for p in sec.pages if p.route.rstrip("/") not in lands]
+            ps.sort(key=lambda p: (p.date, p.title), reverse=True)
+            if ps:
+                queues.append((sec.label, ps))
+        if not queues:
+            queues = [("", sorted(self.index.pages, key=lambda p: (p.date, p.title), reverse=True))]
+        out, seen, i, guard = [], set(), 0, 0
+        used = {im.get("src") for _l, _r, _c, im in self.hb_sections() if im}
+        while queues and len(out) < n and guard < 300:
+            guard += 1
+            label, q = queues[i % len(queues)]
+            i += 1
+            while q:
+                p = q.pop(0)
+                if p.route in seen:
+                    continue
+                seen.add(p.route)
+                out.append((label, p.title, p.route, p.date, self._hb_pick_img(p.route, used)))
+                break
+            if not any(q for _l, q in queues):
+                break
+        return out
+
+    def hb_recent(self, n=5):
+        return [(p.title, p.route, p.date) for p in self.index.recent(n + 2) if p.date][:n]
+
+    def hb_counts(self):
+        return {"pages": len(self.index.pages), "sections": len(self.index.sections),
+                "tools": len(self._hb_tool_pages()), "langs": len(self.gs.langs),
+                "entities": len(self.ents), "updated": self.index.updated}
+
+    def hb_quote(self):
+        """范围提示框:逐字取该游戏自己某一页的第 N 个 <h2> 与它后面第一段的若干句。
+        配置只声明"取哪一页、第几个 h2、跳几句、取几句",一个字都不是我们写的;
+        各语种取的是各语种那一页自己的原文,所以自动跟着页面语言走。"""
+        spec = (self.hb_spec().get("scope") or {})
+        slug = spec.get("slug")
+        route = self.route_slug(slug) if slug else ""
+        page = self.pages.get(route) or self.pages.get(route.rstrip("/"))
+        if not page:
+            return None
+        hs = list(re.finditer(r'<h2\b[^>]*>(.*?)</h2>', page.body, re.S))
+        i = int(spec.get("h2") or 0) - 1
+        if not (0 <= i < len(hs)):
+            return None
+        title = _norm(hs[i].group(1))
+        pm = re.search(r'<p\b[^>]*>(.*?)</p>', page.body[hs[i].end():], re.S)
+        if not pm:
+            return None
+        text = _norm(pm.group(1))
+        sents = re.findall(r'[^.\u3002]*[.\u3002]', text) or [text]
+        last = int(spec.get("last") or 0)
+        if last:
+            quote = "".join(sents[-last:]).strip()
+        else:
+            skip, take = int(spec.get("skip") or 0), int(spec.get("take") or 1)
+            quote = "".join(sents[skip:skip + take]).strip()
+        if not quote:
+            return None
+        ref = self.by_route.get(route)
+        return title, quote, route, (ref.title if ref else _norm(page.h1))
+
+    def hb_self_hosts(self):
+        return {_url_host(self.gs.base), _url_host(self.gs.g.get("origin", ""))} - {""}
+
+    def hb_gslug(self):
+        return self.gs.gslug
 
     # -------------------------------------------------- 外壳零件
     def nav_sections(self):
@@ -374,6 +558,40 @@ class SnapshotLang(EntityBox):
         return (f'<p class="langsw"><span>{esc(t["language"])}{esc(t["colon"])}</span>'
                 f'<span class="cur">{esc(t.get(f"lang_{cur}", cur.upper()))}</span>{links}</p>')
 
+    # -------------------------------------------------- 正文容器
+    def doc_html(self, page: SnapPage) -> str:
+        """hub 页:在子站正文的小节之间插入外壳层的新模块(hub/hubbody.py),
+        正文本身逐字节不动 —— 只是被分装进多个 .sn-body 容器,拼起来与原文完全一致。
+        其余页(内容页)一律原样一段,外壳层不往里插任何东西。"""
+        body = f'<div class="prose sn-body">{page.body}</div>'
+        if page.route not in (self.home_route, self.home_route.rstrip("/")):
+            return body
+        slots = self.hb_spec().get("slots") or []
+        if not slots:
+            return body
+        used = set(ALL_IDS_RE.findall(page.body))
+        head = [x for x in slots if int(x.get("h2") or 0) == 0]
+        tail = [x for x in slots if int(x.get("h2") or 0) < 0]
+        mids = sorted((x for x in slots if int(x.get("h2") or 0) > 0), key=lambda x: int(x["h2"]))
+        parts, frames, applied = split_at_h2(page.body, [int(x["h2"]) for x in mids])
+        if "".join(parts) != page.body:                     # 分段必须是零改动
+            raise AssertionError(f"{page.path}: hub 页正文分段后与原文不一致")
+        by_h2 = {int(x["h2"]): (x.get("mods") or []) for x in mids}
+        out = [self.hb_render(x.get("mods") or [], used)[0] for x in head]
+        for k, part in enumerate(parts):
+            # 切点落在子站自己的容器里时,前一段末尾补 </tag>、后一段开头补 <tag attrs> 配平 DOM。
+            # 这几个补出来的标签夹在 <!--hbf--> … <!--/hbf--> 之间,.gates/check_snapshot.py
+            # 把这段整体去掉之后,各段拼起来必须与原文逐字节相同。
+            fo = frames[k - 1] if k else []
+            fc = frames[k] if k < len(frames) else []
+            opens = ("".join(f"<{tg}{at}>" for tg, at in fo) + "<!--/hbf-->") if fo else ""
+            closes = ("<!--hbf-->" + "".join(f"</{tg}>" for tg, _a in reversed(fc))) if fc else ""
+            out.append(f'<div class="prose sn-body">{opens}{part}{closes}</div>')
+            if k < len(applied):
+                out.append(self.hb_render(by_h2.get(applied[k], []), used)[0])
+        out += [self.hb_render(x.get("mods") or [], used)[0] for x in tail]
+        return "".join(x for x in out if x)
+
     # -------------------------------------------------- 整页
     def render(self, page: SnapPage) -> str:
         t = self.gs.i18n(page.lang or self.lang)
@@ -397,7 +615,7 @@ class SnapshotLang(EntityBox):
                 f'{crumbs_html}\n<div class="doc-hd"><h1>{page.h1}</h1>{byline}'
                 f'{self.lang_switch(page, t)}</div>\n'
                 + (f'<aside class="rail">{aside}</aside>\n' if aside else "")
-                + f'<div class="doc"><div class="prose sn-body">{page.body}</div></div>\n</main>')
+                + f'<div class="doc">{self.doc_html(page)}</div>\n</main>')
         intents = [(t[k], h) for k, h in self.gs.cfg.get("intent_nav", [])]
         header = shell.site_nav(
             brand=self.gs.cfg["brand"], games=self.gs.site["nav_games"], intents=intents,

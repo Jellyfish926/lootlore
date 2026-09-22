@@ -16,14 +16,29 @@ lede: {{BRAND}} is the home of our game guide collection. Each game gets a full,
 
 <section class="sect" id="recent">
   <h2>{{T:hub_recent_heading}}</h2>
-  <p class="sub">The most recently revised guide pages across every hub, newest first. The full log is on the <a href="/updates">updates page</a>.</p>
-  {{RECENT}}
+  <p class="sub">The six guide pages we opened most recently to check them against the live game. Each carries the date it was re-checked, not the date it was first written.</p>
+  {{RECENT_CARDS}}
+  <p class="sect-more"><a href="/updates">{{T:hub_full_log}} &rarr;</a></p>
 </section>
 
-<section class="sect" id="all-guides">
-  <h2>{{T:hub_index_heading}}</h2>
-  <p class="sub">The complete list, grouped by game and then by section — the fallback entry point when you would rather scan than search.</p>
-  {{ALL_GUIDES}}
+<section class="sect" id="start">
+  <h2>{{T:hub_start_heading}}</h2>
+  <p class="sub">One page per game that assumes you have played none of it: what to do in the first hour, what not to waste resources on, and which guide to read next.</p>
+  {{START_CARDS}}
+</section>
+
+<section class="sect" id="tools">
+  <h2>{{T:hub_tools_heading}}</h2>
+  <p class="sub">Not articles — working pages. Tick off achievements, plan a skill tree or check what an unlock costs; every one of them saves your progress in your own browser and needs no account.</p>
+  {{TOOL_CARDS}}
+  <p class="sect-more"><a href="/tools">{{T:nav_tools}} &rarr;</a></p>
+</section>
+
+<section class="sect" id="by-game">
+  <h2>{{T:hub_bygame_heading}}</h2>
+  <p class="sub">A shortlist per game, drawn from that hub&rsquo;s own sections rather than from any popularity ranking &mdash; we have no traffic data and will not invent one. Within each section the most recently re-checked page comes first. Every count and date below is tallied from the published pages.</p>
+  {{BY_GAME}}
+  <p class="sect-more"><a href="/guides">{{T:hub_full_index}} &rarr;</a></p>
 </section>
 
 <section class="sect" id="method">

@@ -389,6 +389,21 @@ class NativeLang(EntityBox):
         key = (imgs[0] if imgs else None) or self.images.get("pages", {}).get(p.slug) or self.images.get("default")
         return self.shot(key) if key else None
 
+    def card_image(self, p):
+        """给全站索引用的卡片图:这一页在 _images.json 里映射到的官方截图,推小图变体。
+        w/h 用小图的真实尺寸,与 <img> 属性一致,避免布局位移。alt 按语种取。"""
+        im = self.image_for(p)
+        if not im:
+            return None
+        src = im.get("src_small") or im.get("src")
+        if not src:
+            return None
+        w = im.get("small_w") if im.get("src_small") else im.get("w")
+        base_w, base_h = im.get("w"), im.get("h")
+        if not (w and base_w and base_h):
+            return None
+        return {"src": src, "w": w, "h": round(w * base_h / base_w), "alt": self.alt_of(im)}
+
     def cat_of(self, p):
         return self.cat_by_name.get(p.get("category"))
 
@@ -1243,7 +1258,7 @@ class NativeGame:
         for c in l.nav:
             pages = [PageRef(l.route(s), l.pub[s].get("title"), l.pub[s].get("description"),
                              c.get("category"), l.pub[s].get("date"), l.lastmod(l.pub[s]),
-                             self.gslug, l.code)
+                             self.gslug, l.code, image=l.card_image(l.pub[s]))
                      for s in l.members[c.slug]]
             sections.append(Section(c.slug, c.get("category"), l.route(c), pages))
         # 一篇文章可以跨栏目列出(见 members 的规则),索引里按 route 去重,页数才是真页数
@@ -1262,7 +1277,8 @@ class NativeGame:
                 pages.append(PageRef(lg.route(p), p.get("title"), p.get("description"),
                                      p.get("category") if p.type == "category"
                                      else (cat.get("category") if cat is not None else ""),
-                                     p.get("date"), lg.lastmod(p), self.gslug, lg.code))
+                                     p.get("date"), lg.lastmod(p), self.gslug, lg.code,
+                                     image=lg.card_image(p)))
         c = self.g.get("card", {})
         cover = {"src": c.get("img", ""), "w": c.get("img_w"), "h": c.get("img_h"),
                  "alt": c.get("img_alt", "")}

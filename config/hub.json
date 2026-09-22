@@ -51,6 +51,15 @@
     "compared",
     "should you buy"
   ],
+  "start_here_match": [
+    "start-here",
+    "where-to-start",
+    "beginner-guide",
+    "beginner",
+    "beginners",
+    "getting-started",
+    "first-day"
+  ],
   "hero_game": "valheim",
   "contact_email": "zsn2740784715@gmail.com",
   "adsense_pub": "pub-6575082962774479",
@@ -131,7 +140,52 @@
         "page_slug",
         "h1"
       ],
-      "entity_max": 3
+      "entity_max": 3,
+      "shots_credit": "Official screenshots · GAME FREAK inc. / Fictions, Inc. (Steam store page, appid 2001760, fetched 2026-09-22)",
+      "shots": [
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/f55c103953c70b47025b04f0c121b1723d6c1670/ss_f55c103953c70b47025b04f0c121b1723d6c1670.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "A straw-hatted swordfighter surrounded by spindly insect-like machines in a sunlit stone ruin, dust thrown up mid-charge"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/f9988d54094c2a099e5dafcdd12f045e4ca35f3b/ss_f9988d54094c2a099e5dafcdd12f045e4ca35f3b.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "The swordfighter crouched low in waist-high grass beside a hulking beast with a splayed flower-like head, a stone bridge behind them"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/7252f8336988a2830e56428d99cf8792bc172161/ss_7252f8336988a2830e56428d99cf8792bc172161.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "The swordfighter wading a shallow river beside a white wolf carrying a bundle of plants, an arched aqueduct and tiled huts in the valley behind"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/2900b5fbc2ef7b5c2bd3fab6007942e89da34020/ss_2900b5fbc2ef7b5c2bd3fab6007942e89da34020.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "Silhouettes of the swordfighter and the white wolf on a rocky ridge at sunset, a tall antlered creature to the right and a lattice tower on the horizon"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/9759eb253a5c18a6e9840d89e7127f610627c684/ss_9759eb253a5c18a6e9840d89e7127f610627c684.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "The swordfighter and the white wolf standing on rock before a mossy ravine wall streaked with waterfalls"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/8c99c5092bae7a08967faff2f77ca9a3e41f72a3/ss_8c99c5092bae7a08967faff2f77ca9a3e41f72a3.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "Over-the-shoulder view of the flower-decked swordfighter facing two green boar-like beasts and a blue-lit mechanical quadruped across burning grassland"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001760/9165d04eccf6fb47c9b71f7a80ed685726502b6f/ss_9165d04eccf6fb47c9b71f7a80ed685726502b6f.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "The swordfighter sliding under a rearing bear-like beast matted with straw-coloured growth, in a flooded ruined village"
+        }
+      ]
     },
     {
       "slug": "shift-at-midnight",
@@ -203,7 +257,46 @@
         "page_slug",
         "h1"
       ],
-      "entity_max": 3
+      "entity_max": 3,
+      "shots_credit": "Official screenshots · Bun Muen / Kwalee (Steam store page, appid 3722330, fetched 2026-09-22)",
+      "shots": [
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/a7b10d3b321f42e8b8c0c75a1c6202802ecd6f21/ss_a7b10d3b321f42e8b8c0c75a1c6202802ecd6f21.600x338.jpg",
+          "w": 600,
+          "h": 337,
+          "alt": "A blood-smeared convenience-store aisle under red emergency light, shelving toppled beneath a green EXIT sign"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/1c62449628755efbfd72771d8864b3d94975ddb2/ss_1c62449628755efbfd72771d8864b3d94975ddb2.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "Two named customers on a night pavement facing a glowing orange figure, coins scattered on the ground and a revenue counter reading $13.20"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/96c8fbdfc9efd6fa203febc03ab1c3f77957c544/ss_96c8fbdfc9efd6fa203febc03ab1c3f77957c544.600x338.jpg",
+          "w": 600,
+          "h": 337,
+          "alt": "The identity-check menu — HEAD, CLOTHES, LIMBS, MOVEMENTS — open over a customer at the counter, five checks remaining"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/4aec47aa49aa7225a2f84ec4d02f514b7efb0f08/ss_4aec47aa49aa7225a2f84ec4d02f514b7efb0f08.600x338.jpg",
+          "w": 600,
+          "h": 338,
+          "alt": "The in-game NET Database window showing a record for Bonnie McCree, nurse, with her date of birth and description bullet points"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/d4e9e4a0d4e849106401f20a4c8083fdcb7688bc/ss_d4e9e4a0d4e849106401f20a4c8083fdcb7688bc.600x338.jpg",
+          "w": 600,
+          "h": 337,
+          "alt": "First-person view down a checkerboard store aisle with a pistol raised, blood on the floor and a figure standing in the far doorway"
+        },
+        {
+          "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3722330/c8f33f8ce98e0bcd47a0ce4c3c9a302582ac6517/ss_c8f33f8ce98e0bcd47a0ce4c3c9a302582ac6517.600x338.jpg",
+          "w": 600,
+          "h": 337,
+          "alt": "A night alley behind the store lit by one street lamp, a distant figure in orange at the end of the path seen over a rubbish bag"
+        }
+      ]
     },
     {
       "slug": "dragonsword-awakening",

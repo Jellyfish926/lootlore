@@ -63,3 +63,14 @@
   ② 给 www 选「Redirect to Another Domain」时会出现默认勾选的「Include apex and www variants (recommended)」，
      勾着会把已配好的 apex 也改成跳转。
 - 待并入：seo-jianzhan ⑦⑧「换域清单」第 3 步 + 「Vercel 的四个默认值会坑你」表。
+
+## 2026-09-22 云端改动搬到「当天自动同步」之上时，config/sources.json 必须排除
+- 现象：把未推送的改动 graft 到新的 origin/main 之上时（`git checkout -B redo origin/main` 再按
+  `git diff --name-status origin/main <我的commit> -- . ':(exclude)out' ':(exclude)sources'` 逐条搬），
+  `config/sources.json` 的同步账本被倒退回上一天（五个子站的 sha 与 synced_at 全部回滚）。
+- 根因：我的 commit 基于**旧** origin，所以相对新 origin，旧的 sources.json 在 diff 里表现为一条普通「M」，
+  被当成我的改动搬了过去。`sources/` 被排除了，`config/sources.json` 没有。
+- 规则：graft 的排除清单必须写成 `':(exclude)out' ':(exclude)sources' ':(exclude)config/sources.json'`；
+  搬完用 `git diff --stat origin/main HEAD -- config/sources.json` 确认**无差异**再提交。
+- 影响：账本倒退会让下一次 sync-sources 误判落后而重跑，且仓库里记录的子站 sha 与实际快照不符。
+- 待并入：seo-jianzhan ⑦⑧「云端 GitHub 凭证是只读占位符时怎么推」那节的分叉处理法。

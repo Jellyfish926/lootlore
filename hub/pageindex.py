@@ -9,6 +9,7 @@
 本文件不含任何游戏专属文字:栏目名来自页面自己的面包屑或标题,兜底标签走 config/i18n。
 手工维护链接清单必然漂移,所以这里一条都不写。
 """
+import hashlib
 import html as _html
 import json
 import re
@@ -23,6 +24,10 @@ TAG_RE = re.compile(r"<[^>]+>")
 H2_RE = re.compile(r"<h2[^>]*>(.*?)</h2>", re.S | re.I)
 A_RE = re.compile(r'<a\s[^>]*href="([^"#?]+)[^"]*"[^>]*>(.*?)</a>', re.S | re.I)
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}")
+IMG_RE = re.compile(r"<img\s[^>]*>", re.I)
+SRCSET_CAND_RE = re.compile(r"([^\s,]+)\s+(\d+)w")
+# 图标 / 社交分享图不是内容配图,不进图片池
+NON_CONTENT_IMG = ("favicon", "apple-touch", "icon-", "/og", "og-image", "og.png", "logo")
 # 法务/信任页:总站自己有一套,子站快照里的同名页不进攻略索引(与 .gates/check_content 的 TRUST 同口径)
 TRUST_SLUGS = {"about", "contact", "privacy", "privacy-policy", "terms", "terms-of-service",
                "disclaimer", "editorial-policy", "404", "500", "search"}
@@ -43,10 +48,11 @@ def _day(v) -> str:
 class PageRef:
     """一个可索引页。title/description/日期全部来自文件本身,没有就是空,不填默认值。"""
 
-    __slots__ = ("route", "title", "description", "section", "published", "modified", "game", "lang")
+    __slots__ = ("route", "title", "description", "section", "published", "modified", "game",
+                 "lang", "image")
 
     def __init__(self, route, title, description="", section="", published="", modified="",
-                 game="", lang="en"):
+                 game="", lang="en", image=None):
         self.route = route
         self.title = title
         self.description = description
@@ -55,6 +61,8 @@ class PageRef:
         self.modified = modified
         self.game = game
         self.lang = lang
+        # 该页自己用的官方配图(dict: src/w/h/alt),没有就是 None —— 不替它编一张
+        self.image = image
 
     @property
     def date(self):
@@ -79,7 +87,7 @@ class GameIndex:
     """一个游戏的索引。sections 只包含真实存在且非空的栏目(空栏目不进导航)。"""
 
     def __init__(self, game: dict, *, home_route: str, sections=None, pages=None, cover=None,
-                 default_lang="en"):
+                 default_lang="en", shot_pool=None):
         self.slug = game["slug"]
         self.default_lang = default_lang
         self.name = game["name"]
@@ -90,6 +98,24 @@ class GameIndex:
         self.sections = sections or []
         self.pages = pages or []
         self.cover = cover or {}
+        # 该游戏的官方截图池,三级来源,优先级从高到低:
+        #   1) 它自己的页面用过的配图(快照站的 /images/*,alt 是子站写的)
+        #   2) 配置层 config/hub.json → games[].shots(页面自己没有配图的站,如 Steam 官方截图)
+        #   3) 都没有就只有封面图一张
+        self.shot_pool = [im for im in (shot_pool or []) if im] or [
+            im for im in game.get("shots", []) if im.get("src") and im.get("alt")]
+
+    def image_for(self, page):
+        """一页在卡片上用哪张图。优先用这一页自己的配图;没有就从该游戏的截图池里按
+        route 的 sha1 取一张 —— 固定映射(同一页每次构建都是同一张,不会跳),池子空了退封面。
+        池里的图都是该游戏的官方素材,alt 写的是画面里实际有什么,不声称它图解了这一页。"""
+        if page.image:
+            return page.image
+        pool = self.shot_pool
+        if pool:
+            i = int(hashlib.sha1(page.route.encode("utf-8")).hexdigest()[:8], 16) % len(pool)
+            return pool[i]
+        return self.cover or None
 
     @property
     def page_count(self):
@@ -198,6 +224,43 @@ def _scan_html(path: Path):
     }
 
 
+def _attr(tag: str, name: str) -> str:
+    m = re.search(rf'{name}\s*=\s*"([^"]*)"', tag, re.I)
+    return m.group(1) if m else ""
+
+
+def _content_image(raw: str, slug: str):
+    """一页自己的正文配图 → {src,w,h,alt}。src 用 srcset 里最小的 ≥600w 候选(卡片只有 ~380px
+    宽,推 1200w 是浪费),w/h 按该候选的真实宽度与原图长宽比重算,这样 width/height 属性
+    与真正下载的那张图一致、不会造成布局位移。
+
+    只认正文里根相对的 <img>:favicon / og 分享图不是配图。链接前缀与 build.transform_urls
+    同口径 —— 快照里的 /images/x.webp 在总站是 /<slug>/images/x.webp。
+    找不到就返回 None:这一页就是没有官方配图,不替它编一张。"""
+    for m in IMG_RE.finditer(raw):
+        tag = m.group(0)
+        src = _attr(tag, "src")
+        if not src.startswith("/") or any(k in src.lower() for k in NON_CONTENT_IMG):
+            continue
+        alt = _html.unescape(_attr(tag, "alt")).strip()
+        if not alt:
+            continue                      # 没有 alt 的图不用(我们不替它写 alt)
+        try:
+            w = int(_attr(tag, "width") or 0)
+            h = int(_attr(tag, "height") or 0)
+        except ValueError:
+            w = h = 0
+        cands = sorted(((int(cw), cs) for cs, cw in SRCSET_CAND_RE.findall(_attr(tag, "srcset"))),
+                       key=lambda x: x[0])
+        pick_w, pick_src = next(((cw, cs) for cw, cs in cands if cw >= 600), (0, ""))
+        if pick_src and w and h:
+            src, h, w = pick_src, round(pick_w * h / w), pick_w
+        if not (w and h):
+            continue                      # 没有尺寸就没法占位,宁可不用
+        return {"src": f"/{slug}{src}", "w": w, "h": h, "alt": alt}
+    return None
+
+
 def _card_groups(raw: str, keep: set, slug: str):
     """扁平结构的站(所有页都在语种根下,没有目录层):用该游戏 hub 页自己的卡片网格分组。
 
@@ -268,7 +331,8 @@ def snapshot_index(root: Path, game: dict, fallback_label: str) -> GameIndex:
         if route in home_routes:
             continue
         ref = PageRef(route, info["title"], info["description"], "",
-                      info["published"], info["modified"], slug)
+                      info["published"], info["modified"], slug,
+                      image=_content_image(info["raw"], slug))
         refs.append(ref)
         by_route[route] = ref
         cs = _crumb_section(info["ld"], origin, slug)
@@ -335,7 +399,14 @@ def snapshot_index(root: Path, game: dict, fallback_label: str) -> GameIndex:
     for s in sections:
         s.pages.sort(key=lambda p: p.title)
     sections.sort(key=lambda s: (s.key == "_more", -s.count, s.label))
-    return GameIndex(game, home_route=home_route, sections=sections, pages=refs, cover=cover)
+    # 截图池 = 本站页面实际用过的配图去重(按 src 排序,构建间稳定)
+    pool, seen_src = [], set()
+    for r in sorted(refs, key=lambda x: x.route):
+        if r.image and r.image["src"] not in seen_src:
+            seen_src.add(r.image["src"])
+            pool.append(r.image)
+    return GameIndex(game, home_route=home_route, sections=sections, pages=refs, cover=cover,
+                     shot_pool=pool)
 
 
 # ---------------------------------------------------------------- 站点级

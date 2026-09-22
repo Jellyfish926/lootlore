@@ -333,6 +333,207 @@ def game_cards_html():
     return f'<ul class="gcards">{"".join(out)}</ul>'
 
 
+# ---------------------------------------------------------------- 首页卡片模块(全部靠真实统计)
+def card_img(im) -> str:
+    """卡片缩略图。src 已经是小图变体(见 pageindex._content_image / native.card_image /
+    配置层 shots),所以不出 srcset —— 也就不写 sizes(没有 srcset 的 sizes 是空属性)。
+    width/height 与 src 的真实尺寸一致,配合 CSS 的 aspect-ratio 双保险占位;
+    首屏 hero 之外一律 lazy。alt 一律用素材自己的描述,这里不生成 alt。"""
+    if not im or not im.get("src"):
+        return ""
+    return (f'<img src="{esc(im["src"])}" width="{im["w"]}" height="{im["h"]}"'
+            f' alt="{esc(im.get("alt", ""))}" loading="lazy" decoding="async">')
+
+
+def tool_pages(gi):
+    """该游戏的互动工具页:标题命中 config/hub.json → tools_match 的关键词。
+    匹配规则在配置层,框架层不写任何游戏专属文字。"""
+    keys = [k.lower() for k in CFG.get("tools_match", [])]
+    return sorted((p for p in gi.pages
+                   if p.lang == gi.default_lang and any(k in p.title.lower() for k in keys)),
+                  key=lambda p: p.title)
+
+
+def start_here_pick(gi):
+    """该游戏的入门页:按 config/hub.json → start_here_match(有序偏好表)匹配路由末段。
+    与 tools_match 同一机制 —— 规则在配置层,可解释、可改、不写死清单。
+    匹配不到就不出这个游戏,绝不随便挑一页充当入门页。"""
+    order = [k.lower() for k in CFG.get("start_here_match", [])]
+    seen = {}
+    for p in gi.pages:
+        if p.lang != gi.default_lang:
+            continue
+        seg = p.route.rstrip("/").rsplit("/", 1)[-1].lower()
+        if seg in order:
+            seen.setdefault(seg, p)
+    return next((seen[k] for k in order if k in seen), None)
+
+
+def featured_pages(gi, n=6):
+    """一个游戏的精选攻略。只从该游戏自己已有的分组里取,不发明「热门」排序。
+
+    真相源 = hub/pageindex.py 推导出的栏目 —— 快照站取自它 hub 页自己的卡片网格分组
+    或子站面包屑目录,原生站取自内容层的栏目定义。规则:
+      1) 候选栏目 = 去掉兜底桶 `_more`(那不是策展分组,是「剩下的页」)。
+         一个游戏全部页都落在兜底桶的极端情况下才退回用它,否则它一条都出不来。
+      2) 栏目顺序沿用 pageindex 排好的顺序(按真实页数从多到少),不另设权重。
+      3) 栏目内部按「页面自己记录的复核日」降序,同日按标题 —— 复核日是事实,构建稳定。
+         栏目自己的落地页不进来(它已经被上面的栏目胶囊链接了)。
+      4) 各栏目轮转取,取满 n 条为止 —— 精选因此横跨该游戏的各个真实栏目,
+         不是某一个栏目的前 n 条。
+    我们没有任何访问量/点击数据,所以这里没有也不会有 Popular / 最受欢迎排序。"""
+    secs = [s for s in gi.sections if s.key != "_more"] or list(gi.sections)
+    lands = {s.route.rstrip("/") for s in gi.sections if s.route}
+    queues = []
+    for s in secs:
+        ps = [p for p in s.pages
+              if p.lang == gi.default_lang and p.route.rstrip("/") not in lands]
+        ps.sort(key=lambda p: (p.date, p.title), reverse=True)
+        queues.append((s, ps))
+    out, seen, i, guard = [], set(), 0, 0
+    while queues and len(out) < n and guard < 500:
+        guard += 1
+        s, q = queues[i % len(queues)]
+        i += 1
+        while q:
+            p = q.pop(0)
+            if p.route not in seen:
+                seen.add(p.route)
+                out.append((s, p))
+                break
+        if not any(q for _s, q in queues):
+            break
+    return out
+
+
+def game_stats(gi):
+    """一行统计,每个数字都来自实际统计:页数 / 栏目数 / 工具数 / 语种数 / 最后复核日。
+    统计不出来的项直接不显示(没有估算,也没有写死的数)。"""
+    bits = [f'<b>{gi.page_count}</b>&nbsp;{esc(T["stat_guides"])}']
+    if gi.sections:
+        bits.append(f'<b>{len(gi.sections)}</b>&nbsp;{esc(T["stat_sections"])}')
+    nt = len(tool_pages(gi))
+    if nt:
+        bits.append(f'<b>{nt}</b>&nbsp;{esc(T["stat_tools" if nt > 1 else "stat_tool"])}')
+    nl = len({p.lang for p in gi.pages})
+    if nl > 1:
+        bits.append(f'<b>{nl}</b>&nbsp;{esc(T["stat_languages"])}')
+    if gi.updated:
+        bits.append(f'<time datetime="{gi.updated}">{esc(T["updated_on"].format(d=gi.updated))}</time>')
+    return f'<p class="stats">{" &middot; ".join(bits)}</p>'
+
+
+def distinct_image(gi, page, used: set):
+    """同一个模块里不重复用同一张图。先要这一页自己的配图,撞车了就从该游戏的截图池里
+    换一张没用过的 —— 池里都是该游戏的官方素材,alt 写的是画面里实际有什么,
+    所以换图不改变任何事实陈述。池子全用过了就照旧用重复的那张(宁可重复,不留空位)。"""
+    im = gi.image_for(page)
+    if im and im.get("src") in used:
+        alt_im = next((x for x in gi.shot_pool if x.get("src") not in used), None)
+        im = alt_im or im
+    if im:
+        used.add(im.get("src"))
+    return im
+
+
+def recent_cards_html(n=6):
+    """最近更新:卡片网格。缩略图 = 该页自己的官方配图,没有配图的页走该游戏的官方截图池
+    (见 GameIndex.image_for),同模块内再去重。只取 n 条,全量时间流在 /updates。"""
+    by_slug = {g.slug: g for g in INDEX.games}
+    out, used = [], set()
+    for p in INDEX.recent(n, lang="en"):
+        gi = by_slug[p.game]
+        im = distinct_image(gi, p, used)
+        out.append(
+            f'<li class="rcard">'
+            f'<a class="rc-shot" href="{esc(p.route)}" tabindex="-1" aria-hidden="true">'
+            f'{card_img(im)}</a>'
+            f'<div class="rc-b">'
+            f'<p class="rc-g">{esc(gi.short)}</p>'
+            f'<h3><a href="{esc(p.route)}">{esc(p.title)}</a></h3>'
+            f'<p class="rc-d"><time datetime="{esc(p.date)}">'
+            f'{esc(T["reviewed_on"].format(d=p.date))}</time></p>'
+            f'</div></li>')
+    return f'<ul class="rcards">{"".join(out)}</ul>'
+
+
+def start_cards_html():
+    """Start here:每个游戏一张入门卡。匹配不到入门页的游戏不出卡。
+    每张卡带两个真实数字,跟 game_stats() 同一套字段、同一套 T[] 文案,不是为这
+    张卡新估的:gi.page_count 是该游戏默认语种的实际页数;p.date 是这张入门页
+    自己记录的复核日(modified ?? published)。两个都算不出来才会少一项,绝不
+    补一个假数字充数。"""
+    out = []
+    for gi in INDEX.games:
+        p = start_here_pick(gi)
+        if not p:
+            continue
+        im = gi.image_for(p)
+        bits = [f'<b>{gi.page_count}</b>&nbsp;{esc(T["stat_guides"])}']
+        if p.date:
+            bits.append(f'<time datetime="{esc(p.date)}">{esc(T["reviewed_on"].format(d=p.date))}</time>')
+        out.append(
+            f'<li class="scard"><a href="{esc(p.route)}">'
+            f'<span class="sc-shot">{card_img(im)}</span>'
+            f'<span class="sc-b"><span class="sc-g">{esc(gi.short)}</span>'
+            f'<b>{esc(p.title)}</b>'
+            f'<span class="sc-stats">{" &middot; ".join(bits)}</span></span></a></li>')
+    return f'<ul class="scards">{"".join(out)}</ul>' if out else ""
+
+
+def tool_cards_html():
+    """Tools:把仓里真能用的互动页提到首页。空了就不渲染这个模块(/tools 页那边会构建失败)。"""
+    out, used = [], set()
+    for gi in INDEX.games:
+        for p in tool_pages(gi):
+            im = distinct_image(gi, p, used)
+            out.append(
+                f'<li class="tcard">'
+                f'<a class="tc-shot" href="{esc(p.route)}" tabindex="-1" aria-hidden="true">'
+                f'{card_img(im)}</a>'
+                f'<div class="tc-b"><p class="tc-g">{esc(gi.short)}</p>'
+                f'<h3><a href="{esc(p.route)}">{esc(p.title)}</a></h3>'
+                + (f'<p class="tc-d">{esc(clip(p.description, 110))}</p>' if p.description else "")
+                + "</div></li>")
+    return f'<ul class="tcards">{"".join(out)}</ul>' if out else ""
+
+
+def by_game_html():
+    """首页主体:每个游戏一条带。封面 + 真实统计 + 栏目胶囊(带真实页数)+ 精选攻略 +
+    「全部 N 篇」入口。全量索引在 /guides,首页不再平铺全站链接。"""
+    out = []
+    for gi in INDEX.games:
+        g = next(x for x in CFG["games"] if x["slug"] == gi.slug)
+        c = gi.card
+        cover = {"src": c["img"], "w": c["img_w"], "h": c["img_h"], "alt": c["img_alt"]}
+        chips = "".join(
+            f'<a href="{esc(s.route)}">{esc(s.label)}<span>{s.count}</span></a>' if s.route
+            else f'<span class="chip-off">{esc(s.label)}<span>{s.count}</span></span>'
+            for s in gi.sections)
+        picks = "".join(
+            f'<li><a href="{esc(p.route)}"><b>{esc(p.title)}</b>'
+            f'<span class="gb-m">{esc(s.label)}'
+            + (f' &middot; <time datetime="{esc(p.date)}">{esc(p.date)}</time>' if p.date else "")
+            + "</span></a></li>"
+            for s, p in featured_pages(gi, 6))
+        credit = g.get("shots_credit") or c.get("img_credit", "")
+        out.append(
+            f'<article class="gband" id="g-{esc(gi.slug)}">'
+            f'<a class="gb-shot" href="{esc(gi.home_route)}" tabindex="-1" aria-hidden="true">'
+            f'{card_img(cover)}</a>'
+            f'<div class="gb-b">'
+            f'<p class="gb-genre">{esc(c["genre"])}</p>'
+            f'<h3><a href="{esc(gi.home_route)}">{esc(gi.name)}</a></h3>'
+            f'{game_stats(gi)}'
+            f'<div class="gb-chips">{chips}</div>'
+            f'<ul class="gb-list">{picks}</ul>'
+            f'<p class="gb-more"><a href="{esc(gi.home_route)}">'
+            f'{esc(T["all_n_guides"].format(n=gi.page_count, game=gi.short))} &rarr;</a>'
+            f'<span class="credit">{esc(credit)}</span></p>'
+            f'</div></article>')
+    return f'<div class="gbands">{"".join(out)}</div>'
+
+
 def feed_html(rows):
     """最近更新列表。rows = PageRef;日期是页面自己记录的复核日,没有日期的页不进来。"""
     by_slug = {g.slug: g for g in INDEX.games}
@@ -374,17 +575,15 @@ def clip(text, n):
 
 def tools_html():
     """/tools/ 页:按配置的关键词匹配真实存在的互动工具页。匹配不到就构建失败,不出空页。"""
-    keys = [k.lower() for k in CFG.get("tools_match", [])]
     out, total = [], 0
     for gi in INDEX.games:
-        hit = [p for p in gi.pages if p.lang == "en"
-               and any(k in p.title.lower() for k in keys)]
+        hit = tool_pages(gi)
         if not hit:
             continue
         total += len(hit)
         lis = "".join(f'<li><a href="{esc(p.route)}">{esc(p.title)}</a>'
                       + (f"<span>{esc(clip(p.description, 150))}</span>" if p.description else "")
-                      + "</li>" for p in sorted(hit, key=lambda x: x.title))
+                      + "</li>" for p in hit)
         out.append(f'<div class="index-g"><h3><a href="{esc(gi.home_route)}">{esc(gi.name)}</a></h3>'
                    f'<ul class="toollist">{lis}</ul></div>')
     if not total:
@@ -446,7 +645,10 @@ def render_hub_pages(site):
         name = page.stem
         meta, body = page_meta(fill(load(page)))
         body = (body.replace("{{GAMES_GRID}}", game_cards_html())
-                    .replace("{{RECENT}}", feed_html(INDEX.recent(12, lang="en")))
+                    .replace("{{RECENT_CARDS}}", recent_cards_html(6))
+                    .replace("{{START_CARDS}}", start_cards_html())
+                    .replace("{{TOOL_CARDS}}", tool_cards_html())
+                    .replace("{{BY_GAME}}", by_game_html())
                     .replace("{{ALL_GUIDES}}", all_guides_html())
                     .replace("{{UPDATES_FEED}}", feed_html(INDEX.recent(80, lang="en")))
                     .replace("{{UPDATES_STATS}}", updates_stats_html())

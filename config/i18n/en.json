@@ -148,7 +148,7 @@
   "pages_count": "{n} guides",
   "updated_on": "Updated {d}",
   "hub_games_heading": "Guide hubs",
-  "hub_recent_heading": "Recently updated across every game",
+  "hub_recent_heading": "Freshly re-checked",
   "hub_index_heading": "Every guide, by game",
   "hub_about_heading": "How these guides are made",
   "nav_reviews": "Reviews",
@@ -189,5 +189,17 @@
   "f_key_notes": "Notes",
   "f_platforms": "Platforms",
   "f_release_date": "Release date",
-  "f_per_point": "Per point"
+  "f_per_point": "Per point",
+  "hub_start_heading": "New to a game? Start here",
+  "hub_tools_heading": "Trackers and calculators you can use right now",
+  "hub_bygame_heading": "Pick a game, pick a guide",
+  "hub_full_log": "Full update log",
+  "hub_full_index": "Browse the full A-to-Z index",
+  "reviewed_on": "Re-checked {d}",
+  "all_n_guides": "All {n} {game} guides",
+  "stat_guides": "guides",
+  "stat_sections": "sections",
+  "stat_tool": "interactive tool",
+  "stat_tools": "interactive tools",
+  "stat_languages": "languages"
 }

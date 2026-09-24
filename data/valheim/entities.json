@@ -1,19 +1,19 @@
 {
  "fetched": "2026-09-18",
  "game_version": "1.0.12",
- "sources_note": "valheim.wiki (valheim.weirdgloop.org mirror, fetched via api.php?action=parse&prop=wikitext) as primary source; no fandom cross-check performed in this pass (all entities covered by valheim.wiki, no conflicts recorded). Chinese names taken from content/valheim/*.md where an established translation exists; otherwise name_zh == name_en and the field is listed in unverified_fields.",
+ "sources_note": "valheim.wiki (valheim.weirdgloop.org mirror, fetched via api.php?action=parse&prop=wikitext) as primary source; no fandom cross-check performed in this pass (all entities covered by valheim.wiki, no conflicts recorded). Chinese names taken from content/valheim/*.md where an established translation exists; otherwise name_zh == name_en and the field is listed in unverified_fields. 2026-09-24: *_zh / zh 字段按 zh_glossary_sources 补齐——译名只取两处:content/valheim/zh/*.md 正文已用的中文,其次 wiki.biligame.com/valheim(官方简中,infobox subtitle=英文名);两处都没有的专名保留英文;描述性句子按字面译,句中专名同上。",
  "entities": {
   "eikthyr": {
    "type": "boss",
    "name_en": "Eikthyr",
-   "name_zh": "Eikthyr",
+   "name_zh": "赤血灵鹿",
    "page_slug": "eikthyr",
    "order": 1,
    "biome": "Meadows",
    "summon": [
     {
      "item_en": "Deer trophy",
-     "item_zh": "Deer trophy",
+     "item_zh": "鹿战利品",
      "qty": 2
     }
    ],
@@ -32,28 +32,36 @@
    "drops": [
     {
      "item_en": "Eikthyr trophy",
-     "item_zh": "Eikthyr trophy",
+     "item_zh": "赤血灵鹿战利品",
      "qty": "1"
     },
     {
      "item_en": "Hard antler",
-     "item_zh": "Hard antler",
+     "item_zh": "硬鹿角",
      "qty": "3"
     }
    ],
    "forsaken_power": {
     "name_en": "Eikthyr Power",
     "effect_en": "Run/Jump/Swim stamina usage -60% for 300s",
-    "effect_zh": ""
+    "effect_zh": "跑步 / 跳跃 / 游泳体力消耗 -60%，持续 300 秒",
+    "name_zh": "赤血灵鹿之力"
    },
    "unlocks_en": "First pickaxe (Antler pickaxe), allowing ore mining",
-   "unlocks_zh": "",
+   "unlocks_zh": "第一把镐（鹿角镐），可以开始采矿",
    "source_urls": [
     "https://valheim.wiki/w/Eikthyr"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": [
-    "name_zh (no established zh translation in content pack)"
+   "unverified_fields": [],
+   "name_zh_source": "content/valheim/zh/eikthyr.md",
+   "biome_zh": "青青草原",
+   "damage_types_zh": [
+    "穿刺",
+    "雷电"
+   ],
+   "immune_zh": [
+    "硬直"
    ]
   },
   "elder": {
@@ -66,7 +74,7 @@
    "summon": [
     {
      "item_en": "Ancient seed",
-     "item_zh": "Ancient seed",
+     "item_zh": "上古种子",
      "qty": 3
     }
    ],
@@ -89,27 +97,42 @@
    "drops": [
     {
      "item_en": "The Elder trophy",
-     "item_zh": "The Elder trophy",
+     "item_zh": "古树长老战利品",
      "qty": "1"
     },
     {
      "item_en": "Swamp key",
-     "item_zh": "Swamp key",
-     "qty": "1 per player"
+     "item_zh": "沼泽钥匙",
+     "qty": "1 per player",
+     "qty_zh": "每名玩家 1 个"
     }
    ],
    "forsaken_power": {
     "name_en": "The Elder Power",
     "effect_en": "Health regen +30%, Chop damage +60%, Pickaxe damage +60% for 300s",
-    "effect_zh": ""
+    "effect_zh": "生命恢复 +30%，劈砍伤害 +60%，镐击伤害 +60%，持续 300 秒",
+    "name_zh": "古树长老之力"
    },
    "unlocks_en": "Swamp key to open Burial Chambers (primary source of Scrap iron)",
-   "unlocks_zh": "",
+   "unlocks_zh": "沼泽钥匙，用于打开诡秘墓穴（铁碎片的主要来源）",
    "source_urls": [
     "https://valheim.wiki/w/The_Elder"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "biome_zh": "黑暗林山",
+   "damage_types_zh": [
+    "穿刺",
+    "钝击"
+   ],
+   "weak_zh": [
+    "火焰"
+   ],
+   "immune_zh": [
+    "毒素",
+    "灵魂",
+    "硬直"
+   ]
   },
   "bonemass": {
    "type": "boss",
@@ -121,7 +144,7 @@
    "summon": [
     {
      "item_en": "Withered bone",
-     "item_zh": "Withered bone",
+     "item_zh": "枯骨",
      "qty": 10
     }
    ],
@@ -149,27 +172,49 @@
    "drops": [
     {
      "item_en": "Bonemass trophy",
-     "item_zh": "Bonemass trophy",
+     "item_zh": "邪骨恶灵战利品",
      "qty": "1"
     },
     {
      "item_en": "Wishbone",
-     "item_zh": "Wishbone",
-     "qty": "1 per player"
+     "item_zh": "愿望骨",
+     "qty": "1 per player",
+     "qty_zh": "每名玩家 1 个"
     }
    ],
    "forsaken_power": {
     "name_en": "Bonemass Power",
     "effect_en": "Slightly resistant vs Blunt/Slash/Pierce, Block stamina usage -100%, Block stamina return +5, for 300s",
-    "effect_zh": ""
+    "effect_zh": "对钝击 / 斩击 / 穿刺略有抗性，格挡体力消耗 -100%，格挡体力回复 +5，持续 300 秒",
+    "name_zh": "邪骨恶灵之力"
    },
    "unlocks_en": "Wishbone: locates Silver veins (Mountain) and buried Muddy scrap piles (Swamp)",
-   "unlocks_zh": "",
+   "unlocks_zh": "愿望骨：可探测银矿脉（雪山）与埋藏的泥泞的废料堆（沼泽）",
    "source_urls": [
     "https://valheim.wiki/w/Bonemass"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "biome_zh": "沼泽",
+   "damage_types_zh": [
+    "毒素",
+    "钝击"
+   ],
+   "weak_zh": [
+    "钝击",
+    "冰霜"
+   ],
+   "resistant_zh": [
+    "斩击"
+   ],
+   "very_resistant_zh": [
+    "火焰",
+    "穿刺"
+   ],
+   "immune_zh": [
+    "毒素",
+    "硬直"
+   ]
   },
   "moder": {
    "type": "boss",
@@ -181,7 +226,7 @@
    "summon": [
     {
      "item_en": "Dragon egg",
-     "item_zh": "Dragon egg",
+     "item_zh": "龙蛋",
      "qty": 3
     }
    ],
@@ -205,27 +250,42 @@
    "drops": [
     {
      "item_en": "Dragon tear",
-     "item_zh": "Dragon tear",
+     "item_zh": "龙泪",
      "qty": "10"
     },
     {
      "item_en": "Moder trophy",
-     "item_zh": "Moder trophy",
+     "item_zh": "冰霜龙母战利品",
      "qty": "1"
     }
    ],
    "forsaken_power": {
     "name_en": "Moder Power",
     "effect_en": "Max carry weight +300, Resistant vs Frost, Movement speed +10% for 300s",
-    "effect_zh": ""
+    "effect_zh": "最大负重 +300，冰霜抗性，移动速度 +10%，持续 300 秒",
+    "name_zh": "冰霜龙母之力"
    },
    "unlocks_en": "Scythe handle, Toadstool, Fragrant bundle and Mountain peak pepper powder from The Bog Witch trader",
-   "unlocks_zh": "",
+   "unlocks_zh": "沼泽女巫商人出售镰刀把、毒蕈、香料包与山顶胡椒粉",
    "source_urls": [
     "https://valheim.wiki/w/Moder"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "biome_zh": "雪山",
+   "damage_types_zh": [
+    "穿刺",
+    "斩击",
+    "冰霜"
+   ],
+   "weak_zh": [
+    "火焰"
+   ],
+   "immune_zh": [
+    "冰霜",
+    "灵魂",
+    "硬直"
+   ]
   },
   "yagluth": {
    "type": "boss",
@@ -237,7 +297,7 @@
    "summon": [
     {
      "item_en": "Fuling totem",
-     "item_zh": "Fuling totem",
+     "item_zh": "丑地精图腾",
      "qty": 5
     }
    ],
@@ -262,28 +322,45 @@
    "drops": [
     {
      "item_en": "Torn spirit",
-     "item_zh": "Torn spirit",
+     "item_zh": "裂魂",
      "qty": "3"
     },
     {
      "item_en": "Yagluth trophy",
-     "item_zh": "Yagluth trophy",
+     "item_zh": "亚格鲁斯战利品",
      "qty": "1"
     }
    ],
    "forsaken_power": {
     "name_en": "Yagluth Power",
     "effect_en": "Resistant vs Lightning, Farming +25, +10% damage dealt (all types) for 300s",
-    "effect_zh": ""
+    "effect_zh": "雷电抗性，农耕 +25，造成的伤害 +10%（所有类型），持续 300 秒",
+    "name_zh": "亚格鲁斯之力"
    },
    "unlocks_en": "Enables use of Wisplight/Wisp torch to clear Mistlands mist (both require Yagluth defeated)",
-   "unlocks_zh": "",
+   "unlocks_zh": "可使用冥火之光 / 冥火火炬驱散迷雾之地的迷雾（两者都要求已击败亚格鲁斯）",
    "source_urls": [
     "https://valheim.wiki/w/Yagluth",
     "https://valheim.wiki/w/Mistlands"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "biome_zh": "平原",
+   "damage_types_zh": [
+    "火焰",
+    "雷电",
+    "钝击"
+   ],
+   "resistant_zh": [
+    "火焰"
+   ],
+   "very_resistant_zh": [
+    "穿刺"
+   ],
+   "immune_zh": [
+    "毒素",
+    "硬直"
+   ]
   },
   "queen": {
    "type": "boss",
@@ -312,7 +389,7 @@
    "drops": [
     {
      "item_en": "Majestic carapace",
-     "item_zh": "Majestic carapace",
+     "item_zh": "雄伟甲壳",
      "qty": "5"
     },
     {
@@ -324,7 +401,7 @@
    "forsaken_power": {
     "name_en": "The Queen's Power",
     "effect_en": "Eitr regen +100%, Resistant vs Poison, Sneak stamina usage -100% for 300s",
-    "effect_zh": ""
+    "effect_zh": "魔力恢复 +100%，毒素抗性，潜行体力消耗 -100%，持续 300 秒"
    },
    "unlocks_en": null,
    "unlocks_zh": null,
@@ -335,6 +412,19 @@
    "unverified_fields": [
     "summon (first fight requires no sacrifice per wiki text; no summon-item list found)",
     "unlocks_en"
+   ],
+   "biome_zh": "迷雾之地",
+   "damage_types_zh": [
+    "斩击",
+    "穿刺",
+    "毒素",
+    "钝击"
+   ],
+   "resistant_zh": [
+    "穿刺"
+   ],
+   "immune_zh": [
+    "灵魂"
    ]
   },
   "fader": {
@@ -347,7 +437,7 @@
    "summon": [
     {
      "item_en": "Bell",
-     "item_zh": "Bell",
+     "item_zh": "钟",
      "qty": 3
     }
    ],
@@ -382,10 +472,10 @@
    "forsaken_power": {
     "name_en": "Fader Power",
     "effect_en": "Resistant vs Fire, Adrenaline gain +100%, 50% reduced Stagger meter modifier, for 300s",
-    "effect_zh": ""
+    "effect_zh": "火焰抗性，血怒获取 +100%，硬直条累积降低 50%，持续 300 秒"
    },
    "unlocks_en": "Fiery spice powder from The Bog Witch trader (200 Coins); defeating Fader is required to progress into the Deep North",
-   "unlocks_zh": "",
+   "unlocks_zh": "沼泽女巫商人出售火辣香料粉（200 金币）；进入深北之境必须先击败 Fader",
    "source_urls": [
     "https://valheim.wiki/w/Fader",
     "https://valheim.wiki/w/Deep_North"
@@ -393,6 +483,19 @@
    "accessed": "2026-09-18",
    "unverified_fields": [
     "name_zh (no established zh translation in content pack)"
+   ],
+   "biome_zh": "灰烬之地",
+   "damage_types_zh": [
+    "火焰",
+    "灵魂",
+    "穿刺"
+   ],
+   "resistant_zh": [
+    "穿刺"
+   ],
+   "immune_zh": [
+    "火焰",
+    "灵魂"
    ]
   },
   "kall": {
@@ -449,7 +552,7 @@
    ],
    "forsaken_power": null,
    "unlocks_en": "Seasoning of the Gourd from The Bog Witch trader for 220 Coins",
-   "unlocks_zh": "",
+   "unlocks_zh": "沼泽女巫商人以 220 金币出售 Seasoning of the Gourd",
    "source_urls": [
     "https://valheim.wiki/w/Kall_Fimbulbringer"
    ],
@@ -457,6 +560,24 @@
    "unverified_fields": [
     "name_zh (no established zh translation in content pack)",
     "forsaken_power (page marked Work in progress, no altar/power section present)"
+   ],
+   "biome_zh": "深北之境",
+   "damage_types_zh": [
+    "钝击",
+    "劈砍",
+    "镐击",
+    "穿刺",
+    "火焰",
+    "冰霜"
+   ],
+   "resistant_zh": [
+    "穿刺",
+    "火焰",
+    "冰霜",
+    "雷电"
+   ],
+   "immune_zh": [
+    "灵魂"
    ]
   },
   "meadows": {
@@ -468,50 +589,50 @@
    "key_resources": [
     {
      "en": "Wood",
-     "zh": ""
+     "zh": "木头"
     },
     {
      "en": "Flint",
-     "zh": ""
+     "zh": "燧石"
     },
     {
      "en": "Stone",
-     "zh": ""
+     "zh": "石头"
     },
     {
      "en": "Dandelion",
-     "zh": ""
+     "zh": "蒲公英"
     },
     {
      "en": "Mushroom",
-     "zh": ""
+     "zh": "蘑菇"
     },
     {
      "en": "Raspberry",
-     "zh": ""
+     "zh": "覆盆子"
     }
    ],
    "enemies": [
     {
      "en": "Boar",
-     "zh": ""
+     "zh": "野猪"
     },
     {
      "en": "Neck",
-     "zh": ""
+     "zh": "水蛇"
     },
     {
      "en": "Greyling",
-     "zh": ""
+     "zh": "灰精灵"
     },
     {
      "en": "Draugr (in Draugr Village)",
-     "zh": ""
+     "zh": "尸鬼（尸鬼村落内）"
     }
    ],
    "unlocks": [],
    "hazards_en": "Least hazardous biome; Draugr Villages are notably dangerous early on.",
-   "hazards_zh": "",
+   "hazards_zh": "危险最低的区域；但尸鬼村落在前期相当危险。",
    "source_urls": [
     "https://valheim.wiki/w/Meadows"
    ],
@@ -521,73 +642,72 @@
   "black-forest": {
    "type": "biome",
    "name_en": "Black Forest",
-   "name_zh": "Black Forest",
+   "name_zh": "黑暗林山",
    "order": 2,
    "boss": "elder",
    "key_resources": [
     {
      "en": "Copper ore (Copper deposit)",
-     "zh": ""
+     "zh": "铜矿（铜矿床）"
     },
     {
      "en": "Tin ore (Tin deposit)",
-     "zh": ""
+     "zh": "锡矿（锡矿床）"
     },
     {
      "en": "Thistle",
-     "zh": ""
+     "zh": "蓟草"
     },
     {
      "en": "Carrot Seed",
-     "zh": ""
+     "zh": "胡萝卜种子"
     }
    ],
    "enemies": [
     {
      "en": "Greydwarf",
-     "zh": ""
+     "zh": "灰矮人"
     },
     {
      "en": "Greydwarf brute",
-     "zh": ""
+     "zh": "灰矮人暴徒"
     },
     {
      "en": "Greydwarf shaman",
-     "zh": ""
+     "zh": "灰矮人萨满"
     },
     {
      "en": "Troll",
-     "zh": ""
+     "zh": "巨魔"
     },
     {
      "en": "Skeleton",
-     "zh": ""
+     "zh": "骷髅怪"
     },
     {
      "en": "Bear",
-     "zh": ""
+     "zh": "巨熊"
     },
     {
      "en": "Ghost",
-     "zh": ""
+     "zh": "幽灵"
     },
     {
      "en": "Rancid Remains",
-     "zh": ""
+     "zh": "腐臭遗骸"
     }
    ],
    "unlocks": [],
    "hazards_en": "Only biome where Copper and Tin ore are mined (requires Antler pickaxe from Eikthyr).",
-   "hazards_zh": "",
+   "hazards_zh": "唯一能开采铜矿与锡矿的区域（需要击败赤血灵鹿后制作的鹿角镐）。",
    "source_urls": [
     "https://valheim.wiki/w/Black_Forest",
     "https://valheim.fandom.com/wiki/Black_Forest"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": [
-    "name_zh (no established zh translation in content pack)"
-   ],
-   "page_slug": "bronze"
+   "unverified_fields": [],
+   "page_slug": "bronze",
+   "name_zh_source": "content/valheim/zh/bronze.md"
   },
   "swamp": {
    "type": "biome",
@@ -598,62 +718,62 @@
    "key_resources": [
     {
      "en": "Ancient bark",
-     "zh": ""
+     "zh": "古树皮"
     },
     {
      "en": "Scrap iron",
-     "zh": ""
+     "zh": "铁碎片"
     },
     {
      "en": "Guck",
-     "zh": ""
+     "zh": "树脓"
     },
     {
      "en": "Turnip seeds",
-     "zh": ""
+     "zh": "芜菁种子"
     }
    ],
    "enemies": [
     {
      "en": "Draugr",
-     "zh": ""
+     "zh": "尸鬼"
     },
     {
      "en": "Draugr elite",
-     "zh": ""
+     "zh": "尸鬼精英"
     },
     {
      "en": "Blob",
-     "zh": ""
+     "zh": "软泥怪"
     },
     {
      "en": "Oozer",
-     "zh": ""
+     "zh": "软泥"
     },
     {
      "en": "Leech",
-     "zh": ""
+     "zh": "蚂蟥"
     },
     {
      "en": "Skeleton",
-     "zh": ""
+     "zh": "骷髅怪"
     },
     {
      "en": "Surtling",
-     "zh": ""
+     "zh": "焰灵"
     },
     {
      "en": "Wraith",
-     "zh": ""
+     "zh": "鬼魅"
     },
     {
      "en": "Abomination",
-     "zh": ""
+     "zh": "邪煞之树"
     }
    ],
    "unlocks": [],
    "hazards_en": "Always raining (player is always Wet); every creature here is hostile.",
-   "hazards_zh": "",
+   "hazards_zh": "常年下雨（玩家始终处于潮湿状态）；这里的所有生物都是敌对的。",
    "source_urls": [
     "https://valheim.wiki/w/Swamp"
    ],
@@ -670,62 +790,62 @@
    "key_resources": [
     {
      "en": "Obsidian",
-     "zh": ""
+     "zh": "黑曜石"
     },
     {
      "en": "Dragon egg",
-     "zh": ""
+     "zh": "龙蛋"
     },
     {
      "en": "Silver ore (Silver vein)",
-     "zh": ""
+     "zh": "银矿（银矿脉）"
     },
     {
      "en": "Onion seeds",
-     "zh": ""
+     "zh": "洋葱种子"
     }
    ],
    "enemies": [
     {
      "en": "Wolf",
-     "zh": ""
+     "zh": "狼"
     },
     {
      "en": "Drake",
-     "zh": ""
+     "zh": "霜龙"
     },
     {
      "en": "Stone Golem",
-     "zh": ""
+     "zh": "石魔哥伦"
     },
     {
      "en": "Fenring (at night)",
-     "zh": ""
+     "zh": "芬里（夜间）"
     },
     {
      "en": "Cultist (Frost Cave)",
-     "zh": ""
+     "zh": "狂信徒（冰霜洞穴）"
     },
     {
      "en": "Ulv (Frost Cave)",
-     "zh": ""
+     "zh": "巨狼（冰霜洞穴）"
     },
     {
      "en": "Draugr (Mountain towers)",
-     "zh": ""
+     "zh": "尸鬼（山上塔楼）"
     },
     {
      "en": "Skeleton (Mountain towers / Cabins)",
-     "zh": ""
+     "zh": "骷髅怪（山上塔楼 / 小屋）"
     },
     {
      "en": "Bat (Frost Caves)",
-     "zh": ""
+     "zh": "邪蝠（冰霜洞穴）"
     }
    ],
    "unlocks": [],
    "hazards_en": "Snow storms deal continuous Freezing damage without frost resistance.",
-   "hazards_zh": "",
+   "hazards_zh": "没有抗寒时，暴风雪会持续造成冻伤伤害。",
    "source_urls": [
     "https://valheim.wiki/w/Mountain",
     "https://valheim.fandom.com/wiki/Mountain"
@@ -743,50 +863,50 @@
    "key_resources": [
     {
      "en": "Flax",
-     "zh": ""
+     "zh": "亚麻"
     },
     {
      "en": "Barley",
-     "zh": ""
+     "zh": "大麦"
     },
     {
      "en": "Tar",
-     "zh": ""
+     "zh": "沥青"
     }
    ],
    "enemies": [
     {
      "en": "Deathsquito",
-     "zh": ""
+     "zh": "死亡蚊"
     },
     {
      "en": "Fuling",
-     "zh": ""
+     "zh": "丑地精"
     },
     {
      "en": "Fuling berserker",
-     "zh": ""
+     "zh": "丑地精狂战士"
     },
     {
      "en": "Fuling shaman",
-     "zh": ""
+     "zh": "丑地精萨满"
     },
     {
      "en": "Growth",
-     "zh": ""
+     "zh": "焦油怪"
     },
     {
      "en": "Lox",
-     "zh": ""
+     "zh": "平原牦牛"
     },
     {
      "en": "Vile",
-     "zh": ""
+     "zh": "恶骨"
     }
    ],
    "unlocks": [],
    "hazards_en": "Deathsquitoes can aggro far into the water near beaches.",
-   "hazards_zh": "",
+   "hazards_zh": "死亡蚊会追到海滩附近很远的水面上。",
    "source_urls": [
     "https://valheim.wiki/w/Plains"
    ],
@@ -803,66 +923,66 @@
    "key_resources": [
     {
      "en": "Yggdrasil wood",
-     "zh": ""
+     "zh": "世界之树木"
     },
     {
      "en": "Black marble",
-     "zh": ""
+     "zh": "黑大理石"
     },
     {
      "en": "Black core",
-     "zh": ""
+     "zh": "黑核"
     },
     {
      "en": "Sap",
-     "zh": ""
+     "zh": "树液"
     },
     {
      "en": "Royal jelly",
-     "zh": ""
+     "zh": "皇家果冻"
     },
     {
      "en": "Soft tissue",
-     "zh": ""
+     "zh": "软组织"
     },
     {
      "en": "Dvergr extractor",
-     "zh": ""
+     "zh": "矮人提取器"
     },
     {
      "en": "Sealbreaker fragment",
-     "zh": ""
+     "zh": "封印碎片"
     },
     {
      "en": "Blue jute",
-     "zh": ""
+     "zh": "蓝黄麻"
     }
    ],
    "enemies": [
     {
      "en": "Tick",
-     "zh": ""
+     "zh": "壁虱幼虫"
     },
     {
      "en": "Seeker",
-     "zh": ""
+     "zh": "邪蛛探索者"
     },
     {
      "en": "Seeker Soldier",
-     "zh": ""
+     "zh": "邪蛛侦察兵"
     },
     {
      "en": "Gjall",
-     "zh": ""
+     "zh": "壁虱后"
     },
     {
      "en": "Seeker Brood",
-     "zh": ""
+     "zh": "邪蛛幼雏"
     }
    ],
    "unlocks": [],
    "hazards_en": "Perpetual mist obscures vision; Wisplight/Wisp torch (require Yagluth defeated) needed to clear it.",
-   "hazards_zh": "",
+   "hazards_zh": "常年迷雾遮蔽视野；需要冥火之光 / 冥火火炬（要求已击败亚格鲁斯）才能驱雾。",
    "source_urls": [
     "https://valheim.wiki/w/Mistlands",
     "https://valheim.fandom.com/wiki/Mistlands"
@@ -880,78 +1000,78 @@
    "key_resources": [
     {
      "en": "Flametal ore",
-     "zh": ""
+     "zh": "焰金属矿"
     },
     {
      "en": "Sulfur",
-     "zh": ""
+     "zh": "硫磺"
     },
     {
      "en": "Grausten",
-     "zh": ""
+     "zh": "灰石"
     },
     {
      "en": "Molten core",
-     "zh": ""
+     "zh": "熔岩之核"
     },
     {
      "en": "Ashwood",
-     "zh": ""
+     "zh": "灰烬之木"
     },
     {
      "en": "Bell fragment",
-     "zh": ""
+     "zh": "钟碎片"
     }
    ],
    "enemies": [
     {
      "en": "Asksvin",
-     "zh": ""
+     "zh": "灰烬刚鬣"
     },
     {
      "en": "Charred Marksman",
-     "zh": ""
+     "zh": "灰烬射手"
     },
     {
      "en": "Charred Twitcher",
-     "zh": ""
+     "zh": "灰烬僵尸"
     },
     {
      "en": "Charred Warlock",
-     "zh": ""
+     "zh": "灰烬术士"
     },
     {
      "en": "Charred Warrior",
-     "zh": ""
+     "zh": "灰烬战士"
     },
     {
      "en": "Morgen",
-     "zh": ""
+     "zh": "摩根"
     },
     {
      "en": "Bonemaw Serpent",
-     "zh": ""
+     "zh": "骨骺蛟龙"
     },
     {
      "en": "Fallen Valkyrie",
-     "zh": ""
+     "zh": "坠落女武神"
     },
     {
      "en": "Lava Blob",
-     "zh": ""
+     "zh": "岩浆软泥怪"
     },
     {
      "en": "Volture",
-     "zh": ""
+     "zh": "灰烬之鹫"
     },
     {
      "en": "Skugg",
-     "zh": ""
+     "zh": "邪影弩炮"
     }
    ],
    "unlocks": [],
    "hazards_en": "Surrounding water is boiling and destroys all wooden ships (Drakkar required to sail there).",
-   "hazards_zh": "",
+   "hazards_zh": "周围海水沸腾，会摧毁所有木船（前往需要 Drakkar）。",
    "source_urls": [
     "https://valheim.wiki/w/Ashlands",
     "https://valheim.fandom.com/wiki/Ashlands"
@@ -969,62 +1089,62 @@
    "key_resources": [
     {
      "en": "Ice",
-     "zh": ""
+     "zh": "冰"
     },
     {
      "en": "Timberwood",
-     "zh": ""
+     "zh": "Timberwood"
     },
     {
      "en": "Petrified Tissue",
-     "zh": ""
+     "zh": "石化组织"
     },
     {
      "en": "Frostcore",
-     "zh": ""
+     "zh": "Frostcore"
     },
     {
      "en": "Luminous Larva",
-     "zh": ""
+     "zh": "Luminous Larva"
     }
    ],
    "enemies": [
     {
      "en": "Greydwarf (Deep North)",
-     "zh": ""
+     "zh": "灰矮人（深北之境）"
     },
     {
      "en": "Moose",
-     "zh": ""
+     "zh": "Moose"
     },
     {
      "en": "Barka",
-     "zh": ""
+     "zh": "Barka"
     },
     {
      "en": "Elaking",
-     "zh": ""
+     "zh": "Elaking"
     },
     {
      "en": "Eyeless One",
-     "zh": ""
+     "zh": "Eyeless One"
     },
     {
      "en": "Hexen",
-     "zh": ""
+     "zh": "Hexen"
     },
     {
      "en": "Krigen",
-     "zh": ""
+     "zh": "Krigen"
     },
     {
      "en": "Gammeltroll",
-     "zh": ""
+     "zh": "Gammeltroll"
     }
    ],
    "unlocks": [],
    "hazards_en": "Snowstorms cause continuous Freezing damage; defeating Fader is required to progress through the biome.",
-   "hazards_zh": "",
+   "hazards_zh": "暴风雪会持续造成冻伤伤害；要在该区域推进必须先击败 Fader。",
    "source_urls": [
     "https://valheim.wiki/w/Deep_North"
    ],
@@ -1035,32 +1155,32 @@
   "ocean": {
    "type": "biome",
    "name_en": "Ocean",
-   "name_zh": "Ocean",
+   "name_zh": "海洋",
    "order": null,
    "boss": null,
    "key_resources": [],
    "enemies": [
     {
      "en": "Serpent",
-     "zh": ""
+     "zh": "蛟龙"
     },
     {
      "en": "Leviathan",
-     "zh": ""
+     "zh": "利维坦"
     }
    ],
    "unlocks": [],
    "hazards_en": "Only realistically accessible by boat; swimming quickly depletes stamina and can lead to drowning.",
-   "hazards_zh": "",
+   "hazards_zh": "实际上只能乘船通行；游泳会迅速耗尽体力并可能溺水。",
    "source_urls": [
     "https://valheim.wiki/w/Ocean"
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [
-    "name_zh (no established zh translation in content pack)",
     "order (Ocean is not part of the linear boss-progression sequence)"
    ],
-   "page_slug": "ships"
+   "page_slug": "ships",
+   "name_zh_source": "https://wiki.biligame.com/valheim/%E6%B5%B7%E6%B4%8B"
   },
   "workbench": {
    "type": "station",
@@ -1080,7 +1200,9 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "crafting"
+   "page_slug": "crafting",
+   "requires_zh": "不需要其他建筑",
+   "unlocked_by_zh": "游戏开始即可用"
   },
   "forge": {
    "type": "station",
@@ -1115,7 +1237,9 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "crafting"
+   "page_slug": "crafting",
+   "requires_zh": "必须建在工作台附近",
+   "unlocked_by_zh": "工作台"
   },
   "smelter": {
    "type": "station",
@@ -1140,7 +1264,9 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "crafting"
+   "page_slug": "crafting",
+   "requires_zh": "必须建在工作台附近",
+   "unlocked_by_zh": "获得焰灵之核"
   },
   "charcoal-kiln": {
    "type": "station",
@@ -1165,12 +1291,15 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "crafting"
+   "page_slug": "crafting",
+   "requires_zh": "建造时附近需要有工作台",
+   "unlocked_by_zh": "获得焰灵之核"
   },
   "mead-ketill": {
    "type": "station",
    "name_en": "Mead Ketill",
-   "name_zh": "Mead Ketill",
+   "name_zh": "蜜酒壶",
+   "name_zh_source": "https://wiki.biligame.com/valheim/%E8%9C%9C%E9%85%92%E5%A3%B6",
    "recipe": [
     {
      "item_en": "Tin",
@@ -1194,10 +1323,10 @@
     "https://valheim.wiki/w/Mead_Ketill"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": [
-    "name_zh (content pack keeps English name)"
-   ],
-   "page_slug": "mead"
+   "unverified_fields": [],
+   "page_slug": "mead",
+   "requires_zh": "下方需要火源才能运作；来源建筑为锻造台",
+   "unlocked_by_zh": "锻造台"
   },
   "fermenter": {
    "type": "station",
@@ -1227,7 +1356,9 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "mead"
+   "page_slug": "mead",
+   "requires_zh": "需要屋顶且遮蔽度达 70% 才能运作；来源建筑为锻造台",
+   "unlocked_by_zh": "锻造台"
   },
   "cultivator": {
    "type": "station",
@@ -1236,7 +1367,7 @@
    "recipe": [
     {
      "item_en": "Corewood",
-     "item_zh": "Corewood",
+     "item_zh": "圆木",
      "qty": 5
     },
     {
@@ -1253,26 +1384,29 @@
    "accessed": "2026-09-18",
    "unverified_fields": [],
    "page_slug": "farming",
-   "name_zh_source": "https://valheim.fandom.com/zh/wiki/%E8%80%95%E5%9C%B0%E8%80%99"
+   "name_zh_source": "https://valheim.fandom.com/zh/wiki/%E8%80%95%E5%9C%B0%E8%80%99",
+   "requires_zh": "在锻造台制作",
+   "unlocked_by_zh": "获得青铜与圆木"
   },
   "black-forge": {
    "type": "station",
    "name_en": "Black Forge",
-   "name_zh": "Black Forge",
+   "name_zh": "黑锻炉",
+   "name_zh_source": "content/valheim/zh/deep-north.md",
    "recipe": [
     {
      "item_en": "Black marble",
-     "item_zh": "Black marble",
+     "item_zh": "黑大理石",
      "qty": 10
     },
     {
      "item_en": "Yggdrasil wood",
-     "item_zh": "Yggdrasil wood",
+     "item_zh": "世界之树木",
      "qty": 10
     },
     {
      "item_en": "Black core",
-     "item_zh": "Black core",
+     "item_zh": "黑核",
      "qty": 5
     }
    ],
@@ -1282,10 +1416,10 @@
     "https://valheim.wiki/w/Black_Forge"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": [
-    "name_zh (content pack keeps English name)"
-   ],
-   "page_slug": "mistlands"
+   "unverified_fields": [],
+   "page_slug": "mistlands",
+   "requires_zh": "需要屋顶且遮蔽度达 70% 才能使用；来源建筑为工作台",
+   "unlocked_by_zh": "工作台"
   },
   "frigid-kiln": {
    "type": "station",
@@ -1304,7 +1438,7 @@
     },
     {
      "item_en": "Ice",
-     "item_zh": "Ice",
+     "item_zh": "冰",
      "qty": 5
     }
    ],
@@ -1317,7 +1451,9 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "deep-north"
+   "page_slug": "deep-north",
+   "requires_zh": "来源建筑为工作台；把冰加工成 Liquid Frost（每 30 秒 1 份，消耗 5 冰，最多存放 25 冰）",
+   "unlocked_by_zh": "工作台"
   },
   "frost-foundry": {
    "type": "station",
@@ -1334,7 +1470,8 @@
     "recipe (page marked Work in progress; no materials list present)",
     "unlocked_by_en"
    ],
-   "page_slug": "deep-north"
+   "page_slug": "deep-north",
+   "requires_zh": "以 Liquid Frost 为燃料；把铸件放在中央即可制成最终物品，50 秒内消耗 5 份 Liquid Frost"
   },
   "eternal-pyre": {
    "type": "station",
@@ -1361,7 +1498,9 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "ashlands"
+   "page_slug": "ashlands",
+   "requires_zh": "建造前需要先有切石机",
+   "unlocked_by_zh": "切石机"
   },
   "portal": {
    "type": "station",
@@ -1370,7 +1509,7 @@
    "recipe": [
     {
      "item_en": "Greydwarf eye",
-     "item_zh": "Greydwarf eye",
+     "item_zh": "灰矮人之眼",
      "qty": 10
     },
     {
@@ -1391,26 +1530,28 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "portals"
+   "page_slug": "portals",
+   "requires_zh": "来源建筑为工作台",
+   "unlocked_by_zh": "工作台"
   },
   "portal-stone": {
    "type": "station",
    "name_en": "Portal – Stone",
-   "name_zh": "Portal - Stone",
+   "name_zh": "石传送门",
    "recipe": [
     {
      "item_en": "Greydwarf eye",
-     "item_zh": "Greydwarf eye",
+     "item_zh": "灰矮人之眼",
      "qty": 10
     },
     {
      "item_en": "Grausten",
-     "item_zh": "Grausten",
+     "item_zh": "灰石",
      "qty": 30
     },
     {
      "item_en": "Molten core",
-     "item_zh": "Molten core",
+     "item_zh": "熔岩之核",
      "qty": 2
     }
    ],
@@ -1420,10 +1561,11 @@
     "https://valheim.wiki/w/Portal_Stone"
    ],
    "accessed": "2026-09-18",
-   "unverified_fields": [
-    "name_zh (content pack keeps English name)"
-   ],
-   "page_slug": "portals"
+   "unverified_fields": [],
+   "page_slug": "portals",
+   "name_zh_source": "content/valheim/zh/portals.md",
+   "requires_zh": "建造需要切石机；可携带木传送门不允许传送的物品（如矿石、金属）",
+   "unlocked_by_zh": "切石机"
   },
   "shield-generator": {
    "type": "station",
@@ -1442,7 +1584,7 @@
     },
     {
      "item_en": "Shield core",
-     "item_zh": "Shield core",
+     "item_zh": "盾牌核心",
      "qty": 1
     }
    ],
@@ -1453,7 +1595,9 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "ashlands"
+   "page_slug": "ashlands",
+   "requires_zh": "来源建筑为工作台；以任意骨类为燃料",
+   "unlocked_by_zh": "工作台"
   },
   "raft": {
    "type": "boat",
@@ -1484,7 +1628,8 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "ships"
+   "page_slug": "ships",
+   "crafted_at_zh": "工作台"
   },
   "karve": {
    "type": "boat",
@@ -1498,7 +1643,7 @@
     },
     {
      "item_en": "Deer hide",
-     "item_zh": "Deer hide",
+     "item_zh": "鹿皮",
      "qty": 10
     },
     {
@@ -1522,7 +1667,8 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "ships"
+   "page_slug": "ships",
+   "crafted_at_zh": "工作台"
   },
   "longship": {
    "type": "boat",
@@ -1531,12 +1677,12 @@
    "recipe": [
     {
      "item_en": "Iron nails",
-     "item_zh": "Iron nails",
+     "item_zh": "铁钉",
      "qty": 100
     },
     {
      "item_en": "Deer hide",
-     "item_zh": "Deer hide",
+     "item_zh": "鹿皮",
      "qty": 10
     },
     {
@@ -1546,7 +1692,7 @@
     },
     {
      "item_en": "Ancient bark",
-     "item_zh": "Ancient bark",
+     "item_zh": "古树皮",
      "qty": 40
     }
    ],
@@ -1558,7 +1704,8 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "ships"
+   "page_slug": "ships",
+   "crafted_at_zh": "工作台"
   },
   "drakkar": {
    "type": "boat",
@@ -1567,12 +1714,12 @@
    "recipe": [
     {
      "item_en": "Iron nails",
-     "item_zh": "Iron nails",
+     "item_zh": "铁钉",
      "qty": 100
     },
     {
      "item_en": "Ceramic plate",
-     "item_zh": "Ceramic plate",
+     "item_zh": "瓷制胸甲",
      "qty": 30
     },
     {
@@ -1582,7 +1729,7 @@
     },
     {
      "item_en": "Yggdrasil wood",
-     "item_zh": "Yggdrasil wood",
+     "item_zh": "世界之树木",
      "qty": 25
     }
    ],
@@ -1596,7 +1743,8 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "ships"
+   "page_slug": "ships",
+   "crafted_at_zh": "工作台"
   },
   "intricate-key": {
    "type": "item",
@@ -1624,7 +1772,9 @@
     "name_zh (content pack keeps English name)",
     "recipe[0].qty (article does not state an explicit count for the Cast component)"
    ],
-   "page_slug": "intricate-key"
+   "page_slug": "intricate-key",
+   "crafted_at_zh": "Frost Foundry（铸件在黑锻炉用血金 + 模具制作）",
+   "usage_zh": "打开深北之境的 Mörkhalla 之门；使用后消耗"
   },
   "ember-charge": {
    "type": "item",
@@ -1652,7 +1802,9 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "deep-north"
+   "page_slug": "deep-north",
+   "crafted_at_zh": "工作台",
+   "usage_zh": "用于炸开石化的 Gammeltroll 以获得石化组织（可冶炼成血金）"
   },
   "bloodgold": {
    "type": "item",
@@ -1668,7 +1820,9 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "deep-north"
+   "page_slug": "deep-north",
+   "crafted_at_zh": "在高炉中冶炼石化组织获得",
+   "usage_zh": "用于制作多种深北之境武器、护甲与铸件的金属"
   },
   "frostcore": {
    "type": "item",
@@ -1686,7 +1840,9 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "deep-north"
+   "page_slug": "deep-north",
+   "crafted_at_zh": "在深北之境的 Winding Tunnels 内获得",
+   "usage_zh": "用于建造 Frigid Kiln 与 Frost Foundry"
   },
   "malicious-blood": {
    "type": "item",
@@ -1704,12 +1860,14 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "deep-north"
+   "page_slug": "deep-north",
+   "crafted_at_zh": "摧毁 Jotun Invasion（入侵事件）中心的 Malicious Ice 后掉落",
+   "usage_zh": "打开 Aesir Passage 挑战 Kall Fimbulbringer 需要 3 份"
   },
   "rested": {
    "type": "mechanic",
    "name_en": "Rested (Comfort)",
-   "name_zh": "Rested (Comfort)",
+   "name_zh": "休息好了（舒适度）",
    "summary_en": "Comfort level determines the duration of the Resting effect. Minimum duration is 8 minutes at 1 comfort, with each additional comfort level adding 1 minute, up to 29 minutes with usual items (31 minutes with both rare seasonal items). Max normally achievable comfort is 22 (23 near a Maypole/Yule tree, 24 with both). Only the highest-level item per category counts; items in the same category do not stack.",
    "duration_formula": "duration_minutes = 7 + comfort_level (min comfort 1 -> 8 min)",
    "base_minutes": 7,
@@ -1722,12 +1880,14 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "rested"
+   "page_slug": "rested",
+   "name_zh_source": "content/valheim/zh/rested.md",
+   "summary_zh": "舒适度决定「休息好了」效果的持续时间。舒适度 1 时最短 8 分钟，每增加 1 级舒适度延长 1 分钟，常规物品最多 29 分钟（两种稀有季节性物品都有时为 31 分钟）。常规可达到的最高舒适度为 22（靠近仲夏柱 / 耶鲁树时为 23，两者都有时为 24）。每类家具只计最高等级的一件；同类物品不叠加。"
   },
   "food": {
    "type": "mechanic",
    "name_en": "Food",
-   "name_zh": "Food",
+   "name_zh": "食物",
    "summary_en": "Food items provide temporary Health, Stamina and Eitr boosts. A player can consume up to three different types of food at any given time for a combined increase in buff strength. Buff strength decreases uniformly until the food is fully digested. A player cannot eat a second of the same food type until the previous one is at least partially digested (indicated by a flashing icon); eating the same type again refreshes strength and duration.",
    "max_food_slots": 3,
    "source_urls": [
@@ -1735,12 +1895,14 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "food"
+   "page_slug": "food",
+   "name_zh_source": "content/valheim/zh/food.md",
+   "summary_zh": "食物提供临时的生命、体力与魔力加成。玩家最多可同时食用三种不同食物，加成效果叠加。加成强度会均匀下降，直到食物完全消化。同一种食物在上一份至少部分消化前（图标闪烁提示）不能再吃；再次食用同种食物会刷新强度与持续时间。"
   },
   "death": {
    "type": "mechanic",
    "name_en": "Death",
-   "name_zh": "Death",
+   "name_zh": "死亡",
    "summary_en": "Death occurs at 0 health. The player leaves a tombstone (gravestone) containing their equipment at the death location (map marked with skull-and-bones); no tombstone appears if the inventory was empty. Dying in deep water spawns a floating tombstone. Players respawn at the last bed slept in, or at the Sacrificial Stones if none. On death, the player loses 5% of total level in each skill (default World Modifier); the No skill drain effect (10 minutes) then prevents further loss from additional deaths. After collecting the gravestone, the player gains the Corpse run effect for 50 seconds.",
    "skill_loss_pct_default": 5,
    "no_skill_drain_minutes": 10,
@@ -1750,8 +1912,819 @@
    ],
    "accessed": "2026-09-18",
    "unverified_fields": [],
-   "page_slug": "death-recovery"
+   "page_slug": "death-recovery",
+   "name_zh_source": "content/valheim/zh/death-recovery.md",
+   "summary_zh": "生命值归 0 即死亡。玩家会在死亡地点留下装有全部装备的墓碑（地图上以骷髅标记）；背包为空时不会出现墓碑。在深水中死亡会生成漂浮的墓碑。玩家在最后睡过的床复活，没有床则在献祭石复活。死亡时每项技能损失总等级的 5%（默认世界设置）；随后的「无技能损失」效果（10 分钟）可防止再次死亡时继续损失。取回墓碑后，玩家获得 50 秒的捡尸（Corpse run）效果。"
   }
  },
- "_page_slug_note": "page_slug 由管线 agent 按内容页实际存在与否补齐(2026-09-18);只影响页面绑定与表格内链,不改任何数值字段。"
+ "_page_slug_note": "page_slug 由管线 agent 按内容页实际存在与否补齐(2026-09-18);只影响页面绑定与表格内链,不改任何数值字段。",
+ "zh_glossary_sources": {
+  "Abomination": {
+   "zh": "邪煞之树",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E7%85%9E%E4%B9%8B%E6%A0%91"
+  },
+  "Adrenaline": {
+   "zh": "血怒",
+   "source": "https://wiki.biligame.com/valheim/%E9%9D%92%E7%84%B0%E9%BE%99%E7%8E%8B"
+  },
+  "Ancient bark": {
+   "zh": "古树皮",
+   "source": "https://wiki.biligame.com/valheim/%E5%8F%A4%E6%A0%91%E7%9A%AE"
+  },
+  "Ancient seed": {
+   "zh": "上古种子",
+   "source": "content/valheim/zh/elder.md"
+  },
+  "Antler pickaxe": {
+   "zh": "鹿角镐",
+   "source": "https://wiki.biligame.com/valheim/%E9%B9%BF%E8%A7%92%E9%95%90"
+  },
+  "Ashlands": {
+   "zh": "灰烬之地",
+   "source": "content/valheim/zh/ashlands.md"
+  },
+  "Ashwood": {
+   "zh": "灰烬之木",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E4%B9%8B%E6%9C%A8"
+  },
+  "Asksvin": {
+   "zh": "灰烬刚鬣",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E5%88%9A%E9%AC%A3"
+  },
+  "Barley": {
+   "zh": "大麦",
+   "source": "content/valheim/zh/plains.md"
+  },
+  "Bat": {
+   "zh": "邪蝠",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E8%9D%A0"
+  },
+  "Bear": {
+   "zh": "巨熊",
+   "source": "https://wiki.biligame.com/valheim/%E5%B7%A8%E7%86%8A"
+  },
+  "Bell": {
+   "zh": "钟",
+   "source": "content/valheim/zh/fader.md"
+  },
+  "Bell fragment": {
+   "zh": "钟碎片",
+   "source": "content/valheim/zh/fader.md"
+  },
+  "Black Forest": {
+   "zh": "黑暗林山",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Black Forge": {
+   "zh": "黑锻炉",
+   "source": "content/valheim/zh/deep-north.md"
+  },
+  "Black core": {
+   "zh": "黑核",
+   "source": "content/valheim/zh/mistlands.md"
+  },
+  "Black marble": {
+   "zh": "黑大理石",
+   "source": "https://wiki.biligame.com/valheim/%E9%BB%91%E5%A4%A7%E7%90%86%E7%9F%B3"
+  },
+  "Blast Furnace": {
+   "zh": "高炉",
+   "source": "content/valheim/zh/deep-north.md"
+  },
+  "Blob": {
+   "zh": "软泥怪",
+   "source": "https://wiki.biligame.com/valheim/%E8%BD%AF%E6%B3%A5%E6%80%AA"
+  },
+  "Bloodgold": {
+   "zh": "血金",
+   "source": "content/valheim/zh/deep-north.md"
+  },
+  "Blue jute": {
+   "zh": "蓝黄麻",
+   "source": "https://wiki.biligame.com/valheim/%E8%93%9D%E9%BB%84%E9%BA%BB"
+  },
+  "Blunt": {
+   "zh": "钝击",
+   "source": "content/valheim/zh/bonemass.md"
+  },
+  "Boar": {
+   "zh": "野猪",
+   "source": "content/valheim/zh/first-day.md"
+  },
+  "Bonemass": {
+   "zh": "邪骨恶灵",
+   "source": "content/valheim/zh/bonemass.md"
+  },
+  "Bonemass Power": {
+   "zh": "邪骨恶灵之力",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E9%AA%A8%E6%81%B6%E7%81%B5"
+  },
+  "Bonemass trophy": {
+   "zh": "邪骨恶灵战利品",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E9%AA%A8%E6%81%B6%E7%81%B5%E6%88%98%E5%88%A9%E5%93%81"
+  },
+  "Bonemaw Serpent": {
+   "zh": "骨骺蛟龙",
+   "source": "https://wiki.biligame.com/valheim/%E9%AA%A8%E9%AA%BA%E8%9B%9F%E9%BE%99"
+  },
+  "Bronze": {
+   "zh": "青铜",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Bronze nails": {
+   "zh": "青铜钉",
+   "source": "content/valheim/zh/ships.md"
+  },
+  "Burial Chambers": {
+   "zh": "诡秘墓穴",
+   "source": "https://wiki.biligame.com/valheim/%E8%AF%A1%E7%A7%98%E5%A2%93%E7%A9%B4"
+  },
+  "Carrot Seed": {
+   "zh": "胡萝卜种子",
+   "source": "https://wiki.biligame.com/valheim/%E8%83%A1%E8%90%9D%E5%8D%9C%E7%A7%8D%E5%AD%90"
+  },
+  "Cast": {
+   "zh": "铸件",
+   "source": "content/valheim/zh/intricate-key.md"
+  },
+  "Ceramic plate": {
+   "zh": "瓷制胸甲",
+   "source": "https://wiki.biligame.com/valheim/%E7%93%B7%E5%88%B6%E8%83%B8%E7%94%B2"
+  },
+  "Charcoal Kiln": {
+   "zh": "木炭窑",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Charred Marksman": {
+   "zh": "灰烬射手",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E5%B0%84%E6%89%8B"
+  },
+  "Charred Twitcher": {
+   "zh": "灰烬僵尸",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E5%83%B5%E5%B0%B8"
+  },
+  "Charred Warlock": {
+   "zh": "灰烬术士",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E6%9C%AF%E5%A3%AB"
+  },
+  "Charred Warrior": {
+   "zh": "灰烬战士",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E6%88%98%E5%A3%AB"
+  },
+  "Chop": {
+   "zh": "劈砍",
+   "source": "https://wiki.biligame.com/valheim/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B"
+  },
+  "Coal": {
+   "zh": "煤",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Coins": {
+   "zh": "金币",
+   "source": "content/valheim/zh/traders.md"
+  },
+  "Copper": {
+   "zh": "铜",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Copper ore": {
+   "zh": "铜矿",
+   "source": "content/valheim/zh/first-day.md"
+  },
+  "Corewood": {
+   "zh": "圆木",
+   "source": "https://wiki.biligame.com/valheim/%E5%9C%86%E6%9C%A8"
+  },
+  "Corpse run": {
+   "zh": "捡尸",
+   "source": "content/valheim/zh/death-recovery.md"
+  },
+  "Cultist": {
+   "zh": "狂信徒",
+   "source": "https://wiki.biligame.com/valheim/%E7%8B%82%E4%BF%A1%E5%BE%92"
+  },
+  "Dandelion": {
+   "zh": "蒲公英",
+   "source": "https://wiki.biligame.com/valheim/%E8%92%B2%E5%85%AC%E8%8B%B1"
+  },
+  "Death": {
+   "zh": "死亡",
+   "source": "content/valheim/zh/death-recovery.md"
+  },
+  "Deathsquito": {
+   "zh": "死亡蚊",
+   "source": "content/valheim/zh/plains.md"
+  },
+  "Deep North": {
+   "zh": "深北之境",
+   "source": "content/valheim/zh/deep-north.md"
+  },
+  "Deer hide": {
+   "zh": "鹿皮",
+   "source": "content/valheim/zh/ships.md"
+  },
+  "Deer trophy": {
+   "zh": "鹿战利品",
+   "source": "content/valheim/zh/eikthyr.md"
+  },
+  "Dragon egg": {
+   "zh": "龙蛋",
+   "source": "content/valheim/zh/moder.md"
+  },
+  "Dragon tear": {
+   "zh": "龙泪",
+   "source": "content/valheim/zh/moder.md"
+  },
+  "Drake": {
+   "zh": "霜龙",
+   "source": "https://wiki.biligame.com/valheim/%E9%9C%9C%E9%BE%99"
+  },
+  "Draugr": {
+   "zh": "尸鬼",
+   "source": "https://wiki.biligame.com/valheim/%E5%B0%B8%E9%AC%BC"
+  },
+  "Draugr elite": {
+   "zh": "尸鬼精英",
+   "source": "https://wiki.biligame.com/valheim/%E5%B0%B8%E9%AC%BC%E7%B2%BE%E8%8B%B1"
+  },
+  "Dvergr extractor": {
+   "zh": "矮人提取器",
+   "source": "content/valheim/zh/mistlands.md"
+  },
+  "Eikthyr": {
+   "zh": "赤血灵鹿",
+   "source": "content/valheim/zh/eikthyr.md"
+  },
+  "Eikthyr Power": {
+   "zh": "赤血灵鹿之力",
+   "source": "https://wiki.biligame.com/valheim/%E8%B5%A4%E8%A1%80%E7%81%B5%E9%B9%BF"
+  },
+  "Eikthyr trophy": {
+   "zh": "赤血灵鹿战利品",
+   "source": "https://wiki.biligame.com/valheim/%E8%B5%A4%E8%A1%80%E7%81%B5%E9%B9%BF%E6%88%98%E5%88%A9%E5%93%81"
+  },
+  "Eitr": {
+   "zh": "魔力",
+   "source": "content/valheim/zh/food.md"
+  },
+  "Embers": {
+   "zh": "余烬",
+   "source": "content/valheim/zh/deep-north.md"
+  },
+  "Fallen Valkyrie": {
+   "zh": "坠落女武神",
+   "source": "https://wiki.biligame.com/valheim/%E5%9D%A0%E8%90%BD%E5%A5%B3%E6%AD%A6%E7%A5%9E"
+  },
+  "Fenring": {
+   "zh": "芬里",
+   "source": "https://wiki.biligame.com/valheim/%E8%8A%AC%E9%87%8C"
+  },
+  "Fermenter": {
+   "zh": "发酵桶",
+   "source": "content/valheim/zh/mead.md"
+  },
+  "Fiery spice powder": {
+   "zh": "火辣香料粉",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%AB%E8%BE%A3%E9%A6%99%E6%96%99%E7%B2%89"
+  },
+  "Finewood": {
+   "zh": "精细木",
+   "source": "content/valheim/zh/portals.md"
+  },
+  "Fire": {
+   "zh": "火焰",
+   "source": "content/valheim/zh/fader.md"
+  },
+  "Flametal ore": {
+   "zh": "焰金属矿",
+   "source": "https://wiki.biligame.com/valheim/%E7%84%B0%E9%87%91%E5%B1%9E%E7%9F%BF"
+  },
+  "Flax": {
+   "zh": "亚麻",
+   "source": "content/valheim/zh/plains.md"
+  },
+  "Flint": {
+   "zh": "燧石",
+   "source": "https://wiki.biligame.com/valheim/%E7%87%A7%E7%9F%B3"
+  },
+  "Food": {
+   "zh": "食物",
+   "source": "content/valheim/zh/food.md"
+  },
+  "Forge": {
+   "zh": "锻造台",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Fragrant bundle": {
+   "zh": "香料包",
+   "source": "https://wiki.biligame.com/valheim/%E9%A6%99%E6%96%99%E5%8C%85"
+  },
+  "Frost": {
+   "zh": "冰霜",
+   "source": "content/valheim/zh/moder.md"
+  },
+  "Frost Cave": {
+   "zh": "冰霜洞穴",
+   "source": "https://wiki.biligame.com/valheim/%E5%86%B0%E9%9C%9C%E6%B4%9E%E7%A9%B4"
+  },
+  "Frost resistance": {
+   "zh": "抗寒",
+   "source": "content/valheim/zh/mountains.md"
+  },
+  "Fuling": {
+   "zh": "丑地精",
+   "source": "content/valheim/zh/plains.md"
+  },
+  "Fuling berserker": {
+   "zh": "丑地精狂战士",
+   "source": "https://wiki.biligame.com/valheim/%E4%B8%91%E5%9C%B0%E7%B2%BE%E7%8B%82%E6%88%98%E5%A3%AB"
+  },
+  "Fuling shaman": {
+   "zh": "丑地精萨满",
+   "source": "https://wiki.biligame.com/valheim/%E4%B8%91%E5%9C%B0%E7%B2%BE%E8%90%A8%E6%BB%A1"
+  },
+  "Fuling totem": {
+   "zh": "丑地精图腾",
+   "source": "content/valheim/zh/plains.md"
+  },
+  "Ghost": {
+   "zh": "幽灵",
+   "source": "https://wiki.biligame.com/valheim/%E5%B9%BD%E7%81%B5"
+  },
+  "Gjall": {
+   "zh": "壁虱后",
+   "source": "https://wiki.biligame.com/valheim/%E5%A3%81%E8%99%B1%E5%90%8E"
+  },
+  "Grausten": {
+   "zh": "灰石",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%9F%B3"
+  },
+  "Greydwarf": {
+   "zh": "灰矮人",
+   "source": "content/valheim/zh/elder.md"
+  },
+  "Greydwarf brute": {
+   "zh": "灰矮人暴徒",
+   "source": "content/valheim/zh/elder.md"
+  },
+  "Greydwarf eye": {
+   "zh": "灰矮人之眼",
+   "source": "content/valheim/zh/portals.md"
+  },
+  "Greydwarf shaman": {
+   "zh": "灰矮人萨满",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%9F%AE%E4%BA%BA%E8%90%A8%E6%BB%A1"
+  },
+  "Greyling": {
+   "zh": "灰精灵",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%B2%BE%E7%81%B5"
+  },
+  "Growth": {
+   "zh": "焦油怪",
+   "source": "https://wiki.biligame.com/valheim/%E7%84%A6%E6%B2%B9%E6%80%AA"
+  },
+  "Guck": {
+   "zh": "树脓",
+   "source": "https://wiki.biligame.com/valheim/%E6%A0%91%E8%84%93"
+  },
+  "Hard antler": {
+   "zh": "硬鹿角",
+   "source": "content/valheim/zh/eikthyr.md"
+  },
+  "Health": {
+   "zh": "生命",
+   "source": "content/valheim/zh/food.md"
+  },
+  "Ice": {
+   "zh": "冰",
+   "source": "content/valheim/zh/deep-north.md"
+  },
+  "Iron": {
+   "zh": "铁",
+   "source": "content/valheim/zh/swamp.md"
+  },
+  "Iron nails": {
+   "zh": "铁钉",
+   "source": "https://wiki.biligame.com/valheim/%E9%93%81%E9%92%89"
+  },
+  "Lava Blob": {
+   "zh": "岩浆软泥怪",
+   "source": "https://wiki.biligame.com/valheim/%E5%B2%A9%E6%B5%86%E8%BD%AF%E6%B3%A5%E6%80%AA"
+  },
+  "Leather scraps": {
+   "zh": "碎皮",
+   "source": "content/valheim/zh/mead.md"
+  },
+  "Leech": {
+   "zh": "蚂蟥",
+   "source": "https://wiki.biligame.com/valheim/%E8%9A%82%E8%9F%A5"
+  },
+  "Leviathan": {
+   "zh": "利维坦",
+   "source": "https://wiki.biligame.com/valheim/%E5%88%A9%E7%BB%B4%E5%9D%A6"
+  },
+  "Lightning": {
+   "zh": "雷电",
+   "source": "content/valheim/zh/eikthyr.md"
+  },
+  "Longship": {
+   "zh": "长船",
+   "source": "content/valheim/zh/swamp.md"
+  },
+  "Lox": {
+   "zh": "平原牦牛",
+   "source": "https://wiki.biligame.com/valheim/%E5%B9%B3%E5%8E%9F%E7%89%A6%E7%89%9B"
+  },
+  "Majestic carapace": {
+   "zh": "雄伟甲壳",
+   "source": "https://wiki.biligame.com/valheim/%E9%9B%84%E4%BC%9F%E7%94%B2%E5%A3%B3"
+  },
+  "Maypole": {
+   "zh": "仲夏柱",
+   "source": "https://wiki.biligame.com/valheim/%E4%BB%B2%E5%A4%8F%E6%9F%B1"
+  },
+  "Mead Ketill": {
+   "zh": "蜜酒壶",
+   "source": "https://wiki.biligame.com/valheim/%E8%9C%9C%E9%85%92%E5%A3%B6"
+  },
+  "Meadows": {
+   "zh": "青青草原",
+   "source": "content/valheim/zh/progression.md"
+  },
+  "Mistlands": {
+   "zh": "迷雾之地",
+   "source": "content/valheim/zh/mistlands.md"
+  },
+  "Moder": {
+   "zh": "冰霜龙母",
+   "source": "content/valheim/zh/moder.md"
+  },
+  "Moder Power": {
+   "zh": "冰霜龙母之力",
+   "source": "https://wiki.biligame.com/valheim/%E5%86%B0%E9%9C%9C%E9%BE%99%E6%AF%8D"
+  },
+  "Moder trophy": {
+   "zh": "冰霜龙母战利品",
+   "source": "https://wiki.biligame.com/valheim/%E5%86%B0%E9%9C%9C%E9%BE%99%E6%AF%8D%E6%88%98%E5%88%A9%E5%93%81"
+  },
+  "Molten core": {
+   "zh": "熔岩之核",
+   "source": "https://wiki.biligame.com/valheim/%E7%86%94%E5%B2%A9%E4%B9%8B%E6%A0%B8"
+  },
+  "Morgen": {
+   "zh": "摩根",
+   "source": "https://wiki.biligame.com/valheim/%E6%91%A9%E6%A0%B9"
+  },
+  "Mould": {
+   "zh": "模具",
+   "source": "content/valheim/zh/intricate-key.md"
+  },
+  "Mountain": {
+   "zh": "雪山",
+   "source": "content/valheim/zh/mountains.md"
+  },
+  "Mountain peak pepper powder": {
+   "zh": "山顶胡椒粉",
+   "source": "https://wiki.biligame.com/valheim/%E5%B1%B1%E9%A1%B6%E8%83%A1%E6%A4%92%E7%B2%89"
+  },
+  "Muddy scrap pile": {
+   "zh": "泥泞的废料堆",
+   "source": "https://wiki.biligame.com/valheim/%E6%B3%A5%E6%B3%9E%E7%9A%84%E5%BA%9F%E6%96%99%E5%A0%86"
+  },
+  "Mushroom": {
+   "zh": "蘑菇",
+   "source": "content/valheim/zh/first-day.md"
+  },
+  "Neck": {
+   "zh": "水蛇",
+   "source": "https://wiki.biligame.com/valheim/%E6%B0%B4%E8%9B%87"
+  },
+  "Obsidian": {
+   "zh": "黑曜石",
+   "source": "https://wiki.biligame.com/valheim/%E9%BB%91%E6%9B%9C%E7%9F%B3"
+  },
+  "Ocean": {
+   "zh": "海洋",
+   "source": "https://wiki.biligame.com/valheim/%E6%B5%B7%E6%B4%8B"
+  },
+  "Onion seeds": {
+   "zh": "洋葱种子",
+   "source": "https://wiki.biligame.com/valheim/%E6%B4%8B%E8%91%B1%E7%A7%8D%E5%AD%90"
+  },
+  "Oozer": {
+   "zh": "软泥",
+   "source": "https://wiki.biligame.com/valheim/%E8%BD%AF%E6%B3%A5%EF%BC%88Oozer%EF%BC%89"
+  },
+  "Petrified Tissue": {
+   "zh": "石化组织",
+   "source": "content/valheim/zh/deep-north-guides.md"
+  },
+  "Pickaxe": {
+   "zh": "镐击",
+   "source": "https://wiki.biligame.com/valheim/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B"
+  },
+  "Pierce": {
+   "zh": "穿刺",
+   "source": "https://wiki.biligame.com/valheim/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B"
+  },
+  "Plains": {
+   "zh": "平原",
+   "source": "content/valheim/zh/plains.md"
+  },
+  "Poison": {
+   "zh": "毒素",
+   "source": "https://wiki.biligame.com/valheim/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B"
+  },
+  "Portal": {
+   "zh": "传送门",
+   "source": "content/valheim/zh/portals.md"
+  },
+  "Portal – Stone": {
+   "zh": "石传送门",
+   "source": "content/valheim/zh/portals.md"
+  },
+  "Raft": {
+   "zh": "木筏",
+   "source": "content/valheim/zh/ships.md"
+  },
+  "Rancid Remains": {
+   "zh": "腐臭遗骸",
+   "source": "https://wiki.biligame.com/valheim/%E8%85%90%E8%87%AD%E9%81%97%E9%AA%B8"
+  },
+  "Raspberry": {
+   "zh": "覆盆子",
+   "source": "https://wiki.biligame.com/valheim/%E8%A6%86%E7%9B%86%E5%AD%90"
+  },
+  "Resin": {
+   "zh": "树脂",
+   "source": "content/valheim/zh/ships.md"
+  },
+  "Rested (Comfort)": {
+   "zh": "休息好了（舒适度）",
+   "source": "content/valheim/zh/rested.md"
+  },
+  "Royal jelly": {
+   "zh": "皇家果冻",
+   "source": "https://wiki.biligame.com/valheim/%E7%9A%87%E5%AE%B6%E6%9E%9C%E5%86%BB"
+  },
+  "Sacrificial Stones": {
+   "zh": "献祭石",
+   "source": "https://wiki.biligame.com/valheim/%E8%B5%A4%E8%A1%80%E7%81%B5%E9%B9%BF"
+  },
+  "Sap": {
+   "zh": "树液",
+   "source": "content/valheim/zh/mistlands.md"
+  },
+  "Scrap iron": {
+   "zh": "铁碎片",
+   "source": "content/valheim/zh/swamp.md"
+  },
+  "Scythe handle": {
+   "zh": "镰刀把",
+   "source": "https://wiki.biligame.com/valheim/%E9%95%B0%E5%88%80%E6%8A%8A"
+  },
+  "Sealbreaker fragment": {
+   "zh": "封印碎片",
+   "source": "content/valheim/zh/mistlands.md"
+  },
+  "Seeker": {
+   "zh": "邪蛛探索者",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E8%9B%9B%E6%8E%A2%E7%B4%A2%E8%80%85"
+  },
+  "Seeker Brood": {
+   "zh": "邪蛛幼雏",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E8%9B%9B%E5%B9%BC%E9%9B%8F"
+  },
+  "Seeker Soldier": {
+   "zh": "邪蛛侦察兵",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E8%9B%9B%E4%BE%A6%E5%AF%9F%E5%85%B5"
+  },
+  "Serpent": {
+   "zh": "蛟龙",
+   "source": "https://wiki.biligame.com/valheim/%E8%9B%9F%E9%BE%99"
+  },
+  "Shield Generator": {
+   "zh": "护盾发生器",
+   "source": "content/valheim/zh/ashlands.md"
+  },
+  "Shield core": {
+   "zh": "盾牌核心",
+   "source": "https://wiki.biligame.com/valheim/%E7%9B%BE%E7%89%8C%E6%A0%B8%E5%BF%83"
+  },
+  "Silver ore": {
+   "zh": "银矿",
+   "source": "content/valheim/zh/mountains.md"
+  },
+  "Silver vein": {
+   "zh": "银矿脉",
+   "source": "https://wiki.biligame.com/valheim/%E9%93%B6%E7%9F%BF%E8%84%89"
+  },
+  "Skeleton": {
+   "zh": "骷髅怪",
+   "source": "https://wiki.biligame.com/valheim/%E9%AA%B7%E9%AB%85%E6%80%AA"
+  },
+  "Skugg": {
+   "zh": "邪影弩炮",
+   "source": "https://wiki.biligame.com/valheim/%E9%82%AA%E5%BD%B1%E5%BC%A9%E7%82%AE"
+  },
+  "Slash": {
+   "zh": "斩击",
+   "source": "content/valheim/zh/kall.md"
+  },
+  "Smelter": {
+   "zh": "熔炉",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Soft tissue": {
+   "zh": "软组织",
+   "source": "https://wiki.biligame.com/valheim/%E8%BD%AF%E7%BB%84%E7%BB%87"
+  },
+  "Spirit": {
+   "zh": "灵魂",
+   "source": "https://wiki.biligame.com/valheim/%E4%BC%A4%E5%AE%B3%E7%B1%BB%E5%9E%8B"
+  },
+  "Stagger": {
+   "zh": "硬直",
+   "source": "content/valheim/zh/combat.md"
+  },
+  "Stamina": {
+   "zh": "体力",
+   "source": "content/valheim/zh/food.md"
+  },
+  "Stone": {
+   "zh": "石头",
+   "source": "content/valheim/zh/first-day.md"
+  },
+  "Stone Golem": {
+   "zh": "石魔哥伦",
+   "source": "https://wiki.biligame.com/valheim/%E7%9F%B3%E9%AD%94%E5%93%A5%E4%BC%A6"
+  },
+  "Stonecutter": {
+   "zh": "切石机",
+   "source": "https://wiki.biligame.com/valheim/%E5%88%87%E7%9F%B3%E6%9C%BA"
+  },
+  "Sulfur": {
+   "zh": "硫磺",
+   "source": "https://wiki.biligame.com/valheim/%E7%A1%AB%E7%A3%BA"
+  },
+  "Surtling": {
+   "zh": "焰灵",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Surtling core": {
+   "zh": "焰灵之核",
+   "source": "content/valheim/zh/portals.md"
+  },
+  "Swamp": {
+   "zh": "沼泽",
+   "source": "content/valheim/zh/swamp.md"
+  },
+  "Swamp key": {
+   "zh": "沼泽钥匙",
+   "source": "content/valheim/zh/elder.md"
+  },
+  "Tar": {
+   "zh": "沥青",
+   "source": "https://wiki.biligame.com/valheim/%E6%B2%A5%E9%9D%92"
+  },
+  "The Bog Witch": {
+   "zh": "沼泽女巫",
+   "source": "content/valheim/zh/traders.md"
+  },
+  "The Elder": {
+   "zh": "古树长老",
+   "source": "content/valheim/zh/elder.md"
+  },
+  "The Elder Power": {
+   "zh": "古树长老之力",
+   "source": "https://wiki.biligame.com/valheim/%E5%8F%A4%E6%A0%91%E9%95%BF%E8%80%81"
+  },
+  "The Elder trophy": {
+   "zh": "古树长老战利品",
+   "source": "https://wiki.biligame.com/valheim/%E5%8F%A4%E6%A0%91%E9%95%BF%E8%80%81%E6%88%98%E5%88%A9%E5%93%81"
+  },
+  "The Queen": {
+   "zh": "迷雾女王",
+   "source": "content/valheim/zh/queen.md"
+  },
+  "Thistle": {
+   "zh": "蓟草",
+   "source": "https://wiki.biligame.com/valheim/%E8%93%9F%E8%8D%89"
+  },
+  "Tick": {
+   "zh": "壁虱幼虫",
+   "source": "https://wiki.biligame.com/valheim/%E5%A3%81%E8%99%B1%E5%B9%BC%E8%99%AB"
+  },
+  "Tin": {
+   "zh": "锡",
+   "source": "content/valheim/zh/bronze.md"
+  },
+  "Tin ore": {
+   "zh": "锡矿",
+   "source": "https://wiki.biligame.com/valheim/%E9%94%A1%E7%9F%BF"
+  },
+  "Toadstool": {
+   "zh": "毒蕈",
+   "source": "https://wiki.biligame.com/valheim/%E6%AF%92%E8%95%88"
+  },
+  "Tombstone": {
+   "zh": "墓碑",
+   "source": "content/valheim/zh/death-recovery.md"
+  },
+  "Torn spirit": {
+   "zh": "裂魂",
+   "source": "https://wiki.biligame.com/valheim/%E8%A3%82%E9%AD%82"
+  },
+  "Troll": {
+   "zh": "巨魔",
+   "source": "https://wiki.biligame.com/valheim/%E5%B7%A8%E9%AD%94"
+  },
+  "Turnip seeds": {
+   "zh": "芜菁种子",
+   "source": "https://wiki.biligame.com/valheim/%E8%8A%9C%E8%8F%81%E7%A7%8D%E5%AD%90"
+  },
+  "Ulv": {
+   "zh": "巨狼",
+   "source": "https://wiki.biligame.com/valheim/%E5%B7%A8%E7%8B%BC"
+  },
+  "Vile": {
+   "zh": "恶骨",
+   "source": "https://wiki.biligame.com/valheim/%E6%81%B6%E9%AA%A8"
+  },
+  "Volture": {
+   "zh": "灰烬之鹫",
+   "source": "https://wiki.biligame.com/valheim/%E7%81%B0%E7%83%AC%E4%B9%8B%E9%B9%AB"
+  },
+  "Wishbone": {
+   "zh": "愿望骨",
+   "source": "content/valheim/zh/bonemass.md"
+  },
+  "Wisp torch": {
+   "zh": "冥火火炬",
+   "source": "https://wiki.biligame.com/valheim/%E5%86%A5%E7%81%AB%E7%81%AB%E7%82%AC"
+  },
+  "Wisplight": {
+   "zh": "冥火之光",
+   "source": "https://wiki.biligame.com/valheim/%E5%86%A5%E7%81%AB%E4%B9%8B%E5%85%89"
+  },
+  "Withered bone": {
+   "zh": "枯骨",
+   "source": "content/valheim/zh/bonemass.md"
+  },
+  "Wolf": {
+   "zh": "狼",
+   "source": "content/valheim/zh/mountains.md"
+  },
+  "Wood": {
+   "zh": "木头",
+   "source": "content/valheim/zh/first-day.md"
+  },
+  "Wood portal": {
+   "zh": "木传送门",
+   "source": "content/valheim/zh/portals.md"
+  },
+  "Workbench": {
+   "zh": "工作台",
+   "source": "content/valheim/zh/first-day.md"
+  },
+  "Wraith": {
+   "zh": "鬼魅",
+   "source": "https://wiki.biligame.com/valheim/%E9%AC%BC%E9%AD%85"
+  },
+  "Yagluth": {
+   "zh": "亚格鲁斯",
+   "source": "content/valheim/zh/yagluth.md"
+  },
+  "Yagluth Power": {
+   "zh": "亚格鲁斯之力",
+   "source": "https://wiki.biligame.com/valheim/%E4%BA%9A%E6%A0%BC%E9%B2%81%E6%96%AF"
+  },
+  "Yagluth trophy": {
+   "zh": "亚格鲁斯战利品",
+   "source": "https://wiki.biligame.com/valheim/%E4%BA%9A%E6%A0%BC%E9%B2%81%E6%96%AF%E6%88%98%E5%88%A9%E5%93%81"
+  },
+  "Yggdrasil wood": {
+   "zh": "世界之树木",
+   "source": "https://wiki.biligame.com/valheim/%E4%B8%96%E7%95%8C%E4%B9%8B%E6%A0%91%E6%9C%A8"
+  },
+  "Yule tree": {
+   "zh": "耶鲁树",
+   "source": "https://wiki.biligame.com/valheim/%E8%80%B6%E9%B2%81%E6%A0%91"
+  },
+  "_decisions": [
+   {
+    "topic": "Fader / Fader relic / Fader trophy / The Queen trophy / The Queen's Power",
+    "kept_as": "英文原名(未译,保留现状)",
+    "reason": "boss 名与文章 H1 保持一致:content/valheim/zh/fader.md 的 H1 用「Fader」,content/valheim/zh/queen.md 用「迷雾女王」(未直译 The Queen);两者都未把 Fader/The Queen trophy/relic/Power 这些衍生词条译成中文。仓内 H1 用法优先于第二来源,因此这几条按现状保留。",
+    "official_alt": "biligame 简中 wiki 记录的官方译名为 Fader → 青焰龙王,The Queen → 蛊虫之后(此轮未逐条核实各自的 biligame 页面 URL,只记录供参考,不作为已核实来源写入上面的词条)",
+    "status": "待站主拍板:是否改用官方译名,并同步改动 fader.md / queen.md 等正文 H1 与相关小标题"
+   },
+   {
+    "topic": "Ember Charge",
+    "kept_as": "英文原名(未译,保留现状)",
+    "reason": "验收单原文把这一条写成「Ember Charge → 余烬(仓内 deep-north.md:6)」,但 deep-north.md 全文只把 Embers 译成「余烬」,从未给 Ember Charge 这个合成道具本身一个中文名(通篇写「Ember Charge / Ember Charges」);且 Ember Charge 自己的配方就吃 1 份 Embers,若把 Ember Charge 也命名成「余烬」,会在同一张配方表里出现「余烬」用「余烬」做的自我指代,读起来会误导。验收单紧接着那句「并把 Embers→余烬 的出处…改正为 deep-north.md:6」说的正是 Embers 这一条,判断前半句「Ember Charge →余烬」是笔误(写错了词条名,原意应为 Embers),按仓内实际译法处理为:只订正 Embers 词条的出处,Ember Charge 本身保留英文原名不译。",
+    "status": "如果站主确认原意就是要把 Ember Charge 这个道具本身也译成「余烬」,请明确给一个不与 Embers 冲突的译名(比如「余烬弹」之类),再由实现者补上 name_zh 与 zh_glossary_sources。"
+   }
+  ]
+ }
 }

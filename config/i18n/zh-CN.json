@@ -96,7 +96,7 @@
   "f_max_food_slots": "食物格数",
   "f_skill_loss_pct_default": "每次死亡技能损失（默认，%）",
   "f_no_skill_drain_minutes": "无技能损失保护（分钟）",
-  "f_corpse_run_seconds": "Corpse run 效果（秒）",
+  "f_corpse_run_seconds": "捡尸（Corpse run）效果（秒）",
   "f_usage": "用途",
   "f_weight": "重量",
   "f_stack": "堆叠上限",

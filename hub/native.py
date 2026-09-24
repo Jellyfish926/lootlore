@@ -109,6 +109,19 @@ class EntityBox:
         ph = ent.get("hp_phases")
         return " + ".join(str(x) for x in ph) if ph else ""
 
+    def _qty_item(self, r):
+        """{item_*, qty} → "材料 ×数量";qty 缺失(None/空)时只给材料名,不拼"×…"后缀
+        (数据里允许配方某一项数量未定,不该渲染成字面上的 "×None")。"""
+        item = self.loc(r, "item")
+        qty = r.get("qty")
+        return f'{item} ×{self.loc(r, "qty", qty)}' if qty not in (None, "") else str(item)
+
+    def _qty_cell(self, r):
+        """{item_*, qty} 的独立"数量"列取值(两列表格用);qty 缺失(None/空)时给空串,
+        不给字面 "None"。"""
+        qty = r.get("qty")
+        return str(self.loc(r, "qty", qty)) if qty not in (None, "") else ""
+
     def _list(self, rows):
         """[{en, zh}] 或 [str] → 按语种取值的纯文本列表;传进来不是列表就当空。"""
         if isinstance(rows, str):
@@ -179,13 +192,14 @@ class EntityBox:
         elif typ == "boss":
             add(t["f_biome"], self.loc(ent, "biome"))
             add(t["f_summon"], ", ".join(
-                f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("summon") or [])))
+                self._qty_item(r) for r in (ent.get("summon") or [])))
             add(t["f_health"], self._hp(ent))
-            add(t["f_damage"], ent.get("damage_types"))
-            add(t["f_weak"], ent.get("weak"))
-            add(t["f_resistant"], ent.get("resistant"))
-            add(t["f_very_resistant"], ent.get("very_resistant"))
-            add(t["f_immune"], ent.get("immune"))
+            # 伤害类型 / 抗性列表:<字段>_<nk> → <字段>_en → <字段>(与其它字段同一套语种回退)
+            add(t["f_damage"], self.loc(ent, "damage_types"))
+            add(t["f_weak"], self.loc(ent, "weak"))
+            add(t["f_resistant"], self.loc(ent, "resistant"))
+            add(t["f_very_resistant"], self.loc(ent, "very_resistant"))
+            add(t["f_immune"], self.loc(ent, "immune"))
             add(t["f_drops"], self._ent_names(ent.get("drops") or []))
             fp = ent.get("forsaken_power")
             if fp:
@@ -215,7 +229,7 @@ class EntityBox:
             add(t["f_weight"], ent.get("weight"))
             add(t["f_stack"], ent.get("stack"))
             add(t["c_material"], ", ".join(
-                f'{self.loc(r, "item")} ×{r["qty"]}' for r in (ent.get("recipe") or [])))
+                self._qty_item(r) for r in (ent.get("recipe") or [])))
         if not rows and not lead:
             return ""
         body = "".join(f'<div class="qf-r"><dt>{esc(k)}</dt><dd>{v if k == t["f_boss"] else esc(v)}</dd></div>'
@@ -581,14 +595,14 @@ class NativeLang(EntityBox, HubBodyMixin):
         if typ == "boss":
             if ent.get("summon"):
                 block(t["summon_items"], [esc(t["c_item"]), esc(t["c_quantity"])],
-                      [[esc(str(self.loc(r, "item"))), esc(str(r.get("qty", "")))] for r in ent["summon"]])
+                      [[esc(str(self.loc(r, "item"))), esc(self._qty_cell(r))] for r in ent["summon"]])
             if ent.get("drops"):
                 block(t["drops"], [esc(t["c_item"]), esc(t["c_quantity"])],
-                      [[esc(str(self.loc(r, "item"))), esc(str(r.get("qty", "")))] for r in ent["drops"]])
+                      [[esc(str(self.loc(r, "item"))), esc(self._qty_cell(r))] for r in ent["drops"]])
         elif ent.get("recipe"):
             label = f'{t["recipe"]}{t["sep"]}{self.loc(ent, "name")}'
             block(label, [esc(t["c_material"]), esc(t["c_quantity"])],
-                  [[esc(str(self.loc(r, "item"))), esc(str(r.get("qty", "")))] for r in ent["recipe"]])
+                  [[esc(str(self.loc(r, "item"))), esc(self._qty_cell(r))] for r in ent["recipe"]])
         return out
 
     # ------------------------------------------------------------ aggregate tables
@@ -615,7 +629,7 @@ class NativeLang(EntityBox, HubBodyMixin):
         return esc(", ".join(str(x.get(self.nk) or x.get("en") or "") for x in (rows or [])))
 
     def _qty(self, rows):
-        return esc(", ".join(f'{self.loc(r, "item")} \u00d7{r["qty"]}' for r in (rows or [])))
+        return esc(", ".join(self._qty_item(r) for r in (rows or [])))
 
     def _cell(self, e, col):
         if col == "order":
@@ -633,7 +647,7 @@ class NativeLang(EntityBox, HubBodyMixin):
         if col == "hp":
             return esc(str(self._hp(e)))
         if col in ("weak", "resistant", "very_resistant", "immune", "damage"):
-            v = e.get("damage_types") if col == "damage" else e.get(col)
+            v = self.loc(e, "damage_types" if col == "damage" else col)
             return esc(", ".join(v or []))
         if col == "forsaken":
             fp = e.get("forsaken_power") or {}

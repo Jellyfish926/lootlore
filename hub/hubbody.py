@@ -193,8 +193,15 @@ class HubBodyMixin:
             return self._hb_entity_link(ent), nm, False
         if col.startswith("@qty:"):
             rows = _resolve(ent, col[5:]) or []
-            parts = [f'{self.loc(r, "item")}{NBSP}\u00d7{r["qty"]}'
-                     for r in rows if isinstance(r, dict) and r.get("qty") is not None]
+            parts = []
+            for r in rows:
+                if not isinstance(r, dict):
+                    continue
+                item = self.loc(r, "item")
+                qty = r.get("qty")
+                # qty \u7f3a\u5931(None/\u7a7a)\u65f6\u53ea\u7ed9\u6750\u6599\u540d,\u4e0d\u62fc"\u00d7\u2026"\u540e\u7f00,\u4e0d\u8be5\u6e32\u67d3\u6210\u5b57\u9762\u4e0a\u7684 "\u00d7None"\u3002
+                parts.append(f'{item}{NBSP}\u00d7{self.loc(r, "qty", qty)}'
+                             if qty not in (None, "") else str(item))
             txt = ", ".join(parts)
             return esc(txt), txt, False
         if col.startswith("@ref:"):

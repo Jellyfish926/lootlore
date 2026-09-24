@@ -132,6 +132,11 @@ python3 build.py
 
 **sitemap**:原生页 `lastmod = reviewed ?? updated ?? date`,其余页仍用构建日。
 
+**实体数据的多语种字段**(`data/<game>/entities.json`):每个可见字段按 `<字段>_<语种 dir>` → `<字段>_en` → `<字段>` 回退取值(`EntityBox.loc`),
+列表字段同名(`weak_zh` / `damage_types_zh` …),`[{item_en,item_zh,qty,qty_zh}]` / `[{en,zh}]` 的子项同理;没有本地化值就原样落回 en,所以只补 `_zh` 字段不会改动 en 产物。
+**译名纪律**:`_zh` 里的专名只准来自两处——`content/<game>/zh/*.md` 正文已经在用的中文(优先),其次游戏官方简中本地化(Valheim 用 wiki.biligame.com/valheim,infobox `subtitle` = 英文名);
+两处都查不到的专名保留英文,不自造译名。每个译名的出处记在该 JSON 顶层的 `zh_glossary_sources`(en → {zh, source}),改译名先改那里。
+
 **Consent Mode v2 默认值**:每页 `<head>` 里由 `build.py:head_scripts()` 统一注入,顺序固定 consent default → AdSense → gtag.js → `gtag('config')`。同意弹窗用的是 Google 自家 CMP(AdSense「欧洲法规消息」,只对 EEA/UK/瑞士弹),它只更新弹窗用户的同意状态,所以非弹窗地区的默认值必须站点自己设:`CONSENT_DENIED_REGIONS`(EEA 30 国 + GB + CH)那条全 denied 并 `wait_for_update:500` 等 CMP 回写,不带 region 的兜底条全 granted。这段必须排在所有 Google 脚本之前——gtag.js / adsbygoogle.js 一旦先跑,default 就不生效(Google 文档原话:「If your consent code is called out of order, consent defaults won't work」);dataLayer / gtag 的定义也只在这一段里出现一次,GA 片段不再重复定义。`ga4_id` 留空时 consent 段照常输出(AdSense 也吃这个信号)。`404.html` 走 `head_scripts(ads=False)`:AdSense 政策不许错误页带广告代码,404 只留 consent 段 + GA 片段(`check_ga` 的 `ADS_ON_404` 断言兜底)。
 
 **提需求弹窗(Web3Forms)**:每页最多三个入口——右栏「Missing something?」卡片(`hub/shell.py:request_card`,只挂在本来就有右栏的页的右栏末尾;`no-rail` 页不为它硬加右栏)、页脚链接(`request_link`,每页都有)、右下角浮动按钮(`request_fab`,手机端每页显示;桌面端只在没有右栏卡片的页显示——首页和所有 `no-rail` 页,CSS 选择器 `main.home~.req-fab,main.no-rail~.req-fab`)——都打开同一个原生 `<dialog>`(`request_dialog` + `REQUEST_JS`,不依赖任何三方 JS)。字段:需求类型 / 游戏(自动选中当前页所属游戏,选项来自 `games`)/ 内容(必填 ≥10 字)/ 联系邮箱(选填,Web3Forms 拿它当 reply-to);隐藏字段自动带 `page_url` / `page_lang` / `user_agent`,蜜罐 `botcheck`(checkbox,display:none,提交时显式带 boolean)。提交 `POST https://api.web3forms.com/submit`(JSON,按其 API Reference),邮件主题由 i18n 的 `req_subject` 拼出。**开通**:到 web3forms.com 用 `contact_email` 申请 Access Key,填进 `config/hub.json → web3forms_key`,重建即通;key 为空时弹窗照常渲染,只是发送按钮 disabled + 显示「暂未开通」+ mailto 兜底(主题预填)。文案全部在 `config/i18n/*.json` 的 `req_*` 键(七语种各 28 个);样式在 `hub/style.css` 末尾「提需求」段,只用 token。入口链接的 href 本身就是 mailto,无 JS 时退化为直接写邮件。

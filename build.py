@@ -11,8 +11,9 @@
 
 用法:  python3 build.py            # 组装到 out/
        python3 build.py --base https://xxx.vercel.app   # 覆盖 base_url
+       LOOTLORE_BUILD_DATE=2026-09-22 python3 build.py  # 把构建日期钉住(产物可复现)
 """
-import hashlib, json, re, shutil, sys, datetime
+import hashlib, json, os, re, shutil, sys, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -32,7 +33,25 @@ BASE = CFG["base_url"].rstrip("/")
 # 会跳过这条规则,不然会把新域名自己也 301 掉,造成跳转环。
 LEGACY_VERCEL_HOST = "lootlore-ten.vercel.app"
 OUT = ROOT / "out"
-TODAY = datetime.date.today().isoformat()
+
+
+def build_date() -> str:
+    """构建日期。这个值会写进 12 个文件(11 个总站自有页的 Last reviewed、
+    sitemap.xml 的 lastmod 兜底),所以不钉住的话「重建产物再比 diff」在提交日的次日起天天误红。
+    先认环境变量 LOOTLORE_BUILD_DATE(CI 从仓库根的 build-stamp.json 里取),取不到才用今天。"""
+    v = os.environ.get("LOOTLORE_BUILD_DATE", "").strip()
+    if not v:
+        return datetime.date.today().isoformat()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", v):
+        raise SystemExit(f"LOOTLORE_BUILD_DATE={v!r} 格式不对:必须是零填充的 YYYY-MM-DD,构建中止")
+    try:
+        datetime.date.fromisoformat(v)
+    except ValueError as e:
+        raise SystemExit(f"LOOTLORE_BUILD_DATE={v!r} 不是真实存在的日期({e}),构建中止")
+    return v
+
+
+TODAY = build_date()
 SENT = "@@HUB@@"  # 信任页映射后的哨兵前缀,防止被通用子路径改写二次加前缀
 LASTMOD = {}  # route -> lastmod(原生内容页按 reviewed ?? updated ?? date;其余页用构建日)
 T = json.loads((ROOT / "config" / "i18n" / "en.json").read_text())  # 总站界面文字(英文默认)
@@ -818,6 +837,15 @@ def gen_vercel_json():
     (ROOT / "vercel.json").write_text(json.dumps(vercel, indent=2) + "\n", encoding="utf-8")
 
 
+def gen_build_stamp():
+    """构建日期锚。CI 先读它、再用同一个日期重建产物,才能拿 git diff 校验「提交的 out/ 是否
+    等于新鲜构建」—— 不钉住日期的话,写着构建日的那 12 个文件会让次日之后每次校验都误红。
+    写在仓库根而不是 out/:进了 out/ 就多出一个对外可访问的 URL,还会扰动 check_sitemap
+    (PAGE_NOT_IN_SITEMAP)与 link_check。跟上面的 gen_vercel_json 一个路子,必须提交进库。"""
+    (ROOT / "build-stamp.json").write_text(
+        json.dumps({"build_date": TODAY}, indent=2) + "\n", encoding="utf-8")
+
+
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -841,6 +869,7 @@ def main():
     version_assets(OUT)
     gen_root_files()
     gen_vercel_json()
+    gen_build_stamp()
     n = len(list(OUT.rglob("*.html")))
     print(f"  索引: {len(INDEX.games)} 个游戏 · {INDEX.page_count} 个攻略页 · 搜索索引 {rows} 条")
     print(f"built {n} html pages → {OUT}  (base={BASE})")

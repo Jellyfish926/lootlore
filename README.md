@@ -44,6 +44,8 @@
 框架层不写任何 hex、任何界面文字、任何游戏专属文字;门禁工作流的域名也从 `base_url` 读。
 
 构建:`python3 build.py [--base https://域名]` → 产物在 `out/`(Vercel 直接服务,outputDirectory=out,无构建命令)。
+构建日期可注入:`LOOTLORE_BUILD_DATE=YYYY-MM-DD python3 build.py`(不设就用今天)。每次构建把这个日期写进仓库根的 `build-stamp.json`(要提交);
+CI 用它钉住日期重建,再 `git diff --exit-code -- out build-stamp.json` 校验「提交的 out/ 是否等于新鲜构建」—— 构建日会写进 12 个页面(byline / sitemap 兜底),不钉住的话次日起天天误红。
 
 构建期自动产出(数字全部来自实际统计,页面上不写死):
 - 首页游戏卡片的页数与最近更新日、`/updates/` 变更日志(跨游戏按复核日倒序)、
@@ -81,7 +83,7 @@
 2. Next 三站 `npm ci && npm run build`(node_modules 走 `actions/setup-node` 的 npm 缓存);
 3. `python3 scripts/sync-sources.py --src-root subsites` —— 先删后拷,全量替换 `sources/<游戏>/`;
 4. `python3 build.py` 重建 `out/`;
-5. 跑与 `gates.yml` 同一批门禁脚本(check_content / check_i18n / check_sitemap / link_check),**红一条就不提交**;
+5. 跑与 `gates.yml` 同一批门禁脚本(check_content / check_i18n / check_snapshot / check_sitemap / link_check),**红一条就不提交**(`check_ga` 与产物漂移校验只在 `gates.yml` 提交后复核那一轮跑);
 6. 有 diff 才提交(身份 `Jellyfish926 <zsn2740784715@gmail.com>`,信息列出五个子站来源 sha)并 push;无 diff 打印「无变化」。
 
 唯一一处对快照的加工:Next 三站的随机 `buildId` 会被换成固定串 `static-export`
@@ -131,4 +133,5 @@ python3 build.py
 **sitemap**:原生页 `lastmod = reviewed ?? updated ?? date`,其余页仍用构建日。
 
 **门禁**(与 gates.yml 一致):`check_content.py … --dir-lang <game>/<locale>=<lang>`(单语种非英文游戏目录的 lang 判定)、`check_i18n.py --games …,<game>`(单语种会明确打印跳过)、
+`check_ga.py --out out`(GA4 只许 `config/hub.json` 的 `ga4_id` 那一个 ID,每页外链 + 内联各恰好 1 次且都在 `<head>`;`ga4_id` 留空则产物里一处都不许有)、
 `check_sitemap.py`、`link_check.py`;另有只报告的 `tech_audit.py --out out --base <域名> --prefix /<game>/ --summary`(title/description 按显示宽度,CJK 记 2)。

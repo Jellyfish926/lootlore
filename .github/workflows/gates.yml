@@ -1,5 +1,6 @@
 name: gates
-# 八道门禁(seo-jianzhan ⑥):红一条不许合。跑在构建产物上,不看源码。
+# 十道门禁(seo-jianzhan ⑥ + 本站增补):红一条不许合。跑在构建产物上,不看源码。
+# 构建日期从仓库根 build-stamp.json 钉住(build.py 写的),所以「重建产物 ≟ 提交的 out/」不会因为跨天而误红。
 on:
   push:
     branches: [main]
@@ -16,7 +17,25 @@ jobs:
         with: { python-version: "3.12" }
       - name: 取站点域名(唯一真相源 config/hub.json → base_url)
         run: echo "SITE_HOST=$(python3 -c "import json;print(json.load(open('config/hub.json'))['base_url'].split('//')[1].rstrip('/'))")" >> $GITHUB_ENV
-      - run: python3 build.py
+      - name: 构建(日期钉在 build-stamp.json 上 —— 不钉住的话提交日之后每天都会假漂移)
+        run: |
+          test -f build-stamp.json || { echo "::error::仓库根缺 build-stamp.json:它是 CI 复现构建的日期锚,由 python3 build.py 生成,必须随 out/ 一起提交"; exit 1; }
+          LOOTLORE_BUILD_DATE=$(python3 -c "import json;print(json.load(open('build-stamp.json'))['build_date'])")
+          echo "钉住构建日期 LOOTLORE_BUILD_DATE=$LOOTLORE_BUILD_DATE"
+          LOOTLORE_BUILD_DATE="$LOOTLORE_BUILD_DATE" python3 build.py
+      - name: 产物漂移校验(提交的 out/ 是否等于新鲜构建 —— 红了就是有人手改了产物)
+        run: |
+          git diff --stat -- out build-stamp.json
+          git diff --exit-code -- out vercel.json build-stamp.json || {
+            echo "::error::提交的 out/ ≠ 按 build-stamp.json 的日期重新构建出来的产物 —— 有人手改了 out/ 里的文件,或改了 build.py / config / sources / content 却没重建。修法:本地 python3 build.py 重建 out/(会一并刷新 build-stamp.json)再提交,不要直接编辑产物。"
+            exit 1
+          }
+          # git diff 看不见"未跟踪"的文件:提交的 out/ 若少了一个页面,重建会把它作为新文件生成出来而 diff 仍是空的
+          if [ -n "$(git status --porcelain --untracked-files=all -- out vercel.json build-stamp.json)" ]; then
+            git status --porcelain --untracked-files=all -- out vercel.json build-stamp.json
+            echo "::error::新鲜构建生成了提交里没有的文件(上面 ?? 的那些)—— 提交的 out/ 不完整,请本地 python3 build.py 重建后把 out/ 整棵提交。"
+            exit 1
+          fi
       - name: check_content(H1 / alt / 占位语 / 死链 / 内链≥3 / 语种自动判定)
         run: python3 .gates/check_content.py out --locales de,es,fr,it,ja --default en
       - name: check_i18n(小语种残页 / 占位)
@@ -25,6 +44,8 @@ jobs:
         run: python3 .gates/check_i18n.py out --default en --locales zh --root-default --games valheim
       - name: check_snapshot(快照页正文逐字节零改动)
         run: python3 .gates/check_snapshot.py --out out
+      - name: check_ga(GA4 只许 config 里那一个 ID,每页外链+内联各恰好 1 次且都在 <head>)
+        run: python3 .gates/check_ga.py --out out
       - name: check_sitemap(loc↔文件 / 域名残留 / robots)
         run: python3 .gates/check_sitemap.py --out out --host "$SITE_HOST"
       - name: link_check(全站死链)

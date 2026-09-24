@@ -37,6 +37,7 @@ H1_RE = re.compile(r'<h1\b[^>]*>(.*?)</h1>', re.S | re.I)
 H2_START_RE = re.compile(r'<h2\b', re.I)
 HEAD_RE = re.compile(r'<head\b[^>]*>(.*?)</head>', re.S | re.I)
 HTML_LANG_RE = re.compile(r'<html\b[^>]*\blang="([^"]*)"', re.I)
+CANONICAL_HREF_RE = re.compile(r'<link\s+rel="canonical"[^>]*\bhref="([^"]*)"', re.I)
 HEADING_RE = re.compile(r'<(h[23])\b((?:"[^"]*"|\'[^\']*\'|[^>"\'])*)>(.*?)</\1>', re.S | re.I)
 ID_ATTR_RE = re.compile(r'\bid="([^"]*)"', re.I)
 ALL_IDS_RE = re.compile(r'\bid="([^"]+)"', re.I)
@@ -186,7 +187,7 @@ class SnapPage:
     """一个快照页解析出来的全部素材。每一项都来自文件本身,没有就是空,不填默认值。"""
 
     __slots__ = ("route", "path", "lang", "head", "jsonld", "ld_objs", "body", "h1",
-                 "byline", "heads", "scripts", "has_crumb_ld")
+                 "byline", "heads", "scripts", "has_crumb_ld", "canonical")
 
     def __init__(self, route, path):
         self.route, self.path = route, path
@@ -200,6 +201,7 @@ class SnapPage:
         self.heads = []         # [(级别, 纯文本, id)] —— 正文小标题与锚点
         self.scripts = []       # 页面自带的内联脚本(交互件用),逐字搬过来
         self.has_crumb_ld = False
+        self.canonical = ""     # head 里 <link rel="canonical"> 的 href(域名已改写成总站的);没有就空
 
 
 def parse_page(raw: str, route: str, path: Path) -> SnapPage:
@@ -211,6 +213,8 @@ def parse_page(raw: str, route: str, path: Path) -> SnapPage:
     head_src = hm.group(1) if hm else raw
     for pat in HEAD_KEEP:
         p.head += pat.findall(head_src) if pat.groups else [x.group(0) for x in pat.finditer(head_src)]
+    cm = CANONICAL_HREF_RE.search(head_src)
+    p.canonical = cm.group(1).strip() if cm else ""
 
     mm = MAIN_RE.search(raw)
     if not mm:
@@ -520,7 +524,9 @@ class SnapshotLang(EntityBox, HubBodyMixin):
         else:
             ref = self.by_route.get(page.route)
             items += mid + [(_norm(page.h1) or (ref.title if ref else ""), None)]
-        html, ld = shell.crumbs(items, self.gs.base, label=t["breadcrumb"])
+        # 最后一项的 item = 页面 canonical(head 里子站产出、域名已改写的那条);没有就 base+route
+        html, ld = shell.crumbs(items, self.gs.base, label=t["breadcrumb"],
+                                current=page.canonical or (self.gs.base + page.route))
         return html, (None if page.has_crumb_ld else ld)
 
     def rail(self, page: SnapPage, t: dict):
@@ -607,6 +613,11 @@ class SnapshotLang(EntityBox, HubBodyMixin):
                         .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
                         + "</script>")
         byline = f'<p class="byline">{page.byline}</p>' if page.byline.strip() else ""
+        # 有右栏的页在右栏末尾挂「提需求」卡片(外壳层,不进 .sn-body);
+        # 无实体框且无「最近更新」的页保持 no-rail,入口只走页脚链接 + 浮动按钮。
+        req = self.gs.site["request"]
+        if aside:
+            aside += shell.request_card(email=req["email"], brand=req["brand"], game=self.gs.g["name"], t=t)
         cls = "layout" + ("" if aside else " no-rail") + ("" if has_ent else " rail-last" if aside else "")
         toggle = ('<input type="checkbox" id="navtoggle" class="navtoggle">'
                   f'<label class="navtoggle-l" for="navtoggle"><span aria-hidden="true">&#9776;</span> '
@@ -626,7 +637,10 @@ class SnapshotLang(EntityBox, HubBodyMixin):
                                      placeholder=t["search_all_placeholder"]), t=t)
         ft_links = list(t["trust"])
         footer = shell.footer(brand=self.gs.cfg["brand"], year=self.gs.site["year"],
-                             links=ft_links, note=t["footer_note"])
+                             links=ft_links, note=t["footer_note"],
+                             extra=shell.request_link(email=req["email"], brand=req["brand"],
+                                                      game=self.gs.g["name"], t=t))
+        lang_code = page.lang or self.lang
         tpl = (self.gs.root / "hub" / "snapshot_page.html").read_text(encoding="utf-8")
         return (tpl.replace("{{LANG}}", esc(page.lang or self.lang))
                 .replace("{{HEAD}}", "\n".join(head))
@@ -634,7 +648,9 @@ class SnapshotLang(EntityBox, HubBodyMixin):
                 .replace("{{HEAD_EXTRA}}", self.gs.site["head_extra"])
                 .replace("{{HEADER}}", header)
                 .replace("{{MAIN}}", main)
-                .replace("{{SCRIPTS}}", "".join(page.scripts) + shell.SEARCH_JS)
+                .replace("{{SCRIPTS}}", "".join(page.scripts) + shell.request_block(
+                    games=req["games"], current=self.gs.gslug, lang=lang_code, key=req["key"],
+                    email=req["email"], brand=req["brand"], t=t) + shell.SEARCH_JS)
                 .replace("{{FOOTER}}", footer))
 
 

@@ -257,15 +257,18 @@ a:hover{color:var(--accent2)}
   text-transform:uppercase;color:var(--dim);font-weight:600;border-bottom:var(--box-bd)}
 .sidenav ul{list-style:none;margin:0;padding:0}
 .sidenav li{margin:0}
+/* 长链接不许撑破侧栏,但只在整段放不下时才断词,并按语言规则加连字符
+   (overflow-wrap:anywhere 会把「Achievements」硬切成「Achievement / s」) */
 .sidenav a{display:block;color:var(--mut);padding:5px 10px;
-  border-radius:0 var(--rad-sm) var(--rad-sm) 0;border-left:2px solid transparent;overflow-wrap:anywhere}
+  border-radius:0 var(--rad-sm) var(--rad-sm) 0;border-left:2px solid transparent;
+  overflow-wrap:break-word;word-break:normal;hyphens:auto}
 .sidenav a:hover{color:var(--ink);background:var(--panel);border-left-color:var(--line)}
 .sidenav a.on{color:var(--accent);background:var(--band-soft);border-left-color:var(--accent);font-weight:600}
 .sidenav a em{font-style:normal;color:var(--dim)}
 /* Quick access 磁贴:2 列小方块,直达该游戏真实存在的栏目 */
 .sn-qa{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:0 8px}
 .sn-qa a{display:flex;flex-direction:column;gap:2px;border:var(--box-bd);border-left:var(--box-bd);
-  border-radius:var(--rad-sm);background:var(--panel);padding:7px 9px;color:var(--ink);
+  border-radius:var(--rad-sm);background:var(--panel);padding:7px 8px;color:var(--ink);
   font-size:.8125rem;font-weight:600;line-height:1.25}
 .sn-qa a:hover{border-color:var(--accent);background:var(--band-soft);color:var(--accent)}
 .sn-qa span{color:var(--dim);font-size:.6875rem;font-weight:400;font-variant-numeric:tabular-nums}
@@ -746,6 +749,7 @@ a:hover{color:var(--accent2)}
   .layout.rail-last{grid-template-areas:"nav crumb" "nav head" "nav doc" "nav rail"}
   .layout.no-nav{grid-template-columns:minmax(0,1fr);
     grid-template-areas:"crumb" "head" "rail" "doc"}
+  .layout.no-nav.rail-last{grid-template-areas:"crumb" "head" "doc" "rail"}
   .rail{position:static;margin:0 0 20px;max-width:560px}
 }
 @media(max-width:1024px){
@@ -774,4 +778,90 @@ a:hover{color:var(--accent2)}
 @media(prefers-reduced-motion:reduce){
   .sidenav{transition:none}
   .sn-acc>summary::before,.fq>summary::before{transition:none}
+}
+
+/* ======================================================================
+   提需求(hub/shell.py:request_*)。三个入口 + 一个原生 <dialog>。
+   对比度(按本文件顶部同一套 token 数字):弹窗底是 panel —— ink 14.96 / mut 9.35 /
+   dim 7.65 / accent 8.85 / accent-warm 8.06(错误提示),全部 ≥7:1;输入框底是 bg,
+   描边 --line2 3.65:1(vs bg)/ 3.26:1(vs panel);主按钮 accent 底 + bg 字 9.90:1,
+   按钮块本身对 panel 8.85:1;浮动按钮 accent 底对页面 bg 9.90:1。非文字全部 ≥3:1。
+   层级:.req-fab z-index 60 < 抽屉遮罩 70 < .sidenav 80 < .hd 90,所以左侧抽屉打开时
+   遮罩盖住浮动按钮,不会互相抢点击;<dialog> 走顶层(top layer),不参与 z-index。
+   ====================================================================== */
+/* 右栏卡片:沿用 .rw 皮肤,正文一句 + 描边按钮 */
+.req-card-b{padding:11px 13px 13px}
+.req-card-b p{margin:0 0 10px;color:var(--mut);font-size:.875rem;line-height:1.5}
+.req-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;
+  border:1px solid var(--line2);border-radius:var(--rad-sm);background:var(--bg);
+  color:var(--accent);font-size:var(--fs-meta);font-weight:600;text-decoration:none}
+.req-btn:hover{border-color:var(--accent);background:var(--band-soft);color:var(--accent2)}
+.req-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 页脚链接:和其它页脚链接同款,只加一个铅笔标记区分它是动作不是页面 */
+.ft nav .req-open::before{content:"\270E\00a0";color:var(--accent)}
+/* 浮动按钮:默认只在 ≤1024(右栏已并入单栏、卡片可能在很下面)显示;桌面端只在没有右栏
+   卡片的页显示 —— 首页(main.home)和所有 no-rail 页(总站 about/contact/信任页/404、
+   原生「全部攻略」页、无实体框且无「最近更新」的快照页)。48px 高 ≥44 的触控门槛;避开 iOS 底部安全区;
+   页脚底部留出 72px,页面拉到底时按钮不压住页脚文字。 */
+.req-fab{display:none;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  z-index:60;align-items:center;gap:7px;min-height:48px;min-width:48px;padding:0 16px;
+  border-radius:var(--rad-pill);background:var(--accent);color:var(--bg);font-size:.9375rem;
+  font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.req-fab:hover{background:var(--accent2);color:var(--bg)}
+.req-fab:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+main.home~.req-fab,main.no-rail~.req-fab{display:inline-flex}
+/* 弹窗开着时浮动按钮收掉(它在 DOM 里排在 <dialog> 之前,只能用 :has 反查) */
+body:has(dialog.req[open]) .req-fab{display:none}
+@media(max-width:1024px){
+  .req-fab{display:inline-flex}
+  .ft .wrap{padding-bottom:calc(24px + 72px)}
+}
+/* 弹窗 */
+.req{width:min(92vw,520px);max-height:min(92vh,92dvh);margin:auto;padding:0;
+  border:1px solid var(--line2);border-radius:var(--rad);background:var(--panel);color:var(--ink);
+  box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:auto}
+.req::backdrop{background:color-mix(in srgb,var(--bg) 78%,transparent)}
+.req-f{padding:18px 20px 20px}
+.req-hd{display:flex;align-items:flex-start;gap:12px;margin:0 0 6px}
+.req-hd h2{margin:0;flex:1 1 auto;font-size:var(--fs-h2);line-height:1.25;color:var(--ink)}
+.req-x{flex:0 0 auto;width:40px;height:40px;margin:-6px -8px 0 0;border:0;border-radius:var(--rad-sm);
+  background:transparent;color:var(--mut);font-size:1.5rem;line-height:1;cursor:pointer}
+.req-x:hover{background:var(--band-soft);color:var(--ink)}
+.req-x:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.req-lede{margin:0 0 14px;color:var(--mut);font-size:var(--fs-meta);line-height:1.5}
+.req-row{margin:0 0 12px}
+.req-row label{display:block;margin:0 0 5px;color:var(--ink);font-size:var(--fs-meta);font-weight:600}
+.req-row label small{color:var(--dim);font-size:var(--fs-cap);font-weight:400}
+.req-row select,.req-row textarea,.req-row input{display:block;width:100%;min-height:42px;
+  padding:8px 11px;border:1px solid var(--line2);border-radius:var(--rad-sm);background:var(--bg);
+  color:var(--ink);font:inherit;font-size:.9375rem;line-height:1.4}
+.req-row select{appearance:auto;color-scheme:dark}
+.req-row textarea{resize:vertical;min-height:120px}
+.req-row select:focus,.req-row textarea:focus,.req-row input:focus{outline:2px solid var(--accent);outline-offset:1px;
+  border-color:var(--accent)}
+.req-row [aria-invalid="true"]{border-color:var(--accent-warm)}
+.req-hint{margin:5px 0 0;color:var(--dim);font-size:var(--fs-cap);line-height:1.45}
+.req-err{margin:5px 0 0;color:var(--accent-warm);font-size:var(--fs-cap);line-height:1.45;font-weight:600}
+.req-hp{display:none}
+.req-off{margin:0 0 12px;padding:9px 12px;border:1px solid var(--line2);border-radius:var(--rad-sm);
+  background:var(--bg2);color:var(--mut);font-size:var(--fs-cap);line-height:1.45}
+.req-act{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0 0}
+.req-send,.req-cancel{display:inline-flex;align-items:center;justify-content:center;min-height:42px;
+  padding:0 18px;border-radius:var(--rad-sm);font:inherit;font-size:.9375rem;font-weight:600;cursor:pointer}
+.req-send{border:1px solid var(--accent);background:var(--accent);color:var(--bg)}
+.req-send:hover{background:var(--accent2);border-color:var(--accent2)}
+.req-send:disabled{opacity:.55;cursor:not-allowed;background:var(--accent);border-color:var(--accent)}
+.req-cancel{border:1px solid var(--line2);background:transparent;color:var(--mut)}
+.req-cancel:hover{color:var(--ink);border-color:var(--accent)}
+.req-send:focus-visible,.req-cancel:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.req-st{margin:12px 0 0;font-size:var(--fs-meta);line-height:1.5}
+.req-st:empty{display:none}
+.req-st.ok{color:var(--accent);font-weight:600}
+.req-st.err{color:var(--accent-warm);font-weight:600}
+.req-fb{margin:8px 0 0;color:var(--mut);font-size:var(--fs-cap);line-height:1.5;overflow-wrap:anywhere}
+.req-fb a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:640px){
+  .req{width:calc(100vw - 32px)}
+  .req-f{padding:16px 16px 18px}
+  .req-act{flex-direction:column;align-items:stretch}
 }

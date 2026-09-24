@@ -73,17 +73,29 @@ def site_nav(*, brand, games, intents, active_game="", search="", t):
 
 
 # ---------------------------------------------------------------- 面包屑
-def crumbs(items, base="", *, label="Breadcrumb"):
-    """items = [(name, href_or_None)];最后一项当前页。返回 (html, jsonld_dict)。"""
+def crumbs(items, base="", *, label="Breadcrumb", current=""):
+    """items = [(name, href_or_None)];最后一项当前页。返回 (html, jsonld_dict)。
+
+    Google 的 BreadcrumbList 规则(developers.google.com/search/docs/appearance/structured-data/breadcrumb):
+    ListItem.item 只有最后一项可以省略,中间任何一项缺 item 都是「严重问题」,整条面包屑作废
+    (GSC 2026-09-22 报 /orc-problem/author/:兜底栏目「All other guides」没有落地页,曾以无链接的
+    中间级出现)。所以:
+      * 中间级没有 href 的一律不出——HTML 和 JSON-LD 同步去掉,位置重新编号;
+      * 最后一项给 item = current(页面 canonical),不给就退到 base+href,再没有才省略(Google 允许)。
+    """
+    items = list(items)
+    kept = [(n, h) for k, (n, h) in enumerate(items) if h or k == len(items) - 1]
     lis, els = [], []
-    for k, (name, href) in enumerate(items, start=1):
-        last = k == len(items)
+    for k, (name, href) in enumerate(kept, start=1):
+        last = k == len(kept)
         if href and not last:
             lis.append(f'<li><a href="{esc(href)}">{esc(name)}</a></li>')
         else:
             lis.append(f'<li aria-current="page">{esc(name)}</li>' if last else f"<li>{esc(name)}</li>")
         e = {"@type": "ListItem", "position": k, "name": name}
-        if href:
+        if last and current:
+            e["item"] = current
+        elif href:
             e["item"] = base + href
         els.append(e)
     html = (f'<nav class="crumbs" aria-label="{esc(label)}"><ol>' + "".join(lis) + "</ol></nav>")
@@ -194,8 +206,9 @@ def faq(items, heading, hid):
 
 
 # ---------------------------------------------------------------- 页脚
-def footer(*, brand, year, links, note):
-    nav = "".join(f'<a href="{esc(h)}">{esc(n)}</a>' for n, h in links)
+def footer(*, brand, year, links, note, extra=""):
+    """extra:已经拼好的额外链接 HTML(如 request_link()),追加在链接行末尾;空串不追加。"""
+    nav = "".join(f'<a href="{esc(h)}">{esc(n)}</a>' for n, h in links) + extra
     return ('<footer class="ft">\n<div class="wrap">\n'
             f"<nav>{nav}</nav>\n"
             f"<p>&copy; {esc(str(year))} {esc(brand)}. {esc(note)}</p>\n"
@@ -259,3 +272,142 @@ SEARCH_JS = NAV_JS + (
     "document.addEventListener('click',function(e){if(!f.contains(e.target))r.hidden=true;});"
     "})();</script>"
 )
+
+
+# ---------------------------------------------------------------- 提需求(Web3Forms 转发到站主邮箱)
+# 端点 / 字段名照 https://docs.web3forms.com/getting-started/api-reference(2026-09-24 核对):
+#   POST https://api.web3forms.com/submit,JSON 提交要带 Content-Type + Accept: application/json;
+#   必填 access_key;email 会被当 reply-to;subject / from_name / replyto 可自定义;
+#   蜜罐是 name="botcheck" 的 checkbox(type 为 boolean,display:none 藏起来);
+#   200 → {"success":true,"body":{"data":…,"message":"Email sent successfully!"}},
+#   400/429/500 → success:false + message(429 的 message 在顶层)。
+# access_key 是浏览器端公开使用的键(文档明说建议客户端调用),放在 hidden input 里不算泄密。
+# key 为空(config/hub.json → web3forms_key 还没填)时弹窗照常渲染,只是提交按钮 disabled +
+# 显示「暂未开通」+ mailto 兜底 —— key 一填、重建即通,不用改代码。
+REQUEST_ENDPOINT = "https://api.web3forms.com/submit"
+REQUEST_TYPES = (("missing-guide", "req_type_missing"), ("wrong-data", "req_type_wrong"),
+                 ("tool-suggestion", "req_type_tool"), ("other", "req_type_other"))
+
+
+def request_mailto(*, email, brand, game="", t):
+    """无 JS 时的退化路径:直接 mailto,主题预填。"""
+    from urllib.parse import quote
+    subject = f"[{brand}] {t['req_title']}" + (f" - {game}" if game else "")
+    return f"mailto:{email}?subject={quote(subject)}"
+
+
+def request_link(*, email, brand, game="", t, cls="req-open", label_key="req_cta"):
+    """入口链接。href 是 mailto(无 JS 也可用),JS 接管后点击改为打开弹窗。"""
+    return (f'<a class="{cls}" href="{esc(request_mailto(email=email, brand=brand, game=game, t=t))}"'
+            f' data-req-open>{esc(t[label_key])}</a>')
+
+
+def request_card(*, email, brand, game="", t):
+    """右栏卡片:标题 + 一句说明 + 入口按钮。与 rail_list 同一套 .rw 皮肤。"""
+    return (f'<section class="rw req-card"><p class="rw-t">{esc(t["req_rail_title"])}</p>'
+            f'<div class="req-card-b"><p>{esc(t["req_rail_blurb"])}</p>'
+            + request_link(email=email, brand=brand, game=game, t=t, cls="req-open req-btn")
+            + "</div></section>")
+
+
+def request_fab(*, email, brand, game="", t):
+    """右下角浮动小按钮(≥44×44,CSS 里 48px 高)。手机端每页显示;桌面端只在没有右栏卡片的页
+    (首页 main.home 与所有 main.no-rail 页)显示,见 hub/style.css 的 .req-fab。"""
+    return (f'<a class="req-fab" href="{esc(request_mailto(email=email, brand=brand, game=game, t=t))}"'
+            f' data-req-open><span aria-hidden="true">&#9998;</span>'
+            f'<span>{esc(t["req_cta_short"])}</span></a>')
+
+
+def request_dialog(*, games, current="", lang, key, email, brand, t):
+    """原生 <dialog> 表单。games = [(slug, name)],current = 当前页所属游戏 slug(自动选中)。
+    隐藏字段 page_url / user_agent 由 JS 在打开时填;page_lang 构建期写死(与 <html lang> 一致)。"""
+    types = "".join(f'<option value="{v}">{esc(t[k])}</option>' for v, k in REQUEST_TYPES)
+    gopts = f'<option value="">{esc(t["req_game_none"])}</option>' + "".join(
+        f'<option value="{esc(n)}"{" selected" if s == current else ""}>{esc(n)}</option>'
+        for s, n in games)
+    off = not key
+    cur_name = next((n for s, n in games if s == current), "")
+    mailto = request_mailto(email=email, brand=brand, game=cur_name, t=t)
+    return (
+        f'<dialog class="req" id="req" aria-labelledby="req-h">'
+        f'<form class="req-f" id="req-f" novalidate data-endpoint="{REQUEST_ENDPOINT}"'
+        f' data-brand="{esc(brand)}" data-subject="{esc(t["req_subject"])}"'
+        f' data-send="{esc(t["req_send"])}" data-sending="{esc(t["req_sending"])}"'
+        f' data-ok="{esc(t["req_ok"])}" data-fail="{esc(t["req_fail"])}">'
+        f'<div class="req-hd"><h2 id="req-h">{esc(t["req_title"])}</h2>'
+        f'<button type="button" class="req-x" data-req-close aria-label="{esc(t["req_close"])}">'
+        '<span aria-hidden="true">&#215;</span></button></div>'
+        f'<p class="req-lede">{esc(t["req_lede"])}</p>'
+        f'<input type="hidden" name="access_key" value="{esc(key)}">'
+        f'<input type="hidden" name="from_name" value="{esc(brand)}">'
+        f'<input type="hidden" name="page_url" value="">'
+        f'<input type="hidden" name="page_lang" value="{esc(lang)}">'
+        f'<input type="hidden" name="user_agent" value="">'
+        f'<div class="req-row"><label for="req-type">{esc(t["req_type"])}</label>'
+        f'<select id="req-type" name="request_type">{types}</select></div>'
+        f'<div class="req-row"><label for="req-game">{esc(t["req_game"])}</label>'
+        f'<select id="req-game" name="game">{gopts}</select></div>'
+        f'<div class="req-row"><label for="req-msg">{esc(t["req_message"])}'
+        f' <small>({esc(t["req_message_hint"])})</small></label>'
+        f'<textarea id="req-msg" name="message" rows="5" required minlength="10"'
+        ' aria-describedby="req-msg-e"></textarea>'
+        f'<p class="req-err" id="req-msg-e" hidden>{esc(t["req_message_short"])}</p></div>'
+        f'<div class="req-row"><label for="req-email">{esc(t["req_email"])}'
+        f' <small>({esc(t["req_optional"])})</small></label>'
+        f'<input id="req-email" type="email" name="email" autocomplete="email" inputmode="email">'
+        f'<p class="req-hint">{esc(t["req_email_hint"])}</p></div>'
+        # 蜜罐:Web3Forms 规定 type=checkbox + name=botcheck + display:none。人看不见、读屏跳过。
+        '<input type="checkbox" name="botcheck" class="req-hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
+        + (f'<p class="req-off">{esc(t["req_off"])}</p>' if off else "")
+        + f'<div class="req-act"><button type="submit" class="req-send"{" disabled" if off else ""}>'
+        f'{esc(t["req_send"])}</button>'
+        f'<button type="button" class="req-cancel" data-req-close>{esc(t["req_cancel"])}</button></div>'
+        '<p class="req-st" role="status" aria-live="polite"></p>'
+        f'<p class="req-fb"{"" if off else " hidden"}>{esc(t["req_fallback"])} '
+        f'<a href="{esc(mailto)}">{esc(email)}</a></p>'
+        '</form></dialog>')
+
+
+# 弹窗交互。不依赖任何三方 JS。没有 <dialog>.showModal 的旧浏览器不接管点击,入口保持 mailto。
+# 提交:FormData → JSON,botcheck 显式带上(boolean,未勾选 = false;勾了就是机器人,服务端拒收);
+# 判成功 = HTTP 200 且 success 不为 false;失败提示后把 mailto 兜底行显示出来。
+REQUEST_JS = (
+    "<script>(function(){var d=document.getElementById('req');if(!d||!d.showModal)return;"
+    "var f=document.getElementById('req-f'),st=f.querySelector('.req-st'),fb=f.querySelector('.req-fb'),"
+    "m=f.elements.message,me=document.getElementById('req-msg-e'),sb=f.querySelector('.req-send'),"
+    "last=null,lock=false;function T(k){return f.getAttribute('data-'+k)||'';}"
+    "function fill(){f.elements.page_url.value=location.href;f.elements.user_agent.value=navigator.userAgent;}"
+    "function show(ok,txt){st.textContent=txt;st.className='req-st '+(ok?'ok':'err');fb.hidden=ok;}"
+    "function open(e){e.preventDefault();last=e.currentTarget;fill();st.textContent='';st.className='req-st';"
+    "me.hidden=true;fb.hidden=!sb.disabled;d.showModal();"
+    "var a=f.querySelector('select');if(a)a.focus();}"
+    "Array.prototype.forEach.call(document.querySelectorAll('[data-req-open]'),function(a){a.addEventListener('click',open);});"
+    "Array.prototype.forEach.call(d.querySelectorAll('[data-req-close]'),function(b){b.addEventListener('click',function(){d.close();});});"
+    "d.addEventListener('click',function(e){if(e.target===d)d.close();});"
+    "d.addEventListener('cancel',function(e){if(lock)e.preventDefault();});"
+    "d.addEventListener('close',function(){if(last&&last.focus)last.focus();});"
+    "f.addEventListener('submit',function(e){e.preventDefault();if(sb.disabled||lock)return;"
+    "var v=m.value.trim();if(v.length<10){me.hidden=false;m.setAttribute('aria-invalid','true');m.focus();return;}"
+    "me.hidden=true;m.removeAttribute('aria-invalid');"
+    "var o={};new FormData(f).forEach(function(val,k){o[k]=val;});"
+    "o.botcheck=!!f.elements.botcheck.checked;o.message=v;if(!o.email)delete o.email;"
+    "var ty=f.elements.request_type,g=f.elements.game;"
+    "o.subject=T('subject').replace('{brand}',T('brand')).replace('{type}',ty.options[ty.selectedIndex].text)"
+    ".replace('{game}',g.options[g.selectedIndex].text);"
+    "lock=true;sb.disabled=true;sb.textContent=T('sending');st.textContent='';st.className='req-st';"
+    "fetch(T('endpoint'),{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},"
+    "body:JSON.stringify(o)}).then(function(r){return r.json().then(function(j){"
+    "return {ok:r.status===200&&j.success!==false,j:j};},function(){return {ok:r.status===200,j:{}};});})"
+    ".then(function(x){if(x.ok){show(true,T('ok'));f.reset();fill();}else{"
+    "var msg=x.j&&(x.j.message||(x.j.body&&x.j.body.message))||'';show(false,T('fail')+(msg?' '+msg:''));}},"
+    "function(){show(false,T('fail'));}).then(function(){lock=false;sb.disabled=false;sb.textContent=T('send');});"
+    "});})();</script>"
+)
+
+
+def request_block(*, games, current="", lang, key, email, brand, t):
+    """一页要追加在 </footer> 之后的全部提需求件:浮动按钮 + 弹窗 + 脚本。三种页型都调这一个。"""
+    cur_name = next((n for s, n in games if s == current), "")
+    return (request_fab(email=email, brand=brand, game=cur_name, t=t)
+            + request_dialog(games=games, current=current, lang=lang, key=key, email=email, brand=brand, t=t)
+            + REQUEST_JS)

@@ -83,6 +83,13 @@ def font_links():
             f'<link rel="stylesheet" href="{esc(css)}">')
 
 
+def request_ctx() -> dict:
+    """提需求弹窗(hub/shell.py:request_*)的站级参数。key 为空时弹窗仍渲染,只是提交禁用。"""
+    return {"games": [(g["slug"], g["name"]) for g in CFG["games"]],
+            "key": CFG.get("web3forms_key", "") or "",
+            "email": CFG["contact_email"], "brand": CFG["brand"]}
+
+
 def is_native(g: dict) -> bool:
     return g.get("kind") == "native"
 
@@ -246,12 +253,16 @@ def og_image_snippet() -> str:
             f'<meta property="og:image:alt" content="{esc(c["img_alt"])}">')
 
 
-def breadcrumb_ld(base: str, brand: str, crumbs: list) -> dict:
-    """crumbs: [(name, path_or_None)] 最后一项通常是当前页(path=None 时不设 item,允许作最终节点省略)"""
+def breadcrumb_ld(base: str, brand: str, crumbs: list, current: str = "") -> dict:
+    """crumbs: [(name, path_or_None)] 最后一项是当前页。
+    Google 只允许最后一项省略 item;这里最后一项也显式给 item = current(页面 canonical),
+    和 hub/shell.py:crumbs() 的规则保持一致,不让「省略」这条路径存在。"""
     items = []
     for i, (label, path) in enumerate(crumbs, start=1):
         entry = {"@type": "ListItem", "position": i, "name": label}
-        if path is not None:
+        if i == len(crumbs) and current:
+            entry["item"] = current
+        elif path is not None:
             entry["item"] = f"{base}{path}"
         items.append(entry)
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items}
@@ -280,21 +291,21 @@ def hub_jsonld(name: str, cfg: dict) -> str:
             "logo": f"{base}/favicon.svg",
             "email": email,
         })
-        graphs.append(breadcrumb_ld(base, brand, [(brand, None)]))
+        graphs.append(breadcrumb_ld(base, brand, [(brand, None)], current=f"{base}/"))
     elif name == "about":
         graphs.append({
             "@context": "https://schema.org", "@type": "AboutPage",
             "name": f"About {brand}", "url": f"{base}/about",
             "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
         })
-        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), ("About", None)]))
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), ("About", None)], current=f"{base}/about"))
     elif name == "contact":
         graphs.append({
             "@context": "https://schema.org", "@type": "ContactPage",
             "name": f"Contact {brand}", "url": f"{base}/contact",
             "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
         })
-        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), ("Contact", None)]))
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), ("Contact", None)], current=f"{base}/contact"))
     elif name in ("guides", "reviews", "updates", "tools"):
         label = {"guides": "Guides", "reviews": "Reviews", "updates": "Updates",
                  "tools": "Tools"}[name]
@@ -303,7 +314,7 @@ def hub_jsonld(name: str, cfg: dict) -> str:
             "name": label, "url": f"{base}/{name}",
             "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
         })
-        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), (label, None)]))
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), (label, None)], current=f"{base}/{name}"))
     elif name == "404":
         graphs.append({
             "@context": "https://schema.org", "@type": "WebPage",
@@ -321,7 +332,7 @@ def hub_jsonld(name: str, cfg: dict) -> str:
             "name": label, "url": f"{base}/{name}",
             "isPartOf": {"@type": "WebSite", "name": brand, "url": f"{base}/"},
         })
-        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), (label, None)]))
+        graphs.append(breadcrumb_ld(base, brand, [(brand, "/"), (label, None)], current=f"{base}/{name}"))
 
     return "\n".join(f'<script type="application/ld+json">{json.dumps(g, ensure_ascii=False)}</script>' for g in graphs)
 
@@ -685,7 +696,23 @@ def fill(s: str) -> str:
     s = s.replace("{{GAME_COUNT}}", NUM_WORDS.get(n, str(n)))
     s = s.replace("{{GAME_COUNT_CAP}}", NUM_WORDS.get(n, str(n)).capitalize())
     s = s.replace("{{GAME_NAMES}}", ", ".join(names[:-1]) + " and " + names[-1] if n > 1 else "".join(names))
+    # 同一份名单,每个名字链到该游戏 hub 的默认入口(config: slug + default_path)
+    links = [f'<a href="/{g["slug"]}{g["default_path"]}">{esc(g["name"])}</a>' for g in CFG["games"]]
+    s = s.replace("{{GAME_LINKS}}", ", ".join(links[:-1]) + " and " + links[-1] if n > 1 else "".join(links))
     return re.sub(r"\{\{T:(\w+)\}\}", lambda m: esc(T[m.group(1)]), s)
+
+
+def hub_sizes_html():
+    """各 hub 的规模一句话:页数来自全站索引的实际统计(与首页卡片同口径),语种列表来自配置层
+    card.langs(与卡片上显示的一致)。手写数字必然过期,所以这里不接受任何硬编码。"""
+    parts = []
+    for gi in INDEX.games:
+        langs = (gi.card or {}).get("langs", "")
+        n = gi.page_count
+        parts.append(f'<a href="{esc(gi.home_route)}">{esc(gi.name)}</a> &mdash; '
+                     f'{n} {esc(T["pages_count"].format(n="").strip())}'
+                     + (f' ({esc(langs)})' if langs else ""))
+    return "; ".join(parts)
 
 
 def render_hub_pages(site):
@@ -697,7 +724,11 @@ def render_hub_pages(site):
                                                      placeholder=T["search_all_placeholder"]), t=T)
     ft_links = [(T[k], h) for k, h in CFG["intent_nav"]] + [
         (n, h) for n, h in T["trust"] if h not in dict(CFG["intent_nav"]).values()]
-    ft = shell.footer(brand=CFG["brand"], year=TODAY[:4], links=ft_links, note=T["footer_note"])
+    req = site["request"]
+    ft = shell.footer(brand=CFG["brand"], year=TODAY[:4], links=ft_links, note=T["footer_note"],
+                      extra=shell.request_link(email=req["email"], brand=req["brand"], t=T))
+    req_block = shell.request_block(games=req["games"], current="", lang="en", key=req["key"],
+                                    email=req["email"], brand=req["brand"], t=T)
 
     for page in sorted((ROOT / "hub" / "pages").glob("*.html")):
         name = page.stem
@@ -710,6 +741,7 @@ def render_hub_pages(site):
                     .replace("{{ALL_GUIDES}}", all_guides_html())
                     .replace("{{UPDATES_FEED}}", feed_html(INDEX.recent(80, lang="en")))
                     .replace("{{UPDATES_STATS}}", updates_stats_html())
+                    .replace("{{HUB_SIZES}}", hub_sizes_html())
                     .replace("{{TOOLS_LIST}}", tools_html() if name == "tools" else ""))
         path = meta["path"]
         page_url = BASE + (path if path != "/" else "/")
@@ -732,8 +764,10 @@ def render_hub_pages(site):
                     + body.replace("{{HERO}}", hero_html(meta)) + "\n</main>")
         else:
             crumb_html, _ld = shell.crumbs([(CFG["brand"], "/"), (meta["h1"], None)], BASE,
-                                           label=T["breadcrumb"])
+                                           label=T["breadcrumb"], current=page_url)
             bl = shell.byline(author=T["site_author"], author_href="/about", reviewed=TODAY, t=T)
+            # 这些页没有右栏(no-rail):「提需求」入口只走页脚链接 + 浮动按钮(桌面端也显示,同首页),
+            # 不为一张卡片硬加一个右栏。
             main = (f'<main class="layout no-nav no-rail" id="main">\n{crumb_html}\n'
                     f'<div class="doc-hd"><h1>{esc(meta["h1"])}</h1>{bl}</div>\n'
                     f'<div class="doc"><div class="prose">{body}</div></div>\n</main>')
@@ -744,7 +778,7 @@ def render_hub_pages(site):
                 .replace("{{HEAD_EXTRA}}", head_scripts(ads=(name != "404")))
                 .replace("{{HEADER}}", header)
                 .replace("{{MAIN}}", main)
-                .replace("{{SCRIPTS}}", shell.SEARCH_JS)
+                .replace("{{SCRIPTS}}", req_block + shell.SEARCH_JS)
                 .replace("{{FOOTER}}", ft))
         if name == "index":
             (OUT / "index.html").write_text(html, encoding="utf-8")
@@ -775,6 +809,7 @@ def gen_root_files():
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8"
     )
     urls = []
+    canon_re = re.compile(r'<link\s+rel="canonical"[^>]*\bhref="([^"]*)"', re.I)
     for p in sorted(OUT.rglob("*.html")):
         rel = p.relative_to(OUT)
         if rel.name == "404.html":
@@ -786,7 +821,16 @@ def gen_root_files():
                 loc = "/"
         else:
             loc = "/" + str(rel)[:-5]  # cleanUrls: 去掉 .html
-        urls.append(f"  <url><loc>{BASE}{loc}</loc><lastmod>{LASTMOD.get(loc, TODAY)}</lastmod></url>")
+        # <loc> 必须等于页面自己的 canonical:总站自有页 canonical 是 /about(无尾斜杠),
+        # beast 语种根是 /beast-of-reincarnation/fr(子站产出),而 index.html 按目录算出来的是 /about/。
+        # 两者不一致时 Google 抓 sitemap 里那条,再按 canonical 归并 → GSC 报「备用网页(有适当的规范标记)」
+        # (2026-09-24:/privacy-policy/ /beast-of-reincarnation/fr/ /beast-of-reincarnation/ja/ 就是这么来的)。
+        lastmod = LASTMOD.get(loc, TODAY)  # LASTMOD 按目录路由记,先取再改写 loc
+        m = canon_re.search(p.read_text(encoding="utf-8")[:6000])
+        href = m.group(1).strip() if m else ""
+        if href.startswith(BASE + "/") and href[len(BASE):] != loc:
+            loc = href[len(BASE):]
+        urls.append(f"  <url><loc>{BASE}{loc}</loc><lastmod>{lastmod}</lastmod></url>")
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -895,6 +939,7 @@ def main():
         "nav_games": nav_games(),
         "nav_intents": nav_intents(),
         "font_links": font_links(),
+        "request": request_ctx(),
     }
     # 索引:快照游戏与原生游戏都在渲染时回填,最后按 config 顺序排回去
     render_snapshot_games(site)

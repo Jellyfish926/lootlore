@@ -687,9 +687,10 @@ class NativeLang(EntityBox, HubBodyMixin):
         if extra_title is not None:
             items.append((extra_title, None))
         elif p.type == "article":
+            # 栏目页没上线就不插这一级:Google 只允许最后一项省略 item,中间级无链接 = 严重问题
             c = self.cat_of(p)
-            if c is not None:
-                items.append((c.get("category"), self.route(c) if self.is_live(c.slug) else None))
+            if c is not None and self.is_live(c.slug):
+                items.append((c.get("category"), self.route(c)))
             items.append((p.get("title"), None))
         elif p.type in ("category", "author"):
             items.append((p.get("category") if p.type == "category" else p.get("title"), None))
@@ -923,7 +924,13 @@ class NativeLang(EntityBox, HubBodyMixin):
             links.append((t["author"], self.route(self.author_page)))
         links.append((t["all_articles"], self.route_slug("all")))
         return shell.footer(brand=self.cfg["brand"], year=self.site["year"],
-                            links=links, note=t["footer_note"])
+                            links=links, note=t["footer_note"],
+                            extra=shell.request_link(game=self.g["name"], t=t, **self.req_ctx()))
+
+    def req_ctx(self):
+        """提需求件的站级参数(邮箱 / Web3Forms key / 品牌),来自 build.py 算好的 site["request"]。"""
+        r = self.site["request"]
+        return {"email": r["email"], "brand": r["brand"]}
 
     # ------------------------------------------------------------ shell
     def shell(self, *, lang_code, head, crumbs_html, h1, byline, langsw, aside, body,
@@ -933,6 +940,10 @@ class NativeLang(EntityBox, HubBodyMixin):
             '<input type="checkbox" id="navtoggle" class="navtoggle">'
             f'<label class="navtoggle-l" for="navtoggle"><span aria-hidden="true">&#9776;</span> '
             f'{esc(t["open_menu"])}</label>')
+        # 有右栏的页在右栏末尾挂「提需求」卡片;没有右栏内容的页保持 no-rail,
+        # 入口只走页脚链接 + 浮动按钮(hub.css: main.no-rail~.req-fab 桌面端也显示),不为一张卡片硬加右栏。
+        if aside:
+            aside += shell.request_card(game=self.g["name"], t=t, **self.req_ctx())
         aside_html = f'<aside class="rail">{aside}</aside>' if aside else ""
         # rail_last:右栏只是「最近更新」这类小组件时,窄屏把它排到正文之后
         #(速查信息框那种才值得挤在 h1 下面)
@@ -955,7 +966,9 @@ class NativeLang(EntityBox, HubBodyMixin):
                 .replace("{{HEAD_EXTRA}}", self.site["head_extra"])
                 .replace("{{HEADER}}", self.header())
                 .replace("{{MAIN}}", main)
-                .replace("{{SCRIPTS}}", scripts)
+                .replace("{{SCRIPTS}}", shell.request_block(
+                    games=self.site["request"]["games"], current=self.g["slug"], lang=lang_code,
+                    key=self.site["request"]["key"], t=t, **self.req_ctx()) + scripts)
                 .replace("{{FOOTER}}", self.footer()))
 
     def head_common(self, *, title, desc, page_url, og_type, im, slug, graphs, extra=()):
@@ -1040,6 +1053,11 @@ class NativeLang(EntityBox, HubBodyMixin):
                 if all(sl) and all(self.pages.get(self._internal_slug(h) or "", None) is not None
                                    and self.pages[self._internal_slug(h)].type == "category" for _, h in sl):
                     i += 1
+                    # 这张列表是该小节的全部内容(紧跟标题,后面直接是下一个同级/更高级标题或文末)
+                    # 时,标题一起丢——不然折叠段里留下一个空的 <h2>(2026-09-24 /valheim/ 的「All sections」)
+                    if out and out[-1]["t"] == "h" and (
+                            i >= len(blocks) or (blocks[i]["t"] == "h" and blocks[i]["level"] <= out[-1]["level"])):
+                        out.pop()
                     continue  # hub 的栏目 tile 由数据渲染
             out.append(b)
             i += 1

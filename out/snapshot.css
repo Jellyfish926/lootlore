@@ -24,7 +24,7 @@
 .sn-body .doc{grid-area:auto}
 
 /* ---------- 2. 首屏区块 / 一句话 / 元信息 ---------- */
-.sn-body .kicker,.sn-body .eyebrow,.sn-body .cat-h,.sn-body .sec-sub,.sn-body .progress{
+.sn-body .kicker,.sn-body .eyebrow,.sn-body .sec-sub,.sn-body .progress{
   color:var(--accent);font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;
   margin:0 0 8px;font-weight:600;line-height:1.4}
 .sn-body .sec-sub,.sn-body .cat-note{color:var(--dim);letter-spacing:0;text-transform:none;
@@ -167,7 +167,9 @@
 .sn-body .row{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 14px}
 .sn-body .field{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1 1 200px}
 .sn-body label{color:var(--mut);font-size:.9375rem;line-height:1.4}
-.sn-body .lbl{color:var(--dim);font-size:var(--fs-lbl);letter-spacing:.06em;text-transform:uppercase}
+/* 表单字段的小标题只认 .field 直下的 .lbl;子站勾选项里的 .lbl 是标题+说明的文字块,
+   不能被这条大写/缩小(2026-09-24 shift 完成度追踪器 46 项曾被渲染成一段全大写内联长文) */
+.sn-body .field>.lbl{color:var(--dim);font-size:var(--fs-lbl);letter-spacing:.06em;text-transform:uppercase}
 .sn-body select,.sn-body input[type=text],.sn-body input[type=number],.sn-body textarea{
   background:var(--bg2);color:var(--ink);border:var(--box-bd);border-radius:var(--rad-sm);
   padding:7px 10px;font:inherit;font-size:.9375rem;max-width:100%}
@@ -180,7 +182,21 @@
 .sn-body .tool-out,.sn-body .planner-out,.sn-body .result{background:var(--band-soft);
   border:var(--box-bd);border-left:3px solid var(--accent);border-radius:var(--rad-sm);
   padding:var(--box-pad);margin:14px 0 0}
-.sn-body .tool-check{color:var(--accent);font-weight:600}
+/* 勾选清单行:<label class="tool-check"><input type=checkbox><span class="lbl"><span class="t">标题</span><span class="d">说明</span></span></label>
+   —— 皮肤对齐 §11 的 .tracker-list 行;标题行 .cat-h 是「h3 + 计数」的一行两端对齐 */
+.sn-body .tool-check{display:flex;align-items:flex-start;gap:11px;padding:10px 4px;min-width:0;
+  border-bottom:1px solid var(--line);cursor:pointer;color:var(--mut);font-size:.9375rem;line-height:1.4}
+.sn-body .tool-check:last-of-type{border-bottom:0}
+.sn-body .tool-check:hover{background:var(--band-soft)}
+.sn-body .tool-check input[type=checkbox]{margin:2px 0 0}
+.sn-body .tool-check .lbl{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1 1 auto}
+.sn-body .tool-check .t{color:var(--ink);font-weight:600}
+.sn-body .tool-check .d{color:var(--dim);font-size:var(--fs-lbl);line-height:1.45}
+.sn-body .tool-check input:checked~.lbl .t{color:var(--dim);text-decoration:line-through}
+.sn-body .cat-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  margin:0 0 6px}
+.sn-body .cat-h h2,.sn-body .cat-h h3{margin:0}
+.sn-body .cat-h .meta{margin:0;white-space:nowrap}
 .sn-body .bar-track{background:var(--bg2);border:var(--box-bd);border-radius:var(--rad-pill);
   height:10px;overflow:hidden;margin:6px 0}
 .sn-body .bar-fill{background:var(--accent);height:100%}

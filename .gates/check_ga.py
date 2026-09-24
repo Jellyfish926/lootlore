@@ -13,6 +13,20 @@ ga4_id 非空时(全部是 E,红一条就阻塞):
                  快照正文里子站自己的脚本会抢在它前面跑,首屏浏览量漏报
   E NO_HEAD      页面里找不到成对的 <head>…</head>
 
+与 ga4_id 是否为空无关(Consent Mode v2 默认值每页必有,AdSense 也吃这个信号):
+  E CONSENT_REGION   gtag('consent','default',{…region:[…]}) 那条(EEA/UK/CH 用的 denied)不是恰好 1 次
+  E CONSENT_FALLBACK gtag('consent','default',{…}) 不带 region 的兜底那条不是恰好 1 次
+                     (0 次 = 非弹窗地区没有默认值,Google CMP 只更新弹窗用户,其余全按「未知」处理)
+  E CONSENT_ORDER    consent 段没有排在 adsbygoogle.js / gtag/js?id= / gtag('config') 之前(按字节偏移比)
+                     —— 顺序反了 default 就不生效(Google:「If your consent code is called out of order,
+                     consent defaults won't work」)
+  E CONSENT_NOT_IN_HEAD  consent 段不在 <head>…</head> 里
+  E DATALAYER_INIT   window.dataLayer=window.dataLayer||[] 不是恰好 1 次(≥2 = dataLayer/gtag 定义重复,
+                     多半是 GA 片段又把定义抄了一遍;0 = 没有 consent 段)
+  E ADS_ON_404       404.html 里出现 adsbygoogle —— AdSense 政策不许错误页带广告代码(提审前检查会阻塞);
+                     404 只留 consent 段 + GA 片段。CONSENT_ORDER 只比对页里实际出现的脚本,404 没有
+                     adsbygoogle 时不会误报
+
 ga4_id 为空时(等于「本站不接 GA4」):
   E LEFTOVER_ID    out/ 里还能扫到 G-XXXXXXXXXX
   E LEFTOVER_GTAG  out/ 里还留着 gtag.js 外链或 gtag('config') 内联片段
@@ -35,6 +49,11 @@ BODY_OPEN_RE = re.compile(r"<body\b[^>]*>", re.I)
 # 没配 ga4_id 时用的"任意 ID"版本:只要还有 gtag 片段就算残留
 GTAG_JS_ANY_RE = re.compile(r"googletagmanager\.com/gtag/js", re.I)
 GTAG_CFG_ANY_RE = re.compile(r"gtag\(\s*['\"]config['\"]", re.I)
+# Consent Mode v2:default 命令(整条,到分号为止;对象字面量里没有分号)
+CONSENT_DEFAULT_RE = re.compile(r"gtag\(\s*['\"]consent['\"]\s*,\s*['\"]default['\"]\s*,\s*\{[^;]*?\}\s*\)", re.I | re.S)
+CONSENT_REGION_RE = re.compile(r"\bregion\s*:\s*\[", re.I)
+ADSENSE_JS_RE = re.compile(r"pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js", re.I)
+DATALAYER_INIT_RE = re.compile(r"window\.dataLayer\s*=\s*window\.dataLayer\s*\|\|\s*\[\s*\]")
 
 
 def gtag_js_re(gid: str):
@@ -76,6 +95,43 @@ def main():
                 e[1].append(rel)
 
     htmls = [p for p in files if p.suffix.lower() == ".html"]
+    # 二、Consent Mode v2 默认值:每页两条 default 各 1 次、都在 <head>、排在所有 Google 脚本之前、
+    #     dataLayer 只初始化一次。不看 ga4_id —— AdSense 单独也要吃这个信号。
+    for p in htmls:
+        rel = str(p.relative_to(out))
+        t = p.read_text(encoding="utf-8", errors="replace")
+        ho = HEAD_OPEN_RE.search(t)
+        hc = HEAD_CLOSE_RE.search(t, ho.end()) if ho else None
+        defaults = list(CONSENT_DEFAULT_RE.finditer(t))
+        with_region = [m for m in defaults if CONSENT_REGION_RE.search(m.group(0))]
+        fallback = [m for m in defaults if not CONSENT_REGION_RE.search(m.group(0))]
+        if len(with_region) != 1:
+            errs.append(("CONSENT_REGION", rel,
+                         f"带 region 的 gtag('consent','default') {len(with_region)} 次(应恰好 1 次)"))
+        if len(fallback) != 1:
+            errs.append(("CONSENT_FALLBACK", rel,
+                         f"不带 region 的兜底 gtag('consent','default') {len(fallback)} 次(应恰好 1 次)"))
+        if rel == "404.html":
+            n_ads = len(re.findall(r"adsbygoogle", t, re.I))
+            if n_ads:
+                errs.append(("ADS_ON_404", rel, f"出现 adsbygoogle {n_ads} 处(错误页不许带广告代码,应 0 处)"))
+        n_dl = len(DATALAYER_INIT_RE.findall(t))
+        if n_dl != 1:
+            errs.append(("DATALAYER_INIT", rel,
+                         f"window.dataLayer=window.dataLayer||[] {n_dl} 次(应恰好 1 次)"
+                         + ("  ← dataLayer/gtag 重复定义" if n_dl > 1 else "")))
+        if not defaults:
+            continue
+        first, last = defaults[0].start(), defaults[-1].end()
+        if ho and hc and not (ho.end() <= first and last <= hc.start()):
+            errs.append(("CONSENT_NOT_IN_HEAD", rel, f"consent 段不在 <head>…</head> 内(偏移 {first})"))
+        for what, rx in (("adsbygoogle.js", ADSENSE_JS_RE), ("gtag/js?id=", GTAG_JS_ANY_RE),
+                         ("gtag('config')", GTAG_CFG_ANY_RE)):
+            for m in rx.finditer(t):
+                if m.start() < last:
+                    errs.append(("CONSENT_ORDER", rel,
+                                 f"{what}(偏移 {m.start()})排在 consent default 段(结束于 {last})之前"))
+                    break
     if gid:
         for k in sorted(hits):
             if k == gid:

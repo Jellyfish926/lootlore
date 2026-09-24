@@ -132,6 +132,8 @@ python3 build.py
 
 **sitemap**:原生页 `lastmod = reviewed ?? updated ?? date`,其余页仍用构建日。
 
+**Consent Mode v2 默认值**:每页 `<head>` 里由 `build.py:head_scripts()` 统一注入,顺序固定 consent default → AdSense → gtag.js → `gtag('config')`。同意弹窗用的是 Google 自家 CMP(AdSense「欧洲法规消息」,只对 EEA/UK/瑞士弹),它只更新弹窗用户的同意状态,所以非弹窗地区的默认值必须站点自己设:`CONSENT_DENIED_REGIONS`(EEA 30 国 + GB + CH)那条全 denied 并 `wait_for_update:500` 等 CMP 回写,不带 region 的兜底条全 granted。这段必须排在所有 Google 脚本之前——gtag.js / adsbygoogle.js 一旦先跑,default 就不生效(Google 文档原话:「If your consent code is called out of order, consent defaults won't work」);dataLayer / gtag 的定义也只在这一段里出现一次,GA 片段不再重复定义。`ga4_id` 留空时 consent 段照常输出(AdSense 也吃这个信号)。`404.html` 走 `head_scripts(ads=False)`:AdSense 政策不许错误页带广告代码,404 只留 consent 段 + GA 片段(`check_ga` 的 `ADS_ON_404` 断言兜底)。
+
 **门禁**(与 gates.yml 一致):`check_content.py … --dir-lang <game>/<locale>=<lang>`(单语种非英文游戏目录的 lang 判定)、`check_i18n.py --games …,<game>`(单语种会明确打印跳过)、
-`check_ga.py --out out`(GA4 只许 `config/hub.json` 的 `ga4_id` 那一个 ID,每页外链 + 内联各恰好 1 次且都在 `<head>`;`ga4_id` 留空则产物里一处都不许有)、
+`check_ga.py --out out`(GA4 只许 `config/hub.json` 的 `ga4_id` 那一个 ID,每页外链 + 内联各恰好 1 次且都在 `<head>`;`ga4_id` 留空则产物里一处都不许有;另查 Consent Mode v2 默认值:带 region 的 denied 条 + 不带 region 的 granted 兜底条每页各恰好 1 次、`window.dataLayer=…||[]` 恰好 1 次、consent 段按字节偏移排在 adsbygoogle.js / gtag.js / `gtag('config')` 之前)、
 `check_sitemap.py`、`link_check.py`;另有只报告的 `tech_audit.py --out out --base <域名> --prefix /<game>/ --summary`(title/description 按显示宽度,CJK 记 2)。

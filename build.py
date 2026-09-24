@@ -123,15 +123,57 @@ def load(p: Path) -> str:
     return p.read_text(encoding="utf-8")
 
 
+# Consent Mode v2 默认值只对这些地区设 denied(其余地区兜底 granted)。
+# 口径 = EEA 30 国(EU 27 + 冰岛 IS / 列支敦士登 LI / 挪威 NO)+ 英国 GB + 瑞士 CH,
+# 即 Google 自家 CMP(AdSense「欧洲法规消息」)会弹窗的那一组 —— CMP 只更新弹窗用户的同意状态,
+# 非弹窗地区的默认值必须由站点自己设,所以两条 default 缺一不可。
+# region 写法按 Google 文档 https://developers.google.com/tag-platform/security/guides/consent
+# 用 ISO 3166-2(国家级即 alpha-2),更具体的 region 优先、无 region 的那条覆盖其余访客。
+CONSENT_DENIED_REGIONS = [
+    # EU 27
+    "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
+    "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
+    # EEA 非 EU 三国
+    "IS", "LI", "NO",
+    # 英国 + 瑞士
+    "GB", "CH",
+]
+
+
+def consent_default_snippet() -> str:
+    """Consent Mode v2 默认值。必须在 gtag.js、AdSense(adsbygoogle.js)与任何 gtag('config')
+    之前执行(Google:「call gtag('consent','default') on every page before any commands that
+    send measurement data」),所以 dataLayer / gtag 的定义也提到这里,GA 片段不再重复定义。
+    wait_for_update=500:给 CMP 500ms 调 gtag('consent','update') 再放行标签(文档示例值)。"""
+    regions = ",".join(f"'{r}'" for r in CONSENT_DENIED_REGIONS)
+    return (
+        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}\n"
+        "gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',"
+        f"analytics_storage:'denied',wait_for_update:500,region:[{regions}]}});\n"
+        "gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',"
+        "analytics_storage:'granted'});</script>\n"
+    )
+
+
 def hub_ga_snippet() -> str:
+    """GA4:只剩 gtag.js 外链 + js/config;dataLayer/gtag 的定义在 consent_default_snippet() 里。"""
     gid = CFG.get("ga4_id", "")
     if not gid:
         return ""
     return (
         f'<script async src="https://www.googletagmanager.com/gtag/js?id={gid}"></script>\n'
-        "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
-        f"gtag('js',new Date());gtag('config','{gid}');</script>\n"
+        f"<script>gtag('js',new Date());gtag('config','{gid}');</script>\n"
     )
+
+
+def head_scripts(ads: bool = True) -> str:
+    """每页 <head> 里的三方脚本,顺序固定:consent default → AdSense → gtag.js → config。
+    ga4_id 为空时 consent 段照常输出(AdSense 也吃 consent 信号),只是没有 GA 片段。
+    ads=False 用于 404 页:AdSense 政策不许错误页带广告代码(提审前检查会阻塞),
+    consent 段与 GA 片段照常保留 —— 404 也要统计。"""
+    ads_line = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+                f'?client=ca-{CFG["adsense_pub"]}" crossorigin="anonymous"></script>\n') if ads else ""
+    return consent_default_snippet() + ads_line + hub_ga_snippet()
 
 
 def transform_urls(html: str, game: dict) -> str:
@@ -648,9 +690,6 @@ def fill(s: str) -> str:
 
 def render_hub_pages(site):
     write_hub_css()
-    ads = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-           f'?client=ca-{CFG["adsense_pub"]}" crossorigin="anonymous"></script>')
-    head_extra = ads + "\n" + hub_ga_snippet()
     tpl = load(ROOT / "hub" / "hub_page.html")
     header = shell.site_nav(brand=CFG["brand"], games=site["nav_games"], intents=site["nav_intents"],
                             search=shell.search_form(action="/guides", index_url="/search-index.json",
@@ -702,7 +741,7 @@ def render_hub_pages(site):
         html = (tpl.replace("{{LANG}}", "en")
                 .replace("{{HEAD}}", "\n".join(head))
                 .replace("{{FONTS}}", site["font_links"])
-                .replace("{{HEAD_EXTRA}}", head_extra)
+                .replace("{{HEAD_EXTRA}}", head_scripts(ads=(name != "404")))
                 .replace("{{HEADER}}", header)
                 .replace("{{MAIN}}", main)
                 .replace("{{SCRIPTS}}", shell.SEARCH_JS)
@@ -852,9 +891,7 @@ def main():
     OUT.mkdir()
     site = {
         "base": BASE, "today": TODAY, "year": TODAY[:4],
-        "head_extra": (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/'
-                       f'adsbygoogle.js?client=ca-{CFG["adsense_pub"]}" crossorigin="anonymous">'
-                       f"</script>\n" + hub_ga_snippet()),
+        "head_extra": head_scripts(),
         "nav_games": nav_games(),
         "nav_intents": nav_intents(),
         "font_links": font_links(),

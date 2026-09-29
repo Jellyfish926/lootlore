@@ -9,11 +9,11 @@
  "default": "th3",
  "pages": {
   "index": "th3",
-  "getting-started": "th2",
+  "getting-started": "th4",
   "author": "th1",
   "codes": "th1",
   "beginner": "th4",
-  "game-info": "th1",
+  "game-info": "icon",
   "cheats-bans": "th3",
   "money-gear": "th1",
   "jobs": "th4",

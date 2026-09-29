@@ -32,9 +32,10 @@ html[lang^="zh"] .prevnext .pn span{letter-spacing:.02em}
 .qf-lead{margin:0;padding:9px 13px;border-top:var(--box-bd);
   color:var(--mut);font-size:.875rem;line-height:1.55}
 .qf dl{margin:0;padding:0}
-.qf-r{display:grid;grid-template-columns:96px minmax(0,1fr);gap:0;border-top:var(--box-bd);align-items:baseline}
+.qf-r{display:grid;grid-template-columns:118px minmax(0,1fr);gap:0;border-top:var(--box-bd);align-items:baseline}
 .qf-r dt{padding:7px 12px;color:var(--ink);font-size:var(--fs-lbl);font-weight:600;
-  line-height:var(--lh-tight);background:color-mix(in srgb,var(--line) 32%,transparent);overflow-wrap:anywhere}
+  line-height:var(--lh-tight);background:color-mix(in srgb,var(--line) 32%,transparent);
+  overflow-wrap:break-word;word-break:normal;hyphens:auto}
 .qf-r dd{margin:0;padding:7px 12px;color:var(--mut);font-size:.875rem;
   overflow-wrap:break-word;word-break:normal;line-height:var(--lh-tight)}
 .qf-r dd a{overflow-wrap:anywhere}

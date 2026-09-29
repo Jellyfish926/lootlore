@@ -13,7 +13,7 @@ tldr: ["BlockSpin is published by the Roblox group Cinnamon Go!, owned and manag
 entity: "blockspin-game"
 related: ["beginner", "codes", "cheats-bans"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://games.roblox.com/v1/games/votes?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/brands", "https://devforum.roblox.com/t/increase-in-playstation-crashes/3936850", "https://devforum.roblox.com/t/cinnamon-software-is-hiring-roblox-developers-artists-ui-designers-and-producers/4777100"]
-images: ["th1"]
+images: ["icon", "th1"]
 date: "2026-09-29"
 updated: "2026-09-29"
 reviewed: "2026-09-29"

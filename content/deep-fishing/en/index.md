@@ -9,8 +9,8 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Site entry point"
 type: "home"
-tldr: ["Deep Fishing is a Roblox fishing simulator by LazyGames.: cast as far as you can, haul several fish, sell, upgrade, repeat.", "Farther water holds rarer fish, so rods and Strength come before luck.", "The rod ladder has 21 rods, from the Iron Rod to the Galaxy Rod.", "Only about 8 in 100 badge holders have ever caught a Secret fish."]
-faq: [["Who made Deep Fishing?", "The Roblox group LazyGames., owned by the verified account JoJocraftHP. The experience was created on 18 July 2026 — see [community links](/deep-fishing/discord/)."], ["What is the best rod in Deep Fishing?", "The Galaxy Rod is the last and most expensive of the 21 rods on the regular ladder, at 6,499 Robux to unlock on 29 September 2026. The full order is on the [rod list](/deep-fishing/rods/)."], ["How rare are Secret fish?", "About 7.9 of every 100 players with the Welcome badge have the First Secret badge, against 48.3 for First Legendary — see [rarity tiers](/deep-fishing/rarity/)."], ["Are there Deep Fishing codes?", "Code lists circulate on other sites, but we could not confirm any from an official LazyGames post, so we do not list them. The [community page](/deep-fishing/discord/) explains why."], ["How many players can join a server?", "Up to 12 per server, according to the Roblox listing. Private servers were not enabled when we checked — [how to play](/deep-fishing/how-to-play/)."]]
+tldr: ["Deep Fishing is a Roblox fishing simulator: cast as far as you can, haul several fish, sell, upgrade, repeat. The developer is the group LazyGames.", "Farther water holds rarer fish, so rods and Strength come before luck.", "The rod ladder has 21 rods, from the Iron Rod to the Galaxy Rod.", "Only about 8 in 100 badge holders have ever caught a Secret fish."]
+faq: [["Who made Deep Fishing?", "A Roblox group owned by the verified account JoJocraftHP and named LazyGames. The experience was created on 18 July 2026 — see [community links](/deep-fishing/discord/)."], ["What is the best rod in Deep Fishing?", "The Galaxy Rod is the last and most expensive of the 21 rods on the regular ladder, at 6,499 Robux to unlock on 29 September 2026. The full order is on the [rod list](/deep-fishing/rods/)."], ["How rare are Secret fish?", "About 7.9 of every 100 players with the Welcome badge have the First Secret badge, against 48.3 for First Legendary — see [rarity tiers](/deep-fishing/rarity/)."], ["Are there Deep Fishing codes?", "Code lists circulate on other sites, but we could not confirm any from an official LazyGames post, so we do not list them. The [community page](/deep-fishing/discord/) explains why."], ["How many players can join a server?", "Up to 12 per server, according to the Roblox listing. Private servers were not enabled when we checked — [how to play](/deep-fishing/how-to-play/)."]]
 related: []
 sourceUrls: []
 images: ["art01", "art03"]
@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # Deep Fishing Roblox Guide: Rods, Rarity and Badges
 
-Deep Fishing is a Roblox fishing simulator by the group LazyGames., launched on 18 July 2026. You hold and release to cast as far as possible, haul in several fish per throw, sell them, and upgrade Strength and rods to reach farther water, where the rarer fish are. This guide covers rods, passes, rarity and badges from official data.
+Deep Fishing is a Roblox fishing simulator launched on 18 July 2026 by the group LazyGames. You hold and release to cast as far as possible, haul in several fish per throw, sell them, and upgrade Strength and rods to reach farther water, where the rarer fish are. This guide covers rods, passes, rarity and badges from official data.
 
 The game had passed 5.4 million visits and 112,000 favourites by 29 September 2026, with 18,732 likes against 679 dislikes. Every number on this site comes from Roblox's own data for the game and shows the date we checked it.
 

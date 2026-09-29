@@ -123,8 +123,8 @@
     ]
   ],
   "footer_note": "Unofficial fan guide, not affiliated with the game's developer or publisher. Game names, screenshots and trademarks belong to their respective owners.",
-  "all_page_seo": "All {game} guides",
-  "all_page_desc": "A plain list of every published {game} guide on this site, grouped by section.",
+  "all_page_seo": "All {game} Guides: Every Page by Section | {brand}",
+  "all_page_desc": "Every published {game} guide on {brand} in one plain list, grouped by section with direct links. Use it to browse the full index if site search is down.",
   "all_page_intro": "Every published guide, grouped by section. Use this page if search is unavailable.",
   "menu": "Menu",
   "main_nav": "Main navigation",

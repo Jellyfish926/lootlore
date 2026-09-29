@@ -163,17 +163,23 @@ def game_nav(*, game_name, game_href, subtitle="", cover=None, sections, tools=(
         idx = (f'<div class="sn-g"><p class="sn-t">{esc(t["guide_index"])}</p>'
                + "".join(accs) + "</div>")
 
-    def group(label, rows):
+    def group(label, rows, fold=False):
         if not rows:
             return ""
         lis = "".join(
-            f'<li><a href="{esc(h)}"' + (' aria-current="page" class="on"' if k and k == current else "")
+            f'<li><a href="{esc(h)}"' + (' aria-current="page" class="on"' if current and current in (k, h) else "")
             + f">{esc(n)}</a></li>" for n, h, k in rows)
+        if fold and len(rows) > 2:
+            # 链接多的组(About:作者页 + 信任页)折叠成与 Guide index 同款的手风琴:
+            # 侧栏是 sticky + 视口高度,展开的栏目一长,末尾的组会被截在视口外(2026-09-29 验收退回)。
+            here = bool(current) and any(current in (k, h) for _n, h, k in rows)
+            return (f'<div class="sn-g"><details class="sn-acc sn-fold"{" open" if here else ""}>'
+                    f'<summary>{esc(label)}<span>{len(rows)}</span></summary><ul>{lis}</ul></details></div>')
         return f'<div class="sn-g"><p class="sn-t">{esc(label)}</p><ul>{lis}</ul></div>'
 
     return (f'<nav class="sidenav" id="sidenav" aria-label="{esc(t["site_nav"])}">'
             + "".join(head) + qa + idx + group(t["tools_group"], tools)
-            + group(t["about_group"], about) + "</nav>")
+            + group(t["about_group"], about, fold=True) + "</nav>")
 
 
 # ---------------------------------------------------------------- 右栏小组件

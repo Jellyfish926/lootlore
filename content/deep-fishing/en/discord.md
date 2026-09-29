@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Group and experience data from Roblox APIs; Discord data from Discord's public invite endpoint, all on 2026-09-29"
 type: "article"
-tldr: ["Deep Fishing is made by the Roblox group LazyGames., owned by the verified account JoJocraftHP.", "The game's own description asks players to join the group for rewards and updates.", "A Discord server named Deep Fishing describes itself as the official server; we could not see the Roblox page's social links to cross-check it.", "There is no official wiki; the Fandom wiki had two empty pages when we checked."]
+tldr: ["Deep Fishing is made by a Roblox group owned by the verified account JoJocraftHP and named LazyGames.", "The game's own description asks players to join the group for rewards and updates.", "A Discord server named Deep Fishing describes itself as the official server; we could not see the Roblox page's social links to cross-check it.", "There is no official wiki; the Fandom wiki had two empty pages when we checked."]
 related: ["how-to-play", "shop", "badges"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/34744238", "https://games.roblox.com/v1/games?universeIds=10526853622", "https://discord.com/api/v9/invites/fxjhB8BHeh?with_counts=true", "https://deepfishing.fandom.com/api.php?action=query&list=allpages"]
 images: ["art02"]
@@ -22,7 +22,7 @@ author: "Jellyfi"
 ---
 # Deep Fishing Discord, Roblox Group and Wiki Links
 
-Deep Fishing is made by the Roblox group LazyGames., which had 269,222 members on 29 September 2026 and is owned by the verified account JoJocraftHP. The game's description tells players to join that group "for rewards and updates". A Discord server called Deep Fishing describes itself as the official one; there is no official wiki.
+The Roblox group behind Deep Fishing had 269,222 members on 29 September 2026 and is owned by the verified account JoJocraftHP. Its name is LazyGames. The game's description tells players to join that group "for rewards and updates". A Discord server called Deep Fishing describes itself as the official one; there is no official wiki.
 
 This page records exactly what each link is, what it said on the day we checked, and which parts we could not confirm.
 

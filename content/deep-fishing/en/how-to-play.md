@@ -7,7 +7,7 @@ description: "How to play Deep Fishing on Roblox: hold and release to cast, catc
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-09-29"
-scope: "Roblox experience Deep Fishing by LazyGames., as listed on 2026-09-29; later updates can change menus and numbers"
+scope: "Roblox experience Deep Fishing as listed on 2026-09-29, made by the group LazyGames. Later updates can change menus and numbers"
 type: "article"
 tldr: ["Hold and release to cast, and the line only starts fishing once it reaches the water.", "One cast can bring back several fish at once; you sell them for coins.", "Coins and upgrades push your cast further, and further water holds rarer fish.", "Strength is the stat the developer names for throwing farther — start there."]
 entity: "deep-fishing"

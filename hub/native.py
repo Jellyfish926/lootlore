@@ -954,14 +954,16 @@ class NativeLang(EntityBox, HubBodyMixin):
             '<input type="checkbox" id="navtoggle" class="navtoggle">'
             f'<label class="navtoggle-l" for="navtoggle"><span aria-hidden="true">&#9776;</span> '
             f'{esc(t["open_menu"])}</label>')
-        # 有右栏的页在右栏末尾挂「提需求」卡片;没有右栏内容的页保持 no-rail,
-        # 入口只走页脚链接 + 浮动按钮(hub.css: main.no-rail~.req-fab 桌面端也显示),不为一张卡片硬加右栏。
-        if aside:
-            aside += shell.request_card(game=self.g["name"], t=t, **self.req_ctx())
-        aside_html = f'<aside class="rail">{aside}</aside>' if aside else ""
+        # 每页都保留右栏,末尾挂「提需求」卡片:没有速查信息框的页(未绑实体的文章 / 作者页 / 全部攻略页)
+        # 若去掉右栏,主栏会撑满全宽、头图放大、正文列宽和有信息框的页不一致(2026-09-29 验收退回)。
+        # 右栏只剩提需求卡片时按 rail_last 处理:窄屏排到正文之后,不挤在 h1 下面。
+        if not aside:
+            rail_last = True
+        aside += shell.request_card(game=self.g["name"], t=t, **self.req_ctx())
+        aside_html = f'<aside class="rail">{aside}</aside>'
         # rail_last:右栏只是「最近更新」这类小组件时,窄屏把它排到正文之后
         #(速查信息框那种才值得挤在 h1 下面)
-        cls = "layout" + ("" if aside else " no-rail") + (" rail-last" if rail_last and aside else "")
+        cls = "layout" + (" rail-last" if rail_last else "")
         # 面包屑单独占一行网格(grid-area:crumb),右栏信息框顶边才能和 h1 顶边对齐
         main = (
             f'<main class="{cls}" id="main">\n{toggle}\n{self.sidebar(cur_slug)}\n{crumbs_html}\n'
@@ -1310,8 +1312,11 @@ class NativeLang(EntityBox, HubBodyMixin):
         gname = self.spec.get("title") or self.g["name"]
         route = self.route_slug("all")
         page_url = self.base + route
-        title = t["all_page_seo"].format(game=gname)
-        desc = t["all_page_desc"].format(game=gname)
+        title = t["all_page_seo"].format(game=gname, brand=self.cfg["brand"])
+        desc = t["all_page_desc"].format(game=gname, brand=self.cfg["brand"])
+        # og:image:该游戏 _images.json 的 default 图(原图尺寸,与文章页 og:image 同一取法)
+        cov = self.site_game.cover_image()
+        og_im = dict(cov, alt=self.alt_of(cov)) if cov and cov.get("src") else None
         used = set()
         (_hid, _lbl), sec = self.all_articles_section(used, level=2)
         body = (f'<div class="prose"><p>{esc(t["all_page_intro"])}</p>'
@@ -1322,7 +1327,7 @@ class NativeLang(EntityBox, HubBodyMixin):
                    "isPartOf": {"@type": "WebSite", "name": self.cfg["brand"], "url": self.base + "/"}},
                   crumbs_ld]
         head = self.head_common(title=title, desc=desc, page_url=page_url, og_type="website",
-                                im=None, slug="all", graphs=graphs)
+                                im=og_im, slug="all", graphs=graphs)
         return self.shell(lang_code=self.code, head=head, crumbs_html=crumbs_html,
                           h1=esc(t["all_page_title"]), byline="", langsw=self.lang_switch("all"),
                           aside="", body=body, cur_slug="all",

@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Four guides for your first sessions: codes, beginner basics, game info and the rules on exploits.", "Brand new? Redeem W7C28D, then read the beginner guide before you carry anything valuable.", "Every guide lists its sources and the date they were last checked."]
 related: []
 sourceUrls: []
-images: ["th2"]
+images: ["th4"]
 date: "2026-09-29"
 updated: "2026-09-29"
 reviewed: "2026-09-29"

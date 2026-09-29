@@ -1163,6 +1163,13 @@
           ]
         ],
         "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 5,
+          "last": 1
+        }
       }
     },
     {
@@ -1357,6 +1364,13 @@
           ]
         ],
         "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 5,
+          "last": 1
+        }
       }
     }
   ]

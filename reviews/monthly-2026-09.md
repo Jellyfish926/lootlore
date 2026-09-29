@@ -4,12 +4,14 @@
 
 > 本文件为 2026-09-29 重出版（按 claude-skills 1914c13 的第六章与模板），替换同日初版；初版里「lootwiki 继续补」「最近内容更新 11 天」「会话页数 1.08～1.37」「valheim 三页改 TDH」「orc best towers 判排名问题」「死链抽样」等结论已按新口径改口。
 
+数据采集截止：2026-09-29 18:00 北京时间。
+
 数据窗口：GSC 与 GA4 近 28 天，截止 09-26，同一截止日（GSC 2026-08-30～09-26；GA4 2026-08-30～09-26；lootwiki 上线不满 28 天，两者实际为 09-21～09-26 共 6 天）。Adsterra／AdSense：首轮月复盘，广告后台实际可得窗口为 0 天（Adsterra 未登录；AdSense 未过审），环比写「首期」。
 死链：本月为 `link_check.py --live` 线上全量（2026-09-29 跑，claude-skills 1914c13 版脚本），见表 1 末行。
 
 复盘纪律：按节奏看别天天刷；结论要有出处；动作不是成果；旧结论被推翻当场改口；一次只补 2-3 页。
 
-出处缩写：〔GSC〕〔GA4〕〔索引〕（报告日期 09-21）〔推导〕〔LC〕〔gh〕〔curl〕同 `reviews/fleet-2026-09-29.md`。
+出处缩写：〔GSC〕〔GA4〕〔索引〕（报告日期 09-21）〔推导〕〔LC〕〔gh〕〔curl〕同 `reviews/fleet-2026-09-29.md`。GA4 原始数据：lootlore 仓 `reviews/data/ga4-28d-2026-09-29.json`（同名 .md 为表格版），每字段带值、出处与实测／推导标记。
 
 ## 表 1 站要改什么（一行一个问题）
 
@@ -44,7 +46,7 @@
 | VS／StS | ads.txt | 含占位 `pub-XXXXXXXXXXXXXXXX`〔curl〕 | 首期 | 广告位核对任一不符 | 两仓 `public/ads.txt` 删占位行（补页轮做） | — |
 | 全部站 | 内页字数 <800 且有展示、排名 >10 | 未获取（页面级 GSC 与字数本轮未读） | — | — | 下轮 d60 前补读 | — |
 | 全部站 | 回访占比 | 未获取（GA4 该报表未读） | — | 环比下降 | — | — |
-| 全部站 | 死链（线上全量） | 8 站全部 0 死链（lootwiki 583 个链接、sephiria 73、dragonsword 54、orc 46、beast 299、shift 56、VS 963、StS 798，合计 2872 个；起点 sitemap 合计 1126 页）〔LC〕 | — | >0 | 无需动作 | — |
+| 全部站 | 死链（线上全量） | 8 站全部 0 死链（lootwiki 616 个链接〔sitemap 606 页，09-29 新增三栏目后重跑〕、sephiria 73、dragonsword 54、orc 46、beast 299、shift 56、VS 963、StS 798，合计 2,905 个；起点 sitemap 合计 1,159 页）〔LC〕 | — | >0 | 无需动作 | — |
 
 ## 表 2 变现
 
@@ -116,7 +118,7 @@
 | seo-yunying | 6.4 ① CTR 阈值 | 阈值修正 | dragonsword 10 展示也触发 | 加 28 天展示 ≥100 下限 | 已并入 2026-09-29（8e79919） |
 | seo-yunying | 6.2／6.7 路径 | 不可执行 | 两个站群仓、子站独立仓、无判断表 | 写明真实路径 | 已并入 2026-09-29（8e79919） |
 | seo-yunying | 0.3 停点／6.1 d14 | 缺口 | 7 站收入卡 Adsterra 登录；VS／StS 未接 GSC／GA4 | 停点加 Adsterra 登录；d14 前置 GSC／GA4 | 已并入 2026-09-29（8e79919） |
-| seo-yunying | 6.5 换词判据／6.2 GA4 | 缺口（本轮新增） | beast：GSC 28 天 0 展示，但 GA4 自然搜索 186 会话（Bing 139、DuckDuckGo 25、Ecosia 13，Google 0） | 判换词时 GSC 之外同看 GA4「会话来源」，写明 Google 断流与全搜索断流的区别 | 待并入（本轮指令只动复盘文件；已写 seo-factory `lessons-inbox.md`） |
+| seo-yunying | 6.5 换词判据／6.2 GA4 | 缺口（本轮新增） | beast：GSC 28 天 0 展示，但 GA4 自然搜索 186 会话（Bing 139、DuckDuckGo 25、Ecosia 13，Google 0） | 判换词时 GSC 之外同看 GA4「会话来源」，写明 Google 断流与全搜索断流的区别 | 已并入 2026-09-29（94bf294） |
 
 ## 待站主拍板
 

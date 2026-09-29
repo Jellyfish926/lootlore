@@ -292,5 +292,20 @@
   "req_fail": "Sending failed.",
   "req_fallback": "Or email us directly:",
   "req_off": "Submissions are not enabled on this site yet.",
-  "req_subject": "{brand} request: {type} · {game}"
+  "req_subject": "{brand} request: {type} · {game}",
+  "f_timer_minutes": "Chest timer (minutes)",
+  "f_taps_required": "Taps per chest",
+  "f_open_for_friend_cost_taps": "Cost to open a friend's chest (taps)",
+  "f_input_count": "Items per exchange",
+  "f_favourites_protected": "Favourites skipped",
+  "f_bulk_hotkey": "Bulk exchange",
+  "f_first_theme": "First theme",
+  "f_coins_per_track": "Bongo Coins per track",
+  "f_premium_cost_coins": "Premium track (coins)",
+  "f_deadline": "Claim deadline",
+  "f_token_price_usd": "Paw Pass Token (US store)",
+  "f_max_players": "Max players per lobby",
+  "f_lobby_types": "Lobby types",
+  "f_fruit_sets": "Multiplayer-only sets",
+  "f_introduced": "Introduced"
 }

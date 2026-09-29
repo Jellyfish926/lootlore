@@ -1,0 +1,467 @@
+{
+ "fetched": "2026-09-29",
+ "game_version": null,
+ "game_version_note": "Bongo Cat publishes no version number; data dated instead.",
+ "sources_note": "一手来源:Steam 商店页/appdetails、官方公告(ISteamNews 66 条全读)、DLC appdetails、Item Store 页。字段级 *_source 标出具体出处;*_as_of 标出该数值最后一次被一手来源陈述的日期。未用任何 C 级站数据;fandom(B)只在 known_conflicts 里作为未采用的对照值出现。",
+ "entities": {
+  "common": {
+   "type": "rarity",
+   "name_en": "Common",
+   "page_slug": "hats-skins",
+   "order": 1,
+   "drop_chance": "90%",
+   "drop_chance_source": "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+   "drop_chance_note_en": "Store page: 'Item drop pool chances*' ... '*Subject to change'",
+   "summary_en": "Common items drop from chests at 90% per the Steam store page.",
+   "source_urls": [
+    "https://store.steampowered.com/app/3419430/Bongo_Cat/"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "uncommon": {
+   "type": "rarity",
+   "name_en": "Uncommon",
+   "page_slug": "hats-skins",
+   "order": 2,
+   "drop_chance": "9.5%",
+   "drop_chance_source": "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+   "drop_chance_note_en": "Store page: 'Item drop pool chances*' ... '*Subject to change'",
+   "summary_en": "Uncommon items drop from chests at 9.5% per the Steam store page.",
+   "source_urls": [
+    "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+    "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [],
+   "exchange_from_en": "10 Common items",
+   "exchange_from_source": "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+  },
+  "rare": {
+   "type": "rarity",
+   "name_en": "Rare",
+   "page_slug": "hats-skins",
+   "order": 3,
+   "drop_chance": "0.49%",
+   "drop_chance_source": "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+   "drop_chance_note_en": "Store page: 'Item drop pool chances*' ... '*Subject to change'",
+   "summary_en": "Rare items drop from chests at 0.49% per the Steam store page.",
+   "source_urls": [
+    "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+    "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [],
+   "exchange_from_en": "10 Uncommon items",
+   "exchange_from_source": "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+  },
+  "epic": {
+   "type": "rarity",
+   "name_en": "Epic",
+   "page_slug": "hats-skins",
+   "order": 4,
+   "drop_chance": "0.01%",
+   "drop_chance_source": "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+   "drop_chance_note_en": "Store page: 'Item drop pool chances*' ... '*Subject to change'",
+   "summary_en": "Epic items drop from chests at 0.01% per the Steam store page.",
+   "source_urls": [
+    "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+    "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [],
+   "exchange_from_en": "10 Rare items",
+   "exchange_from_source": "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+  },
+  "legendary": {
+   "type": "rarity",
+   "name_en": "Legendary",
+   "page_slug": "hats-skins",
+   "order": 5,
+   "drop_chance": "1 in 500000",
+   "drop_chance_source": "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+   "drop_chance_note_en": "Store page: 'Item drop pool chances*' ... '*Subject to change'",
+   "summary_en": "Legendary items drop from chests at 1 in 500000 per the Steam store page.",
+   "source_urls": [
+    "https://store.steampowered.com/app/3419430/Bongo_Cat/",
+    "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [],
+   "exchange_from_en": "10 Epic items",
+   "exchange_from_source": "https://store.steampowered.com/news/app/3419430/view/1792116353300258"
+  },
+  "unique": {
+   "type": "rarity",
+   "name_en": "Unique",
+   "page_slug": "hats-skins",
+   "order": 6,
+   "drop_chance": "Not droppable",
+   "drop_chance_source": "https://store.steampowered.com/news/app/3419430/view/1842212951313382",
+   "summary_en": "Added 2026-09-01: 'These items are not droppable and are claimed through special events like the advent calendar.'",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1842212951313382"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "chest": {
+   "type": "mechanic",
+   "name_en": "Item chest",
+   "page_slug": "how-to-play",
+   "summary_en": "Chests become available on a timer and are paid for with taps; contents follow the store page drop odds.",
+   "timer_minutes": 30,
+   "timer_minutes_source": "https://store.steampowered.com/news/app/3419430/view/1792116353300258",
+   "timer_minutes_as_of": "2025-02-23",
+   "taps_required": 1000,
+   "taps_required_source": "https://store.steampowered.com/news/app/3419430/view/1794102528240823",
+   "taps_required_as_of": "2025-03-18",
+   "open_for_friend_cost_taps": 1000,
+   "open_for_friend_cost_taps_source": "https://store.steampowered.com/news/app/3419430/view/1836506165556399",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1792116353300258",
+    "https://store.steampowered.com/news/app/3419430/view/1794102528240823",
+    "https://store.steampowered.com/news/app/3419430/view/1836506165556399"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "timer_minutes",
+    "taps_required"
+   ],
+   "unverified_note_en": "Latest first-hand statements date from 2025; no later announcement changes them, but none re-confirms them either."
+  },
+  "emote-chest": {
+   "type": "mechanic",
+   "name_en": "Emote chest",
+   "page_slug": "multiplayer",
+   "summary_en": "A second chest containing only emotes, shown once you are in a multiplayer lobby (from 2025-10-06); emotes have their own exchange.",
+   "introduced": "2025-10-06",
+   "introduced_source": "https://store.steampowered.com/news/app/3419430/view/1811772772604122",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1811772772604122",
+    "https://store.steampowered.com/news/app/3419430/view/1813041031167641"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "exchange": {
+   "type": "mechanic",
+   "name_en": "Exchange",
+   "page_slug": "exchange-trading",
+   "summary_en": "10 items of the same rarity can be upgraded to one item of a higher tier.",
+   "input_count": 10,
+   "input_count_source": "https://store.steampowered.com/news/app/3419430/view/1792116353300258",
+   "favourites_protected": true,
+   "favourites_protected_source": "https://store.steampowered.com/news/app/3419430/view/1797185861746045",
+   "bulk_hotkey_en": "Shift+Click a stack (1000+ back to back)",
+   "bulk_hotkey_source": "https://store.steampowered.com/news/app/3419430/view/1800357164536345",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1792116353300258",
+    "https://store.steampowered.com/news/app/3419430/view/1797185861746045",
+    "https://store.steampowered.com/news/app/3419430/view/1800357164536345"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "paw-pass": {
+   "type": "mechanic",
+   "name_en": "Paw Pass",
+   "page_slug": "events",
+   "summary_en": "Monthly themed pass with free and premium tracks; rewards are claimable forever and claiming does not consume taps.",
+   "release_date": "2026-09-01",
+   "release_date_source": "https://store.steampowered.com/news/app/3419430/view/1842212951313382",
+   "first_theme_en": "Circus",
+   "coins_per_track": 100,
+   "premium_cost_coins": 500,
+   "deadline_en": "None",
+   "token_price_usd": "$4.99",
+   "token_price_source": "https://store.steampowered.com/itemstore/3419430/",
+   "token_price_as_of": "2026-09-29",
+   "milestone_taps": null,
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1842212951313382",
+    "https://store.steampowered.com/itemstore/3419430/"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "milestone_taps"
+   ],
+   "known_conflicts": [
+    {
+     "field": "milestone_taps",
+     "value": "every 5k taps/clicks",
+     "source": "https://bongo-cat.fandom.com/wiki/Paw_pass",
+     "tier": "B",
+     "status": "not used — no official figure"
+    }
+   ]
+  },
+  "meowtiplayer": {
+   "type": "mechanic",
+   "name_en": "Meowtiplayer",
+   "page_slug": "multiplayer",
+   "summary_en": "Co-op multiplayer handled through Steam: up to 100 friends' cats on one screen.",
+   "release_date": "2025-08-11",
+   "release_date_source": "https://store.steampowered.com/news/app/3419430/view/1807332909696878",
+   "max_players": 100,
+   "max_players_source": "https://store.steampowered.com/news/app/3419430/view/1807332909696878",
+   "lobby_types_en": [
+    "Friends/Lobby Code",
+    "Invite only",
+    "Public"
+   ],
+   "lobby_types_source": "https://store.steampowered.com/news/app/3419430/view/1829528821315214",
+   "fruit_sets_en": [
+    "Strawberry",
+    "Pineapple",
+    "Watermelon"
+   ],
+   "fruit_sets_source": "https://store.steampowered.com/news/app/3419430/view/1807332909696878",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1807332909696878",
+    "https://store.steampowered.com/news/app/3419430/view/1829528821315214"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "april-event-2025": {
+   "type": "event",
+   "name_en": "April Event",
+   "page_slug": "events",
+   "order": 1,
+   "start_date": "2025-03-31",
+   "end_date": "2025-04-22",
+   "items_en": "20 April Fools' items, 4 per rarity",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1795283637960385"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "summer-event-2025": {
+   "type": "event",
+   "name_en": "Summer Sale & Event",
+   "page_slug": "events",
+   "order": 2,
+   "start_date": "2025-06-27",
+   "end_date": "2025-07-18",
+   "items_en": "20 summer items, 4 per rarity",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1803527891535449"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "autumn-event-2025": {
+   "type": "event",
+   "name_en": "Autumn Event",
+   "page_slug": "events",
+   "order": 3,
+   "start_date": "2025-10-08",
+   "end_date": "2025-10-31",
+   "items_en": "20 autumn items",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1813041031167641"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "halloween-treat-2025": {
+   "type": "event",
+   "name_en": "Free Halloween Treat",
+   "page_slug": "events",
+   "order": 4,
+   "start_date": "2025-10-30",
+   "end_date": "2025-11-05",
+   "items_en": "One free costume: Zombie, Nosfergato or Frankittystein",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1815034432865853"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "animal-shelter-2025": {
+   "type": "event",
+   "name_en": "Animal Shelter Charity Event",
+   "page_slug": "events",
+   "order": 5,
+   "start_date": "2025-11-10",
+   "end_date": "2025-11-17",
+   "items_en": "Luna free; five paid shelter-cat skins",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1815580768395840"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "winter-event-2025": {
+   "type": "event",
+   "name_en": "Winter Event & Advent Calendar",
+   "page_slug": "events",
+   "order": 6,
+   "start_date": "2025-12-01",
+   "end_date": "2025-12-31",
+   "items_en": "20 winter items; free advent calendar Dec 1-25; Deluxe Calendar 25 items",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1817483467044521"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "typing-fest-2026": {
+   "type": "event",
+   "name_en": "Steam Typing Fest",
+   "page_slug": "events",
+   "order": 7,
+   "start_date": "2026-02-05",
+   "end_date": null,
+   "items_en": "Free Ranged Mecha L.A.S.E.R.; 1 million clicks skin and hat",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1823825466497567"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "end_date"
+   ]
+  },
+  "year-of-the-horse-2026": {
+   "type": "event",
+   "name_en": "Year of the Horse Event",
+   "page_slug": "events",
+   "order": 8,
+   "start_date": "2026-02-16",
+   "end_date": "2026-03-16",
+   "items_en": "20 items; Lunar New Year calendar Feb 16-Mar 1; Deluxe 14 items",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1824644522846187"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "bongo-royale-2026": {
+   "type": "event",
+   "name_en": "Bongo Royale",
+   "page_slug": "events",
+   "order": 9,
+   "start_date": "2026-04-01",
+   "end_date": null,
+   "items_en": "Battle royale lobbies up to 250 players for 3 days; participant skin",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1828894815553998"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "end_date"
+   ]
+  },
+  "summer-event-2026": {
+   "type": "event",
+   "name_en": "Summer Event",
+   "page_slug": "events",
+   "order": 10,
+   "start_date": "2026-06-16",
+   "end_date": "2026-07-14",
+   "items_en": "20 summer items",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/3419430/view/1835236783574334"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "god-pack": {
+   "type": "dlc",
+   "name_en": "Bongo Cat - God Pack",
+   "page_slug": "hats-skins",
+   "order": 1,
+   "appid": 3929900,
+   "release_date": "Apr 13, 2026",
+   "sets_en": [
+    "Zeus",
+    "Poseidon",
+    "Hades"
+   ],
+   "source_urls": [
+    "https://store.steampowered.com/app/3929900/",
+    "https://store.steampowered.com/api/appdetails?appids=3929900"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "mecha-pack": {
+   "type": "dlc",
+   "name_en": "Bongo Cat - Mecha Pack",
+   "page_slug": "hats-skins",
+   "order": 2,
+   "appid": 4600310,
+   "release_date": "Apr 13, 2026",
+   "sets_en": [
+    "S.L.A.S.H.",
+    "P.U.R.R",
+    "B.O.N.K."
+   ],
+   "source_urls": [
+    "https://store.steampowered.com/app/4600310/",
+    "https://store.steampowered.com/api/appdetails?appids=4600310"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "squirrel-pack": {
+   "type": "dlc",
+   "name_en": "Bongo Cat - Squirrel Pack",
+   "page_slug": "hats-skins",
+   "order": 3,
+   "appid": 4600320,
+   "release_date": "Apr 13, 2026",
+   "sets_en": [],
+   "source_urls": [
+    "https://store.steampowered.com/app/4600320/",
+    "https://store.steampowered.com/api/appdetails?appids=4600320",
+    "https://store.steampowered.com/news/app/3419430/view/1813041031167641"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "sets_en"
+   ],
+   "sets_note_en": "Store short description does not name the sets; the 2025-10-08 announcement names Calabrian Black Squirrel, Eastern Grey Squirrel and Eurasian Red Squirrel."
+  },
+  "wrestler-pack": {
+   "type": "dlc",
+   "name_en": "Bongo Cat - Wrestler Pack",
+   "page_slug": "hats-skins",
+   "order": 4,
+   "appid": 4600330,
+   "release_date": "Apr 13, 2026",
+   "sets_en": [
+    "Six Seven Lives",
+    "Cutie Punch",
+    "Ribbit Rampage"
+   ],
+   "source_urls": [
+    "https://store.steampowered.com/app/4600330/",
+    "https://store.steampowered.com/api/appdetails?appids=4600330"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "wild-wonders": {
+   "type": "dlc",
+   "name_en": "Bongo Cat - Wild Wonders",
+   "page_slug": "hats-skins",
+   "order": 5,
+   "appid": 4856340,
+   "release_date": "Jun 27, 2026",
+   "sets_en": [
+    "Bumble Kitten",
+    "Meowxolotl",
+    "Sea Purrtle"
+   ],
+   "source_urls": [
+    "https://store.steampowered.com/app/4856340/",
+    "https://store.steampowered.com/api/appdetails?appids=4856340"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  }
+ }
+}

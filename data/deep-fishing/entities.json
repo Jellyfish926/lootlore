@@ -1,0 +1,1058 @@
+{
+ "fetched": "2026-09-29",
+ "game_version": "2026-09-28 update (Roblox experience updated 2026-09-28T20:52:22Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、徽章 badges.roblox.com、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products。鱼竿阶梯顺序按官方 Robux 解锁价升序推导(ladder_order_official 列入 unverified_fields)。金币价、鱼竿属性、水域、鱼种、兑换码无一手来源,未建实体。徽章 order 按累计获得数降序。快照数字(awarded_count 等)只代表 2026-09-29。",
+ "entities": {
+  "deep-fishing": {
+   "type": "mechanic",
+   "name_en": "Deep Fishing",
+   "page_slug": "how-to-play",
+   "summary_en": "Roblox fishing simulator: hold and release to cast, catch several fish per cast, sell them, and upgrade Strength to reach farther water with rarer fish.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10526853622",
+   "description_en": "Cast your fishing rod as far as possible and reel in tons of fish!",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10526853622",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10526853622",
+   "release_date_en": "18 July 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10526853622",
+   "role_en": "Developer: LazyGames. (Roblox group 34744238)",
+   "role_source": "https://groups.roblox.com/v1/groups/34744238",
+   "max_players": 12,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10526853622",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10526853622",
+    "https://groups.roblox.com/v1/groups/34744238"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "starter_rod",
+    "water_names",
+    "code_system"
+   ]
+  },
+  "iron-rod": {
+   "type": "item",
+   "name_en": "Iron Rod",
+   "page_slug": "rods",
+   "order": 1,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Iron Rod\" (39 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 1 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "iron-rope-rod": {
+   "type": "item",
+   "name_en": "Iron Rope Rod",
+   "page_slug": "rods",
+   "order": 2,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Iron Rope Rod\" (79 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 2 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "bronze-rod": {
+   "type": "item",
+   "name_en": "Bronze Rod",
+   "page_slug": "rods",
+   "order": 3,
+   "unlock_cost": "129 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Bronze Rod\" (129 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 3 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "full-bronze-rod": {
+   "type": "item",
+   "name_en": "Full Bronze Rod",
+   "page_slug": "rods",
+   "order": 4,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Full Bronze Rod\" (199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 4 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "steel-rod": {
+   "type": "item",
+   "name_en": "Steel Rod",
+   "page_slug": "rods",
+   "order": 5,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Steel Rod\" (299 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 5 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "steel-rope-rod": {
+   "type": "item",
+   "name_en": "Steel Rope Rod",
+   "page_slug": "rods",
+   "order": 6,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Steel Rope Rod\" (399 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 6 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "full-steel-rod": {
+   "type": "item",
+   "name_en": "Full Steel Rod",
+   "page_slug": "rods",
+   "order": 7,
+   "unlock_cost": "549 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Full Steel Rod\" (549 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 7 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "steel-gold-rod": {
+   "type": "item",
+   "name_en": "Steel Gold Rod",
+   "page_slug": "rods",
+   "order": 8,
+   "unlock_cost": "649 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Steel Gold Rod\" (649 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 8 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "gold-rod": {
+   "type": "item",
+   "name_en": "Gold Rod",
+   "page_slug": "rods",
+   "order": 9,
+   "unlock_cost": "879 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Gold Rod\" (879 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 9 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "gold-diamond-rod": {
+   "type": "item",
+   "name_en": "Gold Diamond Rod",
+   "page_slug": "rods",
+   "order": 10,
+   "unlock_cost": "1,049 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Gold Diamond Rod\" (1,049 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 10 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "crystal-rod": {
+   "type": "item",
+   "name_en": "Crystal Rod",
+   "page_slug": "rods",
+   "order": 11,
+   "unlock_cost": "1,349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Crystal Rod\" (1,349 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 11 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "ruby-rod": {
+   "type": "item",
+   "name_en": "Ruby Rod",
+   "page_slug": "rods",
+   "order": 12,
+   "unlock_cost": "1,649 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Ruby Rod\" (1,649 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 12 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "emerald-rod": {
+   "type": "item",
+   "name_en": "Emerald Rod",
+   "page_slug": "rods",
+   "order": 13,
+   "unlock_cost": "1,999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Emerald Rod\" (1,999 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 13 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "frozen-rod": {
+   "type": "item",
+   "name_en": "Frozen Rod",
+   "page_slug": "rods",
+   "order": 14,
+   "unlock_cost": "2,249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Frozen Rod\" (2,249 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 14 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "toxic-rod": {
+   "type": "item",
+   "name_en": "Toxic Rod",
+   "page_slug": "rods",
+   "order": 15,
+   "unlock_cost": "2,649 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Toxic Rod\" (2,649 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 15 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "knight-rod": {
+   "type": "item",
+   "name_en": "Knight Rod",
+   "page_slug": "rods",
+   "order": 16,
+   "unlock_cost": "2,999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Knight Rod\" (2,999 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 16 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "obsidian-rod": {
+   "type": "item",
+   "name_en": "Obsidian Rod",
+   "page_slug": "rods",
+   "order": 17,
+   "unlock_cost": "3,499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Obsidian Rod\" (3,499 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 17 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "disco-rod": {
+   "type": "item",
+   "name_en": "Disco Rod",
+   "page_slug": "rods",
+   "order": 18,
+   "unlock_cost": "3,999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Disco Rod\" (3,999 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 18 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "angel-rod": {
+   "type": "item",
+   "name_en": "Angel Rod",
+   "page_slug": "rods",
+   "order": 19,
+   "unlock_cost": "4,799 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Angel Rod\" (4,799 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 19 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "ufo-rod": {
+   "type": "item",
+   "name_en": "Ufo Rod",
+   "page_slug": "rods",
+   "order": 20,
+   "unlock_cost": "5,599 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Ufo Rod\" (5,599 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 20 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "galaxy-rod": {
+   "type": "item",
+   "name_en": "Galaxy Rod",
+   "page_slug": "rods",
+   "order": 21,
+   "unlock_cost": "6,499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux unlock product \"Unlock Galaxy Rod\" (6,499 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Fishing rod — rung 21 of 21 on the regular ladder (ordered by official Robux unlock price)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "coin_price",
+    "cast_distance",
+    "luck_bonus",
+    "ladder_order_official"
+   ]
+  },
+  "divine-king-rod": {
+   "type": "item",
+   "name_en": "Divine King Rod",
+   "page_slug": "rods",
+   "order": 95,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux product \"[Skin] Divine King Rod\" (399 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Rod skin (cosmetic label per product name)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-08-25",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "cast_distance",
+    "luck_bonus",
+    "cosmetic_only"
+   ]
+  },
+  "divine-queen-rod": {
+   "type": "item",
+   "name_en": "Divine Queen Rod",
+   "page_slug": "rods",
+   "order": 95,
+   "unlock_cost": "639 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux product \"[Skin] Divine Queen Rod\" (639 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Rod skin (cosmetic label per product name)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-08-25",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "cast_distance",
+    "luck_bonus",
+    "cosmetic_only"
+   ]
+  },
+  "astral-tide-rod": {
+   "type": "item",
+   "name_en": "Astral Tide Rod",
+   "page_slug": "rods",
+   "order": 90,
+   "unlock_cost": "599 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux product \"[Exclusive] Astral Tide Rod\" (599 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Exclusive rod, outside the regular ladder",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "cast_distance",
+    "luck_bonus"
+   ]
+  },
+  "voidreaper-rod": {
+   "type": "item",
+   "name_en": "VoidReaper Rod",
+   "page_slug": "rods",
+   "order": 90,
+   "unlock_cost": "799 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "unlocked_by_en": "Robux product \"[Exclusive] VoidReaper Rod\" (799 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "usage_en": "Exclusive rod, outside the regular ladder",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "cast_distance",
+    "luck_bonus"
+   ]
+  },
+  "badge-welcome": {
+   "type": "achievement",
+   "name_en": "Welcome!",
+   "page_slug": "badges",
+   "order": 1,
+   "description_en": "You played Deep Fishing!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You played Deep Fishing!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 2,104,103 times as of 2026-09-29 (100.00% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 2104103,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-07-28",
+   "badge_id": 3055416571371637,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-first-legendary": {
+   "type": "achievement",
+   "name_en": "First Legendary",
+   "page_slug": "badges",
+   "order": 4,
+   "description_en": "You caught your first Legendary!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught your first Legendary!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 1,015,587 times as of 2026-09-29 (48.27% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 1015587,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-07-28",
+   "badge_id": 279594784597602,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-first-mythical": {
+   "type": "achievement",
+   "name_en": "First Mythical",
+   "page_slug": "badges",
+   "order": 6,
+   "description_en": "You caught your first Mythical!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught your first Mythical!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 646,963 times as of 2026-09-29 (30.75% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 646963,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-07-28",
+   "badge_id": 2412570164479364,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-first-secret": {
+   "type": "achievement",
+   "name_en": "First Secret",
+   "page_slug": "badges",
+   "order": 8,
+   "description_en": "You caught your first Secret!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught your first Secret!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 165,605 times as of 2026-09-29 (7.87% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 165605,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-07-28",
+   "badge_id": 4162683912236312,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-first-mutation": {
+   "type": "achievement",
+   "name_en": "First Mutation",
+   "page_slug": "badges",
+   "order": 2,
+   "description_en": "You caught your first Mutated Fish!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught your first Mutated Fish!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 1,796,679 times as of 2026-09-29 (85.39% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 1796679,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-07-28",
+   "badge_id": 1227855444040265,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-50-catches": {
+   "type": "achievement",
+   "name_en": "50 Catches",
+   "page_slug": "badges",
+   "order": 3,
+   "description_en": "You caught 50 Fish!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 50 Fish!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 1,402,594 times as of 2026-09-29 (66.66% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 1402594,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 1848433760138224,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-250-catches": {
+   "type": "achievement",
+   "name_en": "250 Catches",
+   "page_slug": "badges",
+   "order": 5,
+   "description_en": "You caught 250 Fishes!",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 250 Fishes!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 801,916 times as of 2026-09-29 (38.11% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 801916,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 278294575856450,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-1000-catches": {
+   "type": "achievement",
+   "name_en": "1.000 Catches",
+   "page_slug": "badges",
+   "order": 7,
+   "description_en": "You caught 1.000 Fishes",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 1.000 Fishes",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 335,530 times as of 2026-09-29 (15.95% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 335530,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 1895412538513966,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-10k-catches": {
+   "type": "achievement",
+   "name_en": "10K Catches",
+   "page_slug": "badges",
+   "order": 9,
+   "description_en": "You caught 10K Fishes",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 10K Fishes",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 17,781 times as of 2026-09-29 (0.85% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 17781,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 1853229816782927,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-50k-catches": {
+   "type": "achievement",
+   "name_en": "50K Catches",
+   "page_slug": "badges",
+   "order": 10,
+   "description_en": "You caught 50K Fishes",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 50K Fishes",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 943 times as of 2026-09-29 (0.04% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 943,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 1373973911822369,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-100k-catches": {
+   "type": "achievement",
+   "name_en": "100K Catches",
+   "page_slug": "badges",
+   "order": 11,
+   "description_en": "You caught 100K Fishes",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 100K Fishes",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 229 times as of 2026-09-29 (0.01% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 229,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 3278441969942062,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-250k-catches": {
+   "type": "achievement",
+   "name_en": "250K Catches",
+   "page_slug": "badges",
+   "order": 12,
+   "description_en": "You caught 250K Fishes",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 250K Fishes",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 37 times as of 2026-09-29 (0.00% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 37,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 1244436309728676,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "badge-500k-catches": {
+   "type": "achievement",
+   "name_en": "500K Catches",
+   "page_slug": "badges",
+   "order": 13,
+   "description_en": "You caught 500K Fishes",
+   "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "requires_en": "You caught 500K Fishes",
+   "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "key_notes_en": "Awarded 8 times as of 2026-09-29 (0.00% of Welcome! awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "awarded_count": 8,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
+   "badge_created": "2026-08-01",
+   "badge_id": 2453046704822299,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": []
+  },
+  "pass-lucky": {
+   "type": "gamepass",
+   "name_en": "Lucky",
+   "page_slug": "gamepasses",
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Get better luck! 🍀",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Get better luck! 🍀",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1917735174,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-fish-magnet": {
+   "type": "gamepass",
+   "name_en": "Fish Magnet",
+   "page_slug": "gamepasses",
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Pull Fish close to the Bait 🧲",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Pull Fish close to the Bait 🧲",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1919505079,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-auto-sell": {
+   "type": "gamepass",
+   "name_en": "Auto Sell",
+   "page_slug": "gamepasses",
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Sell your fish automatically",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Sell your fish automatically",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918977396,
+   "created": "2026-07-19",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-super-lucky": {
+   "type": "gamepass",
+   "name_en": "Super Lucky",
+   "page_slug": "gamepasses",
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Get even more luck! 🍀✨",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Get even more luck! 🍀✨",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918833172,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-vip": {
+   "type": "gamepass",
+   "name_en": "VIP",
+   "page_slug": "gamepasses",
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Exclusive VIP perks and rewards! ⭐",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Exclusive VIP perks and rewards! ⭐",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918365084,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size",
+    "perks_list"
+   ]
+  },
+  "pass-double-xp": {
+   "type": "gamepass",
+   "name_en": "Double XP",
+   "page_slug": "gamepasses",
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Earn 2x more XP! ⚡",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Earn 2x more XP! ⚡",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918335108,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-more-mutations": {
+   "type": "gamepass",
+   "name_en": "More Mutations",
+   "page_slug": "gamepasses",
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Find more mutated Fishes! 🧬",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Find more mutated Fishes! 🧬",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1917801173,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-double-coins": {
+   "type": "gamepass",
+   "name_en": "Double Coins",
+   "page_slug": "gamepasses",
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "Earn 2x more coins! 🪙",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Earn 2x more coins! 🪙",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918953090,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  },
+  "pass-ultra-lucky": {
+   "type": "gamepass",
+   "name_en": "Ultra Lucky",
+   "page_slug": "gamepasses",
+   "unlock_cost": "599 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "description_en": "The best luck boost! 🔥",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "usage_en": "The best luck boost! 🔥",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918191125,
+   "created": "2026-07-18",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-29",
+   "unverified_fields": [
+    "effect_size"
+   ]
+  }
+ },
+ "_page_slug_note": "page_slug 指向 content/deep-fishing/en 下实际存在的页;waters 为 draft,不绑定实体。"
+}

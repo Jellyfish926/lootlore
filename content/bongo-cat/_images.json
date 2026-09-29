@@ -1,0 +1,81 @@
+{
+ "_note": "封面图:Steam 商店页官方截图热链(appdetails appids=3419430 的 screenshots[].path_full,2026-09-29 取,共 5 张;1920 原图与 600x338 小图写入前均 curl 验 200)。alt 按画面实际内容写,计数器数字照图抄。pages 映射 slug → 封面;正文图用不同 key,避免封面与正文同图。",
+ "source": "https://store.steampowered.com/api/appdetails?appids=3419430",
+ "fetched": "2026-09-29",
+ "credit": {
+  "en": "Official screenshot · Irox Games (Steam store page)",
+  "zh": "官方截图 · Irox Games（Steam 商店页）"
+ },
+ "default": "ss00",
+ "pages": {
+  "index": "ss03",
+  "getting-started": "ss01",
+  "how-to-play": "ss00",
+  "steam-error": "ss04",
+  "is-it-safe": "ss00",
+  "multiplayer": "ss01",
+  "collection": "ss04",
+  "hats-skins": "ss03",
+  "exchange-trading": "ss03",
+  "events": "ss04",
+  "achievements": "ss01",
+  "author": "ss02"
+ },
+ "shots": {
+  "ss00": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/7b3bfd0137fad5c361b2d8d786208684ee202ee6/ss_7b3bfd0137fad5c361b2d8d786208684ee202ee6.1920x1080.jpg?t=1790066913",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/7b3bfd0137fad5c361b2d8d786208684ee202ee6/ss_7b3bfd0137fad5c361b2d8d786208684ee202ee6.600x338.jpg?t=1790066913",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A white cat with pink paw pads tapping over a taskbar counter reading 47 177, orange \"WAKU WAKU\" lettering above it",
+    "zh": "一只粉色肉垫的白猫在任务栏计数器（47 177）上方敲击，上方是橙色「WAKU WAKU」字样"
+   }
+  },
+  "ss01": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/411adf303275850e82194a52dce29eb2716ab14d/ss_411adf303275850e82194a52dce29eb2716ab14d.1920x1080.jpg?t=1790066913",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/411adf303275850e82194a52dce29eb2716ab14d/ss_411adf303275850e82194a52dce29eb2716ab14d.600x338.jpg?t=1790066913",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A red panda skin with a small white cat stacked on its head, sitting above a taskbar counter reading 47 267",
+    "zh": "小熊猫皮肤头顶叠着一只小白猫，坐在任务栏计数器（47 267）上方"
+   }
+  },
+  "ss02": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/d86783952fbe9bd29c9c1dfe5b6f44d858aa5cfb/ss_d86783952fbe9bd29c9c1dfe5b6f44d858aa5cfb.1920x1080.jpg?t=1790066913",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/d86783952fbe9bd29c9c1dfe5b6f44d858aa5cfb/ss_d86783952fbe9bd29c9c1dfe5b6f44d858aa5cfb.600x338.jpg?t=1790066913",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A black cat skin wearing a ninja headband with two sword hilts behind it, tapping above a counter reading 47 315",
+    "zh": "戴忍者头带、背后露出两把刀柄的黑猫皮肤，在计数器（47 315）上方敲击"
+   }
+  },
+  "ss03": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/df803dc84cff2a7e8321a152818ad406dfc66b0f/ss_df803dc84cff2a7e8321a152818ad406dfc66b0f.1920x1080.jpg?t=1790066913",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/df803dc84cff2a7e8321a152818ad406dfc66b0f/ss_df803dc84cff2a7e8321a152818ad406dfc66b0f.600x338.jpg?t=1790066913",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A cat wearing a red samurai helmet with gold horns and a white paw-print banner, above a counter reading 47 298",
+    "zh": "戴金角红色武士头盔、背插白色爪印旗的猫，位于计数器（47 298）上方"
+   }
+  },
+  "ss04": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/b1c7513d02e4cd4d9f145959558f5e1998ec135d/ss_b1c7513d02e4cd4d9f145959558f5e1998ec135d.1920x1080.jpg?t=1790066913",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/b1c7513d02e4cd4d9f145959558f5e1998ec135d/ss_b1c7513d02e4cd4d9f145959558f5e1998ec135d.600x338.jpg?t=1790066913",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "An orange cat skin under a yellow hood-like hat, tapping above a counter reading 47 343",
+    "zh": "橙色猫皮肤戴着黄色兜帽状帽子，在计数器（47 343）上方敲击"
+   }
+  }
+ }
+}

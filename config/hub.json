@@ -1081,6 +1081,283 @@
           }
         ]
       }
+    },
+    {
+      "slug": "blockspin",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/blockspin",
+      "name": "BlockSpin",
+      "short": "BlockSpin",
+      "default_path": "/",
+      "native": {
+        "title": "BlockSpin",
+        "nav": [
+          "getting-started",
+          "money-gear"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "cinnamon.co.uk"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-09-29",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "BlockSpin",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "What to read next",
+              "Where to go next"
+            ]
+          }
+        ],
+        "entities": "data/blockspin/entities.json",
+        "start_here": [
+          "codes",
+          "beginner",
+          "game-info"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Open World Action",
+        "studio": "Cinnamon Go! (Cinnamon Software)",
+        "released": "November 6, 2024 (on Roblox)",
+        "platforms": "Roblox (PlayStation play reported by a developer in 2025, Xbox implied; mobile unconfirmed)",
+        "img": "https://tr.rbxcdn.com/180DAY-a29dc9289b3e87a61d957d8d4211c98c/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Two masked Roblox characters rob a Quick-11 convenience store — BlockSpin promotional thumbnail",
+        "img_credit": "Official thumbnail · Cinnamon Go! (Roblox)",
+        "blurb": "Our BlockSpin hub for the Roblox open-world crime game by Cinnamon Go!: the official new-player code, the death-drop rule and house safe, developer, rating and platform facts, and the rules on exploits and bans — built only from official sources, with every guide dated.",
+        "highlights": [
+          [
+            "Codes",
+            "/blockspin/codes/"
+          ],
+          [
+            "Beginner Guide",
+            "/blockspin/beginner/"
+          ],
+          [
+            "Game Info",
+            "/blockspin/game-info/"
+          ],
+          [
+            "Cheats & Bans",
+            "/blockspin/cheats-bans/"
+          ]
+        ],
+        "langs": "EN"
+      }
+    },
+    {
+      "slug": "deep-fishing",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/deep-fishing",
+      "name": "Deep Fishing",
+      "short": "Deep Fishing",
+      "default_path": "/",
+      "native": {
+        "title": "Deep Fishing",
+        "nav": [
+          "beginner",
+          "gear"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-09-29",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Deep Fishing",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/deep-fishing/entities.json",
+        "start_here": [
+          "how-to-play",
+          "rarity",
+          "rods"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Fishing Simulator",
+        "studio": "LazyGames.",
+        "released": "July 18, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-f6894a40d24541570fbc03fa9b034d53/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: a Roblox angler in a small boat drops a line through five ocean layers, from small fish near the surface to a glowing purple sea monster at the bottom",
+        "img_credit": "Official thumbnail · LazyGames. (Roblox)",
+        "blurb": "Our Deep Fishing hub for LazyGames' Roblox fishing simulator: how the cast-sell-upgrade loop works, all 21 rods in order with official Robux prices, nine game passes, the Robux shop, and rarity odds worked out from official badge totals — built from Roblox's own data, with no unverified codes.",
+        "highlights": [
+          [
+            "All Rods in Order",
+            "/deep-fishing/rods/"
+          ],
+          [
+            "Rarity & Secret Odds",
+            "/deep-fishing/rarity/"
+          ],
+          [
+            "Game Passes",
+            "/deep-fishing/gamepasses/"
+          ],
+          [
+            "How to Play",
+            "/deep-fishing/how-to-play/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 8,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "item",
+            "cols": [
+              "@name",
+              "unlock_cost"
+            ],
+            "sort": "order",
+            "max": 25,
+            "all": "rods"
+          },
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "description",
+              "key_notes"
+            ],
+            "sort": "order",
+            "max": 13,
+            "all": "badges"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "bongo-cat",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/bongo-cat",
+      "name": "Bongo Cat",
+      "short": "Bongo Cat",
+      "default_path": "/",
+      "native": {
+        "title": "Bongo Cat",
+        "nav": [
+          "getting-started",
+          "collection"
+        ],
+        "official_domains": [
+          "store.steampowered.com",
+          "steamcommunity.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-09-29",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Bongo Cat",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/bongo-cat/entities.json",
+        "start_here": [
+          "how-to-play",
+          "steam-error",
+          "hats-skins"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Casual · Simulation · Free to Play",
+        "studio": "Irox Games",
+        "released": "March 5, 2025 (Steam, free to play)",
+        "platforms": "PC (Windows · macOS)",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3419430/df803dc84cff2a7e8321a152818ad406dfc66b0f/ss_df803dc84cff2a7e8321a152818ad406dfc66b0f.1920x1080.jpg?t=1790066913",
+        "img_w": 1920,
+        "img_h": 1080,
+        "img_alt": "A cat in a red samurai helmet tapping above the taskbar counter — Bongo Cat",
+        "img_credit": "Official screenshot · Irox Games (Steam store page)",
+        "blurb": "Our Bongo Cat hub for Irox Games' free Steam desktop pet: how taps pay for chests, the official drop rates per rarity, the exchange and trading rules, Steam Error fixes, the keylogger question answered with the developer's own posts, the event and Paw Pass timeline, and all 28 achievements — every guide lists its numbered sources.",
+        "highlights": [
+          [
+            "How to Play",
+            "/bongo-cat/how-to-play/"
+          ],
+          [
+            "Steam Error Fixes",
+            "/bongo-cat/steam-error/"
+          ],
+          [
+            "Hats & Drop Rates",
+            "/bongo-cat/hats-skins/"
+          ],
+          [
+            "All 28 Achievements",
+            "/bongo-cat/achievements/"
+          ]
+        ],
+        "langs": "EN"
+      }
     }
   ]
 }

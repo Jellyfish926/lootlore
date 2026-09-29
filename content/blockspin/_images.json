@@ -1,0 +1,74 @@
+{
+ "_note": "图片池:Roblox 官方 thumbnails API 返回的 4 张宣传缩略图 + 官方游戏图标(2026-09-29 取)。这些是开发者上传的宣传插画,不是实机截图,alt 如实写 promotional thumbnail。URL 前缀 180DAY- 表示 Roblox CDN 的哈希有效期,官方重传或到期后会变——上线后每月用 source 里的 API 重取一次并替换。Roblox 缩略图 API 最大 768x432,达不到 1200 宽的 Discover 大图门槛。",
+ "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=6765805766&size=768x432&format=Png&countPerUniverse=10",
+ "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=6765805766&size=512x512&format=Png",
+ "fetched": "2026-09-29",
+ "credit": {
+  "en": "Official thumbnail · Cinnamon Go! (Roblox)"
+ },
+ "default": "th3",
+ "pages": {
+  "index": "th3",
+  "getting-started": "th2",
+  "author": "th1",
+  "codes": "th1",
+  "beginner": "th4",
+  "game-info": "th1",
+  "cheats-bans": "th3",
+  "money-gear": "th1",
+  "jobs": "th4",
+  "map-locations": "th3",
+  "weapons": "th3",
+  "vehicles": "th1"
+ },
+ "shots": {
+  "th1": {
+   "src": "https://tr.rbxcdn.com/180DAY-faec41dafa29c7f849b7cc61a6dc6759/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-faec41dafa29c7f849b7cc61a6dc6759/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "alt": {
+    "en": "Promotional thumbnail: a bright blue supercar drifting on a dark city street in a shower of sparks, with the red and white BlockSpin logo in the corner"
+   }
+  },
+  "th2": {
+   "src": "https://tr.rbxcdn.com/180DAY-fb5203b9ee151dc1186e15488ac8f48f/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-fb5203b9ee151dc1186e15488ac8f48f/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "alt": {
+    "en": "Promotional thumbnail: a Roblox character in a green bandana sits in a lawn chair by a lake and reels in a large yellow fish, captioned Fishing"
+   }
+  },
+  "th3": {
+   "src": "https://tr.rbxcdn.com/180DAY-a29dc9289b3e87a61d957d8d4211c98c/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-a29dc9289b3e87a61d957d8d4211c98c/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "alt": {
+    "en": "Promotional thumbnail: two masked Roblox characters rob a Quick-11 convenience store, one holding a pistol and one filling a black bag with cash while the clerk raises his hands"
+   }
+  },
+  "th4": {
+   "src": "https://tr.rbxcdn.com/180DAY-74cbb089082a05ef336177e5b24dbb90/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-74cbb089082a05ef336177e5b24dbb90/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "alt": {
+    "en": "Promotional thumbnail: a masked character with a pistol stands behind a worker in a yellow apron mopping a fast-food restaurant floor beside a wet floor sign"
+   }
+  },
+  "icon": {
+   "src": "https://tr.rbxcdn.com/180DAY-3fa1cc9c917b841b5630adea21e87134/512/512/Image/Png/noFilter",
+   "w": 512,
+   "h": 512,
+   "alt": {
+    "en": "Official BlockSpin game icon: a character in a white T-shirt and gold chain aims a pistol at the viewer, palm trees behind, BlockSpin logo below"
+   }
+  }
+ }
+}

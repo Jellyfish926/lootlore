@@ -1,0 +1,59 @@
+---
+slug: "beginner"
+url: "/deep-fishing/beginner/"
+title: "Deep Fishing Beginner Guides: Start Casting Here"
+seoTitle: "Deep Fishing Beginner Guides | Deep Fishing Guide"
+description: "Deep Fishing beginner guides: how the cast-sell-upgrade loop works, what the rarity tiers mean, which badges come first, and where the official group is."
+category: "Getting Started"
+language: "en"
+checkedAt: "2026-09-29"
+scope: "Category index"
+type: "category"
+tldr: ["Four guides for your first sessions: the core loop, rarity tiers, badges and official community links.", "New to the game? Read how to play first; it is built from the developer's own description.", "Every number on these pages comes from Roblox's official data and carries its check date."]
+related: []
+sourceUrls: []
+images: ["art02"]
+date: "2026-09-29"
+updated: "2026-09-29"
+reviewed: "2026-09-29"
+gameVersion: "2026-09-28 update"
+draft: false
+author: "Jellyfi"
+---
+# Deep Fishing Beginner Guides: Start Casting Here
+
+New to Deep Fishing? Read the how-to-play guide first: it explains the cast, sell and upgrade loop in a few minutes. Then look at rarity tiers and badges to see what you are working towards, and use the community page to find the real LazyGames group and Discord.
+
+These four guides cover everything a first session needs. They stick to what the developer has published on Roblox — the game description, the badge list and the store — and say plainly when something is our advice rather than an official rule.
+
+## Pick a guide by question
+
+### [How to Play: Cast, Sell, Upgrade](/deep-fishing/how-to-play/)
+
+The core loop, line by line from the official description: hold and release to cast, fish once the lure hits water, haul several fish at a time, sell them, and raise Strength to throw farther. Includes where coins and XP come from and why we put distance ahead of luck.
+
+### [Rarity Tiers, Mutations and Secret Odds](/deep-fishing/rarity/)
+
+Legendary, Mythical and Secret are the tiers the game's badges name. Official badge totals show how many players have ever landed each one — and why mutated fish are far more common than any of them.
+
+### [All 13 Badges and Their Owners](/deep-fishing/badges/)
+
+Every badge with its exact unlock text and total awards, from Welcome! to 500K Catches. Useful for setting a realistic next goal: 1,000 catches is common, 10,000 is not.
+
+### [Discord, Roblox Group and Wiki Links](/deep-fishing/discord/)
+
+The LazyGames. group that makes the game, the Discord server that calls itself official, and why this guide has no codes page yet.
+
+## What should a new player do first?
+
+Keep it simple for the first hour. Cast, sell, and put your early coins into the stat that moves your cast farther. Once upgrades start to feel slow, look at the next rod on the [rod list](/deep-fishing/rods/). Paid boosts can wait until you understand the loop.
+
+If you want to spend Robux, the [Rods & Upgrades section](/deep-fishing/gear/) compares every purchase type — rods, passes and the smaller shop items — using the developer's own names and prices.
+
+## What these guides do not cover yet
+
+We have no page for codes, a full fish list or the individual waters. Codes are only published where we cannot read them, and the fish list and water unlock costs exist only on fan sites and videos we could not verify. Those pages will appear when an official source confirms them.
+
+## Scope
+
+Deep Fishing is a live Roblox game that updates often — the listing showed an update on 28 September 2026. Every guide shows its check date. Numbers such as badge totals are snapshots and grow daily.

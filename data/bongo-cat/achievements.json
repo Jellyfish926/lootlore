@@ -1,0 +1,176 @@
+{
+ "appid": "3419430",
+ "source": "https://steamcommunity.com/stats/3419430/achievements/",
+ "captured": "2026-09-29",
+ "total": 28,
+ "achievements": [
+  {
+   "name": "Bongo Beat 1",
+   "desc": "1 bongo beat",
+   "pct": 90.8,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/83f9436f13f0cc957ad0d48c99dce56e9effba75.jpg"
+  },
+  {
+   "name": "Bongo Beat 10",
+   "desc": "10 bongo beats",
+   "pct": 89.2,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/83f9436f13f0cc957ad0d48c99dce56e9effba75.jpg"
+  },
+  {
+   "name": "Bongo Beat 100",
+   "desc": "100 bongo beats",
+   "pct": 79.0,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/83f9436f13f0cc957ad0d48c99dce56e9effba75.jpg"
+  },
+  {
+   "name": "Bongo Beat 1.000",
+   "desc": "1.000 bongo beats",
+   "pct": 60.0,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/83f9436f13f0cc957ad0d48c99dce56e9effba75.jpg"
+  },
+  {
+   "name": "Bongo Beat 10.000",
+   "desc": "10.000 bongo beats",
+   "pct": 39.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/83f9436f13f0cc957ad0d48c99dce56e9effba75.jpg"
+  },
+  {
+   "name": "Item Collector",
+   "desc": "Collect 5 items.",
+   "pct": 23.5,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/ae40611768ede45a08ad58f1ec59719df377f3ec.jpg"
+  },
+  {
+   "name": "Bongo Beat Silver",
+   "desc": "100.000 bongo beats",
+   "pct": 20.3,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/9259cee4428ce5e6b8abb78e535efd9621eedb5e.jpg"
+  },
+  {
+   "name": "Item Collector",
+   "desc": "Collect 20 items.",
+   "pct": 16.2,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/ae40611768ede45a08ad58f1ec59719df377f3ec.jpg"
+  },
+  {
+   "name": "Emoter",
+   "desc": "Use emojis 10 times.",
+   "pct": 12.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/2af67db19ec19a56be2244f5f681eede7e34f3f0.jpg"
+  },
+  {
+   "name": "Item Collector",
+   "desc": "Collect 100 items.",
+   "pct": 10.2,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/ae40611768ede45a08ad58f1ec59719df377f3ec.jpg"
+  },
+  {
+   "name": "Meowtiplayer Friend",
+   "desc": "Have a lobby with 2 players.",
+   "pct": 9.2,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/5064e62134e0ca29b5864c6e10609feec4887a10.jpg"
+  },
+  {
+   "name": "Trader",
+   "desc": "Use the exchange once.",
+   "pct": 8.0,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/33e4072e4d63fff039ec070cd8c9a311ec2902f1.jpg"
+  },
+  {
+   "name": "Emoter",
+   "desc": "Use emojis 100 times.",
+   "pct": 6.8,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/2af67db19ec19a56be2244f5f681eede7e34f3f0.jpg"
+  },
+  {
+   "name": "Bongo Beat Gold",
+   "desc": "1.000.000 bongo beats.",
+   "pct": 6.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/0f74c4c41442dd780a05aaab586616010a05d6b6.jpg"
+  },
+  {
+   "name": "Meowtiplayer Group",
+   "desc": "Have a lobby with 5 players.",
+   "pct": 4.7,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/5064e62134e0ca29b5864c6e10609feec4887a10.jpg"
+  },
+  {
+   "name": "Vendor",
+   "desc": "Use the exchange 10 times.",
+   "pct": 4.5,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/33e4072e4d63fff039ec070cd8c9a311ec2902f1.jpg"
+  },
+  {
+   "name": "Bongo Beat Platinum",
+   "desc": "2.000.000 bongo beats.",
+   "pct": 3.0,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/bb5cf6d1ed1f37a9c01b9f205fe3b9979c608523.jpg"
+  },
+  {
+   "name": "Item Collector",
+   "desc": "Collect 1.000 items.",
+   "pct": 3.0,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/ae40611768ede45a08ad58f1ec59719df377f3ec.jpg"
+  },
+  {
+   "name": "Meowtiplayer Pack",
+   "desc": "Have a lobby with 10 players.",
+   "pct": 2.9,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/5064e62134e0ca29b5864c6e10609feec4887a10.jpg"
+  },
+  {
+   "name": "Emoter",
+   "desc": "Use emojis 1.000 times.",
+   "pct": 2.2,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/2af67db19ec19a56be2244f5f681eede7e34f3f0.jpg"
+  },
+  {
+   "name": "Bongo Beat Amethyst",
+   "desc": "3.000.000 bongo beats.",
+   "pct": 2.1,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/78ded0d26eb4b82b14b32b0a01889caafa82a718.jpg"
+  },
+  {
+   "name": "Meowtiplayer Party",
+   "desc": "Have a lobby with 50 players.",
+   "pct": 1.8,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/5064e62134e0ca29b5864c6e10609feec4887a10.jpg"
+  },
+  {
+   "name": "Bongo Beat Emerald",
+   "desc": "4.000.000 bongo beats.",
+   "pct": 1.6,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/a79e6aad54b746cfc80baa1c7642928b09ae68f7.jpg"
+  },
+  {
+   "name": "Merchant",
+   "desc": "Use the exchange 100 times.",
+   "pct": 1.4,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/33e4072e4d63fff039ec070cd8c9a311ec2902f1.jpg"
+  },
+  {
+   "name": "Bongo Beat Sapphire",
+   "desc": "5.000.000 bongo beats.",
+   "pct": 1.2,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/09a5c9ede2b9c7a17d8af0da4c1371d05b90ae76.jpg"
+  },
+  {
+   "name": "Sparkly Emoter",
+   "desc": "Use emojis 10.000 times.",
+   "pct": 0.9,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/50bd8b4ddda262b0f3ef96cb0c587dfc9e540510.jpg"
+  },
+  {
+   "name": "Bongo Beat Ruby",
+   "desc": "10.000.000 bongo beats.",
+   "pct": 0.6,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/44ce8fc83df56424223233e545a9df4186e62caa.jpg"
+  },
+  {
+   "name": "Bongo Beat Diamond",
+   "desc": "25.000.000 bongo beats. You did it.",
+   "pct": 0.4,
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/3419430/777af93b15cd3770c145fb18ccce35da48653751.jpg"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8b96f1298b3638f0.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-67b6c6c436bc2a63.js"],""]
 2:T937,<p>This is a small reference site for <strong>Sir, We Have an Orc Problem</strong>, the incremental tower defense game Mumpitz Games released on 28 July 2026.</p>
 <p>It exists because the game shipped with no official documentation of its turret stats, and within two weeks the search results filled with pages that state those numbers confidently without saying where they came from. Some of them are wrong. All of them are unfalsifiable, which is worse.</p>
 <h2>Where the numbers come from</h2>

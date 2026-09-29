@@ -1,4 +1,4 @@
-2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-7e8ef9c7b30d943b.js"],""]
+2:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","621","static/chunks/app/%5Bcategory%5D/%5Bslug%5D/page-4d3be373db60c1e0.js"],""]
 4:I[4707,[],""]
 7:I[6423,[],""]
 3:T1f95,<p><strong>Glacier</strong> is the cold tag, and it is the clearest example in Sephiria of a combo that does nothing until something else in your bag is dealing the right damage type. Two artifacts that reward Frostbite are two dead artifacts if nothing you own applies Frostbite. That dependency is the whole reason one documented build spends a <a href="/artifacts/wish-fountain-carry-in-artifacts/">Wish Fountain</a> slot on a ring that deals no damage at all.</p>

@@ -7,3 +7,5 @@
 | 2026-09-29 | BlockSpin(Roblox universeId 6765805766 / placeId 104715542330896)· `kind: native` | 英文 | 8 页(另 5 篇 draft 未发布) | `https://lootwiki.com/blockspin/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-09-29 | Deep Fishing(Roblox universeId 10526853622 / placeId 132239307080610)· `kind: native` | 英文 | 12 页(另 1 篇 draft 未发布) | `https://lootwiki.com/deep-fishing/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-09-29 | Bongo Cat(Steam appid 3419430)· `kind: native` | 英文 | 13 页 | `https://lootwiki.com/bongo-cat/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-09-30 | Untitled Wheelie Game(Roblox universeId 10268960646 / placeId 93844268955707)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/untitled-wheelie-game/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-09-30 | Animal Daycare (Anomaly)(Roblox universeId 10701628624 / placeId 124061247871628)· `kind: native` | 英文 | 7 页(另 2 篇 draft 未发布) | `https://lootwiki.com/animal-daycare/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |

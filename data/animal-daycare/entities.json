@@ -1,0 +1,665 @@
+{
+ "fetched": "2026-09-30",
+ "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T08:07:52Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、群组 groups.roblox.com、徽章 badges.roblox.com、开发者商品 apis.roblox.com/developer-products、成熟度 experience-guidelines-api。通行证接口返回 0 个,不建实体。商品 order 按 Robux 价升序(同价按创建时间)。徽章 order 按累计获得数降序。快照数字(awarded_count 等)只代表 2026-09-30。兑换码、职业名称/效果、官方社媒、冒名者特征、夜间威胁无一手来源,未建实体。",
+ "entities": {
+  "animal-daycare": {
+   "type": "mechanic",
+   "name_en": "Animal Daycare (Anomaly)",
+   "page_slug": "game-info",
+   "summary_en": "Roblox survival game: inspect every arrival for impostors, feed and play with the animal children, keep them calm, then survive mysterious nighttime events; solo or with friends.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10701628624",
+   "description_en": "Inspect every new arrival, search for suspicious clues, and decide who can enter.",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10701628624",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10701628624",
+   "release_date_en": "14 August 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10701628624",
+   "role_en": "Developer: Day Dreams Games (Roblox group 235484791)",
+   "role_source": "https://groups.roblox.com/v1/groups/235484791",
+   "max_players": 25,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10701628624",
+   "key_notes_en": "25 players per server · Maturity: Mild · Private servers not allowed · No game passes",
+   "key_notes_source": "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10701628624",
+    "https://groups.roblox.com/v1/groups/235484791",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://develop.roblox.com/v1/universes/10701628624/places?limit=50"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "code_system",
+    "official_social_links",
+    "class_list",
+    "shift_count"
+   ]
+  },
+  "badge-first-day-on-the-job": {
+   "type": "achievement",
+   "name_en": "First Day on the Job",
+   "page_slug": "badges",
+   "order": 1,
+   "description_en": "Survive the first night.",
+   "description_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "requires_en": "Survive the first night.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "key_notes_en": "Awarded 3,499,052 times as of 2026-09-30 (100.00% of First Day on the Job awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "awarded_count": 3499052,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "past_day_awarded_count": 308718,
+   "badge_created": "2026-09-16",
+   "badge_id": 2750062175677903,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "badge-still-standing": {
+   "type": "achievement",
+   "name_en": "Still Standing",
+   "page_slug": "badges",
+   "order": 2,
+   "description_en": "Survive 2 nights.",
+   "description_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "requires_en": "Survive 2 nights.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "key_notes_en": "Awarded 2,144,065 times as of 2026-09-30 (61.28% of First Day on the Job awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "awarded_count": 2144065,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "past_day_awarded_count": 175316,
+   "badge_created": "2026-09-16",
+   "badge_id": 2454502993205399,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "badge-night-shift-veteran": {
+   "type": "achievement",
+   "name_en": "Night Shift Veteran",
+   "page_slug": "badges",
+   "order": 3,
+   "description_en": "Survive 5 shifts.",
+   "description_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "requires_en": "Survive 5 shifts.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "key_notes_en": "Awarded 168,300 times as of 2026-09-30 (4.81% of First Day on the Job awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "awarded_count": 168300,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "past_day_awarded_count": 11954,
+   "badge_created": "2026-09-16",
+   "badge_id": 1936094203290132,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "badge-daycare-legend": {
+   "type": "achievement",
+   "name_en": "Daycare Legend",
+   "page_slug": "badges",
+   "order": 5,
+   "description_en": "Survive 10 shifts.",
+   "description_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "requires_en": "Survive 10 shifts.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "key_notes_en": "Awarded 11,650 times as of 2026-09-30 (0.33% of First Day on the Job awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "awarded_count": 11650,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "past_day_awarded_count": 881,
+   "badge_created": "2026-09-16",
+   "badge_id": 2747718496628702,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "badge-imposter-hunter": {
+   "type": "achievement",
+   "name_en": "Imposter Hunter",
+   "page_slug": "badges",
+   "order": 4,
+   "description_en": "Expose 25 imposters",
+   "description_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "requires_en": "Expose 25 imposters",
+   "requires_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "key_notes_en": "Awarded 20,744 times as of 2026-09-30 (0.59% of First Day on the Job awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "awarded_count": 20744,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100",
+   "past_day_awarded_count": 1731,
+   "badge_created": "2026-09-16",
+   "badge_id": 4057135134095766,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10701628624/badges?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "restore-coffie": {
+   "type": "item",
+   "name_en": "Restore Coffie",
+   "page_slug": "shop",
+   "order": 1,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Refill the coffee and make it available again.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Shift item",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-02",
+   "product_id": 3710956173,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [],
+   "key_notes_en": "Spelling 'Coffie' as in the store",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "get-toy-hammer": {
+   "type": "item",
+   "name_en": "Get Toy Hammer",
+   "page_slug": "shop",
+   "order": 2,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Toy Hammer taken or still recharging? Grab another one instantly — no waiting required!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Shift item",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-04",
+   "product_id": 3711254352,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "lunchbox": {
+   "type": "item",
+   "name_en": "Lunchbox",
+   "page_slug": "shop",
+   "order": 3,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Contains 4 snacks. Each use restores +15 Calm. Perfect for stressful shifts!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Shift item",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-02",
+   "product_id": 3710956010,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "reroll-shop": {
+   "type": "item",
+   "name_en": "Reroll Shop",
+   "page_slug": "shop",
+   "order": 4,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Didn't find the item you were looking for? Update items in the store!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "In-game shop",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_id": 3712241533,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "lamb-coins-50": {
+   "type": "item",
+   "name_en": "50 Lamb Coins",
+   "page_slug": "shop",
+   "order": 5,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "A handful of coins that can be spent on anything.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Lamb Coins pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712371331,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "buy-item-from-shop": {
+   "type": "item",
+   "name_en": "Buy Item from Shop",
+   "page_slug": "shop",
+   "order": 6,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Don't have enough cash for the item you need? Just buy it!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "In-game shop",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712372531,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "gift-lamb-coins-50": {
+   "type": "item",
+   "name_en": "Gift 50 Lamb Coins",
+   "page_slug": "shop",
+   "order": 7,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Make a friend happy! Give him some coins.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Gift",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-16",
+   "product_id": 3713130015,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "starter-pack-limited": {
+   "type": "item",
+   "name_en": "Starter Pack (Limited)",
+   "page_slug": "shop",
+   "order": 8,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Great deal for new players. Limited BTW! :D",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Bundle (contents not stated)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-23",
+   "product_id": 3714295491,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "contents",
+    "limit_end"
+   ],
+   "key_notes_en": "Contents and time limit not stated",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "water-gun-20-bullets": {
+   "type": "item",
+   "name_en": "Water Gun (20 Bullets)",
+   "page_slug": "shop",
+   "order": 9,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Contains 15 shots. Use it to scare away ghosts and protect the daycare! 💦",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Shift item",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-02",
+   "product_id": 3710956095,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "shot_count"
+   ],
+   "key_notes_en": "Name says 20 bullets; description says 15 shots (both official)",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "revive-yourself": {
+   "type": "item",
+   "name_en": "Revive Yourself",
+   "page_slug": "shop",
+   "order": 10,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Revive yourself to continue playing with your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Revive",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-09",
+   "product_id": 3712093175,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "revive-a-friend": {
+   "type": "item",
+   "name_en": "Revive a Friend",
+   "page_slug": "shop",
+   "order": 11,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Revive your friend to continue the game together!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Revive",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-09",
+   "product_id": 3712093285,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "lamb-coins-175": {
+   "type": "item",
+   "name_en": "175 Lamb Coins",
+   "page_slug": "shop",
+   "order": 12,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Planning to buy a new class? Get some Lamb Coins!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Lamb Coins pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712371595,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "unlock-level-2-1-star": {
+   "type": "item",
+   "name_en": "Unlock Level 2 (1-Star Class)",
+   "page_slug": "shop",
+   "order": 13,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Unlocks the second level of the selected class.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Class level unlock",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712372226,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "class_names",
+    "level_effects"
+   ]
+  },
+  "gift-lamb-coins-175": {
+   "type": "item",
+   "name_en": "Gift 175 Lamb Coins",
+   "page_slug": "shop",
+   "order": 14,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Make your friend happy! Give him lots of coins.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Gift",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-16",
+   "product_id": 3713130173,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "unlock-level-2-2-star": {
+   "type": "item",
+   "name_en": "Unlock Level 2 (2-Star Class)",
+   "page_slug": "shop",
+   "order": 15,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Unlocks the third level of the selected class.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Class level unlock",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-23",
+   "product_id": 3714281057,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "class_names",
+    "level_effects"
+   ],
+   "key_notes_en": "Description says 'third level' although the name says Level 2",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "unlock-level-2-3-star": {
+   "type": "item",
+   "name_en": "Unlock Level 2 (3-Star Class)",
+   "page_slug": "shop",
+   "order": 16,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Unlocks the third level of the selected class.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Class level unlock",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-23",
+   "product_id": 3714281162,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "class_names",
+    "level_effects"
+   ],
+   "key_notes_en": "Description says 'third level' although the name says Level 2",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "unlock-level-3-1-star": {
+   "type": "item",
+   "name_en": "Unlock Level 3 (1-Star Class)",
+   "page_slug": "shop",
+   "order": 17,
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Unlocks the third level of the selected class.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Class level unlock",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712372266,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "class_names",
+    "level_effects"
+   ]
+  },
+  "boss": {
+   "type": "item",
+   "name_en": "Boss",
+   "page_slug": "shop",
+   "order": 18,
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Do you want to be so cool like him? I do.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Product type not stated",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712384931,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "contents"
+   ],
+   "key_notes_en": "What Boss is (class, skin or other) is not stated",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "gift-boss": {
+   "type": "item",
+   "name_en": "Gift Boss",
+   "page_slug": "shop",
+   "order": 19,
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Gift this guy to your friend or girlfriend, make them happy! :)",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Product type not stated",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_id": 3713392805,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "contents"
+   ],
+   "key_notes_en": "What Boss is (class, skin or other) is not stated",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+  },
+  "lamb-coins-550": {
+   "type": "item",
+   "name_en": "550 Lamb Coins",
+   "page_slug": "shop",
+   "order": 20,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Looks prestigious!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Lamb Coins pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712371707,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "gift-lamb-coins-550": {
+   "type": "item",
+   "name_en": "Gift 550 Lamb Coins",
+   "page_slug": "shop",
+   "order": 21,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Make a friend happy! Give them a really big gift of coins!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Gift",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-16",
+   "product_id": 3713130268,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "unlock-level-3-2-star": {
+   "type": "item",
+   "name_en": "Unlock Level 3 (2-Star Class)",
+   "page_slug": "shop",
+   "order": 22,
+   "unlock_cost": "449 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Unlocks the third level of the selected class.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Class level unlock",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-23",
+   "product_id": 3714281085,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "class_names",
+    "level_effects"
+   ]
+  },
+  "unlock-level-3-3-star": {
+   "type": "item",
+   "name_en": "Unlock Level 3 (3-Star Class)",
+   "page_slug": "shop",
+   "order": 23,
+   "unlock_cost": "649 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Unlocks the third level of the selected class.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Class level unlock",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-23",
+   "product_id": 3714281252,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "class_names",
+    "level_effects"
+   ]
+  },
+  "lamb-coins-2500": {
+   "type": "item",
+   "name_en": "2500 Lamb Coins",
+   "page_slug": "shop",
+   "order": 24,
+   "unlock_cost": "1499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "Whoa whoa whoa, take it easy! So many coins!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Lamb Coins pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-11",
+   "product_id": 3712371820,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  },
+  "gift-lamb-coins-2500": {
+   "type": "item",
+   "name_en": "Gift 2500 Lamb Coins",
+   "page_slug": "shop",
+   "order": 25,
+   "unlock_cost": "1499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "description_en": "How much?!?! You seem to value your friend very much! Surprise him with a bag of coins.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "usage_en": "Gift",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100",
+   "product_created": "2026-09-16",
+   "product_id": 3713130382,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10701628624/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": []
+  }
+ }
+}

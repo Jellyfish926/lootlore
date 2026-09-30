@@ -1372,6 +1372,230 @@
           "last": 1
         }
       }
+    },
+    {
+      "slug": "untitled-wheelie-game",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/untitled-wheelie-game",
+      "name": "Untitled Wheelie Game",
+      "short": "Untitled Wheelie Game",
+      "default_path": "/",
+      "native": {
+        "title": "Untitled Wheelie Game",
+        "nav": [
+          "beginner",
+          "upgrades"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-09-30",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Untitled Wheelie Game",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/untitled-wheelie-game/entities.json",
+        "start_here": [
+          "how-to-play",
+          "money",
+          "gamepasses"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Vehicle Simulator",
+        "studio": "Untitled Wheelie Group",
+        "released": "June 4, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-db08a85077d090039a11628a0a1be1ba/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: a Roblox rider in a black helmet pops a wheelie on a small black motorbike on a highway while two police cars with flashing lights chase behind, under the words AI COPS and a red arrow",
+        "img_credit": "Official thumbnail · Untitled Wheelie Group (Roblox)",
+        "blurb": "Our Untitled Wheelie Game hub for Untitled Wheelie Group's Roblox motorbike game: what you can do on the map, how to earn money, all 12 game passes with official Robux prices, cash packs, Backfire parts, police fines and the update history — built from Roblox's own data, with no unverified codes.",
+        "highlights": [
+          [
+            "All 12 Game Passes",
+            "/untitled-wheelie-game/gamepasses/"
+          ],
+          [
+            "Money Guide",
+            "/untitled-wheelie-game/money/"
+          ],
+          [
+            "Cops & Fines",
+            "/untitled-wheelie-game/cops-fines/"
+          ],
+          [
+            "How to Play",
+            "/untitled-wheelie-game/how-to-play/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 8,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "item",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "usage"
+            ],
+            "sort": "order",
+            "max": 10,
+            "all": "money"
+          },
+          {
+            "type": "gamepass",
+            "cols": [
+              "@name",
+              "unlock_cost"
+            ],
+            "sort": "order",
+            "max": 12,
+            "all": "gamepasses"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "animal-daycare",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/animal-daycare",
+      "name": "Animal Daycare (Anomaly)",
+      "short": "Animal Daycare",
+      "default_path": "/",
+      "native": {
+        "title": "Animal Daycare",
+        "nav": [
+          "guides"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-09-30",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Animal Daycare",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/animal-daycare/entities.json",
+        "start_here": [
+          "how-to-play",
+          "badges",
+          "shop"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Survival (Anomaly)",
+        "studio": "Day Dreams Games",
+        "released": "August 14, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-256db702ec4cf0066c991dde18443c86/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: three plush animal children sit in a daycare playroom, a sleepy lamb holding toy blocks, a red spiky creature with a wide mouth full of sharp teeth, and a yellow cat hugging a beach ball",
+        "img_credit": "Official thumbnail · Day Dreams Games (Roblox)",
+        "blurb": "Our Animal Daycare (Anomaly) hub for Day Dreams Games' Roblox survival game: what a shift asks of you from the developer's own description, all five badges with survival odds from official totals, and every Robux product and Lamb Coin pack — built from Roblox's own data, with no unverified codes.",
+        "highlights": [
+          [
+            "How to Play",
+            "/animal-daycare/how-to-play/"
+          ],
+          [
+            "Badges & Survival Odds",
+            "/animal-daycare/badges/"
+          ],
+          [
+            "Shop & Lamb Coins",
+            "/animal-daycare/shop/"
+          ],
+          [
+            "Game Info",
+            "/animal-daycare/game-info/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 8,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "description",
+              "key_notes"
+            ],
+            "sort": "order",
+            "max": 5,
+            "all": "badges"
+          },
+          {
+            "type": "item",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "description"
+            ],
+            "sort": "order",
+            "max": 25,
+            "all": "shop"
+          }
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,485 @@
+{
+ "fetched": "2026-09-30",
+ "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T02:34:41Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products、群组 groups.roblox.com、分级 experience-guidelines-api。名称逐字复制接口 name 字段(含 emoji)。13 个以 Robux 数额命名的开发者商品(10 Robux … 1,000,000 Robux)用途未说明,未建实体。车辆清单、车辆属性、罚款金额、按键、兑换码无一手来源,未建实体。徽章为 0。价格为 2026-09-30 快照;下架通行证接口 price 为 null,故不写价格。item 的 order 按创建日期再按价格升序。",
+ "roblox": {
+  "universeId": 10268960646,
+  "rootPlaceId": 93844268955707,
+  "creatorGroupId": 84540135,
+  "updated": "2026-09-30T02:34:41.2804472Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页。",
+ "entities": {
+  "untitled-wheelie-game": {
+   "type": "mechanic",
+   "name_en": "Untitled Wheelie Game",
+   "page_slug": "how-to-play",
+   "summary_en": "Roblox motorbike game: hold wheelies with realistic balance physics, swerve through traffic, deliver pizzas for money, run from cops, and buy bikes, upgrades, parts and paint.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10268960646",
+   "description_en": "Wheelie around the map, ride with your friends, and experience realistic wheelie physics with interactive traffic.",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10268960646",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10268960646",
+   "release_date_en": "4 June 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10268960646",
+   "role_en": "Developer: Untitled Wheelie Group (Roblox group 84540135)",
+   "role_source": "https://groups.roblox.com/v1/groups/84540135",
+   "max_players": 10,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10268960646",
+   "key_notes_en": "10 players per server · Private servers not allowed · Maturity: Minimal · No badges",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=10268960646",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/10268960646/badges?limit=100"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10268960646",
+    "https://groups.roblox.com/v1/groups/84540135",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "controls",
+    "map_names",
+    "bike_list",
+    "fine_amount",
+    "code_system",
+    "discord_link",
+    "supported_devices"
+   ],
+   "key_notes_repro": "Maturity: Minimal re-read anonymously on 2026-09-30: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"10268960646\"} returns ageRecommendation.displayName = Minimal; a GET to the same URL returns 404, which is likely why the check failed."
+  },
+  "pass-bike-customization": {
+   "type": "gamepass",
+   "name_en": "Bike Customization",
+   "page_slug": "bikes",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "description_en": "Customize the color of your bike.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1865410310,
+   "created": "2026-06-05",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "former_price",
+    "off_sale_date"
+   ],
+   "order": 1,
+   "usage_en": "Customize the color of your bike.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+  },
+  "pass-extra-bike-speed": {
+   "type": "gamepass",
+   "name_en": "Extra Bike Speed",
+   "page_slug": "bikes",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "description_en": "Adds speed to your bike",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1867464419,
+   "created": "2026-06-06",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "former_price",
+    "off_sale_date"
+   ],
+   "order": 2,
+   "usage_en": "Adds speed to your bike",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+  },
+  "pass-x2-wheelie-earning": {
+   "type": "gamepass",
+   "name_en": "X2 Wheelie Earning 💰",
+   "page_slug": "money",
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1884191223,
+   "created": "2026-06-20",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect_size_beyond_name",
+    "stacking"
+   ],
+   "order": 3
+  },
+  "pass-x3-wheelie-earning": {
+   "type": "gamepass",
+   "name_en": "X3 Wheelie Earning 💰",
+   "page_slug": "money",
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1883687170,
+   "created": "2026-06-20",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect_size_beyond_name",
+    "stacking"
+   ],
+   "order": 4
+  },
+  "pass-x2-job-earning": {
+   "type": "gamepass",
+   "name_en": "X2 Job Earning 💰",
+   "page_slug": "money",
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1882859227,
+   "created": "2026-06-20",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect_size_beyond_name",
+    "stacking"
+   ],
+   "order": 5
+  },
+  "pass-x3-job-earning": {
+   "type": "gamepass",
+   "name_en": "X3 Job Earning 💰",
+   "page_slug": "money",
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1882841193,
+   "created": "2026-06-20",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect_size_beyond_name",
+    "stacking"
+   ],
+   "order": 6
+  },
+  "pass-more-helmets": {
+   "type": "gamepass",
+   "name_en": "More Helmets 🪖",
+   "page_slug": "gamepasses",
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1882955253,
+   "created": "2026-06-20",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect_size"
+   ],
+   "order": 7
+  },
+  "pass-free-subway-travel": {
+   "type": "gamepass",
+   "name_en": "Free Subway Travel 🚇",
+   "page_slug": "gamepasses",
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1882673259,
+   "created": "2026-06-20",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect_size"
+   ],
+   "order": 8
+  },
+  "pass-eblox-dragster": {
+   "type": "gamepass",
+   "name_en": "Eblox Dragster",
+   "page_slug": "bikes",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1890749586,
+   "created": "2026-06-27",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "former_price",
+    "off_sale_date",
+    "effect"
+   ],
+   "order": 9
+  },
+  "pass-tuttiro-bike": {
+   "type": "gamepass",
+   "name_en": "Tuttiro Bike",
+   "page_slug": "bikes",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1898310743,
+   "created": "2026-07-01",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "former_price",
+    "off_sale_date",
+    "effect"
+   ],
+   "order": 10
+  },
+  "pass-ebike-pack": {
+   "type": "gamepass",
+   "name_en": "EBike Pack ⚡",
+   "page_slug": "bikes",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "description_en": "Gives you all Ebikes in the game. (Not Emotos)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1948772710,
+   "created": "2026-08-15",
+   "last_updated": "2026-08-15",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "former_price",
+    "off_sale_date"
+   ],
+   "order": 11,
+   "usage_en": "Gives you all Ebikes in the game. (Not Emotos)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+  },
+  "pass-never-pay-fines": {
+   "type": "gamepass",
+   "name_en": "NEVER PAY FINES",
+   "page_slug": "cops-fines",
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "description_en": "Just never have to pay fines for when you get caught",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1999880596,
+   "created": "2026-09-26",
+   "last_updated": "2026-09-26",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [],
+   "order": 12,
+   "usage_en": "Just never have to pay fines for when you get caught",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
+  },
+  "product-cash-750": {
+   "type": "item",
+   "name_en": "$750",
+   "page_slug": "money",
+   "order": 1,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Robux product named after a dollar amount; the developer gives no description of what it grants",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-06-25",
+   "product_id": 3606473467,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "delivered_amount_confirmed"
+   ]
+  },
+  "product-cash-2250": {
+   "type": "item",
+   "name_en": "$2,250",
+   "page_slug": "money",
+   "order": 2,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Robux product named after a dollar amount; the developer gives no description of what it grants",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-06-25",
+   "product_id": 3606473567,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "delivered_amount_confirmed"
+   ]
+  },
+  "product-cash-5000": {
+   "type": "item",
+   "name_en": "$5,000",
+   "page_slug": "money",
+   "order": 3,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Robux product named after a dollar amount; the developer gives no description of what it grants",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-06-25",
+   "product_id": 3606473592,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "delivered_amount_confirmed"
+   ]
+  },
+  "product-cash-13500": {
+   "type": "item",
+   "name_en": "$13,500",
+   "page_slug": "money",
+   "order": 4,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Robux product named after a dollar amount; the developer gives no description of what it grants",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-06-25",
+   "product_id": 3606473655,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "delivered_amount_confirmed"
+   ]
+  },
+  "product-cash-30000": {
+   "type": "item",
+   "name_en": "$30,000",
+   "page_slug": "money",
+   "order": 5,
+   "unlock_cost": "799 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Robux product named after a dollar amount; the developer gives no description of what it grants",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-06-25",
+   "product_id": 3606473693,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "delivered_amount_confirmed"
+   ]
+  },
+  "product-cash-67500": {
+   "type": "item",
+   "name_en": "$67,500",
+   "page_slug": "money",
+   "order": 6,
+   "unlock_cost": "1,499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Robux product named after a dollar amount; the developer gives no description of what it grants",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-06-25",
+   "product_id": 3606473730,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "delivered_amount_confirmed"
+   ]
+  },
+  "product-install-backfire": {
+   "type": "item",
+   "name_en": "INSTALL BACKFIRE",
+   "page_slug": "bikes",
+   "order": 7,
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Backfire part step; no official description",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-09-04",
+   "product_id": 3711199455,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect"
+   ]
+  },
+  "product-level-2-backfire": {
+   "type": "item",
+   "name_en": "LEVEL 2 BACKFIRE",
+   "page_slug": "bikes",
+   "order": 8,
+   "unlock_cost": "30 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Backfire part step; no official description",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-09-04",
+   "product_id": 3711199471,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect"
+   ]
+  },
+  "product-level-3-backfire": {
+   "type": "item",
+   "name_en": "LEVEL 3 BACKFIRE",
+   "page_slug": "bikes",
+   "order": 9,
+   "unlock_cost": "40 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Backfire part step; no official description",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-09-04",
+   "product_id": 3711199487,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect"
+   ]
+  },
+  "product-avoid-fines": {
+   "type": "item",
+   "name_en": "AVOID FINES",
+   "page_slug": "cops-fines",
+   "order": 10,
+   "unlock_cost": "13 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "usage_en": "Fine-related product; no official description",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100",
+   "product_created": "2026-09-21",
+   "product_id": 3714074448,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
+   ],
+   "accessed": "2026-09-30",
+   "unverified_fields": [
+    "effect",
+    "uses_per_purchase"
+   ]
+  }
+ }
+}

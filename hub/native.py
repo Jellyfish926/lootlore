@@ -29,6 +29,27 @@ class NativeError(Exception):
     pass
 
 
+def _disp_width(s: str) -> int:
+    """显示宽度:CJK/全角按 2 计,其余按 1 计(与 ④⑤ 硬规格「中文站按显示宽度折算」同口径)。"""
+    import unicodedata
+    return sum(2 if unicodedata.east_asian_width(ch) in ("W", "F") else 1 for ch in s)
+
+
+def fit_template(t: dict, key: str, lo: int, hi: int, **kw) -> str:
+    """按长度自适应选模板:依次试 i18n 里的 key、key_short、key_shorter……
+    取第一个显示宽度落在 [lo, hi] 的;都不落在区间内就取第一个不超过 hi 的;再不行取最后一个。
+    游戏名短时第一条模板照旧命中,产物不变;只有游戏名长到超标时才换短措辞,不为某个游戏写死。"""
+    cands = [t[key]] + [t[k] for k in (key + "_short", key + "_shorter") if k in t]
+    texts = [c.format(**kw) for c in cands]
+    for s in texts:
+        if lo <= _disp_width(s) <= hi:
+            return s
+    for s in texts:
+        if _disp_width(s) <= hi:
+            return s
+    return texts[-1]
+
+
 def ld_script(obj) -> str:
     """统一 JSON-LD 输出:紧凑 JSON + 转义 < > &,防止正文里的字符提前闭合 <script>。"""
     s = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
@@ -1312,8 +1333,8 @@ class NativeLang(EntityBox, HubBodyMixin):
         gname = self.spec.get("title") or self.g["name"]
         route = self.route_slug("all")
         page_url = self.base + route
-        title = t["all_page_seo"].format(game=gname, brand=self.cfg["brand"])
-        desc = t["all_page_desc"].format(game=gname, brand=self.cfg["brand"])
+        title = fit_template(t, "all_page_seo", 0, 60, game=gname, brand=self.cfg["brand"])
+        desc = fit_template(t, "all_page_desc", 140, 160, game=gname, brand=self.cfg["brand"])
         # og:image:该游戏 _images.json 的 default 图(原图尺寸,与文章页 og:image 同一取法)
         cov = self.site_game.cover_image()
         og_im = dict(cov, alt=self.alt_of(cov)) if cov and cov.get("src") else None

@@ -481,9 +481,12 @@ def featured_pages(gi, n=6):
 def game_stats(gi):
     """一行统计,每个数字都来自实际统计:页数 / 栏目数 / 工具数 / 语种数 / 最后复核日。
     统计不出来的项直接不显示(没有估算,也没有写死的数)。"""
-    bits = [f'<b>{gi.page_count}</b>&nbsp;{esc(T["stat_guides"])}']
+    def lbl(n, plural, single):   # 单数键缺省时退回复数键(各语种 i18n 不强制补单数)
+        return T[plural] if n != 1 else T.get(single, T[plural])
+    bits = [f'<b>{gi.page_count}</b>&nbsp;{esc(lbl(gi.page_count, "stat_guides", "stat_guide"))}']
     if gi.sections:
-        bits.append(f'<b>{len(gi.sections)}</b>&nbsp;{esc(T["stat_sections"])}')
+        ns = len(gi.sections)
+        bits.append(f'<b>{ns}</b>&nbsp;{esc(lbl(ns, "stat_sections", "stat_section"))}')
     nt = len(tool_pages(gi))
     if nt:
         bits.append(f'<b>{nt}</b>&nbsp;{esc(T["stat_tools" if nt > 1 else "stat_tool"])}')

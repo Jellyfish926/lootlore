@@ -390,9 +390,9 @@ class HubBodyMixin:
     def hb_pills(self):
         t, c = self.t, self.hb_counts()
         bits = []
-        for key, single, plural in (("pages", "stat_guides", "stat_guides"),
-                                    ("sections", "stat_sections", "stat_sections"),
-                                    ("entities", "stat_entries", "stat_entries"),
+        for key, single, plural in (("pages", "stat_guide", "stat_guides"),
+                                    ("sections", "stat_section", "stat_sections"),
+                                    ("entities", "stat_entry", "stat_entries"),
                                     ("tools", "stat_tool", "stat_tools"),
                                     ("langs", "stat_languages", "stat_languages")):
             n = c.get(key) or 0
@@ -400,7 +400,8 @@ class HubBodyMixin:
                 continue
             if not n:
                 continue
-            bits.append(f'<li><b>{n}</b>{NBSP}{esc(t[plural if n > 1 else single])}</li>')
+            # 单数键缺省时退回复数键(各语种 i18n 不强制补单数)
+            bits.append(f'<li><b>{n}</b>{NBSP}{esc(t[plural] if n > 1 else t.get(single, t[plural]))}</li>')
         return f'<ul class="hb hb-pills" data-hb="pills">{"".join(bits)}</ul>' if bits else ""
 
     # -------------------------------------------------- 模块:范围提示框(逐字引用本站页面)
@@ -419,7 +420,8 @@ class HubBodyMixin:
         t, c = self.t, self.hb_counts()
         li = []
         if c.get("pages") and c.get("sections"):
-            li.append(t["kp_pages"].format(n=c["pages"], m=c["sections"]))
+            kp = t.get("kp_pages_one_section", t["kp_pages"]) if c["sections"] == 1 else t["kp_pages"]
+            li.append(kp.format(n=c["pages"], m=c["sections"]))
         if c.get("entities"):
             li.append(t["kp_entities"].format(n=c["entities"]))
         if c.get("tools"):

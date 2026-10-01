@@ -898,7 +898,8 @@ class NativeLang(EntityBox, HubBodyMixin):
     def hb_counts(self):
         ds = [p.get("reviewed") or p.get("updated") or p.get("date")
               for p in self.live_pages() if p.type == "article"]
-        return {"pages": sum(1 for p in self.live_pages() if p.type != "author"),
+        # 「N guides」只数文章页:与 /all/、左侧导航、栏目计数同一口径(home / 栏目总览 / 作者页不算攻略)
+        return {"pages": sum(1 for p in self.live_pages() if p.type == "article"),
                 "sections": len(self.nav), "tools": len(self._hb_tool_pages()),
                 "langs": len(self.site_game.langs), "entities": len(self.ents),
                 "updated": max([d for d in ds if d], default="")}
@@ -917,7 +918,14 @@ class NativeLang(EntityBox, HubBodyMixin):
                 idx += 1
                 if idx == want:
                     title = mdlite.plain(b["text"])
-                    para = next((mdlite.plain(x["text"]) for x in blocks[k + 1:] if x["t"] == "p"), "")
+                    # 只在本节内找段落:遇到下一个同级或更高级标题就停,
+                    # 否则一个只有列表的节会借用下一节的段落,标题与正文对不上
+                    for x in blocks[k + 1:]:
+                        if x["t"] == "h" and x["level"] <= 2:
+                            break
+                        if x["t"] == "p":
+                            para = mdlite.plain(x["text"])
+                            break
                     break
         if not (title and para):
             return None
@@ -1463,6 +1471,7 @@ class NativeGame:
                 if p.route not in seen:
                     seen.add(p.route)
                     pages.append(p)
+        n_guides = len(pages)  # 默认语种已发布文章(去重)—— 卡片/索引上的「N guides」
         for lg in self.langs:
             for p in lg.live_pages():
                 if lg.route(p) in seen or p.type == "home":
@@ -1478,7 +1487,7 @@ class NativeGame:
         cover = {"src": c.get("img", ""), "w": c.get("img_w"), "h": c.get("img_h"),
                  "alt": c.get("img_alt", "")}
         return GameIndex(self.g, home_route=l.route(l.home), sections=sections,
-                         pages=pages, cover=cover, default_lang=l.code)
+                         pages=pages, cover=cover, default_lang=l.code, guide_count=n_guides)
 
     def build(self, out_root: Path):
         dst = out_root / self.gslug

@@ -1,5 +1,5 @@
 {
- "_note": "图片全部来自 Roblox 官方缩略图接口(游戏页宣传图 3 张 + 游戏图标 1 张,不是实机截图,alt 按亲眼所见描述)。URL 里 180DAY- 前缀表示 CDN 缓存期,上线后需定期(建议每 60 天)重跑 thumbnails 接口刷新;宣传图最大尺寸 768x432,低于 Discover 的 1200 宽要求。2026-10-01 写入前逐张 curl 验 200(7 个 URL:三图各 768x432 与 480x270 两档 + 图标 512x512,均 200 image/Png)。官方只上传了 3 张图,无视频。图标为 512x512 方图,只作正文配图,不作封面(pages 映射不指向 icon)。徽章图标(thumbnails v1/badges/icons,150x150)已取证存 raw/badge_icons.json,本批未用。",
+ "_note": "图片全部来自 Roblox 官方缩略图接口(游戏页宣传图 3 张 + 游戏图标 1 张,不是实机截图,alt 按亲眼所见描述)。URL 里 180DAY- 前缀表示 CDN 缓存期,上线后需定期(建议每 60 天)重跑 thumbnails 接口刷新;宣传图最大尺寸 768x432,低于 Discover 的 1200 宽要求。2026-10-01 写入前逐张 curl 验 200(7 个 URL:三图各 768x432 与 480x270 两档 + 图标 512x512,均 200 image/Png)。官方只上传了 3 张图,无视频。图标为 512x512 方图,原只作正文配图;10-01 卡图去重后 horses 页首图改用图标。徽章图标(thumbnails v1/badges/icons,150x150)已取证存 raw/badge_icons.json,本批未用。 2026-10-01 卡图去重:新增 4 张官方方形图标(徽章 Horsin' Around / Fruity Foal、开发者商品 Buy Exotic Egg、通行证 Rainbow Magic Carpet!),取自 thumbnails.roblox.com/v1/assets?assetIds=<iconImageId>&size=420x420,写入前逐张 curl 验 200 image/Png;作 badges / updates / eggs / gamepasses 四页的首图(卡片与页首配图),使 8 篇文章卡图各不相同。",
  "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10387635049&size=768x432&format=Png&countPerUniverse=10",
  "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10387635049&size=480x270&format=Png&countPerUniverse=10",
  "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=10387635049&size=512x512&format=Png",
@@ -12,13 +12,13 @@
   "index": "th1",
   "guides": "th1",
   "how-to-play": "th2",
-  "badges": "th1",
-  "eggs": "th1",
-  "horses": "th2",
+  "badges": "badge-horsin",
+  "eggs": "egg-exotic",
+  "horses": "icon",
   "races": "th1",
   "care-stable": "th3",
-  "gamepasses": "th1",
-  "updates": "th1",
+  "gamepasses": "pass-carpet",
+  "updates": "badge-fruity",
   "author": "th2"
  },
  "shots": {
@@ -62,6 +62,43 @@
    "alt": {
     "en": "Official Race Horses game icon: a close-up of an orange blocky horse with a brown mane and a square eye, with an open book in the bottom corner"
    }
+  },
+  "badge-horsin": {
+   "src": "https://tr.rbxcdn.com/180DAY-f955da6baec3b9222c5216ec2ddbc772/420/420/Image/Png/noFilter",
+   "w": 420,
+   "h": 420,
+   "roblox_image_id": 126848040678185,
+   "alt": {
+    "en": "Official badge icon for Horsin' Around: a round icon showing the head of an orange blocky horse with pink ears and a square eye, with the word COMMON across it"
+   }
+  },
+  "badge-fruity": {
+   "src": "https://tr.rbxcdn.com/180DAY-a952b14e6b053c2eb610aa775afec27e/420/420/Image/Png/noFilter",
+   "w": 420,
+   "h": 420,
+   "roblox_image_id": 120728670678593,
+   "alt": {
+    "en": "Official badge icon for Fruity Foal: a round icon showing a red blocky horse with yellow seeds and green leaves like a strawberry, with the word EXOTIC across it"
+   }
+  },
+  "egg-exotic": {
+   "src": "https://tr.rbxcdn.com/180DAY-fb59f7ad23175028e8e561280309aeea/420/420/Image/Png/noFilter",
+   "w": 420,
+   "h": 420,
+   "roblox_image_id": 77326872200234,
+   "alt": {
+    "en": "Official product icon for Buy Exotic Egg: a blocky pixel-style egg fading from light blue at the top to yellow at the bottom, on a dark blue background"
+   }
+  },
+  "pass-carpet": {
+   "src": "https://tr.rbxcdn.com/180DAY-e93f7e19fdd16f0ce79124bf97e75e35/420/420/Image/Png/noFilter",
+   "w": 420,
+   "h": 420,
+   "roblox_image_id": 123319718870818,
+   "alt": {
+    "en": "Official game pass icon for Rainbow Magic Carpet!: a rainbow-coloured flying carpet with small jet flames at its corners, on a round rainbow background"
+   }
   }
- }
+ },
+ "source_asset_icons": "https://thumbnails.roblox.com/v1/assets?assetIds=126848040678185,120728670678593,77326872200234,123319718870818&returnPolicy=PlaceHolder&size=420x420&format=Png&isCircular=false"
 }

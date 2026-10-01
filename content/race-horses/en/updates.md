@@ -12,7 +12,7 @@ type: "article"
 tldr: ["The experience was created on 24 June 2026; the listing was last updated on 30 September 2026.", "The first five hatch badges arrived on 6 July; the Mythic tier followed in late August and Exotic on 22-23 September.", "Race badges arrived on 12 August, hurdle badges on 7-8 September.", "September added re-rolls, INSTANT Hatch!, gifting and X3 STORAGE; the Index launch date is not recorded."]
 related: ["eggs", "gamepasses", "badges"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10387635049", "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"]
-images: ["th1"]
+images: ["badge-fruity", "th1"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

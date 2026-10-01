@@ -13,7 +13,7 @@ tldr: ["Caring for horses gives an extra XP bonus; the promotional art shows fee
 entities: ["pass-x2-fruit-capacity", "product-golden-apple", "pass-x3-storage"]
 related: ["horses", "gamepasses", "races"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10387635049", "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"]
-images: ["th2", "th3"]
+images: ["th3", "th2"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

@@ -13,7 +13,7 @@ entity: "event-admin-abuse-update-4"
 tldr: ["Admin Abuse & Update 4 is an official Roblox event for the game, from 3 October 23:00 UTC to 7 October 23:00 UTC.", "The listing has no details beyond its title, so what the update adds is unknown until it goes live.", "World 2 skips went on sale on 10 September and World 3 skips on 24 September; [W2] and [W3] limited items followed on 26 September.", "The experience also holds a [RANKED] place, and the group runs a separate [TESTING] version."]
 related: ["progression", "community", "limiteds"]
 sourceUrls: ["https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50", "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10764479526", "https://develop.roblox.com/v1/universes/10764479526/places?limit=50", "https://games.roblox.com/v1/games?universeIds=10765888078", "https://games.roblox.com/v2/groups/426881025/games?accessFilter=Public&limit=50"]
-images: ["art08"]
+images: ["art01", "art08"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

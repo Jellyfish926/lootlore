@@ -13,7 +13,7 @@ tldr: ["Race Horses sells five game passes, priced 199 to 459 Robux; all five to
 entities: ["pass-x2-race-cash", "pass-instant-hatch", "pass-rainbow-magic-carpet"]
 related: ["races", "eggs", "care-stable"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"]
-images: ["th1"]
+images: ["pass-carpet", "th1"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

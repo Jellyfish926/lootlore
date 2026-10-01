@@ -87,7 +87,7 @@ class GameIndex:
     """一个游戏的索引。sections 只包含真实存在且非空的栏目(空栏目不进导航)。"""
 
     def __init__(self, game: dict, *, home_route: str, sections=None, pages=None, cover=None,
-                 default_lang="en", shot_pool=None):
+                 default_lang="en", shot_pool=None, guide_count=None):
         self.slug = game["slug"]
         self.default_lang = default_lang
         self.name = game["name"]
@@ -98,6 +98,9 @@ class GameIndex:
         self.sections = sections or []
         self.pages = pages or []
         self.cover = cover or {}
+        # 原生内容游戏传入「攻略数」= 默认语种已发布文章数(去重),不含首页 / 栏目总览 / 作者页,
+        # 与 /all/、左侧导航、hub 统计胶囊同一口径;快照游戏不传,沿用默认语种页数。
+        self.guide_count = guide_count
         # 该游戏的官方截图池,三级来源,优先级从高到低:
         #   1) 它自己的页面用过的配图(快照站的 /images/*,alt 是子站写的)
         #   2) 配置层 config/hub.json → games[].shots(页面自己没有配图的站,如 Steam 官方截图)
@@ -120,6 +123,8 @@ class GameIndex:
     @property
     def page_count(self):
         """卡片与索引上显示的页数 = 默认语种的页数(镜像语种另算,不重复计入)。"""
+        if self.guide_count is not None:
+            return self.guide_count
         return sum(1 for p in self.pages if p.lang == self.default_lang)
 
     @property

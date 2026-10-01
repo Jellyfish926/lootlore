@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Four guides for your first sessions: how to play, progression, updates and the official community.", "Start with how to play; it is built line by line from the developer's own description.", "Every number on these pages comes from Roblox's official data and carries its check date."]
 related: []
 sourceUrls: []
-images: ["art04"]
+images: ["art05", "art04"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

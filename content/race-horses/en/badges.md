@@ -13,7 +13,7 @@ tldr: ["Race Horses has 24 badges: seven for hatching each rarity, eleven for ra
 entities: ["badge-horsin-around", "badge-fruity-foal", "badge-so-long-partner"]
 related: ["eggs", "races", "care-stable"]
 sourceUrls: ["https://badges.roblox.com/v1/universes/10387635049/badges?limit=100", "https://games.roblox.com/v1/games?universeIds=10387635049"]
-images: ["th1"]
+images: ["badge-horsin", "th1"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

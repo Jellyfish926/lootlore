@@ -13,7 +13,7 @@ entities: ["product-starter-pack", "product-mogger-pack", "product-revenge"]
 tldr: ["The store has 43 developer products, all on sale, from 1 to 999 Robux; buying every one once would cost 5,910 Robux.", "There are no game passes, so even permanent boosts such as VIP and the Auto Clicker are sold as developer products.", "28 products have an official description; 15, including Mogger Pack and Revenge, have only a name and a price.", "The cheapest item is x1.5 Power (1 Robux); the most expensive is the x999 Treadmill (999 Robux)."]
 related: ["appeal", "limiteds", "progression"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10764479526/game-passes?passView=Full&pageSize=100", "https://badges.roblox.com/v1/universes/10764479526/badges?limit=100"]
-images: ["art08"]
+images: ["icon", "art08"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

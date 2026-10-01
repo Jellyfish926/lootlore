@@ -13,7 +13,7 @@ tldr: ["There are seven egg tiers: Common, Uncommon, Rare, Epic, Legendary, Myth
 entities: ["product-buy-exotic-egg", "product-buy-mythic-egg", "product-starter-pack"]
 related: ["horses", "badges", "gamepasses"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100", "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100"]
-images: ["egg-exotic", "th1", "icon"]
+images: ["th1", "icon"]
 date: "2026-10-01"
 updated: "2026-10-01"
 reviewed: "2026-10-01"

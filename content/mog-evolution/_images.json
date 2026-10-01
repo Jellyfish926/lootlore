@@ -1,5 +1,5 @@
 {
- "_note": "图片全部来自 Roblox 官方缩略图接口(游戏页宣传图 8 张 + 游戏图标 1 张,不是实机截图,alt 均按亲眼所见描述;宣传图上的标签文字是官方美术,不代表游戏内 body 顺序)。URL 里 180DAY- 前缀表示 CDN 缓存期,上线后需定期(建议每 60 天)重跑 thumbnails 接口刷新;宣传图最大尺寸 768x432,低于 Discover 的 1200 宽要求。2026-10-01 写入前逐张 curl 验 200(17 个 URL:8 图各 768x432 与 480x270 两档 + 图标 512x512)。图标为 512x512 方图,原只作正文配图;10-01 卡图去重后 shop 页首图改用图标。 2026-10-01 卡图去重:updates 首图改 art01、shop 首图改 icon、beginner 首图改 art05(均为上面已验 200 的同批官方图,未新增 URL),使 7 篇文章卡图各不相同。",
+ "_note": "图片全部来自 Roblox 官方缩略图接口(游戏页宣传图 8 张 + 游戏图标 1 张,不是实机截图,alt 均按亲眼所见描述;宣传图上的标签文字是官方美术,不代表游戏内 body 顺序)。URL 里 180DAY- 前缀表示 CDN 缓存期,上线后需定期(建议每 60 天)重跑 thumbnails 接口刷新;宣传图最大尺寸 768x432,低于 Discover 的 1200 宽要求。2026-10-01 写入前逐张 curl 验 200(17 个 URL:8 图各 768x432 与 480x270 两档 + 图标 512x512)。图标为 512x512 方图,只作正文配图,不作封面(pages 映射不指向 icon)。 2026-10-01 卡图去重:updates 首图改 art01、beginner 首图改 art05(shop 保持 art08;方形图标不作首图)(均为上面已验 200 的同批官方图,未新增 URL),使 7 篇文章卡图各不相同。",
  "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10764479526&size=768x432&format=Png&countPerUniverse=10",
  "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10764479526&size=480x270&format=Png&countPerUniverse=10",
  "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=10764479526&size=512x512&format=Png",
@@ -18,7 +18,7 @@
   "upgrades": "art03",
   "appeal": "art04",
   "limiteds": "art03",
-  "shop": "icon",
+  "shop": "art08",
   "author": "art05"
  },
  "shots": {

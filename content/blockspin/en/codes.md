@@ -1,12 +1,12 @@
 ---
 slug: "codes"
 url: "/blockspin/codes/"
-title: "BlockSpin Codes (September 2026): Official Code Only"
-seoTitle: "BlockSpin Codes (September 2026): Working Official Code"
-description: "BlockSpin codes for September 2026: W7C28D gives new players $500, straight from the official game description. Why we skip unverified codes, plus fixes."
+title: "BlockSpin Codes (October 2026): Official Code Only"
+seoTitle: "BlockSpin Codes (October 2026): Working Official Code"
+description: "BlockSpin codes for October 2026: W7C28D gives new players $500, straight from the official game description. Why we skip unverified codes, plus fixes."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-01"
 scope: "Codes published in official BlockSpin sources as of the check date"
 type: "article"
 tldr: ["W7C28D is the only code in the official BlockSpin game description: $500 cash for new players.", "It is meant for new players, so an older account may not be able to use it.", "Other sites list many more codes, but none of them come with an official source and two big lists disagree on which still work.", "The game warns that your whole inventory drops on death, so plan where your gear lives before you pick a fight."]
@@ -16,14 +16,14 @@ sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https:
 images: ["th1"]
 entity: "code-w7c28d"
 date: "2026-09-29"
-updated: "2026-09-29"
-reviewed: "2026-09-29"
+updated: "2026-10-01"
+reviewed: "2026-10-01"
 draft: false
 author: "Jellyfi"
 ---
-# BlockSpin Codes (September 2026): Official Code Only
+# BlockSpin Codes (October 2026): Official Code Only
 
-The working BlockSpin code for September 2026 is **W7C28D**, which gives $500 in cash to new players. It comes straight from the official game description on Roblox, which reads: "Use code W7C28D for $500 free cash if you're a new player!" We checked it on September 29, 2026, and it is the only code in the official game description.
+The working BlockSpin code for October 2026 is **W7C28D**, which gives $500 in cash to new players. It comes straight from the official game description on Roblox, which reads: "Use code W7C28D for $500 free cash if you're a new player!" We re-checked it on October 1, 2026, and it is the only code in the official game description.
 
 ## Which BlockSpin codes are active right now?
 
@@ -35,7 +35,7 @@ That is the full list. We add a code only after seeing it in an official source,
 
 ## Are there any expired codes?
 
-None recorded yet. This page started tracking on September 29, 2026, and W7C28D was still in the description on that date. Any code that leaves the official description after that will be listed here with the date we noticed.
+None recorded yet. This page started tracking on September 29, 2026, and W7C28D was still in the description when we re-checked on October 1, 2026. Any code that leaves the official description after that will be listed here with the date we noticed.
 
 | Code | Reward | Status | Noticed expired |
 | --- | --- | --- | --- |

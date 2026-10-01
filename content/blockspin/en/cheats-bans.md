@@ -66,6 +66,6 @@ Use Roblox's built-in report tool on the player while you are in the server. We 
 
 ## What to read next
 
-- [BlockSpin Codes (September 2026)](/blockspin/codes/)
+- [BlockSpin Codes (October 2026)](/blockspin/codes/)
 - [BlockSpin Beginner Guide](/blockspin/beginner/)
 - [BlockSpin Game Info](/blockspin/game-info/)

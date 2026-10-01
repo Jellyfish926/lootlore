@@ -1,0 +1,1324 @@
+{
+ "fetched": "2026-10-01",
+ "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T09:40:54Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、群组 groups.roblox.com、徽章 badges.roblox.com(2026-10-01 重取一次核对 universe 一致)、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products、成熟度 experience-guidelines-api。名称逐字复制接口 name 字段。徽章 order 按累计获得数降序;通行证与商品 order 按 Robux 价升序(同价按创建时间)。快照数字只代表 2026-10-01。兑换码、Index 奖励、性状清单与概率、闪光概率、蛋的现金价、马厩等级与成本、比赛奖金公式无一手来源,未建实体。",
+ "roblox": {
+  "universeId": 10387635049,
+  "rootPlaceId": 79475945127283,
+  "creatorGroupId": 1006560817,
+  "updated": "2026-09-30T09:40:54.6764159Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页。",
+ "entities": {
+  "race-horses": {
+   "type": "mechanic",
+   "name_en": "Race Horses",
+   "page_slug": "how-to-play",
+   "summary_en": "Idle RNG racing game on Roblox: buy eggs and hatch horses with random coats, eye sizes and traits, race them every minute for cash, care for them for bonus XP, upgrade your stable, and keep earning offline.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10387635049",
+   "description_en": "Build your stable, hatch your own horses, and race them for cash!",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10387635049",
+   "platforms": "Roblox (Desktop, Console, Mobile, Tablet per description)",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10387635049",
+   "release_date_en": "24 June 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10387635049",
+   "role_en": "Developer: Gorilla Grafters (Roblox group 1006560817)",
+   "role_source": "https://groups.roblox.com/v1/groups/1006560817",
+   "max_players": 8,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10387635049",
+   "key_notes_en": "8 players per server · Maturity: Minimal · Private servers not allowed · 24 badges · 5 game passes · 32 developer products",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=10387635049",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10387635049",
+    "https://groups.roblox.com/v1/groups/1006560817",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://develop.roblox.com/v1/universes/10387635049/places?limit=50"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "code_system",
+    "index_rewards",
+    "index_entry_rules",
+    "trait_list",
+    "trait_odds",
+    "shiny_odds",
+    "egg_cash_prices",
+    "hatch_timer_lengths",
+    "stable_levels",
+    "race_payout_formula",
+    "official_social_links"
+   ],
+   "key_notes_repro": "Maturity re-read anonymously on 2026-10-01: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with content-type application/json and body {\"universeId\":\"10387635049\"} returns ageRecommendation.displayName = Minimal."
+  },
+  "badge-horsin-around": {
+   "type": "achievement",
+   "name_en": "Horsin' Around",
+   "page_slug": "badges",
+   "order": 1,
+   "description_en": "Hatch your first common horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first common horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 3,139,857 times as of 2026-10-01 (100.00 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 3139857,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 108712,
+   "badge_created": "2026-07-06",
+   "badge_id": 1152691336959124,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-super-sprinter": {
+   "type": "achievement",
+   "name_en": "Super Sprinter",
+   "page_slug": "badges",
+   "order": 2,
+   "description_en": "Finish a race in less than 35 seconds!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Finish a race in less than 35 seconds!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,748,435 times as of 2026-10-01 (55.69 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1748435,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 58274,
+   "badge_created": "2026-08-12",
+   "badge_id": 4176701231626192,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-racing-stripes": {
+   "type": "achievement",
+   "name_en": "Racing Stripes",
+   "page_slug": "badges",
+   "order": 3,
+   "description_en": "Hatch your first uncommon horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first uncommon horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,692,241 times as of 2026-10-01 (53.90 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1692241,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 60985,
+   "badge_created": "2026-07-06",
+   "badge_id": 1048373707268188,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-winning-stride": {
+   "type": "achievement",
+   "name_en": "Winning Stride",
+   "page_slug": "badges",
+   "order": 4,
+   "description_en": "Win a race!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win a race!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,623,941 times as of 2026-10-01 (51.72 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1623941,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 54320,
+   "badge_created": "2026-08-12",
+   "badge_id": 2930380977683408,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-final-stretch": {
+   "type": "achievement",
+   "name_en": "Final Stretch",
+   "page_slug": "badges",
+   "order": 5,
+   "description_en": "Be both first and last place in the same race!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Be both first and last place in the same race!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,479,896 times as of 2026-10-01 (47.13 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1479896,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 49349,
+   "badge_created": "2026-08-12",
+   "badge_id": 1579177853510270,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-ooh-aah": {
+   "type": "achievement",
+   "name_en": "Ooh! Aah!",
+   "page_slug": "badges",
+   "order": 6,
+   "description_en": "Win a race with hurdles!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win a race with hurdles!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,396,059 times as of 2026-10-01 (44.46 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1396059,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 47327,
+   "badge_created": "2026-09-07",
+   "badge_id": 4400184503714438,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-to-race-another-day": {
+   "type": "achievement",
+   "name_en": "To Race Another Day",
+   "page_slug": "badges",
+   "order": 7,
+   "description_en": "Trip up on a hurdle!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Trip up on a hurdle!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,277,129 times as of 2026-10-01 (40.67 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1277129,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 41685,
+   "badge_created": "2026-09-08",
+   "badge_id": 1758105782661261,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-flying-colors": {
+   "type": "achievement",
+   "name_en": "Flying Colors",
+   "page_slug": "badges",
+   "order": 8,
+   "description_en": "Hatch your first rare horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first rare horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 1,017,078 times as of 2026-10-01 (32.39 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 1017078,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 36591,
+   "badge_created": "2026-07-06",
+   "badge_id": 1563321593510442,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-shooting-star": {
+   "type": "achievement",
+   "name_en": "Shooting Star!",
+   "page_slug": "badges",
+   "order": 9,
+   "description_en": "Win on your horse's first ever race!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win on your horse's first ever race!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 999,482 times as of 2026-10-01 (31.83 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 999482,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 33405,
+   "badge_created": "2026-08-26",
+   "badge_id": 1333882782043853,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-apple-a-day": {
+   "type": "achievement",
+   "name_en": "Apple A Day",
+   "page_slug": "badges",
+   "order": 10,
+   "description_en": "Feed 100 apples to one horse.",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Feed 100 apples to one horse.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 903,613 times as of 2026-10-01 (28.78 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 903613,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 32769,
+   "badge_created": "2026-08-22",
+   "badge_id": 1489905804748555,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-photo-finish": {
+   "type": "achievement",
+   "name_en": "Photo Finish",
+   "page_slug": "badges",
+   "order": 11,
+   "description_en": "Win a race by just 0.2 seconds or less",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win a race by just 0.2 seconds or less",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 748,908 times as of 2026-10-01 (23.85 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 748908,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 26341,
+   "badge_created": "2026-08-12",
+   "badge_id": 1249364317186426,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-runaway-fashion": {
+   "type": "achievement",
+   "name_en": "Runaway Fashion",
+   "page_slug": "badges",
+   "order": 12,
+   "description_en": "Hatch your first epic horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first epic horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 450,595 times as of 2026-10-01 (14.35 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 450595,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 16629,
+   "badge_created": "2026-07-06",
+   "badge_id": 2107528424121881,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-racers-riches": {
+   "type": "achievement",
+   "name_en": "Racer's Riches",
+   "page_slug": "badges",
+   "order": 13,
+   "description_en": "Win $100k+ in one race!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win $100k+ in one race!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 217,029 times as of 2026-10-01 (6.91 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 217029,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 8600,
+   "badge_created": "2026-08-22",
+   "badge_id": 1510281658827186,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-mans-best-friend": {
+   "type": "achievement",
+   "name_en": "Man's Best Friend",
+   "page_slug": "badges",
+   "order": 14,
+   "description_en": "Get a horse to level 30!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Get a horse to level 30!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 180,863 times as of 2026-10-01 (5.76 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 180863,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 7895,
+   "badge_created": "2026-08-26",
+   "badge_id": 4201358207317471,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-stallion-supreme": {
+   "type": "achievement",
+   "name_en": "Stallion Supreme",
+   "page_slug": "badges",
+   "order": 15,
+   "description_en": "Hatch your first legendary horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first legendary horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 158,043 times as of 2026-10-01 (5.03 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 158043,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 6859,
+   "badge_created": "2026-07-06",
+   "badge_id": 398417112036860,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-casual-stroll": {
+   "type": "achievement",
+   "name_en": "Casual Stroll",
+   "page_slug": "badges",
+   "order": 16,
+   "description_en": "Finish a race in last place by 0.8 seconds or more.",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Finish a race in last place by 0.8 seconds or more.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 101,137 times as of 2026-10-01 (3.22 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 101137,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 3917,
+   "badge_created": "2026-08-12",
+   "badge_id": 1280369012755629,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-secret-victory": {
+   "type": "achievement",
+   "name_en": "Secret Victory",
+   "page_slug": "badges",
+   "order": 17,
+   "description_en": "Win more cash in last place than the 1st place racer.",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win more cash in last place than the 1st place racer.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 76,676 times as of 2026-10-01 (2.44 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 76676,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 3370,
+   "badge_created": "2026-08-22",
+   "badge_id": 2110417365050171,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-mythical-beast": {
+   "type": "achievement",
+   "name_en": "Mythical Beast",
+   "page_slug": "badges",
+   "order": 18,
+   "description_en": "Hatch your first mythic horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first mythic horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 38,321 times as of 2026-10-01 (1.22 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 38321,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 2024,
+   "badge_created": "2026-08-22",
+   "badge_id": 109806068332482,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-full-house": {
+   "type": "achievement",
+   "name_en": "Full House",
+   "page_slug": "badges",
+   "order": 19,
+   "description_en": "Get the highest level stable and fill it to max horses!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Get the highest level stable and fill it to max horses!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 14,160 times as of 2026-10-01 (0.45 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 14160,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 488,
+   "badge_created": "2026-08-26",
+   "badge_id": 487782632083455,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-hatcher": {
+   "type": "achievement",
+   "name_en": "Hatcher",
+   "page_slug": "badges",
+   "order": 20,
+   "description_en": "Hatch 50 eggs",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch 50 eggs",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 7,784 times as of 2026-10-01 (0.25 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 7784,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 748,
+   "badge_created": "2026-08-22",
+   "badge_id": 3437710337665564,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-horsepower": {
+   "type": "achievement",
+   "name_en": "Horsepower",
+   "page_slug": "badges",
+   "order": 21,
+   "description_en": "Win 10 races with the same horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Win 10 races with the same horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 7,458 times as of 2026-10-01 (0.24 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 7458,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 653,
+   "badge_created": "2026-08-22",
+   "badge_id": 4344591724545883,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-fruity-foal": {
+   "type": "achievement",
+   "name_en": "Fruity Foal",
+   "page_slug": "badges",
+   "order": 22,
+   "description_en": "Hatch your first Exotic Horse!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Hatch your first Exotic Horse!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 6,102 times as of 2026-10-01 (0.19 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 6102,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 519,
+   "badge_created": "2026-09-23",
+   "badge_id": 4106090085987528,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-not-just-horsing-around": {
+   "type": "achievement",
+   "name_en": "Not Just Horsing Around",
+   "page_slug": "badges",
+   "order": 23,
+   "description_en": "Get 50 wins!",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Get 50 wins!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 3,822 times as of 2026-10-01 (0.12 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 3822,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 382,
+   "badge_created": "2026-08-26",
+   "badge_id": 2702959903186787,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "badge-so-long-partner": {
+   "type": "achievement",
+   "name_en": "So Long, Partner",
+   "page_slug": "badges",
+   "order": 24,
+   "description_en": "Retire a horse with 10 or more wins.",
+   "description_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "requires_en": "Retire a horse with 10 or more wins.",
+   "requires_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "key_notes_en": "Awarded 2,168 times as of 2026-10-01 (0.07 per 100 Horsin' Around awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "awarded_count": 2168,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100",
+   "past_day_awarded_count": 143,
+   "badge_created": "2026-08-26",
+   "badge_id": 1710593074036004,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10387635049/badges?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "pass-x2-fruit-capacity": {
+   "type": "gamepass",
+   "name_en": "X2 FRUIT CAPACITY",
+   "page_slug": "care-stable",
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "description_en": "Allows you to carry 20 apples instead of 10!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Allows you to carry 20 apples instead of 10!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1978634603,
+   "created": "2026-09-10",
+   "last_updated": "2026-09-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ],
+   "order": 1
+  },
+  "pass-x3-storage": {
+   "type": "gamepass",
+   "name_en": "X3 STORAGE",
+   "page_slug": "care-stable",
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "description_en": "Go from 9 to 27 slots of storage for horses!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Go from 9 to 27 slots of storage for horses!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1995746413,
+   "created": "2026-09-24",
+   "last_updated": "2026-09-24",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ],
+   "order": 2
+  },
+  "pass-x2-race-cash": {
+   "type": "gamepass",
+   "name_en": "X2 RACE CASH",
+   "page_slug": "races",
+   "unlock_cost": "329 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "description_en": "Get 2x cash from all races!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Get 2x cash from all races!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1959600410,
+   "created": "2026-08-26",
+   "last_updated": "2026-09-24",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "current_price_vs_gift_product_249"
+   ],
+   "order": 3
+  },
+  "pass-instant-hatch": {
+   "type": "gamepass",
+   "name_en": "INSTANT Hatch!",
+   "page_slug": "eggs",
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "description_en": "All eggs hatch instantly upon placing!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "usage_en": "All eggs hatch instantly upon placing!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1981886870,
+   "created": "2026-09-17",
+   "last_updated": "2026-09-17",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ],
+   "order": 4
+  },
+  "pass-rainbow-magic-carpet": {
+   "type": "gamepass",
+   "name_en": "Rainbow Magic Carpet!",
+   "page_slug": "gamepasses",
+   "unlock_cost": "459 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "description_en": "Soar the skies at high speeds!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Soar the skies at high speeds!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1945294474,
+   "created": "2026-08-12",
+   "last_updated": "2026-08-26",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10387635049/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ],
+   "order": 5
+  },
+  "product-skip-hatch-timer-uncommon": {
+   "type": "item",
+   "name_en": "Skip Hatch Timer (Uncommon)",
+   "page_slug": "eggs",
+   "order": 1,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Time is money",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Time is money",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-07-04",
+   "product_id": 3608021872,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-buy-common-egg": {
+   "type": "item",
+   "name_en": "Buy Common Egg",
+   "page_slug": "eggs",
+   "order": 2,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buy an uncommon egg",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buy an uncommon egg",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-07-28",
+   "product_id": 3612052349,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "description_mismatch: official description reads \"Buy an uncommon egg\""
+   ]
+  },
+  "product-gift-common-egg": {
+   "type": "item",
+   "name_en": "GIFT Common Egg",
+   "page_slug": "eggs",
+   "order": 3,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Common Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Common Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714170343,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-hatch-timer-rare": {
+   "type": "item",
+   "name_en": "Skip Hatch Timer (Rare)",
+   "page_slug": "eggs",
+   "order": 4,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Time is money",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Time is money",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-27",
+   "product_id": 3710060624,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-starter-pack": {
+   "type": "item",
+   "name_en": "Starter Pack",
+   "page_slug": "eggs",
+   "order": 5,
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Rare Egg + $10,000 + 1 Golden Apple!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Rare Egg + $10,000 + 1 Golden Apple!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-24",
+   "product_id": 3709678889,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "purchase_limit"
+   ]
+  },
+  "product-double-offline-earnings": {
+   "type": "item",
+   "name_en": "Double Offline Earnings",
+   "page_slug": "care-stable",
+   "order": 6,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Robux product with no official description",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-07-29",
+   "product_id": 3612229051,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "boost_duration",
+    "stacking"
+   ]
+  },
+  "product-buy-uncommon-egg": {
+   "type": "item",
+   "name_en": "Buy Uncommon Egg",
+   "page_slug": "eggs",
+   "order": 7,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buy an uncommon egg",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buy an uncommon egg",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-12",
+   "product_id": 3706922221,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-golden-apple": {
+   "type": "item",
+   "name_en": "+ 1 Golden Apple",
+   "page_slug": "care-stable",
+   "order": 8,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Skips full cooldown + 1 Level Up!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Skips full cooldown + 1 Level Up!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-24",
+   "product_id": 3709678078,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-hatch-timer-epic": {
+   "type": "item",
+   "name_en": "Skip Hatch Timer (Epic)",
+   "page_slug": "eggs",
+   "order": 9,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Time is money",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Time is money",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-27",
+   "product_id": 3710061073,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-re-roll-horse": {
+   "type": "item",
+   "name_en": "Re-roll Horse!",
+   "page_slug": "horses",
+   "order": 10,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Not a fan of the trait? Re-roll it! (SEE ODDS FOR TRAITS)",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Not a fan of the trait? Re-roll it! (SEE ODDS FOR TRAITS)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_id": 3712229025,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-uncommon-egg": {
+   "type": "item",
+   "name_en": "GIFT Uncommon Egg",
+   "page_slug": "eggs",
+   "order": 11,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Uncommon Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Uncommon Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714173894,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-restock-trees": {
+   "type": "item",
+   "name_en": "Restock Trees",
+   "page_slug": "care-stable",
+   "order": 12,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Make all the trees grow back to max fruit!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Make all the trees grow back to max fruit!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-07-02",
+   "product_id": 3607775386,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-hatch-timer-legendary": {
+   "type": "item",
+   "name_en": "Skip Hatch Timer (Legendary)",
+   "page_slug": "eggs",
+   "order": 13,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Time is money",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Time is money",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-27",
+   "product_id": 3710061223,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-restock-shop": {
+   "type": "item",
+   "name_en": "Restock Shop!",
+   "page_slug": "eggs",
+   "order": 14,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Restock all shops!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Restock all shops!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_id": 3712230872,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-double-race-earnings": {
+   "type": "item",
+   "name_en": "Double Race Earnings",
+   "page_slug": "races",
+   "order": 15,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "X2 your race earnings!!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "X2 your race earnings!!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-21",
+   "product_id": 3714037810,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "boost_duration",
+    "stacking"
+   ]
+  },
+  "product-buy-rare-egg": {
+   "type": "item",
+   "name_en": "Buy Rare Egg",
+   "page_slug": "eggs",
+   "order": 16,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buy a rare egg",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buy a rare egg",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-12",
+   "product_id": 3706929097,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-hatch-timer-mythic": {
+   "type": "item",
+   "name_en": "Skip Hatch Timer (Mythic)",
+   "page_slug": "eggs",
+   "order": 17,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Time is money",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Time is money",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-27",
+   "product_id": 3710061398,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-rare-egg": {
+   "type": "item",
+   "name_en": "GIFT Rare Egg",
+   "page_slug": "eggs",
+   "order": 18,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Rare Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Rare Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714173933,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-hatch-exotic": {
+   "type": "item",
+   "name_en": "Skip Hatch (Exotic)",
+   "page_slug": "eggs",
+   "order": 19,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Time is money",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Time is money",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-29",
+   "product_id": 3715476543,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-x2-fruit-capacity": {
+   "type": "item",
+   "name_en": "GIFT X2 FRUIT CAPACITY",
+   "page_slug": "gamepasses",
+   "order": 20,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift X2 FRUIT CAPACITY to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift X2 FRUIT CAPACITY to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714192726,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-buy-epic-egg": {
+   "type": "item",
+   "name_en": "Buy Epic Egg",
+   "page_slug": "eggs",
+   "order": 21,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buy an epic egg",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buy an epic egg",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-12",
+   "product_id": 3706935605,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-epic-egg": {
+   "type": "item",
+   "name_en": "GIFT Epic Egg",
+   "page_slug": "eggs",
+   "order": 22,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Epic Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Epic Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714173974,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-x2-race-cash": {
+   "type": "item",
+   "name_en": "GIFT X2 RACE CASH",
+   "page_slug": "gamepasses",
+   "order": 23,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift  X2 RACE CASH to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift  X2 RACE CASH to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714192819,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-x3-storage": {
+   "type": "item",
+   "name_en": "GIFT X3 Storage!",
+   "page_slug": "gamepasses",
+   "order": 24,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "GIFT 27 slots of storage to your mate",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "GIFT 27 slots of storage to your mate",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-24",
+   "product_id": 3714547092,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-buy-legendary-egg": {
+   "type": "item",
+   "name_en": "Buy Legendary Egg",
+   "page_slug": "eggs",
+   "order": 25,
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buy a legendary egg",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buy a legendary egg",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-12",
+   "product_id": 3706940331,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-legendary-egg": {
+   "type": "item",
+   "name_en": "GIFT Legendary Egg",
+   "page_slug": "eggs",
+   "order": 26,
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Legendary Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Legendary Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714174057,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-instant-hatch": {
+   "type": "item",
+   "name_en": "GIFT Instant Hatch!",
+   "page_slug": "gamepasses",
+   "order": 27,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Instant Hatch! to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Instant Hatch! to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714191336,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-rainbow-magic-carpet": {
+   "type": "item",
+   "name_en": "GIFT Rainbow Magic Carpet!",
+   "page_slug": "gamepasses",
+   "order": 28,
+   "unlock_cost": "459 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Rainbow Magic Carpet! to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Rainbow Magic Carpet! to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714192887,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-buy-mythic-egg": {
+   "type": "item",
+   "name_en": "Buy Mythic Egg",
+   "page_slug": "eggs",
+   "order": 29,
+   "unlock_cost": "999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buy a mythic egg",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buy a mythic egg",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-08-24",
+   "product_id": 3709678170,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-mythic-egg": {
+   "type": "item",
+   "name_en": "GIFT Mythic Egg",
+   "page_slug": "eggs",
+   "order": 30,
+   "unlock_cost": "999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Mythic Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Mythic Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714174115,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-buy-exotic-egg": {
+   "type": "item",
+   "name_en": "Buy Exotic Egg",
+   "page_slug": "eggs",
+   "order": 31,
+   "unlock_cost": "2,799 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Buys an Exotic Egg!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Buys an Exotic Egg!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714238650,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-gift-exotic-egg": {
+   "type": "item",
+   "name_en": "GIFT Exotic Egg",
+   "page_slug": "eggs",
+   "order": 32,
+   "unlock_cost": "2,799 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "description_en": "Gift Exotic Egg to your friends!",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "usage_en": "Gift Exotic Egg to your friends!",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_id": 3714238788,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10387635049/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  }
+ }
+}

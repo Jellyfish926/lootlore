@@ -25,7 +25,7 @@ Just joined BlockSpin? Start with the code, then learn the one rule that costs n
 
 ## Pick a guide by what you need
 
-### [BlockSpin Codes (September 2026): Official Code Only](/blockspin/codes/)
+### [BlockSpin Codes (October 2026): Official Code Only](/blockspin/codes/)
 
 The only code in the official game description, W7C28D, and what it gives new players. It also explains why this site does not copy the long code lists found elsewhere, what to check when a code fails, and where expired codes will be kept once the developers retire one.
 

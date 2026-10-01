@@ -1,0 +1,993 @@
+{
+ "fetched": "2026-10-01",
+ "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T17:52:34Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、开发者商品 apis.roblox.com/developer-products(43 个,全量,nextPageCursor=null)、官方活动 apis.roblox.com/virtual-events、群组 groups.roblox.com、分级 experience-guidelines-api、places develop.roblox.com。名称与描述逐字复制接口字段。通行证 0、徽章 0,未建实体。15 个无描述商品只写名称与价格,usage 标「Not stated」或注明按名称推断。body 顺序、等级上限、每次点击收益、Ranked 规则、兑换码无一手来源,未建实体。价格为 2026-10-01 快照。item 的 order 按创建时间再按价格升序。",
+ "roblox": {
+  "universeId": 10764479526,
+  "rootPlaceId": 92648272637932,
+  "rankedPlaceId": 88916320688607,
+  "testingUniverseId": 10765888078,
+  "creatorGroupId": 426881025,
+  "updated": "2026-09-30T17:52:34.0315007Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页。",
+ "entities": {
+  "mog-evolution": {
+   "type": "mechanic",
+   "name_en": "+1 Mog Evolution",
+   "page_slug": "how-to-play",
+   "summary_en": "Roblox clicker: every click gives Appeal, the hammer upgrades to Bonesmash, Wins let you ascend to the next body, and the leaderboard leads to True Adam.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10764479526",
+   "description_en": "Every Click gives you MORE Appeal · Upgrade your hammer to Bonesmash and get even more Appeal · Earn Wins to ascend and mog more people · Climb the leaderboard to become a True Adam",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10764479526",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10764479526",
+   "release_date_en": "30 August 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10764479526",
+   "role_en": "Developer: Navoj Mog (Roblox group 426881025)",
+   "role_source": "https://groups.roblox.com/v1/groups/426881025",
+   "max_players": 12,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10764479526",
+   "key_notes_en": "12 players per server · Private servers not allowed · Maturity: Minimal · No badges · No game passes · 43 developer products",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=10764479526",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/10764479526/badges?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/10764479526/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "key_notes_repro": "Maturity: Minimal re-read anonymously on 2026-10-01: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"10764479526\"} returns ageRecommendation.displayName = Minimal.",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10764479526",
+    "https://groups.roblox.com/v1/groups/426881025",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://develop.roblox.com/v1/universes/10764479526/places?limit=50"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "appeal_per_click",
+    "hammer_levels",
+    "bonesmash_cost",
+    "wins_source",
+    "level_cap",
+    "body_order",
+    "leaderboard_metric",
+    "ranked_rules",
+    "code_system",
+    "discord_link",
+    "supported_devices"
+   ]
+  },
+  "event-admin-abuse-update-4": {
+   "type": "mechanic",
+   "name_en": "Admin Abuse & Update 4",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for +1 Mog Evolution hosted by the group Navoj Mog, category 'new content'; the listing gives no details beyond its title.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50",
+   "description_en": "Admin Abuse & Update 4",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50",
+   "key_notes_en": "Starts 3 October 2026, 23:00 UTC · Ends 7 October 2026, 23:00 UTC · Listed 28 September 2026",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50",
+   "deadline": "2026-10-07T23:00:21Z",
+   "deadline_source": "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50",
+   "event_id": "56687495873692415",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "rewards",
+    "previous_updates_1_to_3"
+   ],
+   "expiry_action": "2026-10-08: rewrite updates page event section in past tense; re-read the events API for a new event"
+  },
+  "product-plus-100k-appeal": {
+   "type": "item",
+   "name_en": "+100K Appeal",
+   "page_slug": "appeal",
+   "order": 1,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Instantly gain 100,000 Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "One-off Appeal pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-10",
+   "product_id": 3710629270,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "power_equals_appeal"
+   ]
+  },
+  "product-plus-1m-appeal": {
+   "type": "item",
+   "name_en": "+1M Appeal",
+   "page_slug": "appeal",
+   "order": 2,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Instantly gain 1,000,000 Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "One-off Appeal pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-10",
+   "product_id": 3710629287,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "power_equals_appeal"
+   ]
+  },
+  "product-plus-10m-appeal": {
+   "type": "item",
+   "name_en": "+10M Appeal",
+   "page_slug": "appeal",
+   "order": 3,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Instantly gain 10,000,000 Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "One-off Appeal pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-10",
+   "product_id": 3710629297,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "power_equals_appeal"
+   ]
+  },
+  "product-skip-ascend": {
+   "type": "item",
+   "name_en": "Skip Ascend",
+   "page_slug": "progression",
+   "order": 4,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Ascend to the next body instantly, no requirements.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Ascend to the next body with no requirements",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-10",
+   "product_id": 3710629306,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-rebirth": {
+   "type": "item",
+   "name_en": "Skip Rebirth",
+   "page_slug": "progression",
+   "order": 5,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Rebirth instantly without reaching the level cap.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Rebirth without reaching the level cap",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-10",
+   "product_id": 3710629311,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-teleport-stage-1": {
+   "type": "item",
+   "name_en": "Teleport Stage 1",
+   "page_slug": "progression",
+   "order": 6,
+   "unlock_cost": "2 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Unlock the Stage 1 teleport.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Unlocks the Stage 1 teleport",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710629321,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-teleport-stage-2": {
+   "type": "item",
+   "name_en": "Teleport Stage 2",
+   "page_slug": "progression",
+   "order": 7,
+   "unlock_cost": "5 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Unlock the Stage 2 teleport.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Unlocks the Stage 2 teleport",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710629334,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-teleport-stage-3": {
+   "type": "item",
+   "name_en": "Teleport Stage 3",
+   "page_slug": "progression",
+   "order": 8,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Unlock the Stage 3 teleport.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Unlocks the Stage 3 teleport",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710629349,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-x1-5-power": {
+   "type": "item",
+   "name_en": "x1.5 Power",
+   "page_slug": "appeal",
+   "order": 9,
+   "unlock_cost": "1 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 1.5x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x1.5 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-10",
+   "product_id": 3710631244,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x2-power": {
+   "type": "item",
+   "name_en": "x2 Power",
+   "page_slug": "appeal",
+   "order": 10,
+   "unlock_cost": "2 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 2x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x2 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631261,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x4-power": {
+   "type": "item",
+   "name_en": "x4 Power",
+   "page_slug": "appeal",
+   "order": 11,
+   "unlock_cost": "5 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 4x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x4 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631271,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x8-power": {
+   "type": "item",
+   "name_en": "x8 Power",
+   "page_slug": "appeal",
+   "order": 12,
+   "unlock_cost": "12 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 8x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x8 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631279,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x16-power": {
+   "type": "item",
+   "name_en": "x16 Power",
+   "page_slug": "appeal",
+   "order": 13,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 16x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x16 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631290,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x32-power": {
+   "type": "item",
+   "name_en": "x32 Power",
+   "page_slug": "appeal",
+   "order": 14,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 32x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x32 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631297,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x64-power": {
+   "type": "item",
+   "name_en": "x64 Power",
+   "page_slug": "appeal",
+   "order": 15,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 64x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x64 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631313,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x128-power": {
+   "type": "item",
+   "name_en": "x128 Power",
+   "page_slug": "appeal",
+   "order": 16,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 128x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x128 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631322,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x256-power": {
+   "type": "item",
+   "name_en": "x256 Power",
+   "page_slug": "appeal",
+   "order": 17,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn 256x Power.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Permanent x256 Power (Appeal) multiplier",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710631336,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x2-wins": {
+   "type": "item",
+   "name_en": "X2 Wins",
+   "page_slug": "progression",
+   "order": 18,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently earn double Wins.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Double Wins, permanently",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-30",
+   "product_updated": "2026-09-08",
+   "product_id": 3710632924,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-starter-pack": {
+   "type": "item",
+   "name_en": "Starter Pack",
+   "page_slug": "progression",
+   "order": 19,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "One-time offer: the LTN body, +2,000 Appeal and +50 Wins. Can only be bought once.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "LTN body, +2,000 Appeal and +50 Wins; one purchase only",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-10",
+   "product_id": 3710741633,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-vip": {
+   "type": "item",
+   "name_en": "VIP",
+   "page_slug": "appeal",
+   "order": 20,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanent VIP: earn 10x Appeal, plus a VIP name tag. Can only be bought once.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "10x Appeal and a VIP name tag; permanent, one purchase",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-08",
+   "product_id": 3710741638,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-plus-100m-appeal": {
+   "type": "item",
+   "name_en": "+100M Appeal",
+   "page_slug": "appeal",
+   "order": 21,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Instantly gain 100,000,000 Appeal.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "One-off Appeal pack",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-10",
+   "product_id": 3710745189,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-x9-treadmill": {
+   "type": "item",
+   "name_en": "x9 Treadmill",
+   "page_slug": "appeal",
+   "order": 22,
+   "unlock_cost": "69 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Unlock the x9 treadmill belt. Earn 9x Appeal while standing on it, no rebirths needed.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "x9 Appeal while standing on the belt",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-10",
+   "product_id": 3710745197,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x99-treadmill": {
+   "type": "item",
+   "name_en": "x99 Treadmill",
+   "page_slug": "appeal",
+   "order": 23,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Unlock the x99 treadmill belt. Earn 99x Appeal while standing on it, no rebirths needed.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "x99 Appeal while standing on the belt",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-10",
+   "product_id": 3710745211,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-x999-treadmill": {
+   "type": "item",
+   "name_en": "x999 Treadmill",
+   "page_slug": "appeal",
+   "order": 24,
+   "unlock_cost": "999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Unlock the x999 treadmill belt. Earn 999x Appeal while standing on it, no rebirths needed.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "x999 Appeal while standing on the belt",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-10",
+   "product_id": 3710745218,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "stacking"
+   ]
+  },
+  "product-auto-clicker": {
+   "type": "item",
+   "name_en": "Auto Clicker",
+   "page_slug": "appeal",
+   "order": 25,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanent Auto Clicker unlock. Automatically earns Appeal at 22 clicks per second. Can only be bought once.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Auto-clicks for Appeal at 22 clicks per second; permanent, one purchase",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-08-31",
+   "product_updated": "2026-09-10",
+   "product_id": 3710752941,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-2x-win-pad": {
+   "type": "item",
+   "name_en": "2x Win Pad",
+   "page_slug": "progression",
+   "order": 26,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-09",
+   "product_updated": "2026-09-09",
+   "product_id": 3712158126,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-gigachad-limited": {
+   "type": "item",
+   "name_en": "Gigachad [LIMITED]",
+   "page_slug": "limiteds",
+   "order": 27,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently unlock the Gigachad body in +1 Mog Evolution. Gives a x4 body Appeal multiplier while equipped. One unlock per player. The 1,500-copy counter is informational; purchases remain available after it reaches zero.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Gigachad body, x4 body Appeal while equipped",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-10",
+   "product_id": 3712243000,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "position_in_body_order"
+   ],
+   "key_notes_en": "The 1,500-copy counter is informational; sales continue after it reaches zero",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+  },
+  "product-claviculars-hammer": {
+   "type": "item",
+   "name_en": "Claviculars Hammer",
+   "page_slug": "limiteds",
+   "order": 28,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently unlock Claviculars Hammer in +1 Mog Evolution. Gives x1024 Appeal while equipped. Unlimited availability; one permanent unlock per player.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Hammer, x1024 Appeal while equipped",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-10",
+   "product_id": 3712249336,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": []
+  },
+  "product-skip-to-world-2": {
+   "type": "item",
+   "name_en": "Skip to World 2",
+   "page_slug": "progression",
+   "order": 29,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-10",
+   "product_id": 3712255584,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-buy-hammer-upgrade-1": {
+   "type": "item",
+   "name_en": "Buy Hammer Upgrade [1]",
+   "page_slug": "appeal",
+   "order": 30,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713344496,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-buy-hammer-upgrade-2": {
+   "type": "item",
+   "name_en": "Buy Hammer Upgrade [2]",
+   "page_slug": "appeal",
+   "order": 31,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713344563,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-mogger-pack": {
+   "type": "item",
+   "name_en": "Mogger Pack",
+   "page_slug": "shop",
+   "order": 32,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-19",
+   "product_id": 3713345024,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-x2-treadmill": {
+   "type": "item",
+   "name_en": "x2 Treadmill",
+   "page_slug": "appeal",
+   "order": 33,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Treadmill belt (no official description; effect inferred from the name only)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713347327,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "stacking"
+   ]
+  },
+  "product-x3-treadmill": {
+   "type": "item",
+   "name_en": "x3 Treadmill",
+   "page_slug": "appeal",
+   "order": 34,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Treadmill belt (no official description; effect inferred from the name only)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713347334,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "stacking"
+   ]
+  },
+  "product-x5-treadmill": {
+   "type": "item",
+   "name_en": "x5 Treadmill",
+   "page_slug": "appeal",
+   "order": 35,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Treadmill belt (no official description; effect inferred from the name only)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713347347,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "stacking"
+   ]
+  },
+  "product-x8-treadmill": {
+   "type": "item",
+   "name_en": "x8 Treadmill",
+   "page_slug": "appeal",
+   "order": 36,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Treadmill belt (no official description; effect inferred from the name only)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713347375,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "stacking"
+   ],
+   "key_notes_en": "Costs more than the x9 Treadmill (79 vs 69 Robux)",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+  },
+  "product-x12-treadmill": {
+   "type": "item",
+   "name_en": "x12 Treadmill",
+   "page_slug": "appeal",
+   "order": 37,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Treadmill belt (no official description; effect inferred from the name only)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713347389,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "stacking"
+   ]
+  },
+  "product-x18-treadmill": {
+   "type": "item",
+   "name_en": "x18 Treadmill",
+   "page_slug": "appeal",
+   "order": 38,
+   "unlock_cost": "129 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Treadmill belt (no official description; effect inferred from the name only)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713347402,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents",
+    "stacking"
+   ]
+  },
+  "product-smoothie": {
+   "type": "item",
+   "name_en": "Smoothie",
+   "page_slug": "limiteds",
+   "order": 39,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "description_en": "Permanently unlock Smoothie in +1 Mog Evolution. Gives x2048 Charisma while equipped. Unlimited availability; one permanent unlock per player.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "x2048 Charisma while equipped",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-24",
+   "product_updated": "2026-09-24",
+   "product_id": 3714455240,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "charisma_meaning",
+    "equip_slot"
+   ]
+  },
+  "product-skip-to-world-3": {
+   "type": "item",
+   "name_en": "Skip to World 3",
+   "page_slug": "progression",
+   "order": 40,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-24",
+   "product_updated": "2026-09-24",
+   "product_id": 3714514227,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-revenge": {
+   "type": "item",
+   "name_en": "Revenge",
+   "page_slug": "shop",
+   "order": 41,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-24",
+   "product_updated": "2026-09-24",
+   "product_id": 3714581087,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-looksmeowxer-w2-limited": {
+   "type": "item",
+   "name_en": "LOOKSMEOWXER [W2 LIMITED]",
+   "page_slug": "limiteds",
+   "order": 42,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "product_updated": "2026-09-26",
+   "product_id": 3714847143,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  },
+  "product-mango-mogger-w3-limited": {
+   "type": "item",
+   "name_en": "MANGO MOGGER [W3 LIMITED]",
+   "page_slug": "limiteds",
+   "order": 43,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "product_updated": "2026-09-26",
+   "product_id": 3714847227,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-01",
+   "unverified_fields": [
+    "contents"
+   ]
+  }
+ }
+}

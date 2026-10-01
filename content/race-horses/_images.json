@@ -1,0 +1,67 @@
+{
+ "_note": "图片全部来自 Roblox 官方缩略图接口(游戏页宣传图 3 张 + 游戏图标 1 张,不是实机截图,alt 按亲眼所见描述)。URL 里 180DAY- 前缀表示 CDN 缓存期,上线后需定期(建议每 60 天)重跑 thumbnails 接口刷新;宣传图最大尺寸 768x432,低于 Discover 的 1200 宽要求。2026-10-01 写入前逐张 curl 验 200(7 个 URL:三图各 768x432 与 480x270 两档 + 图标 512x512,均 200 image/Png)。官方只上传了 3 张图,无视频。图标为 512x512 方图,只作正文配图,不作封面(pages 映射不指向 icon)。徽章图标(thumbnails v1/badges/icons,150x150)已取证存 raw/badge_icons.json,本批未用。",
+ "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10387635049&size=768x432&format=Png&countPerUniverse=10",
+ "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10387635049&size=480x270&format=Png&countPerUniverse=10",
+ "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=10387635049&size=512x512&format=Png",
+ "fetched": "2026-10-01",
+ "credit": {
+  "en": "Official thumbnail · Gorilla Grafters (Roblox)"
+ },
+ "default": "th1",
+ "pages": {
+  "index": "th1",
+  "guides": "th1",
+  "how-to-play": "th2",
+  "badges": "th1",
+  "eggs": "th1",
+  "horses": "th2",
+  "races": "th1",
+  "care-stable": "th3",
+  "gamepasses": "th1",
+  "updates": "th1",
+  "author": "th2"
+ },
+ "shots": {
+  "th1": {
+   "src": "https://tr.rbxcdn.com/180DAY-8aa90a35301e63340c97454d1eb77ae0/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-8aa90a35301e63340c97454d1eb77ae0/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 106708729235322,
+   "alt": {
+    "en": "Promotional art: a grinning Roblox character rides an orange blocky horse with saddle number 1 down a bright green race track, with other riders on blocky horses and a packed grandstand behind"
+   }
+  },
+  "th2": {
+   "src": "https://tr.rbxcdn.com/180DAY-152e3ff83f7a90b3d0ee8ee8af33d31a/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-152e3ff83f7a90b3d0ee8ee8af33d31a/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 117833390239022,
+   "alt": {
+    "en": "Promotional art: a first-person hand holds a red apple out to an orange blocky horse with a yellow exclamation mark above it, and an on-screen prompt reading E FEED"
+   }
+  },
+  "th3": {
+   "src": "https://tr.rbxcdn.com/180DAY-a36f4a455b52625810e59763fce71c68/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-a36f4a455b52625810e59763fce71c68/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 125553728438653,
+   "alt": {
+    "en": "Promotional art: a first-person hand holds a green and yellow sponge beside an orange blocky horse with a mud spot and a flower on its head, a water bucket nearby and an on-screen prompt reading E CLEAN"
+   }
+  },
+  "icon": {
+   "src": "https://tr.rbxcdn.com/180DAY-ecd910427e08c5b59588fcc1f9e73d49/512/512/Image/Png/noFilter",
+   "w": 512,
+   "h": 512,
+   "alt": {
+    "en": "Official Race Horses game icon: a close-up of an orange blocky horse with a brown mane and a square eye, with an open book in the bottom corner"
+   }
+  }
+ }
+}

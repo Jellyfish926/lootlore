@@ -9,3 +9,5 @@
 | 2026-09-29 | Bongo Cat(Steam appid 3419430)· `kind: native` | 英文 | 13 页 | `https://lootwiki.com/bongo-cat/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-09-30 | Untitled Wheelie Game(Roblox universeId 10268960646 / placeId 93844268955707)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/untitled-wheelie-game/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-09-30 | Animal Daycare (Anomaly)(Roblox universeId 10701628624 / placeId 124061247871628)· `kind: native` | 英文 | 7 页(另 2 篇 draft 未发布) | `https://lootwiki.com/animal-daycare/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-10-01 | +1 Mog Evolution([W3] +1 Mog Evolution;Roblox universeId 10764479526 / placeId 92648272637932;平台键 roblox:10764479526)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/mog-evolution/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-10-01 | Race Horses([INDEX📖] Race Horses;Roblox universeId 10387635049 / placeId 79475945127283;平台键 roblox:10387635049)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/race-horses/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |

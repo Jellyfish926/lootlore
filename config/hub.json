@@ -1596,6 +1596,220 @@
           }
         ]
       }
+    },
+    {
+      "slug": "mog-evolution",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/mog-evolution",
+      "name": "[W3] +1 Mog Evolution",
+      "short": "+1 Mog Evolution",
+      "default_path": "/",
+      "native": {
+        "title": "+1 Mog Evolution",
+        "nav": [
+          "beginner",
+          "upgrades"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-01",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "+1 Mog Evolution",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/mog-evolution/entities.json",
+        "start_here": [
+          "how-to-play",
+          "appeal",
+          "shop"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Incremental Simulator (clicker)",
+        "studio": "Navoj Mog",
+        "released": "August 30, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-c309744b3d4e8cbca9d9c5952aef6bca/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: three blue panels show the same orange-haired sculpted head improving from droopy to sharp-jawed, with +1, then +67, then +999 floating around it and arrows between the panels",
+        "img_credit": "Official thumbnail · Navoj Mog (Roblox)",
+        "blurb": "Our +1 Mog Evolution hub for Navoj Mog's Roblox clicker: how clicking, the Bonesmash hammer, Wins and Ascend fit together, Rebirth, Stages and Worlds 2-3, the Admin Abuse & Update 4 event, and all 43 Robux products with official prices — built from Roblox's own data, with no unverified codes.",
+        "highlights": [
+          [
+            "How to Play",
+            "/mog-evolution/how-to-play/"
+          ],
+          [
+            "Appeal Boosts",
+            "/mog-evolution/appeal/"
+          ],
+          [
+            "All 43 Robux Products",
+            "/mog-evolution/shop/"
+          ],
+          [
+            "Updates & Admin Abuse",
+            "/mog-evolution/updates/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 8,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "item",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "usage"
+            ],
+            "sort": "order",
+            "max": 12,
+            "all": "shop"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "race-horses",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/race-horses",
+      "name": "Race Horses",
+      "short": "Race Horses",
+      "default_path": "/",
+      "native": {
+        "title": "Race Horses",
+        "nav": [
+          "guides"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-01",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Race Horses",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/race-horses/entities.json",
+        "start_here": [
+          "how-to-play",
+          "eggs",
+          "badges"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Idle RNG Racing (Simulation, Tycoon)",
+        "studio": "Gorilla Grafters",
+        "released": "June 24, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-8aa90a35301e63340c97454d1eb77ae0/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: a grinning Roblox character rides an orange blocky horse with saddle number 1 down a bright green race track, with other riders on blocky horses and a packed grandstand behind",
+        "img_credit": "Official thumbnail · Gorilla Grafters (Roblox)",
+        "blurb": "Our Race Horses hub for Gorilla Grafters' idle Roblox racing game: all 24 badges with official award counts, seven egg tiers up to Exotic with Robux prices, what the developer says about the Index, every game pass and gift price, and an update timeline — built from Roblox's own data, with no unverified codes.",
+        "highlights": [
+          [
+            "All 24 Badges",
+            "/race-horses/badges/"
+          ],
+          [
+            "Eggs & 7 Rarities",
+            "/race-horses/eggs/"
+          ],
+          [
+            "Index, Traits & Shiny",
+            "/race-horses/horses/"
+          ],
+          [
+            "Game Passes",
+            "/race-horses/gamepasses/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 8,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "description",
+              "key_notes"
+            ],
+            "sort": "order",
+            "max": 24,
+            "all": "badges"
+          },
+          {
+            "type": "gamepass",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "description"
+            ],
+            "sort": "order",
+            "max": 5,
+            "all": "gamepasses"
+          }
+        ]
+      }
     }
   ]
 }

@@ -11,3 +11,5 @@
 | 2026-09-30 | Animal Daycare (Anomaly)(Roblox universeId 10701628624 / placeId 124061247871628)· `kind: native` | 英文 | 7 页(另 2 篇 draft 未发布) | `https://lootwiki.com/animal-daycare/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-10-01 | +1 Mog Evolution([W3] +1 Mog Evolution;Roblox universeId 10764479526 / placeId 92648272637932;平台键 roblox:10764479526)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/mog-evolution/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-10-01 | Race Horses([INDEX📖] Race Horses;Roblox universeId 10387635049 / placeId 79475945127283;平台键 roblox:10387635049)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/race-horses/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-10-02 | +1 Stone Skipping(Roblox universeId 10765298801 / placeId 111543903102439;平台键 roblox:10765298801)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/stone-skipping/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-10-02 | Southern Mudding([🚀Nitrous!🚀] Southern Mudding 🚜 OffRoading;Roblox universeId 8719555347 / placeId 79480724066456;平台键 roblox:8719555347)· `kind: native` | 英文 | 12 页 | `https://lootwiki.com/southern-mudding/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |

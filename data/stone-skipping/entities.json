@@ -1,0 +1,2144 @@
+{
+ "fetched": "2026-10-02",
+ "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T18:09:39.135Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、通行证 apis.roblox.com/game-passes(11 个,nextPageToken 空)、开发者商品 apis.roblox.com/developer-products v2(78 个,全量,nextPageCursor=null)、官方活动 apis.roblox.com/virtual-events、群组 groups.roblox.com、分级 experience-guidelines-api。名称逐字复制接口 name/Name 字段(含大小写与方括号);唯一例外是接口里 'Dragon Egg ' 带尾随空格,name_en 去掉尾随空格,原值保留在 name_api_raw。11 个通行证与 78 个商品的官方描述全部为空,所以没有 description 字段;usage_en 只按名称归类,明写 effect/contents not published,不含任何倍率、数量、概率。徽章 0,未建实体。区域名、宠物名与倍率、蛋概率、Rebirth 门槛、World 解锁条件、兑换码无一手来源,未建实体。价格为 2026-10-02 快照;2 个未上架商品(Boost Bundle、Power Boost)接口无价格,不写 unlock_cost。通行证 order 按价格再按创建时间升序;商品 order 按创建时间再按价格升序。 活动实体不用 mog-evolution 的 deadline 字段(界面标签是「Claim deadline」,本活动没有可领取的东西,会误导),改记 event_start_utc / event_end_utc,这两个字段没有 f_ 标签,不渲染,起止时间已写在 key_notes_en。 2026-10-02 第 1 轮验证后:删掉 key_notes_en 里的「Private servers not allowed」(createVipServersAllowed=false 对已知有私服的游戏同样为 false,不能据此下结论,private_servers 记入 unverified_fields);活动实体 key_notes_en 补入两场过往官方活动;第 2 轮复验后其出处改为带游标的请求(?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA,2026-10-02 实测 4/4 次返回 3 条);默认请求通常只返回即将开始的一条。",
+ "roblox": {
+  "universeId": 10765298801,
+  "rootPlaceId": 111543903102439,
+  "creatorGroupId": 207366578,
+  "updated": "2026-09-30T18:09:39.135Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页。",
+ "entities": {
+  "stone-skipping": {
+   "type": "mechanic",
+   "name_en": "+1 Stone Skipping",
+   "page_slug": "how-to-play",
+   "summary_en": "Roblox incremental simulator: every bounce of a thrown stone gives +1 Skill, training and levelling up make you throw farther, farther zones pay more Wins, pets give boosts and Rebirth makes you stronger.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
+   "description_en": "Every bounce gives you +1 Skill! · Train and level up to throw farther! · Reach farther zones to earn more Wins! · Unlock better stones and unusual objects to throw... even a DONUT! · Collect pets for powerful boosts! · Rebirth to grow stronger and beat your longest throw!",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
+   "alt_name_en": "+1 Skipping Stones (the name used in the first line of the official description)",
+   "alt_name_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
+   "release_date_en": "5 September 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
+   "role_en": "Developer: Meow Labs (Roblox group 207366578)",
+   "role_source": "https://groups.roblox.com/v1/groups/207366578",
+   "max_players": 10,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
+   "key_notes_en": "10 players per server · Maturity: Minimal · No badges · 11 game passes · 78 developer products (76 on sale)",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=10765298801",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/10765298801/badges?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "key_notes_repro": "Maturity read anonymously on 2026-10-02: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"10765298801\"} returns ageRecommendation.displayName = Minimal.",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10765298801",
+    "https://groups.roblox.com/v1/groups/207366578",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "skill_per_bounce_scaling",
+    "level_thresholds",
+    "zone_names",
+    "zone_distances",
+    "wins_per_zone",
+    "stone_list",
+    "pet_boosts",
+    "egg_odds",
+    "rebirth_cost",
+    "rebirth_reward",
+    "world_unlock_rules",
+    "code_system",
+    "discord_link",
+    "supported_devices",
+    "private_servers"
+   ]
+  },
+  "event-admin-abuse-world-5": {
+   "type": "mechanic",
+   "name_en": "ADMIN ABUSE + WORLD 5",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for +1 Stone Skipping hosted by the group Meow Labs, category 'new content'; the listing's description has three lines: Admin Abuse, World 5, New features.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
+   "description_en": "- Admin Abuse / - World 5 / - New features",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
+   "key_notes_en": "Subtitle: FIRST ADMIN ABUSE!! · Starts 3 October 2026, 16:00 UTC · Ends 3 October 2026, 18:00 UTC · Listed 26 September 2026 · Earlier official events: World 3 + New Content (20–23 September 2026) and WORLD 4 + UPDATE (27 September–1 October 2026)",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_start_utc": "2026-10-03T16:00:15Z",
+   "event_end_utc": "2026-10-03T18:00:15Z",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
+   "event_id": "8811741884713140817",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
+    "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards",
+    "world_5_unlock_rule",
+    "new_features"
+   ],
+   "expiry_action": "2026-10-04: rewrite updates page event section in past tense; re-read the events API for a new event; re-read both store lists"
+  },
+  "pass-hatch-plus-3-eggs-stacks": {
+   "type": "gamepass",
+   "name_en": "Hatch +3 Eggs [STACKS]",
+   "page_slug": "gamepasses",
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Hatch pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1975575792,
+   "created": "2026-09-14",
+   "last_updated": "2026-09-14",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 1
+  },
+  "pass-auto-wins": {
+   "type": "gamepass",
+   "name_en": "Auto Wins",
+   "page_slug": "gamepasses",
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Automation pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1975737922,
+   "created": "2026-09-14",
+   "last_updated": "2026-09-14",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 2
+  },
+  "pass-plus-1-pet": {
+   "type": "gamepass",
+   "name_en": "+1 Pet",
+   "page_slug": "gamepasses",
+   "unlock_cost": "69 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Pet pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 2002580384,
+   "created": "2026-09-29",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 3
+  },
+  "pass-koi-training-zone": {
+   "type": "gamepass",
+   "name_en": "Koi Training Zone",
+   "page_slug": "gamepasses",
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Training zone pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1997937475,
+   "created": "2026-09-29",
+   "last_updated": "2026-09-29",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 4
+  },
+  "pass-hatch-plus-8-eggs-stacks": {
+   "type": "gamepass",
+   "name_en": "Hatch +8 Eggs [STACKS]",
+   "page_slug": "gamepasses",
+   "unlock_cost": "145 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Hatch pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1975287804,
+   "created": "2026-09-14",
+   "last_updated": "2026-09-14",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 5
+  },
+  "pass-auto-rebirth": {
+   "type": "gamepass",
+   "name_en": "Auto Rebirth",
+   "page_slug": "gamepasses",
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Automation pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1985061337,
+   "created": "2026-09-19",
+   "last_updated": "2026-09-19",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 6
+  },
+  "pass-plus-3-pets": {
+   "type": "gamepass",
+   "name_en": "+3 Pets",
+   "page_slug": "gamepasses",
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Pet pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1982684356,
+   "created": "2026-09-15",
+   "last_updated": "2026-09-29",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 7
+  },
+  "pass-golden-training-zone": {
+   "type": "gamepass",
+   "name_en": "Golden Training Zone",
+   "page_slug": "gamepasses",
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Training zone pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1979541573,
+   "created": "2026-09-14",
+   "last_updated": "2026-09-29",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 8
+  },
+  "pass-hatch-plus-16-eggs-stacks": {
+   "type": "gamepass",
+   "name_en": "Hatch +16 Eggs [STACKS]",
+   "page_slug": "gamepasses",
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Hatch pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1979565519,
+   "created": "2026-09-14",
+   "last_updated": "2026-09-14",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 9
+  },
+  "pass-plus-6-pets": {
+   "type": "gamepass",
+   "name_en": "+6 Pets",
+   "page_slug": "gamepasses",
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Pet pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1998423525,
+   "created": "2026-09-29",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 10
+  },
+  "pass-admin-training-zone": {
+   "type": "gamepass",
+   "name_en": "Admin Training Zone",
+   "page_slug": "gamepasses",
+   "unlock_cost": "599 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Training zone pass (effect not published)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1975305800,
+   "created": "2026-09-14",
+   "last_updated": "2026-09-29",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ],
+   "order": 11
+  },
+  "product-starter-pack": {
+   "type": "item",
+   "name_en": "Starter Pack",
+   "page_slug": "shop",
+   "order": 1,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-30",
+   "product_id": 3712280631,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-1": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 1]",
+   "page_slug": "boosts",
+   "order": 2,
+   "unlock_cost": "3 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712280699,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-2": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 2]",
+   "page_slug": "boosts",
+   "order": 3,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281019,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-3": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 3]",
+   "page_slug": "boosts",
+   "order": 4,
+   "unlock_cost": "45 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281041,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-4": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 4]",
+   "page_slug": "boosts",
+   "order": 5,
+   "unlock_cost": "129 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281129,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-2x-wins-permanent": {
+   "type": "item",
+   "name_en": "2x Wins [PERMANENT]",
+   "page_slug": "boosts",
+   "order": 6,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins multiplier, tagged permanent in its name",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712281171,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skip-rebirth": {
+   "type": "item",
+   "name_en": "Skip Rebirth",
+   "page_slug": "shop",
+   "order": 7,
+   "unlock_cost": "35 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281203,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-wins-pack-1": {
+   "type": "item",
+   "name_en": "Wins Pack 1",
+   "page_slug": "boosts",
+   "order": 8,
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712281296,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-wins-pack-2": {
+   "type": "item",
+   "name_en": "Wins Pack 2",
+   "page_slug": "boosts",
+   "order": 9,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712281324,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-wins-pack-3": {
+   "type": "item",
+   "name_en": "Wins Pack 3",
+   "page_slug": "boosts",
+   "order": 10,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712281350,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-wins-pack-4": {
+   "type": "item",
+   "name_en": "Wins Pack 4",
+   "page_slug": "boosts",
+   "order": 11,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712281382,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-wins-pack-5-20-off": {
+   "type": "item",
+   "name_en": "Wins Pack 5 [20% OFF]",
+   "page_slug": "boosts",
+   "order": 12,
+   "unlock_cost": "459 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712281439,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-boost": {
+   "type": "item",
+   "name_en": "Skill Boost",
+   "page_slug": "boosts",
+   "order": 13,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Boost item (duration and strength not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281537,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-wins-boost": {
+   "type": "item",
+   "name_en": "Wins Boost",
+   "page_slug": "boosts",
+   "order": 14,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Boost item (duration and strength not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281559,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-boost-pack": {
+   "type": "item",
+   "name_en": "Boost Pack",
+   "page_slug": "boosts",
+   "order": 15,
+   "unlock_cost": "95 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Boost item (duration and strength not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712281589,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-rainbow-egg": {
+   "type": "item",
+   "name_en": "Rainbow Egg",
+   "page_slug": "pets",
+   "order": 16,
+   "unlock_cost": "45 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-19",
+   "product_id": 3712281643,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-rainbow-egg-x3": {
+   "type": "item",
+   "name_en": "Rainbow Egg x3",
+   "page_slug": "pets",
+   "order": 17,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-19",
+   "product_id": 3712281660,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-rainbow-egg-x8": {
+   "type": "item",
+   "name_en": "Rainbow Egg x8",
+   "page_slug": "pets",
+   "order": 18,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-19",
+   "product_id": 3712281678,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-1-tier-2": {
+   "type": "item",
+   "name_en": "Skill Pack 1 [TIER 2]",
+   "page_slug": "boosts",
+   "order": 19,
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712282224,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-2-tier-2": {
+   "type": "item",
+   "name_en": "Skill Pack 2 [TIER 2]",
+   "page_slug": "boosts",
+   "order": 20,
+   "unlock_cost": "95 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712282242,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-3-tier-2": {
+   "type": "item",
+   "name_en": "Skill Pack 3 [TIER 2]",
+   "page_slug": "boosts",
+   "order": 21,
+   "unlock_cost": "185 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712282260,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-1-tier-1": {
+   "type": "item",
+   "name_en": "Skill Pack 1 [TIER 1]",
+   "page_slug": "boosts",
+   "order": 22,
+   "unlock_cost": "11 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712292163,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-2-tier-1": {
+   "type": "item",
+   "name_en": "Skill Pack 2 [TIER 1]",
+   "page_slug": "boosts",
+   "order": 23,
+   "unlock_cost": "45 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712292223,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-3-tier-1": {
+   "type": "item",
+   "name_en": "Skill Pack 3 [TIER 1]",
+   "page_slug": "boosts",
+   "order": 24,
+   "unlock_cost": "95 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-18",
+   "product_id": 3712292244,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-claim-all-gifts": {
+   "type": "item",
+   "name_en": "Claim All Gifts",
+   "page_slug": "shop",
+   "order": 25,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-14",
+   "product_id": 3712296556,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-admin-egg": {
+   "type": "item",
+   "name_en": "Admin Egg",
+   "page_slug": "pets",
+   "order": 26,
+   "unlock_cost": "175 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712529899,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-admin-egg-x3": {
+   "type": "item",
+   "name_en": "Admin Egg x3",
+   "page_slug": "pets",
+   "order": 27,
+   "unlock_cost": "459 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712529931,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-admin-egg-x8": {
+   "type": "item",
+   "name_en": "Admin Egg x8",
+   "page_slug": "pets",
+   "order": 28,
+   "unlock_cost": "1149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712529975,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-1-tier-3": {
+   "type": "item",
+   "name_en": "Skill Pack 1 [TIER 3]",
+   "page_slug": "boosts",
+   "order": 29,
+   "unlock_cost": "45 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712542128,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-2-tier-3": {
+   "type": "item",
+   "name_en": "Skill Pack 2 [TIER 3]",
+   "page_slug": "boosts",
+   "order": 30,
+   "unlock_cost": "185 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-18",
+   "product_id": 3712542168,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-3-tier-3": {
+   "type": "item",
+   "name_en": "Skill Pack 3 [TIER 3]",
+   "page_slug": "boosts",
+   "order": 31,
+   "unlock_cost": "369 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-18",
+   "product_id": 3712542204,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-5x-wins-permanent": {
+   "type": "item",
+   "name_en": "5x Wins [PERMANENT]",
+   "page_slug": "boosts",
+   "order": 32,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins multiplier, tagged permanent in its name",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712543053,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-10x-wins-permanent": {
+   "type": "item",
+   "name_en": "10x Wins [PERMANENT]",
+   "page_slug": "boosts",
+   "order": 33,
+   "unlock_cost": "575 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins multiplier, tagged permanent in its name",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712543100,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-pirate-egg": {
+   "type": "item",
+   "name_en": "Pirate Egg",
+   "page_slug": "pets",
+   "order": 34,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712632204,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-pirate-egg-x3": {
+   "type": "item",
+   "name_en": "Pirate Egg x3",
+   "page_slug": "pets",
+   "order": 35,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-14",
+   "product_id": 3712632219,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-pirate-egg-x8": {
+   "type": "item",
+   "name_en": "Pirate Egg x8",
+   "page_slug": "pets",
+   "order": 36,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-12",
+   "product_updated": "2026-09-19",
+   "product_id": 3712632245,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-admin-training-zone": {
+   "type": "item",
+   "name_en": "Admin Training Zone",
+   "page_slug": "shop",
+   "order": 37,
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-13",
+   "product_id": 3712634639,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-golden-training-zone": {
+   "type": "item",
+   "name_en": "Golden Training Zone",
+   "page_slug": "shop",
+   "order": 38,
+   "unlock_cost": "315 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-13",
+   "product_id": 3712634656,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-boost-bundle": {
+   "type": "item",
+   "name_en": "Boost Bundle",
+   "page_slug": "shop",
+   "order": 39,
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "key_notes_en": "Listed but not on sale; no price in the listing",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-13",
+   "product_id": 3712634943,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description",
+    "unlock_cost"
+   ]
+  },
+  "product-power-boost": {
+   "type": "item",
+   "name_en": "Power Boost",
+   "page_slug": "shop",
+   "order": 40,
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "key_notes_en": "Listed but not on sale; no price in the listing",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-13",
+   "product_id": 3712634969,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description",
+    "unlock_cost"
+   ]
+  },
+  "product-wins-pack-5": {
+   "type": "item",
+   "name_en": "Wins Pack 5",
+   "page_slug": "boosts",
+   "order": 41,
+   "unlock_cost": "575 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Wins pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-14",
+   "product_id": 3712636333,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-golden-zone": {
+   "type": "item",
+   "name_en": "Golden Zone",
+   "page_slug": "shop",
+   "order": 42,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-13",
+   "product_id": 3712637237,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-admin-zone": {
+   "type": "item",
+   "name_en": "Admin Zone",
+   "page_slug": "shop",
+   "order": 43,
+   "unlock_cost": "289 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-13",
+   "product_id": 3712637272,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-phoenix-relic-limited-stock": {
+   "type": "item",
+   "name_en": "Phoenix Relic [LIMITED STOCK]",
+   "page_slug": "shop",
+   "order": 44,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-13",
+   "product_updated": "2026-09-14",
+   "product_id": 3712726391,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-5": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 5]",
+   "page_slug": "boosts",
+   "order": 45,
+   "unlock_cost": "255 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-14",
+   "product_updated": "2026-09-18",
+   "product_id": 3712868376,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-6": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 6]",
+   "page_slug": "boosts",
+   "order": 46,
+   "unlock_cost": "425 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-14",
+   "product_updated": "2026-09-16",
+   "product_id": 3712868411,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-7": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 7]",
+   "page_slug": "boosts",
+   "order": 47,
+   "unlock_cost": "615 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-14",
+   "product_updated": "2026-09-16",
+   "product_id": 3712868445,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-astronaut-egg": {
+   "type": "item",
+   "name_en": "Astronaut Egg",
+   "page_slug": "pets",
+   "order": 48,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-19",
+   "product_updated": "2026-09-23",
+   "product_id": 3713687212,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-astronaut-egg-x3": {
+   "type": "item",
+   "name_en": "Astronaut Egg x3",
+   "page_slug": "pets",
+   "order": 49,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-19",
+   "product_updated": "2026-09-23",
+   "product_id": 3713687457,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-astronaut-egg-x8": {
+   "type": "item",
+   "name_en": "Astronaut Egg x8",
+   "page_slug": "pets",
+   "order": 50,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-19",
+   "product_updated": "2026-09-23",
+   "product_id": 3713687483,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-king-doggy": {
+   "type": "item",
+   "name_en": "King Doggy",
+   "page_slug": "pets",
+   "order": 51,
+   "unlock_cost": "999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-22",
+   "product_updated": "2026-09-23",
+   "product_id": 3714242159,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-offline-reward-x3": {
+   "type": "item",
+   "name_en": "Offline Reward x3",
+   "page_slug": "shop",
+   "order": 52,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "product_updated": "2026-09-28",
+   "product_id": 3714836657,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-chocolatier-egg": {
+   "type": "item",
+   "name_en": "Chocolatier Egg",
+   "page_slug": "pets",
+   "order": 53,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "product_updated": "2026-09-26",
+   "product_id": 3714883758,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-chocolatier-egg-x3": {
+   "type": "item",
+   "name_en": "Chocolatier Egg x3",
+   "page_slug": "pets",
+   "order": 54,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "product_updated": "2026-09-26",
+   "product_id": 3714883795,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-chocolatier-egg-x8": {
+   "type": "item",
+   "name_en": "Chocolatier Egg x8",
+   "page_slug": "pets",
+   "order": 55,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-26",
+   "product_updated": "2026-09-26",
+   "product_id": 3714883816,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-8": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 8]",
+   "page_slug": "boosts",
+   "order": 56,
+   "unlock_cost": "995 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-27",
+   "product_updated": "2026-09-28",
+   "product_id": 3715117052,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-9": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 9]",
+   "page_slug": "boosts",
+   "order": 57,
+   "unlock_cost": "1499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-27",
+   "product_updated": "2026-09-28",
+   "product_id": 3715117082,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-10": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 10]",
+   "page_slug": "boosts",
+   "order": 58,
+   "unlock_cost": "1995 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-27",
+   "product_updated": "2026-09-28",
+   "product_id": 3715117107,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-golden-skip": {
+   "type": "item",
+   "name_en": "Golden Skip",
+   "page_slug": "shop",
+   "order": 59,
+   "unlock_cost": "12 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-29",
+   "product_updated": "2026-09-29",
+   "product_id": 3715390318,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-diamond-skip": {
+   "type": "item",
+   "name_en": "Diamond Skip",
+   "page_slug": "shop",
+   "order": 60,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-29",
+   "product_updated": "2026-09-29",
+   "product_id": 3715390383,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-devil-pack": {
+   "type": "item",
+   "name_en": "Devil Pack",
+   "page_slug": "pets",
+   "order": 61,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-29",
+   "product_updated": "2026-09-30",
+   "product_id": 3715439442,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-boost-pack": {
+   "type": "item",
+   "name_en": "[GIFT] Boost Pack",
+   "page_slug": "boosts",
+   "order": 62,
+   "unlock_cost": "95 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of Boost Pack (effect not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715622988,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-skill-boost": {
+   "type": "item",
+   "name_en": "[GIFT] Skill Boost",
+   "page_slug": "boosts",
+   "order": 63,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of Skill Boost (effect not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715623007,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-wins-boost": {
+   "type": "item",
+   "name_en": "[GIFT] Wins Boost",
+   "page_slug": "boosts",
+   "order": 64,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of Wins Boost (effect not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715623023,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-admin-egg": {
+   "type": "item",
+   "name_en": "[GIFT] Admin Egg",
+   "page_slug": "pets",
+   "order": 65,
+   "unlock_cost": "175 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of Admin Egg (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715623069,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-admin-egg-x3": {
+   "type": "item",
+   "name_en": "[GIFT] Admin Egg x3",
+   "page_slug": "pets",
+   "order": 66,
+   "unlock_cost": "459 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of Admin Egg x3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715623141,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-admin-egg-x8": {
+   "type": "item",
+   "name_en": "[GIFT] Admin Egg x8",
+   "page_slug": "pets",
+   "order": 67,
+   "unlock_cost": "1149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of Admin Egg x8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630657,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-koi-training-zone": {
+   "type": "item",
+   "name_en": "[GIFT] Koi Training Zone",
+   "page_slug": "gamepasses",
+   "order": 68,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the Koi Training Zone game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630688,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-golden-training-zone": {
+   "type": "item",
+   "name_en": "[GIFT] Golden Training Zone",
+   "page_slug": "gamepasses",
+   "order": 69,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the Golden Training Zone game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630708,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-admin-training-zone": {
+   "type": "item",
+   "name_en": "[GIFT] Admin Training Zone",
+   "page_slug": "gamepasses",
+   "order": 70,
+   "unlock_cost": "599 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the Admin Training Zone game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630731,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-plus-1-pet": {
+   "type": "item",
+   "name_en": "[GIFT] +1 Pet",
+   "page_slug": "gamepasses",
+   "order": 71,
+   "unlock_cost": "69 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the +1 Pet game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630882,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-plus-3-pets": {
+   "type": "item",
+   "name_en": "[GIFT] +3 Pets",
+   "page_slug": "gamepasses",
+   "order": 72,
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the +3 Pets game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630932,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-plus-6-pets": {
+   "type": "item",
+   "name_en": "[GIFT] +6 Pets",
+   "page_slug": "gamepasses",
+   "order": 73,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the +6 Pets game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630960,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-auto-wins": {
+   "type": "item",
+   "name_en": "[GIFT] Auto Wins",
+   "page_slug": "gamepasses",
+   "order": 74,
+   "unlock_cost": "25 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the Auto Wins game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715630983,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-gift-auto-rebirth": {
+   "type": "item",
+   "name_en": "[GIFT] Auto Rebirth",
+   "page_slug": "gamepasses",
+   "order": 75,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Gift version of the Auto Rebirth game pass",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715631006,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-dragon-egg": {
+   "type": "item",
+   "name_en": "Dragon Egg",
+   "page_slug": "pets",
+   "order": 76,
+   "name_api_raw": "Dragon Egg ",
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-01",
+   "product_updated": "2026-10-01",
+   "product_id": 3715841017,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-dragon-egg-x3": {
+   "type": "item",
+   "name_en": "Dragon Egg x3",
+   "page_slug": "pets",
+   "order": 77,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-01",
+   "product_updated": "2026-10-01",
+   "product_id": 3715841047,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-dragon-egg-x8": {
+   "type": "item",
+   "name_en": "Dragon Egg x8",
+   "page_slug": "pets",
+   "order": 78,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-01",
+   "product_updated": "2026-10-01",
+   "product_id": 3715841081,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  }
+ }
+}

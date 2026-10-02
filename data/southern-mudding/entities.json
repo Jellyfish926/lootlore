@@ -1,0 +1,3033 @@
+{
+ "fetched": "2026-10-02",
+ "game_version": "2026-09-25 update (Roblox experience updated 2026-09-25T17:20:11Z; read at 2026-10-02 11:19 UTC, before that day's scheduled 17:00 UTC update)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、群组 groups.roblox.com、徽章 badges.roblox.com(2026-10-02 重取一次核对 universe 一致)、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products、活动 apis.roblox.com/virtual-events(默认只返回 3 条在开活动;带 cursor 参数从头翻页可取全部 43 条,2026-10-02 12:13 UTC 取,原始响应 raw/events_hist_p1.json、p2.json)、成熟度 experience-guidelines-api。名称逐字复制接口 name 字段;3 个商品名尾部带空格,name_en 去掉首尾空白,原串存 name_raw。通行证接口另有 1 条 name=Placeholder、isForSale=false、price=null 的记录,不是在售通行证,未建实体。徽章 order 按累计获得数降序;通行证与商品 order 按 Robux 价升序(同价按创建时间)。61 个商品接口 Description 全部为空,所以商品没有 description_en / usage_en。快照数字只代表 2026-10-02 11:19 UTC(徽章、访问量)与 11:23 UTC(RSVP)。车辆性能、地图地点、游戏币、房屋数量、氮气用法与价格、群组赠车领取步骤、兑换码均无一手来源,未建实体。",
+ "roblox": {
+  "universeId": 8719555347,
+  "rootPlaceId": 79480724066456,
+  "creatorGroupId": 33504096,
+  "updated": "2026-09-25T17:20:11.671Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页。",
+ "entities": {
+  "southern-mudding": {
+   "type": "mechanic",
+   "name_en": "Southern Mudding",
+   "page_slug": "how-to-play",
+   "summary_en": "Roblox off-road driving game by the verified group Southern Mudding: spawn pickup trucks, semi trucks, trailers, classic cars and muscle cars on a map built for mud, tow and haul, claim a house, and customize your vehicles.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=8719555347",
+   "description_en": "Explore a map purpose built for the off-road, using your selection of pickup trucks, semi trucks, trailers, classic cars, American muscle cars, and more!",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=8719555347",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=8719555347",
+   "release_date_en": "15 September 2025 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=8719555347",
+   "role_en": "Developer: Southern Mudding (verified Roblox group 33504096)",
+   "role_source": "https://groups.roblox.com/v1/groups/33504096",
+   "max_players": 10,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=8719555347",
+   "key_notes_en": "10 players per server · Private servers not enabled · Maturity: Minimal · Genre: Simulation / Vehicle Sim · 4 badges · 13 game passes on sale · 61 developer products",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=8719555347",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "key_notes_repro": "Maturity re-read anonymously on 2026-10-02: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"8719555347\"} returns ageRecommendation.displayName = Minimal.",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=8719555347",
+    "https://groups.roblox.com/v1/groups/33504096",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://develop.roblox.com/v1/universes/8719555347/places?limit=50"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "controls",
+    "map_locations",
+    "free_vehicle_roster",
+    "in_game_currency",
+    "house_count_and_locations",
+    "nitrous_cost_and_controls",
+    "group_reward_claim_steps",
+    "code_system",
+    "official_social_links",
+    "supported_devices"
+   ]
+  },
+  "badge-welcome-to-the-game": {
+   "type": "achievement",
+   "name_en": "Welcome to the game!",
+   "page_slug": "badges",
+   "order": 1,
+   "description_en": "You played the game!",
+   "description_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "requires_en": "You played the game!",
+   "requires_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "key_notes_en": "Awarded 76,022,926 times as of 2026-10-02 11:19 UTC (100.00 per 100 Welcome to the game! awards, our calculation); Roblox win-rate field: 0.561",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "awarded_count": 76022926,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "past_day_awarded_count": 193843,
+   "win_rate_raw": 0.561,
+   "badge_created": "2025-09-22",
+   "badge_id": 253480861687000,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": []
+  },
+  "badge-spawned-a-vehicle": {
+   "type": "achievement",
+   "name_en": "Spawned a Vehicle",
+   "page_slug": "badges",
+   "order": 2,
+   "description_en": "Spawn a vehicle to obtain this badge.",
+   "description_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "requires_en": "Spawn a vehicle to obtain this badge.",
+   "requires_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "key_notes_en": "Awarded 62,448,163 times as of 2026-10-02 11:19 UTC (82.14 per 100 Welcome to the game! awards, our calculation); Roblox win-rate field: 0.453",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "awarded_count": 62448163,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "past_day_awarded_count": 156599,
+   "win_rate_raw": 0.453,
+   "badge_created": "2025-09-22",
+   "badge_id": 460060999963993,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": []
+  },
+  "badge-spawned-a-trailer": {
+   "type": "achievement",
+   "name_en": "Spawned a Trailer",
+   "page_slug": "badges",
+   "order": 3,
+   "description_en": "Spawn a trailer to obtain this badge.",
+   "description_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "requires_en": "Spawn a trailer to obtain this badge.",
+   "requires_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "key_notes_en": "Awarded 37,089,920 times as of 2026-10-02 11:19 UTC (48.79 per 100 Welcome to the game! awards, our calculation); Roblox win-rate field: 0.234",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "awarded_count": 37089920,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "past_day_awarded_count": 80840,
+   "win_rate_raw": 0.234,
+   "badge_created": "2025-09-22",
+   "badge_id": 3091659662171973,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": []
+  },
+  "badge-claimed-a-house": {
+   "type": "achievement",
+   "name_en": "Claimed a House",
+   "page_slug": "badges",
+   "order": 4,
+   "description_en": "Claim a house to obtain this badge.",
+   "description_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "requires_en": "Claim a house to obtain this badge.",
+   "requires_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "key_notes_en": "Awarded 7,164,284 times as of 2026-10-02 11:19 UTC (9.42 per 100 Welcome to the game! awards, our calculation); Roblox win-rate field: 0.065",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "awarded_count": 7164284,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100",
+   "past_day_awarded_count": 22458,
+   "win_rate_raw": 0.065,
+   "badge_created": "2025-09-22",
+   "badge_id": 87107351303065,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": []
+  },
+  "pass-portable-customization": {
+   "type": "gamepass",
+   "name_en": "Portable Customization",
+   "page_slug": "gamepasses",
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Customize your vehicles and trailers from anywhere!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Customize your vehicles and trailers from anywhere!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1481767952,
+   "created": "2025-09-22",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 1
+  },
+  "pass-rock-lights-customization": {
+   "type": "gamepass",
+   "name_en": "Rock Lights Customization",
+   "page_slug": "gamepasses",
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1792403336,
+   "created": "2026-04-10",
+   "last_updated": "2026-08-11",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "effect (the description field is empty in the Roblox API, so what the pass unlocks is known only from its name)"
+   ],
+   "order": 2
+  },
+  "pass-deluxe-trailer-pack": {
+   "type": "gamepass",
+   "name_en": "Deluxe Trailer Pack",
+   "page_slug": "gamepasses",
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Allows you to spawn the Boat Trailer and Double Jet Ski Trailer!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Allows you to spawn the Boat Trailer and Double Jet Ski Trailer!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1481759872,
+   "created": "2025-09-22",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 3
+  },
+  "pass-luxury-houses": {
+   "type": "gamepass",
+   "name_en": "Luxury Houses",
+   "page_slug": "gamepasses",
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Grants the ability to claim luxury houses!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Grants the ability to claim luxury houses!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1481579856,
+   "created": "2025-09-22",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 4
+  },
+  "pass-classic-car-pack": {
+   "type": "gamepass",
+   "name_en": "Classic Car Pack",
+   "page_slug": "gamepasses",
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "A pack of 4 iconic American classic vehicles!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "A pack of 4 iconic American classic vehicles!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1481901857,
+   "created": "2025-09-22",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 5
+  },
+  "pass-police-vehicle-pack": {
+   "type": "gamepass",
+   "name_en": "Police Vehicle Pack",
+   "page_slug": "gamepasses",
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "A pack of 2 police vehicles!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "A pack of 2 police vehicles!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1672551026,
+   "created": "2026-01-16",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 6
+  },
+  "pass-spawn-4-trailers": {
+   "type": "gamepass",
+   "name_en": "Spawn 4 Trailers",
+   "page_slug": "gamepasses",
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Increases trailer spawn limit from 2 to 4!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Increases trailer spawn limit from 2 to 4!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1477477859,
+   "created": "2025-09-19",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 7
+  },
+  "pass-any-slot-spawning": {
+   "type": "gamepass",
+   "name_en": "Any Slot Spawning",
+   "page_slug": "gamepasses",
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Allows you to spawn cars/trailers in any slot",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Allows you to spawn cars/trailers in any slot",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1948256386,
+   "created": "2026-08-14",
+   "last_updated": "2026-08-14",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 8
+  },
+  "pass-deluxe-mudder-pack": {
+   "type": "gamepass",
+   "name_en": "Deluxe Mudder Pack",
+   "page_slug": "gamepasses",
+   "unlock_cost": "320 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Grants access to 3 lifted mega mudding trucks!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Grants access to 3 lifted mega mudding trucks!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1481561991,
+   "created": "2025-09-22",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 9
+  },
+  "pass-portable-trailer-spawner": {
+   "type": "gamepass",
+   "name_en": "Portable Trailer Spawner",
+   "page_slug": "gamepasses",
+   "unlock_cost": "325 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Allows you to spawn trailers from anywhere in the map!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Allows you to spawn trailers from anywhere in the map!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1866262501,
+   "created": "2026-06-05",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 10
+  },
+  "pass-deluxe-car-pack": {
+   "type": "gamepass",
+   "name_en": "Deluxe Car Pack",
+   "page_slug": "gamepasses",
+   "unlock_cost": "345 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "A pack of 4 iconic American performance vehicles!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "A pack of 4 iconic American performance vehicles!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1481943751,
+   "created": "2025-09-22",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 11
+  },
+  "pass-race-car-pack": {
+   "type": "gamepass",
+   "name_en": "Race Car Pack",
+   "page_slug": "gamepasses",
+   "unlock_cost": "375 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Gain access to 3 premium race cars!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Gain access to 3 premium race cars!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1760202496,
+   "created": "2026-03-20",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 12
+  },
+  "pass-spawn-4-vehicles": {
+   "type": "gamepass",
+   "name_en": "Spawn 4 Vehicles",
+   "page_slug": "gamepasses",
+   "unlock_cost": "490 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "description_en": "Increases vehicle spawn limit from 2 to 4!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Increases vehicle spawn limit from 2 to 4!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1477209929,
+   "created": "2025-09-19",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [],
+   "order": 13
+  },
+  "product-portable-customization-gift": {
+   "type": "item",
+   "name_en": "Portable Customization Gift",
+   "page_slug": "gamepasses",
+   "order": 1,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2025-09-23",
+   "product_id": 3412338999,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-rock-lights-customization-gift": {
+   "type": "item",
+   "name_en": "Rock Lights Customization Gift",
+   "page_slug": "gamepasses",
+   "order": 2,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-04-10; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-04-10",
+   "product_updated": "2026-04-10",
+   "product_id": 3573490664,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-spawn-tornado-3-minutes": {
+   "type": "item",
+   "name_en": "Spawn Tornado 3 Minutes",
+   "page_slug": "limiteds",
+   "order": 3,
+   "unlock_cost": "120 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-04-01; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "tornado",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-04-01",
+   "product_updated": "2026-04-03",
+   "product_id": 3567989884,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-deluxe-trailer-pack": {
+   "type": "item",
+   "name_en": "Deluxe Trailer Pack",
+   "page_slug": "gamepasses",
+   "order": 4,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2026-03-02",
+   "product_id": 3412339155,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)",
+    "gift_role (name has no 'Gift'; grouped with gifts only because it was created in the same 2025-09-23 batch)"
+   ]
+  },
+  "product-limited-utv-2": {
+   "type": "item",
+   "name_en": "(Limited) UTV 2",
+   "page_slug": "limiteds",
+   "order": 5,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-01-29; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-01-29",
+   "product_updated": "2026-05-22",
+   "product_id": 3525242612,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-utv-2": {
+   "type": "item",
+   "name_en": "(Limited) Gift UTV 2",
+   "page_slug": "limiteds",
+   "order": 6,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-01-29; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-01-29",
+   "product_updated": "2026-05-22",
+   "product_id": 3525242877,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-european-6x6-truck": {
+   "type": "item",
+   "name_en": "(Limited) European 6x6 Truck",
+   "page_slug": "limiteds",
+   "order": 7,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-02-05; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-02-05",
+   "product_updated": "2026-02-05",
+   "product_id": 3530662330,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-european-6x6-truck": {
+   "type": "item",
+   "name_en": "(Limited) Gift European 6x6 Truck",
+   "page_slug": "limiteds",
+   "order": 8,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-02-05; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-02-05",
+   "product_updated": "2026-02-05",
+   "product_id": 3530662725,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-delivery-event-unlock-now": {
+   "type": "item",
+   "name_en": "Delivery Event Unlock Now",
+   "page_slug": "limiteds",
+   "order": 9,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-02-12; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "event_unlock",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-02-12",
+   "product_updated": "2026-02-12",
+   "product_id": 3535529014,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-medium-duty-pickup-truck": {
+   "type": "item",
+   "name_en": "(Limited) Medium Duty Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 10,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-02-19; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-02-19",
+   "product_updated": "2026-02-19",
+   "product_id": 3540563699,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-medium-duty-pickup-truck": {
+   "type": "item",
+   "name_en": "(Limited) Gift Medium Duty Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 11,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-02-19; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-02-19",
+   "product_updated": "2026-02-19",
+   "product_id": 3540564006,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-spawn-tornado-5-minutes": {
+   "type": "item",
+   "name_en": "Spawn Tornado 5 Minutes",
+   "page_slug": "limiteds",
+   "order": 12,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-04-01; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "tornado",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-04-01",
+   "product_updated": "2026-04-03",
+   "product_id": 3567990023,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-6x6-pickup-truck-3": {
+   "type": "item",
+   "name_en": "(Limited) 6x6 Pickup Truck 3",
+   "page_slug": "limiteds",
+   "order": 13,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-04-17; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-04-17",
+   "product_updated": "2026-05-08",
+   "product_id": 3577183349,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-6x6-pickup-truck-3": {
+   "type": "item",
+   "name_en": "(Limited) Gift 6x6 Pickup Truck 3",
+   "page_slug": "limiteds",
+   "order": 14,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-04-17; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-04-17",
+   "product_updated": "2026-05-08",
+   "product_id": 3577183447,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-6x6-pickup-truck": {
+   "type": "item",
+   "name_en": "(Limited) 6x6 Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 15,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-05-08; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-05-08",
+   "product_updated": "2026-05-08",
+   "product_id": 3588624579,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-6x6-pickup-truck": {
+   "type": "item",
+   "name_en": "(Limited) Gift 6x6 Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 16,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-05-08; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-05-08",
+   "product_updated": "2026-05-08",
+   "product_id": 3588624727,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-pickup-truck-6x6": {
+   "type": "item",
+   "name_en": "[Limited] Pickup Truck 6x6",
+   "page_slug": "limiteds",
+   "order": 17,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-26; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-26",
+   "product_updated": "2026-06-26",
+   "product_id": 3606662102,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-pickup-truck-6x6": {
+   "type": "item",
+   "name_en": "[Limited] Gift Pickup Truck 6x6",
+   "page_slug": "limiteds",
+   "order": 18,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-26; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-26",
+   "product_updated": "2026-06-26",
+   "product_id": 3606662174,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-swamp-buggy": {
+   "type": "item",
+   "name_en": "[Limited] Swamp Buggy",
+   "page_slug": "limiteds",
+   "order": 19,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-14; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-14",
+   "product_updated": "2026-08-14",
+   "product_id": 3707989365,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-swamp-buggy": {
+   "type": "item",
+   "name_en": "[Limited] Gift Swamp Buggy",
+   "page_slug": "limiteds",
+   "order": 20,
+   "unlock_cost": "200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-14; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-14",
+   "product_updated": "2026-08-14",
+   "product_id": 3707989400,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-utv-2026-07": {
+   "type": "item",
+   "name_en": "[Limited] UTV",
+   "page_slug": "limiteds",
+   "order": 21,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-09; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-09",
+   "product_updated": "2026-07-09",
+   "product_id": 3608986814,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-utv-2026-07": {
+   "type": "item",
+   "name_en": "[Limited] Gift UTV",
+   "page_slug": "limiteds",
+   "order": 22,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-09; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-09",
+   "product_updated": "2026-07-09",
+   "product_id": 3608986917,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-storm-chaser-vehicle": {
+   "type": "item",
+   "name_en": "[Limited] Storm Chaser Vehicle",
+   "page_slug": "limiteds",
+   "order": 23,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-31; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-31",
+   "product_updated": "2026-07-31",
+   "product_id": 3612477392,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-storm-chaser-vehicle": {
+   "type": "item",
+   "name_en": "[Limited] Gift Storm Chaser Vehicle",
+   "page_slug": "limiteds",
+   "order": 24,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-31; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-31",
+   "product_updated": "2026-07-31",
+   "product_id": 3612477448,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-sport-bike": {
+   "type": "item",
+   "name_en": "[Limited] Sport Bike",
+   "page_slug": "limiteds",
+   "order": 25,
+   "unlock_cost": "239 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-21; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-21",
+   "product_updated": "2026-08-21",
+   "product_id": 3709173874,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-sport-bike": {
+   "type": "item",
+   "name_en": "[Limited] Gift Sport Bike",
+   "page_slug": "limiteds",
+   "order": 26,
+   "unlock_cost": "239 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-21; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-21",
+   "product_updated": "2026-08-21",
+   "product_id": 3709173927,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-utv-2026-05": {
+   "type": "item",
+   "name_en": "(Limited) UTV",
+   "page_slug": "limiteds",
+   "order": 27,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-05-22; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-05-22",
+   "product_updated": "2026-05-22",
+   "product_id": 3596647959,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-utv-2026-05": {
+   "type": "item",
+   "name_en": "(Limited) Gift UTV",
+   "page_slug": "limiteds",
+   "order": 28,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-05-22; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-05-22",
+   "product_updated": "2026-05-22",
+   "product_id": 3596648050,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-utv-2026-06": {
+   "type": "item",
+   "name_en": "[Limited!] UTV",
+   "page_slug": "limiteds",
+   "order": 29,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-05; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-05",
+   "product_updated": "2026-06-05",
+   "product_id": 3602859428,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-utv-2026-06": {
+   "type": "item",
+   "name_en": "[Limited!] Gift UTV",
+   "page_slug": "limiteds",
+   "order": 30,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-05; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-05",
+   "product_updated": "2026-06-05",
+   "product_id": 3602859485,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-luxury-rv": {
+   "type": "item",
+   "name_en": "[Limited] Luxury RV",
+   "page_slug": "limiteds",
+   "order": 31,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-19; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-19",
+   "product_updated": "2026-06-19",
+   "product_id": 3605526607,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-luxury-rv": {
+   "type": "item",
+   "name_en": "[Limited] Gift Luxury RV",
+   "page_slug": "limiteds",
+   "order": 32,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-19; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-19",
+   "product_updated": "2026-06-19",
+   "product_id": 3605526660,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-mega-truck": {
+   "type": "item",
+   "name_en": "[Limited] Mega Truck",
+   "page_slug": "limiteds",
+   "order": 33,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-26; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-26",
+   "product_updated": "2026-08-26",
+   "product_id": 3709895177,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-mega-truck": {
+   "type": "item",
+   "name_en": "[Limited] Gift Mega Truck",
+   "page_slug": "limiteds",
+   "order": 34,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-26; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-26",
+   "product_updated": "2026-08-26",
+   "product_id": 3709895197,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-4x4-rock-crawler": {
+   "type": "item",
+   "name_en": "[Limited] 4x4 Rock Crawler",
+   "page_slug": "limiteds",
+   "order": 35,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-09-10; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-10",
+   "product_id": 3712247229,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-4x4-rock-crawler": {
+   "type": "item",
+   "name_en": "[Limited] Gift 4x4 Rock Crawler",
+   "page_slug": "limiteds",
+   "order": 36,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-09-10; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-09-10",
+   "product_updated": "2026-09-10",
+   "product_id": 3712247367,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-monster-truck": {
+   "type": "item",
+   "name_en": "[Limited] Monster Truck",
+   "page_slug": "limiteds",
+   "order": 37,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-09-18; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713425529,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-monster-truck": {
+   "type": "item",
+   "name_en": "[Limited] Gift Monster Truck",
+   "page_slug": "limiteds",
+   "order": 38,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-09-18; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-09-18",
+   "product_updated": "2026-09-18",
+   "product_id": 3713425589,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-off-road-6x6-pickup-truck": {
+   "type": "item",
+   "name_en": "[Limited] Off-Road 6x6 Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 39,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-09-30; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715562473,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-off-road-6x6-pickup-truck": {
+   "type": "item",
+   "name_en": "[Limited] Gift Off-Road 6x6 Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 40,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-09-30; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715562507,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-classic-car-pack-gift": {
+   "type": "item",
+   "name_en": "Classic Car Pack Gift",
+   "page_slug": "gamepasses",
+   "order": 41,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2025-09-23",
+   "product_id": 3412300365,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-luxury-house-gift": {
+   "type": "item",
+   "name_en": "Luxury House Gift",
+   "page_slug": "gamepasses",
+   "order": 42,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2026-05-26",
+   "product_id": 3412338405,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-6x6-pickup-truck": {
+   "type": "item",
+   "name_en": "6x6 Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 43,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-12-17; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-12-17",
+   "product_updated": "2026-01-15",
+   "product_id": 3482067584,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-gift-6x6-pickup-truck": {
+   "type": "item",
+   "name_en": "Gift 6x6 Pickup Truck",
+   "page_slug": "limiteds",
+   "order": 44,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-12-17; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-12-17",
+   "product_updated": "2026-01-15",
+   "product_id": 3482074930,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ],
+   "name_raw": "Gift 6x6 Pickup Truck "
+  },
+  "product-6x6-pickup-truck-2": {
+   "type": "item",
+   "name_en": "6x6 Pickup Truck 2",
+   "page_slug": "limiteds",
+   "order": 45,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-01-15; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-01-15",
+   "product_updated": "2026-04-17",
+   "product_id": 3513657635,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-gift-6x6-pickup-truck-2": {
+   "type": "item",
+   "name_en": "Gift 6x6 Pickup Truck 2",
+   "page_slug": "limiteds",
+   "order": 46,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-01-15; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-01-15",
+   "product_updated": "2026-04-17",
+   "product_id": 3513658057,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-police-vehicle-pack-gift": {
+   "type": "item",
+   "name_en": "Police Vehicle Pack Gift",
+   "page_slug": "gamepasses",
+   "order": 47,
+   "unlock_cost": "250 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-01-16; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-01-16",
+   "product_updated": "2026-01-16",
+   "product_id": 3514186096,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-super-tank": {
+   "type": "item",
+   "name_en": "[Limited] Super Tank",
+   "page_slug": "limiteds",
+   "order": 48,
+   "unlock_cost": "269 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-17; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-17",
+   "product_updated": "2026-07-18",
+   "product_id": 3610361791,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-super-tank": {
+   "type": "item",
+   "name_en": "[Limited] Gift Super Tank",
+   "page_slug": "limiteds",
+   "order": 49,
+   "unlock_cost": "269 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-17; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-17",
+   "product_updated": "2026-07-18",
+   "product_id": 3610361875,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-deluxe-mudder-pack-gift": {
+   "type": "item",
+   "name_en": "Deluxe Mudder Pack Gift",
+   "page_slug": "gamepasses",
+   "order": 50,
+   "unlock_cost": "275 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2026-05-26",
+   "product_id": 3412338606,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-monster-mudding-truck": {
+   "type": "item",
+   "name_en": "(Limited) Monster Mudding Truck",
+   "page_slug": "limiteds",
+   "order": 51,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-03; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-03",
+   "product_updated": "2026-07-03",
+   "product_id": 3607942793,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-gift-monster-mudding-truck": {
+   "type": "item",
+   "name_en": "(Limited) Gift Monster Mudding Truck",
+   "page_slug": "limiteds",
+   "order": 52,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-07-03; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-07-03",
+   "product_updated": "2026-07-03",
+   "product_id": 3607942833,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-deluxe-car-pack-gift": {
+   "type": "item",
+   "name_en": "Deluxe Car Pack Gift",
+   "page_slug": "gamepasses",
+   "order": 53,
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2025-09-23",
+   "product_id": 3412338280,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-spawn-4-trailers-gift": {
+   "type": "item",
+   "name_en": "Spawn 4 Trailers Gift",
+   "page_slug": "gamepasses",
+   "order": 54,
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2026-06-03",
+   "product_id": 3412339302,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-spawn-tornado-8-minutes": {
+   "type": "item",
+   "name_en": "Spawn Tornado 8 Minutes",
+   "page_slug": "limiteds",
+   "order": 55,
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-04-01; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "tornado",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-04-01",
+   "product_updated": "2026-04-03",
+   "product_id": 3567990139,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-any-slot-spawning-gift": {
+   "type": "item",
+   "name_en": "Any Slot Spawning Gift",
+   "page_slug": "gamepasses",
+   "order": 56,
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-08-14; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-08-14",
+   "product_updated": "2026-08-14",
+   "product_id": 3707986516,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-limited-special-offer-gooseneck-camper-plus-truck": {
+   "type": "item",
+   "name_en": "(Limited Special Offer) Gooseneck Camper + Truck",
+   "page_slug": "limiteds",
+   "order": 57,
+   "unlock_cost": "325 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-12-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-12-23",
+   "product_updated": "2025-12-23",
+   "product_id": 3487035699,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ],
+   "name_raw": "(Limited Special Offer) Gooseneck Camper + Truck "
+  },
+  "product-gift-special-offer-gooseneck-camper-plus-truck": {
+   "type": "item",
+   "name_en": "(GIFT Special Offer) Gooseneck Camper + Truck",
+   "page_slug": "limiteds",
+   "order": 58,
+   "unlock_cost": "325 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-12-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "vehicle_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-12-23",
+   "product_updated": "2025-12-23",
+   "product_id": 3487036012,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ],
+   "name_raw": "(GIFT Special Offer) Gooseneck Camper + Truck "
+  },
+  "product-race-car-pack-gift": {
+   "type": "item",
+   "name_en": "Race Car Pack Gift",
+   "page_slug": "gamepasses",
+   "order": 59,
+   "unlock_cost": "325 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-03-20; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-03-20",
+   "product_updated": "2026-05-26",
+   "product_id": 3559956917,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-gift-portable-trailer-spawner": {
+   "type": "item",
+   "name_en": "[GIFT] Portable Trailer Spawner",
+   "page_slug": "gamepasses",
+   "order": 60,
+   "unlock_cost": "390 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2026-06-05; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2026-06-05",
+   "product_updated": "2026-07-19",
+   "product_id": 3602855128,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "product-spawn-4-vehicles-gift": {
+   "type": "item",
+   "name_en": "Spawn 4 Vehicles Gift",
+   "page_slug": "gamepasses",
+   "order": 61,
+   "unlock_cost": "425 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "key_notes_en": "Developer product created 2025-09-23; the Roblox API marked it as for sale on 2026-10-02",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_group": "pass_gift",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100",
+   "product_created": "2025-09-23",
+   "product_updated": "2026-05-26",
+   "product_id": 3412339415,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/8719555347/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop still offers it)"
+   ]
+  },
+  "event-2025-12-12-towing-update": {
+   "type": "mechanic",
+   "name_en": "Towing Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Check out our new towing update",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "The towing update",
+   "key_notes_en": "Starts 2025-12-12 17:00 UTC · Ends 2025-12-19 17:00 UTC · Listed 2025-12-08",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2025-12-12T17:00:19Z",
+   "ends_utc": "2025-12-19T17:00:19Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "5920378461599040169",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2025-12-23-winter-update-pt-2": {
+   "type": "mechanic",
+   "name_en": "Winter Update Pt. 2",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "2nd part of Winter Upd",
+   "key_notes_en": "Starts 2025-12-23 18:50 UTC · Ends 2026-01-01 17:00 UTC · Listed 2025-12-19",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2025-12-23T18:50:00Z",
+   "ends_utc": "2026-01-01T17:00:00Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2174311440456614541",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2025-12-31-new-years-update": {
+   "type": "mechanic",
+   "name_en": "🎆 New Years Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New truck and trailers!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New Years Update",
+   "key_notes_en": "Starts 2025-12-31 18:00 UTC · Ends 2026-01-09 18:00 UTC · Listed 2025-12-23",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2025-12-31T18:00:43Z",
+   "ends_utc": "2026-01-09T18:00:43Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "700172685908116070",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-01-09-chassis-cab-trucks": {
+   "type": "mechanic",
+   "name_en": "Chassis Cab Trucks!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Added new Chassis Cab Trucks!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New Chassis Cab Trucks!",
+   "key_notes_en": "Starts 2026-01-09 18:00 UTC · Ends 2026-01-16 18:00 UTC · Listed 2026-01-02",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-01-09T18:00:00Z",
+   "ends_utc": "2026-01-16T18:00:00Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7036635829463941857",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-01-16-police-update": {
+   "type": "mechanic",
+   "name_en": "🚨Police Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the police update releases!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Starts 2026-01-16 18:00 UTC · Ends 2026-01-23 18:00 UTC · Listed 2026-01-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-01-16T18:00:20Z",
+   "ends_utc": "2026-01-23T18:00:20Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4003833363360907882",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-01-23-new-trucks": {
+   "type": "mechanic",
+   "name_en": "New Trucks!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This week's Update",
+   "key_notes_en": "Starts 2026-01-23 18:00 UTC · Ends 2026-01-30 18:00 UTC · Listed 2026-01-23",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-01-23T18:00:00Z",
+   "ends_utc": "2026-01-30T18:00:24Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "117168782337376882",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-01-30-dirtbike-update": {
+   "type": "mechanic",
+   "name_en": "Dirtbike Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Starts 2026-01-30 18:00 UTC · Ends 2026-02-06 18:00 UTC · Listed 2026-01-23",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-01-30T18:00:45Z",
+   "ends_utc": "2026-02-06T18:00:45Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "5117944793724093014",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-02-06-tire-customization": {
+   "type": "mechanic",
+   "name_en": "Tire Customization! 🔧",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Starts 2026-02-06 18:00 UTC · Ends 2026-02-13 18:00 UTC · Listed 2026-01-24",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-02-06T18:00:13Z",
+   "ends_utc": "2026-02-13T18:00:13Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1961823578995032676",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-02-13-trucking-event": {
+   "type": "mechanic",
+   "name_en": "Trucking Event!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Deliver cargo to unlock a new truck.\n\nFollow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "SM's First Event!",
+   "key_notes_en": "Starts 2026-02-13 18:00 UTC · Ends 2026-02-20 18:00 UTC · Listed 2026-01-30",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-02-13T18:00:52Z",
+   "ends_utc": "2026-02-20T18:00:52Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1507433769105883850",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-02-20-lawn-mower-update": {
+   "type": "mechanic",
+   "name_en": "Lawn Mower Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Lawn Mower Update",
+   "key_notes_en": "Starts 2026-02-20 18:00 UTC · Ends 2026-02-27 18:00 UTC · Listed 2026-02-06",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-02-20T18:00:00Z",
+   "ends_utc": "2026-02-27T18:00:00Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8429202354200117808",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-02-27-boat-update": {
+   "type": "mechanic",
+   "name_en": "Boat Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Starts 2026-02-27 19:40 UTC · Ends 2026-03-06 18:00 UTC · Listed 2026-02-14",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-02-27T19:40:00Z",
+   "ends_utc": "2026-03-06T18:00:00Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7997296384136708810",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-03-06-lift-kits": {
+   "type": "mechanic",
+   "name_en": "Lift Kits!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New lift kits, wheel offset customization, and more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New Lift Kits + Offset!",
+   "key_notes_en": "Starts 2026-03-06 18:15 UTC · Ends 2026-03-13 17:00 UTC · Listed 2026-02-20",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-03-06T18:15:02Z",
+   "ends_utc": "2026-03-13T17:00:02Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1595153308576383633",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-03-13-atvs-update": {
+   "type": "mechanic",
+   "name_en": "ATVs Update!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!\n\nIntroducing many new ATVs and UTVs, as well as a new part of the map!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "ATVs Update!",
+   "key_notes_en": "Starts 2026-03-13 19:30 UTC · Ends 2026-03-20 17:00 UTC · Listed 2026-02-27",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-03-13T19:30:24Z",
+   "ends_utc": "2026-03-20T17:00:24Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4173386677924004491",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-03-20-new-truck-plus-more": {
+   "type": "mechanic",
+   "name_en": "New Truck + More",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New Truck + More",
+   "key_notes_en": "Starts 2026-03-20 17:10 UTC · Ends 2026-03-27 17:00 UTC · Listed 2026-02-27",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-03-20T17:10:51Z",
+   "ends_utc": "2026-03-27T17:00:51Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "274288819698795145",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-03-27-rv-update": {
+   "type": "mechanic",
+   "name_en": "RV Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "RV Update",
+   "key_notes_en": "Starts 2026-03-27 18:00 UTC · Ends 2026-04-03 17:00 UTC · Listed 2026-03-04",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-03-27T18:00:01Z",
+   "ends_utc": "2026-04-03T17:00:01Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1356083328683475599",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-04-03-storm-chasing-update": {
+   "type": "mechanic",
+   "name_en": "Storm Chasing Update!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Storm Chasing Update!",
+   "key_notes_en": "Starts 2026-04-03 18:30 UTC · Ends 2026-04-10 17:00 UTC · Listed 2026-03-20",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-04-03T18:30:11Z",
+   "ends_utc": "2026-04-10T17:00:11Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8226116494875034214",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-04-10-tires-plus-rock-lights": {
+   "type": "mechanic",
+   "name_en": "🔧Tires + Rock Lights!🔧",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🔧Tires + Rock Lights!🔧",
+   "key_notes_en": "Starts 2026-04-10 17:00 UTC · Ends 2026-04-17 17:00 UTC · Listed 2026-03-27",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-04-10T17:00:03Z",
+   "ends_utc": "2026-04-17T17:00:03Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3244182473743139472",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-04-17-new-trucks-plus-dunes": {
+   "type": "mechanic",
+   "name_en": "New Trucks + Dunes!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New Trucks + Dunes!",
+   "key_notes_en": "Starts 2026-04-17 18:00 UTC · Ends 2026-04-24 17:00 UTC · Listed 2026-04-03",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-04-17T18:00:39Z",
+   "ends_utc": "2026-04-24T17:00:39Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3914218614206628411",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-04-24-toy-haulers": {
+   "type": "mechanic",
+   "name_en": "Toy Haulers!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Toy Haulers!",
+   "key_notes_en": "Starts 2026-04-24 17:45 UTC · Ends 2026-05-01 17:00 UTC · Listed 2026-04-10",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-04-24T17:45:59Z",
+   "ends_utc": "2026-05-01T17:00:59Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1587659242893083296",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-05-01-opening-doors-plus-tailgates": {
+   "type": "mechanic",
+   "name_en": "Opening Doors + Tailgates",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Starts 2026-05-01 17:00 UTC · Ends 2026-05-08 17:00 UTC · Listed 2026-04-17",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-05-01T17:00:31Z",
+   "ends_utc": "2026-05-08T17:00:31Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6629580628088193603",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-05-08-truck-campers": {
+   "type": "mechanic",
+   "name_en": "Truck Campers!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Truck Campers!",
+   "key_notes_en": "Starts 2026-05-08 17:20 UTC · Ends 2026-05-15 17:00 UTC · Listed 2026-04-24",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-05-08T17:20:38Z",
+   "ends_utc": "2026-05-15T17:00:38Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1666471349629092507",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-05-15-map-expansion": {
+   "type": "mechanic",
+   "name_en": "🗺️ Map Expansion!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Map Expansion!",
+   "key_notes_en": "Starts 2026-05-15 17:00 UTC · Ends 2026-05-22 17:00 UTC · Listed 2026-05-01",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-05-15T17:00:28Z",
+   "ends_utc": "2026-05-22T17:00:28Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4093322682349781620",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-05-22-dirtbikes-utvs-ramps": {
+   "type": "mechanic",
+   "name_en": "Dirtbikes, UTVs, & ramps!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Dirtbikes, UTVs, & ramps!",
+   "key_notes_en": "Starts 2026-05-22 17:00 UTC · Ends 2026-05-29 17:00 UTC · Listed 2026-05-08",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-05-22T17:00:32Z",
+   "ends_utc": "2026-05-29T17:00:32Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8012482075452113569",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-05-29-bed-cargo-plus-houses": {
+   "type": "mechanic",
+   "name_en": "Bed Cargo + Houses!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Bed Cargo + Houses!",
+   "key_notes_en": "Starts 2026-05-29 18:15 UTC · Ends 2026-06-05 17:00 UTC · Listed 2026-05-15",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-05-29T18:15:38Z",
+   "ends_utc": "2026-06-05T17:00:38Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2697985833293709874",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-06-05-tiny-home-trailers": {
+   "type": "mechanic",
+   "name_en": "Tiny Home Trailers!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Tiny Home Trailers!",
+   "key_notes_en": "Starts 2026-06-05 17:00 UTC · Ends 2026-06-12 17:00 UTC · Listed 2026-05-22",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-06-05T17:00:16Z",
+   "ends_utc": "2026-06-12T17:00:16Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7684878244113416783",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-06-12-new-side-by-side-plus-more": {
+   "type": "mechanic",
+   "name_en": "New Side-by-side + more!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New Side-by-side + more!",
+   "key_notes_en": "Starts 2026-06-12 17:00 UTC · Ends 2026-06-19 18:00 UTC · Listed 2026-05-29",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-06-12T17:00:33Z",
+   "ends_utc": "2026-06-19T18:00:33Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "607124414663885400",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-06-19-new-rvs-toy-hauler": {
+   "type": "mechanic",
+   "name_en": "New RVs & Toy Hauler!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "New RVs & Toy Hauler!",
+   "key_notes_en": "Starts 2026-06-19 18:00 UTC · Ends 2026-06-26 18:25 UTC · Listed 2026-06-05",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-06-19T18:00:18Z",
+   "ends_utc": "2026-06-26T18:25:18Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3119219827349258827",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-06-26-engine-swaps": {
+   "type": "mechanic",
+   "name_en": "Engine Swaps!🛠️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Engine Swaps!🛠️",
+   "key_notes_en": "Starts 2026-06-26 19:45 UTC · Ends 2026-07-03 17:00 UTC · Listed 2026-06-12",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-06-26T19:45:27Z",
+   "ends_utc": "2026-07-03T17:00:27Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8078269443664380513",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-07-03-july-4th-plus-map": {
+   "type": "mechanic",
+   "name_en": "🇺🇸July 4th+MAP!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🇺🇸July 4th+MAP!",
+   "key_notes_en": "Starts 2026-07-03 18:00 UTC · Ends 2026-07-10 17:00 UTC · Listed 2026-06-19",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-07-03T18:00:04Z",
+   "ends_utc": "2026-07-10T17:00:04Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3953934407420740241",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-07-10-license-plates-plus-new-atvs": {
+   "type": "mechanic",
+   "name_en": "License Plates+New ATVs",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update is dropped!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "License Plates+New ATVs",
+   "key_notes_en": "Starts 2026-07-10 17:30 UTC · Ends 2026-07-17 17:00 UTC · Listed 2026-06-26",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-07-10T17:30:54Z",
+   "ends_utc": "2026-07-17T17:00:54Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8789979424956220039",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-07-17-military-vehicles": {
+   "type": "mechanic",
+   "name_en": "💥Military Vehicles!🎖️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "💥Military Vehicles!🎖️",
+   "key_notes_en": "Starts 2026-07-17 17:30 UTC · Ends 2026-07-24 17:00 UTC · Listed 2026-07-03",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-07-17T17:30:00Z",
+   "ends_utc": "2026-07-24T17:00:00Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3315595812255433483",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-07-24-boats-fishing-upd": {
+   "type": "mechanic",
+   "name_en": "🎣 Boats & Fishing Upd 🐠",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🎣 Boats & Fishing Upd 🐠",
+   "key_notes_en": "Starts 2026-07-24 17:00 UTC · Ends 2026-07-31 17:00 UTC · Listed 2026-07-10",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-07-24T17:00:38Z",
+   "ends_utc": "2026-07-31T17:00:38Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8908035293777625706",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-07-31-tornado-chaser-upd": {
+   "type": "mechanic",
+   "name_en": "📡Tornado Chaser Upd!🌪️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "📡Tornado Chaser Upd!🌪️",
+   "key_notes_en": "Starts 2026-07-31 17:00 UTC · Ends 2026-08-07 17:00 UTC · Listed 2026-07-17",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-07-31T17:00:31Z",
+   "ends_utc": "2026-08-07T17:00:31Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8712187717972263472",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-08-07-stacker-trailer": {
+   "type": "mechanic",
+   "name_en": "🚐Stacker Trailer!🚐",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🚐Stacker Trailer!🚐",
+   "key_notes_en": "Starts 2026-08-07 17:00 UTC · Ends 2026-08-14 17:00 UTC · Listed 2026-07-24",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-08-07T17:00:36Z",
+   "ends_utc": "2026-08-14T17:00:36Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3327803344818405939",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-08-14-swamp-buggies": {
+   "type": "mechanic",
+   "name_en": "🐊Swamp Buggies🐊",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🐊Swamp Buggies🐊",
+   "key_notes_en": "Starts 2026-08-14 17:00 UTC · Ends 2026-08-21 17:00 UTC · Listed 2026-07-31",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-08-14T17:00:15Z",
+   "ends_utc": "2026-08-21T17:00:15Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8278058877350707849",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-08-21-motorcycle-update": {
+   "type": "mechanic",
+   "name_en": "🏍️Motorcycle Update!🏍️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🏍️Motorcycle Update!🏍️",
+   "key_notes_en": "Starts 2026-08-21 17:00 UTC · Ends 2026-08-28 17:00 UTC · Listed 2026-08-07",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-08-21T17:00:10Z",
+   "ends_utc": "2026-08-28T17:00:10Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8154734737081107097",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-08-28-show-trucks": {
+   "type": "mechanic",
+   "name_en": "✨Show Trucks!✨",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "✨Show Trucks!✨",
+   "key_notes_en": "Starts 2026-08-28 17:00 UTC · Ends 2026-09-04 17:00 UTC · Listed 2026-08-14",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-08-28T17:00:01Z",
+   "ends_utc": "2026-09-04T17:00:01Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4019304189799825999",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-09-04-new-wrecker": {
+   "type": "mechanic",
+   "name_en": "🚚New Wrecker!🚚",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🚚New Wrecker!🚚",
+   "key_notes_en": "Starts 2026-09-04 18:00 UTC · Ends 2026-09-11 17:00 UTC · Listed 2026-08-21",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-09-04T18:00:57Z",
+   "ends_utc": "2026-09-11T17:00:57Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3600211220248003121",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-09-11-4x4-crawlers": {
+   "type": "mechanic",
+   "name_en": "⛰️4x4 Crawlers!⛰️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "⛰️4x4 Crawlers!⛰️",
+   "key_notes_en": "Starts 2026-09-11 17:00 UTC · Ends 2026-09-18 17:00 UTC · Listed 2026-08-28",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-09-11T17:00:02Z",
+   "ends_utc": "2026-09-18T17:00:02Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8580704468226671210",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-2026-09-18-rvs-update": {
+   "type": "mechanic",
+   "name_en": "🚐RVs Update!🚐",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🚐RVs Update!🚐",
+   "key_notes_en": "Starts 2026-09-18 17:00 UTC · Ends 2026-09-25 17:00 UTC · Listed 2026-09-04",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "starts_utc": "2026-09-18T17:00:52Z",
+   "ends_utc": "2026-09-25T17:00:52Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2286934133848539749",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ]
+  },
+  "event-nitrous-update": {
+   "type": "mechanic",
+   "name_en": "🚀Nitrous Update!🚀",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🚀Nitrous Update!🚀",
+   "key_notes_en": "Starts 2026-09-25 17:15 UTC · Ends 2026-10-02 17:00 UTC · Listed 2026-09-11 · 67,491 marked going at 11:23 UTC on 2026-10-02",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/8366365490809012892/rsvps/counters"
+   ],
+   "starts_utc": "2026-09-25T17:15:56Z",
+   "ends_utc": "2026-10-02T17:00:56Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8366365490809012892",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ],
+   "expiry_action": "2026-10-02: re-read the events API; rewrite the updates page event section in past tense or replace it with the new listing"
+  },
+  "event-this-week-s-update": {
+   "type": "mechanic",
+   "name_en": "This Week's Update!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update!",
+   "key_notes_en": "Starts 2026-10-02 17:00 UTC · Ends 2026-10-09 17:00 UTC · Listed 2026-09-18 · 43,785 marked going at 11:23 UTC on 2026-10-02",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/342939744675693187/rsvps/counters"
+   ],
+   "starts_utc": "2026-10-02T17:00:46Z",
+   "ends_utc": "2026-10-09T17:00:46Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "342939744675693187",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ],
+   "expiry_action": "2026-10-09: re-read the events API; rewrite the updates page event section in past tense or replace it with the new listing"
+  },
+  "event-next-week-s-update": {
+   "type": "mechanic",
+   "name_en": "Next Week's Update!",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group Southern Mudding, category 'new content'. The listing text only says to follow to be notified when the update drops.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Follow to be notified when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Next Week's Update!",
+   "key_notes_en": "Starts 2026-10-09 17:00 UTC · Ends 2026-10-16 17:00 UTC · Listed 2026-09-25 · 8,044 marked going at 11:23 UTC on 2026-10-02",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/6572138354903745090/rsvps/counters"
+   ],
+   "starts_utc": "2026-10-09T17:00:16Z",
+   "ends_utc": "2026-10-16T17:00:16Z",
+   "ends_utc_source": "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6572138354903745090",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/8719555347/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-02",
+   "unverified_fields": [
+    "contents",
+    "rewards"
+   ],
+   "expiry_action": "2026-10-16: re-read the events API; rewrite the updates page event section in past tense or replace it with the new listing"
+  }
+ }
+}

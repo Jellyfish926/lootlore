@@ -10,7 +10,7 @@ type: "author"
 tldr: ["Jellyfi is the editorial byline responsible for researching, publishing and maintaining these Roblox Stock Exchange 2 guides.", "Game facts come from Roblox's official records for the game: its description, badges, passes, products and event listings.", "Codes are listed only when seen in an official source; unverified numbers are left out, not guessed.", "These guides explain a game. They are not financial advice."]
 related: []
 sourceUrls: []
-images: ["th5", "icon"]
+images: ["ev_commodities", "icon"]
 date: "2026-10-08"
 updated: "2026-10-08"
 reviewed: "2026-10-08"

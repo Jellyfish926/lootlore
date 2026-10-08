@@ -2,7 +2,7 @@
 slug: "robux"
 url: "/roblox-stock-exchange-2/robux/"
 title: "Roblox Stock Exchange 2 Passes and Robux Shop Guides"
-seoTitle: "Roblox Stock Exchange 2 Passes and Robux Shop Guides"
+seoTitle: "Roblox Stock Exchange 2 Robux Guides: Passes and Shop"
 description: "Roblox Stock Exchange 2 spending guides: all 13 game passes, all 31 Robux products and the four algo bot purchases, with official prices from 8 October 2026."
 category: "Passes & Robux Shop"
 language: "en"
@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Three guides: all 13 game passes, all 31 developer products, and what is official about algo bots.", "Passes are one-time unlocks from 39 to 999 Robux; products can be bought repeatedly and start at 9 Robux.", "Prices are the developer's own Robux listings on 8 October 2026 and can change without notice."]
 related: []
 sourceUrls: []
-images: ["ev_ui"]
+images: ["ev_tools"]
 date: "2026-10-08"
 updated: "2026-10-08"
 reviewed: "2026-10-08"

@@ -12,17 +12,17 @@
  "default": "th5",
  "pages": {
   "index": "th5",
-  "beginner": "th4",
+  "beginner": "ev_challenges",
   "how-to-play": "th2",
   "codes": "th4",
   "badges": "th3",
   "updates": "ev_office",
-  "community": "th5",
-  "robux": "ev_ui",
+  "community": "ev_wire",
+  "robux": "ev_tools",
   "gamepasses": "ev_ui",
   "shop": "th1",
   "algo-bots": "ev_hedge",
-  "author": "th5"
+  "author": "ev_commodities"
  },
  "shots": {
   "th1": {

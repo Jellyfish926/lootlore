@@ -13,7 +13,7 @@ tldr: ["Roblox Stock Exchange 2 is a free trading simulator on Roblox by the gro
 faq: [["Who makes Roblox Stock Exchange 2?", "The Roblox group Summit Productions Development, which had 276,709 members on 8 October 2026. Details are on the [community page](/roblox-stock-exchange-2/community/)."], ["Is there a code?", "Yes. The official game description prints one code, TOOLS, and says the next code releases at 15,000 likes. We have not tested whether it redeems in the game. See the [codes page](/roblox-stock-exchange-2/codes/)."], ["Is this real stock trading?", "No. The description says all markets and currencies are simulated and that the game does not involve real-money trading or provide financial advice. The [how-to-play guide](/roblox-stock-exchange-2/how-to-play/) covers what you actually do."], ["How many players fit in one server?", "Up to 35, according to the Roblox game record we read on 8 October 2026."], ["What is the cheapest game pass?", "Custom Timeframes, at 39 Robux on 8 October 2026. All 13 passes are compared in the [game pass guide](/roblox-stock-exchange-2/gamepasses/)."]]
 related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10495391267", "https://games.roblox.com/v1/games/votes?universeIds=10495391267", "https://groups.roblox.com/v1/groups/33446529", "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events", "https://www.roblox.com/games/110527353762049/Roblox-Stock-Exchange-2"]
-images: ["th5", "th1"]
+images: ["th5", "th3", "th1"]
 date: "2026-10-08"
 updated: "2026-10-08"
 reviewed: "2026-10-08"
@@ -32,7 +32,7 @@ The developer's own disclaimer sets the tone for everything here: "All markets a
 - [Codes (October 2026)](/roblox-stock-exchange-2/codes/): the single code printed in the game description and the like count tied to the following code.
 - [All 13 Game Passes](/roblox-stock-exchange-2/gamepasses/): every pass with its official description and price, plus the bundle maths.
 
-![Promotional art: a white rising-chart logo over a dark grid of trading panels showing a portfolio value, top movers, a market sentiment gauge reading Bullish, buy and sell buttons, stacks of cash and coins](th5 "Official promotional art from the game's Roblox page")
+![Promotional art: a candlestick chart collapsing toward minus 60 percent beside a large red -48.7% TODAY, with a big green BUY button and a small red SELL button](th3 "Official promotional art from the game's Roblox page")
 
 ## What are the key facts?
 

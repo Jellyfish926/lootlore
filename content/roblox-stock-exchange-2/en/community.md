@@ -12,7 +12,7 @@ type: "article"
 tldr: ["Roblox Stock Exchange 2 belongs to the Roblox group Summit Productions Development, which had 276,709 members on 8 October 2026.", "The group's description is empty and it has no shout, so the game description, pass, badge and product texts and the event listings are the developer text we can read.", "A Discord server named Roblox Stock Exchange 2 describes itself as the official server; we could not confirm the link from Roblox itself.", "The same group also publishes Legacy: Roblox Stock Exchange, the earlier game, created on 23 May 2025."]
 related: ["codes", "updates", "how-to-play"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/33446529", "https://groups.roblox.com/v2/groups?groupIds=33446529", "https://groups.roblox.com/v1/groups/33446529/roles", "https://games.roblox.com/v2/groups/33446529/games?accessFilter=Public&limit=50", "https://users.roblox.com/v1/users/6019489864", "https://games.roblox.com/v1/games?universeIds=10495391267", "https://games.roblox.com/v1/games/votes?universeIds=10495391267", "https://discord.com/api/v9/invites/qR8v6Murp3?with_counts=true", "https://create.roblox.com/docs/production/promotion/social-media-links", "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"]
-images: ["th5", "ev_ui"]
+images: ["ev_wire", "th2", "ev_ui"]
 date: "2026-10-08"
 updated: "2026-10-08"
 reviewed: "2026-10-08"
@@ -58,7 +58,7 @@ Five public experiences are attached to the group. Visit counts are from 8 Octob
 
 The sequel is by far the largest. The oldest entry, Legacy: Roblox Stock Exchange, is the earlier game in the series, and its description still talks about its own features, such as an options chain that unlocks at two rebirths. Those lines describe the Legacy game. Do not assume they apply to the sequel; the [how-to-play guide](/roblox-stock-exchange-2/how-to-play/) sticks to the sequel's own description.
 
-![Promotional art: a white rising-chart logo over a dark grid of trading panels showing a portfolio value, top movers, a market sentiment gauge, buy and sell buttons, stacks of cash and coins](th5 "Official promotional art from the game's Roblox page")
+![Promotional art of the trading terminal: a candlestick chart for a stock called OBBY, a live Trades panel with a Whales filter, a Long and Short toggle above a Buy OBBY button, and an open long position with a red Close button](th2 "Official promotional art from the game's Roblox page")
 
 ## Is there an official Discord server?
 

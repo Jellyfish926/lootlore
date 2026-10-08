@@ -193,3 +193,21 @@ round2 grep 结论:`8-hour` / `8 hours` / `8h` / `eight hours` 在 content/en、
 - `tools/build_claims.py`:claims.md 重建为 507 条,原句在页面里、摘录在 raw 文件里两道自检 0 失败。
 - sourceUrls:22 个不同 URL 逐个 GET 均 200(`raw/sourceurl-check.txt`)。
 - 试构建 + 门禁(复制 lootlore 到 PACK 内临时目录,跑完已删):本栏目 13 页、构建无警告;check_content 0 阻塞 0 警告、check_sitemap 0/0、link_check 无死链、check_ga 0、check_snapshot 0、check_i18n 0/0、url_consistency_audit 30 项全 0;输出在 `raw/gates/`。
+
+## 上线后验收修订(2026-10-08;逐页检查员 img_dup_icon / title_eq_h1,不涉及事实句)
+
+线上验收发现 hub、community、author 三页里栏目默认图 th5 在同页三个以上容器重复出现(外壳的游戏菜单卡与左栏头图 + 本页封面 + 正文配图或文章卡),robux 页 `<title>` 与 H1 逐字相同。改法:每页封面各用一张不同的官方图(只用 `_images.json` 里已有的图),正文不再重复嵌栏目默认图;robux 改 seoTitle。图注一字未改,新嵌图片的 alt 逐字取自 `_images.json`。
+
+| 行 | 文件 | 字段 / 位置 | 旧 | 新 |
+|---|---|---|---|---|
+| P1 | index.md | frontmatter images | ["th5", "th1"] | ["th5", "th3", "th1"] |
+| P2 | index.md | 正文第一张配图(图注 "Official promotional art from the game's Roblox page" 不变) | th5 | th3(alt 用 `_images.json` 的 th3) |
+| P3 | community.md | frontmatter images(封面) | ["th5", "ev_ui"] | ["ev_wire", "th2", "ev_ui"] |
+| P4 | community.md | 正文第一张配图(图注同上不变) | th5 | th2(alt 用 `_images.json` 的 th2) |
+| P5 | author.md | frontmatter images(封面) | ["th5", "icon"] | ["ev_commodities", "icon"] |
+| P6 | beginner.md | frontmatter images(栏目卡图 / og:image;原与 codes 同为 th4) | ["th4"] | ["ev_challenges"] |
+| P7 | robux.md | frontmatter images(栏目卡图 / og:image;原与 gamepasses 同为 ev_ui) | ["ev_ui"] | ["ev_tools"] |
+| P8 | robux.md | seoTitle | Roblox Stock Exchange 2 Passes and Robux Shop Guides | Roblox Stock Exchange 2 Robux Guides: Passes and Shop(53 字符) |
+| P9 | _images.json | pages 映射(与 frontmatter 同步) | beginner th4 / community th5 / robux ev_ui / author th5 | beginner ev_challenges / community ev_wire / robux ev_tools / author ev_commodities |
+
+改后 12 页封面各不相同:index th5、beginner ev_challenges、how-to-play th2、codes th4、badges th3、updates ev_office、community ev_wire、robux ev_tools、gamepasses ev_ui、shop th1、algo-bots ev_hedge、author ev_commodities。`/all/` 是框架自动页,og:image 固定取栏目默认图 th5(与 hub 相同),未动框架。

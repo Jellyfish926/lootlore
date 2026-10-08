@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Five guides for your first sessions: how to play, codes, badges, updates and the developer's community links.", "New to the game? Read how to play first; it is built from the developer's own description and pass texts.", "Nearly every number on these pages comes from Roblox's official data for the game; Discord and code-site figures are labelled as such. Counters carry their check date."]
 related: []
 sourceUrls: []
-images: ["th4"]
+images: ["ev_challenges"]
 date: "2026-10-08"
 updated: "2026-10-08"
 reviewed: "2026-10-08"

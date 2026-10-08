@@ -187,7 +187,7 @@ class SnapPage:
     """一个快照页解析出来的全部素材。每一项都来自文件本身,没有就是空,不填默认值。"""
 
     __slots__ = ("route", "path", "lang", "head", "jsonld", "ld_objs", "body", "h1",
-                 "byline", "heads", "scripts", "has_crumb_ld", "canonical")
+                 "byline", "heads", "scripts", "has_crumb_ld", "canonical", "head_supp")
 
     def __init__(self, route, path):
         self.route, self.path = route, path
@@ -202,6 +202,7 @@ class SnapPage:
         self.scripts = []       # 页面自带的内联脚本(交互件用),逐字搬过来
         self.has_crumb_ld = False
         self.canonical = ""     # head 里 <link rel="canonical"> 的 href(域名已改写成总站的);没有就空
+        self.head_supp = []     # 外壳补的 hreflang 回指(子站漏写的那几条,见 SnapshotGame.supplement_hreflang)
 
 
 def parse_page(raw: str, route: str, path: Path) -> SnapPage:
@@ -604,6 +605,11 @@ class SnapshotLang(EntityBox, HubBodyMixin):
         crumbs_html, crumb_ld = self.crumbs(page, t)
         aside, has_ent = self.rail(page, t)
         head = list(page.head)
+        if page.head_supp:      # 补的回指紧跟在子站自己的 hreflang 之后(没有就跟在 canonical 之后)
+            at = max((i for i, x in enumerate(head)
+                      if x.startswith('<link') and ('rel="alternate"' in x or 'rel="canonical"' in x)),
+                     default=len(head) - 1) + 1
+            head[at:at] = page.head_supp
         if not any('property="og:site_name"' in x for x in head):
             head.append(f'<meta property="og:site_name" content="{esc(self.gs.cfg["brand"])}">')
         head += page.jsonld
@@ -664,7 +670,7 @@ class SnapshotGame:
         self.base = site["base"]
         self.src = root / game["source"]
         self._i18n = {}
-        self.stats = {"pages": 0, "entity_boxes": 0, "langs": 0, "sections": 0}
+        self.stats = {"pages": 0, "entity_boxes": 0, "langs": 0, "sections": 0, "hreflang_supp": 0}
         ef = game.get("entities")
         self.ents = {}
         if ef and (root / ef).is_file():
@@ -762,6 +768,41 @@ class SnapshotGame:
         self.stats["entity_boxes"] += 1 if out else 0
         return out
 
+    # -------------------------------------------------- hreflang 回指补齐
+    def supplement_hreflang(self) -> int:
+        """hreflang 必须互指:B 声明「A 是我的某语种版本」,A 也得声明 B,否则 Google 整组忽略。
+        子站有个别页漏写(实测 2026-10-08:beast 的 en/achievement-tracker 只写了 en + x-default,
+        其余 5 个语种的同名页都指向它,它不回指)。这里只做「补子站确实没有的」:
+          * B 指向 A、A 没有任何一条指向 B,且 A 没给 B 那个语种声明过别的地址 → 给 A 补一条;
+          * 语种码用 B 给自己写的那个(B 的自指条目),地址用 B 的 canonical —— 都是子站产出的原值;
+          * 补的条目单独放在 head_supp,不进 page.head:语言切换器(lang_switch)仍只认子站自己
+            声明的语种,页面可见部分一个字不变。
+        子站哪天自己补上了,这里自然就不再补(幂等)。返回补了几条。"""
+        alt_re = re.compile(r'rel="alternate"\s+hreflang="([^"]+)"\s+href="([^"]+)"')
+        pages = [pg for l in self.langs for pg in l.pages.values()]
+        alts, by_canon = {}, {}
+        for pg in pages:
+            alts[id(pg)] = [m.groups() for m in (alt_re.search(tag) for tag in pg.head) if m]
+            if pg.canonical:
+                by_canon[pg.canonical] = pg
+        n = 0
+        for b in pages:
+            mine = alts[id(b)]
+            code_b = next((c for c, h in mine if h == b.canonical and c.lower() != "x-default"), "")
+            if not b.canonical or not code_b:
+                continue
+            for code, href in mine:
+                a = by_canon.get(href)
+                if code.lower() == "x-default" or href == b.canonical or a is None:
+                    continue
+                theirs = [(c, h) for c, h in alts[id(a)] if c.lower() != "x-default"]
+                if any(h == b.canonical for _c, h in theirs) or any(c.lower() == code_b.lower() for c, _h in theirs):
+                    continue
+                a.head_supp.append(f'<link rel="alternate" hreflang="{esc(code_b)}" href="{esc(b.canonical)}">')
+                alts[id(a)].append((code_b, b.canonical))
+                n += 1
+        return n
+
     # -------------------------------------------------- 构建
     def build(self, out_root: Path, transform):
         """transform(html, game) = build.py 的 URL 改写(剥三方脚本 + 原站域名/根相对链接 → 总站)。
@@ -789,6 +830,7 @@ class SnapshotGame:
             lang.add(route, transform(raw, self.g), p)
         for l in self.langs:
             l.section_routes()
+        self.stats["hreflang_supp"] = self.supplement_hreflang()
         for l in self.langs:
             for route, page in l.pages.items():
                 rel = page.path.relative_to(self.src)

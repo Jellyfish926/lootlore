@@ -14,6 +14,15 @@ lootlore 本地增补(2026-09-18,valheim v2,待同步回 seo-jianzhan/scripts):
 - `check_i18n.py --root-default`:主语种页直接落在栏目根(`/<game>/…`)、其余语种在 `/<game>/<locale>/` 下的布局;
   LANG_ATTR 比较时按主语种码截断(`zh-CN` ↔ `zh`)。gates.yml 因此把 check_i18n 拆成两步跑。
 
+lootlore 本站专有门禁(2026-10-08,脚本在 `scripts/` 而不在 `.gates/` —— 它还有 `--live` 线上模式,不只是门禁):
+- `scripts/url_consistency_audit.py --out out` —— 全站页面 URL 只许「带尾斜杠」一种写法。逐页实测并计数:
+  sitemap `<loc>` 不带斜杠 / 重复;canonical 缺失、不带斜杠、不自指;og:url 不自指;hreflang 不带斜杠、
+  指向不存在、互指不对称、无自指;JSON-LD 里本站 URL 不带斜杠或指向不存在;站内 `<a href>` / form action /
+  内联脚本 / search-index.json / llms.txt 不带斜杠;`vercel.json` 没开 `trailingSlash:true`、redirects
+  源地址缺带斜杠写法、目的地不带斜杠或不存在;游戏根目录 `/<slug>/` 既无页面也无重定向。任一项 ≠ 0 退出码 1。
+  `--live https://lootwiki.com` 审线上(另测每页「不带斜杠变体」是否 308 单跳到带斜杠版)。
+  gates.yml 与 sync-sources.yml 都跑 `--out` 这一条。
+
 lootlore 本站专有门禁(2026-09-22,不同步回 seo-jianzhan/scripts —— 只有套壳站群才有这条约束):
 - `check_snapshot.py` —— 快照页正文「逐字节零改动」的门禁。对 `sources/<game>/**.html`
   跑与 build.py 同一条链路(`transform_urls` → `hub.snapshot.parse_page`),再把产物里

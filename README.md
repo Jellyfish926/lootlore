@@ -60,6 +60,24 @@ CI 用它钉住日期重建,再 `git diff --exit-code -- out build-stamp.json` �
 域名到位后:`python3 build.py --base https://新域名` 重建并提交。
 新增游戏:快照放 `sources/`,在 `config/hub.json` 的 `games` 加一项,重建。
 
+## URL 规范:全站页面网址只有「带尾斜杠」一种写法(2026-10-08)
+
+- **规则**:页面 URL 一律以 `/` 结尾(`/about/`、`/beast-of-reincarnation/en/bosses/`),首页是 `https://lootwiki.com/`;
+  带扩展名的文件(`sitemap.xml`、`robots.txt`、`ads.txt`、`*.css`、图片)不加。判定口径与 Vercel 相同:path 最后一段不含 `.` 的就是页面。
+- **线上**:`vercel.json`(由 `build.py:gen_vercel_json()` 生成,别手改)开 `trailingSlash: true`,不带斜杠的请求 308 到带斜杠版;
+  `cleanUrls` 仍开着,beast 的 `en/bosses.html` 由 `/…/en/bosses/` 提供。redirects 的 source 是严格匹配,所以每条页面级规则
+  两种写法都出(`redirect_rules()`),destination 一律带斜杠。游戏根目录没有页面的(`default_path` 不是 `/`,目前只有 beast)
+  `/<slug>` 与 `/<slug>/` 永久跳到默认语种首页,站内引用直接写真实目标(`game_root_map()`)。
+- **产物**:`hub/urlnorm.py` 一个函数管全部写法 —— canonical / og:url / hreflang / JSON-LD 的 url·@id·item·mainEntityOfPage /
+  站内 `<a href>` / form action / 搜索索引 / sitemap `<loc>` / llms.txt。两处调用:`build.transform_urls()` 末尾(快照页,解析之前)
+  与 `build.normalize_out_urls()`(全部页面写完之后兜外壳层)。只改 URL 字符串,不碰正文文字。
+- **hreflang 回指**:子站个别页漏写回指时由 `hub/snapshot.py:SnapshotGame.supplement_hreflang()` 补进 head(不进语言切换器)。
+- **门禁**:`python3 scripts/url_consistency_audit.py --out out`(gates.yml 与 sync-sources.yml 都跑,任一项计数 ≠ 0 即红);
+  线上复核 `--live https://lootwiki.com [--json x.json]`,单查几个网址 `--live … --probe /privacy-policy/ /about/`。
+- **为什么改**:之前原生栏目与四个尾斜杠子站写带斜杠、总站自有页与 beast 子站写不带斜杠,两种网址线上都 200、互不跳转;
+  Google 抓到带斜杠那条、canonical 却指不带斜杠那条 → GSC「备用网页(有适当的规范标记)」,
+  `/privacy-policy/`、`/beast-of-reincarnation/{it,fr,ja}/` 四个网址不收录,9/24 发起的验证 10/5 失败。
+
 ## 同步机制(sources/ 怎么来的)
 
 `sources/<游戏>/` 不手改,全部由 `.github/workflows/sync-sources.yml` 自动从五个子站仓的**构建产物**全量刷新。

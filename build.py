@@ -23,6 +23,7 @@ from hub.mdlite import esc  # noqa: E402
 from hub.native import NativeGame  # noqa: E402
 from hub.pageindex import SiteIndex  # noqa: E402
 from hub.snapshot import SnapshotGame  # noqa: E402
+from hub.urlnorm import UrlNorm  # noqa: E402
 CFG = json.loads((ROOT / "config" / "hub.json").read_text())
 if "--base" in sys.argv:
     CFG["base_url"] = sys.argv[sys.argv.index("--base") + 1].rstrip("/")
@@ -92,6 +93,22 @@ def request_ctx() -> dict:
 
 def is_native(g: dict) -> bool:
     return g.get("kind") == "native"
+
+
+def game_root_map() -> dict:
+    """游戏根目录没有页面、只做跳转的游戏(default_path 不是 "/",目前只有 beast → /en):
+    {"/<slug>/": "/<slug>/<默认语种>/"}。两处用:① 站内引用直接改写到真实目标(hub/urlnorm.py),
+    ② vercel.json 给根目录的两种写法各出一条永久重定向(gen_vercel_json)。"""
+    out = {}
+    for g in CFG["games"]:
+        dp = (g.get("default_path") or "/").strip("/")
+        if dp:
+            out[f'/{g["slug"]}/'] = f'/{g["slug"]}/{dp}/'
+    return out
+
+
+# 全站 URL 规范写法:页面 URL 一律带尾斜杠(详见 hub/urlnorm.py 顶部的说明)。
+NORM = UrlNorm(BASE, game_root_map())
 
 
 def game_home(g: dict) -> str:
@@ -218,7 +235,10 @@ def transform_urls(html: str, game: dict) -> str:
         return m.group(1) + ", ".join(parts) + m.group(3)
 
     html = SRCSET_RE.sub(fix_srcset, html)
-    return html.replace(SENT, "")
+    # 最后一步:URL 写法统一成带尾斜杠。beast 子站是 cleanUrls 无斜杠写法(/en/bosses),
+    # 上面的域名替换只换了域名,斜杠写法被原样带进来 —— 这就是总站「一半带一半不带」的来源。
+    # 放在解析之前做,.gates/check_snapshot.py 走同一条链路,正文字节仍然一一对应。
+    return NORM.html(html.replace(SENT, ""))
 
 
 def render_snapshot_games(site):
@@ -233,7 +253,8 @@ def render_snapshot_games(site):
         INDEX.add(sg.index())
         s = sg.stats
         print(f"  [{g['slug']}] snapshot: {s['langs']} 语种 · {s['pages']} 页 · "
-              f"{s['sections']} 个栏目 · 实体信息框 {s['entity_boxes']} 页 · 资源 {assets} 个")
+              f"{s['sections']} 个栏目 · 实体信息框 {s['entity_boxes']} 页 · 资源 {assets} 个"
+              + (f" · 补 hreflang 回指 {s['hreflang_supp']} 条" if s.get("hreflang_supp") else ""))
         stats.append((g["slug"], s))
     shutil.copy2(ROOT / "hub" / "snapshot.css", OUT / "snapshot.css")
     return stats
@@ -799,6 +820,8 @@ def render_hub_pages(site):
 def gen_search_index():
     """全站搜索索引:跨全部游戏一份,每条带 game 与 lang。"""
     rows = INDEX.search_rows()
+    for r in rows:   # 搜索结果的链接由前端脚本直接拿 url 拼 <a>,这里也必须是规范写法
+        r["url"] = NORM.url(r["url"])
     (OUT / "search-index.json").write_text(
         json.dumps(rows, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     return len(rows)
@@ -812,7 +835,6 @@ def gen_root_files():
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8"
     )
     urls = []
-    canon_re = re.compile(r'<link\s+rel="canonical"[^>]*\bhref="([^"]*)"', re.I)
     for p in sorted(OUT.rglob("*.html")):
         rel = p.relative_to(OUT)
         if rel.name == "404.html":
@@ -824,15 +846,15 @@ def gen_root_files():
                 loc = "/"
         else:
             loc = "/" + str(rel)[:-5]  # cleanUrls: 去掉 .html
-        # <loc> 必须等于页面自己的 canonical:总站自有页 canonical 是 /about(无尾斜杠),
-        # beast 语种根是 /beast-of-reincarnation/fr(子站产出),而 index.html 按目录算出来的是 /about/。
-        # 两者不一致时 Google 抓 sitemap 里那条,再按 canonical 归并 → GSC 报「备用网页(有适当的规范标记)」
-        # (2026-09-24:/privacy-policy/ /beast-of-reincarnation/fr/ /beast-of-reincarnation/ja/ 就是这么来的)。
-        lastmod = LASTMOD.get(loc, TODAY)  # LASTMOD 按目录路由记,先取再改写 loc
-        m = canon_re.search(p.read_text(encoding="utf-8")[:6000])
-        href = m.group(1).strip() if m else ""
-        if href.startswith(BASE + "/") and href[len(BASE):] != loc:
-            loc = href[len(BASE):]
+        # <loc> 必须等于页面自己的 canonical,而且全站只有一种写法:带尾斜杠。
+        # 2026-09-24 那版是「<loc> 跟着 canonical 走」—— canonical 是 /about(无斜杠)就把 <loc> 也写成
+        # /about。结果 sitemap 里 377 条带斜杠、298 条不带,两种网址线上都 200、互不跳转;Google 之前
+        # 抓到的 /privacy-policy/ /beast-of-reincarnation/{it,fr,ja}/ 仍然报「备用网页(有适当的规范标记)」,
+        # 10/5 验证失败。2026-10-08 起:canonical / og:url / hreflang / JSON-LD / 站内链接 / <loc> 全部
+        # 由 hub/urlnorm.py 统一成带尾斜杠,vercel.json 开 trailingSlash:true 把不带斜杠的 308 过来。
+        # 「canonical 是否自指」由门禁 scripts/url_consistency_audit.py 逐页实测,这里不再迁就 canonical。
+        lastmod = LASTMOD.get(loc, TODAY)  # LASTMOD 按渲染器的路由记(beast 是无斜杠路由),先取再规范 loc
+        loc = NORM.path(loc)
         urls.append(f"  <url><loc>{BASE}{loc}</loc><lastmod>{lastmod}</lastmod></url>")
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -843,7 +865,7 @@ def gen_root_files():
     )
     lines = [f"# {CFG['brand']}", "", f"> {CFG['tagline']}.", ""]
     for g in CFG["games"]:
-        lines.append(f"- [{g['name']}]({BASE}/{g['slug']}{g['default_path'].rstrip('/') or '/'}): {g['card']['blurb']}")
+        lines.append(f"- [{g['name']}]({BASE}{NORM.path(game_home(g))}): {g['card']['blurb']}")
     (OUT / "llms.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -874,6 +896,39 @@ def version_assets(out_dir: Path):
     return stamps
 
 
+def normalize_out_urls(out_dir: Path) -> int:
+    """全部页面写完之后的最后一遍:把 out/**.html 里所有站内页面 URL 统一成带尾斜杠。
+    快照页在 transform_urls() 里已经规范过(这一遍对它们是幂等的,不会再动 .sn-body 的字节);
+    这里兜的是外壳层拼出来的链接 —— 顶栏意图导航(config: /guides /tools …)、页脚信任页
+    (config/i18n: /about /contact …)、面包屑、左侧导航、首页卡片、总站自有页的
+    canonical / og:url / JSON-LD(/about、/privacy-policy 之前都是无斜杠)。
+    集中在一处做而不是逐个模板去改:新加的模块、新上的栏目不可能漏。"""
+    n = 0
+    for p in out_dir.rglob("*.html"):
+        html = p.read_text(encoding="utf-8")
+        new = NORM.html(html)
+        if new != html:
+            p.write_text(new, encoding="utf-8")
+            n += 1
+    print(f"  URL 规范化(带尾斜杠): 改写 {n} 个 html")
+    return n
+
+
+def redirect_rules(source: str, destination: str, permanent: bool) -> list:
+    """一条页面级重定向 → vercel.json 里的 1~2 条规则。
+    trailingSlash:true 下,不带斜杠的请求会先被 Vercel 308 到带斜杠写法,而 redirects 的 source
+    是严格匹配(实测 2026-10-08:只写 /beast-of-reincarnation 时 /beast-of-reincarnation/ 是 404)。
+    所以页面路径的 source 两种写法都出;带扩展名的 source(…/index.html)只出原样。
+    destination 一律规范成带尾斜杠(带 #锚点 的斜杠加在 # 之前),不让跳转落到一个还要再跳的地址。"""
+    dst = NORM.url(destination)
+    head = source.rstrip("/")
+    if not head or "." in head.rsplit("/", 1)[-1]:
+        srcs = [source]
+    else:
+        srcs = [head, head + "/"]
+    return [{"source": s, "destination": dst, "permanent": permanent} for s in srcs]
+
+
 def gen_vercel_json():
     redirects = []
     # 全站旧域名跳转:按 host 匹配旧 vercel.app 预览域,308 跳到当前 base_url,保留路径(:path*)。
@@ -886,10 +941,13 @@ def gen_vercel_json():
             "destination": f"{BASE}/:path*",
             "permanent": True,
         })
+    page_rules = []
+    for root, home in game_root_map().items():
+        # 游戏根目录没有页面的(beast):/<slug> 与 /<slug>/ 都永久跳到默认语种首页。
+        # 2026-10-08 之前只有不带斜杠那一条(307),带斜杠的 /beast-of-reincarnation/ 是 404。
+        page_rules += redirect_rules(root, home, True)
     for g in CFG["games"]:
         slug = g["slug"]
-        if g["default_path"] not in ("/", ""):
-            redirects.append({"source": f"/{slug}", "destination": f"/{slug}{g['default_path']}", "permanent": False})
         src_vj = {
             "beast-of-reincarnation": ROOT / "sources" / "beast" / "vercel.json",
             "shift-at-midnight": ROOT / "sources" / "shift" / "vercel.json",
@@ -900,10 +958,22 @@ def gen_vercel_json():
                 s, d = r["source"], r["destination"]
                 if s == "/":  # 原站根跳转已由上面的 default_path 跳转承担
                     continue
-                redirects.append({"source": f"/{slug}{s}", "destination": f"/{slug}{d}", "permanent": r.get("permanent", True)})
+                page_rules += redirect_rules(f"/{slug}{s}", f"/{slug}{d}", r.get("permanent", True))
+    # 同一个 source 只留一条(Vercel 按顺序取第一条命中的):优先留「目的地是真实存在的页」的那条。
+    # beast 子站的 vercel.json 里 /release-time 写了两条(→ /en/release-time 与 → /en/release-date),
+    # 前一条的目的地早就不存在,原样照搬会多跳一次。
+    by_src = {}
+    for r in page_rules:
+        by_src.setdefault(r["source"], []).append(r)
+    for src, cands in by_src.items():
+        live = [r for r in cands if ":" in r["destination"] or _dest_exists(r["destination"])]
+        redirects.append((live or cands)[0])
     vercel = {
         "$schema": "https://openapi.vercel.sh/vercel.json",
         "cleanUrls": True,
+        # 全站只留带尾斜杠一种网址:/about → 308 → /about/;带扩展名的文件(sitemap.xml、*.css …)不受影响。
+        # cleanUrls 仍然开着:beast 的 en/bosses.html 由 /beast-of-reincarnation/en/bosses/ 提供。
+        "trailingSlash": True,
         "outputDirectory": "out",
         "redirects": redirects,
         "headers": [
@@ -921,6 +991,14 @@ def gen_vercel_json():
         ],
     }
     (ROOT / "vercel.json").write_text(json.dumps(vercel, indent=2) + "\n", encoding="utf-8")
+
+
+def _dest_exists(destination: str) -> bool:
+    """重定向目的地(站内根相对地址,可带 #锚点)在产物里是不是一个真实存在的页面 / 文件。"""
+    path = re.split(r"[?#]", destination, maxsplit=1)[0].strip("/")
+    if not path:
+        return (OUT / "index.html").is_file()
+    return any(c.is_file() for c in (OUT / path / "index.html", OUT / (path + ".html"), OUT / path))
 
 
 def gen_build_stamp():
@@ -952,6 +1030,7 @@ def main():
     render_hub_pages(site)
     rows = gen_search_index()
     version_assets(OUT)
+    normalize_out_urls(OUT)
     gen_root_files()
     gen_vercel_json()
     gen_build_stamp()

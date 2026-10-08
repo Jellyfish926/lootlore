@@ -100,6 +100,8 @@ jobs:
         run: python3 .gates/check_snapshot.py --out out
       - name: link_check(全站死链)
         run: python3 .gates/link_check.py --out out
+      - name: url_consistency_audit(全站页面 URL 只许带尾斜杠一种写法;子站快照带进来的无斜杠写法必须在构建期被规范掉)
+        run: python3 scripts/url_consistency_audit.py --out out
 
       - name: commit & push(无 diff 就跳过)
         run: |

@@ -74,3 +74,18 @@
   搬完用 `git diff --stat origin/main HEAD -- config/sources.json` 确认**无差异**再提交。
 - 影响：账本倒退会让下一次 sync-sources 误判落后而重跑，且仓库里记录的子站 sha 与实际快照不符。
 - 待并入：seo-jianzhan ⑦⑧「云端 GitHub 凭证是只读占位符时怎么推」那节的分叉处理法。
+
+## 2026-10-08 · lootwiki.com 尾斜杠双网址 + canonical 不自指(GSC「备用网页(有适当的规范标记)」4 个网址不收录)
+
+- 现象(线上实测):sitemap 675 条里 377 条带尾斜杠、298 条不带;两种写法线上都 200、互不跳转;
+  总站自有页与 beast 全部页的 canonical / og:url / hreflang 写不带斜杠的那条。GSC 报的 4 个网址都是带斜杠版。
+- 根因:`vercel.json` 只开了 `cleanUrls` 没定 `trailingSlash`(Vercel 对两种写法都给 200);`build.py:transform_urls()`
+  对快照只换域名,beast 子站(`trailingSlash:false`)的无斜杠写法原样进了总站;总站自有页的 `path` 也是无斜杠。
+  2026-09-24 那次修法是「sitemap `<loc>` 跟着 canonical 走」,只对齐了 sitemap,两个 200 网址还在,所以验证照样失败。
+- 修法:全站统一带尾斜杠 —— `hub/urlnorm.py` + `vercel.json` `trailingSlash:true` + 重定向 source 两种写法都出。
+  细节见 README「URL 规范」一节;门禁 `scripts/url_consistency_audit.py`。
+- 顺带实测到的三条:① Vercel `redirects` 的字面量 source 严格匹配尾斜杠(只写 `/x` 时 `/x/` 是 404),`/:path*` 通配不受影响;
+  ② beast 子站 `en/achievement-tracker` 的 hreflang 只写了 en + x-default,其余 5 个语种指向它而它不回指(总站构建期已补,子站仓未改);
+  ③ beast 子站 `vercel.json` 里 `/release-time` 写了两条,前一条目的地 `/en/release-time` 不存在(总站生成时已去重)。
+- 待并入:seo-jianzhan ⑦ 部署一节 ——「cleanUrls 必须同时显式写 trailingSlash,canonical / sitemap / 内链跟它同一种写法;
+  套壳聚合站在域名改写之后还要做一遍斜杠写法统一」;`url_consistency_audit.py` 可同步进 seo-jianzhan/scripts。

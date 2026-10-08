@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "trailingSlash": true,
   "outputDirectory": "out",
   "redirects": [
     {
@@ -16,102 +17,192 @@
     },
     {
       "source": "/beast-of-reincarnation",
-      "destination": "/beast-of-reincarnation/en",
-      "permanent": false
+      "destination": "/beast-of-reincarnation/en/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/",
+      "destination": "/beast-of-reincarnation/en/",
+      "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/bosses",
-      "destination": "/beast-of-reincarnation/en/bosses",
+      "destination": "/beast-of-reincarnation/en/bosses/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/bosses/",
+      "destination": "/beast-of-reincarnation/en/bosses/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/builds",
-      "destination": "/beast-of-reincarnation/en/builds",
+      "destination": "/beast-of-reincarnation/en/builds/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/builds/",
+      "destination": "/beast-of-reincarnation/en/builds/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/koo-guide",
-      "destination": "/beast-of-reincarnation/en/koo-guide",
+      "destination": "/beast-of-reincarnation/en/koo-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/koo-guide/",
+      "destination": "/beast-of-reincarnation/en/koo-guide/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/beginner-guide",
-      "destination": "/beast-of-reincarnation/en/beginner-guide",
+      "destination": "/beast-of-reincarnation/en/beginner-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/beginner-guide/",
+      "destination": "/beast-of-reincarnation/en/beginner-guide/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/release-date",
-      "destination": "/beast-of-reincarnation/en/release-date",
+      "destination": "/beast-of-reincarnation/en/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/release-date/",
+      "destination": "/beast-of-reincarnation/en/release-date/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/faq",
-      "destination": "/beast-of-reincarnation/en/faq",
+      "destination": "/beast-of-reincarnation/en/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/faq/",
+      "destination": "/beast-of-reincarnation/en/faq/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/review",
-      "destination": "/beast-of-reincarnation/en/review",
+      "destination": "/beast-of-reincarnation/en/review/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/review/",
+      "destination": "/beast-of-reincarnation/en/review/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/metacritic",
-      "destination": "/beast-of-reincarnation/en/metacritic",
+      "destination": "/beast-of-reincarnation/en/metacritic/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/metacritic/",
+      "destination": "/beast-of-reincarnation/en/metacritic/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/how-long-to-beat",
-      "destination": "/beast-of-reincarnation/en/how-long-to-beat",
+      "destination": "/beast-of-reincarnation/en/how-long-to-beat/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/how-long-to-beat/",
+      "destination": "/beast-of-reincarnation/en/how-long-to-beat/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/walkthrough",
-      "destination": "/beast-of-reincarnation/en/walkthrough",
+      "destination": "/beast-of-reincarnation/en/walkthrough/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/walkthrough/",
+      "destination": "/beast-of-reincarnation/en/walkthrough/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/all-weapons",
-      "destination": "/beast-of-reincarnation/en/all-weapons",
+      "destination": "/beast-of-reincarnation/en/all-weapons/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/all-weapons/",
+      "destination": "/beast-of-reincarnation/en/all-weapons/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/all-endings",
-      "destination": "/beast-of-reincarnation/en/all-endings",
+      "destination": "/beast-of-reincarnation/en/all-endings/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/all-endings/",
+      "destination": "/beast-of-reincarnation/en/all-endings/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/trophies",
-      "destination": "/beast-of-reincarnation/en/trophies",
+      "destination": "/beast-of-reincarnation/en/trophies/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/trophies/",
+      "destination": "/beast-of-reincarnation/en/trophies/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/pc-requirements",
-      "destination": "/beast-of-reincarnation/en/pc-requirements",
+      "destination": "/beast-of-reincarnation/en/pc-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/pc-requirements/",
+      "destination": "/beast-of-reincarnation/en/pc-requirements/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/performance",
-      "destination": "/beast-of-reincarnation/en/performance",
+      "destination": "/beast-of-reincarnation/en/performance/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/performance/",
+      "destination": "/beast-of-reincarnation/en/performance/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/editions",
-      "destination": "/beast-of-reincarnation/en/editions",
+      "destination": "/beast-of-reincarnation/en/editions/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/editions/",
+      "destination": "/beast-of-reincarnation/en/editions/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/release-time",
-      "destination": "/beast-of-reincarnation/en/release-time",
+      "destination": "/beast-of-reincarnation/en/release-date/",
       "permanent": true
     },
     {
-      "source": "/beast-of-reincarnation/release-time",
-      "destination": "/beast-of-reincarnation/en/release-date",
+      "source": "/beast-of-reincarnation/release-time/",
+      "destination": "/beast-of-reincarnation/en/release-date/",
       "permanent": true
     },
     {
       "source": "/beast-of-reincarnation/:lang(en|de|es|fr|it|ja)/release-time",
-      "destination": "/beast-of-reincarnation/:lang/release-date",
+      "destination": "/beast-of-reincarnation/:lang/release-date/",
+      "permanent": true
+    },
+    {
+      "source": "/beast-of-reincarnation/:lang(en|de|es|fr|it|ja)/release-time/",
+      "destination": "/beast-of-reincarnation/:lang/release-date/",
       "permanent": true
     },
     {

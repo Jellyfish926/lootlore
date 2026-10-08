@@ -1,5 +1,5 @@
 name: gates
-# 十道门禁(seo-jianzhan ⑥ + 本站增补):红一条不许合。跑在构建产物上,不看源码。
+# 十一道门禁(seo-jianzhan ⑥ + 本站增补):红一条不许合。跑在构建产物上,不看源码。
 # 构建日期从仓库根 build-stamp.json 钉住(build.py 写的),所以「重建产物 ≟ 提交的 out/」不会因为跨天而误红。
 on:
   push:
@@ -50,6 +50,8 @@ jobs:
         run: python3 .gates/check_sitemap.py --out out --host "$SITE_HOST"
       - name: link_check(全站死链)
         run: python3 .gates/link_check.py --out out
+      - name: url_consistency_audit(全站页面 URL 只许带尾斜杠一种写法:canonical 自指 / og:url / hreflang 互指 / JSON-LD / 站内链接 / sitemap / vercel.json,任一项 ≠ 0 即红)
+        run: python3 scripts/url_consistency_audit.py --out out
       - name: freshness(只报告不阻塞)
         if: always()
         run: python3 .gates/freshness_audit.py --out out || true

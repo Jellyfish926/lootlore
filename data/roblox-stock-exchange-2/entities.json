@@ -1,0 +1,1680 @@
+{
+ "fetched": "2026-10-08",
+ "game_version": null,
+ "sources_note": "[round1 修订:game_version 置 null——Roblox 体验没有版本号,games API 的 updated 字段 24 分钟内三读三值(03:36:09Z / 03:44:15Z / 03:56:24Z),不作补丁日期;兑换码实体改为「官方描述里印着、未进游戏实测」口径;活动实体的时间改写成 Listed start / Listing ends 的绝对时间;virtual-events 来源 URL 去掉游标(2026-10-08 该接口不带游标时一次只回 2 条、之后多次回 12 条,属分页行为)。] 全部实体取自 Roblox 官方公开接口(S 级),2026-10-08 03:39–03:50 UTC 取:游戏描述 games.roblox.com、徽章 badges.roblox.com(11 个,nextPageCursor=null,awardingUniverse 逐条核对为 10495391267,03:39 与 03:47 两次取数 id 一致;数值取 03:47 那次)、通行证 apis.roblox.com/game-passes(13 个,nextPageToken 空)、开发者商品 apis.roblox.com/developer-products v2(31 个,nextPageCursor=null)、官方活动 apis.roblox.com/virtual-events(带零起点游标,12 条)、群组 groups.roblox.com、分级 experience-guidelines-api(POST)。名称逐字复制接口 name/Name/title 字段(含大小写、标点与开发者自己的拼写,如商品 'Instant Acension'、活动描述里的 'permeant');描述去掉了接口里的 \\r\\n 换行(Executive Terminal 一条)。31 个商品里只有 'Trader Pass - Season 1' 有官方描述,其余 usage_en 写 Not stated,不含任何效果、倍率、数量。兑换码实体只有官方描述里亲眼看到的 TOOLS,奖励官方未写,outcome_en 如实写 Not stated。价格为 2026-10-08 快照。通行证 order 按价格再按创建时间升序;徽章 order 按累计获得数降序;商品 order 按 shop 页的分组顺序。活动实体不使用 deadline 字段(界面标签是 Claim deadline,会误导),起止时间记在 event_start_utc / event_end_utc(无 f_ 标签,不渲染)并写进 key_notes_en。第三方码表、兑换界面位置、未持通行证时的手续费与杠杆上限、rebirth 规则、bot 设置均无一手来源,未建实体或记入 unverified_fields。",
+ "roblox": {
+  "universeId": 10495391267,
+  "rootPlaceId": 110527353762049,
+  "creatorGroupId": 33446529,
+  "updated": "2026-10-08T03:36:09.953Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页(全部已发布,无 draft)。",
+ "entities": {
+  "roblox-stock-exchange-2": {
+   "type": "mechanic",
+   "name_en": "Roblox Stock Exchange 2",
+   "page_slug": "how-to-play",
+   "summary_en": "Trading simulator on Roblox: start with a small account and grow it by trading simulated stocks, ETFs, futures and IPOs, with limit orders, stop losses, take profits, leverage, shorting, algorithmic bots, levels and rebirths.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10495391267",
+   "description_en": "Start with a small account and work your way toward becoming a market legend.",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10495391267",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10495391267",
+   "release_date_en": "13 July 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10495391267",
+   "role_en": "Developer: Summit Productions Development (Roblox group 33446529)",
+   "role_source": "https://groups.roblox.com/v1/groups/33446529",
+   "max_players": 35,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10495391267",
+   "key_notes_en": "35 players per server · Maturity: Minimal · 11 badges · 13 game passes · 31 developer products · 12 official events since 17 August 2026 · All markets and currencies are simulated",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=10495391267",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10495391267",
+    "https://groups.roblox.com/v1/groups/33446529",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "private_servers",
+    "supported_devices",
+    "fee_without_pass",
+    "leverage_cap_by_level",
+    "level_thresholds",
+    "rebirth_rules",
+    "redeem_ui_location"
+   ]
+  },
+  "code-tools": {
+   "type": "mechanic",
+   "name_en": "Code TOOLS",
+   "page_slug": "codes",
+   "summary_en": "The only code printed in the official Roblox Stock Exchange 2 game description.",
+   "outcome_en": "Not stated in the official description",
+   "condition_en": "Printed in the official description on 2026-10-08; not tested in game",
+   "key_notes_en": "Printed under the line THANKS FOR 10K LIKES; the description says NEXT CODE RELEASES AT 15,000 LIKES",
+   "field_sources": {
+    "outcome_en": [
+     "https://games.roblox.com/v1/games?universeIds=10495391267"
+    ],
+    "condition_en": [
+     "https://games.roblox.com/v1/games?universeIds=10495391267"
+    ],
+    "key_notes_en": [
+     "https://games.roblox.com/v1/games?universeIds=10495391267"
+    ]
+   },
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10495391267"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether it redeems in the game (not tested)",
+    "reward (not in any official source)",
+    "redeem UI location (code sites only)",
+    "expiry date (none published)",
+    "whether it can be redeemed more than once"
+   ]
+  },
+  "badge-welcome-to-roblox-stock-exchange-2": {
+   "type": "achievement",
+   "name_en": "Welcome to Roblox Stock Exchange 2",
+   "page_slug": "badges",
+   "order": 1,
+   "description_en": "Thank you for playing!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "Thank you for playing!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 2,288,320 times as of 2026-10-08 (100.00 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 2288320,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 47508,
+   "badge_created": "2026-07-13",
+   "badge_id": 1060475562648240,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-first-trade": {
+   "type": "achievement",
+   "name_en": "First Trade",
+   "page_slug": "badges",
+   "order": 2,
+   "description_en": "You made your first trade!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You made your first trade!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 2,061,945 times as of 2026-10-08 (90.11 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 2061945,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 46499,
+   "badge_created": "2026-07-13",
+   "badge_id": 3732908134732955,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-first-profit": {
+   "type": "achievement",
+   "name_en": "First Profit",
+   "page_slug": "badges",
+   "order": 3,
+   "description_en": "You made your first profit trading!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You made your first profit trading!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 1,569,182 times as of 2026-10-08 (68.57 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 1569182,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 46436,
+   "badge_created": "2026-07-13",
+   "badge_id": 3158295265855141,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-first-short": {
+   "type": "achievement",
+   "name_en": "First Short",
+   "page_slug": "badges",
+   "order": 4,
+   "description_en": "You shorted your first stock!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You shorted your first stock!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 616,376 times as of 2026-10-08 (26.94 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 616376,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 30247,
+   "badge_created": "2026-07-13",
+   "badge_id": 3274311696510402,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-hundred-trades": {
+   "type": "achievement",
+   "name_en": "Hundred Trades",
+   "page_slug": "badges",
+   "order": 5,
+   "description_en": "You completed your first 100 trades!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You completed your first 100 trades!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 299,258 times as of 2026-10-08 (13.08 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 299258,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 8331,
+   "badge_created": "2026-07-14",
+   "badge_id": 2416333892976148,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-first-futures-trade": {
+   "type": "achievement",
+   "name_en": "First Futures Trade",
+   "page_slug": "badges",
+   "order": 6,
+   "description_en": "You made your first futures trade!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You made your first futures trade!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 214,382 times as of 2026-10-08 (9.37 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 214382,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 19052,
+   "badge_created": "2026-07-13",
+   "badge_id": 2519605870098017,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-millionaire": {
+   "type": "achievement",
+   "name_en": "Millionaire",
+   "page_slug": "badges",
+   "order": 7,
+   "description_en": "Your total net-worth is over $1,000,000!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "Your total net-worth is over $1,000,000!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 100,099 times as of 2026-10-08 (4.37 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 100099,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 1913,
+   "badge_created": "2026-07-14",
+   "badge_id": 1693614097116213,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-first-algo-bot": {
+   "type": "achievement",
+   "name_en": "First Algo Bot",
+   "page_slug": "badges",
+   "order": 8,
+   "description_en": "You created your first algorithmic trading bot!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You created your first algorithmic trading bot!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 50,910 times as of 2026-10-08 (2.22 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 50910,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 1404,
+   "badge_created": "2026-07-14",
+   "badge_id": 2752139284234446,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "unlock_requirements",
+    "rebirth_rules"
+   ]
+  },
+  "badge-first-rebirth": {
+   "type": "achievement",
+   "name_en": "First Rebirth",
+   "page_slug": "badges",
+   "order": 9,
+   "description_en": "You rebirthed for the first time!",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "You rebirthed for the first time!",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 42,936 times as of 2026-10-08 (1.88 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 42936,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 394,
+   "badge_created": "2026-07-14",
+   "badge_id": 2411610141332261,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "unlock_requirements",
+    "rebirth_rules"
+   ]
+  },
+  "badge-10-000-000-net-worth": {
+   "type": "achievement",
+   "name_en": "$10,000,000 Net Worth",
+   "page_slug": "badges",
+   "order": 10,
+   "description_en": "Your net worth exceeded $10,000,000",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "Your net worth exceeded $10,000,000",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 39,765 times as of 2026-10-08 (1.74 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 39765,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 406,
+   "badge_created": "2026-07-14",
+   "badge_id": 4150907684710822,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "badge-met-the-game-owners": {
+   "type": "achievement",
+   "name_en": "Met the game owners!",
+   "page_slug": "badges",
+   "order": 11,
+   "description_en": "Wow, 150% profit. You were in a server with one of the game owners",
+   "description_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "requires_en": "Wow, 150% profit. You were in a server with one of the game owners",
+   "requires_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "key_notes_en": "Awarded 1,305 times as of 2026-10-08 (0.06 per 100 Welcome awards, our calculation)",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "awarded_count": 1305,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100",
+   "past_day_awarded_count": 0,
+   "badge_created": "2026-08-15",
+   "badge_id": 1781987322260198,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "how_to_meet_an_owner"
+   ]
+  },
+  "pass-custom-timeframes": {
+   "type": "gamepass",
+   "name_en": "Custom Timeframes",
+   "page_slug": "gamepasses",
+   "order": 1,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Access to any custom timeframes, such as 1 second charts and more.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Access to any custom timeframes, such as 1 second charts and more.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1942182816,
+   "created": "2026-08-08",
+   "last_updated": "2026-08-08",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-watchlist-pro": {
+   "type": "gamepass",
+   "name_en": "Watchlist Pro",
+   "page_slug": "gamepasses",
+   "order": 2,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "10 custom watchlists with up to 50 symbols in each list.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "10 custom watchlists with up to 50 symbols in each list.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1906088154,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-unlimited-ai-usage": {
+   "type": "gamepass",
+   "name_en": "Unlimited AI Usage",
+   "page_slug": "gamepasses",
+   "order": 3,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Ask SummitAI as much as you like: no daily or weekly cap, a much larger conversation memory, and the top effort tiers always available.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Ask SummitAI as much as you like: no daily or weekly cap, a much larger conversation memory, and the top effort tiers always available.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1940299048,
+   "created": "2026-08-09",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-pro-trader": {
+   "type": "gamepass",
+   "name_en": "Pro Trader",
+   "page_slug": "gamepasses",
+   "order": 4,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "0.02% fees, unlimited drawings, pro stats.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "0.02% fees, unlimited drawings, pro stats.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907618177,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-indicator-pro": {
+   "type": "gamepass",
+   "name_en": "Indicator Pro",
+   "page_slug": "gamepasses",
+   "order": 5,
+   "unlock_cost": "129 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Run up to 8 community or custom indicators at the same time.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Run up to 8 community or custom indicators at the same time.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907414205,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-max-leverage": {
+   "type": "gamepass",
+   "name_en": "Max Leverage",
+   "page_slug": "gamepasses",
+   "order": 6,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Up to 50x leverage at any level.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Up to 50x leverage at any level.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907612139,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-more-player-companies": {
+   "type": "gamepass",
+   "name_en": "More Player Companies",
+   "page_slug": "gamepasses",
+   "order": 7,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Launch up to 5 player-founded stocks instead of 2.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Launch up to 5 player-founded stocks instead of 2.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907894508,
+   "created": "2026-07-14",
+   "last_updated": "2026-08-15",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-executive-terminal": {
+   "type": "gamepass",
+   "name_en": "Executive Terminal",
+   "page_slug": "gamepasses",
+   "order": 8,
+   "unlock_cost": "159 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Permanent gold terminal branding and Executive status treatment. Gives access to an exclusive set of stocks, and unlocks private market algorithmic bot scans.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Permanent gold terminal branding and Executive status treatment. Gives access to an exclusive set of stocks, and unlocks private market algorithmic bot scans.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907396210,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-order-flow": {
+   "type": "gamepass",
+   "name_en": "Order Flow",
+   "page_slug": "gamepasses",
+   "order": 9,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Level 2 order book data, shows placed orders along the book, and shows bias direction based off the flow of orders.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Level 2 order book data, shows placed orders along the book, and shows bias direction based off the flow of orders.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907012158,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-15",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-overnight-desk": {
+   "type": "gamepass",
+   "name_en": "Overnight Desk",
+   "page_slug": "gamepasses",
+   "order": 10,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Your market keeps running for 24 hours offline instead of 8.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Your market keeps running for 24 hours offline instead of 8.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1918719154,
+   "created": "2026-07-19",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-vip": {
+   "type": "gamepass",
+   "name_en": "VIP",
+   "page_slug": "gamepasses",
+   "order": 11,
+   "unlock_cost": "229 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "2x XP, 2x daily rewards, VIP badge, 1 free Sim Day per day.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "2x XP, 2x daily rewards, VIP badge, 1 free Sim Day per day.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1906688160,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-insider": {
+   "type": "gamepass",
+   "name_en": "Insider",
+   "page_slug": "gamepasses",
+   "order": 12,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Early alerts before news hits + IPO intel.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Early alerts before news hits + IPO intel.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1907396178,
+   "created": "2026-07-13",
+   "last_updated": "2026-08-12",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-all-gamepasses-bundle": {
+   "type": "gamepass",
+   "name_en": "All Gamepasses Bundle",
+   "page_slug": "gamepasses",
+   "order": 13,
+   "unlock_cost": "999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "description_en": "All gamepasses, but at a lower cost.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "All gamepasses, but at a lower cost.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1949660750,
+   "created": "2026-08-15",
+   "last_updated": "2026-08-15",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "passes_included"
+   ]
+  },
+  "product-skip-to-market-open": {
+   "type": "item",
+   "name_en": "Skip to Market Open",
+   "page_slug": "shop",
+   "order": 1,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-08-12",
+   "product_id": 3609583116,
+   "shop_group": "Time skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-simulate-day": {
+   "type": "item",
+   "name_en": "Simulate Day",
+   "page_slug": "shop",
+   "order": 2,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-08-12",
+   "product_id": 3609583136,
+   "shop_group": "Time skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-simulate-week": {
+   "type": "item",
+   "name_en": "Simulate Week",
+   "page_slug": "shop",
+   "order": 3,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-08-12",
+   "product_id": 3609583154,
+   "shop_group": "Time skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-algo-scan-upgrade": {
+   "type": "item",
+   "name_en": "Algo Scan Upgrade",
+   "page_slug": "algo-bots",
+   "order": 4,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-08-12",
+   "product_id": 3609599329,
+   "shop_group": "Algo bots",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-algo-expertise-upgrade": {
+   "type": "item",
+   "name_en": "Algo Expertise Upgrade",
+   "page_slug": "algo-bots",
+   "order": 5,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-08-12",
+   "product_id": 3609599357,
+   "shop_group": "Algo bots",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-deploy-algo-bot": {
+   "type": "item",
+   "name_en": "Deploy Algo Bot",
+   "page_slug": "algo-bots",
+   "order": 6,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-07-13",
+   "product_id": 3609599145,
+   "shop_group": "Algo bots",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-tune-entire-algo-fleet": {
+   "type": "item",
+   "name_en": "Tune Entire Algo Fleet",
+   "page_slug": "algo-bots",
+   "order": 7,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-07-13",
+   "product_id": 3609583227,
+   "shop_group": "Algo bots",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-15-min-trader-spotlight": {
+   "type": "item",
+   "name_en": "15-Min Trader Spotlight",
+   "page_slug": "shop",
+   "order": 8,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-07-13",
+   "product_id": 3609583175,
+   "shop_group": "Trader Spotlight",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-1-hour-trader-spotlight": {
+   "type": "item",
+   "name_en": "1-Hour Trader Spotlight",
+   "page_slug": "shop",
+   "order": 9,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-07-13",
+   "product_id": 3609583181,
+   "shop_group": "Trader Spotlight",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-1-day-trader-spotlight": {
+   "type": "item",
+   "name_en": "1-Day Trader Spotlight",
+   "page_slug": "shop",
+   "order": 10,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-07-13",
+   "product_id": 3609583213,
+   "shop_group": "Trader Spotlight",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-5-000-ai-tokens": {
+   "type": "item",
+   "name_en": "5,000 AI Tokens",
+   "page_slug": "shop",
+   "order": 11,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-09",
+   "product_updated": "2026-08-11",
+   "product_id": 3661727368,
+   "shop_group": "AI Tokens",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-20-000-ai-tokens": {
+   "type": "item",
+   "name_en": "20,000 AI Tokens",
+   "page_slug": "shop",
+   "order": 12,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-09",
+   "product_updated": "2026-08-11",
+   "product_id": 3661732347,
+   "shop_group": "AI Tokens",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-75-000-ai-tokens": {
+   "type": "item",
+   "name_en": "75,000 AI Tokens",
+   "page_slug": "shop",
+   "order": 13,
+   "unlock_cost": "69 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-09",
+   "product_updated": "2026-08-11",
+   "product_id": 3661736099,
+   "shop_group": "AI Tokens",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-trader-pass-season-1": {
+   "type": "item",
+   "name_en": "Trader Pass - Season 1",
+   "page_slug": "shop",
+   "order": 14,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "description_en": "Unlocks the premium track of Trader Pass Season 1, The Golden Bell: 22 animated exclusives and 20,000 AI tokens. Cosmetic only, no cash or boosts.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Unlocks the premium track of Trader Pass Season 1, The Golden Bell: 22 animated exclusives and 20,000 AI tokens. Cosmetic only, no cash or boosts.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-10-02",
+   "product_updated": "2026-10-02",
+   "product_id": 3715974979,
+   "shop_group": "Season pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": []
+  },
+  "product-skip-recovery": {
+   "type": "item",
+   "name_en": "Skip Recovery",
+   "page_slug": "shop",
+   "order": 15,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-13",
+   "product_updated": "2026-07-13",
+   "product_id": 3609600647,
+   "shop_group": "One-off purchases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-double-earnings": {
+   "type": "item",
+   "name_en": "Double Earnings",
+   "page_slug": "shop",
+   "order": 16,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-14",
+   "product_updated": "2026-08-15",
+   "product_id": 3609771491,
+   "shop_group": "One-off purchases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-trader-starter-pack": {
+   "type": "item",
+   "name_en": "Trader Starter Pack",
+   "page_slug": "shop",
+   "order": 17,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-14",
+   "product_updated": "2026-08-12",
+   "product_id": 3609786399,
+   "shop_group": "One-off purchases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-instant-acension": {
+   "type": "item",
+   "name_en": "Instant Acension",
+   "page_slug": "shop",
+   "order": 18,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-15",
+   "product_updated": "2026-08-19",
+   "product_id": 3708158573,
+   "shop_group": "One-off purchases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-custom-timeframes": {
+   "type": "item",
+   "name_en": "Custom Timeframes",
+   "page_slug": "shop",
+   "order": 19,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-15",
+   "product_updated": "2026-08-15",
+   "product_id": 3708157443,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-unlimited-ai-usage": {
+   "type": "item",
+   "name_en": "Unlimited AI Usage",
+   "page_slug": "shop",
+   "order": 20,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-15",
+   "product_updated": "2026-08-15",
+   "product_id": 3708157417,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-pro-trader": {
+   "type": "item",
+   "name_en": "Pro Trader",
+   "page_slug": "shop",
+   "order": 21,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606448,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-watchlist-pro": {
+   "type": "item",
+   "name_en": "Watchlist Pro",
+   "page_slug": "shop",
+   "order": 22,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606621,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-indicator-pro": {
+   "type": "item",
+   "name_en": "Indicator Pro",
+   "page_slug": "shop",
+   "order": 23,
+   "unlock_cost": "129 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606635,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-executive-terminal": {
+   "type": "item",
+   "name_en": "Executive Terminal",
+   "page_slug": "shop",
+   "order": 24,
+   "unlock_cost": "139 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-08-12",
+   "product_id": 3610606656,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-max-leverage": {
+   "type": "item",
+   "name_en": "Max Leverage",
+   "page_slug": "shop",
+   "order": 25,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606511,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-order-flow": {
+   "type": "item",
+   "name_en": "Order Flow",
+   "page_slug": "shop",
+   "order": 26,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606567,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-insider": {
+   "type": "item",
+   "name_en": "Insider",
+   "page_slug": "shop",
+   "order": 27,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606482,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-vip": {
+   "type": "item",
+   "name_en": "VIP",
+   "page_slug": "shop",
+   "order": 28,
+   "unlock_cost": "399 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606532,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-all-gamepasses-bundle": {
+   "type": "item",
+   "name_en": "All Gamepasses Bundle",
+   "page_slug": "shop",
+   "order": 29,
+   "unlock_cost": "999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-08-15",
+   "product_updated": "2026-08-15",
+   "product_id": 3708157510,
+   "shop_group": "Named after a game pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-offline-earnings": {
+   "type": "item",
+   "name_en": "Offline Earnings",
+   "page_slug": "shop",
+   "order": 30,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606692,
+   "shop_group": "Pass-style names with no matching pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "product-company-mogul": {
+   "type": "item",
+   "name_en": "Company Mogul",
+   "page_slug": "shop",
+   "order": 31,
+   "unlock_cost": "249 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100",
+   "product_created": "2026-07-19",
+   "product_updated": "2026-07-19",
+   "product_id": 3610606671,
+   "shop_group": "Pass-style names with no matching pass",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "effect",
+    "description"
+   ]
+  },
+  "event-hedge-funds": {
+   "type": "mechanic",
+   "name_en": "HEDGE FUNDS",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "Run a hedge fund",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: UPDATE · Listed start 17 August 2026, 23:00 UTC · Listing ends 19 August 2026, 23:00 UTC · Listing created 16 August 2026, 21:22 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-08-17T23:00:07.376+00:00",
+   "event_end_utc": "2026-08-19T23:00:07.376+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "3102620814973993571",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-new-functions": {
+   "type": "mechanic",
+   "name_en": "NEW FUNCTIONS",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "Tons of new functions and additions to the script editor so you can continue to make advanced indicators!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: Scripting Overhaul · Listed start 19 August 2026, 21:00 UTC · Listing ends 22 August 2026, 22:00 UTC · Listing created 17 August 2026, 20:16 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-08-19T21:00:04.996+00:00",
+   "event_end_utc": "2026-08-22T22:00:04.996+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "4398781837376357010",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-new-memecoins": {
+   "type": "mechanic",
+   "name_en": "NEW MEMECOINS",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "This update will feature new meme coins in the Crypto tab. This system will work in a different way, they will launch at random in the game, and have different results.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: UPDATE · Listed start 22 August 2026, 21:00 UTC · Listing ends 25 August 2026, 22:00 UTC · Listing created 16 August 2026, 20:33 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-08-22T21:00:03.655+00:00",
+   "event_end_utc": "2026-08-25T22:00:03.655+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "4467337280184517205",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-challenges": {
+   "type": "mechanic",
+   "name_en": "CHALLENGES",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "New challenges, this will feature starting at a low amount to make a much higher amount, your reward will be a permeant perk + exclusive cosmetic",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: UPDATE · Listed start 26 August 2026, 20:00 UTC · Listing ends 29 August 2026, 04:55 UTC · Listing created 24 August 2026, 00:41 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-08-26T20:00:05.676+00:00",
+   "event_end_utc": "2026-08-29T04:55:05.676+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "2888976847561949836",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-new-tools": {
+   "type": "mechanic",
+   "name_en": "NEW TOOLS",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "New tools such as fib extension, trailing stops, and so much more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: UPDATE · Listed start 29 August 2026, 22:00 UTC · Listing ends 31 August 2026, 23:00 UTC · Listing created 22 August 2026, 21:50 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-08-29T22:00:01.01+00:00",
+   "event_end_utc": "2026-08-31T23:00:01.01+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "7825011101212476002",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-news-overhaul": {
+   "type": "mechanic",
+   "name_en": "NEWS OVERHAUL",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "This update will feature a brand new news system, and more news events.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: \"THE WIRE\" · Listed start 2 September 2026, 22:00 UTC · Listing ends 4 September 2026, 23:00 UTC · Listing created 30 August 2026, 09:06 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-09-02T22:00:56.231+00:00",
+   "event_end_utc": "2026-09-04T23:00:56.231+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "2706292338375918240",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-real-estate": {
+   "type": "mechanic",
+   "name_en": "REAL ESTATE",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "In this update, you'll be able to buy real estate across a global map.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: UPDATE · Listed start 5 September 2026, 10:00 UTC · Listing ends 8 September 2026, 00:00 UTC · Listing created 25 August 2026, 09:16 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-09-05T10:00:55.52+00:00",
+   "event_end_utc": "2026-09-08T00:00:55.52+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "8078586219207983767",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-seasons": {
+   "type": "mechanic",
+   "name_en": "SEASONS",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "This update will include seasons.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: New content · Listed start 12 September 2026, 20:00 UTC · Listing ends 16 September 2026, 20:00 UTC · Listing created 5 September 2026, 18:12 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-09-12T20:00:27.886+00:00",
+   "event_end_utc": "2026-09-16T20:00:27.886+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "3480459932585820770",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-bonds": {
+   "type": "mechanic",
+   "name_en": "BONDS",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "Trade debt, earn interest, weigh the risk.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: UPDATE · Listed start 19 September 2026, 20:00 UTC · Listing ends 26 September 2026, 02:00 UTC · Listing created 13 September 2026, 00:43 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-09-19T20:00:59.52+00:00",
+   "event_end_utc": "2026-09-26T02:00:59.52+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "2086042654314988172",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-commodities-exchange": {
+   "type": "mechanic",
+   "name_en": "COMMODITIES EXCHANGE",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "Prices will be driven by new news events, such as weather reports and more",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: NEW UPDATE · Listed start 26 September 2026, 20:00 UTC · Listing ends 29 September 2026, 16:00 UTC · Listing created 20 September 2026, 14:39 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-09-26T20:00:04.173+00:00",
+   "event_end_utc": "2026-09-29T16:00:04.173+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "81507606077768241",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-ui-overhaul-features": {
+   "type": "mechanic",
+   "name_en": "UI Overhaul + Features",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "This update will feature a brand new interface for the game, reorganized interfaces, and new game features!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: Content Update · Listed start 3 October 2026, 06:00 UTC · Listing ends 9 October 2026, 04:00 UTC · Listing created 27 September 2026, 21:40 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-10-03T06:00:52.314+00:00",
+   "event_end_utc": "2026-10-09T04:00:52.314+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "8173989522640601769",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ]
+  },
+  "event-custom-offices": {
+   "type": "mechanic",
+   "name_en": "Custom Offices",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event for Roblox Stock Exchange 2 hosted by the group Summit Productions Development, category \"new content\".",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "description_en": "Your own 3d office you can walk inside of and upgrade",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "key_notes_en": "Subtitle: New Update · Listed start 10 October 2026, 20:00 UTC · Listing ends 16 October 2026, 23:00 UTC · Listing created 3 October 2026, 09:08 UTC",
+   "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_start_utc": "2026-10-10T20:00:18.724+00:00",
+   "event_end_utc": "2026-10-16T23:00:18.724+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events",
+   "event_id": "6521878262199747155",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"
+   ],
+   "accessed": "2026-10-08",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the one-line description"
+   ],
+   "expiry_action": "After 2026-10-16T23:00Z (listing end): re-read the events API, both store lists and the badge list, and add what they show. Pages state the listed start as an absolute date, so no wording goes stale on 10 October."
+  }
+ }
+}

@@ -13,3 +13,4 @@
 | 2026-10-01 | Race Horses([INDEX📖] Race Horses;Roblox universeId 10387635049 / placeId 79475945127283;平台键 roblox:10387635049)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/race-horses/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-10-02 | +1 Stone Skipping(Roblox universeId 10765298801 / placeId 111543903102439;平台键 roblox:10765298801)· `kind: native` | 英文 | 11 页 | `https://lootwiki.com/stone-skipping/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
 | 2026-10-02 | Southern Mudding([🚀Nitrous!🚀] Southern Mudding 🚜 OffRoading;Roblox universeId 8719555347 / placeId 79480724066456;平台键 roblox:8719555347)· `kind: native` | 英文 | 12 页 | `https://lootwiki.com/southern-mudding/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |
+| 2026-10-08 | Roblox Stock Exchange 2(Roblox universeId 10495391267 / placeId 110527353762049;平台键 roblox:10495391267)· `kind: native` | 英文 | 12 页 | `https://lootwiki.com/roblox-stock-exchange-2/` | 形态:总站栏目,暂无独立站;AdSense 走 hub 主账号 |

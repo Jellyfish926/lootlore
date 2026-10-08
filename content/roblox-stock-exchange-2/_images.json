@@ -1,0 +1,224 @@
+{
+ "_note": "图片池:Roblox 官方 thumbnails API 返回的 5 张游戏页宣传缩略图 + 11 张官方活动(virtual-events)配图 + 官方游戏图标(2026-10-08 取)。全部是开发者上传到 Roblox 的宣传图,不是我们的实机截图,alt 以 Promotional art / Official event art 开头如实说明。NEW MEMECOINS 活动配图只有一个问号,未入池。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_events 重取一次并替换。接口最大 768x432(解码后个别图实际为 767x432),达不到 1200 宽的 Discover 大图门槛。2026-10-08 写入前逐个 curl 验 200(33 个 URL,状态记录在 raw/image-check.txt)。图标(512x512 方图)只在 author 页正文内使用,不做封面与卡图。活动配图含文字,alt 不照抄其中的 coming-soon 字样。",
+ "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10495391267&countPerUniverse=10&size=768x432&format=Png",
+ "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10495391267&countPerUniverse=10&size=480x270&format=Png",
+ "source_events": "https://thumbnails.roblox.com/v1/assets?assetIds=121284725743266,125686998013653,138795582610576,139806771152562,115813324738139,87490447307325,123328159651891,132073765112234,113157896906250,122510452839688,80151539995844,127393833886466&size=768x432&format=Png",
+ "source_events_ids": "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+ "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=10495391267&size=512x512&format=Png",
+ "fetched": "2026-10-08",
+ "credit": {
+  "en": "Official art · Summit Productions Development (Roblox)"
+ },
+ "default": "th5",
+ "pages": {
+  "index": "th5",
+  "beginner": "th4",
+  "how-to-play": "th2",
+  "codes": "th4",
+  "badges": "th3",
+  "updates": "ev_office",
+  "community": "th5",
+  "robux": "ev_ui",
+  "gamepasses": "ev_ui",
+  "shop": "th1",
+  "algo-bots": "ev_hedge",
+  "author": "th5"
+ },
+ "shots": {
+  "th1": {
+   "src": "https://tr.rbxcdn.com/180DAY-372b4db32bb2a0c404902c94c98f91a5/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-372b4db32bb2a0c404902c94c98f91a5/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 103356305950661,
+   "alt": {
+    "en": "Promotional art: a trading card for a stock called OBBY, Obby Dynamics, priced at 154.87 with a candlestick chart, a green BUY button, a red SELL button, a buying power figure, a portfolio value and the label MARKET OPEN"
+   }
+  },
+  "th2": {
+   "src": "https://tr.rbxcdn.com/180DAY-a9c036ca3582a1172abeaf1aa29f0d65/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-a9c036ca3582a1172abeaf1aa29f0d65/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 97253521718232,
+   "alt": {
+    "en": "Promotional art of the trading terminal: a candlestick chart for a stock called OBBY, a live Trades panel with a Whales filter, a Long and Short toggle above a Buy OBBY button, and an open long position with a red Close button"
+   }
+  },
+  "th3": {
+   "src": "https://tr.rbxcdn.com/180DAY-1425f129f6ee253c234930ce645ee8e6/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-1425f129f6ee253c234930ce645ee8e6/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 99364386885705,
+   "alt": {
+    "en": "Promotional art: a candlestick chart collapsing toward minus 60 percent beside a large red -48.7% TODAY, with a big green BUY button and a small red SELL button"
+   }
+  },
+  "th4": {
+   "src": "https://tr.rbxcdn.com/180DAY-7647c220050d0bade4122235790e71ad/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-7647c220050d0bade4122235790e71ad/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 124051027703716,
+   "alt": {
+    "en": "Promotional art: a green arrow curves from a glowing $100 up to $1,284,593 above a rising candlestick chart, with a green BUY button in the corner"
+   }
+  },
+  "th5": {
+   "src": "https://tr.rbxcdn.com/180DAY-dbb508c1d8dd413050d120b50015ee1d/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-dbb508c1d8dd413050d120b50015ee1d/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 86948763712281,
+   "alt": {
+    "en": "Promotional art: a white rising-chart logo over a dark grid of trading panels showing a portfolio value, top movers, a market sentiment gauge reading Bullish, buy and sell buttons, stacks of cash and coins"
+   }
+  },
+  "ev_hedge": {
+   "src": "https://tr.rbxcdn.com/180DAY-268547a21276a80d562ce5b413cac169/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-268547a21276a80d562ce5b413cac169/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 121284725743266,
+   "event_title": "HEDGE FUNDS",
+   "alt": {
+    "en": "Official event art for the Hedge Funds update: four strategy cards named Momentum, Quant, Income and Venture, each listing three tiers, above the words Run a hedge fund"
+   }
+  },
+  "ev_script": {
+   "src": "https://tr.rbxcdn.com/180DAY-21e042de0d7e6c629cf671d3a2b2d355/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-21e042de0d7e6c629cf671d3a2b2d355/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 125686998013653,
+   "event_title": "NEW FUNCTIONS",
+   "alt": {
+    "en": "Official event art for the scripting update: a script editor showing a short MACD indicator script beside six counters, including 48 functions and 10 price sources, above the words Scripting overhaul"
+   }
+  },
+  "ev_challenges": {
+   "src": "https://tr.rbxcdn.com/180DAY-3f21c97d8404c5d0533c4d5ac12e325a/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-3f21c97d8404c5d0533c4d5ac12e325a/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 139806771152562,
+   "event_title": "CHALLENGES",
+   "alt": {
+    "en": "Official event art for the Challenges update: a challenge run chart climbing from a 5K start to a 5M target beside a ladder of four tiers named Bootstrap, Size Up, The Floor and Whale"
+   }
+  },
+  "ev_tools": {
+   "src": "https://tr.rbxcdn.com/180DAY-d750ae19911ec713b4adfa27f18e18bf/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-d750ae19911ec713b4adfa27f18e18bf/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 115813324738139,
+   "event_title": "NEW TOOLS",
+   "alt": {
+    "en": "Official event art for the New Tools update: a chart with a trailing stop and fib retracement levels beside a list of eight new tools, from Trailing Stop and Fib Retracement to Parallel Channel and Text Note"
+   }
+  },
+  "ev_wire": {
+   "src": "https://tr.rbxcdn.com/180DAY-d8e6a78f97ce74d41bb64af3fed61821/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-d8e6a78f97ce74d41bb64af3fed61821/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 87490447307325,
+   "event_title": "NEWS OVERHAUL",
+   "alt": {
+    "en": "Official event art for the news overhaul: a live feed called The Wire with an earnings headline for Obby Corp, consensus and actual figures, and shorter macro, whale and rumour headlines below"
+   }
+  },
+  "ev_empire": {
+   "src": "https://tr.rbxcdn.com/180DAY-e81bd0b436c2dc5d8d993b16f5150192/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-e81bd0b436c2dc5d8d993b16f5150192/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 123328159651891,
+   "event_title": "REAL ESTATE",
+   "alt": {
+    "en": "Official event art for the Real Estate update: a pixel map shaped like the United States with five labelled properties and their daily rent, above the words Empire Map"
+   }
+  },
+  "ev_seasons": {
+   "src": "https://tr.rbxcdn.com/180DAY-f55adaff6497ba8feeaf15467e85b93b/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-f55adaff6497ba8feeaf15467e85b93b/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 132073765112234,
+   "event_title": "SEASONS",
+   "alt": {
+    "en": "Official event art for the Seasons update: a weekly leaderboard ranked by season return with tier labels, beside a list of eight new features including Weekly Reset, Ranked on Return and Six Tiers"
+   }
+  },
+  "ev_bonds": {
+   "src": "https://tr.rbxcdn.com/180DAY-9822c6b389da34e4f460c196d4091f58/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-9822c6b389da34e4f460c196d4091f58/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 113157896906250,
+   "event_title": "BONDS",
+   "alt": {
+    "en": "Official event art for the Bonds update: three cards for Government Bonds rated AAA, Corporate Bonds rated BBB and High-Yield Bonds rated BB, above the words Introducing bonds"
+   }
+  },
+  "ev_commodities": {
+   "src": "https://tr.rbxcdn.com/180DAY-dee559a4e85d3bf24f9277c0990551ad/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-dee559a4e85d3bf24f9277c0990551ad/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 122510452839688,
+   "event_title": "COMMODITIES EXCHANGE",
+   "alt": {
+    "en": "Official event art for the Commodities Exchange update: three cards for Energy with oil, Metals with gold and Agriculture with wheat, above the words Introducing commodities"
+   }
+  },
+  "ev_ui": {
+   "src": "https://tr.rbxcdn.com/180DAY-5431ba7effb1d21e89c1b87130ad082f/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-5431ba7effb1d21e89c1b87130ad082f/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 80151539995844,
+   "event_title": "UI Overhaul + Features",
+   "alt": {
+    "en": "Official event art for the interface overhaul: the words The terminal, reimagined above a wide screenshot of the trading terminal with a market list, a candlestick chart, a live trades column and an order panel"
+   }
+  },
+  "ev_office": {
+   "src": "https://tr.rbxcdn.com/180DAY-5dd1e65cf8ab2df0712cfc4a8869dc1e/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-5dd1e65cf8ab2df0712cfc4a8869dc1e/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 127393833886466,
+   "event_title": "Custom Offices",
+   "alt": {
+    "en": "Official event art for Custom Offices: a dark corner office at dusk with floor-to-ceiling windows over a lit city skyline, a desk with a monitor showing a rising chart, an office chair and a bronze bull statue on a plinth marked RSE"
+   }
+  },
+  "icon": {
+   "src": "https://tr.rbxcdn.com/180DAY-78f78579c7191ea99ca1a6eace72525b/512/512/Image/Png/noFilter",
+   "w": 512,
+   "h": 512,
+   "alt": {
+    "en": "Official Roblox Stock Exchange 2 game icon: a rising arrow filled with scenes of a candlestick chart, a computer chip, solar panels, data servers and a city campus"
+   }
+  }
+ }
+}

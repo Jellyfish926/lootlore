@@ -2035,6 +2035,119 @@
           }
         ]
       }
+    },
+    {
+      "slug": "roblox-stock-exchange-2",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/roblox-stock-exchange-2",
+      "name": "Roblox Stock Exchange 2",
+      "short": "Roblox Stock Exchange 2",
+      "default_path": "/",
+      "native": {
+        "title": "Roblox Stock Exchange 2",
+        "nav": [
+          "beginner",
+          "robux"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-08",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Roblox Stock Exchange 2",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/roblox-stock-exchange-2/entities.json",
+        "start_here": [
+          "how-to-play",
+          "codes",
+          "gamepasses"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Trading Simulator (Simulation)",
+        "studio": "Summit Productions Development",
+        "released": "July 13, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-dbb508c1d8dd413050d120b50015ee1d/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: a white rising-chart logo over a dark grid of trading panels showing a portfolio value, top movers, a market sentiment gauge reading Bullish, buy and sell buttons, stacks of cash and coins",
+        "img_credit": "Official art · Summit Productions Development (Roblox)",
+        "blurb": "Our Roblox Stock Exchange 2 hub for Summit Productions Development's trading simulator: the one code printed in the official description (not tested in game), all 13 game passes with their official descriptions and prices, all 31 Robux products, 11 badges with official award counts, what is and is not published about algo bots, and every official update event listing — built from Roblox's own data, with no unverified codes and no financial advice.",
+        "highlights": [
+          [
+            "Codes (October 2026)",
+            "/roblox-stock-exchange-2/codes/"
+          ],
+          [
+            "All 13 Game Passes",
+            "/roblox-stock-exchange-2/gamepasses/"
+          ],
+          [
+            "How to Play",
+            "/roblox-stock-exchange-2/how-to-play/"
+          ],
+          [
+            "Official Update Events",
+            "/roblox-stock-exchange-2/updates/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 10,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "gamepass",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "description"
+            ],
+            "sort": "order",
+            "max": 13,
+            "all": "gamepasses"
+          },
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "description",
+              "key_notes"
+            ],
+            "sort": "order",
+            "max": 11,
+            "all": "badges"
+          }
+        ]
+      }
     }
   ]
 }

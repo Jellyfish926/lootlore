@@ -13,7 +13,7 @@ entities: ["stage-waiting-line", "product-skip-line-sale", "product-skip-to-end"
 tldr: ["Skip Line [SALE] moves you up 5 places for 9 Robux; Skip Time [SALE] cuts 2:30 from the waiting room for 9 Robux.", "Skip To End costs 48 Robux and goes straight to the driving test. Skip Test (29) only passes the written test.", "Retake Test (19 Robux) is the cheap option after a failed drive: \"Take it again right away, no line.\"", "The two [SALE] names carry no discount in Roblox's price record. Nine Robux is simply their price."]
 related: ["how-to-play", "shop", "driving-test"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10768565603", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png"]
-images: ["th1", "prod-skip", "prod-kill-all"]
+images: ["prod-kill", "prod-skip", "prod-kill-all"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

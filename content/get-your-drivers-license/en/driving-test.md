@@ -13,7 +13,7 @@ entities: ["stage-driving-test", "mechanic-endings", "mechanic-examiner"]
 tldr: ["The official description names three things on the test course: cows, ducks and ramps, \"and more\".", "Two endings are named, Honor Roll and Towed. We found no full list in any official source we could read.", "Fail the drive and Retake Test (19 Robux) lets you \"take it again right away, no line\".", "Be The Examiner 📋 sells 5 minutes in the examiner's seat for 29 Robux; +1 Minute adds a minute for 9."]
 related: ["waiting-line", "cars", "how-to-play"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10768565603", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://badges.roblox.com/v1/universes/10768565603/badges?limit=100&sortOrder=Asc", "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10768565603&countPerUniverse=10&size=768x432&format=Png", "https://thumbnails.roblox.com/v1/games/icons?universeIds=10768565603&size=512x512&format=Png", "https://create.roblox.com/docs/production/monetization/developer-products"]
-images: ["th1", "prod-examiner", "prod-retake-test"]
+images: ["prod-plus-minute", "prod-examiner", "prod-retake-test"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

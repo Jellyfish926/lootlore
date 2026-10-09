@@ -10,7 +10,7 @@ type: "author"
 tldr: ["Jellyfi is the editorial byline responsible for researching, publishing and maintaining these Get Your Driver's License! guides.", "Game facts come from Roblox's official records for the game: its description, game passes, store products and developer group.", "Codes are listed only when seen in an official source. None has been, so there is no codes page.", "Car names, endings and test answers stay out until they are checked in the game."]
 related: []
 sourceUrls: []
-images: ["th1", "icon"]
+images: ["prod-examiner", "icon"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

@@ -13,7 +13,7 @@ entity: "get-your-drivers-license"
 tldr: ["The official description lists its features in this order: line, written test, driving test, cars, endings. It is a feature list and does not spell out the sequence of a run.", "Store descriptions add detail: the line is counted in places, the waiting room wait is measured in minutes and seconds, and the wording of Retake Test suggests a failed driving test would otherwise mean the line again.", "Other players can affect your wait. Two product descriptions say people in the line go poof, without saying what that does, and one mentions being knocked out.", "The game is free to play. Skips cost 9 to 48 Robux and no description says a purchase is required, but we have not played a full run without paying."]
 related: ["waiting-line", "driving-test", "cars"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10768565603", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100", "https://gameinternationalization.roblox.com/v1/supported-languages/games/10768565603", "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png", "https://www.rolimons.com/game/104416416393862", "https://www.roblox.com/games/104416416393862/Get-Your-Drivers-License"]
-images: ["th1", "prod-skip-test", "prod-revenge"]
+images: ["prod-retake-test", "prod-skip-test", "prod-revenge"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

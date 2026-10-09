@@ -34,7 +34,7 @@
 | shop | Scare All 的跳吓持续多久;Golden Supercar 🏆 买第二次会怎样 | 写「None of the four descriptions says」/「We have not tested」 | 补一句 |
 | community | 游戏内是否提示加群(群成员 18 分钟涨 5,396 的原因) | 写「We did not test」 | 有证据再写原因,没有就保持不写 |
 | community | 登录且年龄验证后,游戏页 / 群组页的 social links 里有没有 Discord | 写「could not confirm」 | 有则把服务器写成 official 并附取证日期;仍不抄别处的邀请 |
-| 全部页 | 自截 4–6 张 16:9 实机截图(排队、笔试、考场、车库、结局画面、考官视角) | 现在全站只有 1 张官方 16:9 图,所有页封面相同 | 入 `_images.json`(合法通道①自截),重排 pages 映射,消掉 img_dup_icon |
+| 全部页 | 自截 4–6 张 16:9 实机截图(排队、笔试、考场、车库、结局画面、考官视角) | 现在全站只有 1 张官方 16:9 图;2026-10-09 上线后验收已改排:th1 只留 hub 首页,其余 10 页封面改用各自主题的官方方形图标(框架按 16:9 居中裁切) | 入 `_images.json`(合法通道①自截),把方形图标封面换成 16:9 实机截图 |
 
 ## B. 没有生成、等核实结果再建的页
 

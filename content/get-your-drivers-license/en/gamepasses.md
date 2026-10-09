@@ -13,7 +13,7 @@ entities: ["pass-ban-hammer", "pass-gravity-gun", "pass-pro-emoji-pack"]
 tldr: ["Get Your Driver's License! sells 5 game passes: PRO EMOJI PACK 😈 (9 Robux), Airhorn [ANNOYING] ☠️ (16), Time Out (24), Gravity Gun 🔥 (160) and Ban Hammer (1,200).", "All five together cost 1,409 Robux. Ban Hammer alone is 85% of that.", "No pass description mentions the line, the written test, the driving test or cars. Three name other players, one is a loud airhorn and one is an emoji pack.", "Passes are one-time purchases. The skips and car items are separate developer products."]
 related: ["shop", "cars", "waiting-line"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://create.roblox.com/docs/production/monetization/passes", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=73260523707418,71583720567452,133611055833620,92809346914354,104491280702785&size=420x420&format=Png"]
-images: ["th1", "pass-ban-hammer", "pass-gravity-gun"]
+images: ["pass-time-out", "pass-ban-hammer", "pass-gravity-gun"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

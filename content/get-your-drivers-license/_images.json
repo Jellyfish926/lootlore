@@ -1,10 +1,12 @@
 {
- "_note": "图片池:Roblox 官方 thumbnails 接口返回的 1 张游戏页宣传图(该游戏只上传了 1 张,media 接口 1 条 Image、0 条视频,altText 为空)+ 官方游戏图标 1 张 + 通行证图标 5 张 + 开发者商品图标 12 张(13 个商品,Skip Line [SALE] 与 Skip Time [SALE] 共用同一张图、同一 CDN 哈希,合成一个 key prod-skip)。全部是开发者上传到 Roblox 的宣传美术 / 商店图标,不是我们的实机截图;alt 按本人看图所见描述(raw/img/ 存下载件),图里没有任何真实汽车厂标或车型字样,alt 只用通用车型词。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_icon / source_assets_* 重取一次并替换。16:9 图 URL 标称 768x432 / 480x270,实际解码为 767x432 / 479x270(raw/img 实测),达不到 1200 宽的 Discover 大图门槛。2026-10-09 写入前逐个 curl 验 200 且 content-type 为 image/*(共 20 个 URL,状态记录在 raw/image-check.txt)。方形图(icon 512、通行证 / 商品图标 420)只作正文配图,不作首图 / 卡图:pages 映射全部指向唯一的 16:9 图 th1(只有 1 张 16:9 图,多页卡图重复同一张,按 seo-jianzhan ⑤.5 3c 可接受);各页 frontmatter 的 images[0] 也都是 th1。正文配图一律不用 th1,避免封面与正文同图(img_dup_icon)。",
+ "_note": "图片池:Roblox 官方 thumbnails 接口返回的 1 张游戏页宣传图(该游戏只上传了 1 张,media 接口 1 条 Image、0 条视频,altText 为空)+ 官方游戏图标 1 张 + 通行证图标 5 张 + 开发者商品图标 12 张(13 个商品,Skip Line [SALE] 与 Skip Time [SALE] 共用同一张图、同一 CDN 哈希,合成一个 key prod-skip)。全部是开发者上传到 Roblox 的宣传美术 / 商店图标,不是我们的实机截图;alt 按本人看图所见描述(raw/img/ 存下载件),图里没有任何真实汽车厂标或车型字样,alt 只用通用车型词。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_icon / source_assets_* 重取一次并替换。16:9 图 URL 标称 768x432 / 480x270,实际解码为 767x432 / 479x270(raw/img 实测),达不到 1200 宽的 Discover 大图门槛。2026-10-09 写入前逐个 curl 验 200 且 content-type 为 image/*(共 20 个 URL,状态记录在 raw/image-check.txt)。2026-10-09 上线后验收改排(只动图片映射,不动正文事实句):唯一的 16:9 图 th1 只留给 hub 首页(也是栏目默认图),其余 10 页的封面 / 卡图各用一张与本页主题对应的官方方形图标,pages 映射与各页 frontmatter 的 images[0] 一致,11 页封面互不相同;方形图进 16:9 封面位由框架居中裁切(object-fit:cover)。通行证 / 商品图标同时登记 700x700 变体(src,同一 CDN 哈希,thumbnails 接口 size=700x700,2026-10-09 逐个 curl 验 200、实际解码 700x700)与 420x420 变体(src_small,卡图与小屏用);游戏图标接口最大 512x512,保持不变。正文配图仍不用 th1;cars 与 community 两页的封面图在本页正文里各出现一次(同页 2 处,低于 img_dup_icon 的 3 处门槛)。",
  "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10768565603&countPerUniverse=10&size=768x432&format=Png",
  "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10768565603&countPerUniverse=10&size=480x270&format=Png",
  "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=10768565603&size=512x512&format=Png",
  "source_assets_passes": "https://thumbnails.roblox.com/v1/assets?assetIds=73260523707418,71583720567452,133611055833620,92809346914354,104491280702785&size=420x420&format=Png",
  "source_assets_products": "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png",
+ "source_assets_passes_700": "https://thumbnails.roblox.com/v1/assets?assetIds=73260523707418,71583720567452,133611055833620,92809346914354,104491280702785&size=700x700&format=Png",
+ "source_assets_products_700": "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=700x700&format=Png",
  "fetched": "2026-10-09",
  "credit": {
   "en": "Official art · Time Will Pass (Roblox)"
@@ -12,16 +14,16 @@
  "default": "th1",
  "pages": {
   "index": "th1",
-  "beginner": "th1",
-  "how-to-play": "th1",
-  "waiting-line": "th1",
-  "driving-test": "th1",
-  "community": "th1",
-  "robux": "th1",
-  "cars": "th1",
-  "gamepasses": "th1",
-  "shop": "th1",
-  "author": "th1"
+  "beginner": "prod-skip",
+  "how-to-play": "prod-retake-test",
+  "waiting-line": "prod-kill",
+  "driving-test": "prod-plus-minute",
+  "community": "icon",
+  "robux": "prod-vip-ticket",
+  "cars": "prod-golden-supercar",
+  "gamepasses": "pass-time-out",
+  "shop": "prod-revenge",
+  "author": "prod-examiner"
  },
  "shots": {
   "th1": {
@@ -44,9 +46,11 @@
    }
   },
   "pass-ban-hammer": {
-   "src": "https://tr.rbxcdn.com/180DAY-ee7c6e02e301939ffa2c8c1f668ff76e/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-ee7c6e02e301939ffa2c8c1f668ff76e/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-ee7c6e02e301939ffa2c8c1f668ff76e/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 71583720567452,
    "store_name": "Ban Hammer",
    "alt": {
@@ -54,9 +58,11 @@
    }
   },
   "pass-gravity-gun": {
-   "src": "https://tr.rbxcdn.com/180DAY-9f547c500ffb6aae92812ff16760e875/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-9f547c500ffb6aae92812ff16760e875/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-9f547c500ffb6aae92812ff16760e875/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 92809346914354,
    "store_name": "Gravity Gun 🔥",
    "alt": {
@@ -64,9 +70,11 @@
    }
   },
   "pass-time-out": {
-   "src": "https://tr.rbxcdn.com/180DAY-b5fdf5dee44d1c2a7833e39faf2b349e/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-b5fdf5dee44d1c2a7833e39faf2b349e/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-b5fdf5dee44d1c2a7833e39faf2b349e/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 133611055833620,
    "store_name": "Time Out",
    "alt": {
@@ -74,9 +82,11 @@
    }
   },
   "pass-airhorn": {
-   "src": "https://tr.rbxcdn.com/180DAY-5269cc6155028b1b556a635a3c19c3f7/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-5269cc6155028b1b556a635a3c19c3f7/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-5269cc6155028b1b556a635a3c19c3f7/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 104491280702785,
    "store_name": "Airhorn [ANNOYING] ☠️",
    "alt": {
@@ -84,9 +94,11 @@
    }
   },
   "pass-emoji": {
-   "src": "https://tr.rbxcdn.com/180DAY-d2bd68c0ccd6fa133832626a5e306d29/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-d2bd68c0ccd6fa133832626a5e306d29/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-d2bd68c0ccd6fa133832626a5e306d29/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 73260523707418,
    "store_name": "PRO EMOJI PACK 😈",
    "alt": {
@@ -94,9 +106,11 @@
    }
   },
   "prod-skip": {
-   "src": "https://tr.rbxcdn.com/180DAY-d85904526a876a6988d300665db90b5d/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-d85904526a876a6988d300665db90b5d/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-d85904526a876a6988d300665db90b5d/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 83594712941098,
    "store_name": "Skip Line [SALE]",
    "alt": {
@@ -105,9 +119,11 @@
    "also_used_by": "Skip Time [SALE]"
   },
   "prod-skip-test": {
-   "src": "https://tr.rbxcdn.com/180DAY-0e16d62ed004c8ab830c340f437d5013/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-0e16d62ed004c8ab830c340f437d5013/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-0e16d62ed004c8ab830c340f437d5013/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 105328531977019,
    "store_name": "Skip Test",
    "alt": {
@@ -115,9 +131,11 @@
    }
   },
   "prod-skip-to-end": {
-   "src": "https://tr.rbxcdn.com/180DAY-5833bf49cc28019e12149838ba6c79d0/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-5833bf49cc28019e12149838ba6c79d0/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-5833bf49cc28019e12149838ba6c79d0/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 90157103137595,
    "store_name": "Skip To End",
    "alt": {
@@ -125,9 +143,11 @@
    }
   },
   "prod-kill": {
-   "src": "https://tr.rbxcdn.com/180DAY-ef147fc3c748695ea989f40215dc7362/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-ef147fc3c748695ea989f40215dc7362/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-ef147fc3c748695ea989f40215dc7362/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 71569432380463,
    "store_name": "Kill",
    "alt": {
@@ -135,9 +155,11 @@
    }
   },
   "prod-kill-all": {
-   "src": "https://tr.rbxcdn.com/180DAY-cb69a9e580b0517dbcc4500ff4e5af7e/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-cb69a9e580b0517dbcc4500ff4e5af7e/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-cb69a9e580b0517dbcc4500ff4e5af7e/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 102398161320664,
    "store_name": "Kill All",
    "alt": {
@@ -145,9 +167,11 @@
    }
   },
   "prod-scare-all": {
-   "src": "https://tr.rbxcdn.com/180DAY-e5ef0cd3e37b628ec904e5397ee256a0/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-e5ef0cd3e37b628ec904e5397ee256a0/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-e5ef0cd3e37b628ec904e5397ee256a0/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 84707369106912,
    "store_name": "Scare All",
    "alt": {
@@ -155,9 +179,11 @@
    }
   },
   "prod-revenge": {
-   "src": "https://tr.rbxcdn.com/180DAY-260a66c0d1bd9f1d37a296e282505539/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-260a66c0d1bd9f1d37a296e282505539/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-260a66c0d1bd9f1d37a296e282505539/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 99444745706344,
    "store_name": "Revenge ⚡",
    "alt": {
@@ -165,9 +191,11 @@
    }
   },
   "prod-examiner": {
-   "src": "https://tr.rbxcdn.com/180DAY-348e9a8c2eee9cea8e29083bb499974f/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-348e9a8c2eee9cea8e29083bb499974f/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-348e9a8c2eee9cea8e29083bb499974f/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 136984438178136,
    "store_name": "Be The Examiner 📋",
    "alt": {
@@ -175,9 +203,11 @@
    }
   },
   "prod-plus-minute": {
-   "src": "https://tr.rbxcdn.com/180DAY-cca68b752e3574fc581b2e982cdfa596/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-cca68b752e3574fc581b2e982cdfa596/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-cca68b752e3574fc581b2e982cdfa596/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 76945416388444,
    "store_name": "+1 Minute",
    "alt": {
@@ -185,9 +215,11 @@
    }
   },
   "prod-vip-ticket": {
-   "src": "https://tr.rbxcdn.com/180DAY-96be65791861fe9a0415d93b38e2eae0/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-96be65791861fe9a0415d93b38e2eae0/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-96be65791861fe9a0415d93b38e2eae0/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 104038954481377,
    "store_name": "VIP Ticket 🎟️",
    "alt": {
@@ -195,9 +227,11 @@
    }
   },
   "prod-golden-supercar": {
-   "src": "https://tr.rbxcdn.com/180DAY-4ea37247f8ea659126285da3d7bf303b/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-4ea37247f8ea659126285da3d7bf303b/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-4ea37247f8ea659126285da3d7bf303b/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 95039828332574,
    "store_name": "Golden Supercar 🏆",
    "alt": {
@@ -205,9 +239,11 @@
    }
   },
   "prod-retake-test": {
-   "src": "https://tr.rbxcdn.com/180DAY-655308e819417fe6ed226734790adf82/420/420/Image/Png/noFilter",
-   "w": 420,
-   "h": 420,
+   "src": "https://tr.rbxcdn.com/180DAY-655308e819417fe6ed226734790adf82/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-655308e819417fe6ed226734790adf82/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
    "roblox_asset_id": 109600651257969,
    "store_name": "Retake Test",
    "alt": {

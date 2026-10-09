@@ -20,16 +20,16 @@
 | 页 | 主来源 | 辅助 | 最高级 | S/A 来源数 | 素材状态 | 图片 |
 |---|---|---|---|---|---|---|
 | index | G、V、GR、GP、DP、LG | AGE(经游戏页 URL) | S | 7 | 充足 | th1(封面)、icon、prod-skip-to-end |
-| beginner(栏目) | G、GP、DP(经子页) | — | S | 0(栏目索引,事实全部来自子页,sourceUrls 空,照基准) | 充足 | th1 |
-| how-to-play | G(描述原文)、DP | GP、LG、AT、游戏页;RM(B,平均游玩时长一句,标明第三方) | S | 6 | 充足(笔试内容、考场路线未获取 → 正文明写不覆盖) | th1、prod-skip-test、prod-revenge |
-| waiting-line | DP | G、DOC、AT | S | 4 | 充足(队伍长度、等候室总时长、Skip To End 是否跳笔试未获取 → 文末列出) | th1、prod-skip、prod-kill-all |
-| driving-test | G、DP | BD、TH、IC、DOC | S | 6 | 一手信息少但全部列出(障碍 3 个名词、结局 2 个名字、Retake Test、考官 2 个商品);路线 / 评分 / 结局全表未获取 → 文末列表 | th1、prod-retake-test、prod-examiner |
-| community | GR、GR2、ROLES、U、GG | G、V、EV、DOC;RM、RT(B,只在「Is there an official wiki?」里点名) | S | 11 | 充足;Discord 以「could not confirm」口径写 | th1、icon |
-| robux(栏目) | GP、DP、DOC(经子页) | — | S | 0(栏目索引,同上) | 充足 | th1 |
-| cars | G、DP | DOC、AT、IC | S | 5 | 一手只有 6 句话,全部列出;18 辆车名 / 档位表 / 概率 / The Loop 未获取 → 文末「What still has to be checked in the game?」表 | th1、prod-vip-ticket、prod-golden-supercar |
-| gamepasses | GP | DP、DOC、AT | S | 5 | 充足(5 个都有官方描述;效果细节未获取 → 正文明写未测试) | th1、pass-gravity-gun、pass-ban-hammer |
-| shop | DP | GP、G、DOC、AT | S | 5 | 充足(13 个都有官方描述) | th1、prod-scare-all、prod-plus-minute |
-| author | — | — | — | 0(编辑方针页,照基准 sourceUrls 空) | — | th1、icon |
+| beginner(栏目) | G、GP、DP(经子页) | — | S | 0(栏目索引,事实全部来自子页,sourceUrls 空,照基准) | 充足 | prod-skip(封面 / 卡图) |
+| how-to-play | G(描述原文)、DP | GP、LG、AT、游戏页;RM(B,平均游玩时长一句,标明第三方) | S | 6 | 充足(笔试内容、考场路线未获取 → 正文明写不覆盖) | prod-retake-test(封面)、prod-skip-test、prod-revenge |
+| waiting-line | DP | G、DOC、AT | S | 4 | 充足(队伍长度、等候室总时长、Skip To End 是否跳笔试未获取 → 文末列出) | prod-kill(封面)、prod-skip、prod-kill-all |
+| driving-test | G、DP | BD、TH、IC、DOC | S | 6 | 一手信息少但全部列出(障碍 3 个名词、结局 2 个名字、Retake Test、考官 2 个商品);路线 / 评分 / 结局全表未获取 → 文末列表 | prod-plus-minute(封面)、prod-retake-test、prod-examiner |
+| community | GR、GR2、ROLES、U、GG | G、V、EV、DOC;RM、RT(B,只在「Is there an official wiki?」里点名) | S | 11 | 充足;Discord 以「could not confirm」口径写 | icon(封面,正文也用) |
+| robux(栏目) | GP、DP、DOC(经子页) | — | S | 0(栏目索引,同上) | 充足 | prod-vip-ticket(封面 / 卡图) |
+| cars | G、DP | DOC、AT、IC | S | 5 | 一手只有 6 句话,全部列出;18 辆车名 / 档位表 / 概率 / The Loop 未获取 → 文末「What still has to be checked in the game?」表 | prod-golden-supercar(封面,正文也用)、prod-vip-ticket |
+| gamepasses | GP | DP、DOC、AT | S | 5 | 充足(5 个都有官方描述;效果细节未获取 → 正文明写未测试) | pass-time-out(封面)、pass-gravity-gun、pass-ban-hammer |
+| shop | DP | GP、G、DOC、AT | S | 5 | 充足(13 个都有官方描述) | prod-revenge(封面)、prod-scare-all、prod-plus-minute |
+| author | — | — | — | 0(编辑方针页,照基准 sourceUrls 空) | — | prod-examiner(封面)、icon |
 | (不建)codes | — | — | — | 0 | **官方来源 0 个码 → 不建** | — |
 | (不建)written-test / endings | — | — | — | 0 | **素材不足 → 不建**(written-test 连 B/C 都没有;endings 只有 2 个名字) | — |
 

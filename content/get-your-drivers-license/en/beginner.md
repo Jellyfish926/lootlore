@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Four guides for your first runs: how to play, the line and its skips, the driving test and endings, and the developer group.", "New to the game? Read how to play first. It follows the developer's own description line by line.", "Prices and counts on these pages come from Roblox's official records for the game, read on 9 October 2026. Anything we could not source is named as a gap."]
 related: []
 sourceUrls: []
-images: ["th1"]
+images: ["prod-skip"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

@@ -13,7 +13,7 @@ entities: ["mechanic-cars", "product-vip-ticket", "product-golden-supercar"]
 tldr: ["The official description says you can \"Win 1 of 18 cars, from rusty hatchbacks to secret supercars\". No official source we could read names the 18 or says how a car is awarded.", "One tier name is published: Epic. VIP Ticket 🎟️ (149 Robux) makes \"your next car\" Epic or better, which implies at least one tier above Epic.", "Golden Supercar 🏆 costs 39 Robux and is described as \"The best car in the game, yours to keep.\"", "Car names, tier odds and the place called The Loop still have to be checked in the game."]
 related: ["shop", "driving-test", "gamepasses"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10768565603", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png", "https://thumbnails.roblox.com/v1/games/icons?universeIds=10768565603&size=512x512&format=Png"]
-images: ["th1", "prod-golden-supercar", "prod-vip-ticket"]
+images: ["prod-golden-supercar", "prod-vip-ticket"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

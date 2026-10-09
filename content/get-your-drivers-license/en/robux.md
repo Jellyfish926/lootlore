@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Three guides: the 18 cars and the two car products, all 5 game passes, and all 13 developer products.", "The five game passes cost 9 to 1,200 Robux, and none of their descriptions mentions the tests. The skips and car items are developer products from 9 to 160 Robux.", "Every price and description was read from Roblox's store records for the game on 9 October 2026."]
 related: []
 sourceUrls: []
-images: ["th1"]
+images: ["prod-vip-ticket"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

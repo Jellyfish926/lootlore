@@ -12,7 +12,7 @@ type: "article"
 tldr: ["Get Your Driver's License! is made by the Roblox group Time Will Pass, created on 27 September 2026 and owned by the account DiveAndThrive.", "The group published five games in three days. This one has by far the most visits: 4,755,987 of them on 9 October 2026.", "The group has no description, no shout and no listed events, so the game description and the store listings are the only developer text we could read.", "We could not confirm an official Discord server. Roblox hides social links from visitors who are not signed in and age-verified."]
 related: ["how-to-play", "shop", "cars"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/356677783", "https://groups.roblox.com/v2/groups?groupIds=356677783", "https://groups.roblox.com/v1/groups/356677783/roles", "https://users.roblox.com/v1/users/10383353739", "https://games.roblox.com/v2/groups/356677783/gamesV2?accessFilter=2&limit=100&sortOrder=Asc", "https://games.roblox.com/v1/games?universeIds=10768565603", "https://games.roblox.com/v1/games/votes?universeIds=10768565603", "https://apis.roblox.com/virtual-events/v1/universes/10768565603/virtual-events", "https://create.roblox.com/docs/production/promotion/social-media-links", "https://www.roblox.com/communities/356677783/Time-Will-Pass", "https://www.roblox.com/games/104416416393862/Get-Your-Drivers-License"]
-images: ["th1", "icon"]
+images: ["icon"]
 date: "2026-10-09"
 updated: "2026-10-09"
 reviewed: "2026-10-09"

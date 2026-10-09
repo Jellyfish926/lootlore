@@ -9,13 +9,13 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
-tldr: ["Work the Deep North as four threads — resources, processing, dungeons and events — not as one new ore and one new armour set.", "After Fader, craft the Eternal Pyre and collect Embers; those go into Ember Charges, which open the material chain.", "The Winding Tunnels hold Frostcore and moulds; the Frigid Kiln needs 10 Frostcore plus 20 Stone and 5 Ice.", "Petrified Tissue smelts into Bloodgold; the normal route to the final entrance needs three lots of Malicious Blood, so expect to repeat the loop."]
+tldr: ["Work the Deep North as four threads — resources, processing, dungeons and events — not as one new ore and one new armour set.", "After Fader, build the Eternal Pyre and collect Embers; those go into Ember Charges, which open the material chain.", "The Winding Tunnels hold Frostcore and moulds; the Frigid Kiln needs 10 Frostcore plus 20 Stone and 5 Ice.", "Petrified Tissue smelts into Bloodgold; the normal route to the final entrance needs three lots of Malicious Blood, so expect to repeat the loop."]
 entities: ["eternal-pyre", "ember-charge", "frostcore", "bloodgold", "malicious-blood", "deep-north"]
 related: ["intricate-key", "kall", "traders"]
 chineseCharacters: 742
 sourceUrls: ["https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide", "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "https://www.valheim.tools/guides/deep-north-progression"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -25,9 +25,9 @@ author: "Jellyfi"
 
 The Deep North is not the usual "find a new ore, craft a full set" loop. Work it as four threads — resources, processing, dungeons and events — and build steady production before you chase the final target. Item names stay in English so they match any client language; translated names differ, but the relationships do not.
 
-## Step one: collect Embers before you leave the Ashlands
+## Step one: build an Eternal Pyre and collect Embers before you sail north
 
-After you beat Fader, craft the Eternal Pyre and use it to collect Embers. Those go into Ember Charges, which in turn unlock an important Deep North material chain. The prerequisites are set out in the [Deep North progression guide](https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide).
+After you beat Fader, build the [Eternal Pyre](/valheim/eternal-pyre/) and use it to collect Embers. Those go into Ember Charges, which in turn unlock an important Deep North material chain. The prerequisites are set out in the [Deep North progression guide](https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide).
 
 Keep your old base as your logistics hub and leave the Black Forge, blast furnace and similar equipment standing. Do not tear down the old production area to move house and then discover up north that you still need it. Check gear, food, healing and return materials before you go; on a first trip, aim only to establish a foothold.
 

@@ -459,8 +459,8 @@
    ],
    "drops": [
     {
-     "item_en": "Fader relic",
-     "item_zh": "Fader relic",
+     "item_en": "Kindled Ribs (Fader Relic in the official 1.0 notes)",
+     "item_zh": "Kindled Ribs（官方 1.0 说明写作 Fader Relic）",
      "qty": "5"
     },
     {
@@ -1484,8 +1484,8 @@
      "qty": 10
     },
     {
-     "item_en": "Fader Relic",
-     "item_zh": "Fader Relic",
+     "item_en": "Kindled Ribs (Fader Relic in the official 1.0 notes)",
+     "item_zh": "Kindled Ribs（官方 1.0 说明写作 Fader Relic）",
      "qty": 1
     }
    ],
@@ -1498,7 +1498,7 @@
    "unverified_fields": [
     "name_zh (content pack keeps English name)"
    ],
-   "page_slug": "ashlands",
+   "page_slug": "eternal-pyre",
    "requires_zh": "建造前需要先有切石机",
    "unlocked_by_zh": "切石机"
   },

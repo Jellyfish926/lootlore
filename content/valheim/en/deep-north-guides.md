@@ -9,12 +9,12 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Category index"
 type: "category"
-tldr: ["Three guides for the 1.0 Deep North: the progression route, the Intricate Key, and Kall Fimbulbringer.", "Read the route first, the key page when you hit that wall, then prepare for the final fight.", "The order exists so you stop bouncing between moulds and finished castings."]
+tldr: ["Four guides for the 1.0 Deep North: the progression route, the Eternal Pyre, the Intricate Key, and Kall Fimbulbringer.", "Read the route first, the key page when you hit that wall, then prepare for the final fight.", "The order exists so you stop bouncing between moulds and finished castings."]
 related: []
 chineseCharacters: 296
 sourceUrls: []
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -22,7 +22,7 @@ author: "Jellyfi"
 ---
 # Valheim Deep North Guides: 1.0 Endgame
 
-Read the overall route first, then the Intricate Key page when you hit that wall, then prepare for Kall. The three guides cover progression order, the key item and the final fight, so you stop bouncing between moulds and finished castings.
+Read the overall route first, then the Intricate Key page when you hit that wall, then prepare for Kall. The four guides cover progression order, the Eternal Pyre, the key item and the final fight, so you stop bouncing between moulds and finished castings.
 
 ## Pick a guide by problem
 

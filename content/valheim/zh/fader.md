@@ -15,7 +15,7 @@ related: ["deep-north", "combat", "mead"]
 chineseCharacters: 758
 sourceUrls: ["https://valheim.fandom.com/wiki/Fader"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -57,7 +57,7 @@ Fader 的招式涉及地刺、持续火焰、陨石和近身攻击，具体机�
 
 区分直接被近身击中、踩进持续危险和体力耗尽三种情况。前者练动作，第二种调整观察习惯，第三种缩短输出并改变食物安排。只有确定是装备容错不足，再集中升级相关部位。
 
-击败 Fader 后，保管新掉落并查看 Eternal Pyre 的解锁，这与深北之境早期资源链有关。不要只庆祝灰烬阶段结束就立刻北上；下一阶段仍需要保留旧工作站和成熟的补给体系。
+击败 Fader 后，保管新掉落并查看 [Eternal Pyre 的配方](/valheim/zh/eternal-pyre/)，这与深北之境早期资源链有关。不要只庆祝灰烬阶段结束就立刻北上；下一阶段仍需要保留旧工作站和成熟的补给体系。
 
 ## 接下来可以看
 

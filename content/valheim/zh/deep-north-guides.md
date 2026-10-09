@@ -9,12 +9,12 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "栏目导航"
 type: "category"
-tldr: ["三篇覆盖 1.0 深北之境：推进流程、Intricate Key 制作与 Kall Fimbulbringer。", "先读流程，卡在钥匙时读制作，最后再准备最终战。", "按这个顺序读，可以避免在模具与成品之间反复走弯路。"]
+tldr: ["四篇覆盖 1.0 深北之境：推进流程、Eternal Pyre、Intricate Key 制作与 Kall Fimbulbringer。", "先读流程，卡在钥匙时读制作，最后再准备最终战。", "按这个顺序读，可以避免在模具与成品之间反复走弯路。"]
 related: []
 chineseCharacters: 296
 sourceUrls: []
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -22,7 +22,7 @@ author: "Jellyfi"
 ---
 # 英灵神殿深北之境攻略导航：1.0 最终阶段
 
-建议先看整体流程，再按卡点阅读 Intricate Key 制作，最后准备 Kall。三篇分别解决推进顺序、关键道具和最终战斗，避免在模具与成品之间反复走弯路。
+建议先看整体流程，再按卡点阅读 Intricate Key 制作，最后准备 Kall。四篇分别解决推进顺序、Eternal Pyre、关键道具和最终战斗，避免在模具与成品之间反复走弯路。
 
 ## 按问题选择攻略
 

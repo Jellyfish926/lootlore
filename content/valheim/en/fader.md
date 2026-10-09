@@ -15,7 +15,7 @@ related: ["deep-north", "combat", "mead"]
 chineseCharacters: 758
 sourceUrls: ["https://valheim.fandom.com/wiki/Fader"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -57,7 +57,7 @@ When extra enemies appear, deal first with whatever blocks your exit. In co-op y
 
 Separate three cases: taken out by a direct melee hit, walked into a lingering hazard, or ran out of stamina. The first is animation practice, the second is a change in what you watch, the third means shorter damage windows and a different food setup. Only once you are sure the problem is gear tolerance should you focus on upgrading that piece.
 
-After you beat Fader, store the new drops and look at the Eternal Pyre unlock, which feeds the early Deep North resource chain. Do not head north the moment the Ashlands stage ends; the next stage still needs your old workstations and a supply system that already works.
+After you beat Fader, store the new drops and look at the [Eternal Pyre recipe](/valheim/eternal-pyre/), which feeds the early Deep North resource chain. Do not head north the moment the Ashlands stage ends; the next stage still needs your old workstations and a supply system that already works.
 
 ## What to read next
 

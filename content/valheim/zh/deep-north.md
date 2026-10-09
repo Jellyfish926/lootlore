@@ -9,13 +9,13 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
-tldr: ["深北之境按资源、加工、地牢和事件四条线推进，不要当成「一种新矿加一套新装备」。", "击败 Fader 后制作 Eternal Pyre 并收集 Embers，它们做成 Ember Charge，打开后续材料链。", "Winding Tunnels 里有 Frostcore 与模具；Frigid Kiln 需要 10 个 Frostcore，外加 20 石头和 5 冰。", "Petrified Tissue 冶炼成 Bloodgold；常规路线抵达最终入口需要三份 Malicious Blood，因此这个循环要重复。"]
+tldr: ["深北之境按资源、加工、地牢和事件四条线推进，不要当成「一种新矿加一套新装备」。", "击败 Fader 后建造 Eternal Pyre 并收集 Embers，它们做成 Ember Charge，打开后续材料链。", "Winding Tunnels 里有 Frostcore 与模具；Frigid Kiln 需要 10 个 Frostcore，外加 20 石头和 5 冰。", "Petrified Tissue 冶炼成 Bloodgold；常规路线抵达最终入口需要三份 Malicious Blood，因此这个循环要重复。"]
 entities: ["eternal-pyre", "ember-charge", "frostcore", "bloodgold", "malicious-blood", "deep-north"]
 related: ["intricate-key", "kall", "traders"]
 chineseCharacters: 742
 sourceUrls: ["https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide", "https://www.pcgamer.com/games/survival-crafting/valheim-intricate-key/", "https://www.valheim.tools/guides/deep-north-progression"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -25,9 +25,9 @@ author: "Jellyfi"
 
 深北之境不是“找到新矿就能做全套装备”的常规循环。建议按资源、加工、地牢和事件四条线推进，先做出能够持续生产的系统，再挑战最终目标。以下保留重要物品英文名称，方便不同语言客户端对照；中文译名差异不会改变物品之间的关系。
 
-## 第一步：离开灰烬前收集 Embers
+## 第一步：北上前先造 Eternal Pyre、收集 Embers
 
-击败 Fader 后先制作 Eternal Pyre，用它收集 Embers。它们参与 Ember Charges 的制作，而后者关联深北的重要材料获取。前置关系见[深北推进资料](https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide)。
+击败 Fader 后先建造 [Eternal Pyre](/valheim/zh/eternal-pyre/)，用它收集 Embers。它们参与 Ember Charges 的制作，而后者关联深北的重要材料获取。前置关系见[深北推进资料](https://mobalytics.gg/gamebase/guides/valheim-deep-north-progression-guide)。
 
 建议把旧基地继续作为后勤中心，保留黑锻炉与高炉等设备。不要为了搬家先拆掉旧生产区，走到北方再发现仍然需要它。出发前检查装备、食物、恢复与回程材料，初次探索只争取建立落脚点。
 

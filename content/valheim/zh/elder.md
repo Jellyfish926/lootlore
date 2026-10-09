@@ -9,13 +9,13 @@ language: "zh-CN"
 checkedAt: "2026-09-17"
 scope: "原版标准生存；世界设置、模组及后续补丁可能改变规则"
 type: "article"
-tldr: ["三颗上古种子用于召唤古树长老，种子由灰矮人暴徒和灰矮人巢穴获得。", "这场战斗打的是场地：树根和普通敌人会让原本安全的位置中途变得不能站。", "古树长老对火相对脆弱，招式包括远程藤蔓、召唤树根与近身踩踏。", "沼泽钥匙只负责开门：先解决抗毒和运输，再走进沼泽。"]
+tldr: ["三颗上古种子用于召唤古树长老，种子由灰矮人暴徒和灰矮人巢穴获得。", "这场战斗打的是场地：树根和普通敌人会让原本安全的位置中途变得不能站。", "按两家社区 wiki，古树长老对火焰非常弱，招式包括远程藤蔓、召唤树根与近身踩踏。", "沼泽钥匙只负责开门：先解决抗毒和运输，再走进沼泽。"]
 entity: "elder"
 related: ["swamp", "mead", "portals"]
 chineseCharacters: 733
-sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder"]
+sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder", "https://valheim.wiki/w/The_Elder"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -35,7 +35,7 @@ author: "Jellyfi"
 
 ## 远程路线怎样减少压力
 
-弓与火箭是可以考虑的组合，古树长老对火焰较为脆弱；其攻击包括远程藤蔓、召唤树根和近身踩踏，见[古树长老资料](https://valheim.fandom.com/wiki/The_Elder)。装备并不是唯一关键，命中、耐久和体力同样影响战斗是否能持续。
+弓与火箭是可以考虑的组合，两家社区 wiki 都把古树长老列为对火焰非常弱；其攻击包括远程藤蔓、召唤树根和近身踩踏，见[古树长老资料](https://valheim.fandom.com/wiki/The_Elder)。装备并不是唯一关键，命中、耐久和体力同样影响战斗是否能持续。
 
 利用祭坛柱体与地形观察远程攻击的来向，但不要把一个掩体当作永久住所。附近出现树根后，就换到仍有移动空间的位置。为了多射一箭留在被包围的点位，往往会失去更多输出时间。
 

@@ -85,7 +85,7 @@
     "Blunt"
    ],
    "weak": [
-    "Fire"
+    "Fire (very weak)"
    ],
    "resistant": [],
    "very_resistant": [],
@@ -113,12 +113,15 @@
     "effect_zh": "生命恢复 +30%，劈砍伤害 +60%，镐击伤害 +60%，持续 300 秒",
     "name_zh": "古树长老之力"
    },
-   "unlocks_en": "Swamp key to open Burial Chambers (primary source of Scrap iron)",
-   "unlocks_zh": "沼泽钥匙，用于打开诡秘墓穴（铁碎片的主要来源）",
+   "unlocks_en": "Swamp key to open Sunken Crypts (primary source of Scrap iron)",
+   "unlocks_zh": "沼泽钥匙，用于打开沉没墓穴（铁碎片的主要来源）",
    "source_urls": [
-    "https://valheim.wiki/w/The_Elder"
+    "https://valheim.wiki/w/The_Elder",
+    "https://valheim.wiki/w/Swamp_Key",
+    "https://valheim.fandom.com/wiki/The_Elder",
+    "https://valheim.fandom.com/wiki/Swamp_Key"
    ],
-   "accessed": "2026-09-18",
+   "accessed": "2026-10-10",
    "unverified_fields": [],
    "biome_zh": "黑暗林山",
    "damage_types_zh": [
@@ -126,7 +129,7 @@
     "钝击"
    ],
    "weak_zh": [
-    "火焰"
+    "火焰（非常弱）"
    ],
    "immune_zh": [
     "毒素",
@@ -184,16 +187,18 @@
    ],
    "forsaken_power": {
     "name_en": "Bonemass Power",
-    "effect_en": "Slightly resistant vs Blunt/Slash/Pierce, Block stamina usage -100%, Block stamina return +5, for 300s",
-    "effect_zh": "对钝击 / 斩击 / 穿刺略有抗性，格挡体力消耗 -100%，格挡体力回复 +5，持续 300 秒",
+    "effect_en": "25% resistance VS pierce, slash, and blunt damage, 100% reduced block stamina usage, 5 stamina on return per block, for 300s",
+    "effect_zh": "对穿刺、斩击和钝击伤害有 25% 抗性，格挡体力消耗降低 100%，每次格挡返还 5 点体力，持续 300 秒",
     "name_zh": "邪骨恶灵之力"
    },
    "unlocks_en": "Wishbone: locates Silver veins (Mountain) and buried Muddy scrap piles (Swamp)",
    "unlocks_zh": "愿望骨：可探测银矿脉（雪山）与埋藏的泥泞的废料堆（沼泽）",
    "source_urls": [
-    "https://valheim.wiki/w/Bonemass"
+    "https://valheim.wiki/w/Bonemass",
+    "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981",
+    "https://valheim.wiki/w/Forsaken_power"
    ],
-   "accessed": "2026-09-18",
+   "accessed": "2026-10-10",
    "unverified_fields": [],
    "biome_zh": "沼泽",
    "damage_types_zh": [
@@ -261,16 +266,18 @@
    ],
    "forsaken_power": {
     "name_en": "Moder Power",
-    "effect_en": "Max carry weight +300, Resistant vs Frost, Movement speed +10% for 300s",
-    "effect_zh": "最大负重 +300，冰霜抗性，移动速度 +10%，持续 300 秒",
+    "effect_en": "Always tailwind, 300 increased carry weight, 10% increased movement speed, 50% frost resistance, for 300s",
+    "effect_zh": "始终顺风，负重增加 300，移动速度提高 10%，50% 冰霜抗性，持续 300 秒",
     "name_zh": "冰霜龙母之力"
    },
    "unlocks_en": "Scythe handle, Toadstool, Fragrant bundle and Mountain peak pepper powder from The Bog Witch trader",
    "unlocks_zh": "沼泽女巫商人出售镰刀把、毒蕈、香料包与山顶胡椒粉",
    "source_urls": [
-    "https://valheim.wiki/w/Moder"
+    "https://valheim.wiki/w/Moder",
+    "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981",
+    "https://valheim.wiki/w/Forsaken_power"
    ],
-   "accessed": "2026-09-18",
+   "accessed": "2026-10-10",
    "unverified_fields": [],
    "biome_zh": "雪山",
    "damage_types_zh": [
@@ -369,7 +376,20 @@
    "page_slug": "queen",
    "order": 6,
    "biome": "Mistlands",
-   "summon": [],
+   "summon": [
+    {
+     "item_en": "Sealbreaker",
+     "item_zh": "破封者",
+     "qty": "1 (entry key, not consumed; the first fight requires no sacrifice)",
+     "qty_zh": "1（进入用的钥匙，不消耗；首战不需要祭品）"
+    },
+    {
+     "item_en": "Seeker soldier trophy",
+     "item_zh": "Seeker soldier trophy",
+     "qty": "3 (to summon her again after her initial defeat)",
+     "qty_zh": "3（首次击败后再次召唤）"
+    }
+   ],
    "hp": 12500,
    "hp_source": "https://valheim.wiki/w/The_Queen",
    "damage_types": [
@@ -406,11 +426,13 @@
    "unlocks_en": null,
    "unlocks_zh": null,
    "source_urls": [
-    "https://valheim.wiki/w/The_Queen"
+    "https://valheim.wiki/w/The_Queen",
+    "https://valheim.wiki/w/Sealbreaker",
+    "https://valheim.fandom.com/wiki/The_Queen",
+    "https://valheim.fandom.com/wiki/Sealbreaker"
    ],
-   "accessed": "2026-09-18",
+   "accessed": "2026-10-10",
    "unverified_fields": [
-    "summon (first fight requires no sacrifice per wiki text; no summon-item list found)",
     "unlocks_en"
    ],
    "biome_zh": "迷雾之地",

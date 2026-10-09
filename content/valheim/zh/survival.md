@@ -3,20 +3,20 @@ slug: "survival"
 url: "/valheim/zh/survival/"
 title: "英灵神殿生存建设攻略导航：基地与补给"
 seoTitle: "英灵神殿生存建设攻略导航：基地与补给"
-description: "让基地、厨房、农田和交通真正服务探索，而不是成为新的负担。"
+description: "英灵神殿生存建设导航：三个食物槽与开局食物数值、休息好了的时长算法、潮湿、寒冷与冻伤的惩罚、死亡损失，再链到基地、种田、蜜酒、传送门与航海等八篇攻略。"
 category: "生存建设"
 language: "zh-CN"
-checkedAt: "2026-09-17"
+checkedAt: "2026-10-10"
 scope: "栏目导航"
 type: "category"
-tldr: ["八篇覆盖后方建设：基地、食物、种田、蜜酒、休息好了、传送门、航海与商人。", "按瓶颈选：经常断粮先看食物与种田，经常缺抗性补给先看蜜酒。", "基地布局与休息状态适合一起读，传送门与航海适合一起读。"]
+tldr: ["八篇覆盖后方建设：基地、食物、种田、蜜酒、休息好了、传送门、航海与商人。", "按社区 wiki，开局有 25 点生命和 50 点体力，最多可以同时生效三种不同的食物。", "wiki 给出的休息好了时长是 7 分钟加舒适度等级，正在休息 20 秒后获得。", "默认死亡惩罚下，wiki 列出每项技能损失 5%，之后有 10 分钟的无技能损失。"]
 related: []
-chineseCharacters: 630
-sourceUrls: []
+chineseCharacters: 1635
+sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Food", "https://valheim.wiki/w/Health", "https://valheim.wiki/w/Stamina", "https://valheim.wiki/w/Resting", "https://valheim.wiki/w/Rested", "https://valheim.wiki/w/Comfort", "https://valheim.wiki/w/Shelter", "https://valheim.wiki/w/Wet", "https://valheim.wiki/w/Cold", "https://valheim.wiki/w/Freezing", "https://valheim.wiki/w/Death", "https://valheim.wiki/w/No_skill_drain", "https://valheim.wiki/w/Corpse_run", "https://valheim.fandom.com/wiki/Food", "https://valheim.fandom.com/wiki/Cold", "https://valheim.fandom.com/wiki/Freezing"]
 date: "2026-09-17"
-updated: "2026-09-17"
-reviewed: "2026-09-17"
-gameVersion: "1.0.12"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "1.0.17"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,64 @@ author: "Jellyfi"
 
 按眼前瓶颈选文章：经常断粮就从食物与种田开始；频繁缺抗性补给就看蜜酒；路途消耗太大就看传送门与航海。基地布局与休息状态适合一起检查。
 
-## 按问题选择攻略
+## 英灵神殿的食物是怎么运作的？
+
+按社区维护的 Valheim Wiki，开局有 25 点生命和 50 点基础体力，食物在限定时间内提高这两项。最多可以同时生效三种不同的食物，每份加成会持续减弱，直到食物消化完，而且不会饿死。下面是 wiki 给出的五种青青草原食物的数值；[食物攻略](/valheim/zh/food/)讲怎样按活动填满三个食物槽。
+
+| 青青草原食物（按 wiki） | 生命 | 体力 | 持续时间 |
+|---|---|---|---|
+| 覆盆子 | 7 | 20 | 10 分钟 |
+| 蘑菇 | 15 | 15 | 15 分钟 |
+| Grilled neck tail | 25 | 8 | 20 分钟 |
+| Cooked boar meat | 30 | 10 | 20 分钟 |
+| Cooked deer meat | 35 | 12 | 20 分钟 |
+
+从 wiki 这张表看，浆果偏体力，熟肉偏生命，所以混着吃从第一天起就能两头兼顾。同一种食物要等上一份消化了一部分才能再吃，wiki 说这时图标会闪烁。等采集跟不上消耗，就靠[种田](/valheim/zh/farming/)把食物槽填满。
+
+## 怎样获得休息好了增益？
+
+按社区 wiki，附近没有敌人时坐在火边，或者在遮蔽下靠近火源，就会得到正在休息。wiki 把遮蔽定义为有屋顶加 80% 的覆盖，并写明处于潮湿状态时不会开始正在休息。它还写到，不被打断地过 20 秒后，正在休息会变成休息好了。
+
+| 休息好了的细节（按 wiki） | 数值 |
+|---|---|
+| 生命恢复 | +50% |
+| 体力恢复 | +100% |
+| 魔力恢复 | +100% |
+| 技能经验获取 | +50% |
+| 持续时间 | 7 分钟加舒适度等级；舒适度 1 时为 8 分钟 |
+| 常规上限 | 舒适度 22，即 29 分钟 |
+
+按 wiki，舒适度决定休息好了持续多久，经验加成不随它变化。[休息好了攻略](/valheim/zh/rested/)讲增益为什么不出现，[基地攻略](/valheim/zh/first-base/)讲火源、屋顶和排烟。
+
+## 潮湿、寒冷和冻伤有什么影响？
+
+两家社区 wiki 都把这三种状态列为降低生命和体力恢复，表里用的是两家一致的数值。
+
+| 状态 | 什么时候出现（按 wiki） | 生命恢复 | 体力恢复 | 怎样抵消 |
+|---|---|---|---|---|
+| 潮湿（Wet） | 淋雨或泡在水里；持续 120 秒 | -25% | -15% | 遮蔽，或站在火源旁边 |
+| 寒冷（Cold） | 夜晚，或在遮蔽下处于冻伤 | -50% | -25% | 火源，或冰霜抗性 |
+| 冻伤（Freezing） | 雪山、冰霜龙母战、霜龙事件 | -100% | -60% | 冰霜抗性、火源；遮蔽会把它降为寒冷 |
+
+冻伤还会每秒造成 1 点伤害，wiki 说只有不处于潮湿状态时冰霜抗性才能抵消它。两家 wiki 还都写着，潮湿会让你弱冰霜和雷电，而且在[沼泽](/valheim/zh/swamp/)里只要不在屋顶下就会一直存在。去[雪山](/valheim/zh/mountains/)之前，wiki 列出的抵消手段包括 Frost resistance mead 和 Wolf fur cape；[蜜酒攻略](/valheim/zh/mead/)讲怎么酿。
+
+## 死亡会损失什么？
+
+按 wiki，你会留下一块装着全部装备的墓碑，在默认死亡惩罚下每项技能损失总等级的 5%。你会在最后睡过的床复活，没有床就在献祭石复活。
+
+| 死亡之后（按 wiki） | 持续 | 作用 |
+|---|---|---|
+| 墓碑 | 不会过期 | 在死亡地点保存你的装备 |
+| 无技能损失（No skill drain） | 600 秒（10 分钟） | 防止再次死亡时继续损失技能 |
+| 捡尸（Corpse run） | 50 秒 | 跑步和跳跃体力消耗 -75%，最大负重 +150，抵抗钝击、斩击和穿刺 |
+
+按 wiki 的 Corpse run 页，只有把墓碑完全清空，捡尸效果才会生效。[捡尸攻略](/valheim/zh/death-recovery/)把这些数值变成一套救援方案。
+
+## 开局头几天该做什么？
+
+按[新手第一天](/valheim/zh/first-day/)的顺序来：采集，先让庇护所能用再把它做大，追求稳定的食物，天黑前做最后一次检查。屋顶下的一堆火是第一项生存升级：按上面 wiki 的规则，它给你休息好了，也能把你烘干。接下来是床，因为 wiki 把复活点和你最后睡过的床绑在一起。
+
+## 你需要哪一篇生存攻略？
 
 
 ![平原上的木屋平台前，玩家手持锤子放置木墙，界面显示建造部件“Wood wall 45°”](ss07 "用锤子建造：生存栏目的起点，是一座能支撑远征的基地")
@@ -60,6 +117,6 @@ author: "Jellyfi"
 
 认识三位商人的功能差异，规划寻找和回访路线，并说明 1.0 背包扩容与负重提升为什么不是一回事。
 
-## 阅读范围
+## 这些攻略默认什么规则？
 
 攻略默认原版标准生存规则。世界设置、模组与后续补丁可能改变表现。每篇保留资料链接与核对日期，战斗方案属于开荒建议，并非唯一解法。

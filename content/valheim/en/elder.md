@@ -9,13 +9,13 @@ language: "en"
 checkedAt: "2026-09-17"
 scope: "Vanilla standard survival; world modifiers, mods and later patches may change the rules"
 type: "article"
-tldr: ["Three ancient seeds summon The Elder; they come from Greydwarf brutes and Greydwarf nests.", "The fight is about controlling ground — roots and ordinary mobs can make a safe spot unstandable mid-fight.", "The Elder is relatively weak to fire, and his attacks include ranged vines, summoned roots and a melee stomp.", "The Swamp Key only opens doors: sort out poison resistance and transport before you walk in."]
+tldr: ["Three ancient seeds summon The Elder; they come from Greydwarf brutes and Greydwarf nests.", "The fight is about controlling ground — roots and ordinary mobs can make a safe spot unstandable mid-fight.", "Both community wikis list The Elder as very weak to Fire; his attacks include ranged vines, summoned roots and a melee stomp.", "The Swamp Key only opens doors: sort out poison resistance and transport before you walk in."]
 entity: "elder"
 related: ["swamp", "mead", "portals"]
 chineseCharacters: 733
-sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder"]
+sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder", "https://valheim.wiki/w/The_Elder"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -35,7 +35,7 @@ Fight in daylight if you can, and clear the threats you have already spotted alo
 
 ## How the ranged route lowers the pressure
 
-Bow and fire arrows are worth considering, as The Elder is relatively weak to fire; his attacks include ranged vines, summoned roots and a melee stomp — see the [Elder entry](https://valheim.fandom.com/wiki/The_Elder). Gear is not the only factor: accuracy, durability and stamina all decide whether you can keep the fight going.
+Bow and fire arrows are worth considering, as both community wikis list The Elder as very weak to Fire; his attacks include ranged vines, summoned roots and a melee stomp — see the [Elder entry](https://valheim.fandom.com/wiki/The_Elder). Gear is not the only factor: accuracy, durability and stamina all decide whether you can keep the fight going.
 
 Use the altar pillars and terrain to watch where ranged attacks come from, but do not treat one piece of cover as permanent housing. Once roots appear nearby, move to a spot that still has room. Staying in a surrounded position for one extra arrow usually costs you far more damage time than it buys.
 

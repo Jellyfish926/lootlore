@@ -42,3 +42,4 @@
 | deep fishing wiki creatures / animals / fish list（鱼图鉴） | 没有任何 S/A/B 级鱼种名单；竞品的「鱼图鉴」页一条鱼名都没有。硬做只能编 |
 | deep fishing script / auto fish | 外挂，违反 Roblox 条款，总站不做 |
 | deep fishing enchant 单独成页 | 一手来源只证明附魔石存在与价格，效果未知，单独成页必然是薄页 → 合并进 shop 页一节 |
+| ↑ 2026-10-10 更新 | 依据 GSC（7 词 131 展示 / 44 点击）已单独成页 /deep-fishing/enchants/；上一行保留作当时的判断记录 |

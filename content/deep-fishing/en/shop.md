@@ -14,7 +14,7 @@ related: ["gamepasses", "rods", "rarity"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"]
 images: ["art01"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 gameVersion: "2026-09-28 update"
 draft: false
@@ -41,7 +41,7 @@ Enchant Stones are a consumable sold in two grades. They are among the newest ad
 | x10 Ultra Enchant Stones | 1,649 |
 | x50 Ultra Enchant Stones | 4,499 |
 
-What an enchant does, which items take one, and what the Ultra grade adds are not in any official listing. Fan guides link enchanting to rods and to a paid island, but we have not verified that, so we do not describe enchant effects here. If you have a screenshot of the enchant screen, the [author page](/deep-fishing/author/) says how to send it.
+What an enchant does, which items take one, and what the Ultra grade adds are not in any official listing. Fan guides link enchanting to rods and to a paid island, but we have not verified that, so we do not describe enchant effects here; the [enchants page](/deep-fishing/enchants/) sets out what is confirmed and why the store has no Enchant Scroll. If you have a screenshot of the enchant screen, the [author page](/deep-fishing/author/) says how to send it.
 
 ## Which lucky chests can you buy?
 

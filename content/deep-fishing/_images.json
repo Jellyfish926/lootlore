@@ -19,7 +19,8 @@
   "gamepasses": "art03",
   "shop": "art01",
   "author": "art02",
-  "waters": "art03"
+  "waters": "art03",
+  "enchants": "art03"
  },
  "shots": {
   "art01": {

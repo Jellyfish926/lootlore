@@ -9,12 +9,12 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Category index"
 type: "category"
-tldr: ["Three guides: every rod in order, all nine game passes, and the rest of the Robux shop.", "Rods and Strength move your cast farther; luck, passes and chests come after.", "Prices are the developer's own Robux listings on 29 September 2026."]
+tldr: ["Four guides: every rod in order, all nine game passes, the rest of the Robux shop, and what is confirmed about enchants.", "Rods and Strength move your cast farther; luck, passes and chests come after.", "Prices are the developer's own Robux listings on 29 September 2026."]
 related: []
 sourceUrls: []
 images: ["art05"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 gameVersion: "2026-09-28 update"
 draft: false
@@ -22,9 +22,9 @@ author: "Jellyfi"
 ---
 # Deep Fishing Rods & Upgrades: What to Buy and When
 
-In Deep Fishing, rods and Strength decide how far you cast, and distance decides which fish you can reach. Everything else — luck passes, chests, enchant stones, one-throw boosts — makes the most sense once you are already reaching new water. These three guides list every item with its official price.
+In Deep Fishing, rods and Strength decide how far you cast, and distance decides which fish you can reach. Everything else — luck passes, chests, enchant stones, one-throw boosts — makes the most sense once you are already reaching new water. The guides in this section list every item with its official price.
 
-We built this section from the developer's own Roblox store data: 9 game passes and 89 developer products registered for the game. That is how the rod list names all 21 rods on the regular ladder, where fan wikis cover only a handful.
+We built this section from the developer's own Roblox store data: 9 game passes and 97 developer products registered for the game as of 10 October 2026. That is how the rod list names all 21 rods on the regular ladder, where fan wikis cover only a handful.
 
 ## Pick a guide by purchase
 
@@ -47,7 +47,7 @@ Enchant Stones and Ultra Enchant Stones, four lucky chest types, Server Luck up 
 | Rod unlock | Permanent | 39 – 6,499 | Casting farther |
 | Game pass | Permanent | 99 – 599 | A lasting boost or convenience |
 | Stat Upgrade | Not stated | 39 – 999 | Paid upgrade tiers |
-| Enchant stone | Used up | 49 – 4,499 per bundle | Enchanting (effects not published) |
+| Enchant stone | Used up | 49 – 4,499 per bundle | [Enchanting](/deep-fishing/enchants/) (effects not published) |
 | Lucky chest | Used up | 79 – 799 per bundle | Random rewards (odds not published) |
 | One-throw boost | One cast | 8 – 24 | A single important cast |
 

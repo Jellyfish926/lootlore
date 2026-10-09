@@ -1481,16 +1481,20 @@
     {
      "item_en": "Stone",
      "item_zh": "石头",
-     "qty": 10
+     "qty": 10,
+     "qty_en": "10 (per the community wiki)",
+     "qty_zh": "10（按社区 wiki）"
     },
     {
-     "item_en": "Kindled Ribs (Fader Relic in the official 1.0 notes)",
-     "item_zh": "Kindled Ribs（官方 1.0 说明写作 Fader Relic）",
-     "qty": 1
+     "item_en": "Kindled Ribs (Fader Relic in the official 1.0 notes, which give no recipe)",
+     "item_zh": "Kindled Ribs（官方 1.0 说明写作 Fader Relic，没有给出配方）",
+     "qty": 1,
+     "qty_en": "1 (per the community wiki)",
+     "qty_zh": "1（按社区 wiki）"
     }
    ],
-   "requires_en": "Requires a Stonecutter to be built",
-   "unlocked_by_en": "Stonecutter",
+   "requires_en": "Requires a Stonecutter to be built (per the community wiki)",
+   "unlocked_by_en": "Stonecutter (per the community wiki)",
    "source_urls": [
     "https://valheim.wiki/w/Eternal_Pyre"
    ],
@@ -1499,8 +1503,8 @@
     "name_zh (content pack keeps English name)"
    ],
    "page_slug": "eternal-pyre",
-   "requires_zh": "建造前需要先有切石机",
-   "unlocked_by_zh": "切石机"
+   "requires_zh": "建造前需要先有切石机（按社区 wiki）",
+   "unlocked_by_zh": "切石机（按社区 wiki）"
   },
   "portal": {
    "type": "station",

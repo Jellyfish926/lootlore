@@ -56,10 +56,10 @@ The official Steam news feed has announced two passes as of October 10, 2026. Da
 
 | Pass | Announced | Theme | What the announcement lists |
 | --- | --- | --- | --- |
-| First Paw Pass | Sep 1, 2026 | Circus | Themed skins, hats, emotes and cosmetic/emote chests "with up to legendary rarity"; 100 Bongo Coins per lane |
-| Paw Pass: Halloween Edition | Oct 1, 2026 | Halloween | "all sorts of skins, hats, emotes" and chests with guaranteed rarity up to legendary; three UI themes |
+| First Paw Pass | Sep 1, 2026 | Circus | Themed skins, hats, [emotes](/bongo-cat/emotes/) and cosmetic/emote chests "with up to legendary rarity"; 100 Bongo Coins per lane |
+| Paw Pass: Halloween Edition | Oct 1, 2026 | [Halloween](/bongo-cat/halloween/) | "all sorts of skins, hats, emotes" and chests with guaranteed rarity up to legendary; three UI themes |
 
-Irox Games, the developer of Bongo Cat, has not published an item-by-item reward list for either pass, so this page does not name individual skins or hats. A [fan wiki](https://bongo-cat.fandom.com/wiki/Paw_pass) has started one for Circus, but it cannot be checked against an official list. UI themes from a pass show up in the BongoDex under the Paw Pass Collection as well as the UI themes collection. For what Legendary means in drop terms, see the odds table in [hats and skins](/bongo-cat/hats-skins/).
+Irox Games, the developer of Bongo Cat, has not published an item-by-item reward list for either pass, so this page does not name individual skins or hats. A [fan wiki](https://bongo-cat.fandom.com/wiki/Paw_pass) has started one for Circus, but it cannot be checked against an official list. UI themes from a pass show up in the BongoDex under the Paw Pass Collection as well as the UI themes collection. For what [Legendary](/bongo-cat/legendary-odds/) means in drop terms, see the odds table in [hats and skins](/bongo-cat/hats-skins/).
 
 ## Does a Paw Pass expire if you miss the month?
 

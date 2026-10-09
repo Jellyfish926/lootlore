@@ -1,0 +1,46 @@
+32 条命题，0 条被推翻，4 条未验。
+
+取证说明：全部自行重新取证（公告接口用 count=100&maxlength=0 一次取满并另用 enddate 翻页确认无更早；道具商店用 ajaxgetitemdefs 与 detail 页；价格 cc=us），没有采信 raw/ 下的写手文件。本页无 REFUTED；A 级命题全验，B 级也基本逐条验过（未做抽样）。
+
+| 编号 | 命题 | 验证路径（URL）| 结果 | 证据（原文片段或数值）| 取证时间（UTC，2026-10-09）|
+|---|---|---|---|---|---|
+| H01 | 官方公告共 63 条（steam_community_announcements） | API ...GetNewsForApp/v2/?appid=3419430&count=100&maxlength=0&feeds=steam_community_announcements（count=100 一次返回，另用 enddate=1738588746 再翻一页只回最早那条 gid 1790214123211282，无更早） | CONFIRMED | appnews.count=63，newsitems=63，最早 2025-02-03，最晚 2026-10-01。附注：不限 feed 时另有 PC Gamer 3 条、SteamDB 1 条第三方新闻，非官方公告，不计 | 2026-10-09 22:55Z |
+| H02 | 2026-10-01 公告（gid 1845383656381895）标题 UI THEMES are here!，含小节 Paw Pass: Halloween Edition，「This month's theme is Halloween」 | news/app/3419430/view/1845383656381895 + API contents | CONFIRMED | date=1790869380 即 2026-10-01 15:43 UTC；原文「[h2]Paw Pass: Halloween Edition [/h2]…This month's theme is [b]Halloween[/b]!」 | 22:55Z |
+| H03 | 引文「you will be able to get all sorts of skins, hats, emotes, as well as chest with guaranteed rarity up to legendary」 | 同上 | CONFIRMED | 原文逐字一致（guaranteed rarity 为粗体） | 22:55Z |
+| H04 | 引文「this month's pass will also include 3 UI themes」「The Paw Pass also includes three UI themes this month」 | 同上 | CONFIRMED | 两句均在原文（后一句后接「:>」） | 22:55Z |
+| H05 | 否定：该公告没有任何单件物品名、奖励数量/里程碑数、结束日期、价格（页内 Question 表 4 行 None/Not stated） | 同上，通读全文 | CONFIRMED | 全文无 milestone、无价格、无日期；Halloween 小节仅 2 句 + 通行证操作说明 | 22:55Z |
+| H06 | 引文「Later this month, they will be added to drop in the emote chest」；「choose between one of 3 new UI Themes」；通行证 3 个与可三选 3 个是否同一批 not confirmed | 同上 | CONFIRMED | 原文「So this month you can choose between one of 3 new UI Themes. Later this month, they will be added to drop in the **emote chest**!」；另有「UIs that are included in the Paw Pass will be shown in the Paw Pass Collection」，未说明是否同一批 | 22:55Z |
+| H07 | UI 主题在 Inventory 标签 UI Themes 子标签 | 同上 | CONFIRMED | 「found in the Inventory tab, under the UI Themes subtab」 | 22:55Z |
+| H08 | 首段/lede：「announced on October 1, 2026, with a free lane, a premium lane and no claim deadline」（把免费道/付费道/无期限挂在 10-01 公告之后） | 同上 + gid 1842212951313382 | UNVERIFIED | 10-01 公告全文无 lane、premium、deadline 字样；这三点只在 2026-09-01 公告（「paid version of the pass」「rewards are claimable forever and do not have a deadline」）。「万圣节版本同样有」是由月度通行证推出，无逐月原文。 | 22:55Z |
+| H09 | 道具商店 All 列表共 37 件，名称无一含 Halloween（不分大小写） | https://store.steampowered.com/itemstore/3419430/ajaxgetitemdefs/render/?...filter=All&cc=us 与 browse/?filter=All | CONFIRMED | total_count=37，ItemDefs_total=37；37 个名称逐个检查，0 个含 halloween | 22:56Z |
+| H10 | Spooky Skeleton 在 detail/594：名称 Spooky Skeleton，US$2.50，描述「Thank you very much for supporting Bongo Cat!」 | https://store.steampowered.com/itemstore/3419430/detail/594/ (cc=us) | CONFIRMED | 页面 H1 Spooky Skeleton；价格 $2.50；描述逐字一致；Tags: Tradable；另 Calabrian Black Squirrel（detail/587）描述同句，故称「supporter item」有同型依据 | 22:56Z |
+| H11 | 63 条公告无 spooky；Spooky Skeleton 属于万圣节 2026/通行证/都不是——not confirmed；「as far as any official text says 不是通行证奖励」 | API 全文搜索 + detail/594 | CONFIRMED | spooky 0 命中、skeleton 0 命中（63 条标题+正文）；detail/594 页无任何通行证/万圣节字样；页内如实写了「not confirmed」且未把它写成万圣节或通行证道具 | 22:56Z |
+| H12 | 2026-09-01 公告：免费通行证票据「open Bongo Cat at least once a month」自动领取 | gid 1842212951313382 | CONFIRMED | 「To automatically claim your free pass ticket, open Bongo Cat at least once a month.」date 2026-09-01 13:17 UTC | 22:55Z |
+| H13 | Paw Pass Token = detail/992，US$4.99；公告称 Paw Pass Ticket | detail/992 + gid 1842212951313382 | CONFIRMED | 商店页名称 Paw Pass Token，$4.99（cc=us）；公告「Paw Pass Ticket」。其他地区价格：页内写未查，我也未查 | 22:56Z |
+| H14 | detail/992 描述逐字、Tradable、「will not be tradable for one week」 | detail/992 | CONFIRMED | 「Redeem in-game to unlock the premium lane of one Paw Pass. You will be able to access all items from the premium lane when completing the milestones. The redeemed pass will never expire.」；Tags: Tradable；After purchase…will not be tradable for one week | 22:56Z |
+| H15 | 9-01 公告：「claimable forever and do not have a deadline」；金币「can be used later to buy the premium version of the pass for 500 coins」（页内写作 premium lane） | gid 1842212951313382 | CONFIRMED | 原文「the rewards are claimable forever and do not have a deadline」「These coins can be used later to buy the premium version of the pass for 500 coins」；页内「premium lane」是 version 的转写 | 22:55Z |
+| H16 | 10-01 公告：All Passes 列表选上月通行证，点 Get Pass 或 Unlock | gid 1845383656381895 | CONFIRMED | 「To get last month's pass, you can just select it in the "All Passes" list and then click on "Get Pass" or "Unlock".」 | 22:55Z |
+| H17 | Free Halloween Treat（gid 1815034432865853）发布于 2025-10-30；「Claim your free Halloween costume for the next 7 days (until the 5th of November).」 | gid 1815034432865853 | CONFIRMED | date=1761816187 即 2025-10-30 09:23 UTC；原文逐字 | 22:55Z |
+| H18 | 可选三件 Zombie、Nosfergato、Frankittystein；领取方式「Update your game, follow the giftbox and claim your free costume!」；无兑换码 | 同上 | CONFIRMED | 「You can pick one of the three items: Zombie, Nosfergato, Frankittystein」；全文无 code/redeem 字样 | 22:55Z |
+| H19 | 否定：该公告未说明没选的两件能否另行获得、三件是否返场 | 同上 | CONFIRMED | 全文无相关句 | 22:55Z |
+| H20 | 引文「mainly used by me to see what costume you pick for example」，Adds analytics via Steam Stats, anonymised | 同上 | CONFIRMED | 「Adds analytics via Steam Stats. These are fully anonymized and mainly used by me to see what costume you pick for example」 | 22:55Z |
+| H21 | 否定+全称：2026 年只有 10-01 一条含 Halloween；2026 年无公告提免费服装、万圣节 giftbox、2025 三件返场 | API 全文搜索 | CONFIRMED | halloween 命中 2 条（2025-10-30、2026-10-01）；costume 仅 2025-10-30；zombie/nosfer/frankit 在 2026 公告 0 命中；giftbox 2026 仅 02-05 Steam Typing Fest，与万圣节无关 | 22:55Z |
+| H22 | 9-01 公告引文「Events like the summer event, lunar new year, april fools or the winter event will still happen」「will then also drop event chests」；该句无 Halloween/autumn | gid 1842212951313382 | CONFIRMED | 原文逐字；该句不含 halloween、autumn | 22:55Z |
+| H23 | 检索表：halloween/spooky/autumn/pumpkin/costume 共 3 条命中（2025-10-08 Autumn Event，2025-10-30 Free Halloween Treat，2026-10-01 UI THEMES are here!）；spooky、pumpkin 均 0 | API 全文搜索 | CONFIRMED | autumn 1 条（gid 1813041031167641，date 2025-10-08 08:03 UTC）；halloween 2 条；costume 1 条（同 10-30）；并集 3 条；spooky 0、pumpkin 0 | 22:55Z |
+| H24 | Autumn Event 公告引文：「for the next 3 weeks (until the 31st of October)」「20 exclusive autumn items」「4 for each rarity」「After October 31th the items will no longer be dropable.」；未列 20 件名 | gid 1813041031167641 | CONFIRMED | 原文逐字；全文无 20 件的名称 | 22:55Z |
+| H25 | supporter 松鼠：「3 skins and 3 hats (their wings). Calabrian Black Squirrel, Eastern Grey Squirrel and the Eurasian Red Squirrel!」「33% discount」；三件现价各 US$2.50 | gid 1813041031167641 + 道具商店 | CONFIRMED | 原文逐字；商店 id 587/586/585 各 $2.50 | 22:56Z |
+| H26 | 2026 年未宣布秋季掉落活动 | API 全文搜索 | CONFIRMED | autumn 仅 2025-10-08 一条；2026 的活动公告只有 06-16 Summer Event 等，无秋季 | 22:55Z |
+| H27 | 三步建议的引文：「To actively collect taps and clicks for a pass, activate it by clicking on the list entry in the "All Passes" list.」「When you finish a pass, the next one will automatically be selected.」「Don't forget to update your game, keep tapping and claim your rewards!」；2025 两条公告都提醒更新游戏 | gid 1845383656381895、1815034432865853、1813041031167641 | CONFIRMED | 10-01 三句逐字；10-30「Update your game…」；10-08「don't forget to update your game!」 | 22:55Z |
+| H28 | 「Items from the 2025 Autumn Event stopped dropping on October 31, 2025」 | gid 1813041031167641 | CONFIRMED | 公告预告「After October 31th the items will no longer be dropable」；无后续公告改期；「stopped」是据预告而写，无事后确认原文 | 22:55Z |
+| H29 | 「the announcements name no other way to get them, which leaves trading with other players」（autumn 道具除掉落外只剩交易） | API 全文 + 商店 | UNVERIFIED | 「公告没提其他获取方式」成立（autumn 仅 1 条公告）；但「只剩交易」没有来源：没有公告说 autumn 道具可交易，且 2025-03-11 公告移除了玩家间交易、2025-11-10 仅「with friends」重开；道具商店也无 autumn 活动道具 | 22:56Z |
+| H30 | 「Read "up to legendary" as the developer's wording about chest rarity, not as a promise of a Legendary item」 | gid 1845383656381895 | UNVERIFIED | 原文「chest with guaranteed rarity up to legendary」，「guaranteed」修饰的究竟是 chest 的稀有度上限还是下限，公告没有解释；该句是解读，无原文可证 | 22:55Z |
+| H31 | 「Irox Games has not published an item-by-item list for the Halloween pass in the Steam news feed」 | appdetails developers + API | CONFIRMED | appdetails developers=['Irox Games']；10-01 公告无列表，之后无新公告（最新即 10-01） | 22:57Z |
+| H32 | 读取日期口径：页内全部写「On October 10, 2026 we read…」 | 取证时间 | UNVERIFIED | 写手取证于 2026-10-09 22:40–23:00 UTC，对应 UTC+8 的 10-10；页内未注明时区，按 UTC 为 10-09。我复核于 2026-10-09 22:55–23:00 UTC，数值未变。另：checkedAt/date/updated 为 2026-10-10，晚于当前环境日期 2026-10-09 | 22:55Z |
+
+## 机检
+
+1. 外链（正文 7 个，逐个 curl -L）：news/view/1845383656381895、itemstore/3419430/、itemstore/detail/594/、news/view/1842212951313382、itemstore/detail/992/、news/view/1815034432865853、news/view/1813041031167641，全部 200；7 个全部在 frontmatter sourceUrls 内。sourceUrls 里的公告接口 URL（count=50）未在正文出现（取数来源，不是链接，无问题）。
+2. 站内链接：/bongo-cat/paw-pass/、hats-skins/、free-items/、events/、emotes/、exchange-trading/，全部在允许 slug 列表内；无 market-prices 或其他 slug。
+3. 时效词：正文（不含 frontmatter）无不带日期的 now / currently / upcoming / soon / latest / recently。
+4. 市场价格：正文无 Community Market 价格或结论。
+5. 未发现 REFUTED。4 条 UNVERIFIED 为 H08、H29、H30、H32。

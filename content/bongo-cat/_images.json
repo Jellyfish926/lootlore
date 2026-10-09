@@ -20,7 +20,13 @@
   "events": "ss04",
   "achievements": "ss01",
   "author": "ss02",
-  "paw-pass": "ss02"
+  "paw-pass": "ss02",
+  "auto-clicker": "ss02",
+  "free-items": "ss03",
+  "mac-linux-steam-deck": "ss04",
+  "emotes": "ss01",
+  "legendary-odds": "ss00",
+  "halloween": "ss02"
  },
  "shots": {
   "ss00": {

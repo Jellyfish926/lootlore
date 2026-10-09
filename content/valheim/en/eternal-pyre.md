@@ -36,13 +36,13 @@ It is live in the full release. Iron Gate's [Valheim 1.0 patch notes](https://st
 
 That is where official confirmation stops. The notes confirm that these entries exist, plus one line under Misc, "Updated functionality for Fader Relic"; they give no recipe, drop count or spawn rate. Every number further down this page is the community-run Valheim Wiki's figure and is marked as such.
 
-A new patch may not reach every platform on the same day. The posts for patches 1.0.14 to 1.0.17 each say "the patch will require a few days to get uploaded to all platforms", and that crossplay "will still remain functional" in the meantime.
+A new patch may not reach every platform on the same day. The posts for patches 1.0.14 to 1.0.17 each say "the patch will require a few days to get uploaded to all platforms", and that [crossplay](/valheim/co-op/) "will still remain functional" in the meantime.
 
 ## Where do you find the Eternal Pyre?
 
 You do not find it; you place it. The official notes file it under Build Pieces & Furniture, and the community-maintained [Valheim Wiki page for the Eternal Pyre](https://valheim.wiki/w/Eternal_Pyre) classes it as a base structure in the Crafting category, with a Stonecutter as its source station. Nothing in the patch notes or on the wiki describes a naturally generated pyre in any biome.
 
-The only part tied to a biome is the key material: the wiki's [Kindled Ribs page](https://valheim.wiki/w/Kindled_Ribs) says it drops from the Ashlands boss in the [Fader fight](/valheim/fader/). Whether any biome blocks placement is not confirmed: neither source lists a biome restriction. The same wiki page marks Kindled Ribs as teleportable, so you can carry them home through a portal and build at your main base.
+The only part tied to a biome is the key material: the wiki's [Kindled Ribs page](https://valheim.wiki/w/Kindled_Ribs) says it drops from the [Ashlands](/valheim/ashlands/) boss in the [Fader fight](/valheim/fader/). Whether any biome blocks placement is not confirmed: neither source lists a biome restriction. The same wiki page marks Kindled Ribs as teleportable, so you can carry them home through a [portal](/valheim/portals/) and build at your main base.
 
 ## What does the Eternal Pyre cost to build?
 

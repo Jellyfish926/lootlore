@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 The official description of Get Your Driver's License! lists what you do: take a number and wait your turn, pass the written test, and drive a test course with cows, ducks and ramps. It also lists winning 1 of 18 cars and unlocking endings. The game is free to play, and the store sells skips for 9 to 48 Robux.
 
-That summary follows the developer's description on Roblox line by line. The description is a feature list, not a manual, so this guide also reads the store listings, which say more about how each stage works than the description does.
+That summary follows the [developer](/get-your-drivers-license/community/)'s description on Roblox line by line. The description is a feature list, not a manual, so this guide also reads the store listings, which say more about how each stage works than the description does.
 
 ## What does the developer say you do?
 

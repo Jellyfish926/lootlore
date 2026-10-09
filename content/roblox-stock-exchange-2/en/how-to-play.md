@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 In Roblox Stock Exchange 2 you start with a small simulated account and grow it by trading stocks, ETFs, futures and IPOs. You can go long or short, add leverage, and place limit orders, stop losses and take profits. Algorithmic bots, levels and rebirths are also listed, and your market keeps running for a while after you log off.
 
-That summary is built from the developer's own description on Roblox. The description is a feature list, not a manual, so this guide also reads the badge texts and game pass descriptions, which give away more detail than the description does.
+That summary is built from the [developer](/roblox-stock-exchange-2/community/)'s own description on Roblox. The description is a feature list, not a manual, so this guide also reads the badge texts and game pass descriptions, which give away more detail than the description does.
 
 ## What does the developer say you can do?
 

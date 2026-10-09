@@ -27,7 +27,7 @@ That leaves two honest answers to "how do you get one". You can buy stones with 
 
 ## Is there an Enchant Scroll in Deep Fishing?
 
-Not under that name in anything the developer has registered on Roblox. On 9 October 2026 the game had 97 store products; eight have "Enchant" in the name and four have "Scroll", and no product has both. The game description, the nine [game passes](/deep-fishing/gamepasses/) and the 13 badges do not mention enchanting at all.
+Not under that name in anything the developer has registered on Roblox. On 9 October 2026 the game had 97 store products; eight have "Enchant" in the name and four have "Scroll", and no product has both. The game description, the nine [game passes](/deep-fishing/gamepasses/) and the 13 [badges](/deep-fishing/badges/) do not mention enchanting at all.
 
 | Item | Single price (Robux) | Added | What the listing confirms |
 | --- | --- | --- | --- |

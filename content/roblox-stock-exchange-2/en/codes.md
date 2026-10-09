@@ -31,7 +31,7 @@ The only code printed in the official Roblox Stock Exchange 2 description in Oct
 | --- | --- | --- | --- | --- |
 | TOOLS | Not stated officially | Listed in the official description (not tested in game) | Official game description on Roblox | 8 October 2026 |
 
-That is the whole list. A code goes into this table only after we have seen it in an official source, which for this game means the description, the developer group or an official Roblox event listing. On 8 October 2026 the group description was empty, the group had no shout, and none of the 12 event listings contained a code. So the description is the only place a code appears.
+That is the whole list. A code goes into this table only after we have seen it in an official source, which for this game means the description, the [developer group](/roblox-stock-exchange-2/community/) or an official Roblox event listing. On 8 October 2026 the group description was empty, the group had no shout, and none of the 12 event listings contained a code. So the description is the only place a code appears.
 
 ## What does the description say about the next code?
 

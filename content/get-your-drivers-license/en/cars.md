@@ -37,7 +37,7 @@ This is not a list of all 18 cars, and we would rather say so in the second para
 | Its standing | "The best car in the game, yours to keep." | Golden Supercar 🏆 description |
 | Where to drive it | "Drive it on The Loop." | Golden Supercar 🏆 description |
 
-All six rows were read from Roblox's records for the game on 9 October 2026. We found no seventh. We found no official wiki and no update notes, and the developer group has no description or shout.
+All six rows were read from Roblox's records for the game on 9 October 2026. We found no seventh. We found no official wiki and no update notes, and the [developer group](/get-your-drivers-license/community/) has no description or shout.
 
 ## How do you win a car?
 

@@ -37,13 +37,13 @@ author: "Jellyfi"
 
 官方确认到这里为止。说明确认了这几个条目存在，另外在 Misc 下有一行「Updated functionality for Fader Relic」；配方、掉落数量和刷新概率它都没有给。本页往下出现的数字都是社区维护的 Valheim Wiki 的口径，并逐处标明。
 
-新补丁不一定同一天上到所有平台。1.0.14 到 1.0.17 的补丁公告都写着「the patch will require a few days to get uploaded to all platforms」，并说明这期间跨平台联机「will still remain functional」。
+新补丁不一定同一天上到所有平台。1.0.14 到 1.0.17 的补丁公告都写着「the patch will require a few days to get uploaded to all platforms」，并说明这期间[跨平台联机](/valheim/zh/co-op/)「will still remain functional」。
 
 ## Eternal Pyre 在哪里找？
 
 它不是找到的，而是自己放下去的。官方说明把它归在 Build Pieces & Furniture 下；社区维护的 [Valheim Wiki 的 Eternal Pyre 页](https://valheim.wiki/w/Eternal_Pyre)把它归为 Crafting 类的基地建筑，来源工作站是切石机。补丁说明和 wiki 都没有提到任何区域里有自然生成的 Eternal Pyre。
 
-唯一和区域挂钩的是关键材料：wiki 的 [Kindled Ribs 页](https://valheim.wiki/w/Kindled_Ribs)写它出自灰烬之地 Boss 的 [Fader 战](/valheim/zh/fader/)。是否有区域禁止放置属于未确认：两处来源都没有列出区域限制。同一个 wiki 页标注 Kindled Ribs 可以传送，所以可以带着它过传送门回家，在主基地建造。
+唯一和区域挂钩的是关键材料：wiki 的 [Kindled Ribs 页](https://valheim.wiki/w/Kindled_Ribs)写它出自[灰烬之地](/valheim/zh/ashlands/) Boss 的 [Fader 战](/valheim/zh/fader/)。是否有区域禁止放置属于未确认：两处来源都没有列出区域限制。同一个 wiki 页标注 Kindled Ribs 可以传送，所以可以带着它过[传送门](/valheim/zh/portals/)回家，在主基地建造。
 
 ## 造一个 Eternal Pyre 要什么材料？
 

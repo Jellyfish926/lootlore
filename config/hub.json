@@ -2148,6 +2148,231 @@
           }
         ]
       }
+    },
+    {
+      "slug": "get-your-drivers-license",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/get-your-drivers-license",
+      "name": "Get Your Driver's License!",
+      "short": "Get Your Driver's License!",
+      "default_path": "/",
+      "native": {
+        "title": "Get Your Driver's License!",
+        "nav": [
+          "beginner",
+          "robux"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-09",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Get Your Driver's License!",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/get-your-drivers-license/entities.json",
+        "start_here": [
+          "how-to-play",
+          "waiting-line",
+          "cars"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Queue Simulator (Simulation, Idle)",
+        "studio": "Time Will Pass",
+        "released": "September 29, 2026 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-292b9310361cd23209c4272964fcff4a/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art seen from inside a car: an angry examiner with a moustache and a red shirt points at a crying driver in a blue hoodie and holds a clipboard marked with a red circled F, with a DRIVING SCHOOL sign and traffic cones outside",
+        "img_credit": "Official art · Time Will Pass (Roblox)",
+        "blurb": "Our Get Your Driver's License! hub for Time Will Pass's Roblox game about waiting in line for a driving test: what the official description lists, every skip product with its official Robux price, what the developer has published about the driving test and its endings, the 18 cars and the Epic tier, all 5 game passes and all 13 store products with their official descriptions. Built from Roblox's own data, with no unverified codes, car lists or test answers.",
+        "highlights": [
+          [
+            "How to Play",
+            "/get-your-drivers-license/how-to-play/"
+          ],
+          [
+            "The Line and Every Skip",
+            "/get-your-drivers-license/waiting-line/"
+          ],
+          [
+            "Cars: 18 Cars and Epic Tier",
+            "/get-your-drivers-license/cars/"
+          ],
+          [
+            "Robux Shop: All 13 Products",
+            "/get-your-drivers-license/shop/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 9,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "item",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "description"
+            ],
+            "sort": "order",
+            "max": 13,
+            "all": "shop"
+          },
+          {
+            "type": "gamepass",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "description"
+            ],
+            "sort": "order",
+            "max": 5,
+            "all": "gamepasses"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "american-plains-mudding",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/american-plains-mudding",
+      "name": "American Plains Mudding",
+      "short": "American Plains Mudding",
+      "default_path": "/",
+      "native": {
+        "title": "American Plains Mudding",
+        "nav": [
+          "guides"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-09",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "American Plains Mudding",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/american-plains-mudding/entities.json",
+        "start_here": [
+          "how-to-play",
+          "updates",
+          "badges"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Vehicle Roleplay (Simulation, Vehicle Sim)",
+        "studio": "American Plains Mudding",
+        "released": "July 29, 2021 (experience created, per Roblox)",
+        "platforms": "Roblox",
+        "img": "https://tr.rbxcdn.com/180DAY-31cf1860de3a53f27b0ca69ed541d818/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional art: a Roblox character in an orange high-visibility vest rides a red ATV with a shovel strapped to its front rack, with a white pickup truck marked AMERICAN PLAINS FIRE parked behind in a pine forest",
+        "img_credit": "Official art · American Plains Mudding (Roblox)",
+        "blurb": "Our American Plains Mudding hub for the verified Roblox group's vehicle roleplay game: all 8 game passes with official prices and gift versions, the four-to-eight spawn slot system, the three published private server commands, the four Hidden Vehicle badges with official award counts, five limited holiday vehicle passes, and the Saturday update listings — built from Roblox's own data, with no unverified codes and no real-world vehicle names.",
+        "highlights": [
+          [
+            "Saturday Update Times",
+            "/american-plains-mudding/updates/"
+          ],
+          [
+            "Hidden Vehicle Badges",
+            "/american-plains-mudding/badges/"
+          ],
+          [
+            "All 8 Game Passes",
+            "/american-plains-mudding/gamepasses/"
+          ],
+          [
+            "How to Play",
+            "/american-plains-mudding/how-to-play/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 10,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "gamepass",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "description"
+            ],
+            "sort": "order",
+            "max": 14,
+            "all": "gamepasses"
+          },
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "description",
+              "key_notes"
+            ],
+            "sort": "order",
+            "max": 8,
+            "all": "badges"
+          }
+        ]
+      }
     }
   ]
 }

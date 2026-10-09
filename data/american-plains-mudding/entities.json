@@ -1,0 +1,2637 @@
+{
+ "fetched": "2026-10-09",
+ "game_version": "10/3 Update (heading in the official description read at 2026-10-09 11:13 UTC; matching event listing APM Forest Update 🌲 has a listed start of 2026-10-03 13:50 UTC)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级),2026-10-09 11:12–11:18 UTC 取:游戏描述 games.roblox.com、徽章 badges.roblox.com(8 个,nextPageCursor=null,11:13:30 复取一次 id 一致,awardingUniverse 逐条核对为 2783797267)、通行证 apis.roblox.com/game-passes(14 条,nextPageToken 空;8 条在售,6 条 isForSale=false 且无价格,照实建实体并标 Not for sale)、开发者商品 apis.roblox.com/developer-products v2(11 个,nextPageCursor=null,全部以 [GIFT] 开头)、官方活动 apis.roblox.com/virtual-events(带零起点游标 3 页共 60 条;不带游标只回 3 条)、群组 groups.roblox.com、分级 experience-guidelines-api(POST)。名称逐字复制接口 name / Name / title 字段(含大小写、标点、emoji;4 个徽章同名 Hidden Vehicle,实体 id 按创建先后加 -1 到 -4 区分,name_en 不改)。描述去掉了接口里的换行,用空格连接。徽章 order 按累计获得数降序;通行证 order 先在售(按 Robux 价升序,同价按创建时间)后未在售(按创建时间);商品 order 按价升序。11 个商品里 9 个接口 Description 为空,不写 description_en。game_version 取自描述里的更新标题,games API 的 updated 字段不作补丁日期。车辆名称与性能、车价、游戏币、地图地点、隐藏车位置、白名单操作、完整命令表、私服价格、兑换码均无一手来源,未建实体或记入 unverified_fields。没有任何实体字段把游戏内车辆对应到真实车厂或车型。[round1 / round2 修订 2026-10-09:spawn-slots 默认分配推断已删;update-schedule 的 summary 改为「for nearly every Saturday」并给 next listed start 加 as-of 日期;american-plains-mudding 的 private_servers 未核实项补记 createVipServersAllowed: false;private-server-commands 补记 who may run :admin 未知;Discord 相关内容未写入任何实体。]",
+ "roblox": {
+  "universeId": 2783797267,
+  "rootPlaceId": 7171174521,
+  "creatorGroupId": 4548068,
+  "updated": "2026-10-07T00:05:33.298Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页(全部已发布,无 draft)。",
+ "entities": {
+  "american-plains-mudding": {
+   "type": "mechanic",
+   "name_en": "American Plains Mudding",
+   "page_slug": "how-to-play",
+   "summary_en": "Roblox vehicle roleplay game by the verified group American Plains Mudding: mud pits, towing, farming, boating and off-roading, with trailers and vehicle customization.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "description_en": "Pioneering vehicles, trailers, and customization on Roblox.",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "release_date_en": "29 July 2021 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "role_en": "Developer: American Plains Mudding (verified Roblox group 4548068)",
+   "role_source": "https://groups.roblox.com/v1/groups/4548068",
+   "max_players": 15,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "key_notes_en": "15 players per server · Maturity: Minimal · Genre: Simulation / Vehicle Sim · 8 badges · 8 game passes on sale (14 on record) · 11 gift products · Free vehicle offered for a like and a favourite",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=2783797267",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "key_notes_repro": "Maturity: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"2783797267\"} returns ageRecommendation.displayName = Minimal (read 2026-10-09).",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=2783797267",
+    "https://groups.roblox.com/v1/groups/4548068",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "private_servers (price and how to create one; the games API shows createVipServersAllowed: false, which does not settle whether private servers are offered)",
+    "supported_devices",
+    "in_game_currency",
+    "vehicle_prices",
+    "map_locations",
+    "controls"
+   ]
+  },
+  "update-2026-10-03": {
+   "type": "mechanic",
+   "name_en": "10/3 Update",
+   "page_slug": "updates",
+   "summary_en": "The update notes printed in the official game description on 9 October 2026, under the heading \"10/3 Update\".",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "description_en": "New ATV (Animated Suspension, Front and Rear Cargo Box Attachments, Windshield Attachment) · New Forest (Map Update Part 1 of 2) · Sitting In Vehicles Requires Being Whitelisted · Bug Fixes (Water Flinging Fixed)",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "key_notes_en": "Matching event listing: APM Forest Update 🌲, listed start Saturday 3 October 2026 at 13:50 UTC",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=2783797267",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=2783797267",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "how whitelisting works in game",
+    "where the new forest is on the map",
+    "how the new ATV is obtained",
+    "exact time the update went live"
+   ]
+  },
+  "free-vehicle-offer": {
+   "type": "mechanic",
+   "name_en": "Like and Favorite vehicle offer",
+   "page_slug": "how-to-play",
+   "summary_en": "The last line of the official game description offers a vehicle for liking and favouriting the game.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "condition_en": "Like 👍 and Favorite ⭐ the game",
+   "condition_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "outcome_en": "\"to obtain a vehicle!\" (which vehicle is not stated)",
+   "outcome_source": "https://games.roblox.com/v1/games?universeIds=2783797267",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=2783797267"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "which vehicle",
+    "how and where it is delivered in game",
+    "whether a rejoin is needed"
+   ]
+  },
+  "spawn-slots": {
+   "type": "mechanic",
+   "name_en": "Spawn slots",
+   "page_slug": "spawning",
+   "summary_en": "How many vehicles and trailers you can have spawned, according to the official game pass descriptions.",
+   "summary_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Any Slot Spawner: \"anything can be spawned in any of the 4-8 slots owned\", \"with a cap of 8 if 4 trailer and 4 vehicle spawner gamepasses are owned\".",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "key_notes_en": "4 Vehicle Spawner 490 Robux · 4 Trailer Spawner 290 Robux · Any Slot Spawner 290 Robux · Premium Private Servers: \"2x Spawn Slots In Private Servers, Up To 16\"",
+   "key_notes_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "default split of the base slots (not stated and not derivable from the pass texts)",
+    "slot count with no spawner pass or with only one (not stated; 4 is the lowest figure in the stated range)",
+    "where spawners are on the map",
+    "despawn rules"
+   ]
+  },
+  "private-server-commands": {
+   "type": "mechanic",
+   "name_en": "Premium Private Servers commands",
+   "page_slug": "private-servers",
+   "summary_en": "The three commands printed in the Premium Private Servers game pass description; the description says they are \"Some of what is included\".",
+   "summary_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": ":weather storm 1, Spawns Tornadoes, Ranges From 1-10 · :fly user, Fly Any User · :admin user, Give Commands To Any User",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "requires_en": "Premium Private Servers game pass (195 Robux on 9 October 2026)",
+   "requires_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "full command list",
+    "where commands are typed",
+    "who may run :admin",
+    "commands available without the pass",
+    "price of a private server"
+   ]
+  },
+  "update-schedule": {
+   "type": "mechanic",
+   "name_en": "Saturday update listings",
+   "page_slug": "updates",
+   "summary_en": "The developer lists one Roblox event for nearly every Saturday; all 60 listings on record start on a Saturday (UTC).",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "key_notes_en": "60 listings from 16 August 2025 to 17 October 2026 · 27 of the 30 listings since 28 March 2026 start between 13:45 and 14:15 UTC (our count) · Next listed start as of 9 October 2026: APM Map Update 🗺️, Saturday 10 October 2026 at 14:00 UTC",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events"
+   ],
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether each update went live at its listed start",
+    "whether every listing corresponds to an update",
+    "the developer's stated update day (none found in the Roblox sources we could read)"
+   ],
+   "expiry_action": "After 2026-10-10 14:00 UTC: re-read the events API and the game description; add the new listing and update the next-start line on the updates and index pages"
+  },
+  "event-2025-08-16-camper-update": {
+   "type": "mechanic",
+   "name_en": "Camper Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Two new campers, gifting gamepass, and more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2025-08-16 13:35 UTC (Saturday) · Listing ends 2025-08-23 12:30 UTC · Listing created 2025-08-11",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-08-16T13:35:15+00:00",
+   "event_end_utc": "2025-08-23T12:30:15+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4982049383135314386",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-08-23-tilt-deck-trailer-update": {
+   "type": "mechanic",
+   "name_en": "Tilt Deck Trailer Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Enjoy the new tilt deck trailer!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2025-08-23 13:35 UTC (Saturday) · Listing ends 2025-08-30 12:30 UTC · Listing created 2025-08-16",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-08-23T13:35:09+00:00",
+   "event_end_utc": "2025-08-30T12:30:09+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2802779979928830411",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-08-30-this-weeks-update": {
+   "type": "mechanic",
+   "name_en": "This Weeks Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Enjoy the new livery for all pickups, cars, and some premium vehicles/rigs. Also enjoy the new modern, vintage, dash, and visor light bars. Thank you all for the support!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "🔴Police Update🔵",
+   "key_notes_en": "Subtitle: 🔴Police Update🔵 · Listed start 2025-08-30 13:35 UTC (Saturday) · Listing ends 2025-09-06 12:35 UTC · Listing created 2025-08-23",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-08-30T13:35:00+00:00",
+   "event_end_utc": "2025-09-06T12:35:00+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "5465135976638317000",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-09-06-apm-suv-update": {
+   "type": "mechanic",
+   "name_en": "APM SUV Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Join the event to get notified right when the next update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2025-09-06 13:35 UTC (Saturday) · Listing ends 2025-09-13 10:15 UTC · Listing created 2025-08-30",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-09-06T13:35:00+00:00",
+   "event_end_utc": "2025-09-13T10:15:00+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "616930290706416108",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-09-13-suv-trailer-lights": {
+   "type": "mechanic",
+   "name_en": "🔥SUV, Trailer Lights🔥",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Enjoy the most recent update with a very highly requested SUV and advanced trailer lighting!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2025-09-13 13:35 UTC (Saturday) · Listing ends 2025-09-20 12:30 UTC · Listing created 2025-09-06",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-09-13T13:35:38+00:00",
+   "event_end_utc": "2025-09-20T12:30:38+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6253569631953093143",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-09-27-apm-atv-update": {
+   "type": "mechanic",
+   "name_en": "APM ATV Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New fully animated ATV and more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2025-09-27 13:35 UTC (Saturday) · Listing ends 2025-10-04 12:30 UTC · Listing created 2025-09-20",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-09-27T13:35:25+00:00",
+   "event_end_utc": "2025-10-04T12:30:25+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8195209086849778214",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-10-04-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the next update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-10-04 13:35 UTC (Saturday) · Listing ends 2025-10-11 11:00 UTC · Listing created 2025-09-27",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-10-04T13:35:44+00:00",
+   "event_end_utc": "2025-10-11T11:00:44+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "9120605682834080342",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-10-11-apm-harvesting-update": {
+   "type": "mechanic",
+   "name_en": "APM Harvesting Update 🌾",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Massive harvesting update with a combine, draper head, header trailer, and more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-10-11 13:35 UTC (Saturday) · Listing ends 2025-10-18 11:00 UTC · Listing created 2025-10-04",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-10-11T13:35:43+00:00",
+   "event_end_utc": "2025-10-18T11:00:43+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2379724708137140847",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-10-25-apm-update": {
+   "type": "mechanic",
+   "name_en": "[👻] APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New Halloween vehicles. Fall Map. And more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-10-25 13:35 UTC (Saturday) · Listing ends 2025-11-01 11:00 UTC · Listing created 2025-10-18",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-10-25T13:35:38+00:00",
+   "event_end_utc": "2025-11-01T11:00:38+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "799713806790689368",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-11-01-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New advanced gooseneck enclosed trailers!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-11-01 13:35 UTC (Saturday) · Listing ends 2025-11-08 12:00 UTC · Listing created 2025-10-25",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-11-01T13:35:43+00:00",
+   "event_end_utc": "2025-11-08T12:00:43+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1174332378965607025",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-11-08-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Complete Hitch Overhaul! New fifth wheel adapter for pickups. New gooseneck hitches for semi. Fifth wheels slide on semi now. All new models and so much more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-11-08 14:35 UTC (Saturday) · Listing ends 2025-11-15 12:00 UTC · Listing created 2025-11-01",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-11-08T14:35:36+00:00",
+   "event_end_utc": "2025-11-15T12:00:36+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1609276890784989796",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-11-15-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New amphibious vehicles and 4WD!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-11-15 14:35 UTC (Saturday) · Listing ends 2025-11-22 12:00 UTC · Listing created 2025-11-08",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-11-15T14:35:52+00:00",
+   "event_end_utc": "2025-11-22T12:00:52+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4297991654976783017",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-11-22-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New dovetail trailer, console controls, and more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-11-22 14:35 UTC (Saturday) · Listing ends 2025-11-29 12:00 UTC · Listing created 2025-11-15",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-11-22T14:35:01+00:00",
+   "event_end_utc": "2025-11-29T12:00:01+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2547051384780096069",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-11-29-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New pickup and topper, console controls, and more!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-11-29 14:35 UTC (Saturday) · Listing ends 2025-12-06 12:00 UTC · Listing created 2025-11-22",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-11-29T14:35:02+00:00",
+   "event_end_utc": "2025-12-06T12:00:02+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2135757738229891704",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-12-06-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Mudflaps, New Customization Store, And New Customization UI Out Now!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-12-06 14:45 UTC (Saturday) · Listing ends 2025-12-13 12:00 UTC · Listing created 2025-11-29",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-12-06T14:45:43+00:00",
+   "event_end_utc": "2025-12-13T12:00:43+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8660480128934740559",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-12-13-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Enjoy all the new content, features, and Christmas map!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-12-13 14:40 UTC (Saturday) · Listing ends 2025-12-20 12:00 UTC · Listing created 2025-12-06",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-12-13T14:40:29+00:00",
+   "event_end_utc": "2025-12-20T12:00:29+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3825287191638835881",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-12-20-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Pickup Tailgates, New Pickup, And More!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-12-20 14:40 UTC (Saturday) · Listing ends 2025-12-27 12:00 UTC · Listing created 2025-12-13",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-12-20T14:40:00+00:00",
+   "event_end_utc": "2025-12-27T12:00:00+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2854481074430149325",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2025-12-27-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the next update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2025-12-27 14:40 UTC (Saturday) · Listing ends 2026-01-03 12:00 UTC · Listing created 2025-12-20",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2025-12-27T14:40:51+00:00",
+   "event_end_utc": "2026-01-03T12:00:51+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2131400558567490162",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-01-03-apm-update": {
+   "type": "mechanic",
+   "name_en": "🔥APM Update🔥",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the next update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-01-03 14:40 UTC (Saturday) · Listing ends 2026-01-10 12:00 UTC · Listing created 2025-12-27",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-01-03T14:40:04+00:00",
+   "event_end_utc": "2026-01-10T12:00:04+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4289001379344417436",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-01-10-apm-update": {
+   "type": "mechanic",
+   "name_en": "☀️APM Update☀️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New Lighting Revamp, New Pickup, New Lighting System, and more!☀️",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-01-10 14:35 UTC (Saturday) · Listing ends 2026-01-17 12:00 UTC · Listing created 2026-01-03",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-01-10T14:35:34+00:00",
+   "event_end_utc": "2026-01-17T12:00:34+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1440547991394714219",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-01-17-apm-update": {
+   "type": "mechanic",
+   "name_en": "🧂 APM Update🧂",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "New salt spreader, snow plow, salt plant, and more!🧂🛣️",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-01-17 14:45 UTC (Saturday) · Listing ends 2026-01-24 12:00 UTC · Listing created 2026-01-10",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-01-17T14:45:52+00:00",
+   "event_end_utc": "2026-01-24T12:00:52+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2644140240897049227",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-01-24-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-01-24 14:35 UTC (Saturday) · Listing ends 2026-01-31 12:00 UTC · Listing created 2026-01-17",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-01-24T14:35:32+00:00",
+   "event_end_utc": "2026-01-31T12:00:32+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7237429556716241468",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-01-31-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-01-31 15:30 UTC (Saturday) · Listing ends 2026-02-07 12:00 UTC · Listing created 2026-01-24",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-01-31T15:30:09+00:00",
+   "event_end_utc": "2026-02-07T12:00:09+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "553804564163986060",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-02-07-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-02-07 15:10 UTC (Saturday) · Listing ends 2026-02-14 12:00 UTC · Listing created 2026-01-24",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-02-07T15:10:09+00:00",
+   "event_end_utc": "2026-02-14T12:00:09+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7828919099852587580",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-02-14-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-02-14 14:45 UTC (Saturday) · Listing ends 2026-02-21 12:00 UTC · Listing created 2026-01-31",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-02-14T14:45:45+00:00",
+   "event_end_utc": "2026-02-21T12:00:45+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1237961045419229831",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-02-21-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-02-21 14:45 UTC (Saturday) · Listing ends 2026-02-28 12:00 UTC · Listing created 2026-02-07",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-02-21T14:45:05+00:00",
+   "event_end_utc": "2026-02-28T12:00:05+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4990900334277427885",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-02-28-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-02-28 14:45 UTC (Saturday) · Listing ends 2026-03-07 12:00 UTC · Listing created 2026-02-14",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-02-28T14:45:01+00:00",
+   "event_end_utc": "2026-03-07T12:00:01+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7797217016279728686",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-03-07-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-03-07 14:45 UTC (Saturday) · Listing ends 2026-03-14 11:00 UTC · Listing created 2026-02-21",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-03-07T14:45:06.099+00:00",
+   "event_end_utc": "2026-03-14T11:00:06.099+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2482623608371544661",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-03-14-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-03-14 14:15 UTC (Saturday) · Listing ends 2026-03-21 11:00 UTC · Listing created 2026-02-28",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-03-14T14:15:17.891+00:00",
+   "event_end_utc": "2026-03-21T11:00:17.891+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "932498674246877818",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-03-21-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Next Week's Update",
+   "key_notes_en": "Subtitle: Next Week's Update · Listed start 2026-03-21 14:30 UTC (Saturday) · Listing ends 2026-03-28 11:00 UTC · Listing created 2026-03-07",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-03-21T14:30:55.587+00:00",
+   "event_end_utc": "2026-03-28T11:00:55.587+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1906868545032159895",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-03-28-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-03-28 13:45 UTC (Saturday) · Listing ends 2026-04-04 11:00 UTC · Listing created 2026-03-14",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-03-28T13:45:05.824+00:00",
+   "event_end_utc": "2026-04-04T11:00:05.824+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8812805008694313625",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-04-04-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-04-04 13:45 UTC (Saturday) · Listing ends 2026-04-11 11:00 UTC · Listing created 2026-03-21",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-04-04T13:45:03.439+00:00",
+   "event_end_utc": "2026-04-11T11:00:03.439+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "486171115073438330",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-04-11-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-04-11 13:45 UTC (Saturday) · Listing ends 2026-04-18 11:00 UTC · Listing created 2026-03-28",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-04-11T13:45:37.791+00:00",
+   "event_end_utc": "2026-04-18T11:00:37.791+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1788752841842754101",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-04-18-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-04-18 14:50 UTC (Saturday) · Listing ends 2026-04-25 11:00 UTC · Listing created 2026-04-04",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-04-18T14:50:59.51+00:00",
+   "event_end_utc": "2026-04-25T11:00:59.51+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7862834838846440089",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-04-25-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-04-25 14:15 UTC (Saturday) · Listing ends 2026-05-02 11:00 UTC · Listing created 2026-04-11",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-04-25T14:15:15.185+00:00",
+   "event_end_utc": "2026-05-02T11:00:15.185+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4533123388742435416",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-05-02-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-05-02 13:45 UTC (Saturday) · Listing ends 2026-05-09 11:00 UTC · Listing created 2026-04-18",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-05-02T13:45:54.682+00:00",
+   "event_end_utc": "2026-05-09T11:00:54.682+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6998533925115134584",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-05-09-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-05-09 13:55 UTC (Saturday) · Listing ends 2026-05-16 11:00 UTC · Listing created 2026-04-25",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-05-09T13:55:51.638+00:00",
+   "event_end_utc": "2026-05-16T11:00:51.638+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6049901693364208217",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-05-16-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-05-16 13:50 UTC (Saturday) · Listing ends 2026-05-23 11:00 UTC · Listing created 2026-05-02",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-05-16T13:50:43.453+00:00",
+   "event_end_utc": "2026-05-23T11:00:43.453+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8419391668880540313",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-05-23-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-05-23 13:50 UTC (Saturday) · Listing ends 2026-05-30 11:00 UTC · Listing created 2026-05-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-05-23T13:50:45.818+00:00",
+   "event_end_utc": "2026-05-30T11:00:45.818+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4298705512398193239",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-05-30-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-05-30 14:00 UTC (Saturday) · Listing ends 2026-06-06 11:00 UTC · Listing created 2026-05-16",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-05-30T14:00:04.963+00:00",
+   "event_end_utc": "2026-06-06T11:00:04.963+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4087018211827122843",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-06-06-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-06-06 13:50 UTC (Saturday) · Listing ends 2026-06-13 11:00 UTC · Listing created 2026-05-23",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-06-06T13:50:57.143+00:00",
+   "event_end_utc": "2026-06-13T11:00:57.143+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7539938030602289804",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-06-13-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-06-13 14:00 UTC (Saturday) · Listing ends 2026-06-20 11:00 UTC · Listing created 2026-05-30",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-06-13T14:00:45.513+00:00",
+   "event_end_utc": "2026-06-20T11:00:45.513+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3137342093509395024",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-06-20-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-06-20 13:50 UTC (Saturday) · Listing ends 2026-06-27 11:00 UTC · Listing created 2026-06-06",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-06-20T13:50:34.954+00:00",
+   "event_end_utc": "2026-06-27T11:00:34.954+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1873374101469528655",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-06-27-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-06-27 15:05 UTC (Saturday) · Listing ends 2026-07-04 11:00 UTC · Listing created 2026-06-13",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-06-27T15:05:29.129+00:00",
+   "event_end_utc": "2026-07-04T11:00:29.129+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6033548401885446755",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-07-04-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-07-04 13:45 UTC (Saturday) · Listing ends 2026-07-11 11:00 UTC · Listing created 2026-06-20",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-07-04T13:45:43.67+00:00",
+   "event_end_utc": "2026-07-11T11:00:43.67+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "6550750562122596953",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-07-11-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-07-11 13:45 UTC (Saturday) · Listing ends 2026-07-18 11:00 UTC · Listing created 2026-06-27",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-07-11T13:45:36.736+00:00",
+   "event_end_utc": "2026-07-18T11:00:36.736+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1572054357720040204",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-07-18-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-07-18 14:15 UTC (Saturday) · Listing ends 2026-07-25 11:00 UTC · Listing created 2026-07-04",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-07-18T14:15:45.615+00:00",
+   "event_end_utc": "2026-07-25T11:00:45.615+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1503875858836881971",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-07-25-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-07-25 14:10 UTC (Saturday) · Listing ends 2026-07-31 11:00 UTC · Listing created 2026-07-11",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-07-25T14:10:07.854+00:00",
+   "event_end_utc": "2026-07-31T11:00:07.854+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1443130941898883690",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-08-01-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-08-01 13:55 UTC (Saturday) · Listing ends 2026-08-08 11:00 UTC · Listing created 2026-07-18",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-08-01T13:55:00.205+00:00",
+   "event_end_utc": "2026-08-08T11:00:00.205+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "163935200001262128",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-08-08-shaboozey-event": {
+   "type": "mechanic",
+   "name_en": "🤠SHABOOZEY EVENT🤠",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-08-08 13:50 UTC (Saturday) · Listing ends 2026-08-15 11:00 UTC · Listing created 2026-07-25",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-08-08T13:50:57.601+00:00",
+   "event_end_utc": "2026-08-15T11:00:57.601+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3866399056830005844",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-08-15-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-08-15 13:45 UTC (Saturday) · Listing ends 2026-08-22 11:00 UTC · Listing created 2026-08-01",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-08-15T13:45:48.496+00:00",
+   "event_end_utc": "2026-08-22T11:00:48.496+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "174719189041414794",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-08-22-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-08-22 13:50 UTC (Saturday) · Listing ends 2026-08-29 11:00 UTC · Listing created 2026-08-08",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-08-22T13:50:59.8+00:00",
+   "event_end_utc": "2026-08-29T11:00:59.8+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7666976816644620960",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-08-29-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-08-29 17:00 UTC (Saturday) · Listing ends 2026-09-05 11:00 UTC · Listing created 2026-08-15",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-08-29T17:00:47.89+00:00",
+   "event_end_utc": "2026-09-05T11:00:47.89+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4969597173802074699",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-09-05-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-09-05 13:55 UTC (Saturday) · Listing ends 2026-09-12 11:00 UTC · Listing created 2026-08-22",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-09-05T13:55:44.2+00:00",
+   "event_end_utc": "2026-09-12T11:00:44.2+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "133754157336232583",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-09-12-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2026-09-12 13:45 UTC (Saturday) · Listing ends 2026-09-19 11:00 UTC · Listing created 2026-08-29",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-09-12T13:45:17.865+00:00",
+   "event_end_utc": "2026-09-19T11:00:17.865+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2877123510046687887",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-09-19-apm-dirtbikes": {
+   "type": "mechanic",
+   "name_en": "APM Dirtbikes 🏍️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2026-09-19 13:55 UTC (Saturday) · Listing ends 2026-09-26 11:00 UTC · Listing created 2026-09-05",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-09-19T13:55:55.202+00:00",
+   "event_end_utc": "2026-09-26T11:00:55.202+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7624890202187760247",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ],
+   "event_media_id": 110368663107405
+  },
+  "event-2026-09-26-apm-cowl-hoods-update": {
+   "type": "mechanic",
+   "name_en": "APM Cowl Hoods Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Week's Update",
+   "key_notes_en": "Subtitle: This Week's Update · Listed start 2026-09-26 13:50 UTC (Saturday) · Listing ends 2026-10-03 11:00 UTC · Listing created 2026-09-12",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "event_start_utc": "2026-09-26T13:50:47.24+00:00",
+   "event_end_utc": "2026-10-03T11:00:47.24+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "5972309176410571339",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-10-03-apm-forest-update": {
+   "type": "mechanic",
+   "name_en": "APM Forest Update 🌲",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "This Weeks Update",
+   "key_notes_en": "Subtitle: This Weeks Update · Listed start 2026-10-03 13:50 UTC (Saturday) · Listing ends 2026-10-10 11:00 UTC · Listing created 2026-09-19 · 35,427 marked going at 11:18 UTC on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/8210160679504708371/rsvps/counters"
+   ],
+   "event_start_utc": "2026-10-03T13:50:33.063+00:00",
+   "event_end_utc": "2026-10-10T11:00:33.063+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8210160679504708371",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/8210160679504708371/rsvps/counters"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "event-2026-10-10-apm-map-update": {
+   "type": "mechanic",
+   "name_en": "APM Map Update 🗺️",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Next Week's Update",
+   "key_notes_en": "Subtitle: Next Week's Update · Listed start 2026-10-10 14:00 UTC (Saturday) · Listing ends 2026-10-17 11:00 UTC · Listing created 2026-09-26 · 176,125 marked going at 11:18 UTC on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/1153890537187705599/rsvps/counters"
+   ],
+   "event_start_utc": "2026-10-10T14:00:25.78+00:00",
+   "event_end_utc": "2026-10-17T11:00:25.78+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "1153890537187705599",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/1153890537187705599/rsvps/counters"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ],
+   "event_media_id": 119697635046294
+  },
+  "event-2026-10-17-apm-update": {
+   "type": "mechanic",
+   "name_en": "APM Update",
+   "page_slug": "updates",
+   "summary_en": "Official Roblox event listing hosted by the group American Plains Mudding, category 'new content'.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Get notified right when the update drops!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "subtitle_en": "Next Next Week's Update",
+   "key_notes_en": "Subtitle: Next Next Week's Update · Listed start 2026-10-17 13:45 UTC (Saturday) · Listing ends 2026-10-24 11:00 UTC · Listing created 2026-10-03 · 15,050 marked going at 11:18 UTC on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/4671235016800469657/rsvps/counters"
+   ],
+   "event_start_utc": "2026-10-17T13:45:41.393+00:00",
+   "event_end_utc": "2026-10-24T11:00:41.393+00:00",
+   "event_time_source": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "4671235016800469657",
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events",
+    "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/4671235016800469657/rsvps/counters"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "whether the content went live at the listed start time",
+    "contents beyond the listing text"
+   ]
+  },
+  "pass-premium-private-servers": {
+   "type": "gamepass",
+   "name_en": "Premium Private Servers",
+   "page_slug": "private-servers",
+   "order": 1,
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Improve The Private Server Experience! Some of what is included: - 2x Spawn Slots In Private Servers, Up To 16, All Admins In Your Server Have This Ability - :weather storm 1, Spawns Tornadoes, Ranges From 1-10 - :fly user, Fly Any User - :admin user, Give Commands To Any User",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Improve The Private Server Experience! Some of what is included: - 2x Spawn Slots In Private Servers, Up To 16, All Admins In Your Server Have This Ability - :weather storm 1, Spawns Tornadoes, Ranges From 1-10 - :fly user, Fly Any User - :admin user, Give Commands To Any User",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 190773004,
+   "created": "2023-06-16",
+   "last_updated": "2026-08-22",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-premium-trailers": {
+   "type": "gamepass",
+   "name_en": "Premium Trailers",
+   "page_slug": "gamepasses",
+   "order": 2,
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Get access to exclusive trailers! (Items within this gamepass are subject to change over time)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Get access to exclusive trailers! (Items within this gamepass are subject to change over time)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 193981735,
+   "created": "2023-06-22",
+   "last_updated": "2026-08-06",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "contents (the description says items are subject to change over time)"
+   ]
+  },
+  "pass-premium-vehicles": {
+   "type": "gamepass",
+   "name_en": "Premium Vehicles",
+   "page_slug": "gamepasses",
+   "order": 3,
+   "unlock_cost": "230 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Get access to exclusive vehicles! (Items within this gamepass are subject to change over time)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Get access to exclusive vehicles! (Items within this gamepass are subject to change over time)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 21147957,
+   "created": "2021-08-14",
+   "last_updated": "2026-08-05",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "contents (the description says items are subject to change over time)"
+   ]
+  },
+  "pass-4-trailer-spawner": {
+   "type": "gamepass",
+   "name_en": "4 Trailer Spawner",
+   "page_slug": "spawning",
+   "order": 4,
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Unlock the ability to spawn 4 trailers!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Unlock the ability to spawn 4 trailers!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 45354418,
+   "created": "2022-05-17",
+   "last_updated": "2026-08-05",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-any-slot-spawner": {
+   "type": "gamepass",
+   "name_en": "Any Slot Spawner",
+   "page_slug": "spawning",
+   "order": 5,
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Removes trailer and vehicle slot categories. So anything can be spawned in any of the 4-8 slots owned. E.g., all slots could be filled with vehicles, with a cap of 8 if 4 trailer and 4 vehicle spawner gamepasses are owned. (Formerly Premium Rigs)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Removes trailer and vehicle slot categories. So anything can be spawned in any of the 4-8 slots owned. E.g., all slots could be filled with vehicles, with a cap of 8 if 4 trailer and 4 vehicle spawner gamepasses are owned. (Formerly Premium Rigs)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 69232963,
+   "created": "2022-08-04",
+   "last_updated": "2026-08-14",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-anywhere-trailer-spawner": {
+   "type": "gamepass",
+   "name_en": "Anywhere Trailer Spawner",
+   "page_slug": "spawning",
+   "order": 6,
+   "unlock_cost": "390 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Allows you to spawn trailers from anywhere!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Allows you to spawn trailers from anywhere!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 45323541,
+   "created": "2022-05-16",
+   "last_updated": "2026-08-05",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-premium-customization": {
+   "type": "gamepass",
+   "name_en": "Premium Customization",
+   "page_slug": "gamepasses",
+   "order": 7,
+   "unlock_cost": "390 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Get exclusive access to premium customization features such as: - Ability To Customize Anywhere - Ability To Customize Attachments - Enhanced Window Customization - Enhanced Exhaust Customization - Exclusive Attachments This price will continue to rise as we add more content to the game pass. We have many things in store that will be added to this.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Get exclusive access to premium customization features such as: - Ability To Customize Anywhere - Ability To Customize Attachments - Enhanced Window Customization - Enhanced Exhaust Customization - Exclusive Attachments This price will continue to rise as we add more content to the game pass. We have many things in store that will be added to this.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1062063435,
+   "created": "2025-02-10",
+   "last_updated": "2026-08-08",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-4-vehicle-spawner": {
+   "type": "gamepass",
+   "name_en": "4 Vehicle Spawner",
+   "page_slug": "spawning",
+   "order": 8,
+   "unlock_cost": "490 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Unlock the ability to spawn 4 vehicles!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Unlock the ability to spawn 4 vehicles!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 683417287,
+   "created": "2024-01-06",
+   "last_updated": "2026-08-06",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-donation": {
+   "type": "gamepass",
+   "name_en": "Donation",
+   "page_slug": "gamepasses",
+   "order": 9,
+   "unlock_cost": "Not for sale on 9 October 2026 (no price listed)",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Support APM and get a donor tag by your chats!",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Support APM and get a donor tag by your chats!",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 20697357,
+   "created": "2021-08-03",
+   "last_updated": "2026-08-05",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-2023-halloween-vehicle": {
+   "type": "gamepass",
+   "name_en": "2023 Halloween Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 10,
+   "unlock_cost": "Not for sale on 9 October 2026 (no price listed)",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "First-ever limited vehicle! 2023 Limited Halloween Vehicle.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "First-ever limited vehicle! 2023 Limited Halloween Vehicle.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 630016063,
+   "created": "2023-10-19",
+   "last_updated": "2026-08-06",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "which vehicle it is",
+    "price when on sale",
+    "whether it returns in 2026"
+   ]
+  },
+  "pass-limited-christmas-vehicle": {
+   "type": "gamepass",
+   "name_en": "Limited Christmas Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 11,
+   "unlock_cost": "Not for sale on 9 October 2026 (no price listed)",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Only available near Christmas. Get it while you can! (You will keep this vehicle forever)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Only available near Christmas. Get it while you can! (You will keep this vehicle forever)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 672172947,
+   "created": "2023-12-14",
+   "last_updated": "2026-08-06",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "which vehicle it is",
+    "price when on sale",
+    "whether it returns in 2026"
+   ]
+  },
+  "pass-limited-easter-vehicle": {
+   "type": "gamepass",
+   "name_en": "Limited Easter Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 12,
+   "unlock_cost": "Not for sale on 9 October 2026 (no price listed)",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Only available near Easter. Get it while you can! (You will keep this vehicle forever)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Only available near Easter. Get it while you can! (You will keep this vehicle forever)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 757264124,
+   "created": "2024-03-25",
+   "last_updated": "2026-08-07",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "which vehicle it is",
+    "price when on sale",
+    "whether it returns in 2026"
+   ]
+  },
+  "pass-limited-halloween-vehicle": {
+   "type": "gamepass",
+   "name_en": "Limited Halloween Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 13,
+   "unlock_cost": "Not for sale on 9 October 2026 (no price listed)",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Only available near Halloween. Get it while you can! (You will keep this vehicle forever)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Only available near Halloween. Get it while you can! (You will keep this vehicle forever)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1548634305,
+   "created": "2025-10-24",
+   "last_updated": "2026-08-09",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "which vehicle it is",
+    "price when on sale",
+    "whether it returns in 2026"
+   ]
+  },
+  "pass-limited-thanksgiving-vehicle": {
+   "type": "gamepass",
+   "name_en": "Limited Thanksgiving Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 14,
+   "unlock_cost": "Not for sale on 9 October 2026 (no price listed)",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "description_en": "Only available near Thanksgiving. Get it while you can! (You will keep this vehicle forever)",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Only available near Thanksgiving. Get it while you can! (You will keep this vehicle forever)",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "on_sale": false,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1603650412,
+   "created": "2025-11-27",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description",
+    "which vehicle it is",
+    "price when on sale",
+    "whether it returns in 2026"
+   ]
+  },
+  "product-gift-limited-christmas-vehicle": {
+   "type": "item",
+   "name_en": "[GIFT] Limited Christmas Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 1,
+   "unlock_cost": "110 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product named after the Limited Christmas Vehicle pass, which was not for sale on 2026-10-09; created 2025-12-12; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Limited Christmas Vehicle game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2025-12-12",
+   "product_updated": "2025-12-27",
+   "product_id": 72004198,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ],
+   "description_en": "Only available near Christmas. Get it while you can! (You will keep this vehicle forever)",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+  },
+  "product-gift-limited-thanksgiving-vehicle": {
+   "type": "item",
+   "name_en": "[GIFT] Limited Thanksgiving Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 2,
+   "unlock_cost": "125 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product named after the Limited Thanksgiving Vehicle pass, which was not for sale on 2026-10-09; created 2025-11-27; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Limited Thanksgiving Vehicle game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2025-11-27",
+   "product_updated": "2025-12-27",
+   "product_id": 71761264,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ],
+   "description_en": "Only available near Thanksgiving. Get it while you can! (You will keep this vehicle forever)",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+  },
+  "product-gift-limited-halloween-vehicle": {
+   "type": "item",
+   "name_en": "[GIFT] Limited Halloween Vehicle",
+   "page_slug": "limited-vehicles",
+   "order": 3,
+   "unlock_cost": "145 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product named after the Limited Halloween Vehicle pass, which was not for sale on 2026-10-09; created 2025-10-25; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Limited Halloween Vehicle game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2025-10-25",
+   "product_updated": "2025-10-25",
+   "product_id": 71182868,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-premium-trailers": {
+   "type": "item",
+   "name_en": "[GIFT] Premium Trailers",
+   "page_slug": "gamepasses",
+   "order": 4,
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the Premium Trailers pass, which costs 195 Robux; created 2024-08-14; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Premium Trailers game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2024-08-14",
+   "product_updated": "2025-11-01",
+   "product_id": 61251516,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-premium-private-servers": {
+   "type": "item",
+   "name_en": "[GIFT] Premium Private Servers",
+   "page_slug": "gamepasses",
+   "order": 5,
+   "unlock_cost": "195 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the Premium Private Servers pass, which costs 195 Robux; created 2025-08-15; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Premium Private Servers game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2025-08-15",
+   "product_updated": "2026-08-29",
+   "product_id": 69700358,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-premium-vehicles": {
+   "type": "item",
+   "name_en": "[GIFT] Premium Vehicles",
+   "page_slug": "gamepasses",
+   "order": 6,
+   "unlock_cost": "230 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the Premium Vehicles pass, which costs 230 Robux; created 2024-08-14; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Premium Vehicles game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2024-08-14",
+   "product_updated": "2026-08-29",
+   "product_id": 61251553,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-4-trailer-spawner": {
+   "type": "item",
+   "name_en": "[GIFT] 4 Trailer Spawner",
+   "page_slug": "gamepasses",
+   "order": 7,
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the 4 Trailer Spawner pass, which costs 290 Robux; created 2024-08-14; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the 4 Trailer Spawner game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2024-08-14",
+   "product_updated": "2026-06-06",
+   "product_id": 61251509,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-any-slot-spawner": {
+   "type": "item",
+   "name_en": "[GIFT] Any Slot Spawner",
+   "page_slug": "gamepasses",
+   "order": 8,
+   "unlock_cost": "290 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the Any Slot Spawner pass, which costs 290 Robux; created 2024-08-14; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Any Slot Spawner game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2024-08-14",
+   "product_updated": "2026-08-29",
+   "product_id": 61251525,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-anywhere-trailer-spawner": {
+   "type": "item",
+   "name_en": "[GIFT] Anywhere Trailer Spawner",
+   "page_slug": "gamepasses",
+   "order": 9,
+   "unlock_cost": "390 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the Anywhere Trailer Spawner pass, which costs 390 Robux; created 2024-08-14; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Anywhere Trailer Spawner game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2024-08-14",
+   "product_updated": "2026-08-29",
+   "product_id": 61251249,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-premium-customization": {
+   "type": "item",
+   "name_en": "[GIFT] Premium Customization",
+   "page_slug": "gamepasses",
+   "order": 10,
+   "unlock_cost": "390 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the Premium Customization pass, which costs 390 Robux; created 2025-08-15; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the Premium Customization game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2025-08-15",
+   "product_updated": "2026-06-05",
+   "product_id": 69700348,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "product-gift-4-vehicle-spawner": {
+   "type": "item",
+   "name_en": "[GIFT] 4 Vehicle Spawner",
+   "page_slug": "gamepasses",
+   "order": 11,
+   "unlock_cost": "490 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "key_notes_en": "Gift product for the 4 Vehicle Spawner pass, which costs 490 Robux; created 2024-08-14; the Roblox API marked it as for sale on 2026-10-09",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+    "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100"
+   ],
+   "usage_en": "Gift version of the 4 Vehicle Spawner game pass, going by the product name (the API gives no separate explanation of how gifting works)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100",
+   "product_created": "2024-08-14",
+   "product_updated": "2026-08-29",
+   "product_id": 61251539,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "description (empty in the Roblox API)",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)",
+    "how gifting works in game"
+   ]
+  },
+  "badge-welcome-to-american-plains-mudding": {
+   "type": "achievement",
+   "name_en": "Welcome to American Plains Mudding",
+   "page_slug": "badges",
+   "order": 1,
+   "description_en": "Thanks for playing American Plains Mudding!",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Thanks for playing American Plains Mudding!",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 83,858,118 times as of 2026-10-09 11:13 UTC (100.00 per 100 Welcome awards, our calculation); 61,198 in the previous day",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 83858118,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 61198,
+   "win_rate_raw": 0.295,
+   "badge_created": "2023-11-11",
+   "badge_updated": "2023-11-11",
+   "badge_id": 1123166882832107,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": []
+  },
+  "badge-tornado-survivor": {
+   "type": "achievement",
+   "name_en": "Tornado Survivor",
+   "page_slug": "badges",
+   "order": 2,
+   "description_en": "Experienced a tornado in APM and lived to tell the tale! 🌪️",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Experienced a tornado in APM and lived to tell the tale! 🌪️",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 2,684,652 times as of 2026-10-09 11:13 UTC (3.20 per 100 Welcome awards, our calculation); 4,404 in the previous day",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 2684652,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 4404,
+   "win_rate_raw": 0.021,
+   "badge_created": "2025-07-19",
+   "badge_updated": "2026-08-04",
+   "badge_id": 3388542076656534,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description"
+   ]
+  },
+  "badge-hidden-vehicle-1": {
+   "type": "achievement",
+   "name_en": "Hidden Vehicle",
+   "page_slug": "badges",
+   "order": 3,
+   "description_en": "Congrats, you have found a Hidden Vehicle.",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Congrats, you have found a Hidden Vehicle.",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 2,450,309 times as of 2026-10-09 11:13 UTC (2.92 per 100 Welcome awards, our calculation); 3,169 in the previous day · one of four badges with this name, created 2023-12-30",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 2450309,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 3169,
+   "win_rate_raw": 0.015,
+   "badge_created": "2023-12-30",
+   "badge_updated": "2025-10-23",
+   "badge_id": 607498769738490,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description",
+    "location",
+    "which vehicle or trailer it is"
+   ]
+  },
+  "badge-hidden-vehicle-2": {
+   "type": "achievement",
+   "name_en": "Hidden Vehicle",
+   "page_slug": "badges",
+   "order": 4,
+   "description_en": "Congrats, you have found a Hidden Vehicle.",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Congrats, you have found a Hidden Vehicle.",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 1,316,036 times as of 2026-10-09 11:13 UTC (1.57 per 100 Welcome awards, our calculation); 1,911 in the previous day · one of four badges with this name, created 2024-03-08",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 1316036,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 1911,
+   "win_rate_raw": 0.009,
+   "badge_created": "2024-03-08",
+   "badge_updated": "2025-10-23",
+   "badge_id": 314947669947351,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description",
+    "location",
+    "which vehicle or trailer it is"
+   ]
+  },
+  "badge-hidden-vehicle-4": {
+   "type": "achievement",
+   "name_en": "Hidden Vehicle",
+   "page_slug": "badges",
+   "order": 5,
+   "description_en": "Congrats, you have found a Hidden Vehicle.",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Congrats, you have found a Hidden Vehicle.",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 1,102,935 times as of 2026-10-09 11:13 UTC (1.32 per 100 Welcome awards, our calculation); 2,352 in the previous day · one of four badges with this name, created 2025-10-23",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 1102935,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 2352,
+   "win_rate_raw": 0.011,
+   "badge_created": "2025-10-23",
+   "badge_updated": "2025-11-08",
+   "badge_id": 1514979861516315,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description",
+    "location",
+    "which vehicle or trailer it is"
+   ]
+  },
+  "badge-hidden-vehicle-3": {
+   "type": "achievement",
+   "name_en": "Hidden Vehicle",
+   "page_slug": "badges",
+   "order": 6,
+   "description_en": "Congrats, you have found a Hidden Vehicle.",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Congrats, you have found a Hidden Vehicle.",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 896,295 times as of 2026-10-09 11:13 UTC (1.07 per 100 Welcome awards, our calculation); 1,437 in the previous day · one of four badges with this name, created 2024-06-14",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 896295,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 1437,
+   "win_rate_raw": 0.007,
+   "badge_created": "2024-06-14",
+   "badge_updated": "2026-07-11",
+   "badge_id": 341545978270739,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description",
+    "location",
+    "which vehicle or trailer it is"
+   ]
+  },
+  "badge-hidden-trailer": {
+   "type": "achievement",
+   "name_en": "Hidden Trailer",
+   "page_slug": "badges",
+   "order": 7,
+   "description_en": "Congrats, you have found a Hidden Trailer.",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Congrats, you have found a Hidden Trailer.",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 647,691 times as of 2026-10-09 11:13 UTC (0.77 per 100 Welcome awards, our calculation); 1,303 in the previous day",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 647691,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 1303,
+   "win_rate_raw": 0.006,
+   "badge_created": "2025-12-10",
+   "badge_updated": "2026-07-11",
+   "badge_id": 3544618350782004,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description",
+    "location",
+    "which vehicle or trailer it is"
+   ]
+  },
+  "badge-met-a-staff-member": {
+   "type": "achievement",
+   "name_en": "Met a Staff Member",
+   "page_slug": "badges",
+   "order": 8,
+   "description_en": "Congrats! You have met a staff member of APM!",
+   "description_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "requires_en": "Congrats! You have met a staff member of APM!",
+   "requires_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "key_notes_en": "Awarded 374,295 times as of 2026-10-09 11:13 UTC (0.45 per 100 Welcome awards, our calculation); 0 in the previous day",
+   "key_notes_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "awarded_count": 374295,
+   "awarded_count_source": "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc",
+   "past_day_awarded_count": 0,
+   "win_rate_raw": 0.0,
+   "badge_created": "2024-03-04",
+   "badge_updated": "2024-03-04",
+   "badge_id": 3227667483115084,
+   "enabled": true,
+   "source_urls": [
+    "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "exact in-game requirement beyond the one-line description"
+   ]
+  }
+ }
+}

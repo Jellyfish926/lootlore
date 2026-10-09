@@ -1,0 +1,161 @@
+{
+ "_note": "图片池:Roblox 官方 thumbnails API 返回的 10 张游戏页宣传缩略图 + 1 张官方活动(virtual-events)配图 + 官方游戏图标(2026-10-09 取)。全部是开发者上传到 Roblox 的宣传图,不是我们的实机截图,alt 以 Promotional art / Official event art 开头如实说明。画面是写实风格的车辆,alt 与图注只用通用车型词(ATV、pickup、side-by-side、camper、wrecker、combine 等),不出现任何真实车厂或车型名;画面上看得清的字只抄 APM、APM 2021、AmericanPlains、AMERICAN PLAINS FIRE 这类游戏自己的字样。活动「APM Dirtbikes 🏍️」的配图 mediaId 110368663107405 与 th2 是同一张图(CDN 哈希相同),不重复入池。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_events 重取一次并替换。接口最大 768x432,达不到 1200 宽的 Discover 大图门槛。2026-10-09 写入前逐个 curl 验 200(23 个 URL:11 张 16:9 图各 768x432 与 480x270 两档 + 图标 512x512;状态记录在 raw/image-check.txt)。图标(512x512 方图)只在 author 页正文内使用,不做封面与卡图。官方另有 1 个预览视频(videoId 89700709995341),未使用。",
+ "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=2783797267&countPerUniverse=10&size=768x432&format=Png",
+ "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=2783797267&countPerUniverse=10&size=480x270&format=Png",
+ "source_events": "https://thumbnails.roblox.com/v1/assets?assetIds=119697635046294,110368663107405&size=768x432&format=Png",
+ "source_events_ids": "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+ "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=2783797267&size=512x512&format=Png",
+ "fetched": "2026-10-09",
+ "credit": {
+  "en": "Official art · American Plains Mudding (Roblox)"
+ },
+ "default": "th1",
+ "pages": {
+  "index": "th1",
+  "guides": "th5",
+  "how-to-play": "th3",
+  "updates": "th2",
+  "badges": "th6",
+  "gamepasses": "th4",
+  "limited-vehicles": "th7",
+  "spawning": "th8",
+  "private-servers": "th9",
+  "vehicles": "th10",
+  "community": "ev_map",
+  "author": "th6"
+ },
+ "shots": {
+  "th1": {
+   "src": "https://tr.rbxcdn.com/180DAY-31cf1860de3a53f27b0ca69ed541d818/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-31cf1860de3a53f27b0ca69ed541d818/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 127965895404466,
+   "alt": {
+    "en": "Promotional art: a Roblox character in an orange high-visibility vest rides a red ATV with a shovel strapped to its front rack, with a white pickup truck marked AMERICAN PLAINS FIRE parked behind in a pine forest"
+   }
+  },
+  "th2": {
+   "src": "https://tr.rbxcdn.com/180DAY-9e2d8f7f776984546b289068c8b6c0ac/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-9e2d8f7f776984546b289068c8b6c0ac/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 101704244644678,
+   "alt": {
+    "en": "Promotional art: two Roblox riders perform mid-air tricks on dirt bikes, one red and one blue, above a line of pine trees"
+   }
+  },
+  "th3": {
+   "src": "https://tr.rbxcdn.com/180DAY-b41d1419ddb68faa72fdff97dfbdfaf6/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-b41d1419ddb68faa72fdff97dfbdfaf6/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 113361585184489,
+   "alt": {
+    "en": "Promotional art: a blue side-by-side off-road vehicle with APM on its door and a US flag on a pole jumps through the air, while a rider on an ATV jumps behind it and throws up dirt"
+   }
+  },
+  "th4": {
+   "src": "https://tr.rbxcdn.com/180DAY-20fdfcf2e300e9fe4632022437d630d8/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-20fdfcf2e300e9fe4632022437d630d8/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 95246580298618,
+   "alt": {
+    "en": "Promotional art: a long white fifth-wheel camper trailer with APM on its nose, parked on gravel beside a cabin with its entry steps folded down"
+   }
+  },
+  "th5": {
+   "src": "https://tr.rbxcdn.com/180DAY-1e10a55b419e1ce8e507583b36db8ef6/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-1e10a55b419e1ce8e507583b36db8ef6/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 93581475163489,
+   "alt": {
+    "en": "Promotional art: a Roblox character in a welding helmet kneels beside a dark blue pickup truck with a metal flatbed carrying a blue welding machine marked APM 2021, with a windmill and a barn behind"
+   }
+  },
+  "th6": {
+   "src": "https://tr.rbxcdn.com/180DAY-1ca411de4a972fa1339dd6c58bf2e4e5/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-1ca411de4a972fa1339dd6c58bf2e4e5/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 106819451759874,
+   "alt": {
+    "en": "Promotional art: a red lifted pickup truck carrying a large camper body with AmericanPlains on its side, parked on a grassy trail with mountains behind"
+   }
+  },
+  "th7": {
+   "src": "https://tr.rbxcdn.com/180DAY-27a8730ceb54fb5864e4b55e521cee6b/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-27a8730ceb54fb5864e4b55e521cee6b/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 103187397875783,
+   "alt": {
+    "en": "Promotional art: a red heavy wrecker truck with its boom raised lifts a white skid-steer loader off the ground in a car park ringed with traffic cones"
+   }
+  },
+  "th8": {
+   "src": "https://tr.rbxcdn.com/180DAY-60554bfe6934c2a3fa5de9988b9d9f25/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-60554bfe6934c2a3fa5de9988b9d9f25/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 88898841472232,
+   "alt": {
+    "en": "Promotional art: a red pickup truck backs a trailer carrying a white fishing boat marked APM down a ramp into the water, with a US flag and a farm windmill behind"
+   }
+  },
+  "th9": {
+   "src": "https://tr.rbxcdn.com/180DAY-16e834c2ee47200f10bae14f0d7ab67d/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-16e834c2ee47200f10bae14f0d7ab67d/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 111737831706271,
+   "alt": {
+    "en": "Promotional art: a black armoured vehicle marked APM 2021 drives along a wet road in heavy rain while a tornado touches down behind a farm windmill"
+   }
+  },
+  "th10": {
+   "src": "https://tr.rbxcdn.com/180DAY-b1344a68e6bb78ed993f8ed504aeda38/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-b1344a68e6bb78ed993f8ed504aeda38/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 124873558179614,
+   "alt": {
+    "en": "Promotional art: a red combine harvester with a wide header attached and the letters APM on its side, parked on grass beside a cattle pen"
+   }
+  },
+  "ev_map": {
+   "src": "https://tr.rbxcdn.com/180DAY-d8db7d543bf08e1377bfe24226e6ddd5/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-d8db7d543bf08e1377bfe24226e6ddd5/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 119697635046294,
+   "event": "APM Map Update 🗺️ (event id 1153890537187705599)",
+   "alt": {
+    "en": "Official event art: a small-town main street lined with brick shopfronts and trees, with classic cars and pickup trucks on the road and pine-covered hills behind"
+   }
+  },
+  "icon": {
+   "src": "https://tr.rbxcdn.com/180DAY-349b9f539333d0e440cf334a58ec345a/512/512/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-349b9f539333d0e440cf334a58ec345a/512/512/Image/Png/noFilter",
+   "w": 512,
+   "h": 512,
+   "small_w": 512,
+   "alt": {
+    "en": "The game's official icon: the letters APM in a stars-and-stripes pattern above a Roblox character in a high-visibility vest riding a red ATV with a windshield"
+   }
+  }
+ }
+}

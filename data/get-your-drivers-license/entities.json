@@ -1,0 +1,619 @@
+{
+ "fetched": "2026-10-09",
+ "game_version": null,
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级),2026-10-09 11:11–11:19 UTC 取:游戏描述 games.roblox.com、通行证 apis.roblox.com/game-passes(5 个,nextPageToken 空)、开发者商品 apis.roblox.com/developer-products v2(13 个,nextPageCursor=null)、群组 groups.roblox.com、支持语言 gameinternationalization.roblox.com、分级 experience-guidelines-api(POST)。game_version 置 null:Roblox 体验没有版本号,games API 的 updated 字段在两个接口上是两个值(18:36:30Z / 15:24:03Z),不作补丁日期。名称逐字复制接口 name / Name 字段(含 emoji、方括号、大小写,如 'PRO EMOJI PACK 😈'、'Airhorn [ANNOYING] ☠️'、'Skip Line [SALE]');description_en / usage_en 逐字复制接口 displayDescription / Description,18 个商店实体每个都有官方描述。6 个 stage-* / mechanic-* 实体的 description_en 是官方描述里对应那一行(去掉行首 emoji,其余逐字),key_notes_en 只拼接相关商品的官方名称、价格与描述原文。没有徽章实体(badges 接口四次读取均为空)、没有活动实体(virtual-events 为空)、没有兑换码实体(官方来源 0 个码)、没有逐辆车的实体(官方只给数量 18 与档位名 Epic;唯一具名的车是商品 Golden Supercar 🏆,已作为 item 实体)。价格为 2026-10-09 快照。通行证 order 按价格升序;商品 order 按 shop 页的分组顺序(Skips / Pranks / Examiner / Cars),分组名是本站编辑口径,不是官方分类。笔试题目、考场路线、18 辆车名、结局全表、考官是否有免费途径等均无一手来源,记入各实体的 unverified_fields,不编造。",
+ "roblox": {
+  "universeId": 10768565603,
+  "rootPlaceId": 104416416393862,
+  "creatorGroupId": 356677783,
+  "created": "2026-09-29T08:24:37.079Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页(全部已发布,无 draft)。",
+ "entities": {
+  "get-your-drivers-license": {
+   "type": "mechanic",
+   "name_en": "Get Your Driver's License!",
+   "page_slug": "how-to-play",
+   "summary_en": "Free Roblox game by the group Time Will Pass. Its official description lists: take a number and wait your turn, pass the written test, drive the test course, win 1 of 18 cars, unlock every ending, be the Examiner.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "description_en": "Wait in line and get your Driver's License!",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "platforms": "Roblox",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "release_date_en": "29 September 2026 (experience created)",
+   "release_date_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "role_en": "Developer: Time Will Pass (Roblox group 356677783)",
+   "role_source": "https://groups.roblox.com/v1/groups/356677783",
+   "max_players": 25,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "25 players per server · Maturity: Minimal · Genre: Simulation, Idle · 18 supported languages · 5 game passes · 13 developer products · 18 cars named in the description",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://gameinternationalization.roblox.com/v1/supported-languages/games/10768565603",
+    "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://groups.roblox.com/v1/groups/356677783",
+    "https://gameinternationalization.roblox.com/v1/supported-languages/games/10768565603",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "private_servers",
+    "supported_devices",
+    "written_test_questions",
+    "course_layout",
+    "car_names",
+    "full_ending_list",
+    "run_length"
+   ]
+  },
+  "stage-waiting-line": {
+   "type": "mechanic",
+   "name_en": "The line",
+   "page_slug": "waiting-line",
+   "description_en": "Take a number and wait your turn",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "Skip Line [SALE]: 9 Robux, \"Jump 5 places ahead in the line.\" · Skip Time [SALE]: 9 Robux, \"Skip 2:30 of the wait in the waiting room.\" · Skip To End: 48 Robux, \"Go straight to your driving test.\" · Roblox lists 25 players per server; how the line is filled is not stated",
+   "key_notes_source": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+    "https://games.roblox.com/v1/games?universeIds=10768565603"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "line_length",
+    "waiting_room_total_time",
+    "how_numbers_are_assigned"
+   ]
+  },
+  "stage-written-test": {
+   "type": "mechanic",
+   "name_en": "Written test",
+   "page_slug": "how-to-play",
+   "description_en": "Pass the written test",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "Skip Test: 29 Robux, \"Pass the written test straight away.\"",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "questions",
+    "number_of_questions",
+    "pass_mark",
+    "answers"
+   ]
+  },
+  "stage-driving-test": {
+   "type": "mechanic",
+   "name_en": "Driving test",
+   "page_slug": "driving-test",
+   "description_en": "Drive the test course: cows, ducks, ramps and more",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "Retake Test: 19 Robux, \"Failed your driving test? Take it again right away, no line.\" · Skip To End: 48 Robux, \"Go straight to your driving test.\"",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "course_layout",
+    "obstacle_positions",
+    "scoring_rules"
+   ]
+  },
+  "mechanic-endings": {
+   "type": "mechanic",
+   "name_en": "Endings",
+   "page_slug": "driving-test",
+   "description_en": "Unlock every ending, from Honor Roll to Towed",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "Two endings are named in the official description: Honor Roll and Towed",
+   "key_notes_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "full_ending_list",
+    "ending_triggers",
+    "number_of_endings"
+   ]
+  },
+  "mechanic-examiner": {
+   "type": "mechanic",
+   "name_en": "Examiner",
+   "page_slug": "driving-test",
+   "description_en": "Be the Examiner and judge other players' driving",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "Be The Examiner 📋: 29 Robux, \"5 minutes as the driving examiner.\" · +1 Minute: 9 Robux, \"One more minute as the examiner.\"",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "free_route_to_the_role",
+    "what_the_verdict_changes",
+    "judging_interface"
+   ]
+  },
+  "mechanic-cars": {
+   "type": "mechanic",
+   "name_en": "Cars",
+   "page_slug": "cars",
+   "description_en": "Win 1 of 18 cars, from rusty hatchbacks to secret supercars",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=10768565603",
+   "key_notes_en": "VIP Ticket 🎟️: 149 Robux, \"Ticket #001: your next car is Epic or better.\" · Golden Supercar 🏆: 39 Robux, \"The best car in the game, yours to keep. Drive it on The Loop.\"",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=10768565603",
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "car_names",
+    "tier_names_other_than_epic",
+    "tier_odds",
+    "the_loop_location",
+    "whether_golden_supercar_is_one_of_the_18"
+   ]
+  },
+  "pass-pro-emoji-pack": {
+   "type": "gamepass",
+   "name_en": "PRO EMOJI PACK 😈",
+   "page_slug": "gamepasses",
+   "order": 1,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "description_en": "Unlocks the pro emoji pack.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Unlocks the pro emoji pack.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "pass_id": 2003648331,
+   "created": "2026-09-30",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-airhorn-annoying": {
+   "type": "gamepass",
+   "name_en": "Airhorn [ANNOYING] ☠️",
+   "page_slug": "gamepasses",
+   "order": 2,
+   "unlock_cost": "16 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "description_en": "A very loud airhorn.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "usage_en": "A very loud airhorn.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "pass_id": 2002994378,
+   "created": "2026-09-30",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-time-out": {
+   "type": "gamepass",
+   "name_en": "Time Out",
+   "page_slug": "gamepasses",
+   "order": 3,
+   "unlock_cost": "24 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "description_en": "Put someone in time out.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Put someone in time out.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "pass_id": 2001596592,
+   "created": "2026-09-30",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-gravity-gun": {
+   "type": "gamepass",
+   "name_en": "Gravity Gun 🔥",
+   "page_slug": "gamepasses",
+   "order": 4,
+   "unlock_cost": "160 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "description_en": "Pick people up and throw them.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Pick people up and throw them.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "pass_id": 2002502542,
+   "created": "2026-09-30",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "pass-ban-hammer": {
+   "type": "gamepass",
+   "name_en": "Ban Hammer",
+   "page_slug": "gamepasses",
+   "order": 5,
+   "unlock_cost": "1,200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "description_en": "Bonk people with the ban hammer.",
+   "description_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "usage_en": "Bonk people with the ban hammer.",
+   "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100",
+   "pass_id": 2001554576,
+   "created": "2026-09-30",
+   "last_updated": "2026-09-30",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-skip-line-sale": {
+   "type": "item",
+   "name_en": "Skip Line [SALE]",
+   "page_slug": "shop",
+   "order": 1,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Jump 5 places ahead in the line.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Jump 5 places ahead in the line.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579206,
+   "shop_group": "Skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-skip-time-sale": {
+   "type": "item",
+   "name_en": "Skip Time [SALE]",
+   "page_slug": "shop",
+   "order": 2,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Skip 2:30 of the wait in the waiting room.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Skip 2:30 of the wait in the waiting room.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579219,
+   "shop_group": "Skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-retake-test": {
+   "type": "item",
+   "name_en": "Retake Test",
+   "page_slug": "shop",
+   "order": 3,
+   "unlock_cost": "19 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Failed your driving test? Take it again right away, no line.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Failed your driving test? Take it again right away, no line.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-10-08",
+   "product_updated": "2026-10-08",
+   "product_id": 3717235859,
+   "shop_group": "Skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-skip-test": {
+   "type": "item",
+   "name_en": "Skip Test",
+   "page_slug": "shop",
+   "order": 4,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Pass the written test straight away.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Pass the written test straight away.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579223,
+   "shop_group": "Skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-skip-to-end": {
+   "type": "item",
+   "name_en": "Skip To End",
+   "page_slug": "shop",
+   "order": 5,
+   "unlock_cost": "48 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Go straight to your driving test.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Go straight to your driving test.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579231,
+   "shop_group": "Skips",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-kill": {
+   "type": "item",
+   "name_en": "Kill",
+   "page_slug": "shop",
+   "order": 6,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "The person ahead of you in line goes poof.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "The person ahead of you in line goes poof.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579244,
+   "shop_group": "Pranks",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-revenge": {
+   "type": "item",
+   "name_en": "Revenge ⚡",
+   "page_slug": "shop",
+   "order": 7,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Get back at whoever knocked you out.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Get back at whoever knocked you out.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579253,
+   "shop_group": "Pranks",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-scare-all": {
+   "type": "item",
+   "name_en": "Scare All",
+   "page_slug": "shop",
+   "order": 8,
+   "unlock_cost": "24 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "A jumpscare on everyone's screen.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "A jumpscare on everyone's screen.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579250,
+   "shop_group": "Pranks",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-kill-all": {
+   "type": "item",
+   "name_en": "Kill All",
+   "page_slug": "shop",
+   "order": 9,
+   "unlock_cost": "160 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Everyone waiting in line goes poof.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Everyone waiting in line goes poof.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579246,
+   "shop_group": "Pranks",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-plus-1-minute": {
+   "type": "item",
+   "name_en": "+1 Minute",
+   "page_slug": "shop",
+   "order": 10,
+   "unlock_cost": "9 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "One more minute as the examiner.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "One more minute as the examiner.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579266,
+   "shop_group": "Examiner",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-be-the-examiner": {
+   "type": "item",
+   "name_en": "Be The Examiner 📋",
+   "page_slug": "shop",
+   "order": 11,
+   "unlock_cost": "29 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "5 minutes as the driving examiner.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "5 minutes as the driving examiner.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579261,
+   "shop_group": "Examiner",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-golden-supercar": {
+   "type": "item",
+   "name_en": "Golden Supercar 🏆",
+   "page_slug": "shop",
+   "order": 12,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "The best car in the game, yours to keep. Drive it on The Loop.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "The best car in the game, yours to keep. Drive it on The Loop.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-10-05",
+   "product_id": 3715639484,
+   "shop_group": "Cars",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  },
+  "product-vip-ticket": {
+   "type": "item",
+   "name_en": "VIP Ticket 🎟️",
+   "page_slug": "shop",
+   "order": 13,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "description_en": "Ticket #001: your next car is Epic or better.",
+   "description_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "usage_en": "Ticket #001: your next car is Epic or better.",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100",
+   "product_created": "2026-09-30",
+   "product_updated": "2026-09-30",
+   "product_id": 3715579273,
+   "shop_group": "Cars",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-09",
+   "unverified_fields": [
+    "effect_beyond_description"
+   ]
+  }
+ }
+}

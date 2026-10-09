@@ -9,18 +9,18 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Category index"
 type: "category"
-tldr: ["Four guides for collectors: item sources, the exchange and market, events with the Paw Pass, and every achievement.", "Chasing a rare hat? Read hats and skins for the odds, then exchange and trading for the fastest route up.", "Achievement hunting? The achievements page lists all 28 with global unlock rates.", "Single-item rarities are not listed anywhere on this hub, because no official source publishes them."]
+tldr: ["Five guides for collectors: item sources, the exchange and market, events, the Paw Pass, and every achievement.", "Chasing a rare hat? Read hats and skins for the odds, then exchange and trading for the fastest route up.", "Achievement hunting? The achievements page lists all 28 with global unlock rates.", "Single-item rarities are not listed anywhere on this hub, because no official source publishes them."]
 related: []
 sourceUrls: []
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
 ---
 # Bongo Cat Hats, Skins and Achievements Guides
 
-This section is for collectors. It explains where items come from and how rare each tier is, how to turn duplicates into better items or sell them, which limited events have already come and gone, and what every Steam achievement asks for. The four guides link to each other, so start with whichever goal you have.
+This section is for collectors. It explains where items come from and how rare each tier is, how to turn duplicates into better items or sell them, which limited events have already come and gone, and what every Steam achievement asks for. The guides link to each other, so start with whichever goal you have.
 
 ## Pick a guide by goal
 
@@ -41,9 +41,9 @@ The seasonal and charity events with their dates, the advent and Lunar New Year 
 
 The complete achievement table with requirements copied from Steam and global unlock rates, grouped by taps, items, emojis, lobbies and exchanges, with a suggested order.
 
-## How the four pages fit together
+## How the pages fit together
 
-Items come from chests at fixed odds, the exchange moves them up a tier, events and the Paw Pass add limited ones, and several achievements reward the same activities. A player chasing a specific Legendary will usually need all four pages: the odds to set expectations, the exchange to climb, the event list to know whether it can still drop, and the market rules if it cannot.
+Items come from chests at fixed odds, the exchange moves them up a tier, events and the Paw Pass add limited ones, and several achievements reward the same activities. A player chasing a specific Legendary will usually need several of these pages: the odds to set expectations, the exchange to climb, the event list to know whether it can still drop, and the market rules if it cannot.
 
 ## What these pages will not tell you
 

@@ -14,7 +14,7 @@ entities: ["paw-pass"]
 related: ["hats-skins", "exchange-trading", "multiplayer"]
 sourceUrls: ["https://store.steampowered.com/news/app/3419430/view/1842212951313382", "https://store.steampowered.com/news/app/3419430/view/1795283637960385", "https://store.steampowered.com/news/app/3419430/view/1803527891535449", "https://store.steampowered.com/news/app/3419430/view/1813041031167641", "https://store.steampowered.com/news/app/3419430/view/1815034432865853", "https://store.steampowered.com/news/app/3419430/view/1815580768395840", "https://store.steampowered.com/news/app/3419430/view/1817483467044521", "https://store.steampowered.com/news/app/3419430/view/1823825466497567", "https://store.steampowered.com/news/app/3419430/view/1824644522846187", "https://store.steampowered.com/news/app/3419430/view/1828894815553998", "https://store.steampowered.com/news/app/3419430/view/1835236783574334", "https://store.steampowered.com/news/app/3419430/view/1818752592137196", "https://store.steampowered.com/news/app/3419430/view/1811772772443374", "https://store.steampowered.com/news/app/3419430/view/1816307528971434", "https://store.steampowered.com/news/app/3419430/view/1834602721190453", "https://store.steampowered.com/news/app/3419430/view/1844115010495136", "https://store.steampowered.com/news/app/3419430/view/1836506165556399"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
@@ -39,7 +39,7 @@ The Paw Pass brings new cosmetics every month instead of only at seasonal events
 | Offline | You cannot redeem rewards offline, but taps still count |
 | Premium | Buy a Paw Pass Ticket on Steam, then redeem it in-game with Get Pass |
 
-The pass opens from the ticket button at the bottom of the inventory. Joining late is not a problem: the developer says you can always get a Paw Pass Ticket to unlock past passes. Events still happen alongside it, and during events both tracks also drop event chests. We have not found an official number of taps per milestone, so this page does not give one.
+The pass opens from the ticket button at the bottom of the inventory. Joining late is not a problem: the developer says you can always get a Paw Pass Ticket to unlock past passes. Events still happen alongside it, and during events both tracks also drop event chests. We have not found an official number of taps per milestone, so this page does not give one; the two lanes, each monthly theme and what the coins buy are broken down in the [Paw Pass and Bongo Coins guide](/bongo-cat/paw-pass/).
 
 ![A white cat under orange "WAKU WAKU" lettering, tapping on the counter](ss00 "Event and pass items land in the same inventory as chest drops")
 

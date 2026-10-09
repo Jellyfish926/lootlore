@@ -19,7 +19,8 @@
   "exchange-trading": "ss03",
   "events": "ss04",
   "achievements": "ss01",
-  "author": "ss02"
+  "author": "ss02",
+  "paw-pass": "ss02"
  },
  "shots": {
   "ss00": {

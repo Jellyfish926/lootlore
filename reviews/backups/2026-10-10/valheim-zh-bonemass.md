@@ -15,7 +15,7 @@ related: ["mountains", "combat", "death-recovery"]
 chineseCharacters: 750
 sourceUrls: ["https://valheim.fandom.com/wiki/Withered_bone", "https://valheim.fandom.com/wiki/Bonemass"]
 date: "2026-09-17"
-updated: "2026-10-10"
+updated: "2026-09-17"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false

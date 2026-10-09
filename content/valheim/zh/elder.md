@@ -12,7 +12,7 @@ type: "article"
 tldr: ["三颗上古种子用于召唤古树长老，种子由灰矮人暴徒和灰矮人巢穴获得。", "这场战斗打的是场地：树根和普通敌人会让原本安全的位置中途变得不能站。", "按两家社区 wiki，古树长老对火焰非常弱，招式包括远程藤蔓、召唤树根与近身踩踏。", "沼泽钥匙只负责开门：先解决抗毒和运输，再走进沼泽。"]
 entity: "elder"
 related: ["swamp", "mead", "portals"]
-chineseCharacters: 733
+chineseCharacters: 938
 sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder", "https://valheim.wiki/w/The_Elder"]
 date: "2026-09-17"
 updated: "2026-10-10"
@@ -27,7 +27,7 @@ author: "Jellyfi"
 
 ## 找祭坛前先确认后勤
 
-探索黑暗林山墓室与部分遗迹中的指引，可以帮助定位古树长老。距离基地远时，不必带全部贵重材料第一次就去召唤。先侦察、建立回程、回家补满状态，再进行正式挑战，会更容易处理失败。
+探索黑暗林山的诡秘墓穴与部分遗迹中的指引，可以帮助定位古树长老。距离基地远时，不必带全部贵重材料第一次就去召唤。先侦察、建立回程、回家补满状态，再进行正式挑战，会更容易处理失败。
 
 ![森林营地的篝火与帐篷旁，一只长满苔藓的巨型生物睁着黄色眼睛](ss10 "先侦察、建好回程、回家补给，再正式挑战")
 

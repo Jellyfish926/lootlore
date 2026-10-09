@@ -11,8 +11,8 @@ scope: "Category index"
 type: "category"
 tldr: ["Eight guides for the base side of the game: building, food, farming, mead, Rested, portals, sailing and traders.", "Per the community wiki, you start with 25 health and 50 stamina, and up to three different foods can be active at once.", "The wiki puts Rested at 7 minutes plus your comfort level, earned after 20 seconds of Resting.", "On the default death penalty the wiki lists a 5% loss in each skill, then 10 minutes of No skill drain."]
 related: []
-chineseCharacters: 1635
-sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Food", "https://valheim.wiki/w/Health", "https://valheim.wiki/w/Stamina", "https://valheim.wiki/w/Resting", "https://valheim.wiki/w/Rested", "https://valheim.wiki/w/Comfort", "https://valheim.wiki/w/Shelter", "https://valheim.wiki/w/Wet", "https://valheim.wiki/w/Cold", "https://valheim.wiki/w/Freezing", "https://valheim.wiki/w/Death", "https://valheim.wiki/w/No_skill_drain", "https://valheim.wiki/w/Corpse_run", "https://valheim.fandom.com/wiki/Food", "https://valheim.fandom.com/wiki/Cold", "https://valheim.fandom.com/wiki/Freezing"]
+chineseCharacters: 2301
+sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Food", "https://valheim.wiki/w/Health", "https://valheim.wiki/w/Stamina", "https://valheim.wiki/w/Resting", "https://valheim.wiki/w/Rested", "https://valheim.wiki/w/Comfort", "https://valheim.wiki/w/Shelter", "https://valheim.wiki/w/Wet", "https://valheim.wiki/w/Cold", "https://valheim.wiki/w/Freezing", "https://valheim.wiki/w/Death", "https://valheim.wiki/w/No_skill_drain", "https://valheim.wiki/w/Corpse_run", "https://valheim.fandom.com/wiki/Food", "https://valheim.fandom.com/wiki/Cold", "https://valheim.fandom.com/wiki/Freezing", "https://valheim.wiki/w/Sleeping", "https://valheim.wiki/w/Bed", "https://valheim.wiki/w/Inventory", "https://valheim.wiki/w/Encumbered", "https://valheim.wiki/w/Megingjord", "https://valheim.fandom.com/wiki/Comfort", "https://valheim.fandom.com/wiki/Sleeping", "https://valheim.fandom.com/wiki/Bed", "https://valheim.fandom.com/wiki/Inventory", "https://valheim.fandom.com/wiki/Encumbered", "https://valheim.fandom.com/wiki/Megingjord", "https://valheim.fandom.com/wiki/Stamina", "https://valheim.fandom.com/wiki/Health"]
 date: "2026-09-17"
 updated: "2026-10-10"
 reviewed: "2026-10-10"
@@ -38,6 +38,10 @@ Per the community-run Valheim Wiki, you start with 25 health and 50 base stamina
 
 In the wiki's table, berries lean towards stamina and cooked meat towards health, so a mixed plate covers both from day one. You cannot eat a second helping of the same food until the first is partly digested, which the wiki says shows as a flashing icon. Once foraging stops keeping up, a [farm](/valheim/farming/) keeps the slots filled.
 
+## How should you fill the three food slots?
+
+Both community wikis give the same rule of thumb: eat foods with higher stamina for exploration and resource gathering, and foods with higher health and health regeneration for dungeons and boss fights. They tie maximum health to how much you can block before being staggered, so shield users lean towards health, while players who dodge every attack lean towards stamina. Magic users, they add, benefit most from eitr food. Eating the same food again refreshes its strength and duration, and both wikis put the health regeneration from each food at 1 to 6 points every 10 seconds.
+
 ## How do you get the Rested buff?
 
 Per the community wiki, you get Resting by sitting by a fire with no enemies near, or by standing near a fire while sheltered. The wiki defines Shelter as a roof plus 80% cover and says Resting will not start while you are Wet. After 20 uninterrupted seconds, it adds, Resting turns into Rested.
@@ -52,6 +56,14 @@ Per the community wiki, you get Resting by sitting by a fire with no enemies nea
 | Normal maximum | Comfort 22, or 29 minutes |
 
 Per the wiki, comfort sets how long Rested lasts, and the XP bonus does not change with it. The [Rested guide](/valheim/rested/) covers why the buff fails to appear, and the [first base guide](/valheim/first-base/) covers fires, roofs and smoke.
+
+## Where does comfort come from?
+
+Per both community wikis, comfort starts at 1 for sitting near a fire and 2 for being sheltered near one, and those two do not stack. Furniture adds to it by category, and only the best piece in each category counts: a Campfire gives 1 and a Hearth 2, a Bed 1 and a Dragon bed 2, a Bench or Stool 1 and a Chair 2. A Table adds 1, a Deer rug 1 and a banner 1, so a starter hut climbs quickly. Both wikis also note that building a campfire on entering most dungeons, such as Burial Chambers, is enough for comfort 3 and a 10-minute Rested buff.
+
+## When can you sleep through the night?
+
+Both wikis list the same five conditions for sleeping in a bed: it is afternoon or night, no enemies are nearby, the bed has a roof and 80% cover, a fire is nearby, and you are not Wet. You have to claim the bed first, and a bed can only be claimed when it has a roof and 80% cover. Both wikis list a Bed as costing 8 Wood at a Workbench. Sleeping skips to the next morning while the game fast-forwards, so Smelters keep working, and the wikis warn that raw food left on a Cooking station will burn.
 
 ## What do Wet, Cold and Freezing do?
 
@@ -76,6 +88,12 @@ Per the wiki, you leave a tombstone holding all your equipment, and on the defau
 | Corpse run | 50 seconds | Run and jump stamina usage -75%, max carry weight +150, resistant to Blunt, Slash and Pierce |
 
 According to the wiki's Corpse run page, the effect only starts once the grave is completely emptied. The [death recovery guide](/valheim/death-recovery/) turns these numbers into a rescue plan.
+
+## How much can you carry, and how does stamina come back?
+
+Both wikis put base carry weight at 300. They list four ways to raise it: the Megingjord belt, sold by Haldor, adds 150; Corpse run adds 150 for 50 seconds; Moder's power adds 300 for 5 minutes; and Mead of Troll endurance adds 250 for 5 minutes. Go over the limit and you are Encumbered: per both wikis you move at 2 metres per second, cannot run, jump, dodge or block, lose 5 stamina per second while moving, and regenerate none.
+
+Stamina itself starts at 50, shown as bars of 25 each. Both wikis say it begins to regenerate 1 second after you stop spending it, at a base rate between 6 per second when the bar is full and 12 per second when it is empty. Swimming and falling stop regeneration entirely in their figures, which is why a long swim is risky. The [traders guide](/valheim/traders/) covers Haldor, and the [sailing guide](/valheim/ships/) covers moving heavy ore.
 
 ## What should you do in your first days?
 

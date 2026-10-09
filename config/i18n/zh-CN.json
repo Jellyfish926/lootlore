@@ -108,7 +108,7 @@
   "c_name": "名称",
   "c_entry_table": "总览表",
   "boss_table": "首领速查表",
-  "boss_table_intro": "召唤材料、生命值与伤害构成汇总在一张可排序的表里。点击表头即可按该列排序。",
+  "boss_table_intro": "召唤材料、生命值与伤害构成汇总在一张可排序的表里。表中数值是社区口径，来自 valheim.wiki 和 Valheim Fandom wiki 两家社区 wiki（Kall 一行只有 valheim.wiki 一家），不是官方数字：我们读过的 Iron Gate 更新说明没有给出 Boss 的生命值或抗性。点击表头即可按该列排序。",
   "biome_table": "区域顺序",
   "biome_table_intro": "按推进顺序列出各区域，以及对应首领、主要资源与会遇到的敌人。",
   "sort_by": "按{col}排序",

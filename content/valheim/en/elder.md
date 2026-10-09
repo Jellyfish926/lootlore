@@ -12,7 +12,7 @@ type: "article"
 tldr: ["Three ancient seeds summon The Elder; they come from Greydwarf brutes and Greydwarf nests.", "The fight is about controlling ground — roots and ordinary mobs can make a safe spot unstandable mid-fight.", "Both community wikis list The Elder as very weak to Fire; his attacks include ranged vines, summoned roots and a melee stomp.", "The Swamp Key only opens doors: sort out poison resistance and transport before you walk in."]
 entity: "elder"
 related: ["swamp", "mead", "portals"]
-chineseCharacters: 733
+chineseCharacters: 938
 sourceUrls: ["https://valheim.fandom.com/wiki/Ancient_seed", "https://valheim.fandom.com/wiki/The_Elder", "https://valheim.wiki/w/The_Elder"]
 date: "2026-09-17"
 updated: "2026-10-10"

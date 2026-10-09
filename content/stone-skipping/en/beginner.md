@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 New to +1 Stone Skipping? Throw first: the official description says every bounce gives +1 Skill, training and levelling up make you throw farther, and farther zones pay more Wins. Keep your Robux until you have played a session. Then read [how to play](/stone-skipping/how-to-play/), which goes through the six gameplay lines one by one.
 
-The official description of the game is eight short lines (an opening line, six gameplay lines and a closing line asking for a like and favourite), and the store items have no descriptions at all. These guides stay inside that evidence. Where the developer has said nothing, the page says "not shown in public data" instead of filling the gap with a guess. Store names and prices on this page were read from Roblox at 18:12 UTC on 9 October 2026.
+The official description of the game is eight short lines (an opening line, six gameplay lines and a closing line asking for a like and favourite), and the store items have no descriptions at all. These guides stay inside that evidence. Where the developer has said nothing, the page says "not shown in public data" instead of filling the gap with a guess. Store names, prices and counts on this page were read from Roblox at 18:12 UTC on 9 October 2026. Anything added to the store after that minute is not counted here, so the live lists can be longer.
 
 ## Which guide answers your question?
 
@@ -41,7 +41,7 @@ The six gameplay lines in a table, with what each one tells you and what it leav
 
 ### [Updates: Admin Abuse and World 5 Time](/stone-skipping/updates/)
 
-The ADMIN ABUSE + WORLD 5 event of 3 October 2026 in seven time zones, and a dated store timeline that starts when the experience was created on 5 September 2026 and stops at 1 October 2026. That page was last checked on 2 October 2026, so the 11 products created after that date are not on it.
+The ADMIN ABUSE + WORLD 5 event of 3 October 2026 in seven time zones, and a dated store timeline that starts when the experience was created on 5 September 2026 and stops at 1 October 2026. That page was last checked on 2 October 2026, so the 11 products created between that date and our read at 18:12 UTC on 9 October 2026 are not on it.
 
 ### [Codes, Meow Labs Group and Discord](/stone-skipping/community/)
 
@@ -69,27 +69,29 @@ The description does not say what Skill or Wins are spent on. Stone prices, leve
 
 ## Which Robux purchases make sense for a new player?
 
-None yet, in our view, until you have played a session. If you do want to spend, price is the only published fact to go on: when we read the store on 9 October 2026 (UTC), all 11 game passes and all 89 developer products had empty descriptions. This table is our opinion from prices alone, not an official recommendation, and every price and ranking in it (cheapest, joint-cheapest, most expensive) is as read on that date.
+None yet, in our view, until you have played a session. If you do want to spend, price is the only published fact to go on: when we read the store at 18:12 UTC on 9 October 2026, all 11 game passes and all 89 developer products had empty descriptions. This table is our opinion from prices alone, not an official recommendation, and every price and ranking in it (cheapest, joint-cheapest, most expensive) is as read on that date.
 
 | Item | Type | Robux | Our view for a beginner |
 | --- | --- | --- | --- |
 | Skill Multiplier [TIER 1] | Product | 5 | The cheapest item on sale; the smallest way to test a tier |
 | Auto Wins | Pass | 25 | Joint-cheapest pass with Hatch +3 Eggs [STACKS]; its effect is read from the name only |
 | Starter Pack | Product | 39 | No contents list is published; check the in-game prompt |
-| 2x Wins [PERMANENT] | Product | 59 | Costs the same as Wins Pack 2 |
+| 2x Wins [PERMANENT] | Product | 59 | Cost the same as Wins Pack 2 on that date |
 | Skill Multiplier [TIER 12] | Product | 3,999 | Wait: the most expensive item on sale, with no multiplier value published |
 
-The three pet passes show why the biggest option is not always the best rate. +1 Pet costs 69 Robux, +3 Pets 195 and +6 Pets 499, which works out at 69, 65 and about 83 Robux per pet if each number is a count. The [game pass guide](/stone-skipping/gamepasses/) works through all 11 passes, and the [eggs and pets guide](/stone-skipping/pets/) does the same for egg bundles.
+The three pet passes show why the biggest option is not always the best rate. On that date +1 Pet cost 69 Robux, +3 Pets 195 and +6 Pets 499, which works out at 69, 65 and about 83 Robux per pet if each number is a count. The [game pass guide](/stone-skipping/gamepasses/) works through all 11 passes, and the [eggs and pets guide](/stone-skipping/pets/) does the same for egg bundles.
 
 ## What should you check before you spend?
 
-| Trap | What the official lists show | What to do |
-| --- | --- | --- |
-| One name, two prices | Admin Training Zone is a 599-Robux pass and a 195-Robux product; Golden Training Zone is a 249-Robux pass and a 315-Robux product | Read the purchase prompt before you confirm |
-| One pack, two prices | Wins Pack 5 costs 575 Robux; Wins Pack 5 [20% OFF] costs 459 | Check which one the game offers you |
-| Codes from fan sites | The game description contains no code; the group description reads "meow?" and the group shout is empty | Treat them as unconfirmed |
+Every price in this table was read from Roblox's pass and product lists at 18:12 UTC on 9 October 2026, and the description and group details were read on the same date.
 
-Every row comes from Roblox's own listings. Whether the game has a code box at all is not confirmed. The [community page](/stone-skipping/community/) shows each place we looked.
+| Trap | What the official lists showed | What to do |
+| --- | --- | --- |
+| One name, two prices | Admin Training Zone was a 599-Robux pass and a 195-Robux product; Golden Training Zone was a 249-Robux pass and a 315-Robux product | Read the purchase prompt before you confirm |
+| One pack, two prices | Wins Pack 5 cost 575 Robux; Wins Pack 5 [20% OFF] cost 459 | Check which one the game offers you |
+| Codes from fan sites | The game description contained no code; the group description read "meow?" and the group shout was empty | Treat them as unconfirmed |
+
+Every row came from Roblox's own listings on that date. Whether the game has a code box at all is not confirmed. The [community page](/stone-skipping/community/) shows each place we looked.
 
 ## How do you track progress without badges?
 
@@ -99,9 +101,9 @@ Worlds are dated only by official event titles: World 3 + New Content from 20 Se
 
 ## Which events were scheduled for October 2026?
 
-When we read Roblox's official event listing at 18:50 UTC on 9 October 2026, it showed two entries. WORLD 6 + ADMIN ABUSE was listed from 16:00 UTC on Saturday 10 October 2026 to 16:00 UTC on 11 October 2026, described in three lines: Admin Abuse, World 6 and New Features. Halloween Event was listed from 16:00 UTC on 17 October 2026 to 19:00 UTC on 1 November 2026, with no description.
+When we read Roblox's official event listing at 19:44 UTC on 9 October 2026, it returned five events in total. Three had already ended: World 3 + New Content (18:00 UTC on 20 September 2026 to 18:00 UTC on 23 September 2026), WORLD 4 + UPDATE (16:00 UTC on 27 September 2026 to 16:00 UTC on 1 October 2026) and ADMIN ABUSE + WORLD 5 (16:00 UTC to 18:00 UTC on 3 October 2026). The other two had start times after that moment. WORLD 6 + ADMIN ABUSE was listed from 16:00 UTC on Saturday 10 October 2026 to 16:00 UTC on 11 October 2026, described in three lines: Admin Abuse, World 6 and New Features. Halloween Event was listed from 16:00 UTC on 17 October 2026 to 19:00 UTC on 1 November 2026, with no description.
 
-Going by creation dates (UTC), 78 of the 89 developer products listed on 9 October 2026 existed by 2 October, and 11 were created after it. Eight are dated 3 October: Skill Pack 1 [TIER 4], Skill Pack 2 [TIER 4], Skill Pack 3 [TIER 4], +100 Pets Inventory Slots, Rainbow Trail, Void Trail, Skill Multiplier [TIER 11] and Skill Multiplier [TIER 12]. Three are dated 7 October: Witch Egg, Witch Egg x3 and Witch Egg x8.
+Going by creation dates (UTC), 78 of the 89 developer products listed at 18:12 UTC on 9 October 2026 existed by 2 October, and 11 were created after it. Eight are dated 3 October: Skill Pack 1 [TIER 4], Skill Pack 2 [TIER 4], Skill Pack 3 [TIER 4], +100 Pets Inventory Slots, Rainbow Trail, Void Trail, Skill Multiplier [TIER 11] and Skill Multiplier [TIER 12]. Three are dated 7 October: Witch Egg, Witch Egg x3 and Witch Egg x8.
 
 ## What do these guides not cover yet?
 

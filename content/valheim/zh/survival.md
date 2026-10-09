@@ -11,8 +11,8 @@ scope: "栏目导航"
 type: "category"
 tldr: ["八篇覆盖后方建设：基地、食物、种田、蜜酒、休息好了、传送门、航海与商人。", "按社区 wiki，开局有 25 点生命和 50 点体力，最多可以同时生效三种不同的食物。", "wiki 给出的休息好了时长是 7 分钟加舒适度等级，正在休息 20 秒后获得。", "默认死亡惩罚下，wiki 列出每项技能损失 5%，之后有 10 分钟的无技能损失。"]
 related: []
-chineseCharacters: 1635
-sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Food", "https://valheim.wiki/w/Health", "https://valheim.wiki/w/Stamina", "https://valheim.wiki/w/Resting", "https://valheim.wiki/w/Rested", "https://valheim.wiki/w/Comfort", "https://valheim.wiki/w/Shelter", "https://valheim.wiki/w/Wet", "https://valheim.wiki/w/Cold", "https://valheim.wiki/w/Freezing", "https://valheim.wiki/w/Death", "https://valheim.wiki/w/No_skill_drain", "https://valheim.wiki/w/Corpse_run", "https://valheim.fandom.com/wiki/Food", "https://valheim.fandom.com/wiki/Cold", "https://valheim.fandom.com/wiki/Freezing"]
+chineseCharacters: 2301
+sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Food", "https://valheim.wiki/w/Health", "https://valheim.wiki/w/Stamina", "https://valheim.wiki/w/Resting", "https://valheim.wiki/w/Rested", "https://valheim.wiki/w/Comfort", "https://valheim.wiki/w/Shelter", "https://valheim.wiki/w/Wet", "https://valheim.wiki/w/Cold", "https://valheim.wiki/w/Freezing", "https://valheim.wiki/w/Death", "https://valheim.wiki/w/No_skill_drain", "https://valheim.wiki/w/Corpse_run", "https://valheim.fandom.com/wiki/Food", "https://valheim.fandom.com/wiki/Cold", "https://valheim.fandom.com/wiki/Freezing", "https://valheim.wiki/w/Sleeping", "https://valheim.wiki/w/Bed", "https://valheim.wiki/w/Inventory", "https://valheim.wiki/w/Encumbered", "https://valheim.wiki/w/Megingjord", "https://valheim.fandom.com/wiki/Comfort", "https://valheim.fandom.com/wiki/Sleeping", "https://valheim.fandom.com/wiki/Bed", "https://valheim.fandom.com/wiki/Inventory", "https://valheim.fandom.com/wiki/Encumbered", "https://valheim.fandom.com/wiki/Megingjord", "https://valheim.fandom.com/wiki/Stamina", "https://valheim.fandom.com/wiki/Health"]
 date: "2026-09-17"
 updated: "2026-10-10"
 reviewed: "2026-10-10"
@@ -38,6 +38,10 @@ author: "Jellyfi"
 
 从 wiki 这张表看，浆果偏体力，熟肉偏生命，所以混着吃从第一天起就能两头兼顾。同一种食物要等上一份消化了一部分才能再吃，wiki 说这时图标会闪烁。等采集跟不上消耗，就靠[种田](/valheim/zh/farming/)把食物槽填满。
 
+## 三个食物槽该怎么搭配？
+
+两家社区 wiki 给的经验法则相同：探索和采集资源时吃体力加成更高的食物，进地牢和打 Boss 时吃生命和生命恢复更高的食物。它们把最大生命值和格挡时能承受多少硬直联系在一起，所以用盾的人偏向生命，每次攻击都靠翻滚躲开的人偏向体力。它们还写到，用魔法的人最受益于魔力食物。再吃一份同样的食物会刷新加成的强度和持续时间，两家 wiki 都写着每种食物提供的生命恢复是每 10 秒 1 到 6 点。
+
 ## 怎样获得休息好了增益？
 
 按社区 wiki，附近没有敌人时坐在火边，或者在遮蔽下靠近火源，就会得到正在休息。wiki 把遮蔽定义为有屋顶加 80% 的覆盖，并写明处于潮湿状态时不会开始正在休息。它还写到，不被打断地过 20 秒后，正在休息会变成休息好了。
@@ -52,6 +56,14 @@ author: "Jellyfi"
 | 常规上限 | 舒适度 22，即 29 分钟 |
 
 按 wiki，舒适度决定休息好了持续多久，经验加成不随它变化。[休息好了攻略](/valheim/zh/rested/)讲增益为什么不出现，[基地攻略](/valheim/zh/first-base/)讲火源、屋顶和排烟。
+
+## 舒适度从哪里来？
+
+按两家社区 wiki，坐在火边时舒适度从 1 起算，在遮蔽下靠近火源时从 2 起算，这两项不叠加。家具按类别往上加，每个类别只算最好的那一件：篝火（Campfire）给 1、Hearth 给 2，床（Bed）给 1、Dragon bed 给 2，Bench 或 Stool 给 1、Chair 给 2。Table 加 1，Deer rug 加 1，一面旗帜加 1，所以一间开局小屋的舒适度涨得很快。两家 wiki 还都提到，进入多数地牢（比如诡秘墓穴）时搭一堆篝火，就够拿到舒适度 3 和 10 分钟的休息好了。
+
+## 什么时候能睡觉跳过夜晚？
+
+两家 wiki 列出的睡觉条件是同样的五条：时间是下午或夜晚，附近没有敌人，床有屋顶和 80% 的覆盖，附近有火源，而且你不处于潮湿状态。睡之前要先认领这张床，而床只有在有屋顶和 80% 覆盖时才能认领。两家 wiki 都写着，一张床（Bed）要在工作台用 8 个木头建造。睡觉会跳到第二天早晨，其间游戏快进，所以熔炉会继续工作；wiki 也提醒，留在 Cooking station 上的生食会烤焦。
 
 ## 潮湿、寒冷和冻伤有什么影响？
 
@@ -76,6 +88,12 @@ author: "Jellyfi"
 | 捡尸（Corpse run） | 50 秒 | 跑步和跳跃体力消耗 -75%，最大负重 +150，抵抗钝击、斩击和穿刺 |
 
 按 wiki 的 Corpse run 页，只有把墓碑完全清空，捡尸效果才会生效。[捡尸攻略](/valheim/zh/death-recovery/)把这些数值变成一套救援方案。
+
+## 能背多重，体力又怎样恢复？
+
+两家 wiki 都把基础负重写作 300。它们列出四种提高负重的办法：向 Haldor 购买的 Megingjord 腰带加 150，捡尸（Corpse run）加 150、持续 50 秒，冰霜龙母之力加 300、持续 5 分钟，Mead of Troll endurance 加 250、持续 5 分钟。超过上限就会进入超重（Encumbered）：按两家 wiki，移动速度变成每秒 2 米，不能奔跑、跳跃、翻滚或格挡，移动时每秒消耗 5 点体力，而且体力不再恢复。
+
+体力本身从 50 点起步，每格代表 25 点。两家 wiki 都说，停止消耗体力 1 秒后才开始恢复，基础恢复速度在体力全满时是每秒 6 点，在体力见底时是每秒 12 点。按它们的数值，游泳和下坠时体力完全不恢复，所以长距离游泳有风险。[商人攻略](/valheim/zh/traders/)讲 Haldor，[航海攻略](/valheim/zh/ships/)讲怎样运送沉重的矿石。
 
 ## 开局头几天该做什么？
 

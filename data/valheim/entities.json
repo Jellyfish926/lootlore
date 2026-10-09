@@ -162,7 +162,9 @@
     "Frost"
    ],
    "resistant": [
-    "Slash"
+    "Slash",
+    "Fire (very resistant)",
+    "Pierce (very resistant)"
    ],
    "very_resistant": [
     "Fire",
@@ -181,8 +183,8 @@
     {
      "item_en": "Wishbone",
      "item_zh": "愿望骨",
-     "qty": "1 per player",
-     "qty_zh": "每名玩家 1 个"
+     "qty": "1 per player online (valheim.wiki) or 1 per player (Fandom)",
+     "qty_zh": "valheim.wiki 写每名在线玩家 1 个，Fandom 写每名玩家 1 个"
     }
    ],
    "forsaken_power": {
@@ -196,7 +198,8 @@
    "source_urls": [
     "https://valheim.wiki/w/Bonemass",
     "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981",
-    "https://valheim.wiki/w/Forsaken_power"
+    "https://valheim.wiki/w/Forsaken_power",
+    "https://valheim.fandom.com/wiki/Bonemass"
    ],
    "accessed": "2026-10-10",
    "unverified_fields": [],
@@ -210,7 +213,9 @@
     "冰霜"
    ],
    "resistant_zh": [
-    "斩击"
+    "斩击",
+    "火焰（抗性很高）",
+    "穿刺（抗性很高）"
    ],
    "very_resistant_zh": [
     "火焰",
@@ -317,7 +322,8 @@
    ],
    "weak": [],
    "resistant": [
-    "Fire"
+    "Fire",
+    "Pierce (very resistant)"
    ],
    "very_resistant": [
     "Pierce"
@@ -348,9 +354,10 @@
    "unlocks_zh": "可使用冥火之光 / 冥火火炬驱散迷雾之地的迷雾（两者都要求已击败亚格鲁斯）",
    "source_urls": [
     "https://valheim.wiki/w/Yagluth",
-    "https://valheim.wiki/w/Mistlands"
+    "https://valheim.wiki/w/Mistlands",
+    "https://valheim.fandom.com/wiki/Yagluth"
    ],
-   "accessed": "2026-09-18",
+   "accessed": "2026-10-10",
    "unverified_fields": [],
    "biome_zh": "平原",
    "damage_types_zh": [
@@ -359,7 +366,8 @@
     "钝击"
    ],
    "resistant_zh": [
-    "火焰"
+    "火焰",
+    "穿刺（抗性很高）"
    ],
    "very_resistant_zh": [
     "穿刺"
@@ -385,7 +393,7 @@
     },
     {
      "item_en": "Seeker soldier trophy",
-     "item_zh": "Seeker soldier trophy",
+     "item_zh": "Seeker soldier 战利品",
      "qty": "3 (to summon her again after her initial defeat)",
      "qty_zh": "3（首次击败后再次召唤）"
     }
@@ -414,7 +422,7 @@
     },
     {
      "item_en": "The Queen trophy",
-     "item_zh": "The Queen trophy",
+     "item_zh": "迷雾女王战利品",
      "qty": "1"
     }
    ],
@@ -487,7 +495,7 @@
     },
     {
      "item_en": "Fader trophy",
-     "item_zh": "Fader trophy",
+     "item_zh": "Fader 战利品",
      "qty": "100%"
     }
    ],
@@ -558,7 +566,8 @@
    ],
    "very_resistant": [],
    "immune": [
-    "Spirit"
+    "Spirit",
+    "Stagger"
    ],
    "drops": [
     {
@@ -578,7 +587,7 @@
    "source_urls": [
     "https://valheim.wiki/w/Kall_Fimbulbringer"
    ],
-   "accessed": "2026-09-18",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "name_zh (no established zh translation in content pack)",
     "forsaken_power (page marked Work in progress, no altar/power section present)"
@@ -599,7 +608,8 @@
     "雷电"
    ],
    "immune_zh": [
-    "灵魂"
+    "灵魂",
+    "硬直"
    ]
   },
   "meadows": {

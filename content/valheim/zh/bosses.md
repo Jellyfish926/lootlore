@@ -11,7 +11,7 @@ scope: "栏目导航"
 type: "category"
 tldr: ["valheim.wiki 称 Kall Fimbulbringer 是第八个也是最后一个 Boss，按生物群系顺序共八个，从青青草原的赤血灵鹿到深北之境的 Kall；Iron Gate 的 1.0 更新说明只把他列为 Boss，没有给出数量。", "按社区 wiki，每个 Boss 的位置都能靠 Vegvisir 找到，不过亚格鲁斯的 Vegvisir 生成概率很小，Kall 的只有 valheim.wiki 一家列出；祭品从 2 个鹿战利品到 3 个 Malicious Blood，迷雾女王进入时需要破封者。", "wiki 列出八个 Boss 里有五个抗穿刺，只有邪骨恶灵弱钝击。", "被遗弃者之力的数值引自 Iron Gate 的 Patch 0.221.4 说明；Kall 没有列出任何力量。"]
 related: []
-chineseCharacters: 2075
+chineseCharacters: 2215
 sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262688942", "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981", "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Eikthyr", "https://valheim.wiki/w/The_Elder", "https://valheim.wiki/w/Bonemass", "https://valheim.wiki/w/Moder", "https://valheim.wiki/w/Yagluth", "https://valheim.wiki/w/The_Queen", "https://valheim.wiki/w/Fader", "https://valheim.wiki/w/Kall_Fimbulbringer", "https://valheim.wiki/w/Sealbreaker", "https://valheim.wiki/w/Swamp_Key", "https://valheim.wiki/w/Wishbone", "https://valheim.wiki/w/Hard_Antler", "https://valheim.wiki/w/Dragon_Tear", "https://valheim.wiki/w/Torn_Spirit", "https://valheim.wiki/w/Majestic_Carapace", "https://valheim.wiki/w/Sacrificial_Blood", "https://valheim.wiki/w/Eternal_Pyre", "https://valheim.fandom.com/wiki/Fader"]
 date: "2026-09-17"
 updated: "2026-10-10"
@@ -37,7 +37,7 @@ author: "Jellyfi"
 | 邪骨恶灵 | 沉没墓穴 | 10 根枯骨 |
 | 冰霜龙母 | 雪山里的废墟建筑，通常在顶部 | 3 枚龙蛋；每枚重 200 |
 | 亚格鲁斯 | Stonehenge 建筑；生成概率很小 | 5 个丑地精图腾 |
-| 迷雾女王 | 被侵染的矿洞，指向 Infested Citadel | 第一次战斗不需要祭品；进入需要由 9 个封印碎片制成的破封者；首次击败后，献上 3 个 Seeker soldier trophy 可再次召唤 |
+| 迷雾女王 | 被侵染的矿洞，指向 Infested Citadel | 第一次战斗不需要祭品；进入需要由 9 个封印碎片制成的破封者；首次击败后，献上 3 个 Seeker soldier 战利品可再次召唤 |
 | Fader | 灰烬要塞的中央塔楼 | 3 个钟，每个由 3 个钟碎片制成 |
 | Kall Fimbulbringer | Memorial Sites 和 Mörkhalla，只有 valheim.wiki 一家这样写；他在 The Prison，经 Aesir Passage 到达 | 3 个 Malicious Blood |
 
@@ -45,17 +45,18 @@ Kall 这一行只有一个来源：Fandom 没有他和 The Prison 的页面，va
 
 ## 该带哪些伤害类型、避开哪些？
 
-先看「首领速查表」，再补上它没有的两样：社区 wiki 的「抗性很高」条目，以及我们每篇攻略要求的防护。
+这张表重复「首领速查表」里的弱点、抗性和免疫条目（它们来自两家社区 wiki，不是 Iron Gate 的数据），再补上我们每篇攻略要求的防护。Kall 这一行只有 valheim.wiki 一家。
 
-| Boss | 避免使用（按 wiki） | 列出的弱点（按 wiki） | 我们的攻略要求的防护 |
+| Boss | 抗性或免疫（按 wiki） | 列出的弱点（按 wiki） | 我们的攻略要求的防护 |
 |---|---|---|---|
-| 古树长老 | 毒素、灵魂（免疫） | 火焰（非常弱） | — |
-| 邪骨恶灵 | 火焰、穿刺（抗性很高）；斩击 | 钝击、冰霜 | 抗毒 |
-| 冰霜龙母 | 冰霜、灵魂（免疫） | 火焰 | 抗寒 |
-| 亚格鲁斯 | 穿刺（抗性很高）；火焰 | 未列出 | 抗火 |
+| 赤血灵鹿 | 硬直（免疫） | 未列出 | — |
+| 古树长老 | 毒素、灵魂、硬直（免疫） | 火焰（非常弱） | — |
+| 邪骨恶灵 | 斩击；火焰、穿刺（抗性很高）；毒素、硬直（免疫） | 钝击、冰霜 | 抗毒 |
+| 冰霜龙母 | 冰霜、灵魂、硬直（免疫） | 火焰 | 抗寒 |
+| 亚格鲁斯 | 火焰；穿刺（抗性很高）；毒素、硬直（免疫） | 未列出 | 抗火 |
 | 迷雾女王 | 穿刺；灵魂（免疫） | 未列出 | — |
-| Fader | 火焰、灵魂（免疫）；穿刺 | 未列出 | 防火 |
-| Kall Fimbulbringer | 穿刺、火焰、冰霜、雷电；灵魂（免疫） | 未列出 | 防火与防寒 |
+| Fader | 穿刺；火焰、灵魂（免疫） | 未列出 | 防火 |
+| Kall Fimbulbringer | 穿刺、火焰、冰霜、雷电；灵魂、硬直（免疫） | 未列出 | 防火与防寒 |
 
 按 wiki 的抗性列表，八个 Boss 里有五个抗穿刺，所以只带穿刺伤害的配置从沼泽开始就不划算。同一份列表里，邪骨恶灵是唯一弱钝击的 Boss，所以[邪骨恶灵攻略](/valheim/zh/bonemass/)围绕钝击武器来准备。列表还把火焰记为古树长老和冰霜龙母的弱点，[古树长老攻略](/valheim/zh/elder/)讲了火箭路线。两家里只有 valheim.wiki 有 Kall 的页面，它还写到 Kall 在第 2 阶段免疫所有伤害，见 [Kall 攻略](/valheim/zh/kall/)。
 
@@ -80,7 +81,11 @@ Kall 这一行只有一个来源：Fandom 没有他和 The Prison 的页面，va
 
 ## 必须按这个顺序打 Boss 吗？
 
-我们读过的资料里没有这样的规定：官方更新说明和两家社区 wiki 都没有写必须按哪个顺序打。wiki 列出的是每件关键掉落解锁什么，本页按生物群系排序也是出于这个原因。一个硬鹿角可以制作鹿角镐，两家 wiki 都说这把镐是开采第一种矿石铜矿的关键；[青铜时代攻略](/valheim/zh/bronze/)讲之后的事。沼泽钥匙打开[沼泽](/valheim/zh/swamp/)里的沉没墓穴。龙泪用于建造工匠台，两家 wiki 都写工匠台用来建造高炉、Spinning wheel、Windmill 和 Stone oven；[平原攻略](/valheim/zh/plains/)讲这座工作站。愿望骨的说法要松一些：两家 wiki 都只说它是用来寻找秘密的饰品，并把[雪山](/valheim/zh/mountains/)的银矿脉列为它能探出的东西之一，没有说非它不可。
+我们没有找到这样的官方规定：我们读过的 Iron Gate 更新说明（1.0 说明和 Patch 0.221.4）没有写必须按哪个顺序打。社区 wiki 则把几个环节写成了硬性前置。valheim.wiki 的 Deep North 页写着“defeating Fader is still required to progress through the biome”（要在这个生物群系里推进，仍然必须击败 Fader）；Fandom 的 Deep North 页没有这句话。两家 wiki 的 Ashlands 页都写只有 Drakkar 能撑过去那里的航程，而它“obtainable after defeating”（击败后才能取得）迷雾女王；两家的 Infested Citadel 页都写“In order to open the vault door, a Sealbreaker is required.”（要打开金库门，需要破封者）。
+
+其余 Boss，wiki 列出的是每件关键掉落解锁什么，本页按生物群系排序也是出于这个原因。一个硬鹿角可以制作鹿角镐，两家 wiki 都说这把镐是开采第一种矿石铜矿的关键；[青铜时代攻略](/valheim/zh/bronze/)讲之后的事。沼泽钥匙打开[沼泽](/valheim/zh/swamp/)里的沉没墓穴。
+
+龙泪用于建造工匠台，两家 wiki 都写工匠台用来建造高炉、Spinning wheel、Windmill 和 Stone oven；[平原攻略](/valheim/zh/plains/)讲这座工作站。愿望骨的说法要松一些：两家 wiki 都只说它是用来寻找秘密的饰品，并把[雪山](/valheim/zh/mountains/)的银矿脉列为它能探出的东西之一，没有说非它不可。
 
 ## 你需要哪一篇 Boss 攻略？
 

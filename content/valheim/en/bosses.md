@@ -11,7 +11,7 @@ scope: "Category index"
 type: "category"
 tldr: ["valheim.wiki calls Kall Fimbulbringer the eighth and final boss, which makes eight in biome order, from Eikthyr in the Meadows to Kall in the Deep North; Iron Gate's 1.0 notes name him as a boss without giving a count.", "Per the community wiki, a Vegvisir reveals each boss's location, though Yagluth's has a very small chance of spawning and Kall's is listed on valheim.wiki alone; offerings run from 2 Deer trophy to 3 Malicious Blood, and The Queen needs a Sealbreaker for entry.", "The wiki lists Pierce as resisted by five of the eight, and only Bonemass as weak to Blunt.", "Forsaken Power numbers quote Iron Gate's Patch 0.221.4 notes; no power is listed for Kall."]
 related: []
-chineseCharacters: 2075
+chineseCharacters: 2215
 sourceUrls: ["https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262688942", "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809869180193981", "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656396226", "https://valheim.wiki/w/Eikthyr", "https://valheim.wiki/w/The_Elder", "https://valheim.wiki/w/Bonemass", "https://valheim.wiki/w/Moder", "https://valheim.wiki/w/Yagluth", "https://valheim.wiki/w/The_Queen", "https://valheim.wiki/w/Fader", "https://valheim.wiki/w/Kall_Fimbulbringer", "https://valheim.wiki/w/Sealbreaker", "https://valheim.wiki/w/Swamp_Key", "https://valheim.wiki/w/Wishbone", "https://valheim.wiki/w/Hard_Antler", "https://valheim.wiki/w/Dragon_Tear", "https://valheim.wiki/w/Torn_Spirit", "https://valheim.wiki/w/Majestic_Carapace", "https://valheim.wiki/w/Sacrificial_Blood", "https://valheim.wiki/w/Eternal_Pyre", "https://valheim.fandom.com/wiki/Fader"]
 date: "2026-09-17"
 updated: "2026-10-10"
@@ -45,17 +45,18 @@ Kall's row rests on a single source: Fandom has no page for him or The Prison, a
 
 ## Which damage types should you bring or avoid?
 
-Start from the Boss quick table, then add two things it leaves out: the community wiki's "very resistant" entries and the protection each of our guides calls for.
+This table repeats the weak, resistant and immune entries of the Boss quick table, which come from the two community wikis and not from Iron Gate, and adds the protection each of our guides calls for. Kall's row comes from valheim.wiki alone.
 
-| Boss | Avoid dealing (per the wiki) | Listed weakness (per the wiki) | Protection our guide calls for |
+| Boss | Resisted or immune (per the wiki) | Listed weakness (per the wiki) | Protection our guide calls for |
 |---|---|---|---|
-| The Elder | Poison, Spirit (immune) | Fire (very weak) | — |
-| Bonemass | Fire, Pierce (very resistant); Slash | Blunt, Frost | Poison resistance |
-| Moder | Frost, Spirit (immune) | Fire | Frost resistance |
-| Yagluth | Pierce (very resistant); Fire | None listed | Fire resistance |
+| Eikthyr | Stagger (immune) | None listed | — |
+| The Elder | Poison, Spirit, Stagger (immune) | Fire (very weak) | — |
+| Bonemass | Slash; Fire, Pierce (very resistant); Poison, Stagger (immune) | Blunt, Frost | Poison resistance |
+| Moder | Frost, Spirit, Stagger (immune) | Fire | Frost resistance |
+| Yagluth | Fire; Pierce (very resistant); Poison, Stagger (immune) | None listed | Fire resistance |
 | The Queen | Pierce; Spirit (immune) | None listed | — |
-| Fader | Fire, Spirit (immune); Pierce | None listed | Fire protection |
-| Kall Fimbulbringer | Pierce, Fire, Frost, Lightning; Spirit (immune) | None listed | Fire and frost protection |
+| Fader | Pierce; Fire, Spirit (immune) | None listed | Fire protection |
+| Kall Fimbulbringer | Pierce, Fire, Frost, Lightning; Spirit, Stagger (immune) | None listed | Fire and frost protection |
 
 Going by the wiki's resistance lists, Pierce is resisted by five of the eight, so a pierce-only loadout loses value from the Swamp onward. The same lists make Bonemass the only boss weak to Blunt, which is why the [Bonemass guide](/valheim/bonemass/) is built around a blunt weapon. They also put Fire down as a weakness for The Elder and Moder, and the [Elder guide](/valheim/elder/) covers the fire-arrow route. valheim.wiki, the only one of the two with a Kall page, adds that he is immune to all damage in phase 2; see the [Kall guide](/valheim/kall/).
 
@@ -80,7 +81,11 @@ Per the wiki, a power lasts 300 seconds and also reaches nearby allies. valheim.
 
 ## Do you have to fight the bosses in this order?
 
-No source we read says so: the official patch notes and the two community wikis do not set a required order. What the wikis list is what each key drop unlocks, and this page keeps the biome order for that reason. One Hard antler crafts the Antler pickaxe, which both wikis call crucial for mining Copper ore, the first ore; the [Bronze Age guide](/valheim/bronze/) covers what comes next. The Swamp key opens the Sunken Crypts in the [Swamp](/valheim/swamp/). Dragon tear builds the Artisan table, which both wikis say is used for building Blast furnaces, Spinning wheels, Windmills and Stone ovens; the [Plains guide](/valheim/plains/) covers that station. The Wishbone is described more loosely: both wikis call it an accessory for finding secrets and list Silver veins in the [Mountains](/valheim/mountains/) among the things it can reveal, without saying it is required.
+Not by any official rule we found: the Iron Gate patch notes we read, the 1.0 notes and Patch 0.221.4, do not set a required order. The community wikis do write some steps as hard gates. valheim.wiki's Deep North page says "defeating Fader is still required to progress through the biome"; Fandom's Deep North page has no such line. Both wikis' Ashlands pages say only the Drakkar, "obtainable after defeating" The Queen, can survive the voyage there, and both Infested Citadel pages say "In order to open the vault door, a Sealbreaker is required."
+
+For the other bosses, the wikis list what each key drop unlocks, and this page keeps the biome order for that reason. One Hard antler crafts the Antler pickaxe, which both wikis call crucial for mining Copper ore, the first ore; the [Bronze Age guide](/valheim/bronze/) covers what comes next. The Swamp key opens the Sunken Crypts in the [Swamp](/valheim/swamp/).
+
+Dragon tear builds the Artisan table, which both wikis say is used for building Blast furnaces, Spinning wheels, Windmills and Stone ovens; the [Plains guide](/valheim/plains/) covers that station. The Wishbone is described more loosely: both wikis call it an accessory for finding secrets and list Silver veins in the [Mountains](/valheim/mountains/) among the things it can reveal, without saying it is required.
 
 ## Which boss guide do you need?
 

@@ -81,7 +81,7 @@
   "c_name": "Name",
   "c_entry_table": "Overview table",
   "boss_table": "Boss quick table",
-  "boss_table_intro": "Every summon item, health pool and damage profile in one sortable table. Click a column heading to sort.",
+  "boss_table_intro": "Summon items, health and damage profiles in one sortable table. These are community figures from valheim.wiki and the Valheim Fandom wiki (Kall's row from valheim.wiki alone), not official numbers: the Iron Gate patch notes we read give no boss health or resistances. Click a column heading to sort.",
   "biome_table": "Biome order",
   "biome_table_intro": "The biomes in progression order, with the boss, the resources you go there for and what fights you.",
   "sort_by": "Sort by {col}",

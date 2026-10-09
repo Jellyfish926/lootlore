@@ -25,7 +25,7 @@ To use emotes in Bongo Cat, hover over your own cat for a moment and pick an emo
 
 ## How do you use emotes in Bongo Cat?
 
-The developer has given one instruction, in the [Emojis!!!](https://store.steampowered.com/news/app/3419430/view/1811772772443374) post of October 1, 2025: "You can find your emojis in the bottom of your cosmetics tab! And you can use them by hovering a bit over your Bongo Cat in a multiplayer lobby." Later patch notes call the picker that opens the emote wheel. No post walks through the wheel button by button, and no post names a keyboard shortcut for emotes, so a hotkey is not confirmed.
+The developer has given one instruction, in the [Emojis!!!](https://store.steampowered.com/news/app/3419430/view/1811772772443374) post of October 1, 2025: "You can find your emojis in the bottom of your cosmetics tab! And you can use them by hovering a bit over your Bongo Cat in a multiplayer lobby." Later patch notes call the picker the emote wheel. No post walks through the wheel button by button, and no post names a keyboard shortcut for emotes, so a hotkey is not confirmed.
 
 That update also handed out a starter set: "When you update the game, you will receive 4 emojis as a starter pack", with a warning that the grant can take up to 2 minutes. The interface has been reworked since then, in June and September 2026, and no announcement restates where emojis sit in the inventory after those changes; if the bottom of the cosmetics tab is empty, look for the emote category in the collection, which the October 6, 2025 notes added.
 
@@ -35,7 +35,7 @@ The developer writes "emojis" and "emotes" for the same items. Steam's achieveme
 
 ## When does the emote chest appear?
 
-The emote chest followed a reversal. On October 1, 2025 emojis were added to the normal item pool, so regular chests could drop them. One day later the developer apologised in [Emojis 2.0, and a sorry.](https://store.steampowered.com/news/app/3419430/view/1811772772484130), pulled emojis out of that pool and announced a second chest that "will ONLY contain emotes that will show up once you are in a multiplayer lobby". It shipped on October 6, 2025 in [Emote 2.0 and bug fixes](https://store.steampowered.com/news/app/3419430/view/1811772772604122): "Adds a second chest, just for emojis".
+The emote chest followed a reversal. On October 1, 2025 emojis were added to the normal item pool, so regular chests could drop them. One day later the developer posted [Emojis 2.0, and a sorry.](https://store.steampowered.com/news/app/3419430/view/1811772772484130) In it the developer apologised, pulled emojis out of that pool and announced a second chest that "will ONLY contain emotes that will show up once you are in a multiplayer lobby". It shipped on October 6, 2025 in [Emote 2.0 and bug fixes](https://store.steampowered.com/news/app/3419430/view/1811772772604122): "Adds a second chest, just for emojis".
 
 So the announced condition is being in a multiplayer lobby. Three things about the chest are not in any announcement we read on October 9, 2026, and are not confirmed:
 

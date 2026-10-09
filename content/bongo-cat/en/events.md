@@ -32,14 +32,14 @@ The Paw Pass brings new cosmetics every month instead of only at seasonal events
 | Theme | Changes monthly; the first was Circus |
 | Tracks | Free and premium; the pass has themed skins, hats, emotes and chests up to Legendary, and the paid track has more of them |
 | Bongo Coins | 100 per track per pass |
-| Spending coins | 500 coins buy the premium track, or supporter items |
+| Spending coins | Not confirmed as open yet: the launch post says coins "can be used later" to buy the premium track for 500 coins or supporter cosmetics |
 | Progress | Reaching milestones by playing normally; claiming does not spend taps |
 | Deadline | None: "the rewards are claimable forever" |
 | Free ticket | Claimed automatically if you open the game at least once a month |
 | Offline | You cannot redeem rewards offline, but taps still count |
 | Premium | Buy a Paw Pass Ticket on Steam, then redeem it in-game with Get Pass |
 
-The pass opens from the ticket button at the bottom of the inventory. Joining late is not a problem: the developer says you can always get a Paw Pass Ticket to unlock past passes. Events still happen alongside it, and during events both tracks also drop event chests. We have not found an official number of taps per milestone, so this page does not give one; the two lanes, each monthly theme and what the coins buy are broken down in the [Paw Pass and Bongo Coins guide](/bongo-cat/paw-pass/).
+The pass opens from the ticket button at the bottom of the inventory. Joining late is not a problem: the developer says you can always get a Paw Pass Ticket to unlock past passes. Events still happen alongside it, and during events both tracks also drop event chests. We have not found an official number of taps per milestone, so this page does not give one; the two lanes, each monthly theme and what the coins can be used for later are broken down in the [Paw Pass and Bongo Coins guide](/bongo-cat/paw-pass/).
 
 ![A white cat under orange "WAKU WAKU" lettering, tapping on the counter](ss00 "Event and pass items land in the same inventory as chest drops")
 

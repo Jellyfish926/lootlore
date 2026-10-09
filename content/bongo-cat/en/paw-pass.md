@@ -21,11 +21,11 @@ author: "Jellyfi"
 ---
 # Bongo Cat Paw Pass and Bongo Coins Explained
 
-The Paw Pass is Bongo Cat's monthly reward track on Steam: you tap as usual, reach milestones and claim themed rewards on a free lane and a paid premium lane. Each lane pays 100 Bongo Coins. Paw Coins is a fan wiki's label; no developer announcement on Steam uses it, and whether it means Bongo Coins is not confirmed.
+The Paw Pass is Bongo Cat's monthly reward track, with free and premium lanes. Each lane pays 100 Bongo Coins, which the developer says "can be used later" to buy the premium pass for 500 coins or supporter cosmetics; spending is not confirmed as live. Paw Coins is a fan wiki's label, not confirmed as the same currency.
 
 ## Is the Paw Pass free, and what does premium cost?
 
-The game itself is free to play on Steam. The developer's [launch post](https://store.steampowered.com/news/app/3419430/view/1842212951313382) says your free pass ticket is claimed automatically as long as you open the game at least once a month, so opening the game once in a month gets you that month's free lane. What happens to the free lane of a month in which you never opened the game is not confirmed. The paid version exists "to support further development" and "includes more cosmetics, chests and emotes". It needs a Paw Pass Ticket. The announcement calls the item a Paw Pass Ticket; the listing we recorded in the Steam Item Store on September 29, 2026 was named Paw Pass Token, at US$4.99, and whether these are two names for the same item is not confirmed. The current price and regional prices are not confirmed either.
+The game itself is free to play on Steam ([Steam app details API](https://store.steampowered.com/api/appdetails?appids=3419430)). The developer's [launch post](https://store.steampowered.com/news/app/3419430/view/1842212951313382) says your free pass ticket is claimed automatically as long as you open the game at least once a month, so opening the game once in a month gets you that month's free lane. What happens to the free lane of a month in which you never opened the game is not confirmed. The paid version exists "to support further development" and "includes more cosmetics, chests and emotes". It needs a Paw Pass Ticket. The announcement calls the item a Paw Pass Ticket; the listing we recorded in the [Steam Item Store](https://store.steampowered.com/itemstore/3419430/) on September 29, 2026 was named Paw Pass Token, at US$4.99, and whether these are two names for the same item is not confirmed. The current price and regional prices are not confirmed either.
 
 | | Free lane | Premium lane |
 | --- | --- | --- |

@@ -7,9 +7,9 @@ description: "Untitled Wheelie Game update history from official Roblox store da
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-09-30"
-scope: "Creation and update timestamps from the Roblox games, game pass and developer product APIs on 2026-09-30; the developer's announcements we read on 2026-10-10 are Roblox event listings, covered on the patch notes page"
+scope: "Pass and product timestamps from the Roblox game pass and developer product APIs on 2026-09-30; the game record's created and updated timestamps re-read from the games API on 2026-10-10 (UTC); the developer's announcements we read on 2026-10-10 are Roblox event listings, covered on the patch notes page"
 type: "article"
-tldr: ["The experience was created on 4 June 2026 and the listing was updated again on 30 September 2026.", "June brought the earning passes, Free Subway Travel, More Helmets and six cash packs.", "Two bike passes followed in late June and July, then the EBike Pack on 15 August.", "September added the Backfire part and two ways to deal with police fines."]
+tldr: ["The experience record was created on 4 June 2026; when we read it on 10 October 2026 (UTC), its \"updated\" timestamp was 8 October 2026.", "June brought the earning passes, Free Subway Travel, More Helmets and six cash packs.", "Two bike passes followed in late June and July, then the EBike Pack on 15 August.", "September added the Backfire part and two ways to deal with police fines."]
 related: ["gamepasses", "bikes", "cops-fines"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"]
 images: ["art01"]
@@ -22,7 +22,7 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Update History from Store Dates
 
-Untitled Wheelie Game's Roblox record was created on 4 June 2026, and its store has gained new passes and products every few weeks since. The most recent additions were the Backfire part on 4 September and two fine-related purchases on 21 and 26 September. The Roblox listing itself was last updated on 30 September 2026.
+Untitled Wheelie Game's Roblox record was created on 4 June 2026, and its store has gained passes and products every few weeks since. The newest store records on 10 October 2026 (UTC) were the Backfire part (4 September) and two fine-related purchases (21 and 26 September). The game record's "updated" timestamp read 8 October 2026 that day.
 
 ## Where do these dates come from?
 
@@ -52,7 +52,7 @@ Details for each item are on the [game pass list](/untitled-wheelie-game/gamepas
 
 ## What happened on 12 August?
 
-Every one of the ten passes that existed at the time shows a "last updated" timestamp on 12 August 2026. The store data does not say what changed. Five passes are off sale today, but the data does not record when a pass was taken off sale, so we cannot tell whether that happened on the same day.
+Every one of the ten passes that existed at the time shows a "last updated" timestamp on 12 August 2026. The store data does not say what changed. Five passes were off sale when we read the list on 10 October 2026 (UTC), but the data does not record when a pass was taken off sale, so we cannot tell whether that happened on the same day.
 
 ## Which passes are no longer sold?
 
@@ -78,7 +78,7 @@ None of this is a roadmap. When we read the event listings on 10 October 2026, o
 
 ## How often is the game updated?
 
-The Roblox listing carries an "updated" time that moves when the developer publishes changes, and on 30 September 2026 it read 02:34 UTC that same day. That is the best public sign that the game is actively maintained. For the official group and where announcements might appear, see the [community page](/untitled-wheelie-game/community/).
+The Roblox listing carries an "updated" time that moves when the developer publishes changes, and on 30 September 2026 it read 02:34 UTC that same day. When we re-read it on 10 October 2026 (UTC), it read 8 October 2026 at 05:27 UTC. That is the best public sign that the game is actively maintained. For the official group and where announcements might appear, see the [community page](/untitled-wheelie-game/community/).
 
 ## Read next
 

@@ -33,12 +33,12 @@ The pass description says you "never have to pay fines for when you get caught".
 
 The clearest official statement is the description of the NEVER PAY FINES pass: "Just never have to pay fines for when you get caught." So a catch leads to a fine. The store records we read do not answer the questions below; the chase rules the developer announced are on the [cop chase rules page](/untitled-wheelie-game/cops-chase-rules/), read on 10 October 2026.
 
-| Question | Official answer on 30 September 2026 |
+| Question | Official answer, with the date we read it |
 | --- | --- |
-| How much is a fine? | Not published |
-| Does it scale with your bike or your money? | Not published |
-| What counts as being caught? | Not published |
-| Can you go to jail or lose your bike? | Not mentioned anywhere official |
+| How much is a fine? | Not published (read 30 September 2026); no amount in the Roblox records we read on 10 October 2026 |
+| Does it scale with your bike or your money? | Not published (read 30 September 2026) |
+| What counts as being caught? | Not published (read 30 September 2026) |
+| Can you go to jail or lose your bike? | Not mentioned in the official records we read (30 September 2026) |
 | Are the cops computer-controlled? | The developer's event listing, read on 10 October 2026, is titled "AI COPS 👮" and opens with "AI Cops are being added!" |
 
 We will not fill these gaps with guesses. If you see a number on another site, check whether it links to a developer post.

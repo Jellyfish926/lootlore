@@ -14,7 +14,7 @@ related: []
 sourceUrls: []
 images: ["art02"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 gameVersion: "2026-09-28 update"
 draft: false
@@ -42,7 +42,7 @@ Every badge with its exact unlock text and total awards, from Welcome! to 500K C
 
 ### [Discord, Roblox Group and Wiki Links](/deep-fishing/discord/)
 
-The LazyGames. group that makes the game, the Discord server that calls itself official, and why this guide has no codes page yet.
+The LazyGames. group that makes the game, the Discord server that calls itself official, and why the codes page lists no codes yet.
 
 ## What should a new player do first?
 
@@ -52,7 +52,7 @@ If you want to spend Robux, the [Rods & Upgrades section](/deep-fishing/gear/) c
 
 ## What these guides do not cover yet
 
-We have no page for codes, a full fish list or the individual waters. Codes are only published where we cannot read them, and the fish list and water unlock costs exist only on fan sites and videos we could not verify. Those pages will appear when an official source confirms them.
+We have no page for a full fish list or the individual waters. The [codes page](/deep-fishing/codes/) records that we saw no code in the official Roblox records we read on 10 October 2026, and the fish list and water unlock costs exist only on fan sites and videos we could not verify. Those two pages will appear when an official source confirms them.
 
 ## Scope
 

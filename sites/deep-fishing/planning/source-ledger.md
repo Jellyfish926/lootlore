@@ -30,3 +30,5 @@
 | author | — | — | — | 编辑方针页 | art02 |
 | waters | C1、YT | — | C/B | **素材不足 → draft** | art03 |
 | codes | C1、C2、C3 | — | C | **素材不足 → 不建** | — |
+| codes（2026-10-10 建，取代上一行「不建」） | G、GR、GP、DP、BD、活动接口 virtual-events（S） | — | S | 充足：结论是「2026-10-10 读到的官方 Roblox 记录里没有兑换码」；游戏内码框、Discord、社交链接（匿名 401）not confirmed；不转载 C1–C3 的码表 | art05（封面）、art02 |
+| updates | DP、GP、BD、G、活动接口 virtual-events（S） | 本站 2026-09-29 读数（shop / gamepasses / badges 页与 entities.json，仅作对比并写明归属） | S | 充足：只写记录的 created / updated 与活动起止；赛季玩法、新商品作用、活动内容是否上线 not confirmed | art04（封面）、art01 |

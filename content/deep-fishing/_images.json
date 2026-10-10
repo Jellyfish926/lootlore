@@ -20,7 +20,9 @@
   "shop": "art01",
   "author": "art02",
   "waters": "art03",
-  "enchants": "art03"
+  "enchants": "art03",
+  "codes": "art05",
+  "updates": "art04"
  },
  "shots": {
   "art01": {

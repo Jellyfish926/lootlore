@@ -12,7 +12,7 @@ related: []
 sourceUrls: []
 images: ["art02"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -26,7 +26,7 @@ Deep Fishing is a Roblox game, so the most reliable facts are the ones the devel
 
 ![View from inside a giant pink fish mouth, looking out at a Roblox angler on a dock](art02 "Every guide in this section is published under one editorial byline")
 
-Fan wikis, code sites and YouTube videos are used only as leads. If one of them is the only source for a fact — a code, a coin price, a fish name, a water's unlock cost — that fact is left out until something official confirms it. That is why some popular topics, such as codes, do not have a page yet.
+Fan wikis, code sites and YouTube videos are used only as leads. If one of them is the only source for a fact — a code, a coin price, a fish name, a water's unlock cost — that fact is left out until something official confirms it. That is why some popular topics, such as a full fish list, do not have a page yet.
 
 Buying orders and "what to do first" advice are editorial suggestions, not rules of the game, and each page says so where it matters.
 

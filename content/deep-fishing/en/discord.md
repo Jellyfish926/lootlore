@@ -14,7 +14,7 @@ related: ["how-to-play", "shop", "badges"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/34744238", "https://games.roblox.com/v1/games?universeIds=10526853622", "https://discord.com/api/v9/invites/fxjhB8BHeh?with_counts=true", "https://deepfishing.fandom.com/api.php?action=query&list=allpages"]
 images: ["art02"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 gameVersion: "2026-09-28 update"
 draft: false
@@ -67,7 +67,7 @@ Never enter your Roblox password on a site that claims to hand out codes or item
 
 ## Where do codes get announced?
 
-Nowhere we could read. The official description and the LazyGames group carry no codes, and the Discord announcement channels need a Discord account. Because of that, this guide has no codes page yet. Code lists on other sites disagree with each other, so we are not copying them. When we can confirm a code from an official post, we will add a page.
+Nowhere we could read. The official description and the LazyGames group carry no codes, and the Discord announcement channels need a Discord account. The [codes page](/deep-fishing/codes/) records what each official Roblox record held on 10 October 2026. Code lists on other sites disagree with each other, so we are not copying them. When we can confirm a code from an official post, it will go on that page.
 
 ## Is there an official wiki?
 

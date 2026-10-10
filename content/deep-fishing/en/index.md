@@ -10,12 +10,12 @@ checkedAt: "2026-09-29"
 scope: "Site entry point"
 type: "home"
 tldr: ["Deep Fishing is a Roblox fishing simulator: cast as far as you can, haul several fish, sell, upgrade, repeat. The developer is the group LazyGames.", "Farther water holds rarer fish, so rods and Strength come before luck.", "The rod ladder has 21 rods, from the Iron Rod to the Galaxy Rod.", "Only about 8 in 100 badge holders have ever caught a Secret fish."]
-faq: [["Who made Deep Fishing?", "A Roblox group owned by the verified account JoJocraftHP and named LazyGames. The experience was created on 18 July 2026 — see [community links](/deep-fishing/discord/)."], ["What is the best rod in Deep Fishing?", "The Galaxy Rod is the last and most expensive of the 21 rods on the regular ladder, at 6,499 Robux to unlock on 29 September 2026. The full order is on the [rod list](/deep-fishing/rods/)."], ["How rare are Secret fish?", "About 7.9 of every 100 players with the Welcome badge have the First Secret badge, against 48.3 for First Legendary — see [rarity tiers](/deep-fishing/rarity/)."], ["Are there Deep Fishing codes?", "Code lists circulate on other sites, but we could not confirm any from an official LazyGames post, so we do not list them. The [community page](/deep-fishing/discord/) explains why."], ["How many players can join a server?", "Up to 12 per server, according to the Roblox listing. Private servers were not enabled when we checked — [how to play](/deep-fishing/how-to-play/)."]]
+faq: [["Who made Deep Fishing?", "A Roblox group owned by the verified account JoJocraftHP and named LazyGames. The experience was created on 18 July 2026 — see [community links](/deep-fishing/discord/)."], ["What is the best rod in Deep Fishing?", "The Galaxy Rod is the last and most expensive of the 21 rods on the regular ladder, at 6,499 Robux to unlock on 29 September 2026. The full order is on the [rod list](/deep-fishing/rods/)."], ["How rare are Secret fish?", "About 7.9 of every 100 players with the Welcome badge have the First Secret badge, against 48.3 for First Legendary — see [rarity tiers](/deep-fishing/rarity/)."], ["Are there Deep Fishing codes?", "As of 10 October 2026 we saw no redemption code in the official Roblox records we read for the game. The [codes page](/deep-fishing/codes/) shows what each record held."], ["How many players can join a server?", "Up to 12 per server, according to the Roblox listing. Private servers were not enabled when we checked — [how to play](/deep-fishing/how-to-play/)."]]
 related: []
 sourceUrls: []
 images: ["art01", "art03"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 gameVersion: "2026-09-28 update"
 draft: false
@@ -61,7 +61,7 @@ Deep Fishing's 13 badges double as the best public rarity data. Nearly half of b
 
 ## What has changed since launch?
 
-LazyGames does not publish patch notes on Roblox, but every store item and badge carries the date it was created. Read together, those dates sketch the game's update history. A creation date is when an item was registered, which is not always the day an update went live.
+Of the eight Roblox event listings we read on 10 October 2026, one ("Mutation Roll + Rarity💫") carries a change list in its description; beyond that, every store item and badge carries the date it was created, and the [updates page](/deep-fishing/updates/) follows those records. Read together, those dates sketch the game's update history. A creation date is when an item was registered, which is not always the day an update went live.
 
 | Date (2026) | What appeared |
 | --- | --- |
@@ -77,9 +77,9 @@ LazyGames does not publish patch notes on Roblox, but every store item and badge
 
 The experience listing itself showed an update on 28 September. For what each item does, see the [Robux shop guide](/deep-fishing/shop/) and the [game pass guide](/deep-fishing/gamepasses/).
 
-## Why is there no codes page?
+## Are there Deep Fishing codes?
 
-Because we could not confirm a single code from LazyGames. The game description and the Roblox group carry no codes, and the Discord announcements need an account to read. Code lists on other sites disagree with each other on how many codes are active. We would rather leave the page out than send you to type in codes that may never have existed. The [community page](/deep-fishing/discord/) explains where official codes would appear.
+As of 10 October 2026 we saw no redemption code in the official Roblox records we read: the game description, the LazyGames. group record, event listings, game passes, store products and badges. Whether the game has a code box is not confirmed. The [codes page](/deep-fishing/codes/) shows what each record held and how to check a code you saw elsewhere.
 
 ## All sections
 

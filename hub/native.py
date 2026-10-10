@@ -284,6 +284,7 @@ class NativeLang(EntityBox, HubBodyMixin):
         self.prefix = spec.get("prefix", "").strip("/")
         self.default = bool(spec.get("default"))
         self.warnings = game_site.warnings
+        self._cover_caps = {}               # slug → 正文里与封面同图的那张图的手写图注(挪到封面用)
         self.t = json.loads(
             (self.root / "config" / "i18n" / f'{spec["i18n"]}.json').read_text(encoding="utf-8"))
         self.images = game_site.images
@@ -504,8 +505,18 @@ class NativeLang(EntityBox, HubBodyMixin):
         return cb
 
     def figure_cb_factory(self, page):
+        # 正文图与本页封面是同一张时不再输出正文 figure(封面紧挨着已经显示过这张图,
+        # 连着出现两次);md 里手写的图注挪到封面的 figcaption,来源署名封面本来就带。
+        # 栏目页不显示封面(render 里 fig=""),所以栏目页的正文图照常输出。
+        cover_im = self.image_for(page) if page.type != "category" else None
+        cover_src = cover_im.get("src") if cover_im else None
+
         def cb(src, alt, title):
             im = self._resolve_img(src, alt)
+            if cover_src and im.get("src") == cover_src:
+                if title and page.slug not in self._cover_caps:
+                    self._cover_caps[page.slug] = title
+                return ""
             body_src = im.get("src_small") or im["src"]
             w = im.get("small_w") or im.get("w")
             h = int(round(w * im["h"] / im["w"])) if im.get("w") else None
@@ -767,9 +778,14 @@ class NativeLang(EntityBox, HubBodyMixin):
                       f' sizes="(max-width: 860px) 100vw, 760px"')
         credit = self.credit()
         alt = self.alt_of(im)
+        cap = self._cover_caps.get(p.slug)  # 正文里同一张图的手写图注(见 figure_cb_factory)
+        if cap:
+            capline = esc(cap) + (f'<span class="fig-src">{esc(self.t["sep"])}{esc(credit)}</span>' if credit else "")
+        else:
+            capline = esc(credit) if credit else ""
         fig = (f'<figure class="cover"><img src="{esc(hero_src)}"{srcset} width="{hero_w}" height="{hero_h}"'
                f' alt="{esc(alt)}" loading="eager" fetchpriority="high" decoding="async">'
-               + (f"<figcaption>{esc(credit)}</figcaption>" if credit else "") + "</figure>")
+               + (f"<figcaption>{capline}</figcaption>" if capline else "") + "</figure>")
         return fig, dict(im, alt=alt)
 
     def search_form(self):

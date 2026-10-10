@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Category index"
 type: "category"
-tldr: ["Guides for your first sessions: the core loop, rarity tiers, badges, official community links, a codes check and an update log.", "New to the game? Read how to play first; it is built from the developer's own description.", "Every number on these pages comes from Roblox's official data and carries its check date."]
+tldr: ["Guides for your first sessions: the core loop, rarity tiers, badges, official community links, a codes check and an update log.", "New to the game? Read how to play first; it is built from the developer's own description.", "The codes and updates pages are built from official Roblox records read on 10 October 2026."]
 related: []
 sourceUrls: []
 images: ["art02"]
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 New to Deep Fishing? Read the how-to-play guide first: it explains the cast, sell and upgrade loop in a few minutes. Then look at rarity tiers and badges to see what you are working towards, and use the community page to find the real LazyGames group and Discord.
 
-These guides are written for a first session. They stick to what the developer has published on Roblox — the game description, the badge list and the store — and say plainly when something is our advice rather than an official rule.
+These guides are written for a first session. They draw on what the developer has published on Roblox — the game description, the badge list and the store — and say plainly when something is our advice rather than an official rule. The community links page also uses readings from Discord's invite data and a fan wiki.
 
 ## Pick a guide by question
 
@@ -56,4 +56,4 @@ We have no page for a full fish list or the individual waters. The [codes page](
 
 ## Scope
 
-Deep Fishing is a live Roblox game that updates often — the listing showed an update on 28 September 2026. Every guide shows its check date. Numbers such as badge totals are snapshots and grow daily.
+Deep Fishing is a live Roblox game: when we read it on 10 October 2026, the experience listing's "updated" timestamp was 9 October 2026 (UTC). The byline of the six guides in this section carries a Last reviewed date. Numbers such as badge totals are snapshots from the date they were read.

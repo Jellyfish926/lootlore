@@ -13,7 +13,7 @@ entities: ["product-gems-best-value", "product-sun-points-best-value", "product-
 tldr: ["Roblox's developer product records for One Tap held 97 products on 10 October 2026, all marked for sale, priced from 5 Robux to 10,000 Robux.", "We sort them into 13 groups by name. Products with Case in the name account for 49 of the 97; the rest include currency packs, Premium Battlepass and Skip products, Xp Boost products, bundles, limited-named items and donations.", "Five Gems packs cost 49 to 2,299 Robux and five Sun Points packs cost 80 to 2,000. No record says how many Gems or Sun Points a pack holds.", "None of the 97 records has a description, and all 97 share one plain placeholder icon, so names and prices are all the store records give."]
 related: ["cases", "battle-pass", "gamepasses"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100", "https://thumbnails.roblox.com/v1/assets?assetIds=88963008124478&size=700x700&format=Png", "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100", "https://games.roblox.com/v1/games?universeIds=9294074907", "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://create.roblox.com/docs/production/monetization/developer-products"]
-images: ["th4", "th3", "pass-2x-money"]
+images: ["th4", "th3"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"
@@ -115,8 +115,6 @@ Fourteen records have LIMITED or Limited in the name. Two official event listing
 Ten of the 14 cost 199 Robux, three cost 149 and one costs 95. Seven have slot-style names, Limited 1 to 4 and Limited Skin 1 to 3, that do not say which item they sell. Those names do not identify an item, so the records cannot tell you which limited items the shop is selling today.
 
 Two records share the name Solar Cannon. One is "[LIMITED] Solar Cannon 115" at 95 Robux and the other "[LIMITED OFFER] Solar Cannon" at 149, created about two minutes apart on 29 January 2026. What the 115 stands for is not stated, and neither is the difference between them.
-
-![Game pass icon: a dark grey disc with pixel lettering, 2x Money in green and Grants double money from kills. in yellow](pass-2x-money "Official icon of the 2x Money pass, 299 Robux")
 
 ## What are the donation products and the product named 500?
 

@@ -13,7 +13,7 @@ entities: ["mechanic-rewards", "product-refresh-quest", "pass-2x-level-xp"]
 tldr: ["The official description names three reward sources in One Tap: \"Earn rewards from levels, daily, and quests\". It does not say what any of them pays.", "Event listings add level reward skins, a leaderboard tag and kill effect for the top 100 (\"Given after reset\") and a free kill effect for joining during the Valentines listing.", "Four products are named Xp Boost with 30 Minutes, 1 Hour, 2 Hours and 6 Hours in the name, at 30, 60, 120 and 360 Robux. By our division that is 1 Robux per minute named at every size.", "Refresh Quest costs 39 Robux. Its record has no description, so what it refreshes is not confirmed."]
 related: ["battle-pass", "gamepasses", "how-to-play"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=9294074907", "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100", "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png", "https://create.roblox.com/docs/production/monetization/passes", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=88388513445715,127182754594072,134947861539288,111201366562498,106005103409162,82429300588092&size=768x432&format=Png"]
-images: ["ev-valentines", "pass-2x-level-xp"]
+images: ["ev-valentines"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"
@@ -78,8 +78,6 @@ Set against the boosts, the sums are ours:
 | 2x Level XP pass | 149 | A pass, paid once; no time in the name |
 
 The pass costs 1 Robux less than the two boost products whose names add up to two and a half hours. If a boost is also a doubling and lasts the time in its name, the pass pays for itself after that much boosted play. That "if" matters: the boost records do not give a multiplier, so the two may not be equal. Whether a boost stacks on top of the pass is not stated either.
-
-![Game pass icon: a dark grey disc with yellow pixel lettering that reads 2x XP, Grants double XP.](pass-2x-level-xp "Official icon of the 2x Level XP pass, 149 Robux")
 
 ## What does Refresh Quest do?
 

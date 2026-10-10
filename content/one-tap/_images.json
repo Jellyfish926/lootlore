@@ -1,5 +1,5 @@
 {
- "_note": "图片池:全部是 Roblox 官方 thumbnails 接口返回的 rbxcdn 图,零下载零存储(raw/img/ 只是本人看图写 alt 用的下载件,不进仓)。建包前先数官方 16:9 图(skill ⑤.5 3d):media 接口 5 条 = 1 条 GamePreviewVideo + 4 条 Image(altText 全空),4 张 16:9 宣传图 th1–th4 全部入池;另有官方游戏图标 1 张(512 方图)、官方活动配图 3 张(virtual-events 的 mediaId 经 thumbnails assets 接口取 768x432:Valentines、Update、☀️Summer Update!)、通行证图标 4 张(700x700,图上有官方说明文字)。共 12 张互不相同的图,12 页封面一页一张、无重复(pages 映射与各页 frontmatter 的 images[0] 一致)。未入池并说明原因:① 活动 Update 2 的配图(asset 127182754594072)与 Revert / Game Revert 的配图(两条活动同一个 CDN 哈希 adf3262f…)画面与 th1 是同一张主视觉,只差裁切,入池会造成『不同 key 同一画面』;② 97 个开发者商品共用图标资产 88963008124478,是一块灰色立方体占位图,不能当封面也不配图。方形图(icon 与 4 张通行证图标)进 16:9 封面位由框架居中裁切(object-fit:cover),与 /get-your-drivers-license/ 的做法一致;它们只分给 game-info、gamepasses、两个栏目索引与作者页,文章页里权重高的 7 页全部用 16:9 图。正文配图不用栏目默认图 th1;同一张图在同一页最多出现 2 处(封面 + 正文一次),低于 img_dup_icon 的 3 处门槛。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_small / source_icon / source_assets_* 重取一次并替换。16:9 图 URL 标称 768x432 / 480x270,实际解码 768x432 / 480x270(ev-summer 为 767x432 / 479x270,raw/image-check.txt 实测),达不到 1200 宽的 Discover 大图门槛。alt 按本人看图所见描述;通行证图标上的英文是逐字抄录的官方图内文字。2026-10-10 写入前逐个 curl 验 200 且 content-type 为 image/*(入池 12 张共 23 个 URL,另 4 张未入池图的 7 条 URL 记录也已验,状态记录在 raw/image-check.txt)。",
+ "_note": "图片池:全部是 Roblox 官方 thumbnails 接口返回的 rbxcdn 图,零下载零存储(raw/img/ 只是本人看图写 alt 用的下载件,不进仓)。建包前先数官方 16:9 图(skill ⑤.5 3d):media 接口 5 条 = 1 条 GamePreviewVideo + 4 条 Image(altText 全空),4 张 16:9 宣传图 th1–th4 全部入池;另有官方游戏图标 1 张(512 方图)、官方活动配图 3 张(virtual-events 的 mediaId 经 thumbnails assets 接口取 768x432:Valentines、Update、☀️Summer Update!)、通行证图标 4 张(700x700,图上有官方说明文字)。共 12 张互不相同的图入池(pages 映射与各页 frontmatter 的 images[0] 一致)。未入池并说明原因:① 活动 Update 2 的配图(asset 127182754594072)与 Revert / Game Revert 的配图(两条活动同一个 CDN 哈希 adf3262f…)画面与 th1 是同一张主视觉,只差裁切,入池会造成『不同 key 同一画面』;② 97 个开发者商品共用图标资产 88963008124478,是一块灰色立方体占位图,不能当封面也不配图。封面分配(2026-10-10 线上验收后改):框架把封面、卡片图、og:image 与正文 figure 一律按 16:9 居中裁切(object-fit:cover),方形的通行证图标进去后图上的文字被切断、放大发糊,所以 12 页封面只用 7 张官方 16:9 图(th1–th4、ev-valentines、ev-update、ev-summer),同一张图最多给 2 页当封面:th1 = index(框架自动页 /all/ 取 default,也是 th1);th2 = how-to-play、gamepasses;th3 = cases、game-info;th4 = shop、robux;ev-valentines = rewards、beginner;ev-summer = updates;ev-update = battle-pass、author(作者页正文里有方形游戏图标,封面不用与它同一主视觉的 ev-summer)。同一栏目页下并排的 4 张文章卡互不同图,hub 上两张栏目卡(ev-valentines / th4)与 Start here 三张卡(th2 / th3 / ev-summer)也互不同图。4 张通行证图标(pass-*)留在池里作取证记录(alt 里是逐字抄录的图内文字),但不再放进任何页面:原先 gamepasses、cases、rewards、shop 正文里的图标 figure 已撤掉,四张图标上的文字仍在 gamepasses 页的表格与 hub 速查表里逐字转录。方形游戏图标 icon 不再当封面,只在 index、game-info、author 的正文里各出现一次(图上没有文字)。正文配图不用栏目默认图 th1;同一张图在同一页最多出现 2 处,低于 img_dup_icon 的 3 处门槛。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_small / source_icon / source_assets_* 重取一次并替换。16:9 图 URL 标称 768x432 / 480x270,实际解码 768x432 / 480x270(ev-summer 为 767x432 / 479x270,raw/image-check.txt 实测),达不到 1200 宽的 Discover 大图门槛。alt 按本人看图所见描述;通行证图标上的英文是逐字抄录的官方图内文字。2026-10-10 写入前逐个 curl 验 200 且 content-type 为 image/*(入池 12 张共 23 个 URL,另 4 张未入池图的 7 条 URL 记录也已验,状态记录在 raw/image-check.txt)。",
  "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=9294074907&countPerUniverse=10&size=768x432&format=Png",
  "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=9294074907&countPerUniverse=10&size=480x270&format=Png",
  "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=9294074907&size=512x512&format=Png",
@@ -22,11 +22,11 @@
   "updates": "ev-summer",
   "rewards": "ev-valentines",
   "battle-pass": "ev-update",
-  "gamepasses": "pass-2x-case-luck",
-  "game-info": "icon",
-  "beginner": "pass-2x-level-xp",
-  "robux": "pass-2x-money",
-  "author": "pass-double-voting-value"
+  "gamepasses": "th2",
+  "game-info": "th3",
+  "beginner": "ev-valentines",
+  "robux": "th4",
+  "author": "ev-update"
  },
  "shots": {
   "th1": {

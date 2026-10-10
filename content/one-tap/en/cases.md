@@ -13,7 +13,7 @@ entities: ["product-case-3-buy-1", "product-1-cosmic-case", "product-moon-case-1
 tldr: ["Roblox's records hold 49 One Tap products with Case in the name: 48 in 16 families (Case 1 to Case 5 plus 11 named families) and one product named just Case.", "A single case costs from 10 Robux (Case 3) to 199 Robux (Energy Sword). Eight families sell at 80 Robux a case.", "Bigger packs are almost never cheaper. Energy Sword is the one family where a pack lowers the price per case, from 199 to 150 Robux, while Karambit packs cost 1 Robux more per case than singles (450 for three against 3 × 149 = 447).", "No product record has a description, and the developer has not published case contents or odds."]
 related: ["gamepasses", "shop", "updates"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=9294074907", "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100", "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png", "https://create.roblox.com/docs/production/monetization/developer-products"]
-images: ["th3", "pass-2x-case-luck", "ev-update"]
+images: ["th3", "ev-update"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"
@@ -75,8 +75,6 @@ Eleven more families carry a name. Three of them use pack sizes other than 1, 3 
 The family names are taken from the product names, which are not written one way. The store has "1 Karambit Case" and "7 Karambit Cases", but "Dragon Case 3" and "Cyber Case #2 10". The [Robux shop guide](/one-tap/shop/) explains how we grouped all 97 products.
 
 Several records were created within a day of a listing's start: the Cosmic, Glitched, Energy Sword and Proto records on 12 March 2026, the day before the Update 2 listing started, and two families on 24 April, the day the April listing with "2 New Weapon cases" started. That is a match of dates and names; it does not show those products went on sale with that update, and the Karambit records date from 28 January, about six weeks before the Update 2 listing that mentions Karambit cases. The [updates page](/one-tap/updates/) has the full timeline.
-
-![Game pass icon: a dark grey disc with pixel lettering, 2x Case Luck in green and Grants more luck when opening cases in yellow, the last line clipped by the round frame](pass-2x-case-luck "Official icon of the 2x Case Luck pass, 499 Robux")
 
 ## Is a bigger One Tap case pack ever cheaper per case?
 

@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Four guides for your first sessions: how to play, rewards, the update log and the facts about the game and its developer.", "New to One Tap? Read how to play first. It goes through the official description line by line and quotes the ban rule in full.", "Dates, counts and prices on these pages come from Roblox's official records for the game, read on 10 October 2026. Anything we could not source is named as a gap."]
 related: []
 sourceUrls: []
-images: ["pass-2x-level-xp"]
+images: ["ev-valentines"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"

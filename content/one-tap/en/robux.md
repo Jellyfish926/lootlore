@@ -12,7 +12,7 @@ type: "category"
 tldr: ["Four guides: the 4 game passes, the 49 case products, the products named Premium Battlepass and Skip, and the full store of 97 developer products.", "The four game passes cost 79 to 499 Robux and are one-time fees. The 97 developer products cost 5 to 10,000 Robux, and none has a description.", "Every name and price was read from Roblox's store records for the game on 10 October 2026."]
 related: []
 sourceUrls: []
-images: ["pass-2x-money"]
+images: ["th4"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"

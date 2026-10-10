@@ -13,7 +13,7 @@ entities: ["pass-2x-case-luck", "pass-2x-money", "pass-double-voting-value"]
 tldr: ["One Tap has 4 game passes on Roblox's record: Double Voting Value (79 Robux), 2x Level XP (149), 2x Money (299) and 2x Case Luck (499).", "All four together cost 1,026 Robux. 2x Case Luck alone is just under half of that.", "None of the four has a written description. The only official explanation we could read is on the icons, such as \"Grants double money from kills.\" for 2x Money.", "The 2x Case Luck icon says \"more luck\", not double, and no official source says which drops the luck affects."]
 related: ["cases", "rewards", "shop"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100", "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png", "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=9294074907", "https://create.roblox.com/docs/production/monetization/passes", "https://create.roblox.com/docs/production/monetization/developer-products", "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"]
-images: ["pass-2x-case-luck", "pass-2x-money", "pass-double-voting-value"]
+images: ["th2"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"
@@ -41,8 +41,6 @@ The first column is the pass name exactly as Roblox stores it. The third column 
 
 Because we found nothing else to quote. Roblox gives every pass a description field, and for all four One Tap passes that field is empty. The game's own description does not mention passes either. So the short lines drawn on the icons are the only explanation from the developer that we could read, and anything more specific you read elsewhere did not come from an official source we could find.
 
-![Game pass icon: a dark grey disc with pixel lettering, 2x Money in green and Grants double money from kills. in yellow](pass-2x-money "Official icon of the 2x Money pass, 299 Robux")
-
 ## What does 2x Money double?
 
 Money from kills, according to its icon: "Grants double money from kills." That one line settles two things. Kills pay money, and the pass doubles that payout. It says nothing about money from any other source, so do not count on more than the icon promises.
@@ -55,8 +53,6 @@ The name says 2x. The icon says "Grants more luck when opening cases". Those are
 
 At 499 Robux it is the most expensive of the four. For scale, eight case families on Roblox's record sell a single case for 80 Robux, so the pass costs as much as six of those cases with 19 Robux left over (our arithmetic: 6 × 80 = 480). The developer has not published drop odds for any case, with or without the pass. The [cases page](/one-tap/cases/) lists every case price we could read.
 
-![Game pass icon: a dark grey disc with pixel lettering, 2x Case Luck in green and Grants more luck when opening cases in yellow, the last line clipped by the round frame](pass-2x-case-luck "Official icon of the 2x Case Luck pass, 499 Robux")
-
 ## Is 2x Level XP worth 149 Robux?
 
 Its icon is the plainest of the four: "Grants double XP." The description of One Tap lists levels as a source of rewards, and update listings mention level reward skins, so faster levels would bring those rewards sooner. How much sooner depends on XP numbers the developer has not published.
@@ -66,8 +62,6 @@ The store also has four products named Xp Boost, priced at 1 Robux per minute na
 ## What is Double Voting Value for?
 
 Its icon reads "2x Votes" and "Your votes will count twice." That implies One Tap has some voting feature in which this pass counts your vote twice. What is voted on, and whether it happens in a match, is not stated in any official source we read. An event listing from March 2026 announced new maps, but no official text ties voting to maps, so we leave that as a guess you can check in your first match.
-
-![Game pass icon: a dark grey disc with pixel lettering, 2x Votes in magenta and Your votes will count twice. in yellow](pass-double-voting-value "Official icon of the Double Voting Value pass, 79 Robux")
 
 ## What do all four One Tap passes cost together?
 

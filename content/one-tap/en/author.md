@@ -10,7 +10,7 @@ type: "author"
 tldr: ["Jellyfi is the editorial byline responsible for researching, publishing and maintaining these One Tap guides.", "Game facts come from Roblox's official records for the game: its description, game passes, store products, event listings and developer group.", "Codes are listed only when seen in an official source. None has been, so there is no codes page.", "Weapon stats, case contents and odds, maps and quest lists stay out until they are checked in the game."]
 related: []
 sourceUrls: []
-images: ["pass-double-voting-value", "icon"]
+images: ["ev-update", "icon"]
 date: "2026-10-10"
 updated: "2026-10-10"
 reviewed: "2026-10-10"

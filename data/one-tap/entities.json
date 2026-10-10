@@ -41,8 +41,9 @@
     "https://games.roblox.com/v1/games?universeIds=9294074907",
     "https://groups.roblox.com/v1/groups/1047647644",
     "https://gameinternationalization.roblox.com/v1/supported-languages/games/9294074907",
-    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
+    "https://create.roblox.com/docs/production/promotion/content-maturity"
    ],
+   "source_urls_note": "The maturity label itself was read from Roblox's experience-guidelines API (see key_notes_source and key_notes_repro). That endpoint only answers POST requests and returns 404 to a plain GET, so it is not listed as a clickable source; the list links Roblox's Creator Hub page on content maturity labels instead (GET 200, read 2026-10-10).",
    "accessed": "2026-10-10",
    "unverified_fields": [
     "private_servers (the game page markup carries data-private-server-price=\"49\"; the games API shows createVipServersAllowed: false; not confirmed by a purchase)",

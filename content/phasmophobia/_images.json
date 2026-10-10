@@ -1,0 +1,378 @@
+{
+ "_note": "封面图与正文图：Steam 商店页官方截图热链（appdetails appids=739630 的 screenshots[]，2026-10-10 取，共 48 张；本文件收其中 32 张）。写入前 48 张的 1920x1080 原图与 600x338 小图全部 curl 验 200（记录在 raw/img_check.tsv），header_image / capsule_image 也验 200。alt 按画面实际内容写（逐张目视），不替官方断言是哪张地图——只有 ss06 画面里有 Nell's Diner 招牌。pages 映射 slug → 封面，12 页 12 张互不相同；正文图用另外的 key，不与本页封面或 default 重复；default（ss01）不被任何页面当封面或正文图。",
+ "source": "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+ "fetched": "2026-10-10",
+ "credit": {
+  "en": "Official screenshot · Kinetic Games (Steam store page)",
+  "zh": "官方截图 · Kinetic Games（Steam 商店页）"
+ },
+ "default": "ss01",
+ "pages": {
+  "index": "ss37",
+  "getting-started": "ss36",
+  "how-to-play": "ss26",
+  "platforms-price": "ss45",
+  "difficulty": "ss05",
+  "achievements": "ss42",
+  "updates-events": "ss08",
+  "patch-notes": "ss46",
+  "roadmap": "ss14",
+  "crimson-eye": "ss09",
+  "events": "ss34",
+  "author": "ss44"
+ },
+ "shots": {
+  "ss00": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ec30a770064ea10c2bcfb1b3002a3dbd086be516/ss_ec30a770064ea10c2bcfb1b3002a3dbd086be516.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ec30a770064ea10c2bcfb1b3002a3dbd086be516/ss_ec30a770064ea10c2bcfb1b3002a3dbd086be516.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A single-storey house at night with a lit front door and four small path lights along the driveway",
+    "zh": "夜色中的单层住宅，前门亮着灯，车道边有四盏小地灯"
+   }
+  },
+  "ss01": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/e9b67c7a3744a36cd5cc29adc13c6caaa4172e26/ss_e9b67c7a3744a36cd5cc29adc13c6caaa4172e26.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/e9b67c7a3744a36cd5cc29adc13c6caaa4172e26/ss_e9b67c7a3744a36cd5cc29adc13c6caaa4172e26.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A carpeted hallway with open doorways on both sides under a ceiling light",
+    "zh": "吸顶灯下铺着地毯的走廊，两侧是敞开的房门"
+   }
+  },
+  "ss05": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/a1a0840e05ff4007115fa2e51f725d1f1a9860c9/ss_a1a0840e05ff4007115fa2e51f725d1f1a9860c9.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/a1a0840e05ff4007115fa2e51f725d1f1a9860c9/ss_a1a0840e05ff4007115fa2e51f725d1f1a9860c9.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A dark saloon car parked in a garage under a single strip light",
+    "zh": "车库里一盏条形灯下停着一辆深色轿车"
+   }
+  },
+  "ss06": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/9b0d8ac993bb1ea847a3d20d3d4ffa7066a6acfa/ss_9b0d8ac993bb1ea847a3d20d3d4ffa7066a6acfa.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/9b0d8ac993bb1ea847a3d20d3d4ffa7066a6acfa/ss_9b0d8ac993bb1ea847a3d20d3d4ffa7066a6acfa.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "The neon Nell's Diner sign glowing above a parked police car at night",
+    "zh": "夜晚 Nell's Diner 的霓虹招牌，下方停着一辆警车"
+   }
+  },
+  "ss07": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/991c0843b74e4ef860a14474276feac06264a9e8/ss_991c0843b74e4ef860a14474276feac06264a9e8.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/991c0843b74e4ef860a14474276feac06264a9e8/ss_991c0843b74e4ef860a14474276feac06264a9e8.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A dim diner counter with red stools and a checkered floor",
+    "zh": "昏暗的餐馆吧台，红色吧凳与黑白格地板"
+   }
+  },
+  "ss08": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/88b5de0f4adc766378738a9b72f622121b8d3d09/ss_88b5de0f4adc766378738a9b72f622121b8d3d09.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/88b5de0f4adc766378738a9b72f622121b8d3d09/ss_88b5de0f4adc766378738a9b72f622121b8d3d09.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A diner counter with a glass food display, red stools and a ceiling fan overhead",
+    "zh": "带玻璃食品柜的餐馆吧台，红色吧凳，头顶是吊扇"
+   }
+  },
+  "ss09": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/1e5e39f5863d55e85f8d529ec8dfd2be783a5fa8/ss_1e5e39f5863d55e85f8d529ec8dfd2be783a5fa8.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/1e5e39f5863d55e85f8d529ec8dfd2be783a5fa8/ss_1e5e39f5863d55e85f8d529ec8dfd2be783a5fa8.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A dark commercial kitchen with stacked white plates, pans and a tray of bread rolls on steel counters",
+    "zh": "昏暗的商用厨房，不锈钢台面上摞着白盘、平底锅和一盘面包"
+   }
+  },
+  "ss10": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ff19db931b4718a0677e88320775c2905bd1f1d6/ss_ff19db931b4718a0677e88320775c2905bd1f1d6.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ff19db931b4718a0677e88320775c2905bd1f1d6/ss_ff19db931b4718a0677e88320775c2905bd1f1d6.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A glowing orange jukebox beside red diner booths and a chalkboard menu",
+    "zh": "橙色发光的点唱机，旁边是红色卡座和粉笔菜单板"
+   }
+  },
+  "ss12": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/7322b8bb35934e5f07da19890cd4eae834dcf8f1/ss_7322b8bb35934e5f07da19890cd4eae834dcf8f1.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/7322b8bb35934e5f07da19890cd4eae834dcf8f1/ss_7322b8bb35934e5f07da19890cd4eae834dcf8f1.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A dark, weathered wooden house at night with one lit doorway under a porch roof",
+    "zh": "夜里破旧的木屋，门廊下只有一扇门透着光"
+   }
+  },
+  "ss14": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/4c5c8c8dd54df6c9a157491e6611ede792e97526/ss_4c5c8c8dd54df6c9a157491e6611ede792e97526.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/4c5c8c8dd54df6c9a157491e6611ede792e97526/ss_4c5c8c8dd54df6c9a157491e6611ede792e97526.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "Broken roof beams and boards open to a foggy night sky with a tree beyond",
+    "zh": "断裂的屋梁与木板之间露出起雾的夜空，远处有一棵树"
+   }
+  },
+  "ss17": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/f7377b2dd2e388a76ae48f398630b4b4e5144248/ss_f7377b2dd2e388a76ae48f398630b4b4e5144248.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/f7377b2dd2e388a76ae48f398630b4b4e5144248/ss_f7377b2dd2e388a76ae48f398630b4b4e5144248.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A hand holding a cassette recorder in a dark room, with a dress mannequin lit in the background",
+    "zh": "黑暗房间里一只手拿着磁带录音机，背景里一具裁缝人台被照亮"
+   }
+  },
+  "ss18": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/acdac8ad19ea0b6e590289be19d8dfe8583755e0/ss_acdac8ad19ea0b6e590289be19d8dfe8583755e0.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/acdac8ad19ea0b6e590289be19d8dfe8583755e0/ss_acdac8ad19ea0b6e590289be19d8dfe8583755e0.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A video camera viewfinder framing a doorway with an Evidence marker in the centre of the screen",
+    "zh": "摄像机取景屏对着一处门口，画面中央有 Evidence 标记"
+   }
+  },
+  "ss19": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/29a2671fcb0e777716179f3785c46a44321da740/ss_29a2671fcb0e777716179f3785c46a44321da740.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/29a2671fcb0e777716179f3785c46a44321da740/ss_29a2671fcb0e777716179f3785c46a44321da740.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A CCTV monitor in the truck showing a night-vision feed of a rocking chair, with tabs for CCTV, video and head cameras",
+    "zh": "卡车里的 CCTV 监视器，夜视画面中是一把摇椅，上方有 CCTV、摄像机、头戴摄像机三个页签"
+   }
+  },
+  "ss20": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/d9b7ad78395d57059888c523a128d176f34170c6/ss_d9b7ad78395d57059888c523a128d176f34170c6.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/d9b7ad78395d57059888c523a128d176f34170c6/ss_d9b7ad78395d57059888c523a128d176f34170c6.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A photo camera's rear screen showing exposure settings while aimed at a cluttered table in the dark",
+    "zh": "黑暗中对着一张杂乱桌面的相机，背屏显示曝光参数"
+   }
+  },
+  "ss22": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_c88170bed9bf8690963323d20e3f9e836cb9aed9.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_c88170bed9bf8690963323d20e3f9e836cb9aed9.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A hand holding a Spirit Box with an orange display reading 103.60 in a dark living room with a TV showing colour bars",
+    "zh": "昏暗客厅里一只手举着 Spirit Box，橙色屏幕显示 103.60，远处电视是彩条画面"
+   }
+  },
+  "ss23": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_f0377c02897de8831a5f032f13a6dc0f994516d5.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_f0377c02897de8831a5f032f13a6dc0f994516d5.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A hand aiming a flashlight at a green light glowing on the ground of a foggy woodland clearing at night",
+    "zh": "夜晚起雾的林间空地，一只手举着手电照向地面上的绿色光点"
+   }
+  },
+  "ss25": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_8032ff1ebe2aad6871c45b30458d7a6c868f2212.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_8032ff1ebe2aad6871c45b30458d7a6c868f2212.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A warehouse shop wall hung with rows of ghost-hunting equipment above glass display counters",
+    "zh": "仓库商店的墙上挂满成排的猎鬼装备，下方是玻璃展示柜"
+   }
+  },
+  "ss26": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_b446d0ca191cf5a183ac3cc9538a59aa7575c14c.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_b446d0ca191cf5a183ac3cc9538a59aa7575c14c.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A hand holding a video camera with its screen flipped open beside a metal-framed shelter and gas canisters at night",
+    "zh": "夜里金属骨架的棚子和几只煤气罐旁，一只手举着翻开屏幕的摄像机"
+   }
+  },
+  "ss27": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_dcf3fde71a8104c068d9fd1c122361af9677737a.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_dcf3fde71a8104c068d9fd1c122361af9677737a.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "The back of the investigation truck standing open at night, its interior lit and lined with equipment",
+    "zh": "夜里敞开后门的调查卡车，车厢亮着灯，壁上挂满装备"
+   }
+  },
+  "ss28": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_d33aaa88ff7429590a1ead0b9cced32df2c38696.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ss_d33aaa88ff7429590a1ead0b9cced32df2c38696.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "The Custom difficulty menu with Player, Ghost and Contract tabs, a Ghost speed row set to 100 and a Rewards x1.00 button",
+    "zh": "自定义难度菜单，有 Player、Ghost、Contract 三个页签，Ghost speed 一行为 100，底部按钮写着 Rewards x1.00"
+   }
+  },
+  "ss29": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/8b2b8ca8199e35d72db5b0ead8ed61f6851e4be2/ss_8b2b8ca8199e35d72db5b0ead8ed61f6851e4be2.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/8b2b8ca8199e35d72db5b0ead8ed61f6851e4be2/ss_8b2b8ca8199e35d72db5b0ead8ed61f6851e4be2.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A long-eared, rabbit-like figure with one glowing eye sitting in a dark industrial room beside a staircase",
+    "zh": "昏暗的工业风房间里，楼梯旁坐着一个长耳、单眼发光的兔形雕像"
+   }
+  },
+  "ss34": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/745697d21e9401cdf0d041cf6533e02f6fe56648/ss_745697d21e9401cdf0d041cf6533e02f6fe56648.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/745697d21e9401cdf0d041cf6533e02f6fe56648/ss_745697d21e9401cdf0d041cf6533e02f6fe56648.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A campsite at night strung with fairy lights, with the silhouette of a long-eared figure in the foreground",
+    "zh": "夜晚挂着串灯的营地，前景是一个长耳身影的剪影"
+   }
+  },
+  "ss35": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/6d7ef017cfa3dbe3bc1ac8dcb03c8bec2b0b1851/ss_6d7ef017cfa3dbe3bc1ac8dcb03c8bec2b0b1851.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/6d7ef017cfa3dbe3bc1ac8dcb03c8bec2b0b1851/ss_6d7ef017cfa3dbe3bc1ac8dcb03c8bec2b0b1851.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A flashlight in one hand and a photo camera in the other, pointed at dress mannequins in a dim room lit by a bare bulb",
+    "zh": "一手手电一手相机，对着裸灯泡下昏暗房间里的几具裁缝人台"
+   }
+  },
+  "ss36": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/00ed74e76b5c71aea2eef92d6fea5d9dff30c6b3/ss_00ed74e76b5c71aea2eef92d6fea5d9dff30c6b3.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/00ed74e76b5c71aea2eef92d6fea5d9dff30c6b3/ss_00ed74e76b5c71aea2eef92d6fea5d9dff30c6b3.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A flashlight in one hand and a handheld device with a green digital display in the other, in a dark derelict room with a staircase",
+    "zh": "一手手电，一手是绿色数字屏的手持仪器，身处有楼梯的破败暗室"
+   }
+  },
+  "ss37": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/2f40b555fa36925c751fba4a9592f1b4a0ca0383/ss_2f40b555fa36925c751fba4a9592f1b4a0ca0383.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/2f40b555fa36925c751fba4a9592f1b4a0ca0383/ss_2f40b555fa36925c751fba4a9592f1b4a0ca0383.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "Two investigators with flashlights standing around a glass display case in a red-papered room with a mounted deer head",
+    "zh": "两名调查员打着手电站在玻璃展柜旁，红色墙纸的房间里挂着鹿头"
+   }
+  },
+  "ss38": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/d2072eb10221ed12873f7e38f4df044525ad6b59/ss_d2072eb10221ed12873f7e38f4df044525ad6b59.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/d2072eb10221ed12873f7e38f4df044525ad6b59/ss_d2072eb10221ed12873f7e38f4df044525ad6b59.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A first-person view down a green-papered hallway, flashlight in one hand and a video camera with its screen open in the other",
+    "zh": "第一人称视角的绿色墙纸走廊，一手手电，一手翻开屏幕的摄像机"
+   }
+  },
+  "ss39": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/b1ceb2bc8fda368ed0e3194b14e70e8b5d93e582/ss_b1ceb2bc8fda368ed0e3194b14e70e8b5d93e582.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/b1ceb2bc8fda368ed0e3194b14e70e8b5d93e582/ss_b1ceb2bc8fda368ed0e3194b14e70e8b5d93e582.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A monitor showing the Customization menu with a grid of character portraits and a full-body preview of one investigator",
+    "zh": "显示 Customization 菜单的显示器，有一排排角色头像和一名调查员的全身预览"
+   }
+  },
+  "ss42": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/a4d2fd6a32d4d558ebdbbb0e397f64319b57a28e/ss_a4d2fd6a32d4d558ebdbbb0e397f64319b57a28e.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/a4d2fd6a32d4d558ebdbbb0e397f64319b57a28e/ss_a4d2fd6a32d4d558ebdbbb0e397f64319b57a28e.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A home gym with a weight rack, an exercise bike and a blue gym ball",
+    "zh": "家庭健身房，有杠铃架、健身车和一个蓝色健身球"
+   }
+  },
+  "ss43": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ee1cfbd7042ed417ea26fb24af74a3db494d4907/ss_ee1cfbd7042ed417ea26fb24af74a3db494d4907.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ee1cfbd7042ed417ea26fb24af74a3db494d4907/ss_ee1cfbd7042ed417ea26fb24af74a3db494d4907.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A bright living room with a wall-mounted TV, wall shelves, plants and a floor lamp",
+    "zh": "明亮的客厅，有壁挂电视、墙面搁架、绿植和落地灯"
+   }
+  },
+  "ss44": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/41b6c74bebfe1eaed9835dea144d332967299d8b/ss_41b6c74bebfe1eaed9835dea144d332967299d8b.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/41b6c74bebfe1eaed9835dea144d332967299d8b/ss_41b6c74bebfe1eaed9835dea144d332967299d8b.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A studio room with an easel, a desk lamp and dark paint splashed across the wooden floor",
+    "zh": "一间画室，有画架、台灯，木地板上溅着深色颜料"
+   }
+  },
+  "ss45": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/79534cd8acc03448dc852c3b61da5ff2e17d3821/ss_79534cd8acc03448dc852c3b61da5ff2e17d3821.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/79534cd8acc03448dc852c3b61da5ff2e17d3821/ss_79534cd8acc03448dc852c3b61da5ff2e17d3821.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A living room seen from above with a white sofa, yellow cushions, a green rug and a wall-mounted TV",
+    "zh": "俯视的客厅，白色沙发配黄色靠垫，绿色地毯，墙上挂着电视"
+   }
+  },
+  "ss46": {
+   "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/608c4474a61db006e2424ccb8e2ec5bc25838dfc/ss_608c4474a61db006e2424ccb8e2ec5bc25838dfc.1920x1080.jpg?t=1791466787",
+   "src_small": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/608c4474a61db006e2424ccb8e2ec5bc25838dfc/ss_608c4474a61db006e2424ccb8e2ec5bc25838dfc.600x338.jpg?t=1791466787",
+   "w": 1920,
+   "h": 1080,
+   "small_w": 600,
+   "alt": {
+    "en": "A basement bar with a pool table, bar stools and red brick walls",
+    "zh": "带台球桌、吧凳和红砖墙的地下室酒吧"
+   }
+  }
+ }
+}

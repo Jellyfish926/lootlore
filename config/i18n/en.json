@@ -317,5 +317,8 @@
   "f_max_players": "Max players per lobby",
   "f_lobby_types": "Lobby types",
   "f_fruit_sets": "Multiplayer-only sets",
-  "f_introduced": "Introduced"
+  "f_introduced": "Introduced",
+  "tbl_update": "Updates",
+  "f_steam_post_date": "Steam post date (UTC)",
+  "f_headline": "Headline"
 }

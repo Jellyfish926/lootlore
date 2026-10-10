@@ -1,0 +1,169 @@
+{
+ "_note": "图片池:全部是 Roblox 官方 thumbnails 接口返回的 rbxcdn 图,零下载零存储(raw/img/ 只是本人看图写 alt 用的下载件,不进仓)。建包前先数官方 16:9 图(skill ⑤.5 3d):media 接口 5 条 = 1 条 GamePreviewVideo + 4 条 Image(altText 全空),4 张 16:9 宣传图 th1–th4 全部入池;另有官方游戏图标 1 张(512 方图)、官方活动配图 3 张(virtual-events 的 mediaId 经 thumbnails assets 接口取 768x432:Valentines、Update、☀️Summer Update!)、通行证图标 4 张(700x700,图上有官方说明文字)。共 12 张互不相同的图,12 页封面一页一张、无重复(pages 映射与各页 frontmatter 的 images[0] 一致)。未入池并说明原因:① 活动 Update 2 的配图(asset 127182754594072)与 Revert / Game Revert 的配图(两条活动同一个 CDN 哈希 adf3262f…)画面与 th1 是同一张主视觉,只差裁切,入池会造成『不同 key 同一画面』;② 97 个开发者商品共用图标资产 88963008124478,是一块灰色立方体占位图,不能当封面也不配图。方形图(icon 与 4 张通行证图标)进 16:9 封面位由框架居中裁切(object-fit:cover),与 /get-your-drivers-license/ 的做法一致;它们只分给 game-info、gamepasses、两个栏目索引与作者页,文章页里权重高的 7 页全部用 16:9 图。正文配图不用栏目默认图 th1;同一张图在同一页最多出现 2 处(封面 + 正文一次),低于 img_dup_icon 的 3 处门槛。URL 前缀 180DAY- 表示 Roblox CDN 哈希有效期,官方重传或到期后会变,上线后每 60 天用 source / source_small / source_icon / source_assets_* 重取一次并替换。16:9 图 URL 标称 768x432 / 480x270,实际解码 768x432 / 480x270(ev-summer 为 767x432 / 479x270,raw/image-check.txt 实测),达不到 1200 宽的 Discover 大图门槛。alt 按本人看图所见描述;通行证图标上的英文是逐字抄录的官方图内文字。2026-10-10 写入前逐个 curl 验 200 且 content-type 为 image/*(入池 12 张共 23 个 URL,另 4 张未入池图的 7 条 URL 记录也已验,状态记录在 raw/image-check.txt)。",
+ "source": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=9294074907&countPerUniverse=10&size=768x432&format=Png",
+ "source_small": "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=9294074907&countPerUniverse=10&size=480x270&format=Png",
+ "source_icon": "https://thumbnails.roblox.com/v1/games/icons?universeIds=9294074907&size=512x512&format=Png",
+ "source_media": "https://games.roblox.com/v2/games/9294074907/media",
+ "source_assets_passes": "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=420x420&format=Png",
+ "source_assets_passes_700": "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png",
+ "source_assets_events": "https://thumbnails.roblox.com/v1/assets?assetIds=88388513445715,127182754594072,134947861539288,111201366562498,106005103409162,82429300588092&size=768x432&format=Png",
+ "source_assets_events_small": "https://thumbnails.roblox.com/v1/assets?assetIds=88388513445715,127182754594072,134947861539288,111201366562498,106005103409162,82429300588092&size=480x270&format=Png",
+ "source_events": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+ "fetched": "2026-10-10",
+ "credit": {
+  "en": "Official art · Stringless Banjo (Roblox)"
+ },
+ "default": "th1",
+ "pages": {
+  "index": "th1",
+  "how-to-play": "th2",
+  "cases": "th3",
+  "shop": "th4",
+  "updates": "ev-summer",
+  "rewards": "ev-valentines",
+  "battle-pass": "ev-update",
+  "gamepasses": "pass-2x-case-luck",
+  "game-info": "icon",
+  "beginner": "pass-2x-level-xp",
+  "robux": "pass-2x-money",
+  "author": "pass-double-voting-value"
+ },
+ "shots": {
+  "th1": {
+   "src": "https://tr.rbxcdn.com/180DAY-a3b7486513c2f5f78c14a24efd5d6c35/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-a3b7486513c2f5f78c14a24efd5d6c35/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 129416589222458,
+   "alt": {
+    "en": "Promotional thumbnail: a grinning yellow block-headed character in a blue shirt aims a blocky green and black sniper rifle across a rooftop, while a red-haired character on a far wall aims a green rifle back along a curved orange bullet trail"
+   }
+  },
+  "th2": {
+   "src": "https://tr.rbxcdn.com/180DAY-dada95a4e96832b2b0b416fc35b65933/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-dada95a4e96832b2b0b416fc35b65933/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 79590003078739,
+   "alt": {
+    "en": "Promotional thumbnail: a first-person view of two pale yellow blocky arms holding a bright green pixel-style sniper rifle with a black scope, in a grey tiled room"
+   }
+  },
+  "th3": {
+   "src": "https://tr.rbxcdn.com/180DAY-fa67bff3555d0cd5ebc0d6e9264c4458/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-fa67bff3555d0cd5ebc0d6e9264c4458/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 96100438054444,
+   "alt": {
+    "en": "Promotional thumbnail: a first-person view of two pale yellow blocky arms holding a black sniper rifle with red glowing markings and dark smoke rising from it, in a grey tiled room"
+   }
+  },
+  "th4": {
+   "src": "https://tr.rbxcdn.com/180DAY-7f35906266a1cbf531a95b97f5300ad8/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-7f35906266a1cbf531a95b97f5300ad8/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_image_id": 120330898196027,
+   "alt": {
+    "en": "Promotional thumbnail: a first-person view of two pale yellow blocky arms holding a dark grey rifle with a glowing orange barrel and sparks around it, in a grey tiled room"
+   }
+  },
+  "icon": {
+   "src": "https://tr.rbxcdn.com/180DAY-00155b28dc7219013f3365f5def385ef/512/512/Image/Png/noFilter",
+   "w": 512,
+   "h": 512,
+   "alt": {
+    "en": "Official game icon: a grinning yellow block-headed character in a blue shirt aims a blocky green and black sniper rifle, while a red-haired character on a rooftop behind aims a green rifle back"
+   }
+  },
+  "ev-valentines": {
+   "src": "https://tr.rbxcdn.com/180DAY-2b2834d02df92a311cf08f08c17b4e55/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-2b2834d02df92a311cf08f08c17b4e55/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_asset_id": 88388513445715,
+   "event_title": "Valentines",
+   "alt": {
+    "en": "Event art: the game's yellow block-headed character wearing pink heart-shaped glasses aims a green sniper rifle, with pink hearts floating across a rooftop scene"
+   }
+  },
+  "ev-update": {
+   "src": "https://tr.rbxcdn.com/180DAY-1349f509741f169fc26d468e42d6ebb2/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-1349f509741f169fc26d468e42d6ebb2/480/270/Image/Png/noFilter",
+   "w": 768,
+   "h": 432,
+   "small_w": 480,
+   "roblox_asset_id": 134947861539288,
+   "event_title": "Update",
+   "alt": {
+    "en": "Event art: a first-person view of two pale yellow blocky arms holding a sniper rifle drawn as a solid black silhouette with a white question mark on it, in a grey tiled room"
+   }
+  },
+  "ev-summer": {
+   "src": "https://tr.rbxcdn.com/180DAY-8949cd9ea458dbfb8a81638997764584/768/432/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-8949cd9ea458dbfb8a81638997764584/480/270/Image/Png/noFilter",
+   "w": 767,
+   "h": 432,
+   "small_w": 479,
+   "roblox_asset_id": 111201366562498,
+   "event_title": "☀️Summer Update!",
+   "alt": {
+    "en": "Event art: the game's yellow block-headed character aims a green sniper rifle on a rooftop by a beach, with palm trees and a bright sun behind"
+   }
+  },
+  "pass-2x-case-luck": {
+   "src": "https://tr.rbxcdn.com/180DAY-4773e30c64c7437a258d3b1609618e68/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-4773e30c64c7437a258d3b1609618e68/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
+   "roblox_asset_id": 128625042989986,
+   "store_name": "2x Case Luck",
+   "alt": {
+    "en": "Game pass icon: a dark grey disc with pixel lettering, 2x Case Luck in green and Grants more luck when opening cases in yellow, the last line clipped by the round frame"
+   }
+  },
+  "pass-2x-money": {
+   "src": "https://tr.rbxcdn.com/180DAY-3022114a1a08a56b899f9ec4f1d48003/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-3022114a1a08a56b899f9ec4f1d48003/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
+   "roblox_asset_id": 126028198454624,
+   "store_name": "2x Money",
+   "alt": {
+    "en": "Game pass icon: a dark grey disc with pixel lettering, 2x Money in green and Grants double money from kills. in yellow"
+   }
+  },
+  "pass-2x-level-xp": {
+   "src": "https://tr.rbxcdn.com/180DAY-7334a706fbd51db34425825de68afa49/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-7334a706fbd51db34425825de68afa49/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
+   "roblox_asset_id": 126925465702985,
+   "store_name": "2x Level XP",
+   "alt": {
+    "en": "Game pass icon: a dark grey disc with yellow pixel lettering that reads 2x XP, Grants double XP."
+   }
+  },
+  "pass-double-voting-value": {
+   "src": "https://tr.rbxcdn.com/180DAY-92ecd69a633159af5992933538a34bc3/700/700/Image/Png/noFilter",
+   "src_small": "https://tr.rbxcdn.com/180DAY-92ecd69a633159af5992933538a34bc3/420/420/Image/Png/noFilter",
+   "w": 700,
+   "h": 700,
+   "small_w": 420,
+   "roblox_asset_id": 130506004802111,
+   "store_name": "Double Voting Value",
+   "alt": {
+    "en": "Game pass icon: a dark grey disc with pixel lettering, 2x Votes in magenta and Your votes will count twice. in yellow"
+   }
+  }
+ }
+}

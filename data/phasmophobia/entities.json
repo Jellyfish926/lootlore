@@ -1,0 +1,1653 @@
+{
+ "fetched": "2026-10-10",
+ "game_version": "0.19.1.0",
+ "game_version_note": "Latest version number in the official patch notes on the fetch date (Steam post 2026-10-07 UTC).",
+ "sources_note": "一手来源：Steam appdetails / 商店页、Steam 官方公告（ISteamNews，215 条官方帖）、官网 kineticgames.co.uk 新闻页、Steam 成就页与成就百分比 API。字段级 *_source 标具体出处；*_as_of 标该值最后一次被一手来源陈述的日期；unverified_fields 列出「只有旧公告支撑、之后未被重述」或「一手来源未给」的字段。未用任何 B / C 级数据。成就名与描述逐字取自成就页 HTML（raw/achievements_parsed.json），6 条不显示描述的成就不填 requirement。",
+ "_page_slug_note": "page_slug 指向 content/en/<slug>.md；achievement 全部指向 achievements，update 指向 patch-notes，event / twitch_drop 指向 events（crimson-eye-2026 指向 crimson-eye）。",
+ "entities": {
+  "phasmophobia": {
+   "type": "mechanic",
+   "name_en": "Phasmophobia",
+   "page_slug": "platforms-price",
+   "summary_en": "4-player online co-op psychological horror game by Kinetic Games, in Steam Early Access since September 18, 2020.",
+   "description_en": "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+   "description_source": "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+   "release_date_en": "September 18, 2020 (Steam Early Access)",
+   "release_date_source": "https://store.steampowered.com/app/739630/Phasmophobia/",
+   "platforms": "PC (Windows, VR supported) · PlayStation 5 · PS VR2 · Xbox Series X/S",
+   "platforms_source": "https://www.kineticgames.co.uk/news/phasmophobia-nells-diner-01500",
+   "platforms_note_en": "Steam appdetails lists windows=true, mac=false, linux=false; the console list is from the developer's November 2025 patch notes.",
+   "max_players": 4,
+   "max_players_source": "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+   "price_usd": "19.99",
+   "price_usd_source": "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+   "price_usd_as_of": "2026-10-10",
+   "developer_en": "Kinetic Games",
+   "publisher_en": "Kinetic Games",
+   "developer_source": "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+   "supported_languages": 28,
+   "supported_languages_source": "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+   "supported_languages_as_of": "2026-10-10",
+   "reviews_all_languages_en": "Very Positive, 94% positive of 840,982 reviews (all languages, read 2026-10-10)",
+   "reviews_all_languages_source": "https://store.steampowered.com/appreviews/739630?json=1&language=all&purchase_type=all&num_per_page=0",
+   "steam_appid": 739630,
+   "achievements_total": 54,
+   "achievements_total_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "full_release_window_en": "Second half of 2027 (1.0), with the Nintendo Switch 2 version at the same time",
+   "full_release_window_source": "https://www.kineticgames.co.uk/news/phasmophobia-2026-and-beyond",
+   "key_notes_en": "Optional crossplay between PC and consoles; the Steam store page's Early Access answer still says second half of 2026, which the June 24, 2026 post supersedes.",
+   "known_conflicts": [
+    {
+     "field": "full_release_window",
+     "values": [
+      "second half of 2026 (Steam store Early Access Q&A)",
+      "second half of 2027 (developer post, June 24, 2026)"
+     ],
+     "sources": [
+      "https://store.steampowered.com/app/739630/Phasmophobia/",
+      "https://www.kineticgames.co.uk/news/phasmophobia-2026-and-beyond"
+     ],
+     "adopted": "second half of 2027"
+    }
+   ],
+   "source_urls": [
+    "https://store.steampowered.com/api/appdetails?appids=739630&l=english&cc=us",
+    "https://store.steampowered.com/app/739630/Phasmophobia/",
+    "https://www.kineticgames.co.uk/news/phasmophobia-2026-and-beyond",
+    "https://www.kineticgames.co.uk/news/phasmophobia-nells-diner-01500"
+   ],
+   "unverified_fields": [
+    "console_prices",
+    "regional_steam_prices"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "custom-difficulty": {
+   "type": "mechanic",
+   "name_en": "Custom Difficulty",
+   "page_slug": "difficulty",
+   "summary_en": "A difficulty where each option is tied to a reward multiplier; players can save presets and, since v0.19.0.0, choose the ghost type at the cost of a 0 multiplier.",
+   "introduced_en": "v0.7.0.0 (Apocalypse), September 2022",
+   "introduced_source": "https://www.kineticgames.co.uk/news/phasmophobia-apocalypse",
+   "max_reward_multiplier": "15x",
+   "max_reward_multiplier_source": "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+   "max_reward_multiplier_as_of": "2023-02-27",
+   "presets": 3,
+   "presets_source": "https://www.kineticgames.co.uk/news/phasmophobia-apocalypse",
+   "presets_as_of": "2022-09-27",
+   "unlock_level": 50,
+   "unlock_level_source": "https://www.kineticgames.co.uk/news/phasmophobia-crimson-eye",
+   "unlock_level_as_of": "2024-10-28",
+   "zero_multiplier_rule_en": "Custom Difficulties with a 0 multiplier will no longer contribute towards any progress, such as achievements and leaflets.",
+   "zero_multiplier_rule_source": "https://www.kineticgames.co.uk/news/phasmophobia-v01900-quality-of-life-part-2",
+   "zero_multiplier_rule_as_of": "2026-08-25",
+   "key_notes_en": "Selecting the Ghost Type sets the multiplier to 0 (v0.19.0.0). The 15x cap (February 2023), preset count (September 2022) and unlock level (October 2024) come from older patch notes and have not been restated since.",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-apocalypse",
+    "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+    "https://www.kineticgames.co.uk/news/phasmophobia-crimson-eye",
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01900-quality-of-life-part-2"
+   ],
+   "unverified_fields": [
+    "max_reward_multiplier",
+    "presets",
+    "unlock_level"
+   ],
+   "unverified_note_en": "Latest first-hand statements for these three fields date from 2022 to 2024; no later announcement changes them, but none re-confirms them either.",
+   "accessed": "2026-10-10"
+  },
+  "apocalypse-challenge": {
+   "type": "mechanic",
+   "name_en": "Apocalypse Challenge",
+   "page_slug": "difficulty",
+   "summary_en": "Custom-difficulty challenge on Sunny Meadows with Bronze, Silver and Gold trophies at multipliers of 6, 10 and 15, as stated in the June 2024 patch notes.",
+   "requirement_en": "Correctly identify the ghost, take a ghost photo and complete all objectives on Sunny Meadows with a difficulty multiplier of 6 or higher (Bronze), 10 or higher (Silver) or 15 (Gold)",
+   "requirement_source": "https://store.steampowered.com/news/app/739630/view/5759622039993818606",
+   "requirement_as_of": "2024-06-25",
+   "key_notes_en": "Since v0.18.0.0 (July 21, 2026): \"You can now capture any Media for the Apocalypse challenge, instead of only a photo.\"",
+   "key_notes_source": "https://www.kineticgames.co.uk/news/phasmophobia-v01800-patch-notes",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/5759622039993818606",
+    "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+    "https://store.steampowered.com/news/app/739630/view/5035620387692752416",
+    "https://www.kineticgames.co.uk/news/phasmophobia-apocalypse",
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01800-patch-notes"
+   ],
+   "multiplayer_note_en": "January 2023 hotfix: \"You can no longer complete the apocalypse challenge in multiplayer mode while solo or after other players leave\"; not restated since.",
+   "multiplayer_note_source": "https://store.steampowered.com/news/app/739630/view/5035620387692752416",
+   "multiplayer_note_as_of": "2023-01-06",
+   "unverified_fields": [
+    "singleplayer_only"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "media-system": {
+   "type": "mechanic",
+   "name_en": "Media (photos, videos, sounds)",
+   "page_slug": "how-to-play",
+   "summary_en": "Since the Chronicle update, an investigation holds five photos, five videos and three sound recordings, each marked Unique or Duplicate.",
+   "introduced_en": "v0.13 (Chronicle), June 24, 2025",
+   "introduced_source": "https://www.kineticgames.co.uk/news/phasmophobia-chronicle-v013",
+   "photos_per_investigation": 5,
+   "videos_per_investigation": 5,
+   "sounds_per_contract": 3,
+   "deletions_per_investigation": 3,
+   "limits_source": "https://www.kineticgames.co.uk/news/phasmophobia-chronicle-v013",
+   "limits_as_of": "2025-06-24",
+   "sound_recorder_unlock_level": 4,
+   "sound_recorder_unlock_level_source": "https://www.kineticgames.co.uk/news/phasmophobia-chronicle-v013",
+   "key_notes_en": "A Duplicate rewards less money and experience; since v0.19.0.0 cameras and Sound Recorders indicate Duplicate evidence on the device.",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-chronicle-v013",
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01900-quality-of-life-part-2"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "weekly-challenge": {
+   "type": "mechanic",
+   "name_en": "Weekly Challenge mode",
+   "page_slug": "difficulty",
+   "summary_en": "A weekly rotational difficulty with a free challenge-specific loadout; completing it 3 times on the specified map grants a large money and XP bonus.",
+   "introduced_en": "v0.8.1.0 (Tempest), February 27, 2023",
+   "introduced_source": "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+   "challenges_added": 26,
+   "challenges_added_source": "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+   "challenges_added_as_of": "2023-02-27",
+   "key_notes_en": "\"You will lose nothing if you fail or die\" (2023 notes). The June 2026 roadmap says a later content update will change Weekly Challenges.",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+    "https://www.kineticgames.co.uk/news/phasmophobia-2026-and-beyond"
+   ],
+   "unverified_fields": [
+    "challenges_added"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "difficulty-amateur": {
+   "type": "difficulty",
+   "name_en": "Amateur",
+   "page_slug": "difficulty",
+   "order": 1,
+   "description_en": "Recommended for new Ghost Hunters!",
+   "description_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "description_as_of": "2021-10-25",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-nightmare"
+   ],
+   "key_notes_en": "Long setup time; long hunt grace period; short hunt duration; sanity pills restore a lot of sanity; regain half of your lost equipment's value if you die",
+   "key_notes_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "difficulty-intermediate": {
+   "type": "difficulty",
+   "name_en": "Intermediate",
+   "page_slug": "difficulty",
+   "order": 2,
+   "description_en": "The standard Ghost Huntin’ experience",
+   "description_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "description_as_of": "2021-10-25",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-nightmare"
+   ],
+   "key_notes_en": "Average setup time; average hunt grace period; average hunt duration; sanity pills restore some sanity; fuse box starts off; fewer places to hide; regain some of your lost equipment's value if you die",
+   "key_notes_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "difficulty-professional": {
+   "type": "difficulty",
+   "name_en": "Professional",
+   "page_slug": "difficulty",
+   "order": 3,
+   "description_en": "For experienced Ghost hunters",
+   "description_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "description_as_of": "2021-10-25",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-nightmare"
+   ],
+   "key_notes_en": "The ghost can very rarely change its preferred room after moving; no setup time; short hunt grace period; long hunt duration; sanity pills restore little sanity; fuse box starts off; much fewer hiding places",
+   "key_notes_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "difficulty-nightmare": {
+   "type": "difficulty",
+   "name_en": "Nightmare",
+   "page_slug": "difficulty",
+   "order": 4,
+   "description_en": "A new difficulty for the top ghost hunters",
+   "description_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "description_as_of": "2021-10-25",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+    "https://store.steampowered.com/news/app/739630/view/5395938616808695209"
+   ],
+   "key_notes_en": "Ghosts will not reveal one type of evidence; the ghost will sometimes change its preferred room after moving; no setup time; shortest hunt grace period; long hunt duration; kills extend the current hunt's duration; sanity pills restore much less sanity; fuse box starts off; almost no hiding places; some monitoring equipment damaged",
+   "key_notes_source": "https://www.kineticgames.co.uk/news/phasmophobia-nightmare",
+   "unlock_level": 30,
+   "unlock_level_source": "https://store.steampowered.com/news/app/739630/view/5395938616808695209",
+   "unlock_level_as_of": "2023-12-11",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "difficulty-insanity": {
+   "type": "difficulty",
+   "name_en": "Insanity",
+   "page_slug": "difficulty",
+   "order": 5,
+   "description_en": "For the best investigators, a new default difficulty has been added: Insanity.",
+   "description_source": "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+   "description_as_of": "2023-02-27",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/5059268543371038278"
+   ],
+   "key_notes_en": "More information can be found in-game on the difficulty selection screen.",
+   "key_notes_source": "https://store.steampowered.com/news/app/739630/view/5059268543371038278",
+   "unverified_fields": [
+    "traits"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "cursed-hollow-2025": {
+   "type": "event",
+   "name_en": "Cursed Hollow 2025",
+   "page_slug": "events",
+   "order": 1,
+   "start_date": "2025-04-17",
+   "end_date": null,
+   "rewards_en": "Community and Personal goals introduced; upgradeable event trophies",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-cursed-hollow"
+   ],
+   "unverified_fields": [
+    "end_date"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "crimson-eye-2025": {
+   "type": "event",
+   "name_en": "Crimson Eye 2025",
+   "page_slug": "events",
+   "order": 2,
+   "start_date": "2025-10-09",
+   "end_date": "2025-10-31",
+   "rewards_en": "Child of the Cult ID Card & Badge set; animated Child of the Cult ID Card; Crimson Eye trophy upgrades",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-crimson-eye-2025",
+    "https://store.steampowered.com/news/app/739630/view/1811772772639733"
+   ],
+   "unverified_fields": [],
+   "accessed": "2026-10-10"
+  },
+  "winters-jest-2025": {
+   "type": "event",
+   "name_en": "Winter's Jest 2025",
+   "page_slug": "events",
+   "order": 3,
+   "start_date": "2025-12-16",
+   "end_date": "2026-01-06",
+   "rewards_en": "Toy Soldier ID Card & Badge set; Animated Toy Soldier ID Card; Winter's Jest trophy upgrades",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-winters-jest-returns"
+   ],
+   "unverified_fields": [],
+   "key_notes_en": "12PM GMT at both ends. The Steam version of the announcement prints the end year as 2025; the official site version prints 2026.",
+   "known_conflicts": [
+    {
+     "field": "end_date",
+     "values": [
+      "January 6th, 2025 (Steam post)",
+      "January 6th, 2026 (official site)"
+     ],
+     "sources": [
+      "https://store.steampowered.com/news/app/739630/view/1818118366185635",
+      "https://www.kineticgames.co.uk/news/phasmophobia-winters-jest-returns"
+     ],
+     "adopted": "2026-01-06"
+    }
+   ],
+   "accessed": "2026-10-10"
+  },
+  "cursed-hollow-2026": {
+   "type": "event",
+   "name_en": "Cursed Hollow 2026",
+   "page_slug": "events",
+   "order": 4,
+   "start_date": "2026-03-31",
+   "end_date": "2026-04-21",
+   "rewards_en": "Pathfinder ID Card & Badge (static and animated); Cursed Hollow Mask, T-Shirt and Necklace",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/announcing-the-cursed-hollow-takes-hold",
+    "https://www.kineticgames.co.uk/news/phasmophobia-cursed-hollow-v01610",
+    "https://www.kineticgames.co.uk/news/phasmophobia-player-character-update-01700"
+   ],
+   "unverified_fields": [],
+   "accessed": "2026-10-10"
+  },
+  "alan-wake-2026": {
+   "type": "event",
+   "name_en": "Phasmophobia by Alan Wake",
+   "page_slug": "events",
+   "order": 5,
+   "start_date": "2026-05-12",
+   "end_date": null,
+   "rewards_en": "Player cosmetics",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-by-alan-wake---v01710",
+    "https://www.kineticgames.co.uk/news/announcing---phasmophobia-by-alan-wake-coming-may-12th-2026"
+   ],
+   "unverified_fields": [
+    "end_date"
+   ],
+   "key_notes_en": "Described by the developer as a one-time in-game event with Remedy; no end date in the posts read.",
+   "accessed": "2026-10-10"
+  },
+  "crimson-eye-2026": {
+   "type": "event",
+   "name_en": "Crimson Eye 2026",
+   "page_slug": "crimson-eye",
+   "order": 6,
+   "start_date": "2026-10-08",
+   "end_date": "2026-11-01",
+   "rewards_en": "Seasonal event tee; Beholder ID Card & Badge set; Blood Moon charm; Crimson Eye trophy upgrades",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/the-crimson-eye-approaches-once-more",
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01910-patch-notes"
+   ],
+   "unverified_fields": [
+    "started_in_game"
+   ],
+   "locations_en": "6 Tanglewood Drive; 42 Edgefield Road; Grafton Farmhouse; 13 Willow Street; Bleasdale Farmhouse; Point Hope (Standard only); Camp Woodwind; Nell’s Diner",
+   "twitch_drop_en": "Announced: Crimson Eye tee for two hours of Phasmophobia streams, scheduled from the start of the event until 11:59 PM BST on October 15, 2026",
+   "double_xp_en": "Announced for October 15 to 22, 2026",
+   "key_notes_en": "Schedule as announced on October 1, 2026; the official site version adds an edit moving the patch to October 7. Not confirmed in game by us.",
+   "accessed": "2026-10-10"
+  },
+  "drop-astronomer": {
+   "type": "twitch_drop",
+   "name_en": "Astronomer ID Card & Badge",
+   "page_slug": "events",
+   "order": 1,
+   "start_date": "2026-04-16",
+   "end_date": "2026-04-16",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/1829528821318107"
+   ],
+   "requirement_en": "30 minutes of the Galaxies Showcase",
+   "unverified_fields": [
+    "requirement"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "drop-high-priestess": {
+   "type": "twitch_drop",
+   "name_en": "High Priestess T-shirt",
+   "page_slug": "events",
+   "order": 2,
+   "start_date": "2026-05-05",
+   "end_date": "2026-05-11",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/announcing-player-character-update"
+   ],
+   "unverified_fields": [
+    "requirement"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "drop-the-seer": {
+   "type": "twitch_drop",
+   "name_en": "The Seer ID Card & Badge",
+   "page_slug": "events",
+   "order": 3,
+   "start_date": "2026-05-19",
+   "end_date": "2026-05-26",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-by-alan-wake-twitch-drop"
+   ],
+   "requirement_en": "2 hours; Animated variant via Kinetic Games Partner streams",
+   "unverified_fields": [
+    "requirement"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "drop-cool-cat": {
+   "type": "twitch_drop",
+   "name_en": "Cool Cat ID Card & Badge",
+   "page_slug": "events",
+   "order": 4,
+   "start_date": "2026-07-21",
+   "end_date": "2026-07-28",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-quality-of-life-preview-2"
+   ],
+   "requirement_en": "2 hours; animated version only via Kinetic Games Partner channels",
+   "unverified_fields": [
+    "requirement"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "drop-kinetic-publishing-cap": {
+   "type": "twitch_drop",
+   "name_en": "Kinetic Publishing Cap",
+   "page_slug": "events",
+   "order": 5,
+   "start_date": "2026-08-14",
+   "end_date": "2026-08-17",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/kinetic-publishing-showcase-1-day-to-go"
+   ],
+   "requirement_en": "2 hours of any Phasmophobia stream",
+   "unverified_fields": [
+    "requirement"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "drop-6th-anniversary-charm": {
+   "type": "twitch_drop",
+   "name_en": "6th Anniversary Charm",
+   "page_slug": "events",
+   "order": 6,
+   "start_date": "2026-09-18",
+   "end_date": "2026-09-21",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/1844115010495294"
+   ],
+   "requirement_en": "2 hours of any Phasmophobia stream",
+   "unverified_fields": [
+    "requirement"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "drop-crimson-eye-tee": {
+   "type": "twitch_drop",
+   "name_en": "Crimson Eye tee",
+   "page_slug": "events",
+   "order": 7,
+   "start_date": "2026-10-08",
+   "end_date": "2026-10-15",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/the-crimson-eye-approaches-once-more"
+   ],
+   "requirement_en": "2 hours of Phasmophobia streams",
+   "status_en": "Announced on October 1, 2026; scheduled to run from the start of the event until 11:59 PM BST on October 15. No later official post confirms it has started.",
+   "unverified_fields": [
+    "started"
+   ],
+   "accessed": "2026-10-10"
+  },
+  "v0-16-0-0": {
+   "type": "update",
+   "name_en": "v0.16.0.0",
+   "page_slug": "patch-notes",
+   "order": 16,
+   "version": "0.16.0.0",
+   "steam_post_date": "2026-03-03",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "6 Tanglewood Drive rework; Tanglewood Terror challenge",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/6-tanglewood-drive-rework-phasmophobia-01600"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-16-1-0": {
+   "type": "update",
+   "name_en": "v0.16.1.0",
+   "page_slug": "patch-notes",
+   "order": 15,
+   "version": "0.16.1.0",
+   "steam_post_date": "2026-03-31",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Cursed Hollow 2026 begins; Forest Minion ghost-speed changes of 10%",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-cursed-hollow-v01610"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-16-1-2": {
+   "type": "update",
+   "name_en": "v0.16.1.2",
+   "page_slug": "patch-notes",
+   "order": 14,
+   "version": "0.16.1.2",
+   "steam_post_date": "2026-04-13",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Ghost traversal and bone spawn fixes on seven maps",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/1829528821315286"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-0-0": {
+   "type": "update",
+   "name_en": "v0.17.0.0",
+   "page_slug": "patch-notes",
+   "order": 13,
+   "version": "0.17.0.0",
+   "steam_post_date": "2026-05-05",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Player Character Update: 12 character models, cosmetics, animations, Watch",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-player-character-update-01700"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-1-0": {
+   "type": "update",
+   "name_en": "v0.17.1.0",
+   "page_slug": "patch-notes",
+   "order": 12,
+   "version": "0.17.1.0",
+   "steam_post_date": "2026-05-12",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Phasmophobia by Alan Wake event; instant equipment swapping",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-by-alan-wake---v01710",
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01710-patch-notes"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-1-1": {
+   "type": "update",
+   "name_en": "v0.17.1.1",
+   "page_slug": "patch-notes",
+   "order": 11,
+   "version": "0.17.1.1",
+   "steam_post_date": "2026-05-13",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Hotfix: held-item stutter, crashes, Kormos fixes",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-hotfix-v01711"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-1-2": {
+   "type": "update",
+   "name_en": "v0.17.1.2",
+   "page_slug": "patch-notes",
+   "order": 10,
+   "version": "0.17.1.2",
+   "steam_post_date": "2026-05-15",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Hotfix: crash across all platforms",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/1832700592792331"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-1-3": {
+   "type": "update",
+   "name_en": "v0.17.1.3",
+   "page_slug": "patch-notes",
+   "order": 9,
+   "version": "0.17.1.3",
+   "steam_post_date": "2026-05-19",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Hotfix: crash when loading in to event maps",
+   "source_urls": [
+    "https://store.steampowered.com/news/app/739630/view/1832700592800634"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-1-4": {
+   "type": "update",
+   "name_en": "v0.17.1.4",
+   "page_slug": "patch-notes",
+   "order": 8,
+   "version": "0.17.1.4",
+   "steam_post_date": "2026-06-02",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "VR belt reimplemented; line of sight ghost speed accelerations reverted",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01714-patch-notes"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-17-1-5": {
+   "type": "update",
+   "name_en": "v0.17.1.5",
+   "page_slug": "patch-notes",
+   "order": 7,
+   "version": "0.17.1.5",
+   "steam_post_date": "2026-06-03",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Hotfix: Spirit Box softlock on controller; Steam Voice Recognition",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-hotfix-v01715"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-18-0-0": {
+   "type": "update",
+   "name_en": "v0.18.0.0",
+   "page_slug": "patch-notes",
+   "order": 6,
+   "version": "0.18.0.0",
+   "steam_post_date": "2026-07-21",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "13 Willow Street rework; Quality of Life #1; new ghost: the Deildegast",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01800-patch-notes"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-18-0-1": {
+   "type": "update",
+   "name_en": "v0.18.0.1",
+   "page_slug": "patch-notes",
+   "order": 5,
+   "version": "0.18.0.1",
+   "steam_post_date": "2026-07-28",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Photo Camera fixes; hotfix changes slot assignment to pick-up order",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01801-patch-notes",
+    "https://store.steampowered.com/news/app/739630/view/1839041357038727"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-19-0-0": {
+   "type": "update",
+   "name_en": "v0.19.0.0",
+   "page_slug": "patch-notes",
+   "order": 4,
+   "version": "0.19.0.0",
+   "steam_post_date": "2026-08-25",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Quality of Life Part 2; Restricted variants for Prison, Brownstone High School and Point Hope",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01900-quality-of-life-part-2"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-19-0-1": {
+   "type": "update",
+   "name_en": "v0.19.0.1",
+   "page_slug": "patch-notes",
+   "order": 3,
+   "version": "0.19.0.1",
+   "steam_post_date": "2026-09-10",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "VR Belt Offset option; fixes; Unity 6 moved to November",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01901-patch-notes"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-19-0-2": {
+   "type": "update",
+   "name_en": "v0.19.0.2",
+   "page_slug": "patch-notes",
+   "order": 2,
+   "version": "0.19.0.2",
+   "steam_post_date": "2026-09-16",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Console room-entry fix; Parabolic Microphone audio fix",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01902-patch-notes"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "v0-19-1-0": {
+   "type": "update",
+   "name_en": "v0.19.1.0",
+   "page_slug": "patch-notes",
+   "order": 1,
+   "version": "0.19.1.0",
+   "steam_post_date": "2026-10-07",
+   "steam_post_date_note_en": "Steam announcement timestamp (UTC); the official site's news list may show a different day.",
+   "headline_en": "Crimson Eye preparation; Seasonal Event toggle",
+   "source_urls": [
+    "https://www.kineticgames.co.uk/news/phasmophobia-v01910-patch-notes"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-work-experience": {
+   "type": "achievement",
+   "name_en": "Work Experience",
+   "page_slug": "achievements",
+   "order": 1,
+   "global_unlock_pct": 59.8,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/ed2d08f4f65a4c66d9af48a925c1b2a0be04e3b7.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "hidden_description": true,
+   "unverified_fields": [
+    "requirement"
+   ],
+   "unverified_note_en": "Steam's achievements page shows no requirement text for this achievement.",
+   "accessed": "2026-10-10"
+  },
+  "ach-chump-change": {
+   "type": "achievement",
+   "name_en": "Chump Change",
+   "page_slug": "achievements",
+   "order": 2,
+   "global_unlock_pct": 41.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/6e407474aa59188d1176d03a414e9a06f4844927.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Spend $1",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-rookie": {
+   "type": "achievement",
+   "name_en": "Rookie",
+   "page_slug": "achievements",
+   "order": 3,
+   "global_unlock_pct": 31.1,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/0d8c5c8ff15a3f1a4b0394413c7a843dc296ae04.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete 10 contracts",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-i": {
+   "type": "achievement",
+   "name_en": "I",
+   "page_slug": "achievements",
+   "order": 4,
+   "global_unlock_pct": 29.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/e287eb3f199bee75d03623a08a7400d071338773.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Reach Prestige I",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-bare-essentials": {
+   "type": "achievement",
+   "name_en": "Bare Essentials",
+   "page_slug": "achievements",
+   "order": 5,
+   "global_unlock_pct": 25.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/1c2dc558c9d2b07651283a5e88f41814c3cf7a79.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Unlock all tier one equipment",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-they-re-here": {
+   "type": "achievement",
+   "name_en": "They're here",
+   "page_slug": "achievements",
+   "order": 6,
+   "global_unlock_pct": 24.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/5a2b252e499be555410f5667a079b77919c75fc3.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "hidden_description": true,
+   "unverified_fields": [
+    "requirement"
+   ],
+   "unverified_note_en": "Steam's achievements page shows no requirement text for this achievement.",
+   "accessed": "2026-10-10"
+  },
+  "ach-shade-discovered": {
+   "type": "achievement",
+   "name_en": "Shade Discovered",
+   "page_slug": "achievements",
+   "order": 7,
+   "global_unlock_pct": 22.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/1757ad92e164428122ecaa6eeaff11e2d96d40a8.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Shade and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-revenant-discovered": {
+   "type": "achievement",
+   "name_en": "Revenant Discovered",
+   "page_slug": "achievements",
+   "order": 8,
+   "global_unlock_pct": 22.4,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/ee94ee6a058807c8bb712750f6a8b5ea053f5c01.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Revenant and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-banshee-discovered": {
+   "type": "achievement",
+   "name_en": "Banshee Discovered",
+   "page_slug": "achievements",
+   "order": 9,
+   "global_unlock_pct": 22.0,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/b61cf1bf211ae9493e556949d6b4b39f6410a4ec.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Banshee and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-hantu-discovered": {
+   "type": "achievement",
+   "name_en": "Hantu Discovered",
+   "page_slug": "achievements",
+   "order": 10,
+   "global_unlock_pct": 21.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/29e713557abd037d1d06559ccbd7c3ce7e32106b.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Hantu and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-oni-discovered": {
+   "type": "achievement",
+   "name_en": "Oni Discovered",
+   "page_slug": "achievements",
+   "order": 11,
+   "global_unlock_pct": 21.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/70ae7720e760a0488700103300c49578f35332ba.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Oni and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-spirit-discovered": {
+   "type": "achievement",
+   "name_en": "Spirit Discovered",
+   "page_slug": "achievements",
+   "order": 12,
+   "global_unlock_pct": 21.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/7198cdb15c3e3e4b7963e372635461ae1b8d0fa7.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Spirit and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-wraith-discovered": {
+   "type": "achievement",
+   "name_en": "Wraith Discovered",
+   "page_slug": "achievements",
+   "order": 13,
+   "global_unlock_pct": 21.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/f71d6b5fbc77a9cd18eacccf817141821a185e02.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Wraith and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-obake-discovered": {
+   "type": "achievement",
+   "name_en": "Obake Discovered",
+   "page_slug": "achievements",
+   "order": 14,
+   "global_unlock_pct": 21.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/61ac93deec410268a0c56d028d2a514ad9df659d.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Obake and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-yurei-discovered": {
+   "type": "achievement",
+   "name_en": "Yurei Discovered",
+   "page_slug": "achievements",
+   "order": 15,
+   "global_unlock_pct": 21.3,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/716d3b1b084135c62756dc1a08a4f93bba4ec7d4.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Yurei and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-thaye-discovered": {
+   "type": "achievement",
+   "name_en": "Thaye Discovered",
+   "page_slug": "achievements",
+   "order": 16,
+   "global_unlock_pct": 21.1,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/74b25aa3b137110bbbb4d9f76a6520a048ef36f2.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Thaye and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-myling-discovered": {
+   "type": "achievement",
+   "name_en": "Myling Discovered",
+   "page_slug": "achievements",
+   "order": 17,
+   "global_unlock_pct": 20.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/169d7023c389aa2507e25a932fc9526a9c5e21a4.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Myling and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-poltergeist-discovered": {
+   "type": "achievement",
+   "name_en": "Poltergeist Discovered",
+   "page_slug": "achievements",
+   "order": 18,
+   "global_unlock_pct": 20.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/8f0eee4b8ee2dd7f82c521dcaa6cfba7da4b169b.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Poltergeist and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-phantom-discovered": {
+   "type": "achievement",
+   "name_en": "Phantom Discovered",
+   "page_slug": "achievements",
+   "order": 19,
+   "global_unlock_pct": 20.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/95c491517cb7037d296c5f3bb002f3cd79859dd1.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Phantom and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-fat-stack": {
+   "type": "achievement",
+   "name_en": "Fat Stack",
+   "page_slug": "achievements",
+   "order": 20,
+   "global_unlock_pct": 20.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/d7bf840d381edf858e9259502cda46746d0c7307.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Spend $10,000",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-mare-discovered": {
+   "type": "achievement",
+   "name_en": "Mare Discovered",
+   "page_slug": "achievements",
+   "order": 21,
+   "global_unlock_pct": 20.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/31d490c691d4bd99a4e78b34163f5f186109185c.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Mare and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-the-twins-discovered": {
+   "type": "achievement",
+   "name_en": "The Twins Discovered",
+   "page_slug": "achievements",
+   "order": 22,
+   "global_unlock_pct": 20.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/236713a46691022704a749c5587084ed2e476b9f.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify The Twins for the first time",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-raiju-discovered": {
+   "type": "achievement",
+   "name_en": "Raiju Discovered",
+   "page_slug": "achievements",
+   "order": 23,
+   "global_unlock_pct": 20.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/fa94d0e7a3ba509826754e962e603d7bd6f90f51.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Raiju and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-jinn-discovered": {
+   "type": "achievement",
+   "name_en": "Jinn Discovered",
+   "page_slug": "achievements",
+   "order": 24,
+   "global_unlock_pct": 20.1,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/111b6e04164e79b12ce3c08aed0970eb44f1dbe6.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Jinn and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-yokai-discovered": {
+   "type": "achievement",
+   "name_en": "Yokai Discovered",
+   "page_slug": "achievements",
+   "order": 25,
+   "global_unlock_pct": 20.1,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/c68cb898a26bed8e947984cd48ea1a3dcb7a5939.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Yokai and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-moroi-discovered": {
+   "type": "achievement",
+   "name_en": "Moroi Discovered",
+   "page_slug": "achievements",
+   "order": 26,
+   "global_unlock_pct": 19.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/97ba2ccc3cc84404981394ada6d8c1d6f12a8bb5.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Moroi and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-onryo-discovered": {
+   "type": "achievement",
+   "name_en": "Onryo Discovered",
+   "page_slug": "achievements",
+   "order": 27,
+   "global_unlock_pct": 19.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/e769ac90c013236cc9a42318112c3186c597148e.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Onryo and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-goryo-discovered": {
+   "type": "achievement",
+   "name_en": "Goryo Discovered",
+   "page_slug": "achievements",
+   "order": 28,
+   "global_unlock_pct": 18.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/cc56589c066bc7ef7196a5aa1a725f464c3bbaed.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Goryo and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-extra-mile": {
+   "type": "achievement",
+   "name_en": "Extra Mile",
+   "page_slug": "achievements",
+   "order": 29,
+   "global_unlock_pct": 18.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/080a3fa2509ce041b437c0638b73af787c7fa760.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete 50 optional objectives",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-demon-discovered": {
+   "type": "achievement",
+   "name_en": "Demon Discovered",
+   "page_slug": "achievements",
+   "order": 30,
+   "global_unlock_pct": 18.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/cabd4cc09cabf3c13b527f686d3d506615e458d2.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Demon and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-the-bait": {
+   "type": "achievement",
+   "name_en": "The Bait",
+   "page_slug": "achievements",
+   "order": 31,
+   "global_unlock_pct": 18.4,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/a80a631f45e77315345d5d5ae97e11460f243ff8.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "hidden_description": true,
+   "unverified_fields": [
+    "requirement"
+   ],
+   "unverified_note_en": "Steam's achievements page shows no requirement text for this achievement.",
+   "accessed": "2026-10-10"
+  },
+  "ach-the-mimic-discovered": {
+   "type": "achievement",
+   "name_en": "The Mimic Discovered",
+   "page_slug": "achievements",
+   "order": 32,
+   "global_unlock_pct": 17.3,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/1954408b1556093d54fb752f2bae220b06af9753.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify The Mimic for the first time",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-deogen-discovered": {
+   "type": "achievement",
+   "name_en": "Deogen Discovered",
+   "page_slug": "achievements",
+   "order": 33,
+   "global_unlock_pct": 16.8,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/7a5213b9988e9630c68f46d0b88c8d6850e400ff.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Successfully identify your first Deogen and survive",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-flawless-execution": {
+   "type": "achievement",
+   "name_en": "Flawless Execution",
+   "page_slug": "achievements",
+   "order": 34,
+   "global_unlock_pct": 15.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/b8ee65cd65aaa641b46c4088a21eed493af5ca38.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "hidden_description": true,
+   "unverified_fields": [
+    "requirement"
+   ],
+   "unverified_note_en": "Steam's achievements page shows no requirement text for this achievement.",
+   "accessed": "2026-10-10"
+  },
+  "ach-professional": {
+   "type": "achievement",
+   "name_en": "Professional",
+   "page_slug": "achievements",
+   "order": 35,
+   "global_unlock_pct": 15.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/29b991089b39f5bbce4f1bae45bf8dfc09578915.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete 50 contracts",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-dedicated": {
+   "type": "achievement",
+   "name_en": "Dedicated",
+   "page_slug": "achievements",
+   "order": 36,
+   "global_unlock_pct": 14.2,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/46ff874110e49cf282cccceaf1d19d009ab4307a.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete 30 daily tasks",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-cash-cow": {
+   "type": "achievement",
+   "name_en": "Cash Cow",
+   "page_slug": "achievements",
+   "order": 37,
+   "global_unlock_pct": 13.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/18723e066c3829fb9d98d5bfbbccd3b081dd14e3.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Spend $50,000",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-director": {
+   "type": "achievement",
+   "name_en": "Director",
+   "page_slug": "achievements",
+   "order": 38,
+   "global_unlock_pct": 12.0,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/fc3d23405ec0446647b8030bd17786be06b109a7.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Create a custom difficulty",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-challenger-approaching": {
+   "type": "achievement",
+   "name_en": "Challenger Approaching",
+   "page_slug": "achievements",
+   "order": 39,
+   "global_unlock_pct": 11.3,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/e368adf26cbdfba2193d0981a93b371539733a91.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete a weekly challenge mode",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-boss": {
+   "type": "achievement",
+   "name_en": "Boss",
+   "page_slug": "achievements",
+   "order": 40,
+   "global_unlock_pct": 9.8,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/a09916158949971ee43f51786ed1d2b670383616.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete 100 contracts",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-break-the-bank": {
+   "type": "achievement",
+   "name_en": "Break The Bank",
+   "page_slug": "achievements",
+   "order": 41,
+   "global_unlock_pct": 9.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/31ca8c9de0797442b84c343416f67a10b8391537.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Spend $100,000",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-tools-of-the-trade": {
+   "type": "achievement",
+   "name_en": "Tools of the Trade",
+   "page_slug": "achievements",
+   "order": 42,
+   "global_unlock_pct": 8.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/f01981e1470ad4c017bf63f2b5041bf5c01bc9e5.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Unlock all tier two equipment",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-escape-artist": {
+   "type": "achievement",
+   "name_en": "Escape Artist",
+   "page_slug": "achievements",
+   "order": 43,
+   "global_unlock_pct": 7.8,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/905525e54d5e41dfcb58458aaa7161fd7efd3ec0.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "hidden_description": true,
+   "unverified_fields": [
+    "requirement"
+   ],
+   "unverified_note_en": "Steam's achievements page shows no requirement text for this achievement.",
+   "accessed": "2026-10-10"
+  },
+  "ach-no-more-training-wheels": {
+   "type": "achievement",
+   "name_en": "No More Training Wheels",
+   "page_slug": "achievements",
+   "order": 44,
+   "global_unlock_pct": 6.6,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/d2428ab16a81fc728c4b195600ea545b142df736.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete Training",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-fully-loaded": {
+   "type": "achievement",
+   "name_en": "Fully Loaded",
+   "page_slug": "achievements",
+   "order": 45,
+   "global_unlock_pct": 5.1,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/9282b51b3ffac2fbdcdf9c43e53d22097d380280.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Unlock all tier three equipment",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-devoted": {
+   "type": "achievement",
+   "name_en": "Devoted",
+   "page_slug": "achievements",
+   "order": 46,
+   "global_unlock_pct": 4.9,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/7d3bac94dbdaa8e05388b43bb3f58bc0a1e12d90.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete 10 weekly tasks",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-rise-to-the-challenge": {
+   "type": "achievement",
+   "name_en": "Rise to the Challenge",
+   "page_slug": "achievements",
+   "order": 47,
+   "global_unlock_pct": 3.4,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/e502eb4618fb68c6e0766279652262dd41c910ca.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete the weekly challenge mode 5 times",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-ii": {
+   "type": "achievement",
+   "name_en": "II",
+   "page_slug": "achievements",
+   "order": 48,
+   "global_unlock_pct": 3.1,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/ba27e33411be290690a150c13d055f089ac19c1e.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Reach Prestige II",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-iii": {
+   "type": "achievement",
+   "name_en": "III",
+   "page_slug": "achievements",
+   "order": 49,
+   "global_unlock_pct": 2.0,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/4d83ccadeea7132b96366dd64dbb386202ab7f3a.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Reach Prestige III",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-doom-slayed": {
+   "type": "achievement",
+   "name_en": "Doom Slayed",
+   "page_slug": "achievements",
+   "order": 50,
+   "global_unlock_pct": 2.0,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/576fbf4e5c6c1f2bc985ea000324cec9447e1b07.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "hidden_description": true,
+   "unverified_fields": [
+    "requirement"
+   ],
+   "unverified_note_en": "Steam's achievements page shows no requirement text for this achievement.",
+   "accessed": "2026-10-10"
+  },
+  "ach-taking-all-challenges": {
+   "type": "achievement",
+   "name_en": "Taking All Challenges",
+   "page_slug": "achievements",
+   "order": 51,
+   "global_unlock_pct": 1.7,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/560b78571d50064a8ac92297687942b5290c25ce.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Complete the weekly challenge mode 10 times",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-bronze-hunter": {
+   "type": "achievement",
+   "name_en": "Bronze Hunter",
+   "page_slug": "achievements",
+   "order": 52,
+   "global_unlock_pct": 1.5,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/53c3f35cededceeddebe49ebfa1d856f3fb0c97d.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Obtain the Bronze Apocalypse Trophy",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-silver-hunter": {
+   "type": "achievement",
+   "name_en": "Silver Hunter",
+   "page_slug": "achievements",
+   "order": 53,
+   "global_unlock_pct": 1.3,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/ff58ea63417f6d24b75481a665f9554dd6637406.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Obtain the Silver Apocalypse Trophy",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  },
+  "ach-gold-hunter": {
+   "type": "achievement",
+   "name_en": "Gold Hunter",
+   "page_slug": "achievements",
+   "order": 54,
+   "global_unlock_pct": 1.3,
+   "global_unlock_pct_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "global_unlock_pct_as_of": "2026-10-10",
+   "icon": "https://shared.fastly.steamstatic.com/community_assets/images/apps/739630/81d9067ea4df89a4da3b10e9a7f07b585b324fda.jpg",
+   "source_urls": [
+    "https://steamcommunity.com/stats/739630/achievements/"
+   ],
+   "requirement_en": "Obtain the Gold Apocalypse Trophy",
+   "requirement_source": "https://steamcommunity.com/stats/739630/achievements/",
+   "accessed": "2026-10-10",
+   "unverified_fields": []
+  }
+ }
+}

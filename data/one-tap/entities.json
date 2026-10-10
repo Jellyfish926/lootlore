@@ -1,0 +1,3142 @@
+{
+ "fetched": "2026-10-10",
+ "game_version": null,
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级),2026-10-10 11:39–11:44 UTC 取:游戏描述与基本字段 games.roblox.com(v1)、通行证 apis.roblox.com/game-passes(4 个,nextPageToken 空串)、开发者商品 apis.roblox.com/developer-products v2(97 个,nextPageCursor=null)、官方活动 virtual-events(带零起点游标 6 条;不带游标 0 条;群组活动接口同样 6 条)、群组 groups.roblox.com、支持语言 gameinternationalization.roblox.com、分级 experience-guidelines-api(POST)。game_version 置 null:Roblox 体验没有版本号,games v1 的 updated(2026-10-08T20:11:58Z)与群组游戏列表 / develop 接口的 updated(2026-08-19T08:54:43Z)是两个值,不作补丁日期。名称逐字复制接口 name / Name 字段(含方括号、# 号、大小写与单复数不一致,如 '3 Karambit Case'、'7 Karambit Cases'、'Cyber Case #2 10'、'[LIMITED] Solar Cannon 115')。4 个通行证的 description 字段全为空串,usage_en 记的是本人看官方图标读到的字(700x700 下载件在 raw/img/);97 个商品的 Description 全为空串,所以没有 description_en / usage_en,key_notes_en 只写本站分组、单价除法、记录创建 / 编辑日。97 个商品共用同一个图标资产 88963008124478(灰色方块占位图),不入图片池。shop_group 与 order 是本站编辑口径,不是官方分类。活动实体的 description_en 把官方 description 的非空行用 ' / ' 拼成一行,逐字未改;页面正文引用游戏描述第 8 行时只引到 'Unlock 70+ weapon skins' 为止(该行括号里的英文原词会被总站 check_content 当成占位语阻塞,原文见 dossier 第 2 节),实体里同样不含那个词。没有徽章实体(badges 接口三次读取均为空)、没有兑换码实体(官方来源 0 个码)、没有逐件武器 / 皮肤实体(官方只给 '70+' 与活动里的 '28 total new weapons',没有名单)。价格为 2026-10-10 快照。",
+ "roblox": {
+  "universeId": 9294074907,
+  "rootPlaceId": 90568084448279,
+  "creatorGroupId": 1047647644,
+  "created": "2025-12-04T00:44:19.27Z"
+ },
+ "_page_slug_note": "page_slug 指向 content/en 下实际存在的页(12 个文件全部 draft: false)。cases / battle-pass / rewards / shop 四页分摊 97 个商品实体。",
+ "entities": {
+  "one-tap": {
+   "type": "mechanic",
+   "name_en": "One Tap",
+   "page_slug": "how-to-play",
+   "summary_en": "Free Roblox sniper free-for-all by the group Stringless Banjo, listed on Roblox as [FPS] One Tap. The official description lists one-shot snipers, two-shot secondaries (one to the head), melee weapons, weapon skins, cases, kill effects, name tags and rewards from levels, daily and quests.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "description_en": "One Tap is a fast-paced FPS sniper FFA arena, no teams, just pure chaos!",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "platforms": "Roblox: PC, Mobile, Tablet, Console (Xbox & PlayStation supported), per the official description",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "record_created_en": "4 December 2025",
+   "record_created_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "role_en": "Developer: Stringless Banjo (Roblox group 1047647644)",
+   "role_source": "https://groups.roblox.com/v1/groups/1047647644",
+   "max_players": 8,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "key_notes_en": "8 players per server · Maturity: Mild (Violence (Repeated/Mild)) · Genre: Shooter, Deathmatch Shooter · 18 supported languages · 4 game passes · 97 developer products · 0 badges · 6 official event listings",
+   "key_notes_source": [
+    "https://games.roblox.com/v1/games?universeIds=9294074907",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
+    "https://gameinternationalization.roblox.com/v1/supported-languages/games/9294074907",
+    "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+    "https://badges.roblox.com/v1/universes/9294074907/badges?limit=100",
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "key_notes_repro": "Maturity: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"9294074907\"} returns ageRecommendation.displayName = Mild and one descriptor, Violence (Repeated/Mild) (read 2026-10-10).",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=9294074907",
+    "https://groups.roblox.com/v1/groups/1047647644",
+    "https://gameinternationalization.roblox.com/v1/supported-languages/games/9294074907",
+    "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "private_servers (the game page markup carries data-private-server-price=\"49\"; the games API shows createVipServersAllowed: false; not confirmed by a purchase)",
+    "controls",
+    "map_names",
+    "match_length_and_scoring",
+    "weapon_stats",
+    "bots_in_lobbies",
+    "platform_support_tested (quoted from the description, not tested per device)"
+   ]
+  },
+  "mechanic-weapon-classes": {
+   "type": "mechanic",
+   "name_en": "Weapon classes",
+   "page_slug": "how-to-play",
+   "summary_en": "The official description gives one line to each of three weapon classes: snipers, secondaries and melee.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "key_notes_en": "\"One-shot snipers\" · \"Two-Shot Secondaries (One to the head)\" · \"Melee Weapons\"",
+   "key_notes_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=9294074907"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "damage_values",
+    "health",
+    "fire_rate",
+    "reload_time",
+    "which weapons are secondaries",
+    "melee hits to kill"
+   ]
+  },
+  "mechanic-rewards": {
+   "type": "mechanic",
+   "name_en": "Reward sources",
+   "page_slug": "rewards",
+   "summary_en": "The official description names three reward sources: levels, daily and quests. It does not say what any of them pays.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "description_en": "Earn rewards from levels, daily, and quests",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "key_notes_en": "Event listings add: \"New Level Reward Sniper and Knife\" and \"Leaderboard Tag and Kill Effect reward for top 100 (Given after reset)\" (Update 2, listed from 13 March 2026); \"4 New Level Reward Skins\" and \"Leaderboard prize additions\" (Update, listed from 24 April 2026); \"Obtain a free kill effect by joining.\" (Valentines, listed 14 to 15 February 2026)",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=9294074907",
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "xp_per_kill",
+    "level_thresholds",
+    "level_reward_list",
+    "daily_reward_contents",
+    "quest_list",
+    "leaderboard_reset_schedule",
+    "whether listed rewards are still obtainable"
+   ]
+  },
+  "mechanic-platform-support": {
+   "type": "mechanic",
+   "name_en": "Platform support",
+   "page_slug": "game-info",
+   "summary_en": "The official description lists PC, Mobile, Tablet and Console, and adds \"(Xbox & PlayStation supported)\".",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "platforms": "PC, Mobile, Tablet, Console (Xbox & PlayStation supported)",
+   "platforms_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "max_players": 8,
+   "max_players_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=9294074907"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "tested on each device",
+    "controller_layout",
+    "touch_controls",
+    "cross-platform servers"
+   ]
+  },
+  "mechanic-ban-notice": {
+   "type": "mechanic",
+   "name_en": "Ban notice",
+   "page_slug": "how-to-play",
+   "summary_en": "The official description ends with a notice that cheating, exploiting or farming with alts brings a permanent ban.",
+   "summary_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "description_en": "Cheating, exploiting, or farming with alts will result in a permanent ban. No appeals.",
+   "description_source": "https://games.roblox.com/v1/games?universeIds=9294074907",
+   "key_notes_en": "The Update 2 event listing (listed from 13 March 2026) also announces \"Reporting players\" and \"Improved anti-cheat\"",
+   "key_notes_source": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "source_urls": [
+    "https://games.roblox.com/v1/games?universeIds=9294074907",
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "definition of farming with alts",
+    "how reports are handled",
+    "whether any appeal route exists outside the game"
+   ]
+  },
+  "event-2026-02-14-valentines": {
+   "type": "mechanic",
+   "name_en": "Valentines (event listing, 14 February 2026)",
+   "page_slug": "updates",
+   "order": 1,
+   "summary_en": "Official Roblox event listing by Stringless Banjo, subtitle \"Valentines\", listed from 14 February 2026 21:14 UTC to 15 February 2026 17:00 UTC.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Valentines / We put out some of the valentines content for today! Obtain a free kill effect by joining.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "introduced": "Listed start 14 February 2026 (an announcement; not proof of when the change reached players)",
+   "introduced_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "7336732308461585047",
+   "listing_created": "2026-01-26",
+   "listing_updated": "2026-02-14",
+   "listed_start_utc": "2026-02-14T21:14:44+00:00",
+   "listed_end_utc": "2026-02-15T17:00:44+00:00",
+   "thumbnail_media_id": 88388513445715,
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "whether the change went live at the listed start",
+    "event_status (the API returns \"active\" for all six listings, including ones whose window has ended)"
+   ]
+  },
+  "event-2026-03-13-update-2": {
+   "type": "mechanic",
+   "name_en": "Update 2 (event listing, 13 March 2026)",
+   "page_slug": "updates",
+   "order": 2,
+   "summary_en": "Official Roblox event listing by Stringless Banjo, subtitle \"One Tap Second Update\", listed from 13 March 2026 12:10 UTC to 21 March 2026 16:00 UTC.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Update 2 / Content: / 3 New Maps (Removed temporarily in new servers to fix some issues) / New Battlepass season / New Cosmic and Glitched weapon cases / New Robux Energy Sword and Proto Cases / New Karambit Case Additions / New Level Reward Sniper and Knife / New Limited Weapons / Leaderboard Tag and Kill Effect reward for top 100 (Given after reset) / Reporting players / Improved anti-cheat / Crosshair size customization / New Leaderboards (Delayed, fixing it don't worry!)",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "introduced": "Listed start 13 March 2026 (an announcement; not proof of when the change reached players)",
+   "introduced_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3637389134806123127",
+   "listing_created": "2026-01-31",
+   "listing_updated": "2026-03-16",
+   "listed_start_utc": "2026-03-13T12:10:49+00:00",
+   "listed_end_utc": "2026-03-21T16:00:49+00:00",
+   "thumbnail_media_id": 127182754594072,
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "whether the change went live at the listed start",
+    "event_status (the API returns \"active\" for all six listings, including ones whose window has ended)"
+   ]
+  },
+  "event-2026-04-24-update": {
+   "type": "mechanic",
+   "name_en": "Update (event listing, 24 April 2026)",
+   "page_slug": "updates",
+   "order": 3,
+   "summary_en": "Official Roblox event listing by Stringless Banjo, subtitle \"More Stuff lol!\", listed from 24 April 2026 16:00 UTC to 8 May 2026 17:00 UTC.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Final List: / 28 total new weapons! These weapon models are also much higher quality than previous updates. / 2 New Weapon cases / New BP Season / 4 New Level Reward Skins / Leaderboard prize additions / New Limited Weapons / Small update, saving the big stuff for the summer update!!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "introduced": "Listed start 24 April 2026 (an announcement; not proof of when the change reached players)",
+   "introduced_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "2463482400848609906",
+   "listing_created": "2026-04-05",
+   "listing_updated": "2026-04-24",
+   "listed_start_utc": "2026-04-24T16:00:55.6+00:00",
+   "listed_end_utc": "2026-05-08T17:00:55.6+00:00",
+   "thumbnail_media_id": 134947861539288,
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "whether the change went live at the listed start",
+    "event_status (the API returns \"active\" for all six listings, including ones whose window has ended)"
+   ]
+  },
+  "event-2026-06-15-summer-update": {
+   "type": "mechanic",
+   "name_en": "☀️Summer Update! (event listing, 15 June 2026)",
+   "page_slug": "updates",
+   "order": 4,
+   "summary_en": "Official Roblox event listing by Stringless Banjo, subtitle \"Summer Update\", listed from 15 June 2026 14:00 UTC to 30 June 2026 05:00 UTC.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Join One Tap now to take part in the Summer Event alongside other new content!",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "introduced": "Listed start 15 June 2026 (an announcement; not proof of when the change reached players)",
+   "introduced_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "3853659788672107153",
+   "listing_created": "2026-04-05",
+   "listing_updated": "2026-06-15",
+   "listed_start_utc": "2026-06-15T14:00:55.6+00:00",
+   "listed_end_utc": "2026-06-30T05:00:55.6+00:00",
+   "thumbnail_media_id": 111201366562498,
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "whether the change went live at the listed start",
+    "event_status (the API returns \"active\" for all six listings, including ones whose window has ended)"
+   ]
+  },
+  "event-2026-08-09-revert": {
+   "type": "mechanic",
+   "name_en": "Revert (event listing, 9 August 2026)",
+   "page_slug": "updates",
+   "order": 5,
+   "summary_en": "Official Roblox event listing by Stringless Banjo, subtitle \"Revert\", listed from 9 August 2026 13:20 UTC to 9 August 2026 15:15 UTC.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "Game has been reverted to a previous version for testing.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "introduced": "Listed start 9 August 2026 (an announcement; not proof of when the change reached players)",
+   "introduced_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "762900612806476450",
+   "listing_created": "2026-08-09",
+   "listing_updated": "2026-08-09",
+   "listed_start_utc": "2026-08-09T13:20:15.423+00:00",
+   "listed_end_utc": "2026-08-09T15:15:15.423+00:00",
+   "thumbnail_media_id": 106005103409162,
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "whether the change went live at the listed start",
+    "event_status (the API returns \"active\" for all six listings, including ones whose window has ended)"
+   ]
+  },
+  "event-2026-08-15-game-revert": {
+   "type": "mechanic",
+   "name_en": "Game Revert (event listing, 15 August 2026)",
+   "page_slug": "updates",
+   "order": 6,
+   "summary_en": "Official Roblox event listing by Stringless Banjo, subtitle \"Revert\", listed from 15 August 2026 05:20 UTC to 15 August 2026 07:15 UTC.",
+   "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "description_en": "One Tap has been experiencing some backend issues after publishing the lunar update for the game. We have not been able to pin point the exact issue yet but we have decided to revert to a previous version. The new Kill effects and tags are no longer in the game for now but weapons have been re added.",
+   "description_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "introduced": "Listed start 15 August 2026 (an announcement; not proof of when the change reached players)",
+   "introduced_source": "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+   "event_id": "8918326940140113",
+   "listing_created": "2026-08-15",
+   "listing_updated": "2026-08-15",
+   "listed_start_utc": "2026-08-15T05:20:28.851+00:00",
+   "listed_end_utc": "2026-08-15T07:15:28.851+00:00",
+   "thumbnail_media_id": 82429300588092,
+   "source_urls": [
+    "https://apis.roblox.com/virtual-events/v1/universes/9294074907/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
+    "https://apis.roblox.com/virtual-events/v1/virtual-events/groups/1047647644"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "whether the change went live at the listed start",
+    "event_status (the API returns \"active\" for all six listings, including ones whose window has ended)"
+   ]
+  },
+  "pass-double-voting-value": {
+   "type": "gamepass",
+   "name_en": "Double Voting Value",
+   "page_slug": "gamepasses",
+   "order": 1,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "usage_en": "\"Your votes will count twice.\" (wording on the official pass icon, under the heading \"2x Votes\")",
+   "usage_source": "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png",
+   "key_notes_en": "No written description on Roblox (the description field is empty); record created 29 December 2025, last edited 10 August 2026",
+   "key_notes_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1647434878,
+   "product_id": 3493641518,
+   "icon_asset_id": 130506004802111,
+   "created": "2025-12-29",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+    "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "effect_beyond_icon_text",
+    "description (empty in the API)"
+   ]
+  },
+  "pass-2x-level-xp": {
+   "type": "gamepass",
+   "name_en": "2x Level XP",
+   "page_slug": "gamepasses",
+   "order": 2,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "usage_en": "\"Grants double XP.\" (wording on the official pass icon, under the heading \"2x XP\")",
+   "usage_source": "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png",
+   "key_notes_en": "No written description on Roblox (the description field is empty); record created 29 December 2025, last edited 10 August 2026",
+   "key_notes_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1647856647,
+   "product_id": 3493640979,
+   "icon_asset_id": 126925465702985,
+   "created": "2025-12-29",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+    "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "effect_beyond_icon_text",
+    "description (empty in the API)"
+   ]
+  },
+  "pass-2x-money": {
+   "type": "gamepass",
+   "name_en": "2x Money",
+   "page_slug": "gamepasses",
+   "order": 3,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "usage_en": "\"Grants double money from kills.\" (wording on the official pass icon, under the heading \"2x Money\")",
+   "usage_source": "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png",
+   "key_notes_en": "No written description on Roblox (the description field is empty); record created 29 December 2025, last edited 10 August 2026",
+   "key_notes_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1647410905,
+   "product_id": 3493641670,
+   "icon_asset_id": 126028198454624,
+   "created": "2025-12-29",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+    "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "effect_beyond_icon_text",
+    "description (empty in the API)"
+   ]
+  },
+  "pass-2x-case-luck": {
+   "type": "gamepass",
+   "name_en": "2x Case Luck",
+   "page_slug": "gamepasses",
+   "order": 4,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "usage_en": "\"Grants more luck when opening cases\" (wording on the official pass icon, under the heading \"2x Case Luck\") (the round frame clips both ends of the last line: the first letter of \"opening\" is cut off, the last letter of \"cases\" is cut in half, and a final full stop, if any, is not visible)",
+   "usage_source": "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png",
+   "key_notes_en": "No written description on Roblox (the description field is empty); record created 29 December 2025, last edited 10 August 2026",
+   "key_notes_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+   "pass_id": 1647434885,
+   "product_id": 3493641144,
+   "icon_asset_id": 128625042989986,
+   "created": "2025-12-29",
+   "last_updated": "2026-08-10",
+   "source_urls": [
+    "https://apis.roblox.com/game-passes/v1/universes/9294074907/game-passes?passView=Full&pageSize=100",
+    "https://thumbnails.roblox.com/v1/assets?assetIds=126028198454624,128625042989986,126925465702985,130506004802111&size=700x700&format=Png"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "effect_beyond_icon_text",
+    "description (empty in the API)"
+   ]
+  },
+  "product-case-1-buy-1": {
+   "type": "item",
+   "name_en": "Case 1 Buy 1",
+   "page_slug": "cases",
+   "order": 1,
+   "unlock_cost": "15 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 15 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 1 × 1: 15 Robux per case (our division) · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616079,
+   "developer_product_id": 72287250,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-1-buy-3": {
+   "type": "item",
+   "name_en": "Case 1 Buy 3",
+   "page_slug": "cases",
+   "order": 2,
+   "unlock_cost": "45 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 45 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 1 × 3: 15 Robux per case (our division) · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616318,
+   "developer_product_id": 72287255,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-1-buy-10": {
+   "type": "item",
+   "name_en": "Case 1 Buy 10",
+   "page_slug": "cases",
+   "order": 3,
+   "unlock_cost": "150 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 150 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 1 × 10: 15 Robux per case (our division) · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616205,
+   "developer_product_id": 72287254,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-2-buy-1": {
+   "type": "item",
+   "name_en": "Case 2 Buy 1",
+   "page_slug": "cases",
+   "order": 4,
+   "unlock_cost": "40 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 40 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 2 × 1: 40 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616457,
+   "developer_product_id": 72287259,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-2-buy-3": {
+   "type": "item",
+   "name_en": "Case 2 Buy 3",
+   "page_slug": "cases",
+   "order": 5,
+   "unlock_cost": "120 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 120 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 2 × 3: 40 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616682,
+   "developer_product_id": 72287266,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-2-buy-10": {
+   "type": "item",
+   "name_en": "Case 2 Buy 10",
+   "page_slug": "cases",
+   "order": 6,
+   "unlock_cost": "400 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 400 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 2 × 10: 40 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616591,
+   "developer_product_id": 72287264,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-3-buy-1": {
+   "type": "item",
+   "name_en": "Case 3 Buy 1",
+   "page_slug": "cases",
+   "order": 7,
+   "unlock_cost": "10 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 10 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 3 × 1: 10 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616787,
+   "developer_product_id": 72287267,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-3-buy-3": {
+   "type": "item",
+   "name_en": "Case 3 Buy 3",
+   "page_slug": "cases",
+   "order": 8,
+   "unlock_cost": "30 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 30 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 3 × 3: 10 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617016,
+   "developer_product_id": 72287269,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-3-buy-10": {
+   "type": "item",
+   "name_en": "Case 3 Buy 10",
+   "page_slug": "cases",
+   "order": 9,
+   "unlock_cost": "100 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 100 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 3 × 10: 10 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493616895,
+   "developer_product_id": 72287268,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-4-buy-1": {
+   "type": "item",
+   "name_en": "Case 4 Buy 1",
+   "page_slug": "cases",
+   "order": 10,
+   "unlock_cost": "30 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 30 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 4 × 1: 30 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617124,
+   "developer_product_id": 72287290,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-4-buy-3": {
+   "type": "item",
+   "name_en": "Case 4 Buy 3",
+   "page_slug": "cases",
+   "order": 11,
+   "unlock_cost": "90 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 90 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 4 × 3: 30 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617307,
+   "developer_product_id": 72287293,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-4-buy-10": {
+   "type": "item",
+   "name_en": "Case 4 Buy 10",
+   "page_slug": "cases",
+   "order": 12,
+   "unlock_cost": "300 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 300 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 4 × 10: 30 Robux per case (our division) · record created 29 December 2025, last edited 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617223,
+   "developer_product_id": 72287292,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-5-buy-1": {
+   "type": "item",
+   "name_en": "Case 5 Buy 1",
+   "page_slug": "cases",
+   "order": 13,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 5 × 1: 80 Robux per case (our division) · record created 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-28",
+   "product_id": 3524566795,
+   "developer_product_id": 72888811,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-5-buy-3": {
+   "type": "item",
+   "name_en": "Case 5 Buy 3",
+   "page_slug": "cases",
+   "order": 14,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 5 × 3: 80 Robux per case (our division) · record created 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-28",
+   "product_id": 3524566908,
+   "developer_product_id": 72888820,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case-5-buy-10": {
+   "type": "item",
+   "name_en": "Case 5 Buy 10",
+   "page_slug": "cases",
+   "order": 15,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Numbered cases (Case 1 to Case 5) · Case 5 × 10: 80 Robux per case (our division) · record created 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-28",
+   "product_id": 3524566985,
+   "developer_product_id": 72888827,
+   "shop_group": "Numbered cases (Case 1 to Case 5)",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-battle-case-1": {
+   "type": "item",
+   "name_en": "Battle Case 1",
+   "page_slug": "cases",
+   "order": 16,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Battle Case × 1: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717717,
+   "developer_product_id": 76114798,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-battle-case-3": {
+   "type": "item",
+   "name_en": "Battle Case 3",
+   "page_slug": "cases",
+   "order": 17,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Battle Case × 3: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717732,
+   "developer_product_id": 76114800,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-battle-case-10": {
+   "type": "item",
+   "name_en": "Battle Case 10",
+   "page_slug": "cases",
+   "order": 18,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Battle Case × 10: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717759,
+   "developer_product_id": 76114805,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-1-cosmic-case": {
+   "type": "item",
+   "name_en": "1 Cosmic Case",
+   "page_slug": "cases",
+   "order": 19,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Cosmic × 1: 80 Robux per case (our division) · record created 12 March 2026, last edited 13 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-13",
+   "product_id": 3554848593,
+   "developer_product_id": 73783309,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-3-cosmic-cases": {
+   "type": "item",
+   "name_en": "3 Cosmic Cases",
+   "page_slug": "cases",
+   "order": 20,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Cosmic × 3: 80 Robux per case (our division) · record created 12 March 2026, last edited 13 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-13",
+   "product_id": 3554848590,
+   "developer_product_id": 73783306,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-10-cosmic-cases": {
+   "type": "item",
+   "name_en": "10 Cosmic Cases",
+   "page_slug": "cases",
+   "order": 21,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Cosmic × 10: 80 Robux per case (our division) · record created 12 March 2026, last edited 13 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-13",
+   "product_id": 3554848591,
+   "developer_product_id": 73783307,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-cyber-case-2-1": {
+   "type": "item",
+   "name_en": "Cyber Case #2 1",
+   "page_slug": "cases",
+   "order": 22,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Cyber Case #2 × 1: 80 Robux per case (our division) · record created 24 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-24",
+   "product_updated": "2026-04-24",
+   "product_id": 3580533440,
+   "developer_product_id": 74616791,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-cyber-case-2-3": {
+   "type": "item",
+   "name_en": "Cyber Case #2 3",
+   "page_slug": "cases",
+   "order": 23,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Cyber Case #2 × 3: 80 Robux per case (our division) · record created 24 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-24",
+   "product_updated": "2026-04-24",
+   "product_id": 3580533491,
+   "developer_product_id": 74616795,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-cyber-case-2-10": {
+   "type": "item",
+   "name_en": "Cyber Case #2 10",
+   "page_slug": "cases",
+   "order": 24,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Cyber Case #2 × 10: 80 Robux per case (our division) · record created 24 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-24",
+   "product_updated": "2026-04-24",
+   "product_id": 3580533540,
+   "developer_product_id": 74616796,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-dragon-case-1": {
+   "type": "item",
+   "name_en": "Dragon Case 1",
+   "page_slug": "cases",
+   "order": 25,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Dragon Case × 1: 80 Robux per case (our division) · record created 24 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-24",
+   "product_updated": "2026-04-24",
+   "product_id": 3580534379,
+   "developer_product_id": 74616815,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-dragon-case-3": {
+   "type": "item",
+   "name_en": "Dragon Case 3",
+   "page_slug": "cases",
+   "order": 26,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Dragon Case × 3: 80 Robux per case (our division) · record created 24 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-24",
+   "product_updated": "2026-04-24",
+   "product_id": 3580534467,
+   "developer_product_id": 74616820,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-dragon-case-10": {
+   "type": "item",
+   "name_en": "Dragon Case 10",
+   "page_slug": "cases",
+   "order": 27,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Dragon Case × 10: 80 Robux per case (our division) · record created 24 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-24",
+   "product_updated": "2026-04-24",
+   "product_id": 3580534408,
+   "developer_product_id": 74616816,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-1-energy-sword-case": {
+   "type": "item",
+   "name_en": "1 Energy Sword Case",
+   "page_slug": "cases",
+   "order": 28,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Energy Sword × 1: 199 Robux per case (our division) · record created 12 March 2026, last edited 30 September 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-09-30",
+   "product_id": 3554848601,
+   "developer_product_id": 73783315,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-3-energy-sword-cases": {
+   "type": "item",
+   "name_en": "3 Energy Sword Cases",
+   "page_slug": "cases",
+   "order": 29,
+   "unlock_cost": "450 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 450 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Energy Sword × 3: 150 Robux per case (our division) · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848599,
+   "developer_product_id": 73783313,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-6-energy-sword-cases": {
+   "type": "item",
+   "name_en": "6 Energy Sword Cases",
+   "page_slug": "cases",
+   "order": 30,
+   "unlock_cost": "900 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 900 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Energy Sword × 6: 150 Robux per case (our division) · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848600,
+   "developer_product_id": 73783314,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-1-glitched-case": {
+   "type": "item",
+   "name_en": "1 Glitched Case",
+   "page_slug": "cases",
+   "order": 31,
+   "unlock_cost": "15 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 15 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Glitched × 1: 15 Robux per case (our division) · record created 12 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-12",
+   "product_id": 3554848603,
+   "developer_product_id": 73783317,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-3-glitched-cases": {
+   "type": "item",
+   "name_en": "3 Glitched Cases",
+   "page_slug": "cases",
+   "order": 32,
+   "unlock_cost": "45 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 45 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Glitched × 3: 15 Robux per case (our division) · record created 12 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-12",
+   "product_id": 3554848598,
+   "developer_product_id": 73783312,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-10-glitched-cases": {
+   "type": "item",
+   "name_en": "10 Glitched Cases",
+   "page_slug": "cases",
+   "order": 33,
+   "unlock_cost": "150 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 150 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Glitched × 10: 15 Robux per case (our division) · record created 12 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-12",
+   "product_id": 3554848602,
+   "developer_product_id": 73783316,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-guardian-case-1": {
+   "type": "item",
+   "name_en": "Guardian Case 1",
+   "page_slug": "cases",
+   "order": 34,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Guardian Case × 1: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717771,
+   "developer_product_id": 76114807,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-guardian-case-3": {
+   "type": "item",
+   "name_en": "Guardian Case 3",
+   "page_slug": "cases",
+   "order": 35,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Guardian Case × 3: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717788,
+   "developer_product_id": 76114810,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-guardian-case-10": {
+   "type": "item",
+   "name_en": "Guardian Case 10",
+   "page_slug": "cases",
+   "order": 36,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Guardian Case × 10: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717798,
+   "developer_product_id": 76114812,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-1-karambit-case": {
+   "type": "item",
+   "name_en": "1 Karambit Case",
+   "page_slug": "cases",
+   "order": 37,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 149 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Karambit × 1: 149 Robux per case (our division) · record created 28 January 2026, last edited 30 September 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-09-30",
+   "product_id": 3524564291,
+   "developer_product_id": 72888706,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-3-karambit-case": {
+   "type": "item",
+   "name_en": "3 Karambit Case",
+   "page_slug": "cases",
+   "order": 38,
+   "unlock_cost": "450 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 450 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Karambit × 3: 150 Robux per case (our division) · record created 28 January 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-03-26",
+   "product_id": 3524565450,
+   "developer_product_id": 72888744,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-7-karambit-cases": {
+   "type": "item",
+   "name_en": "7 Karambit Cases",
+   "page_slug": "cases",
+   "order": 39,
+   "unlock_cost": "1,050 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 1,050 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Karambit × 7: 150 Robux per case (our division) · record created 28 January 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-03-26",
+   "product_id": 3524570942,
+   "developer_product_id": 72888958,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-moon-case-1": {
+   "type": "item",
+   "name_en": "Moon Case 1",
+   "page_slug": "cases",
+   "order": 40,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Moon Case × 1: 80 Robux per case (our division) · record created 3 August 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-08-03",
+   "product_updated": "2026-08-03",
+   "product_id": 3613087971,
+   "developer_product_id": 77146922,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-moon-case-3": {
+   "type": "item",
+   "name_en": "Moon Case 3",
+   "page_slug": "cases",
+   "order": 41,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Moon Case × 3: 80 Robux per case (our division) · record created 3 August 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-08-03",
+   "product_updated": "2026-08-03",
+   "product_id": 3613087995,
+   "developer_product_id": 77146925,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-moon-case-10": {
+   "type": "item",
+   "name_en": "Moon Case 10",
+   "page_slug": "cases",
+   "order": 42,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Moon Case × 10: 80 Robux per case (our division) · record created 3 August 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-08-03",
+   "product_updated": "2026-08-03",
+   "product_id": 3613088029,
+   "developer_product_id": 77146928,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-1-proto-case": {
+   "type": "item",
+   "name_en": "1 Proto Case",
+   "page_slug": "cases",
+   "order": 43,
+   "unlock_cost": "150 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 150 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Proto × 1: 150 Robux per case (our division) · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848597,
+   "developer_product_id": 73783311,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-3-proto-cases": {
+   "type": "item",
+   "name_en": "3 Proto Cases",
+   "page_slug": "cases",
+   "order": 44,
+   "unlock_cost": "450 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 450 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Proto × 3: 150 Robux per case (our division) · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848594,
+   "developer_product_id": 73783310,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-7-proto-cases": {
+   "type": "item",
+   "name_en": "7 Proto Cases",
+   "page_slug": "cases",
+   "order": 45,
+   "unlock_cost": "1,050 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 1,050 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Proto × 7: 150 Robux per case (our division) · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848588,
+   "developer_product_id": 73783304,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-vintage-case-1": {
+   "type": "item",
+   "name_en": "Vintage Case 1",
+   "page_slug": "cases",
+   "order": 46,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Vintage Case × 1: 80 Robux per case (our division) · record created 15 June 2026, last edited 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717578,
+   "developer_product_id": 76114789,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-vintage-case-3": {
+   "type": "item",
+   "name_en": "Vintage Case 3",
+   "page_slug": "cases",
+   "order": 47,
+   "unlock_cost": "240 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 240 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Vintage Case × 3: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717664,
+   "developer_product_id": 76114793,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-vintage-case-10": {
+   "type": "item",
+   "name_en": "Vintage Case 10",
+   "page_slug": "cases",
+   "order": 48,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Named cases · Vintage Case × 10: 80 Robux per case (our division) · record created 15 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-15",
+   "product_updated": "2026-06-15",
+   "product_id": 3604717702,
+   "developer_product_id": 76114796,
+   "shop_group": "Named cases",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-nightmare-1": {
+   "type": "item",
+   "name_en": "Nightmare 1",
+   "page_slug": "cases",
+   "order": 49,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 149 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Nightmare 1 / 3 / 5 · Nightmare × 1: 149 Robux per unit (our division) · record created 17 April 2026, last edited 30 September 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-17",
+   "product_updated": "2026-09-30",
+   "product_id": 3576885148,
+   "developer_product_id": 74492705,
+   "shop_group": "Nightmare 1 / 3 / 5",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-nightmare-3": {
+   "type": "item",
+   "name_en": "Nightmare 3",
+   "page_slug": "cases",
+   "order": 50,
+   "unlock_cost": "450 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 450 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Nightmare 1 / 3 / 5 · Nightmare × 3: 150 Robux per unit (our division) · record created 17 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-17",
+   "product_updated": "2026-04-17",
+   "product_id": 3576885205,
+   "developer_product_id": 74492709,
+   "shop_group": "Nightmare 1 / 3 / 5",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-nightmare-5": {
+   "type": "item",
+   "name_en": "Nightmare 5",
+   "page_slug": "cases",
+   "order": 51,
+   "unlock_cost": "750 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 750 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Nightmare 1 / 3 / 5 · Nightmare × 5: 150 Robux per unit (our division) · record created 17 April 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-04-17",
+   "product_updated": "2026-04-17",
+   "product_id": 3576885294,
+   "developer_product_id": 74492714,
+   "shop_group": "Nightmare 1 / 3 / 5",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-case": {
+   "type": "item",
+   "name_en": "Case",
+   "page_slug": "cases",
+   "order": 52,
+   "unlock_cost": "5 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 5 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Product named Case · record created 28 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-29",
+   "product_id": 3524571261,
+   "developer_product_id": 72888976,
+   "shop_group": "Product named Case",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-gems-small": {
+   "type": "item",
+   "name_en": "Gems Small",
+   "page_slug": "shop",
+   "order": 53,
+   "unlock_cost": "49 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 49 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Gems packs · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617892,
+   "developer_product_id": 72287305,
+   "shop_group": "Gems packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-gems-medium": {
+   "type": "item",
+   "name_en": "Gems Medium",
+   "page_slug": "shop",
+   "order": 54,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Gems packs · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617812,
+   "developer_product_id": 72287304,
+   "shop_group": "Gems packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-gems-large": {
+   "type": "item",
+   "name_en": "Gems Large",
+   "page_slug": "shop",
+   "order": 55,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 499 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Gems packs · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617555,
+   "developer_product_id": 72287296,
+   "shop_group": "Gems packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-gems-massive": {
+   "type": "item",
+   "name_en": "Gems Massive",
+   "page_slug": "shop",
+   "order": 56,
+   "unlock_cost": "799 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 799 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Gems packs · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617699,
+   "developer_product_id": 72287300,
+   "shop_group": "Gems packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-gems-best-value": {
+   "type": "item",
+   "name_en": "Gems Best Value",
+   "page_slug": "shop",
+   "order": 57,
+   "unlock_cost": "2,299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 2,299 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Gems packs · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493617421,
+   "developer_product_id": 72287295,
+   "shop_group": "Gems packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-sun-points-small": {
+   "type": "item",
+   "name_en": "Sun Points Small",
+   "page_slug": "shop",
+   "order": 58,
+   "unlock_cost": "80 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 80 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Sun Points packs · record created 10 June 2026, last edited 14 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-10",
+   "product_updated": "2026-06-14",
+   "product_id": 3603696170,
+   "developer_product_id": 76022285,
+   "shop_group": "Sun Points packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-sun-points-medium": {
+   "type": "item",
+   "name_en": "Sun Points Medium",
+   "page_slug": "shop",
+   "order": 59,
+   "unlock_cost": "320 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 320 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Sun Points packs · record created 10 June 2026, last edited 14 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-10",
+   "product_updated": "2026-06-14",
+   "product_id": 3603696116,
+   "developer_product_id": 76022281,
+   "shop_group": "Sun Points packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-sun-points-large": {
+   "type": "item",
+   "name_en": "Sun Points Large",
+   "page_slug": "shop",
+   "order": 60,
+   "unlock_cost": "800 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 800 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Sun Points packs · record created 10 June 2026, last edited 14 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-10",
+   "product_updated": "2026-06-14",
+   "product_id": 3603696052,
+   "developer_product_id": 76022275,
+   "shop_group": "Sun Points packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-sun-points-massive": {
+   "type": "item",
+   "name_en": "Sun Points Massive",
+   "page_slug": "shop",
+   "order": 61,
+   "unlock_cost": "1,200 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 1,200 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Sun Points packs · record created 10 June 2026, last edited 14 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-10",
+   "product_updated": "2026-06-14",
+   "product_id": 3603696001,
+   "developer_product_id": 76022272,
+   "shop_group": "Sun Points packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-sun-points-best-value": {
+   "type": "item",
+   "name_en": "Sun Points Best Value",
+   "page_slug": "shop",
+   "order": 62,
+   "unlock_cost": "2,000 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 2,000 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Sun Points packs · record created 10 June 2026, last edited 14 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-10",
+   "product_updated": "2026-06-14",
+   "product_id": 3603695947,
+   "developer_product_id": 76022269,
+   "shop_group": "Sun Points packs",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-500": {
+   "type": "item",
+   "name_en": "500",
+   "page_slug": "shop",
+   "order": 63,
+   "unlock_cost": "5 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 5 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Product named 500 · record created 28 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-29",
+   "product_id": 3524570257,
+   "developer_product_id": 72888933,
+   "shop_group": "Product named 500",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-skip-one-tier": {
+   "type": "item",
+   "name_en": "Skip One Tier",
+   "page_slug": "battle-pass",
+   "order": 64,
+   "unlock_cost": "20 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 20 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493618543,
+   "developer_product_id": 72287317,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-skip-five-tiers": {
+   "type": "item",
+   "name_en": "Skip Five Tiers",
+   "page_slug": "battle-pass",
+   "order": 65,
+   "unlock_cost": "100 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 100 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493618443,
+   "developer_product_id": 72287316,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-skip-three-tiers": {
+   "type": "item",
+   "name_en": "Skip Three Tiers",
+   "page_slug": "battle-pass",
+   "order": 66,
+   "unlock_cost": "179 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 179 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493618806,
+   "developer_product_id": 72287323,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-premium-battlepass": {
+   "type": "item",
+   "name_en": "Premium Battlepass",
+   "page_slug": "battle-pass",
+   "order": 67,
+   "unlock_cost": "449 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 449 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 29 December 2025, last edited 4 February 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-02-04",
+   "product_id": 3493618155,
+   "developer_product_id": 72287310,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-skip-all": {
+   "type": "item",
+   "name_en": "Skip All",
+   "page_slug": "battle-pass",
+   "order": 68,
+   "unlock_cost": "600 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 600 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-28",
+   "product_id": 3524565753,
+   "developer_product_id": 72888757,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-skip-all-tiers": {
+   "type": "item",
+   "name_en": "Skip All Tiers",
+   "page_slug": "battle-pass",
+   "order": 69,
+   "unlock_cost": "600 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 600 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-28",
+   "product_id": 3524613948,
+   "developer_product_id": 72890143,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-skip-ten-tiers": {
+   "type": "item",
+   "name_en": "Skip Ten Tiers",
+   "page_slug": "battle-pass",
+   "order": 70,
+   "unlock_cost": "850 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 850 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Premium Battlepass and Skip products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493618694,
+   "developer_product_id": 72287320,
+   "shop_group": "Premium Battlepass and Skip products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-xp-boost-30-minutes": {
+   "type": "item",
+   "name_en": "Xp Boost 30 Minutes",
+   "page_slug": "rewards",
+   "order": 71,
+   "unlock_cost": "30 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 30 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Xp Boost products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493619557,
+   "developer_product_id": 72287332,
+   "shop_group": "Xp Boost products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-xp-boost-1-hour": {
+   "type": "item",
+   "name_en": "Xp Boost 1 Hour",
+   "page_slug": "rewards",
+   "order": 72,
+   "unlock_cost": "60 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 60 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Xp Boost products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493619261,
+   "developer_product_id": 72287329,
+   "shop_group": "Xp Boost products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-xp-boost-2-hours": {
+   "type": "item",
+   "name_en": "Xp Boost 2 Hours",
+   "page_slug": "rewards",
+   "order": 73,
+   "unlock_cost": "120 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 120 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Xp Boost products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493619395,
+   "developer_product_id": 72287330,
+   "shop_group": "Xp Boost products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-xp-boost-6-hours": {
+   "type": "item",
+   "name_en": "Xp Boost 6 Hours",
+   "page_slug": "rewards",
+   "order": 74,
+   "unlock_cost": "360 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 360 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Xp Boost products · record created 29 December 2025 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2025-12-29",
+   "product_id": 3493619666,
+   "developer_product_id": 72287334,
+   "shop_group": "Xp Boost products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-refresh-quest": {
+   "type": "item",
+   "name_en": "Refresh Quest",
+   "page_slug": "rewards",
+   "order": 75,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 39 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Refresh Quest · record created 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-28",
+   "product_id": 3524568224,
+   "developer_product_id": 72888860,
+   "shop_group": "Refresh Quest",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-starterpack": {
+   "type": "item",
+   "name_en": "Starterpack",
+   "page_slug": "shop",
+   "order": 76,
+   "unlock_cost": "79 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 79 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Bundles and Starterpack · record created 29 December 2025, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-01-29",
+   "product_id": 3493619036,
+   "developer_product_id": 72287325,
+   "shop_group": "Bundles and Starterpack",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-starfire-bundle": {
+   "type": "item",
+   "name_en": "Starfire Bundle",
+   "page_slug": "shop",
+   "order": 77,
+   "unlock_cost": "299 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 299 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Bundles and Starterpack · record created 29 December 2025, last edited 13 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-01-13",
+   "product_id": 3493618921,
+   "developer_product_id": 72287324,
+   "shop_group": "Bundles and Starterpack",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-astral-bundle": {
+   "type": "item",
+   "name_en": "Astral Bundle",
+   "page_slug": "shop",
+   "order": 78,
+   "unlock_cost": "349 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 349 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Bundles and Starterpack · record created 29 December 2025, last edited 28 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-01-28",
+   "product_id": 3493615813,
+   "developer_product_id": 72287247,
+   "shop_group": "Bundles and Starterpack",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-dragon-bundle": {
+   "type": "item",
+   "name_en": "Dragon Bundle",
+   "page_slug": "shop",
+   "order": 79,
+   "unlock_cost": "449 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 449 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Bundles and Starterpack · record created 14 June 2026, last edited 30 September 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-14",
+   "product_updated": "2026-09-30",
+   "product_id": 3604648698,
+   "developer_product_id": 76108341,
+   "shop_group": "Bundles and Starterpack",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-solar-cannon-115": {
+   "type": "item",
+   "name_en": "[LIMITED] Solar Cannon 115",
+   "page_slug": "shop",
+   "order": 80,
+   "unlock_cost": "95 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 95 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-29",
+   "product_updated": "2026-01-29",
+   "product_id": 3525167561,
+   "developer_product_id": 72904350,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-offer-cosmic-vortex": {
+   "type": "item",
+   "name_en": "[LIMITED OFFER] Cosmic Vortex",
+   "page_slug": "shop",
+   "order": 81,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 149 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-29",
+   "product_updated": "2026-01-29",
+   "product_id": 3525168767,
+   "developer_product_id": 72904371,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-offer-solar-cannon": {
+   "type": "item",
+   "name_en": "[LIMITED OFFER] Solar Cannon",
+   "page_slug": "shop",
+   "order": 82,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 149 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-29",
+   "product_updated": "2026-01-29",
+   "product_id": 3525168768,
+   "developer_product_id": 72904372,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-offer-stardust": {
+   "type": "item",
+   "name_en": "[LIMITED OFFER] Stardust",
+   "page_slug": "shop",
+   "order": 83,
+   "unlock_cost": "149 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 149 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-29",
+   "product_updated": "2026-01-29",
+   "product_id": 3525168766,
+   "developer_product_id": 72904370,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-1": {
+   "type": "item",
+   "name_en": "Limited 1",
+   "page_slug": "shop",
+   "order": 84,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 28 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-29",
+   "product_id": 3524572439,
+   "developer_product_id": 72889020,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-2": {
+   "type": "item",
+   "name_en": "Limited 2",
+   "page_slug": "shop",
+   "order": 85,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 28 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-29",
+   "product_id": 3524572595,
+   "developer_product_id": 72889026,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-3": {
+   "type": "item",
+   "name_en": "Limited 3",
+   "page_slug": "shop",
+   "order": 86,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 28 January 2026, last edited 29 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-01-28",
+   "product_updated": "2026-01-29",
+   "product_id": 3524572313,
+   "developer_product_id": 72889007,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-4": {
+   "type": "item",
+   "name_en": "Limited 4",
+   "page_slug": "shop",
+   "order": 87,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 27 June 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-06-27",
+   "product_updated": "2026-06-27",
+   "product_id": 3606910030,
+   "developer_product_id": 76341321,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-skin-1": {
+   "type": "item",
+   "name_en": "Limited Skin 1",
+   "page_slug": "shop",
+   "order": 88,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848592,
+   "developer_product_id": 73783308,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-skin-2": {
+   "type": "item",
+   "name_en": "Limited Skin 2",
+   "page_slug": "shop",
+   "order": 89,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848589,
+   "developer_product_id": 73783305,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-limited-skin-3": {
+   "type": "item",
+   "name_en": "Limited Skin 3",
+   "page_slug": "shop",
+   "order": 90,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 12 March 2026, last edited 26 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-12",
+   "product_updated": "2026-03-26",
+   "product_id": 3554848587,
+   "developer_product_id": 73783303,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-nightmare-fuel-limited": {
+   "type": "item",
+   "name_en": "Nightmare Fuel [LIMITED]",
+   "page_slug": "shop",
+   "order": 91,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 December 2025, last edited 27 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-01-27",
+   "product_id": 3493617988,
+   "developer_product_id": 72287307,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-prototype-1-limited": {
+   "type": "item",
+   "name_en": "Prototype-1 [LIMITED]",
+   "page_slug": "shop",
+   "order": 92,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 December 2025, last edited 27 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-01-27",
+   "product_id": 3493618323,
+   "developer_product_id": 72287313,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-the-covenant-limited": {
+   "type": "item",
+   "name_en": "The Covenant [LIMITED]",
+   "page_slug": "shop",
+   "order": 93,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 199 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Limited-named products · record created 29 December 2025, last edited 27 January 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2025-12-29",
+   "product_updated": "2026-01-27",
+   "product_id": 3493619143,
+   "developer_product_id": 72287326,
+   "shop_group": "Limited-named products",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-10-robux-donation": {
+   "type": "item",
+   "name_en": "10 Robux Donation",
+   "page_slug": "shop",
+   "order": 94,
+   "unlock_cost": "10 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 10 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Donations · record created 6 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-06",
+   "product_updated": "2026-03-06",
+   "product_id": 3550422175,
+   "developer_product_id": 73649325,
+   "shop_group": "Donations",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-100-robux-donation": {
+   "type": "item",
+   "name_en": "100 Robux Donation",
+   "page_slug": "shop",
+   "order": 95,
+   "unlock_cost": "100 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 100 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Donations · record created 6 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-06",
+   "product_updated": "2026-03-06",
+   "product_id": 3550422174,
+   "developer_product_id": 73649324,
+   "shop_group": "Donations",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-1000-robux-donation": {
+   "type": "item",
+   "name_en": "1000 Robux Donation",
+   "page_slug": "shop",
+   "order": 96,
+   "unlock_cost": "1,000 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 1,000 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Donations · record created 6 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-06",
+   "product_updated": "2026-03-06",
+   "product_id": 3550422176,
+   "developer_product_id": 73649326,
+   "shop_group": "Donations",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  },
+  "product-10000-robux-donation": {
+   "type": "item",
+   "name_en": "10000 Robux Donation",
+   "page_slug": "shop",
+   "order": 97,
+   "unlock_cost": "10,000 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "unlocked_by_en": "Robux purchase (developer product, 10,000 Robux)",
+   "unlocked_by_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "key_notes_en": "Group (our label): Donations · record created 6 March 2026 · no official description",
+   "key_notes_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100",
+   "product_created": "2026-03-06",
+   "product_updated": "2026-03-06",
+   "product_id": 3550422173,
+   "developer_product_id": 73649323,
+   "shop_group": "Donations",
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/9294074907/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "function (the record has no description)",
+    "contents",
+    "in_game_availability (the API flag does not show whether the in-game shop offers it now)"
+   ]
+  }
+ }
+}

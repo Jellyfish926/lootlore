@@ -2373,6 +2373,236 @@
           }
         ]
       }
+    },
+    {
+      "slug": "phasmophobia",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/phasmophobia",
+      "name": "Phasmophobia",
+      "short": "Phasmophobia",
+      "default_path": "/",
+      "native": {
+        "title": "Phasmophobia",
+        "nav": [
+          "getting-started",
+          "updates-events"
+        ],
+        "official_domains": [
+          "store.steampowered.com",
+          "steamcommunity.com",
+          "api.steampowered.com",
+          "kineticgames.co.uk",
+          "kineticgames.zendesk.com",
+          "clan.akamai.steamstatic.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-10",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "Phasmophobia",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/phasmophobia/entities.json",
+        "start_here": [
+          "how-to-play",
+          "patch-notes",
+          "crimson-eye"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Co-op Horror · Early Access",
+        "studio": "Kinetic Games",
+        "released": "September 18, 2020 (Steam Early Access)",
+        "platforms": "PC (Windows · VR) · PS5 · PS VR2 · Xbox Series X/S",
+        "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/e9b67c7a3744a36cd5cc29adc13c6caaa4172e26/ss_e9b67c7a3744a36cd5cc29adc13c6caaa4172e26.1920x1080.jpg?t=1791466787",
+        "img_w": 1920,
+        "img_h": 1080,
+        "img_alt": "A carpeted hallway with open doorways on both sides under a ceiling light — Phasmophobia",
+        "img_credit": "Official screenshot · Kinetic Games (Steam store page)",
+        "blurb": "Our Phasmophobia hub for Kinetic Games' four-player co-op ghost-hunting horror game: the 2026 patch notes in one timeline, the roadmap to 1.0, Crimson Eye and seasonal event dates, Twitch Drops, the five difficulties and custom multiplier rules, platforms and price, and all 54 Steam achievements — every guide lists its numbered sources.",
+        "highlights": [
+          [
+            "2026 Patch Notes",
+            "/phasmophobia/patch-notes/"
+          ],
+          [
+            "Roadmap & 1.0",
+            "/phasmophobia/roadmap/"
+          ],
+          [
+            "Crimson Eye 2026",
+            "/phasmophobia/crimson-eye/"
+          ],
+          [
+            "All 54 Achievements",
+            "/phasmophobia/achievements/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 5,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "achievement",
+            "cols": [
+              "@name",
+              "requirement",
+              "global_unlock_pct"
+            ],
+            "sort": "order",
+            "max": 12,
+            "all": "achievements"
+          },
+          {
+            "type": "update",
+            "cols": [
+              "@name",
+              "steam_post_date",
+              "headline"
+            ],
+            "sort": "order",
+            "max": 8,
+            "all": "patch-notes"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "one-tap",
+      "kind": "native",
+      "lang": "en",
+      "content": "content/one-tap",
+      "name": "One Tap",
+      "short": "One Tap",
+      "default_path": "/",
+      "native": {
+        "title": "One Tap",
+        "nav": [
+          "beginner",
+          "robux"
+        ],
+        "official_domains": [
+          "roblox.com",
+          "games.roblox.com"
+        ],
+        "author": {
+          "name": "Jellyfi",
+          "slug": "author"
+        },
+        "defaults": {
+          "date": "2026-10-10",
+          "author": "Jellyfi",
+          "draft": false
+        },
+        "langs": [
+          {
+            "code": "en",
+            "i18n": "en",
+            "dir": "en",
+            "prefix": "",
+            "title": "One Tap",
+            "hreflang": "en",
+            "label_key": "lang_en",
+            "default": true,
+            "related_headings": [
+              "Read next"
+            ]
+          }
+        ],
+        "entities": "data/one-tap/entities.json",
+        "start_here": [
+          "how-to-play",
+          "cases",
+          "updates"
+        ],
+        "search": true
+      },
+      "card": {
+        "genre": "Roblox · Sniper Free-for-All (Shooter, Deathmatch Shooter)",
+        "studio": "Stringless Banjo",
+        "released": "December 4, 2025 (experience created, per Roblox)",
+        "platforms": "Roblox (PC, mobile, tablet, Xbox and PlayStation, per the official description)",
+        "img": "https://tr.rbxcdn.com/180DAY-a3b7486513c2f5f78c14a24efd5d6c35/768/432/Image/Png/noFilter",
+        "img_w": 768,
+        "img_h": 432,
+        "img_alt": "Promotional thumbnail: a grinning yellow block-headed character in a blue shirt aims a blocky green and black sniper rifle across a rooftop, while a red-haired character on a far wall aims a green rifle back along a curved orange bullet trail",
+        "img_credit": "Official art · Stringless Banjo (Roblox)",
+        "blurb": "Our One Tap hub for Stringless Banjo's Roblox sniper free-for-all: the three weapon rules in the official description, the reward sources it names, all 4 game passes with the wording on their icons, 49 case products with the Robux price per case, the products named Premium Battlepass and Skip, the full store of 97 products in 13 groups, and the six official update listings quoted in full. Built from Roblox's own data, with no unverified codes, weapon stats or drop odds.",
+        "highlights": [
+          [
+            "How to Play",
+            "/one-tap/how-to-play/"
+          ],
+          [
+            "Cases: Price per Case",
+            "/one-tap/cases/"
+          ],
+          [
+            "All 4 Game Passes",
+            "/one-tap/gamepasses/"
+          ],
+          [
+            "Updates: 6 Official Listings",
+            "/one-tap/updates/"
+          ]
+        ],
+        "langs": "EN"
+      },
+      "hub_body": {
+        "scope": {
+          "slug": "index",
+          "h2": 9,
+          "last": 1
+        },
+        "tables": [
+          {
+            "type": "gamepass",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "usage"
+            ],
+            "sort": "order",
+            "max": 4,
+            "all": "gamepasses"
+          },
+          {
+            "type": "item",
+            "cols": [
+              "@name",
+              "unlock_cost",
+              "key_notes"
+            ],
+            "sort": "order",
+            "max": 15,
+            "all": "shop"
+          }
+        ]
+      }
     }
   ]
 }

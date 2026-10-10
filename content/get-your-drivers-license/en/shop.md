@@ -6,17 +6,17 @@ seoTitle: "Get Your Driver's License! Robux Shop: 13 Product Prices"
 description: "All 13 Get Your Driver's License! developer products with official descriptions and Robux prices: skips, line pranks, examiner time, VIP Ticket and more."
 category: "Cars & Robux Shop"
 language: "en"
-checkedAt: "2026-10-09"
-scope: "Developer product names, prices, descriptions and creation dates from the Roblox developer product API on 2026-10-09; effects beyond the one-line official descriptions have not been tested in the game; prices can change without notice"
+checkedAt: "2026-10-10"
+scope: "Developer product names, prices, descriptions and creation dates from the Roblox developer product API on 2026-10-10 (UTC); effects beyond the one-line official descriptions have not been tested in the game; prices can change without notice"
 type: "article"
 entities: ["product-skip-to-end", "product-be-the-examiner", "product-kill-all"]
-tldr: ["The store lists 13 developer products from 9 to 160 Robux, and every one has an official one-line description.", "Five are skips (9 to 48 Robux), four are pranks on other players (9 to 160), two buy examiner time (29 and 9) and two are about cars (39 and 149).", "Five products cost 9 Robux each. Buying all 13 once would cost 542 Robux.", "Two listings came after the first batch: Golden Supercar 🏆 on 30 September and Retake Test on 8 October 2026."]
+tldr: ["The store lists 13 developer products from 9 to 160 Robux, and every one has an official one-line description.", "Five are skips (9 to 48 Robux), four are pranks on other players (9 to 160), two buy examiner time (29 and 9) and two are about cars (39 and 149).", "Five products cost 9 Robux each. Buying all 13 once would cost 542 Robux.", "Two listings were created after the first batch: Golden Supercar 🏆 on 30 September and Retake Test on 8 October 2026."]
 related: ["waiting-line", "gamepasses", "cars"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100", "https://games.roblox.com/v1/games?universeIds=10768565603", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png"]
 images: ["prod-revenge", "prod-scare-all", "prod-plus-minute"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 The Get Your Driver's License! store lists 13 developer products, priced from 9 to 160 Robux. Five skip parts of the wait, four are pranks on other players, two buy time as the examiner and two are about cars. Each has a one-line official description, quoted in full below.
 
-Names, prices and descriptions come from the [Roblox developer product API](https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100), read on 9 October 2026. All 13 were on sale and none showed a discount. The grouping is ours; the store does not label groups.
+Names, prices and descriptions come from the [Roblox developer product API](https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100), read on 10 October 2026. All 13 were on sale and none showed a discount. The grouping is ours; the store does not label groups.
 
 ## What is on sale, and for how much?
 
@@ -89,7 +89,7 @@ The official description of Get Your Driver's License! lists "Be the Examiner an
 
 Two. Golden Supercar 🏆 costs 39 Robux and is described as "The best car in the game, yours to keep." VIP Ticket 🎟️ costs 149 Robux and makes "your next car" Epic or better. That second description is the only place we found the word Epic in official text, and the only direct sign we found that cars come in tiers. The [car guide](/get-your-drivers-license/cars/) compares the two.
 
-## What was added after the first batch?
+## Which records were created after the first batch?
 
 Roblox records when every product was created and last edited, and the times tell a short story.
 

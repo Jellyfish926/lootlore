@@ -1,6 +1,6 @@
 {
- "fetched": "2026-09-30",
- "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T02:34:41Z)",
+ "fetched": "2026-10-10",
+ "game_version": "2026-10-08 update (Roblox experience updated 2026-10-08T05:27:59.416Z)",
  "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products、群组 groups.roblox.com、分级 experience-guidelines-api。名称逐字复制接口 name 字段(含 emoji)。13 个以 Robux 数额命名的开发者商品(10 Robux … 1,000,000 Robux)用途未说明,未建实体。车辆清单、车辆属性、罚款金额、按键、兑换码无一手来源,未建实体。徽章为 0。价格为 2026-09-30 快照;下架通行证接口 price 为 null,故不写价格。item 的 order 按创建日期再按价格升序。",
  "roblox": {
   "universeId": 10268960646,
@@ -37,7 +37,7 @@
     "https://groups.roblox.com/v1/groups/84540135",
     "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "controls",
     "map_names",
@@ -63,7 +63,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "former_price",
     "off_sale_date"
@@ -86,7 +86,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "former_price",
     "off_sale_date"
@@ -107,7 +107,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size_beyond_name",
     "stacking"
@@ -126,7 +126,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size_beyond_name",
     "stacking"
@@ -145,7 +145,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size_beyond_name",
     "stacking"
@@ -164,7 +164,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size_beyond_name",
     "stacking"
@@ -183,7 +183,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ],
@@ -201,7 +201,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ],
@@ -219,7 +219,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "former_price",
     "off_sale_date",
@@ -239,7 +239,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "former_price",
     "off_sale_date",
@@ -261,7 +261,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "former_price",
     "off_sale_date"
@@ -284,7 +284,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [],
    "order": 12,
    "usage_en": "Just never have to pay fines for when you get caught",
@@ -304,7 +304,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "delivered_amount_confirmed"
    ]
@@ -323,7 +323,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "delivered_amount_confirmed"
    ]
@@ -342,7 +342,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "delivered_amount_confirmed"
    ]
@@ -361,7 +361,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "delivered_amount_confirmed"
    ]
@@ -380,7 +380,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "delivered_amount_confirmed"
    ]
@@ -399,7 +399,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "delivered_amount_confirmed"
    ]
@@ -418,7 +418,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect"
    ]
@@ -437,7 +437,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect"
    ]
@@ -456,7 +456,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect"
    ]
@@ -475,7 +475,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-30",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "uses_per_purchase"

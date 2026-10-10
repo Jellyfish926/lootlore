@@ -6,17 +6,17 @@ seoTitle: "BlockSpin Beginner Guide: Jobs, Cases, Safe and Death Drops"
 description: "New to BlockSpin on Roblox? The official loop of jobs, reward cases, levels and PvP, why you drop your inventory on death, and how the house safe keeps items."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-10"
 scope: "Rules stated in the official game description and shown in official thumbnails; job names and prices are not covered"
 type: "article"
 tldr: ["The official loop is jobs → cash and random reward cases → character levels → fighting to be top of the city.", "Everything in your inventory drops when you die; the game tells you to keep items in the safe in your house.", "Servers hold up to 28 players, so the people you meet on a job are the same people who can fight you.", "Claim the new-player code W7C28D first — it is $500 of starting cash."]
 related: ["codes", "game-info", "cheats-bans"]
-sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=6765805766&size=768x432&format=Png&countPerUniverse=10", "https://www.cinnamon.co.uk/"]
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=6765805766&size=768x432&format=Png&countPerUniverse=10", "https://www.cinnamon.co.uk/", "https://apis.roblox.com/virtual-events/v1/universes/6765805766/virtual-events"]
 images: ["th4", "th2"]
 entity: "death-drop"
 date: "2026-09-29"
-updated: "2026-09-29"
-reviewed: "2026-09-29"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -55,17 +55,17 @@ Roblox rates BlockSpin as Moderate for repeated violence, and the promotional ar
 
 ## Who else is on your BlockSpin server?
 
-Up to 28 players share a server, according to Roblox's game data on September 29, 2026. That is small enough that you will keep running into the same people, and anyone nearby may target you.
+Up to 28 players share a server, according to Roblox's game data on October 10, 2026. That is small enough that you will keep running into the same people, and anyone nearby may target you.
 
 Roblox also reports that private (VIP) servers cannot be created for this game, so there is no quiet server to grind alone in.
 
-## What can you do in BlockSpin besides jobs?
+## What else do the official thumbnails and event listings show?
 
-The official BlockSpin thumbnails show more than one way to spend your time. One shows a character fishing from a lawn chair at a lakeside, captioned "Fishing". Another shows a robbery at a Quick-11 convenience store. A third shows a high-end car, and cars are clearly part of the game's image. The description itself mentions a world that "reacts to your every move".
+The official BlockSpin thumbnails show more than one way to spend your time. One shows a character fishing from a lawn chair at a lakeside, captioned "Fishing"; the developers' own event listing from August 2025 is titled "NEW JOB - FISHING!", so they call fishing a job. Another shows a robbery at a Quick-11 convenience store. A third shows a high-end car, and cars are clearly part of the game's image. The description itself mentions a world that "reacts to your every move".
 
-![A character in a green bandana sits in a lawn chair and reels in a large yellow fish by a lake lined with houses](th2 "Official promotional thumbnail: fishing is one of the game's activities")
+![A character in a green bandana sits in a lawn chair and reels in a large yellow fish by a lake lined with houses](th2 "Official promotional thumbnail: fishing, which an official event title calls a job")
 
-What we cannot tell you yet is the exact list of jobs, what each one pays or where each building sits on the map. Community sites publish lists, but they disagree and many are out of date, so we will add those details only once they are checked in-game.
+The exact list of jobs, what each one pays and where each building sits on the map are not in the official records we read on October 10, 2026, so we will add those details only once they are checked in-game.
 
 ## What should you do in your first BlockSpin session?
 

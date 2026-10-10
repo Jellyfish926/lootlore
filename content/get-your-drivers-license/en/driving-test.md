@@ -6,8 +6,8 @@ seoTitle: "Get Your Driver's License! Driving Test, Endings, Examiner"
 description: "The driving test in Get Your Driver's License!: cows, ducks and ramps on the course, the Honor Roll and Towed endings, Retake Test and what examiner time costs."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-10-09"
-scope: "Driving test, ending and examiner details from the official game description, developer product descriptions and official art on 2026-10-09; the course layout, scoring rules, the full ending list and any free route to the examiner role are not published and are not covered"
+checkedAt: "2026-10-10"
+scope: "Driving test, ending and examiner details from the official game description, developer product descriptions and official art on 2026-10-10 (UTC); the course layout, scoring rules, the full ending list and any free route to the examiner role are not published and are not covered"
 type: "article"
 entities: ["stage-driving-test", "mechanic-endings", "mechanic-examiner"]
 tldr: ["The official description names three things on the test course: cows, ducks and ramps, \"and more\".", "Two endings are named, Honor Roll and Towed. We found no full list in any official source we could read.", "Fail the drive and Retake Test (19 Robux) lets you \"take it again right away, no line\".", "Be The Examiner 📋 sells 5 minutes in the examiner's seat for 29 Robux; +1 Minute adds a minute for 9."]
@@ -15,8 +15,8 @@ related: ["waiting-line", "cars", "how-to-play"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10768565603", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://badges.roblox.com/v1/universes/10768565603/badges?limit=100&sortOrder=Asc", "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10768565603&countPerUniverse=10&size=768x432&format=Png", "https://thumbnails.roblox.com/v1/games/icons?universeIds=10768565603&size=512x512&format=Png", "https://create.roblox.com/docs/production/monetization/developer-products"]
 images: ["prod-plus-minute", "prod-examiner", "prod-retake-test"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -65,7 +65,7 @@ Retake Test is the newest listing in the store, created on 8 October 2026. Wheth
 
 The description's last feature line is "Be the Examiner and judge other players' driving". The examiner is a role a player takes, not only a character in the art.
 
-The store sells time in that role. Prices are from Roblox's product record on 9 October 2026, and the totals are our arithmetic.
+The store sells time in that role. Prices are from Roblox's product record on 10 October 2026, and the totals are our arithmetic.
 
 | Purchase | Robux | Time as examiner | Robux per minute |
 | --- | --- | --- | --- |

@@ -6,17 +6,17 @@ seoTitle: "BlockSpin Roblox Guide & Wiki: Codes, Beginner Tips, Bans"
 description: "BlockSpin on Roblox: the official new-player code W7C28D ($500), what drops when you die, the house safe, who makes the game and the rules on exploits."
 category: "Home"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-10"
 scope: "Site entry point"
 type: "home"
 tldr: ["BlockSpin is an open-world action game on Roblox by the Cinnamon Go! group, set in a Florida county: work jobs, open reward cases, level up and fight other players.", "The one code in the official game description is W7C28D, worth $500 for new players.", "You drop your whole inventory when you die. Items stored in the safe in your house stay secure.", "This hub draws on official sources and gives the date each was read; what we could not check is marked not confirmed or left out."]
-faq: [["Who makes BlockSpin?", "The Roblox group Cinnamon Go!, which describes itself as owned and managed by Cinnamon Software, the studio also behind LifeTogether. Details on the [game info page](/blockspin/game-info/)."], ["Is there a working code?", "Yes. The official game description gives W7C28D for $500 cash, for new players. The full list and why we do not copy other sites' codes are on the [codes page](/blockspin/codes/)."], ["What happens when I die?", "You drop everything in your inventory. The game description says to keep items in the safe in your house. See the [beginner guide](/blockspin/beginner/)."], ["How many players fit in one server?", "28, according to the Roblox game data we checked on September 29, 2026."], ["Can I get banned for exploiting?", "Roblox rules forbid exploits and cheating, and the developer group runs a separate paid ban appeal experience. Read the [cheats and bans page](/blockspin/cheats-bans/)."]]
+faq: [["Who makes BlockSpin?", "The Roblox group Cinnamon Go!, which describes itself as owned and managed by Cinnamon Software, the studio also behind LifeTogether. Details on the [game info page](/blockspin/game-info/)."], ["Is there a working code?", "Yes. On October 10, 2026 the official game description gave W7C28D for $500 cash, for new players. The full list and why we do not copy other sites' codes are on the [codes page](/blockspin/codes/)."], ["What happens when I die?", "You drop everything in your inventory. The game description says to keep items in the safe in your house. See the [beginner guide](/blockspin/beginner/)."], ["How many players fit in one server?", "28, according to the Roblox game data we checked on October 10, 2026."], ["Can I get banned for exploiting?", "Roblox rules forbid exploits and cheating, and the developer group runs a separate paid ban appeal experience. Read the [cheats and bans page](/blockspin/cheats-bans/)."]]
 related: []
-sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/"]
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/", "https://apis.roblox.com/developer-products/v2/universes/6765805766/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/6765805766/virtual-events", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"]
 images: ["th3"]
 date: "2026-09-29"
 updated: "2026-10-10"
-reviewed: "2026-09-29"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -41,25 +41,25 @@ Roblox lists it under Action, sub-genre Open World Action. The description promi
 
 | Fact | Value | Checked |
 | --- | --- | --- |
-| Creator | Cinnamon Go! (Roblox group, owned by Cinnamon Software) | 2026-09-29 |
-| Created on Roblox | November 6, 2024 | 2026-09-29 |
-| Last game update | September 19, 2026 | 2026-09-29 |
-| Genre | Action · Open World Action | 2026-09-29 |
-| Max players per server | 28 | 2026-09-29 |
-| Content maturity | Moderate (blood, violence) | 2026-09-29 |
-| Visits | 1,259,345,162 | 2026-09-29 |
+| Creator | Cinnamon Go! (Roblox group, owned by Cinnamon Software) | 2026-10-10 |
+| Record created on Roblox | November 6, 2024 | 2026-10-10 |
+| Record's "updated" timestamp | October 3, 2026 (UTC) | 2026-10-10 |
+| Genre | Action · Open World Action | 2026-10-10 |
+| Max players per server | 28 | 2026-10-10 |
+| Content maturity | Moderate (blood, violence) | 2026-10-10 |
+| Visits | 1,283,305,742 | 2026-10-10 |
 
 The full breakdown, including favourites, vote counts and the studio's own reach figures, is on the [game info page](/blockspin/game-info/).
 
 ## What do official BlockSpin sources confirm?
 
-A short list. The official sources we reached on September 29, 2026 contain a short game description, four promotional thumbnails and one code. On October 10, 2026 (UTC) we also read Roblox's public records for the game: 68 developer product records and 14 event listings. From those we can confirm that jobs, reward cases, character levels, player fights, a house with a safe, a Quick-11 convenience store, a fast-food restaurant and fishing all exist in the game.
+A short list. The official sources we read on October 10, 2026 (UTC) are a short game description, four promotional thumbnails, one code, 68 developer product records and 14 event listings. From those we can confirm that jobs, reward cases, character levels, player fights, a house with a safe, a Quick-11 convenience store, a fast-food restaurant and fishing all exist in the game.
 
 A list of jobs and what each pays, map locations, weapon stats, vehicle case odds and trading values are not in the official records we read on October 10, 2026. What those records do hold is the Robux shop: product names and Robux prices, covered in the [Robux shop guide](/blockspin/robux-shop/) and the [weapon packs guide](/blockspin/weapon-packs/). Pages on jobs and map locations stay unpublished here until each fact is checked in-game.
 
 ## How we handle BlockSpin codes
 
-Other code sites list dozens of BlockSpin codes, and two of the biggest disagree on whether the same update codes still work. We only publish codes we saw in an official source. Right now that is W7C28D, printed in the game description itself. If the developers add or remove a code there, the [codes page](/blockspin/codes/) changes the same day we notice, and old codes stay listed as expired.
+Other sites list more BlockSpin codes; we could not trace those to an official source we can read. We only publish codes we saw in an official source. On October 10, 2026 that was W7C28D, printed in the game description itself. If the developers add or remove a code there, the [codes page](/blockspin/codes/) changes the same day we notice, and old codes stay listed as expired.
 
 ## How this site uses its sources
 

@@ -6,8 +6,8 @@ seoTitle: "Untitled Wheelie Game Cops and Fines: Never Pay Fines"
 description: "Untitled Wheelie Game cops explained: getting caught means a fine, NEVER PAY FINES costs 149 Robux, AVOID FINES costs 13, and what is still unknown."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-30"
-scope: "Fine-related pass and product from the Roblox game pass and developer product APIs on 2026-09-30; fine amounts are not in the Roblox records we read on 2026-10-10, and the chase rules the developer announced are on the cop chase rules page"
+checkedAt: "2026-10-10"
+scope: "Fine-related pass and product from the Roblox game pass and developer product APIs on 2026-10-10 (UTC); fine amounts are not in the Roblox records we read on 2026-10-10, and the chase rules the developer announced are on the cop chase rules page"
 type: "article"
 entities: ["pass-never-pay-fines", "product-avoid-fines"]
 tldr: ["Getting caught by the police costs you a fine, in the developer's own words.", "NEVER PAY FINES (149 Robux) is a game pass (a one-time purchase); AVOID FINES (13 Robux) is a developer product, and what it covers is not described.", "Fine amounts are not confirmed; the developer's AI COPS announcement, read on 10 October 2026, says you are fined if caught, paid if you escape, and that cops give up after losing sight of you \"for over 60 seconds\".", "The cheapest defence is free: earn your money before you take risks near police."]
@@ -16,8 +16,8 @@ sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10268960646/game-
 images: ["art01"]
 date: "2026-09-30"
 updated: "2026-10-10"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -35,17 +35,17 @@ The clearest official statement is the description of the NEVER PAY FINES pass: 
 
 | Question | Official answer, with the date we read it |
 | --- | --- |
-| How much is a fine? | Not published (read 30 September 2026); no amount in the Roblox records we read on 10 October 2026 |
-| Does it scale with your bike or your money? | Not published (read 30 September 2026) |
-| What counts as being caught? | Not published (read 30 September 2026) |
-| Can you go to jail or lose your bike? | Not mentioned in the official records we read (30 September 2026) |
+| How much is a fine? | No amount in the Roblox records we read on 10 October 2026 |
+| Does it scale with your bike or your money? | Not in the Roblox records we read on 10 October 2026 |
+| What counts as being caught? | Not in the Roblox records we read on 10 October 2026 |
+| Can you go to jail or lose your bike? | Not mentioned in the Roblox records we read on 10 October 2026 |
 | Are the cops computer-controlled? | The developer's event listing, read on 10 October 2026, is titled "AI COPS 👮" and opens with "AI Cops are being added!" |
 
 We will not fill these gaps with guesses. If you see a number on another site, check whether it links to a developer post.
 
 ## NEVER PAY FINES or AVOID FINES: which is better?
 
-Both come from the developer's own store data, checked on 30 September 2026.
+Both come from the developer's own store data, checked on 10 October 2026.
 
 | Purchase | Type | Robux | Official description | Added |
 | --- | --- | --- | --- | --- |
@@ -66,11 +66,11 @@ These are our tips, not published rules:
 
 ## Is this the "AI Cops" wheelie game?
 
-Be careful: two different Roblox games advertise AI cops. Untitled Wheelie Game (🚔) is made by Untitled Wheelie Group. Another experience, "[AI COPS + MORE👮] Wheelie District 🏍️", is made by a different group, Wheelie District Studios, and was created in February 2026. Guides and codes for one do not apply to the other. The [community page](/untitled-wheelie-game/community/) shows how to find the right group.
+Be careful: two different Roblox games advertise AI cops. Untitled Wheelie Game (🚔) is made by Untitled Wheelie Group. Another experience is made by a different group, Wheelie District Studios; its record was created in February 2026, and its listing name was "🏍️ Wheelie District" on 10 October 2026 ("[AI COPS + MORE👮] Wheelie District 🏍️" on 30 September 2026). Guides and codes for one do not apply to the other. The [community page](/untitled-wheelie-game/community/) shows how to find the right group.
 
-## When were the fine options added?
+## When were the two fine records created?
 
-Both are recent. AVOID FINES appeared on 21 September 2026 and NEVER PAY FINES five days later, on 26 September — the newest pass in the game. See the [update history](/untitled-wheelie-game/updates/) for everything else added since June, and the [game pass list](/untitled-wheelie-game/gamepasses/) for the other 11 passes.
+Both are recent. The AVOID FINES record was created on 21 September 2026 and the NEVER PAY FINES record five days later, on 26 September — the newest pass record on 10 October 2026. See the [update history](/untitled-wheelie-game/updates/) for the other store records created since June, and the [game pass list](/untitled-wheelie-game/gamepasses/) for the other 11 passes.
 
 ## Read next
 

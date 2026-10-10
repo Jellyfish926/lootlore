@@ -6,7 +6,7 @@ seoTitle: "Untitled Wheelie Game Beginner Guides | Roblox Guide"
 description: "Untitled Wheelie Game beginner guides: what you can do on the map, how cops and fines work, where the official group is, and what each update since June added."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-30"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
 tldr: ["Guides for your first sessions: how to play, cops and fines, the announced cop chase rules, the official group, the update history and the developer's announcements.", "Start with how to play; it is built line by line from the developer's own description.", "The patch notes and cop chase rules pages are built from Roblox event listings read on 10 October 2026."]
@@ -15,8 +15,8 @@ sourceUrls: []
 images: ["art02"]
 date: "2026-09-30"
 updated: "2026-10-10"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -42,7 +42,7 @@ Untitled Wheelie Group, which owns the game, what its roles tell you, what we co
 
 ### [Update History from Official Dates](/untitled-wheelie-game/updates/)
 
-Every pass and product the developer has added since 4 June 2026, in date order, so you can see what each update brought.
+Every pass and product record created since 4 June 2026, in date order.
 
 ## What should a new player do first?
 

@@ -6,8 +6,8 @@ seoTitle: "Untitled Wheelie Game Gamepasses: All 12 Passes, Prices"
 description: "All 12 Untitled Wheelie Game passes with official Robux prices and descriptions: earning multipliers, NEVER PAY FINES, Free Subway Travel and five off sale."
 category: "Money & Upgrades"
 language: "en"
-checkedAt: "2026-09-30"
-scope: "Pass names, prices, descriptions and dates from the Roblox game pass API on 2026-09-30; effects beyond the official descriptions are not published"
+checkedAt: "2026-10-10"
+scope: "Pass names, prices, descriptions and dates from the Roblox game pass API on 2026-10-10 (UTC); effects beyond the official descriptions are not published"
 type: "article"
 entities: ["pass-x3-job-earning", "pass-never-pay-fines", "pass-free-subway-travel"]
 tldr: ["Untitled Wheelie Game has 12 game passes: 7 on sale, priced from 99 to 499 Robux, and 5 off sale.", "Four are earning multipliers — X2 and X3 for jobs, X2 and X3 for wheelies.", "Buying all seven passes on sale costs 1,643 Robux (our sum).", "Only four passes have an official description; the rest are known by name alone."]
@@ -15,9 +15,9 @@ related: ["money", "cops-fines", "bikes"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"]
 images: ["art02"]
 date: "2026-09-30"
-updated: "2026-09-30"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -25,11 +25,11 @@ author: "Jellyfi"
 
 Untitled Wheelie Game has 12 game passes. Seven are on sale, from 99 to 499 Robux: four earning multipliers, NEVER PAY FINES, Free Subway Travel and More Helmets. Five older passes — three bikes, Extra Bike Speed and Bike Customization — are no longer sold. The most useful first buy depends on whether fines or slow earnings bother you more.
 
-All names, prices and descriptions come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100), checked on 30 September 2026. None were discounted.
+All names, prices and descriptions come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100), checked on 10 October 2026. None carried a discount.
 
 ## Which passes are on sale?
 
-| Pass | Robux | Official description | Added |
+| Pass | Robux | Official description | Record created |
 | --- | --- | --- | --- |
 | More Helmets 🪖 | 99 | None | 20 June 2026 |
 | Free Subway Travel 🚇 | 99 | None | 20 June 2026 |
@@ -73,7 +73,7 @@ The developer has not said. X2 and X3 are sold as separate passes, and nothing i
 
 ## How has the pass list changed over time?
 
-Nine passes arrived in June, one on 1 July, one in mid-August, and NEVER PAY FINES on 26 September — the newest. The [update history](/untitled-wheelie-game/updates/) lines these up with the developer products added in the same period.
+Nine pass records were created in June, one on 1 July, one in mid-August, and NEVER PAY FINES on 26 September — the newest. The [update history](/untitled-wheelie-game/updates/) lines these up with the developer product records created in the same period.
 
 ## Read next
 

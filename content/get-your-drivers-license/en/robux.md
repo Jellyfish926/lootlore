@@ -6,16 +6,16 @@ seoTitle: "Get Your Driver's License! Robux Guides: Cars and Passes"
 description: "Get Your Driver's License! spending guides: what is known about the 18 cars, all 5 game passes and all 13 Robux products, with official prices and wording."
 category: "Cars & Robux Shop"
 language: "en"
-checkedAt: "2026-10-09"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
-tldr: ["Three guides: the 18 cars and the two car products, all 5 game passes, and all 13 developer products.", "The five game passes cost 9 to 1,200 Robux, and none of their descriptions mentions the tests. The skips and car items are developer products from 9 to 160 Robux.", "Every price and description was read from Roblox's store records for the game on 9 October 2026."]
+tldr: ["Three guides: the 18 cars and the two car products, all 5 game passes, and all 13 developer products.", "The five game passes cost 9 to 1,200 Robux, and none of their descriptions mentions the tests. The skips and car items are developer products from 9 to 160 Robux.", "Every price and description was read from Roblox's store records for the game on 10 October 2026."]
 related: []
 sourceUrls: []
 images: ["prod-vip-ticket"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -37,7 +37,7 @@ Every pass with its official description, why Ban Hammer is 85% of the total, an
 
 ### [Robux Shop: All 13 Products](/get-your-drivers-license/shop/)
 
-All 13 products in four groups with prices, the two listings added after launch, and what buying one of everything would cost.
+All 13 products in four groups with prices, the two listings created after the first batch, and what buying one of everything would cost.
 
 ## How do the purchase types compare?
 
@@ -61,4 +61,4 @@ Car names, tier odds and anything else the store listings do not say. We have no
 
 ## Scope
 
-Prices were read on 9 October 2026 and can change without notice. Check the Robux amount on the Roblox purchase prompt before you confirm. Get Your Driver's License! is free to play, and suggestions about what to buy first are our opinion.
+Prices were read on 10 October 2026 and can change without notice. Check the Robux amount on the Roblox purchase prompt before you confirm. Get Your Driver's License! is free to play, and suggestions about what to buy first are our opinion.

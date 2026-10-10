@@ -6,8 +6,8 @@ seoTitle: "Get Your Driver's License! Skip Line: All Prices Compared"
 description: "How the line works in Get Your Driver's License! and what every skip costs: Skip Line, Skip Time, Skip Test, Skip To End and Retake Test, from 9 to 48 Robux."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-10-09"
-scope: "Line and waiting room details from the official game description and developer product descriptions on 2026-10-09; the length of the line, the total waiting room time and what going poof does to a player are not published; prices can change without notice"
+checkedAt: "2026-10-10"
+scope: "Line and waiting room details from the official game description and developer product descriptions on 2026-10-10 (UTC); the length of the line, the total waiting room time and what going poof does to a player are not published; prices can change without notice"
 type: "article"
 entities: ["stage-waiting-line", "product-skip-line-sale", "product-skip-to-end"]
 tldr: ["Skip Line [SALE] moves you up 5 places for 9 Robux; Skip Time [SALE] cuts 2:30 from the waiting room for 9 Robux.", "Skip To End costs 48 Robux and goes straight to the driving test. Skip Test (29) only passes the written test.", "Retake Test (19 Robux) is the cheap option after a failed drive: \"Take it again right away, no line.\"", "The two [SALE] names carry no discount in Roblox's price record. Nine Robux is simply their price."]
@@ -15,8 +15,8 @@ related: ["how-to-play", "shop", "driving-test"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10768565603", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png"]
 images: ["prod-kill", "prod-skip", "prod-kill-all"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 You can skip the line in Get Your Driver's License! with five Robux products. Skip Line [SALE] moves you up 5 places for 9 Robux, Skip Time [SALE] cuts 2:30 from the waiting room for 9, Skip Test passes the written test for 29, Skip To End goes straight to the driving test for 48, and Retake Test costs 19.
 
-Names, prices and descriptions below come from the [Roblox developer product API](https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100), read on 9 October 2026. All five were on sale. The game is free to play and no description says a purchase is required, but we have not played a full run without paying.
+Names, prices and descriptions below come from the [Roblox developer product API](https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100), read on 10 October 2026. All five were on sale. The game is free to play and no description says a purchase is required, but we have not played a full run without paying.
 
 ## How does the line work?
 
@@ -76,7 +76,7 @@ Neither description says what going poof does to a player, or whether Kill All i
 
 ## Can you skip the line after failing the test?
 
-Yes. Retake Test was added to the store on 8 October 2026, nine days after the game was created. Its description is the clearest statement we found of what a fail costs you: "Failed your driving test? Take it again right away, no line." The words "no line" imply that without it, a failed driver queues again. The [driving test guide](/get-your-drivers-license/driving-test/) covers what is known about passing.
+Yes. The Retake Test record was created on 8 October 2026, nine days after the game record. Its description is the clearest statement we found of what a fail costs you: "Failed your driving test? Take it again right away, no line." The words "no line" imply that without it, a failed driver queues again. The [driving test guide](/get-your-drivers-license/driving-test/) covers what is known about passing.
 
 ## Can you buy the same skip twice?
 

@@ -6,18 +6,18 @@ seoTitle: "How to Play Untitled Wheelie Game and Hold a Wheelie"
 description: "How to play Untitled Wheelie Game on Roblox: the nine things the developer says you can do, how balance, throttle and brake shape wheelies, and server rules."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-30"
-scope: "Gameplay from the official Roblox description on 2026-09-30; exact key bindings and map names are not in that description"
+checkedAt: "2026-10-10"
+scope: "Gameplay from the official Roblox description on 2026-10-10 (UTC); exact key bindings and map names are not in that description"
 type: "article"
 entity: "untitled-wheelie-game"
-tldr: ["You ride a bike around the map, hold wheelies, weave through traffic, deliver pizzas, run from cops and upgrade your bike.", "The developer says wheelies use a realistic balance point with responsive throttle and brake, so holding one is about control, not a button.", "Servers hold up to 10 players; private servers were not enabled on 30 September 2026.", "Exact controls are not in the Roblox records we read on 10 October 2026 (game description, event announcements, passes, products, group description), so we do not list key bindings."]
+tldr: ["You ride a bike around the map, hold wheelies, weave through traffic, deliver pizzas, run from cops and upgrade your bike.", "The developer says wheelies use a realistic balance point with responsive throttle and brake, so holding one is about control, not a button.", "Servers hold up to 10 players; private servers were not enabled on 10 October 2026.", "Exact controls are not in the Roblox records we read on 10 October 2026 (game description, event announcements, passes, products, group description), so we do not list key bindings."]
 related: ["cops-fines", "money", "bikes"]
-sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"]
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://www.roblox.com/games/93844268955707/Untitled-Wheelie-Game"]
 images: ["art02", "icon"]
 date: "2026-09-30"
 updated: "2026-10-10"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -25,7 +25,7 @@ author: "Jellyfi"
 
 In Untitled Wheelie Game you ride a bike around a shared map, lift the front wheel and try to hold the wheelie while traffic comes at you. You earn money by delivering pizzas, spend it on bikes, parts, upgrades and paint, and try not to get caught by the police. Up to 10 players share a server.
 
-Everything below comes from the developer's own description on the [Roblox game listing](https://www.roblox.com/games/93844268955707/Untitled-Wheelie-Game), checked on 30 September 2026. Where we add advice, we say so.
+Everything below comes from the developer's own description on the [Roblox game listing](https://www.roblox.com/games/93844268955707/Untitled-Wheelie-Game), checked on 10 October 2026. Where we add advice, we say so.
 
 ## What can you do in the game?
 
@@ -33,15 +33,15 @@ The official description lists nine activities under "What you can do". Here the
 
 | Official line | What it means for you | Read more |
 | --- | --- | --- |
-| RUN FROM COPS | Police chase riders; getting caught means a fine | [Cops and fines](/untitled-wheelie-game/cops-fines/) |
-| Wheelie around the map | Free riding is the core of the game | This page |
-| Swerve through oncoming traffic | Cars come towards you while you ride | This page |
-| Deliver pizzas to earn money | The job the description names | [Money guide](/untitled-wheelie-game/money/) |
-| Buy bikes, upgrades, and parts | Bikes, upgrades and parts are bought with money | [Bikes and parts](/untitled-wheelie-game/bikes/) |
-| Paint and customize your bike | Colour changes are part of the game | [Bikes and parts](/untitled-wheelie-game/bikes/) |
-| Race your friends | Racing is something players do together | — |
-| Host rideouts with other players | Group rides with other players | [Community](/untitled-wheelie-game/community/) |
-| Practice tricks and improve your wheelies | Skill improves with practice | This page |
+| 🚔 RUN FROM COPS | Police chase riders; getting caught means a fine | [Cops and fines](/untitled-wheelie-game/cops-fines/) |
+| 🏍️ Wheelie around the map | Free riding is the core of the game | This page |
+| 🚦 Swerve through oncoming traffic | Cars come towards you while you ride | This page |
+| 💰 Deliver pizzas to earn money | The job the description names | [Money guide](/untitled-wheelie-game/money/) |
+| 🛠️ Buy bikes, upgrades, and parts | Bikes, upgrades and parts are bought with money | [Bikes and parts](/untitled-wheelie-game/bikes/) |
+| 🎨 Paint and customize your bike | Colour changes are part of the game | [Bikes and parts](/untitled-wheelie-game/bikes/) |
+| 🏁 Race your friends | Racing is something players do together | — |
+| 🤝 Host rideouts with other players | Group rides with other players | [Community](/untitled-wheelie-game/community/) |
+| 🎯 Practice tricks and improve your wheelies | Skill improves with practice | This page |
 
 The description does not say whether races or rideouts have a menu, a reward or a set route. Treat them as things players organise on the shared map until the developer says more.
 
@@ -63,7 +63,7 @@ The game advertises "interactive traffic" and "oncoming traffic", and both promo
 
 ## How do servers work?
 
-| Setting | Value on 30 September 2026 |
+| Setting | Value on 10 October 2026 |
 | --- | --- |
 | Players per server | 10 |
 | Private servers | Not enabled |
@@ -77,7 +77,7 @@ With only 10 players per server, rideouts and races are small. If you want to ri
 
 ## What should you buy first?
 
-The description says you earn money and buy bikes, upgrades and parts with it; the Robux store sells shortcuts on top. The developer sells two earning boosts — one for jobs, one for wheelies — plus a pass that ends fines. Our suggestion is to learn the wheelie and do a few pizza runs before spending anything. When you are ready, the [game pass list](/untitled-wheelie-game/gamepasses/) shows all 12 passes with prices.
+The description says you earn money and buy bikes, upgrades and parts with it; the Robux store sells shortcuts on top. The store has passes named X2 / X3 Job Earning 💰 and X2 / X3 Wheelie Earning 💰, whose descriptions are empty, plus NEVER PAY FINES. Our suggestion is to learn the wheelie and do a few pizza runs before spending anything. When you are ready, the [game pass list](/untitled-wheelie-game/gamepasses/) shows all 12 passes with prices.
 
 ## Read next
 

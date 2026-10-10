@@ -6,17 +6,17 @@ seoTitle: "Get Your Driver's License! Roblox Guide: Line, Test, Cars"
 description: "Get Your Driver's License! guides from official Roblox data: the line and every skip, the driving test, 18 cars, 5 game passes and 13 Robux products priced."
 category: "Home"
 language: "en"
-checkedAt: "2026-10-09"
+checkedAt: "2026-10-10"
 scope: "Site entry point"
 type: "home"
-tldr: ["Get Your Driver's License! is a free Roblox game by the group Time Will Pass, created on 29 September 2026. Servers hold 25 players.", "The official description lists its features in this order: take a number and wait, pass the written test, drive the test course, win 1 of 18 cars, unlock every ending. It does not say whether every run, or only a passed one, wins a car.", "The store sells 5 game passes (9 to 1,200 Robux) and 13 developer products (9 to 160 Robux). Every one has an official one-line description.", "No code appears in any official source we could read on 9 October 2026, so there is no codes page."]
-faq: [["Who makes Get Your Driver's License!?", "The Roblox group Time Will Pass, created on 27 September 2026. It had about 800,000 members on 9 October 2026. Details are on the [developer page](/get-your-drivers-license/community/)."], ["Is there a code?", "Not in any official source we could read on 9 October 2026. The game description has no code, and the group has no description or shout. We do not copy codes from other sites."], ["How many cars are there?", "18, according to the official description: \"Win 1 of 18 cars, from rusty hatchbacks to secret supercars\". No official source we could read names them. See the [car guide](/get-your-drivers-license/cars/)."], ["How many players fit in one server?", "Up to 25, according to the Roblox game record we read on 9 October 2026."], ["What is the cheapest thing in the store?", "Nine Robux. One game pass and five products cost that much, including Skip Line [SALE] and Skip Time [SALE]. The [Robux shop guide](/get-your-drivers-license/shop/) lists all 13 products."], ["Can you skip the line?", "Yes, with Robux. Skip Line [SALE] moves you up 5 places for 9 Robux and Skip To End goes straight to the driving test for 48. The [line guide](/get-your-drivers-license/waiting-line/) compares all of them."]]
+tldr: ["Get Your Driver's License! is a free Roblox game by the group Time Will Pass, created on 29 September 2026. Servers hold 25 players.", "The official description lists its features in this order: take a number and wait, pass the written test, drive the test course, win 1 of 18 cars, unlock every ending. It does not say whether every run, or only a passed one, wins a car.", "The store sells 5 game passes (9 to 1,200 Robux) and 13 developer products (9 to 160 Robux). Every one has an official one-line description.", "No code appears in any official source we could read on 10 October 2026, so there is no codes page."]
+faq: [["Who makes Get Your Driver's License!?", "The Roblox group Time Will Pass, created on 27 September 2026. It had 1,146,104 members on 10 October 2026. Details are on the [developer page](/get-your-drivers-license/community/)."], ["Is there a code?", "Not in any official source we could read on 10 October 2026. The game description has no code, and the group has no description or shout. We do not copy codes from other sites."], ["How many cars are there?", "18, according to the official description: \"Win 1 of 18 cars, from rusty hatchbacks to secret supercars\". No official source we could read names them. See the [car guide](/get-your-drivers-license/cars/)."], ["How many players fit in one server?", "Up to 25, according to the Roblox game record we read on 10 October 2026."], ["What is the cheapest thing in the store?", "Nine Robux. One game pass and five products cost that much, including Skip Line [SALE] and Skip Time [SALE]. The [Robux shop guide](/get-your-drivers-license/shop/) lists all 13 products."], ["Can you skip the line?", "Yes, with Robux. Skip Line [SALE] moves you up 5 places for 9 Robux and Skip To End goes straight to the driving test for 48. The [line guide](/get-your-drivers-license/waiting-line/) compares all of them."]]
 related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10768565603", "https://games.roblox.com/v1/games/votes?universeIds=10768565603", "https://groups.roblox.com/v1/groups/356677783", "https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://gameinternationalization.roblox.com/v1/supported-languages/games/10768565603", "https://www.roblox.com/games/104416416393862/Get-Your-Drivers-License"]
 images: ["th1", "icon", "prod-skip-to-end"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -36,7 +36,7 @@ The official description sums it up in one line: "Wait in line and get your Driv
 
 ## What are the key facts?
 
-Every value below is Roblox's own record for the game, read between 11:11 and 11:13 UTC on 9 October 2026. The counters move all day. The maturity label comes from Roblox's experience-guidelines data, which is not available as a plain link.
+Every value below is Roblox's own record for the game, read at 06:13 UTC on 10 October 2026. The counters are a snapshot of that read. The maturity label comes from Roblox's experience-guidelines data, which is not available as a plain link.
 
 | Fact | Value |
 | --- | --- |
@@ -47,10 +47,10 @@ Every value below is Roblox's own record for the game, read between 11:11 and 11
 | Content maturity | Minimal ("Suitable for everyone") |
 | Price | Free to play; Robux purchases on sale |
 | Supported languages | 18 |
-| Visits | 4,755,810 |
-| Favourites | 18,041 |
-| Likes / dislikes | 4,663 / 8,278 |
-| Players online | 18,571 |
+| Visits | 7,069,872 |
+| Favourites | 26,246 |
+| Likes / dislikes | 5,280 / 12,716 |
+| Players online | 14,168 |
 | Game passes | 5 |
 | Developer products | 13 |
 | Cars named in the description | 18 |
@@ -75,11 +75,11 @@ Two kinds of thing. The 5 game passes are one-time purchases from 9 to 1,200 Rob
 
 ![Store icon: a black and white chequered flag with a green fast-forward badge in the corner](prod-skip-to-end "Official store icon of the Skip To End product, 48 Robux")
 
-## What was added after launch?
+## Which store records were created after the first batch?
 
 The developer has not posted update notes anywhere we can read, and no official events are listed. The store itself leaves a trail, because Roblox records when each pass and product was created.
 
-| Date (2026, UTC) | What appeared |
+| Date (2026, UTC) | Record created |
 | --- | --- |
 | 29 September, 08:24 | Experience created |
 | 30 September, 06:18 to 06:19 | 11 developer products and all 5 game passes |
@@ -91,7 +91,7 @@ A creation or edit time shows when a listing was registered or changed. It does 
 
 ## Why is there no codes page?
 
-Because we could not find a single code in an official source. On 9 October 2026 we read three official places we could access: the game description, the group description and the group shout. Social links on the game and the group could not be read without an account. The description has eight lines and none of them is a code. The Time Will Pass group has an empty description and no shout. If we see a code in an official place, a codes page for Get Your Driver's License! will follow.
+Because we could not find a single code in an official source. On 10 October 2026 we read three official places we could access: the game description, the group description and the group shout. Social links on the game and the group could not be read without an account. The description has eight lines and none of them is a code. The Time Will Pass group has an empty description and no shout. If we see a code in an official place, a codes page for Get Your Driver's License! will follow.
 
 ## Who runs the game?
 

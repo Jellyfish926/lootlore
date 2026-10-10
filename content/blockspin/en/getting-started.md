@@ -6,16 +6,16 @@ seoTitle: "BlockSpin Getting Started Guides | Roblox BlockSpin Guide"
 description: "BlockSpin getting-started guides: the official new-player code, the death-drop rule and house safe, developer and platform facts, and what counts as cheating."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
 tldr: ["Four guides for your first sessions: codes, beginner basics, game info and the rules on exploits.", "Brand new? Redeem W7C28D, then read the beginner guide before you carry anything valuable.", "The four guides each list their sources and the date those were last checked."]
 related: []
-sourceUrls: []
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766"]
 images: ["th4"]
 date: "2026-09-29"
 updated: "2026-10-10"
-reviewed: "2026-09-29"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -35,7 +35,7 @@ The core loop in the developers' own words — jobs, random reward cases, charac
 
 ### [BlockSpin Game Info: Developer, Rating and Platforms](/blockspin/game-info/)
 
-Who is behind the game, when it launched, how many players fit on a server, its Roblox maturity rating, the latest visit and vote counts, and what is and is not confirmed about playing on PlayStation, Xbox and mobile.
+Who is behind the game, when its Roblox record was created, how many players fit on a server, its Roblox maturity rating, visit and vote counts read on October 10, 2026, and what is and is not confirmed about playing on PlayStation, Xbox and mobile.
 
 ### [BlockSpin Cheats and Hacks: Exploits, Bans and Appeals](/blockspin/cheats-bans/)
 

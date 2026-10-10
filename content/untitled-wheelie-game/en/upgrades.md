@@ -6,17 +6,17 @@ seoTitle: "Untitled Wheelie Game Money, Bikes and Pass Guides"
 description: "Untitled Wheelie Game money and upgrade guides: how to earn cash faster, which bikes and parts the developer has named, and all 12 passes with official prices."
 category: "Money & Upgrades"
 language: "en"
-checkedAt: "2026-09-30"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
-tldr: ["Three guides for spending wisely: money, bikes and parts, and game passes.", "Every price is the official Robux figure from Roblox on 30 September 2026.", "Where the developer gives no description, we say so instead of guessing what an item does."]
+tldr: ["Three guides for spending wisely: money, bikes and parts, and game passes.", "Every price is the official Robux figure from Roblox on 10 October 2026.", "Where the developer gives no description, we say so instead of guessing what an item does."]
 related: []
 sourceUrls: []
 images: ["art02"]
 date: "2026-09-30"
 updated: "2026-10-10"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 Short on cash, or wondering if a pass is worth the Robux? Start with the money guide: it covers pizza delivery, the two earning multipliers and the six cash packs. Then read the bikes and parts guide before you buy anything for your ride, and check the full game pass list when you are ready to spend Robux.
 
-These three guides use the developer's own store data from Roblox — names, prices and descriptions exactly as published on 30 September 2026. Many items in Untitled Wheelie Game have no official description at all, and we point that out rather than filling the gap.
+These three guides use the developer's own store data from Roblox — names, prices and descriptions exactly as published on 10 October 2026. Many items in Untitled Wheelie Game have no official description at all, and we point that out rather than filling the gap.
 
 ## Pick a guide by question
 
@@ -59,4 +59,4 @@ There is no full bike list with prices, because we found none in the Roblox reco
 
 ## Scope
 
-Prices change when the developer edits the store. Every figure here is a snapshot from 30 September 2026; check the in-game store before you buy.
+Prices change when the developer edits the store. Every figure here is a snapshot from 10 October 2026; check the in-game store before you buy.

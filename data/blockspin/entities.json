@@ -1,12 +1,12 @@
 {
- "fetched": "2026-09-29",
+ "fetched": "2026-10-10",
  "game_version": null,
  "sources_note": "S-level: Roblox official APIs (games/groups/thumbnails/experience-guidelines) and the studio website cinnamon.co.uk; A-level: Roblox DevForum posts by Cinnamon Go! group members whose role was checked via the groups API. Community wikis and code sites were NOT used for any field below; details only they report are listed in unverified_fields. Roblox experiences have no version number, so game_version is null — use 'accessed' and the Roblox 'updated' timestamp (2026-09-19T00:32:58Z at fetch time).",
  "roblox": {
   "universeId": 6765805766,
   "rootPlaceId": 104715542330896,
   "creatorGroupId": 33720745,
-  "updated": "2026-09-19T00:32:58.719Z"
+  "updated": "2026-10-03T18:00:48.126Z"
  },
  "entities": {
   "blockspin-game": {
@@ -45,7 +45,7 @@
     "https://devforum.roblox.com/t/3936850",
     "https://www.cinnamon.co.uk/"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "platforms_en: mobile support (Roblox playable-devices data needs a signed-in request)"
    ]
@@ -57,7 +57,7 @@
    "summary_en": "The only code printed in the official BlockSpin game description.",
    "outcome_en": "$500 cash",
    "requirement_en": "New players",
-   "condition_en": "Active (in official description on 2026-09-29)",
+   "condition_en": "Active (in official description on 2026-10-10)",
    "field_sources": {
     "outcome_en": [
      "https://games.roblox.com/v1/games?universeIds=6765805766"
@@ -72,7 +72,7 @@
    "source_urls": [
     "https://games.roblox.com/v1/games?universeIds=6765805766"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "redeem UI location (community sites only)",
     "expiry date (none published)"
@@ -100,7 +100,7 @@
    "source_urls": [
     "https://games.roblox.com/v1/games?universeIds=6765805766"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "whether carried cash counts as inventory",
     "safe capacity",
@@ -125,7 +125,7 @@
    "source_urls": [
     "https://games.roblox.com/v2/groups/33720745/games?accessFilter=Public&limit=50"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "price",
     "whether it covers every type of BlockSpin ban"
@@ -157,20 +157,20 @@
    "type": "mechanic",
    "name_en": "Fishing",
    "page_slug": "jobs",
-   "summary_en": "Activity shown in an official BlockSpin promotional thumbnail captioned \"Fishing\".",
+   "summary_en": "Activity shown in an official BlockSpin promotional thumbnail captioned \"Fishing\"; an official event listing is titled \"NEW JOB - FISHING!\".",
    "field_sources": {
     "summary_en": [
-     "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=6765805766&size=768x432&format=Png&countPerUniverse=10"
+     "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=6765805766&size=768x432&format=Png&countPerUniverse=10",
+     "https://apis.roblox.com/virtual-events/v1/universes/6765805766/virtual-events"
     ]
    },
    "source_urls": [
     "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=6765805766&size=768x432&format=Png&countPerUniverse=10"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "rewards",
-    "location",
-    "whether it counts as a job"
+    "location"
    ]
   }
  },

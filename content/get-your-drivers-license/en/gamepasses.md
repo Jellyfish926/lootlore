@@ -6,8 +6,8 @@ seoTitle: "Get Your Driver's License! Game Passes: All 5 With Prices"
 description: "All 5 Get Your Driver's License! game passes with official descriptions and Robux prices, from the 9-Robux emoji pack to the 1,200-Robux Ban Hammer, compared."
 category: "Cars & Robux Shop"
 language: "en"
-checkedAt: "2026-10-09"
-scope: "Pass names, prices and descriptions from the Roblox game pass API on 2026-10-09; effects beyond the one-line official descriptions are not published and have not been tested in the game; prices can change without notice"
+checkedAt: "2026-10-10"
+scope: "Pass names, prices and descriptions from the Roblox game pass API on 2026-10-10 (UTC); effects beyond the one-line official descriptions are not published and have not been tested in the game; prices can change without notice"
 type: "article"
 entities: ["pass-ban-hammer", "pass-gravity-gun", "pass-pro-emoji-pack"]
 tldr: ["Get Your Driver's License! sells 5 game passes: PRO EMOJI PACK 😈 (9 Robux), Airhorn [ANNOYING] ☠️ (16), Time Out (24), Gravity Gun 🔥 (160) and Ban Hammer (1,200).", "All five together cost 1,409 Robux. Ban Hammer alone is 85% of that.", "No pass description mentions the line, the written test, the driving test or cars. Three name other players, one is a loud airhorn and one is an emoji pack.", "Passes are one-time purchases. The skips and car items are separate developer products."]
@@ -15,8 +15,8 @@ related: ["shop", "cars", "waiting-line"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://create.roblox.com/docs/production/monetization/passes", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=73260523707418,71583720567452,133611055833620,92809346914354,104491280702785&size=420x420&format=Png"]
 images: ["pass-time-out", "pass-ban-hammer", "pass-gravity-gun"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 Get Your Driver's License! sells five game passes. Four are cheap or mid-priced: PRO EMOJI PACK 😈 at 9 Robux, Airhorn [ANNOYING] ☠️ at 16, Time Out at 24 and Gravity Gun 🔥 at 160. The fifth, Ban Hammer, costs 1,200 Robux. None of the five descriptions mentions passing the test or winning cars.
 
-Names, prices and descriptions below come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100), read on 9 October 2026. All five were on sale and none showed a discount. Names are copied exactly as the store prints them, emoji and brackets included.
+Names, prices and descriptions below come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10768565603/game-passes?passView=Full&pageSize=100), read on 10 October 2026. All five were on sale and none showed a discount. Names are copied exactly as the store prints them, emoji and brackets included.
 
 ## What does each pass do?
 
@@ -86,7 +86,7 @@ These are our suggestions, not the developer's:
 - **You want to move people.** Gravity Gun 🔥 is the only pass whose description says you pick players up.
 - **You are short on Robux and want your license.** Skip all five. No pass description mentions the wait or the tests.
 
-## When were the passes added?
+## When were the pass records created?
 
 All five were created on 30 September 2026, the day after Get Your Driver's License! itself. Roblox's record shows them registered within nine seconds of each other, between 06:18:59 and 06:19:08 UTC, and each still shows the same created and updated time. The first 11 developer products were created in the minute before. So the store went up in one batch, and the pass list has not grown since.
 

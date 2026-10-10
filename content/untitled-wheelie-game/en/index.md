@@ -6,18 +6,18 @@ seoTitle: "Untitled Wheelie Game Roblox Guide: Passes, Money, Cops"
 description: "Untitled Wheelie Game guides built from official Roblox data: how to play, all 12 game passes with prices, cash packs, fines and cops, bikes, parts, updates."
 category: "Home"
 language: "en"
-checkedAt: "2026-09-30"
+checkedAt: "2026-10-10"
 scope: "Site entry point"
 type: "home"
-tldr: ["Untitled Wheelie Game is a free Roblox motorbike game from the group Untitled Wheelie Group: pop wheelies, dodge traffic, deliver pizzas and run from cops.", "It sells 12 game passes (7 on sale, 99 to 499 Robux) and 23 developer products, including six packs named after dollar amounts (their store records have an empty description).", "Getting caught means fines; a 149-Robux pass and a 13-Robux product both deal with them.", "The Roblox records we read on 10 October 2026 held no badges and no codes."]
-faq: [["Who made Untitled Wheelie Game?", "A Roblox group called Untitled Wheelie Group, owned by the account fireblock373. The experience was created on 4 June 2026 — see [group and Discord info](/untitled-wheelie-game/community/)."], ["How do you earn money?", "The official description names pizza delivery. Two sets of earning passes, one for jobs and one for wheelies, point to a second income source — see the [money guide](/untitled-wheelie-game/money/)."], ["What is the most expensive game pass?", "X3 Job Earning, at 499 Robux on 30 September 2026. All 12 passes are on the [game pass list](/untitled-wheelie-game/gamepasses/)."], ["Are there Untitled Wheelie Game codes?", "Code lists circulate on other sites, but we could not see any code in an official source, so we do not list them. The [community page](/untitled-wheelie-game/community/) explains why."], ["How many players can join a server?", "Up to 10, according to the Roblox listing. Private servers were not enabled when we checked — [how to play](/untitled-wheelie-game/how-to-play/)."]]
+tldr: ["Untitled Wheelie Game is a free Roblox motorbike game from the group Untitled Wheelie Group: pop wheelies, dodge traffic, deliver pizzas and run from cops.", "It sells 12 game passes (7 on sale, 99 to 499 Robux) and 23 developer products, including six packs named after dollar amounts (their store records have an empty description).", "Getting caught means fines, in the wording of the 149-Robux NEVER PAY FINES pass; a 13-Robux product is named AVOID FINES and has no description.", "The Roblox records we read on 10 October 2026 held no badges and no codes."]
+faq: [["Who made Untitled Wheelie Game?", "A Roblox group called Untitled Wheelie Group, owned by the account fireblock373. The experience was created on 4 June 2026 — see [group and Discord info](/untitled-wheelie-game/community/)."], ["How do you earn money?", "The official description names pizza delivery. The store also has passes named X2 / X3 Job Earning 💰 and X2 / X3 Wheelie Earning 💰 with empty descriptions, so what they multiply is not confirmed — see the [money guide](/untitled-wheelie-game/money/)."], ["What is the most expensive game pass?", "X3 Job Earning 💰, at 499 Robux on 10 October 2026. All 12 passes are on the [game pass list](/untitled-wheelie-game/gamepasses/)."], ["Are there Untitled Wheelie Game codes?", "We saw no code in the Roblox records we read on 10 October 2026 (game description, group description and shout, seven event listings), so we list none. The [community page](/untitled-wheelie-game/community/) shows where we looked."], ["How many players can join a server?", "Up to 10, according to the Roblox listing. Private servers were not enabled when we read the game record on 10 October 2026 — [how to play](/untitled-wheelie-game/how-to-play/)."]]
 related: []
-sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"]
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100", "https://games.roblox.com/v1/games/votes?universeIds=10268960646", "https://apis.roblox.com/virtual-events/v1/universes/10268960646/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://groups.roblox.com/v1/groups/84540135"]
 images: ["art01", "art02"]
 date: "2026-09-30"
 updated: "2026-10-10"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -25,7 +25,7 @@ author: "Jellyfi"
 
 Untitled Wheelie Game is a free Roblox motorbike game made by the group Untitled Wheelie Group. You ride around the map, hold wheelies with realistic balance physics, swerve through traffic, deliver pizzas for money, run from cops, and spend your earnings on bikes, upgrades, parts and paint. This hub covers passes, money, fines and updates.
 
-Every number on this site comes from Roblox's own data for the game and shows the date we checked it. On 30 September 2026 the experience had passed 27.3 million visits and 708,000 favourites, with 49,128 likes against 3,068 dislikes.
+The counts on this page come from Roblox's own records for the game. When we read them on 10 October 2026 (UTC) the experience had 32,211,960 visits and 915,769 favourites, with 60,531 likes against 3,668 dislikes.
 
 ## New here? Start with these
 
@@ -48,11 +48,11 @@ Every number on this site comes from Roblox's own data for the game and shows th
 | Game passes | 12 (7 on sale) |
 | Developer products | 23 |
 | Badges | None |
-| Last update seen | 30 September 2026 |
+| Last update seen | 8 October 2026 (UTC), read on 10 October 2026 |
 
 ## Where does the money come from?
 
-The official description says it plainly: deliver pizzas to earn money. The pass list adds a second clue, because the developer sells separate earning multipliers for jobs and for wheelies. If you are short of cash for the next bike, the [money guide](/untitled-wheelie-game/money/) compares both passes and all six cash packs, from $750 for 49 Robux to $67,500 for 1,499 Robux.
+The official description says it plainly: deliver pizzas to earn money. The pass list has four passes named X2 / X3 Job Earning 💰 and X2 / X3 Wheelie Earning 💰; their descriptions are empty, so what each multiplies is not confirmed. If you are short of cash for the next bike, the [money guide](/untitled-wheelie-game/money/) compares both passes and all six cash packs, from $750 for 49 Robux to $67,500 for 1,499 Robux.
 
 ## What happens when the cops catch you?
 
@@ -62,19 +62,19 @@ You pay a fine. That comes straight from the developer's own wording on the NEVE
 
 ## What has changed recently?
 
-The developer announces updates through Roblox event listings (we read seven on 10 October 2026; the [patch notes page](/untitled-wheelie-game/patch-notes/) prints them), and every pass and product carries a creation date. The three most recent additions:
+The developer announces updates through Roblox event listings (we read seven on 10 October 2026; the [patch notes page](/untitled-wheelie-game/patch-notes/) prints them), and every pass and product carries a creation date. The three most recent store record dates on 10 October 2026:
 
-| Date (2026) | What appeared |
+| Date (2026) | Record created |
 | --- | --- |
-| 4 September | Backfire part, with Level 2 and Level 3 upgrades |
-| 21 September | AVOID FINES product |
-| 26 September | NEVER PAY FINES pass |
+| 4 September | INSTALL BACKFIRE, LEVEL 2 BACKFIRE and LEVEL 3 BACKFIRE (products) |
+| 21 September | AVOID FINES (product) |
+| 26 September | NEVER PAY FINES (pass) |
 
-The full timeline since launch is on the [update history page](/untitled-wheelie-game/updates/), and the bike-related purchases are explained in the [bikes and parts guide](/untitled-wheelie-game/bikes/).
+The full timeline since the game record was created is on the [update history page](/untitled-wheelie-game/updates/), and the bike-related purchases are explained in the [bikes and parts guide](/untitled-wheelie-game/bikes/).
 
 ## Why is there no codes page?
 
-Because we could not see a single code in an official source. The game description has none, the Roblox group has no pinned announcement, and the game's social links need a Roblox login to read. Several code sites print the same short list and point to the Discord, but none links to the developer's original post. The [community page](/untitled-wheelie-game/community/) explains where official codes would appear.
+Because we saw no code in the Roblox records we read on 10 October 2026. The game description has none, the group description reads "Official Group" and its shout is empty, none of the seven event listings carries one, and the game's social links need a Roblox login to read. Code lists on other sites are not traced to a developer post we could read, so we leave them out. The [community page](/untitled-wheelie-game/community/) explains where official codes would appear.
 
 ## All sections
 

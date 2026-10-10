@@ -6,16 +6,16 @@ seoTitle: "Get Your Driver's License! Beginner Guides: Where to Start"
 description: "Get Your Driver's License! beginner guides: what the official description lists, every skip product, the driving test and endings, and the developer."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-10-09"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
-tldr: ["Four guides for your first runs: how to play, the line and its skips, the driving test and endings, and the developer group.", "New to the game? Read how to play first. It follows the developer's own description line by line.", "Prices and counts on these pages come from Roblox's official records for the game, read on 9 October 2026. Anything we could not source is named as a gap."]
+tldr: ["Four guides for your first runs: how to play, the line and its skips, the driving test and endings, and the developer group.", "New to the game? Read how to play first. It follows the developer's own description line by line.", "Prices and counts on these pages come from Roblox's official records for the game, read on 10 October 2026. Anything we could not source is named as a gap."]
 related: []
 sourceUrls: []
 images: ["prod-skip"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -67,4 +67,4 @@ Anything the developer has not published and we have not yet checked in the game
 
 ## Scope
 
-The game was created on 29 September 2026 and its store has already changed more than once. Each guide shows the date it was checked, and counters such as visits and members are snapshots from 9 October 2026. This is an unofficial fan guide, not affiliated with Roblox or Time Will Pass.
+The game was created on 29 September 2026 and its store has already changed more than once. Each guide shows the date it was checked, and counters such as visits and members are snapshots from 10 October 2026. This is an unofficial fan guide, not affiliated with Roblox or Time Will Pass.

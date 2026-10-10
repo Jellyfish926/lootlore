@@ -6,8 +6,8 @@ seoTitle: "Get Your Driver's License! Cars: 18 Cars, Tiers, Golden Car"
 description: "What is official about cars in Get Your Driver's License!: 18 cars from rusty hatchbacks to secret supercars, the Epic tier, VIP Ticket and Golden Supercar."
 category: "Cars & Robux Shop"
 language: "en"
-checkedAt: "2026-10-09"
-scope: "Car count, tier wording and car-related products from the official game description and developer product descriptions on 2026-10-09; the 18 car names, the full tier list, drop odds and the location called The Loop are not published and are not covered; prices can change without notice"
+checkedAt: "2026-10-10"
+scope: "Car count, tier wording and car-related products from the official game description and developer product descriptions on 2026-10-10 (UTC); the 18 car names, the full tier list, drop odds and the location called The Loop are not published and are not covered; prices can change without notice"
 type: "article"
 entities: ["mechanic-cars", "product-vip-ticket", "product-golden-supercar"]
 tldr: ["The official description says you can \"Win 1 of 18 cars, from rusty hatchbacks to secret supercars\". No official source we could read names the 18 or says how a car is awarded.", "One tier name is published: Epic. VIP Ticket 🎟️ (149 Robux) makes \"your next car\" Epic or better, which implies at least one tier above Epic.", "Golden Supercar 🏆 costs 39 Robux and is described as \"The best car in the game, yours to keep.\"", "Car names, tier odds and the place called The Loop still have to be checked in the game."]
@@ -15,8 +15,8 @@ related: ["shop", "driving-test", "gamepasses"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10768565603", "https://apis.roblox.com/developer-products/v2/universes/10768565603/developerproducts?limit=100", "https://create.roblox.com/docs/production/monetization/developer-products", "https://thumbnails.roblox.com/v1/assets?assetIds=83594712941098,118857276237629,105328531977019,90157103137595,71569432380463,102398161320664,84707369106912,99444745706344,136984438178136,76945416388444,104038954481377,95039828332574,109600651257969&size=420x420&format=Png", "https://thumbnails.roblox.com/v1/games/icons?universeIds=10768565603&size=512x512&format=Png"]
 images: ["prod-golden-supercar", "prod-vip-ticket"]
 date: "2026-10-09"
-updated: "2026-10-09"
-reviewed: "2026-10-09"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
@@ -37,7 +37,7 @@ This is not a list of all 18 cars, and we would rather say so in the second para
 | Its standing | "The best car in the game, yours to keep." | Golden Supercar 🏆 description |
 | Where to drive it | "Drive it on The Loop." | Golden Supercar 🏆 description |
 
-All six rows were read from Roblox's records for the game on 9 October 2026. We found no seventh. We found no official wiki and no update notes, and the [developer group](/get-your-drivers-license/community/) has no description or shout.
+All six rows were read from Roblox's records for the game on 10 October 2026. We found no seventh. We found no official wiki and no update notes, and the [developer group](/get-your-drivers-license/community/) has no description or shout.
 
 ## How do you win a car?
 
@@ -68,7 +68,7 @@ The name hints at the line. "Ticket #001" sounds like the first number at the co
 
 A 39-Robux developer product whose description reads: "The best car in the game, yours to keep. Drive it on The Loop." Its store icon shows a gold, low-polygon supercar with a wedge-shaped nose and a rear wing.
 
-It was registered at 14:45 UTC on 30 September 2026, about eight and a half hours after the first batch of products. That makes it the first thing added to the store after launch.
+It was registered at 14:45 UTC on 30 September 2026, about eight and a half hours after the first batch of products. That makes it the first store record created after the first batch.
 
 Three parts of that description are worth a second look.
 

@@ -3,30 +3,30 @@ slug: "game-info"
 url: "/blockspin/game-info/"
 title: "BlockSpin Game Info: Developer, Rating and Platforms"
 seoTitle: "BlockSpin Game Info: Developer, Rating, Platforms | Roblox"
-description: "Who makes BlockSpin on Roblox, when it launched, server size, maturity rating, visit and vote counts, and what is confirmed about console and mobile play."
+description: "Who makes BlockSpin on Roblox, its creation date, server size, maturity rating, visit and vote counts, and what is confirmed about console and mobile play."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-10"
 scope: "Official Roblox data and developer statements as of the check date"
 type: "article"
-tldr: ["BlockSpin is published by the Roblox group Cinnamon Go!, owned and managed by Cinnamon Software, the studio also behind LifeTogether.", "It went up on Roblox on November 6, 2024, holds 28 players per server and is rated Moderate for blood and violence.", "A developer's 2025 forum post reports PlayStation crashes and no increase on Xbox; mobile is not confirmed.", "By September 29, 2026 it had passed 1.25 billion visits."]
+tldr: ["BlockSpin is published by the Roblox group Cinnamon Go!, owned and managed by Cinnamon Software, the studio also behind LifeTogether.", "Its Roblox record was created on November 6, 2024; it holds 28 players per server and is rated Moderate for blood and violence.", "A developer's 2025 forum post reports PlayStation crashes and no increase on Xbox; mobile is not confirmed.", "On October 10, 2026 Roblox counted 1,283,305,742 visits."]
 entity: "blockspin-game"
 related: ["beginner", "codes", "cheats-bans"]
-sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://games.roblox.com/v1/games/votes?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/brands", "https://devforum.roblox.com/t/increase-in-playstation-crashes/3936850", "https://devforum.roblox.com/t/cinnamon-software-is-hiring-roblox-developers-artists-ui-designers-and-producers/4777100"]
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://games.roblox.com/v1/games/votes?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/brands", "https://devforum.roblox.com/t/increase-in-playstation-crashes/3936850", "https://devforum.roblox.com/t/cinnamon-software-is-hiring-roblox-developers-artists-ui-designers-and-producers/4777100", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"]
 images: ["icon", "th1"]
 date: "2026-09-29"
 updated: "2026-10-10"
-reviewed: "2026-09-29"
+reviewed: "2026-10-10"
 draft: false
 author: "Jellyfi"
 ---
 # BlockSpin Game Info: Developer, Rating and Platforms
 
-BlockSpin is an open-world action game on Roblox, published by Cinnamon Go! for Cinnamon Software, whose website lists an office at a Waterbeach address with a UK postcode. It launched November 6, 2024, fits 28 players per server and is rated Moderate. A developer's 2025 forum post reports PlayStation crashes and no increase on Xbox; mobile is not confirmed.
+BlockSpin is an open-world action game on Roblox (record created November 6, 2024), published by Cinnamon Go! for Cinnamon Software, whose website lists an office at a Waterbeach address with a UK postcode. It fits 28 players per server and is rated Moderate. A developer's 2025 forum post reports PlayStation crashes and no increase on Xbox; mobile is not confirmed.
 
 ## Who makes BlockSpin?
 
-The game belongs to the Roblox group Cinnamon Go!, which describes itself as "Action and Adventure games. Owned and Managed by Cinnamon Software." The group carries Roblox's verified badge and had 398,854 members when we checked.
+The game belongs to the Roblox group Cinnamon Go!, which describes itself as "Action and Adventure games. Owned and Managed by Cinnamon Software." The group carries Roblox's verified badge and had 403,237 members on October 10, 2026.
 
 Cinnamon Software describes itself on the Roblox Developer Forum as an independent Roblox studio behind LifeTogether, BlockSpin and BayView, led by two directors, Rhyles and ArraySegment. Its website sums up BlockSpin as "Enter the city, grind jobs, fight for dominance."
 
@@ -38,7 +38,7 @@ Cinnamon Software describes itself on the Roblox Developer Forum as an independe
 | Other studio games | LifeTogether, BayView, Project 12 | Studio website |
 | Studio community | Discord, X (@CinnamonRoblox), Roblox group Cinnamon Software | Studio website |
 
-## When did BlockSpin come out, and how often is it updated?
+## When was BlockSpin's Roblox record created and last updated?
 
 Roblox records the experience as created on November 6, 2024. On October 10, 2026 (UTC) the record's "updated" timestamp read October 3, 2026, and the game's title on Roblox carried the tag "[MANSION UNDERGROUND]" in square brackets. The tag is part of the title the developers set, so the name you see may differ.
 
@@ -46,15 +46,15 @@ Roblox records the experience as created on November 6, 2024. On October 10, 202
 
 ## How big is BlockSpin?
 
-These numbers are Roblox's own counters, read on September 29, 2026. They move every day, so treat them as a snapshot.
+These numbers are Roblox's own counters, read on October 10, 2026 (UTC). Treat them as a snapshot of that read.
 
-| Stat | Value (2026-09-29) |
+| Stat | Value (2026-10-10) |
 | --- | --- |
-| Visits | 1,259,345,162 |
-| Favourites | 985,284 |
-| Thumbs up | 275,155 |
-| Thumbs down | 75,148 |
-| Approval | about 78.5% (our calculation from the two vote counts) |
+| Visits | 1,283,305,742 |
+| Favourites | 990,501 |
+| Thumbs up | 277,867 |
+| Thumbs down | 75,698 |
+| Approval | about 78.6% (our calculation from the two vote counts) |
 
 The studio's brand page gives its own rounded figures: over 1.0 billion total plays, a peak of over 50,000 concurrent players and over 3.4 million monthly active users. The page is undated, so its figures may be older than Roblox's live counter.
 

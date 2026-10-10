@@ -6,18 +6,18 @@ seoTitle: "Untitled Wheelie Game Money Guide: Jobs, Passes, Cash"
 description: "How to make money in Untitled Wheelie Game: pizza delivery, the Job and Wheelie Earning passes, and all six official cash packs compared by dollars per Robux."
 category: "Money & Upgrades"
 language: "en"
-checkedAt: "2026-09-30"
-scope: "Income sources from the official description; pass and product prices from the Roblox APIs on 2026-09-30; pay rates per job or wheelie are not in those records; the escape payout in the developer's AI COPS announcement, read on 2026-10-10, is on the cop chase rules page"
+checkedAt: "2026-10-10"
+scope: "Income sources from the official description; pass and product prices from the Roblox APIs on 2026-10-10 (UTC); pay rates per job or wheelie are not in those records; the escape payout in the developer's AI COPS announcement, read on 2026-10-10, is on the cop chase rules page"
 type: "article"
 entities: ["pass-x2-job-earning", "pass-x3-job-earning", "product-cash-750", "product-cash-67500"]
-tldr: ["Pizza delivery is the job the game description names; the developer's AI COPS announcement, read on 10 October 2026, also says an escape from the cops pays \"the money that the fines would have costed you\".", "Separate Job Earning and Wheelie Earning passes (X2 and X3) suggest wheelies pay too.", "The six cash packs range from $750 for 49 Robux to $67,500 for 1,499 Robux; bigger packs give far more per Robux.", "How much a delivery or a wheelie pays is not in the Roblox records we read on 10 October 2026."]
+tldr: ["Pizza delivery is the job the game description names; the developer's AI COPS announcement, read on 10 October 2026, also says an escape from the cops pays \"the money that the fines would have costed you\".", "Passes named X2 / X3 Job Earning 💰 and X2 / X3 Wheelie Earning 💰 have empty descriptions, so what they multiply is not confirmed.", "The six cash packs range from $750 for 49 Robux to $67,500 for 1,499 Robux; bigger packs give far more per Robux.", "How much a delivery or a wheelie pays is not in the Roblox records we read on 10 October 2026."]
 related: ["gamepasses", "bikes", "cops-fines"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"]
 images: ["art01"]
 date: "2026-09-30"
 updated: "2026-10-10"
-reviewed: "2026-09-30"
-gameVersion: "2026-09-30 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -36,7 +36,7 @@ Of the six Robux cash packs, the largest gives nearly three times the cash per R
 | Wheelies | Passes named X2 and X3 Wheelie Earning | The pass names imply wheelies earn money; the rate is not published |
 | Cash packs | Six developer products named $750 to $67,500 | Robux purchases; no description attached |
 
-The Wheelie Earning line is the interesting one. If you are good at holding long wheelies, it may be a second income alongside deliveries. The developer has not said how wheelie earnings are calculated, so test it yourself: note your balance, hold a long wheelie, and check again.
+The Wheelie Earning passes have no description. Whether wheelies pay, and how any wheelie earnings are calculated, is not in the Roblox records we read on 10 October 2026, so test it yourself: note your balance, hold a long wheelie, and check again.
 
 ## Which earning pass is better: Job or Wheelie?
 
@@ -57,7 +57,7 @@ Our suggestion: buy the multiplier for whatever you actually do most. If you spe
 
 ## Which cash pack is the best value?
 
-All six packs were added on 25 June 2026. The "dollars per Robux" column is our calculation from the official prices.
+All six records were created on 25 June 2026. The "dollars per Robux" column is our calculation from the official prices.
 
 | Cash pack | Robux | Dollars per Robux |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ The biggest pack gives nearly three times as much cash per Robux as the smallest
 
 ## What else is in the Robux store?
 
-Thirteen products are simply named after a Robux amount, from "10 Robux" up to "1,000,000 Robux", all created on launch day. They have no description, and the developer does not say what they give; the names look like tip jar amounts. We would not buy one expecting an in-game reward. One of them, "50 Robux", is off sale.
+Thirteen products are simply named after a Robux amount, from "10 Robux" up to "1,000,000 Robux", all created on 4 June 2026, the day the game record was created. They have no description, so what they give is not confirmed. We would not buy one expecting an in-game reward. One of them, "50 Robux", is off sale.
 
 ## How do you avoid losing money?
 

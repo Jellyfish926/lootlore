@@ -15,7 +15,7 @@ related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10764479526", "https://games.roblox.com/v1/games/votes?universeIds=10764479526", "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50", "https://groups.roblox.com/v1/groups/426881025", "https://badges.roblox.com/v1/universes/10764479526/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10764479526/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"]
 images: ["art02", "art06"]
 date: "2026-10-01"
-updated: "2026-10-01"
+updated: "2026-10-10"
 reviewed: "2026-10-01"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -52,7 +52,7 @@ Every number on this site comes from Roblox's own data for the game and shows th
 
 ## How popular is +1 Mog Evolution?
 
-Very, for a game that is one month old. Roblox counted 7,523 players online when we checked on 1 October 2026, and the Navoj Mog group had 5.46 million members. Its title currently starts with "[W3]", and an official event starts on 3 October. The developer also runs a small test copy, explained on the [community page](/mog-evolution/community/).
+Very, for a game that is one month old. Roblox counted about 7,500 players online when we checked on 1 October 2026, and the Navoj Mog group had 5.46 million members. Its title currently starts with "[W3]", and an official event starts on 3 October. The developer also runs a small test copy, explained on the [community page](/mog-evolution/community/).
 
 ## How does progress work?
 

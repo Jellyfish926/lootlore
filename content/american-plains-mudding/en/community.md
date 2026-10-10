@@ -14,7 +14,7 @@ related: ["how-to-play", "updates", "badges"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/4548068", "https://groups.roblox.com/v2/groups?groupIds=4548068", "https://groups.roblox.com/v1/groups/4548068/roles", "https://games.roblox.com/v2/groups/4548068/games?accessFilter=Public&limit=50", "https://users.roblox.com/v1/users/292262212", "https://games.roblox.com/v1/games?universeIds=2783797267", "https://games.roblox.com/v1/games/votes?universeIds=2783797267", "https://create.roblox.com/docs/production/promotion/social-media-links"]
 images: ["ev_map", "th2"]
 date: "2026-10-09"
-updated: "2026-10-09"
+updated: "2026-10-10"
 reviewed: "2026-10-09"
 gameVersion: "2026-10-03 update"
 draft: false
@@ -82,7 +82,7 @@ These are Roblox's own counters, read at 11:13 UTC on 9 October 2026.
 
 | Measure | Count |
 | --- | --- |
-| Players online | 6,750 |
+| Players online | about 6,800 when read at 11:13 UTC on 9 October 2026 |
 | Visits | 714,911,302 |
 | Favourites | 8,238,764 |
 | Likes / dislikes | 377,627 / 45,410 (about 89.3% positive) |

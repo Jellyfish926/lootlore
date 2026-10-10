@@ -15,7 +15,7 @@ related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10495391267", "https://games.roblox.com/v1/games/votes?universeIds=10495391267", "https://groups.roblox.com/v1/groups/33446529", "https://badges.roblox.com/v1/universes/10495391267/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10495391267/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10495391267/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events", "https://www.roblox.com/games/110527353762049/Roblox-Stock-Exchange-2"]
 images: ["th5", "th3", "th1"]
 date: "2026-10-08"
-updated: "2026-10-08"
+updated: "2026-10-10"
 reviewed: "2026-10-08"
 draft: false
 author: "Jellyfi"
@@ -49,7 +49,7 @@ Every value below is Roblox's own record for the game, read at 03:39 UTC on 8 Oc
 | Visits | 5,093,566 |
 | Favourites | 61,993 |
 | Likes / dislikes | 12,004 / 890 |
-| Players online | 1,123 |
+| Players online | about 1,100 when read at 03:39 UTC on 8 October 2026 |
 | Game passes | 13 |
 | Developer products | 31 |
 | Badges | 11 |

@@ -15,7 +15,7 @@ related: ["ashlands", "combat", "death-recovery"]
 chineseCharacters: 793
 sourceUrls: ["https://valheim.fandom.com/wiki/The_Queen", "https://valheim.fandom.com/wiki/Boss_strategies"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # Valheim The Queen: Sealbreaker and Arena
 
-The Queen is not just a normal enemy with more health. She combines fast closing speed, add pressure and a multi-level arena, so damage, movement and clearing adds all matter at once. Entering the stronghold for the first time requires a Sealbreaker, crafted from fragments collected in the mines — the entry requirements are described in the [Queen entry](https://valheim.fandom.com/wiki/The_Queen).
+The Queen is not just a normal enemy with more health. She combines fast closing speed, add pressure and a multi-level arena, so damage, movement and clearing adds all matter at once. Entering the stronghold for the first time requires a Sealbreaker, crafted from fragments collected in the mines — the entry requirements are described in the [Queen entry](https://valheim.fandom.com/wiki/The_Queen). Per the community wiki, the Sealbreaker is an entry key that is not consumed, the first fight needs no offering, and 3 Seeker soldier trophy summon her again after her first defeat.
 
 ## Finish the key and the way back before you argue about weapons
 

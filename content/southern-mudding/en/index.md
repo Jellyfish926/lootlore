@@ -25,7 +25,7 @@ author: "Jellyfi"
 
 Southern Mudding (listed on Roblox as "[🚀Nitrous!🚀] Southern Mudding 🚜 OffRoading") is an off-road driving game by the verified group of the same name. You spawn pickup trucks, semi trucks, trailers, classic cars and muscle cars on a map built for mud, then tow, haul, go boating, claim a house and customize what you drive.
 
-The experience was created on 15 September 2025. When we checked at 11:19 UTC on 2 October 2026 it had 428 million visits, 625,025 favourites, 221,349 likes against 17,627 dislikes, and 14,526 people playing. This hub covers what the developer has actually published: the store, the badges, the event schedule and the update notes.
+The experience was created on 15 September 2025. When we checked at 11:19 UTC on 2 October 2026 it had 428 million visits, 625,025 favourites, 221,349 likes against 17,627 dislikes, and about 15,000 people playing at that moment. This hub covers what the developer has actually published: the store, the badges, the event schedule and the update notes.
 
 ## Where should a new player start?
 

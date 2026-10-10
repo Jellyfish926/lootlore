@@ -15,7 +15,7 @@ related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=2783797267", "https://games.roblox.com/v1/games/votes?universeIds=2783797267", "https://groups.roblox.com/v1/groups/4548068", "https://badges.roblox.com/v1/universes/2783797267/badges?limit=100&sortOrder=Asc", "https://apis.roblox.com/game-passes/v1/universes/2783797267/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/2783797267/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/2783797267/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://www.roblox.com/games/7171174521/American-Plains-Mudding"]
 images: ["th1", "th10", "ev_map"]
 date: "2026-10-09"
-updated: "2026-10-09"
+updated: "2026-10-10"
 reviewed: "2026-10-09"
 gameVersion: "2026-10-03 update"
 draft: false
@@ -25,7 +25,7 @@ author: "Jellyfi"
 
 American Plains Mudding (listed on Roblox as "[🌲FOREST🌲] American Plains Mudding") is a vehicle roleplay game by the verified group of the same name. You drive, tow and customize trucks, trailers and off-road machines across mud pits, farm fields and water, and the developer lists a new update for nearly every Saturday.
 
-The experience was created on 29 July 2021. At 11:13 UTC on 9 October 2026 it showed 714,911,302 visits, 8,238,764 favourites, 377,627 likes against 45,410 dislikes, and 6,750 people playing. This hub covers what the developer has actually published on Roblox: the description, the store, the badges and the event listings.
+The experience was created on 29 July 2021. At 11:13 UTC on 9 October 2026 it showed 714,911,302 visits, 8,238,764 favourites, 377,627 likes against 45,410 dislikes, and about 6,800 people playing at that moment. This hub covers what the developer has actually published on Roblox: the description, the store, the badges and the event listings.
 
 ## Where should a new player start?
 

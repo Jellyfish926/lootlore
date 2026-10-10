@@ -162,9 +162,7 @@
     "Frost"
    ],
    "resistant": [
-    "Slash",
-    "Fire (very resistant)",
-    "Pierce (very resistant)"
+    "Slash"
    ],
    "very_resistant": [
     "Fire",
@@ -213,9 +211,7 @@
     "冰霜"
    ],
    "resistant_zh": [
-    "斩击",
-    "火焰（抗性很高）",
-    "穿刺（抗性很高）"
+    "斩击"
    ],
    "very_resistant_zh": [
     "火焰",
@@ -322,8 +318,7 @@
    ],
    "weak": [],
    "resistant": [
-    "Fire",
-    "Pierce (very resistant)"
+    "Fire"
    ],
    "very_resistant": [
     "Pierce"
@@ -366,8 +361,7 @@
     "钝击"
    ],
    "resistant_zh": [
-    "火焰",
-    "穿刺（抗性很高）"
+    "火焰"
    ],
    "very_resistant_zh": [
     "穿刺"
@@ -388,14 +382,14 @@
     {
      "item_en": "Sealbreaker",
      "item_zh": "破封者",
-     "qty": "1 (entry key, not consumed; the first fight requires no sacrifice)",
-     "qty_zh": "1（进入用的钥匙，不消耗；首战不需要祭品）"
+     "qty": "1 (entry key, not consumed)",
+     "qty_zh": "1（进入钥匙，不消耗）"
     },
     {
      "item_en": "Seeker soldier trophy",
      "item_zh": "Seeker soldier 战利品",
-     "qty": "3 (to summon her again after her initial defeat)",
-     "qty_zh": "3（首次击败后再次召唤）"
+     "qty": "3 (re-summon)",
+     "qty_zh": "3（再次召唤）"
     }
    ],
    "hp": 12500,

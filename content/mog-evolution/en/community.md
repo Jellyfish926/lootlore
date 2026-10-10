@@ -14,7 +14,7 @@ related: ["updates", "how-to-play", "author"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/426881025", "https://groups.roblox.com/v1/groups/426881025/roles", "https://games.roblox.com/v2/groups/426881025/games?accessFilter=Public&limit=50", "https://games.roblox.com/v1/games?universeIds=10764479526", "https://games.roblox.com/v1/games?universeIds=10765888078", "https://apis.roblox.com/virtual-events/v1/universes/10764479526/virtual-events?limit=50", "https://en.help.roblox.com/hc/en-us/articles/203312450-Cheating-and-Exploiting", "https://urgametips.com/plus-1-mog-evolution-codes/"]
 images: ["art07", "icon"]
 date: "2026-10-01"
-updated: "2026-10-01"
+updated: "2026-10-10"
 reviewed: "2026-10-01"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -67,7 +67,7 @@ The group is far larger than the game's favourites list, which suggests many pla
 | Game visits | 31,783,618 |
 | Game favourites | 344,986 |
 | Likes / dislikes | 265,568 / 5,291 |
-| Players online when we checked | 7,523 |
+| Players online when we checked | about 7,500 when read on 1 October 2026 |
 
 Roblox also moved the group up to community tier 3 on 11 September 2026. The group has only three roles, and the Admin role holds one member, so there is no public list of moderators or testers to contact.
 

@@ -14,7 +14,7 @@ related: ["codes", "updates", "how-to-play"]
 sourceUrls: ["https://groups.roblox.com/v1/groups/33446529", "https://groups.roblox.com/v2/groups?groupIds=33446529", "https://groups.roblox.com/v1/groups/33446529/roles", "https://games.roblox.com/v2/groups/33446529/games?accessFilter=Public&limit=50", "https://users.roblox.com/v1/users/6019489864", "https://games.roblox.com/v1/games?universeIds=10495391267", "https://games.roblox.com/v1/games/votes?universeIds=10495391267", "https://discord.com/api/v9/invites/qR8v6Murp3?with_counts=true", "https://create.roblox.com/docs/production/promotion/social-media-links", "https://apis.roblox.com/virtual-events/v1/universes/10495391267/virtual-events"]
 images: ["ev_wire", "th2", "ev_ui"]
 date: "2026-10-08"
-updated: "2026-10-08"
+updated: "2026-10-10"
 reviewed: "2026-10-08"
 draft: false
 author: "Jellyfi"
@@ -82,7 +82,7 @@ These are Roblox's own counters, read at 03:39 UTC on 8 October 2026.
 
 | Measure | Count |
 | --- | --- |
-| Players online | 1,123 |
+| Players online | about 1,100 when read at 03:39 UTC on 8 October 2026 |
 | Visits | 5,093,566 |
 | Favourites | 61,993 |
 | Likes / dislikes | 12,004 / 890 (about 93.1% positive) |

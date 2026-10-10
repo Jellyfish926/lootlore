@@ -52,7 +52,7 @@ These are snapshots taken around 11:10 UTC on 30 September 2026. They change by 
 | Measure | Value |
 | --- | --- |
 | Visits | 13,234,763 |
-| Playing at the time | 7,634 |
+| Playing at the time | about 7,600 (around 11:10 UTC on 30 September 2026) |
 | Favourites | 209,907 |
 | Likes / dislikes | 6,207 / 1,549 |
 | Like ratio (our calculation) | 80.0% |

@@ -15,7 +15,7 @@ related: ["ashlands", "combat", "death-recovery"]
 chineseCharacters: 793
 sourceUrls: ["https://valheim.fandom.com/wiki/The_Queen", "https://valheim.fandom.com/wiki/Boss_strategies"]
 date: "2026-09-17"
-updated: "2026-09-17"
+updated: "2026-10-10"
 reviewed: "2026-09-17"
 gameVersion: "1.0.12"
 draft: false
@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # 迷雾女王怎么打：破封者、场地管理与近战法术两种思路
 
-女王战不只是生命更高的普通敌人。它把快速接近、小怪干扰和多层场地放在一起，因此需要同时考虑输出、移动和清场。第一次进入要塞需要 Sealbreaker，也就是破封者；它由矿洞中收集的碎片制作，相关进入方式见[女王资料](https://valheim.fandom.com/wiki/The_Queen)。
+女王战不只是生命更高的普通敌人。它把快速接近、小怪干扰和多层场地放在一起，因此需要同时考虑输出、移动和清场。第一次进入要塞需要 Sealbreaker，也就是破封者；它由矿洞中收集的碎片制作，相关进入方式见[女王资料](https://valheim.fandom.com/wiki/The_Queen)。按社区 wiki，破封者是进入用的钥匙、不消耗，首战不需要祭品，首次击败后献上 3 个 Seeker soldier 战利品可再次召唤。
 
 ## 先完成钥匙和回程，再讨论武器
 

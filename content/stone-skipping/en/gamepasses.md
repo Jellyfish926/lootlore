@@ -6,8 +6,8 @@ seoTitle: "+1 Stone Skipping Gamepasses: 11 Passes, Prices, Gifts"
 description: "All 11 +1 Stone Skipping game passes with official Robux prices: Auto Wins, Auto Rebirth, three Training Zones, pet passes, Hatch passes and gift versions."
 category: "Robux Shop"
 language: "en"
-checkedAt: "2026-10-02"
-scope: "Pass names, prices and dates from the Roblox game pass API; gift and same-name products from the developer products API, both on 2026-10-02. No pass has an official description, so effects are read from names and icons and marked as such"
+checkedAt: "2026-10-10"
+scope: "Pass names, prices and dates from the Roblox game pass API; gift and same-name products from the developer products API, both on 2026-10-10 (UTC). No pass has an official description, so effects are read from names and icons and marked as such"
 type: "article"
 entities: ["pass-auto-wins", "pass-koi-training-zone", "pass-admin-training-zone"]
 tldr: ["+1 Stone Skipping sells 11 game passes, all on sale, from 25 to 599 Robux; all 11 together cost 2,353 Robux.", "No pass has an official description. What each one does is read from its name and icon and needs an in-game check.", "Eight passes have a [GIFT] version at the same price; the three Hatch passes do not.", "Admin Training Zone and Golden Training Zone also exist as older developer products at different prices."]
@@ -15,15 +15,15 @@ related: ["pets", "boosts", "shop"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10765298801", "https://create.roblox.com/docs/production/monetization/passes"]
 images: ["art01", "pass-koi"]
 date: "2026-10-02"
-updated: "2026-10-02"
-reviewed: "2026-10-02"
-gameVersion: "2026-09-30 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
 # +1 Stone Skipping Game Passes: All 11 with Robux Prices
 
-+1 Stone Skipping has 11 game passes, all on sale on 2 October 2026. The cheapest are Auto Wins and Hatch +3 Eggs [STACKS] at 25 Robux each; the most expensive is Admin Training Zone at 599 Robux. Buying all 11 costs 2,353 Robux. None has an official description, and none was discounted.
++1 Stone Skipping has 11 game passes, all on sale on 10 October 2026. The cheapest are Auto Wins and Hatch +3 Eggs [STACKS] at 25 Robux each; the most expensive is Admin Training Zone at 599 Robux. Buying all 11 costs 2,353 Robux. None has an official description, and none was discounted.
 
 ## What are the 11 passes and their prices?
 
@@ -77,7 +77,7 @@ The biggest pass is not the best rate in either family. +6 Pets costs more per p
 
 ## Can you gift a pass to a friend?
 
-For eight of the 11, yes. On 30 September 2026 Meow Labs added [GIFT] developer products to +1 Stone Skipping, each priced the same as its pass:
+For eight of the 11, yes. On 30 September 2026 (UTC) [GIFT] developer product records were created for +1 Stone Skipping, each priced the same as its pass on 10 October 2026:
 
 | Gift product | Robux | Matches pass price? |
 | --- | --- | --- |

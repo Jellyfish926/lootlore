@@ -1,12 +1,12 @@
 {
- "fetched": "2026-10-02",
- "game_version": "2026-09-30 update (Roblox experience updated 2026-09-30T18:09:39.135Z)",
- "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、通行证 apis.roblox.com/game-passes(11 个,nextPageToken 空)、开发者商品 apis.roblox.com/developer-products v2(78 个,全量,nextPageCursor=null)、官方活动 apis.roblox.com/virtual-events、群组 groups.roblox.com、分级 experience-guidelines-api。名称逐字复制接口 name/Name 字段(含大小写与方括号);唯一例外是接口里 'Dragon Egg ' 带尾随空格,name_en 去掉尾随空格,原值保留在 name_api_raw。11 个通行证与 78 个商品的官方描述全部为空,所以没有 description 字段;usage_en 只按名称归类,明写 effect/contents not published,不含任何倍率、数量、概率。徽章 0,未建实体。区域名、宠物名与倍率、蛋概率、Rebirth 门槛、World 解锁条件、兑换码无一手来源,未建实体。价格为 2026-10-02 快照;2 个未上架商品(Boost Bundle、Power Boost)接口无价格,不写 unlock_cost。通行证 order 按价格再按创建时间升序;商品 order 按创建时间再按价格升序。 活动实体不用 mog-evolution 的 deadline 字段(界面标签是「Claim deadline」,本活动没有可领取的东西,会误导),改记 event_start_utc / event_end_utc,这两个字段没有 f_ 标签,不渲染,起止时间已写在 key_notes_en。 2026-10-02 第 1 轮验证后:删掉 key_notes_en 里的「Private servers not allowed」(createVipServersAllowed=false 对已知有私服的游戏同样为 false,不能据此下结论,private_servers 记入 unverified_fields);活动实体 key_notes_en 补入两场过往官方活动;第 2 轮复验后其出处改为带游标的请求(?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA,2026-10-02 实测 4/4 次返回 3 条);默认请求通常只返回即将开始的一条。",
+ "fetched": "2026-10-10",
+ "game_version": "2026-10-08 update (Roblox experience updated 2026-10-08T00:42:53.206Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、通行证 apis.roblox.com/game-passes(11 个,nextPageToken 空)、开发者商品 apis.roblox.com/developer-products v2(90 个,全量,nextPageCursor 为空;2026-10-10 05:20 UTC 读取)、官方活动 apis.roblox.com/virtual-events、群组 groups.roblox.com、分级 experience-guidelines-api。名称逐字复制接口 name/Name 字段(含大小写与方括号);唯一例外是接口里 'Dragon Egg ' 带尾随空格,name_en 去掉尾随空格,原值保留在 name_api_raw。11 个通行证与 90 个商品的官方描述全部为空,所以没有 description 字段;usage_en 只按名称归类,明写 effect/contents not published,不含任何倍率、数量、概率。徽章 0,未建实体。区域名、宠物名与倍率、蛋概率、Rebirth 门槛、World 解锁条件、兑换码无一手来源,未建实体。价格为 2026-10-10 快照;2 个未上架商品(Boost Bundle、Power Boost)接口无价格,不写 unlock_cost。通行证 order 按价格再按创建时间升序;商品 order 按创建时间再按价格升序。 活动实体不用 mog-evolution 的 deadline 字段(界面标签是「Claim deadline」,本活动没有可领取的东西,会误导),改记 event_start_utc / event_end_utc,这两个字段没有 f_ 标签,不渲染,起止时间已写在 key_notes_en。 2026-10-02 第 1 轮验证后:删掉 key_notes_en 里的「Private servers not allowed」(createVipServersAllowed=false 对已知有私服的游戏同样为 false,不能据此下结论,private_servers 记入 unverified_fields);活动实体 key_notes_en 补入两场过往官方活动;第 2 轮复验后其出处改为带游标的请求(?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA,2026-10-02 实测 4/4 次返回 3 条);默认请求通常只返回即将开始的一条。 2026-10-10 D1 更正:3 个商品改价(Skill Multiplier [TIER 1] 3→5、Golden Skip 12→19、Diamond Skip 19→29),补 12 个 2026-10-03 之后创建的商品实体(order 接在原有之后);活动接口 2026-10-10 带游标返回 5 条、不带游标返回 2 条。",
  "roblox": {
   "universeId": 10765298801,
   "rootPlaceId": 111543903102439,
   "creatorGroupId": 207366578,
-  "updated": "2026-09-30T18:09:39.135Z"
+  "updated": "2026-10-08T00:42:53.206Z"
  },
  "_page_slug_note": "page_slug 指向 content/en 下实际存在的页。",
  "entities": {
@@ -28,7 +28,7 @@
    "role_source": "https://groups.roblox.com/v1/groups/207366578",
    "max_players": 10,
    "max_players_source": "https://games.roblox.com/v1/games?universeIds=10765298801",
-   "key_notes_en": "10 players per server · Maturity: Minimal · No badges · 11 game passes · 78 developer products (76 on sale)",
+   "key_notes_en": "10 players per server · Maturity: Minimal · No badges · 11 game passes · 90 developer products (88 on sale)",
    "key_notes_source": [
     "https://games.roblox.com/v1/games?universeIds=10765298801",
     "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
@@ -36,7 +36,7 @@
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "key_notes_repro": "Maturity read anonymously on 2026-10-02: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"10765298801\"} returns ageRecommendation.displayName = Minimal.",
+   "key_notes_repro": "Maturity read anonymously on 2026-10-10: POST https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation with header content-type: application/json and body {\"universeId\":\"10765298801\"} returns ageRecommendation.displayName = Minimal.",
    "source_urls": [
     "https://games.roblox.com/v1/games?universeIds=10765298801",
     "https://groups.roblox.com/v1/groups/207366578",
@@ -44,7 +44,7 @@
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100",
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "skill_per_bounce_scaling",
     "level_thresholds",
@@ -71,7 +71,7 @@
    "summary_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
    "description_en": "- Admin Abuse / - World 5 / - New features",
    "description_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
-   "key_notes_en": "Subtitle: FIRST ADMIN ABUSE!! · Starts 3 October 2026, 16:00 UTC · Ends 3 October 2026, 18:00 UTC · Listed 26 September 2026 · Earlier official events: World 3 + New Content (20–23 September 2026) and WORLD 4 + UPDATE (27 September–1 October 2026)",
+   "key_notes_en": "Subtitle: FIRST ADMIN ABUSE!! · Listed start 3 October 2026, 16:00 UTC · Listed end 3 October 2026, 18:00 UTC (window ended) · Listed 26 September 2026 · Earlier official events: World 3 + New Content (20–23 September 2026) and WORLD 4 + UPDATE (27 September–1 October 2026) · Later listings read on 10 October 2026: WORLD 6 + ADMIN ABUSE (10–11 October 2026) and Halloween Event (17 October–1 November 2026)",
    "key_notes_source": "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA",
    "event_start_utc": "2026-10-03T16:00:15Z",
    "event_end_utc": "2026-10-03T18:00:15Z",
@@ -81,14 +81,14 @@
     "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50",
     "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "rewards",
     "world_5_unlock_rule",
     "new_features"
    ],
-   "expiry_action": "2026-10-04: rewrite updates page event section in past tense; re-read the events API for a new event; re-read both store lists"
+   "expiry_action": "2026-10-11 16:00 UTC: re-read the events API after the WORLD 6 + ADMIN ABUSE window; re-read both store lists"
   },
   "pass-hatch-plus-3-eggs-stacks": {
    "type": "gamepass",
@@ -106,7 +106,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -129,7 +129,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -152,7 +152,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -175,7 +175,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -198,7 +198,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -221,7 +221,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -244,7 +244,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -267,7 +267,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -290,7 +290,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -313,7 +313,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -336,7 +336,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect",
     "description"
@@ -355,12 +355,12 @@
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-10",
-   "product_updated": "2026-09-30",
+   "product_updated": "2026-10-05",
    "product_id": 3712280631,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -371,19 +371,19 @@
    "name_en": "Skill Multiplier [TIER 1]",
    "page_slug": "boosts",
    "order": 2,
-   "unlock_cost": "3 Robux",
+   "unlock_cost": "5 Robux",
    "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "usage_en": "Skill multiplier tier (value not published)",
    "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-10",
-   "product_updated": "2026-09-14",
+   "product_updated": "2026-10-03",
    "product_id": 3712280699,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -406,7 +406,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -429,7 +429,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -452,7 +452,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -475,7 +475,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -498,7 +498,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -521,7 +521,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -544,7 +544,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -567,7 +567,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -590,7 +590,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -613,7 +613,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -636,7 +636,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -659,7 +659,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -682,7 +682,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -705,7 +705,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -728,7 +728,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -751,7 +751,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -774,7 +774,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -797,7 +797,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -820,7 +820,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -843,7 +843,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -866,7 +866,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -889,7 +889,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -912,7 +912,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -935,7 +935,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -958,7 +958,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -981,7 +981,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1004,7 +1004,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1027,7 +1027,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1050,7 +1050,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1073,7 +1073,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1096,7 +1096,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1119,7 +1119,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1142,7 +1142,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1165,7 +1165,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1188,7 +1188,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1211,7 +1211,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1234,7 +1234,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description",
@@ -1258,7 +1258,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description",
@@ -1282,7 +1282,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1305,7 +1305,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1328,7 +1328,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1351,7 +1351,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1374,7 +1374,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1397,7 +1397,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1420,7 +1420,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1443,7 +1443,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1466,7 +1466,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1489,7 +1489,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1507,12 +1507,12 @@
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-22",
-   "product_updated": "2026-09-23",
+   "product_updated": "2026-10-05",
    "product_id": 3714242159,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1535,7 +1535,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1558,7 +1558,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1581,7 +1581,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1604,7 +1604,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1622,12 +1622,12 @@
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-27",
-   "product_updated": "2026-09-28",
+   "product_updated": "2026-10-03",
    "product_id": 3715117052,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1645,12 +1645,12 @@
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-27",
-   "product_updated": "2026-09-28",
+   "product_updated": "2026-10-03",
    "product_id": 3715117082,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1668,12 +1668,12 @@
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-27",
-   "product_updated": "2026-09-28",
+   "product_updated": "2026-10-03",
    "product_id": 3715117107,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1684,19 +1684,19 @@
    "name_en": "Golden Skip",
    "page_slug": "shop",
    "order": 59,
-   "unlock_cost": "12 Robux",
+   "unlock_cost": "19 Robux",
    "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "usage_en": "Not stated (no official description)",
    "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-29",
-   "product_updated": "2026-09-29",
+   "product_updated": "2026-10-09",
    "product_id": 3715390318,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1707,19 +1707,19 @@
    "name_en": "Diamond Skip",
    "page_slug": "shop",
    "order": 60,
-   "unlock_cost": "19 Robux",
+   "unlock_cost": "29 Robux",
    "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "usage_en": "Not stated (no official description)",
    "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "on_sale": true,
    "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
    "product_created": "2026-09-29",
-   "product_updated": "2026-09-29",
+   "product_updated": "2026-10-09",
    "product_id": 3715390383,
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1742,7 +1742,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1765,7 +1765,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1788,7 +1788,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1811,7 +1811,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1834,7 +1834,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1857,7 +1857,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1880,7 +1880,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1903,7 +1903,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1926,7 +1926,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1949,7 +1949,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1972,7 +1972,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -1995,7 +1995,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -2018,7 +2018,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -2041,7 +2041,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -2064,7 +2064,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -2088,7 +2088,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -2111,7 +2111,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"
@@ -2134,7 +2134,283 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
    ],
-   "accessed": "2026-10-02",
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-1-tier-4": {
+   "type": "item",
+   "name_en": "Skill Pack 1 [TIER 4]",
+   "page_slug": "boosts",
+   "order": 79,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716184261,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-2-tier-4": {
+   "type": "item",
+   "name_en": "Skill Pack 2 [TIER 4]",
+   "page_slug": "boosts",
+   "order": 80,
+   "unlock_cost": "235 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716184368,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-pack-3-tier-4": {
+   "type": "item",
+   "name_en": "Skill Pack 3 [TIER 4]",
+   "page_slug": "boosts",
+   "order": 81,
+   "unlock_cost": "499 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill pack (amount not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716184393,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-plus-100-pets-inventory-slots": {
+   "type": "item",
+   "name_en": "+100 Pets Inventory Slots",
+   "page_slug": "shop",
+   "order": 82,
+   "unlock_cost": "99 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716187467,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-rainbow-trail": {
+   "type": "item",
+   "name_en": "Rainbow Trail",
+   "page_slug": "shop",
+   "order": 83,
+   "unlock_cost": "199 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716225413,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-void-trail": {
+   "type": "item",
+   "name_en": "Void Trail",
+   "page_slug": "shop",
+   "order": 84,
+   "unlock_cost": "495 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716225489,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-11": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 11]",
+   "page_slug": "boosts",
+   "order": 85,
+   "unlock_cost": "2999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716336025,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-skill-multiplier-tier-12": {
+   "type": "item",
+   "name_en": "Skill Multiplier [TIER 12]",
+   "page_slug": "boosts",
+   "order": 86,
+   "unlock_cost": "3999 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Skill multiplier tier (value not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-03",
+   "product_updated": "2026-10-03",
+   "product_id": 3716336053,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-witch-egg": {
+   "type": "item",
+   "name_en": "Witch Egg",
+   "page_slug": "pets",
+   "order": 87,
+   "unlock_cost": "59 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg, single (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-07",
+   "product_updated": "2026-10-07",
+   "product_id": 3717044993,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-witch-egg-x3": {
+   "type": "item",
+   "name_en": "Witch Egg x3",
+   "page_slug": "pets",
+   "order": 88,
+   "unlock_cost": "115 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 3 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-07",
+   "product_updated": "2026-10-07",
+   "product_id": 3717045011,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-witch-egg-x8": {
+   "type": "item",
+   "name_en": "Witch Egg x8",
+   "page_slug": "pets",
+   "order": 89,
+   "unlock_cost": "279 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Egg bundle of 8 (contents not published)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-07",
+   "product_updated": "2026-10-07",
+   "product_id": 3717045036,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
+   "unverified_fields": [
+    "contents",
+    "description"
+   ]
+  },
+  "product-void-skip": {
+   "type": "item",
+   "name_en": "Void Skip",
+   "page_slug": "shop",
+   "order": 90,
+   "unlock_cost": "39 Robux",
+   "unlock_cost_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "usage_en": "Not stated (no official description)",
+   "usage_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "on_sale": true,
+   "on_sale_source": "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100",
+   "product_created": "2026-10-09",
+   "product_updated": "2026-10-09",
+   "product_id": 3717503849,
+   "source_urls": [
+    "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100"
+   ],
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "contents",
     "description"

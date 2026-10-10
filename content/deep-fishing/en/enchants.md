@@ -90,11 +90,11 @@ We would not. The official description names Strength and farther casts as the w
 
 For comparison, 399 Robux buys ten Enchant Stones or the Double Coins pass, which the developer describes as "Earn 2x more coins when selling fish!". The [Rods & Upgrades section](/deep-fishing/gear/) sets every purchase type side by side. The rest of the shop, including lucky chests and one-throw boosts, is in the [Robux shop guide](/deep-fishing/shop/).
 
-## What could change after the next update?
+## What does the EGGS & PETS event listing say about enchants?
 
-The game's Roblox event listing shows an event titled "EGGS & PETS are COMING!", scheduled to start on 11 October 2026. Its tagline reads: "We are adding Pets and Eggs and also Item Crafting and much more!". It does not mention enchants, and an event listing is a plan, not a patch note.
+The game's Roblox event listing, read on 10 October 2026, has an event titled "EGGS & PETS are COMING!"; the listing gives a start of 16:00 UTC on 11 October 2026 and an end of 16:00 UTC on 15 October 2026. Its tagline reads: "We are adding Pets and Eggs and also Item Crafting and much more!". It does not mention enchants, and an event listing is a plan, not a patch note.
 
-We will recheck the store after that date and update this page if an enchant product is added or renamed. If you have a screenshot of the enchant screen or of an item named Enchant Scroll, the [author page](/deep-fishing/author/) explains how to send it.
+This page reflects the store as read on 10 October 2026, before that start time; an enchant product created or renamed after that read is not on it. If you have a screenshot of the enchant screen or of an item named Enchant Scroll, the [author page](/deep-fishing/author/) explains how to send it.
 
 ## Read next
 

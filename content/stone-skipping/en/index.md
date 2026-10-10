@@ -2,36 +2,36 @@
 slug: "index"
 url: "/stone-skipping/"
 title: "+1 Stone Skipping Guide: Skill, Wins, Pets and Robux"
-seoTitle: "+1 Stone Skipping Roblox Guide: Passes, Pets, World 5"
-description: "+1 Stone Skipping guides built from official Roblox data: how Skill, Wins and Rebirth work, the World 5 event time, all 11 game passes and 78 Robux products."
+seoTitle: "+1 Stone Skipping Roblox Guide: Passes, Pets, Events"
+description: "+1 Stone Skipping guides built from official Roblox data: how Skill, Wins and Rebirth work, official event dates, all 11 game passes and 90 Robux products."
 category: "Home"
 language: "en"
-checkedAt: "2026-10-02"
+checkedAt: "2026-10-10"
 scope: "Site entry point"
 type: "home"
-tldr: ["+1 Stone Skipping is a free Roblox incremental simulator from the group Meow Labs: every bounce gives +1 Skill, levels make you throw farther, and farther zones pay more Wins.", "The store has 11 game passes (25 to 599 Robux) and 78 developer products; none of them has an official description, so we list names and prices only.", "An official event, ADMIN ABUSE + WORLD 5, runs on Saturday 3 October 2026 from 16:00 to 18:00 UTC.", "No codes appear in the game description or on the Meow Labs group page, so this site lists none."]
-faq: [["Who made +1 Stone Skipping?", "A Roblox group called Meow Labs, owned by the account iPlayfade. The experience was created on 5 September 2026. The [community page](/stone-skipping/community/) covers the group."], ["How do you earn Wins?", "The official description says: \"Reach farther zones to earn more Wins!\" How many Wins each zone pays is not shown in public data. The [how to play guide](/stone-skipping/how-to-play/) goes through each line."], ["Is it +1 Stone Skipping or +1 Skipping Stones?", "Both are official. The Roblox listing is titled +1 Stone Skipping, and the first line of its description calls the game +1 Skipping Stones."], ["Are there +1 Stone Skipping codes?", "We found none in the game description, the group description or the group shout on 2 October 2026, so we do not list any. The [community page](/stone-skipping/community/) explains where we looked."], ["When is World 5 coming?", "Roblox lists the event ADMIN ABUSE + WORLD 5 for 3 October 2026, 16:00 to 18:00 UTC. Local times are on the [updates page](/stone-skipping/updates/)."]]
+tldr: ["+1 Stone Skipping is a free Roblox incremental simulator from the group Meow Labs: every bounce gives +1 Skill, levels make you throw farther, and farther zones pay more Wins.", "The store has 11 game passes (25 to 599 Robux) and 90 developer products; none of them has an official description, so we list names and prices only.", "The Roblox event listing read on 10 October 2026 gives WORLD 6 + ADMIN ABUSE a start of 16:00 UTC on 10 October 2026 and an end of 16:00 UTC on 11 October 2026; the ADMIN ABUSE + WORLD 5 window was 3 October.", "We saw no code in the game description or on the Meow Labs group record on 10 October 2026, so this site lists none."]
+faq: [["Who made +1 Stone Skipping?", "A Roblox group called Meow Labs, owned by the account iPlayfade. The experience was created on 5 September 2026. The [community page](/stone-skipping/community/) covers the group."], ["How do you earn Wins?", "The official description says: \"Reach farther zones to earn more Wins!\" How many Wins each zone pays is not shown in public data. The [how to play guide](/stone-skipping/how-to-play/) goes through each line."], ["Is it +1 Stone Skipping or +1 Skipping Stones?", "Both are official. The Roblox listing is titled +1 Stone Skipping, and the first line of its description calls the game +1 Skipping Stones."], ["Are there +1 Stone Skipping codes?", "We found none in the game description, the group description, the group shout or the five event listings on 10 October 2026, so we do not list any. The [community page](/stone-skipping/community/) explains where we looked."], ["When were the World 5 and World 6 events?", "Roblox listed ADMIN ABUSE + WORLD 5 for 3 October 2026, 16:00 to 18:00 UTC, and that window has ended. The listing read on 10 October 2026 gives WORLD 6 + ADMIN ABUSE a start of 16:00 UTC on 10 October 2026 and an end of 16:00 UTC on 11 October 2026. The [updates page](/stone-skipping/updates/) has every window."]]
 related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10765298801", "https://games.roblox.com/v1/games/votes?universeIds=10765298801", "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50", "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://groups.roblox.com/v1/groups/207366578", "https://badges.roblox.com/v1/universes/10765298801/badges?limit=100", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://thumbnails.roblox.com/v1/games/icons?universeIds=10765298801&size=512x512&format=Png"]
 images: ["art01", "art03"]
 date: "2026-10-02"
-updated: "2026-10-02"
-reviewed: "2026-10-02"
-gameVersion: "2026-09-30 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
 # +1 Stone Skipping Guide: Skill, Wins, Pets and Robux
 
-+1 Stone Skipping is a free Roblox incremental simulator made by the group Meow Labs. You skip stones across water, gain +1 Skill with every bounce, level up to throw farther, reach farther zones for Wins, collect pets and rebirth. This hub covers that loop, the 11 game passes and all 78 Robux products.
++1 Stone Skipping is a free Roblox incremental simulator made by the group Meow Labs. You skip stones across water, gain +1 Skill with every bounce, level up to throw farther, reach farther zones for Wins, collect pets and rebirth. This hub covers that loop, the 11 game passes and all 90 Robux products.
 
-Every number here comes from Roblox's own data for the game and shows the date we read it. At 11:19 UTC on 2 October 2026 the experience had 5,252,489 visits and 202,909 favourites, with 10,362 likes against 435 dislikes, about 96% positive.
+The counts here come from Roblox's own records for the game. At 05:20 UTC on 10 October 2026 the experience had 25,255,507 visits and 939,036 favourites, with 40,464 likes against 1,393 dislikes, about 97% positive.
 
 ## New here? Start with these
 
 - [How to Play: Skill, Levels, Zones and Wins](/stone-skipping/how-to-play/): the six lines of the official description, explained one by one.
 - [All 11 Game Passes](/stone-skipping/gamepasses/): every pass with its Robux price, from Auto Wins to the Admin Training Zone.
-- [All 78 Robux Products](/stone-skipping/shop/): the full developer product list, grouped by type.
+- [All 90 Robux Products](/stone-skipping/shop/): the full developer product list, grouped by type.
 
 ![Promotional art: a Roblox character with orange hair throws a flat grey stone from a grassy bank; the stone bounces three times across blue water and each splash shows +1](art01 "Official promotional art: every bounce shows +1")
 
@@ -47,13 +47,13 @@ Every number here comes from Roblox's own data for the game and shows the date w
 | Maturity | Minimal (suitable for everyone) |
 | Badges | None |
 | Game passes | 11, all on sale |
-| Developer products | 78 listed, 76 on sale |
+| Developer products | 90 listed, 88 on sale |
 | Title on Roblox | +1 Stone Skipping |
 | Name used in the description | +1 Skipping Stones |
 
 ## How popular is it?
 
-Roblox counted 20,948 players online when we checked at 11:19 UTC on 2 October 2026, less than four weeks after the experience was created on 5 September. The Meow Labs group had 481,097 members at the same time. Those are snapshots; the player count moves through the day. The [community page](/stone-skipping/community/) has the group details.
+Roblox counted 52,051 players online when we read the game record at 05:20 UTC on 10 October 2026, five weeks after the experience was created on 5 September. The Meow Labs group had 1,882,126 members at the same read. Those are snapshots; the player count moves through the day. The [community page](/stone-skipping/community/) has the group details.
 
 ## How does the game work?
 
@@ -63,15 +63,15 @@ The developer's description gives six short lines. Every bounce gives +1 Skill. 
 
 ## What does the store sell?
 
-Two kinds of thing. There are 11 game passes, from 25 Robux (Auto Wins, Hatch +3 Eggs [STACKS]) to 599 Robux (Admin Training Zone). And there are 78 developer products: ten Skill Multiplier tiers, Skill Packs, Wins Packs, Wins multipliers tagged [PERMANENT], six kinds of egg and 14 gift versions. No pass or product has an official description, so the [Robux shop guides](/stone-skipping/robux/) quote names and prices and say plainly where an effect is our reading of the name.
+Two kinds of thing. There are 11 game passes, from 25 Robux (Auto Wins, Hatch +3 Eggs [STACKS]) to 599 Robux (Admin Training Zone). And there are 90 developer products: twelve Skill Multiplier tiers, Skill Packs, Wins Packs, Wins multipliers tagged [PERMANENT], seven kinds of egg and 14 gift versions. No pass or product has an official description, so the [Robux shop guides](/stone-skipping/robux/) quote names and prices and say plainly where an effect is our reading of the name.
 
-## What's happening this week?
+## Which events are on Roblox's listing?
 
-Roblox lists an upcoming official event: **ADMIN ABUSE + WORLD 5**, on Saturday 3 October 2026 from 16:00 to 18:00 UTC. Its subtitle is "FIRST ADMIN ABUSE!!" and its description has three lines: Admin Abuse, World 5, New features. The game icon currently shows a "WORLD 4" banner, and earlier event listings covered World 3 (from 20 September) and World 4 (from 27 September). The [updates page](/stone-skipping/updates/) has the start time in other time zones and a dated timeline since launch.
+Roblox's event listing, read at 05:21 UTC on 10 October 2026, gives **WORLD 6 + ADMIN ABUSE** a start of 16:00 UTC on Saturday 10 October 2026 and an end of 16:00 UTC on Sunday 11 October 2026. Its description has three lines: Admin Abuse, World 6, New Features. A second listing, Halloween Event, gives a start of 16:00 UTC on 17 October 2026 and an end of 19:00 UTC on 1 November 2026, with the subtitle "???" and no description. Three earlier listings have end times before that read: World 3 (from 20 September), World 4 (from 27 September) and ADMIN ABUSE + WORLD 5 (3 October, 16:00 to 18:00 UTC). The game icon showed an hourglass and the words "12 HOURS" when we read it at 05:22 UTC on 10 October. The [updates page](/stone-skipping/updates/) has each window and a dated store timeline.
 
 ## Why is there no codes page?
 
-Because we could not see a code in any official source. The game description has none, the Meow Labs group description reads only "meow?", and the group has no shout. Fan sites do list codes, but we could not trace them to an official post, so we leave them out. The [community page](/stone-skipping/community/) shows every place we checked.
+Because we saw no code in the official Roblox records we read on 10 October 2026. The game description has none, the Meow Labs group description reads only "meow?", the group shout is empty, and none of the five event listings carries one. Whether the game has a code box is not confirmed, because we did not open the game. Fan sites do list codes, but we could not trace them to an official post, so we leave them out. The [community page](/stone-skipping/community/) shows each place we checked.
 
 ## All sections
 

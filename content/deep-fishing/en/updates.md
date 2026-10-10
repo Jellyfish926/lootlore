@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-10-10"
 scope: "Game record, developer products, game passes, badges and event listings from Roblox APIs, read on 2026-10-10; all dates and times UTC. Record dates show when a record was created or edited, not when a feature reached players; how seasons work and what the added products do are not confirmed"
 type: "article"
-tldr: ["Fourteen developer product records carry a creation date between 29 September and 10 October 2026 (UTC). The store list held 103 products on 10 October, against the 89 this site counted on 29 September.", "Season Pass costs 399 Robux, Skip 1 costs 79, Skip 10 costs 449 and Reset Season costs 19; how a season works and what it rewards are not confirmed.", "The records held nine game passes and 13 badges on 10 October 2026, the same counts this site noted on 29 September; no pass or badge record has a creation date after 1 August 2026. All nine passes carry an edit date of 29 September or later.", "The game record's \"updated\" timestamp is 9 October 2026 at 18:38 UTC, and an event titled EGGS & PETS are COMING! is listed for 11 to 15 October."]
+tldr: ["Fourteen developer product records carry a creation date between 29 September and 10 October 2026 (UTC). The store list held 103 products on 10 October, against the 89 this site counted on 29 September.", "Season Pass costs 399 Robux, Skip 1 costs 79, Skip 10 costs 449 and Reset Season costs 19; how a season works and what it rewards are not confirmed.", "The records held nine game passes and 13 badges on 10 October 2026, the same counts this site noted on 29 September; no pass or badge record has a creation date after 1 August 2026. All nine passes carry an edit date of 29 September or later.", "On 10 October 2026 the game record's \"updated\" timestamp read 9 October 2026 at 18:38 UTC, and the event listing gave EGGS & PETS are COMING! a start of 11 October and an end of 15 October."]
 related: ["shop", "gamepasses", "badges"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10526853622", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100&sortOrder=Asc", "https://apis.roblox.com/virtual-events/v1/universes/10526853622/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"]
 images: ["art04"]
@@ -21,7 +21,7 @@ author: "Jellyfi"
 ---
 # Deep Fishing Updates: Changes Since 28 September 2026
 
-Deep Fishing's Roblox records show 14 store products created between 29 September and 10 October 2026, including Season Pass at 399 Robux and Oni Soulbinder Skin at 1,649. No pass or badge record was created then, the game record was last updated on 9 October, and "EGGS & PETS are COMING!" is listed for 11 to 15 October.
+Deep Fishing's Roblox records show 14 store products created between 29 September and 10 October 2026, including Season Pass at 399 Robux and Oni Soulbinder Skin at 1,649. No pass or badge record was created then, the game record's "updated" timestamp read 9 October, and the "EGGS & PETS are COMING!" listing gives a window of 11 to 15 October.
 
 This update log is built from dated official records, not patch notes: the game record, 103 developer products, nine game passes, 13 badges and eight event listings, all read on 10 October 2026. Every time on this page is UTC. A record date says when a record was created or edited. It does not say when a feature reached players.
 
@@ -141,7 +141,7 @@ Still not confirmed after this read:
 - what any of the edits changed, apart from the Double Coins wording noted above;
 - whether the contents named in event listings shipped.
 
-None of these records held a redemption code; the [codes page](/deep-fishing/codes/) sets out that check. We will reread the store after the "EGGS & PETS are COMING!" window closes on 15 October 2026 and add any product created by then.
+None of these records held a redemption code; the [codes page](/deep-fishing/codes/) sets out that check. This page reflects the read of 10 October 2026, made before the start time on the "EGGS & PETS are COMING!" listing; a product created after that read is not on it.
 
 ## Read next
 

@@ -6,18 +6,18 @@ seoTitle: "How to Play +1 Stone Skipping: Skill, Wins and Rebirth"
 description: "How +1 Stone Skipping works, line by line from the official Roblox description: +1 Skill per bounce, levels, zones and Wins, stones, pets, Rebirth and Worlds."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-10-02"
-scope: "Core loop from the official game description and official promotional art read on 2026-10-02; store names used only as evidence that a system exists. No level, zone, pet or rebirth numbers are published, and none are given here"
+checkedAt: "2026-10-10"
+scope: "Core loop from the official game description and official promotional art read on 2026-10-10 (UTC); store names used only as evidence that a system exists. No level, zone, pet or rebirth numbers are published, and none are given here"
 type: "article"
 entity: "stone-skipping"
-tldr: ["The official description has six gameplay lines: +1 Skill per bounce, train and level up, farther zones for more Wins, better stones, pets for boosts, and Rebirth.", "Official art shows the per-bounce number growing from +1 to +150M and +4B as the thrown object changes, and a distance counter in metres.", "Worlds are not in the description, but the game icon reads WORLD 4 and an official event on 3 October 2026 lists World 5.", "Level thresholds, zone distances, pet boosts and rebirth costs are not shown in public data and need an in-game check."]
+tldr: ["The official description has six gameplay lines: +1 Skill per bounce, train and level up, farther zones for more Wins, better stones, pets for boosts, and Rebirth.", "Official art shows the per-bounce number growing from +1 to +150M and +4B as the thrown object changes, and a distance counter in metres.", "Worlds are not in the description, but the official event titles we read on 10 October 2026 name World 3, World 4, World 5 and World 6.", "Level thresholds, zone distances, pet boosts and rebirth costs are not shown in public data and need an in-game check."]
 related: ["updates", "boosts", "pets"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10765298801", "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10765298801&countPerUniverse=10&size=768x432&format=Png", "https://thumbnails.roblox.com/v1/games/icons?universeIds=10765298801&size=512x512&format=Png", "https://apis.roblox.com/game-passes/v1/universes/10765298801/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?limit=50", "https://apis.roblox.com/virtual-events/v1/universes/10765298801/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA"]
 images: ["art03", "art02", "art04"]
 date: "2026-10-02"
-updated: "2026-10-02"
-reviewed: "2026-10-02"
-gameVersion: "2026-09-30 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -29,7 +29,7 @@ Meow Labs has published very little beyond that summary. No game pass or store p
 
 ## What does the official description say?
 
-The Roblox listing was read on 2 October 2026. Its opening line calls the game "+1 Skipping Stones", although the title is +1 Stone Skipping. The six gameplay lines are quoted exactly:
+The Roblox listing was read on 10 October 2026. Its opening line calls the game "+1 Skipping Stones", although the title is +1 Stone Skipping. The six gameplay lines are quoted exactly:
 
 | Official line | What it tells you | What it leaves out |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ The description only promises +1 per bounce. Official promotional art suggests t
 
 ![Promotional art in three panels: a grey stone on blue water under +1, a cracked glowing lava rock on orange water under +150M, and a silver flying saucer on purple water under +4B](art02 "Official promotional art: the thrown object changes and the number grows")
 
-Treat those figures as advertising, not as a table of values. They suggest that both your level and the object you throw raise the number you earn per bounce. The store adds a third route: ten paid Skill Multiplier tiers and nine Skill Packs, priced in the [Skill and Wins boosts guide](/stone-skipping/boosts/).
+Treat those figures as advertising, not as a table of values. They suggest that both your level and the object you throw raise the number you earn per bounce. The store adds a third route: twelve paid Skill Multiplier tiers and twelve Skill Packs, priced in the [Skill and Wins boosts guide](/stone-skipping/boosts/).
 
 ## What are zones, and where do Wins come from?
 
@@ -62,7 +62,7 @@ Three game passes are named Koi, Golden and Admin Training Zone. Their names mat
 
 ## What do pets and eggs add?
 
-Pets give "powerful boosts" in the developer's words. The store shows how much of the game is built around them: six kinds of egg are sold for Robux, three passes are named +1 Pet, +3 Pets and +6 Pets, and three more are named Hatch +3, +8 and +16 Eggs [STACKS]. Hatch odds and pet multipliers are not published. Prices and bundle maths are in the [eggs and pets guide](/stone-skipping/pets/).
+Pets give "powerful boosts" in the developer's words. The store shows how much of the game is built around them: seven kinds of egg are sold for Robux, three passes are named +1 Pet, +3 Pets and +6 Pets, and three more are named Hatch +3, +8 and +16 Eggs [STACKS]. Hatch odds and pet multipliers are not published. Prices and bundle maths are in the [eggs and pets guide](/stone-skipping/pets/).
 
 ## What does Rebirth do?
 
@@ -70,7 +70,7 @@ The description says you "Rebirth to grow stronger and beat your longest throw".
 
 ## Are there different worlds?
 
-Yes, although the description never mentions them. The game icon currently carries a "WORLD 4" banner, and Roblox lists an official event named ADMIN ABUSE + WORLD 5 for 3 October 2026. Two earlier official events were titled "World 3 + New Content" (from 20 September) and "WORLD 4 + UPDATE" (from 27 September). How you move from one world to the next is not stated anywhere official. Times for the event are on the [updates page](/stone-skipping/updates/).
+Yes, going by official event titles, although the description never mentions them. Roblox's event listing, read on 10 October 2026, holds "World 3 + New Content" (from 20 September), "WORLD 4 + UPDATE" (from 27 September), ADMIN ABUSE + WORLD 5 (3 October 2026, ended) and WORLD 6 + ADMIN ABUSE (listed start 16:00 UTC on 10 October 2026). How you move from one world to the next is not stated in those listings or in the description. Event windows are on the [updates page](/stone-skipping/updates/).
 
 ## What should you do in your first session?
 
@@ -85,12 +85,12 @@ This is our suggestion, built only from the official lines:
 
 ## What is still unknown?
 
-| Topic | Status on 2 October 2026 |
+| Topic | Status on 10 October 2026 |
 | --- | --- |
 | Level thresholds and training speed | Not shown in public data; needs in-game check |
 | Zone names, distances, Wins per zone | Not shown in public data; needs in-game check |
 | Stone list and prices | Only "DONUT" is named officially |
 | Pet boosts and egg odds | Not shown in public data; needs in-game check |
 | Rebirth cost and reward | Not shown in public data; needs in-game check |
-| How Worlds 2 to 4 unlock | Not stated in any official source |
+| How Worlds 2 to 6 unlock | Not stated in the official records we read |
 | Codes | None in any official source we could read; see the [community page](/stone-skipping/community/) |

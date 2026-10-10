@@ -3,27 +3,27 @@ slug: "boosts"
 url: "/stone-skipping/boosts/"
 title: "+1 Stone Skipping Skill and Wins Boosts: Robux Prices"
 seoTitle: "+1 Stone Skipping Skill Multiplier Tiers and Wins Boosts"
-description: "+1 Stone Skipping Skill and Wins boosts with official Robux prices: ten Skill Multiplier tiers, Skill Packs, Wins Packs, permanent 2x, 5x and 10x Wins, potions."
+description: "+1 Stone Skipping Skill and Wins boosts with official Robux prices: 12 Skill Multiplier tiers, Skill Packs, Wins Packs, permanent 2x, 5x and 10x Wins, potions."
 category: "Robux Shop"
 language: "en"
-checkedAt: "2026-10-02"
-scope: "Names, prices and creation dates of Skill and Wins products from the Roblox developer products API on 2026-10-02. No product has a description: multiplier values, pack sizes and boost durations are not published and are not given here"
+checkedAt: "2026-10-10"
+scope: "Names, prices and creation dates of Skill and Wins products from the Roblox developer products API on 2026-10-10 (UTC). No product has a description: multiplier values, pack sizes and boost durations are not published and are not given here"
 type: "article"
 entities: ["product-skill-multiplier-tier-1", "product-2x-wins-permanent", "product-skill-boost"]
-tldr: ["Ten Skill Multiplier tiers cost from 3 to 1,995 Robux; buying all ten would cost 5,980 Robux.", "Three Wins multipliers tagged [PERMANENT] are sold: 2x for 59, 5x for 229 and 10x for 575 Robux.", "Skill Packs, Wins Packs and the three boost potions have no description, so pack sizes and durations are unknown.", "The official description names free ways to grow too: training, levelling up, pets and Rebirth."]
+tldr: ["Twelve Skill Multiplier tiers cost from 5 to 3,999 Robux on 10 October 2026; buying all twelve would cost 12,980 Robux.", "Three Wins multipliers tagged [PERMANENT] are sold: 2x for 59, 5x for 229 and 10x for 575 Robux.", "Skill Packs, Wins Packs and the three boost potions have no description, so pack sizes and durations are unknown.", "The official description names free ways to grow too: training, levelling up, pets and Rebirth."]
 related: ["shop", "gamepasses", "how-to-play"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10765298801/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10765298801", "https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10765298801&countPerUniverse=10&size=768x432&format=Png", "https://create.roblox.com/docs/production/monetization/developer-products", "https://create.roblox.com/docs/production/monetization/passes"]
 images: ["art04", "art02"]
 date: "2026-10-02"
-updated: "2026-10-02"
-reviewed: "2026-10-02"
-gameVersion: "2026-09-30 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-08 update"
 draft: false
 author: "Jellyfi"
 ---
 # +1 Stone Skipping Skill and Wins Boosts: Robux Prices
 
-+1 Stone Skipping sells its Skill and Wins boosts as developer products, not game passes. There are ten Skill Multiplier tiers from 3 to 1,995 Robux, three Wins multipliers tagged [PERMANENT] from 59 to 575 Robux, nine Skill Packs, six Wins Packs and three boost potions. None of them has an official description.
++1 Stone Skipping sells its Skill and Wins boosts as developer products, not game passes. There are twelve Skill Multiplier tiers from 5 to 3,999 Robux, three Wins multipliers tagged [PERMANENT] from 59 to 575 Robux, twelve Skill Packs, six Wins Packs and three boost potions. None of them has an official description.
 
 So this +1 Stone Skipping page is a price guide, not an effects guide. We can tell you exactly what each product costs and when it appeared. We cannot tell you what multiplier a tier gives or how long a potion lasts, and we will not guess a number.
 
@@ -31,8 +31,8 @@ So this +1 Stone Skipping page is a price guide, not an effects guide. We can te
 
 | Family | Products | Price range (Robux) | Tag in the name |
 | --- | --- | --- | --- |
-| Skill Multiplier | 10 | 3–1,995 | [TIER 1] to [TIER 10] |
-| Skill Pack | 9 | 11–369 | Pack 1 to 3, in [TIER 1] to [TIER 3] |
+| Skill Multiplier | 12 | 5–3,999 | [TIER 1] to [TIER 12] |
+| Skill Pack | 12 | 11–499 | Pack 1 to 3, in [TIER 1] to [TIER 4] |
 | Wins Pack | 6 | 25–575 | Pack 1 to 5, plus one [20% OFF] |
 | Wins multiplier | 3 | 59–575 | [PERMANENT] |
 | Boost potions | 3 | 29–95 | None |
@@ -43,28 +43,30 @@ Two more products, Boost Bundle and Power Boost, are in the list but not on sale
 
 | Product | Robux | Running total | Created (2026) |
 | --- | --- | --- | --- |
-| Skill Multiplier [TIER 1] | 3 | 3 | 10 Sep |
-| Skill Multiplier [TIER 2] | 19 | 22 | 10 Sep |
-| Skill Multiplier [TIER 3] | 45 | 67 | 10 Sep |
-| Skill Multiplier [TIER 4] | 129 | 196 | 10 Sep |
-| Skill Multiplier [TIER 5] | 255 | 451 | 14 Sep |
-| Skill Multiplier [TIER 6] | 425 | 876 | 14 Sep |
-| Skill Multiplier [TIER 7] | 615 | 1,491 | 14 Sep |
-| Skill Multiplier [TIER 8] | 995 | 2,486 | 27 Sep |
-| Skill Multiplier [TIER 9] | 1,499 | 3,985 | 27 Sep |
-| Skill Multiplier [TIER 10] | 1,995 | 5,980 | 27 Sep |
+| Skill Multiplier [TIER 1] | 5 | 5 | 10 Sep |
+| Skill Multiplier [TIER 2] | 19 | 24 | 10 Sep |
+| Skill Multiplier [TIER 3] | 45 | 69 | 10 Sep |
+| Skill Multiplier [TIER 4] | 129 | 198 | 10 Sep |
+| Skill Multiplier [TIER 5] | 255 | 453 | 14 Sep |
+| Skill Multiplier [TIER 6] | 425 | 878 | 14 Sep |
+| Skill Multiplier [TIER 7] | 615 | 1,493 | 14 Sep |
+| Skill Multiplier [TIER 8] | 995 | 2,488 | 27 Sep |
+| Skill Multiplier [TIER 9] | 1,499 | 3,987 | 27 Sep |
+| Skill Multiplier [TIER 10] | 1,995 | 5,982 | 27 Sep |
+| Skill Multiplier [TIER 11] | 2,999 | 8,981 | 3 Oct |
+| Skill Multiplier [TIER 12] | 3,999 | 12,980 | 3 Oct |
 
-The running total is our sum. It only matters if tiers must be bought in order, which the listing does not say. The multiplier each tier gives is not shown in public data either. The first three tiers cost 67 Robux together; the last three cost 4,489.
+The running total is our sum. It only matters if tiers must be bought in order, which the listing does not say. The multiplier each tier gives is not shown in public data either. The first three tiers cost 69 Robux together; the last three cost 8,993.
 
 ![Promotional art in three panels: a grey stone on blue water under +1, a cracked glowing lava rock on orange water under +150M, and a silver flying saucer on purple water under +4B](art02 "Official promotional art: the per-bounce number in the game's own advertising")
 
 ## What do Skill Packs and Wins Packs cost?
 
-| Product | [TIER 1] | [TIER 2] | [TIER 3] |
-| --- | --- | --- | --- |
-| Skill Pack 1 | 11 | 25 | 45 |
-| Skill Pack 2 | 45 | 95 | 185 |
-| Skill Pack 3 | 95 | 185 | 369 |
+| Product | [TIER 1] | [TIER 2] | [TIER 3] | [TIER 4] |
+| --- | --- | --- | --- | --- |
+| Skill Pack 1 | 11 | 25 | 45 | 99 |
+| Skill Pack 2 | 45 | 95 | 185 | 235 |
+| Skill Pack 3 | 95 | 185 | 369 | 499 |
 
 | Product | Robux |
 | --- | --- |
@@ -105,4 +107,4 @@ Each of these is not shown in public data and needs an in-game check:
 
 ## Where would we spend first?
 
-Our opinion, from prices alone. Skill Multiplier [TIER 1] at 3 Robux is the cheapest product in the whole +1 Stone Skipping store and the least risky way to see what a tier does. 2x Wins [PERMANENT] costs the same as a one-off Wins Pack 2, so if both work as named the multiplier should be worth more over time. We would hold off on tiers 8 to 10 until their values are known. Every other product is priced in the [full Robux product list](/stone-skipping/shop/).
+Our opinion, from prices alone. Skill Multiplier [TIER 1] at 5 Robux is the cheapest product in the whole +1 Stone Skipping store and the least risky way to see what a tier does. 2x Wins [PERMANENT] costs the same as a one-off Wins Pack 2, so if both work as named the multiplier should be worth more over time. We would hold off on tiers 8 to 12 until their values are known. Every other product is priced in the [full Robux product list](/stone-skipping/shop/).

@@ -7,15 +7,15 @@ description: "How to play Untitled Wheelie Game on Roblox: the nine things the d
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-09-30"
-scope: "Gameplay from the official Roblox description on 2026-09-30; exact key bindings and map names are not published by the developer"
+scope: "Gameplay from the official Roblox description on 2026-09-30; exact key bindings and map names are not in that description"
 type: "article"
 entity: "untitled-wheelie-game"
-tldr: ["You ride a bike around the map, hold wheelies, weave through traffic, deliver pizzas, run from cops and upgrade your bike.", "The developer says wheelies use a realistic balance point with responsive throttle and brake, so holding one is about control, not a button.", "Servers hold up to 10 players; private servers were not enabled on 30 September 2026.", "Exact controls are not in any official source, so we do not list key bindings."]
+tldr: ["You ride a bike around the map, hold wheelies, weave through traffic, deliver pizzas, run from cops and upgrade your bike.", "The developer says wheelies use a realistic balance point with responsive throttle and brake, so holding one is about control, not a button.", "Servers hold up to 10 players; private servers were not enabled on 30 September 2026.", "Exact controls are not in the Roblox records we read on 10 October 2026 (game description, event announcements, passes, products, group description), so we do not list key bindings."]
 related: ["cops-fines", "money", "bikes"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"]
 images: ["art02", "icon"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -36,7 +36,7 @@ The official description lists nine activities under "What you can do". Here the
 | RUN FROM COPS | Police chase riders; getting caught means a fine | [Cops and fines](/untitled-wheelie-game/cops-fines/) |
 | Wheelie around the map | Free riding is the core of the game | This page |
 | Swerve through oncoming traffic | Cars come towards you while you ride | This page |
-| Deliver pizzas to earn money | The one money source named outright | [Money guide](/untitled-wheelie-game/money/) |
+| Deliver pizzas to earn money | The job the description names | [Money guide](/untitled-wheelie-game/money/) |
 | Buy bikes, upgrades, and parts | Bikes, upgrades and parts are bought with money | [Bikes and parts](/untitled-wheelie-game/bikes/) |
 | Paint and customize your bike | Colour changes are part of the game | [Bikes and parts](/untitled-wheelie-game/bikes/) |
 | Race your friends | Racing is something players do together | — |

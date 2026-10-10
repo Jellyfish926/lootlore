@@ -7,15 +7,15 @@ description: "How to make money in Untitled Wheelie Game: pizza delivery, the Jo
 category: "Money & Upgrades"
 language: "en"
 checkedAt: "2026-09-30"
-scope: "Income sources from the official description; pass and product prices from the Roblox APIs on 2026-09-30; pay rates per job or wheelie are not published"
+scope: "Income sources from the official description; pass and product prices from the Roblox APIs on 2026-09-30; pay rates per job or wheelie are not in those records; the escape payout in the developer's AI COPS announcement, read on 2026-10-10, is on the cop chase rules page"
 type: "article"
 entities: ["pass-x2-job-earning", "pass-x3-job-earning", "product-cash-750", "product-cash-67500"]
-tldr: ["Pizza delivery is the one way to earn money that the developer names outright.", "Separate Job Earning and Wheelie Earning passes (X2 and X3) suggest wheelies pay too.", "The six cash packs range from $750 for 49 Robux to $67,500 for 1,499 Robux; bigger packs give far more per Robux.", "How much a delivery or a wheelie pays is not published."]
+tldr: ["Pizza delivery is the job the game description names; the developer's AI COPS announcement, read on 10 October 2026, also says an escape from the cops pays \"the money that the fines would have costed you\".", "Separate Job Earning and Wheelie Earning passes (X2 and X3) suggest wheelies pay too.", "The six cash packs range from $750 for 49 Robux to $67,500 for 1,499 Robux; bigger packs give far more per Robux.", "How much a delivery or a wheelie pays is not in the Roblox records we read on 10 October 2026."]
 related: ["gamepasses", "bikes", "cops-fines"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"]
 images: ["art01"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # How to Make Money in Untitled Wheelie Game Fast
 
-The official way to make money in Untitled Wheelie Game is pizza delivery — the game description says "Deliver pizzas to earn money." The developer also sells earning multipliers for jobs and for wheelies, which suggests holding wheelies earns cash too. Of the six Robux cash packs, the largest gives nearly three times the cash per Robux of the smallest.
+The game description names one way to make money in Untitled Wheelie Game: "Deliver pizzas to earn money." The developer also sells earning multipliers for jobs and for wheelies, and its AI COPS announcement, read on 10 October 2026, says escaping the cops pays. Of the six Robux cash packs, the largest gives nearly three times the cash per Robux of the smallest.
 
 ## Where does money come from?
 
@@ -74,7 +74,7 @@ Thirteen products are simply named after a Robux amount, from "10 Robux" up to "
 
 ## How do you avoid losing money?
 
-The fastest way to lose cash is a police fine. Fines are the one penalty the developer mentions — the NEVER PAY FINES pass exists "for when you get caught". Read the [cops and fines guide](/untitled-wheelie-game/cops-fines/) before you ride near police with a full wallet.
+The fastest way to lose cash is a police fine. Fines are a penalty the developer's records mention — the NEVER PAY FINES pass exists "for when you get caught" — and the AI COPS announcement, read on 10 October 2026, describes a chase as "a gamble, you either lose money or make money". Read the [cops and fines guide](/untitled-wheelie-game/cops-fines/) before you ride near police with a full wallet.
 
 ## What should you spend money on?
 

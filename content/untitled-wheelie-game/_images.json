@@ -19,7 +19,9 @@
   "money": "art01",
   "bikes": "art02",
   "gamepasses": "art02",
-  "author": "art02"
+  "author": "art02",
+  "patch-notes": "art02",
+  "cops-chase-rules": "art01"
  },
  "shots": {
   "art01": {

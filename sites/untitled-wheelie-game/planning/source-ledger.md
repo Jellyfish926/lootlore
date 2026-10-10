@@ -14,6 +14,7 @@
 - TH = https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=10268960646&size=768x432&format=Png&countPerUniverse=10（S）
 - IC = https://thumbnails.roblox.com/v1/games/icons?universeIds=10268960646&size=512x512&format=Png（S）
 - WD = https://games.roblox.com/v1/games?universeIds=9765324104（S，仅用于区分另一款 Wheelie District）
+- EV = https://apis.roblox.com/virtual-events/v1/universes/10268960646/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA（S，2026-10-10 读，7 条活动公告；不带游标的请求时而只回 1 条）
 - C1 = progameguides / nerdschalk / allthings.how 码页（B/C，只当线索，不链接、不引用码）
 
 | 页 | 主来源 | 辅助 | 最高级 | 素材状态 | 图片 |
@@ -30,3 +31,5 @@
 | gamepasses | GP | DP | S | 充足（描述为空的通行证只写名称与价格） | art02 |
 | author | — | — | — | 编辑方针页 | icon |
 | codes | C1 | — | B/C | **素材不足 → 不建** | — |
+| patch-notes（2026-10-10 建） | EV | G、GP、DP | S | 充足：只印 7 条活动公告的原文与接口时间字段；是否如文上线、价格、别处是否另发更新说明 not confirmed | art02（封面）、art01 |
+| cops-chase-rules（2026-10-10 建） | EV（AI COPS 👮 一条） | G、GP、DP | S | 充足：只印公告 12 行原文 + 白话解释（标明为本站解读）；罚款数额、加星条件、单人服入口 not confirmed | art01（封面） |

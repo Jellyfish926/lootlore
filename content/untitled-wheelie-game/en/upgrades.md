@@ -14,7 +14,7 @@ related: []
 sourceUrls: []
 images: ["art02"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -30,11 +30,11 @@ These three guides use the developer's own store data from Roblox — names, pri
 
 ### [How to Make Money Fast](/untitled-wheelie-game/money/)
 
-Pizza delivery is the one income source the developer names. The Job Earning and Wheelie Earning passes multiply two kinds of income, and the six cash packs give very different value per Robux — from about 15 dollars per Robux on the smallest to 45 on the largest.
+Pizza delivery is the job the game description names; the developer's BIG UPDATE announcement, read on 10 October 2026, lists "1 new job" without naming it. The Job Earning and Wheelie Earning passes multiply two kinds of income, and the six cash packs give very different value per Robux — from about 15 dollars per Robux on the smallest to 45 on the largest.
 
 ### [Bikes, Parts and Backfire](/untitled-wheelie-game/bikes/)
 
-The bikes and parts the developer has named: e-bikes and "Emotos", the Tuttiro Bike and Eblox Dragster passes, Extra Bike Speed, the three Backfire levels and paint. Plus what is not published, such as bike stats.
+The bikes and parts the developer has named: e-bikes and "Emotos", the Tuttiro Bike and Eblox Dragster passes, Extra Bike Speed, the three Backfire levels and paint. Plus what the store records do not hold, such as a full bike list with prices.
 
 ### [All 12 Game Passes and Prices](/untitled-wheelie-game/gamepasses/)
 
@@ -55,7 +55,7 @@ Our general advice: learn the wheelie and do some pizza runs before spending Rob
 
 ## What these guides do not cover yet
 
-There is no bike list with prices or stats, because the developer has not published one outside the game. We also do not rank bikes. When official numbers appear, the bikes guide will grow into a full list.
+There is no full bike list with prices, because we found none in the Roblox records we read; the four moped speed figures in the developer's Mopeds + Rain announcement, read on 10 October 2026, are on the [patch notes page](/untitled-wheelie-game/patch-notes/). We also do not rank bikes. When official numbers appear, the bikes guide will grow into a full list.
 
 ## Scope
 

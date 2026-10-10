@@ -7,14 +7,14 @@ description: "Untitled Wheelie Game update history from official Roblox store da
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-09-30"
-scope: "Creation and update timestamps from the Roblox games, game pass and developer product APIs on 2026-09-30; the developer publishes no patch notes on Roblox"
+scope: "Creation and update timestamps from the Roblox games, game pass and developer product APIs on 2026-09-30; the developer's announcements we read on 2026-10-10 are Roblox event listings, covered on the patch notes page"
 type: "article"
 tldr: ["The experience was created on 4 June 2026 and the listing was updated again on 30 September 2026.", "June brought the earning passes, Free Subway Travel, More Helmets and six cash packs.", "Two bike passes followed in late June and July, then the EBike Pack on 15 August.", "September added the Backfire part and two ways to deal with police fines."]
 related: ["gamepasses", "bikes", "cops-fines"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"]
 images: ["art01"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -22,11 +22,11 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Update History from Store Dates
 
-Untitled Wheelie Game launched on Roblox on 4 June 2026 and has added new passes and products roughly every few weeks since. The most recent additions were the Backfire part on 4 September and two fine-related purchases on 21 and 26 September. The Roblox listing itself was last updated on 30 September 2026.
+Untitled Wheelie Game's Roblox record was created on 4 June 2026, and its store has gained new passes and products every few weeks since. The most recent additions were the Backfire part on 4 September and two fine-related purchases on 21 and 26 September. The Roblox listing itself was last updated on 30 September 2026.
 
 ## Where do these dates come from?
 
-The developer does not publish patch notes on Roblox. What it does publish is the store: every game pass and developer product has a creation date in Roblox's own data. Put in order, those dates sketch the game's update history.
+The developer's announcements are Roblox event listings: we read seven on 10 October 2026, and the [patch notes page](/untitled-wheelie-game/patch-notes/) prints them. This page uses a second source, the store: every game pass and developer product has a creation date in Roblox's own data. Put in order, those dates sketch the game's update history.
 
 One caution: a creation date is when an item was registered, not always the day it went live for players. A pass can be created a day or two before an update ships.
 
@@ -74,7 +74,7 @@ Reading the dates together, a few themes stand out. This is our interpretation:
 - **Bikes came in waves.** Two bike-named passes in late June and July, then a pack of e-bikes in August.
 - **September turned to parts and police.** The Backfire part and both fine options arrived within a month.
 
-None of this is a roadmap. The developer has not announced what comes next.
+None of this is a roadmap. When we read the event listings on 10 October 2026, one had a start time still ahead: HALLOWEEN UPDATE 🎃, with a start field of 21 October 2026 at 22:30 UTC and an end field of 1 November 2026 at 08:00 UTC.
 
 ## How often is the game updated?
 

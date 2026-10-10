@@ -7,15 +7,15 @@ description: "Untitled Wheelie Game cops explained: getting caught means a fine,
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-09-30"
-scope: "Fine-related pass and product from the Roblox game pass and developer product APIs on 2026-09-30; fine amounts and chase rules are not published"
+scope: "Fine-related pass and product from the Roblox game pass and developer product APIs on 2026-09-30; fine amounts are not in the Roblox records we read on 2026-10-10, and the chase rules the developer announced are on the cop chase rules page"
 type: "article"
 entities: ["pass-never-pay-fines", "product-avoid-fines"]
-tldr: ["Getting caught by the police costs you a fine, in the developer's own words.", "NEVER PAY FINES (149 Robux) is a game pass (a one-time purchase); AVOID FINES (13 Robux) is a developer product, and what it covers is not described.", "Fine amounts and how a chase ends are not published anywhere official.", "The cheapest defence is free: earn your money before you take risks near police."]
+tldr: ["Getting caught by the police costs you a fine, in the developer's own words.", "NEVER PAY FINES (149 Robux) is a game pass (a one-time purchase); AVOID FINES (13 Robux) is a developer product, and what it covers is not described.", "Fine amounts are not confirmed; the developer's AI COPS announcement, read on 10 October 2026, says you are fined if caught, paid if you escape, and that cops give up after losing sight of you \"for over 60 seconds\".", "The cheapest defence is free: earn your money before you take risks near police."]
 related: ["how-to-play", "money", "gamepasses"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10268960646"]
 images: ["art01"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Cops: Fines, Passes and Tips
 
-If the police catch you in Untitled Wheelie Game, you pay a fine. Two Robux purchases deal with it: the NEVER PAY FINES game pass (149 Robux), whose description says you "never have to pay fines for when you get caught", and the AVOID FINES developer product (13 Robux), whose effect is not described. Fine amounts are not published.
+If the police catch you in Untitled Wheelie Game, you pay a fine. Two Robux purchases deal with it: the NEVER PAY FINES game pass (149 Robux), whose description says you "never have to pay fines for when you get caught", and the AVOID FINES developer product (13 Robux), whose effect is not described. No Roblox record we read on 10 October 2026 states a fine amount.
 
 The police are a headline feature. "RUN FROM COPS" is the first item in the game's official list of activities, and the 🚔 emoji is part of the game's name on Roblox.
 
@@ -31,7 +31,7 @@ The police are a headline feature. "RUN FROM COPS" is the first item in the game
 
 ## What happens when you get caught?
 
-The clearest official statement is the description of the NEVER PAY FINES pass: "Just never have to pay fines for when you get caught." So a catch leads to a fine. The developer has not published:
+The clearest official statement is the description of the NEVER PAY FINES pass: "Just never have to pay fines for when you get caught." So a catch leads to a fine. The store records we read do not answer the questions below; the chase rules the developer announced are on the [cop chase rules page](/untitled-wheelie-game/cops-chase-rules/), read on 10 October 2026.
 
 | Question | Official answer on 30 September 2026 |
 | --- | --- |
@@ -39,7 +39,7 @@ The clearest official statement is the description of the NEVER PAY FINES pass: 
 | Does it scale with your bike or your money? | Not published |
 | What counts as being caught? | Not published |
 | Can you go to jail or lose your bike? | Not mentioned anywhere official |
-| Are the cops computer-controlled? | The promotional art is labelled "AI COPS" |
+| Are the cops computer-controlled? | The developer's event listing, read on 10 October 2026, is titled "AI COPS 👮" and opens with "AI Cops are being added!" |
 
 We will not fill these gaps with guesses. If you see a number on another site, check whether it links to a developer post.
 

@@ -9,12 +9,12 @@ language: "en"
 checkedAt: "2026-09-30"
 scope: "Category index"
 type: "category"
-tldr: ["Four guides for your first sessions: how to play, cops and fines, the official group, and the update history.", "Start with how to play; it is built line by line from the developer's own description.", "Every number on these pages comes from Roblox's official data and carries its check date."]
+tldr: ["Guides for your first sessions: how to play, cops and fines, the announced cop chase rules, the official group, the update history and the developer's announcements.", "Start with how to play; it is built line by line from the developer's own description.", "The patch notes and cop chase rules pages are built from Roblox event listings read on 10 October 2026."]
 related: []
 sourceUrls: []
 images: ["art02"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -22,9 +22,9 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Beginner Guides: Start Here
 
-New to Untitled Wheelie Game? Read the how-to-play guide first: it lists everything the developer says you can do, from pizza delivery to rideouts, and explains what the wheelie physics depend on. Then read the cops and fines guide, because getting caught costs money, and use the community page to find the real Roblox group.
+New to Untitled Wheelie Game? Read the how-to-play guide first: it lists the nine activities in the developer's game description, from pizza delivery to rideouts, and explains what the wheelie physics depend on. Then read the cops and fines guide, because getting caught costs money, and use the community page to find the real Roblox group.
 
-These four guides stick to what Untitled Wheelie Group has published on Roblox — the game description, passes, products and group page — and say plainly when something is our advice rather than an official rule.
+These guides draw on what Untitled Wheelie Group has published on Roblox — the game description, passes, products, event listings and group page — and say plainly when something is our advice rather than an official rule.
 
 ## Pick a guide by question
 
@@ -46,7 +46,7 @@ Every pass and product the developer has added since 4 June 2026, in date order,
 
 ## What should a new player do first?
 
-Keep the first session simple. Ride, practise holding a wheelie, and pick up pizza deliveries — they are the one way to earn money that the developer names outright. Watch for the police while you ride. Once you have some cash, the [Money & Upgrades section](/untitled-wheelie-game/upgrades/) explains where it is best spent.
+Keep the first session simple. Ride, practise holding a wheelie, and pick up pizza deliveries — the job the game description names. The developer's AI COPS announcement, read on 10 October 2026, also says escaping the cops pays; the [cop chase rules page](/untitled-wheelie-game/cops-chase-rules/) has the wording. Watch for the police while you ride. Once you have some cash, the [Money & Upgrades section](/untitled-wheelie-game/upgrades/) explains where it is best spent.
 
 | Your first goal | Where to read |
 | --- | --- |
@@ -57,8 +57,8 @@ Keep the first session simple. Ride, practise holding a wheelie, and pick up piz
 
 ## What these guides do not cover yet
 
-We have no page for codes, controls, a bike list or the map. Codes are not published anywhere we can read them, and controls, bike stats and place names do not appear in any official source we could check. Those pages will appear when the developer confirms the details.
+We have no page for codes, controls, a bike list or the map. Codes are not published anywhere we can read them, and controls and place names do not appear in any official source we could check; for bike stats, the developer's Mopeds + Rain announcement, read on 10 October 2026, gives speeds for two mopeds, printed on the [patch notes page](/untitled-wheelie-game/patch-notes/). Those pages will appear when the developer confirms the details.
 
 ## Scope
 
-Untitled Wheelie Game is a live Roblox game that updates often — the listing showed an update on 30 September 2026. Every guide shows its check date, and numbers such as visits are snapshots that grow daily.
+Untitled Wheelie Game is a live Roblox game: when we read it on 10 October 2026, the experience listing's "updated" timestamp was 8 October 2026 (UTC). The byline of the six guides in this section carries a Last reviewed date, and numbers such as visits are snapshots from the date they were read.

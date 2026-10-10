@@ -9,13 +9,13 @@ language: "en"
 checkedAt: "2026-09-30"
 scope: "Site entry point"
 type: "home"
-tldr: ["Untitled Wheelie Game is a free Roblox motorbike game from the group Untitled Wheelie Group: pop wheelies, dodge traffic, deliver pizzas and run from cops.", "It sells 12 game passes (7 on sale, 99 to 499 Robux) and 23 developer products, including six packs named after dollar amounts (the developer does not say what they give).", "Getting caught means fines; a 149-Robux pass and a 13-Robux product both deal with them.", "There are no badges and no officially published codes yet."]
+tldr: ["Untitled Wheelie Game is a free Roblox motorbike game from the group Untitled Wheelie Group: pop wheelies, dodge traffic, deliver pizzas and run from cops.", "It sells 12 game passes (7 on sale, 99 to 499 Robux) and 23 developer products, including six packs named after dollar amounts (their store records have an empty description).", "Getting caught means fines; a 149-Robux pass and a 13-Robux product both deal with them.", "The Roblox records we read on 10 October 2026 held no badges and no codes."]
 faq: [["Who made Untitled Wheelie Game?", "A Roblox group called Untitled Wheelie Group, owned by the account fireblock373. The experience was created on 4 June 2026 — see [group and Discord info](/untitled-wheelie-game/community/)."], ["How do you earn money?", "The official description names pizza delivery. Two sets of earning passes, one for jobs and one for wheelies, point to a second income source — see the [money guide](/untitled-wheelie-game/money/)."], ["What is the most expensive game pass?", "X3 Job Earning, at 499 Robux on 30 September 2026. All 12 passes are on the [game pass list](/untitled-wheelie-game/gamepasses/)."], ["Are there Untitled Wheelie Game codes?", "Code lists circulate on other sites, but we could not see any code in an official source, so we do not list them. The [community page](/untitled-wheelie-game/community/) explains why."], ["How many players can join a server?", "Up to 10, according to the Roblox listing. Private servers were not enabled when we checked — [how to play](/untitled-wheelie-game/how-to-play/)."]]
 related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10268960646/developerproducts?limit=100"]
 images: ["art01", "art02"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -62,7 +62,7 @@ You pay a fine. That comes straight from the developer's own wording on the NEVE
 
 ## What has changed recently?
 
-The developer does not post patch notes on Roblox, but every pass and product carries a creation date. The three most recent additions:
+The developer announces updates through Roblox event listings (we read seven on 10 October 2026; the [patch notes page](/untitled-wheelie-game/patch-notes/) prints them), and every pass and product carries a creation date. The three most recent additions:
 
 | Date (2026) | What appeared |
 | --- | --- |
@@ -83,4 +83,4 @@ Because we could not see a single code in an official source. The game descripti
 
 ## How this guide uses its sources
 
-This is an unofficial fan guide. Facts come first from what Untitled Wheelie Group has published on Roblox: the game description, game passes, developer products and the group page. We do not list codes, bike stats, fine amounts or controls until an official source confirms them. Buying suggestions are our advice, not rules of the game.
+This is an unofficial fan guide. Facts come first from what Untitled Wheelie Group has published on Roblox: the game description, game passes, developer products and the group page. We do not list codes, fine amounts or controls until an official source confirms them; for bike stats we print the four moped speeds from the developer's Mopeds + Rain announcement, read on 10 October 2026, and nothing else. Buying suggestions are our advice, not rules of the game.

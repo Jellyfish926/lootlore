@@ -9,19 +9,19 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Category index"
 type: "category"
-tldr: ["Four guides for your first sessions: codes, beginner basics, game info and the rules on exploits.", "Brand new? Redeem W7C28D, then read the beginner guide before you carry anything valuable.", "Every guide lists its sources and the date they were last checked."]
+tldr: ["Four guides for your first sessions: codes, beginner basics, game info and the rules on exploits.", "Brand new? Redeem W7C28D, then read the beginner guide before you carry anything valuable.", "The four guides each list their sources and the date those were last checked."]
 related: []
 sourceUrls: []
 images: ["th4"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
 ---
 # BlockSpin Getting Started Guides: Codes, Basics, Rules
 
-Just joined BlockSpin? Start with the code, then learn the one rule that costs new players the most: you drop your whole inventory when you die. After that, the game info page answers the "who makes this and can I play it on my console" questions, and the rules page explains why cheat tools are a bad trade.
+Just joined BlockSpin? Start with the code, then learn the death-drop rule from the game description: you drop your whole inventory when you die. After that, the game info page answers the "who makes this and can I play it on my console" questions, and the rules page explains why cheat tools are a bad trade.
 
 ## Pick a guide by what you need
 
@@ -45,6 +45,6 @@ Why there are no cheat codes, what Roblox's Community Standards say about exploi
 
 Each page is built from Roblox's official game data, the BlockSpin developer group and the studio's own website. Community code sites and wikis are only used to cross-check, never as the only source for a fact. When the sources disagree, or when we simply could not confirm something, the page says so instead of guessing.
 
-Guides on jobs, map locations, weapons and vehicles are being prepared, but they stay unpublished until each detail has been checked in the live game. The game updates often — the last update on Roblox was September 19, 2026 — so a list that was right a few months ago can easily be wrong today.
+Guides on jobs and map locations stay unpublished until each detail has been checked in the live game. Robux prices are a different case: they come from Roblox's own product records and are in the [Money & Gear guides](/blockspin/money-gear/). The game record's "updated" timestamp read October 3, 2026 when we checked on October 10, 2026 (UTC), so a list that was right a few months earlier can be wrong on the day you read it.
 
 Spotted something that no longer matches the game? The [author page](/blockspin/author/) explains how to report it. For everything else, head back to the [BlockSpin hub](/blockspin/).

@@ -16,6 +16,10 @@
 | weapons | —— | Fandom Weapons（B，2025-10）、blockspintools（C）、YouTube 标题（B） | C04、B03 | 素材不足 | draft |
 | vehicles | 缩略图 th1（S，只证明有载具） | Fandom Cars / Elite_Vehicle_Crate / F-150（B，2025） | B01 | 素材不足（掉率过期） | draft |
 | money-gear | —— | —— | —— | 下属文章全 draft | draft |
+| robux-shop（2026-10-10 建） | developer-products v2（S）、game-passes（S，空）、badges（S，空）、games API（S）、virtual-events（S） | —— | 2026-10-10 读数：68 条商品记录 / 66 条在售 / 本站计 64 条 | 充足：名称、Robux 价格、记录创建日；无描述商品的功能 not confirmed | 发布 |
+| weapon-packs（2026-10-10 建） | developer-products v2（S）、virtual-events（S）、games API（S） | —— | 17 条名称含武器 / 弹药 / 投掷物词的在售记录 + 3 条 Revenge Pack | 充足：只写 Robux 价格；伤害、射速、现金价、包内容 not confirmed。与旧草稿 weapons 同主题，不要两页同时发布 | 发布 |
+| mansion-upgrades（2026-10-10 建） | developer-products v2（S）、virtual-events（S，两页 11 + 3 共 14 条）、games API（S） | —— | 9 条 Mansion 商品记录，其中 4 条有官方描述 | 充足：无描述的 5 条功能 not confirmed | 发布 |
+| money-gear（2026-10-10 重写翻正，取代上一行） | 同其成员页 | —— | —— | 充足（3 篇成员页已发布） | 发布 |
 
 ## 翻正前待核实清单（draft 页）
 

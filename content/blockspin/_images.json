@@ -15,11 +15,14 @@
   "beginner": "th4",
   "game-info": "icon",
   "cheats-bans": "th3",
-  "money-gear": "th1",
+  "money-gear": "th2",
   "jobs": "th4",
   "map-locations": "th3",
   "weapons": "th3",
-  "vehicles": "th1"
+  "vehicles": "th1",
+  "robux-shop": "th3",
+  "weapon-packs": "th4",
+  "mansion-upgrades": "th1"
  },
  "shots": {
   "th1": {

@@ -9,13 +9,13 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Site entry point"
 type: "home"
-tldr: ["BlockSpin is an open-world action game on Roblox by the Cinnamon Go! group, set in a Florida county: work jobs, open reward cases, level up and fight other players.", "The one code in the official game description is W7C28D, worth $500 for new players.", "You drop your whole inventory when you die. Items stored in the safe in your house stay secure.", "This hub only states what official sources confirm; anything we could not check is left out."]
+tldr: ["BlockSpin is an open-world action game on Roblox by the Cinnamon Go! group, set in a Florida county: work jobs, open reward cases, level up and fight other players.", "The one code in the official game description is W7C28D, worth $500 for new players.", "You drop your whole inventory when you die. Items stored in the safe in your house stay secure.", "This hub draws on official sources and gives the date each was read; what we could not check is marked not confirmed or left out."]
 faq: [["Who makes BlockSpin?", "The Roblox group Cinnamon Go!, which describes itself as owned and managed by Cinnamon Software, the studio also behind LifeTogether. Details on the [game info page](/blockspin/game-info/)."], ["Is there a working code?", "Yes. The official game description gives W7C28D for $500 cash, for new players. The full list and why we do not copy other sites' codes are on the [codes page](/blockspin/codes/)."], ["What happens when I die?", "You drop everything in your inventory. The game description says to keep items in the safe in your house. See the [beginner guide](/blockspin/beginner/)."], ["How many players fit in one server?", "28, according to the Roblox game data we checked on September 29, 2026."], ["Can I get banned for exploiting?", "Roblox rules forbid exploits and cheating, and the developer group runs a separate paid ban appeal experience. Read the [cheats and bans page](/blockspin/cheats-bans/)."]]
 related: []
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/"]
 images: ["th3"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
@@ -53,9 +53,9 @@ The full breakdown, including favourites, vote counts and the studio's own reach
 
 ## What do official BlockSpin sources confirm?
 
-A short list. The official sources we reached contain a short game description, four promotional thumbnails and one code. From those we can confirm that jobs, reward cases, character levels, player fights, a house with a safe, a Quick-11 convenience store, a fast-food restaurant and fishing all exist in the game.
+A short list. The official sources we reached on September 29, 2026 contain a short game description, four promotional thumbnails and one code. On October 10, 2026 (UTC) we also read Roblox's public records for the game: 68 developer product records and 14 event listings. From those we can confirm that jobs, reward cases, character levels, player fights, a house with a safe, a Quick-11 convenience store, a fast-food restaurant and fishing all exist in the game.
 
-Job names, map locations, weapon lists, vehicle case odds and trading values are not published anywhere official that we could reach. Community sites list them, but they disagree with each other and many are months out of date. Pages on jobs, locations, weapons and vehicles stay unpublished here until each fact is checked in-game.
+A list of jobs and what each pays, map locations, weapon stats, vehicle case odds and trading values are not in the official records we read on October 10, 2026. What those records do hold is the Robux shop: product names and Robux prices, covered in the [Robux shop guide](/blockspin/robux-shop/) and the [weapon packs guide](/blockspin/weapon-packs/). Pages on jobs and map locations stay unpublished here until each fact is checked in-game.
 
 ## How we handle BlockSpin codes
 

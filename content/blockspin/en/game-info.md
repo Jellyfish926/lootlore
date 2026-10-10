@@ -15,7 +15,7 @@ related: ["beginner", "codes", "cheats-bans"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766", "https://games.roblox.com/v1/games/votes?universeIds=6765805766", "https://groups.roblox.com/v1/groups/33720745", "https://www.cinnamon.co.uk/brands", "https://devforum.roblox.com/t/increase-in-playstation-crashes/3936850", "https://devforum.roblox.com/t/cinnamon-software-is-hiring-roblox-developers-artists-ui-designers-and-producers/4777100"]
 images: ["icon", "th1"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
@@ -40,7 +40,7 @@ Cinnamon Software describes itself on the Roblox Developer Forum as an independe
 
 ## When did BlockSpin come out, and how often is it updated?
 
-Roblox records the experience as created on November 6, 2024, and last updated on September 19, 2026. The game's title on Roblox carries a tag in square brackets — "[WEATHER]" at the time of checking — that the developers change to flag the current update, so the name you see may differ.
+Roblox records the experience as created on November 6, 2024. On October 10, 2026 (UTC) the record's "updated" timestamp read October 3, 2026, and the game's title on Roblox carried the tag "[MANSION UNDERGROUND]" in square brackets. The tag is part of the title the developers set, so the name you see may differ.
 
 ![A bright blue supercar kicks up sparks on a dark street, with the BlockSpin logo in the corner](th1 "Official promotional thumbnail: cars are part of the BlockSpin image")
 

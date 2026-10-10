@@ -11,7 +11,7 @@ scope: "Category index"
 type: "category"
 tldr: ["Four guides: every rod in order, all nine game passes, the rest of the Robux shop, and what is confirmed about enchants.", "Rods and Strength move your cast farther; luck, passes and chests come after.", "Prices are the developer's own Robux listings on 10 October 2026."]
 related: []
-sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"]
+sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://create.roblox.com/docs/production/monetization/passes"]
 images: ["art05"]
 date: "2026-09-29"
 updated: "2026-10-10"
@@ -44,18 +44,18 @@ Enchant Stones and Ultra Enchant Stones, four lucky chest types, Server Luck up 
 
 | Type | Lasts | Price range (Robux) | Best for |
 | --- | --- | --- | --- |
-| Rod unlock | Permanent | 39 – 6,499 | Casting farther |
-| Game pass | Permanent | 99 – 599 | A lasting boost or convenience |
-| Stat Upgrade | Not stated | 39 – 999 | Paid upgrade tiers |
-| Enchant stone | Used up | 49 – 4,499 per bundle | [Enchanting](/deep-fishing/enchants/) (effects not published) |
-| Lucky chest | Used up | 79 – 799 per bundle | Random rewards (odds not published) |
-| One-throw boost | One cast | 8 – 24 | A single important cast |
+| Rod unlock | Not confirmed | 39 – 6,499 | Casting farther |
+| Game pass | One-time purchase (Roblox pass) | 99 – 599 | A lasting boost or convenience |
+| Stat Upgrade | Not confirmed | 39 – 999 | Paid upgrade tiers |
+| Enchant stone | Not confirmed | 49 – 4,499 per bundle | [Enchanting](/deep-fishing/enchants/) (effects not published) |
+| Lucky chest | Not confirmed | 79 – 799 per bundle | Contents and odds not published |
+| One Throw product | One cast, going by the name (our inference) | 8 – 24 | A single important cast |
 
-"Best for" is our summary. The developer does not publish boost sizes or chest odds, so we compare purchases by what they are, not by numbers we do not have.
+"Best for" is our summary. Roblox's documentation says passes "let you charge users a one-time Robux fee"; the other five rows are developer products, and no Deep Fishing product record says how long its effect lasts. The developer does not publish boost sizes or chest odds, so we compare purchases by what they are, not by numbers we do not have.
 
 ## What order do we suggest?
 
-Free players first: fish, sell, raise Strength, and save for the next rod — the [how-to-play guide](/deep-fishing/how-to-play/) walks through it. If you do spend Robux, a permanent pass that fits how you play (Auto Sell or Fish Magnet for comfort, Double Coins for speed) goes further than consumables. Chests and single-cast boosts are the last thing to buy, because their payoff is unknown.
+Free players first: fish, sell, raise Strength, and save for the next rod — the [how-to-play guide](/deep-fishing/how-to-play/) walks through it. If you do spend Robux, we would start with a game pass that fits how you play (Auto Sell or Fish Magnet for comfort, Double Coins for speed), because a pass is a one-time purchase and what the shop's products give is not published. Chests and One Throw products are the last thing we would buy, because their payoff is unknown.
 
 ## Scope
 

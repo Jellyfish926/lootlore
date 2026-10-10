@@ -34,7 +34,7 @@ The experience's creator field on Roblox points to one group, and that group des
 | --- | --- | --- |
 | Group name | LazyGames. (with the full stop) | [Roblox groups API](https://groups.roblox.com/v1/groups/34744238) |
 | Group ID | 34744238 | Roblox groups API |
-| Description | "Welcome to Lazy Games. … Home of Deep Fishing!" | Roblox groups API |
+| Description | "🔥Welcome to Lazy Games. 💤🎮" and, on a second line, "🩵Home of Deep Fishing! 🐟" | Roblox groups API |
 | Owner | JoJocraftHP (display name JoJo), verified | Roblox groups API |
 | Members | 476,428 | Roblox groups API |
 | Public games | This game only | Roblox group games API |
@@ -43,9 +43,9 @@ The name includes a full stop — "LazyGames." — which is an easy way to tell 
 
 ## Why join the group?
 
-Because the developer says so. The last line of the official description reads: "Like the game, favorite it, and join the group for rewards and updates!" What the group reward is exactly is not stated there. Fan sites describe it, but we have not confirmed the details, so check in-game after joining.
+Because the developer says so. The last line of the official description reads: "⭐ Like the game, favorite it, and join the group for rewards and updates!" What the group reward is exactly is not stated there. Fan sites describe it, but we have not confirmed the details, so check in-game after joining.
 
-The store also has "Skip Gift" products, which suggest a timed gift system; our [Robux shop guide](/deep-fishing/shop/) lists them.
+The store also has three products named Skip Gift [1], Skip Gift [2] and Skip Gift [3]; what they do is not confirmed, and our [Robux shop guide](/deep-fishing/shop/) lists their prices.
 
 ![View from inside a giant pink fish mouth towards a Roblox angler reeling on a dock](art02 "Official promotional art from the Roblox experience page")
 

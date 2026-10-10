@@ -3,7 +3,7 @@ slug: "updates"
 url: "/deep-fishing/updates/"
 title: "Deep Fishing Updates: Changes Since 28 September 2026"
 seoTitle: "Deep Fishing Update Log: Store and Event Changes, Oct 2026"
-description: "Deep Fishing update log from Roblox records, 28 September to 10 October 2026: 14 added store products, Season Pass prices, pass edits and event dates."
+description: "Deep Fishing update log from Roblox records, 28 September to 10 October 2026: 14 new product records, Season Pass prices, pass edits and event dates."
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-10-10"
@@ -50,7 +50,7 @@ The table lists, in order, the creation, edit and event-window times we found fo
 
 The 19 products edited on 29 September are Starter Pack, the four Server Luck products, the five Coin Packs and the nine [Gift] products. An edit timestamp does not say what was changed. Compared with this site's own readings of 29 September 2026, the Robux prices on 10 October 2026 were the same for the nine passes and for all 19 of those products: Starter Pack, the four Server Luck products and the five Coin Packs in our [Robux shop guide](/deep-fishing/shop/), and the nine [Gift] products in our [game pass guide](/deep-fishing/gamepasses/).
 
-## Which store products were added after 28 September?
+## Which store product records were created after 28 September?
 
 Fourteen records. This site's shop guide counted 89 developer products on 29 September 2026. The responses we read on 10 October 2026 held 103, and 14 of them have a creation date in between (89 + 14 = 103, our own sum). We cannot tell from these responses whether any product was deleted in between, so this compares two counts. Four of them form the season group in the next section. The other ten are here.
 

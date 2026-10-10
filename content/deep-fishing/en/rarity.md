@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-10-10"
 scope: "Badge totals are a 2026-10-10 (UTC) snapshot of the Roblox badge API; percentages are our own division of those totals"
 type: "article"
-tldr: ["The badge list names three high tiers — Legendary, Mythical and Secret — plus Mutated fish as a separate track.", "On 10 October 2026, about 42 of every 100 Welcome! badge holders had landed a Legendary, 29 a Mythical and 9 a Secret.", "Mutations are the common one: 85 of every 100 had caught a mutated fish on the same date.", "The store sells mutation help — the More Mutations pass, rerolls and Ultra Mutation Scrolls — but publishes no odds."]
+tldr: ["The badge list names three high tiers — Legendary, Mythical and Secret — plus Mutated fish as a separate track.", "On 10 October 2026, about 42 of every 100 Welcome! badge holders had landed a Legendary, 29 a Mythical and 9 a Secret.", "Mutations are the common one: 85 of every 100 had caught a mutated fish on the same date.", "The store sells the More Mutations pass and products named Mutation Reroll and Ultra Mutation Scroll; their records give no odds."]
 related: ["badges", "how-to-play", "gamepasses"]
 sourceUrls: ["https://badges.roblox.com/v1/universes/10526853622/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://apis.roblox.com/virtual-events/v1/universes/10526853622/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://games.roblox.com/v1/games?universeIds=10526853622"]
 images: ["art01", "art05"]
@@ -56,13 +56,21 @@ The official description does say that new waters hold rarer fish. That is why t
 
 First Mutation is the second most common badge in the game, ahead of even the 50 Catches milestone. So a mutation is not a rare tier sitting above Secret; it is something most players see early.
 
-The badge wording, "your first Mutated Fish", treats mutation as a state a fish can have. The official store backs that up: the **More Mutations** game pass promises to help you "Find more mutated Fishes!", and separate products let you reroll a mutation or use an Ultra Mutation Scroll.
+The badge wording, "your first Mutated Fish", treats mutation as a state a fish can have. The official store backs that up: the **More Mutations** game pass has the description "Find more mutated Fishes! 🧬", and separate products are named Mutation Reroll and Ultra Mutation Scroll.
 
-| Mutation item | Type | Price in Robux | Record created |
+| Store record (name as listed) | Type | Price in Robux | Record created |
 | --- | --- | --- | --- |
 | More Mutations | Game pass | 349 | 18 Jul 2026 |
-| Mutation Reroll | Product | 49 (also x3, x5, x10, x25, x100 bundles) | 18 Jul 2026 |
-| Ultra Mutation Scroll | Product | 129 (also x3, x10, x50 bundles) | 6 Sep 2026 |
+| Mutation Reroll | Product | 49 | 18 Jul 2026 |
+| x3 Mutation Reroll | Product | 99 | 1 Sep 2026 |
+| x5 Mutation Rerolls | Product | 199 | 18 Jul 2026 |
+| x10 Mutation Rerolls | Product | 249 | 1 Sep 2026 |
+| x25 Mutation Rerolls | Product | 549 | 1 Sep 2026 |
+| x100 Mutation Rerolls | Product | 1,699 | 1 Sep 2026 |
+| x1 Ultra Mutation Scroll | Product | 129 | 6 Sep 2026 |
+| x3 Ultra Mutation Scrolls | Product | 299 | 6 Sep 2026 |
+| x10 Ultra Mutation Scrolls | Product | 799 | 6 Sep 2026 |
+| x50 Ultra Mutation Scrolls | Product | 2,999 | 6 Sep 2026 |
 | Mutation Luck (One Throw) | Product | 19 | 18 Sep 2026 |
 
 What each mutation is called, how much it multiplies a fish's value, and the reroll odds are not in the Roblox records we read on 10 October 2026. Third-party sites name a "Diamond" mutation, but we have not confirmed it.
@@ -75,7 +83,7 @@ It can. The **Auto Sell** pass sells your fish automatically, which is great for
 
 ## Which boosts lean towards rare fish?
 
-The store sells three luck passes (Lucky, Super Lucky, Ultra Lucky), server-wide luck from x2 to x16, and several one-throw boosts. None of them publish a number. Our advice: use luck when you are already reaching new water, and focus on distance first. The [Robux shop guide](/deep-fishing/shop/) lists every one with its price.
+The store sells three luck passes (Lucky, Super Lucky, Ultra Lucky), four Server Luck products from x2 to x16, and four One Throw products. None of their records publishes a number, and the product records have no description. Our advice: use luck when you are already reaching new water, and focus on distance first. The [Robux shop guide](/deep-fishing/shop/) lists every one with its price.
 
 ## Read next
 

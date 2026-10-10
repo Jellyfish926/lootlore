@@ -74,7 +74,7 @@ The jump after 1,000 fish is steep:
 
 Those are the 10 October 2026 totals.
 
-At that level, the paid helpers the developer sells matter more than for anything else. **Fish Magnet** ("Pull Fish close to the Bait") and **Auto Sell** are the two passes aimed at catching and clearing volume; our [game pass guide](/deep-fishing/gamepasses/) compares all nine. How many fish count per cast for these milestones is not stated officially.
+At that level, the paid helpers the developer sells matter more than for anything else. **Fish Magnet** ("Pull Fish close to the Bait 🧲") and **Auto Sell** are the two passes aimed at catching and clearing volume; our [game pass guide](/deep-fishing/gamepasses/) compares all nine. How many fish count per cast for these milestones is not stated officially.
 
 ## How do you get the rarity badges?
 

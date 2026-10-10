@@ -31,29 +31,29 @@ This list comes from the developer's own store products on Roblox, each named "U
 
 We order the rods by their official Robux unlock price, lowest first. Price is not the same as a published progression order, but the ladder reads naturally — iron, bronze, steel, gold, gems, then themed rods — and agrees with the partial order fan guides describe.
 
-| # | Rod | Robux unlock |
+| # | Store product (name as listed) | Robux unlock |
 | --- | --- | --- |
-| 1 | Iron Rod | 39 |
-| 2 | Iron Rope Rod | 79 |
-| 3 | Bronze Rod | 129 |
-| 4 | Full Bronze Rod | 199 |
-| 5 | Steel Rod | 299 |
-| 6 | Steel Rope Rod | 399 |
-| 7 | Full Steel Rod | 549 |
-| 8 | Steel Gold Rod | 649 |
-| 9 | Gold Rod | 879 |
-| 10 | Gold Diamond Rod | 1,049 |
-| 11 | Crystal Rod | 1,349 |
-| 12 | Ruby Rod | 1,649 |
-| 13 | Emerald Rod | 1,999 |
-| 14 | Frozen Rod | 2,249 |
-| 15 | Toxic Rod | 2,649 |
-| 16 | Knight Rod | 2,999 |
-| 17 | Obsidian Rod | 3,499 |
-| 18 | Disco Rod | 3,999 |
-| 19 | Angel Rod | 4,799 |
-| 20 | Ufo Rod | 5,599 |
-| 21 | Galaxy Rod | 6,499 |
+| 1 | Unlock Iron Rod | 39 |
+| 2 | Unlock Iron Rope Rod | 79 |
+| 3 | Unlock Bronze Rod | 129 |
+| 4 | Unlock Full Bronze Rod | 199 |
+| 5 | Unlock Steel Rod | 299 |
+| 6 | Unlock Steel Rope Rod | 399 |
+| 7 | Unlock Full Steel Rod | 549 |
+| 8 | Unlock Steel Gold Rod | 649 |
+| 9 | Unlock Gold Rod | 879 |
+| 10 | Unlock Gold Diamond Rod | 1,049 |
+| 11 | Unlock Crystal Rod | 1,349 |
+| 12 | Unlock Ruby Rod | 1,649 |
+| 13 | Unlock Emerald Rod | 1,999 |
+| 14 | Unlock Frozen Rod | 2,249 |
+| 15 | Unlock Toxic Rod | 2,649 |
+| 16 | Unlock Knight Rod | 2,999 |
+| 17 | Unlock Obsidian Rod | 3,499 |
+| 18 | Unlock Disco Rod | 3,999 |
+| 19 | Unlock Angel Rod | 4,799 |
+| 20 | Unlock Ufo Rod | 5,599 |
+| 21 | Unlock Galaxy Rod | 6,499 |
 
 Spellings are the developer's own, including "Ufo Rod" and "Gold Rod" (not "Golden Rod", as one fan wiki has it). The Steel Rope Rod unlock was created a day after the others, on 19 July 2026; its price places it between the Steel Rod and the Full Steel Rod.
 
@@ -75,13 +75,13 @@ They sit outside the numbered ladder, so compare them with care.
 
 | Item | Type | Robux | Record created |
 | --- | --- | --- | --- |
-| Astral Tide Rod | Exclusive rod | 599 | 26 Sep 2026 |
-| VoidReaper Rod | Exclusive rod | 799 | 26 Sep 2026 |
-| Divine King Rod | Skin | 399 | 25 Aug 2026 |
-| Divine Queen Rod | Skin | 639 | 25 Aug 2026 |
+| [Exclusive] Astral Tide Rod | Exclusive rod | 599 | 26 Sep 2026 |
+| [Exclusive] VoidReaper Rod | Exclusive rod | 799 | 26 Sep 2026 |
+| [Skin] Divine King Rod | Skin | 399 | 25 Aug 2026 |
+| [Skin] Divine Queen Rod | Skin | 639 | 25 Aug 2026 |
 | Oni Soulbinder Skin | Skin (not confirmed as a rod skin) | 1,649 | 9 Oct 2026 |
 
-"Skin" is the developer's own label, so the Divine rods are a look rather than a new rod tier. Oni Soulbinder Skin has no "Rod" in its product name, so what it is a skin for is not confirmed. The stats of the two Exclusive rods are not published; we cannot say how they compare with, say, the Crystal Rod, and we will not guess.
+"[Skin]" is the developer's own label in the product names; that the Divine rods change looks only is our reading of that label, not a published fact. Oni Soulbinder Skin has no "Rod" in its product name, so what it is a skin for is not confirmed; because of that it also sits in the last table of the [Robux shop guide](/deep-fishing/shop/). The stats of the two Exclusive rods are not published; we cannot say how they compare with, say, the Crystal Rod, and we will not guess.
 
 ## Should you buy rods or upgrades first?
 
@@ -89,7 +89,7 @@ The official description names Strength as the stat for throwing farther, and a 
 
 ## Can you earn rods without Robux?
 
-The Robux products are named "Unlock", which suggests a paid shortcut rather than the only route. Fan guides report that rods are also bought with coins in a Rod Shop, and quote prices such as 12,000 coins for the Bronze Rod. We have not been able to confirm those prices, so this page does not list coin costs. New players should read the [how-to-play guide](/deep-fishing/how-to-play/) for how coins are earned.
+The Robux products are named "Unlock". Whether rods can also be earned without Robux is not confirmed in the Roblox records we read on 10 October 2026. Fan guides report that rods are also bought with coins in a Rod Shop, and quote prices such as 12,000 coins for the Bronze Rod. We have not been able to confirm those prices, so this page does not list coin costs. New players should read the [how-to-play guide](/deep-fishing/how-to-play/) for how coins are earned.
 
 ![A giant blocky blue sea creature's eye reflecting an angler in a small boat](art04 "Official promotional art: the late rods exist for the deepest water")
 

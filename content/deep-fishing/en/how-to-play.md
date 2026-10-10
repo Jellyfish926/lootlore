@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-10-10"
 scope: "Roblox experience Deep Fishing as listed on 2026-10-10 (UTC), made by the group LazyGames. Later updates can change menus and numbers"
 type: "article"
-tldr: ["Hold and release to cast, and the line only starts fishing once it reaches the water.", "One cast can bring back several fish at once; you sell them for coins.", "Coins and upgrades push your cast further, and further water holds rarer fish.", "Strength is the stat the developer names for throwing farther — start there."]
+tldr: ["Hold and release to cast, and the line only starts fishing once it reaches the water.", "One cast can bring back several fish at once; you sell them for coins.", "Upgrades push your cast farther, and farther water holds rarer fish.", "Strength is the stat the developer names for throwing farther — start there."]
 entity: "deep-fishing"
 related: ["rarity", "rods", "gamepasses"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10526853622", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"]
@@ -33,13 +33,13 @@ The official description is short, so it is worth reading exactly. The table bel
 
 | Official line | What it means in practice |
 | --- | --- |
-| Cast your fishing rod as far as possible and reel in tons of fish | The distance of your cast is the main thing you are improving |
-| Upgrade your Strength to throw farther | Strength is the stat tied to cast distance |
-| Reach new waters with rarer fish | Rarity is linked to how far out you can reach |
-| Catch multiple fish in a single cast | One throw is a haul, not a single bite |
-| Sell your fish and become the ultimate angler | Fish turn into coins, coins turn into upgrades |
+| 🎣 Cast your fishing rod as far as possible and reel in tons of fish! | The distance of your cast is the main thing you are improving |
+| 💪 Upgrade your Strength to throw farther | Strength is the stat tied to cast distance |
+| 🌊 Reach new waters with rarer fish | Rarity is linked to how far out you can reach |
+| 🐟 Catch multiple fish in a single cast | One throw is a haul, not a single bite |
+| 💰 Sell your fish and become the ultimate angler | Selling fish is the income step; what coins buy is not listed in the description |
 
-Roblox files the experience under Simulation and the sub-genre Incremental Simulator. That label is a good hint: the numbers keep climbing, and every purchase exists to make the next cast a little longer.
+Roblox files the experience under Simulation and the sub-genre Incremental Simulator.
 
 ![A Roblox angler on a wooden pier casting a glowing line into a giant sinkhole in the sea with a huge eye at the bottom](art03 "Official promotional art: the pitch is simple — throw farther, reach deeper water")
 
@@ -47,13 +47,13 @@ Roblox files the experience under Simulation and the sub-genre Incremental Simul
 
 The listing's "How to play" section gives four steps: hold and release to cast your rod, reach the water to start fishing, catch multiple fish at once, then upgrade and cast even farther. Two details matter here.
 
-First, casting is a hold, not a tap. The release is what sends the lure out, so a rushed click throws short. Second, nothing happens until the lure lands in water. A throw that falls short does not count as fishing, which is why distance upgrades matter so much.
+First, the listing says "Hold and release to cast your rod", so a cast is a hold followed by a release; whether a longer hold throws farther is not confirmed. Second, the listing says "Reach the water to start fishing"; what happens to a throw that lands short of the water is not stated.
 
 How the power meter looks and exactly where the buttons sit are not covered in the official text, and we have not recorded them ourselves yet, so this guide does not describe them.
 
 ## What do you do with a full haul?
 
-You sell it. Coins are the main currency, and the developer's own **Double Coins** game pass ("Earn 2x more coins when selling fish!") confirms that coins come from your catches. There is also an XP track: the **Double XP** pass promises "2x more XP", so fishing levels you up alongside earning money. See the [game pass guide](/deep-fishing/gamepasses/) for what each pass does.
+You sell it. Coins are the main currency, and the developer's own **Double Coins** game pass ("Earn 2x more coins when selling fish! 🪙") ties coins to selling fish. The **Double XP** pass description reads "Earn 2x more XP! ⚡", so the game has XP; how XP is earned and what it unlocks is not confirmed. See the [game pass guide](/deep-fishing/gamepasses/) for what each pass does.
 
 If selling by hand gets tedious, the **Auto Sell** pass is described as "Sell your fish automatically". It is a convenience, not a power boost, and we cover when it gets in the way on the [rarity and mutations page](/deep-fishing/rarity/).
 
@@ -81,7 +81,7 @@ So we treat luck as a second step. Once you are throwing into new water, a luck 
 
 Yes, in public servers. Each server holds up to 12 players, according to the Roblox listing. The game record we read on 10 October 2026 had private servers switched off, so you cannot rent a quiet server for a group.
 
-Some store items affect everyone in the server, such as the "Server Luck" boosts from x2 to x16. If someone buys one while you are there, it is a good moment to fish.
+Four store products are named Server Luck (x2, x4, x8 and x16). Going by the name they may apply to a whole server, but their records have no description, so that is not confirmed.
 
 ## Where to go after this page
 

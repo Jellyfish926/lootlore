@@ -63,27 +63,27 @@ The subtitle calls this the game's first admin abuse, but the listing does not e
 
 The experience was created on 5 September 2026. The first store items were created five days later. Dates are UTC, so for players in the Americas some of them fall on the evening before:
 
-| Date (2026, UTC) | Created that day |
+| Date (2026, UTC) | Records created, and listed event times |
 | --- | --- |
 | 5 September | Experience created |
 | 10 September | 25 products: Starter Pack, Skill Multiplier [TIER 1] to [TIER 4], Wins Packs, Skill Packs, 2x Wins [PERMANENT], Skip Rebirth, Skill Boost, Wins Boost, Boost Pack, Rainbow Egg, Claim All Gifts |
 | 12 September | Admin Egg, Pirate Egg, Skill Packs [TIER 3], 5x Wins [PERMANENT], 10x Wins [PERMANENT] |
 | 13 September | Phoenix Relic [LIMITED STOCK], Wins Pack 5, four zone products, and two products that are not on sale (Boost Bundle, Power Boost) |
 | 14 September | Six passes: Admin Training Zone, Golden Training Zone, Hatch +3, +8 and +16 Eggs [STACKS], Auto Wins. Also Skill Multiplier [TIER 5] to [TIER 7] |
-| 15 September | +3 Pets pass; the event "World 3 + New Content" is listed |
+| 15 September | +3 Pets pass; listing for the event "World 3 + New Content" created |
 | 19 September | Auto Rebirth pass, Astronaut Egg |
-| 20 September | Event "World 3 + New Content" starts (18:00 UTC) |
-| 22 September | King Doggy; the event "WORLD 4 + UPDATE" is listed |
-| 26 September | Chocolatier Egg, Offline Reward x3; the event ADMIN ABUSE + WORLD 5 is listed |
-| 27 September | Skill Multiplier [TIER 8] to [TIER 10]; event "WORLD 4 + UPDATE" starts (16:00 UTC) |
+| 20 September | Listed start of the event "World 3 + New Content" (18:00 UTC) |
+| 22 September | King Doggy; listing for the event "WORLD 4 + UPDATE" created |
+| 26 September | Chocolatier Egg, Offline Reward x3; listing for the event ADMIN ABUSE + WORLD 5 created |
+| 27 September | Skill Multiplier [TIER 8] to [TIER 10]; listed start of the event "WORLD 4 + UPDATE" (16:00 UTC) |
 | 29 September | Koi Training Zone, +1 Pet and +6 Pets passes; Golden Skip, Diamond Skip, Devil Pack |
 | 30 September | 14 [GIFT] products |
-| 1 October | Dragon Egg; window of "WORLD 4 + UPDATE" ends (16:00 UTC) |
-| 3 October | Skill Pack 1 [TIER 4], Skill Pack 2 [TIER 4], Skill Pack 3 [TIER 4]; +100 Pets Inventory Slots; Rainbow Trail, Void Trail; Skill Multiplier [TIER 11] and [TIER 12]; the event "WORLD 6 + ADMIN ABUSE" is listed; window of ADMIN ABUSE + WORLD 5 (16:00 to 18:00 UTC) |
-| 5 October | The event "Halloween Event" is listed |
+| 1 October | Dragon Egg; listed end of the event "WORLD 4 + UPDATE" (16:00 UTC) |
+| 3 October | Skill Pack 1 [TIER 4], Skill Pack 2 [TIER 4], Skill Pack 3 [TIER 4]; +100 Pets Inventory Slots; Rainbow Trail, Void Trail; Skill Multiplier [TIER 11] and [TIER 12]; listing for the event "WORLD 6 + ADMIN ABUSE" created; listed window of ADMIN ABUSE + WORLD 5 (16:00 to 18:00 UTC) |
+| 5 October | Listing for the event "Halloween Event" created |
 | 7 October | Witch Egg |
 | 8 October | The experience record's "updated" timestamp (00:42 UTC), as read on 10 October |
-| 9 October | Void Skip; the Golden Skip and Diamond Skip records are edited (19:24 UTC) |
+| 9 October | Void Skip; Golden Skip and Diamond Skip records edited (19:24 UTC) |
 
 Every item's price is in the [full Robux product list](/stone-skipping/shop/), and the passes are in the [game pass guide](/stone-skipping/gamepasses/).
 

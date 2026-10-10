@@ -198,3 +198,28 @@
 | config/hub.json（同上） | blurb | … the ADMIN ABUSE + WORLD 5 event time, all 11 game passes and all 78 Robux products with official prices … → … official event windows, all 11 game passes and all 90 Robux products with official prices … | — | 同上；其余字词未动 |
 
 时态无关改写（逐句见上表「原句 → 新句」，本节只列位置）：index 的 description（World 6 event dates → official event dates）、要点框第 3 条、faq 第 5 条答案、「Which events are on Roblox's listing?」一节 3 句；updates 的「How do we keep this page current?」1 句；how-to-play 的 Worlds 一节 1 处。其余提到 WORLD 6 + ADMIN ABUSE / Halloween Event 的句子（updates 要点框与导语第二段、事件表、beginner、community、pets）首轮已是锚定读取时刻的过去时或纯起止时间，复查后未动。
+
+## 验收修复第一轮 D1fix1（2026-10-10；小项 ⑤ ⑥ ⑦）
+
+⑤ updates 时间线里的活动行改成与时态无关（listing created / listed start / listed end）；⑥ 首页「103 data entries」是模板按 data/stone-skipping/entities.json 的实体条数输出的：90 个商品 + 11 个通行证 + 游戏本体 1 条 + 活动 listing 1 条（ADMIN ABUSE + WORLD 5）= 103，页内写明构成；⑦ how-to-play 的六行官方描述补回行首表情，做到逐字。行号是改动前（HEAD 7a06982a）的行号。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| updates.md:73 | ⑤ | \| 15 September \| +3 Pets pass; the event "World 3 + New Content" is listed \| → \| 15 September \| +3 Pets pass; listing for the event "World 3 + New Content" created \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:75 | ⑤ | \| 20 September \| Event "World 3 + New Content" starts (18:00 UTC) \| → \| 20 September \| Listed start of the event "World 3 + New Content" (18:00 UTC) \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:76 | ⑤ | \| 22 September \| King Doggy; the event "WORLD 4 + UPDATE" is listed \| → \| 22 September \| King Doggy; listing for the event "WORLD 4 + UPDATE" created \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:77 | ⑤ | \| 26 September \| Chocolatier Egg, Offline Reward x3; the event ADMIN ABUSE + WORLD 5 is listed \| → \| 26 September \| Chocolatier Egg, Offline Reward x3; listing for the event ADMIN ABUSE + WORLD 5 created \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:78 | ⑤ | \| 27 September \| Skill Multiplier [TIER 8] to [TIER 10]; event "WORLD 4 + UPDATE" starts (16:00 UTC) \| → \| 27 September \| Skill Multiplier [TIER 8] to [TIER 10]; listed start of the event "WORLD 4 + UPDATE" (16:00 UTC) \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:81 | ⑤ | \| 1 October \| Dragon Egg; window of "WORLD 4 + UPDATE" ends (16:00 UTC) \| → \| 1 October \| Dragon Egg; listed end of the event "WORLD 4 + UPDATE" (16:00 UTC) \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:82 | ⑤ | the event "WORLD 6 + ADMIN ABUSE" is listed; window of ADMIN ABUSE + WORLD 5 (16:00 to 18:00 UTC) \| → listing for the event "WORLD 6 + ADMIN ABUSE" created; listed window of ADMIN ABUSE + WORLD 5 (16:00 to 18:00 UTC) \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:83 | ⑤ | \| 5 October \| The event "Halloween Event" is listed \| → \| 5 October \| Listing for the event "Halloween Event" created \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:86 | ⑤ | \| 9 October \| Void Skip; the Golden Skip and Diamond Skip records are edited (19:24 UTC) \| → \| 9 October \| Void Skip; Golden Skip and Diamond Skip records edited (19:24 UTC) \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| updates.md:66 | ⑤ | \| Date (2026, UTC) \| Created that day \| → \| Date (2026, UTC) \| Records created, and listed event times \| | virtual-events v1 带游标（events-cursor-read1.json，eventTime / createdUtc，05:21 UTC） |
+| how-to-play.md:36 | ⑦ | \| "Every bounce gives you +1 Skill!" \| → \| "⚡ Every bounce gives you +1 Skill!" \| | games v1（game.json，description，05:20:48 UTC） |
+| how-to-play.md:37 | ⑦ | \| "Train and level up to throw farther!" \| → \| "💪 Train and level up to throw farther!" \| | games v1（game.json，description，05:20:48 UTC） |
+| how-to-play.md:38 | ⑦ | \| "Reach farther zones to earn more Wins!" \| → \| "🏆 Reach farther zones to earn more Wins!" \| | games v1（game.json，description，05:20:48 UTC） |
+| how-to-play.md:39 | ⑦ | \| "Unlock better stones and unusual objects to throw... even a DONUT!" \| → \| "🍩 Unlock better stones and unusual objects to throw... even a DONUT!" \| | games v1（game.json，description，05:20:48 UTC） |
+| how-to-play.md:40 | ⑦ | \| "Collect pets for powerful boosts!" \| → \| "🐾 Collect pets for powerful boosts!" \| | games v1（game.json，description，05:20:48 UTC） |
+| how-to-play.md:41 | ⑦ | \| "Rebirth to grow stronger and beat your longest throw!" \| → \| "🔄 Rebirth to grow stronger and beat your longest throw!" \| | games v1（game.json，description，05:20:48 UTC） |
+| how-to-play.md:32 | ⑦ | The six gameplay lines are quoted exactly: → The six gameplay lines are quoted exactly, emoji included: | games v1（game.json，description，05:20:48 UTC） |
+| index.md:83 | ⑥ | We do not print codes, pet multipliers, egg odds, zone thresholds or rebirth costs until an official source or an in-game check confirms them. → We do not print codes, pet multipliers, egg odds, zone thresholds or rebirth costs until an official source or an in-game check confirms them. The "data entries" count shown on this page is the number of records in this site's own data file: on 10 October 2026 that was 103, made up of 90 developer products, 11 game passes, the game record and one event listing (ADMIN ABUSE + WORLD 5). | data/stone-skipping/entities.json（item 90 + gamepass 11 + mechanic 2 = 103；模板 hb_counts 按实体条数输出） |

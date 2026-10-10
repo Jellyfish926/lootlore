@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # Deep Fishing Roblox Guide: Rods, Rarity and Badges
 
-Deep Fishing is a Roblox fishing simulator launched on 18 July 2026 by the group LazyGames. You hold and release to cast as far as possible, haul in several fish per throw, sell them, and upgrade Strength and rods to reach farther water, where the rarer fish are. This guide covers rods, passes, rarity and badges from official data.
+Deep Fishing is a Roblox fishing simulator from the group LazyGames; its record was created on 18 July 2026. You hold and release to cast as far as possible, haul in several fish per throw, sell them, and upgrade Strength and rods to reach farther water, where the rarer fish are. This guide covers rods, passes, rarity and badges.
 
 The game record showed 10,311,806 visits and 168,620 favourites when we read it on 10 October 2026 (UTC), with 29,565 likes against 986 dislikes. The counts on this page come from Roblox's own records for the game, read on that date.
 
@@ -51,7 +51,7 @@ The game record showed 10,311,806 visits and 168,620 favourites when we read it 
 
 ## Spending coins or Robux? Read these
 
-Rods and Strength decide how far you throw, so they come first. The [rod list](/deep-fishing/rods/) gives the full order with official Robux unlock prices. For permanent boosts, the [game pass guide](/deep-fishing/gamepasses/) covers all nine passes; for enchant stones, lucky chests, Revive All Fish and one-throw boosts, see the [Robux shop guide](/deep-fishing/shop/).
+Rods and Strength decide how far you throw, so they come first. The [rod list](/deep-fishing/rods/) gives the full order with official Robux unlock prices. The [game pass guide](/deep-fishing/gamepasses/) covers all nine passes; for enchant stones, lucky chests, Revive All Fish and one-throw boosts, see the [Robux shop guide](/deep-fishing/shop/).
 
 ## Chasing badges and rare fish?
 
@@ -59,16 +59,16 @@ Deep Fishing's 13 badges double as the best public rarity data. On 10 October 20
 
 ![A Roblox angler on a pier casting into a giant ocean sinkhole with a huge eye at the bottom](art03 "Official promotional art from the Roblox experience page")
 
-## What has changed since launch?
+## What has changed since the game record was created?
 
 Of the eight Roblox event listings we read on 10 October 2026, one ("Mutation Roll + Rarity💫") carries a change list in its description; beyond that, every store item and badge carries the date it was created, and the [updates page](/deep-fishing/updates/) follows those records. Read together, those dates sketch the game's update history. A creation date is when an item was registered, which is not always the day an update went live.
 
-| Date (2026) | What appeared |
+| Date (2026) | Records created |
 | --- | --- |
 | 18 July | Experience created; 20 rod unlocks, 8 game passes, luck and coin products |
 | 19 July | Auto Sell pass; Steel Rope Rod unlock |
 | 28 July – 1 August | Welcome, first-catch and catch-milestone badges |
-| 6 August | Skip Gift products (a timed gift system) |
+| 6 August | Skip Gift [1], Skip Gift [2] and Skip Gift [3] (what they do is not confirmed) |
 | 25 August | Element Lucky Chests and the Divine King and Divine Queen rod skins |
 | 29 August | Revive All Fish |
 | 1 – 6 September | Bulk mutation rerolls, Stat Upgrades 7 and 8, Enchant Stones, Ultra Mutation Scrolls |

@@ -31,9 +31,9 @@ Not under that name in anything the developer has registered on Roblox. On 10 Oc
 
 | Item | Single price (Robux) | Record created | What the listing confirms |
 | --- | --- | --- | --- |
-| Enchant Stone | 49 | 6 Sep 2026 | Name and price only |
-| Ultra Enchant Stone | 199 | 6 Sep 2026 | Name and price only |
-| Ultra Mutation Scroll | 129 | 6 Sep 2026 | Name and price only |
+| x1 Enchant Stone | 49 | 6 Sep 2026 | Name and price only |
+| x1 Ultra Enchant Stone | 199 | 6 Sep 2026 | Name and price only |
+| x1 Ultra Mutation Scroll | 129 | 6 Sep 2026 | Name and price only |
 
 All three records were created within half an hour of each other on the same day, which is probably why the names get blended into "enchant scroll". An item with that exact name could still exist in play without being sold for Robux. We have no official text or capture of our own that shows one, so we do not describe it.
 
@@ -88,7 +88,7 @@ Our advice, not a rule of the game: if you want to test enchanting, start with t
 
 We would not. The official description names Strength and farther casts as the way to reach rarer fish, and the [rod list](/deep-fishing/rods/) has the Robux unlock price for each rod. What a stone does for your casts is not in any channel we checked, so we cannot say what the same Robux buys you.
 
-For comparison, 399 Robux buys ten Enchant Stones or the Double Coins pass, which the developer describes as "Earn 2x more coins when selling fish!". The [Rods & Upgrades section](/deep-fishing/gear/) sets every purchase type side by side. The rest of the shop, including lucky chests and one-throw boosts, is in the [Robux shop guide](/deep-fishing/shop/).
+For comparison, 399 Robux buys ten Enchant Stones or the Double Coins pass, which the developer describes as "Earn 2x more coins when selling fish! 🪙". The [Rods & Upgrades section](/deep-fishing/gear/) sets every purchase type side by side. The rest of the shop, including lucky chests and one-throw boosts, is in the [Robux shop guide](/deep-fishing/shop/).
 
 ## What does the EGGS & PETS event listing say about enchants?
 

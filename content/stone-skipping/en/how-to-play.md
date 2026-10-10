@@ -29,16 +29,16 @@ Meow Labs has published very little beyond that summary. No game pass or store p
 
 ## What does the official description say?
 
-The Roblox listing was read on 10 October 2026. Its opening line calls the game "+1 Skipping Stones", although the title is +1 Stone Skipping. The six gameplay lines are quoted exactly:
+The Roblox listing was read on 10 October 2026. Its opening line calls the game "+1 Skipping Stones", although the title is +1 Stone Skipping. The six gameplay lines are quoted exactly, emoji included:
 
 | Official line | What it tells you | What it leaves out |
 | --- | --- | --- |
-| "Every bounce gives you +1 Skill!" | Skill is the basic resource, earned per bounce | Whether +1 is the starting value or fixed |
-| "Train and level up to throw farther!" | Training and levelling up increase how far you throw | Level thresholds and how training is done |
-| "Reach farther zones to earn more Wins!" | Zones lie at increasing distance; farther ones pay more Wins | Zone names, distances and Wins per zone |
-| "Unlock better stones and unusual objects to throw... even a DONUT!" | The thrown object can be upgraded; a donut is one of them | The full list, prices and what each changes |
-| "Collect pets for powerful boosts!" | Pets boost your progress | Which stat they boost and by how much |
-| "Rebirth to grow stronger and beat your longest throw!" | Rebirth makes you stronger; the aim is a longer best throw | Rebirth cost, reward and what is reset |
+| "⚡ Every bounce gives you +1 Skill!" | Skill is the basic resource, earned per bounce | Whether +1 is the starting value or fixed |
+| "💪 Train and level up to throw farther!" | Training and levelling up increase how far you throw | Level thresholds and how training is done |
+| "🏆 Reach farther zones to earn more Wins!" | Zones lie at increasing distance; farther ones pay more Wins | Zone names, distances and Wins per zone |
+| "🍩 Unlock better stones and unusual objects to throw... even a DONUT!" | The thrown object can be upgraded; a donut is one of them | The full list, prices and what each changes |
+| "🐾 Collect pets for powerful boosts!" | Pets boost your progress | Which stat they boost and by how much |
+| "🔄 Rebirth to grow stronger and beat your longest throw!" | Rebirth makes you stronger; the aim is a longer best throw | Rebirth cost, reward and what is reset |
 
 ## How does Skill grow beyond +1?
 

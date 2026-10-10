@@ -80,4 +80,4 @@ Because we saw no code in the official Roblox records we read on 10 October 2026
 
 ## How this guide uses its sources
 
-This is an unofficial fan guide. Facts come first from what Meow Labs has published on Roblox: the game listing and description, the game pass and developer product lists, the event listing, the official art and the group page. We do not print codes, pet multipliers, egg odds, zone thresholds or rebirth costs until an official source or an in-game check confirms them.
+This is an unofficial fan guide. Facts come first from what Meow Labs has published on Roblox: the game listing and description, the game pass and developer product lists, the event listing, the official art and the group page. We do not print codes, pet multipliers, egg odds, zone thresholds or rebirth costs until an official source or an in-game check confirms them. The "data entries" count shown on this page is the number of records in this site's own data file: on 10 October 2026 that was 103, made up of 90 developer products, 11 game passes, the game record and one event listing (ADMIN ABUSE + WORLD 5).

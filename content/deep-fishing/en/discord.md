@@ -67,7 +67,7 @@ Never enter your Roblox password on a site that claims to hand out codes or item
 
 ## Where do codes get announced?
 
-Nowhere we could read. The official description and the LazyGames group carry no codes, and the Discord announcement channels need a Discord account. The [codes page](/deep-fishing/codes/) records what each official Roblox record held on 10 October 2026. Code lists on other sites disagree with each other, so we are not copying them. When we can confirm a code from an official post, it will go on that page.
+Nowhere we could read. The official description and the LazyGames group carry no codes, and the Discord announcement channels need a Discord account. The [codes page](/deep-fishing/codes/) records what each official Roblox record held on 10 October 2026. We do not copy code lists from other sites, because we could not find any code in the official Roblox records we read on 10 October 2026. When we can confirm a code from an official post, it will go on that page.
 
 ## Is there an official wiki?
 

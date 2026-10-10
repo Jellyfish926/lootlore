@@ -66,3 +66,14 @@
 | 4 | codes | is a statement about seven published records on one date. | is a statement about the six Roblox responses listed above (game, group, events, game passes, developer products and badges) on one date. | 六个接口响应（见 sourceUrls）；表里 7 行是因为 group 响应拆成 description 与 shout 两行，全页统一按「six responses」计（codes-r2 未验项） |
 | 5 | author | That is why some popular topics, such as codes, do not have a page yet. | That is why some popular topics, such as a full fish list, do not have a page yet. | 站内事实：codes 页已上线；beginner.md 仍写明没有 fish list 页 |
 | 5 | author | updated: "2026-09-29" | updated: "2026-10-10" | frontmatter 日期（其余字段不动） |
+
+## 上线后第一轮修复（2026-10-10；依据 accept/b2/facts-oldpages.md O15、O1、O2、O3；只改旧页 4 处，新页未动）
+
+| 编号 | 旧页 | 原句 | 新句 | 出处 / 依据 |
+|---|---|---|---|---|
+| 1 | beginner | records that we saw no code in the official Roblox records we read on 10 October 2026, and the fish list and water unlock costs exist only on fan sites and videos we could not verify. Those two pages will appear when an official source confirms them. | records that we saw no code in the official Roblox records we read on 10 October 2026. A fish list and the waters' unlock costs are not published in the Roblox records we read on that date, so those two pages do not exist yet; they will appear when an official source confirms them. | accept/b2/facts-oldpages.md O15（不对粉丝站下断言；范围 = 2026-10-10 读的六个 Roblox 响应） |
+| 2 | beginner | "Four guides for your first sessions: the core loop, rarity tiers, badges and official community links." | "Guides for your first sessions: the core loop, rarity tiers, badges, official community links, a codes check and an update log." | O2（栏目现有 6 篇：手写卡片 4 张 + 构建自动追加 codes、updates 两张；改成不带数字） |
+| 2 | beginner | These four guides cover everything a first session needs. They stick to | These guides are written for a first session. They stick to | O2（去掉数字与 cover everything） |
+| 3 | index | \| Last update seen \| 28 September 2026 \| | \| Last update seen \| 9 October 2026 (UTC), read on 10 October 2026 \| | https://games.roblox.com/v1/games?universeIds=10526853622（updated 2026-10-09T18:38:20.186Z；O1） |
+| 3 | index | The experience listing itself showed an update on 28 September. | When we read it on 10 October 2026, the experience listing's "updated" timestamp was 9 October 2026 (UTC). | https://games.roblox.com/v1/games?universeIds=10526853622（同上；O1） |
+| 4 | discord | Code lists on other sites disagree with each other, so we are not copying them. | We do not copy code lists from other sites, because we could not find any code in the official Roblox records we read on 10 October 2026. | O3（与 codes 页口径一致；六个接口 code / redeem / promo / coupon 0 命中） |

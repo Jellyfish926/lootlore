@@ -47,7 +47,7 @@ The game had passed 5.4 million visits and 112,000 favourites by 29 September 20
 | Rods on the ladder | 21 (plus 2 Exclusive rods and 2 skins) |
 | Game passes | 9 |
 | Badges | 13 |
-| Last update seen | 28 September 2026 |
+| Last update seen | 9 October 2026 (UTC), read on 10 October 2026 |
 
 ## Spending coins or Robux? Read these
 
@@ -75,7 +75,7 @@ Of the eight Roblox event listings we read on 10 October 2026, one ("Mutation Ro
 | 18 September | One-throw boosts |
 | 26 September | Pirate, Charm and Hero chests; Astral Tide and VoidReaper Exclusive rods |
 
-The experience listing itself showed an update on 28 September. For what each item does, see the [Robux shop guide](/deep-fishing/shop/) and the [game pass guide](/deep-fishing/gamepasses/).
+When we read it on 10 October 2026, the experience listing's "updated" timestamp was 9 October 2026 (UTC). For what each item does, see the [Robux shop guide](/deep-fishing/shop/) and the [game pass guide](/deep-fishing/gamepasses/).
 
 ## Are there Deep Fishing codes?
 

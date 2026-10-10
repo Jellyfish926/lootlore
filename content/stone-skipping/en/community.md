@@ -65,7 +65,7 @@ These are Roblox's own counts, read at 05:20 UTC on 10 October 2026:
 
 | Measure | Count |
 | --- | --- |
-| Players online | 52,051 |
+| Players online | about 52,000 (a momentary count) |
 | Visits | 25,255,507 |
 | Favourites | 939,036 |
 | Likes / dislikes | 40,464 / 1,393 (about 97% positive) |

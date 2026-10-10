@@ -63,7 +63,7 @@ The studio's brand page gives its own rounded figures: over 1.0 billion total pl
 | Setting | Value |
 | --- | --- |
 | Max players per server | 28 |
-| Private (VIP) servers | Not allowed |
+| Private (VIP) servers | Not confirmed (createVipServersAllowed read false, which alone does not settle it) |
 | Genre | Action · Open World Action |
 | Content maturity | Moderate |
 | Content descriptors | Blood (light, realistic); Violence (repeated, moderate) |

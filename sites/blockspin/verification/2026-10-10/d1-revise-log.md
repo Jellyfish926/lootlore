@@ -52,3 +52,20 @@ title / seoTitle / H1 没有不成立的数字或活动编号，未动。
 | getting-started.md:9 | frontmatter 日期 | checkedAt: "2026-09-29" → checkedAt: "2026-10-10" | 全页比对后更新 |
 | getting-started.md:18 | frontmatter 日期 | reviewed: "2026-09-29" → reviewed: "2026-10-10" | 全页比对后更新 |
 | getting-started.md:14 | frontmatter sourceUrls | sourceUrls: [] → sourceUrls: ["https://games.roblox.com/v1/games?universeIds=6765805766"] | 补全今天用到的接口 |
+
+## 线上验收修复第一轮 D1fix2（2026-10-10）
+
+依据：线上验收第一轮判的口径句。数值未变。行号是改动前（HEAD 6d3a5e71）的行号。 Quick facts 的「Release date」标签来自 config/i18n/en.json 的 f_release_date（实体字段 release_date_en 的通用标签）。数据层改法：实体字段改名为 record_created_en，并在 en.json 新增 f_record_created = "Record created"；见 data/blockspin/entities.json 的 blockspin-game、ban-appeal-game 两条。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| index.md:33 | 4 | - [Game Info](/blockspin/game-info/): who makes it, when it launched, server size, → - [Game Info](/blockspin/game-info/): who makes it, when its Roblox record was created, server size, | games v1（created 2024-11-06） |
+
+## D1fix2b：私服句收紧（2026-10-10）
+
+调度员定：以早先验证员的结论为准，createVipServersAllowed 单独不能说明能否开私服。行号是改动前（HEAD 6d3a5e71 + D1fix2 暂存）的 HEAD 行号。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| beginner.md:60 | 私服句：只陈述字段值，not confirmed | Roblox also reports that private (VIP) servers cannot be created for this game, so there is no quiet server to grind alone in. → Roblox's game record had createVipServersAllowed set to false on October 10, 2026; that field alone does not settle whether private servers are offered, so this is not confirmed. | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |
+| game-info.md:66 | 私服句：只陈述字段值，not confirmed | \| Private (VIP) servers \| Not allowed \| → \| Private (VIP) servers \| Not confirmed (createVipServersAllowed read false, which alone does not settle it) \| | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |

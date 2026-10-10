@@ -14,16 +14,16 @@
    "name_en": "BlockSpin",
    "page_slug": "game-info",
    "summary_en": "Open-world action game on Roblox, published by the Cinnamon Go! group (owned and managed by Cinnamon Software) and set in a Florida county.",
-   "release_date_en": "November 6, 2024 (created on Roblox)",
+   "record_created_en": "November 6, 2024",
    "role_en": "Publisher: Cinnamon Go! (Roblox group) · Studio: Cinnamon Software",
    "platforms_en": "Roblox; a developer's Sept 2025 forum post reports PlayStation crashes and no increase on Xbox; mobile not confirmed",
-   "key_notes_en": "28 players per server · Maturity: Moderate · Private servers not allowed",
+   "key_notes_en": "28 players per server · Maturity: Moderate",
    "field_sources": {
     "summary_en": [
      "https://games.roblox.com/v1/games?universeIds=6765805766",
      "https://groups.roblox.com/v1/groups/33720745"
     ],
-    "release_date_en": [
+    "record_created_en": [
      "https://games.roblox.com/v1/games?universeIds=6765805766"
     ],
     "role_en": [
@@ -112,10 +112,10 @@
    "name_en": "Ban Appeal Game",
    "page_slug": "cheats-bans",
    "summary_en": "Separate Roblox experience published by the Cinnamon Go! group for players banned from BlockSpin.",
-   "release_date_en": "February 11, 2026 (created on Roblox)",
+   "record_created_en": "February 11, 2026",
    "outcome_en": "Description: \"Join. Pay. Get instantly unbanned.\"",
    "field_sources": {
-    "release_date_en": [
+    "record_created_en": [
      "https://games.roblox.com/v2/groups/33720745/games?accessFilter=Public&limit=50"
     ],
     "outcome_en": [

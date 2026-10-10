@@ -223,3 +223,12 @@
 | how-to-play.md:41 | ⑦ | \| "Rebirth to grow stronger and beat your longest throw!" \| → \| "🔄 Rebirth to grow stronger and beat your longest throw!" \| | games v1（game.json，description，05:20:48 UTC） |
 | how-to-play.md:32 | ⑦ | The six gameplay lines are quoted exactly: → The six gameplay lines are quoted exactly, emoji included: | games v1（game.json，description，05:20:48 UTC） |
 | index.md:83 | ⑥ | We do not print codes, pet multipliers, egg odds, zone thresholds or rebirth costs until an official source or an in-game check confirms them. → We do not print codes, pet multipliers, egg odds, zone thresholds or rebirth costs until an official source or an in-game check confirms them. The "data entries" count shown on this page is the number of records in this site's own data file: on 10 October 2026 that was 103, made up of 90 developer products, 11 game passes, the game record and one event listing (ADMIN ABUSE + WORLD 5). | data/stone-skipping/entities.json（item 90 + gamepass 11 + mechanic 2 = 103；模板 hb_counts 按实体条数输出） |
+
+## 线上验收修复第一轮 D1fix2（2026-10-10）
+
+依据：线上验收第一轮判的口径句。数值未变。行号是改动前（HEAD 6d3a5e71）的行号。 这两处不在本轮点名的四个栏目里，是同一类瞬时值，一并改成约数。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| index.md:56 | 5 同类 | Roblox counted 52,051 players online when we read the game record at 05:20 UTC on 10 October 2026, → Roblox counted about 52,000 players online when we read the game record at 05:20 UTC on 10 October 2026, | games v1（game.json 05:20 UTC playing 52051） |
+| community.md:68 | 5 同类 | \| Players online \| 52,051 \| → \| Players online \| about 52,000 (a momentary count) \| | 同上 |

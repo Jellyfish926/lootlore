@@ -30,7 +30,7 @@ The game's own description sums up the loop in one line: "Grind your way through
 
 - [BlockSpin Codes (October 2026)](/blockspin/codes/): the only code in the official game description, what it gives and who can use it.
 - [Beginner Guide](/blockspin/beginner/): what the official description tells you about jobs, cases, death and the house safe.
-- [Game Info](/blockspin/game-info/): who makes it, when it launched, server size, content rating and console play.
+- [Game Info](/blockspin/game-info/): who makes it, when its Roblox record was created, server size, content rating and console play.
 - [Cheats, Exploits and Bans](/blockspin/cheats-bans/): what Roblox rules say and what the developers offer banned players.
 
 ![Two masked Roblox characters rob a Quick-11 convenience store while the clerk raises his hands](th3 "Official promotional thumbnail: the Quick-11 store and the game's crime theme")

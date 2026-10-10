@@ -57,7 +57,7 @@ Roblox rates BlockSpin as Moderate for repeated violence, and the promotional ar
 
 Up to 28 players share a server, according to Roblox's game data on October 10, 2026. That is small enough that you will keep running into the same people, and anyone nearby may target you.
 
-Roblox also reports that private (VIP) servers cannot be created for this game, so there is no quiet server to grind alone in.
+Roblox's game record had createVipServersAllowed set to false on October 10, 2026; that field alone does not settle whether private servers are offered, so this is not confirmed.
 
 ## What else do the official thumbnails and event listings show?
 

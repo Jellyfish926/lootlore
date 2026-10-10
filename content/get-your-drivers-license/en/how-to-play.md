@@ -80,7 +80,7 @@ Three of the five game pass descriptions also name other players: "Put someone i
 
 ## How long does a run take?
 
-We found no official statement. Two hints exist. Skip Time [SALE] removes 2:30 from the waiting room, which suggests the timed part of the wait is at least that long. And Rolimon's, a third-party statistics site, showed an average playtime of 10.06 minutes when we looked on 9 October 2026. That is a tracker's estimate of a whole visit, not an official figure for one run.
+We found no official statement. Two hints exist. Skip Time [SALE] removes 2:30 from the waiting room, which suggests the timed part of the wait is at least that long. And Rolimon's, a third-party statistics site, showed an average playtime of 10.06 minutes when we looked on 9 October 2026 (not re-read on 10 October 2026). That is a tracker's estimate of a whole visit, not an official figure for one run.
 
 ## Is Get Your Driver's License! free, and who can play?
 
@@ -94,7 +94,7 @@ It is free to play. Roblox's record for the game on 10 October 2026 shows the fo
 | Supported languages | 18, including English, Spanish, Portuguese, Japanese and Korean |
 | Genre | Simulation · Idle |
 
-A server holds 25 players. The developer does not say how the line is filled, so we do not turn that number into a line length. Which devices the game supports, and whether private servers are offered, could not be read from public data.
+A server holds 25 players. The developer does not say how the line is filled, so we do not turn that number into a line length. Roblox's game record had createVipServersAllowed set to false when we read it on 10 October 2026. That field alone does not settle whether private servers are offered, so this is not confirmed. Which devices the game supports could not be read from public data.
 
 ## What does this guide leave out?
 

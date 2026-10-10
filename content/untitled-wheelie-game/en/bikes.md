@@ -29,7 +29,7 @@ The official description promises you can "Buy bikes, upgrades, and parts" and "
 
 ## Which bikes has the developer named?
 
-| Name | How it was sold | Official description | On sale now? |
+| Name | How it was sold | Official description | On sale on 10 October 2026? |
 | --- | --- | --- | --- |
 | EBike Pack ⚡ | Game pass | Gives you all Ebikes in the game. (Not Emotos) | No |
 | Tuttiro Bike | Game pass | None | No |

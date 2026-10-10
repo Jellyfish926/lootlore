@@ -75,7 +75,7 @@ Another Roblox experience is made by Wheelie District Studios. Its listing name 
 
 ## What about scripts and exploits?
 
-We do not cover them. Scripts break Roblox's Terms of Use and can get an account banned. If you want to earn faster, the [money guide](/untitled-wheelie-game/money/) covers the legitimate options, and the [update history](/untitled-wheelie-game/updates/) shows what the developer has added.
+We do not cover them. Scripts break Roblox's Terms of Use and can get an account banned. If you want to earn faster, the [money guide](/untitled-wheelie-game/money/) covers the legitimate options, and the [update history](/untitled-wheelie-game/updates/) lists the store records by creation date.
 
 ## Read next
 

@@ -3,14 +3,14 @@ slug: "gamepasses"
 url: "/untitled-wheelie-game/gamepasses/"
 title: "Untitled Wheelie Game Passes: All 12 with Prices"
 seoTitle: "Untitled Wheelie Game Gamepasses: All 12 Passes, Prices"
-description: "All 12 Untitled Wheelie Game passes with official Robux prices and descriptions: earning multipliers, NEVER PAY FINES, Free Subway Travel and five off sale."
+description: "All 12 Untitled Wheelie Game passes with official Robux prices and descriptions: four Earning passes, NEVER PAY FINES, Free Subway Travel and five off sale."
 category: "Money & Upgrades"
 language: "en"
 checkedAt: "2026-10-10"
 scope: "Pass names, prices, descriptions and dates from the Roblox game pass API on 2026-10-10 (UTC); effects beyond the official descriptions are not published"
 type: "article"
 entities: ["pass-x3-job-earning", "pass-never-pay-fines", "pass-free-subway-travel"]
-tldr: ["Untitled Wheelie Game has 12 game passes: 7 on sale, priced from 99 to 499 Robux, and 5 off sale.", "Four are earning multipliers — X2 and X3 for jobs, X2 and X3 for wheelies.", "Buying all seven passes on sale costs 1,643 Robux (our sum).", "Only four passes have an official description; the rest are known by name alone."]
+tldr: ["Untitled Wheelie Game has 12 game passes: 7 on sale, priced from 99 to 499 Robux, and 5 off sale.", "Four are named X2 / X3 Job Earning 💰 and X2 / X3 Wheelie Earning 💰; their descriptions are empty, so what they multiply is not confirmed.", "Buying all seven passes on sale costs 1,643 Robux (our sum).", "Only four passes have an official description; the rest are known by name alone."]
 related: ["money", "cops-fines", "bikes"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100"]
 images: ["art02"]
@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Passes: All 12 with Prices
 
-Untitled Wheelie Game has 12 game passes. Seven are on sale, from 99 to 499 Robux: four earning multipliers, NEVER PAY FINES, Free Subway Travel and More Helmets. Five older passes — three bikes, Extra Bike Speed and Bike Customization — are no longer sold. The most useful first buy depends on whether fines or slow earnings bother you more.
+Untitled Wheelie Game has 12 game passes. Seven are on sale, from 99 to 499 Robux: four Earning passes, NEVER PAY FINES, Free Subway Travel and More Helmets. Five older passes — three bikes, Extra Bike Speed and Bike Customization — are no longer sold. The most useful first buy depends on whether fines or slow earnings bother you more.
 
 All names, prices and descriptions come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100), checked on 10 October 2026. None carried a discount.
 
@@ -43,7 +43,7 @@ Only NEVER PAY FINES comes with a description. For the others, the name is the w
 
 ## Which passes are off sale?
 
-| Pass | Official description | Added |
+| Pass | Official description | Record created |
 | --- | --- | --- |
 | Bike Customization | Customize the color of your bike. | 5 June 2026 |
 | Extra Bike Speed | Adds speed to your bike | 6 June 2026 |
@@ -57,12 +57,12 @@ Off-sale passes cannot be bought from the store, and the data does not show thei
 
 ## Which pass should you buy first?
 
-Our suggestions, based only on what each pass says it does:
+Our suggestions, based only on pass names and the one description that says what a pass does; the effects of the others are not confirmed:
 
 - **You keep getting caught by the police:** NEVER PAY FINES (149). It is the only pass whose description states what it does. The [cops and fines guide](/untitled-wheelie-game/cops-fines/) compares it with the 13-Robux AVOID FINES product.
 - **You spend most sessions on pizza runs:** X2 Job Earning (299).
-- **You mostly ride and hold wheelies:** X2 Wheelie Earning (199), the cheapest multiplier.
-- **You travel across the map a lot:** Free Subway Travel (99). The name tells us the map has a subway; the normal fare is not published.
+- **You mostly ride and hold wheelies:** X2 Wheelie Earning (199), the cheaper of the two Wheelie Earning passes.
+- **You travel across the map a lot:** Free Subway Travel (99). Its description is empty, so what it waives is not confirmed.
 - **You like changing your look:** More Helmets (99). How many helmets it adds is not stated.
 
 The [money guide](/untitled-wheelie-game/money/) goes deeper on Job against Wheelie earnings and on the six cash packs.
@@ -73,7 +73,7 @@ The developer has not said. X2 and X3 are sold as separate passes, and nothing i
 
 ## How has the pass list changed over time?
 
-Nine pass records were created in June, one on 1 July, one in mid-August, and NEVER PAY FINES on 26 September — the newest. The [update history](/untitled-wheelie-game/updates/) lines these up with the developer product records created in the same period.
+Nine pass records were created in June, one on 1 July, one in mid-August, and NEVER PAY FINES on 26 September — the newest pass record on 10 October 2026. The [update history](/untitled-wheelie-game/updates/) lines these up with the developer product records created in the same period.
 
 ## Read next
 

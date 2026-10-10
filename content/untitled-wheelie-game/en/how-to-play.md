@@ -10,7 +10,7 @@ checkedAt: "2026-10-10"
 scope: "Gameplay from the official Roblox description on 2026-10-10 (UTC); exact key bindings and map names are not in that description"
 type: "article"
 entity: "untitled-wheelie-game"
-tldr: ["You ride a bike around the map, hold wheelies, weave through traffic, deliver pizzas, run from cops and upgrade your bike.", "The developer says wheelies use a realistic balance point with responsive throttle and brake, so holding one is about control, not a button.", "Servers hold up to 10 players; private servers were not enabled on 10 October 2026.", "Exact controls are not in the Roblox records we read on 10 October 2026 (game description, event announcements, passes, products, group description), so we do not list key bindings."]
+tldr: ["You ride a bike around the map, hold wheelies, weave through traffic, deliver pizzas, run from cops and upgrade your bike.", "The developer says wheelies use a realistic balance point with responsive throttle and brake, so holding one is about control, not a button.", "Servers hold up to 10 players; whether private servers are offered is not confirmed.", "Exact controls are not in the Roblox records we read on 10 October 2026 (game description, event announcements, passes, products, group description), so we do not list key bindings."]
 related: ["cops-fines", "money", "bikes"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10268960646", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://apis.roblox.com/game-passes/v1/universes/10268960646/game-passes?passView=Full&pageSize=100", "https://www.roblox.com/games/93844268955707/Untitled-Wheelie-Game"]
 images: ["art02", "icon"]
@@ -66,7 +66,7 @@ The game advertises "interactive traffic" and "oncoming traffic", and both promo
 | Setting | Value on 10 October 2026 |
 | --- | --- |
 | Players per server | 10 |
-| Private servers | Not enabled |
+| Private servers | Not confirmed (createVipServersAllowed read false, which alone does not settle it) |
 | Price | Free |
 | Avatar type | Your avatar is converted to R15 |
 | Maturity | Minimal — suitable for everyone |

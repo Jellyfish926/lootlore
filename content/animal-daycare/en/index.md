@@ -10,12 +10,12 @@ checkedAt: "2026-09-30"
 scope: "Site entry point"
 type: "home"
 tldr: ["Animal Daycare (Anomaly) is a Roblox survival game by the group Day Dreams Games: check every arrival, care for the animal children, then survive the night.", "For every 100 badges awarded for surviving the first night, fewer than 5 have been awarded for surviving 5 shifts.", "There are no game passes; the store has 25 Robux products, from a 19-Robux coffee refill to a 2,500 Lamb Coin pack.", "We list no codes, because no official source we could read has published any."]
-faq: [["Who made Animal Daycare (Anomaly)?", "The Roblox group Day Dreams Games, owned by the account nevod4u. The experience was created on 14 August 2026 — see [game info](/animal-daycare/game-info/)."], ["How many players can join a server?", "Up to 25 per server, according to the Roblox listing. Private servers were not enabled when we checked on 30 September 2026."], ["Are there Animal Daycare codes?", "We could not find any code in the game description or the Roblox group, so we do not list any. Official social links need a Roblox sign-in to read."], ["Does Animal Daycare have game passes?", "No. The game-pass list was empty on 30 September 2026. Everything paid is a Robux product — see the [shop guide](/animal-daycare/shop/)."], ["Which badge is the rarest?", "Daycare Legend, for surviving 10 shifts. It had been awarded 11,650 times, about 1 for every 300 First Day on the Job badges — see [all badges](/animal-daycare/badges/)."]]
+faq: [["Who made Animal Daycare (Anomaly)?", "The Roblox group Day Dreams Games, owned by the account nevod4u. The experience was created on 14 August 2026 — see [game info](/animal-daycare/game-info/)."], ["How many players can join a server?", "Up to 25 per server, according to the Roblox listing. Whether private servers are offered is not confirmed: the game record's createVipServersAllowed field read false on 30 September 2026, which alone does not settle it."], ["Are there Animal Daycare codes?", "We could not find any code in the game description or the Roblox group, so we do not list any. Official social links need a Roblox sign-in to read."], ["Does Animal Daycare have game passes?", "No. The game-pass list was empty on 30 September 2026. Everything paid is a Robux product — see the [shop guide](/animal-daycare/shop/)."], ["Which badge is the rarest?", "Daycare Legend, for surviving 10 shifts. It had been awarded 11,650 times, about 1 for every 300 First Day on the Job badges — see [all badges](/animal-daycare/badges/)."]]
 related: []
 sourceUrls: []
 images: ["th1", "th3"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false

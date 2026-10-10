@@ -22,7 +22,7 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Money and Upgrade Guides
 
-Short on cash, or wondering if a pass is worth the Robux? Start with the money guide: it covers pizza delivery, the two earning multipliers and the six cash packs. Then read the bikes and parts guide before you buy anything for your ride, and check the full game pass list when you are ready to spend Robux.
+Short on cash, or wondering if a pass is worth the Robux? Start with the money guide: it covers pizza delivery, the Job and Wheelie Earning passes and the six cash packs. Then read the bikes and parts guide before you buy anything for your ride, and check the full game pass list when you are ready to spend Robux.
 
 These three guides use the developer's own store data from Roblox — names, prices and descriptions exactly as published on 10 October 2026. Many items in Untitled Wheelie Game have no official description at all, and we point that out rather than filling the gap.
 
@@ -30,7 +30,7 @@ These three guides use the developer's own store data from Roblox — names, pri
 
 ### [How to Make Money Fast](/untitled-wheelie-game/money/)
 
-Pizza delivery is the job the game description names; the developer's BIG UPDATE announcement, read on 10 October 2026, lists "1 new job" without naming it. The Job Earning and Wheelie Earning passes multiply two kinds of income, and the six cash packs give very different value per Robux — from about 15 dollars per Robux on the smallest to 45 on the largest.
+Pizza delivery is the job the game description names; the developer's BIG UPDATE announcement, read on 10 October 2026, lists "1 new job" without naming it. The Job Earning and Wheelie Earning passes have empty descriptions, so what they multiply is not confirmed, and the six cash packs give very different value per Robux — from about 15 dollars per Robux on the smallest to 45 on the largest.
 
 ### [Bikes, Parts and Backfire](/untitled-wheelie-game/bikes/)
 
@@ -51,7 +51,7 @@ It depends on what is slowing you down. Here is our quick guide:
 | Want a faster or better-looking bike | [Bikes and parts](/untitled-wheelie-game/bikes/) |
 | Thinking about Robux passes | [Game passes](/untitled-wheelie-game/gamepasses/) |
 
-Our general advice: learn the wheelie and do some pizza runs before spending Robux. A multiplier is worth more once you know which kind of income you earn most.
+Our general advice: learn the wheelie and do some pizza runs before spending Robux. An Earning pass is easier to judge once you know which kind of income you earn most.
 
 ## What these guides do not cover yet
 

@@ -251,3 +251,12 @@
 | rarity.md:12 | D3 同类（要点框） | "The store sells mutation help — the More Mutations pass, rerolls and Ultra Mutation Scrolls — but publishes no odds." → "The store sells the More Mutations pass and products named Mutation Reroll and Ultra Mutation Scroll; their records give no odds." | developer-products v2（dp-p1 / dp-p2.json，Name / Description / Created，05:07 UTC）；game-passes v1（passes-p1.json，name / displayDescription / created，05:07 UTC） |
 | how-to-play.md:12 | D3 同类（要点框） | "Coins and upgrades push your cast further, and further water holds rarer fish." → "Upgrades push your cast farther, and farther water holds rarer fish." | games v1（game.json，description / created，05:06:59 UTC） |
 | how-to-play.md:40 | D3 同类 | \| Fish turn into coins, coins turn into upgrades \| → \| Selling fish is the income step; what coins buy is not listed in the description \| | games v1（game.json，description / created，05:06:59 UTC） |
+
+## D1fix2b：私服句收紧（2026-10-10）
+
+调度员定：以早先验证员的结论为准，createVipServersAllowed 单独不能说明能否开私服。行号是改动前（HEAD 6d3a5e71 + D1fix2 暂存）的 HEAD 行号。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| how-to-play.md:82 | 私服句：只陈述字段值，not confirmed | The game record we read on 10 October 2026 had private servers switched off, so you cannot rent a quiet server for a group. → The game record we read on 10 October 2026 had createVipServersAllowed set to false; that field alone does not settle whether private servers are offered, so this is not confirmed. | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |
+| index.md:13 | 私服句：只陈述字段值，not confirmed | Private servers were not enabled when we read the game record on 10 October 2026 — [how to play] → Whether private servers are offered is not confirmed: the game record's createVipServersAllowed field read false on 10 October 2026, which alone does not settle it — [how to play] | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |

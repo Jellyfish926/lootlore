@@ -83,3 +83,24 @@
 | waiting-line.md:18 | frontmatter 日期 | updated: "2026-10-09" → updated: "2026-10-10" | 全页比对后更新 |
 | waiting-line.md:9 | frontmatter 日期 | checkedAt: "2026-10-09" → checkedAt: "2026-10-10" | 全页比对后更新 |
 | waiting-line.md:19 | frontmatter 日期 | reviewed: "2026-10-09" → reviewed: "2026-10-10" | 全页比对后更新 |
+
+## 线上验收修复第一轮 D1fix2（2026-10-10）
+
+依据：线上验收第一轮判的口径句。数值未变。行号是改动前（HEAD 6d3a5e71）的行号。 Quick facts 的「Release date」同 blockspin：实体字段改名为 record_created_en。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| index.md:53 | 5 | \| Players online \| 14,168 \| → \| Players online \| about 14,000 at 06:13 UTC (a momentary count) \| | games v1（game.json 06:13 UTC playing 14168；game-reread.json 06:45 UTC playing 15199、createVipServersAllowed false） |
+| community.md:86 | 5 | \| Players online \| 14,168 \| → \| Players online \| about 14,000 (a momentary count) \| | games v1（game.json 06:13 UTC playing 14168；game-reread.json 06:45 UTC playing 15199、createVipServersAllowed false） |
+| community.md:41 | 6 | \| Roles \| Guest, Member, stats, Dev, Admin \| → \| Roles \| Guest, Member, stats, stats (two roles share that name), Dev, Admin \| | groups v1 /roles（group-roles.json：stats 2 人、stats 0 人） |
+| community.md:104 | 6 | On 9 October 2026 Rolimon's showed an average playtime of 10.06 minutes and Rotrends an average session of 11.0 minutes. → On 9 October 2026 Rolimon's showed an average playtime of 10.06 minutes and Rotrends an average session of 11.0 minutes; we did not re-read either site on 10 October 2026. | 第三方统计站，未复读 |
+| how-to-play.md:83 | 6 | showed an average playtime of 10.06 minutes when we looked on 9 October 2026. → showed an average playtime of 10.06 minutes when we looked on 9 October 2026 (not re-read on 10 October 2026). | 第三方统计站，未复读 |
+| how-to-play.md:97 | 6 | Which devices the game supports, and whether private servers are offered, could not be read from public data. → Roblox's game record had createVipServersAllowed set to false when we read it on 10 October 2026, so private servers were not enabled on that date. Which devices the game supports could not be read from public data. | games v1（game.json 06:13 UTC playing 14168；game-reread.json 06:45 UTC playing 15199、createVipServersAllowed false） |
+
+## D1fix2b：私服句收紧（2026-10-10）
+
+调度员定：以早先验证员的结论为准，createVipServersAllowed 单独不能说明能否开私服。行号是改动前（HEAD 6d3a5e71 + D1fix2 暂存）的 HEAD 行号。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| how-to-play.md:? | 私服句：只陈述字段值，not confirmed | when we read it on 10 October 2026, so private servers were not enabled on that date. → when we read it on 10 October 2026. That field alone does not settle whether private servers are offered, so this is not confirmed. | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |

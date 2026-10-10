@@ -10,12 +10,12 @@ checkedAt: "2026-10-02"
 scope: "Site entry point"
 type: "home"
 tldr: ["Southern Mudding is an off-road driving game on Roblox by the verified group Southern Mudding: spawn trucks and trailers, tow, haul, claim a house and customize your vehicles.", "The developer says \"Updates every Friday!\" and its recent Roblox event listings usually start at 17:00 UTC; the 25 September 2026 update, the newest when we checked on 2 October before that day's update, added Nitrous Customization for Pickup Trucks.", "13 game passes cost 3,685 Robux together, and 22 single vehicles are sold as developer products for 200 to 325 Robux each.", "We list no codes, because none appear in any official source we could read; the group page offers a free pickup truck for joining."]
-faq: [["Who made Southern Mudding?", "The Roblox group Southern Mudding, which carries Roblox's verified badge and is owned by the account SouthernMudHold. The experience was created on 15 September 2025 and is the group's only public game."], ["When does Southern Mudding update?", "The game description says \"Updates every Friday!\". The developer's Roblox event listings for 2 and 9 October 2026 both start at 17:00 UTC. See the [update schedule](/southern-mudding/updates/)."], ["Are there Southern Mudding codes?", "We found no code in the game description, the group description or the group shout, so we list none. The one free reward the developer does publish is on the group page: \"Join the group for a free pickup truck!\". Details are in [codes, group and Discord](/southern-mudding/community/)."], ["How many players fit in a server?", "Ten, according to the Roblox listing. Private servers were not enabled when we checked on 2 October 2026."], ["Is Southern Mudding free?", "Yes. The listing has no entry price. Robux purchases are optional: 13 game passes and 61 developer products, covered in the [game pass guide](/southern-mudding/gamepasses/) and the [Robux vehicle list](/southern-mudding/limiteds/)."]]
+faq: [["Who made Southern Mudding?", "The Roblox group Southern Mudding, which carries Roblox's verified badge and is owned by the account SouthernMudHold. The experience was created on 15 September 2025 and is the group's only public game."], ["When does Southern Mudding update?", "The game description says \"Updates every Friday!\". The developer's Roblox event listings for 2 and 9 October 2026 both start at 17:00 UTC. See the [update schedule](/southern-mudding/updates/)."], ["Are there Southern Mudding codes?", "We found no code in the game description, the group description or the group shout, so we list none. The one free reward the developer does publish is on the group page: \"Join the group for a free pickup truck!\". Details are in [codes, group and Discord](/southern-mudding/community/)."], ["How many players fit in a server?", "Ten, according to the Roblox listing. Whether private servers are offered is not confirmed: the game record's createVipServersAllowed field read false on 2 October 2026, which alone does not settle it."], ["Is Southern Mudding free?", "Yes. The listing has no entry price. Robux purchases are optional: 13 game passes and 61 developer products, covered in the [game pass guide](/southern-mudding/gamepasses/) and the [Robux vehicle list](/southern-mudding/limiteds/)."]]
 related: []
 sourceUrls: []
 images: ["th1", "th2"]
 date: "2026-10-02"
-updated: "2026-10-02"
+updated: "2026-10-10"
 reviewed: "2026-10-02"
 gameVersion: "2026-09-25 update"
 draft: false
@@ -43,7 +43,7 @@ The experience was created on 15 September 2025. When we checked at 11:19 UTC on
 | Created | 15 September 2025 |
 | Genre on Roblox | Simulation, Vehicle Sim |
 | Players per server | 10 |
-| Private servers | Not enabled |
+| Private servers | Not confirmed (createVipServersAllowed read false, which alone does not settle it) |
 | Content maturity | Minimal |
 | Price | Free, with optional Robux purchases |
 | Badges | 4 |

@@ -60,3 +60,14 @@
 | how-to-play.md:12 | 出处限定 | "Keep duplicates: ten items of one rarity exchange into one item of the next tier." → "Keep duplicates: ten items of one rarity exchange into one item of a higher tier." | ISteamNews/GetNewsForApp/v2/?appid=3419430&count=200&maxlength=0（news.json，63 条官方公告全文，06:24:48 UTC）（2025-02-23 Steam Next Fest Demo Update：10 items of the same rarity can be upgraded to one of a higher tier） |
 | how-to-play.md:53 | 出处限定 | ten items of the same rarity trade up into one item of the next tier. → ten items of the same rarity trade up into one item of a higher tier. | ISteamNews/GetNewsForApp/v2/?appid=3419430&count=200&maxlength=0（news.json，63 条官方公告全文，06:24:48 UTC）（2025-02-23 Steam Next Fest Demo Update：10 items of the same rarity can be upgraded to one of a higher tier） |
 | hats-skins.md:47 | 出处限定 | \| Exchange \| One item of the next tier for ten of one tier \| → \| Exchange \| One item of a higher tier for ten of one tier (demo update wording) \| | ISteamNews/GetNewsForApp/v2/?appid=3419430&count=200&maxlength=0（news.json，63 条官方公告全文，06:24:48 UTC）（2025-02-23 Steam Next Fest Demo Update：10 items of the same rarity can be upgraded to one of a higher tier） |
+
+## 线上验收修复第一轮 D1fix2（2026-10-10）
+
+依据：线上验收第一轮判的口径句。数值未变。行号是改动前（HEAD 6d3a5e71）的行号。 更正我上一轮回报里的一句错话：2025-05-08 的「Steam Error Fix」公告确实含 30min（修复后的等待时间，不是宝箱计时），上一轮我的检索漏了这条短公告。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| achievements.md:23 | 7 | Every name and rate below comes from Steam's public stats page. → Rates below were read from Steam's achievement API on October 10, 2026. | GetGlobalAchievementPercentagesForApp（ach.json） |
+| achievements.md:92 | 7 | Hidden-achievement flags need an API key and were not checked. → Of the sources listed under this page, only the percentages API was re-read on October 10, 2026; the "Accessed" date printed beside each source is the page's earlier check date, September 29, 2026. Hidden-achievement flags need an API key and were not checked. | 来源区的 Accessed 统一取页面 frontmatter 的 checkedAt（hub/native.py：a = acc if u in srcs），不能逐条设置；该页其余来源今天没有复读，所以 checkedAt 不动，在正文写明 |
+| how-to-play.md:44 | 7 | None of the 63 official announcements we read on October 10, 2026 restates the 30-minute timer for the full game. → None of the 63 official announcements we read on October 10, 2026 restates the 30-minute timer for the full game. One of them, the May 8, 2025 "Steam Error Fix" post, does mention 30 minutes, but as a wait after that fix ("You might need to keep Bongo Cat running for 30min until it will work normally again"), not as the chest timer. | ISteamNews 官方公告全文（news.json）（gid 1799088287821846，2025-05-08） |
+| events.md:35 | 7 | \| Spending coins \| Not confirmed as open yet: the launch post says → \| Spending coins \| Not confirmed as open in the announcements we read on October 10, 2026: the launch post says | ISteamNews 官方公告全文（news.json） |

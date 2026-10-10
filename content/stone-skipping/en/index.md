@@ -53,7 +53,7 @@ The counts here come from Roblox's own records for the game. At 05:20 UTC on 10 
 
 ## How popular is it?
 
-Roblox counted 52,051 players online when we read the game record at 05:20 UTC on 10 October 2026, five weeks after the experience was created on 5 September. The Meow Labs group had 1,882,126 members at the same read. Those are snapshots; the player count moves through the day. The [community page](/stone-skipping/community/) has the group details.
+Roblox counted about 52,000 players online when we read the game record at 05:20 UTC on 10 October 2026, five weeks after the experience was created on 5 September. The Meow Labs group had 1,882,126 members at the same read. Those are snapshots; the player count moves through the day. The [community page](/stone-skipping/community/) has the group details.
 
 ## How does the game work?
 

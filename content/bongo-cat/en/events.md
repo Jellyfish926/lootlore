@@ -32,7 +32,7 @@ The Paw Pass brings new cosmetics every month instead of only at seasonal events
 | Theme | Changes monthly; the first was Circus, and the October 1, 2026 post says "This month's theme is Halloween" |
 | Tracks | Free and premium; the pass has themed skins, hats, emotes and chests up to Legendary, and the paid track has more of them |
 | Bongo Coins | 100 per track per pass |
-| Spending coins | Not confirmed as open yet: the launch post says coins "can be used later" to buy the premium track for 500 coins or supporter cosmetics |
+| Spending coins | Not confirmed as open in the announcements we read on October 10, 2026: the launch post says coins "can be used later" to buy the premium track for 500 coins or supporter cosmetics |
 | Progress | Reaching milestones by playing normally; claiming does not spend taps |
 | Deadline | None: "the rewards are claimable forever" |
 | Free ticket | Claimed automatically if you open the game at least once a month |

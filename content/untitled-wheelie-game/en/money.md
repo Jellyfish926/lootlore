@@ -23,7 +23,7 @@ author: "Jellyfi"
 ---
 # How to Make Money in Untitled Wheelie Game Fast
 
-The game description names one way to make money in Untitled Wheelie Game: "Deliver pizzas to earn money." The developer also sells earning multipliers for jobs and for wheelies, and its AI COPS announcement, read on 10 October 2026, says escaping the cops pays.
+The game description names one way to make money in Untitled Wheelie Game: "Deliver pizzas to earn money." The store also has passes named Job Earning and Wheelie Earning, whose descriptions are empty, and the developer's AI COPS announcement, read on 10 October 2026, says escaping the cops pays.
 
 Of the six Robux cash packs, the largest gives nearly three times the cash per Robux of the smallest.
 
@@ -32,8 +32,8 @@ Of the six Robux cash packs, the largest gives nearly three times the cash per R
 | Source | Official evidence | What we know |
 | --- | --- | --- |
 | Pizza delivery | Description: "Deliver pizzas to earn money" | Confirmed income source; pay per delivery not published |
-| Jobs | Passes named X2 and X3 Job Earning | Jobs pay; the description does not say which activities count as jobs |
-| Wheelies | Passes named X2 and X3 Wheelie Earning | The pass names imply wheelies earn money; the rate is not published |
+| Jobs | Passes named X2 Job Earning 💰 and X3 Job Earning 💰 (descriptions empty); the BIG UPDATE announcement lists "1 new job" | Pizza delivery is the one job the description names; what the Job Earning passes multiply is not confirmed |
+| Wheelies | Passes named X2 Wheelie Earning 💰 and X3 Wheelie Earning 💰 (descriptions empty) | Whether wheelies pay is not confirmed in the records we read on 10 October 2026 |
 | Cash packs | Six developer products named $750 to $67,500 | Robux purchases; no description attached |
 
 The Wheelie Earning passes have no description. Whether wheelies pay, and how any wheelie earnings are calculated, is not in the Roblox records we read on 10 October 2026, so test it yourself: note your balance, hold a long wheelie, and check again.
@@ -51,7 +51,7 @@ Both come in two strengths. The pass descriptions are empty, so the names are al
 
 The Job passes cost more at each level. Whether X2 and X3 stack if you own both is not stated — do not assume you get X5 or X6.
 
-Our suggestion: buy the multiplier for whatever you actually do most. If you spend your sessions delivering pizzas, the Job pass; if you mostly ride and show off, the Wheelie pass. Start with X2 unless you are sure. The full list of 12 passes is on the [game pass page](/untitled-wheelie-game/gamepasses/).
+Our suggestion, if the passes do what their names say: buy the one for whatever you actually do most. If you spend your sessions delivering pizzas, the Job pass; if you mostly ride and show off, the Wheelie pass. Start with X2 unless you are sure. The full list of 12 passes is on the [game pass page](/untitled-wheelie-game/gamepasses/).
 
 ![A Roblox rider pops a wheelie on a small black motorbike while two police cars chase behind, under the words AI COPS](art01 "Official promotional art: riding near the police can cost you in fines")
 
@@ -68,7 +68,7 @@ All six records were created on 25 June 2026. The "dollars per Robux" column is 
 | $30,000 | 799 | 37.5 |
 | $67,500 | 1,499 | 45.0 |
 
-The biggest pack gives nearly three times as much cash per Robux as the smallest. If you are going to buy cash at all, one larger pack beats several small ones. Compare that with an earning pass, though: a pass keeps paying every session, while a cash pack is spent once.
+The biggest pack gives nearly three times as much cash per Robux as the smallest. If you are going to buy cash at all, one larger pack beats several small ones. Compare that with an Earning pass, though: a game pass is a one-time purchase that stays on your account, while what each Earning pass multiplies is not confirmed.
 
 ## What else is in the Robux store?
 

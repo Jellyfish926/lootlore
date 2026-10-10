@@ -38,7 +38,7 @@ Everything below was read from Roblox's public records for the group, its owner 
 | Entry | Open; anyone can join |
 | Description | Empty |
 | Shout | None |
-| Roles | Guest, Member, stats, Dev, Admin |
+| Roles | Guest, Member, stats, stats (two roles share that name), Dev, Admin |
 
 The member count is the detail that stands out. This site read 801,043 at 11:29 UTC on 9 October 2026 and 1,146,104 at 06:13 UTC on 10 October 2026, a rise of 345,061 in under 19 hours. No official text we read says why people join. We did not test whether the game asks players to join the group, so we will not guess at the cause.
 
@@ -83,7 +83,7 @@ If you are signed in and old enough to see social links, check the game page you
 
 | Measure | Count at 06:13 UTC, 10 October 2026 |
 | --- | --- |
-| Players online | 14,168 |
+| Players online | about 14,000 (a momentary count) |
 | Visits | 7,069,872 |
 | Favourites | 26,246 |
 | Likes | 5,280 |
@@ -101,7 +101,7 @@ The store is the nearest thing to a changelog. Roblox records when each product 
 
 ## Is there an official wiki?
 
-We found none. We also found no fan wiki: six likely Fandom addresses for the game and the group returned nothing on 9 October 2026. Two third-party statistics sites, Rolimon's and Rotrends, track the game's player counts. They repeat Roblox's public numbers and add their own estimates. On 9 October 2026 Rolimon's showed an average playtime of 10.06 minutes and Rotrends an average session of 11.0 minutes. They are trackers, not developer sources.
+We found none. We also found no fan wiki: six likely Fandom addresses for the game and the group returned nothing on 9 October 2026. Two third-party statistics sites, Rolimon's and Rotrends, track the game's player counts. They repeat Roblox's public numbers and add their own estimates. On 9 October 2026 Rolimon's showed an average playtime of 10.06 minutes and Rotrends an average session of 11.0 minutes; we did not re-read either site on 10 October 2026. They are trackers, not developer sources.
 
 That leaves the description and the store as the record we can read. Our [how-to-play guide](/get-your-drivers-license/how-to-play/) is built from both, line by line.
 

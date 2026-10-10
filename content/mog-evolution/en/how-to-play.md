@@ -10,12 +10,12 @@ checkedAt: "2026-10-01"
 scope: "Core loop from the official game description; supporting detail from developer product descriptions on 2026-10-01; per-click values and upgrade costs in in-game currency are not published"
 type: "article"
 entity: "mog-evolution"
-tldr: ["The official description gives the whole loop in four lines: click for Appeal, upgrade your hammer to Bonesmash, earn Wins to ascend, climb the leaderboard to True Adam.", "Store descriptions add the rest: Rebirth has a level cap, ascending moves you to the next body, and treadmill belts multiply Appeal while you stand on them.", "Servers hold 12 players and private servers are switched off.", "How much Appeal one click gives, and what Bonesmash costs, are not published."]
+tldr: ["The official description gives the whole loop in four lines: click for Appeal, upgrade your hammer to Bonesmash, earn Wins to ascend, climb the leaderboard to True Adam.", "Store descriptions add the rest: Rebirth has a level cap, ascending moves you to the next body, and treadmill belts multiply Appeal while you stand on them.", "Servers hold 12 players; whether private servers are offered is not confirmed.", "How much Appeal one click gives, and what Bonesmash costs, are not published."]
 related: ["progression", "appeal", "shop"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10764479526", "https://apis.roblox.com/developer-products/v2/universes/10764479526/developerproducts?limit=100", "https://develop.roblox.com/v1/universes/10764479526/places?limit=50", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"]
 images: ["art02", "art01"]
 date: "2026-10-01"
-updated: "2026-10-01"
+updated: "2026-10-10"
 reviewed: "2026-10-01"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -89,7 +89,7 @@ The store and the game's places point to more systems than the description lists
 
 ## How many players are in a server?
 
-Up to 12 per +1 Mog Evolution server, according to Roblox. Private servers are switched off, so you always join a public server. The game is rated Maturity: Minimal, suitable for everyone, and it is free to play.
+Up to 12 per +1 Mog Evolution server, according to Roblox. Whether private servers are offered is not confirmed: the game record's createVipServersAllowed field read false on 1 October 2026, which alone does not settle it. The game is rated Maturity: Minimal, suitable for everyone, and it is free to play.
 
 ## Is it free, and is it suitable for younger players?
 

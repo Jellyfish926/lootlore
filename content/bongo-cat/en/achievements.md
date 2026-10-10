@@ -20,7 +20,7 @@ author: "Jellyfi"
 ---
 # All 28 Bongo Cat Achievements and Unlock Rates
 
-Bongo Cat has 28 Steam achievements. The easiest, Bongo Beat 1, is unlocked by 90.8% of players; the rarest, Bongo Beat Diamond, needs 25 million taps and only 0.4% have it. Most are tap milestones, and the rest come from collecting items, using emojis, hosting lobbies and exchanging. Every name and rate below comes from Steam's public stats page.
+Bongo Cat has 28 Steam achievements. The easiest, Bongo Beat 1, is unlocked by 90.8% of players; the rarest, Bongo Beat Diamond, needs 25 million taps and only 0.4% have it. Most are tap milestones, and the rest come from collecting items, using emojis, hosting lobbies and exchanging. Rates below were read from Steam's achievement API on October 10, 2026.
 
 ## What are all the Bongo Cat achievements?
 
@@ -89,7 +89,7 @@ Tempted to use an auto clicker for the tap tiers? There is no official rule on t
 
 ## Where does this data come from?
 
-Percentages are read from Steam's public global achievement API, which needs no login; names and requirements were read from the global achievements page on September 29, 2026 and matched to the API's internal names by their counts. Hidden-achievement flags need an API key and were not checked. The table is meant to be refreshed weekly from the same page; expect the percentages to drift between checks.
+Percentages are read from Steam's public global achievement API, which needs no login; names and requirements were read from the global achievements page on September 29, 2026 and matched to the API's internal names by their counts. Of the sources listed under this page, only the percentages API was re-read on October 10, 2026; the "Accessed" date printed beside each source is the page's earlier check date, September 29, 2026. Hidden-achievement flags need an API key and were not checked. The table is meant to be refreshed weekly from the same page; expect the percentages to drift between checks.
 
 ## Read next
 

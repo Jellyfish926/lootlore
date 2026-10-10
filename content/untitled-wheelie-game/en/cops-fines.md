@@ -47,7 +47,7 @@ We will not fill these gaps with guesses. If you see a number on another site, c
 
 Both come from the developer's own store data, checked on 10 October 2026.
 
-| Purchase | Type | Robux | Official description | Added |
+| Purchase | Type | Robux | Official description | Record created |
 | --- | --- | --- | --- | --- |
 | NEVER PAY FINES | Game pass | 149 | Just never have to pay fines for when you get caught | 26 September 2026 |
 | AVOID FINES | Developer product | 13 | None | 21 September 2026 |
@@ -70,7 +70,7 @@ Be careful: two different Roblox games advertise AI cops. Untitled Wheelie Game 
 
 ## When were the two fine records created?
 
-Both are recent. The AVOID FINES record was created on 21 September 2026 and the NEVER PAY FINES record five days later, on 26 September — the newest pass record on 10 October 2026. See the [update history](/untitled-wheelie-game/updates/) for the other store records created since June, and the [game pass list](/untitled-wheelie-game/gamepasses/) for the other 11 passes.
+The AVOID FINES record was created on 21 September 2026 and the NEVER PAY FINES record five days later, on 26 September — the newest pass record on 10 October 2026. See the [update history](/untitled-wheelie-game/updates/) for the other store records created since June, and the [game pass list](/untitled-wheelie-game/gamepasses/) for the other 11 passes.
 
 ## Read next
 

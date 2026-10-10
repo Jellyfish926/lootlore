@@ -19,7 +19,7 @@
    "role_source": "https://groups.roblox.com/v1/groups/235484791",
    "max_players": 25,
    "max_players_source": "https://games.roblox.com/v1/games?universeIds=10701628624",
-   "key_notes_en": "25 players per server · Maturity: Mild · Private servers not allowed · No game passes",
+   "key_notes_en": "25 players per server · Maturity: Mild · No game passes",
    "key_notes_source": "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",
    "source_urls": [
     "https://games.roblox.com/v1/games?universeIds=10701628624",

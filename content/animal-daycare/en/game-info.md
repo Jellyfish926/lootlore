@@ -15,7 +15,7 @@ related: ["how-to-play", "badges", "shop"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10701628624", "https://games.roblox.com/v1/games/votes?universeIds=10701628624", "https://groups.roblox.com/v1/groups/235484791", "https://games.roblox.com/v2/groups/235484791/games?accessFilter=Public&limit=50", "https://develop.roblox.com/v1/universes/10701628624/places?limit=50", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation", "https://games.roblox.com/v1/games?universeIds=10148749921"]
 images: ["icon", "th1"]
 date: "2026-09-30"
-updated: "2026-09-30"
+updated: "2026-10-10"
 reviewed: "2026-09-30"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -73,7 +73,7 @@ Roblox's genre field lists it as **Survival**. The official art leans into that:
 
 ## How many players fit in a server?
 
-Up to 25. Private servers were not enabled when we checked, so you cannot rent a server for your own group. The official description does say you can "play solo or with friends"; the [how-to-play guide](/animal-daycare/how-to-play/) covers what that means for a shift.
+Up to 25. Whether private servers are offered is not confirmed: the game record's createVipServersAllowed field read false when we checked on 30 September 2026, and that field alone does not settle it. The official description does say you can "play solo or with friends"; the [how-to-play guide](/animal-daycare/how-to-play/) covers what that means for a shift.
 
 The experience holds two places: the main one, Animal Daycare (Anomaly), and a second called Daycare Shift. Roblox lists both, but how the game moves players between them is not documented. Avatars are switched to R15 inside the game.
 

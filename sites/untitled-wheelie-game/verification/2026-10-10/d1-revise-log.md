@@ -125,3 +125,43 @@
 | upgrades.md:9 | frontmatter 日期 | checkedAt: "2026-09-30" → checkedAt: "2026-10-10" | 全页比对后更新 |
 | upgrades.md:18 | frontmatter 日期 | reviewed: "2026-09-30" → reviewed: "2026-10-10" | 全页比对后更新 |
 | upgrades.md:19 | frontmatter 日期 | gameVersion: "2026-09-30 update" → gameVersion: "2026-10-08 update" | 全页比对后更新 |
+
+## 线上验收修复第一轮 D1fix2（2026-10-10）
+
+依据：线上验收第一轮判的口径句。数值未变。行号是改动前（HEAD 6d3a5e71）的行号。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| gamepasses.md:6 | 1 | with official Robux prices and descriptions: earning multipliers, NEVER PAY FINES, → with official Robux prices and descriptions: four Earning passes, NEVER PAY FINES, | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:13 | 1 | "Four are earning multipliers — X2 and X3 for jobs, X2 and X3 for wheelies." → "Four are named X2 / X3 Job Earning 💰 and X2 / X3 Wheelie Earning 💰; their descriptions are empty, so what they multiply is not confirmed." | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:26 | 1 同类 | from 99 to 499 Robux: four earning multipliers, NEVER PAY FINES, → from 99 to 499 Robux: four Earning passes, NEVER PAY FINES, | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:46 | 2 | \| Pass \| Official description \| Added \| → \| Pass \| Official description \| Record created \| | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:60 | 1 同类 | Our suggestions, based only on what each pass says it does: → Our suggestions, based only on pass names and the one description that says what a pass does; the effects of the others are not confirmed: | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:64 | 1 同类 | X2 Wheelie Earning (199), the cheapest multiplier. → X2 Wheelie Earning (199), the cheaper of the two Wheelie Earning passes. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:65 | 1 同类 | Free Subway Travel (99). The name tells us the map has a subway; the normal fare is not published. → Free Subway Travel (99). Its description is empty, so what it waives is not confirmed. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| gamepasses.md:76 | 范围外：the newest 带日期 | and NEVER PAY FINES on 26 September — the newest. → and NEVER PAY FINES on 26 September — the newest pass record on 10 October 2026. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| money.md:26 | 1 | The developer also sells earning multipliers for jobs and for wheelies, and its AI COPS announcement, read on 10 October 2026, says escaping the cops pays. → The store also has passes named Job Earning and Wheelie Earning, whose descriptions are empty, and the developer's AI COPS announcement, read on 10 October 2026, says escaping the cops pays. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述）；virtual-events（events-cursor-read1.json） |
+| money.md:35 | 范围外：Jobs pay | \| Jobs \| Passes named X2 and X3 Job Earning \| Jobs pay; the description does not say which activities count as jobs \| → \| Jobs \| Passes named X2 Job Earning 💰 and X3 Job Earning 💰 (descriptions empty); the BIG UPDATE announcement lists "1 new job" \| Pizza delivery is the one job the description names; what the Job Earning passes multiply is not confirmed \| | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述）；virtual-events（events-cursor-read1.json）（data[1].description：1 new job） |
+| money.md:36 | 范围外：names imply | \| Wheelies \| Passes named X2 and X3 Wheelie Earning \| The pass names imply wheelies earn money; the rate is not published \| → \| Wheelies \| Passes named X2 Wheelie Earning 💰 and X3 Wheelie Earning 💰 (descriptions empty) \| Whether wheelies pay is not confirmed in the records we read on 10 October 2026 \| | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| money.md:54 | 1 同类 | Our suggestion: buy the multiplier for whatever you actually do most. → Our suggestion, if the passes do what their names say: buy the one for whatever you actually do most. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| money.md:71 | 1 同类 | Compare that with an earning pass, though: a pass keeps paying every session, while a cash pack is spent once. → Compare that with an Earning pass, though: a game pass is a one-time purchase that stays on your account, while what each Earning pass multiplies is not confirmed. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| upgrades.md:25 | 1 同类 | it covers pizza delivery, the two earning multipliers and the six cash packs. → it covers pizza delivery, the Job and Wheelie Earning passes and the six cash packs. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| upgrades.md:33 | 1 同类 | The Job Earning and Wheelie Earning passes multiply two kinds of income, and the six cash packs → The Job Earning and Wheelie Earning passes have empty descriptions, so what they multiply is not confirmed, and the six cash packs | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| upgrades.md:54 | 1 同类 | A multiplier is worth more once you know which kind of income you earn most. → An Earning pass is easier to judge once you know which kind of income you earn most. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| cops-fines.md:50 | 2 | \| Purchase \| Type \| Robux \| Official description \| Added \| → \| Purchase \| Type \| Robux \| Official description \| Record created \| | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| cops-fines.md:73 | 3 | Both are recent. The AVOID FINES record was created → The AVOID FINES record was created | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| bikes.md:32 | 范围外：On sale now? | \| Name \| How it was sold \| Official description \| On sale now? \| → \| Name \| How it was sold \| Official description \| On sale on 10 October 2026? \| | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| updates.md:5 | 范围外：标题（seoTitle） | seoTitle: "Untitled Wheelie Game Updates: What Each Month Added" → seoTitle: "Untitled Wheelie Game Updates: Store Records by Month" | 商品记录的 created 不等于更新内容 |
+| beginner.md:6 | 范围外：description | where the official group is, and what each update since June added." → where the official group is, and store records created since June." | 同上 |
+| index.md:63 | 3 同类（无日期时效词） | ## What has changed recently? → ## Which store records are the newest? | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+| community.md:78 | 2 同类 | shows what the developer has added. → lists the store records by creation date. | game-passes v1（passes-p1.json：四个 Earning 通行证 displayDescription 为空串；NEVER PAY FINES 有描述） |
+
+## D1fix2b：私服句收紧（2026-10-10）
+
+调度员定：以早先验证员的结论为准，createVipServersAllowed 单独不能说明能否开私服。行号是改动前（HEAD 6d3a5e71 + D1fix2 暂存）的 HEAD 行号。
+
+| 文件:行 | 编号 | 原句 → 新句 | 出处 / 依据 |
+|---|---|---|---|
+| index.md:13 | 私服句：只陈述字段值，not confirmed | Private servers were not enabled when we read the game record on 10 October 2026 — [how to play] → Whether private servers are offered is not confirmed: the game record's createVipServersAllowed field read false on 10 October 2026, which alone does not settle it — [how to play] | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |
+| how-to-play.md:13 | 私服句：只陈述字段值，not confirmed | Servers hold up to 10 players; private servers were not enabled on 10 October 2026." → Servers hold up to 10 players; whether private servers are offered is not confirmed." | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |
+| how-to-play.md:69 | 私服句：只陈述字段值，not confirmed | \| Private servers \| Not enabled \| → \| Private servers \| Not confirmed (createVipServersAllowed read false, which alone does not settle it) \| | games v1 的 createVipServersAllowed 字段（false）；stone-skipping 实体备注里早先验证员的结论：该字段对已知有私服的游戏同样为 false，单凭它不能下结论 |

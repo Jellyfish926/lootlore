@@ -15,7 +15,7 @@ related: ["eggs", "races", "care-stable"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10387635049", "https://groups.roblox.com/v1/groups/1006560817", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"]
 images: ["th2", "th3"]
 date: "2026-10-01"
-updated: "2026-10-01"
+updated: "2026-10-10"
 reviewed: "2026-10-01"
 gameVersion: "2026-09-30 update"
 draft: false
@@ -69,7 +69,7 @@ You do not have to: races pay out in-game cash, and the plan above needs no Robu
 | Created | 24 June 2026 |
 | Genre | Simulation, Tycoon |
 | Players per server | 8 |
-| Private servers | Not enabled |
+| Private servers | Not confirmed (createVipServersAllowed read false, which alone does not settle it) |
 | Devices | Desktop, Console, Mobile, Tablet (per description) |
 | Maturity | Minimal, "Suitable for everyone" |
 | Price | Free, with optional Robux purchases |
@@ -89,7 +89,7 @@ A few facts that save new players time, all from the official listing or store:
 - **Storage is limited.** You start with 9 horse slots; the X3 STORAGE pass raises that to 27. Do not hatch eggs faster than you can house the results.
 - **Apples are capped.** You carry 10 at a time unless you own X2 FRUIT CAPACITY.
 - **Eggs take time.** Eggs hatch on a timer after you place them; Robux skips exist for every tier above Common.
-- **Servers are small.** A server holds eight players at most, and private servers are not enabled.
+- **Servers are small.** A server holds eight players at most; whether private servers are offered is not confirmed.
 
 ## Are there codes to redeem?
 

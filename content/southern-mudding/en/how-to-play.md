@@ -15,7 +15,7 @@ related: ["vehicles", "spawning", "badges"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=8719555347", "https://badges.roblox.com/v1/universes/8719555347/badges?limit=100", "https://apis.roblox.com/game-passes/v1/universes/8719555347/game-passes?passView=Full&pageSize=100", "https://groups.roblox.com/v1/groups/33504096", "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation"]
 images: ["th3", "th2"]
 date: "2026-10-02"
-updated: "2026-10-02"
+updated: "2026-10-10"
 reviewed: "2026-10-02"
 gameVersion: "2026-09-25 update"
 draft: false
@@ -83,11 +83,11 @@ Two vehicles and two trailers, going by the pass descriptions: Spawn 4 Vehicles 
 | Created | 15 September 2025 |
 | Genre | Simulation, Vehicle Sim |
 | Players per server | 10 |
-| Private servers | Not enabled |
+| Private servers | Not confirmed (createVipServersAllowed read false, which alone does not settle it) |
 | Maturity | Minimal, "Suitable for everyone" |
 | Price | Free, with optional Robux purchases |
 
-A server holds ten players at most. With private servers switched off, playing with friends means joining the same public server.
+A server holds ten players at most. Whether private servers are offered is not confirmed (the game record's createVipServersAllowed field read false on 2 October 2026, which alone does not settle it); joining the same public server is the route we can confirm.
 
 ## Do you need Robux to enjoy Southern Mudding?
 

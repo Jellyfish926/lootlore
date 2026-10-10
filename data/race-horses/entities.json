@@ -26,7 +26,7 @@
    "role_source": "https://groups.roblox.com/v1/groups/1006560817",
    "max_players": 8,
    "max_players_source": "https://games.roblox.com/v1/games?universeIds=10387635049",
-   "key_notes_en": "8 players per server · Maturity: Minimal · Private servers not allowed · 24 badges · 5 game passes · 32 developer products",
+   "key_notes_en": "8 players per server · Maturity: Minimal · 24 badges · 5 game passes · 32 developer products",
    "key_notes_source": [
     "https://games.roblox.com/v1/games?universeIds=10387635049",
     "https://apis.roblox.com/experience-guidelines-api/experience-guidelines/get-age-recommendation",

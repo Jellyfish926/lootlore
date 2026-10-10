@@ -50,7 +50,7 @@ Every value below is Roblox's own record for the game, read at 06:13 UTC on 10 O
 | Visits | 7,069,872 |
 | Favourites | 26,246 |
 | Likes / dislikes | 5,280 / 12,716 |
-| Players online | 14,168 |
+| Players online | about 14,000 at 06:13 UTC (a momentary count) |
 | Game passes | 5 |
 | Developer products | 13 |
 | Cars named in the description | 18 |

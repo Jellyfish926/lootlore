@@ -2,7 +2,7 @@
 slug: "updates"
 url: "/untitled-wheelie-game/updates/"
 title: "Untitled Wheelie Game Update History from Store Dates"
-seoTitle: "Untitled Wheelie Game Updates: What Each Month Added"
+seoTitle: "Untitled Wheelie Game Updates: Store Records by Month"
 description: "Untitled Wheelie Game update history from Roblox store dates: record created 4 June 2026, earning passes, cash packs, e-bikes, Backfire parts and fines."
 category: "Getting Started"
 language: "en"

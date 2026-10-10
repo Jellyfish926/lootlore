@@ -79,7 +79,7 @@ So we treat luck as a second step. Once you are throwing into new water, a luck 
 
 ## Can you play with friends?
 
-Yes, in public servers. Each server holds up to 12 players, according to the Roblox listing. The game record we read on 10 October 2026 had private servers switched off, so you cannot rent a quiet server for a group.
+Yes, in public servers. Each server holds up to 12 players, according to the Roblox listing. The game record we read on 10 October 2026 had createVipServersAllowed set to false; that field alone does not settle whether private servers are offered, so this is not confirmed.
 
 Four store products are named Server Luck (x2, x4, x8 and x16). Going by the name they may apply to a whole server, but their records have no description, so that is not confirmed.
 

@@ -610,10 +610,12 @@ a:hover{color:var(--accent2)}
    不支持 :has() 的浏览器整条规则作废,退回原来的横滑。
    单元格给 3.5em 的内容宽下限(全站 border-box,所以要把左右内边距 24px 加进去):自动表格布局会把
    短内容列(日期、中文短语)压到两个字一行;3 列 ×(3.5em + 24px)≈ 230px,放得进 390 宽手机。
-   下限再大(试过 4 / 4.5em)会让表头不换行的表多出几像素横滑,所以取 3.5em。 */
+   下限再大(试过 4 / 4.5em)会让表头不换行的表多出几像素横滑,所以取 3.5em。
+   表头在这些窄表里允许换行:th 默认 nowrap,一句长表头就能把整表撑出容器;td.num 的 nowrap 不动。 */
 @media(max-width:640px){
   .table-scroll table:not(:has(tr>:nth-child(4))){min-width:0}
   .table-scroll table:not(:has(tr>:nth-child(4))) :is(td,th){min-width:calc(3.5em + 24px)}
+  .table-scroll table:not(:has(tr>:nth-child(4))) th{white-space:normal}
 }
 .table-scroll th,.table-scroll td{padding:9px 12px;border-bottom:1px solid var(--line);
   text-align:left;vertical-align:top}

@@ -84,6 +84,19 @@
 .sn-body table{border-collapse:collapse;width:100%;font-size:var(--fs-tbl);
   line-height:var(--lh-tight);margin:0 0 22px}
 .sn-body .tablewrap table,.sn-body .tw table,.sn-body .table-scroll table{min-width:520px;margin:0}
+/* 与总站原生表(hub/style.css「数据表」一节)同一套窄屏与横滑提示,用到子站自带的两种容器上:
+   右缘提示 = 两层背景(local 盖板 + scroll 提示),可横滑时出现、滚到头消失;.table-scroll 已由 hub.css 管。
+   ≤640 且不超过 3 列(任何一行都没有第 4 个单元格):不再撑到 520,单元格留 3.5em 内容宽下限。
+   快照表的 th 本来就可换行;td.num / th.num 的 nowrap 不动。不支持 :has() 的浏览器退回原来的横滑。 */
+.sn-body .tablewrap,.sn-body .tw{--ts-hint:color-mix(in srgb,var(--accent) 42%,transparent);
+  background-image:linear-gradient(to left,var(--bg) 50%,transparent),
+    linear-gradient(to left,var(--ts-hint),transparent);
+  background-position:right center,right center;background-size:48px 100%,24px 100%;
+  background-repeat:no-repeat;background-attachment:local,scroll}
+@media(max-width:640px){
+  .sn-body :is(.tablewrap,.tw) table:not(:has(tr>:nth-child(4))){min-width:0}
+  .sn-body :is(.tablewrap,.tw) table:not(:has(tr>:nth-child(4))) :is(td,th){min-width:calc(3.5em + 24px)}
+}
 .sn-body th,.sn-body td{padding:9px 12px;border-bottom:1px solid var(--line);
   text-align:left;vertical-align:top}
 .sn-body th{background:var(--band);color:var(--ink);font-weight:600;font-size:.875rem;

@@ -1,6 +1,6 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-67b6c6c436bc2a63.js"],""]
+5:I[2972,["972","static/chunks/972-cc70c4a71fdf7149.js","931","static/chunks/app/page-8b96f1298b3638f0.js"],""]
 2:Ta03,<p>These terms cover your use of the Orc Problem Field Manual at sirwehaveanorcproblem.store. Reading on means you accept them. There is nothing unusual buried in here, but the details matter, so they are written out.</p>
 <h2>The short version</h2>
 <p>Read anything, link anywhere, quote a little with credit, do not copy pages wholesale, and treat every number as a dated reading rather than a promise. That is the whole agreement; the sections below only make it precise.</p>

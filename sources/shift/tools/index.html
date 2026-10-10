@@ -23,13 +23,10 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=0966810b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://www.clarity.ms">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Jost:wght@300;400;500&amp;display=swap">
 <link rel="stylesheet" href="/style.css?v=6b3ea3d1">
-<!-- Google AdSense ca-pub-6575082962774479 — 站点验证 + 过审后自动投放 -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6575082962774479" crossorigin="anonymous"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,10 +45,10 @@
   "description": "Three free Shift At Midnight tools on one page: check whether your group can play together, track all 10 achievements, and look up any threat by what you saw.",
   "inLanguage": "en",
   "datePublished": "2026-08-05",
-  "dateModified": "2026-08-05",
+  "dateModified": "2026-10-10",
   "author": {
     "@type": "Person",
-    "name": "Jellyfish",
+    "name": "Jellyfi",
     "jobTitle": "Editor",
     "url": "https://shiftatmidnightwiki.site/author/"
   },
@@ -158,13 +155,14 @@
   <h1>Shift At Midnight tools</h1>
   <p class="lede">Three things this wiki can answer faster than a text page can. <strong>All of them run in your browser</strong> &mdash; nothing is uploaded, nothing needs an account.</p>
 
-  <p class="updated">Last verified 5 August 2026 &middot; game version: 29 July 2026 patch</p>
+  <p class="updated">Last updated 2026-10-10 &middot; crossplay checker wording and hand-entered achievement unlock rates re-checked 10 October 2026 against the official Steam announcements and achievement stats (the tracker list is a separate weekly snapshot, dated in its own section) &middot; rest of the page last verified 5 August 2026 (29 July 2026 patch) &middot; latest patch: 1 September 2026</p>
 
 
   <div class="term tip">
     <div class="term-h">What these are built from</div>
-    <p>Every tool here is driven by the same verified data as the written pages &mdash; the compatibility
-      matrix from <a href="/crossplay/">crossplay</a>, the global unlock rates from
+    <p>Every tool here is driven by the same data as the written pages. The compatibility matrix from
+      <a href="/crossplay/">crossplay</a> repeats what the developer said in its 10 July 2026 announcement;
+      this site has not tested any of it. The global unlock rates come from
       <a href="/achievements/">achievements</a>, and the counterplay table from
       <a href="/monsters/">monsters</a>. <strong>No tool here invents data.</strong> Where a requirement
       is unverified &mdash; notably the three hidden achievements &mdash; the tool says so instead of guessing.</p>
@@ -172,7 +170,7 @@
 
   <h2>The tools</h2>
   <div class="grid two">
-    <a class="card" href="/tools/#crossplay-checker"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get a yes/no and the cheapest fix if the answer is no.</span></a>
+    <a class="card" href="/tools/#crossplay-checker"><b>Crossplay checker</b><span>Pick where each of you bought the game. Get what the developer has said about that combination.</span></a>
     <a class="card" href="/tools/#achievement-tracker"><b>Achievement tracker</b><span>Tick off all 10. Saves in your browser, and tells you which one is statistically your easiest next.</span></a>
     <a class="card" href="/tools/#threat-lookup"><b>Threat lookup</b><span>Search by what you actually saw &mdash; &ldquo;music box&rdquo;, &ldquo;screaming&rdquo;, &ldquo;fake ID&rdquo; &mdash; not by a name you do not know yet.</span></a>
   </div>
@@ -194,7 +192,7 @@
         <option value="steam" data-pool="steam">Steam (Windows)</option>
         <option value="xbox" data-pool="xbox">Xbox Series X|S</option>
         <option value="gamepass" data-pool="xbox">PC Game Pass</option>
-        <option value="msstore" data-pool="xbox">Microsoft Store (bought)</option>
+        <option value="msstore" data-pool="unconfirmed">Microsoft Store (bought)</option>
         </select>
       </div>
       <div class="field">
@@ -203,7 +201,7 @@
         <option value="steam" data-pool="steam">Steam (Windows)</option>
         <option value="xbox" data-pool="xbox">Xbox Series X|S</option>
         <option value="gamepass" data-pool="xbox">PC Game Pass</option>
-        <option value="msstore" data-pool="xbox">Microsoft Store (bought)</option>
+        <option value="msstore" data-pool="unconfirmed">Microsoft Store (bought)</option>
         </select>
       </div>
       <div class="field">
@@ -213,7 +211,7 @@
         <option value="steam" data-pool="steam">Steam (Windows)</option>
         <option value="xbox" data-pool="xbox">Xbox Series X|S</option>
         <option value="gamepass" data-pool="xbox">PC Game Pass</option>
-        <option value="msstore" data-pool="xbox">Microsoft Store (bought)</option>
+        <option value="msstore" data-pool="unconfirmed">Microsoft Store (bought)</option>
         </select>
       </div>
     </div>
@@ -222,34 +220,52 @@
       <p>The answer updates as you choose.</p>
     </div>
     <noscript>
-      <p class="noscript-note">This checker needs JavaScript. The same answer in one sentence:
-        <strong>Steam players can only play with other Steam players.</strong> Xbox console, PC Game Pass
-        and Microsoft Store copies all share one pool and can play with each other. Full table on the
+      <p class="noscript-note">This checker needs JavaScript. The same answers without it:
+        <strong>Steam players only play with other Steam players, per the developer&rsquo;s 10 July 2026
+        announcement</strong>; we have not tested. So Steam with Xbox or PC Game Pass is a no, per that same
+        announcement; we have not tested. Xbox and PC Game Pass: the developer said they will have crossplay;
+        we have not tested. Which pool a bought Microsoft Store copy joins has no official statement, so any
+        group with a Microsoft Store (bought) copy is not confirmed, and this site has not tested it. Full table on the
         <a href="/crossplay/">crossplay page</a>.</p>
     </noscript>
   </div>
 
   <h3>The rule behind the answer</h3>
-  <p>There are two matchmaking pools, not four. <strong>Steam is one pool by itself.</strong> Xbox Series X|S,
-    PC Game Pass and a bought Microsoft Store copy are the second pool &mdash; they interoperate because of
-    Xbox Play Anywhere. Nothing crosses between the two.</p>
+  <p>The developer&rsquo;s 10 July 2026 announcement describes two groups. <strong>Steam players will only be
+    able to play with other Steam players</strong>; we have not tested. Xbox and PC Game Pass players will have
+    crossplay with each other; we have not tested. Which pool a bought Microsoft Store copy joins, and how
+    Xbox Play Anywhere relates to matchmaking, is not confirmed by any official statement, and this site has
+    not tested it. The checker above follows the same rule: an all-Steam group gets &ldquo;Yes, per the
+    developer&rdquo;, a group on Xbox and PC Game Pass only gets &ldquo;The developer said yes &mdash; we have not
+    tested&rdquo;, Steam mixed with Xbox or PC Game Pass gets &ldquo;No, per the developer&rdquo;, and any
+    group that includes a Microsoft Store (bought) copy gets &ldquo;Not confirmed&rdquo;, whatever the other
+    players are on.</p>
   <table class="data">
     <thead><tr><th>Your platform</th><th>Can play with</th><th>Cannot play with</th></tr></thead>
     <tbody>
-      <tr><td>Steam (Windows)</td><td>Steam only</td><td>Xbox console, PC Game Pass, Microsoft Store</td></tr>
-      <tr><td>Xbox Series X|S</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
-      <tr><td>PC Game Pass</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
-      <tr><td>Microsoft Store (bought)</td><td>Xbox + PC Game Pass</td><td>Steam</td></tr>
+      <tr><td>Steam (Windows)</td><td>Steam only (the developer said so on 10 July 2026; we have not tested)</td><td>Xbox console and PC Game Pass (the developer said so on 10 July 2026; we have not tested). Microsoft Store (bought): not confirmed</td></tr>
+      <tr><td>Xbox Series X|S</td><td>Xbox + PC Game Pass (the developer said so on 10 July 2026; we have not tested)</td><td>Steam (the developer said so on 10 July 2026; we have not tested). Microsoft Store (bought): not confirmed</td></tr>
+      <tr><td>PC Game Pass</td><td>Xbox + PC Game Pass (the developer said so on 10 July 2026; we have not tested)</td><td>Steam (the developer said so on 10 July 2026; we have not tested). Microsoft Store (bought): not confirmed</td></tr>
+      <tr><td>Microsoft Store (bought)</td><td>Not confirmed (no official statement about a bought Microsoft Store copy; we have not tested)</td><td>Not confirmed (no official statement about a bought Microsoft Store copy; we have not tested)</td></tr>
     </tbody>
   </table>
-  <p>The developer has said full crossplay and a server browser are planned, but they are
-    <strong>not in the launch build</strong>. Until that ships, the table above is the whole story.
+  <p>The developer announced a Steam-only public server browser on 10 July 2026, and no later
+    changelog mentions it shipping. <strong>No official announcement promises crossplay between Steam
+    and Xbox</strong> (all 31 official Steam announcements checked on 10 October 2026).
     Background and sourcing on the <a href="/crossplay/">crossplay page</a>.</p>
 
   <h3>If the answer is no</h3>
-  <p>The cheapest fix is almost always <strong>PC Game Pass</strong> rather than buying a second copy:
-    it puts a Steam-side player into the Xbox pool for the price of a month's subscription instead of
-    another $9.99. See <a href="/platforms/#game-pass">Game Pass</a> and <a href="/review/#price">price</a>.</p>
+  <p>This page does not name a cheapest fix, for a &ldquo;No&rdquo; or for a &ldquo;Not confirmed&rdquo;.
+    Which version of the game ends up in which matchmaking pool
+    is something this site has not tested, so we cannot tell you that buying or subscribing to a different
+    version will get your group together. What the developer has said:
+    <strong>Steam players only play with other Steam players, per the developer&rsquo;s 10 July 2026
+    announcement</strong>; we have not tested. So Steam with Xbox or PC Game Pass is a no, per that same
+    announcement; we have not tested. Xbox and PC Game Pass: the developer said they will have
+    crossplay; we have not tested. Which pool a bought Microsoft Store copy joins has no official statement:
+    not confirmed, and we have not tested it.
+    Version and price details are on <a href="/platforms/#game-pass">Game Pass</a> and
+    <a href="/review/#price">price</a>.</p>
 
   </section>
 
@@ -259,6 +275,7 @@
   <div class="tool">
     <div class="bar-track" role="img" aria-label="Completion progress"><div class="bar-fill" id="fill"></div></div>
     <p class="meta" id="count">0 of 10 &middot; 0%</p>
+    <p class="meta">Unlock rates in this list come from this site&rsquo;s weekly snapshot of Steam&rsquo;s global achievement stats, captured 5 October 2026.</p>
 
     <label class="tool-check">
       <input type="checkbox" data-ach="0" data-pct="96.6">
@@ -326,12 +343,14 @@
   </div>
 
   <h3>What the percentages mean</h3>
-  <p>These are Steam global unlock rates &mdash; the share of everyone who owns the game that has the
-    achievement, read from Steam on <strong>2026-10-05</strong> and refreshed weekly by this site's build.
-    They are a difficulty proxy, not a guide: <strong>First Blood sits at 96.6%</strong>
-    because it unlocks for killing your first customer, which nearly everyone does by accident.</p>
-  <p>The three hidden achievements &mdash; Grave Decision (33.1%), True Ending (16.0%) and
-    Empty Home (10.1%) &mdash; <strong>do not show their requirements in-game, and we have not verified
+  <p>The percentages in the list above are Steam global unlock rates &mdash; the share of everyone who owns
+    the game that has the achievement. They are generated when this site is built, from its weekly snapshot
+    captured on <strong>5 October 2026</strong>, and are not edited by hand.
+    They are a difficulty proxy, not a guide: <strong>First Blood sat at 96.6% in that snapshot</strong>
+    because it unlocks for killing your first customer.</p>
+  <p>The three hidden achievements &mdash; Grave Decision (35.1%), True Ending (16.0%) and
+    Empty Home (10.9%) in a separate reading of Steam&rsquo;s achievement API on 10 October 2026 &mdash;
+    <strong>do not show their requirements in-game, and we have not verified
     them.</strong> We list what the rates imply on the <a href="/endings/">endings page</a> rather than
     publishing a guess as fact.</p>
 
@@ -350,15 +369,16 @@
   </div>
 
   <h3>All seven threats</h3>
+  <p class="meta">Achievement unlock rates on these cards are one reading of Steam&rsquo;s global achievement stats, taken on 10 October 2026.</p>
   <div id="results">
     <article class="threat" data-keys="entities, entity, entities, spider, hunt, hunter, creature, basic, common" data-kind="killable">
       <h4><a href="/guide/survival/">Entities</a></h4>
-      <p class="meta">Hostile: Yes &middot; Achievement: Still Breathing (93.8%)</p>
+      <p class="meta">Hostile: Yes &middot; Achievement: Still Breathing (93.5%)</p>
       <p>The baseline threat, and the one you summon yourself &mdash; letting a doppelganger check out brings it back that night in its real form. Barricades, traps and weapons all work.</p>
     </article>
     <article class="threat" data-keys="marionette, music box, melody, puppet, strings, boss, song, tune, dancing, shift 9" data-kind="boss">
       <h4><a href="/monsters/marionette/">Marionette</a></h4>
-      <p class="meta">Hostile: Yes &middot; Achievement: Last Performance (41.6%)</p>
+      <p class="meta">Hostile: Yes &middot; Achievement: Last Performance (44.0%)</p>
       <p>Killable, and tougher than an Entity. The music box decides it: hold E to rewind before the melody plays three times, or it summons the Marionette. The 23 July patch cut its health.</p>
     </article>
     <article class="threat" data-keys="the dentist, dentist, drill, teeth, mask, cannot kill, unkillable, chase, final, shift 13" data-kind="unkillable">
@@ -368,12 +388,12 @@
     </article>
     <article class="threat" data-keys="shrieking doll, doll, scream, shriek, screaming, porcelain, loud, noise, crawler, small" data-kind="killable">
       <h4><a href="/monsters/shrieking-doll/">Shrieking Doll</a></h4>
-      <p class="meta">Hostile: Yes &middot; Achievement: Silenced (89.8%)</p>
+      <p class="meta">Hostile: Yes &middot; Achievement: Silenced (89.5%)</p>
       <p>Fragile &mdash; a few shots do it. The real cost is the noise, which is what pulls everything else onto you. Turns up during hunts, usually alongside Entities.</p>
     </article>
     <article class="threat" data-keys="demented, demented, stare, look, freeze, weeping angel, trap, deformed, twisted" data-kind="trap">
       <h4><a href="/monsters/demented/">Demented</a></h4>
-      <p class="meta">Hostile: Yes &middot; Achievement: Freed (79.8%)</p>
+      <p class="meta">Hostile: Yes &middot; Achievement: Freed (79.7%)</p>
       <p>It freezes while you look at it &mdash; and it cannot be damaged while you look at it either. The confirmed solution is to break line of sight in a direction that walks it into a trap.</p>
     </article>
     <article class="threat" data-keys="rakes, rake, rakes, forest, endless, red glow, customer, scream, new enemy, post story" data-kind="killable">
@@ -393,7 +413,7 @@
     </article>
     <article class="threat" data-keys="doppelgangers, doppelganger, copy, imposter, twin, duplicate, same customer, id, scanner, lookalike" data-kind="identify">
       <h4><a href="/guide/doppelgangers/">Doppelgangers</a></h4>
-      <p class="meta">Hostile: Yes &middot; Achievement: First Blood (96.9%)</p>
+      <p class="meta">Hostile: Yes &middot; Achievement: First Blood (96.7%)</p>
       <p>Identification, not combat. They copy a real customer's appearance, voice and story &mdash; the scanner tells you a document is fake, not that the person is hostile.</p>
     </article>
   </div>
@@ -514,27 +534,47 @@
       return;
     }
     var pools = picked.map(poolOf);
-    var same = pools.every(function (p) { return p === pools[0]; });
-    if (same) {
-      out.className = "tool-out ok";
-      out.innerHTML = "<b>Yes \u2014 you can play together</b><p>All " + picked.length +
-        " of you are in the same matchmaking pool, so you can join each other directly.</p>";
-      return;
-    }
+    var hasMs = picked.some(function (s) { return s.value === "msstore"; });
     var steamers = picked.filter(function (s) { return poolOf(s) === "steam"; });
     var others = picked.filter(function (s) { return poolOf(s) === "xbox"; });
+    if (hasMs) {
+      // 含 Microsoft Store 买断版:没有官方说明它进哪个池,标题一律 Not confirmed
+      out.className = "tool-out warn";
+      out.innerHTML = "<b>Not confirmed</b>" +
+        "<p>Your group includes a Microsoft Store (bought) copy. The developer's 10 July 2026 announcement " +
+        "only says that Steam players will only be able to play with other Steam players, and that Xbox and " +
+        "PC Game Pass players will have crossplay. It does not say which pool a bought Microsoft Store copy " +
+        "joins, so this combination is not confirmed, and this site has not tested it.</p>" +
+        (steamers.length && others.length
+          ? "<p>Apart from the Microsoft Store copy, your group mixes Steam with Xbox or PC Game Pass: " +
+            "Steam players only play with other Steam players, per the same announcement. " +
+            "We have not tested it.</p>"
+          : "");
+      return;
+    }
+    if (steamers.length && !others.length) {
+      out.className = "tool-out ok";
+      out.innerHTML = "<b>Yes, per the developer</b><p>All " + picked.length + " of you are on Steam. " +
+        "Steam players only play with other Steam players, per the developer's 10 July 2026 announcement. " +
+        "We have not tested it.</p>";
+      return;
+    }
+    if (!steamers.length) {
+      out.className = "tool-out ok";
+      out.innerHTML = "<b>The developer said yes \u2014 we have not tested</b><p>Xbox and PC Game Pass: " +
+        "the developer's 10 July 2026 announcement said they will have crossplay; we have not tested.</p>";
+      return;
+    }
     var few = steamers.length <= others.length ? steamers : others;
     var fewIsSteam = few === steamers;
     var who = few.map(function (s) { return nameOf(s); }).join(" and ");
     var fix = fewIsSteam
-      ? "The cheapest fix is for the Steam side (" + who + ") to get <strong>PC Game Pass</strong> \u2014 " +
-        "a month's subscription rather than a second $9.99 copy. That moves them into the Xbox pool."
-      : "The cheapest fix is for the Game Pass / Xbox side (" + who + ") to also own it on " +
-        "<strong>Steam</strong>, since a Game Pass copy cannot reach the Steam pool at all.";
+      ? "On Steam in your group: " + who + "."
+      : "Not on Steam in your group: " + who + ".";
     out.className = "tool-out bad";
-    out.innerHTML = "<b>No \u2014 not in the launch build</b>" +
-      "<p>Steam is its own matchmaking pool. Xbox console, PC Game Pass and Microsoft Store copies share " +
-      "a second pool. Nothing crosses between them.</p><p>" + fix + "</p>";
+    out.innerHTML = "<b>No, per the developer</b>" +
+      "<p>Steam players only play with other Steam players, per the developer's 10 July 2026 announcement. " +
+      "We have not tested it.</p><p>" + fix + "</p>";
   }
 
   sel.forEach(function (s) { if (s) s.addEventListener("change", render); });
@@ -576,7 +616,7 @@
     if (!left.length) {
       next.className = "tool-out ok";
       next.innerHTML = "<b>All 10 \u2014 done</b><p>Including the three hidden ones. " +
-        "That puts you past the 10.1% of players who have Empty Home.</p>";
+        "That puts you past the 10.9% of players who had Empty Home in Steam's 10 October 2026 stats.</p>";
       return;
     }
     left.sort(function (a, b) {
@@ -589,8 +629,8 @@
     var note = hidden
       ? "<p>This one is hidden \u2014 the game does not show its requirement, and we have not verified it. " +
         "What the unlock rate implies is on the <a href='/endings/'>endings page</a>.</p>"
-      : "<p>" + pctOf + "% of all players have it, which makes it the most-unlocked achievement you are " +
-        "still missing.</p>";
+      : "<p>" + pctOf + "% of all players had it in the snapshot this list is built from, which makes it " +
+        "the most-unlocked achievement you are still missing.</p>";
     next.className = "tool-out warn";
     next.innerHTML = "<b>" + label + "</b>" + note;
   }

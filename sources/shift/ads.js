@@ -18,7 +18,7 @@ var NATIVE_ID  = "container-f7bf84b6fd5f9bcf83b18332a482d287";
   "use strict";
   if (KILL_ALL) { return; }
   /* 信任页不挂广告 */
-  if (/^\/(about|contact|privacy|privacy-policy|terms|terms-of-service|disclaimer)\/?$/i
+  if (/^\/(about|contact|privacy|privacy-policy|terms|terms-of-service|disclaimer|author|editorial-policy)\/?$/i
         .test(location.pathname)) { return; }
   if (!NATIVE_SRC || !NATIVE_ID || !/^https:\/\//.test(NATIVE_SRC)) { return; }
 

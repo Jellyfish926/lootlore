@@ -3,16 +3,16 @@ slug: "events"
 url: "/bongo-cat/events/"
 title: "Bongo Cat Events and Paw Pass: Full Timeline"
 seoTitle: "Bongo Cat Events & Paw Pass: Full Timeline | Bongo Cat"
-description: "Bongo Cat seasonal and charity events from April 2025 to the Circus Paw Pass, with dates, what each gave away, and how the free and premium Paw Pass work."
+description: "Bongo Cat seasonal and charity events from April 2025 to the Halloween Paw Pass, with dates, what each gave away, and how the free and premium Paw Pass work."
 category: "Hats, Skins & Achievements"
 language: "en"
 checkedAt: "2026-09-29"
-scope: "Events announced on the official Steam news page up to September 2026"
+scope: "Events announced on the official Steam news page up to October 1, 2026, as read on October 10, 2026 (UTC)"
 type: "article"
 tldr: ["Seasonal events usually run three to four weeks and add 20 exclusive items; once they end, those items stop dropping.", "Advent and Lunar New Year calendars gave one free item per day, with a paid Deluxe calendar alongside.", "The Paw Pass started on September 1, 2026: a monthly theme, free and premium tracks, and rewards that never expire.", "Open the game at least once a month to claim that month's free pass ticket automatically."]
 entities: ["paw-pass"]
 related: ["hats-skins", "exchange-trading", "multiplayer"]
-sourceUrls: ["https://store.steampowered.com/news/app/3419430/view/1842212951313382", "https://store.steampowered.com/news/app/3419430/view/1795283637960385", "https://store.steampowered.com/news/app/3419430/view/1803527891535449", "https://store.steampowered.com/news/app/3419430/view/1813041031167641", "https://store.steampowered.com/news/app/3419430/view/1815034432865853", "https://store.steampowered.com/news/app/3419430/view/1815580768395840", "https://store.steampowered.com/news/app/3419430/view/1817483467044521", "https://store.steampowered.com/news/app/3419430/view/1823825466497567", "https://store.steampowered.com/news/app/3419430/view/1824644522846187", "https://store.steampowered.com/news/app/3419430/view/1828894815553998", "https://store.steampowered.com/news/app/3419430/view/1835236783574334", "https://store.steampowered.com/news/app/3419430/view/1818752592137196", "https://store.steampowered.com/news/app/3419430/view/1811772772443374", "https://store.steampowered.com/news/app/3419430/view/1816307528971434", "https://store.steampowered.com/news/app/3419430/view/1834602721190453", "https://store.steampowered.com/news/app/3419430/view/1844115010495136", "https://store.steampowered.com/news/app/3419430/view/1836506165556399"]
+sourceUrls: ["https://store.steampowered.com/news/app/3419430/view/1842212951313382", "https://store.steampowered.com/news/app/3419430/view/1795283637960385", "https://store.steampowered.com/news/app/3419430/view/1803527891535449", "https://store.steampowered.com/news/app/3419430/view/1813041031167641", "https://store.steampowered.com/news/app/3419430/view/1815034432865853", "https://store.steampowered.com/news/app/3419430/view/1815580768395840", "https://store.steampowered.com/news/app/3419430/view/1817483467044521", "https://store.steampowered.com/news/app/3419430/view/1823825466497567", "https://store.steampowered.com/news/app/3419430/view/1824644522846187", "https://store.steampowered.com/news/app/3419430/view/1828894815553998", "https://store.steampowered.com/news/app/3419430/view/1835236783574334", "https://store.steampowered.com/news/app/3419430/view/1818752592137196", "https://store.steampowered.com/news/app/3419430/view/1811772772443374", "https://store.steampowered.com/news/app/3419430/view/1816307528971434", "https://store.steampowered.com/news/app/3419430/view/1834602721190453", "https://store.steampowered.com/news/app/3419430/view/1844115010495136", "https://store.steampowered.com/news/app/3419430/view/1836506165556399", "https://store.steampowered.com/news/app/3419430/view/1845383656381895"]
 date: "2026-09-29"
 updated: "2026-10-10"
 reviewed: "2026-09-29"
@@ -29,7 +29,7 @@ The Paw Pass brings new cosmetics every month instead of only at seasonal events
 
 | Rule | Detail |
 | --- | --- |
-| Theme | Changes monthly; the first was Circus |
+| Theme | Changes monthly; the first was Circus, and the October 1, 2026 post says "This month's theme is Halloween" |
 | Tracks | Free and premium; the pass has themed skins, hats, emotes and chests up to Legendary, and the paid track has more of them |
 | Bongo Coins | 100 per track per pass |
 | Spending coins | Not confirmed as open yet: the launch post says coins "can be used later" to buy the premium track for 500 coins or supporter cosmetics |
@@ -37,7 +37,7 @@ The Paw Pass brings new cosmetics every month instead of only at seasonal events
 | Deadline | None: "the rewards are claimable forever" |
 | Free ticket | Claimed automatically if you open the game at least once a month |
 | Offline | You cannot redeem rewards offline, but taps still count |
-| Premium | Buy a Paw Pass Ticket on Steam, then redeem it in-game with Get Pass |
+| Premium | Buy a Paw Pass Ticket in the [Steam Item Store](https://store.steampowered.com/itemstore/3419430/), then redeem it in-game with Get Pass |
 
 The pass opens from the ticket button at the bottom of the inventory. Joining late is not a problem: the developer says you can always get a Paw Pass Ticket to unlock past passes. Events still happen alongside it, and during events both tracks also drop event chests. We have not found an official number of taps per milestone, so this page does not give one; the two lanes, each monthly theme and what the coins can be used for later are broken down in the [Paw Pass and Bongo Coins guide](/bongo-cat/paw-pass/).
 
@@ -60,6 +60,7 @@ Dates are from each announcement; "Ends" is the last day the event items could d
 | [Bongo Royale](https://store.steampowered.com/news/app/3419430/view/1828894815553998) | Apr 1, 2026 | 3 days | Typing battle royale lobbies of up to 250; a special skin for participants |
 | [Summer Event](https://store.steampowered.com/news/app/3419430/view/1835236783574334) | Jun 16, 2026 | Jul 14, 2026 | 20 summer items; Wild Wonders supporter pack |
 | Paw Pass: Circus | Sep 1, 2026 | No deadline | First monthly pass |
+| [Paw Pass: Halloween Edition](https://store.steampowered.com/news/app/3419430/view/1845383656381895) | Oct 1, 2026 | No deadline | Second monthly pass; the post names no individual skin, hat or emote and says the pass includes 3 UI themes — see [Halloween 2026](/bongo-cat/halloween/) |
 
 After Bongo Royale the mode was switched off again and the Blood Splatter Skin was granted to everyone for the next 2 days "as a small sorry how bugged it was" ([same post](https://store.steampowered.com/news/app/3419430/view/1828894815553998)).
 

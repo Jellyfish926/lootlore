@@ -9,7 +9,7 @@ language: "en"
 checkedAt: "2026-09-29"
 scope: "Exchange and trading rules from the developer's announcements, March 2025 to September 2026"
 type: "article"
-tldr: ["Ten items of the same rarity exchange into one item of the next tier up; favourites are never slotted automatically.", "Shift+Click a stack to run 1,000+ exchanges back to back, and use the Trader, Vendor and Merchant achievements as a side goal.", "Trading with friends was switched off in March 2025 to stop bot farms and switched back on for all items in November 2025.", "Chest and event drops can be sold on the Steam Community Market; Item Store supporter items cannot."]
+tldr: ["Ten items of the same rarity exchange into one item of a higher tier, in the wording of the February 2025 demo update; favourites are never slotted automatically.", "Shift+Click a stack to run 1,000+ exchanges back to back, and use the Trader, Vendor and Merchant achievements as a side goal.", "Trading with friends was switched off in March 2025 to stop bot farms and switched back on for all items in November 2025.", "Chest and event drops can be sold on the Steam Community Market; Item Store supporter items cannot."]
 entities: ["exchange"]
 related: ["hats-skins", "achievements", "events"]
 sourceUrls: ["https://store.steampowered.com/news/app/3419430/view/1792116353300258", "https://store.steampowered.com/news/app/3419430/view/1795283637857596", "https://store.steampowered.com/news/app/3419430/view/1797185861746045", "https://store.steampowered.com/news/app/3419430/view/1800357164536345", "https://store.steampowered.com/news/app/3419430/view/1799088287868198", "https://store.steampowered.com/news/app/3419430/view/1813041031167641", "https://store.steampowered.com/news/app/3419430/view/1793384379332669", "https://store.steampowered.com/news/app/3419430/view/1793384379535358", "https://store.steampowered.com/news/app/3419430/view/1815580768395840", "https://store.steampowered.com/news/app/3419430/view/1799088287826807", "https://steamcommunity.com/market/search?appid=3419430", "https://store.steampowered.com/news/app/3419430/view/1807332909696878", "https://store.steampowered.com/news/app/3419430/view/1842212951313382", "https://store.steampowered.com/news/app/3419430/view/1835236783574334", "https://store.steampowered.com/news/app/3419430/view/1790214123211282"]
@@ -21,7 +21,7 @@ author: "Jellyfi"
 ---
 # Bongo Cat Exchange, Trading and Market Rules
 
-In Bongo Cat, the exchange turns ten items of one rarity into one item of the next rarity up, and it is the main way to reach Rare, Epic and Legendary. Drops can be traded with friends and sold on the Steam Community Market; Item Store supporter items cannot. Here is each rule and when it changed.
+In Bongo Cat, the exchange turns ten items of one rarity into one item of a higher rarity, and it is the main way to reach Rare, Epic and Legendary. Drops can be traded with friends and sold on the Steam Community Market; Item Store supporter items cannot. Here is each rule and when it changed.
 
 ## How does the exchange work?
 
@@ -59,7 +59,7 @@ Yes, as of the latest rule change. Trading has flipped twice, so older forum ans
 | Nov 10, 2025 | "Re-enable all items for trading with friends!" | [Charity event post](https://store.steampowered.com/news/app/3419430/view/1815580768395840) |
 | Sep 1, 2026 | [Paw Pass](/bongo-cat/paw-pass/) tickets can be gifted to friends through Steam trading | [Paw Pass post](https://store.steampowered.com/news/app/3419430/view/1842212951313382) |
 
-Items from the demo were never tradeable and did not carry over to the full game.
+Items from the demo were never tradeable ([demo release post](https://store.steampowered.com/news/app/3419430/view/1790214123211282): "The items in the demo are not tradable") and did not carry over to the full game.
 
 ## Can you sell hats on the Steam Community Market?
 

@@ -3,25 +3,25 @@ slug: "how-to-play"
 url: "/bongo-cat/how-to-play/"
 title: "How to Play Bongo Cat: Taps, Chests and Drops"
 seoTitle: "How to Play Bongo Cat: Taps, Chests & Drops | Bongo Cat"
-description: "How Bongo Cat works on Steam: key presses become taps, chests open on the timer the developer set (30 minutes in 2025), and duplicates exchange up."
+description: "How Bongo Cat works on Steam: key presses become taps, chests open on a timer (30 minutes in a February 2025 demo update), and duplicates exchange up."
 category: "Getting Started"
 language: "en"
 checkedAt: "2026-09-29"
-scope: "Steam version; chest timings are from the developer's 2025 patch notes and replies"
+scope: "Steam version; chest timings are from a February 2025 demo update, a March 2025 patch and a developer forum reply; the 63 official announcements read on 2026-10-10 (UTC) do not restate the 30-minute timer for the full game"
 type: "article"
-tldr: ["Install Bongo Cat free from Steam, leave it running, and every key press or mouse click counts as a tap.", "A chest becomes available on a timer; in 2025 the developer set it to 30 minutes and said opening one needs 1,000 taps.", "Keep duplicates: ten items of one rarity exchange into one item of the next tier.", "Turn on gaming mode if you play fullscreen games, so you do not click the cat by accident."]
+tldr: ["Install Bongo Cat free from Steam, leave it running, and every key press or mouse click counts as a tap.", "A chest becomes available on a timer: a February 2025 demo update set it to 30 minutes, and a March 2025 patch tied the chest popup to 1,000 clicks.", "Keep duplicates: ten items of one rarity exchange into one item of a higher tier.", "Turn on gaming mode if you play fullscreen games, so you do not click the cat by accident."]
 entities: ["chest"]
 related: ["exchange-trading", "hats-skins", "steam-error"]
-sourceUrls: ["https://store.steampowered.com/app/3419430/Bongo_Cat/", "https://store.steampowered.com/news/app/3419430/view/1792116353300258", "https://store.steampowered.com/news/app/3419430/view/1794102528240823", "https://steamcommunity.com/app/3419430/discussions/0/597395881634853843/", "https://store.steampowered.com/news/app/3419430/view/1827626365763660", "https://steamcommunity.com/app/3419430/discussions/0/573792389464878955/", "https://store.steampowered.com/news/app/3419430/view/1793384379535358", "https://store.steampowered.com/news/app/3419430/view/1842212951313382"]
+sourceUrls: ["https://store.steampowered.com/app/3419430/Bongo_Cat/", "https://store.steampowered.com/news/app/3419430/view/1792116353300258", "https://store.steampowered.com/news/app/3419430/view/1794102528240823", "https://steamcommunity.com/app/3419430/discussions/0/597395881634853843/", "https://store.steampowered.com/news/app/3419430/view/1827626365763660", "https://steamcommunity.com/app/3419430/discussions/0/573792389464878955/", "https://store.steampowered.com/news/app/3419430/view/1793384379535358", "https://store.steampowered.com/news/app/3419430/view/1842212951313382", "https://store.steampowered.com/saleaction/ajaxgetdeckappcompatibilityreport?nAppID=3419430"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
 ---
 # How to Play Bongo Cat: Taps, Chests and Drops
 
-Install Bongo Cat free from Steam and leave it running. Every key press or mouse click becomes a tap, and taps pay for chests that drop hats and skins. In 2025 the developer set the chest timer to 30 minutes and said opening a chest needs 1,000 taps, so normal typing keeps you supplied. Keep duplicates for the exchange.
+Install Bongo Cat free from Steam and leave it running. Every key press or mouse click becomes a tap, and taps pay for chests that drop hats and skins. A February 2025 demo update set the chest timer to 30 minutes, and a March 2025 patch tied the chest popup to 1,000 clicks. Keep duplicates for the exchange.
 
 ## What do you need before you start?
 
@@ -33,6 +33,7 @@ Bongo Cat is free on Steam. It is small, and it sits on top of whatever you are 
 | Windows | Windows 10 / 11, 64-bit | Main platform |
 | macOS | Listed as supported | Announced as an experimental build in March 2026 |
 | Linux | Not listed | A test branch exists (X11 only) |
+| Steam Deck | Not a store platform entry | Valve's [Deck compatibility report](https://store.steampowered.com/saleaction/ajaxgetdeckappcompatibilityreport?nAppID=3419430) returned category 2 (Playable) on October 10, 2026; see [Mac, Linux and Steam Deck](/bongo-cat/mac-linux-steam-deck/) |
 | Memory / storage | 1 GB RAM, 100 MB | Graphics: "Any" |
 | Network | Broadband Internet connection | Listed under minimum requirements |
 
@@ -40,7 +41,7 @@ The macOS build was introduced as experimental in the [March 2026 update](https:
 
 ## How do taps turn into chests?
 
-Two things gate a chest: time and taps. In the pre-launch [Next Fest demo update](https://store.steampowered.com/news/app/3419430/view/1792116353300258), the developer raised the drop timer to 30 minutes. A March 2025 patch changed the chest popup so it "only shows chest popup if you have 1000 clicks" ([patch notes](https://store.steampowered.com/news/app/3419430/view/1794102528240823)), and opening a chest subtracts those taps from your counter.
+Two things gate a chest: time and taps. In the pre-launch [Next Fest demo update](https://store.steampowered.com/news/app/3419430/view/1792116353300258), the developer raised the drop timer to 30 minutes. A March 2025 patch changed the chest popup so it "only shows chest popup if you have 1000 clicks" ([patch notes](https://store.steampowered.com/news/app/3419430/view/1794102528240823)), and opening a chest subtracts those taps from your counter. None of the 63 official announcements we read on October 10, 2026 restates the 30-minute timer for the full game. A June 2026 update added that you can open a friend's chests: "it costs you 1000 clicks, for your friend it's free" ([patch notes](https://store.steampowered.com/news/app/3419430/view/1836506165556399)).
 
 ![A red panda skin with a small white cat stacked on its head, sitting above the taskbar counter](ss01 "Skins change the whole body, hats sit on top")
 
@@ -50,7 +51,7 @@ Two details from March 2025 patches are worth knowing: restarting the game saves
 
 ## What should you do with your first drops?
 
-Your first dozen drops will almost all be Common, because the store page puts Common at 90% of the pool. Do not delete them. Duplicates are the fuel for the exchange: ten items of the same rarity trade up into one item of the next tier. The full rules, including how favourites are protected, are on the [exchange and trading page](/bongo-cat/exchange-trading/).
+Your first dozen drops will almost all be Common, because the store page puts Common at 90% of the pool. Do not delete them. Duplicates are the fuel for the exchange: ten items of the same rarity trade up into one item of a higher tier. The full rules, including how favourites are protected, are on the [exchange and trading page](/bongo-cat/exchange-trading/).
 
 Mark the items you actually like with the star in the corner of the item card. Favourites are skipped by the auto exchange, so you will not trade away the hat you are wearing. There is also a setting to auto-equip new drops if you just want to see each new look straight away.
 

@@ -13,7 +13,7 @@ tldr: ["The Steam Error popup means a Steam API call failed, not that your item 
 related: ["how-to-play", "is-it-safe", "multiplayer"]
 sourceUrls: ["https://steamcommunity.com/app/3419430/discussions/0/766312101614459106/", "https://steamcommunity.com/app/3419430/discussions/0/597402042488586436/", "https://store.steampowered.com/news/app/3419430/view/1799088287821846", "https://store.steampowered.com/news/app/3419430/view/1811772772484130", "https://steamcommunity.com/app/3419430/discussions/0/599643530220034451/", "https://store.steampowered.com/news/app/3419430/view/1807966710813696", "https://steamcommunity.com/app/3419430/discussions/0/806846367620396268/", "https://steamcommunity.com/app/3419430/discussions/0/603024565119004311/", "https://store.steampowered.com/news/app/3419430/view/1794102528240823", "https://store.steampowered.com/news/app/3419430/view/1799088287868198", "https://store.steampowered.com/news/app/3419430/view/1815034432865853"]
 date: "2026-09-29"
-updated: "2026-09-29"
+updated: "2026-10-10"
 reviewed: "2026-09-29"
 draft: false
 author: "Jellyfi"
@@ -35,7 +35,7 @@ The same post was later edited to say Valve was working on it and that promotion
 3. Choose Inventory History and look for Bongo Cat entries with the time of your chest or exchange.
 4. If the item is listed, the drop or exchange went through, whatever the popup said.
 
-If nothing is listed and the timer is stuck, move on to the resync steps below. When a May 2025 exchange bug traded away non-duplicates, the developer asked affected players to send their Steam profile via Discord ("spiced pigeon" in that post, written spicedpigeon in an October 2025 post) or contact@irox-games.com; those are the contact channels the developer has published.
+If nothing is listed and the timer is stuck, move on to the resync steps below. When a [May 2025 exchange bug](https://store.steampowered.com/news/app/3419430/view/1799088287868198) traded away non-duplicates, the developer asked affected players to send their Steam profile via Discord ("spiced pigeon" in that post, written spicedpigeon in an [October 2025 post](https://store.steampowered.com/news/app/3419430/view/1815034432865853)) or contact@irox-games.com; those are the contact channels the developer has published.
 
 ## What fixed Steam Error in past updates?
 

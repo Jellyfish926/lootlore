@@ -318,8 +318,11 @@ def request_card(*, email, brand, game="", t):
 
 def request_fab(*, email, brand, game="", t):
     """右下角浮动小按钮(≥44×44,CSS 里 48px 高)。手机端每页显示;桌面端只在没有右栏卡片的页
-    (首页 main.home 与所有 main.no-rail 页)显示,见 hub/style.css 的 .req-fab。"""
+    (首页 main.home 与所有 main.no-rail 页)显示,见 hub/style.css 的 .req-fab。
+    ≤640px 时 CSS 把文字标签视觉隐藏、只剩图标圆钮,所以 <a> 上带 aria-label(与可见文字同一串,
+    满足「可见标签包含在可访问名称里」)。"""
     return (f'<a class="req-fab" href="{esc(request_mailto(email=email, brand=brand, game=game, t=t))}"'
+            f' aria-label="{esc(t["req_cta_short"])}"'
             f' data-req-open><span aria-hidden="true">&#9998;</span>'
             f'<span>{esc(t["req_cta_short"])}</span></a>')
 

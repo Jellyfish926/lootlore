@@ -590,8 +590,28 @@ a:hover{color:var(--accent2)}
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 22px;border:var(--box-bd);
   border-top:2px solid var(--accent);border-radius:var(--rad-sm);max-width:100%;background-color:var(--bg)}
 .table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 横滑提示(纯 CSS,不用脚本):右缘一条主题色渐隐,右边还有列时出现,滚到头消失;表格不溢出时不出现。
+   两层背景:一层"盖板"跟着内容滚(local,贴在内容最右端),一层"提示"钉在容器右缘(scroll);
+   内容滚到最右时盖板正好压住提示。背景画在单元格底下,所以只在没有底色的行(非斑马行)透出来。
+   深色主题:提示色取 --accent 的半透明,对 --bg 看得出来;不写 hex。 */
+.table-scroll{--ts-hint:color-mix(in srgb,var(--accent) 42%,transparent);
+  background-image:linear-gradient(to left,var(--bg) 50%,transparent),
+    linear-gradient(to left,var(--ts-hint),transparent);
+  background-position:right center,right center;background-size:48px 100%,24px 100%;
+  background-repeat:no-repeat;background-attachment:local,scroll}
 .table-scroll table{border-collapse:collapse;width:100%;min-width:560px;
   font-size:var(--fs-tbl);line-height:var(--lh-tight)}
+/* 窄屏(≤640):不超过 3 列的表不再撑到 560 —— 否则两三列的窄表第二列(价格)整列在屏幕外。
+   判据是「任何一行都没有第 4 个单元格」;正常换行、不横滑。4 列及以上保持横滑 + 上面的提示。
+   特异性(0,2,2)高于 .doc .hb-fig table 与 .sn-body .table-scroll table(都是 0,2,1),所以一条管全部;
+   不支持 :has() 的浏览器整条规则作废,退回原来的横滑。
+   单元格给 3.5em 的内容宽下限(全站 border-box,所以要把左右内边距 24px 加进去):自动表格布局会把
+   短内容列(日期、中文短语)压到两个字一行;3 列 ×(3.5em + 24px)≈ 230px,放得进 390 宽手机。
+   下限再大(试过 4 / 4.5em)会让表头不换行的表多出几像素横滑,所以取 3.5em。 */
+@media(max-width:640px){
+  .table-scroll table:not(:has(tr>:nth-child(4))){min-width:0}
+  .table-scroll table:not(:has(tr>:nth-child(4))) :is(td,th){min-width:calc(3.5em + 24px)}
+}
 .table-scroll th,.table-scroll td{padding:9px 12px;border-bottom:1px solid var(--line);
   text-align:left;vertical-align:top}
 .table-scroll th{background:var(--band);color:var(--ink);font-weight:600;white-space:nowrap;
@@ -802,7 +822,7 @@ a:hover{color:var(--accent2)}
 /* 浮动按钮:默认只在 ≤1024(右栏已并入单栏、卡片可能在很下面)显示;桌面端只在没有右栏
    卡片的页显示 —— 首页(main.home)和所有 no-rail 页(总站 about/contact/信任页/404、
    原生「全部攻略」页、无实体框且无「最近更新」的快照页)。48px 高 ≥44 的触控门槛;避开 iOS 底部安全区;
-   页脚底部留出 72px,页面拉到底时按钮不压住页脚文字。 */
+   页脚底部留出 72px,页面拉到底时按钮不压住页脚文字。≤640 收成 44×44 图标圆钮,见下。 */
 .req-fab{display:none;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));
   z-index:60;align-items:center;gap:7px;min-height:48px;min-width:48px;padding:0 16px;
   border-radius:var(--rad-pill);background:var(--accent);color:var(--bg);font-size:.9375rem;
@@ -814,7 +834,16 @@ main.home~.req-fab,main.no-rail~.req-fab{display:inline-flex}
 body:has(dialog.req[open]) .req-fab{display:none}
 @media(max-width:1024px){
   .req-fab{display:inline-flex}
-  .ft .wrap{padding-bottom:calc(24px + 72px)}
+  .ft .wrap{padding-bottom:calc(24px + 72px + env(safe-area-inset-bottom,0px))}
+}
+/* 窄屏(≤640):药丸会盖住正文右下角一行字的大半,收成只有图标的 44×44 圆钮(触控门槛 44);
+   文字标签视觉隐藏但留在可访问树里,<a> 上另有 aria-label(hub/shell.py:request_fab)。
+   页脚底部安全间距沿用上面那条(72px ≥ 按钮 44 + 离底 16 + 余量),并加上 iOS 底部安全区。 */
+@media(max-width:640px){
+  .req-fab{width:44px;height:44px;min-width:0;min-height:0;padding:0;gap:0;justify-content:center;
+    right:12px;font-size:1.0625rem;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+  .req-fab>span:not([aria-hidden]){position:absolute;width:1px;height:1px;margin:-1px;padding:0;
+    overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 }
 /* 弹窗 */
 .req{width:min(92vw,520px);max-height:min(92vh,92dvh);margin:auto;padding:0;

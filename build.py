@@ -711,9 +711,45 @@ def page_meta(text):
     return meta, text[m.end():]
 
 
+# 首页 meta description:定位句 + 前几个游戏名 + 一句内容范围,长度稳定落在 140–160 字符。
+# 游戏总数由 config/hub.json 的 games 算出(不写死);名字只举前几个,以后加栏目不会把它撑长。
+HOME_DESC_RANGE = (140, 160)
+HOME_DESC_MAX_NAMES = 4
+HOME_DESC_TAILS = (          # 从长到短,择最长且不超上限的一句;只写站内确有的页型(Boss / 配装 / 兑换码 / 版本跟踪)
+    " Boss strategies, builds, codes and patch tracking, re-checked after every update.",
+    " Bosses, builds, codes and patch tracking, kept current.",
+    " Bosses, builds, codes and patch tracking.",
+    " Bosses, builds and patch tracking.",
+    " Bosses, builds and codes.",
+    " Builds and bosses.",
+    "",
+)
+
+
+def home_description(names):
+    n = len(names)
+    lo, hi = HOME_DESC_RANGE
+    lead = f"Hand-researched guide hubs for {NUM_WORDS.get(n, str(n))} games"
+    best = None
+    for k in range(min(HOME_DESC_MAX_NAMES, n), 0, -1):       # 名字举得多的优先
+        some = names[:k]
+        listed = (", ".join(some[:-1]) + " and " + some[-1]) if k > 1 else some[0]
+        joiner = ", including " if k < n else ": "
+        for tail in HOME_DESC_TAILS:
+            d = f"{lead}{joiner}{listed}.{tail}"
+            if lo <= len(d) <= hi:
+                return d
+            if len(d) <= hi and (best is None or len(d) > len(best)):
+                best = d
+    best = best or (lead + ".")
+    print(f"  警告:首页 meta description {len(best)} 字符,不在 {lo}–{hi} 内(调 build.py 的 HOME_DESC_TAILS)")
+    return best
+
+
 def fill(s: str) -> str:
     names = [g["name"] for g in CFG["games"]]
     n = len(names)
+    s = s.replace("{{HOME_DESC}}", home_description(names)) if "{{HOME_DESC}}" in s else s
     s = s.replace("{{BASE}}", BASE).replace("{{BRAND}}", CFG["brand"])
     s = s.replace("{{TAGLINE}}", CFG["tagline"]).replace("{{EMAIL}}", CFG["contact_email"])
     s = s.replace("{{PUB}}", CFG["adsense_pub"]).replace("{{TODAY}}", TODAY)

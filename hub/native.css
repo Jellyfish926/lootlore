@@ -53,6 +53,9 @@ html[lang^="zh"] .prevnext .pn span{letter-spacing:.02em}
 /* ---------- 要点框 ---------- */
 .kp{background:var(--band-soft);border:var(--box-bd);border-left:3px solid var(--accent);
   border-radius:var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);padding:var(--box-pad);margin:0 0 22px}
+/* 要点框本身是 <section>:上面「内容页 section 内边距清零」那条(0,2,1)会压过 .kp(0,1,0),
+   这里用更高的特异性把设计内边距放回来,只作用于 .kp,不动其它 section。 */
+.native-body .doc section.kp,.native-body .rail section.kp{padding:var(--box-pad)}
 .kp-t{margin:0 0 6px;font-weight:700;color:var(--ink);font-size:.8125rem;
   letter-spacing:.1em;text-transform:uppercase}
 .kp ul{margin:0;padding-left:1.15em}

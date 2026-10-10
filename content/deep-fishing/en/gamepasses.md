@@ -6,17 +6,17 @@ seoTitle: "Deep Fishing Game Passes and Prices | Deep Fishing Guide"
 description: "All nine Deep Fishing game passes with official prices and descriptions: Lucky to Ultra Lucky, Auto Sell, Fish Magnet, Double Coins, and which suits your play."
 category: "Rods & Upgrades"
 language: "en"
-checkedAt: "2026-09-29"
-scope: "Pass names, prices and descriptions from the Roblox game pass API on 2026-09-29; effects beyond the official one-line descriptions are not published"
+checkedAt: "2026-10-10"
+scope: "Pass names, prices and descriptions from the Roblox game pass API on 2026-10-10 (UTC); effects beyond the official one-line descriptions are not published"
 type: "article"
-tldr: ["Deep Fishing sells nine game passes, priced from 99 to 599 Robux.", "Three are luck passes (Lucky 99, Super Lucky 249, Ultra Lucky 599); two double your coins or XP.", "Auto Sell (149) and Fish Magnet (99) are the cheapest quality-of-life picks.", "Every pass can also be bought as a gift for another player."]
+tldr: ["Deep Fishing sells nine game passes, priced from 99 to 599 Robux.", "Three are luck passes (Lucky 99, Super Lucky 249, Ultra Lucky 599); two double your coins or XP.", "Auto Sell (149) and Fish Magnet (99) are the cheapest quality-of-life picks.", "The store also lists a \"[Gift]\" product named after each of the nine passes, at the same price as the pass."]
 related: ["gear", "rods", "shop"]
 sourceUrls: ["https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"]
 images: ["art03"]
 date: "2026-09-29"
-updated: "2026-09-29"
-reviewed: "2026-09-29"
-gameVersion: "2026-09-28 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-09 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 Deep Fishing has nine game passes, priced from 99 to 599 Robux: three luck tiers, Double Coins, Double XP, More Mutations, Auto Sell, Fish Magnet and VIP. The developer describes each in a single line, and that is all that is officially published — no percentages. Fish Magnet and Auto Sell are the cheapest passes that change how a session feels.
 
-All names, prices and descriptions below come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100). Eight of the nine were created on launch day, 18 July 2026; Auto Sell followed on 19 July. None were discounted when we checked.
+All names, prices and descriptions below come from the [Roblox game pass API](https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100). Eight of the nine were created on launch day, 18 July 2026; Auto Sell followed on 19 July. None carried a discount when we read the list on 10 October 2026.
 
 ## What does each game pass do?
 
@@ -37,7 +37,7 @@ All names, prices and descriptions below come from the [Roblox game pass API](ht
 | VIP | 249 | Exclusive VIP perks and rewards! | Perks not listed |
 | Double XP | 249 | Earn 2x more XP! | Faster levels |
 | More Mutations | 349 | Find more mutated Fishes! | More mutated catches |
-| Double Coins | 399 | Earn 2x more coins! | Doubles coin income |
+| Double Coins | 399 | Earn 2x more coins when selling fish! | Doubles coin income from selling |
 | Ultra Lucky | 599 | The best luck boost! | Top luck tier |
 
 The last column is our plain-English summary of the official line, not extra information. How the three luck passes stack with each other, and how big each boost is, are not stated.
@@ -63,7 +63,7 @@ Luck is also sold outside the pass list: Server Luck products from x2 to x16 aff
 
 ## Can you gift a game pass?
 
-Yes. On 20 and 22 September 2026 the developer added a "[Gift]" product for every pass — Gift VIP, Gift Auto Sell, Gift Fish Magnet and so on — each at the same price as the pass itself. The product names say they are gifts; how the gift is delivered in-game is not described.
+Yes. Nine "[Gift]" product records, one named after each of the nine passes, were created on 20 and 22 September 2026 (UTC) — [Gift] VIP, [Gift] Auto Sell, [Gift] Fish Magnet and so on — and each cost the same as the pass itself on 10 October 2026. The product names say they are gifts; how the gift is delivered in-game is not described.
 
 | Gift product | Robux |
 | --- | --- |

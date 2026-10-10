@@ -1,7 +1,7 @@
 {
- "fetched": "2026-09-29",
- "game_version": "2026-09-28 update (Roblox experience updated 2026-09-28T20:52:22Z)",
- "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、徽章 badges.roblox.com、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products。鱼竿阶梯顺序按官方 Robux 解锁价升序推导(ladder_order_official 列入 unverified_fields)。金币价、鱼竿属性、水域、鱼种、兑换码无一手来源,未建实体。徽章 order 按累计获得数降序。快照数字(awarded_count 等)只代表 2026-09-29。",
+ "fetched": "2026-10-10",
+ "game_version": "2026-10-09 update (Roblox experience updated 2026-10-09T18:38:20Z)",
+ "sources_note": "全部实体取自 Roblox 官方公开接口(S 级):游戏描述 games.roblox.com、徽章 badges.roblox.com、通行证 apis.roblox.com/game-passes、开发者商品 apis.roblox.com/developer-products。鱼竿阶梯顺序按官方 Robux 解锁价升序推导(ladder_order_official 列入 unverified_fields)。金币价、鱼竿属性、水域、鱼种、兑换码无一手来源,未建实体。徽章 order 按累计获得数降序。快照数字(awarded_count 等)只代表 2026-10-10（UTC 05:07 读取）。",
  "entities": {
   "deep-fishing": {
    "type": "mechanic",
@@ -23,7 +23,7 @@
     "https://games.roblox.com/v1/games?universeIds=10526853622",
     "https://groups.roblox.com/v1/groups/34744238"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "starter_rod",
     "water_names",
@@ -45,7 +45,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -68,7 +68,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -91,7 +91,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -114,7 +114,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -137,7 +137,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -160,7 +160,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -183,7 +183,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -206,7 +206,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -229,7 +229,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -252,7 +252,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -275,7 +275,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -298,7 +298,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -321,7 +321,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -344,7 +344,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -367,7 +367,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -390,7 +390,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -413,7 +413,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -436,7 +436,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -459,7 +459,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -482,7 +482,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -505,7 +505,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "coin_price",
     "cast_distance",
@@ -528,7 +528,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "cast_distance",
     "luck_bonus",
@@ -550,7 +550,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "cast_distance",
     "luck_bonus",
@@ -572,7 +572,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "cast_distance",
     "luck_bonus"
@@ -593,7 +593,7 @@
    "source_urls": [
     "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "cast_distance",
     "luck_bonus"
@@ -608,16 +608,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You played Deep Fishing!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 2,104,103 times as of 2026-09-29 (100.00% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 3,051,522 times as of 2026-10-10 (100.00% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 2104103,
+   "awarded_count": 3051522,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-07-28",
    "badge_id": 3055416571371637,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-first-legendary": {
@@ -629,16 +629,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught your first Legendary!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 1,015,587 times as of 2026-09-29 (48.27% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 1,276,006 times as of 2026-10-10 (41.82% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 1015587,
+   "awarded_count": 1276006,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-07-28",
    "badge_id": 279594784597602,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-first-mythical": {
@@ -650,16 +650,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught your first Mythical!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 646,963 times as of 2026-09-29 (30.75% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 884,418 times as of 2026-10-10 (28.98% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 646963,
+   "awarded_count": 884418,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-07-28",
    "badge_id": 2412570164479364,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-first-secret": {
@@ -671,16 +671,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught your first Secret!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 165,605 times as of 2026-09-29 (7.87% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 271,663 times as of 2026-10-10 (8.90% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 165605,
+   "awarded_count": 271663,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-07-28",
    "badge_id": 4162683912236312,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-first-mutation": {
@@ -692,16 +692,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught your first Mutated Fish!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 1,796,679 times as of 2026-09-29 (85.39% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 2,594,470 times as of 2026-10-10 (85.02% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 1796679,
+   "awarded_count": 2594470,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-07-28",
    "badge_id": 1227855444040265,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-50-catches": {
@@ -713,16 +713,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 50 Fish!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 1,402,594 times as of 2026-09-29 (66.66% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 1,985,437 times as of 2026-10-10 (65.06% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 1402594,
+   "awarded_count": 1985437,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 1848433760138224,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-250-catches": {
@@ -734,16 +734,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 250 Fishes!",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 801,916 times as of 2026-09-29 (38.11% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 1,101,855 times as of 2026-10-10 (36.11% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 801916,
+   "awarded_count": 1101855,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 278294575856450,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-1000-catches": {
@@ -755,16 +755,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 1.000 Fishes",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 335,530 times as of 2026-09-29 (15.95% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 518,638 times as of 2026-10-10 (17.00% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 335530,
+   "awarded_count": 518638,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 1895412538513966,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-10k-catches": {
@@ -776,16 +776,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 10K Fishes",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 17,781 times as of 2026-09-29 (0.85% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 58,281 times as of 2026-10-10 (1.91% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 17781,
+   "awarded_count": 58281,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 1853229816782927,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-50k-catches": {
@@ -797,16 +797,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 50K Fishes",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 943 times as of 2026-09-29 (0.04% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 7,944 times as of 2026-10-10 (0.26% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 943,
+   "awarded_count": 7944,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 1373973911822369,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-100k-catches": {
@@ -818,16 +818,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 100K Fishes",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 229 times as of 2026-09-29 (0.01% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 3,123 times as of 2026-10-10 (0.10% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 229,
+   "awarded_count": 3123,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 3278441969942062,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-250k-catches": {
@@ -839,16 +839,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 250K Fishes",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 37 times as of 2026-09-29 (0.00% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 549 times as of 2026-10-10 (0.02% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 37,
+   "awarded_count": 549,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 1244436309728676,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "badge-500k-catches": {
@@ -860,16 +860,16 @@
    "description_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "requires_en": "You caught 500K Fishes",
    "requires_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "key_notes_en": "Awarded 8 times as of 2026-09-29 (0.00% of Welcome! awards, our calculation)",
+   "key_notes_en": "Awarded 85 times as of 2026-10-10 (0.00% of Welcome! awards, our calculation)",
    "key_notes_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
-   "awarded_count": 8,
+   "awarded_count": 85,
    "awarded_count_source": "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100",
    "badge_created": "2026-08-01",
    "badge_id": 2453046704822299,
    "source_urls": [
     "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": []
   },
   "pass-lucky": {
@@ -887,7 +887,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -907,7 +907,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -927,7 +927,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -947,7 +947,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -967,7 +967,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size",
     "perks_list"
@@ -988,7 +988,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -1008,7 +1008,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -1019,16 +1019,16 @@
    "page_slug": "gamepasses",
    "unlock_cost": "399 Robux",
    "unlock_cost_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
-   "description_en": "Earn 2x more coins! 🪙",
+   "description_en": "Earn 2x more coins when selling fish! 🪙",
    "description_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
-   "usage_en": "Earn 2x more coins! 🪙",
+   "usage_en": "Earn 2x more coins when selling fish! 🪙",
    "usage_source": "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100",
    "pass_id": 1918953090,
    "created": "2026-07-18",
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]
@@ -1048,7 +1048,7 @@
    "source_urls": [
     "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"
    ],
-   "accessed": "2026-09-29",
+   "accessed": "2026-10-10",
    "unverified_fields": [
     "effect_size"
    ]

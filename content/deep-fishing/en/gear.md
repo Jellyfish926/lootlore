@@ -6,17 +6,17 @@ seoTitle: "Deep Fishing Rods and Upgrades | Deep Fishing Guide"
 description: "Deep Fishing rods, game passes and Robux shop items side by side: the 21-rod ladder, nine passes, and the enchant stones, chests and boosts, all priced."
 category: "Rods & Upgrades"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
-tldr: ["Four guides: every rod in order, all nine game passes, the rest of the Robux shop, and what is confirmed about enchants.", "Rods and Strength move your cast farther; luck, passes and chests come after.", "Prices are the developer's own Robux listings on 29 September 2026."]
+tldr: ["Four guides: every rod in order, all nine game passes, the rest of the Robux shop, and what is confirmed about enchants.", "Rods and Strength move your cast farther; luck, passes and chests come after.", "Prices are the developer's own Robux listings on 10 October 2026."]
 related: []
-sourceUrls: []
+sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100"]
 images: ["art05"]
 date: "2026-09-29"
 updated: "2026-10-10"
-reviewed: "2026-09-29"
-gameVersion: "2026-09-28 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-09 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -24,7 +24,7 @@ author: "Jellyfi"
 
 In Deep Fishing, rods and Strength decide how far you cast, and distance decides which fish you can reach. Everything else — luck passes, chests, enchant stones, one-throw boosts — makes the most sense once you are already reaching new water. The guides in this section list every item with its official price.
 
-We built this section from the developer's own Roblox store data: 9 game passes and 97 developer products registered for the game as of 10 October 2026. That is how the rod list names all 21 rods on the regular ladder, where fan wikis cover only a handful.
+We built this section from the developer's own Roblox store data: 9 game passes and 103 developer products registered for the game as of 10 October 2026. That is how the rod list names all 21 rods on the regular ladder, where fan wikis cover only a handful.
 
 ## Pick a guide by purchase
 
@@ -59,4 +59,4 @@ Free players first: fish, sell, raise Strength, and save for the next rod — th
 
 ## Scope
 
-Prices are taken from Roblox on 29 September 2026 and can change without notice. In-game coin prices, rod stats and enchant effects are not included because we could not confirm them from an official source.
+Prices are taken from Roblox on 10 October 2026 and can change without notice. In-game coin prices, rod stats and enchant effects are not included because we could not confirm them from an official source.

@@ -6,17 +6,17 @@ seoTitle: "Deep Fishing Beginner Guides | Deep Fishing Guide"
 description: "Deep Fishing beginner guides: how the cast-sell-upgrade loop works, what the rarity tiers mean, which badges come first, and where the official group is."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-29"
+checkedAt: "2026-10-10"
 scope: "Category index"
 type: "category"
 tldr: ["Guides for your first sessions: the core loop, rarity tiers, badges, official community links, a codes check and an update log.", "New to the game? Read how to play first; it is built from the developer's own description.", "The codes and updates pages are built from official Roblox records read on 10 October 2026."]
 related: []
-sourceUrls: []
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10526853622"]
 images: ["art02"]
 date: "2026-09-29"
 updated: "2026-10-10"
-reviewed: "2026-09-29"
-gameVersion: "2026-09-28 update"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-09 update"
 draft: false
 author: "Jellyfi"
 ---

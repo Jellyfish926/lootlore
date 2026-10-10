@@ -6,8 +6,8 @@ seoTitle: "How to Play Deep Fishing | Deep Fishing Guide"
 description: "How to play Deep Fishing on Roblox: hold and release to cast, catch several fish per throw, sell the haul, then raise Strength to reach rarer water further out."
 category: "Getting Started"
 language: "en"
-checkedAt: "2026-09-29"
-scope: "Roblox experience Deep Fishing as listed on 2026-09-29, made by the group LazyGames. Later updates can change menus and numbers"
+checkedAt: "2026-10-10"
+scope: "Roblox experience Deep Fishing as listed on 2026-10-10 (UTC), made by the group LazyGames. Later updates can change menus and numbers"
 type: "article"
 tldr: ["Hold and release to cast, and the line only starts fishing once it reaches the water.", "One cast can bring back several fish at once; you sell them for coins.", "Coins and upgrades push your cast further, and further water holds rarer fish.", "Strength is the stat the developer names for throwing farther — start there."]
 entity: "deep-fishing"
@@ -15,9 +15,9 @@ related: ["rarity", "rods", "gamepasses"]
 sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10526853622", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100"]
 images: ["art03", "art02"]
 date: "2026-09-29"
-updated: "2026-09-29"
-reviewed: "2026-09-29"
-gameVersion: "2026-09-28 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-09 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -53,7 +53,7 @@ How the power meter looks and exactly where the buttons sit are not covered in t
 
 ## What do you do with a full haul?
 
-You sell it. Coins are the main currency, and the developer's own **Double Coins** game pass ("Earn 2x more coins!") confirms that coins come from your catches. There is also an XP track: the **Double XP** pass promises "2x more XP", so fishing levels you up alongside earning money. See the [game pass guide](/deep-fishing/gamepasses/) for what each pass does.
+You sell it. Coins are the main currency, and the developer's own **Double Coins** game pass ("Earn 2x more coins when selling fish!") confirms that coins come from your catches. There is also an XP track: the **Double XP** pass promises "2x more XP", so fishing levels you up alongside earning money. See the [game pass guide](/deep-fishing/gamepasses/) for what each pass does.
 
 If selling by hand gets tedious, the **Auto Sell** pass is described as "Sell your fish automatically". It is a convenience, not a power boost, and we cover when it gets in the way on the [rarity and mutations page](/deep-fishing/rarity/).
 
@@ -79,7 +79,7 @@ So we treat luck as a second step. Once you are throwing into new water, a luck 
 
 ## Can you play with friends?
 
-Yes, in public servers. Each server holds up to 12 players, according to the Roblox listing. Private servers are not enabled for this experience at the time of writing, so you cannot rent a quiet server for a group.
+Yes, in public servers. Each server holds up to 12 players, according to the Roblox listing. The game record we read on 10 October 2026 had private servers switched off, so you cannot rent a quiet server for a group.
 
 Some store items affect everyone in the server, such as the "Server Luck" boosts from x2 to x16. If someone buys one while you are there, it is a good moment to fish.
 

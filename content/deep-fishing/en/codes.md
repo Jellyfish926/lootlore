@@ -9,9 +9,9 @@ language: "en"
 checkedAt: "2026-10-10"
 scope: "Game description, group description and shout, event listings, game passes, developer products and badges from Roblox APIs, read on 2026-10-10 (all dates UTC); we did not open the game, so an in-game code box is not confirmed either way"
 type: "article"
-tldr: ["We found no code and no redemption step in the official Roblox records for Deep Fishing that we read on 10 October 2026 (UTC).", "The records were the game description, the LazyGames. group description and shout, eight event listings, nine game passes, 98 store products and 13 badges.", "The game description ends by asking players to join the group \"for rewards and updates\"; what the reward is has not been published in the records we read on 10 October 2026.", "Whether the game has a code entry box is not confirmed, because we did not check inside the game."]
+tldr: ["We found no code and no redemption step in the official Roblox records for Deep Fishing that we read on 10 October 2026 (UTC).", "The records were the game description, the LazyGames. group description and shout, eight event listings, nine game passes, 103 store products and 13 badges.", "The game description ends by asking players to join the group \"for rewards and updates\"; what the reward is has not been published in the records we read on 10 October 2026.", "Whether the game has a code entry box is not confirmed, because we did not check inside the game."]
 related: ["discord", "how-to-play", "shop"]
-sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10526853622", "https://groups.roblox.com/v1/groups/34744238", "https://apis.roblox.com/virtual-events/v1/universes/10526853622/virtual-events", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100&sortOrder=Asc"]
+sourceUrls: ["https://games.roblox.com/v1/games?universeIds=10526853622", "https://groups.roblox.com/v1/groups/34744238", "https://apis.roblox.com/virtual-events/v1/universes/10526853622/virtual-events?cursor=id_2zwAAAAAAAAAAzwAAAAAAAAAA", "https://apis.roblox.com/game-passes/v1/universes/10526853622/game-passes?passView=Full&pageSize=100", "https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://badges.roblox.com/v1/universes/10526853622/badges?limit=100&sortOrder=Asc"]
 images: ["art05"]
 date: "2026-10-10"
 updated: "2026-10-10"
@@ -21,7 +21,7 @@ author: "Jellyfi"
 ---
 # Deep Fishing Codes (October 2026): What We Checked
 
-We found no Deep Fishing codes in the official Roblox records we read on 10 October 2026 (UTC): the game description, the LazyGames. group description and shout, eight event listings, nine game passes, 98 store products and 13 badges. Whether the game has a code entry box is not confirmed, because we did not check inside the game.
+We found no Deep Fishing codes in the official Roblox records we read on 10 October 2026 (UTC): the game description, the LazyGames. group description and shout, eight event listings, nine game passes, 103 store products and 13 badges. Whether the game has a code entry box is not confirmed, because we did not check inside the game.
 
 This page is a record of that check, not a code list. It shows what each official channel said on the read date, quotes the game description line that points to group rewards, and explains how to test a code you saw elsewhere against the same channels. All dates on this page are UTC.
 
@@ -36,7 +36,7 @@ None that we could see in an official channel. The table lists the records we re
 | Group shout | The shout field on the same record | Empty (the field was null) |
 | Event listings | Title, subtitle, description and tagline of 8 listings | No code; five descriptions are a one-line notification reminder |
 | Game passes | Name and description of 9 passes | No code; one description mentions "rewards" as a perk of the paid VIP pass |
-| Developer products | Name and description of 98 products | No code; all 98 description fields were empty |
+| Developer products | Name and description of 103 products | No code; all 103 description fields were empty |
 | Badges | Name and description of 13 badges | No code; each description is a play or catch milestone |
 
 Three of those lists have their own pages: the [game pass guide](/deep-fishing/gamepasses/), the [Robux shop guide](/deep-fishing/shop/) and the [badge list](/deep-fishing/badges/).
@@ -60,7 +60,7 @@ Event listings carry announcement text in the Roblox records we read, so we read
 
 The subtitles and taglines of the same eight listings went through the word search in the next section.
 
-One caution about this source. The events endpoint did not answer the same way on every read: within a few minutes on 10 October 2026 it returned all eight listings on some reads and only the one listing that had not ended on others. We used the eight-listing response. The dates of these events are on the [updates page](/deep-fishing/updates/).
+One caution about this source. The events endpoint answered in two ways on 10 October 2026: called without a cursor it returned only the one listing that had not ended, and called with the cursor shown in our sources it returned all eight. We used the eight-listing response. The dates of these events are on the [updates page](/deep-fishing/updates/).
 
 ![Promotional art: view from inside a giant pink fish mouth lined with teeth, looking out at a Roblox angler reeling on a wooden pier](art02 "Official thumbnail · LazyGames. (Roblox)")
 

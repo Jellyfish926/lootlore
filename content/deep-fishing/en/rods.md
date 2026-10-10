@@ -6,8 +6,8 @@ seoTitle: "All Deep Fishing Rods in Order | Deep Fishing Guide"
 description: "Every Deep Fishing rod in order, from the Iron Rod to the Galaxy Rod, with the official Robux unlock price for all 21, plus two Exclusive rods and two skins."
 category: "Rods & Upgrades"
 language: "en"
-checkedAt: "2026-09-29"
-scope: "Rod names and Robux prices from the developer's Roblox store listing on 2026-09-29; in-game coin prices and rod stats are not included"
+checkedAt: "2026-10-10"
+scope: "Rod names and Robux prices from the developer's Roblox store listing on 2026-10-10 (UTC); in-game coin prices and rod stats are not included"
 type: "article"
 tldr: ["The developer sells a Robux unlock for 21 rods, from the Iron Rod at 39 Robux to the Galaxy Rod at 6,499 Robux.", "The Galaxy Rod is the most expensive unlock and the top of the regular ladder.", "Two Exclusive rods (Astral Tide, VoidReaper) and two skins (Divine King, Divine Queen) sit outside the ladder.", "We list no coin prices or stats — they are not published officially and third-party figures disagree."]
 entities: ["iron-rod", "galaxy-rod"]
@@ -15,9 +15,9 @@ related: ["gear", "shop", "how-to-play"]
 sourceUrls: ["https://apis.roblox.com/developer-products/v2/universes/10526853622/developerproducts?limit=100", "https://games.roblox.com/v1/games?universeIds=10526853622"]
 images: ["art05", "art04"]
 date: "2026-09-29"
-updated: "2026-09-29"
-reviewed: "2026-09-29"
-gameVersion: "2026-09-28 update"
+updated: "2026-10-10"
+reviewed: "2026-10-10"
+gameVersion: "2026-10-09 update"
 draft: false
 author: "Jellyfi"
 ---
@@ -65,7 +65,7 @@ The starter rod is not one of the Robux unlocks, and we have not found an offici
 
 ## What is the best rod in Deep Fishing?
 
-On the regular ladder, the Galaxy Rod: it is the last and most expensive unlock. One fan wiki quotes a video that put it at 5,000 Robux, but the developer's product listed 6,499 Robux on 29 September 2026. Prices can change, so check the in-game price before buying.
+On the regular ladder, the Galaxy Rod: it is the last and most expensive unlock. One fan wiki quotes a video that put it at 5,000 Robux, but the developer's product listed 6,499 Robux on 10 October 2026. Prices can change, so check the in-game price before buying.
 
 For most players the honest answer is "the next one". The developer's description says farther casts reach new waters with rarer fish, so every rung that throws farther opens up better catches. Exact distance and luck stats per rod are not published, and third-party numbers come from single videos, so we do not print them.
 
@@ -73,14 +73,15 @@ For most players the honest answer is "the next one". The developer's descriptio
 
 They sit outside the numbered ladder, so compare them with care.
 
-| Item | Type | Robux | Added |
+| Item | Type | Robux | Record created |
 | --- | --- | --- | --- |
 | Astral Tide Rod | Exclusive rod | 599 | 26 Sep 2026 |
 | VoidReaper Rod | Exclusive rod | 799 | 26 Sep 2026 |
 | Divine King Rod | Skin | 399 | 25 Aug 2026 |
 | Divine Queen Rod | Skin | 639 | 25 Aug 2026 |
+| Oni Soulbinder Skin | Skin (not confirmed as a rod skin) | 1,649 | 9 Oct 2026 |
 
-"Skin" is the developer's own label, so the Divine rods are a look rather than a new rod tier. The two Exclusive rods are newer and their stats are not published; we cannot say how they compare with, say, the Crystal Rod, and we will not guess.
+"Skin" is the developer's own label, so the Divine rods are a look rather than a new rod tier. Oni Soulbinder Skin has no "Rod" in its product name, so what it is a skin for is not confirmed. The stats of the two Exclusive rods are not published; we cannot say how they compare with, say, the Crystal Rod, and we will not guess.
 
 ## Should you buy rods or upgrades first?
 

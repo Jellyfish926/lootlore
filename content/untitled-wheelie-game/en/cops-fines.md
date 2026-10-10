@@ -23,9 +23,9 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Cops: Fines, Passes and Tips
 
-If the police catch you in Untitled Wheelie Game, you pay a fine. Two Robux purchases deal with it: the NEVER PAY FINES game pass (149 Robux), whose description says you "never have to pay fines for when you get caught", and the AVOID FINES developer product (13 Robux), whose effect is not described. No Roblox record we read on 10 October 2026 states a fine amount.
+If the police catch you in Untitled Wheelie Game, you pay a fine. Two Robux purchases deal with it: the NEVER PAY FINES game pass (149 Robux) and the AVOID FINES developer product (13 Robux), whose effect is not described. No Roblox record we read on 10 October 2026 states a fine amount.
 
-The police are a headline feature. "RUN FROM COPS" is the first item in the game's official list of activities, and the 🚔 emoji is part of the game's name on Roblox.
+The pass description says you "never have to pay fines for when you get caught". The police are a headline feature. "RUN FROM COPS" is the first item in the game's official list of activities, and the 🚔 emoji is part of the game's name on Roblox.
 
 ![A Roblox rider in a black helmet pops a wheelie on a small black motorbike while two police cars with flashing lights chase behind, under the words AI COPS](art01 "Official promotional art: police cars in pursuit, labelled AI COPS")
 

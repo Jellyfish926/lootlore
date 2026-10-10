@@ -23,7 +23,9 @@ author: "Jellyfi"
 ---
 # How to Make Money in Untitled Wheelie Game Fast
 
-The game description names one way to make money in Untitled Wheelie Game: "Deliver pizzas to earn money." The developer also sells earning multipliers for jobs and for wheelies, and its AI COPS announcement, read on 10 October 2026, says escaping the cops pays. Of the six Robux cash packs, the largest gives nearly three times the cash per Robux of the smallest.
+The game description names one way to make money in Untitled Wheelie Game: "Deliver pizzas to earn money." The developer also sells earning multipliers for jobs and for wheelies, and its AI COPS announcement, read on 10 October 2026, says escaping the cops pays.
+
+Of the six Robux cash packs, the largest gives nearly three times the cash per Robux of the smallest.
 
 ## Where does money come from?
 

@@ -21,7 +21,7 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Cop Chase Rules: Stars, Roadblocks
 
-Untitled Wheelie Game cop chase rules here come from one developer announcement, the AI COPS 👮 Roblox event listing. It lists a 3 star system, roadblocks at 3 stars, cops that give up after losing sight of you "for over 60 seconds", and money for escaping. We read it on 10 October 2026 and have not tested these in game.
+Untitled Wheelie Game cop chase rules here come from one developer announcement, the AI COPS 👮 Roblox event listing. It lists a 3 star system, roadblocks at 3 stars, cops that give up after "over 60 seconds" out of sight, and escape money. We read it on 10 October 2026 and have not tested these in game.
 
 This page prints the announcement's twelve numbered lines exactly as the developer wrote them, spelling included, and adds one plain-words note to each. The plain-words notes are our reading. Fines and the two purchases that deal with them have their own page, the [cops and fines guide](/untitled-wheelie-game/cops-fines/). Times here come from the listing's API fields and are written in UTC.
 

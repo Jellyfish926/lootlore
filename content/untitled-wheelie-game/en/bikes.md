@@ -23,9 +23,9 @@ author: "Jellyfi"
 ---
 # Untitled Wheelie Game Bikes, Parts and Backfire Guide
 
-The store records name the Tuttiro Bike, the Eblox Dragster and two bike groups called "Ebikes" and "Emotos"; the developer's event announcements, read on 10 October 2026, add Normal Moped, Junkyard Moped and Jetson Ebike. All three bike passes are off sale today. Backfire is a part-like item sold with Robux, in three levels. The full bike list and prices are not in the records we read on 10 October 2026.
+The store records name Tuttiro Bike, Eblox Dragster and the bike groups "Ebikes" and "Emotos"; the developer's announcements, read on 10 October 2026, add Normal Moped, Junkyard Moped and Jetson Ebike. Backfire is a three-level, part-like item sold with Robux. The full bike list and prices are not in the records read on 10 October 2026.
 
-The official description promises you can "Buy bikes, upgrades, and parts" and "Paint and customize your bike". This page collects the bike-related names in the store records, checked on 30 September 2026; names from the event announcements, read on 10 October 2026, are on the [patch notes page](/untitled-wheelie-game/patch-notes/).
+The official description promises you can "Buy bikes, upgrades, and parts" and "Paint and customize your bike". This page collects the bike-related names in the store records, checked on 30 September 2026; names from the event announcements, read on 10 October 2026, are on the [patch notes page](/untitled-wheelie-game/patch-notes/). All three bike passes are off sale today.
 
 ## Which bikes has the developer named?
 
